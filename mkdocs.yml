@@ -1,0 +1,6 @@
+site_name: DiskoverData Guide
+theme:
+    name: 'material'
+    favicon: 'images/favicon.ico'
+    extra_css:
+       - 'stylesheets/extra.css'

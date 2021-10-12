@@ -28,6 +28,10 @@ jobs:
       - name: Build website
         run: python3 -m mkdocs build
 
+      - name: test
+        run: ls -la
+        working-directory: site
+
       - name: S3 Sync
         uses: awact/s3-action@0.1.1
         with:

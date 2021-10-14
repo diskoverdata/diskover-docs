@@ -37,7 +37,7 @@ jobs:
           python3 -m mkdocs build
 
       - name: S3 Sync
-        uses: awact/s3-action@0.1.1
+        uses: evandejesus/s3-sync-action@v0.5.3
         with:
           args: --acl public-read --follow-symlinks --delete
         env:

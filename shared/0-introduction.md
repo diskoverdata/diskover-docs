@@ -1,1 +1,3 @@
-# This is the introduction
+# Introduction
+
+Welcome to the introduction page

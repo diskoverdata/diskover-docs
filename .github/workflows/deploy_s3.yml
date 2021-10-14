@@ -33,6 +33,7 @@ jobs:
         run: |
           python3 -m mkdocs new build
           cp -a ./${{ github.event.inputs.folder }}/. ./build/docs
+          cp -a ./shared/. ./build/docs
           cp ./mkdocs.yml ./build/mkdocs.yml
           cd ./build
           python3 -m mkdocs build

@@ -1,8 +1,6 @@
 name: Deploy to S3
 
 on:
-  #push:
-  #  branches: [ main ]
   workflow_dispatch:
     inputs:
       folder:
@@ -48,3 +46,4 @@ jobs:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_REGION: 'us-east-1'
           SOURCE_DIR: 'build/site'
+          DEST_DIR: ${{ github.event.inputs.folder }}

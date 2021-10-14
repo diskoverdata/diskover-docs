@@ -4,6 +4,10 @@ on:
   #push:
   #  branches: [ main ]
   workflow_dispatch:
+    inputs:
+      folder:
+        description: 'Folder to deploy'
+        required: true
 
 jobs:
   build:
@@ -26,11 +30,12 @@ jobs:
         run: python3 -m pip install -r requirements.txt
 
       - name: Build website
-        run: python3 -m mkdocs build
-
-      - name: test
-        run: ls -la
-        working-directory: site
+        run: |
+          python3 -m mkdocs new build
+          cp -a ./${{ github.event.inputs.folder }}/. ./build/docs
+          cp ./mkdocs.yml ./build/mkdocs.yml
+          cd ./build
+          python3 -m mkdocs build
 
       - name: S3 Sync
         uses: awact/s3-action@0.1.1
@@ -41,4 +46,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_REGION: 'us-east-1'
-          SOURCE_DIR: 'site'
+          SOURCE_DIR: 'build/site'

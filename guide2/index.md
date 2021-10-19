@@ -61,3 +61,6 @@ On Premise Indexer(s) _-_ You can install Diskover Indexers on a server or virtu
 ```python
 yum -y update
 ```
+
+- [x] this is a complete item
+- [ ] this is an incomplete item

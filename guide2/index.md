@@ -13,7 +13,6 @@ On Premise Indexer(s) _-_ You can install Diskover Indexers on a server or virtu
 >**LINUX**:
 >
 >· 64-bit Red Hat Enterprise Linux Server, v7.x
->
 >· 64-bit CentOS 7.x
 >
 >· 64-bit Red Hat Enterprise Linux Server, v8.x

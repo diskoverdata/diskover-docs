@@ -3,8 +3,8 @@ name: Deploy to S3
 on:
   workflow_dispatch:
     inputs:
-      folder:
-        description: 'Folder to deploy'
+      config:
+        description: 'Config file path'
         required: true
 
 jobs:
@@ -25,11 +25,20 @@ jobs:
           architecture: x64
 
       - name: Install requirements
-        run: python3 -m pip install -r requirements.txt
+        run: |
+          python3 -m pip install -r requirements.txt
+          snap install yq
 
       - name: Build website
         run: |
-          python3 -m mkdocs new build
+          mkdir ./build
+          mkdir ./build/docs
+          
+          cp ./mkdocs.yml ./build/mkdocs.yml
+          yq w ./build/mkdocs.yml site_name $(yq r ${{ github.event.inputs.config }} website_name)
+          
+          
+          
           cp -a ./${{ github.event.inputs.folder }}/. ./build/docs
           cp -a ./shared/. ./build/docs
           cp ./mkdocs.yml ./build/mkdocs.yml

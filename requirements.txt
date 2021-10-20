@@ -17,4 +17,4 @@ repackage==0.7.3
 six==1.15.0
 termcolor==1.1.0
 tornado==6.0.4
-mdx_truly_sane_lists==1.2
+mdx-breakless-lists==1.0.1

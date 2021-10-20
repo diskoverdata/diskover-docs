@@ -6,4 +6,4 @@ theme:
        - 'stylesheets/extra.css'
 markdown_extensions:
     - mdx_breakless_lists
-    - markdown_checklist
+    - markdown_checklist.extension

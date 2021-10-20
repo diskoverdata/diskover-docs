@@ -31,6 +31,10 @@ On Premise Indexer(s) _-_ You can install Diskover Indexers on a server or virtu
 >- 4 CPU cores
 >- 4 GB RAM
 
+>**Test**:
+>- Not working on citations
+>- As you can see
+
 ### Diskover Indexer(s) Requirements TESTING
 
 On Premise Indexer(s) _-_ You can install Diskover Indexers on a server or virtual machine (VM) with:

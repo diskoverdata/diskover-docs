@@ -7,4 +7,3 @@ theme:
 markdown_extensions:
     - mdx_breakless_lists
     - markdown_checklist.extension
-    - nl2br

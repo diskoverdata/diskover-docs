@@ -36,14 +36,14 @@ On Premise Indexer(s) _-_ You can install Diskover Indexers on a server or virtu
 On Premise Indexer(s) _-_ You can install Diskover Indexers on a server or virtual machine (VM) with:
 
 **LINUX**:
-* 64-bit Red Hat Enterprise Linux Server, v7.x
-* 64-bit CentOS 7.x
-* 64-bit Red Hat Enterprise Linux Server, v8.x
-* 64-bit CentOS 8.x
+- 64-bit Red Hat Enterprise Linux Server, v7.x
+- 64-bit CentOS 7.x
+- 64-bit Red Hat Enterprise Linux Server, v8.x
+- 64-bit CentOS 8.x
 
 **WINDOWS**:
-1. 64-bit Windows, v8, v10, v11
-1. 64-bit Windows Server
+- 64-bit Windows, v8, v10, v11
+- 64-bit Windows Server
 
 **MAC**:
 - 64-bit MacOS v10.x, v11

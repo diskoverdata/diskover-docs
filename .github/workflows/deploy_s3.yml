@@ -41,7 +41,7 @@ jobs:
           i=0
           
           echo "Copying index"
-          cp $(yq e ".index_document" ${{ github.event.inputs.config }}) ./build/docs/index.md
+          cp ./shared/$(yq e ".index_document" ${{ github.event.inputs.config }}) ./build/docs/index.md
           
           yq e '.ordered_documents[]' ${{ github.event.inputs.config }} | while read line; do
             echo "Copying $line";

@@ -35,24 +35,25 @@ jobs:
           mkdir ./build/docs
           
           cp ./mkdocs.yml ./build/mkdocs.yml
+          yq --version
           yq w ./build/mkdocs.yml site_name $(yq r ${{ github.event.inputs.config }} website_name)
           
           
           
-          cp -a ./${{ github.event.inputs.folder }}/. ./build/docs
-          cp -a ./shared/. ./build/docs
-          cp ./mkdocs.yml ./build/mkdocs.yml
-          cd ./build
-          python3 -m mkdocs build
+#          cp -a ./${{ github.event.inputs.folder }}/. ./build/docs
+#          cp -a ./shared/. ./build/docs
+#          cp ./mkdocs.yml ./build/mkdocs.yml
+#          cd ./build
+#          python3 -m mkdocs build
 
-      - name: S3 Sync
-        uses: awact/s3-action@0.1.1
-        with:
-          args: --acl public-read --follow-symlinks --delete
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-          AWS_REGION: 'us-east-1'
-          SOURCE_DIR: 'build/site'
-          DEST_DIR: ${{ github.event.inputs.folder }}
+#       - name: S3 Sync
+#         uses: awact/s3-action@0.1.1
+#         with:
+#           args: --acl public-read --follow-symlinks --delete
+#         env:
+#           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+#           AWS_REGION: 'us-east-1'
+#           SOURCE_DIR: 'build/site'
+#           DEST_DIR: ${{ github.event.inputs.folder }}

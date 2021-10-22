@@ -51,13 +51,9 @@ jobs:
           
           echo "Copying images"
           cp -r ./shared/images ./build/docs/images
-          
-          ls -lRa ./build/
-          
+                    
           cd ./build
           python3 -m mkdocs build
-          
-
 
       - name: S3 Sync
         uses: awact/s3-action@0.1.1

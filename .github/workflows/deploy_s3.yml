@@ -35,10 +35,11 @@ jobs:
           mkdir ./build/docs
           
           cp ./mkdocs.yml ./build/mkdocs.yml
-          yq --version
-          yq w ./build/mkdocs.yml site_name $(yq r ${{ github.event.inputs.config }} website_name)
           
+          yq eval-all 'select(fileIndex==0).site_name = select(fileIndex==1).website_name' -i ./build/mkdocs.yml ${{ github.event.inputs.config }} 
+          cat ./build/mkdocs.yml
           
+          yq e '.ordered_documents[]' ${{ github.event.inputs.config }} 
           
 #          cp -a ./${{ github.event.inputs.folder }}/. ./build/docs
 #          cp -a ./shared/. ./build/docs

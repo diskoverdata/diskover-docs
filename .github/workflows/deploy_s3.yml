@@ -37,9 +37,11 @@ jobs:
           cp ./mkdocs.yml ./build/mkdocs.yml
           
           site_name=$(yq e '.website_name' ${{ github.event.inputs.config }}) yq e '.site_name = env(site_name)' -i ./build/mkdocs.yml
-          cat ./build/mkdocs.yml
           
           i=0
+          
+          echo "Copying index"
+          cp $(yq e ".index_document" ${{ github.event.inputs.config }}) ./build/docs/index.md
           
           yq e '.ordered_documents[]' ${{ github.event.inputs.config }} | while read line; do
             echo "Copying $line";
@@ -47,13 +49,15 @@ jobs:
             i=$((i+1))
           done
           
-          ls ./build/docs
+          echo "Copying images"
+          cp -r ./shared/images ./build/docs/images
           
-#          cp -a ./${{ github.event.inputs.folder }}/. ./build/docs
-#          cp -a ./shared/. ./build/docs
-#          cp ./mkdocs.yml ./build/mkdocs.yml
-#          cd ./build
-#          python3 -m mkdocs build
+          ls -lRa ./build/
+          
+          cd ./build
+          python3 -m mkdocs build
+          
+
 
 #       - name: S3 Sync
 #         uses: awact/s3-action@0.1.1

@@ -36,7 +36,7 @@ jobs:
           
           cp ./mkdocs.yml ./build/mkdocs.yml
           
-          yq e '.site_name = "$(yq e '.website_name' ${{ github.event.inputs.config }})"' ./build/mkdocs.yml
+          site_name=$(yq e '.website_name' ${{ github.event.inputs.config }}) yq e '.site_name = "env(site_name)"' ./build/mkdocs.yml
           cat ./build/mkdocs.yml
           
           while read -r line; do

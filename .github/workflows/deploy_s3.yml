@@ -39,9 +39,15 @@ jobs:
           site_name=$(yq e '.website_name' ${{ github.event.inputs.config }}) yq e '.site_name = env(site_name)' -i ./build/mkdocs.yml
           cat ./build/mkdocs.yml
           
+          i=0
+          
           yq e '.ordered_documents[]' ${{ github.event.inputs.config }} | while read line; do
-             echo "$line";
+            echo "Copying $line";
+            cp ./shared/$line ./build/docs/$i-$line;
+            i=$((i+1))
           done
+          
+          ls ./build/docs
           
 #          cp -a ./${{ github.event.inputs.folder }}/. ./build/docs
 #          cp -a ./shared/. ./build/docs

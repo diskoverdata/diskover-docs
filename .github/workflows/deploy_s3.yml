@@ -36,7 +36,7 @@ jobs:
           
           cp ./mkdocs.yml ./build/mkdocs.yml
           
-          yq eval-all 'select(fileIndex==0).site_name = select(fileIndex==1).website_name' -i ./build/mkdocs.yml ${{ github.event.inputs.config }} 
+          yq eval-all 'select(fileIndex==0).site_name = select(fileIndex==1).website_name' ./build/mkdocs.yml ${{ github.event.inputs.config }} 
           cat ./build/mkdocs.yml
           
           yq e '.ordered_documents[]' ${{ github.event.inputs.config }} 

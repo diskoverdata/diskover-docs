@@ -61,7 +61,7 @@ jobs:
         run: |
           aws s3 sync --delete --follow-symlinks ./build/site s3://$AWS_S3_BUCKET/$(yq e '.website_folder' ${{ github.event.inputs.config }})
           aws s3 cp ./404.html s3://$AWS_S3_BUCKET/404.html
-          aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/$(yq e '.website_folder' ${{ github.event.inputs.config }})" 
+          aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/$(yq e '.website_folder' ${{ github.event.inputs.config }})" >/dev/null 2>&1
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

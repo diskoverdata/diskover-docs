@@ -5,4 +5,4 @@ website_folder: diskover_installation_guide
 index_document: index_installation_guide.md
 ordered_documents:
   - first_page.md
-  - second_page.md
+

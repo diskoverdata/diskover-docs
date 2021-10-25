@@ -4,6 +4,7 @@ website_folder: diskover_installation_guide
 # All documents need to be in shared folder
 index_document: index_diskover_guides_generic_header.md
 ordered_documents:
+  - copyright.md
   - install_indexers_intro.md
   - install_indexers_linux.md
   - install_indexers_windows.md

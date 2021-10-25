@@ -2,7 +2,7 @@ website_name: Diskover AWS Customer Deployment Guide
 # Folder on the website, if you specify "folder" it will deploy this guide to https://docs.diskoverdata.com/folder
 website_folder: diskover_aws_deployment_guide
 # All documents need to be in shared folder
-index_document: index_aws_deployment_guide.md
+index_document: index_diskover_guides_generic_header.md
 ordered_documents:
   - first_page.md
   - second_page.md

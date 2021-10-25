@@ -12,26 +12,26 @@ The following outlines installing the Diskover indexer on Windows.
 
 ➡️ Copy  **diskover**  folder to  **Program Files**:
 
-```python
+```
 Xcopy C:\tmp\diskover "C:\Program Files\" /E /H /C /I
 ```
 
 ➡️ Install Python  dependencies required by Diskover. Open a command prompt and run as administrator:
 
-```python
+```
 pip3 install pywin32
 pip3 install requests
 pip3 install psutil
 pip3 install -r requirements.txt
 ```
 
-```python
+```
 mkdir %APPDATA%\diskover\
 mkdir %APPDATA%\diskover_autotag\
 mkdir %APPDATA%\diskover_dupesfinder\
 ```
 
-```python
+```
 copy "C:\Program Files\diskover\configs\diskover\config.yaml" %APPDATA%\diskover\
 copy "C:\Program Files\diskover\configs\diskover_autotag\config.yaml" %APPDATA%\diskover_autotag\
 copy "C:\Program Files\diskover\configs\diskover_dupesfinder\config.yaml" %APPDATA%\diskover_dupesfinder\
@@ -39,43 +39,43 @@ copy "C:\Program Files\diskover\configs\diskover_dupesfinder\config.yaml" %APPDA
 
 ➡️ Setup Diskover configuration file. Use Notepad to open the following configuration file:
 
-```python
+```
 %APPDATA%\diskover\config.yaml
 ```
 
 ➡️ Setup Elasticsearch  **host**  information:
 
-```python
+```
 host: localhost
 ```
 
 ➡️ Set Elasticsearch  **port**  information:
 
-```python
+```
 port: 9200
 ```
 
 ➡️ Configure  **username**:
 
-```python
+```
 user: myusername
 ```
 
 ➡️ Configure  **password**:
 
-```python
+```
 password: changeme
 ```
 
 ➡️ Set  **replacepaths**  in Windows  to  **True**:
 
-```python
+```
 replace: True
 ```
 
 ➡️ Generate an index/scan. Open command prompt or Windows  PowerShell as administrator:
 
-```python
+```
 cd 'C:\Program Files\Diskover\'
 python3 diskover.py -i diskover-vols-2021011501 C:\Users\paulh
 ```
@@ -86,28 +86,28 @@ If you open a command shell or PowerShell as administrator and the mounted files
 
 ➡️ To mount them:
 
-```python
+```
 PS C:\Windows\system32> net use p: \\172.19.19.6\SMBshare
 The command completed successfully.
 ```
 
-```python
+```
 PS C:\Windows\system32> net use x: \\172.19.19.6\P01_S99
 The command completed successfully.
 ```
 
-```python
+```
 PS C:\Windows\system32> net use  
 New connections will be remembered.
 ```
 
-```python
-Status     	 Local      	Remote						Network
+```
+Status      Local      	Remote				Network
 -------------------------------------------------------------------------------
-OK			 P:				\\172.19.19.6/SMBshare		Microsoft Windows Network
-OK			 X:				\\172.19.19.6/P01_S99		Microsoft Windows Network
-OK							\\172.19.19.6\SMBshare		Microsoft Windows Network
-							\\TSCLIENT\C				Microsoft Terminal Services
+OK	    P:		\\172.19.19.6/SMBshare		Microsoft Windows Network
+OK	    X:		\\172.19.19.6/P01_S99		Microsoft Windows Network
+OK			\\172.19.19.6\SMBshare		Microsoft Windows Network
+			\\TSCLIENT\C			Microsoft Terminal Services
 The command completed successfully.
 ```
 

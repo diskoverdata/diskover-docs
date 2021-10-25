@@ -55,24 +55,13 @@ jobs:
           cd ./build
           python3 -m mkdocs build
 
-#       - name: S3 Sync
-#         uses: awact/s3-action@0.1.1
-#         with:
-#           args: --acl public-read --follow-symlinks --delete
-#         env:
-#           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-#           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-#           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-#           AWS_REGION: 'us-east-1'
-#           SOURCE_DIR: 'build/site'
-#           DEST_DIR: ${{ github.event.inputs.folder }}
-
       - name: S3 sync
         run: |
-          aws s3 sync --delete --acl public-read --follow-symlinks ./build/site s3://$AWS_S3_BUCKET/$(yq e '.website_folder' ${{ github.event.inputs.config }}) 
+          aws s3 sync --delete --acl public-read --follow-symlinks ./build/site s3://$AWS_S3_BUCKET/$(yq e '.website_folder' ${{ github.event.inputs.config }})
+          aws cloudfront creatre-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*" 
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_REGION: 'us-east-1'
-        
+          DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}

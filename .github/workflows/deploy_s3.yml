@@ -69,8 +69,8 @@ jobs:
 
       - name: S3 sync
         run: |
-          aws s3 ls docs.diskoverdata.com
-#          aws s3 sync --delete --acl public-read --follow-symlinks ./build/site s3://$AWS_S3_BUCKET/$(yq e '.website_folder' ${{ github.event.inputs.config }}) 
+          aws s3 sync --delete --acl public-read --follow-symlinks ./build/site s3://$AWS_S3_BUCKET/$(yq e '.website_folder' ${{ github.event.inputs.config }}) 
+#          aws s3 ls docs.diskoverdata.com
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

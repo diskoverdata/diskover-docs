@@ -55,7 +55,7 @@ jobs:
           cd ./build
           python3 -m mkdocs build
           
-          rm -f ./404.html
+          rm -f ./site/404.html
 
       - name: S3 sync
         run: |

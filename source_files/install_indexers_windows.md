@@ -4,19 +4,19 @@ The following outlines installing the Diskover indexer on Windows.
 
 ### Install Python
 
-➡️ Get  **Python** **3.7 or greater**  from Windows  Store and install.
+➡️ Get **Python** **3.7 or greater** from Windows Store and install.
 
 ### Install Diskover Indexer
 
-➡️ Extract  **diskover**  folder.
+➡️ Extract **diskover** folder.
 
-➡️ Copy  **diskover**  folder to  **Program Files**:
+➡️ Copy **diskover** folder to **Program Files**:
 
 ```
 Xcopy C:\tmp\diskover "C:\Program Files\" /E /H /C /I
 ```
 
-➡️ Install Python  dependencies required by Diskover. Open a command prompt and run as administrator:
+➡️ Install Python dependencies required by Diskover. Open a command prompt and run as administrator:
 
 ```
 pip3 install pywin32
@@ -41,37 +41,37 @@ copy "C:\Program Files\diskover\configs\diskover_dupesfinder\config.yaml" %APPDA
 %APPDATA%\diskover\config.yaml
 ```
 
-➡️ Setup Elasticsearch  **host**  information:
+➡️ Setup Elasticsearch **host** information:
 
 ```
 host: localhost
 ```
 
-➡️ Set Elasticsearch  **port**  information:
+➡️ Set Elasticsearch **port** information:
 
 ```
 port: 9200
 ```
 
-➡️ Configure  **username**:
+➡️ Configure **username**:
 
 ```
 user: myusername
 ```
 
-➡️ Configure  **password**:
+➡️ Configure **password**:
 
 ```
 password: changeme
 ```
 
-➡️ Set  **replacepaths**  in Windows  to  **True**:
+➡️ Set **replacepaths** in Windows to **True**:
 
 ```
 replace: True
 ```
 
-➡️ Generate an index/scan. Open command prompt or Windows  PowerShell as administrator:
+➡️ Generate an index/scan. Open command prompt or Windows PowerShell as administrator:
 
 ```
 cd 'C:\Program Files\Diskover\'
@@ -111,6 +111,6 @@ The command completed successfully.
 
 ### Verify Index Creation
 
-➡️ Open a Web browser to:  [http://localhost:9200/_cat/indices](http://localhost:9200/_cat/indices)
+➡️ Open a Web browser to: <a href=“http://localhost:9200/_cat/indices”>http://localhost:9200/_cat/indices</a>
 
-![Image: screenshot_diskover_indexers_install_for_windows_verify_index_creation.png](images/screenshot_diskover_indexers_install_for_windows_verify_index_creation.png)
+![Image: Verify Index Creation](images/image_indexers_install_for_windows_verify_index_creation.png)

@@ -76,7 +76,6 @@ path.logs: /var/log/elasticsearch
 
 >_Note_: Change from default location below if desired.
 
-
 ➡️ Configure the Elasticsearch Bootstrap Memory variable to **true**:
 ```
 bootstrap.memory_lock: true

@@ -1,0 +1,219 @@
+## Diskover-Web Linux Installation - CentOS and RHEL
+
+This section will cover how to configure Linux to be a Web server using CentOS and RHEL.
+
+### Install NGINX
+
+➡️ The following will install the NGINX Web server application:
+```
+yum -y install epel-release yum-utils
+yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+yum -y install nginx
+systemctl enable nginx
+systemctl start nginx
+systemctl status nginx
+```
+
+### NGINX Changes Required for CentOS 8.X / RHEL
+
+➡️ For SELinux add the following to allow NGINX to start as well:
+```
+semanage permissive -a httpd_t
+```
+
+### Install PHP 7 and PHP-FPM (fastcgi)
+
+➡️ Perform the following commands to install PHP and PHP-FPM:
+```
+yum-config-manager --enable remi-php74
+yum -y install php php-common php-fpm php-opcache php-pecl-mcrypt php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json
+```
+
+➡️ Set PHP configuration settings for NGINX:
+```
+vi /etc/php-fpm.d/www.conf
+```
+
+➡️ Change ownership to **nginx**:
+```
+user = nginx
+group = nginx
+```
+
+➡️ Uncomment and change the NGINX listen parameters:
+```
+listen.owner = nginx
+listen.group = nginx
+```
+
+➡️ Change the  NGINX listen socket:
+```
+listen = /var/run/php-fpm/php-fpm.sock
+```
+
+➡️ Change file system ownership, enable and start PHP-FPM service:
+```
+chown -R root:nginx /var/lib/php
+chown -R nginx:nginx /var/run/php-fpm/
+systemctl enable php-fpm
+systemctl start php-fpm
+systemctl status php-fpm
+```
+
+### Install Diskover-Web
+
+➡️ Copy Diskover-Web files:
+```
+cp -a diskover-web /var/www/
+```
+
+➡️ Edit the Diskover-Web configuration file **Constants.php** to authenticate against your Elasticsearch endpoint:
+```
+cd /var/www/diskover-web/src/diskover
+cp Constants.php.sample Constants.php
+vi Constants.php
+```
+
+➡️ Set your Elasticsearch **endpoint**, **port**, **username**, and **password**:
+```
+const ES_HOSTS = 'localhost';
+const ES_PORT = 9200;
+const ES_USER = 'strong_username';
+const ES_PASS = 'strong_password';
+```
+>_Note:_ Diskover-Web uses a number of files to store the profiles of preferences and tasks. The default install has sample files, but not the actual files. The following will copy the sample files and create default starting point files.
+
+➡️ Create actual files from the sample files **filename.txt.sample**:
+```
+cd /var/www/diskover-web/public
+for f in *.txt.sample; do cp $f "${f%.*}"; done
+chmod 660 *.txt
+```
+
+➡️ Create actual task files from the sample task files **filename.json.sample**:
+```
+cd /var/www/diskover-web/public/tasks/
+```
+
+➡️ Copy default/sample JSON files:
+```
+for f in *.json.sample; do cp $f "${f%.*}"; done
+chmod 660 *.json
+```
+
+➡️ Set the proper ownership on the default starting point files:
+```
+chown -R nginx:nginx /var/www/diskover-web
+```
+
+➡️ Configure the NGINX Web server with **diskover-web** configuration file:
+```
+vi /etc/nginx/conf.d/diskover-web.conf
+```
+
+➡️ Add the following to the **/etc/nginx/conf.d/diskover-web.conf** file:
+```
+server {
+        listen   8000;
+        server_name  diskover-web;
+        root   /var/www/diskover-web/public;
+        index  index.php index.html index.htm;
+        error_log  /var/log/nginx/error.log;
+        access_log /var/log/nginx/access.log;
+        location / {
+            try_files $uri $uri/ /index.php?$args =404;
+        }
+        location ~ \.php(/|$) {
+            fastcgi_split_path_info ^(.+\.php)(/.+)$;
+            set $path_info $fastcgi_path_info;
+            fastcgi_param PATH_INFO $path_info;
+            try_files $fastcgi_script_name =404; 
+            fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
+            #fastcgi_pass 127.0.0.1:9000;
+            fastcgi_index index.php;
+            include fastcgi_params;
+            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+            include fastcgi_params;
+            fastcgi_read_timeout 900;
+            fastcgi_buffers 16 16k;
+            fastcgi_buffer_size 32k;
+        }
+}
+```
+
+### NGINX Changes Required for CentOS 8.X / RHEL
+
+➡️ If **IPV6** is not in use or disabled comment out the following line in the `/etc/nginx/nginx.conf` file:
+```
+# listen       [::]:80 default_server;
+```
+
+➡️ This will keep NGINX from starting, restart NGINX:
+```
+systemctl restart nginx
+```
+
+### Open Firewall Ports for Diskover-Web
+
+➡️ Diskover-Web listens on **port 8000** by default. To open the firewall for ports required by Diskover-Web:
+```
+firewall-cmd --add-port=8000/tcp --permanent
+firewall-cmd --reload
+```
+
+### Modifications Required to Install Diskover-Web on CentOS 8.X / RHEL
+
+The **remi** repository is not needed, but access to the **EPEL repo** is for PHP modules. The issue is there are some PHP modules missing in the RHEL 8 distribution. The **php-pecl-mcrypt** module was dropped.
+
+➡️ The following modules need to be installed for **php-pecl-mcrypt**:
+```
+yum install libtomcrypt-devel
+  yum install libmcrypt-devel
+  yum install libmcrypt
+  yum install libtomcrypt
+```
+
+For more information: <a href=“https://hostadvice.com/how-to/how-to-install-mcrypt-on-centos-8/”>https://hostadvice.com/how-to/how-to-install-mcrypt-on-centos-8/</a>
+
+➡️ Make the following change in the **/etc/nginx/conf.d/diskover-web.conf**. Change the following line from:
+```
+fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
+```
+
+➡️ To:
+```
+fastcgi_pass unix:/var/run/php-fpm/www.sock;
+```
+
+➡️ Restart NGINX:
+```
+systemctl restart nginx
+```
+
+### Create a Test Web Page to Verify NGINX Configuration for Linux
+
+➡️ The following will create a test page to verify if the NGINX Web server configuration is properly configured (independent of the Diskover-Web application):
+```
+vi /var/www/diskover-web/public/info.php
+```
+
+➡️ Insert the following text:
+```
+<?php
+phpinfo();
+```
+
+➡️ For CentOS 8.X / RHEL insert the following text:
+```
+<?php
+phpinfo();
+phpinfo(INFO_MODULES);
+?>
+```
+
+➡️ Open a test page:
+```
+http://< diskover_web_host_ip >:8000/info.php
+```
+
+![Image: Test Web Server Configuration for Linux](images/image_diskover_web_install_for_linux_test_php.png)

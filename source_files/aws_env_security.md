@@ -9,13 +9,13 @@ Security begins with protecting your AWS Root account. The AWS root user has unl
 
 For more information and details please refer to AWS best practices link below.
 
-[https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+<a href=“https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html”>https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html</a>
 
 ## Configuring IAM Roles for Diskover
 
 Diskover Data recommends following AWS “least privilege access” policies when configuring AWS access policies among Diskover indexer(s), AWS Elasticsearch endpoint, and Diskover-Web server. Please refer to the documentation below.
 
-[https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/permissions-management.html](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/permissions-management.html)
+<a href=“https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/permissions-management.html”>https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/permissions-management.html</a>
 
 Once the initial install is validated and functioning, then the access to a policy will be modified to increase security. Create an IP Based Access Policy for ES Cluster, outlined in the [Modify Access Policy](#modify_access_policy) section. The specific IP address or subnet will need to be added for each:
 

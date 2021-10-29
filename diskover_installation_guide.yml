@@ -42,7 +42,21 @@ ordered_documents:
   - task_worker_linux.md
   - task_worker_windows.md
   - task_worker_mac.md  
-  
+  - time_zone_settings.md
+  - software_activation.md
+  - health_check_diskover_intro.md
+  - health_check_diskover_web.md
+  - health_check_elasticsearch.md
+  - uninstall_intro.md
+  - uninstall_elasticsearch.md
+  - uninstall_php.md
+  - uninstall_nginx.md
+  - uninstall_diskover_web.md
+  - uninstall_task_worker.md
+  - uninstall_indexers.md
+  - troubleshooting_intro.md
+  - troubleshooting_indexers.md
+  - troubleshooting_elasticsearch.md
   
   
   

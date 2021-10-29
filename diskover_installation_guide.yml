@@ -28,7 +28,6 @@ ordered_documents:
   - install_diskover_web_linux_centos_and_rhel_install_php.md
   - install_diskover_web_linux_centos_and_rhel_install_diskover_web.md
   - install_diskover_web_linux_ubuntu_intro.md
-  
   - install_diskover_web_windows_intro.md
   - install_diskover_web_windows_install_nginx.md
   - install_diskover_web_windows_install_php.md
@@ -57,7 +56,9 @@ ordered_documents:
   - troubleshooting_intro.md
   - troubleshooting_indexers.md
   - troubleshooting_elasticsearch.md
-  
-  
-  
+  - troubleshooting_diskover_web.md
+  - troubleshooting_misc.md
+  - support.md
+  - contact.md
+  - footer.md
   

@@ -5,7 +5,7 @@ A license key is needed for Diskover’s paid subscriptions. Unless otherwise ag
 
 ## Obtaining a License Key
 
-No license key is required for Diskover Data **Community** Edition. If you would like to request a demo license key or purchase a <a href=“https://www.diskoverdata.com/solutions/”>subscription for Diskover’s advanced solutions</a>, please contact your Diskover Data point of contact or <a href=“mailto:info@diskoverdata.com”>info@diskoverdata.com</a>.
+No license key is required for Diskover Data **Community** Edition. If you would like to request a demo license key or purchase a [subscription for Diskover’s advanced solutions](https://www.diskoverdata.com/solutions/), please contact your Diskover Data point of contact or <a href=“mailto:info@diskoverdata.com”>info@diskoverdata.com</a>.
 
 ### License Key for Linux
 

@@ -1,4 +1,4 @@
-### Install NGINX
+## Install NGINX
 
 ➡️ The following will install the NGINX Web server application:
 ```

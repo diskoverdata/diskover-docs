@@ -1,5 +1,5 @@
 ___
-# PREREQUISITES AND REQUIREMENTS
+# Prerequisites and Requirements
 
 ## Diskover Resource Requirements
 

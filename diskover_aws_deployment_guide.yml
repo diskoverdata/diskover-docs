@@ -16,8 +16,17 @@ ordered_documents:
   - requirements_diskover_indexers.md
   - requirements_skills.md
   - architecture_overview_aws.md
+  - aws_env_security.md
   
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  - install_diskover_web_launch.md
   

@@ -41,16 +41,16 @@ jobs:
           i=0
           
           echo "Copying index"
-          cp ./shared/$(yq e ".index_document" ${{ github.event.inputs.config }}) ./build/docs/index.md
+          cp ./source_files/$(yq e ".index_document" ${{ github.event.inputs.config }}) ./build/docs/index.md
           
           yq e '.ordered_documents[]' ${{ github.event.inputs.config }} | while read line; do
             echo "Copying $line";
-            cp ./shared/$line ./build/docs/$i-$line;
+            cp ./source_files/$line ./build/docs/$i-$line;
             i=$((i+1))
           done
           
           echo "Copying images"
-          cp -r ./shared/images ./build/docs/images
+          cp -r ./source_files/images ./build/docs/images
                     
           cd ./build
           python3 -m mkdocs build

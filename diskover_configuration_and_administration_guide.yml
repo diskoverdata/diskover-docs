@@ -4,5 +4,10 @@ website_folder: diskover_configuration_and_administration_guide
 # All documents need to be in shared folder
 index_document: index_diskover_guides_generic_header.md
 ordered_documents:
-  - first_page.md
-  - second_page.md
+  - intro_copyright.md
+  - intro_guide_intended_for.md
+  - intro_tech_guides_main_intro.md
+  - intro_tech_guides_use_cases.md
+  - intro_tech_guides_aws_approved.md
+  - intro_doc_conventions.md
+  

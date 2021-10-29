@@ -108,9 +108,9 @@ pip3 install boto3
 
 After you will need to set up and configure AWS credentials, etc. for **boto3**:
 
-<a href=“https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html”>https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html</a>
+[https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html)
 
-<a href=“https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html”>https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html</a>
+[https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html)
 
 ➡️ Scan and index a **s3** bucket _**bucketname**_ using an auto-index name:
 

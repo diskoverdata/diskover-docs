@@ -17,6 +17,14 @@ ordered_documents:
   - requirements_skills.md
   - architecture_overview_aws.md
   - aws_env_security.md
+  - install_elasticsearch_aws.md
+  - install_diskover_web_aws_intro.md
+  - install_diskover_web_aws_ec2_config.md
+  - install_diskover_web_aws_nginx.md
+  - install_diskover_web_aws_php.md
+  - install_diskover_web_aws_software.md
+  - install_diskover_web_launch.md  
+  - install_indexers_intro.md
   
   
   
@@ -25,10 +33,7 @@ ordered_documents:
   
   
   
-  
-  
-  
-  - install_diskover_web_launch.md
+
   
   
   - software_activation.md

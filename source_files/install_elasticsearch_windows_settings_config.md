@@ -15,7 +15,7 @@
 ```
 bootstrap.memory_lock: true
 ```
-![Image: Elasticsearch  Settings Configuration (Part 2)](image_elasticsearch_install_for_windows_config_bootstrap_memory.png)
+![Image: Elasticsearch  Settings Configuration (Part 2)](images/image_elasticsearch_install_for_windows_config_bootstrap_memory.png)
 
 ➡️ Restart the Elasticsearch service and then open a **cmd prompt**.
 ```

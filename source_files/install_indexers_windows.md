@@ -26,12 +26,20 @@ pip3 install -r requirements.txt
 ```
 ```
 mkdir %APPDATA%\diskover\
+```
+```
 mkdir %APPDATA%\diskover_autotag\
+```
+```
 mkdir %APPDATA%\diskover_dupesfinder\
 ```
 ```
 copy "C:\Program Files\diskover\configs\diskover\config.yaml" %APPDATA%\diskover\
+```
+```
 copy "C:\Program Files\diskover\configs\diskover_autotag\config.yaml" %APPDATA%\diskover_autotag\
+```
+```
 copy "C:\Program Files\diskover\configs\diskover_dupesfinder\config.yaml" %APPDATA%\diskover_dupesfinder\
 ```
 

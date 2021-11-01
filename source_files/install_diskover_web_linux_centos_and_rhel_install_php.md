@@ -7,9 +7,8 @@ yum -y install php php-common php-fpm php-opcache php-pecl-mcrypt php-cli php-gd
 ```
 
 ➡️ Set PHP configuration settings for NGINX:
-```
-vi /etc/php-fpm.d/www.conf
-```
+
+`vi /etc/php-fpm.d/www.conf`
 
 ➡️ Change ownership to **nginx**:
 ```
@@ -24,9 +23,8 @@ listen.group = nginx
 ```
 
 ➡️ Change the  NGINX listen socket:
-```
-listen = /var/run/php-fpm/php-fpm.sock
-```
+
+`listen = /var/run/php-fpm/php-fpm.sock`
 
 ➡️ Change file system ownership, enable and start PHP-FPM service:
 ```

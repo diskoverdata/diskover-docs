@@ -8,6 +8,5 @@
 ```
 
 ➡️ Elevate from EC2-user to root:
-```
-sudo -s
-```
+
+`sudo -s`

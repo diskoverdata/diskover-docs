@@ -3,19 +3,3 @@
 The following reference page describes how to identify and solve common Amazon Elasticsearch Service (Amazon ES) issues. Consult the information in this section before contacting AWS Support. 
 
 [https://docs.aws.amazon.com/opensearch-service/latest/developerguide/handling-errors.html](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/handling-errors.html)
-
-## Diskover-Web
-
-### Diskover-Web for Linux
-
-➡️ To view log files associated with Diskover-Web errors:
-```
-tail -f /var/log/nginx/error.log
-```
-
-### Diskover-Web for Windows
-
-➡️ To view log files associated with Diskover-Web errors:
-```
-C:\Program Files\Nginx\nginx-1.19.6\logs\error.log
-```

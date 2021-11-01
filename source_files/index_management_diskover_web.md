@@ -45,5 +45,5 @@ The following confirmation of successful index deletion will be displayed:
 ![Image: Reload Indices](images/image_indices_reload_indices.png)
 
 >_Note:_ Attempting to delete an index that is actively loaded in the Diskover-Web will result in the error message below. The index must first be unloaded as described in this section.
-
-![Image: Indices Removal Error Message](images/image_indices_delete_index_error_msg.png)
+>
+>![Image: Indices Removal Error Message](images/image_indices_delete_index_error_msg.png)

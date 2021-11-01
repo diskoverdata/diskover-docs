@@ -1,5 +1,5 @@
 ___
-# <a id="task_config_files"></a>Chapter 6 - Task Configuration Files
+# <a id="task_config_files"></a>Task Configuration Files
 
 ## Configuration of File Locations
 

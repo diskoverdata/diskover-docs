@@ -13,6 +13,5 @@ systemctl status nginx
 ### NGINX Changes Required for CentOS 8.X / RHEL
 
 ➡️ For SELinux add the following to allow NGINX to start as well:
-```
-semanage permissive -a httpd_t
-```
+
+`semanage permissive -a httpd_t`

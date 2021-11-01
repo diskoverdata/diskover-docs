@@ -25,20 +25,29 @@ ordered_documents:
   - install_diskover_web_aws_software.md
   - install_diskover_web_launch.md  
   - install_indexers_intro.md
-  
-  
-  
-  
-  
-  
-  
-  
-
-  
-  
+  - install_indexers_aws.md
   - software_activation.md
-  
-  
+  - health_check_diskover_intro.md
+  - health_check_diskover_web_linux.md
+  - health_check_elasticsearch_linux.md
+  - backup_and_recovery_intro.md
+  - backup_and_recovery_setup.md
+  - backup_and_recovery_elasticsearch.md
+  - backup_and_recovery_indexers.md
+  - backup_and_recovery_diskover_web.md
+  - maintenance_routine_intro.md
+  - maintenance_routine_diskover_web.md
+  - maintenance_routine_elasticsearch_aws.md  
+  - maintenance_emergency_intro.md
+  - maintenance_emergency_diskover_web.md
+  - maintenance_emergency_elasticsearch_aws.md
+  - troubleshooting_intro.md
+  - troubleshooting_indexers_intro.md
+  - troubleshooting_indexers_linux.md
+  - troubleshooting_elasticsearch_aws.md
+  - troubleshooting_diskover_web_intro.md
+  - troubleshooting_diskover_web_linux.md
+  - troubleshooting_misc.md
   - support.md
   - contact.md
   - footer.md

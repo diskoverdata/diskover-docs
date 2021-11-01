@@ -1,0 +1,88 @@
+___
+# <a id="task_management"></a>Task Management
+
+## Distributed Architecture and Management
+
+Diskover has a distributed task system where workers can be distributed among many resources. For each resource providing a task worker, services will need to have  **diskoverd**  installed.  [Chapter 7 of the Diskover Installation Guide](https://www.diskoverdata.com/resources/documentation/)  details setting up the  **diskoverd** task service. This section will describe setting up both indexing and custom tasks within the Diskover-Web Task Panel.
+
+![Image: Diskover Architecture Reference Diagram](https://www.diskoverdata.com/wp-content/uploads/2021/10/diagram_diskover_architecture_reference_generic_with_border.png)
+
+_[Click here for a full view of the diagram.](https://www.diskoverdata.com/wp-content/uploads/2021/10/diagram_diskover_architecture_reference_generic_with_border.png)_
+
+## Validate Task Management System has Task Worker(s)
+
+➡️ Open the Task Panel within the Diskover-Web user interface > **gear icon** >  **Task Panel** and go to  **Workers**  tab.
+
+➡️ Ensure the presence of at least one online task worker under  **Status**  column.
+
+![Image: Tasks Management System](https://www.diskoverdata.com/wp-content/uploads/2021/09/screenshot_diskover_tasks_management_system_logo_diskover_20210913.png)
+
+## Managing Diskover Tasks via the Task Panel
+
+The following will illustrate how to create basic indexing and custom tasks via the Diskover Task Panel.
+
+### Index Tasks
+
+A default indexing task is provided in the task panel. The configuration of indexing tasks is different for Posix File Systems and S3 based object storage, the following will illustrate setting up basic indexing tasks for each.
+
+#### Posix File System Indexing Task
+
+➡️ Select  **New Index Task**  from >  **Task Panel**  >  **Task List** tab:
+
+![Image: New Index Task Selection](https://www.diskoverdata.com/wp-content/uploads/2021/09/screenshot_diskover_tasks_new_index_task_selection_logo_diskover_annotated_20210913.png =600x221)
+
+The following  **Create New Index Task**  dialog box will appear. Configure as follow:
+
+➡️ Name:  **index-_volumename_**  (where  _**volumename**_  is the name of volume, in this example  **snfs2**)
+
+➡️ Crawl Directory(s):  **/mnt/_volumedir_**  (where  _**volumedir**_  is the volume mountpoint, in this example  **/mnt/snfs2**)
+
+➡️ Auto Index Name:  unselect box
+
+➡️ Custom Index Name:  **diskover-_volumename_-%Y%m%d%H**
+
+![Image: New Index Task Creation](https://www.diskoverdata.com/wp-content/uploads/2021/09/screenshot_diskover_tasks_new_index_task_creation_logo_diskover_original_20210913.png.png)
+
+➡️ A schedule is required to create the indexing task. The example below >  **Hour**  >  **1**  will run the indexing task every day at 1:00 am.
+
+![Image 1 - Configure Schedule for New Index Task](https://www.diskoverdata.com/wp-content/uploads/2021/09/screenshot_diskover_tasks_config_schedule_for_new_index_task_logo_diskover_original_20210913.png)
+
+➡️ To use a custom schedule to set the volume to index every hour from 7 am to 11pm for example, enter the following in the  **Custom Schedule**  box:
+```python
+0 7-23 * * *
+```
+![Image: Custom Schedule Configuration](https://www.diskoverdata.com/wp-content/uploads/2021/09/screenshot_diskover_tasks_custom_schedule_config_logo_diskover_original_20210913.png)
+
+➡️ Then select  **Create Task**:
+
+![Image: Create Task](https://www.diskoverdata.com/wp-content/uploads/2021/09/screenshot_diskover_tasks_create_task_button_original_20210913.png)
+
+#### S3 Bucket Indexing Task
+
+Indexing tasks for S3 buckets are slightly different than Posix File systems, the following outlines the configuration differences required in the  **Create New Index Task**  in the Task Panel.
+
+Configure the following differences for indexing S3 buckets:
+
+➡️ Crawl Directory(s):  **s3://_bucketname_**
+
+Where  **bucketname**  is the actual name of the S3 bucket desired for indexing, in example below, the bucket name is  **dps-offload:**
+
+![Image: S3 Bucket Indexing Task Configuration](https://www.diskoverdata.com/wp-content/uploads/2021/09/screenshot_diskover_tasks_s3_bucket_indexing_task_config_logo_diskover_original_20210913.png)
+
+➡️ If the [media info plugin](#media_info_plugin) is enabled in the default **config.yaml file**, then configure the following to disable the media info plugin for S3 based storage as described in [Chapter 6 - Diskover Task Configuration Files](#chapter_6).
+
+![Image: Disable Media Info Plugin for S3 Based Storage](https://www.diskoverdata.com/wp-content/uploads/2021/09/screenshot_diskover_tasks_disable_media_info_plugin_for_s3_storage_logo_diskover_original_20210913.png)
+
+#### Non S3 Bucket Indexing Task
+
+Indexing tasks for non-AWS S3 buckets is slightly different than the previous section. The following outlines the configuration differences required for alternate credentials and endpoints.
+
+In addition, you need to configure the **Environment Vars** for non-AWS S3 buckets:
+
+➡️ Where **profile** is the name of  **_desired_profile_**, as found in  **/root/.aws/credentials** (where  **_desired_profile_** in this example is  **wasabi-us**)
+
+➡️ Where  **_alternate_endpoint.com_**  is the URL of the S3 bucket (where  **_alternate_endpoint.com_** in this example is  **https://s3.us-central-1.wasabisys.com**)
+```python
+AWS_PROFILE=profile,S3_ENDPOINT_URL=https://alternate_endpoint.com
+```
+![Image: Non S3 Bucket Indexing Task Configuration](https://www.diskoverdata.com/wp-content/uploads/2021/09/screenshot_diskover_tasks_non_s3_storage_indexing_task_config_logo_diskover_original_20210913.png)

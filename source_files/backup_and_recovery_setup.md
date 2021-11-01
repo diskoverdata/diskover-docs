@@ -1,4 +1,4 @@
-## Setup Backup Environment
+## Setup Backup Environment for Linux
 
 The following explains how to create a backup of all data components of the Diskover environment. 
 

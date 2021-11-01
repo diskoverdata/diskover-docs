@@ -8,8 +8,9 @@ yum -y install php php-common php-fpm php-opcache php-pecl-mcrypt php-cli php-gd
 ```
 
 ➡️ Set PHP configuration settings for NGINX:
-
-`vi /etc/php-fpm.d/www.conf`
+```
+vi /etc/php-fpm.d/www.conf
+```
 
 ➡️ Change ownership to **nginx**:
 ```

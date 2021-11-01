@@ -23,8 +23,9 @@ listen.group = nginx
 ```
 
 ➡️ Change the  NGINX listen socket:
-
-`listen = /var/run/php-fpm/php-fpm.sock`
+```
+listen = /var/run/php-fpm/php-fpm.sock
+```
 
 ➡️ Change file system ownership, enable and start PHP-FPM service:
 ```

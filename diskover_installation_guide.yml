@@ -44,8 +44,10 @@ ordered_documents:
   - time_zone_settings.md
   - software_activation.md
   - health_check_diskover_intro.md
-  - health_check_diskover_web.md
-  - health_check_elasticsearch.md
+  - health_check_diskover_web_linux.md
+  - health_check_diskover_web_windows.md
+  - health_check_elasticsearch_linux.md
+  - health_check_elasticsearch_windows.md
   - uninstall_intro.md
   - uninstall_elasticsearch.md
   - uninstall_php.md
@@ -54,9 +56,13 @@ ordered_documents:
   - uninstall_task_worker.md
   - uninstall_indexers.md
   - troubleshooting_intro.md
-  - troubleshooting_indexers.md
-  - troubleshooting_elasticsearch.md
-  - troubleshooting_diskover_web.md
+  - troubleshooting_indexers_intro.md
+  - troubleshooting_indexers_linux.md
+  - troubleshooting_indexers_windows.md
+  - troubleshooting_elasticsearch_aws.md
+  - troubleshooting_diskover_web_intro.md
+  - troubleshooting_diskover_web_linux.md
+  - troubleshooting_diskover_web_windows.md
   - troubleshooting_misc.md
   - support.md
   - contact.md

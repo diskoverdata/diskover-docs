@@ -1,9 +1,8 @@
 ### Install Diskover-Web
 
 ➡️ Copy Diskover-Web files:
-```
-cp -a diskover-web /var/www/
-```
+
+`cp -a diskover-web /var/www/`
 
 ➡️ Edit the Diskover-Web configuration file **Constants.php** to authenticate against your Elasticsearch endpoint:
 ```
@@ -29,9 +28,8 @@ chmod 660 *.txt
 ```
 
 ➡️ Create actual task files from the sample task files **filename.json.sample**:
-```
-cd /var/www/diskover-web/public/tasks/
-```
+
+`cd /var/www/diskover-web/public/tasks/`
 
 ➡️ Copy default/sample JSON files:
 ```
@@ -40,14 +38,12 @@ chmod 660 *.json
 ```
 
 ➡️ Set the proper ownership on the default starting point files:
-```
-chown -R nginx:nginx /var/www/diskover-web
-```
+
+`chown -R nginx:nginx /var/www/diskover-web`
 
 ➡️ Configure the NGINX Web server with **diskover-web** configuration file:
-```
-vi /etc/nginx/conf.d/diskover-web.conf
-```
+
+`vi /etc/nginx/conf.d/diskover-web.conf`
 
 ➡️ Add the following to the **/etc/nginx/conf.d/diskover-web.conf** file:
 ```
@@ -82,14 +78,12 @@ server {
 ### NGINX Changes Required for CentOS 8.X / RHEL
 
 ➡️ If **IPV6** is not in use or disabled comment out the following line in the `/etc/nginx/nginx.conf` file:
-```
-# listen       [::]:80 default_server;
-```
+
+`# listen       [::]:80 default_server;`
 
 ➡️ This will keep NGINX from starting, restart NGINX:
-```
-systemctl restart nginx
-```
+
+`systemctl restart nginx`
 
 ### Open Firewall Ports for Diskover-Web
 
@@ -114,26 +108,22 @@ yum install libtomcrypt-devel
 For more information: <a href=“https://hostadvice.com/how-to/how-to-install-mcrypt-on-centos-8/”>https://hostadvice.com/how-to/how-to-install-mcrypt-on-centos-8/</a>
 
 ➡️ Make the following change in the **/etc/nginx/conf.d/diskover-web.conf**. Change the following line from:
-```
-fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
-```
+
+`fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;`
 
 ➡️ To:
-```
-fastcgi_pass unix:/var/run/php-fpm/www.sock;
-```
+
+`fastcgi_pass unix:/var/run/php-fpm/www.sock;`
 
 ➡️ Restart NGINX:
-```
-systemctl restart nginx
-```
+
+`systemctl restart nginx`
 
 ### Create a Test Web Page to Verify NGINX Configuration for Linux
 
 ➡️ The following will create a test page to verify if the NGINX Web server configuration is properly configured (independent of the Diskover-Web application):
-```
-vi /var/www/diskover-web/public/info.php
-```
+
+`vi /var/www/diskover-web/public/info.php`
 
 ➡️ Insert the following text:
 ```
@@ -150,8 +140,7 @@ phpinfo(INFO_MODULES);
 ```
 
 ➡️ Open a test page:
-```
-http://< diskover_web_host_ip >:8000/info.php
-```
+
+`http://< diskover_web_host_ip >:8000/info.php`
 
 ![Image: Test Web Server Configuration for Linux](images/image_diskover_web_install_for_linux_test_php.png)

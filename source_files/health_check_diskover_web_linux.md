@@ -5,9 +5,8 @@ To validate health of the Diskover-Web, basically ensures the Web serving applic
 ### Diskover-Web for Linux
 
 ➡️ Check status of NGINX service:
-```
-systemctl status nginx
-```
+
+`systemctl status nginx`
 
 ![Image: Health Check Diskover-Web for Linux](images/image_health_check_linux_diskover_web.png)
 

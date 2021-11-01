@@ -10,17 +10,33 @@ ordered_documents:
   - intro_tech_guides_use_cases.md
   - intro_tech_guides_aws_approved.md
   - intro_doc_conventions.md
+  - user_roles_and_auth.md
+  - path_translation.md
+  - tags_intro.md
+  - tags_application_methods_intro.md
+  - tags_application_methods_autotag.md
+  - tags_application_methods_diskover_api.md
+  - tags_application_methods_harvest_plugin.md
+  - tags_application_methods_manual.md
+  - tags_migration.md
+  - tags_display_in_ui.md
+  - reporting_intro.md
+  - reporting_smart_searches.md
+  - reporting_cost_analysis.md
+  - task_config_files.md
+  - task_management.md
+  - plugins_intro.md
+  - plugins_autoclean.md
+  - plugins_dupes.md
+  - plugins_index_differential.md
+  - plugins_media_harvest.md
+  - plugins_tag_copier.md
+  - plugins_unix_permissions.md
+  - plugins_display_extra_fields_in_ui.md
   
-
-
-
-
-
-
-
 
 
 
   - support.md
   - contact.md
-  
+  - footer.md

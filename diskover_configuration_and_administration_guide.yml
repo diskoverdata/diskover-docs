@@ -27,16 +27,27 @@ ordered_documents:
   - task_management.md
   - plugins_intro.md
   - plugins_autoclean.md
-  - plugins_dupes.md
+  - plugins_dupes_finder.md
   - plugins_index_differential.md
   - plugins_media_harvest.md
   - plugins_tag_copier.md
   - plugins_unix_permissions.md
-  - plugins_display_extra_fields_in_ui.md
-  
-
-
-
+  - plugins_display_extra_fields.md
+  - index_management_intro.md
+  - index_management_diskover_web.md
+  - index_management_elasticsearch.md
+  - backup_and_recovery_intro.md
+  - backup_and_recovery_setup.md
+  - backup_and_recovery_elasticsearch.md
+  - backup_and_recovery_indexers.md
+  - backup_and_recovery_diskover_web.md
+  - maintenance_routine_intro.md
+  - maintenance_routine_diskover_web.md
+  - maintenance_emergency_intro.md
+  - maintenance_emergency_diskover_web.md
+  - maintenance_emergency_elasticsearch.md
+  - maintenance_emergency_elasticsearch_aws.md
+  - software_update_install.md
   - support.md
   - contact.md
   - footer.md

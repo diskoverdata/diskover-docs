@@ -5,7 +5,17 @@ website_folder: diskover_user_guide
 index_document: index_diskover_guides_header.md
 ordered_documents:
   - intro_copyright.md
-  - intro_guide_intended_for.md
+  - intro_guide_intended_for_user.md
+  - intro_user_guides_main_intro.md
+  
+  
+  
+  
+  
+  
+  
+  
+  
   - support.md
   - contact.md
   - footer.md

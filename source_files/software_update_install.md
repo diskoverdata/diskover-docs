@@ -5,7 +5,7 @@ When subscribing to a paid [Diskover Solution](https://www.diskoverdata.com/solu
 
 ## Software Update for Linux
 
-The update process for the Diskover Data curation platform consists of updating two parts: 1) the Diskover indexer(s), and 2) the Diskover-Web server.
+The update process for Diskover curation platform consists of updating two parts: 1) the Diskover indexer(s), and 2) the Diskover-Web server.
 
 The software can be updated using either 1) an update script that uses your Diskover ftp credentials to pull-down the latest version and update, or 2) extracting a tar file and copying the Diskover files to the proper locations.
 

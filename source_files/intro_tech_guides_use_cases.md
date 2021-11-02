@@ -1,4 +1,4 @@
-## Diskover Data Curation Use Cases
+## Diskover Use Cases
 
 Diskover addresses the organization and integration of unstructured data stored across a variety of storage repositories from Linux  and Windows  filesystems to S3 based storage. Inefficient data management often results in:
 

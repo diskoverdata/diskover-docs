@@ -5,7 +5,7 @@ website_folder: diskover_configuration_and_administration_guide
 index_document: index_diskover_guides_header.md
 ordered_documents:
   - intro_copyright.md
-  - intro_guide_intended_for.md
+  - intro_guide_intended_for_tech.md
   - intro_tech_guides_main_intro.md
   - intro_tech_guides_use_cases.md
   - intro_tech_guides_aws_approved.md

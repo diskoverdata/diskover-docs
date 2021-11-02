@@ -1,7 +1,7 @@
 ___
 # Additional Business Context Metadata via Tagging
 
-One of the powerful features of the Diskover Data curation Platform is the ability to add “business context” to the index of files. Business context enables:
+One of the powerful features of Diskover is the ability to add “business context” to the index of files. Business context enables:
 
 - Increased findability and searchability based on one or more combination of fields, for example, name and tag value.
 - More informed and accurate data curation decisions.

@@ -1,7 +1,7 @@
 ___
 # <a id="plugins"></a>Plugins
 
-The Diskover curation platform is designed for extensibility. The open-source architecture is designed to promote extensibility via plugins.
+Diskover is designed for extensibility. The open-source architecture is designed to promote extensibility via plugins.
 
 ## Plugins Installation
 

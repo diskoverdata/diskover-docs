@@ -1,7 +1,7 @@
 ___
 # <a id=“introduction”></a>Introduction
 
-An unparalleled data management solution, Diskover consolidates in a global index unstructured data spread across heterogeneous repositories. Cutting-edge analytical tools combined with uniquely fast search capabilities empower all levels of an organization to have their own relationship with data, resulting in informed decision making, significant operating costs reduction, along with enhanced workflows and their monetization.
+An unparalleled data management solution, Diskover consolidates in a global index unstructured data spread across heterogeneous repositories. Cutting-edge analytical tools and automated tasks, combined with uniquely fast search capabilities empower all levels of an organization to have their own relationship with data, resulting in informed decision making, lower operating costs, along with enhanced workflows and their monetization.
 
 The Diskover curation platform addresses the growing complexity associated with managing unstructured data in a hybrid environment. While the unstructured data management problem has been around for some time, the complexity is skyrocketing due to recent developments. The move to the cloud accelerated over the last year due to COVID-19, remote workers, and the overall view that cloud is more viable these days. Large organizations have now adopted and leveraged hybrid cloud models.
 

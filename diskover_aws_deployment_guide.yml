@@ -11,6 +11,7 @@ ordered_documents:
   - intro_tech_guides_aws_approved.md
   - intro_doc_conventions.md
   - requirements_intro.md
+  - requirements_aws_resource.md
   - requirements_elasticsearch_aws.md
   - requirements_diskover_web_aws.md
   - requirements_diskover_indexers.md

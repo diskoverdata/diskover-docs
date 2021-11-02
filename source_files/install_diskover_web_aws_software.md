@@ -97,6 +97,7 @@ fastcgi_pass unix:/var/run/php-fpm/www.sock;
 ```
 systemctl restart nginx
 ```
+@@include[test_nginx_snippet.md](includes/test_nginx_snippet.md)
 
 (test_nginx_snippet.md)
 

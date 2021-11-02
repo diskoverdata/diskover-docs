@@ -7,6 +7,6 @@ This document is intended for Service Professionals and System Administrators wh
 	- EC2 Operating System on which Diskover-Web HTML5 user interface is installed.
 	- Configuring Web Server (Apache or NGINX).
 
-Attempting to configure Diskover Data curation platform without proper experience or training can affect system performance and security configuration.
+Attempting to install and configure Diskover without proper experience or training can affect system performance and security configuration.
 
-The initial install, configuration, and deployment of the Diskover Data curation platform is expected to take between 1 to 3 hours depending on time consumed with network connectivity.
+The initial install, configuration, and deployment of the Diskover curation platform is expected to take between 1 to 3 hours depending on time consumed with network connectivity.

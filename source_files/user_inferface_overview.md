@@ -1,5 +1,5 @@
 ___
-# <a id="user_interface"></a>User Interface
+# <a id="user_interface"></a>User Interface Overview
 
 ## Terminology
 

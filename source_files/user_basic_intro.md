@@ -83,7 +83,7 @@ When you click in the search bar, a dark grey overlay rectangle will appear unde
 
 You can also find tips, see blue font, for search query examples right under the search bar.
 
-![Image: Grey Overlay when Clicking in Search Bar](images/images/image_file_search_grey_overlay_when_clicking_searchbar.png)
+![Image: Grey Overlay when Clicking in Search Bar](images/image_file_search_grey_overlay_when_clicking_searchbar.png)
 
 ### No Items Found
 

@@ -42,7 +42,7 @@ A) Open a  **Web browser**  of your choice and type the  **URL address**  that w
 B) Enter the  **Username**  and  **Password**. Your System Administrator configures the login mechanism.
 C) Click on  **Login**.
 
-![Image: Login Window](images/image_login_window_logo_diskover.png 200x300)
+![Image: Login Window](images/image_login_window_logo_diskover.png)
 
 ## <a id="tour_user_interface"></a>Quick Tour of the User Interface
 

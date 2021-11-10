@@ -4,11 +4,11 @@ The file tree  report profiles the size and aging of files, in a selected storag
 
 ### Accessing the File Tree Report
 
-1. Via the  **Analytics**  drop-down list:
+Via the  **Analytics**  drop-down list:
 
 ![Image: Accessing File Tree Report via Analytics](images/image_analytics_file_tree_access_via_analytics_dropdown.png)
 
-2. Via the search page by clicking this icon:
+Via the search page by clicking this icon:
 
 ![Image: File Tree Report via the Search Page](images/image_analytics_file_tree_access_via_search_pane.png)
 

@@ -11,6 +11,8 @@ A storage location that you want to index, for example: Windows Share/drive, Lin
 
 Examples of other names for storage volume that might be used in your organization: storage mount, mount point, top level path, top level storage directory, volume.
 
+Read more about [how to select a volume](#select_volume).
+
 ### <a id="index"></a>Index/Indices
 
 An index is an inventory of all the files on a storage volume; it allows the data to be searched quickly via the index instead of the operating system  find commands. Both  **indexes**  and  **indices**  have the same meaning, and are the plural of index, although indices is usually preferred in a technical context.
@@ -22,9 +24,13 @@ An index is an inventory of all the files on a storage volume; it allows the dat
 	- Adds schedule context.
 	- Allow searches on image attributes for media files (resolution, frame rate, color bits), etc.
 
+Read more about [how to use indices](#indices).
+
 ### <a id="directory"></a>Directory/Folder
 
 There are very subtle differences between a directory and a folder, but in the context of this guide, they are interchangeable and have the same meaning: a container to store/organize other directories/folders and files.
+
+Read more about [how to select a directory](#select_directory).
 
 ### <a id=“recursive”></a>Recursive and Non-Recursive
 

@@ -123,7 +123,7 @@ B) Via the  **path navigation bar**.
 C) Via the  **drop-down list**  at the top right corner.
 
 ## <a id="select_directory"></a>How to Select a Directory
-![enter image description here](images/image_file_search_page_select_directory.png)
+![Image: How to Select a Directory](images/image_file_search_page_select_directory.png)
 
 A) Via the  **left pane**  below the storage volumes – click on a directory to drill down the file tree.
 

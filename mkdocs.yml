@@ -6,6 +6,6 @@ markdown_extensions:
     - mdx_breakless_lists
     - markdown_checklist.extension
 extra_javascript:
-    - javascript/script.js
+    - javascript/extra.js
 extra_css:
-    - css/style.css
+    - css/extra.css

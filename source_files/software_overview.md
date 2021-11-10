@@ -54,7 +54,7 @@ Here is a brief list of shared roles:
 
 ## Use Cases
 
-Diskover offers numerous search tools, reports, and other functions to fulfill the needs of all stakeholders and different business verticals.
+Diskover offers numerous search tools, reports, and other manual, as well as automated functions, to fulfill the needs of all stakeholders and different business verticals.
 
 Let’s use the example of the Media and Entertainment environment. With theatrical workflows, there is the need to protect content from piracy; facilities often build two completely independent networks 1) where users have access to the internet, and 2) a production network with no internet access and strict controls on personnel that have access to this network. However, in production workflows, Customer Service Representatives, Producers, and Operations often need to search the production network. Diskover provides visibility to search for content, without providing access to the actual content.
 

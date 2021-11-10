@@ -31,3 +31,9 @@ Focused on meeting customer needs with proven services and support.
 ## Feedback
 
 Please email Diskover at [info@diskoverdata.com](mailto:info@diskoverdata.com)
+
+## Warranty & Liability Information
+
+Please refer to the Diskover End-User License Agreement for the latest warranty and liability disclosures that can be found online at the following address:  
+
+https://www.diskoverdata.com/legal-docs/

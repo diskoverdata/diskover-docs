@@ -62,7 +62,7 @@ A) **Company logo**: No functions.
 
 B) [**Dashboard**](#dashboard): Offers a visual summary of a selected storage volume.
 
-C) <img src=“images/icon_you_are_here.png” width="15" height="20"> (#file_search): The file search tool with which most users will interact.
+C) <img src=“images/icon_you_are_here.png” width="15" height="20"> [File Search](#file_search): The file search tool with which most users will interact.
 
 D) **Analytics**: Built-in data analytic reports.
 

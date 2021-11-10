@@ -8,7 +8,7 @@ Access via the  **Analytics**  drop-down list:
 
 ![Image: Access Smart Searches](images/image_analytics_smart_searches_access_via_analytics_dropdown.png)
 
-<img src="images/image_analytics_smart_searches_access_via_analytics_dropdown.png" 400x>
+<img src="images/image_analytics_smart_searches_access_via_analytics_dropdown.png" =400x>
 
 All saved reports can be found in this view offering a quick graphical snapshot:
 

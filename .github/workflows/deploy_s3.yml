@@ -35,19 +35,15 @@ jobs:
           mkdir ./build/docs
           
           cp ./mkdocs.yml ./build/mkdocs.yml
-          cp ./.pages ./build/.pages
+          cp -r ./javascript ./build/docs/javascript
+          cp -r ./css ./build/docs/css
           
           site_name=$(yq e '.website_name' ${{ github.event.inputs.config }}) yq e '.site_name = env(site_name)' -i ./build/mkdocs.yml
           
-          i=0
-          
-          echo "Copying index"
-          cp ./source_files/$(yq e ".index_document" ${{ github.event.inputs.config }}) ./build/docs/index.md
-          
-          yq e '.ordered_documents[]' ${{ github.event.inputs.config }} | while read line; do
-            echo "Copying $line";
-            cp ./source_files/$line ./build/docs/$i-$line;
-            i=$((i+1))
+          yq e '.ordered_documents[]' ${{ github.event.inputs.config }} | while read file; do
+            echo "Copying $file";
+            cat ./source_files/$file >> ./build/docs/content.md
+            echo "\n" >> ./build/docs/content.md
           done
           
           echo "Copying images"
@@ -57,7 +53,7 @@ jobs:
           python3 -m mkdocs build
           
           rm -f ./site/404.html
-
+          
       - name: S3 sync
         run: |
           aws s3 sync --delete --follow-symlinks ./build/site s3://$AWS_S3_BUCKET/$(yq e '.website_folder' ${{ github.event.inputs.config }})

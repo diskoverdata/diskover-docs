@@ -8,23 +8,26 @@ ordered_documents:
   - intro_guide_intended_for_user.md
   - intro_user_guides_main_intro.md
   - software_overview.md
-  - user_inferface_tour.md
+  - user_inferface_overview.md
   - user_interface_settings.md
   - search_syntax.md
   - user_basic_intro.md
-  - user_basic_quick_search.md
+  - user_basic_file_search.md
   - user_basic_search_filters.md
   - user_basic_line_selection.md
   - user_basic_export.md
   - user_basic_share.md
   - user_basic_smart_searches.md
+  - user_basic_quick_search.md
   - user_basic_dashboard.md
-  
-  
-  
-  
-  
-  
+  - user_advanced_intro.md 
+  - user_advanced_tags.md
+  - user_advanced_indices.md
+  - user_advanced_file_tree.md
+  - user_advanced_treemap.md
+  - user_advanced_heatmap.md
+  - user_advanced_user_analysis.md 
+  - user_advanced_cost_analysis.md
   - support.md
   - contact.md
   - footer.md

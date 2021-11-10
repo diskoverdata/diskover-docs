@@ -35,6 +35,7 @@ jobs:
           mkdir ./build/docs
           
           cp ./mkdocs.yml ./build/mkdocs.yml
+          cp ./.pages ./build/.pages
           
           site_name=$(yq e '.website_name' ${{ github.event.inputs.config }}) yq e '.site_name = env(site_name)' -i ./build/mkdocs.yml
           

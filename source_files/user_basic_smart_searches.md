@@ -5,7 +5,7 @@ Smart searches were designed for repeatable reports; they are basically saved se
 The smart searches  tool comes with pre-defined searches, but those queries can be customized by someone with and admin account.
 
 Access via the  **Analytics**  drop-down list:
-
+![Image: Access Smart Searches](images/image_analytics_smart_searches_access_via_analytics_dropdown.png)
 ![Image: Access Smart Searches](images/image_analytics_smart_searches_access_via_analytics_dropdown.png){:height="700px" width="400px"}
 
 All saved reports can be found in this view offering a quick graphical snapshot:

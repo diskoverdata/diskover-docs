@@ -22,17 +22,19 @@ Data curation is the practice of managing data collected from various sources as
 - Points in time indices snapshots, allowing to search and compare indexed data, as well as analyze anomalies.
 - The powerful [heatmap report](#heatmap) is unique to Diskover.
 
-## Improves Workflows and Reduces Operating Costs
+## Improves File-Based Workflows, Assist with Reducing Operating Costs, and Increasing Revenues
 
 - Harvests metadata to add business context to extensive searches and analytics.
 - Enables everyone to accurately answer questions with the simplicity of clever search queries, which provide immediate relevant information.
 - Enhances collective efficiency by streamlining file-based workflows.
-- Assists all stakeholders in making the right data related decisions about time, resources, and investments.
+- The various analytical tools assist all stakeholders in making the right data related decisions about time, resources, and investments.
 - Significantly improves the efficiency of the organization and its people, in addition to reducing storage cost.
+- The [cost analysis tool](#cost_analysis) assist with charging clients accurately for storage space.
 
 ## <a id="consumers_of_data"></a>Consumers of Data
 
 Diskover allows all stakeholders within an organization to have their own specific relationship with data. Here is an example of Line of Business Users, their needs, and challenges:
+
 ![Image: Consumers of Data Diagram](images/diagram_diskover_consumers_of_data_with_border.png)
 
 _[Click here for a full screen view of the Consumers of Data diagram.](images/diagram_diskover_consumers_of_data_with_border.png)_

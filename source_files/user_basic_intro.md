@@ -5,7 +5,7 @@ ___
 
 ### Opening the Search Page
 
-![enter image description here](images/image_file_search_page_with_charts.png)
+![Image: Accessing the Search Page](images/image_file_search_page_with_charts.png)
 
 A) Click the **folder icon** to access the file search page, this will be the view by default.
 

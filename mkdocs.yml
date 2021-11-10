@@ -4,7 +4,8 @@ theme:
     favicon: 'images/favicon.ico'
     extra_css:
        - 'stylesheets/extra.css'
-    include_sidebar: false
 markdown_extensions:
     - mdx_breakless_lists
     - markdown_checklist.extension
+plugins:
+    - awesome-pages

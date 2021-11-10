@@ -2,11 +2,10 @@ site_name: DiskoverData Guide
 theme:
     name: 'material'
     favicon: 'images/favicon.ico'
-    extra_css:
-       - 'stylesheets/extra.css'
 markdown_extensions:
     - mdx_breakless_lists
     - markdown_checklist.extension
-plugins:
-    - awesome-pages:
-        collapse_single_pages: true
+extra_javascript:
+    - javascript/script.js
+extra_css:
+    - css/style.css

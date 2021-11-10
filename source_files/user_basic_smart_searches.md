@@ -6,7 +6,7 @@ The smart searches  tool comes with pre-defined searches, but those queries can 
 
 Access via the  **Analytics**  drop-down list:
 
-![Image: Access Smart Searches](images/image_analytics_smart_searches_access_via_analytics_dropdown.png =100x20)
+![Image: Access Smart Searches](images/image_analytics_smart_searches_access_via_analytics_dropdown.png){:height="700px" width="400px"}
 
 All saved reports can be found in this view offering a quick graphical snapshot:
 

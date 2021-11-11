@@ -43,7 +43,7 @@ Diskover allows all end-users to have access to the data via a global index  in 
 
 Your System Administrator creates all [login](#login) accounts. Depending on your data relation needs within your scope of work, your account level will be as an end-user or an admin, the latter allowing for additional editing access (reports, etc.). While working with Diskover as an end-user, you might come across the icon below, indicating that you need to communicate any requests with someone with an admin level account.
 
-<img src="images/image_admin_user_required.png" width="300">
+![Image: Admin User Required](images/image_admin_user_required.png)
 
 Here is a brief list of shared roles:
 ![Image: Shared Roles](images/image_shared_roles_table.png)

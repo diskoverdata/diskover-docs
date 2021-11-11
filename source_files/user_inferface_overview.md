@@ -1,11 +1,13 @@
 ___
-# <a id="user_interface"></a>User Interface Overview
+<p id="user_interface"></p>
+
+# User Interface Overview
 
 ## Terminology
 
 Although the terms described in this section may have slightly different interpretations in other contexts, they are defined here within the Diskover end-user environment.
 
-### <a id="storage_volume"></a>Storage Volume
+<h3 id="storage_volume">Storage Volume</h3>
 
 A storage location that you want to index, for example: Windows Share/drive, Linux mount/NFS Export, cloud storage, S3 bucket, etc.
 
@@ -13,7 +15,7 @@ Examples of other names for storage volume that might be used in your organizati
 
 Read more about [how to select a volume](#select_volume).
 
-### <a id="index"></a>Index/Indices
+<h3 id="index">Index/Indices</h3>
 
 An index is an inventory of all the files on a storage volume; it allows the data to be searched quickly via the index instead of the operating system  find commands. Both  **indexes**  and  **indices**  have the same meaning, and are the plural of index, although indices is usually preferred in a technical context.
 
@@ -26,13 +28,13 @@ An index is an inventory of all the files on a storage volume; it allows the dat
 
 Read more about [how to use indices](#indices).
 
-### <a id="directory"></a>Directory/Folder
+<h3 id="directory">Directory/Folder</h3>
 
 There are very subtle differences between a directory and a folder, but in the context of this guide, they are interchangeable and have the same meaning: a container to store/organize other directories/folders and files.
 
 Read more about [how to select a directory](#select_directory).
 
-### <a id=“recursive”></a>Recursive and Non-Recursive
+<h3 id="recursive">Recursive and Non-Recursive</h3>
 
 **Non-Recursive**: Will search or apply action to only the path/directory/file you are pointing to.
 
@@ -42,15 +44,17 @@ Read more about [how to select a directory](#select_directory).
 
 Diskover should look and act the same on any browser. The only thing to keep in mind is if, for example, you apply some modifications in your [settings](#settings) in Google Chrome, they will not transfer to Safari because the [settings](#settings) are tied to the cookies  of a browser. In this example, you would need to apply the same [settings](#settings) in Safari.
 
-## <a id="login"></a>Login
+<h2 id="login">Login</h2>
 
 A) Open a  **Web browser**  of your choice and type the  **URL address**  that was supplied to you by the System Administrator of your facility.
 B) Enter the  **Username**  and  **Password**. Your System Administrator configures the login mechanism.
 C) Click on  **Login**.
 
+<img src="images/image_login_window_logo_diskover.png" width="300">
+
 ![Image: Login Window](images/image_login_window_logo_diskover.png)
 
-## <a id="tour_user_interface"></a>Quick Tour of the User Interface
+<h2 id="ui_overview">User Interface Overview</h2>
 
 This section offers an overview of the user interface. All icons, drop-down lists and tools will be further explained in the next chapters.
 
@@ -60,21 +64,21 @@ This section offers an overview of the user interface. All icons, drop-down list
 
 A) **Company logo**: No functions.
 
-B) [**Dashboard**](#dashboard): Offers a visual summary of a selected storage volume.
+B) **[Dashboard](#dashboard)**: Offers a visual summary of a selected storage volume.
 
-C) [**File Search**](#file_search): The file search tool with which most users will interact.
+C) [**File search page**](#file_search): The file search tool with which most users will interact.
 
 D) **Analytics**: Built-in data analytic reports.
 
 E) [**Quick search**](#quick_search): To quickly search on a single pre-established criterion.
 
-F) <a id="search_bar"></a>**Search bar**: To type and paste [search queries](#search_syntax).
+F) **Search bar**: To type and paste [search queries](#search_syntax).
 
 G) **Clear**: To clear the search bar.
 
 H) **Launch a search**: Same function as a  **Return**  key.
 
-I) **Current Dir**: Toggle right to narrow your results to a selected storage volume and/or directory.
+I)  **Current Dir**: Toggle right to narrow your results to a selected storage volume and/or directory.
 
 J) [**Search Filters**](#filters): Built-in filters to refine your searches.
 
@@ -98,8 +102,9 @@ P) [**Directories**](#directory): To view and select available directories insid
 Q) **Items per page**: To modify the number of items per page to display – choices between 10 to 1,000.
 
 R) **Pages of results**: The number of pages of results is directly related to the number of Q) items per page.
+<p id="result_pane_columns"></p>
 
-S) <a id="result_pane_columns"></a>**Headers and Columns**: Columns can be added or removed in [Settings](#settings) > [Hide fields in search results](#hide_columns). <a id="columns_sort"></a>Also, you can sort any columns:
+S) **Headers and Columns**: Columns can be added or removed in [Settings](#settings) > [Hide fields in search results](#hide_columns). <a id="columns_sort"></a>Also, you can sort any columns:
 >- By using the arrows as specified in the legend.
 >- Choice of primary and secondary sort.
 >- Ascending or descending.
@@ -114,12 +119,13 @@ U) **Storage volume last indexed**: Gives the date and time of the last scan of 
 
 >🔆 Hovering  your mouse over a [storage volume](#storage_volume) or a [directory](#directory) in the left pane will show more data about that specific directory (path, size, number of items, etc.).
 
-![Image: Hovering Over a Directory](images/image_file_search_hovering_directory.png)
+<images/image_file_search_hovering_directory.png" width="300">
 ![Image: Hovering Over a Storage Volume](images/image_file_search_hovering_volume.png)
 
 It is preferable to use the  **backward**  and  **forward**  buttons on your web browser to navigate between pages you have already visited. You can also use the back and forth buttons on the left pane of the file search window, but we found that they are not always responsive depending on which browser is being used.
 
-## <a id="select_volume"></a>How to Select a Storage volume
+<h2 id="select_volume">How to Select a Storage Volume</h2>
+
 ![Image: How to Select a Storage Volume](images/image_file_search_page_select_volume.png)
 
 A) Via the  **left pane** (at the top in green).
@@ -128,7 +134,8 @@ B) Via the  **path navigation bar**.
 
 C) Via the  **drop-down list**  at the top right corner.
 
-## <a id="select_directory"></a>How to Select a Directory
+<h2 id="select_directory">How to Select a Directory</h2>
+
 ![Image: How to Select a Directory](images/image_file_search_page_select_directory.png)
 
 A) Via the  **left pane**  below the storage volumes – click on a directory to drill down the file tree.
@@ -136,3 +143,30 @@ A) Via the  **left pane**  below the storage volumes – click on a directory to
 B) Via the  **path navigation bar**.
 
 C) Within the  **search results pane**.
+___
+
+
+
+
+
+
+
+
+
+
+![Image: Quick Tour of the User Interface](images/image_file_search_page_overview.png)
+
+
+>- Start by clearing the [sorted columns by default](#default_columns_sort) by clicking on the colored arrows and then select the columns and orders you want.
+>![Image: Column Sorting](images/image_file_search_page_column_sorting.png)
+
+
+![Image: Hovering Over a Directory](images/image_file_search_hovering_directory.png)
+![Image: Hovering Over a Storage Volume](images/image_file_search_hovering_volume.png)
+
+
+![Image: How to Select a Storage Volume](images/image_file_search_page_select_volume.png)
+
+
+![Image: How to Select a Directory](images/image_file_search_page_select_directory.png)
+

@@ -50,9 +50,7 @@ A) Open a  **Web browser**  of your choice and type the  **URL address**  that w
 B) Enter the  **Username**  and  **Password**. Your System Administrator configures the login mechanism.
 C) Click on  **Login**.
 
-<img src="images/image_login_window_logo_diskover.png" width="300">
-
-![Image: Login Window](images/image_login_window_logo_diskover.png)
+<img src="images/image_login_window_logo_diskover.png" width="450">
 
 <h2 id="ui_overview">User Interface Overview</h2>
 
@@ -119,7 +117,7 @@ U) **Storage volume last indexed**: Gives the date and time of the last scan of 
 
 >🔆 Hovering  your mouse over a [storage volume](#storage_volume) or a [directory](#directory) in the left pane will show more data about that specific directory (path, size, number of items, etc.).
 
-<images/image_file_search_hovering_directory.png" width="300">
+<img src="images/image_file_search_hovering_directory.png" width="300">
 ![Image: Hovering Over a Storage Volume](images/image_file_search_hovering_volume.png)
 
 It is preferable to use the  **backward**  and  **forward**  buttons on your web browser to navigate between pages you have already visited. You can also use the back and forth buttons on the left pane of the file search window, but we found that they are not always responsive depending on which browser is being used.
@@ -143,7 +141,7 @@ A) Via the  **left pane**  below the storage volumes – click on a directory to
 B) Via the  **path navigation bar**.
 
 C) Within the  **search results pane**.
-___
+
 
 
 

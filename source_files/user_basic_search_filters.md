@@ -1,4 +1,4 @@
-## <a id=“filters”></a>Search Filters
+<h2 id="filters">Search Filters</h2>
 
 Using the built-in filters is an easy way to start getting acquainted with Diskover, as well as get quick and accurate results. Using the filters add a layer of criteria to your searches without you having to type in complicated queries. Filters  can be used on their own or can be combined with a manual search using the search bar.
 
@@ -39,13 +39,14 @@ N) **Other field**: 1) Select a field in the first drop-down list, 2) select an 
 
 O) **Exclude folders**: For less restrictive search results and be able to drill down a tree, will exclude the filtering from the folder view.
 
-P) **Tips**:  Visit the [help](#help_page) page for more details about queries.
+P) **Tips**:  Visit **gear icon** > **Help** at the top right corner of the user interface page for more details about queries.
+<p id="clear_filters"></p>
 
-Q) <a id=“clear_filters”></a>**Clear filters**: To clear all the filters in this window.
+Q) **Clear filters**: To clear all the filters in this window.
 
 R) **Save filters**: To save all the filters in this window.
 
->🔆 Search criteria selected in the filters will stay active and affect all your future searches, until you go back in the filters window and click Q) [clear filters](#clear_filters).
+>🔆 Search criteria selected in the [filters will remain active](#clear_filters) and affect all your future searches, until you go back in the filters window and click Q) clear filters.
 
 When you close the filters window, you will see if you have some saved criteria in a blue square by the filters icon.
 

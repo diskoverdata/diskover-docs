@@ -1,4 +1,4 @@
-## <a id=“smart_searches”></a>Smart Searches
+<h2 id="smart_searches">Smart Searches</h2>
 
 Smart searches were designed for repeatable reports; they are basically saved searches or shortcuts. The goal is to avoid having to recreate complex queries when you know you will need the same report on a regular basis. These reports are global and accessible by everyone in your organization.
 
@@ -6,7 +6,7 @@ The smart searches  tool comes with pre-defined searches, but those queries can 
 
 Access via the  **Analytics**  drop-down list:
 
-![Image: Access Smart Searches](images/image_analytics_smart_searches_access_via_analytics_dropdown.png)
+<img src="images/image_analytics_smart_searches_access_via_analytics_dropdown.png" width="400">
 
 All saved reports can be found in this view offering a quick graphical snapshot:
 

@@ -45,7 +45,7 @@ Your System Administrator creates all [login](#login) accounts. Depending on you
 
 ![Image: Admin User Required](images/image_admin_user_required.png)
 
-![Image: Admin User Required](images/image_admin_user_required.png =250x250)
+![Image: Admin User Required](images/image_admin_user_required.png){:height="50%" width="50%"}
 
 Here is a brief list of shared roles:
 ![Image: Shared Roles](images/image_shared_roles_table.png)

@@ -1,4 +1,4 @@
-## <a id=“line_selection”></a>Line Items Selection
+<h2 id="line_selection">Line Items Selection</h2>
 
 In the file search page, you can select all line items on a page by clicking  **Select all**  and deselect line items by clicking  **Unselect All**  buttons.
 

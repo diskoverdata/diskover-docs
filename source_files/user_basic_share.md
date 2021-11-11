@@ -1,4 +1,4 @@
-## <a id=“share”></a>Share Search Queries/Results
+<h2 id="shaer">Share Search Queries and Results</h2>
 
 From the search page, you can share your browser’s URL address or your search query criteria.
 

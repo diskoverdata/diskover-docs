@@ -14,7 +14,7 @@ It is preferable to use the back and forward buttons on your web browser to navi
 
 >🔆 You can [hide/unhide columns](#hide_columns) via your settings.
 
-![Image: Main Features of the File Search Page](image_file_search_page_basic_usage_overview.png)
+![Image: Main Features of the File Search Page](images/image_file_search_page_basic_usage_overview.png)
 
 A) **Top**: To go back to the top of the storage volume.
 

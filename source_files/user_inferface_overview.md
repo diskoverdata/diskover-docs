@@ -140,30 +140,3 @@ A) Via the  **left pane**  below the storage volumes – click on a directory to
 B) Via the  **path navigation bar**.
 
 C) Within the  **search results pane**.
-
-
-
-
-
-
-
-
-
-
-
-![Image: Quick Tour of the User Interface](images/image_file_search_page_overview.png)
-
-
->- Start by clearing the [sorted columns by default](#default_columns_sort) by clicking on the colored arrows and then select the columns and orders you want.
->![Image: Column Sorting](images/image_file_search_page_column_sorting.png)
-
-
-![Image: Hovering Over a Directory](images/image_file_search_hovering_directory.png)
-![Image: Hovering Over a Storage Volume](images/image_file_search_hovering_volume.png)
-
-
-![Image: How to Select a Storage Volume](images/image_file_search_page_select_volume.png)
-
-
-![Image: How to Select a Directory](images/image_file_search_page_select_directory.png)
-

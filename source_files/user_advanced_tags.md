@@ -1,4 +1,4 @@
-## <a id=“tags”></a>Tags
+<h2 id="tags">Tags</h2>
 
 Tags are additional metadata assigned to an item, they are used to add business context or data curation actions to be taken (ex: archive, delete, keep, clean). Tagging is crucial for smooth workflows and proper curation of data.
 
@@ -50,7 +50,7 @@ The tags  built-in report gives a visual snapshot of all tagged items in all you
 
 A built-in report is accessible via the  **Analytics**  drop-down list:
 
-![Image: Accessing the Tags Report](images/image_tags_report_access_from_analytics.png)
+<img src="images/image_tags_report_access_from_analytics.png" width="400">
 
 ### Using the Tags Report
 

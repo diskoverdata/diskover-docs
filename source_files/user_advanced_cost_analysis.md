@@ -1,11 +1,11 @@
-## <a id=“cost_analysis”></a>Cost Analysis Report
+<h2 id="cost_analysis">Cost Analysis Report</h2>
 
 The cost analysis report offers a snapshot of where your storage money is being allocated. This tool is designed to control your operating costs  by:
 
 - Charging your customers appropriately for storage.
 - Incentivize cleanup/data curation instead of purchasing more storage.
 
-### <a id=“cost_config”></a>How is Cost Calculated
+<h3 id="cost_config">Storage Cost Calculation and Configuration Overview</h3>
 
 The initial setup is enabled and configured by a System Administrator using your organization’s real figures. Here is an example of how the cost is calculated:
 
@@ -36,7 +36,7 @@ _[Click here for a full screen view of the Storage Cost Configuration Overview d
 
 Via the  **Analytics**  drop-down list:
 
-![Image: Accessing Cost Analysis Report via Analytics](images/image_analytics_cost_analysis_access_via_analytics_dropdown.png)
+<img src="images/image_analytics_cost_analysis_access_via_analytics_dropdown.png" width="400">
 
 ### Using the Cost Analysis Report
 

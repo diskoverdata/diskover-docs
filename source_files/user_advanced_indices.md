@@ -1,23 +1,23 @@
-## <a id=“indices”></a>Indices
+<h2 id="indices">Indices</h2>
 
-The default is set to use the most recent  indices. You may want to select multiple indices to search across different points in time for comparison purposes (ex: this file is not here today, was it there two days ago?). Selecting different indices is also needed for the [heatmap](#heatmap) report.
+The default is set to use the most recent  indices. You may want to select multiple indices to search across different points in time for comparison purposes (ex: this file is not here today, was it there two days ago?). Selecting different indices is also needed for the [heatmap report](#heatmap).
 
 Diskover continuously scans all your storage volumes and creates new indices to give you the latest snapshot of all your files and their attributes. This diagram is a simplistic way of explaining how the data is scanned.
 
-![Images: Diskover Indexing Overview](diagram_diskover_indexing_overview.png)
+<img src="images/diagram_diskover_indexing_overview.png" width="700">
 
 You can access the available indices within the  **gear icon** drop-down menu.
 
-![Image: Accessing the Indices Page](image_menu_gear_icon_selection_indices.png)
+![Image: Accessing the Indices Page](images/image_menu_gear_icon_selection_indices.png)
 ### Using the Latest Indices
 
 When you log in, Diskover automatically defaults to the latest indices.
 
-Unless you must compare indices from different points in time or want to use the [heatmap](#heatmap) report, you always want to use the latest indices and the  **Always use latest indices**  box needs to be selected.
+Unless you must compare indices from different points in time or want to use the [heatmap report](#heatmap), you always want to use the latest indices and the  **Always use latest indices**  box needs to be selected.
 
 ![Image: Always Use Latest Indices](images/image_indices_always_use_latest_indices.png)
 
-### <a id=“indices_selection”></a>Selecting Indices
+<h3 id="index_selection">Selecting Indices</h3>
 
 This section will guide you in case you need to go back to an older index (or indices) for search, comparison, or reporting  purposes.
 
@@ -45,7 +45,7 @@ G) **Search**: You can search within the indices with a single name or date (ind
 
 H) **Index** column: If you are not using A) always use latest indices, you need to select at least one index by clicking a box in this column and click E) Save selection.
 
-I) **Index 2**: If you are not using A) always use latest indices, selecting indices in this column is optional and is used for data comparison like the [heatmap](#heatmap) report.
+I) **Index 2**: If you are not using A) always use latest indices, selecting indices in this column is optional and is used for data comparison like the [heatmap report](#heatmap).
 
 >🔆 When selecting more than one index from H) Index, you cannot select an index from I) Index 2.
 

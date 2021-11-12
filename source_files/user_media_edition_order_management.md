@@ -21,6 +21,6 @@ Here is an example of an asset rehydration as viewed in MediaPulse:
 
 Here are the same values displayed within Diskover:
 
-![Image: Asset Information in Diskover at the Directory Level](image_aja_edition_mediapulse_asset_creation_in_diskover_ui_directory_level.png)
+![Image: Asset Information in Diskover at the Directory Level](images/image_aja_edition_mediapulse_asset_creation_in_diskover_ui_directory_level.png)
 
 ![Image: Asset Information in Diskover at the File Level](images/image_aja_edition_mediapulse_asset_creation_in_diskover_ui_file_level.png)

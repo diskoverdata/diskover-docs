@@ -1,14 +1,15 @@
-## <a id=“treemap”></a>Treemap Report
+<h2 id="treemap">Treemap Report</h2>
 
 The treemap report displays hierarchical data using nested figures. Diskover opted for rectangles; the bigger the rectangle the more data is contained in that directory or file. It graphically represents the size of folders, candidates for cleanup, aging, etc.
 
 ### Accessing the Treemap Report
 
-1. Via the  **Analytics**  drop-down list:
+Via the  **Analytics**  drop-down list:
 
-![Image: Accessing Treemap Report via Analytics](images/image_analytics_treemap_access_via_analytics_dropdown.png)
-2. Via the search page by clicking this icon:
-3. 
+<img src="images/image_analytics_treemap_access_via_analytics_dropdown.png" width="400">
+
+Via the search page by clicking this icon:
+
 ![Image: Treemap Report via the Search Page](images/image_analytics_treemap_access_via_search_pane.png)
 
 ### Using the Treemap Report

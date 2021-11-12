@@ -32,7 +32,9 @@ In addition to thefile searches and syntax explained in the Diskover User Guide,
 ### File resolution
 Field name: **media_info.resolution**
 >_Search query examples (syntax:variable):_
+>
 >`media_info.resolution:3840x2160`
+>
 >`media_info.resolution:*1080*` _(Would return all files with  **1080**  somewhere in the resolution)_
 
 ### Codec

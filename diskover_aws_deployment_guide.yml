@@ -13,8 +13,8 @@ ordered_documents:
   - intro_doc_conventions.md
   - requirements_intro.md
   - requirements_aws_resource.md
-  - requirements_elasticsearch_aws.md
-  - requirements_diskover_web_aws.md
+  - requirements_elasticsearch.md
+  - requirements_diskover_web.md
   - requirements_diskover_indexers.md
   - requirements_skills.md
   - architecture_overview_aws.md

@@ -1,4 +1,4 @@
-## <a id=“user_analysis”></a> User Analysis Report
+<h2 id="user_analysis">User Analysis Report</h2>
 
 The user analysis  report gives a snapshot of data utilization; it was designed to help with operating costs  management, as well as customers’ storage consumption for billing accuracy.
 
@@ -8,11 +8,11 @@ This report needs to be enabled and configured by your System Administrator.
 
 Via the  **Analytics**  drop-down list:
 
-![Image: Accessing User Analysis Report via Analytics](images/image_analytics_user_analysis_access_via_analytics_dropdown.png)
+<img src="images/image_analytics_user_analysis_access_via_analytics_dropdown.png" width="400">
 
 ### Using the User Analysis Report
 
-![Image: User Analysis Report Overview](images/image_analytics_user_analysis_overview.png)
+![Image: User Analysis Report Overview](https://www.diskoverdata.com/wp-content/uploads/2021/10/screenshot_diskover_analytics_user_analysis_overview.png)
 
 A) **Owner**: The owner/creator of a file. This report is configured by your System Administrator who may also have used a storage volume in place of a person/owner.
 

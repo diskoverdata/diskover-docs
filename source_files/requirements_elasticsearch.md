@@ -32,7 +32,7 @@ For more detailed Elasticsearch guidelines refer to AWS sizing guidelines:
 >- Index that is 60 GB in size: you will want to set shards to 3 and replicas* to 1 or 2 and spread across 3 ES nodes.
 >- Index that is 5 GB in size: you will want to set shards to 1 and replicas* to 1 or 2 and be on 1 ES node or spread across 3 ES nodes (recommended).
 >
->* Replicas help with search performance and provide fault tolerance.
+>\* _Replicas help with search performance and provide fault tolerance._
 
 ### Estimating Elasticsearch Storage Requirements
 

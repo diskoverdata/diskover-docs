@@ -1,6 +1,6 @@
-## <a id=“heatmap”></a>Heatmap Report
+<h2 id="heatmap">Heatmap Report</h2>
 
-The heatmap  report is a powerful analytical snapshot offering a differential comparison of two indices across two different points in time:
+The heatmap report is a powerful analytical snapshot offering a differential comparison of two indices across two different points in time:
 
 - Location of data growth and shrinkage, as well as the absence of activity.
 - Insightful for data curation efforts.
@@ -9,13 +9,14 @@ The heatmap  report is a powerful analytical snapshot offering a differential co
 The red and green colors in the heatmap report have meaning. All other colors are just a gradation between the red and the green.
 
 > Red = Data Growth
+> 
 > Green = Data Reduction
 
 The absence of colors in a heatmap report is also very meaningful, revealing data inertia, alerting you of possible anomalies. The lack of colors/activity is also a good indicator when comparing, for example, an on-premise server to a backup of that server in the cloud where you want data in both storage volumes to be identical; inertia in that case being favorable.
 
 ### How to Select Indices for the Heatmap Report
 
-Before accessing the heatmap report, you need to [select 2 indices from 2 different points in time](#indices_selection). You will want to select the same index/storage volume name from both columns D & E in order to compare the same data.
+Before accessing the heatmap report, you need to [select 2 indices from 2 different points in time](#index_selection). You will want to select the same index/storage volume name from both columns D & E in order to compare the same data.
 
 >🔆 Sometimes, the storage volumes don’t need to have the same name to be compared. For example, a storage volume could be on a physical server with one name, and another storage volume could be a backup with the same data set in the cloud with a different name.
 
@@ -43,7 +44,7 @@ You need to select the indices you want to compare as explained above before acc
 
 Via the  **Analytics**  drop-down list:
 
-![Image: Accessing Heatmap Report via Analytics](images/image_analytics_heatmap_access_via_analytics_dropdown.png)
+<img src="images/image_analytics_heatmap_access_via_analytics_dropdown.png" width="400">
 
 Via the search page by clicking this icon in the results pane:
 
@@ -81,7 +82,7 @@ M) **Items per page**: To modify the number of items per page (between 10 to 100
 
 N) **Search within page**: To refine your search for the current page only, acts as CTRL/CMD + F:
 >- You can only search with letters or numbers; it will not accept [operators](#operators) or other special characters.
->- You cannot and do not need to use the [**\***](#expand_results) as this field will search on partial words or numbers.
+>- You cannot and do not need to use the **\*** wild card as this field will search on partial words or numbers.
 >- It will not search inside the directories, only on the results displayed on the page.
 
 O) **Results pane**: You can sort on a single column at a time.

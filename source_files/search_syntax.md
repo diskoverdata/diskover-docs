@@ -21,6 +21,7 @@ As Diskover uses Elasticsearch in the backend, all search syntax within Diskover
 All organizations have issues with naming convention. Your search results might be limited if you try to be too restrictive when searching. For example, files associated with the movie **For Your Eyes Only** might be named:
 - ForYourEyesOnly
 - 4YourEyesOnly
+- foryoureyesonly
 - for_your_eyes_only
 - for your eyes
 - Not mentioning all the possible misspellings. 
@@ -93,7 +94,7 @@ The same rule applies with numbers. For example:
 
 - If the file name would be **SomethingGood_20161031.mp4**, you would need to either:
 	- Type the all the numbers to find that file with that specific date
-	- Or typing **\*201610** would find all the files that have the year 2016 and the month of October, assuming that all those files were identified the same way with the same date format.
+	- Or typing **\*201610\*** would find all the files that have the year 2016 and the month of October, assuming that all those files were identified the same way with the same date format.
 
 ### Examples with Isolated Words
 If the file name would be **for_your_eyes_only.mov** or **ForYourEyesOnly.mov**:
@@ -167,16 +168,19 @@ The reason being that the file extension letters might be part of the file name 
 
 You can use operators **AND OR NOT**  to narrow down a manual search. Although the operators in this section are capitalized for ease of understanding, the operators can be typed in lower case in the search bar.
 
->🔆 Operators can only be used in the main search bar  at the top of the user interface. They cannot be used in the **search within results** field.
+>🔆 IMPORTANT! When searching with more than one criteria, you don't need to put **AND** if that is the operator you would otherwise type, as Diskover uses the **AND** operator by default when non others are used. See examples below.
 
-Let's say you have thousands of results for the series **The Jungle Book** and that a similar naming convention was respected: **thejunglebook_s01_ep05_en.mov** (series The Jungle Book, season 1, episode 5, English sub)
+Let's take the series **The Jungle Book** and that a similar naming convention was respected: **thejunglebook_s01_ep05_en.mov** (series The Jungle Book, season 1, episode 5, English sub)
 
-Here are some examples of queries using operators to narrow your searches. If you want to find:
-- All episodes within season 1, in any language: **\*jungle\* AND s01**
-- Episode 5, season 1 in any languages: **\*jungle\* AND s01 AND e*5**
-- All episodes in English: **\*jungle\* AND en**
+Here are some examples of queries using operators to narrow your searches.
+
+- **\*jungle\* AND s01** would find all episodes within season 1, in any language or you could type **\*jungle\*  s01** as the AND is used by default as previously explained.
+
+- **\*jungle\* AND s01 NOT e*5** would find season 1 in any languages and all episodes except the ones with 5 in them. It is recommended to use the AND when mixing operators in the same query.
 
 >🔆 When using more than one, but especially a mix of different operators in a query, it is highly recommended to use parentheses **( )** to group some elements as described in the next section, in order to help Diskover make sense of the query and return the desired results.
+
+>🔆 Operators can only be used in the main search bar  at the top of the user interface. They cannot be used in the **search within results** field.
  
  <p id="complex_queries"></p>
  
@@ -192,7 +196,7 @@ When using more than one operator, it is recommended to use parentheses **( )** 
 
 - **\*jungle\* AND s*1 AND extension:(mov OR mp4)** would find all files of season 1 with .mov and .mp4 extension, a less precise query could be **\*jungle\* AND s*1 AND (mov OR mp4)**
 
-Another type of example with words only, and let's use **New York City**. If you only want to find files that have all those 3 words in them, you would need to type **(new york city)** assuming that all the words are isolated of course.
+Another type of example with words only, and let's use **New York City**. If you only want to find files that have all those 3 words in them, you can type **(new york city)** assuming that all the words are isolated of course.
 
 ### Examples with Multiple Groupings
 
@@ -234,7 +238,7 @@ Diskover shows file size (size) and allocated size (size_du) in bytes. We recomm
 
 - **size:>=5242880 AND size:<=10485760**  would find all files equal or larger than 5 MB but equal or smaller than 10 MB
 
-- **extension:"mov" AND size:>32212254720** would find all files with .mov extension and larger than 30 GB
+- **extension:mov AND size:>32212254720** would find all files with .mov extension and larger than 30 GB
 
 >🔆 When unsure how to translate size from MB, GB, etc. to bytes, you can use any free *byte converter* available online.
 

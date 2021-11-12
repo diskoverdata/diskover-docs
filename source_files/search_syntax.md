@@ -14,7 +14,7 @@ The list of possible search queries and syntax is exhaustive therefore only the 
 
 As Diskover uses Elasticsearch in the backend, all search syntax within Diskover are based on Elasticsearch rules. We will discuss many of these rules in this chapter, but for more details and more examples, please visit: 
 
-<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html" target="_blank">https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html</a>
+[https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html)
 
 <h2 id="naming_convention">Search Problems Resulting from Naming Conventions</h2>
 
@@ -37,23 +37,38 @@ Ways to either pinpoint or expand your results will be explained in this chapter
 
 When typing a manual query, the value needs to be typed in the [search bar](#search_bar).
 
-Unless you select a specific [storage volume](#select_volume) or [directory](#select_directory), Diskover will search all the storage volumes and their parent paths during a manual search.
+Unless you select a specific [storage volume and/or directory](#limiting_searches), Diskover will search all the storage volumes and their parent paths during a manual search.
 
-### Queries are Case Insensitive
+### Case Sensitivity
 
-The search queries are case insensitive, even if upper or lowercases are used in the file name or path.
+Search queries are mostly case insensitive, even if upper or lowercases are used in the file name or path.
 
-The only exception is for searching on time as we will cover later in this chapter.
+But there are the few exceptions where queries are case sensitive:
+- When [searching on time](#search_time).
+- When searching on [field names](#search_field_names).
 
-### Search with a Single Word
+### Grouping
 
-When typing a single word in the search bar, Diskover will look for that **isolated word**. For example:
+At times you will need to group criteria, so Diskover can make sense of the queries.
 
-- If your file name is **for_your_eyes_only.mov** and you launch a search with the word **eyes**, Diskover will find that file because that word is isolated.
+- When writing complex queries, you will need to group some elements with parentheses `( )` as further described in [The Need of Grouping for Complex Queries](#complex_queries) section.
 
-- If your file name is **ForYourEyesOnly.mov** and you launch a search with the word **eyes**, Diskover will not find that file because the word **eyes** is not isolated and is in between other characters. In order to find that file with the word **eyes** alone you will need to use a wild card as described below.
+- The square brackets `[ ]` or curly brackets `{ }` need be used to contain ranges for **time**, **dates**, **numeric** or **string fields**. They can even be mixed `[ }`. You can find examples in the [Searching on time](#search_time) section. How to apply them:
+	- **Inclusive** ranges need to be specified with square brackets, ex: **[min TO max]**, 
 
->🔆 Underscores **_** and hyphens **-** are considered the same as spaces.
+	- **Exclusive** ranges need to be specified with curly brackets, ex: **{min TO max}**
+
+ <p id="search_single_word"></p>
+
+### The Logic Behind Searching on a Single Word
+
+When typing a single word in the search bar, Diskover will look for that **isolated word**. In order to "split" and find isolated words, Diskover/Elasticsearch uses **tokenizers** like **space, underscore, hyphen, forward slash, period, other punctuation, as well as upper cases** to make sense of what is included in a file name. For example:
+
+- If your file name is **for_your_eyes_only.mov** and you launch a search with the word **eyes**, Diskover will find that file because that word is isolated between underscores.
+
+- If your file name is **ForYourEyesOnly.mov** and you launch a search with the word **eyes**, Diskover will find that file because the first letters being capitalized are recognized as separate words.
+
+- If your file name is **foryoureyesonly.mov** and you launch a search with the word **eyes**, Diskover would not find that file because the whole name/string looks like a single word.
 
 <h2 id="wildcards">Wild Cards</h2>
 
@@ -61,46 +76,81 @@ When typing a single word in the search bar, Diskover will look for that **isola
 
 **\* *is used to replace zero, one or many characters*** (the most used wild card)
 
-Wild cards are used to expand search results mostly due to naming convention, but also to go around possible misspellings, although the [fuzziness](#fuzziness) operator, covered later in this chapter, is a much better choice for misspellings.
+Wild cards are used to expand search results mostly due to [naming convention](#naming_convention), but also to go around possible misspellings, although the [fuzziness](#fuzziness) operator, covered later in this chapter, is a much better choice for misspellings.
 
-### Example with grouped words
-When searching on a single word for example, the results might be limited if you type the word alone. Let's take the example of trying to find the following file **ForYourEyesOnly.mov** with only using the word **eyes**:
+>🔆 A search might be a tad slower when using wild cards, especially when it is placed in front of your query, because it is searching a much larger amount of data.
 
-- If you only type **eyes**, that file would not be found as the system would search for that word isolated, either by spaces, underscores or phypens, and not being mixed with other characters right before and/or after.
+### Examples with Grouped Words or Numbers
+When searching on a single word for example, the results might be limited if you type the word alone. Let's take the example of trying to find the following file **foryoureyesonly.mov**:
+
+- If you only type **eyes**, that file would not be found as Diskover would search for that [isolated word](#search_single_word) and not being mixed with other characters right before and/or after.
 
 - If you type **\*eyes** or **eyes\***, that file would not be found either.
 
 - You would need to type **\*eyes\*** to find this file following this example as it is preceded and succeeded by other characters.
 
-### Example with isolated words
-Now, if the file name would be **for_your_eyes_only.mov**:
+The same rule applies with numbers. For example:
+
+- If the file name would be **SomethingGood_20161031.mp4**, you would need to either:
+	- Type the all the numbers to find that file with that specific date
+	- Or typing **\*201610** would find all the files that have the year 2016 and the month of October, assuming that all those files were identified the same way with the same date format.
+
+### Examples with Isolated Words
+If the file name would be **for_your_eyes_only.mov** or **ForYourEyesOnly.mov**:
 
 - Launching a search with only **eyes** would find that file, but again, naming conventions being what they are, it is recommended to use an **\*** to expand your results at first to make sure you are not missing any files named differently.
 
 - Also, if you are not sure if **eyes** is plural or singular in the file name, you could use **eye?** to replace a single character.
 
-### Example with sequence number
+### Examples with Sequence Number
 Let's do another example with a season's number for a show. For example, if you want to search for **season 1**, the file name could have different spelling like **S1**, **season 1**, **s01**, **s_1**, etc. 
 
 In order to expand your results to include all possibilities, without at the same time expending too much, the best search syntax would be **s*1** because the **\*** would catch everything in between the **s** and the **1**. Now, this would also find season 11 for example, but it's better to widen your results at first and then narrow them down once you have an idea of the possible results.
 
-### Example using both * and ?
+### Example Using * and ? in the Same Query
 Both **?** and **\*** wild cards can be used in the same query, for example searching for Johnny Smith: **John\* Sm?th**
 
 >🔆 If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > settings > [predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much. Throughout this chapter, we will assume the predictive search has not been selected.
 
-## Search Using Field Names
+ <p id="search_field_names"></p>
 
-You can search on specific fields by using pre-defined field names. For the list of available field names, go to **gear icon** > **Help** at the top right corner of the user interface.
+## Searches Using Field Names
+
+Searching with field names can be effective if you search on a specific and/or hidden field and are looking for precise results.
 
 The query needs to be typed in this exact format **fieldname:value**
 
-Searching with field names can be effective if you search on a specific and/or hidden field. For example, if you type the following in the search bar:
+>🔆 Searching on field names is case sensitive:
+>- The **fieldname** needs to be in lower case.
+>- The variable after the colon needs to be typed in upper and/or lower case to match exactly what you are searching for. 
 
-**owner:\*joe\***
+Let's use the example of searching on tags:
 
-The search results will show all the files with **Joe** somewhere in that field and as the owner/creator of the file. Of course, this implies that the file at the source, before being indexed by Diskover, was properly identified as such.
+- **tags:delete** would find all files and directories with the tag **delete** applied to them, it would not find a tag spelled **Delete** for example because of the capital D.
 
+- **tags:(manual_delete AND approve_delete)** same logic as above and please refer to the section [grouping for complex queries](#complex_queries) regarding the use of the parentheses.
+
+You can find mome examples with field names in the [Searching on Time](#search_time) and [Searching on Size](#search_size) sections.
+
+Here are the detault field names. This list can also be found in the help page of the user interface:
+
+- **atime** - access Time
+- **costpergb** - storage space cost
+- **ctime** - changed time
+- **extension** - file extension
+- **group** - can vary depending on how Diskover was configured, see [User Analysis Report](#user_analysis) section and/or ask your system administrator
+- **ino** - file inode number
+- **mtime** - modified time
+- **name** - file name
+- **name.text** - same as **name** but is not case sensitive
+- **nlink** - number of [hardlinks](#hardlinks)
+- **owner** - can vary depending on how Diskover was configured, see [User Analysis Report](#user_analysis) section and/or ask your system administrator(#user_analysis) 
+- **parent_path** - ex: `\/some\/folder*` will search that folder and all sub-folders ([recursive](#recursive))
+- **parent_path.text** - same as **parent_path** but is not case sensitive
+- **size** - file size, in bytes, see [searching by size](#search_size) for more details
+- **size_du** - disk usage size, aka allocated size, in bytes, see [searching by size](#search_size) for more details
+- **tags** - any tag(s) associated with a file or directory
+- **type** - file or directory
 
 ## Queries with File Extensions
 
@@ -128,21 +178,25 @@ Here are some examples of queries using operators to narrow your searches. If yo
 
 >🔆 When using more than one, but especially a mix of different operators in a query, it is highly recommended to use parentheses **( )** to group some elements as described in the next section, in order to help Diskover make sense of the query and return the desired results.
  
-## The Need of Grouping with for Complex Queries
+ <p id="complex_queries"></p>
+ 
+## The Need of Grouping for Complex Queries
 
 When using more than one operator, it is recommended to use parentheses **( )** in order to group some elements and help Diskover make sense of the query. A few examples while still using the file name structure **thejunglebook_s01_ep05_en.mov**:
 
-### Examples with single grouping
+### Examples with Single Grouping
 
-- If you are looking for all files related to season 1 and season 2 for The Jungle Book series:  **\*jungle\* AND (s\*1 OR s\*2)**
+- **\*jungle\* AND (s\*1 OR s\*2)** would find all files related to season 1 and season 2 for The Jungle Book series.
 
-- All Italian (assuming **it** was respected in the naming convention) and English translations of episode 5:  **\*jungle\* AND e*5 AND (en OR it)**
+- **\*jungle\* AND e*5 AND (en OR it)** would find all Italian (assuming **it** was respected in the naming convention) and English translations of episode 5.
 
-- If you are looking for all files of season 1 with .mov and .mp4 extension, there are a few ways to achieve that: **\*jungle\* AND s*1 AND extension:(mov OR mp4)** a less precise query could be **\*jungle\* AND s*1 AND (mov OR mp4)**
+- **\*jungle\* AND s*1 AND extension:(mov OR mp4)** would find all files of season 1 with .mov and .mp4 extension, a less precise query could be **\*jungle\* AND s*1 AND (mov OR mp4)**
 
-### Examples with multiple groupings
+Another type of example with words only, and let's use **New York City**. If you only want to find files that have all those 3 words in them, you would need to type **(new york city)** assuming that all the words are isolated of course.
 
-- If you are looking for files which could have the name "New York City" or "Big Apple", it is recommended to use the following query **(new york city) OR (big apple)** so that Diskover will not try to find all those isolated words, but instead grouped together in the same file name.
+### Examples with Multiple Groupings
+
+- **\*jungle\* AND (s*1 OR s*2) (NOT (en OR it))** still using the same file name example as above, would find all files for season 1 and season 2, but in all other languages than English or Italian.
 
 - Let say that you have files with "quick brown fox", "quick fox", "brown fox", "Fox News", etc. this would be the query to use **((quick AND fox) OR (brown AND fox) OR fox) AND NOT news** to respect the following conditions:
 	- **fox** must be present
@@ -168,6 +222,24 @@ A few examples of words that would be found with and without limiting the change
 
 Be aware that launching a query with the fuzziness operator can use an enormous amount of memory and perform badly, ending in a "timed out" situation.
 
+ <p id="search_size"></p>
+
+## Searching on File Size
+
+Diskover shows file size (size) and allocated size (size_du) in bytes. We recommend using the [filters](#filters), as well as [quick search](#quick_search) when searching on size, but these fields can also be searched manually. Some examples:
+
+- **size:>1048576**  would find all files larger than 1 MB
+
+- **size:>5242880 AND (type:file OR type:directory)**  would find all files and folders larger than 5 MB
+
+- **size:>=5242880 AND size:<=10485760**  would find all files equal or larger than 5 MB but equal or smaller than 10 MB
+
+- **extension:"mov" AND size:>32212254720** would find all files with .mov extension and larger than 30 GB
+
+>🔆 When unsure how to translate size from MB, GB, etc. to bytes, you can use any free *byte converter* available online.
+
+<p id="search_time"></p>
+
 ## Searching on Time
 
 Although it is strongly advised to use [filters](#filters) or [quick search](#quick_search) to query time, below are a few examples on how to do so with a manual query.
@@ -180,14 +252,16 @@ Although it is strongly advised to use [filters](#filters) or [quick search](#qu
 - **mtime**: last modified 
 	- Indicates the time the contents of the file has been changed. Mind you, only the contents, not the attributes. For instance, if you open a file and change some (or all) of its content, its mtime gets updated. If you change a file's attribute (like read-write permissions, metadata), its mtime doesn't change, but ctime will.
 
-### Formating
-Format to use when searching for date and time. Some characters are case sensitive:
+### Formatting
+Format to use when searching for date and time. 
 
 - Date: **d** = day, **M** = month, **Y** = year
 - Time: **h** = hour, **m** = minute, **s** = second
-- Brackets **[ ]** are used to contain a range of time.
+- These two types of brackets `[ ]` or `{ }` can be used to contain a range of time, they can even be mixed `[ }`
 
-### Examples to find recent files
+>🔆 Searching on time is case sensitive when it comes to formatting as detailed above, as well as writing the field name in lower case only.
+
+### Examples to Find Recent Files
 A few helpful queries for looking for the **latest indexed files** for example. Variables can easily be adjusted to your needs:
 
 - Files that have been modified or changed within the last 30 minutes:
@@ -197,13 +271,15 @@ A few helpful queries for looking for the **latest indexed files** for example. 
 - Files that have been modified or changed in the past day: 
 	- **ctime:[now-1d TO now]  OR mtime:[now-1d TO now]**
 
-### Examples to find old files
+### Examples to Find Old Files
 Some helpful queries when looking for old files where you can easily change the variables to adjust the queries to your needs:
 
 - Files that haven't been modified in over 3 months but less than 5 years:
 	- **mtime:[now-5Y TO now-3M]**
 - Files that haven't been modified or accessed in over 1 year (* in this case is used to represent "any time in the past"):  
 	- **mtime:[\* TO now-1Y] AND atime:[\* TO now-1Y]**
+
+<p id="limiting_searches"></p>
 
 ## Limiting your Searches to a Specific Volume and/or Directory
 

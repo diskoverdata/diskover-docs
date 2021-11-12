@@ -1,0 +1,19 @@
+website_name: Diskover User Guide
+# Folder on the website, if you specify "folder" it will deploy this guide to https://docs.diskoverdata.com/folder
+website_folder: diskover_user_guide
+# All documents need to be in shared folder
+index_document: index_diskover_guides_header.md
+ordered_documents:
+  - aja_logo_and_icon.md
+  - guide_title_companion_media_edition.md
+  - intro_copyright.md
+  - intro_guide_intended_for_user.md
+  - contact_aja.md
+  - intro_media_edition_main.md
+  - intro_media_edition_challenges_solutions.md
+  - user_media_edition_plugins_overview.md
+  - user_media_edition_media_info_attributes.md
+  - user_media_edition_order_management.md
+  - support.md
+  - contact.md
+  - footer_media_edition.md

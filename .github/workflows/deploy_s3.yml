@@ -45,6 +45,8 @@ jobs:
             cat ./source_files/$file >> ./build/docs/index.md
           done
           
+          cat ./build/docs/index.md
+          
           echo "Copying images"
           cp -r ./source_files/images ./build/docs/images
                     

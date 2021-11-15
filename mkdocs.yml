@@ -5,7 +5,4 @@ theme:
 markdown_extensions:
     - mdx_breakless_lists
     - markdown_checklist.extension
-extra_javascript:
-    - javascript/extra.js
-extra_css:
-    - css/extra.css
+    - meta

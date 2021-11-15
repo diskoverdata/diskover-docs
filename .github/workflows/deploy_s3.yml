@@ -40,6 +40,8 @@ jobs:
           
           site_name=$(yq e '.website_name' ${{ github.event.inputs.config }}) yq e '.site_name = env(site_name)' -i ./build/mkdocs.yml
           
+          echo "---\nhide:\n  - navigation\n---" >./build/docs/index.md
+          
           yq e '.ordered_documents[]' ${{ github.event.inputs.config }} | while read file; do
             echo "Copying $file";
             cat ./source_files/$file >> ./build/docs/index.md

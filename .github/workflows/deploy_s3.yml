@@ -43,7 +43,6 @@ jobs:
           yq e '.ordered_documents[]' ${{ github.event.inputs.config }} | while read file; do
             echo "Copying $file";
             cat ./source_files/$file >> ./build/docs/index.md
-            echo "\n" >> ./build/docs/content.md
           done
           
           echo "Copying images"

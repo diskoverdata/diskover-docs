@@ -2,6 +2,8 @@ site_name: DiskoverData Guide
 theme:
     name: 'material'
     favicon: 'images/favicon.ico'
+    features:
+        - navigation.tracking
 markdown_extensions:
     - mdx_breakless_lists
     - markdown_checklist.extension

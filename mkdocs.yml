@@ -4,6 +4,10 @@ theme:
     favicon: 'images/favicon.ico'
     features:
         - navigation.tracking
+    palette:
+        scheme: slate
+        primary: deep purple
+        accent: yellow
 markdown_extensions:
     - mdx_breakless_lists
     - markdown_checklist.extension

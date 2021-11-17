@@ -33,7 +33,7 @@ jobs:
         run: |
           mkdir ./build
           mkdir ./build/docs
-          mkdir ./build/docs/assets
+          mkdir ./build/assets
           
           cp ./mkdocs.yml ./build/mkdocs.yml
           cp -r ./assets/images ./build/assets/images

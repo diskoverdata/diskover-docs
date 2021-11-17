@@ -12,5 +12,7 @@ markdown_extensions:
     - mdx_breakless_lists
     - markdown_checklist.extension
     - meta
+    - toc:
+        toc_depth: 3
 extra_css:
     - css/extra.css

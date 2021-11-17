@@ -5,8 +5,7 @@ livereload==2.6.3
 lunr==0.5.8
 Markdown==3.2.2
 MarkupSafe==1.1.1
-mkdocs==1.1.2
-mkdocs-macros-plugin==0.4.9
+mkdocs==1.2.3
 Pygments==2.7.4
 pymdown-extensions==8.0
 python-dateutil==2.8.1

@@ -33,13 +33,14 @@ jobs:
         run: |
           mkdir ./build
           mkdir ./build/docs
+          mkdir ./build/docs/assets
           
           cp ./mkdocs.yml ./build/mkdocs.yml
-          mkdir ./build/docs/css && cp ./css/extra.css ./build/docs/css/extra.css
+          cp -r ./assets/images ./build/assets/images
           
           site_name=$(yq e '.website_name' ${{ github.event.inputs.config }}) yq e '.site_name = env(site_name)' -i ./build/mkdocs.yml
           
-          cp ./index.md ./build/docs/index.md
+          cp ./assets/pages/index.md ./build/docs/index.md
           
           yq e '.ordered_documents[]' ${{ github.event.inputs.config }} | while read file; do
             echo "Copying $file";
@@ -60,7 +61,7 @@ jobs:
       - name: S3 sync
         run: |
           aws s3 sync --delete --follow-symlinks ./build/site s3://$AWS_S3_BUCKET/$(yq e '.website_folder' ${{ github.event.inputs.config }})
-          aws s3 cp ./404.html s3://$AWS_S3_BUCKET/404.html
+          aws s3 cp ./assets/pages/404.html s3://$AWS_S3_BUCKET/404.html
           aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*" >/dev/null 2>&1
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

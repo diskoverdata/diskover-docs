@@ -33,9 +33,10 @@ jobs:
         run: |
           mkdir ./build
           mkdir ./build/docs
+          mkdir ./build/docs/assets
           
           cp ./mkdocs.yml ./build/mkdocs.yml
-          cp -r ./assets/images ./build/images
+          cp -r ./assets/images ./build/docs/assets/images
           
           site_name=$(yq e '.website_name' ${{ github.event.inputs.config }}) yq e '.site_name = env(site_name)' -i ./build/mkdocs.yml
           

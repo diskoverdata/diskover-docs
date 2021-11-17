@@ -53,7 +53,7 @@ vi /etc/elasticsearch/jvm.options
 ➡️ Update the Elasticsearch configuration file to define desired Elasticsearch endpoint:
 ```
 vi /etc/elasticsearch/elasticsearch.yml
-````
+```
 
 ➡️ Network Host Configuration:
 ```

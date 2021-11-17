@@ -2,6 +2,8 @@ site_name: DiskoverData Guide
 theme:
     name: 'material'
     favicon: 'images/favicon.ico'
+    features:
+        - toc.integrate
     palette:
         scheme: slate
         primary: deep purple
@@ -12,5 +14,5 @@ markdown_extensions:
     - meta
     - toc:
         toc_depth: 3
-extra_css:
-    - css/extra.css
+#extra_css:
+#    - css/extra.css

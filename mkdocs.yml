@@ -1,7 +1,8 @@
 site_name: DiskoverData Guide
 theme:
     name: 'material'
-    favicon: 'favicon.ico'
+    favicon: 'assets/images/favicon.png'
+    logo: 'assets/images/logo.png'
     palette:
         scheme: slate
         primary: deep purple

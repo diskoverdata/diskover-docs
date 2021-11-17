@@ -12,5 +12,3 @@ markdown_extensions:
     - meta
     - toc:
         toc_depth: 3
-#extra_css:
-#    - css/extra.css

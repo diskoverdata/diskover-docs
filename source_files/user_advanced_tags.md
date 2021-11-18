@@ -1,4 +1,4 @@
-<h2 id="tags">Tags</h2>
+<h3 id="tags">Tags</h3>
 
 Tags are additional metadata assigned to an item, they are used to add business context or data curation actions to be taken (ex: archive, delete, keep, clean). Tagging is crucial for smooth workflows and proper curation of data.
 
@@ -23,11 +23,11 @@ F) **Add new tag**: An admin account is required to add/edit tags.
 
 G) **Edit Tags**: An admin account is required to add/edit tags.
 
-### Search on Tags
+#### Search on Tags
 
 You can search on tags  using the [filters](#filters) tool or by  manually entering a query in the search bar.
 
-#### Via the [filters](#filters) tool:
+##### Via the [filters](#filters) tool:
 
 1. Click on the  **[Filters](#filters)**  icon at the top of the interface.
 3. Go to the  **Tags**  section.
@@ -35,7 +35,7 @@ You can search on tags  using the [filters](#filters) tool or by  manually enter
 5. Click on the boxes/tags  you wish to include/exclude from your search.
 6. Click  **Save filters**  at the bottom of the window.
 
-#### Via manual query in the search page:
+##### Via manual query in the search page:
 
 Type your search query in the search bar at the top of the page:
 >- To search on tags, you must start with a  **#**, ex: #archive
@@ -44,7 +44,7 @@ Type your search query in the search bar at the top of the page:
 
 ![Image: Manual Search for Tags](images/image_tags_report_access_from_search_bar.png)
 
-### Accessing the Tags Report
+#### Accessing the Tags Report
 
 The tags  built-in report gives a visual snapshot of all tagged items in all your storage volumes. Note that the colors have no particular meaning in this report.
 
@@ -52,7 +52,7 @@ A built-in report is accessible via the  **Analytics**  drop-down list:
 
 <img src="images/image_tags_report_access_from_analytics.png" width="400">
 
-### Using the Tags Report
+#### Using the Tags Report
 
 ![Image: Tags Report Overview](images/image_tags_report_overview.png)
 

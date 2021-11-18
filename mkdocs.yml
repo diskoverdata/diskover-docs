@@ -5,7 +5,7 @@ theme:
     logo: 'assets/images/logo.png'
     palette:
         scheme: white
-        primary: #b9bbbd
+        primary: b9bbbd
         accent: red
 markdown_extensions:
     - mdx_breakless_lists

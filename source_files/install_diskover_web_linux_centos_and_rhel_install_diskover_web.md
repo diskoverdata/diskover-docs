@@ -1,18 +1,18 @@
-### Install Diskover-Web
+#### Install Diskover-Web
 
-➡️ Copy Diskover-Web files:
+🔴 &nbsp;Copy Diskover-Web files:
 ```
 cp -a diskover-web /var/www/
 ```
 
-➡️ Edit the Diskover-Web configuration file **Constants.php** to authenticate against your Elasticsearch endpoint:
+🔴 &nbsp;Edit the Diskover-Web configuration file **Constants.php** to authenticate against your Elasticsearch endpoint:
 ```
 cd /var/www/diskover-web/src/diskover
 cp Constants.php.sample Constants.php
 vi Constants.php
 ```
 
-➡️ Set your Elasticsearch **endpoint**, **port**, **username**, and **password**:
+🔴 &nbsp;Set your Elasticsearch **endpoint**, **port**, **username**, and **password**:
 ```
 const ES_HOSTS = 'localhost';
 const ES_PORT = 9200;
@@ -21,35 +21,35 @@ const ES_PASS = 'strong_password';
 ```
 >_Note:_ Diskover-Web uses a number of files to store the profiles of preferences and tasks. The default install has sample files, but not the actual files. The following will copy the sample files and create default starting point files.
 
-➡️ Create actual files from the sample files **filename.txt.sample**:
+🔴 &nbsp;Create actual files from the sample files **filename.txt.sample**:
 ```
 cd /var/www/diskover-web/public
 for f in *.txt.sample; do cp $f "${f%.*}"; done
 chmod 660 *.txt
 ```
 
-➡️ Create actual task files from the sample task files **filename.json.sample**:
+🔴 &nbsp;Create actual task files from the sample task files **filename.json.sample**:
 ```
 cd /var/www/diskover-web/public/tasks/
 ```
 
-➡️ Copy default/sample JSON files:
+🔴 &nbsp;Copy default/sample JSON files:
 ```
 for f in *.json.sample; do cp $f "${f%.*}"; done
 chmod 660 *.json
 ```
 
-➡️ Set the proper ownership on the default starting point files:
+🔴 &nbsp;Set the proper ownership on the default starting point files:
 ```
 chown -R nginx:nginx /var/www/diskover-web
 ```
 
-➡️ Configure the NGINX Web server with **diskover-web** configuration file:
+🔴 &nbsp;Configure the NGINX Web server with **diskover-web** configuration file:
 ```
 vi /etc/nginx/conf.d/diskover-web.conf
 ```
 
-➡️ Add the following to the **/etc/nginx/conf.d/diskover-web.conf** file:
+🔴 &nbsp;Add the following to the **/etc/nginx/conf.d/diskover-web.conf** file:
 ```
 server {
         listen   8000;
@@ -79,31 +79,31 @@ server {
 }
 ```
 
-### NGINX Changes Required for CentOS 8.X / RHEL
+#### NGINX Changes Required for CentOS 8.X / RHEL
 
-➡️ If **IPV6** is not in use or disabled comment out the following line in the `/etc/nginx/nginx.conf` file:
+🔴 &nbsp;If **IPV6** is not in use or disabled comment out the following line in the `/etc/nginx/nginx.conf` file:
 ```
 # listen       [::]:80 default_server;
 ```
 
-➡️ This will keep NGINX from starting, restart NGINX:
+🔴 &nbsp;This will keep NGINX from starting, restart NGINX:
 ```
 systemctl restart nginx
 ```
 
-### Open Firewall Ports for Diskover-Web
+#### Open Firewall Ports for Diskover-Web
 
-➡️ Diskover-Web listens on **port 8000** by default. To open the firewall for ports required by Diskover-Web:
+🔴 &nbsp;Diskover-Web listens on **port 8000** by default. To open the firewall for ports required by Diskover-Web:
 ```
 firewall-cmd --add-port=8000/tcp --permanent
 firewall-cmd --reload
 ```
 
-### Modifications Required to Install Diskover-Web on CentOS 8.X / RHEL
+#### Modifications Required to Install Diskover-Web on CentOS 8.X / RHEL
 
 The **remi** repository is not needed, but access to the **EPEL repo** is for PHP modules. The issue is there are some PHP modules missing in the RHEL 8 distribution. The **php-pecl-mcrypt** module was dropped.
 
-➡️ The following modules need to be installed for **php-pecl-mcrypt**:
+🔴 &nbsp;The following modules need to be installed for **php-pecl-mcrypt**:
 ```
 yum install libtomcrypt-devel
   yum install libmcrypt-devel
@@ -113,35 +113,35 @@ yum install libtomcrypt-devel
 
 For more information: <a href=“https://hostadvice.com/how-to/how-to-install-mcrypt-on-centos-8/”>https://hostadvice.com/how-to/how-to-install-mcrypt-on-centos-8/</a>
 
-➡️ Make the following change in the **/etc/nginx/conf.d/diskover-web.conf**. Change the following line from:
+🔴 &nbsp;Make the following change in the **/etc/nginx/conf.d/diskover-web.conf**. Change the following line from:
 ```
 fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
 ```
 
-➡️ To:
+🔴 &nbsp;To:
 ```
 fastcgi_pass unix:/var/run/php-fpm/www.sock;
 ```
 
-➡️ Restart NGINX:
+🔴 &nbsp;Restart NGINX:
 ```
 systemctl restart nginx
 ```
 
-### Create a Test Web Page to Verify NGINX Configuration for Linux
+#### Create a Test Web Page to Verify NGINX Configuration for Linux
 
-➡️ The following will create a test page to verify if the NGINX Web server configuration is properly configured (independent of the Diskover-Web application):
+🔴 &nbsp;The following will create a test page to verify if the NGINX Web server configuration is properly configured (independent of the Diskover-Web application):
 ```
 vi /var/www/diskover-web/public/info.php
 ```
 
-➡️ Insert the following text:
+🔴 &nbsp;Insert the following text:
 ```
 <?php
 phpinfo();
 ```
 
-➡️ For CentOS 8.X / RHEL insert the following text:
+🔴 &nbsp;For CentOS 8.X / RHEL insert the following text:
 ```
 <?php
 phpinfo();
@@ -149,7 +149,7 @@ phpinfo(INFO_MODULES);
 ?>
 ```
 
-➡️ Open a test page:
+🔴 &nbsp;Open a test page:
 ```
 http://< diskover_web_host_ip >:8000/info.php
 ```

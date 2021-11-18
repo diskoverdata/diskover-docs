@@ -1,9 +1,10 @@
 ___
-# AWS Environment Security
+## AWS Environment Security
+___
 
 The information in this section outlines how to manage identities and access the distributed components of the Diskover curation platform. This includes both AWS Identity and Access Management (IAM) resources, as well as access mechanisms.
 
-## AWS IAM Best Practices
+### AWS IAM Best Practices
 
 Security begins with protecting your AWS Root account. The AWS root user has unlimited access to your AWS account and its resources; using it only by exception helps protect your AWS resources. The AWS root user must not be used for task associated with the installation and configuration of the Diskover curation platform components referenced in Chapter 3. Architecture Overview. Instead, adhere to the best practice of using the root user only to create your first AWS Identity and Access Management (IAM). An AWS IAM user with sufficient administrator privileges should be used for the installation and configuration of resources used with the Diskover curation platform.
 
@@ -11,7 +12,7 @@ For more information and details please refer to AWS best practices link below.
 
 <a href=“https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html”>https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html</a>
 
-## Configuring IAM Roles for Diskover
+### Configuring IAM Roles for Diskover
 
 Diskover Data recommends following AWS “least privilege access” policies when configuring AWS access policies among Diskover indexer(s), AWS Elasticsearch endpoint, and Diskover-Web server. Please refer to the documentation below.
 

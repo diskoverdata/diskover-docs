@@ -1,8 +1,8 @@
-## Elasticsearch Domain
+### Elasticsearch Domain
 
-### Status of Elasticsearch Service for Linux
+#### Status of Elasticsearch Service for Linux
 
-➡️ Check status of Elasticsearch  service:
+🔴 &nbsp;Check status of Elasticsearch  service:
 ```
 systemctl status elasticsearch.service
 ```

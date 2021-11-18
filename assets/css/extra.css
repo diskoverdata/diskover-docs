@@ -5,17 +5,27 @@ hr {
 }
 
 h1 {
-  font-size: 2.25em !important;
+  font-size: 3em !important;
   font-weight: bold !important;
 }
 
 h2 {
-  font-size: 2.1em !important;
+  font-size: 2.5em !important;
   font-weight: bold !important;
-  background-color: #f00;
+  font-color: #bf0909;
 }
 
 h3 {
-  font-size: 1.8em !important;
+  font-size: 2.25em !important;
+  font-weight: normal !important;
+}
+
+h4 {
+  font-size: 2.0em !important;
+  font-weight: normal !important;
+}
+
+h5 {
+  font-size: 1.75em !important;
   font-weight: normal !important;
 }

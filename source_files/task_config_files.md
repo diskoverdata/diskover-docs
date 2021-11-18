@@ -1,7 +1,8 @@
 ___
-# <a id="task_config_files"></a>Task Configuration Files
+## <a id="task_config_files"></a>Task Configuration Files
+___
 
-## Configuration of File Locations
+### Configuration of File Locations
 
 Diskover worker nodes use a series of YAML files for various configuration settings. A worker node can be a local distributed node that can perform a variety of tasks from indexing, tagging, check for duplicates, autoclean, or any other custom task. YAML is a human-readable data serialization standard that can be used in conjunction with all programming languages and is often used for configuring file settings.
 
@@ -17,13 +18,13 @@ At time of installation, these files are copied to:
 
 During installation, at least one index worker is configured, that configuration file is located at: `/root/.config/diskover/config.yaml`
 
-## Using Alternate Configuration Files
+### Using Alternate Configuration Files
 
 Diskover provides default configuration files for tasks which are located in `/opt/diskover/configs_sample`
 
 Diskover provides the ability for tasks to use alternate configuration files to match the task requirements via the **altconfig** variable. Alternate configuration files can be invoked both via the command line and with the Diskover **Task Panel**.
 
-### Alternate Configuration Invocation Via Command Line
+#### Alternate Configuration Invocation Via Command Line
 
 Worker nodes typically launch tasks from the Diskover application directory. Depending on the worker’s task, different environment variables need to be exported to invoke usage of the desired alternate configuration file. The convention for exporting alternate configuration files is:
 
@@ -39,45 +40,45 @@ For example, in Linux the config files are in `~/.config/<appName>/config.yaml`.
 
 To invoke alternate configuration files instead of the default configuration files:
 
-➡️ **Indexing tasks**: The DISKOVERDIR variable is used to invoke the alternative configuration file for indexing tasks:
+🔴 &nbsp;**Indexing tasks**: The DISKOVERDIR variable is used to invoke the alternative configuration file for indexing tasks:
 ```
 export DISKOVERDIR=/someconfigfile.yaml
 ```
 
-➡️ **Autoclean tasks**: The DISKOVER_AUTOCLEANDIR variable is used to invoke the alternative configuration file for autoclean tasks.
+🔴 &nbsp;**Autoclean tasks**: The DISKOVER_AUTOCLEANDIR variable is used to invoke the alternative configuration file for autoclean tasks.
 ```
 export DISKOVER_AUTOCLEANDIR=/path/alt_config_dir/
 ```
 
-➡️ **Autotag tasks**: The DISKOVER_AUTOTAGDIR variable is used to invoke the alternative configuration file for post-index autotag tasks.
+🔴 &nbsp;**Autotag tasks**: The DISKOVER_AUTOTAGDIR variable is used to invoke the alternative configuration file for post-index autotag tasks.
 ```
 export DISKOVER_AUTOTAGDIR=/path/alt_config_dir/
 ```
 
-➡️ **Duplicate finder tasks**: The DISKOVER_DUPESFINDERDIR variable is used to invoke the alternative configuration file for duplicate finder tasks.
+🔴 &nbsp;**Duplicate finder tasks**: The DISKOVER_DUPESFINDERDIR variable is used to invoke the alternative configuration file for duplicate finder tasks.
 ```
 export DISKOVER_DUPESFINDERDIR=/path/alt_config_dir/
 ```
 
-➡️ **Tag copier tasks**: The DISKOVER_TAGCOPIERDIR variable is used to invoke the alternative configuration file for tag copier tasks.
+🔴 &nbsp;**Tag copier tasks**: The DISKOVER_TAGCOPIERDIR variable is used to invoke the alternative configuration file for tag copier tasks.
 ```
 export DISKOVER_TAGCOPIERDIR=/path/alt_config_dir/
 ```
 
 >*Note*: It is recommended to test any changes to alternative configuration files via the command line for errors. If you get an error message when starting `diskover.py` like **Config ERROR: diskover.excludes.dirs not found**, check config for errors or missing settings from the default configuration file. Ensure that your config file is not missing any lines from default/sample config or there are no errors in your config like syntax errors or missing values.
 
-### Alternate Configuration Invocation Via Task Panel
+#### Alternate Configuration Invocation Via Task Panel
 
 Detailed discussion on configuration and administration of Diskover Task Management functionality can be found in [the Task Management Chapter](#task_management). To maintain context, the following describes how to use alternate configuration files within the Diskover Task Panel.
 
-#### Indexing Tasks
+##### Indexing Tasks
 
-➡️ To invoke the use of alternate configuration file for indexing tasks > Uncheck  **Use default diskover config file** and enter alternate configuration directory in  **Alternate Config Directory**  dialog box.
+🔴 &nbsp;To invoke the use of alternate configuration file for indexing tasks > Uncheck  **Use default diskover config file** and enter alternate configuration directory in  **Alternate Config Directory**  dialog box.
 
 ![Image: Alternate Configuration for Indexing Tasks](images/image_tasks_alternate_config_indexing_tasks.png)
 
-#### Custom Tasks
+##### Custom Tasks
 
-➡️ To invoke the use of alternate configuration file for custom tasks > Enter alternate configuration export command in **Environment Vars**  dialog box.
+🔴 &nbsp;To invoke the use of alternate configuration file for custom tasks > Enter alternate configuration export command in **Environment Vars**  dialog box.
 
 ![Image: Alternate Configuration for Custom Tasks](images/image_tasks_alternate_config_custom_tasks.png)

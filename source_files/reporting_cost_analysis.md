@@ -1,4 +1,4 @@
-## Storage Cost Reporting
+### Storage Cost Reporting
 
 Storage Cost reporting are configured similar to Smart Searches. Cost reporting can be generated to align with business context and can be constructed from any Elasticsearch query. Therefore, any combination of names, tags, metadata fields, etc. can be used to construct business facing reports.
 
@@ -8,48 +8,48 @@ The following report provides an example of cost analysis by **client** - The na
 
 ![Image: Example of Cost Analysis by Client](images/image_reporting_cost_analysis_report_example_diskover_ui.png)
 
-### Storage Cost Configuration Overview Diagram
+#### Storage Cost Configuration Overview Diagram
 
 ![Image: Storage Cost Configuration Overview Diagram](images/diagram_diskover_storage_cost_configuration_overview_with_border.png)
 
 _[Click here for a full view of the diagram.](images/diagram_diskover_storage_cost_configuration_overview_with_border.png)_
 
-### Calculation of Cost Estimates
+#### Calculation of Cost Estimates
 
 The storage cost can either be estimated globally or by storage volume, directory, etc. The estimations need to be done outside of Diskover. Beside the cost of the storage itself, other factors can be compounded like electricity, service contract, System Administrator’s salary, subscription fees, etc.
 
 Estimation needs to be estimated and configured per gigabyte.
 
-### Storage Cost Configuration
+#### Storage Cost Configuration
 
-➡️ Once the estimation per GB is achieve, open a terminal session:
+🔴 &nbsp;Once the estimation per GB is achieve, open a terminal session:
 ```
 vim /root/.config/diskover/config.yaml
 ```
 
 ![Image: Storage Cost Configuration](images/image_reporting_cost_analysis_storage_cost_config.png)
 
-➡️ Enable **storagecost** by changing to **True**:
+🔴 &nbsp;Enable **storagecost** by changing to **True**:
 ```
 enable: True
 ```
 
-➡️ Enter global estimated cost per GB, example below at $2.50 per GB:
+🔴 &nbsp;Enter global estimated cost per GB, example below at $2.50 per GB:
 ```
 costpergb: 2.50
 ```
 
-➡️ Enter base preference by typing **10** for decimal or **2** for binary, example below is set for binary:
+🔴 &nbsp;Enter base preference by typing **10** for decimal or **2** for binary, example below is set for binary:
 ```
 base: 2
 ```
 
-➡️ Enter size preference by typing **size** for file size or **size_du** for disk usage, example below is set for file size:
+🔴 &nbsp;Enter size preference by typing **size** for file size or **size_du** for disk usage, example below is set for file size:
 ```
 sizefield: size
 ```
 
-➡️ Different costs can be assigned to specific paths, overriding the global cost per GB as described above, providing for very granular cost calculations:
+🔴 &nbsp;Different costs can be assigned to specific paths, overriding the global cost per GB as described above, providing for very granular cost calculations:
 ```
 paths: [{'path': ['*fast_storage*'], 'path_exclude': [], 'costpergb': 4.50}]
 ```
@@ -58,12 +58,12 @@ Different costs can also be configured by file aging, costs can be assigned base
 
 ![enter image description here](images/image_reporting_cost_analysis_storage_cost_config_by_file_aging.png)
 
-➡️ In the case where storage cost could read either the **paths** or **times** override, you need to assign a priority preference either by **path** or **time**, example below is set for time:
+🔴 &nbsp;In the case where storage cost could read either the **paths** or **times** override, you need to assign a priority preference either by **path** or **time**, example below is set for time:
 ```
 priority: time
 ```
 
-### Accessing Storage Costs
+#### Accessing Storage Costs
 
 Within the Diskover-Web user interface, cost information is displayed in different locations:
 
@@ -71,7 +71,7 @@ Within the Diskover-Web user interface, cost information is displayed in differe
 - **Analytics** > **Cost Analysis** > to access a report, users can click on a report link.
 - **Analytics** > **User Analysis**
 
-### Cost Analysis Reports Configuration
+#### Cost Analysis Reports Configuration
 
 The Cost Analysis reports are repeatable queries which can be customized and are located in **Analytics** > **Cost Analysis**. Any users can access the reports, but only users with an admin level account can add/edit/delete reports.
 

@@ -1,3 +1,3 @@
-## Install Task Worker for Mac
+### Install Task Worker for Mac
 
 Not supported at this time.

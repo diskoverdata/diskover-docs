@@ -1,4 +1,4 @@
-<h2 id="quick_search">Quick Search</h2>
+<h3 id="quick_search">Quick Search</h3>
 
 Quick searches  are convenient when searching on a single pre-established criterion. The drop-down list, and its sub-menus, offer several selections. Here is an example:
 

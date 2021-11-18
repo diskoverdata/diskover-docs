@@ -1,4 +1,4 @@
-## Tag Display and Editor within Diskover-Web User Interface
+### Tag Display and Editor within Diskover-Web User Interface
 
 The tags displayed within the Diskover-Web user interface can be customized by users with an admin account and can be achieved from 1) the **file search page** or 2) **Analytics** menu > **Tags**.
 
@@ -9,6 +9,9 @@ A) From the **file search page** > select any file and/or directory > **Tag** dr
 B) From the **file search page** > select any file and/or directory > **Tag** drop-down list > **Edit tags** will open a C) window and allow you to add, delete or edit exiting tags.
 
 C) From **Analytics** menu > select **Tags** > **Edit tags** button > will open C) window and allow you to add, delete or edit exiting tags.
+
+<img src="images/image_tags_manual_tagging_tag_editor_access.png" width="200">
+<img src="images/image_diskover_web_install_for_windows_replace_php_install_location.png" width="250">
 
 ![Image: Tags Editor Selection](images/image_tags_manual_tagging_tag_editor_access.png)
 ![Image: Tags Editor Window](images/image_tags_manual_tagging_tag_editor.png)

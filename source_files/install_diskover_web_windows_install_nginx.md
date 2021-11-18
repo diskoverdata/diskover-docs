@@ -6,10 +6,6 @@ To install NGINX/Windows, download the latest mainline version distribution, sin
 
 <img src="images/image_diskover_web_install_for_windows_run_nginx_exe.png" width="750">
 
-![Image: Run nginx.exe](images/image_diskover_web_install_for_windows_run_nginx_exe.png)
-
 🔴 &nbsp;Verify the NGINX  installation has been successful, open a Web browser to  **localhost**:
 
 <img src="images/image_diskover_web_install_for_windows_verify_nginx_install.png" width="550">
-
-![Image: Verify NGINX  Installation](images/image_diskover_web_install_for_windows_verify_nginx_install.png)

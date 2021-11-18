@@ -1,13 +1,13 @@
-## Uninstall PHP-FPM
+### Uninstall PHP-FPM
 
-### Uninstall PHP-FPM for Linux
+#### Uninstall PHP-FPM for Linux
 
-➡️ Determine PHP-FPM version installed:
+🔴 &nbsp;Determine PHP-FPM version installed:
 ```
 rpm -qa | grep php-fpm
 ```
 
-➡️ In the previous example, remove **php-fpm-7.3.26-1.el7.remi.x86_64**:
+🔴 &nbsp;In the previous example, remove **php-fpm-7.3.26-1.el7.remi.x86_64**:
 
 ```
 rpm -e php-fpm-7.3.26-1.el7.remi.x86_64

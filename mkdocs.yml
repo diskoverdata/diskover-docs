@@ -5,8 +5,9 @@ theme:
     logo: 'assets/images/logo.png'
     palette:
         scheme: white
-        primary: b9bbbd
+        primary: grey
         accent: red
+        link: red
 markdown_extensions:
     - mdx_breakless_lists
     - markdown_checklist.extension

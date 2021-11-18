@@ -1,15 +1,16 @@
-<h2 id="indices">Indices</h2>
+<h3 id="indices">Indices</h3>
 
 The default is set to use the most recent  indices. You may want to select multiple indices to search across different points in time for comparison purposes (ex: this file is not here today, was it there two days ago?). Selecting different indices is also needed for the [heatmap report](#heatmap).
 
 Diskover continuously scans all your storage volumes and creates new indices to give you the latest snapshot of all your files and their attributes. This diagram is a simplistic way of explaining how the data is scanned.
 
-<img src="images/diagram_diskover_indexing_overview.png" width="700">
+<img src="images/diagram_diskover_indexing_overview.png" width="600">
 
 You can access the available indices within the  **gear icon** drop-down menu.
 
 ![Image: Accessing the Indices Page](images/image_menu_gear_icon_selection_indices.png)
-### Using the Latest Indices
+
+#### Using the Latest Indices
 
 When you log in, Diskover automatically defaults to the latest indices.
 
@@ -17,7 +18,7 @@ Unless you must compare indices from different points in time or want to use the
 
 ![Image: Always Use Latest Indices](images/image_indices_always_use_latest_indices.png)
 
-<h3 id="index_selection">Selecting Indices</h3>
+<h4 id="index_selection">Selecting Indices</h4>
 
 This section will guide you in case you need to go back to an older index (or indices) for search, comparison, or reporting  purposes.
 
@@ -57,6 +58,6 @@ J) **Results pane**: You can find valuable information in those columns, which c
 
 K) **Reload** **indices**: To refresh the list of indices.
 
-### Indexing Schedule
+#### Indexing Schedule
 
 The System Administrator of your facility is responsible for configuring the indices’ scanning schedule. Scans are scheduled according to the users’ needs; for high pace work environment like media production, new scans may be scheduled soon after the previous one is completed. Diskover scans all storage volumes parallelly, not serially.

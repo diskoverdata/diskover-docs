@@ -8,7 +8,7 @@ Diskover worker nodes use a series of YAML files for various configuration setti
 
 Diskover task workers use a separate directory for each config file. At time of installation, example **config.yaml** files are located in **/opt/diskover/configs/**
 
-![Image : YAML Files Location](images/image_tasks_config_yalm_files_location.png)
+<img src="images/image_tasks_config_yalm_files_location.png" width="750">
 
 At time of installation, these files are copied to:
 

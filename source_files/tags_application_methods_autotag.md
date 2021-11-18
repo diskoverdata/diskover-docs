@@ -1,12 +1,12 @@
-### Tag Application via Autotag
+#### Tag Application via Autotag
 
 Tags can be applied automatically via a series of rules applied to directories or filenames. The rules can be very powerful based on a combination of name, location, age, tags, etc.
 
-#### Autotag During Index
+##### Autotag During Index
 
 To enable tags to be applied during the index process, autotagging must be enabled and a series of rules configured to determine what tags to apply and under what conditions.
 
-➡️ Set autotag to **True** and define tagging rules.
+🔴 &nbsp;Set autotag to **True** and define tagging rules.
 ```
 vim /root/.config/diskover/config.yaml
 ```
@@ -43,23 +43,23 @@ In the following example, the rules will:
             ]
 ```
 
-#### Autotag an Existing Index (Post Index Process)
+##### Autotag an Existing Index (Post Index Process)
 
 Tag application can be executed via a shell to an existing index (post actual index process). 
 
-➡️ To configure post index autotag rules:
+🔴 &nbsp;To configure post index autotag rules:
 ```
 vi /root/.config/diskover_autotag/config.yaml
 ```
 
 ![Image: YALM Autotags Post-Index Configuration](images/image_tags_autotags_post_index_rules.png)
 
-➡️ Run manually from shell:
+🔴 &nbsp;Run manually from shell:
 ```
 cd /opt/diskover
 ```
 
-➡️ Usage:
+🔴 &nbsp;Usage:
 ```
 python3 diskover_autotag.py -h
 ```

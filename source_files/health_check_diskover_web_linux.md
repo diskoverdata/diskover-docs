@@ -1,17 +1,17 @@
-## Diskover-Web
+### Diskover-Web
 
 To validate health of the Diskover-Web, basically ensures the Web serving applications are functioning properly.
 
-### Diskover-Web for Linux
+#### Diskover-Web for Linux
 
-➡️ Check status of NGINX service:
+🔴 &nbsp;Check status of NGINX service:
 ```
 systemctl status nginx
 ```
 
 ![Image: Health Check Diskover-Web for Linux](images/image_health_check_linux_diskover_web.png)
 
-➡️ Check status of PHP-FPM service:
+🔴 &nbsp;Check status of PHP-FPM service:
 ```
 systemctl status php-fpm
 ```

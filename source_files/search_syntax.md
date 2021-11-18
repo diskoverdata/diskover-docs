@@ -17,7 +17,7 @@ As Diskover uses Elasticsearch in the backend, all search syntax within Diskover
 
 [https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html)
 
-<h2 id="naming_convention">Search Problems Resulting from Naming Conventions</h2>
+<h3 id="naming_convention">Search Problems Resulting from Naming Conventions</h3>
 
 All organizations have issues with naming convention. Your search results might be limited if you try to be too restrictive when searching. For example, files associated with the movie **For Your Eyes Only** might be named:
 - ForYourEyesOnly
@@ -72,7 +72,7 @@ When typing a single word in the search bar, Diskover will look for that **isola
 
 - If your file name is **foryoureyesonly.mov** and you launch a search with the word **eyes**, Diskover would not find that file because the whole name/string looks like a single word.
 
-<h2 id="wildcards">Wild Cards</h2>
+<h3 id="wildcards">Wild Cards</h3>
 
 **? *is used to replace a single character*** 
 
@@ -169,7 +169,7 @@ The reason being that the file extension letters might be part of the file name 
 
 - If only typing **jpg** in the search bar, the results would include all files with **.jpg** extension, but could also return a file with the name **montage_jpg_png_images.gif**
 
-<h2 id="operators">Operators</h2>
+<h3 id="operators">Operators</h3>
 
 You can use operators **AND OR NOT**  to narrow down a manual search. Although the operators in this section are capitalized for ease of understanding, the operators can be typed in lower case in the search bar.
 
@@ -212,7 +212,7 @@ Another type of example with words only, and let's use **New York City**. If you
 	-  **news** must be excluded
 	-  **quick** and **brown** are optional — their presence increases the relevance
 
-<h2 id="fuzziness">Fuzziness</h2>
+<h3 id="fuzziness">Fuzziness</h3>
 
 You can run fuzzy queries with the **tilde ~** operator. 
 

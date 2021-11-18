@@ -1,8 +1,8 @@
-<h2 id="filetree">File Tree Report</h2>
+<h3 id="filetree">File Tree Report</h3>
 
 The file tree  report profiles the size and aging of files, in a selected storage volume or any of its directories. Note that the colors have no particular meaning in this report.
 
-### Accessing the File Tree Report
+#### Accessing the File Tree Report
 
 Via the  **Analytics**  drop-down list:
 
@@ -12,7 +12,7 @@ Via the search page by clicking this icon:
 
 ![Image: File Tree Report via the Search Page](images/image_analytics_file_tree_access_via_search_pane.png)
 
-### Using the File Tree Report
+#### Using the File Tree Report
 
 ![Image: File Tree Report Overview](images/image_analytics_file_tree_overview.png)
 

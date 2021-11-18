@@ -46,11 +46,15 @@ Python will be installed in **/usr/bin/python3**
 
 🔴 &nbsp;A new folder is created under **/Applications/Python 3.x** change that with your exact version number, ex: 3.9:
 
+<img src="images/image_indexers_install_for_mac_python_installer_change_version_number.png" width="750">
+
 ![Image: Change Python Folder’s Version Number](images/image_indexers_install_for_mac_python_installer_change_version_number.png)
 
 🔴 &nbsp;As the instructions said in the last installation panel, you need to run the **Install Certificates.command** to install the SSL certificates needed by Python.
 
 🔴 &nbsp;Double-click on **Install Certificates.command** to run:
+
+<img src="images/image_indexers_install_for_mac_python_installer_phython_certificates.png" width="750">
 
 ![Image: Install Python Certificates](images/image_indexers_install_for_mac_python_installer_phython_certificates.png)
 

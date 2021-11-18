@@ -1,7 +1,8 @@
 ___
-# <a id="task_management"></a>Task Management
+## <a id="task_management"></a>Task Management
+___
 
-## Distributed Architecture and Management
+### Distributed Architecture and Management
 
 Diskover has a distributed task system where workers can be distributed among many resources. For each resource providing a task worker, services will need to have  **diskoverd**  installed. Please refer to instructions on how to set up the the  **diskoverd** task service in the [Diskover Installation Guide - Setting Up Diskover Task Worker Daemon](https://www.diskoverdata.com/resources/documentation/). This section will describe setting up both indexing and custom tasks within the Diskover-Web Task Panel.
 
@@ -9,7 +10,7 @@ Diskover has a distributed task system where workers can be distributed among ma
 
 _[Click here for a full view of the diagram.](images/diagram_diskover_architecture_reference_generic_with_border.png)_
 
-## Validate Task Management System has Task Worker(s)
+### Validate Task Management System has Task Worker(s)
 
 ➡️ Open the Task Panel within the Diskover-Web user interface > **gear icon** > **Task Panel** and go to **Workers** tab.
 
@@ -17,15 +18,15 @@ _[Click here for a full view of the diagram.](images/diagram_diskover_architectu
 
 ![Image: Tasks Management System](images/image_tasks_task_panel_management_task_workers.png)
 
-## Managing Diskover Tasks via the Task Panel
+### Managing Diskover Tasks via the Task Panel
 
 The following will illustrate how to create basic indexing and custom tasks via the Diskover Task Panel.
 
-### Index Tasks
+#### Index Tasks
 
 A default indexing task is provided in the task panel. The configuration of indexing tasks is different for Posix File Systems and S3 based object storage, the following will illustrate setting up basic indexing tasks for each.
 
-#### Posix File System Indexing Task
+##### Posix File System Indexing Task
 
 ➡️ Select **New Index Task** from > **Task Panel** > **Task List** tab:
 
@@ -58,7 +59,7 @@ The following **Create New Index Task** dialog box will appear. Configure as fol
 
 ![Image: Create Task](images/image_tasks_task_panel_create_task_button.png)
 
-#### S3 Bucket Indexing Task
+##### S3 Bucket Indexing Task
 
 Indexing tasks for S3 buckets are slightly different than Posix File systems, the following outlines the configuration differences required in the **Create New Index Task** in the Task Panel.
 
@@ -74,7 +75,7 @@ Where **bucketname** is the actual name of the S3 bucket desired for indexing, i
 
 ![Image: Disable Media Info Plugin for S3 Based Storage](images/image_tasks_task_panel_disable_media_info_plugin_for_s3_storage.png)
 
-#### Non S3 Bucket Indexing Task
+##### Non S3 Bucket Indexing Task
 
 Indexing tasks for non-AWS S3 buckets is slightly different than the previous section. The following outlines the configuration differences required for alternate credentials and endpoints.
 

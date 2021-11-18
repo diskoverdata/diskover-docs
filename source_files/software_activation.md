@@ -12,12 +12,12 @@ No license key is required for **Diskover Community Edition**. If you would like
 
 Place the license keys in the following locations. 
 
-➡️Copy **diskover.lic** file to:
+🔴 &nbsp;Copy **diskover.lic** file to:
 ```
 /opt/diskover/diskover.lic
 ```
 
-➡️ Copy **diskover-web.lic** file:
+🔴 &nbsp;Copy **diskover-web.lic** file:
 ```
 /var/www/diskover-web/src/diskover/diskover-web.lic
 ```
@@ -30,18 +30,18 @@ chown nginx:nginx diskover-web.lic && chmod 644 diskover-web.lic
 
 #### License Key for Windows
 
-➡️ Place the license keys in the following locations. Copy **diskover.lic** file to:
+🔴 &nbsp;Place the license keys in the following locations. Copy **diskover.lic** file to:
 ```
 C:\Program Files\diskover\
 ```
 
-➡️ Copy **diskover-web.lic** file to folder:
+🔴 &nbsp;Copy **diskover-web.lic** file to folder:
 ```
 C:\Program Files\diskover-web\src\diskover\
 ```
 #### License Key for Mac
 
-➡️ Copy **diskover.lic** file to folder:
+🔴 &nbsp;Copy **diskover.lic** file to folder:
 ```
 /Applications/Diskover.app/Contents/MacOS/diskover/
 ```

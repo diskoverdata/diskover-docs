@@ -4,9 +4,9 @@ theme:
     favicon: 'assets/images/favicon.png'
     logo: 'assets/images/logo.png'
     palette:
-        scheme: slate
-        primary: deep purple
-        accent: yellow
+        scheme: white
+        primary: grey
+        accent: blue
 markdown_extensions:
     - mdx_breakless_lists
     - markdown_checklist.extension

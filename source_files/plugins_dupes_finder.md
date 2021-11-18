@@ -1,4 +1,4 @@
-## Duplicates Plugin
+### Duplicates Plugin
 
 The Diskover duplicate plugin (dupes-finder) leverages post processing of index to check for duplicates, across all file systems, or subset thereof. The plugin supports **xxhash** or **MD5 checksums**. The plugin is designed for two use cases:
 
@@ -18,18 +18,18 @@ The duplicates plugin will store hash values that can be stored only for duplica
 
 ![Image: Hash Values](images/image_plugins_dupes_finder_hash_values_in_file_attributes.png)
 
-➡️ The dupes-finder plugin runs post index and  operates on completed indices as a scheduled job or on  demand job to provide  duplicates analysis on completed indices, to enable:
+🔴 &nbsp;The dupes-finder plugin runs post index and  operates on completed indices as a scheduled job or on  demand job to provide  duplicates analysis on completed indices, to enable:
 ```
 vim /root/.config/diskover_dupesfinder/config.yaml
 ```
 
-➡️ At minimum configure the following:
+🔴 &nbsp;At minimum configure the following:
 - mode: desired checksum **xxhash** or **md5**
 - extensions: desired file extensions to check, for all files use `[ ]`
 
 ![Image: Dupes-Finder Configuration](images/image_plugins_dupes_finder_config.png)
 
-➡️ To run the duplicates check via command line:
+🔴 &nbsp;To run the duplicates check via command line:
 ```
 cd /opt/diskover
 python3 diskover_dupesfinder.py –useindex=indexname

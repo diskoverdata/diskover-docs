@@ -34,10 +34,8 @@ Individual users can set their time zone preference to their local time zone wit
 
 <img src="images/image_diskover_app_settings_menu.png" width="350">
 
-![Image: Access User Preference Time Zone Setting](images/image_diskover_app_settings_menu.png)
-
 🔴 &nbsp;Check the box **Show times in local timezone** and simply exit out of the settings dialog box.
 
-<img src="images/image_time_zone_local_timezone_selection.png" width="300">
+<img src="images/image_time_zone_local_timezone_selection.png" width="450">
 
 ![Image: Set to Local Time Zone Setting](images/image_time_zone_local_timezone_selection.png)

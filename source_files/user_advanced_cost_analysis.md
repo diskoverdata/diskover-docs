@@ -1,11 +1,11 @@
-<h2 id="cost_analysis">Cost Analysis Report</h2>
+<h3 id="cost_analysis">Cost Analysis Report</h3>
 
 The cost analysis report offers a snapshot of where your storage money is being allocated. This tool is designed to control your operating costs  by:
 
 - Charging your customers appropriately for storage.
 - Incentivize cleanup/data curation instead of purchasing more storage.
 
-<h3 id="cost_config">Storage Cost Calculation and Configuration Overview</h3>
+<h4 id="cost_config">Storage Cost Calculation and Configuration Overview</h4>
 
 The initial setup is enabled and configured by a System Administrator using your organization’s real figures. Here is an example of how the cost is calculated:
 
@@ -23,7 +23,7 @@ There are many other factors that can be compounded to the cost of the storage i
 
 You need an admin account to edit the customizable cost analysis reports.
 
-### Storage Cost Configuration Overview
+#### Storage Cost Configuration Overview
 
 This diagram explains how storage cost is enabled and configured by your System Administrator.
 
@@ -32,13 +32,13 @@ This diagram explains how storage cost is enabled and configured by your System 
 _[Click here for a full screen view of the Storage Cost Configuration Overview diagram.](images/diagram_diskover_storage_cost_configuration_overview_with_border.png)_
 
 
-### Accessing the Cost Analysis Report
+#### Accessing the Cost Analysis Report
 
 Via the  **Analytics**  drop-down list:
 
 <img src="images/image_analytics_cost_analysis_access_via_analytics_dropdown.png" width="400">
 
-### Using the Cost Analysis Report
+#### Using the Cost Analysis Report
 
 The cost analysis report offers repeatable reports that can be configured by project, client, aging, etc.
 
@@ -54,7 +54,7 @@ D) The cost analysis  report is global for all storage volumes, selecting any of
 
 E) You can view the queries used for the report, but an admin account is required to edit them.
 
-### Cost Analysis in File Search Page
+#### Cost Analysis in File Search Page
 
 Once the cost analysis tool is enabled and configured by your System Administrator, the cost associated to a folder or a file can be viewed in the file search page.
 

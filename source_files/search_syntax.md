@@ -1,6 +1,7 @@
 ___
 <a id="search_syntax"></a>
-# Manual Search Syntax
+## Manual Search Syntax
+___
 
 Until you get familiar with Diskover, we strongly recommend using the built-in search tools and [filters](#filters) available in the interface when trying to achieve complex queries. Depending on what you are looking for, [quick searches](#quick_search) can also be an easy way to search.
 
@@ -10,7 +11,7 @@ The list of possible search queries and syntax is exhaustive therefore only the 
 
 ![Image: Help with Queries and Syntax](images/image_menu_gear_icon_selection_help.png)
 
-## Syntax Based on Elasticsearch Rules
+### Syntax Based on Elasticsearch Rules
 
 As Diskover uses Elasticsearch in the backend, all search syntax within Diskover are based on Elasticsearch rules. We will discuss many of these rules in this chapter, but for more details and more examples, please visit: 
 
@@ -30,17 +31,17 @@ Trying to launch a query with too many words and/or criteria, unless you know th
 
 Ways to either pinpoint or expand your results will be explained in this chapter.
 
-## Basic Search and Query Rules
+### Basic Search and Query Rules
 
 > 🔆 Pay attention to all the messages in the green and blue information bars, they are very helpful!
 
-### Range of Search
+#### Range of Search
 
 When typing a manual query, the value needs to be typed in the [search bar](#search_bar).
 
 Unless you select a specific [storage volume and/or directory](#limiting_searches), Diskover will search all the storage volumes and their parent paths during a manual search.
 
-### Case Sensitivity
+#### Case Sensitivity
 
 Search queries are mostly case insensitive, even if upper or lowercases are used in the file name or path.
 
@@ -48,7 +49,7 @@ But there are the few exceptions where queries are case sensitive:
 - When [searching on time](#search_time).
 - When searching on [field names](#search_field_names).
 
-### Grouping
+#### Grouping
 
 At times you will need to group criteria, so Diskover can make sense of the queries.
 
@@ -61,7 +62,7 @@ At times you will need to group criteria, so Diskover can make sense of the quer
 
  <p id="search_single_word"></p>
 
-### The Logic Behind Searching on a Single Word
+#### The Logic Behind Searching on a Single Word
 
 When typing a single word in the search bar, Diskover will look for that **isolated word**. In order to "split" and find isolated words, Diskover/Elasticsearch uses **tokenizers** like **space, underscore, hyphen, forward slash, period, other punctuation, as well as upper cases** to make sense of what is included in a file name. For example:
 
@@ -93,29 +94,33 @@ When searching on a single word for example, the results might be limited if you
 The same rule applies with numbers. For example:
 
 - If the file name would be **SomethingGood_20161031.mp4**, you would need to either:
-	- Type the all the numbers to find that file with that specific date
-	- Or typing **\*201610\*** would find all the files that have the year 2016 and the month of October, assuming that all those files were identified the same way with the same date format.
+	- Type the all the numbers **20161031** to find that file with that specific date
+	- Or typing **201610\*** would find all the files that have the year 2016 and the month of October, assuming that all those files were identified the same way with the same date format.
 
-### Examples with Isolated Words
+#### Examples with Isolated Words
 If the file name would be **for_your_eyes_only.mov** or **ForYourEyesOnly.mov**:
 
 - Launching a search with only **eyes** would find that file, but again, naming conventions being what they are, it is recommended to use an **\*** to expand your results at first to make sure you are not missing any files named differently.
 
 - Also, if you are not sure if **eyes** is plural or singular in the file name, you could use **eye?** to replace a single character.
 
-### Examples with Sequence Number
+#### Examples with Season Number
 Let's do another example with a season's number for a show. For example, if you want to search for **season 1**, the file name could have different spelling like **S1**, **season 1**, **s01**, **s_1**, etc. 
 
 In order to expand your results to include all possibilities, without at the same time expending too much, the best search syntax would be **s*1** because the **\*** would catch everything in between the **s** and the **1**. Now, this would also find season 11 for example, but it's better to widen your results at first and then narrow them down once you have an idea of the possible results.
 
-### Example Using * and ? in the Same Query
+#### Find all Files in a Sequence
+
+To find all files in a sequence, if you type for example **img\*.dpx** would find all files with the following similar names: img001.dpx, img002.dpx, etc.
+
+#### Example Using * and ? in the Same Query
 Both **?** and **\*** wild cards can be used in the same query, for example searching for Johnny Smith: **John\* Sm?th**
 
 >🔆 If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > settings > [predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much. Throughout this chapter, we will assume the predictive search has not been selected.
 
  <p id="search_field_names"></p>
 
-## Searches Using Field Names
+### Searches Using Field Names
 
 Searching with field names can be effective if you search on a specific and/or hidden field and are looking for precise results.
 
@@ -153,7 +158,7 @@ Here are the detault field names. This list can also be found in the help page o
 - **tags** - any tag(s) associated with a file or directory
 - **type** - file or directory
 
-## Queries with File Extensions
+### Queries with File Extensions
 
 When searching on file extensions, it is recommended to either:
 - Use the dedicated fields in the [pre-built filters](#filters). 
@@ -184,11 +189,11 @@ Here are some examples of queries using operators to narrow your searches.
  
  <p id="complex_queries"></p>
  
-## The Need of Grouping for Complex Queries
+### The Need of Grouping for Complex Queries
 
 When using more than one operator, it is recommended to use parentheses **( )** in order to group some elements and help Diskover make sense of the query. A few examples while still using the file name structure **thejunglebook_s01_ep05_en.mov**:
 
-### Examples with Single Grouping
+#### Examples with Single Grouping
 
 - **\*jungle\* AND (s\*1 OR s\*2)** would find all files related to season 1 and season 2 for The Jungle Book series.
 
@@ -198,7 +203,7 @@ When using more than one operator, it is recommended to use parentheses **( )** 
 
 Another type of example with words only, and let's use **New York City**. If you only want to find files that have all those 3 words in them, you can type **(new york city)** assuming that all the words are isolated of course.
 
-### Examples with Multiple Groupings
+#### Examples with Multiple Groupings
 
 - **\*jungle\* AND (s*1 OR s*2) (NOT (en OR it))** still using the same file name example as above, would find all files for season 1 and season 2, but in all other languages than English or Italian.
 
@@ -228,7 +233,7 @@ Be aware that launching a query with the fuzziness operator can use an enormous 
 
  <p id="search_size"></p>
 
-## Searching on File Size
+### Searching on File Size
 
 Diskover shows file size (size) and allocated size (size_du) in bytes. We recommend using the [filters](#filters), as well as [quick search](#quick_search) when searching on size, but these fields can also be searched manually. Some examples:
 
@@ -244,11 +249,11 @@ Diskover shows file size (size) and allocated size (size_du) in bytes. We recomm
 
 <p id="search_time"></p>
 
-## Searching on Time
+### Searching on Time
 
 Although it is strongly advised to use [filters](#filters) or [quick search](#quick_search) to query time, below are a few examples on how to do so with a manual query.
 
-### Definitions
+#### Definitions
 - **atime**: last accessed
 	- The file may have been opened by you, or may have been accessed by some other program or a remote machine. Anytime a file has been accessed, its access time changes.
 - **ctime**: last changed 
@@ -256,7 +261,7 @@ Although it is strongly advised to use [filters](#filters) or [quick search](#qu
 - **mtime**: last modified 
 	- Indicates the time the contents of the file has been changed. Mind you, only the contents, not the attributes. For instance, if you open a file and change some (or all) of its content, its mtime gets updated. If you change a file's attribute (like read-write permissions, metadata), its mtime doesn't change, but ctime will.
 
-### Formatting
+#### Formatting
 Format to use when searching for date and time. 
 
 - Date: **d** = day, **M** = month, **Y** = year
@@ -265,7 +270,7 @@ Format to use when searching for date and time.
 
 >🔆 Searching on time is case sensitive when it comes to formatting as detailed above, as well as writing the field name in lower case only.
 
-### Examples to Find Recent Files
+#### Examples to Find Recent Files
 A few helpful queries for looking for the **latest indexed files** for example. Variables can easily be adjusted to your needs:
 
 - Files that have been modified or changed within the last 30 minutes:
@@ -275,7 +280,7 @@ A few helpful queries for looking for the **latest indexed files** for example. 
 - Files that have been modified or changed in the past day: 
 	- **ctime:[now-1d TO now]  OR mtime:[now-1d TO now]**
 
-### Examples to Find Old Files
+#### Examples to Find Old Files
 Some helpful queries when looking for old files where you can easily change the variables to adjust the queries to your needs:
 
 - Files that haven't been modified in over 3 months but less than 5 years:
@@ -285,7 +290,7 @@ Some helpful queries when looking for old files where you can easily change the 
 
 <p id="limiting_searches"></p>
 
-## Limiting your Searches to a Specific Volume and/or Directory
+### Limiting your Searches to a Specific Volume and/or Directory
 
 When wanting to limit your searches to a specific storage volume or directory, there are a many ways to achieve that, here are the easiest ones:
 1. You can use **current dir** toggle button at the top of the user interface once you've selected the particular path (volumes and/or directory) which you want to use to narrow your searches. Be aware that this selection will remain active until you go back and move that toggle button.

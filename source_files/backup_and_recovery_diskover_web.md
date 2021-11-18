@@ -9,7 +9,7 @@ The Diskover-Web stores the user configured settings in the following series of 
 
 Perform the following commands to backup the Diskover-Web user configured settings. 
 
-➡️ Make a directory date for collection of backups:
+🔴➡️ Make a directory date for collection of backups:
 ```
 mkdir -p /var/opt/diskover/backups/diskover-web/$(date +%Y%m%d)/src/diskover/
 ```
@@ -18,7 +18,7 @@ mkdir -p /var/opt/diskover/backups/diskover-web/$(date +%Y%m%d)/src/diskover/
 mkdir -p /var/opt/diskover/backups/diskover-web/$(date +%Y%m%d)/public/tasks/
 ```
 
-➡️  Backup user configured settings:
+🔴 Backup user configured settings:
 ```
 rsync -avz /var/www/diskover-web/src/diskover/Constants.php /var/opt/diskover/backups/diskover-web/$(date +%Y%m%d)/src/diskover/
 ```

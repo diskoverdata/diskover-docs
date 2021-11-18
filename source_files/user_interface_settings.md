@@ -1,6 +1,7 @@
 ___
 <a id="settings"></a>
-# Settings
+## Settings
+___
 
 You can access the settings  via the gear icon at the top right corner of the interface.
 
@@ -10,13 +11,13 @@ Changing the settings are personal to your own browser, even if you share a logi
 
 Your cookies might also be cleared and need to be reselected after a software update.
 
-## Profile
+### Profile
 
 This profile segment is informative only.
 
 ![Image: Settings - Profile](images/image_settings_profile.png)
 
-<h2 id="time">Time Display</h2>
+<h3 id="time">Time Display</h3>
 
 You can opt to change the time for your  **local time zone**  instead of  **UTC**  (Coordinated Universal Time).  If you decide to change for your  **local time zone**, click the box and your selection will be saved automatically.
 
@@ -24,7 +25,7 @@ This change will affect the [storage time of your indices](#indices), file date 
 
 ![Image: Settings – Time Display](images/image_settings_time_display.png)
 
-<h2 id="binary_decimal">File Size Display</h2>
+<h3 id="binary_decimal">File Size Display</h3>
 
 By default, Diskover shows the file size using the  **binary system**. Click the box if you prefer using the  **decimal system**  and your selection will be saved automatically.
 
@@ -32,19 +33,19 @@ Also by default, Diskover’s file size decimals is set to  **1**. You can chang
 
 ![Image: Settings – File Size Display](images/image_settings_file_size_display.png)
 
-<h2 id="predictive_search">Use Predictive Search</h2>
+<h3 id="predictive_search">Use Predictive Search</h3>
 
 Check this box if you want your searches to **always** be expanded with the wild card **\*** without having to type it in the search bar. The [wild cards](#wildcards) are is further explained in the [search syntax chapter](#search_syntax).
 
 ![Image: Settings - Use Predictive Search](images/image_settings_use_predictive_search.png)
 
-<h2 id="default_columns_sort">Default Search Sort</h2>
+<h3 id="default_columns_sort">Default Search Sort</h3>
 
 By default, the columns in the file search page will be [sorted by path and then by name](#columns_sort). Select this box if you want to show unsorted search results instead.
 
 ![Image: Settings - Default Search Sort](images/image_settings_default_search_sort.png)
 
-<h2 id="hide_columns">Hide/Unhide Fields in Search Results</h2>
+<h3 id="hide_columns">Hide/Unhide Fields in Search Results</h3>
 
 Only click the boxes (showing as a green check mark) for the fields/columns you DO NOT wish to see in your  [search results](#result_pane_columns). Your selection(s) will be saved automatically.
 
@@ -54,7 +55,7 @@ Click the  **Reset**  button if you have modified the columns width and wish to 
 
 ![Image: Settings – Hide/Unhide Columns in Search Results](images/image_settings_hide_fields_in_search_results.png)
 
-<h2 id="path_translation">Path Translations for Copying Paths</h2>
+<h3 id="path_translation">Path Translations for Copying Paths</h3>
 
 Depending on how your System Administrator configured Diskover, your operating system and with whom you need to share paths, you may need to adjust this parameter to easily copy paths. This will basically change all forward slash / to backslash \\ and add some when needed for Windows.
 
@@ -62,7 +63,7 @@ For example, to translate from `/isilon1/data/dm/tools/staging_files.xls` to `\\
 
 ![Image: Settings – Path Translations for Copying Paths](images/image_settings_path_translation.png)
 
-<h2 id="clear_cache">Clear Diskover Cache</h2>
+<h3 id="clear_cache">Clear Diskover Cache</h3>
 
 A cache is used to store website content for performance purposes and is stored in the browser only. There are a few instances in which you will need to clear the cache, but it should be used as a last resort:
 -  Sometimes the cache might prevent a browser-based software from working properly overtime and the cache needs to be cleared.
@@ -70,7 +71,7 @@ A cache is used to store website content for performance purposes and is stored 
 
 ![Image: Settings – Clear Diskover Cache](images/image_settings_clear_cache.png)
 
-<h2 id="clear_cookies">Clear Diskover Cookies</h2>
+<h3 id="clear_cookies">Clear Diskover Cookies</h3>
 
 Cookies  are used by the browser to store user’s preferences, like the personal settings described in this chapter, and are stored in both server and browser. There are a few instances in which you may need to clear the cookies:
 - After a software update/upgrade to clear the cookies from the previous version that might affect the behavior of the new version.
@@ -80,7 +81,7 @@ Clearing the cookies  will also remove the customized settings discussed in this
 
 ![Image: Settings – Clear Diskover Cookies](images/image_settings_clear_cookies.png)
 
-## About Diskover
+### About Diskover
 
 This segment is informative only and provides details about your Diskover software.
 

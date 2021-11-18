@@ -10,8 +10,7 @@ B) From the **file search page** > select any file and/or directory > **Tag** dr
 
 C) From **Analytics** menu > select **Tags** > **Edit tags** button > will open C) window and allow you to add, delete or edit exiting tags.
 
-<img src="images/image_tags_manual_tagging_tag_editor_access.png" width="300">
-<img src="images/image_tags_manual_tagging_tag_editor.png" width="400">
+<img src="images/image_tags_manual_tagging_tag_editor_access.png" width="300"> 🔴 &nbsp; <img src="images/image_tags_manual_tagging_tag_editor.png" width="300">
 
 ![Image: Tags Editor Selection](images/image_tags_manual_tagging_tag_editor_access.png)
 ![Image: Tags Editor Window](images/image_tags_manual_tagging_tag_editor.png)

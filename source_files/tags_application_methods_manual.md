@@ -20,6 +20,4 @@ From the **file search page** > select **one or multiple files and/or directorie
 
 >_**WARNING!**_ This operation cannot be undone.
 
-<img src="images/image_tags_manual_taggins_in_diskover_ui_tags_removal.png" width="350">
-
-![enter image description here](images/image_tags_manual_taggins_in_diskover_ui_tags_removal.png)
+<img src="images/image_tags_manual_taggins_in_diskover_ui_tags_removal.png" width="250">

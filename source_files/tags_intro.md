@@ -1,5 +1,6 @@
 ___
-# Additional Business Context Metadata via Tagging
+## Additional Business Context Metadata via Tagging
+___
 
 One of the powerful features of Diskover is the ability to add “business context” to the index of files. Business context enables:
 

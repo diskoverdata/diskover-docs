@@ -1,4 +1,4 @@
-## Media Info Harvest Plugin
+### Media Info Harvest Plugin
 
 The media info harvest plugin is designed to provide media metadata attributes about a file without granting the Diskover user any read/write file system access.
 
@@ -12,21 +12,21 @@ You can view and search on media info attributes in Diskover-Web since it will s
 
 ![Image: Media Info Field in UI Results Pane](images/image_plugins_media_info_diskover_ui_column_in_results_pane.png)
 
-### Install Media Info Dependencies
+#### Install Media Info Dependencies
 
-➡️ The media info plugin uses the **ffmpeg** [https://www.ffmpeg.org/](https://www.ffmpeg.org/) open-source package to harvest media attributes for media file types.
+🔴 &nbsp;The media info plugin uses the **ffmpeg** [https://www.ffmpeg.org/](https://www.ffmpeg.org/) open-source package to harvest media attributes for media file types.
 ```
 yum localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm
 yum install ffmpeg ffmpeg-devel
 ```
 
-➡️ The media info plugin runs as part of the indexing process. To enable:
+🔴 &nbsp;The media info plugin runs as part of the indexing process. To enable:
 ```
 vim /root/.config/diskover/config.yaml
 ```
-➡️ enable: set to **True**
+🔴 &nbsp;enable: set to **True**
 
-➡️ files: **[‘mediainfo’]**
+🔴 &nbsp;files: **[‘mediainfo’]**
 
 ![Image: Media Info Plugin Configuration in Terminal](images/image_plugins_media_info_config_in_terminal.png)
 

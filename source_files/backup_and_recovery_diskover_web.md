@@ -1,4 +1,4 @@
-## Diskover-Web Backup
+### Diskover-Web Backup
 
 The Diskover-Web stores the user configured settings in the following series of files:
 ```

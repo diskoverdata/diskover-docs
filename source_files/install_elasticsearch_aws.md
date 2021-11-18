@@ -39,7 +39,8 @@ The IP addresses/subnets will be known after completion of [Diskover-Web for Ama
 
 ![Image: Create an Elasticsearch Domain – Modify the Access Policy for diskoverdata](images/image_aws_customer_deployment_elasticsearch_modify_access_policy.png)
 
-<images/image_aws_customer_deployment_elasticsearch_modify_access_policy_enlarged_codes.png" width="750">
+<img src="images/image_aws_customer_deployment_elasticsearch_modify_access_policy_enlarged_codes.png" width="750">
+
 
 For more information visit:
 

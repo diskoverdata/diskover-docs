@@ -7,7 +7,7 @@
 get-process | Select-String "nginx"
 ```
 
-<img src="images/image_health_check_windows_status_nginx.png" width="750">
+<img src="images/image_health_check_windows_status_nginx.png" width="700">
 
 🔴 &nbsp;Check status of PHP-FPM service.
 

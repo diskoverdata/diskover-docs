@@ -1,10 +1,10 @@
-## Smart Searches
+### Smart Searches
 
 Smart Searches provide a mechanism to create repeatable reports or bookmarks based on search queries.
 
 Any users can access the reports, but only users with an admin level account can add, edit or delete reports.
 
-### Accessing Smart Searches
+#### Accessing Smart Searches
 
 Within the Diskover-Web user interface, Smart Searches are located in **Analytics** > **Smart Searches**.
 
@@ -18,7 +18,7 @@ When typing a **!** in the search bar, the list of existing Smart Searches repor
 
 ![Image: Shortcut to Launch Smart Searches Report](images/image_reporting_smart_searches_launch_shortcut.png)
 
-### Smart Searches Configuration
+#### Smart Searches Configuration
 
 By default, Diskover has preconfigured reports by file types/extensions, but any type of queries with single or mixed criteria can be added.
 

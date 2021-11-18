@@ -12,8 +12,6 @@ Elasticsearch Windows MSI install instructions can be found here:
 
 <img src="images/image_elasticsearch_install_for_windows_default_install_locations.png" width=“700">
 
-![Image: Elasticsearch Default Install Locations](images/image_elasticsearch_install_for_windows_default_install_locations.png)
-
 🔴 &nbsp;Select **Install as a service**:
 
 <img src="images/image_elasticsearch_install_for_windows_install_as_a_service.png" width=“700">

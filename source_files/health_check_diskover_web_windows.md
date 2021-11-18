@@ -7,7 +7,7 @@
 get-process | Select-String "nginx"
 ```
 
-<img src="images/image_health_check_windows_status_nginx.png" width="400">
+<img src="images/image_health_check_windows_status_nginx.png" width="600">
 
 ![Image: Check Health Status of NGINX Service](images/image_health_check_windows_status_nginx.png)
 

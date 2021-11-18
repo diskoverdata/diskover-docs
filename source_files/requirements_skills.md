@@ -1,4 +1,4 @@
-## Skills and Knowledge Requirements
+### Skills and Knowledge Requirements
 
 This document is intended for Service Professionals and System Administrators who install Diskover software components. The installer should have strong familiarity with:
 

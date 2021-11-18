@@ -1,33 +1,33 @@
-### Install PHP
+#### Install PHP
 
-➡️ Go to the official download link and download the required version of PHP 7 for Windows: <a href=“https://www.php.net/downloads.php”>https://www.php.net/downloads.php</a>
+🔴 &nbsp;Go to the official download link and download the required version of PHP 7 for Windows: <a href=“https://www.php.net/downloads.php”>https://www.php.net/downloads.php</a>
 
-➡️ Download the **Thread Safe** version 7.X for Windows.
+🔴 &nbsp;Download the **Thread Safe** version 7.X for Windows.
 
-➡️ Create the following folder **C:\Program Files\Php**
+🔴 &nbsp;Create the following folder **C:\Program Files\Php**
 
-➡️ Extract the **php zip file** and move to **C:\Program Files\Php**
+🔴 &nbsp;Extract the **php zip file** and move to **C:\Program Files\Php**
 
-➡️ Configure the environment variable to access PHP from the command line.
+🔴 &nbsp;Configure the environment variable to access PHP from the command line.
 
-➡️ Type **environment** in the search box and select **Edit the system environment variables**.
+🔴 &nbsp;Type **environment** in the search box and select **Edit the system environment variables**.
 
-➡️ Select the **Environment variables** button, then click on the path row under **System variables**, and click **Edit**.
+🔴 &nbsp;Select the **Environment variables** button, then click on the path row under **System variables**, and click **Edit**.
 
-➡️ Add the following and replace with *your install location*:
+🔴 &nbsp;Add the following and replace with *your install location*:
 ```
 C:\Program Files\Php\php-7.4.14-Win32-vc15-x64
 ```
 
 ![Image: Install PHP](images/image_diskover_web_install_for_windows_replace_php_install_location.png)
 
-### Verify Environment Variables
+#### Verify Environment Variables
 
-➡️ Open Windows PowerShell and type in `php -v` to verify PHP is working.
+🔴 &nbsp;Open Windows PowerShell and type in `php -v` to verify PHP is working.
 
 ![Image: Confirm PHP is Working](images/image_diskover_web_install_for_windows_verify_php_working.png)
 
-➡️ Create **php.ini** file to enable required dynamic extensions **C:\Program Files\Php\php-7.4.14-Win32-vc15-x64\php.ini**
+🔴 &nbsp;Create **php.ini** file to enable required dynamic extensions **C:\Program Files\Php\php-7.4.14-Win32-vc15-x64\php.ini**
 ```
 ; Directory in which the loadable extensions (modules) reside.
 extension_dir = "C:\Program Files\Php\php-7.4.14-Win32-vc15-x64\ext\"
@@ -45,30 +45,30 @@ extension=php_mbstring.dll
 extension=php_openssl.dll
 ```
 
-➡️ Configure integration of NGINX with PHP.
+🔴 &nbsp;Configure integration of NGINX with PHP.
 
-➡️ Start PHP at **127.0.0.1:9999**
+🔴 &nbsp;Start PHP at **127.0.0.1:9999**
 
-➡️ Open Windows PowerShell as administrator and run:
+🔴 &nbsp;Open Windows PowerShell as administrator and run:
 ```
 C:\Program Files\Php\php-7.4.14-Win32-vc15-x64> php-cgi.exe -b 127.0.0.1:9999
 ```
 
 ![Image: NGINX and PHP Integration Configuration](images/image_diskover_web_install_for_windows_nginx_php_integration.png)
 
-➡️ Make a backup of **nginx.conf** file and copy:
+🔴 &nbsp;Make a backup of **nginx.conf** file and copy:
 ```
 C:\Program Files\Nginx\nginx-1.19.6\conf\nginx.conf” “C:\Program Files\Nginx\nginx-1.19.6\conf\nginx.conf.bak
 ```
 
-➡️ Edit **nginx.conf** file:
+🔴 &nbsp;Edit **nginx.conf** file:
 ```
 C:\Program Files\Nginx\nginx-1.19.6\conf\nginx.conf
 ```
 
 >*Note:* This configuration file assumes Diskover-Web is the only Web server running on the machine.
 
-➡️ Replace contents with the following text:
+🔴 &nbsp;Replace contents with the following text:
 ```
 #user  nobody;
 worker_processes  1;
@@ -116,27 +116,27 @@ http {
 }
 ```
 
-➡️ Create a file:
+🔴 &nbsp;Create a file:
 ```
 C:\Program Files\Nginx\nginx-1.19.6\html\info.php
 ```
 
-➡️ And test PHP configuration with the text below:
+🔴 &nbsp;And test PHP configuration with the text below:
 ```
 <?php
     phpinfo();
 ?>
 ```
 
-➡️ Start the NGINX Web server.
+🔴 &nbsp;Start the NGINX Web server.
 
-➡️ Open Windows PowerShell as administrator and run:
+🔴 &nbsp;Open Windows PowerShell as administrator and run:
 ```
 PS C:\Program Files\Nginx\nginx__-1.19.6> .\nginx__.exe
 ```
 
 ![Image: Start NGINX Web Server](images/image_diskover_web_install_for_windows_run_nginx_exe_from_powershell.png)
 
-➡️ Open **info.php** page to confirm proper configuration: <a href=“http://localhost/info.php”>http://localhost/info.php</a>
+🔴 &nbsp;Open **info.php** page to confirm proper configuration: <a href=“http://localhost/info.php”>http://localhost/info.php</a>
 
 ![Image: Verify PHP Configuration](images/image_diskover_web_install_for_windows_verify_php_config.png)

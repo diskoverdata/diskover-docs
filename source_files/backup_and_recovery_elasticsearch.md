@@ -21,8 +21,6 @@ Now we need to tell Elasticsearch that this is our snapshot directory location. 
 ```
 path.repo: ["/var/opt/diskover/backups/elasticsearch"]
 ```
-<img src="images/image_elasticsearch_directory_location_snapshot.png” width="100">
-
 <img src="images/image_elasticsearch_directory_location_snapshot.png" width="700">
                                                                          
 ![Image: Repo Path Setting](images/image_elasticsearch_directory_location_snapshot.png)

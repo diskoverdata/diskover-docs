@@ -1,9 +1,10 @@
 ___
-# Media Attributes
+## Media Attributes
+___
 
 Media attributes, like file resolution, codec, etc., are harvested during indexing and are therefore available to enhance in-depth searches and deliver accurate results.
 
-## Hide/Unhide Media Info Column in Search Results Pane
+### Hide/Unhide Media Info Column in Search Results Pane
 
 When using the file search page, you have access to a column with all the media attributes. If you cannot see that column, it means that it is hidden. To unhide that column, go to  **Settings**  >  **Hide fields in search results**  > unclick the box in front of  **media_info**.
 
@@ -13,13 +14,13 @@ The  **media_info** column will then be available within the search results pane
 
 ![Image: Media Info Column in Search Results](images/image_aja_edition_mediainfo_column_in_search_results_pane.png)
 
-## View Detailed Media Attributes
+### View Detailed Media Attributes
 
 Below is an example of the location where you can see detailed media attributes. You can access this page by clicking on a file in the search results pane or wherever you see the magnifying glass icon:
 
 ![Image: Harvested Media Attributes](images/image_aja_edition_media_info_file_attributes.png)
 
-## Search on Media Attributes
+### Search on Media Attributes
 
 The media attributes are part of the metadata harvested exclusively by the AJA Diskover Media Edition. If a file at the source doesn’t include any of these attributes, it goes without saying that no details will be harvested and/or be available.
 
@@ -29,7 +30,7 @@ In addition to thefile searches and syntax explained in the Diskover User Guide,
 - Queries syntax are case insensitive. 
 - The fields described below are meant to be copied/typed in the search bar of the Diskover user interface.
 
-### File resolution
+#### File resolution
 Field name: **media_info.resolution**
 >_Search query examples (syntax:variable):_
 >
@@ -37,7 +38,7 @@ Field name: **media_info.resolution**
 >
 >`media_info.resolution:*1080*` _(Would return all files with  **1080**  somewhere in the resolution)_
 
-### Codec
+#### Codec
 Field name: **media_info.codec**
 >_Search query examples (syntax:variable):_
 >
@@ -45,7 +46,7 @@ Field name: **media_info.codec**
 >
 >`media_info.codec:h264`
 
-### Codec long
+#### Codec long
 Field name: **media_info.codeclong**
 >_Search query examples (syntax:variable):_
 >
@@ -53,7 +54,7 @@ Field name: **media_info.codeclong**
 >
 >`media_info.codeclong:*quicktime*`
 
-### Pixel format
+#### Pixel format
 Field name: **media_info.pixfmt**
 >_Search query examples (syntax:variable):_
 >
@@ -61,7 +62,7 @@ Field name: **media_info.pixfmt**
 >
 >`media_info.pixfmt:*422*`
 
-### Frames
+#### Frames
 Field name: **media_info.frames**
 >_Search query examples (syntax:variable):_
 >
@@ -71,7 +72,7 @@ Field name: **media_info.frames**
 >
 > _Note: Use a specific number only if you know the exact number of frames a file would have, otherwise use the * to expand your results._
 
-### Duration
+#### Duration
 Field name: **media_info.pixfmt**
 
 _Note: This field will eventually reads time in this format **hh:mm:ss**, but is currently showing duration in seconds, ex: 30.5071 = 30 seconds and 5071 milliseconds)_
@@ -82,7 +83,7 @@ _Note: This field will eventually reads time in this format **hh:mm:ss**, but is
 >
 >_Note: Use the * if you’re looking for a file for which you know the duration is 30 seconds but the milliseconds are unknown._
 
-### Framerate
+#### Framerate
 Field name: **media_info.framerate**
 >_Search query examples (syntax:variable):_
 >
@@ -90,7 +91,7 @@ Field name: **media_info.framerate**
 >
 >_Note: Would return all files with standard framerate of 23.976_
 
-### Bitrate
+#### Bitrate
 Field name: **media_info.bitrate**
 >_Search query examples (syntax:variable):_
 >
@@ -98,7 +99,7 @@ Field name: **media_info.bitrate**
 >
 >_Note: Bitrate is a difficult field to search on, but not impossible._
 
-## Search on Media Info Fields with Operators
+### Search on Media Info Fields with Operators
 Operators (**and, or, not**) are explained in the Diskover User Guide, but here are a few query examples of using media info fields with operators:
 
 >`media_info.resolution:1920x1080 AND media_info.codeclong:*quicktime*`
@@ -117,7 +118,7 @@ Operators (**and, or, not**) are explained in the Diskover User Guide, but here 
 >
 >_Would find all files with pixel format either containing 444 or 422._
 
-## Media Info Fields Containing Error or Warning
+### Media Info Fields Containing Error or Warning
 
 If the media fields at the source are corrupted and/or Diskover determines the file as "suspect", the media info fields will show either **error** or **warning** within Diskover. Beloware search queries to either exclude or pinpoint files with those values:
 

@@ -19,6 +19,8 @@
 C:\Program Files\Php\php-7.4.14-Win32-vc15-x64
 ```
 
+<img src="images/image_diskover_web_install_for_windows_replace_php_install_location.png" width="750">
+
 ![Image: Install PHP](images/image_diskover_web_install_for_windows_replace_php_install_location.png)
 
 #### Verify Environment Variables

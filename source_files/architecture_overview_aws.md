@@ -1,6 +1,6 @@
 ___
-# <a id="architecture_diagram"></a>Architecture Overview
-
+## <a id="architecture_diagram"></a>Architecture Overview
+___
 The following provides a high-level overview of the Diskover scale-out architecture.
 
 ![Image: Diskover Reference Diagram Architecture](images/diagram_diskover_architecture_reference_aws_with_border.png)

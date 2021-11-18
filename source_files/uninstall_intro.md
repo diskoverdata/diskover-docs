@@ -1,4 +1,5 @@
 ___
-# Uninstall Diskover
+## Uninstall Diskover
+___
 
 The following outlines how to uninstall the Diskover application.

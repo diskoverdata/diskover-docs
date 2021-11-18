@@ -10,26 +10,38 @@ Elasticsearch Windows MSI install instructions can be found here:
 
 🔴 &nbsp;Select **Use default directories**:
 
+<img src="images/image_elasticsearch_install_for_windows_default_install_locations.png" width=“700">
+
 ![Image: Elasticsearch Default Install Locations](images/image_elasticsearch_install_for_windows_default_install_locations.png)
 
 🔴 &nbsp;Select **Install as a service**:
 
+<img src="images/image_elasticsearch_install_for_windows_install_as_a_service.png" width=“700">
+                                                                         
 ![Image: Install Elasticsearch as a Service](images/image_elasticsearch_install_for_windows_install_as_a_service.png)
 
 🔴 &nbsp;Select **This is the first master in new cluster**:
+
+<img src="images/image_elasticsearch_install_for_windows_new_cluster_config" width=“700">
 
 ![Image: Elasticsearch New Cluster Creation](images/image_elasticsearch_install_for_windows_new_cluster_config.png)
 
 🔴 &nbsp;No **X-Pack Plugins**  selected:
 
+<img src="images/image_elasticsearch_install_for_windows_unselect_plugins.png" width=“700">
+                                                                         
 ![Image: Elasticsearch X-Pack Plugins](images/image_elasticsearch_install_for_windows_unselect_plugins.png)
 
 🔴 &nbsp;Select **Basic** License:
+
+<img src="images/image_elasticsearch_install_for_windows_select_basic_license.png" width=“700">
 
 ![Image: Elasticsearch License Selection](images/image_elasticsearch_install_for_windows_select_basic_license.png)
 
 🔴 &nbsp;Installation completed:
 
+<img src="images/image_elasticsearch_install_for_windows_install_completed.png" width=“700">
+                                                                         
 ![Image: Elasticsearch Installation Completed](images/image_elasticsearch_install_for_windows_install_completed.png)
 
 You can also use **curl** in a Windows command prompt and make a **GET** request to the Elasticsearch cluster to check if the service is running on your local server.

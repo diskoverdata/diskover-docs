@@ -63,5 +63,4 @@ cd /opt/diskover
 ```
 python3 diskover_autotag.py -h
 ```
-
-![Image: Autotags Post-Index Usage](images/image_tags_autotags_post_index_usage.png)
+<img src="images/image_tags_autotags_post_index_usage.png" width="750">

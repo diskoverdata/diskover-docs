@@ -1,9 +1,9 @@
 ___
-# Media Specific Challenges and Solutions
-
+## Media Specific Challenges and Solutions
+___
 This section describes the prominent challenges that most Media and Entertainment facilities are currently facing.
 
-## Lack of Files Visibility
+### Lack of Files Visibility
 
 The lack of visibility and access to files' location and metadata is a real problem for end-users in media facilities, mostly due to the protected production network, as security is paramount because of piracy concerns and possible leaks to the public prior to release dates.
 
@@ -16,7 +16,7 @@ The lack of visibility and access to files' location and metadata is a real prob
 |Unable to verify if the file found/needed is the right one.  | Diskover's media info plugin enriches the ability to locate the correct file. Future thumbnail/preview plugin functionality will further increase accuracy. |
 
 
-## Inefficient Workflows
+### Inefficient Workflows
 
 Tremendous person-hours wasted due to a lack of continuity and automation around file-based production line.
 
@@ -26,7 +26,7 @@ Tremendous person-hours wasted due to a lack of continuity and automation around
 |Order system is usually not an integral part of the storage infrastructure, affecting the ability to charge accurately for storage per specific project. | The cost analysis tool within Diskover provides the ability to associate a storage element to the cost of goods sold to a project, client, work order, etc. |
 |The inability to identify files that need to be managed at the source. | Diskover’s manual tagging and automated scheduled tasks insure for safe and methodical file management, as well as file findability. |
 
-## Fast Pace Environments
+### Fast Pace Environments
 
 Significant increase of order volume compounded with shorter deadlines.
 

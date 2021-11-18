@@ -1,8 +1,8 @@
-## Elasticsearch Index Management
+### Elasticsearch Index Management
 
 Indices can be managed by policy and manually with Elasticsearch.
 
-### Elasticsearch Index Lifecycle Management
+#### Elasticsearch Index Lifecycle Management
 
 You can create and apply Index Lifecycle Management (ILM) policies to automatically manage your Diskover indices according to your performance, resiliency, and retention requirements.
 
@@ -12,11 +12,11 @@ More information on index lifecycle management can be found on elastic.co here:
 
 The following provides an example for managing Diskover indices on your Elasticsearch cluster, by creating a policy that deletes indices after 30 days for new Diskover indices:
 
-➡️ Your Elasticsearch service endpoint url is `<aws es endpoint>`
+🔴 &nbsp;Your Elasticsearch service endpoint url is `<aws es endpoint>`
 
-➡️ You want your indices to be purged after thirty days **30d**
+🔴 &nbsp;You want your indices to be purged after thirty days **30d**
 
-➡️ Your policy name will be created as  **cleanup_policy_diskover**
+🔴 &nbsp;Your policy name will be created as  **cleanup_policy_diskover**
 ```
 curl -X PUT "http://elasticsearch:9200/_ilm/policy/cleanup_policy_diskover?pretty" \
      -H 'Content-Type: application/json' \
@@ -35,14 +35,14 @@ curl -X PUT "http://elasticsearch:9200/_ilm/policy/cleanup_policy_diskover?prett
     }' 
 ```
 
-➡️ Apply this policy to all existing Diskover indices based on index name pattern:
+🔴 &nbsp;Apply this policy to all existing Diskover indices based on index name pattern:
 ```
 curl -X PUT "http://elasticsearch:9200/diskover-*/_settings?pretty" \
      -H 'Content-Type: application/json' \
      -d '{ "lifecycle.name": "cleanup_policy_diskover" }'
 ```
 
-➡️ Create a template to apply this policy to new Diskover indices based on index name pattern:
+🔴 &nbsp;Create a template to apply this policy to new Diskover indices based on index name pattern:
 ```
 curl -X PUT "http://192.168.10.119:9200/_snapshot/2021052401_es_backup?pretty" 
      -H 'Content-Type: application/json' 
@@ -52,16 +52,16 @@ curl -X PUT "http://192.168.10.119:9200/_snapshot/2021052401_es_backup?pretty"
     }'
 ```
 
-### Elasticsearch Manual Index Management
+#### Elasticsearch Manual Index Management
 
 Indexes can be manually listed and deleted in Elasticsearch via:
 
-➡️ List indices:
+🔴 &nbsp;List indices:
 ```
 curl -X GET http://elasticsearch_endpoint:9200/_cat/indices
 ```
 
-➡️ Delete indices:
+🔴 &nbsp;Delete indices:
 ```
 curl -X DELETE http:// elasticsearch_endpoint:9200/diskover-indexname
 ```

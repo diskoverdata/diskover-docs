@@ -36,6 +36,4 @@ Individual users can set their time zone preference to their local time zone wit
 
 🔴 &nbsp;Check the box **Show times in local timezone** and simply exit out of the settings dialog box.
 
-<img src="images/image_time_zone_local_timezone_selection.png" width="450">
-
-![Image: Set to Local Time Zone Setting](images/image_time_zone_local_timezone_selection.png)
+<img src="images/image_time_zone_local_timezone_selection.png" width="475">

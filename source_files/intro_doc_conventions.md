@@ -6,4 +6,4 @@ Throughout this document, all the lines displayed in a different font are design
 code example
 ```
 
-All proposed action items are preceded by this icon&nbsp; 🔴 &nbsp;in order to better guide you along the instructions.
+All proposed action items are preceded by this icon&nbsp;🔴 &nbsp;in order to better guide you along the instructions.

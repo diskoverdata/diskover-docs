@@ -1,4 +1,4 @@
-## Diskover Use Cases
+### Diskover Use Cases
 
 Diskover addresses the organization and integration of unstructured data stored across a variety of storage repositories from Linux  and Windows  filesystems to S3 based storage. Inefficient data management often results in:
 
@@ -13,10 +13,10 @@ Data curation  often involves annotation, publication, and presentation of the d
 
 The rapid growth of unstructured data has required a transition of traditional human curation tasks to more automated and scalable processes. Furthermore, the curation process often involves many “data stakeholders” in the process, each with different use cases. Diskover addresses the use cases of the various data stakeholders.
 
-### System Administrators
+#### System Administrators
 
 The use case for System Administrators is often centered around data cleanup, data disposition, and ensuring data redundancy. System Administrators are often tasked with controller costs associated with unstructured data.
 
-### Line of Business Users
+#### Line of Business Users
 
 The use case(s) for Line of Business users is often centered around adding value to data, finding relevant data, correlating, or associated related data sets, adding business context to data.

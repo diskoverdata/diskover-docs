@@ -1,5 +1,6 @@
 ___
-# Elasticsearch Environment
+## Elasticsearch Environment
+___
 
 Diskover requires an Elasticsearch 7.x environment.
 >- One node  is sufficient for initial testing.

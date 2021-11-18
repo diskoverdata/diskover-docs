@@ -1,17 +1,17 @@
-### Diskover-Web for Windows
+#### Diskover-Web for Windows
 
-➡️ Check status of NGINX service.
+🔴 &nbsp;Check status of NGINX service.
 
-➡️ Open Windows Powershell:
+🔴 &nbsp;Open Windows Powershell:
 ```
 get-process | Select-String "nginx"
 ```
 
 ![Image: Check Health Status of NGINX Service](images/image_health_check_windows_status_nginx.png)
 
-➡️ Check status of PHP-FPM service.
+🔴 &nbsp;Check status of PHP-FPM service.
 
-➡️ Open Windows Powershell:
+🔴 &nbsp;Open Windows Powershell:
 ```
 get-process | Select-String "php"
 ```

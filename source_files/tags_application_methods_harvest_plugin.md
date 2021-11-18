@@ -1,4 +1,4 @@
-### Tag Application via Harvest Plugins
+#### Tag Application via Harvest Plugins
 
 Harvest plugins are typically designed to:
 

@@ -18,7 +18,7 @@ mkdir -p /var/opt/diskover/backups/diskover-web/$(date +%Y%m%d)/src/diskover/
 mkdir -p /var/opt/diskover/backups/diskover-web/$(date +%Y%m%d)/public/tasks/
 ```
 
-➡️ Backup user configured settings:
+➡️  Backup user configured settings:
 ```
 rsync -avz /var/www/diskover-web/src/diskover/Constants.php /var/opt/diskover/backups/diskover-web/$(date +%Y%m%d)/src/diskover/
 ```

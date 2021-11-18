@@ -1,6 +1,6 @@
-<h2 id="file_search">Basic File Search</h2>
+<h3 id="file_search">Basic File Search</h3>
 
-### Accessing the Search Page
+#### Accessing the Search Page
 
 ![Image: Accessing the Search Page](images/image_file_search_page_with_charts.png)
 
@@ -8,7 +8,7 @@ A) Click the **folder icon** to access the file search page, this will be the vi
 
 B) **Charts hide/unhide**: The file search page displays colorful charts at the top of the page giving useful statistics about your top directories, as well as the top files in the selected storage volume. If you do not wish to see the charts, click the **Charts**  icon.
 
-### Main Features of the Search Page
+#### Main Features of the Search Page
 
 It is preferable to use the back and forward buttons on your web browser to navigate between pages you have already visited. You can also use the back and forward buttons on the left pane of the file search window, but they are not always responsive depending on which browser you are using.
 
@@ -56,7 +56,7 @@ Q) **Rating**: Is based on the last modified time, the older the higher the rati
 
 >🔆 You can right-click an item in the search results pane to access other opening/sharing features. Those are associated with the browser you are using, not Diskover, so the choices and results may differ per browser and are not supported by Diskover.
 
-<h3 id="file_attributes">Directory and File Attributes View</h3>
+<h4 id="file_attributes">Directory and File Attributes View</h4>
 
 Page opening when clicking on  info icon  beside a directory or by clicking directly on a file.
 
@@ -74,7 +74,7 @@ E) You can apply a [tag](#tags) to the current file or directory from this windo
 
 F) Not in function yet, stay tuned!
 
-### Recent Searches
+#### Recent Searches
 
 When you click in the search bar, a dark grey overlay rectangle will appear under it and show your most recent searches and/or the most recent storage volumes/directories you’ve visited. You can click on any of the most recent searches if you want to reuse the same query.
 
@@ -82,7 +82,7 @@ You can also find tips, see blue font, for search query examples right under the
 
 ![Image: Grey Overlay when Clicking in Search Bar](images/image_file_search_grey_overlay_when_clicking_searchbar.png)
 
-### No Items Found
+#### No Items Found
 
 When no items are found during a search, a blue info bar will appear. Use the links in that bar to navigate from there.
 
@@ -91,32 +91,6 @@ When no items are found during a search, a blue info bar will appear. Use the li
 A) **Anything**: Will open a fresh file search page and allow you to start a new search.
 
 B) **Help**: Will bring you directly to the user interface help page for search query examples and support.
-
-C) **Reset sort order**: Resets search order for results, more useful for System Administrators.
-
-D) **Go back**: Will bring you back to the previous page and allow you to modify your query, it has the same effect as clicking the back button in your browser.
-
-
-
-
-
-
-
-
-
-You can also find tips, see blue font, for search query examples right under the search bar.
-
-![Image: Grey Overlay when Clicking in Search Bar](images/image_file_search_grey_overlay_when_clicking_searchbar.png)
-
-### No Items Found
-
-When no items are found during a search, a blue info bar will appear. Use the links in that bar to navigate from there.
-
-![Image: No Items Found](images/image_file_search_no_item_found.png)
-
-A) **Anything**: Will open a fresh file search page and allow you to start a new search.
-
-B) **Help**: Will bring you directly to the [help](#help_page) page for search query examples and support.
 
 C) **Reset sort order**: Resets search order for results, more useful for System Administrators.
 

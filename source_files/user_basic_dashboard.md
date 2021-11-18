@@ -1,4 +1,4 @@
-<h2 id="dashboard">Dashboard</h2>
+<h3 id="dashboard">Dashboard</h3>
 
 The dashboard view is a great way to get a visual snapshot of a storage volume.
 

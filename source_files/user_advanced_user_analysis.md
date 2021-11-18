@@ -1,16 +1,16 @@
-<h2 id="user_analysis">User Analysis Report</h2>
+<h3 id="user_analysis">User Analysis Report</h3>
 
 The user analysis  report gives a snapshot of data utilization; it was designed to help with operating costs  management, as well as customers’ storage consumption for billing accuracy.
 
 This report needs to be enabled and configured by your System Administrator.
 
-### Accessing the User Analysis Report
+#### Accessing the User Analysis Report
 
 Via the  **Analytics**  drop-down list:
 
 <img src="images/image_analytics_user_analysis_access_via_analytics_dropdown.png" width="400">
 
-### Using the User Analysis Report
+#### Using the User Analysis Report
 
 ![Image: User Analysis Report Overview](https://www.diskoverdata.com/wp-content/uploads/2021/10/screenshot_diskover_analytics_user_analysis_overview.png)
 

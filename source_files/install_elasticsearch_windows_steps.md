@@ -16,31 +16,31 @@ Elasticsearch Windows MSI install instructions can be found here:
 
 🔴 &nbsp;Select **Install as a service**:
 
-<img src="images/image_elasticsearch_install_for_windows_install_as_a_service.png" width=“700">
+<img src="images/image_elasticsearch_install_for_windows_default_install_locations.png" width="750">
                                                                          
 ![Image: Install Elasticsearch as a Service](images/image_elasticsearch_install_for_windows_install_as_a_service.png)
 
 🔴 &nbsp;Select **This is the first master in new cluster**:
 
-<img src="images/image_elasticsearch_install_for_windows_new_cluster_config" width=“700">
+<img src="images/image_elasticsearch_install_for_windows_default_install_locations.png" width="750">
 
 ![Image: Elasticsearch New Cluster Creation](images/image_elasticsearch_install_for_windows_new_cluster_config.png)
 
 🔴 &nbsp;No **X-Pack Plugins**  selected:
 
-<img src="images/image_elasticsearch_install_for_windows_unselect_plugins.png" width=“700">
+<img src="images/image_elasticsearch_install_for_windows_unselect_plugins.png" width="750">
                                                                          
 ![Image: Elasticsearch X-Pack Plugins](images/image_elasticsearch_install_for_windows_unselect_plugins.png)
 
 🔴 &nbsp;Select **Basic** License:
 
-<img src="images/image_elasticsearch_install_for_windows_select_basic_license.png" width=“700">
+<img src="images/image_elasticsearch_install_for_windows_select_basic_license.png" width="750">
 
 ![Image: Elasticsearch License Selection](images/image_elasticsearch_install_for_windows_select_basic_license.png)
 
 🔴 &nbsp;Installation completed:
 
-<img src="images/image_elasticsearch_install_for_windows_install_completed.png" width=“700">
+<img src="images/image_elasticsearch_install_for_windows_install_completed.png" width="750">
                                                                          
 ![Image: Elasticsearch Installation Completed](images/image_elasticsearch_install_for_windows_install_completed.png)
 
@@ -52,9 +52,12 @@ You can also use **curl** in a Windows command prompt and make a **GET** request
 ```
 curl -X GET "localhost:9200/"
 ```
+<img src="images/image_elasticsearch_install_for_windows_check_cluster_health_on_local_server.png" width="750">
 
 ![Image: Open Command Prompt as an Administrator](images/image_elasticsearch_install_for_windows_check_cluster_health_on_local_server.png)
 
 🔴 &nbsp;Alternatively, you can open a Web browser to http://localhost:9200/:
+
+<img src="images/image_elasticsearch_install_for_windows_check_cluster_health_by_opening_localhost_9200.png" width="750">
 
 ![Image: Open Web Browser to localhost:9200](images/image_elasticsearch_install_for_windows_check_cluster_health_by_opening_localhost_9200.png)

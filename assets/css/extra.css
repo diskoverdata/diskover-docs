@@ -5,16 +5,16 @@ hr {
 }
 
 h1 {
-  font-size: 1.5em;
-  font-weight: normal;
+  font-size: 1.5em !important;
+  font-weight: normal !important;
 }
 
 h2 {
-  font-size: 1.4em;
-  font-weight: normal;
+  font-size: 1.4em !important;
+  font-weight: normal !important;
 }
 
 h3 {
-  font-size: 1.3em;
-  font-weight: normal;
+  font-size: 1.3em !important;
+  font-weight: normal !important;
 }

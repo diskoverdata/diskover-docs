@@ -1,35 +1,35 @@
-## Install PHP 7 and PHP-FPM (fastcgi)
+### Install PHP 7 and PHP-FPM (fastcgi)
 
-➡️ Perform the following commands to install PHP and PHP-FPM:
+🔴 &nbsp;Perform the following commands to install PHP and PHP-FPM:
 ```
 yum-config-manager --enable remi-php74
 amazon-linux-extras install php7.4
 yum -y install php php-common php-fpm php-opcache php-pecl-mcrypt php-cli php-gd php-mysqlnd php-ldap php-zip php-xml php-xmlrpc php-mbstring php-json
 ```
 
-➡️ Set PHP configuration settings for NGINX:
+🔴 &nbsp;Set PHP configuration settings for NGINX:
 ```
 vi /etc/php-fpm.d/www.conf
 ```
 
-➡️ Change ownership to **nginx**:
+🔴 &nbsp;Change ownership to **nginx**:
 ```
 user = nginx
 group = nginx
 ```
 
-➡️ Uncomment and change the NGINX listen parameters:
+🔴 &nbsp;Uncomment and change the NGINX listen parameters:
 ```
 listen.owner = nginx
 listen.group = nginx
 ```
 
-➡️ Change the NGINX listen socket:
+🔴 &nbsp;Change the NGINX listen socket:
 ```
 listen = /var/run/php-fpm/php-fpm.sock
 ```
 
-➡️ Change file system ownership, enable and start PHP-FPM service:
+🔴 &nbsp;Change file system ownership, enable and start PHP-FPM service:
 ```
 chown -R root:nginx /var/lib/php
 chown -R nginx:nginx /var/run/php-fpm/

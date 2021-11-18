@@ -1,12 +1,13 @@
 ___
 <a id="software_overview"></a>
-# Software Overview
+## Software Overview
+___
 
-## What is Data Curation
+### What is Data Curation
 
 Data curation is the practice of managing data collected from various sources as a valuable asset to unlock its potential and organization. Managing data effectively requires having a data strategy and reliable methods to access, integrate, cleanse, govern, store, and prepare data for analytics. The value of the data is maintained over time and remains available for reuse and preservation.
 
-## The Basics of Diskover
+### The Basics of Diskover
 
 - Efficiently and quickly searches data fragmented across heterogenous repositories bringing you all the answers in one global view.
 -  Works with Elasticsearch giving you extraordinary speed and reliability, as well as continuously updates all your indices in parallel in real-time.
@@ -15,7 +16,7 @@ Data curation is the practice of managing data collected from various sources as
 - 100% open-source tool allows for add-on plug-ins to be developed.
 - Supports all known file types.
 
-## Features Overview
+### Features Overview
 
 - Diskover scales data by using Elasticsearch search engine in the backend, allowing for massive amounts of data to be searched instantaneously. It is able to scan/index all your storage volumes at the same time, without limitation in numbers. Elasticsearch is used by giants like ebay, airbnb, Adobe, Walmart, etc.
 - Enables everyone to accurately answer questions with the simplicity of clever search queries, which provide immediate relevant information.
@@ -27,7 +28,7 @@ Data curation is the practice of managing data collected from various sources as
 - Significantly improves the efficiency of the organization and its people, in addition to reducing storage cost.
 - The [cost analysis tool](#cost_analysis) assist with charging clients accurately for storage space.
 
-<h2 id="consumers_of_data">Consumers of Data</h2>
+<h3 id="consumers_of_data">Consumers of Data</h3>
 
 Diskover allows all stakeholders within an organization to have their own specific relationship with data. Here is an example of Line of Business Users, their needs, and challenges:
 
@@ -35,7 +36,7 @@ Diskover allows all stakeholders within an organization to have their own specif
 
 _[Click here for a full screen view of the Consumers of Data diagram.](images/diagram_diskover_consumers_of_data_with_border.png)_
 
-## Access to Features
+### Access to Features
 
 Even though several features will be added over time, Diskover will mostly remain a search and read-only tool for the end-users; data integrity and protection being the ultimate objective.
 
@@ -48,7 +49,7 @@ Your System Administrator creates all [login](#login) accounts. Depending on you
 Here is a brief list of shared roles:
 ![Image: Shared Roles](images/image_shared_roles_table.png)
 
-## Use Cases
+### Use Cases
 
 Diskover offers numerous search tools, reports, and other manual, as well as automated functions, to fulfill the needs of all stakeholders and different business verticals.
 

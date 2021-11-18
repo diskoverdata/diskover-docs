@@ -7,7 +7,6 @@ theme:
         scheme: white
         primary: grey
         accent: red
-        link: red
 markdown_extensions:
     - mdx_breakless_lists
     - markdown_checklist.extension

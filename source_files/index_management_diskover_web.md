@@ -1,22 +1,22 @@
-## Diskover-Web Index Management
+### Diskover-Web Index Management
 
 The Diskover-Web user interface provides manual index management capabilities. By default, Diskover-Web is configured to always use the latest indices when production user login to Diskover.
 
 ![Image: Always Use Latest Indices](images/image_indices_always_use_latest_indices.png)
 
-### Loading / Unloading Indexes within Diskover-Web User Interface
+#### Loading / Unloading Indexes within Diskover-Web User Interface
 
-➡️ To manually manage indexes thru the Diskover-Web user interface, uncheck the **Always Use Latest Indices**.
+🔴 &nbsp;To manually manage indexes thru the Diskover-Web user interface, uncheck the **Always Use Latest Indices**.
 
 >Index management can’t be performed on an actively loaded index.
 
-➡️ **Unselect all** indices:
+🔴 &nbsp;**Unselect all** indices:
 
 ![Image: Unselect All Indices](images/image_indices_unselect_all_indices.png)
 
 >To manage an index that is actively loaded, the desired index can be unloaded by selecting any other index and clicking **Save selection**.
 
-➡️ Select another index from **Index** column > **Save selection** and load in Diskover-Web user interface:
+🔴 &nbsp;Select another index from **Index** column > **Save selection** and load in Diskover-Web user interface:
 
 ![Image: Save Indices Selection](images/image_indices_save_selection.png)
 
@@ -24,15 +24,15 @@ The following confirmation will be displayed upon successful index load:
 
 ![Image: Index Selection Saved](images/image_indices_selection_saved.png)
 
-### Deleting Indices within Diskover-Web User Interface
+#### Deleting Indices within Diskover-Web User Interface
 
-➡️ To manually delete indices thru the Diskover-Web user interface, follow the steps in the previous section to ensure the index targeted for deletion is not “loaded” within the Diskover-Web user interface.
+🔴 &nbsp;To manually delete indices thru the Diskover-Web user interface, follow the steps in the previous section to ensure the index targeted for deletion is not “loaded” within the Diskover-Web user interface.
 
-➡️ Select index targeted for deletion and select **Delete**.
+🔴 &nbsp;Select index targeted for deletion and select **Delete**.
 
 ![Image: Delete Index/Indices](images/image_indices_delete_index.png)
 
-➡️ Confirm desired index deletion:
+🔴 &nbsp;Confirm desired index deletion:
 
 ![Image: Index/Indices Deletion Confirmation](images/image_indices_delete_index_confirm_window.png)
 
@@ -40,7 +40,7 @@ The following confirmation of successful index deletion will be displayed:
 
 ![Image: Successful Index/Indices Deletion Confirmation](images/image_indices_delete_index_confirmation_msg.png)
 
-➡️ Select the **Reload Indices** button to ensure recently deleted index is not displayed in the list of available indices:
+🔴 &nbsp;Select the **Reload Indices** button to ensure recently deleted index is not displayed in the list of available indices:
 
 ![Image: Reload Indices](images/image_indices_reload_indices.png)
 

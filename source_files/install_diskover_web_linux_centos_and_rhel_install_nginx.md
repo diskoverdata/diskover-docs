@@ -1,6 +1,6 @@
-### Install NGINX
+#### Install NGINX
 
-➡️ The following will install the NGINX Web server application:
+🔴 &nbsp;The following will install the NGINX Web server application:
 ```
 yum -y install epel-release yum-utils
 yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
@@ -10,9 +10,9 @@ systemctl start nginx
 systemctl status nginx
 ```
 
-### NGINX Changes Required for CentOS 8.X / RHEL
+#### NGINX Changes Required for CentOS 8.X / RHEL
 
-➡️ For SELinux add the following to allow NGINX to start as well:
+🔴 &nbsp;For SELinux add the following to allow NGINX to start as well:
 ```
 semanage permissive -a httpd_t
 ```

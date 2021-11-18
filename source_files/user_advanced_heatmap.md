@@ -1,4 +1,4 @@
-<h2 id="heatmap">Heatmap Report</h2>
+<h3 id="heatmap">Heatmap Report</h3>
 
 The heatmap report is a powerful analytical snapshot offering a differential comparison of two indices across two different points in time:
 
@@ -14,7 +14,7 @@ The red and green colors in the heatmap report have meaning. All other colors ar
 
 The absence of colors in a heatmap report is also very meaningful, revealing data inertia, alerting you of possible anomalies. The lack of colors/activity is also a good indicator when comparing, for example, an on-premise server to a backup of that server in the cloud where you want data in both storage volumes to be identical; inertia in that case being favorable.
 
-### How to Select Indices for the Heatmap Report
+#### How to Select Indices for the Heatmap Report
 
 Before accessing the heatmap report, you need to [select 2 indices from 2 different points in time](#index_selection). You will want to select the same index/storage volume name from both columns D & E in order to compare the same data.
 
@@ -38,7 +38,7 @@ F) Click  **Save selection**.
 
 >🔆 The instructions in the blue info bars are practical for quick references.
 
-### Accessing the Heatmap Report
+#### Accessing the Heatmap Report
 
 You need to select the indices you want to compare as explained above before accessing the report, otherwise you’ll get an error message.
 
@@ -50,7 +50,7 @@ Via the search page by clicking this icon in the results pane:
 
 ![Image: Heatmap Report via the Search Page](images/image_analytics_heatmap_access_via_search_pane.png)
 
-### Using the Heatmap Report
+#### Using the Heatmap Report
 
 ![Image: Heatmap Report Overview](images/image_analytics_heatmap_overview.png)
 
@@ -93,7 +93,7 @@ Q) **Search for path icon**: To open that path in the search page.
 
 R) **Navigation within pages of results**: To go back and forth if you have several pages of results.
 
-### Comparing Indices in the Search Page
+#### Comparing Indices in the Search Page
 
 You can compare indices in the search page as well. You will see red/growth or green/shrinkage status results:
 

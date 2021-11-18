@@ -1,4 +1,4 @@
-## AWS Elasticsearch Domain
+### AWS Elasticsearch Domain
 
 To identify and solve common Amazon Elasticsearch Service (Amazon ES) issues, refer to the AWS guide on how to troubleshoot the AWS Elasticsearch environment here:
 

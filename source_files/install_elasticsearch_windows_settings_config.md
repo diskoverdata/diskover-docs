@@ -8,14 +8,13 @@
 ```
 -Xms8g
 ```
-
-![Image: Elasticsearch  Settings Configuration (Part 1)](images/image_elasticsearch_install_for_windows_config_set_xms8g.png)
+<img src="images/image_elasticsearch_install_for_windows_config_set_xms8g.png" width="700">
 
 🔴 &nbsp;Edit the following file **C:\ProgramData\Elastic\Elasticsearch\config\elasticsearch.yml** and change:
 ```
 bootstrap.memory_lock: true
 ```
-![Image: Elasticsearch  Settings Configuration (Part 2)](images/image_elasticsearch_install_for_windows_config_bootstrap_memory.png)
+<img src="images/image_elasticsearch_install_for_windows_config_bootstrap_memory.png" width="700">
 
 🔴 &nbsp;Restart the Elasticsearch service and then open a **cmd prompt**.
 ```

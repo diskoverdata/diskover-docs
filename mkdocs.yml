@@ -5,8 +5,8 @@ theme:
     logo: 'assets/images/logo.png'
     palette:
         scheme: default
-        primary: blue
-        accent: orange
+        primary: cyan
+        accent: red
 markdown_extensions:
     - mdx_breakless_lists
     - markdown_checklist.extension

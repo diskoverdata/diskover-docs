@@ -1,4 +1,8 @@
-<h3 id="export">Export Search Results</h3>
+<p id="export"></p>
+
+___
+### Export Search Results
+___
 
 From the search page, you can export the list of paths resulting from a search, or from looking into a storage volume or directory.
 

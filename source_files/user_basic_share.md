@@ -2,7 +2,6 @@
 
 ___
 ### Share Search Queries and Results
-___
 
 From the search page, you can share your browser’s URL address or your search query criteria.
 

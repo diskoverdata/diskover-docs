@@ -1,4 +1,8 @@
-<h3 id="file_search">Basic File Search</h3>
+<p id="file_search"></p>
+
+___
+Basic File Search
+___
 
 #### Accessing the Search Page
 

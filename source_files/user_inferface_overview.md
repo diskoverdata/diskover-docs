@@ -49,12 +49,14 @@ Read more about [how to select a directory](#select_directory).
 
 **Recursive**: Will search or apply action to the path/directory, as well as all sub-directories and files, inside that path.
 
+___
 ### Web Browser
 
 Diskover should look and act the same on any browser. The only thing to keep in mind is if, for example, you apply some modifications in your [settings](#settings) in Google Chrome, they will not transfer to Safari because the [settings](#settings) are tied to the cookies  of a browser. In this example, you would need to apply the same [settings](#settings) in Safari.
 
 <p id="login"></p>
 
+___
 ### Login
 
 A) Open a  **Web browser**  of your choice and type the  **URL address**  that was supplied to you by the System Administrator of your facility.
@@ -65,6 +67,7 @@ C) Click on  **Login**.
 
 <p id="ui_overview"></p>
 
+___
 ### User Interface Overview
 
 This section offers an overview of the user interface. All icons, drop-down lists and tools will be further explained in the next chapters.
@@ -136,6 +139,7 @@ It is preferable to use the  **backward**  and  **forward**  buttons on your web
 
 <p id="select_volume"></p>
 
+___
 ### How to Select a Storage Volume
 
 ![Image: How to Select a Storage Volume](images/image_file_search_page_select_volume.png)
@@ -148,6 +152,7 @@ C) Via the  **drop-down list**  at the top right corner.
 
 <p id="select_directory"></p>
 
+___
 ### How to Select a Directory
 
 ![Image: How to Select a Directory](images/image_file_search_page_select_directory.png)

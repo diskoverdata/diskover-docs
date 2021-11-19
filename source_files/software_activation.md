@@ -21,7 +21,7 @@ Place the license keys in the following locations.
 ```
 /var/www/diskover-web/src/diskover/diskover-web.lic
 ```
-##### License permissions:
+##### License permissions
 
 Check **diskover-web.lic** file is owned by NGINX user and permissions are 644:
 ```

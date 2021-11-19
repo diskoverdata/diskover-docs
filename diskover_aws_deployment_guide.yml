@@ -17,6 +17,7 @@ ordered_documents:
   - requirements_elasticsearch.md
   - requirements_diskover_web.md
   - requirements_diskover_indexers.md
+  - requirements_aws_env_config.md
   - requirements_skills.md
   - architecture_overview_aws.md
   - aws_env_security.md

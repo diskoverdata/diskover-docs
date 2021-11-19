@@ -4,7 +4,7 @@ The following outlines installing the Diskover indexer on MacOS.
 
 #### Install Python 3.x on MacOS
 
-🔴 &nbsp;Go to <a href=“https://www.python.org/”>https://www.python.org/</a>
+🔴 &nbsp;Go to [https://www.python.org/](https://www.python.org/)
 
 🔴 &nbsp;Select the **Downloads** menu.
 

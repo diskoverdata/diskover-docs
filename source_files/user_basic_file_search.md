@@ -1,7 +1,7 @@
 <p id="file_search"></p>
 
 ___
-Basic File Search
+### Basic File Search
 ___
 
 #### Accessing the Search Page

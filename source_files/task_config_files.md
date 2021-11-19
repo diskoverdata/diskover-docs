@@ -18,6 +18,7 @@ At time of installation, these files are copied to:
 
 During installation, at least one index worker is configured, that configuration file is located at: `/root/.config/diskover/config.yaml`
 
+___
 ### Using Alternate Configuration Files
 
 Diskover provides default configuration files for tasks which are located in `/opt/diskover/configs_sample`

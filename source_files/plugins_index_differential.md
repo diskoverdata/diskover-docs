@@ -1,3 +1,4 @@
+___
 ### Index Differential Plugin
 
 The index differential plugin is designed to provide a list of file differences between two indices (or points in time). The differential list can be used to feed synchronization tools (i.e. rsync) or identify deltas where two repositories should be identical. Output can be text file or CSV formatted file.

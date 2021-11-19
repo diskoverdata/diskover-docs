@@ -1,4 +1,5 @@
 <p id="search_syntax"></p>
+
 ___
 ## Manual Search Syntax
 ___
@@ -72,7 +73,8 @@ When typing a single word in the search bar, Diskover will look for that **isola
 
 - If your file name is **foryoureyesonly.mov** and you launch a search with the word **eyes**, Diskover would not find that file because the whole name/string looks like a single word.
 
-<h3 id="wildcards">Wild Cards</h3>
+<p id="wildcards"></p>
+### Wild Cards
 
 **? *is used to replace a single character*** 
 

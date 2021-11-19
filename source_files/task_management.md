@@ -10,6 +10,7 @@ Diskover has a distributed task system where workers can be distributed among ma
 
 _[Click here for a full view of the diagram.](images/diagram_diskover_architecture_reference_generic_with_border.png)_
 
+___
 ### Validate Task Management System has Task Worker(s)
 
 🔴 &nbsp;Open the Task Panel within the Diskover-Web user interface > **gear icon** > **Task Panel** and go to **Workers** tab.
@@ -18,6 +19,7 @@ _[Click here for a full view of the diagram.](images/diagram_diskover_architectu
 
 ![Image: Tasks Management System](images/image_tasks_task_panel_management_task_workers.png)
 
+___
 ### Managing Diskover Tasks via the Task Panel
 
 The following will illustrate how to create basic indexing and custom tasks via the Diskover Task Panel.

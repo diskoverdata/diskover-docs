@@ -2,7 +2,6 @@
 
 ___
 ### Basic File Search
-___
 
 #### Accessing the Search Page
 

@@ -269,7 +269,7 @@ Diskover shows file size (size) and allocated size (size_du) in bytes. We recomm
 
 <p id="search_time"></p>
 
-__
+___
 ### Queries with Time
 
 Although it is strongly advised to use [filters](#filters) or [quick search](#quick_search) to query time, below are a few examples on how to do so with a manual query.

@@ -1,5 +1,5 @@
+<p id="search_syntax"></p>
 ___
-<a id="search_syntax"></a>
 ## Manual Search Syntax
 ___
 
@@ -17,7 +17,8 @@ As Diskover uses Elasticsearch in the backend, all search syntax within Diskover
 
 [https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html)
 
-<h3 id="naming_convention">Search Problems Resulting from Naming Conventions</h3>
+<p id="naming_convention"></p>
+### Search Problems Resulting from Naming Conventions
 
 All organizations have issues with naming convention. Your search results might be limited if you try to be too restrictive when searching. For example, files associated with the movie **For Your Eyes Only** might be named:
 - ForYourEyesOnly
@@ -60,8 +61,7 @@ At times you will need to group criteria, so Diskover can make sense of the quer
 
 	- **Exclusive** ranges need to be specified with curly brackets, ex: **{min TO max}**
 
- <p id="search_single_word"></p>
-
+<p id="search_single_word"></p>
 #### The Logic Behind Searching on a Single Word
 
 When typing a single word in the search bar, Diskover will look for that **isolated word**. In order to "split" and find isolated words, Diskover/Elasticsearch uses **tokenizers** like **space, underscore, hyphen, forward slash, period, other punctuation, as well as upper cases** to make sense of what is included in a file name. For example:

@@ -2,7 +2,6 @@
 
 ___
 ### Dashboard
-___
 
 The dashboard view is a great way to get a quick visual snapshot of a storage volume.
 

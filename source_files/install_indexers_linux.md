@@ -88,7 +88,7 @@ mount -t cifs -o username=user_name //server_name/share_name /mnt/smbstor1
 cd /opt/diskover
 ```
 
-🔴 &nbsp;Install your license files as explained in the [Software Activation](#activation) chapter.
+🔴 &nbsp;Install your license files as explained in the [software activation](#software_activation) chapter.
 
 🔴 &nbsp;Start your first crawl:
 

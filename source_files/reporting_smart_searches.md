@@ -1,3 +1,4 @@
+___
 ### Smart Searches
 
 Smart Searches provide a mechanism to create repeatable reports or bookmarks based on search queries.

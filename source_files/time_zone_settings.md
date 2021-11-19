@@ -6,7 +6,7 @@ Diskover can be configured for local time zones, since Diskover is a distributed
 
 Use the official **TZ database name** options for Diskover that can be found here:
 
-<a href=“https://en.wikipedia.org/wiki/List_of_tz_database_time_zones”>https://en.wikipedia.org/wiki/List_of_tz_database_time_zones</a>
+[https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 
 ### Time Zone Setting for diskoverd Task Daemon(s)
 

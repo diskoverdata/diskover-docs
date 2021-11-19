@@ -1,3 +1,4 @@
+___
 ### Elasticsearch Domain
 
 To identify and solve common Elasticsearch issues, refer to both Elastic.co and Amazon as both provide good information on troubleshooting Elasticsearch clusters.

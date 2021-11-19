@@ -33,4 +33,3 @@ Significant increase of order volume compounded with shorter deadlines.
 | CHALLENGES | SOLUTIONS |
 |--|--|
 |Manual orders are prone to errors and don’t scale with today’s high volume. | Diskover’s global view and accuracy combined with order management and scheduling plugins allow for reduced human prone errors associated with manual processes, as well as increased automation and scalability of production processes associated with file-based workflows. |
-___

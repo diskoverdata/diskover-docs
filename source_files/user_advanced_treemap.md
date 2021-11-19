@@ -2,7 +2,6 @@
 
 ___
 ### Treemap Report
-___
 
 The treemap report displays hierarchical data using nested figures. Diskover opted for rectangles; the bigger the rectangle the more data is contained in that directory or file. It graphically represents the size of folders, candidates for cleanup, aging, etc.
 

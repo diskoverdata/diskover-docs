@@ -6,8 +6,8 @@ index_document: index_diskover_guides_header.md
 ordered_documents:
   - index_diskover_guides_header.md
   - guide_title_user.md
-  - intro_copyright.md
   - intro_guide_intended_for_user.md
+  - intro_copyright.md
   - intro_user_guides_main_intro.md
   - software_overview.md
   - user_inferface_overview.md

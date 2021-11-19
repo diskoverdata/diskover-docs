@@ -4,6 +4,7 @@ ___
 
 This chapter discusses setting up authenticated user access to Diskover-Web.
 
+___
 ### Local User Configuration
 
 Diskover-Web currently has two local users: 1) admin, and 2) data user. To change the login details for the two sets of users:
@@ -13,6 +14,7 @@ vim /var/www/diskover-web/src/Diskover/Constants.php
 
 <img src="images/image_user_auth_local_user_config.png" width="750">
 
+___
 ### LDAP / Active Directory Authentication
 
 Diskover-Web supports authenticating users from Active Directory over Lightweight Directory Access Protocol. LDAP integration can be used to authenticate users against a Microsoft Domain Controller (DC).
@@ -37,6 +39,7 @@ vim /var/www/diskover-web/src/Diskover/Constants.php
 
 ![Image: LADP / Active Directory Authentication](images/image_user_auth_ladp_login_auth.png)
 
+___
 ### Restricting Visibility and Access
 
 Visibility can be limited by groups to specific indexes or branches within a given index. 
@@ -48,6 +51,7 @@ vim /var/www/diskover-web/src/Diskover/Constants.php
 
 ![Image: Restricting Visibility and Access](images/image_user_auth_restricting_visibility_and_access.png)
 
+___
 ### Restricting Diskover-Web API Access
 
 #### Restricting API Access on Linux

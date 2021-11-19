@@ -1,6 +1,10 @@
-<h3 id="dashboard">Dashboard</h3>
+<p id="dashboard"></p>
 
-The dashboard view is a great way to get a visual snapshot of a storage volume.
+___
+### Dashboard
+___
+
+The dashboard view is a great way to get a quick visual snapshot of a storage volume.
 
 ![Image: Dashboard Overview](images/image_dashboard_overview.png)
 

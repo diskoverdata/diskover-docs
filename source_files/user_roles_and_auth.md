@@ -11,7 +11,7 @@ Diskover-Web currently has two local users: 1) admin, and 2) data user. To chang
 vim /var/www/diskover-web/src/Diskover/Constants.php
 ```
 
-![Image: Local User Configuration](images/image_user_auth_local_user_config.png)
+<img src="images/image_user_auth_local_user_config.png" width="750">
 
 ### LDAP / Active Directory Authentication
 

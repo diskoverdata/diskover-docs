@@ -1,6 +1,6 @@
 #### Install PHP
 
-🔴 &nbsp;Go to the official download link and download the required version of PHP 7 for Windows: <a href=“https://www.php.net/downloads.php”>https://www.php.net/downloads.php</a>
+🔴 &nbsp;Go to the official download link and download the required version of PHP 7 for Windows: [https://www.php.net/downloads.php](https://www.php.net/downloads.php)
 
 🔴 &nbsp;Download the **Thread Safe** version 7.X for Windows.
 

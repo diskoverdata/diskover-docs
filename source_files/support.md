@@ -38,4 +38,4 @@ Please email Diskover at [info@diskoverdata.com](mailto:info@diskoverdata.com)
 
 Please refer to the Diskover End-User License Agreement for the latest warranty and liability disclosures that can be found online at the following address:  
 
-https://www.diskoverdata.com/legal-docs/
+[https://www.diskoverdata.com/legal-docs/](https://www.diskoverdata.com/legal-docs/)

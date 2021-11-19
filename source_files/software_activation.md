@@ -6,7 +6,7 @@ A license key is needed for Diskover’s paid subscriptions. Unless otherwise ag
 
 ### Obtaining a License Key
 
-No license key is required for **Diskover Community Edition**. If you would like to request a demo license key or purchase a [subscription for Diskover’s advanced solutions](https://www.diskoverdata.com/solutions/), please contact your Diskover Data point of contact or <a href=“mailto:info@diskoverdata.com”>info@diskoverdata.com</a>.
+No license key is required for **Diskover Community Edition**. If you would like to request a demo license key or purchase a [subscription for Diskover’s advanced solutions](https://www.diskoverdata.com/solutions/), please contact your Diskover Data point of contact or [info@diskoverdata.com](mailto:info@diskoverdata.com).
 
 #### License Key for Linux
 
@@ -48,4 +48,4 @@ C:\Program Files\diskover-web\src\diskover\
 
 ### Renewing a License Key
 
-If your demo license key has expired, contact your Diskover Data point of contact or <a href=“mailto:info@diskoverdata.com”>info@diskoverdata.com</a>. If you have a subscription license key, a Diskover Data team member will contact you prior to your license expiration.
+If your demo license key has expired, contact your Diskover Data point of contact or [info@diskoverdata.com](mailto:info@diskoverdata.com). If you have a subscription license key, a Diskover Data team member will contact you prior to your license expiration.

@@ -23,7 +23,7 @@ When typing a **!** in the search bar, the list of existing Smart Searches repor
 By default, Diskover has preconfigured reports by file types/extensions, but any type of queries with single or mixed criteria can be added.
 
 - To add, edit or delete a report > **Analytics** > **Smart Searches** > click the **Edit smart searches** button.
-- For queries syntax, please refer to **gear icon** > **Help** and/or the [**Diskover User Guide**](https://www.diskoverdata.com/resources/documentation/).
+- For queries syntax, please refer to **gear icon** > **Help** and/or the [**Diskover User Guide**](https://docs.diskoverdata.com/diskover_user_guide/).
 
 > Smart searches queries need to be built in the following format: **!queryname|querycriteria**
 

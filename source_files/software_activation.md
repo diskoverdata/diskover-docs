@@ -4,6 +4,7 @@ ___
 
 A license key is needed for Diskover’s paid subscriptions. Unless otherwise agreed, a license via a subscription is valid for a one (1) year period, and clients will be contacted prior to their license expiration.
 
+___
 ### Obtaining a License Key
 
 No license key is required for **Diskover Community Edition**. If you would like to request a demo license key or purchase a [subscription for Diskover’s advanced solutions](https://www.diskoverdata.com/solutions/), please contact your Diskover Data point of contact or [info@diskoverdata.com](mailto:info@diskoverdata.com).
@@ -46,6 +47,7 @@ C:\Program Files\diskover-web\src\diskover\
 /Applications/Diskover.app/Contents/MacOS/diskover/
 ```
 
+___
 ### Renewing a License Key
 
 If your demo license key has expired, contact your Diskover Data point of contact or [info@diskoverdata.com](mailto:info@diskoverdata.com). If you have a subscription license key, a Diskover Data team member will contact you prior to your license expiration.

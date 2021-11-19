@@ -1,3 +1,4 @@
+<a id=“media_info_plugin”></a>
 ### Media Info Harvest Plugin
 
 The media info harvest plugin is designed to provide media metadata attributes about a file without granting the Diskover user any read/write file system access.

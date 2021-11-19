@@ -12,6 +12,7 @@ The list of possible search queries and syntax is exhaustive therefore only the 
 
 ![Image: Help with Queries and Syntax](images/image_menu_gear_icon_selection_help.png)
 
+___
 ### Syntax Based on Elasticsearch Rules
 
 As Diskover uses Elasticsearch in the backend, all search syntax within Diskover are based on Elasticsearch rules. We will discuss many of these rules in this chapter, but for more details and more examples, please visit: 
@@ -20,6 +21,7 @@ As Diskover uses Elasticsearch in the backend, all search syntax within Diskover
 
 <p id="naming_convention"></p>
 
+___
 ### Search Problems Resulting from Naming Conventions
 
 All organizations have issues with naming convention. Your search results might be limited if you try to be too restrictive when searching. For example, files associated with the movie **For Your Eyes Only** might be named:
@@ -77,6 +79,7 @@ When typing a single word in the search bar, Diskover will look for that **isola
 
 <p id="wildcards"></p>
 
+___
 ### Wild Cards
 
 **? *is used to replace a single character*** 
@@ -125,6 +128,7 @@ Both **?** and **\*** wild cards can be used in the same query, for example sear
 
 <p id="search_field_names"></p>
 
+___
 ### Searches Using Field Names
 
 Searching with field names can be effective if you search on a specific and/or hidden field and are looking for precise results.
@@ -143,7 +147,9 @@ Let's use the example of searching on tags:
 
 You can find mome examples with field names in the [Searching on Time](#search_time) and [Searching on Size](#search_size) sections.
 
-Here are the detault field names. This list can also be found in the help page of the user interface:
+#### Default Fields Names
+
+This list can also be found in the help page of the user interface:
 
 - **atime** - access Time
 - **costpergb** - storage space cost
@@ -163,6 +169,7 @@ Here are the detault field names. This list can also be found in the help page o
 - **tags** - any tag(s) associated with a file or directory
 - **type** - file or directory
 
+___
 ### Queries with File Extensions
 
 When searching on file extensions, it is recommended to either:
@@ -176,6 +183,7 @@ The reason being that the file extension letters might be part of the file name 
 
 <p id="operators"></p>
 
+___
 ### Operators
 
 You can use operators **AND OR NOT**  to narrow down a manual search. Although the operators in this section are capitalized for ease of understanding, the operators can be typed in lower case in the search bar.
@@ -196,6 +204,7 @@ Here are some examples of queries using operators to narrow your searches.
  
  <p id="complex_queries"></p>
  
+___
 ### The Need of Grouping for Complex Queries
 
 When using more than one operator, it is recommended to use parentheses **( )** in order to group some elements and help Diskover make sense of the query. A few examples while still using the file name structure **thejunglebook_s01_ep05_en.mov**:
@@ -221,6 +230,7 @@ Another type of example with words only, and let's use **New York City**. If you
 
 <p id="fuzziness"></p>
 
+___
 ### Fuzziness
 
 You can run fuzzy queries with the **tilde ~** operator. 
@@ -242,7 +252,8 @@ Be aware that launching a query with the fuzziness operator can use an enormous 
 
  <p id="search_size"></p>
 
-### Searches with File Size
+___
+### Queries with File Size
 
 Diskover shows file size (size) and allocated size (size_du) in bytes. We recommend using the [filters](#filters), as well as [quick search](#quick_search) when searching on size, but these fields can also be searched manually. Some examples:
 
@@ -258,7 +269,8 @@ Diskover shows file size (size) and allocated size (size_du) in bytes. We recomm
 
 <p id="search_time"></p>
 
-### Searches with Time
+__
+### Queries with Time
 
 Although it is strongly advised to use [filters](#filters) or [quick search](#quick_search) to query time, below are a few examples on how to do so with a manual query.
 
@@ -299,6 +311,7 @@ Some helpful queries when looking for old files where you can easily change the 
 
 <p id="limiting_searches"></p>
 
+___
 ### Limiting your Searches to a Specific Path
 
 When wanting to limit your searches to a specific storage volume or directory, there are a many ways to achieve that, here are the easiest ones:

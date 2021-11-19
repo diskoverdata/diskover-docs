@@ -1,3 +1,4 @@
+___
 ### AWS Elasticsearch Domain
 
 Routine maintenance of the AWS Elasticsearch environment consists of two components: 1) managing indices, and 2) upgrading Elasticsearch versions as they become available.

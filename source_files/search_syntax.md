@@ -87,7 +87,7 @@ Wild cards are used to expand search results mostly due to [naming convention](#
 
 >🔆 A search might be a tad slower when using wild cards, especially when it is placed in front of your query, because it is searching a much larger amount of data.
 
-### Examples with Grouped Words or Numbers
+#### Examples with Grouped Words or Numbers
 When searching on a single word for example, the results might be limited if you type the word alone. Let's take the example of trying to find the following file **foryoureyesonly.mov**:
 
 - If you only type **eyes**, that file would not be found as Diskover would search for that [isolated word](#search_single_word) and not being mixed with other characters right before and/or after.

@@ -5,18 +5,18 @@ hr {
 }
 
 h1 {
-  font-size: 3em !important;
+  font-size: 2.8em !important;
   font-weight: bold !important;
 }
 
 h2 {
   font-size: 2.5em !important;
   font-weight: bold !important;
-  font-color: #red;
+  color: #red;
 }
 
 h3 {
-  font-size: 2.1em !important;
+  font-size: 1.9em !important;
   font-weight: normal !important;
 }
 
@@ -29,4 +29,5 @@ h5 {
   font-size: 1.3em !important;
   font-weight: normal !important;
   text-transform: none !important;
+  color: black !important;
 }

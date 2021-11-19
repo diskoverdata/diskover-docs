@@ -2,7 +2,6 @@
 
 ___
 ### User Analysis Report
-___
 
 The user analysis  report gives a snapshot of data utilization; it was designed to help with operating costs  management, as well as customers’ storage consumption for billing accuracy.
 

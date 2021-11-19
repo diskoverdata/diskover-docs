@@ -1,9 +1,10 @@
 ___
-## Chapter 13 - Software Update Installation
+## Software Update Installation
 ___
 
 When subscribing to a paid [Diskover Solution](https://www.diskoverdata.com/solutions/), all software updates, bug fixes, patches and version upgrades are included during the licensed period. Diskover will send an email notification to its customer base which will contain all necessary information.
 
+___
 ### Software Update for Linux
 
 The update process for Diskover curation platform consists of updating two parts: 1) the Diskover indexer(s), and 2) the Diskover-Web server.

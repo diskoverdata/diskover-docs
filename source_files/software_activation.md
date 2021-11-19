@@ -1,6 +1,5 @@
 ___
-<a id=“activation”></a>
-## Software Activation
+<h2 id="activation">Software Activation</h3>
 ___
 
 A license key is needed for Diskover’s paid subscriptions. Unless otherwise agreed, a license via a subscription is valid for a one (1) year period, and clients will be contacted prior to their license expiration.

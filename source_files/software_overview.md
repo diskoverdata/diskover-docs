@@ -30,7 +30,10 @@ ___
 - Significantly improves the efficiency of the organization and its people, in addition to reducing storage cost.
 - The [cost analysis tool](#cost_analysis) assist with charging clients accurately for storage space.
 
-<h3 id="consumers_of_data">Consumers of Data</h3>
+<p id="consumers_of_data"></p>
+
+___
+### Consumers of Data
 
 Diskover allows all stakeholders within an organization to have their own specific relationship with data. Here is an example of Line of Business Users, their needs, and challenges:
 

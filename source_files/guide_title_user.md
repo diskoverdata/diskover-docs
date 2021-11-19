@@ -1,2 +1,2 @@
-<br><br>
-# Diskover User Guide
+<br>
+<h1>Diskover User Guide</h1>

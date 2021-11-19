@@ -36,11 +36,11 @@ vi /var/www/diskover-web/src/diskover/Constants.php
 
 🔴 &nbsp;Configure client profile within the Diskover-Web user interface under the **Settings** page:
 
-![Image: Paths Translation Selection in Settings](images/image_paths_translation_settings_in_diskover_ui.png)
+<img src="images/image_paths_translation_settings_in_diskover_ui.png" width="700">
 
 🔴 &nbsp;Copy a path within the Diskover-Web user interface for testing:
 
-<img src="images/image_paths_translation_copy_path_from_diskover_ui.png" width="500">
+![Image: Pasted Path Within Clipboard](images/image_paths_translation_copy_path_from_diskover_ui.png)
 
 🔴 &nbsp;Resulting path within clipboard:
 

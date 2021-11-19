@@ -2,7 +2,6 @@
 
 ___
 ### Heatmap Report
-___
 
 The heatmap report is a powerful analytical snapshot offering a differential comparison of two indices across two different points in time:
 

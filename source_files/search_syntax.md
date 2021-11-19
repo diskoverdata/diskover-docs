@@ -120,8 +120,7 @@ Both **?** and **\*** wild cards can be used in the same query, for example sear
 
 >🔆 If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > settings > [predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much. Throughout this chapter, we will assume the predictive search has not been selected.
 
- <p id="search_field_names"></p>
-
+<p id="search_field_names"></p>
 ### Searches Using Field Names
 
 Searching with field names can be effective if you search on a specific and/or hidden field and are looking for precise results.
@@ -171,7 +170,8 @@ The reason being that the file extension letters might be part of the file name 
 
 - If only typing **jpg** in the search bar, the results would include all files with **.jpg** extension, but could also return a file with the name **montage_jpg_png_images.gif**
 
-<h3 id="operators">Operators</h3>
+<p id="operators"></p>
+### operators">Operators
 
 You can use operators **AND OR NOT**  to narrow down a manual search. Although the operators in this section are capitalized for ease of understanding, the operators can be typed in lower case in the search bar.
 
@@ -214,7 +214,8 @@ Another type of example with words only, and let's use **New York City**. If you
 	-  **news** must be excluded
 	-  **quick** and **brown** are optional — their presence increases the relevance
 
-<h3 id="fuzziness">Fuzziness</h3>
+<p id="fuzziness"></p>
+### Fuzziness
 
 You can run fuzzy queries with the **tilde ~** operator. 
 

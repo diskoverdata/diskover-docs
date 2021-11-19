@@ -1,3 +1,4 @@
+___
 ### Display Extra Fields on File Search Page
 
 To display additional columns within the file search page of the Diskover-Web user interface, using Media Info as an example:

@@ -1,3 +1,4 @@
+___
 ### Elasticsearch Index Management
 
 Indices can be managed by policy and manually with Elasticsearch.

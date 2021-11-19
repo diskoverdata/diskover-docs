@@ -2,7 +2,6 @@
 
 ___
 ### Export Search Results
-___
 
 From the search page, you can export the list of paths resulting from a search, or from looking into a storage volume or directory.
 

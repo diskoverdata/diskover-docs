@@ -12,7 +12,7 @@ h1 {
 h2 {
   font-size: 2.5em !important;
   font-weight: bold !important;
-  font-color: #bf0909;
+  font-color: cyan;
 }
 
 h3 {
@@ -21,11 +21,11 @@ h3 {
 }
 
 h4 {
-  font-size: 2.0em !important;
+  font-size: 1.8em !important;
   font-weight: normal !important;
 }
 
 h5 {
-  font-size: 1.75em !important;
+  font-size: 1.5em !important;
   font-weight: normal !important;
 }

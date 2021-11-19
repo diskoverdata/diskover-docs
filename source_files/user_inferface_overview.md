@@ -1,6 +1,6 @@
-___
 <p id="user_interface"></p>
 
+___
 ## User Interface Overview
 ___
 
@@ -9,6 +9,7 @@ ___
 Although the terms described in this section may have slightly different interpretations in other contexts, they are defined here within the Diskover end-user environment.
 
 <p id="storage_volume"></p>
+
 #### Storage Volume
 
 A storage location that you want to index, for example: Windows Share/drive, Linux mount/NFS Export, cloud storage, S3 bucket, etc.
@@ -18,6 +19,7 @@ Examples of other names for storage volume that might be used in your organizati
 Read more about [how to select a volume](#select_volume).
 
 <p id="index"></p>
+
 #### Index/Indices
 
 An index is an inventory of all the files on a storage volume; it allows the data to be searched quickly via the index instead of the operating system  find commands. Both  **indexes**  and  **indices**  have the same meaning, and are the plural of index, although indices is usually preferred in a technical context.
@@ -32,6 +34,7 @@ An index is an inventory of all the files on a storage volume; it allows the dat
 Read more about [how to use indices](#indices).
 
 <p id="directory"></p>
+
 #### Directory/Folder
 
 There are very subtle differences between a directory and a folder, but in the context of this guide, they are interchangeable and have the same meaning: a container to store/organize other directories/folders and files.
@@ -39,6 +42,7 @@ There are very subtle differences between a directory and a folder, but in the c
 Read more about [how to select a directory](#select_directory).
 
 <p id="recursive"></p>
+
 #### Recursive and Non-Recursive
 
 **Non-Recursive**: Will search or apply action to only the path/directory/file you are pointing to.
@@ -50,6 +54,7 @@ Read more about [how to select a directory](#select_directory).
 Diskover should look and act the same on any browser. The only thing to keep in mind is if, for example, you apply some modifications in your [settings](#settings) in Google Chrome, they will not transfer to Safari because the [settings](#settings) are tied to the cookies  of a browser. In this example, you would need to apply the same [settings](#settings) in Safari.
 
 <p id="login"></p>
+
 ### Login
 
 A) Open a  **Web browser**  of your choice and type the  **URL address**  that was supplied to you by the System Administrator of your facility.
@@ -59,6 +64,7 @@ C) Click on  **Login**.
 <img src="images/image_login_window_logo_diskover.png" width="400">
 
 <p id="ui_overview"></p>
+
 ### User Interface Overview
 
 This section offers an overview of the user interface. All icons, drop-down lists and tools will be further explained in the next chapters.
@@ -129,6 +135,7 @@ U) **Storage volume last indexed**: Gives the date and time of the last scan of 
 It is preferable to use the  **backward**  and  **forward**  buttons on your web browser to navigate between pages you have already visited. You can also use the back and forth buttons on the left pane of the file search window, but we found that they are not always responsive depending on which browser is being used.
 
 <p id="select_volume"></p>
+
 ### How to Select a Storage Volume
 
 ![Image: How to Select a Storage Volume](images/image_file_search_page_select_volume.png)
@@ -140,6 +147,7 @@ B) Via the  **path navigation bar**.
 C) Via the  **drop-down list**  at the top right corner.
 
 <p id="select_directory"></p>
+
 ### How to Select a Directory
 
 ![Image: How to Select a Directory](images/image_file_search_page_select_directory.png)

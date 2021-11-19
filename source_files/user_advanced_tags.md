@@ -1,4 +1,8 @@
-<h3 id="tags">Tags</h3>
+<p id="tags"></p>
+
+___
+### Tags
+___
 
 Tags are additional metadata assigned to an item, they are used to add business context or data curation actions to be taken (ex: archive, delete, keep, clean). Tagging is crucial for smooth workflows and proper curation of data.
 

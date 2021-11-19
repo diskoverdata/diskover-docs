@@ -63,7 +63,7 @@ A) Open a  **Web browser**  of your choice and type the  **URL address**  that w
 B) Enter the  **Username**  and  **Password**. Your System Administrator configures the login mechanism.
 C) Click on  **Login**.
 
-<img src="images/image_login_window_logo_diskover.png" width="400">
+<img src="images/image_login_window_logo_diskover.png" width="300">
 
 <p id="ui_overview"></p>
 

@@ -1,2 +1,2 @@
 <br>
-# Diskover Configuration and Administration Guide
+<h1>Diskover Configuration and Administration Guide</h1>

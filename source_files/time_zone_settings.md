@@ -8,6 +8,7 @@ Use the official **TZ database name** options for Diskover that can be found her
 
 [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 
+___
 ### Time Zone Setting for diskoverd Task Daemon(s)
 
 🔴 &nbsp;For each distributed task worker, edit the time zone value here:
@@ -17,6 +18,7 @@ Use the official **TZ database name** options for Diskover that can be found her
 
 ![Image: Time Zone Setting for Task Daemons](images/image_time_zone_task_worker_deamon_edit_time_zone_value.png)
 
+___
 ### Default Time Zone Setting for Diskover-Web
 
 🔴 &nbsp;The Diskover-Web default time zone value is configured here:
@@ -26,6 +28,7 @@ vi /var/www/diskover-web//src/diskover/Constants.php
 
 ![Image: Default Time Zone Setting for Diskover-Web](images/image_time_zone_diskover_web_time_zone_config.png)
 
+___
 ### User Preference Time Zone Setting Within Diskover-Web
 
 Individual users can set their time zone preference to their local time zone with the Diskover-Web HTML 5 user interface. 

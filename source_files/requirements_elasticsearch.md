@@ -1,3 +1,4 @@
+___
 ### Elasticsearch Requirements
 
 For more detailed Elasticsearch guidelines refer to AWS sizing guidelines:

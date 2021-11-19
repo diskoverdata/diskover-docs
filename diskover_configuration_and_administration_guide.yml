@@ -6,8 +6,8 @@ index_document: index_diskover_guides_header.md
 ordered_documents:
   - index_diskover_guides_header.md
   - guide_title_config_admin.md
-  - intro_copyright.md
   - intro_guide_intended_for_tech.md
+  - intro_copyright.md
   - intro_tech_guides_main_intro.md
   - intro_tech_guides_use_cases.md
   - intro_tech_guides_aws_approved.md

@@ -1,3 +1,4 @@
+___
 ### Diskover AWS Resource Requirements
 
 The following section outlines the reference architecture for AWS resources required for the Diskover curation platform. AWS resources are required for two of the Diskover deployment components, and the third component is typically deployed using the customer’s on-premise resources.

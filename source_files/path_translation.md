@@ -40,7 +40,7 @@ vi /var/www/diskover-web/src/diskover/Constants.php
 
 🔴 &nbsp;Copy a path within the Diskover-Web user interface for testing:
 
-![Image: Copy Path from User Interface](images/image_paths_translation_copy_path_from_diskover_ui.png)
+<img src="images/image_paths_translation_copy_path_from_diskover_ui.png" width="600">
 
 🔴 &nbsp;Resulting path within clipboard:
 

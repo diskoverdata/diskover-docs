@@ -1,2 +1,2 @@
-<br><br>
-# User Guide Companion
+<br>
+# Diskover User Guide Companion

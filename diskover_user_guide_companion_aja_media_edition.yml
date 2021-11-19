@@ -4,6 +4,7 @@ website_folder: diskover_user_guide
 # All documents need to be in shared folder
 index_document: index_diskover_guides_header.md
 ordered_documents:
+  - index_diskover_guides_header.md
   - aja_logo_and_icon.md
   - guide_title_companion_media_edition.md
   - intro_copyright.md

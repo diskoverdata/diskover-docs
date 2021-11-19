@@ -36,7 +36,7 @@ vi /var/www/diskover-web/src/diskover/Constants.php
 
 🔴 &nbsp;Configure client profile within the Diskover-Web user interface under the **Settings** page:
 
-<img src="images/image_paths_translation_settings_in_diskover_ui.png" width="700">
+<img src="images/image_paths_translation_settings_in_diskover_ui.png" width="600">
 
 🔴 &nbsp;Copy a path within the Diskover-Web user interface for testing:
 

@@ -1,3 +1,4 @@
+___
 ### Duplicates Plugin
 
 The Diskover duplicate plugin (dupes-finder) leverages post processing of index to check for duplicates, across all file systems, or subset thereof. The plugin supports **xxhash** or **MD5 checksums**. The plugin is designed for two use cases:

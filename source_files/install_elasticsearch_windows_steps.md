@@ -2,11 +2,11 @@
 
 Elasticsearch Windows MSI install instructions can be found here:  
 
-<a href=“https://www.elastic.co/guide/en/elasticsearch/reference/current/windows.html”>https://www.elastic.co/guide/en/elasticsearch/reference/current/windows.html</a>
+[https://www.elastic.co/guide/en/elasticsearch/reference/current/windows.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/windows.html)
 
 🔴 &nbsp;Download the Windows MSI installer: 
 
-<a href=“https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.10.2.msi”>https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.10.2.msi</a>
+[https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.10.2.msi](https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.10.2.msi)
 
 🔴 &nbsp;Select **Use default directories**:
 

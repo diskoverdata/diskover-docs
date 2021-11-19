@@ -83,7 +83,7 @@ When typing a single word in the search bar, Diskover will look for that **isola
 
 **\* *is used to replace zero, one or many characters*** (the most used wild card)
 
-Wild cards are used to expand search results mostly due to [naming convention](#naming_convention), but also to go around possible misspellings, although the [fuzziness](#fuzziness) operator, covered later in this chapter, is a much better choice for misspellings.
+Wild cards are used to expand search results mostly due to [naming convention](#naming_convention), but also to go around possible misspellings, although the [fuzziness](#fuzziness), covered later in this chapter, is a much better choice for misspellings.
 
 >🔆 A search might be a tad slower when using wild cards, especially when it is placed in front of your query, because it is searching a much larger amount of data.
 
@@ -176,7 +176,7 @@ The reason being that the file extension letters might be part of the file name 
 
 <p id="operators"></p>
 
-### operators">Operators
+### Operators
 
 You can use operators **AND OR NOT**  to narrow down a manual search. Although the operators in this section are capitalized for ease of understanding, the operators can be typed in lower case in the search bar.
 

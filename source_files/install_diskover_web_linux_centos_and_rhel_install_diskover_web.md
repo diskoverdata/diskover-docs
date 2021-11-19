@@ -111,7 +111,7 @@ yum install libtomcrypt-devel
   yum install libtomcrypt
 ```
 
-For more information: <a href=“https://hostadvice.com/how-to/how-to-install-mcrypt-on-centos-8/”>https://hostadvice.com/how-to/how-to-install-mcrypt-on-centos-8/</a>
+For more information: [https://hostadvice.com/how-to/how-to-install-mcrypt-on-centos-8/](https://hostadvice.com/how-to/how-to-install-mcrypt-on-centos-8/)
 
 🔴 &nbsp;Make the following change in the **/etc/nginx/conf.d/diskover-web.conf**. Change the following line from:
 ```

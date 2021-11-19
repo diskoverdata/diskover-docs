@@ -242,7 +242,7 @@ Be aware that launching a query with the fuzziness operator can use an enormous 
 
  <p id="search_size"></p>
 
-### Searching on File Size
+### Searches with File Size
 
 Diskover shows file size (size) and allocated size (size_du) in bytes. We recommend using the [filters](#filters), as well as [quick search](#quick_search) when searching on size, but these fields can also be searched manually. Some examples:
 
@@ -258,7 +258,7 @@ Diskover shows file size (size) and allocated size (size_du) in bytes. We recomm
 
 <p id="search_time"></p>
 
-### Searching on Time
+### Searches with Time
 
 Although it is strongly advised to use [filters](#filters) or [quick search](#quick_search) to query time, below are a few examples on how to do so with a manual query.
 
@@ -299,7 +299,7 @@ Some helpful queries when looking for old files where you can easily change the 
 
 <p id="limiting_searches"></p>
 
-### Limiting your Searches to a Specific Volume and/or Directory
+### Limiting your Searches to a Specific Path
 
 When wanting to limit your searches to a specific storage volume or directory, there are a many ways to achieve that, here are the easiest ones:
 1. You can use **current dir** toggle button at the top of the user interface once you've selected the particular path (volumes and/or directory) which you want to use to narrow your searches. Be aware that this selection will remain active until you go back and move that toggle button.

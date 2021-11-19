@@ -2,7 +2,6 @@
 
 ___
 ### Indices
-___
 
 The default is set to use the most recent  indices. You may want to select multiple indices to search across different points in time for comparison purposes (ex: this file is not here today, was it there two days ago?). Selecting different indices is also needed for the [heatmap report](#heatmap).
 

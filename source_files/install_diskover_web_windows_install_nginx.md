@@ -1,6 +1,6 @@
 #### Install NGINX
 
-To install NGINX/Windows, download the latest mainline version distribution, since the mainline branch of NGINX contains all known fixes: <a href=“https://nginx.org/en/download.html”>https://nginx.org/en/download.html</a>
+To install NGINX/Windows, download the latest mainline version distribution, since the mainline branch of NGINX contains all known fixes: [https://nginx.org/en/download.html](https://nginx.org/en/download.html)
 
 🔴 &nbsp;Extract the  **zip file**  and run the  **nginx.exe**:
 

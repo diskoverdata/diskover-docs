@@ -1,3 +1,4 @@
+___
 ### Install Diskover Indexer(s) for Mac
 
 The following outlines installing the Diskover indexer on MacOS.

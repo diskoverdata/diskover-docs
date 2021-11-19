@@ -1,3 +1,4 @@
+___
 ### Uninstall Diskover Indexer(s)
 
 #### Uninstall Diskover Indexers for Linux

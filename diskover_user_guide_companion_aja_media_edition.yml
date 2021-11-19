@@ -1,6 +1,6 @@
-website_name: Diskover User Guide
+website_name: User Guide Companion AJA Diskover Media Edition
 # Folder on the website, if you specify "folder" it will deploy this guide to https://docs.diskoverdata.com/folder
-website_folder: diskover_user_guide
+website_folder: diskover_user_guide_companion_aja_media_edition
 # All documents need to be in shared folder
 index_document: index_diskover_guides_header.md
 ordered_documents:

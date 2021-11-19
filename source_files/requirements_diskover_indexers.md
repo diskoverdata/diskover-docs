@@ -12,7 +12,7 @@ You can install Diskover indexers on a server or virtual machine (VM). Multiple 
 >- 64-bit Windows v8, v10, v11
 >- 64-bit Windows Server
 
-#### MAC
+#### Mac
 
 >- 64-bit MacOS v10.x, v11.x
 

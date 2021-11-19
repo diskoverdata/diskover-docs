@@ -5,7 +5,7 @@ The following section outlines the reference architecture for AWS resources requ
 
 #### AWS Elasticsearch Domain
 
-The foundation of the Diskover platform consists of a series of Elasticsearch indexes. These indexes are created and stored within the AWS Elasticsearch endpoint. Elasticsearch is a scale out architecture using 1 to N nodes. The recommended AWS node are:
+The foundation of the Diskover platform consists of a series of Elasticsearch indexes. These indexes are created and stored within the AWS Elasticsearch endpoint. Elasticsearch is a scale out architecture using 1 to N nodes. The recommended AWS nodes are:
 
 >- Minimum: i3.large
 >- Recommended: i3.xlarge
@@ -18,6 +18,8 @@ The Diskover-Web HTML5 user interface requires a Web server platform. An EC2 ins
 >- Recommended: t3.medium
 
 #### AWS Indexer
+
+The recommended instances are:
 
 >- Minimum: t3.large
 >- Recommended: t3.xlarge

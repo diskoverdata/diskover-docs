@@ -19,6 +19,7 @@ As Diskover uses Elasticsearch in the backend, all search syntax within Diskover
 [https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html)
 
 <p id="naming_convention"></p>
+
 ### Search Problems Resulting from Naming Conventions
 
 All organizations have issues with naming convention. Your search results might be limited if you try to be too restrictive when searching. For example, files associated with the movie **For Your Eyes Only** might be named:
@@ -63,6 +64,7 @@ At times you will need to group criteria, so Diskover can make sense of the quer
 	- **Exclusive** ranges need to be specified with curly brackets, ex: **{min TO max}**
 
 <p id="search_single_word"></p>
+
 #### The Logic Behind Searching on a Single Word
 
 When typing a single word in the search bar, Diskover will look for that **isolated word**. In order to "split" and find isolated words, Diskover/Elasticsearch uses **tokenizers** like **space, underscore, hyphen, forward slash, period, other punctuation, as well as upper cases** to make sense of what is included in a file name. For example:
@@ -74,6 +76,7 @@ When typing a single word in the search bar, Diskover will look for that **isola
 - If your file name is **foryoureyesonly.mov** and you launch a search with the word **eyes**, Diskover would not find that file because the whole name/string looks like a single word.
 
 <p id="wildcards"></p>
+
 ### Wild Cards
 
 **? *is used to replace a single character*** 
@@ -121,6 +124,7 @@ Both **?** and **\*** wild cards can be used in the same query, for example sear
 >🔆 If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > settings > [predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much. Throughout this chapter, we will assume the predictive search has not been selected.
 
 <p id="search_field_names"></p>
+
 ### Searches Using Field Names
 
 Searching with field names can be effective if you search on a specific and/or hidden field and are looking for precise results.
@@ -171,6 +175,7 @@ The reason being that the file extension letters might be part of the file name 
 - If only typing **jpg** in the search bar, the results would include all files with **.jpg** extension, but could also return a file with the name **montage_jpg_png_images.gif**
 
 <p id="operators"></p>
+
 ### operators">Operators
 
 You can use operators **AND OR NOT**  to narrow down a manual search. Although the operators in this section are capitalized for ease of understanding, the operators can be typed in lower case in the search bar.
@@ -215,6 +220,7 @@ Another type of example with words only, and let's use **New York City**. If you
 	-  **quick** and **brown** are optional — their presence increases the relevance
 
 <p id="fuzziness"></p>
+
 ### Fuzziness
 
 You can run fuzzy queries with the **tilde ~** operator. 

@@ -2,7 +2,6 @@
 
 ___
 ### File Tree Report
-___
 
 The file tree  report profiles the size and aging of files, in a selected storage volume or any of its directories. Note that the colors have no particular meaning in this report.
 

@@ -2,7 +2,6 @@
 
 ___
 ### Smart Searches
-___
 
 Smart searches were designed for repeatable reports; they are basically saved searches or shortcuts. The goal is to avoid having to recreate complex queries when you know you will need the same report on a regular basis. These reports are global and accessible by everyone in your organization.
 

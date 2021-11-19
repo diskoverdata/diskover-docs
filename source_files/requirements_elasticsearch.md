@@ -2,7 +2,7 @@
 
 For more detailed Elasticsearch guidelines refer to AWS sizing guidelines:
 
-<a href=“https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sizing-domains.html”>https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sizing-domains.html</a>
+[https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sizing-domains.html](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sizing-domains.html)
 
 #### Elasticsearch Cluster
 

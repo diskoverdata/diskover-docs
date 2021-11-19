@@ -1,3 +1,4 @@
+___
 ### Autoclean Plugin
 
 The autoclean plugin is designed to move, delete, or rename based on a set of highly configurable criteria. Any Elasticsearch query (tags, age, size, path, filename, etc.) can be used for the criteria providing very granular actions.

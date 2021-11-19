@@ -1,2 +1,2 @@
 <br>
-# Diskover Installation Guide
+<h1>Diskover Installation Guide</h1>

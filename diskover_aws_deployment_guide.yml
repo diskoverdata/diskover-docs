@@ -53,5 +53,6 @@ ordered_documents:
   - troubleshooting_diskover_web_linux.md
   - troubleshooting_misc.md
   - support.md
+  - aws_cost.md
   - contact.md
   - footer.md

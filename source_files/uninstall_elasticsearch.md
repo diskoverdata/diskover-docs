@@ -1,3 +1,4 @@
+___
 ### Uninstall Elasticsearch
 
 #### Uninstall Elasticsearch for Linux

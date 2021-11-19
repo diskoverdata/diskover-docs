@@ -2,7 +2,6 @@
 
 ___
 ### Line Items Selection
-___
 
 In the file search page, you can select all line items on a page by clicking  **Select all**  and deselect line items by clicking  **Unselect All**  buttons.
 

@@ -1,4 +1,8 @@
-<h3 id="indices">Indices</h3>
+<p id="indices"></p>
+
+___
+### Indices
+___
 
 The default is set to use the most recent  indices. You may want to select multiple indices to search across different points in time for comparison purposes (ex: this file is not here today, was it there two days ago?). Selecting different indices is also needed for the [heatmap report](#heatmap).
 
@@ -18,7 +22,9 @@ Unless you must compare indices from different points in time or want to use the
 
 ![Image: Always Use Latest Indices](images/image_indices_always_use_latest_indices.png)
 
-<h4 id="index_selection">Selecting Indices</h4>
+<p id="index_selection"></p>
+
+#### Selecting Indices
 
 This section will guide you in case you need to go back to an older index (or indices) for search, comparison, or reporting  purposes.
 

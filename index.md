@@ -20,3 +20,14 @@ Intended for the daily operations of Diskover by the Line of Business Users.
 [User Guide Companion for the AJA Diskover Media Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/)
 
 [Diskover Quick Reference Card](images/diskover_quick_reference_card.png)
+
+## Contact Diskover
+___
+|||
+|--|--|
+|Phone|800-560-5853 |
+|Sales  |[sales@diskoverdata.com](mailto:sales@diskoverdata.com)  |
+|Support  |[support@diskoverdata.com](mailto:support@diskoverdata.com)  |
+|General Inquiries|[info@diskoverdata.com](mailto:info@diskoverdata.com)  |
+|Website  |[https://diskoverdata.com](https://diskoverdata.com/)  |
+

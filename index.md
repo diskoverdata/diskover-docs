@@ -31,3 +31,5 @@ ___
 |General Inquiries|[info@diskoverdata.com](mailto:info@diskoverdata.com)  |
 |Website  |[https://diskoverdata.com](https://diskoverdata.com/)  |
 
+___
+>© 2021 Diskover Data, Inc.

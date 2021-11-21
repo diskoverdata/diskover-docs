@@ -21,8 +21,9 @@ Intended for the daily operations of Diskover by the Line of Business Users.
 
 [Diskover Quick Reference Card](images/diskover_quick_reference_card.png)
 
-## Contact Diskover
 ___
+## Contact Diskover
+
 |||
 |--|--|
 |Phone|800-560-5853 |

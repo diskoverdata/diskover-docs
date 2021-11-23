@@ -137,6 +137,6 @@ PS C:\Program Files\Nginx\nginx__-1.19.6> .\nginx__.exe
 
 ![Image: Start NGINX Web Server](images/image_diskover_web_install_for_windows_run_nginx_exe_from_powershell.png)
 
-🔴 &nbsp;Open **info.php** page to confirm proper configuration: <a href=“http://localhost/info.php”>http://localhost/info.php</a>
+🔴 &nbsp;Open **info.php** page to confirm proper configuration: [http://localhost/info.php](http://localhost/info.php)
 
 ![Image: Verify PHP Configuration](images/image_diskover_web_install_for_windows_verify_php_config.png)

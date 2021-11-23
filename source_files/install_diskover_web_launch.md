@@ -3,7 +3,7 @@ ___
 
 **Login to Diskover:**
 
-🔴 &nbsp;Open Diskover-Web page: <a href=“http://localhost:8000”>http://localhost:8000</a>
+🔴 &nbsp;Open Diskover-Web page: [http://localhost:8000](http://localhost:8000)
 ```
 http://<diskover_web_host_ip>:8000/
 ```

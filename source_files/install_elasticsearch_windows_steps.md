@@ -43,6 +43,6 @@ curl -X GET "localhost:9200/"
 ```
 <img src="images/image_elasticsearch_install_for_windows_check_cluster_health_on_local_server.png" width="750">
 
-🔴 &nbsp;Alternatively, you can open a Web browser to http://localhost:9200/:
+🔴 &nbsp;Alternatively, you can open a Web browser to [http://localhost:9200/](http://localhost:9200/):
 
 <img src="images/image_elasticsearch_install_for_windows_check_cluster_health_by_opening_localhost_9200.png" width="750">

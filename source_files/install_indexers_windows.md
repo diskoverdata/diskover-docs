@@ -120,6 +120,6 @@ The command completed successfully.
 
 #### Verify Index Creation
 
-🔴 &nbsp;Open a Web browser to: <a href=“http://localhost:9200/_cat/indices”>http://localhost:9200/_cat/indices</a>
+🔴 &nbsp;Open a Web browser to: [http://localhost:9200/\_cat/indices](http://localhost:9200/_cat/indices)
 
 ![Image: Verify Index Creation](images/image_indexers_install_for_windows_verify_index_creation.png)

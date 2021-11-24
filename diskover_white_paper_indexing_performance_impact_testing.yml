@@ -1,6 +1,6 @@
-website_name: Diskover Installation Guide
+website_name: White Paper | Diskover Indexing Performance Impact
 # Folder on the website, if you specify "folder" it will deploy this guide to https://docs.diskoverdata.com/folder
-website_folder: diskover_installation_guide
+website_folder: diskover_white_paper_indexing_performance_impact_testing
 # All documents need to be in shared folder
 index_document: index_diskover_guides_header.md
 ordered_documents:

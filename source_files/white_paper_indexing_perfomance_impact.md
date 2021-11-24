@@ -66,7 +66,9 @@ The storage infrastructure consisted of IBM SpectrumScale file system with three
 
 ![Image](images/white_paper_diskover_performance_impact_testing_image_6.png)
 
+___
 ## Test 1: Resolve Playback on NVME Based Storage
+___
 
 Based on the methodology described earlier of determining the maximum consistent playback thru the resolve application, it was determined that the underlying NVME storage infrastructure could sustain 34 frames per second with the uncompressed 4K media clip.
 
@@ -88,7 +90,9 @@ With media clip playback in progress, the Diskover indexing process of the NVME 
 
 Based on the test results, the Diskover indexer process resulted in no performance degradation to playback when using the Resolve application for playback on NVME based storage.
 
+___
 ## Test 2: Resolve Playback on Nearline SAS Based Storage
+___
 
 Based on the methodology described earlier of determining the maximum consistent playback thru the resolve application, it was determined that the underlying Nearline SAS storage infrastructure could sustain 19 frames per second with the uncompressed 4K media clip.
 

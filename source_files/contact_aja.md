@@ -6,7 +6,7 @@ The [**AJA | Diskover Media Edition is _sold exclusively_ by AJA Video Systems**
 
 When calling for support, please have all information at hand prior to calling. To contact AJA Video Systems for sales or support, use the following methods:
 
-|||
+|Method|Coordinate|
 |--|--|
 |Phone|530.271.3190 |
 |Fax|530.271.3140 |

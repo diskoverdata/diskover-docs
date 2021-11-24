@@ -16,7 +16,7 @@ The following two applications we used to test and monitor any performance impac
 
 [https://Diskover.blackmagicdesign.com/products/davinciresolve/](https://www.blackmagicdesign.com/products/davinciresolve/)
 
-2. **SGI Frametest** – The  _frametest_  application is commonly used to generate streaming workload for SD/HD/2K/4K formats of video streams. Each frame is stored in a separate file. However, the You can tool can also be used to simulate the reading and writing video streams by streaming applications. The  _frametest_  tool generates the performance statistics for the reading and writing operation, therefore it is very useful for performance analysis for streaming applications.
+2. **SGI _frametest_** – The  _frametest_  application is commonly used to generate streaming workload for SD/HD/2K/4K formats of video streams. Each frame is stored in a separate file. However, the You can tool can also be used to simulate the reading and writing video streams by streaming applications. The  _frametest_  tool generates the performance statistics for the reading and writing operation, therefore it is very useful for performance analysis for streaming applications.
 
 [https://techpubs.jurassic.nl/manuals/hdwr/admin/CXFSx_AG/sgi_html/ch12.html#Z1197578849lhj](https://techpubs.jurassic.nl/manuals/hdwr/admin/CXFSx_AG/sgi_html/ch12.html#Z1197578849lhj)
 
@@ -129,13 +129,13 @@ Should the reader desire to use  _frametest_, for additional performance testing
 
 **Mac-PowerPC:**  [Diskover.dvsus.com/gold/san/frametest/mac/frametest-powerpc](http://www.dvsus.com/gold/san/frametest/mac/frametest-powerpc)
 
-Frametest can be run on many OS platforms, the syntax is the same and is executed / run from within a terminal session.
+_frametest_ can be run on many OS platforms, the syntax is the same and is executed / run from within a terminal session.
 
 ### Test Environment Details for  _frametest_
 
 To conduct the Diskover performance impact testing, the  _frametest_  application was installed and all tests were run from a CentOS 7 Linux environment.
 
-#### Frametest 4.22 for Linux
+#### _frametest_ 4.22 for Linux
 
 Copyright © 2004-2005 Silicon Graphics, Inc. All rights reserved.
 
@@ -157,7 +157,7 @@ Here are the details of the Linux environment used for  _frametest_:
 
 ![Image](images/white_paper_diskover_performance_impact_testing_image_16.png)
 
-### _Frametest_  Environment Setup
+### _frametest_  Environment Setup
 
 The following directories were created as the testbed for the series of tests to be executed:
 

@@ -6,7 +6,7 @@ Media production environments often require insights into the various projects i
 
 The objective of this paper is to measure the performance impact, if any, to production application performance while the diskover indexing process is actively indexing file system storage. Any file system management technology should not impact performance for actual production applications. The testing in this document focused on Media & Entertainment creative applications.
 
-____
+___
 ## Test Environment Tools
 ___
 
@@ -32,13 +32,13 @@ The testing involved setting up Resolve to playback 4K resolution frames and the
 
 DaVinci Resolve Studio 16 Version 16.2.7.010:
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_1_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_1.png)
 
 ### Media Playback Details
 
 A media sequence of uncompressed 4K dpx frames was used for the playback clip during testing of performance impacts of the Diskover file system indexer(s):
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_2_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_2.png)
 
 ### Setting Up Playback Frame Rate within Resolve
 
@@ -46,7 +46,7 @@ To setup the environment, the playback framerate was incremental increase until 
 
 The screenshot below shows a playback frame rate of 18 fps (frames per second) for the testing done on the Nearline SAS storage:
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_3_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_3.png)
 
 #### Windows System Details
 
@@ -54,17 +54,17 @@ Resolve Application was Installed on Windows 10 Pro.
 
 Here are the Windows system details:
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_4_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_4.png)
 
 #### Network I/O Details
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_5_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_5.png)
 
 #### Storage Environment Details
 
 The storage infrastructure consisted of IBM SpectrumScale file system with three tiers of storage, NVME, SAS, and Nearline SAS:
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_6_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_6.png)
 
 ### Test 1: Resolve Playback on NVME Based Storage
 
@@ -72,17 +72,17 @@ Based on the methodology described earlier of determining the maximum consistent
 
 The screenshot below details the Resolve timeline settings used for the NVME performance testing:
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_7_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_7.png)
 
 The playback of the media clip (without the Diskover indexer running) showed the playback rate of 34 fps with no dropped frames.
 
->_Note: When resolve starts to drop frames the green dot turns to a red dot._
+>_Note:_ When resolve starts to drop frames the green dot turns to a red dot.
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_8_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_8.png)
 
 With media clip playback in progress, the Diskover indexing process of the NVME storage was then initiated.
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_9_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_9.png)
 
 #### Results: Resolve Playback on NVME Based Storage
 
@@ -94,23 +94,24 @@ Based on the methodology described earlier of determining the maximum consistent
 
 The screenshot below details the Resolve timeline settings used for the Nearline performance testing:
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_10_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_10.png)
 
 The playback of the media clip (without the Diskover indexer running) showed the playback rate of 19 fps with no dropped frames:
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_11_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_11.png)
 
 With media clip playback in progress, the Diskover indexing process of the Nearline SAS storage was then initiated:
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_12_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_12.png)
 
 #### Results: Resolve Playback on Nearline SAS Based Storage
 
 Based on the test results, the Diskover indexer process resulted in no performance degradation to playback when using the Resolve application for playback on Nearline SAS based storage.
 
-____
+___
 
 ## SGI  _frametest_  Test Methodology and Results
+___
 
 The  _frametest_ application can be used to generate streaming workload for SD/HD/2K/4K formats of video streams, for testing purposes a 4K frame size was used to align with previous DaVinci Resolve testing. Each frame is stored in a separate file. The  _frametest_  tests simulate streaming applications and encompassed both reading and writing video streams for the purpose of measuring any performance degradation due to the Diskover indexing process. To measure any performance impact of Diskover indexing process, a comparison of total number of frames dropped (out of 10,000 frames) will be used. Any measurable performance load created by the Diskover indexing process will manifest in more frames dropped.
 
@@ -136,37 +137,37 @@ Copyright © 2004-2005 Silicon Graphics, Inc. All rights reserved.
 
 Here are the details of the Linux environment used for  _frametest_:
 
-##### CPU
+#### CPU
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_13_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_13.png)
 
 **Memory**
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_14_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_14.png)
 
 **IBM SpectrumScale File System Details - Overall Size**
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_15_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_15.png)
 
 **Consisting of 3 Tiers of Storage: NVME, SAS, and Nearline SAS**
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_16_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_16.png)
 
 #### _Frametest_  Environment Setup
 
 The following directories were created as the testbed for the series of tests to be executed:
 
 Nearline SAS write test (without indexing)  
-<pre><code>/mmfs1/NLSAS/Paul/NLSAS_DISKOVER/</code></pre>
+`/mmfs1/NLSAS/Paul/NLSAS_DISKOVER/`
 
 Nearline SAS write test (with indexing)  
-<pre><code>/mmfs1/NLSAS/Paul/NLSAS_WI/</code></pre>
+`/mmfs1/NLSAS/Paul/NLSAS_WI/`
 
 Nearline SAS read test (without indexing)  
-<pre><code>/mmfs1/NLSAS/Paul/NLSAS_R/</code></pre>
+`/mmfs1/NLSAS/Paul/NLSAS_R/`
 
 Nearline SAS read test (with indexing)  
-<pre><code>/mmfs1/NLSAS/Paul/NLSAS_RI/</code></pre>
+`/mmfs1/NLSAS/Paul/NLSAS_RI/`
 
 The  _frametest_  application is actually executed two times, 1) the first time is the write pass, and 2) the second time is the read pass. The write pass generates test frames in the test directory that the read pass will then use.
 
@@ -174,9 +175,9 @@ The  _frametest_  application is actually executed two times, 1) the first time 
 
 To setup the environment, the playback framerate was incremental increase until the point where some amount of frames would drop frames during playback. If no frames are dropped, the test might not be pushing the edge of underlying storage capabilities. For testing purposes, the frame rate should be set right on the edge of the capabilities so any additional workload imposed by indexing would be measurable. Through a series of trial and error, the frame rate edge for the Nearline SAS based storage infrastructure was determined to be:
 
-**Nearline SAS write test:** 64 frames per second
-
-**Nearline SAS read test:** 60 frames per second
+>**Nearline SAS write test:** 64 frames per second
+>
+>**Nearline SAS read test:** 60 frames per second
 
 #### Test Environment  _frametest_  Usage Options
 
@@ -194,16 +195,16 @@ The parameters used for the testing will simulate 4K DPX file sequence (-Diskove
 
 No indexing
 
-<pre><code>/DIST/frametest -Diskover 4k -n 10000 -t 4 -f 64 /mmfs1/NLSAS/Paul/NLSAS_DISKOVER/</code></pre>
+`/DIST/frametest -Diskover 4k -n 10000 -t 4 -f 64 /mmfs1/NLSAS/Paul/NLSAS_DISKOVER/`
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_17_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_17.png)
 
 #### NLSAS 4K Write Test of 10,000 Frames @ 64 fps with Diskover Indexing in Progress
 
-<pre><code>/DIST/frametest -Diskover 4k -n 10000 -t 4 -f 64 /mmfs1/NLSAS/Paul/NLSAS_WI/time 
-python3 Diskover.py -i Diskover-frametest-2020111008 /mnt/mmfs1/NLSAS</code></pre>
+`/DIST/frametest -Diskover 4k -n 10000 -t 4 -f 64 /mmfs1/NLSAS/Paul/NLSAS_WI/time 
+python3 Diskover.py -i Diskover-frametest-2020111008 /mnt/mmfs1/NLSAS`
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_18_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_18.png)
 
 #### NLSAS 4K Write Test Findings
 
@@ -211,16 +212,16 @@ During the 4K write tests, the Diskover indexing process dropped a total of 91 f
 
 NLSAS 4K read test of 10,000 frames @ 60 fps
 
-<pre><code>/DIST/frametest -r 4k -n 10000 -t 4 -f 60 /mmfs1/NLSAS/Paul/NLSAS_R/</code></pre>
+`/DIST/frametest -r 4k -n 10000 -t 4 -f 60 /mmfs1/NLSAS/Paul/NLSAS_R/`
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_19_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_19.png)
 
 NLSAS 4K read test of 10,000 frames @ 60 fps with Diskover indexing in progress
 
-<pre><code>/DIST/frametest -r 4k -n 10000 -t 4 -f 60 /mmfs1/NLSAS/Paul/NLSAS_RI/
-python3 Diskover.py -i Diskover-frametest-2020111009 /mnt/mmsf1/NLSAS</code></pre>
+`/DIST/frametest -r 4k -n 10000 -t 4 -f 60 /mmfs1/NLSAS/Paul/NLSAS_RI/
+python3 Diskover.py -i Diskover-frametest-2020111009 /mnt/mmsf1/NLSAS`
 
-![enter image description here](https://www.diskoverdata.com/wp-content/uploads/2021/09/white_paper_diskover_performance_impact_testing_image_20_20210205.png?)
+![Image](images/white_paper_diskover_performance_impact_testing_image_20.png)
 
 #### NLSAS 4K Read Test Findings
 

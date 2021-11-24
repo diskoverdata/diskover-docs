@@ -1,0 +1,71 @@
+name: Deploy to S3
+
+on:
+  workflow_dispatch:
+    inputs:
+      config:
+        description: 'Config file path'
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ 3.8 ]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+          architecture: x64
+
+      - name: Install requirements
+        run: |
+          python3 -m pip install -r requirements.txt
+          sudo snap install yq
+      - name: Build website
+        run: |
+          mkdir ./build
+          mkdir ./build/docs
+          mkdir ./build/docs/assets
+          
+          cp ./mkdocs.yml ./build/mkdocs.yml
+          cp -r ./assets/images ./build/docs/assets/images
+          cp -r ./assets/css ./build/docs/assets/css
+          
+          site_name=$(yq e '.website_name' ${{ github.event.inputs.config }}) yq e '.site_name = env(site_name)' -i ./build/mkdocs.yml
+          
+          cp ./assets/pages/index.md ./build/docs/index.md
+          
+          yq e '.ordered_documents[]' ${{ github.event.inputs.config }} | while read file; do
+            echo "Copying $file";
+            cat ./source_files/$file >> ./build/docs/index.md
+            echo -e "\n" >> ./build/docs/index.md
+          done
+          
+          cat ./build/docs/index.md
+          
+          echo "Copying images"
+          cp -r ./source_files/images ./build/docs/images
+                    
+          cd ./build
+          python3 -m mkdocs build
+          
+          rm -f ./site/404.html
+          
+      - name: S3 sync
+        run: |
+          aws s3 sync --delete --follow-symlinks ./build/site s3://$AWS_S3_BUCKET/$(yq e '.website_folder' ${{ github.event.inputs.config }})
+          aws s3 cp ./assets/pages/404.html s3://$AWS_S3_BUCKET/404.html
+          aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*" >/dev/null 2>&1
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_REGION: 'us-east-1'
+          DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}

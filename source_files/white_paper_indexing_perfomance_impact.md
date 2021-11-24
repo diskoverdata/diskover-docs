@@ -66,7 +66,7 @@ The storage infrastructure consisted of IBM SpectrumScale file system with three
 
 ![Image](images/white_paper_diskover_performance_impact_testing_image_6.png)
 
-### Test 1: Resolve Playback on NVME Based Storage
+## Test 1: Resolve Playback on NVME Based Storage
 
 Based on the methodology described earlier of determining the maximum consistent playback thru the resolve application, it was determined that the underlying NVME storage infrastructure could sustain 34 frames per second with the uncompressed 4K media clip.
 
@@ -84,11 +84,11 @@ With media clip playback in progress, the Diskover indexing process of the NVME 
 
 ![Image](images/white_paper_diskover_performance_impact_testing_image_9.png)
 
-#### Results: Resolve Playback on NVME Based Storage
+### Results: Resolve Playback on NVME Based Storage
 
 Based on the test results, the Diskover indexer process resulted in no performance degradation to playback when using the Resolve application for playback on NVME based storage.
 
-### Test 2: Resolve Playback on Nearline SAS Based Storage
+## Test 2: Resolve Playback on Nearline SAS Based Storage
 
 Based on the methodology described earlier of determining the maximum consistent playback thru the resolve application, it was determined that the underlying Nearline SAS storage infrastructure could sustain 19 frames per second with the uncompressed 4K media clip.
 
@@ -104,7 +104,7 @@ With media clip playback in progress, the Diskover indexing process of the Nearl
 
 ![Image](images/white_paper_diskover_performance_impact_testing_image_12.png)
 
-#### Results: Resolve Playback on Nearline SAS Based Storage
+### Results: Resolve Playback on Nearline SAS Based Storage
 
 Based on the test results, the Diskover indexer process resulted in no performance degradation to playback when using the Resolve application for playback on Nearline SAS based storage.
 
@@ -141,19 +141,19 @@ Here are the details of the Linux environment used for  _frametest_:
 
 ![Image](images/white_paper_diskover_performance_impact_testing_image_13.png)
 
-**Memory**
+#### Memory
 
 ![Image](images/white_paper_diskover_performance_impact_testing_image_14.png)
 
-**IBM SpectrumScale File System Details - Overall Size**
+#### IBM SpectrumScale File System Details - Overall Size
 
 ![Image](images/white_paper_diskover_performance_impact_testing_image_15.png)
 
-**Consisting of 3 Tiers of Storage: NVME, SAS, and Nearline SAS**
+#### Consisting of 3 Tiers of Storage: NVME, SAS, and Nearline SAS
 
 ![Image](images/white_paper_diskover_performance_impact_testing_image_16.png)
 
-#### _Frametest_  Environment Setup
+### _Frametest_  Environment Setup
 
 The following directories were created as the testbed for the series of tests to be executed:
 
@@ -193,7 +193,7 @@ The parameters used for the testing will simulate 4K DPX file sequence (-Diskove
 
 #### NLSAS 4K Write Test of 10,000 Frames @ 64 fps
 
-No indexing
+No indexing.
 
 `/DIST/frametest -Diskover 4k -n 10000 -t 4 -f 64 /mmfs1/NLSAS/Paul/NLSAS_DISKOVER/`
 

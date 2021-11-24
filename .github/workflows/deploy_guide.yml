@@ -1,4 +1,4 @@
-name: Deploy to S3
+name: Deploy Guide to S3
 
 on:
   workflow_dispatch:
@@ -41,7 +41,7 @@ jobs:
           
           site_name=$(yq e '.website_name' ${{ github.event.inputs.config }}) yq e '.site_name = env(site_name)' -i ./build/mkdocs.yml
           
-          cp ./assets/pages/index.md ./build/docs/index.md
+          cp ./assets/pages/header.md ./build/docs/index.md
           
           yq e '.ordered_documents[]' ${{ github.event.inputs.config }} | while read file; do
             echo "Copying $file";

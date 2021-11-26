@@ -1,7 +1,7 @@
 ![Image: Diskover Data Logo](images/logo_diskover_data_tm_header_no_background.png)
+
 ___
 ## Technical Guides
-___
 
 Intended for Service Professionals and System Administrators.
 
@@ -13,7 +13,6 @@ Intended for Service Professionals and System Administrators.
 
 ___
 ## User Guides
-___
 
 Intended for the daily operations of Diskover by the Line of Business Users.
 
@@ -23,16 +22,14 @@ Intended for the daily operations of Diskover by the Line of Business Users.
 
 [Diskover Quick Reference Card](images/quick_reference_card_diskover_generic.png)
 
-_[Click here for a full screen view of the Quick Reference Card.](images/quick_reference_card_diskover_generic.png)_
-
 ___
 ## White Papers
-___
 
 [Diskover Indexing Performance Impact Testing](https://docs.diskoverdata.com/diskover_white_paper_indexing_performance_impact_testing/)
+
 ___
 ## Contact Diskover
-___
+
 |Method|Coordinate|
 |--|--|
 |Phone|800-560-5853 |
@@ -43,6 +40,3 @@ ___
 
 ___
 >© 2021 Diskover Data, Inc.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbODk0MDgxMTExXX0=
--->

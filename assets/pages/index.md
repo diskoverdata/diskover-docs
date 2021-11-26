@@ -21,8 +21,9 @@ Intended for the daily operations of Diskover by the Line of Business Users.
 
 [User Guide Companion for the AJA Diskover Media Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/)
 
-[Diskover Quick Reference Card](images/diskover_quick_reference_card.png)
-_[Click here for a full screen view of the Quick Reference Card.](images/diskover_quick_reference_card.png)_
+[Diskover Quick Reference Card](images/quick_reference_card_diskover_generic.png)
+
+_[Click here for a full screen view of the Quick Reference Card.](images/quick_reference_card_diskover_generic.png)_
 
 ___
 ## White Papers

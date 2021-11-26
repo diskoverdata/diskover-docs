@@ -34,7 +34,7 @@ jobs:
           cp -r ./assets/images ./build/docs/assets/images
           cp -r ./assets/css ./build/docs/assets/css
           
-          site_name="Diskover documentations" yq e '.site_name = env(site_name)' -i ./build/mkdocs.yml
+          site_name="Diskover Documentation" yq e '.site_name = env(site_name)' -i ./build/mkdocs.yml
           
           cp ./assets/pages/header.md ./build/docs/index.md
           cat ./assets/pages/index.md >> ./build/docs/index.md

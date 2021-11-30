@@ -125,11 +125,11 @@ S) **Headers and Columns**: Columns can be added or removed in [Settings](#setti
 
 T) **Search results pane**: Section where you can either see the full content of a storage volume, a directory, or search results following a query.
 
->🔆&nbsp;You can adjust the width of the columns in T) search results  pane by sliding the thin vertical line in between the columns.
+> 🔆 &nbsp;You can adjust the width of the columns in T) search results  pane by sliding the thin vertical line in between the columns.
 
 U) **Storage volume last indexed**: Gives the date and time of the last scan of the selected storage volume.
 
->🔆&nbsp;Hovering  your mouse over a [storage volume](#storage_volume) or a [directory](#directory) in the left pane will show more data about that specific directory (path, size, number of items, etc.).
+> 🔆 &nbsp;Hovering  your mouse over a [storage volume](#storage_volume) or a [directory](#directory) in the left pane will show more data about that specific directory (path, size, number of items, etc.).
 
 <img src="images/image_file_search_hovering_directory.png" width="300"> ![Image: Hovering Over a Storage Volume](images/image_file_search_hovering_volume.png)
 

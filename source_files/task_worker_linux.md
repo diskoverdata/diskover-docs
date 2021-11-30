@@ -31,7 +31,7 @@ After=network.target
 Type=simple
 User=root
 WorkingDirectory=/opt/diskover/
-ExecStart=/usr/bin/python3 /opt/diskover/diskoverd.py -n worker-${HOSTNAME}
+ExecStart=/usr/bin/python3 /opt/diskover/diskoverd.py -n worker-%H
 Restart=always
 
 [Install]

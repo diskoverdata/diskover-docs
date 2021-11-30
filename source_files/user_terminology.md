@@ -6,6 +6,7 @@ Although the terms described in this section may have slightly different interpr
 
 <p id="storage_volume"></p>
 
+___
 ### Storage Volume
 
 A storage location that you want to index, for example: Windows Share/drive, Linux mount/NFS Export, cloud storage, S3 bucket, etc.
@@ -16,6 +17,7 @@ Read more about [how to select a volume](#select_volume).
 
 <p id="index"></p>
 
+___
 ### Index/Indices
 
 An index is an inventory of all the files on a storage volume; it allows the data to be searched quickly via the index instead of the operating system  find commands. Both  **indexes**  and  **indices**  have the same meaning, and are the plural of index, although indices is usually preferred in a technical context.
@@ -31,6 +33,7 @@ Read more about [how to use indices](#indices).
 
 <p id="directory"></p>
 
+___
 ### Directory/Folder
 
 There are very subtle differences between a directory and a folder, but in the context of this guide, they are interchangeable and have the same meaning: a container to store/organize other directories/folders and files.
@@ -39,6 +42,7 @@ Read more about [how to select a directory](#select_directory).
 
 <p id="recursive"></p>
 
+___
 ### Recursive and Non-Recursive
 
 **Non-Recursive**: Will search or apply action to only the path/directory/file you are pointing to.
@@ -47,6 +51,7 @@ Read more about [how to select a directory](#select_directory).
 
 <p id="elasticsearch_terminology"></p>
 
+___
 ### Elasticsearch
 
 Diskover uses Elasticsearch in the backend for its speed and reliability. Below is an overview of the Diskover architecture.

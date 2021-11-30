@@ -1,6 +1,5 @@
 ___
 ## Media Edition Plugins Overview
-![Image: Media Edition Label](images/button_edition_media.png)
 ___
 
 This diagram illustrates the functionality of the initial features of the Media Edition. More plugins and features will be added over time.

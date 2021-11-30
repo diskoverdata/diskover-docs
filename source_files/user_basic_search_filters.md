@@ -15,7 +15,8 @@ B) **Search path**: From the drop-down list, select:
 >- **current directory path**: Will only search the selected directory inside a storage volume.
 
 C) **File size**: Type in the  **minimum**  and/or  **maximum**  file size, as well as select the desired byte measurement in the drop-down list.
->🔆 To avoid having empty directories in your search results, type  **1**  in the  **File size (min)**  field.
+
+>🔆 &nbsp;To avoid having empty directories in your search results, type  **1**  in the  **File size (min)**  field.
 
 D) **Last modified**: Select a value from the drop-down list for  **from** (default is  **any time**)  and/or  **to** (default is  **now**).
 
@@ -49,7 +50,7 @@ Q) **Clear filters**: To clear all the filters in this window.
 
 R) **Save filters**: To save all the filters in this window.
 
->🔆 Search criteria selected in the [filters will remain active](#clear_filters) and affect all your future searches, until you go back in the filters window and click Q) clear filters.
+>🔆 &nbsp;Search criteria selected in the [filters will remain active](#clear_filters) and affect all your future searches, until you go back in the filters window and click Q) clear filters.
 
 When you close the filters window, you will see if you have some saved criteria in a blue square by the filters icon.
 

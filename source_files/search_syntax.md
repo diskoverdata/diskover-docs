@@ -89,7 +89,7 @@ ___
 
 Wild cards are used to expand search results mostly due to [naming convention](#naming_convention), but also to go around possible misspellings, although the [fuzziness](#fuzziness), covered later in this chapter, is a much better choice for misspellings.
 
->🔆&nbsp;A search might be a tad slower when using wild cards, especially when it is placed in front of your query, because it is searching a much larger amount of data.
+>🔆 &nbsp;A search might be a tad slower when using wild cards, especially when it is placed in front of your query, because it is searching a much larger amount of data.
 
 #### Examples with Grouped Words or Numbers
 When searching on a single word for example, the results might be limited if you type the word alone. Let's take the example of trying to find the following file **foryoureyesonly.mov**:
@@ -125,7 +125,7 @@ To find all files in a sequence, if you type for example **img\*.dpx** would fin
 #### Example Using * and ? in the Same Query
 Both **?** and **\*** wild cards can be used in the same query, for example searching for Johnny Smith: **John\* Sm?th**
 
->🔆&nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > settings > [predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much. Throughout this chapter, we will assume the predictive search has not been selected.
+>🔆 &nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > settings > [predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much. Throughout this chapter, we will assume the predictive search has not been selected.
 
 <p id="search_field_names"></p>
 
@@ -136,7 +136,7 @@ Searching with field names can be effective if you search on a specific and/or h
 
 The query needs to be typed in this exact format **fieldname:value**
 
->🔆&nbsp;Searching on field names is case sensitive:
+>🔆 &nbsp;Searching on field names is case sensitive:
 >- The **fieldname** needs to be in lower case.
 >- The variable after the colon needs to be typed in upper and/or lower case to match exactly what you are searching for. 
 
@@ -189,7 +189,7 @@ ___
 
 You can use operators **AND OR NOT**  to narrow down a manual search. Although the operators in this section are capitalized for ease of understanding, the operators can be typed in lower case in the search bar.
 
->🔆&nbsp;IMPORTANT! When searching with more than one criteria, you don't need to put **AND** if that is the operator you would otherwise type, as Diskover uses the **AND** operator by default when non others are used. See examples below.
+>🔆 &nbsp;IMPORTANT! When searching with more than one criteria, you don't need to put **AND** if that is the operator you would otherwise type, as Diskover uses the **AND** operator by default when non others are used. See examples below.
 
 Let's take the series **The Jungle Book** and that a similar naming convention was respected: **thejunglebook_s01_ep05_en.mov** (series The Jungle Book, season 1, episode 5, English sub)
 
@@ -199,9 +199,9 @@ Here are some examples of queries using operators to narrow your searches.
 
 - **\*jungle\* AND s01 NOT e*5** would find season 1 in any languages and all episodes except the ones with 5 in them. It is recommended to use the AND when mixing operators in the same query.
 
->🔆&nbsp;When using more than one, but especially a mix of different operators in a query, it is highly recommended to use parentheses **( )** to group some elements as described in the next section, in order to help Diskover make sense of the query and return the desired results.
+>🔆 &nbsp;When using more than one, but especially a mix of different operators in a query, it is highly recommended to use parentheses **( )** to group some elements as described in the next section, in order to help Diskover make sense of the query and return the desired results.
 
->🔆&nbsp;Operators can only be used in the main search bar  at the top of the user interface. They cannot be used in the **search within results** field.
+>🔆 &nbsp;Operators can only be used in the main search bar  at the top of the user interface. They cannot be used in the **search within results** field.
  
  <p id="complex_queries"></p>
  
@@ -247,7 +247,7 @@ A few examples of words that would be found with and without limiting the change
 - **jungle~1** would find: jungle, jingly, jingle, jingles.
 - **jungle~** would find: jungle, jingly, jingle, jingles, june, judge, single, bundle, uncle.
 
->🔆&nbsp;Do NOT mix fuzziness and wild cards as it is not supported, and only one of the operators would be applied, example of what NOT to do: **jungle\*~1**
+>🔆 &nbsp;Do NOT mix fuzziness and wild cards as it is not supported, and only one of the operators would be applied, example of what NOT to do: **jungle\*~1**
 
 Be aware that launching a query with the fuzziness operator can use an enormous amount of memory and perform badly, ending in a "timed out" situation.
 
@@ -266,7 +266,7 @@ Diskover shows file size (size) and allocated size (size_du) in bytes. We recomm
 
 - **extension:mov AND size:>32212254720** would find all files with .mov extension and larger than 30 GB
 
->🔆&nbsp;When unsure how to translate size from MB, GB, etc. to bytes, you can use any free *byte converter* available online.
+>🔆 &nbsp;When unsure how to translate size from MB, GB, etc. to bytes, you can use any free *byte converter* available online.
 
 <p id="search_time"></p>
 
@@ -290,7 +290,7 @@ Format to use when searching for date and time.
 - Time: **h** = hour, **m** = minute, **s** = second
 - These two types of brackets `[ ]` or `{ }` can be used to contain a range of time, they can even be mixed `[ }`
 
->🔆&nbsp;Searching on time is case sensitive when it comes to formatting as detailed above, as well as writing the field name in lower case only.
+>🔆 &nbsp;Searching on time is case sensitive when it comes to formatting as detailed above, as well as writing the field name in lower case only.
 
 #### Examples to Find Recent Files
 A few helpful queries for looking for the **latest indexed files** for example. Variables can easily be adjusted to your needs:

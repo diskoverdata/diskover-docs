@@ -7,7 +7,7 @@ The default is set to use the most recent  indices. You may want to select multi
 
 Diskover continuously scans all your storage volumes and creates new indices to give you the latest snapshot of all your files and their attributes. This diagram is a simplistic way of explaining how the data is scanned.
 
-<img src="images/diagram_diskover_indexing_overview.png" width="600">
+<img src="images/diagram_diskover_indexing.png" width="600">
 
 You can access the available indices within the  **gear icon** drop-down menu.
 

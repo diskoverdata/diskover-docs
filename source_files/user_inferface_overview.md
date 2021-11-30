@@ -98,7 +98,7 @@ B) **[Dashboard](#dashboard)**: Offers a visual summary of a selected storage vo
 
 C) [**File search page**](#file_search): The file search tool with which most users will interact.
 
-D) **Analytics**: Built-in data analytic reports.&nbsp;![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+D) **Analytics**: Built-in data analytic reports.
 
 E) [**Quick search**](#quick_search): To quickly search on a single pre-established criterion.
 

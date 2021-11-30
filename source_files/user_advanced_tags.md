@@ -3,11 +3,13 @@
 ___
 ### Tags
 
+![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
 Tags are additional metadata assigned to an item, they are used to add business context or data curation actions to be taken (ex: archive, delete, keep, clean). Tagging is crucial for smooth workflows and proper curation of data.
 
 This section will talk about manual tagging, but Diskover can also be configured to schedule automated tasks to apply autotags, usually based on aging or service agreements, etc., in order to safely and methodically curate data in the backend.
 
->🔆 A file or directory can have multiple tags.
+>🔆 &nbsp;A file or directory can have multiple tags.
 
 ![Image: Manual Tag Selection](images/image_tags_manual_application.png)
 

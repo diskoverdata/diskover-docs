@@ -17,7 +17,7 @@ Via the  **Analytics**  drop-down list:
 
 #### Using the User Analysis Report
 
-![Image: User Analysis Report Overview](https://www.diskoverdata.com/wp-content/uploads/2021/10/screenshot_diskover_analytics_user_analysis_overview.png)
+![Image: User Analysis Report Overview](image_analytics_user_analysis_overview.png)
 
 A) **Owner**: The owner/creator of a file. This report is configured by your System Administrator who may also have used a storage volume in place of a person/owner.
 

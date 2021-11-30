@@ -49,6 +49,24 @@ Read more about [how to select a directory](#select_directory).
 
 **Recursive**: Will search or apply action to the path/directory, as well as all sub-directories and files, inside that path.
 
+#### Elasticsearch
+
+Diskover uses Elasticsearch in the backend for its speed and reliability. Below is an overview of the Diskover architecture.
+
+![Image: Diskover Architecture Overview](images/diagram_diskover_architecture_overview.png)
+
+_[Click here for a full screen view of the Diskover Architecture Overview diagram.](images/diagram_diskover_architecture_overview.png)_
+
+In order to better understand the terminology used by Elasticsearch and throughout the Diskover documentation, please refer to this diagram.
+
+![Image: Diskover Architecture Overview](images/diagram_diskover_elasticsearch_architecture.png)
+
+_[Click here for a full screen view of the Elasticsearch Architecture diagram.](images/diagram_diskover_elasticsearch_architecture.png)_
+
+You can search across several indices with: &nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
+You can search across several clusters with: &nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
 ___
 ### Web Browser
 

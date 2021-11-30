@@ -72,8 +72,6 @@ ___
 
 This section offers an overview of the user interface. All icons, drop-down lists and tools will be further explained in the next chapters.
 
->🔆 Check out for our tips throughout this guide.
-
 ![Image: Quick Tour of the User Interface](images/image_file_search_page_overview.png)
 
 A) **Company logo**: No functions.
@@ -82,7 +80,7 @@ B) **[Dashboard](#dashboard)**: Offers a visual summary of a selected storage vo
 
 C) [**File search page**](#file_search): The file search tool with which most users will interact.
 
-D) **Analytics**: Built-in data analytic reports.
+D) **Analytics**: Built-in data analytic reports.&nbsp;![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
 E) [**Quick search**](#quick_search): To quickly search on a single pre-established criterion.
 
@@ -127,11 +125,11 @@ S) **Headers and Columns**: Columns can be added or removed in [Settings](#setti
 
 T) **Search results pane**: Section where you can either see the full content of a storage volume, a directory, or search results following a query.
 
->🔆 You can adjust the width of the columns in T) search results  pane by sliding the thin vertical line in between the columns.
+>🔆&nbsp;You can adjust the width of the columns in T) search results  pane by sliding the thin vertical line in between the columns.
 
 U) **Storage volume last indexed**: Gives the date and time of the last scan of the selected storage volume.
 
->🔆 Hovering  your mouse over a [storage volume](#storage_volume) or a [directory](#directory) in the left pane will show more data about that specific directory (path, size, number of items, etc.).
+>🔆&nbsp;Hovering  your mouse over a [storage volume](#storage_volume) or a [directory](#directory) in the left pane will show more data about that specific directory (path, size, number of items, etc.).
 
 <img src="images/image_file_search_hovering_directory.png" width="300"> ![Image: Hovering Over a Storage Volume](images/image_file_search_hovering_volume.png)
 

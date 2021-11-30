@@ -8,6 +8,7 @@ ordered_documents:
   - intro_guide_intended_for_user.md
   - intro_copyright.md
   - intro_user_guides_main_intro.md
+  - intro_doc_conventions_user.md
   - software_overview.md
   - user_inferface_overview.md
   - user_interface_settings.md

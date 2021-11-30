@@ -199,7 +199,7 @@ Here are some examples of queries using operators to narrow your searches.
 
 - **\*jungle\* AND s01 NOT e*5** would find season 1 in any languages and all episodes except the ones with 5 in them. It is recommended to use the AND when mixing operators in the same query.
 
->🔆 &nbsp;When using more than one, but especially a mix of different operators in a query, it is highly recommended to use parentheses **( )** to group some elements as described in the next section, in order to help Diskover make sense of the query and return the desired results.
+>🔆 &nbsp;When using more than one, but especially a mix of different operators in a query, it is highly recommended to use parentheses **()** to group some elements as described in the next section, in order to help Diskover make sense of the query and return the desired results.
 
 >🔆 &nbsp;Operators can only be used in the main search bar  at the top of the user interface. They cannot be used in the **search within results** field.
  

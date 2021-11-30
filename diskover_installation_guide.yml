@@ -29,13 +29,17 @@ ordered_documents:
   - install_diskover_web_linux_centos_and_rhel_install_php.md
   - install_diskover_web_linux_centos_and_rhel_install_diskover_web.md
   - install_diskover_web_linux_ubuntu_intro.md
+  - install_diskover_web_linux_ubuntu_install_nginx.md
+  - install_diskover_web_linux_ubuntu_install_php.md
+  - install_diskover_web_linux_ubuntu_install_diskover_web.md
   - install_diskover_web_windows_intro.md
   - install_diskover_web_windows_install_nginx.md
   - install_diskover_web_windows_install_php.md
   - install_diskover_web_windows_install_diskover_web.md
   - install_diskover_web_launch.md
   - install_indexers_intro.md
-  - install_indexers_linux.md
+  - install_indexers_linux_centos_and_rhel.md
+  - install_indexers_linux_ubuntu.md
   - install_indexers_windows.md
   - install_indexers_mac.md
   - task_worker_intro.md

@@ -31,7 +31,9 @@ More information can be found here:
 
 ![Image: Create an Elasticsearch Domain – Access Policy](https://www.diskoverdata.com/wp-content/uploads/2021/09/screenshot_diskover_aws_customer_deployment_elasticsearch_create_domain_access_policy_original_20210823.png)
 
-### <a id="modify_access_policy"></a>Modify Access Policy
+<p id="modify_access_policy"></p>
+
+### Modify Access Policy
 
 🔴 &nbsp;Modify access policy to restrict access to known IP address / subnets of Diskover indexer(s) and Diskover-Web server.
 

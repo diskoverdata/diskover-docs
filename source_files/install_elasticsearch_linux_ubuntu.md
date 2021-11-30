@@ -19,7 +19,7 @@ vi /etc/sysconfig/selinux
 
 🔴 &nbsp;Reboot now.
 
-🔴 &nbsp;Check SE Linux status.
+🔴 &nbsp;Check Security Enhanced Linux status.
 
 #### Update Server
 

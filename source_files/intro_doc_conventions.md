@@ -8,5 +8,5 @@ code example
 ```
 
 🔴 &nbsp;All proposed action items are preceded by a red dot in order to better guide you along the instructions.
-
+<br><br>
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp; A label with the name(s) of the applicable [Diskover Software Edition](https://www.diskoverdata.com/solutions/) is displayed when a section of the guide applies to an annual paid subscription, therefore not included in the free Community Edition.

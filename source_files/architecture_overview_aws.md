@@ -1,5 +1,7 @@
+<p id="architecture_diagram"></p>
+
 ___
-## <a id="architecture_diagram"></a>Architecture Overview
+## Architecture Overview
 ___
 The following provides a high-level overview of the Diskover scale-out architecture.
 

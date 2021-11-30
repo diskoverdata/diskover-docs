@@ -1,8 +1,7 @@
 <p id="cost_analysis"></p>
 
 ___
-### Cost Analysis Report ![image](images/button_edition copy.png)
-![image](images/button_edition copy.png)
+### Cost Analysis Report
 
 The cost analysis report offers a snapshot of where your storage money is being allocated. This tool is designed to control your operating costs  by:
 
@@ -25,7 +24,7 @@ There are many other factors that can be compounded to the cost of the storage i
 - System Administrator’s salary.
 - Diskover’s annual subscription cost.
 
->🔆 Different storage volumes can have different costs associated to them.
+>🔆 &nbsp;Different storage volumes can have different costs associated to them.
 
 You need an admin account to edit the customizable cost analysis reports.
 

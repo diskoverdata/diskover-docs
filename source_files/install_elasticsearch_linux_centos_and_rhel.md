@@ -18,7 +18,7 @@ vi /etc/sysconfig/selinux
 
 #### Update Server
 
-🔴 &nbsp;Update Server:
+🔴 &nbsp;Update server:
 ```
 yum -y update
 ```
@@ -40,7 +40,7 @@ yum install -y
 https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.10.2-x86_64.rpm
 ```
 
-🔴 &nbsp;Configure the Java JVM for Elasticsearch:
+🔴 &nbsp;Configure Java JVM for Elasticsearch:
 ```
 vi /etc/elasticsearch/jvm.options
 ```
@@ -56,13 +56,13 @@ vi /etc/elasticsearch/jvm.options
 vi /etc/elasticsearch/elasticsearch.yml
 ```
 
-🔴 &nbsp;Network Host Configuration:
+🔴 &nbsp;Network host configuration:
 ```
 network.host:
 ```
 > _Note_: Leave commented out for localhost (default) or uncomment and set to the  **ip**  you want to bind to, using  **0.0.0.0** will bind to all  **ips**.
 
-🔴 &nbsp;Discovery Seed Host Configuration:
+🔴 &nbsp;Discovery seed host configuration:
 ```
 discovery.seed_hosts:
 ```
@@ -77,7 +77,7 @@ path.logs: /var/log/elasticsearch
 
 >_Note_: Change from default location below if desired.
 
-🔴 &nbsp;Configure the Elasticsearch Bootstrap Memory variable to **true**:
+🔴 &nbsp;Configure the Elasticsearch bootstrap memory variable to **true**:
 ```
 bootstrap.memory_lock: true
 ```

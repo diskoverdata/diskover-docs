@@ -3,6 +3,8 @@
 ___
 ### User Analysis Report
 
+![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
 The user analysis  report gives a snapshot of data utilization; it was designed to help with operating costs  management, as well as customers’ storage consumption for billing accuracy.
 
 This report needs to be enabled and configured by your System Administrator.
@@ -29,7 +31,13 @@ E) **% Allocated**: Owner’s storage space usage divided by the total of all ow
 
 F) **Cost per GB**: Total cost for the space used by an owner or a group, shares the same [storage cost calculation](#cost_config) as for the cost analysis report.
 
+![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
+
 G) **Avg cost per GB**: The average cost by GB for that owner or group. The cost depends on how each storage volume was configured by your system administrator.
+
+![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
 
 H) **Files**: Number of files linked to the owner or group.
 

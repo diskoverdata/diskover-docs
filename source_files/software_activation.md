@@ -1,5 +1,6 @@
 ___
 ## <a id="software_activation"></a>Software Activation
+![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 ___
 
 A license key is needed for Diskover’s paid subscriptions. Unless otherwise agreed, a license via a subscription is valid for a one (1) year period, and clients will be contacted prior to their license expiration.

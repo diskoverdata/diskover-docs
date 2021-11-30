@@ -5,6 +5,20 @@ For more detailed Elasticsearch guidelines refer to AWS sizing guidelines:
 
 [https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sizing-domains.html](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sizing-domains.html)
 
+#### Architecture Overview and Terminology
+
+Below is an overview of the Diskover architecture.
+
+![Image: Diskover Architecture Overview](images/diagram_diskover_architecture_overview.png)
+
+_[Click here for a full screen view of the Diskover Architecture Overview diagram.](images/diagram_diskover_architecture_overview.png)_
+
+In order to better understand the terminology used by Elasticsearch and throughout the Diskover documentation, please refer to this diagram.
+
+![Image: Diskover Architecture Overview](images/diagram_diskover_elasticsearch_architecture.png)
+
+_[Click here for a full screen view of the Elasticsearch Architecture diagram.](images/diagram_diskover_elasticsearch_architecture.png)_
+
 #### Elasticsearch Cluster
 
 ##### Production Deployments
@@ -27,6 +41,10 @@ For more detailed Elasticsearch guidelines refer to AWS sizing guidelines:
 
 >- Try to keep shard size between 10 – 50 GB
 >- Ideal shard size approximately 20 – 40 GB
+
+Once you have a reference for your index size, you can decide to shard if applicable. From the user inferface > gear icon > Indices:
+
+![Image: Index Sizing](images/image_indices_index_size.png)
 
 ##### Examples
 

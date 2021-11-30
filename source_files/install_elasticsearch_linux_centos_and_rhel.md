@@ -32,7 +32,7 @@ yum -y install java-1.8.0-openjdk.x86_64
 
 #### Install Elasticsearch 7.x:
 
-The following section describes installing Elasticsearch on Linux.
+The following section describes installing Elasticsearch on Linux CentOS and RHEL.
 
 🔴 &nbsp;Install Elasticsearch:
 ```

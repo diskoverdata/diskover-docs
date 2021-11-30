@@ -39,7 +39,7 @@ Ways to either pinpoint or expand your results will be explained in this chapter
 ___
 ### Basic Search and Query Rules
 
->🔆&nbsp;Pay attention to all the messages in the green and blue information bars, they are very helpful!
+>🔆 &nbsp;Pay attention to all the messages in the green and blue information bars, they are very helpful!
 
 #### Range of Search
 

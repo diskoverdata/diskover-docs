@@ -1,5 +1,8 @@
 ___
 ## User Roles and Authentication
+
+![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
 ___
 
 This chapter discusses setting up authenticated user access to Diskover-Web.
@@ -42,6 +45,9 @@ vim /var/www/diskover-web/src/Diskover/Constants.php
 ___
 ### Restricting Visibility and Access
 
+![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
+
 Visibility can be limited by groups to specific indexes or branches within a given index. 
 
 🔴 &nbsp;To limit index visibility:
@@ -53,6 +59,9 @@ vim /var/www/diskover-web/src/Diskover/Constants.php
 
 ___
 ### Restricting Diskover-Web API Access
+
+![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
 
 #### Restricting API Access on Linux
 

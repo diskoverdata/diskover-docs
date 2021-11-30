@@ -89,10 +89,10 @@ http {
     server {
         listen   8000;
         server_name  diskover-web;
-        root   /var/www/diskover-web/public;
+        root   "C:\Program Files\Diskover-web\public";
         index  index.php  index.html index.htm;
-        error_log  /var/log/nginx/error.log;
-        access_log /var/log/nginx/access.log;
+        # error_log  "C:\Program Files\Nginx\nginx-1.20.2\logs\error.log";
+        # access_log "C:\Program Files\Nginx\nginx-1.20.2\logs\access.log";
         location / {
             try_files $uri $uri/ /index.php?$args =404;
         }
@@ -101,8 +101,8 @@ http {
             set $path_info $fastcgi_path_info;
             fastcgi_param PATH_INFO $path_info;
             try_files $fastcgi_script_name =404;
-            fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
-            #fastcgi_pass 127.0.0.1:9000;
+            # fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
+            fastcgi_pass 127.0.0.1:9999;
             fastcgi_index index.php;
             include fastcgi_params;
             fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;

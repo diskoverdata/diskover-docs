@@ -1,7 +1,7 @@
 ___
-### Install Diskover Indexer(s) for Linux
+### Install Diskover Indexer(s) for Linux CentOS and RHEL
 
-The following outlines installing the Diskover indexer on Linux.
+The following outlines installing the Diskover indexer on Linux CentOS and RHEL.
 
 #### Install Python 3.x, pip and Development Tools
 

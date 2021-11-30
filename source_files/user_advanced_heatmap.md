@@ -3,6 +3,9 @@
 ___
 ### Heatmap Report
 
+![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
+
 The heatmap report is a powerful analytical snapshot offering a differential comparison of two indices across two different points in time:
 
 - Location of data growth and shrinkage, as well as the absence of activity.
@@ -21,7 +24,7 @@ The absence of colors in a heatmap report is also very meaningful, revealing dat
 
 Before accessing the heatmap report, you need to [select 2 indices from 2 different points in time](#index_selection). You will want to select the same index/storage volume name from both columns D & E in order to compare the same data.
 
->🔆 Sometimes, the storage volumes don’t need to have the same name to be compared. For example, a storage volume could be on a physical server with one name, and another storage volume could be a backup with the same data set in the cloud with a different name.
+>🔆 &nbsp;Sometimes, the storage volumes don’t need to have the same name to be compared. For example, a storage volume could be on a physical server with one name, and another storage volume could be a backup with the same data set in the cloud with a different name.
 
 ![Image: Indices Selection for Heatmap Report](images/image_analytics_heatmap_indices_selection.png)
 
@@ -39,7 +42,7 @@ E) Select one index from  **Index 2**  column, it should technically be the same
 
 F) Click  **Save selection**.
 
->🔆 The instructions in the blue info bars are practical for quick references.
+>🔆 &nbsp;The instructions in the blue info bars are practical for quick references.
 
 #### Accessing the Heatmap Report
 

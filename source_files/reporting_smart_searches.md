@@ -1,6 +1,9 @@
 ___
 ### Smart Searches
 
+![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
+
 Smart Searches provide a mechanism to create repeatable reports or bookmarks based on search queries.
 
 Any users can access the reports, but only users with an admin level account can add, edit or delete reports.

@@ -1,7 +1,7 @@
 <p id="cost_analysis"></p>
 
 ___
-### Cost Analysis Report
+### Cost Analysis Report ![image](images/button_edition copy.png)
 
 The cost analysis report offers a snapshot of where your storage money is being allocated. This tool is designed to control your operating costs  by:
 

@@ -26,6 +26,8 @@ Reliant on the Diskover Slack workspace, this forum is a great place to ask ques
 
 ### Email & Phone Support for Paid Subscription Solutions
 
+![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
 Focused on meeting customer needs with proven services and support.
 
 [www.diskoverdata.com/support/](https://www.diskoverdata.com/support/)

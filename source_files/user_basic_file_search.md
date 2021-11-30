@@ -15,7 +15,7 @@ B) **Charts hide/unhide**: The file search page displays colorful charts at the 
 
 It is preferable to use the back and forward buttons on your web browser to navigate between pages you have already visited. You can also use the back and forward buttons on the left pane of the file search window, but they are not always responsive depending on which browser you are using.
 
->🔆 You can [hide/unhide columns](#hide_columns) via your settings.
+>🔆 &nbsp;You can [hide/unhide columns](#hide_columns) via your settings.
 
 ![Image: Main Features of the File Search Page](images/image_file_search_page_basic_usage_overview.png)
 
@@ -57,7 +57,7 @@ P) **Cost**: Storage cost for this path, cost calculation is explained in the [c
 
 Q) **Rating**: Is based on the last modified time, the older the higher the rating and the brighter the icon.
 
->🔆 You can right-click an item in the search results pane to access other opening/sharing features. Those are associated with the browser you are using, not Diskover, so the choices and results may differ per browser and are not supported by Diskover.
+>🔆 &nbsp;You can right-click an item in the search results pane to access other opening/sharing features. Those are associated with the browser you are using, not Diskover, so the choices and results may differ per browser and are not supported by Diskover.
 
 <h4 id="file_attributes">Directory and File Attributes View</h4>
 

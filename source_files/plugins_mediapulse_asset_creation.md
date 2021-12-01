@@ -59,11 +59,11 @@ vim /root/.config/diskover_xytech_asset/config.yaml
 `ESEndpoint: http://172.22.8.31:9200`
 
 **MediaPulse Credentials:**
-```
-MPDBName: VIZ_DEV
-MPUserID: diskover-dev
-MPPassword: D1sk0v3r
-```
+
+`MPDBName: VIZ_DEV`
+`MPUserID: diskover-dev`
+`MPPassword: D1sk0v3r`
+
 
 **MediaPulse WSDL file ABSOLUTE path:**
 

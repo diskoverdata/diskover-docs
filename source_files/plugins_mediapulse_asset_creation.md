@@ -62,9 +62,9 @@ vim /root/.config/diskover_xytech_asset/config.yaml
 
 `MPDBName: VIZ_DEV`
 
-`MPUserID: diskover-dev`
+`MPUserID: diskover`
 
-`MPPassword: D1sk0v3r`
+`MPPassword: p4ssword`
 
 
 **MediaPulse WSDL file ABSOLUTE path:**

@@ -1,5 +1,7 @@
+<p id="plugins"></p>
+
 ___
-## <a id="plugins"></a>Plugins
+## Plugins
 ___
 
 Diskover is designed for extensibility. The open-source architecture is designed to promote extensibility via plugins.

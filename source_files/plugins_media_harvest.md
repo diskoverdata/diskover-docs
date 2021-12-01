@@ -3,6 +3,8 @@
 ___
 ### Media Info Harvest Plugin
 
+![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
 The media info harvest plugin is designed to provide media metadata attributes about a file without granting the Diskover user any read/write file system access.
 
 The media info plugin enables additional metadata for video files to be harvested at time of index. The media info plugin uses **ffmpeg/ffprobe** to harvest attributes about the media file.

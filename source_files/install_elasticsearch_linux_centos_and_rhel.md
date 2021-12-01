@@ -51,12 +51,6 @@ vi /etc/elasticsearch/jvm.options
 -Xmx8g
 ```
 
-🔴 &nbsp;Set firewall rules (optional):
-```
-firewall-cmd --add-port=9200/tcp --permanent
-firewall-cmd --reload
-```
-
 🔴 &nbsp;Update the Elasticsearch configuration file to define desired Elasticsearch endpoint:
 ```
 vi /etc/elasticsearch/elasticsearch.yml

@@ -27,12 +27,13 @@ ordered_documents:
   - task_config_files.md
   - task_management.md
   - plugins_intro.md
-  - plugins_autoclean.md
+  - plugins_unix_permissions.md
   - plugins_dupes_finder.md
+  - plugins_autoclean.md
+  - plugins_tag_copier.md
   - plugins_index_differential.md
   - plugins_media_harvest.md
-  - plugins_tag_copier.md
-  - plugins_unix_permissions.md
+  - plugins_mediapulse_asset_creation.md
   - plugins_display_extra_fields.md
   - index_management_intro.md
   - index_management_diskover_web.md

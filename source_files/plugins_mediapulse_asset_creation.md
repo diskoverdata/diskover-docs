@@ -51,26 +51,34 @@ vim /root/.config/diskover_xytech_asset/config.yaml
 ![Image: Configure MediaPulse Asset Creation Plugin Settings](images/image_plugin_mediapulse_asset_config_settings.png)
 
 **Diskover Endpoint:**
+
 `DiskoverEndpoint: http://localhost:8000`
 
 **ElasticSearch Endpoint:**
-ESEndpoint: `http://172.22.8.31:9200`
+
+`ESEndpoint: http://172.22.8.31:9200`
 
 **MediaPulse Credentials:**
-MPDBName: `VIZ_DEV`
-MPUserID: `diskover-dev`
-MPPassword: `D1sk0v3r`
+```
+MPDBName: VIZ_DEV
+MPUserID: diskover-dev
+MPPassword: D1sk0v3r
+```
 
 **MediaPulse WSDL file ABSOLUTE path:**
-MPWSDLAbsolutePath: `/opt/diskover/plugins_postindex/xytech_plugin/wsdl/XytechAPI.wsdl`
+
+`MPWSDLAbsolutePath: /opt/diskover/plugins_postindex/xytech_plugin/wsdl/XytechAPI.wsdl`
 
 **Diskover top path where assets will be restored:**
-TopPath: `/volume_path`
+
+`TopPath: /volume_path`
 
 **Plugin logging:**
-LogToFile: `True`
-LogPath: `./`
-LogLevel: `INFO`
+```
+LogToFile: True
+LogPath: ./
+LogLevel: INFO
+```
 
 🔴 &nbsp;Configure Xytech API Endpoint
 

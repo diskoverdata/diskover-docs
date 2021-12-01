@@ -44,13 +44,13 @@ curl -X PUT "http://elasticsearch:9200/diskover-*/_settings?pretty" \
 ```
 
 🔴 &nbsp;Create a template to apply this policy to new Diskover indices based on index name pattern:
-```
-curl -X PUT "http://192.168.10.119:9200/_snapshot/2021052401_es_backup?pretty" 
-     -H 'Content-Type: application/json' 
-     -d' {
-      "type": "fs",
-      "settings": { "location": "/var/opt/diskover/backups/elasticsearch" }
-    }'
+```  
+    curl -X PUT "http://elasticsearch:9200/_template/logging_policy_template?pretty" \
+     -H 'Content-Type: application/json' \
+     -d '{
+      "index_patterns": ["diskover-*"],                 
+      "settings": { "index.lifecycle.name": "cleanup_policy_diskover" }
+    }' 
 ```
 
 #### Elasticsearch Manual Index Management

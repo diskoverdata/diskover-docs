@@ -39,6 +39,7 @@ ordered_documents:
   - install_diskover_web_windows_install_diskover_web.md
   - install_diskover_web_launch.md
   - install_indexers_intro.md
+  - install_indexers_community.md
   - install_indexers_linux_centos_and_rhel.md
   - install_indexers_linux_ubuntu.md
   - install_indexers_windows.md

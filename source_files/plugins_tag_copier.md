@@ -27,7 +27,9 @@ cd /opt/diskover
 python3 diskover_tagcopier.py diskover-<source_indexname> diskover-<dest_indexname>
 ```
 
-#### <a id="migrate_tags_from_previous_index"></a>Configure Indexing Tasks to Migrate Tags from Previous Index
+<p id="migrate_tags_from_previous_index"></p>
+
+#### Configure Indexing Tasks to Migrate Tags from Previous Index
 
 🔴 &nbsp;Create post command script to invoke tag roller:
 ```

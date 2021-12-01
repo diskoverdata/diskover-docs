@@ -76,11 +76,12 @@ vim /root/.config/diskover_xytech_asset/config.yaml
 `TopPath: /volume_path`
 
 **Plugin logging:**
-```
-LogToFile: True
-LogPath: ./
-LogLevel: INFO
-```
+
+`LogToFile: True`
+
+`LogPath: ./`
+
+`LogLevel: INFO`
 
 🔴 &nbsp;Configure Xytech API Endpoint
 

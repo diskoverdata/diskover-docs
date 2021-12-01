@@ -1,5 +1,6 @@
 ___
-### Kibana Installation (Optional)
+## Kibana Installation (Optional)
+___
 
 If you want to use Kibana in addition to the Diskover-Web user interface.
 

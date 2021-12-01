@@ -61,7 +61,9 @@ vim /root/.config/diskover_xytech_asset/config.yaml
 **MediaPulse Credentials:**
 
 `MPDBName: VIZ_DEV`
+
 `MPUserID: diskover-dev`
+
 `MPPassword: D1sk0v3r`
 
 

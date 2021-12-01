@@ -51,7 +51,7 @@ vim /root/.config/diskover_xytech_asset/config.yaml
 ![Image: Configure MediaPulse Asset Creation Plugin Settings](images/image_plugin_mediapulse_asset_config_settings.png)
 
 **Diskover Endpoint:**
-DiskoverEndpoint: `http://localhost:8000`
+`DiskoverEndpoint: http://localhost:8000`
 
 **ElasticSearch Endpoint:**
 ESEndpoint: `http://172.22.8.31:9200`

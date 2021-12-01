@@ -1,5 +1,7 @@
+<p id="task_config_files"></p>
+
 ___
-## <a id="task_config_files"></a>Task Configuration Files
+## Task Configuration Files
 ___
 
 ### Configuration of File Locations

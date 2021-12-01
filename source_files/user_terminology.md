@@ -20,7 +20,7 @@ Read more about [how to select a volume](#select_volume).
 ___
 ### Index/Indices
 
-An index is an inventory of all the files on a storage volume; it allows the data to be searched quickly via the index instead of the operating system  find commands. Both  **indexes**  and  **indices**  have the same meaning, and are the plural of index, although indices is usually preferred in a technical context.
+An [index is an inventory of all the files on a storage volume](#elasticsearch_terminology); it allows the data to be searched quickly via the index instead of the operating system  find commands. Both  **indexes**  and  **indices**  have the same meaning, and are the plural of index, although indices is usually preferred in a technical context.
 
 - You can have multiple inventories/indices of a storage volume at different times.
 - Indices typically contain directory name, file name, file size, creation date, modify date, owner, etc.
@@ -56,6 +56,10 @@ ___
 
 Diskover uses Elasticsearch in the backend for its speed and reliability. Below is an overview of the Diskover architecture.
 
+You can search across several indices with: &nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
+You can search across several clusters with: &nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
 ![Image: Diskover Architecture Overview](images/diagram_diskover_architecture_overview.png)
 
 _[Click here for a full screen view of the Diskover Architecture Overview diagram.](images/diagram_diskover_architecture_overview.png)_
@@ -65,7 +69,3 @@ In order to better understand the terminology used by Elasticsearch and througho
 ![Image: Diskover Architecture Overview](images/diagram_diskover_elasticsearch_architecture.png)
 
 _[Click here for a full screen view of the Elasticsearch Architecture diagram.](images/diagram_diskover_elasticsearch_architecture.png)_
-
-You can search across several indices with: &nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
-
-You can search across several clusters with: &nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)

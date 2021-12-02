@@ -35,5 +35,5 @@ vim /root/.config/diskover_dupesfinder/config.yaml
 🔴 &nbsp;To run the duplicates check via command line:
 ```
 cd /opt/diskover
-python3 diskover_dupesfinder.py –useindex=indexname
+python3 diskover_dupesfinder.py diskover-indexname
 ```

@@ -55,7 +55,9 @@ ordered_documents:
   - health_check_diskover_web_windows.md
   - health_check_elasticsearch_linux.md
   - health_check_elasticsearch_windows.md
-  - software_update_install.md
+  - software_update_intro.md
+  - software_update_community.md
+  - software_update_linux.md
   - uninstall_intro.md
   - uninstall_elasticsearch.md
   - uninstall_php.md

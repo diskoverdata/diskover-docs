@@ -49,7 +49,6 @@ ordered_documents:
   - maintenance_emergency_diskover_web.md
   - maintenance_emergency_elasticsearch.md
   - maintenance_emergency_elasticsearch_aws.md
-  - software_update_install.md
   - support.md
   - contact.md
   - footer.md

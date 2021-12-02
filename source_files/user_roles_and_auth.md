@@ -37,7 +37,7 @@ At least three AD groups should be established for Diskover:
 
 🔴 &nbsp;To configure AD / LDAP login authentication:
 ```
-vim /var/www/diskover-web/src/Diskover/Constants.php
+vim /var/www/diskover-web/src/diskover/Constants.php
 ```
 
 ![Image: LADP / Active Directory Authentication](images/image_user_auth_ladp_login_auth.png)

@@ -23,7 +23,7 @@ Xcopy C:\tmp\diskover "C:\Program Files\" /E /H /C /I
 pip3 install pywin32
 pip3 install requests
 pip3 install psutil
-pip3 install -r requirements.txt
+pip3 install -r requirements-win.txt
 ```
 ```
 mkdir %APPDATA%\diskover\

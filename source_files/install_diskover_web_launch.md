@@ -8,7 +8,10 @@ ___
 http://<diskover_web_host_ip>:8000/
 ```
 
-Username:  **admin**
-Password:  **darkdata**
+🔴 &nbsp;Use the default username and password or change them as described in this chapter for [Linux](#change_user_pass_linux) or [Windows](#change_user_pass_windows):
+
+Default username:  **admin**
+
+Default password:  **darkdata**
 
 <img src="images/image_login_window_logo_diskover.png" width="400">

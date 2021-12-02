@@ -23,6 +23,12 @@ cd <diskover-web_dir>/public && for f in *.txt; do cp $f $f.bak; done
 cd <diskover-web_dir>/public/tasks && for f in *.json; do cp $f $f.bak; done
 ```
 
+🔴 &nbsp;Stop **diskovered** if running:
+```
+sudo systemctl stop diskoverd
+ps -ef | grep diskoverd
+```
+
 🔴 &nbsp;Run update script:
 ```
 chmod +x update-diskover.sh

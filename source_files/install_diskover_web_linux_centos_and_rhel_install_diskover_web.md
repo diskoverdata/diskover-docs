@@ -12,6 +12,8 @@ cp Constants.php.sample Constants.php
 vi Constants.php
 ```
 
+<p id="change_user_pass_linux"></p>
+
 🔴 &nbsp;Set your Elasticsearch **endpoint**, **port**, **username**, and **password**:
 ```
 const ES_HOSTS = 'localhost';

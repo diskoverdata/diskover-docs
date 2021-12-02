@@ -8,7 +8,7 @@ ___
 http://<diskover_web_host_ip>:8000/
 ```
 
-🔴 &nbsp;Use the default username and password or change them as described in this chapter for [Linux](#change_user_pass_linux) or [Windows](#change_user_pass_windows):
+🔴 &nbsp;Use the default username and password or set them in the `Constants.php` config file as described in this chapter for [Linux](#change_user_pass_linux) or [Windows](#change_user_pass_windows):
 
 Default username:  **admin**
 

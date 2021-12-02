@@ -1,5 +1,6 @@
 ___
-### Preliminary Steps when Installing Diskover Community Edition
+## Preliminary Steps when Installing Diskover Community Edition
+___
 
 🔴 &nbsp;Install git:
 ```

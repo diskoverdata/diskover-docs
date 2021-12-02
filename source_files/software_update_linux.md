@@ -58,11 +58,12 @@ tail -f /var/log/nginx/error.log
 
 #### Upgrading from tar.gz File
 
-The following explains how to update both Diskover and Diskover-Web.
+The following explains how to update both Diskover and Diskover-Web assuming they are installed in the default locations.
 
-This example assumes the tar file was extracted to  **/tmp/diskover/**
+This example assumes the tar file was extracted to  **/tmp/diskover-v2/**
 ```
-cd /tmp/diskover/
+tar -zxvf diskover-v2-<version>.tar.gz -C /tmp/diskover-v2/
+cd /tmp/diskover-v2/
 ```
 
 🔴 &nbsp;Copy the Diskover files to proper locations:

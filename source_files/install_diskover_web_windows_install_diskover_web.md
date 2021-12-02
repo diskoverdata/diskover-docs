@@ -17,6 +17,8 @@ cd 'C:\Program Files\Diskover-web\src\diskover\'
 copy .\Constants.php.sample .\Constants.php
 ```
 
+<p id="change_user_pass_windows"></p>
+
 🔴 &nbsp;Edit **Constants.php**  (Diskover-web config file):
 ```
 C:\Program Files\Diskover-web\src\diskover\Constants.php

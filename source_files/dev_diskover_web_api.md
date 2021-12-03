@@ -4,6 +4,7 @@ ___
 
 Diskover-Web has a REST API for getting and updating index data.
 
+___
 ### GET (with curl or web browser)
 
 **Getting file/directory tag info is done with the GET method. Curl example:**
@@ -93,6 +94,7 @@ GET http://localhost:8000/api.php/latest?toppath=/dirpath
 
 >For "tags" and "search" endpoints, you can set the page number and result size with ex. &page=1 and &size=100. Default is page 1 and size 1000.
 
+___
 ### Update (with JSON object)
 
 **Updating file/directory tags is done with the PUT method. You can send a JSON object in the body. The call returns the status and number of items updated.
@@ -167,6 +169,7 @@ PUT http://localhost:8000/api.php/diskover-2018.01.17/tagdirs
 {"tags": [], "dirs": ["/Users/shirosai/Downloads"], "recursive": "true", "tagfiles": "true"}
 ```
 
+___
 ### Examples of API calls in Python
 ```
 """example usage of diskover-web rest-api using requests and urllib

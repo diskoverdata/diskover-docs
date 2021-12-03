@@ -109,7 +109,7 @@ New connections will be remembered.
 ```
 
 ```
-Status	Local		Remote				Network
+Status	Local	Remote					Network
 -------------------------------------------------------------------------------
 OK		P:		\\172.19.19.6/SMBshare	Microsoft Windows Network
 OK		X:		\\172.19.19.6/P01_S99	Microsoft Windows Network

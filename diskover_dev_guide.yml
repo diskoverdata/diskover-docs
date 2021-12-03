@@ -13,6 +13,7 @@ ordered_documents:
   - dev_plugins.md
   - dev_alternate_scanner.md
   - dev_diskover_web_api.md
+  - dev_sample_shell_script.md
   - support.md
   - contact.md
   - footer.md

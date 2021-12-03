@@ -1,5 +1,8 @@
 ___
 ## Advanced Index Creation and Manipulation for Diskover Indexer
+
+![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
 ___
 
 This chapter discusses ways to improve indexing performance.
@@ -18,8 +21,6 @@ python3 diskover.py -h
 ```
 
 #### Multiple Directory Trees
-
-![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
 Multiple directory trees **tree_dir** can be set to index multiple top paths into a single index.
 

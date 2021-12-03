@@ -17,23 +17,23 @@ ___
 # in order to create a single index with both path1 and path2 as separate top level directories 
 # inside of it.
 
-`DIRS=$(ls -d /storage/*)`
+DIRS=$(ls -d /storage/*)
 
 # TODAY is today's date.
-`TODAY=$(date +%d-%m)`
+TODAY=$(date +%d-%m)
  
 # YDAY is yesterday's date. Used by find dupes command. On MacOS use date -v-1d +%d-%m.
-`YDAY=$(date -d 'yesterday' +%d-%m)`
+YDAY=$(date -d 'yesterday' +%d-%m)
 
 # INDEX is the name you want to give your indices. Prefix diskover- is required. TODAY will be added 
 # to the end of the index name.
-`INDEX=diskover-storage`
+INDEX=diskover-storage
 
 ### Indexing
 
 # Build Index
-`python3 /opt/diskover/diskover.py -i $INDEX-$TODAY $DIRS`
+python3 /opt/diskover/diskover.py -i $INDEX-$TODAY $DIRS
 
 ### Find Dupes
-`python3 /opt/diskover/plugins_postindex/diskover_dupesfinder.py $INDEX-$TODAY -U $INDEX-$YDAY -a`
+python3 /opt/diskover/plugins_postindex/diskover_dupesfinder.py $INDEX-$TODAY -U $INDEX-$YDAY -a
 ```

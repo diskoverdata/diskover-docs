@@ -30,45 +30,35 @@ The media attributes are part of the metadata harvested exclusively by the AJA D
 In addition to thefile searches and syntax explained in the Diskover User Guide, the AJA Diskover Media Edition allows end-users to search on media specific attributes.
 
 - As media fields’ info can be complex, unless you know exactly what you are looking for, we strongly recommend using the **\*** to expand your results. 
-- Queries syntax are case insensitive. 
 - The fields described below are meant to be copied/typed in the search bar of the Diskover user interface.
+- The following syntax needs to be respected `media_info.\_key_:\_value\`
 
 #### File resolution
 Field name: **media_info.resolution**
->_Search query examples (syntax:variable):_
->
 >`media_info.resolution:3840x2160`
 >
 >`media_info.resolution:*1080*` _(Would return all files with  **1080**  somewhere in the resolution)_
 
 #### Codec
 Field name: **media_info.codec**
->_Search query examples (syntax:variable):_
->
 >`media_info.codec:prores`
 >
 >`media_info.codec:h264`
 
 #### Codec long
 Field name: **media_info.codeclong**
->_Search query examples (syntax:variable):_
->
 >`media_info.codeclong:*apple*`
 >
 >`media_info.codeclong:*quicktime*`
 
 #### Pixel format
 Field name: **media_info.pixfmt**
->_Search query examples (syntax:variable):_
->
 >`media_info.pixfmt:*yuv*`
 >
 >`media_info.pixfmt:*422*`
 
 #### Frames
 Field name: **media_info.frames**
->_Search query examples (syntax:variable):_
->
 >`media_info.frames:30`
 >
 >`media_info.frames:*30*`
@@ -80,24 +70,18 @@ Field name: **media_info.pixfmt**
 
 _Note: This field will eventually reads time in this format **hh:mm:ss**, but is currently showing duration in seconds, ex: 30.5071 = 30 seconds and 5071 milliseconds)_
 
->_Search query examples (syntax:variable):_
->
 >`media_info.duration:30.*`
 >
 >_Note: Use the * if you’re looking for a file for which you know the duration is 30 seconds but the milliseconds are unknown._
 
 #### Framerate
 Field name: **media_info.framerate**
->_Search query examples (syntax:variable):_
->
 >`media_info.framerate:*23*`
 >
 >_Note: Would return all files with standard framerate of 23.976_
 
 #### Bitrate
 Field name: **media_info.bitrate**
->_Search query examples (syntax:variable):_
->
 >`media_info.bitrate:*765*`
 >
 >_Note: Bitrate is a difficult field to search on, but not impossible._

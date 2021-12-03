@@ -76,6 +76,7 @@ ordered_documents:
   - troubleshooting_diskover_web_intro.md
   - troubleshooting_diskover_web_linux.md
   - troubleshooting_diskover_web_windows.md
+  - troubleshooting_diskover_web_task_management.md
   - troubleshooting_misc.md
   - support.md
   - contact.md

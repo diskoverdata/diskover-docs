@@ -1,5 +1,5 @@
 ___
-### Install Diskover Indexer(s) for Linux CentOS and RHEL
+### Install Diskover Indexer for Linux CentOS and RHEL
 
 The following outlines installing the Diskover indexer on Linux CentOS and RHEL.
 

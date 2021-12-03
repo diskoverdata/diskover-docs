@@ -91,7 +91,7 @@ GET http://localhost:8000/api.php/diskover-2018.01.17/search?query=extension:png
 GET http://localhost:8000/api.php/latest?toppath=/dirpath
 ```
 
->For "tags", and "search" endpoints, you can set the page number and result size with ex. &page=1 and &size=100. Default is page 1 and size 1000.
+>For "tags" and "search" endpoints, you can set the page number and result size with ex. &page=1 and &size=100. Default is page 1 and size 1000.
 
 ### Update (with JSON object)
 

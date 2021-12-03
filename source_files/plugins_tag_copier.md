@@ -39,8 +39,14 @@ cp cp task-postcommands-example.sh task-postcommands.sh
 
 Set the following indexing tasks in Task Panel to migrate tasks from one index to the next:
 
-🔴 &nbsp;Post-Crawl Command: **/bin/bash**
+🔴 &nbsp;In the post-crawl command add:
+```
+/bin/bash
+```
 
-🔴 &nbsp;Post-Crawl Command Args: **./scripts/task-postcommands.sh {indexname}**
+🔴 &nbsp;In the post-crawl command Args add:
+```
+./scripts/task-postcommands.sh {indexname}
+```
 
 ![Image: Tag Copier Plugin Configuration in Task Panel](images/image_plugins_tag_copier_config_in_task_panel.png)

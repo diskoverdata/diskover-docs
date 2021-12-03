@@ -47,7 +47,7 @@ cp scandir_dropbox.py /opt/diskover/scanners
 
 ![Image: Dropbox Application Overview](images/image_dropbox_settings_overview.png)
 
-🔴 &nbsp;Enable permissions by checking `files.metadata.read`
+🔴 &nbsp;Enable permissions by checking `files.metadata.read`:
 
 ![Image: Enable Dropbox Permissions](images/image_dropbox_enable_permissions.png)
 
@@ -62,7 +62,7 @@ chmod +x dropbox_oauth.py
 ```
 ![Image: Dropbox Access Token](images/image_dropbox_access_token.png)
 
-#### Run Crawler
+#### Run the Crawler
 
 🔴 &nbsp;Index the Dropbox folder:
 ```
@@ -72,7 +72,7 @@ export DROPBOX_TOKEN=<your_token>
 🔴 &nbsp;If you want to crawl a specific folder:
 ```
 cd /opt/diskover
-python3 diskover.py --altscanner scandir_dropbox /<your_folder_ath>
+python3 diskover.py --altscanner scandir_dropbox /<your_folder_path>
 ```
 
 🔴 &nbsp;If you want to crawl from the root of your dropbox account:

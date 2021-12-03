@@ -1,7 +1,7 @@
 <p id="install_indexers_on_prem"></p>
 
 ___
-## Diskover On-Premise Indexer(s) Installation
+## Diskover On-Premise Indexers Installation
 ___
 
 The Diskover indexers are often distributed to index on premise storage systems. The following outlines installing the Diskover indexer component ([components 1 in the architecture diagram](#architecture_diagram)).

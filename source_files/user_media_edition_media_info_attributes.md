@@ -32,6 +32,7 @@ In addition to thefile searches and syntax explained in the Diskover User Guide,
 - As media fields’ info can be complex, unless you know exactly what you are looking for, we strongly recommend using the **\*** to expand your results. 
 - The fields described below are meant to be copied/typed in the search bar of the Diskover user interface.
 - The following syntax needs to be respected `media_info.<key>:<value>`
+- For more details on search syntax, please refer to our core [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#manual-search-syntax).
 
 #### File resolution
 Field name: **media_info.resolution**

@@ -1,5 +1,5 @@
 ___
-### Install Diskover Indexer(s)
+### Install Diskover Indexer
 
 #### Install Python 3.x, pip and Development Tools
 

@@ -13,6 +13,8 @@ More information on index lifecycle management can be found on elastic.co here:
 
 The following provides an example for managing Diskover indices on your Elasticsearch cluster, by creating a policy that deletes indices after 30 days for new Diskover indices:
 
+🔴 &nbsp;Your Elasticsearch server is accessible at [http://elasticsearch:9200](http://elasticsearch:9200)
+
 🔴 &nbsp;Your Elasticsearch service endpoint url is `<aws es endpoint>`
 
 🔴 &nbsp;You want your indices to be purged after thirty days **30d**

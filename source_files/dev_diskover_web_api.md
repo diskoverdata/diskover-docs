@@ -166,3 +166,40 @@ PUT http://localhost:8000/api.php/diskover-2018.01.17/tagdirs
 PUT http://localhost:8000/api.php/diskover-2018.01.17/tagdirs
 {"tags": [], "dirs": ["/Users/shirosai/Downloads"], "recursive": "true", "tagfiles": "true"}
 ```
+
+### Examples of API calls in Python
+```
+"""example usage of diskover-web rest-api using requests and urllib
+"""
+import requests
+try:
+    from urllib import quote
+except ImportError:
+    from urllib.parse import quote
+import json
+
+url = "http://localhost:8000/api.php"
+
+# list all diskover indices
+r = requests.get('%s/list' % url)
+print(r.url + "\n")
+print(r.text + "\n")
+
+# list total number of files for each tag in diskover-index index
+index = "diskover-index"
+r = requests.get('%s/%s/tagcount?type=file' % (url, index))
+print(r.url + "\n")
+print(r.text + "\n")
+
+# list all png files in diskover-index index
+q = quote("extension:png AND _type:file AND filesize:>1048576")
+r = requests.get('%s/%s/search?query=%s' % (url, index, q))
+print(r.url + "\n")
+print(r.text + "\n")
+
+# tag directory and all files in directory with tag "archive" (non-recursive)
+d = {'tag': 'archive', 'path_parent': '/Users/cp/Downloads', 'tagfiles': 'true'}
+r = requests.put('%s/%s/tagdir' % (url, index), data = json.dumps(d))
+print(r.url + "\n")
+print(r.text + "\n")
+```

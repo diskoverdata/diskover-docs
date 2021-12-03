@@ -1,5 +1,5 @@
 ___
-### Create an Index of S3 Bucket
+### Create an Index of an S3 Bucket
 
 The Diskover indexer can add additional alternate scanners besides the default **scandir** Python module. The **scanners/** directory is the location of alternate Python modules for scanning. Included in the directory is a Python module **scandir_s3** for scanning AWS S3 buckets.
 

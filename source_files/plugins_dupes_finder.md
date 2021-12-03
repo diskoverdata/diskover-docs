@@ -8,10 +8,11 @@ The Diskover duplicate plugin (dupes-finder) leverages post processing of index 
 1. To check for duplicates across a single or all file systems.
 1. To check for duplicates among a selected set of directories.
 
-Calculating file **hash checksums** is an expensive CPU/disk operation. The dupes-finder provides configuration options to control what files in the index get a hash calculated. In addition, the dupes-finder provides additional optimization mechanisms:
+Calculating file **hash checksums** is an expensive CPU/disk operation. The dupes-finder provides configuration options to control what files in the index get a hash calculated and marked as a dupe (`is_dupe` set to True). In addition, the dupes-finder provides additional optimization mechanisms:
 
 - The diskover-cache **sqlite3 db** is used to store file hashes.
 - An existing index can be used to lookup file hashes.
+- The Elasticsearch fields for file type that get updated are `hash` and `is_dupe`.
 
 The dupes-finder can also be used to add file hashes to all the files in the index, not just the duplicates found.
 
@@ -20,6 +21,11 @@ The dupes-finder can also be used to add file hashes to all the files in the ind
 The duplicates plugin will store hash values that can be stored only for duplicates or for all files.
 
 ![Image: Hash Values](images/image_plugins_dupes_finder_hash_values_in_file_attributes.png)
+
+🔴 &nbsp;To use the default hashing mode **xxhash**, you will first need to install the **xxhash Python module**. Post indexing plugins are located in `plugins_postindex/` directory.
+```
+pip3 install xxhash
+```
 
 🔴 &nbsp;The dupes-finder plugin runs post index and  operates on completed indices as a scheduled job or on  demand job to provide  duplicates analysis on completed indices, to enable:
 ```
@@ -30,10 +36,25 @@ vim /root/.config/diskover_dupesfinder/config.yaml
 - mode: desired checksum **xxhash** or **md5**
 - extensions: desired file extensions to check, for all files use `[ ]`
 
+🔴 &nbsp;Additional settings:
+- minsize and maxsize: of files to hash
+- otherquery: additional Elasticsearch query when searching an index for which files to hash.
+- replacepaths: for translating paths from source index path to destination path, example on Windows translating `/z_drive/` to `Z:\`
+
 ![Image: Dupes-Finder Configuration](images/image_plugins_dupes_finder_config.png)
 
 🔴 &nbsp;To run the duplicates check via command line:
 ```
 cd /opt/diskover
 python3 diskover_dupesfinder.py diskover-<indexname>
+```
+
+🔴 &nbsp;To run the dupes finder for multiple completed indices:
+```
+python3 diskover-dupesfinder.py diskover-<indexname1> diskover-<indexname2>
+```
+
+🔴 &nbsp;See all cli options:
+```
+python3 diskover-dupesfinder.py -h
 ```

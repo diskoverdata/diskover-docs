@@ -8,7 +8,7 @@ The Diskover duplicate plugin (dupes-finder) leverages post processing of index 
 1. To check for duplicates across a single or all file systems.
 1. To check for duplicates among a selected set of directories.
 
-Calculating file **hash checksums** is an expensive CPU/disk operation. The dupes-finder provides configuration options to control what files in the index get a hash calculated and marked as a dupe (`is_dupe` set to True). In addition, the dupes-finder provides additional optimization mechanisms:
+Calculating file **hash checksums** is an expensive CPU/disk operation. The dupes-finder provides configuration options to control what files in the index get a hash calculated and marked as a dupe (`is_dupe` set to `True`). In addition, the dupes-finder provides additional optimization mechanisms:
 
 - The diskover-cache **sqlite3 db** is used to store file hashes.
 - An existing index can be used to lookup file hashes.

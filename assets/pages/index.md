@@ -13,6 +13,8 @@ Intended for Service Professionals and System Administrators.
 
 [Diskover Configuration and Administration Guide](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/)
 
+[Diskover SDK and API Guide](https://docs.diskoverdata.com/diskover_dev_guide/)
+
 ___
 ## User Guides
 

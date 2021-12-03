@@ -38,6 +38,7 @@ ordered_documents:
   - index_management_intro.md
   - index_management_diskover_web.md
   - index_management_elasticsearch.md
+  - index_advanced.md 
   - backup_and_recovery_intro.md
   - backup_and_recovery_setup.md
   - backup_and_recovery_elasticsearch.md

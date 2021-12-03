@@ -2,7 +2,7 @@ ___
 ## Develop Your Own Plugins
 ___
 
-This section covers the basics on how to create your own plugin.
+This section covers the basics on how to create your own plugin. For example, you can add extra metadata to an index during crawl time by adding a plugin to the Diskover crawler. Some other examples are database lookups to apply extra tags, content indexing and if keyword found tag file, copy or backup file if matches certain criteria, etc. This is all done during crawl time.
 
 Plugins are stored in the `plugins/` folder in the root directory of Diskover. There are a few examples in the plugins folder to get you started. Plugins are run during a crawl.
 

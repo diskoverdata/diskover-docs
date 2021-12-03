@@ -52,8 +52,8 @@ Once you have a reference for your index size, you can decide to shard if applic
 
 >- Index that is 60 GB in size: you will want to set shards to 3 and replicas* to 1 or 2 and spread across 3 ES nodes.
 >- Index that is 5 GB in size: you will want to set shards to 1 and replicas* to 1 or 2 and be on 1 ES node or spread across 3 ES nodes (recommended).
->
->\* _Replicas help with search performance and provide fault tolerance. When you change shard/replica numbers, you have to delete the index and re-index._
+
+_Replicas help with search performance, redundancy and provide fault tolerance. When you change shard/replica numbers, you have to delete the index and re-index._
 
 #### Estimating Elasticsearch Storage Requirements
 

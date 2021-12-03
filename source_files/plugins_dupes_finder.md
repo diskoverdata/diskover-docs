@@ -27,6 +27,8 @@ The duplicates plugin will store hash values that can be stored only for duplica
 
 ![Image: Hash Values](images/image_plugins_dupes_finder_hash_values_in_file_attributes.png)
 
+🔴 &nbsp;Check that you have the config file in `~/.config/diskover_dupesfinder/config.yaml`, if not, copy from the default config folder in `configs_sample/diskover_dupesfinder/config.yaml`.
+
 🔴 &nbsp;The dupes-finder plugin runs post index and  operates on completed indices as a scheduled job or on  demand job to provide  duplicates analysis on completed indices, to enable:
 ```
 vim /root/.config/diskover_dupesfinder/config.yaml

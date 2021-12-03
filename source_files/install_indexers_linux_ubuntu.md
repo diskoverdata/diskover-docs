@@ -1,5 +1,5 @@
 ___
-### Install Diskover Indexer(s) for Linux Ubuntu
+### Install Diskover Indexers for Linux Ubuntu
 
 The following outlines installing the Diskover indexer on Linux Ubuntu.
 

@@ -7,6 +7,8 @@ ___
 
 ___
 
+The task panel can be used to schedule building indices or running any type of file action task such as copying files, running duplicate file finding, checking permissions on directories, etc. The task panel is a swiss-army knife for data management.
+
 ### Distributed Architecture and Management
 
 Diskover has a distributed task system where workers can be distributed among many resources. For each resource providing a task worker, services will need to have  **diskoverd**  installed. Please refer to instructions on how to set up the the  **diskoverd** task service in the [Diskover Installation Guide - Setting Up Diskover Task Worker Daemon](https://docs.diskoverdata.com/diskover_installation_guide/#setting-up-diskover-task-worker-daemon). This section will describe setting up both indexing and custom tasks within the Diskover-Web Task Panel.

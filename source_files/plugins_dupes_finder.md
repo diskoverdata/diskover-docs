@@ -14,6 +14,11 @@ Calculating file **hash checksums** is an expensive CPU/disk operation. The dupe
 - An existing index can be used to lookup file hashes.
 - The Elasticsearch fields for file type that get updated are `hash` and `is_dupe`.
 
+🔴 &nbsp;To use the default hashing mode **xxhash**, you will first need to install the **xxhash Python module**. Post indexing plugins are located in `plugins_postindex/` directory.
+```
+pip3 install xxhash
+```
+
 The dupes-finder can also be used to add file hashes to all the files in the index, not just the duplicates found.
 
 ![Image: Duplicate Plugin Results](images/image_plugins_dupes_finder_diskover_ui_results_pane.png)
@@ -21,11 +26,6 @@ The dupes-finder can also be used to add file hashes to all the files in the ind
 The duplicates plugin will store hash values that can be stored only for duplicates or for all files.
 
 ![Image: Hash Values](images/image_plugins_dupes_finder_hash_values_in_file_attributes.png)
-
-🔴 &nbsp;To use the default hashing mode **xxhash**, you will first need to install the **xxhash Python module**. Post indexing plugins are located in `plugins_postindex/` directory.
-```
-pip3 install xxhash
-```
 
 🔴 &nbsp;The dupes-finder plugin runs post index and  operates on completed indices as a scheduled job or on  demand job to provide  duplicates analysis on completed indices, to enable:
 ```

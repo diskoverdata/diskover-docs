@@ -7,6 +7,10 @@ ___
 
 This chapter discusses ways to improve indexing performance.
 
+We recommend you have more/smaller indices than a few very large ones. Rather than indexing at the very top level of your storage mounts, you could index 1 level down into multiple indices and then run parallel `diskover.py` index processes which will be much faster to index a really large share with 100’s of millions of files.
+
+You can optimize your indices by setting the number of shards and replicas in the Diskover config file. By default in Diskover config, shards are set to 1 and replicas are set to 0. It is important to note that these settings are not meant for production as they provide no load balancing or fault tolerance.
+
 ___
 ### Building Indices
 

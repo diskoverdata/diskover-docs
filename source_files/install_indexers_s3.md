@@ -23,7 +23,7 @@ After you will need to set up and configure AWS credentials, etc. for **boto3**:
 
 ```
 cd /opt/diskover
-python3 diskover.py --altscanner scandir_s3 s3://bucketname
+python3 diskover.py --altscanner scandir_s3 s3://<bucketname>
 ```
 
 #### Using Different Endpoint URL (other than AWS)
@@ -34,12 +34,12 @@ python3 diskover.py --altscanner scandir_s3 s3://bucketname
 export AWS_PROFILE=wasabi-eu
 ```
 ```
-export S3_ENDPOINT_URL=https://s3.us-central-1.wasabisys.com
+export S3_ENDPOINT_URL=https://<endpoint>
 ```
 
 🔴 &nbsp;Run the index:
 
 ```
 cd /opt/diskover
-python3 diskover.py --altscanner scandir_s3 s3://bucketname
+python3 diskover.py --altscanner scandir_s3 s3://<bucketname>
 ```

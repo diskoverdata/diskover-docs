@@ -21,6 +21,8 @@ _[Click here for a full screen view of the Elasticsearch Architecture diagram.](
 
 #### Elasticsearch Cluster
 
+An important configuration for Elasticsearch is that you will want to [set Java heap mem size](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/advanced-configuration.html#set-jvm-heap-size) - it should be half your Elasticsearch host ram up to 32 GB.
+
 ##### Production Deployments
 
 >- Minimum 3 nodes for performance and redundancy

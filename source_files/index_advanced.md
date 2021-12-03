@@ -11,6 +11,8 @@ We recommend you have more/smaller indices than a few very large ones. Rather th
 
 You can optimize your indices by setting the number of shards and replicas in the Diskover config file. By default in Diskover config, shards are set to 1 and replicas are set to 0. It is important to note that these settings are not meant for production as they provide no load balancing or fault tolerance.
 
+Please refer to the [Diskover User Guide](https://docs.diskoverdata.com/diskover_installation_guide/#prerequisites-and-requirements) for more information on requirements and recommendations.
+
 ___
 ### Building Indices
 

@@ -3,6 +3,8 @@ ___
 
 You can install Diskover indexers on a server or virtual machine (VM). Multiple indexers can be ran on a single machine or multiple machines for parallel crawling.
 
+The indexing host uses a separate thread for each directory at level 1 of a top crawl directory. If you have many directories at level 1, you will want to increase the number of CPU cores and adjust **maxthreads** in the diskover config.
+
 #### Linux
 
 >- 64-bit Red Hat Enterprise Linux Server v7.x, v8.x

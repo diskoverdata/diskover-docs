@@ -63,3 +63,26 @@ journalctl -u diskoverd
 ```
 
 Additional log files for **diskoverd** can be found in the directory set in **diskoverd** config files **logDirectory** setting.
+
+#### Invoking diskoverd from the Command Line
+
+🔴 &nbsp;To start up a diskoverd worker run:
+```
+python3 diskoverd.py
+```
+
+With no cli options, diskoverd uses a unique worker name `hostname + unique id` each time it is started.
+
+🔴 &nbsp;To see all cli options, such as setting a worker name, use `-h`:
+```
+python3 diskoverd.py -h
+```
+
+To enable logging to a file and set log level, edit the config and set `logLevel`, `logToFile` and `logDirectory` and stop and restart diskoverd.
+
+```
+sudo systemctl stop diskoverd.service
+sudo systemctl restart diskoverd.service
+```
+
+After diskoverd has started, it will appear in the Diskover-Web Tasks Panel on the workers page. From there, you can see the health of the worker (online/offline), disable the worker, etc. A worker will show as offline if it does not send a hearbeat for 10 min. diskoverd tries to send a heartbeat every 2 minutes to the Diskover-Web API.

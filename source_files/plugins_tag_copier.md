@@ -8,6 +8,8 @@ The tag copier plugin is designed to migrate tags from one index to the next. Ge
 1. Manual tag application.
 1. Plugin tag application (harvest, duplicate hashes, etc.)
 
+🔴 &nbsp;Check that you have the config file in `~/.config/diskover_tagcopier/config.yaml`, if not, copy from default config folder in `configs_sample/diskover_tagcopier/config.yaml`.
+
 🔴 &nbsp;The tag copier runs post as scheduled job or immediately after index process copying tags from previous index to new index. To enable:
 ```
 vim /root/.config/diskover_tagcopier/config.yaml
@@ -28,6 +30,11 @@ python3 diskover_tagcopier.py diskover-<source_indexname> diskover-<dest_indexna
 ```
 
 <p id="migrate_tags_from_previous_index"></p>
+
+🔴 &nbsp;See all cli options:
+```
+python3 diskover-tagcopier.py -h
+```
 
 #### Configure Indexing Tasks to Migrate Tags from Previous Index
 

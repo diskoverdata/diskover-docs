@@ -1,5 +1,5 @@
 ___
-### Install Diskover Indexer(s) for Windows
+### Install Diskover Indexers for Windows
 
 The following outlines installing the Diskover indexer on Windows.
 

@@ -1,5 +1,5 @@
 ___
-## Develop Your Own API
+## Using the Diskover-Web API
 ___
 
 Instructions in development.

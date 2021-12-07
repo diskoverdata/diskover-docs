@@ -148,53 +148,46 @@ The query needs to be typed in this exact format **fieldname:value**
 
 >🔆 &nbsp;Searching on field names is case sensitive:
 >- The **fieldname** needs to be in lower case.
->- The variable after the colon needs to be typed in upper and/or lower case to match exactly what you are searching for. 
+>- The variable after the colon needs to be typed in upper and/or lower case to match exactly what you are searching for, except for a few fields as described below.
 
-Let's use the example of searching on tags:
-
-- **tags:delete** would find all files and directories with the tag **delete** applied to them, it would not find a tag spelled **Delete** for example because of the capital D.
-
-- **tags:(manual_delete AND approve_delete)** same logic as above and please refer to the section [grouping for complex queries](#complex_queries) regarding the use of the parentheses.
-
-You can find mome examples with field names in the [Searching on Time](#search_time) and [Searching on Size](#search_size) sections.
-
-#### Default Fields Names
+#### Default Field Names
 
 This list can also be found in the help page of the user interface:
 
-- **atime** - [access time](#search_time)
-- **costpergb** - storage space cost
-- **ctime** - [changed time](#search_time)
-- **extension** - file extension
-- **group** - can vary depending on how Diskover was configured, see [User Analysis Report](#user_analysis) section and/or ask your system administrator
-- **hash** - 
-- index_crawl_time
-index_dir_count
-index_diskover_ver
-index_end_at
-index_file_count
-index_file_size
-index_file_size_du
-index_path
-index_start_at
-- **ino** - file inode number
-- **mtime** - [modified time](#search_time)
-- **name** - file name
-- **name.text** - same as **name** but is not case sensitive
-- **nlink** - number of [hardlinks](#hardlinks)
-- **owner** - can vary depending on how Diskover was configured, see [User Analysis Report](#user_analysis) section and/or ask your system administrator(#user_analysis) 
+- **atime** - access time > refer to [Queries with Time](#search_time) for examples
+- **costpergb** - storage space cost > `costpergb:[10 TO 500]`
+- **ctime** - changed time  > refer to [Queries with Time](#search_time) for examples
+- **extension** - file extension > `extension:mov`
+- **group** - can vary depending on how Diskover was configured > see [User Analysis Report](#user_analysis) section and/or ask your System Administrator
+- **hash** - hash value for duplicate files, feature needs to be enabled and is usually used by System Administrators
+- **ino** - file inode number > is usually used by System Administrators
+- **mtime** - modified time > refer to [Queries with Time](#search_time) for examples
+- **name** - file name > is case sensitive, ex: `name:\*Jungle\*` if the file name is TheJungleBook.mov
+- **name.text** - same as **name** but is not case sensitive, ex: `name:\*jungle\*` if the file name is TheJungleBook.mov
+- **nlink** - number of [hardlinks](#hardlinks) > `nlink:3`
+- **owner** - can vary depending on how Diskover was configured > see [User Analysis Report](#user_analysis) section and/or ask your System Administrator
 - **parent_path** - ex: `\/some\/folder*` will search that folder and all sub-folders ([recursive](#recursive))
 - **parent_path.text** - same as **parent_path** but is not case sensitive
-- s3_etag
-s3_storageclass
-- **size** - file size, in bytes, see [searching by size](#search_size) for more details
-- **size_du** - disk usage size, aka allocated size, in bytes, see [searching by size](#search_size) for more details
-- space_available
-space_free
-space_total
-space_used
-- **tags** - any tag(s) associated with a file or directory
-- **type** - file or directory
+- **size** - file size, in bytes > see [Queries with File Size](#search_size) for examples
+- **size_du** - disk usage size, aka allocated size, in bytes > see [Queries with File Size](#search_size) for examples
+- **tags** - any tag(s) associated with a file or directory > `tags:delete`
+- **type** - file or directory > `type:file` or `type:directory`
+
+#### Examples of Searching with Field Names
+
+Searching on field names is very effective for achieving specific results and they are often combined with other criteria. You will find examples throughout this chapter, but here are a few more:
+
+- **name.text:\*jungle\* and (size:>=5242880 AND size:<=10485760)** > would find files with the word **jungle** that are between 5MB and 10MB, would exclude directories.
+
+- **\*jungle*\ and (ctime:[now-1h TO now] OR mtime:[now-1h TO now])** would find files or directories with the word **jungle** and that have been modified or changed in the last hour.
+
+- **\*jungle\* and nlink:2** > would find files with the word **jungle** that have 2 hardlinks.
+
+- **tags:delete** > would find all files and directories with the tag **delete** applied to them, it would not find a tag spelled **Delete** for example because of the capital D.
+
+- **tags:(manual_delete AND approve_delete)** > same logic as above and please refer to the section [grouping for complex queries](#complex_queries) regarding the use of the parentheses.
+
+You can find mome examples with field names in the [Searching on Time](#search_time) and [Searching on Size](#search_size) sections.
 
 ___
 ### Queries with File Extensions
@@ -215,6 +208,8 @@ ___
 
 You can use operators **AND OR NOT**  to narrow down a manual search. Although the operators in this section are capitalized for ease of understanding, the operators can be typed in lower case in the search bar.
 
+>🔆 &nbsp;Operators are NOT case sensitive, but are capitalized in the examples for visual ease.
+<br>
 >🔆 &nbsp;IMPORTANT! When searching with more than one criteria, you don't need to put **AND** if that is the operator you would otherwise type, as Diskover uses the **AND** operator by default when non others are used. See examples below.
 
 Let's take the series **The Jungle Book** and that a similar naming convention was respected: **thejunglebook_s01_ep05_en.mov** (series The Jungle Book, season 1, episode 5, English sub)
@@ -226,7 +221,7 @@ Here are some examples of queries using operators to narrow your searches.
 - **\*jungle\* AND s01 NOT e*5** would find season 1 in any languages and all episodes except the ones with 5 in them. It is recommended to use the AND when mixing operators in the same query.
 
 >🔆 &nbsp;When using more than one, but especially a mix of different operators in a query, it is highly recommended to use parentheses **(example)** to group some elements as described in the next section, in order to help Diskover make sense of the query and return the desired results.
-
+<br>
 >🔆 &nbsp;Operators can only be used in the main search bar  at the top of the user interface. They cannot be used in the **search within results** field.
  
  <p id="complex_queries"></p>
@@ -270,8 +265,8 @@ If used alone, by default the **~** will look for the maximum of 2 changes, but 
 
 A few examples of words that would be found with and without limiting the changes to 1:
 
-- **jungle~1** would find: jungle, jingly, jingle, jingles.
-- **jungle~** would find: jungle, jingly, jingle, jingles, june, judge, single, bundle, uncle.
+- **jungle~1** would find: jungle, juggle, jingly, jingle, jingles, etc.
+- **jungle~** would find: jungle, juggle, jingly, jingle, jingles, june, judge, single, bundle, uncle, etc.
 
 >🔆 &nbsp;Do NOT mix fuzziness and wild cards as it is not supported, and only one of the operators would be applied, example of what NOT to do: **jungle\*~1**
 

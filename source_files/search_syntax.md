@@ -97,7 +97,7 @@ ___
 Wild cards are used to expand search results mostly due to [naming convention](#naming_convention), but also to go around possible misspellings, although the [fuzziness](#fuzziness) wild card, covered later in this chapter, might be a better choice for misspellings.
 
 >🔆 &nbsp;A search might be a tad slower when using wild cards, especially when it is placed in front of your query, because it is searching a much larger amount of data.
-
+<br>
 >🔆 &nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > settings > [predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much. Throughout this chapter, we will assume the predictive search has not been selected.
 
 #### Examples with Long Strings of Characters or Numbers
@@ -156,15 +156,15 @@ This list can also be found in the help page of the user interface:
 - **costpergb** - storage space cost > `costpergb:[10 TO 500]`
 - **ctime** - changed time  > refer to [Queries with Time](#search_time) for examples
 - **extension** - file extension > `extension:mov`
-- **group** - can vary depending on how Diskover was configured > see [User Analysis Report](#user_analysis) section and/or ask your System Administrator
+- **group** - can vary depending on how Diskover was configured > `group:colorists` > see [User Analysis Report](#user_analysis) section for more details and/or ask your System Administrator
 - **hash** - hash value for duplicate files, feature needs to be enabled and is usually used by System Administrators
 - **ino** - file inode number > is usually used by System Administrators
 - **mtime** - modified time > refer to [Queries with Time](#search_time) for examples
 - **name** - file name > is case sensitive, ex: `name:\*Jungle\*` if the file name is TheJungleBook.mov
-- **name.text** - same as **name** but is not case sensitive, ex: `name:\*jungle\*` if the file name is TheJungleBook.mov
+- **name.text** - same as **name** but is not case sensitive, ex: `name.text:\*jungle\*` if the file name is TheJungleBook.mov
 - **nlink** - number of [hardlinks](#hardlinks) > `nlink:3`
-- **owner** - can vary depending on how Diskover was configured > see [User Analysis Report](#user_analysis) section and/or ask your System Administrator
-- **parent_path** - ex: `\/some\/folder*` will search that folder and all sub-folders ([recursive](#recursive))
+- **owner** - can vary depending on how Diskover was configured > `owner:*Joe*` > see [User Analysis Report](#user_analysis) section for more details and/or ask your System Administrator
+- **parent_path** - will search that folder and all sub-folders ([recursive](#recursive)) > `parent_path:\/some\/folder*`
 - **parent_path.text** - same as **parent_path** but is not case sensitive
 - **size** - file size, in bytes > see [Queries with File Size](#search_size) for examples
 - **size_du** - disk usage size, aka allocated size, in bytes > see [Queries with File Size](#search_size) for examples
@@ -207,7 +207,8 @@ ___
 You can use operators **AND OR NOT**  to narrow down a manual search. Although the operators in this section are capitalized for ease of understanding, the operators can be typed in lower case in the search bar.
 
 >🔆 &nbsp;Operators are NOT case sensitive, but are capitalized in the examples for visual ease.
-<br>
+
+
 >🔆 &nbsp;IMPORTANT! When searching with more than one criteria, you don't need to put **AND** if that is the operator you would otherwise type, as Diskover uses the **AND** operator by default when non others are used. See examples below.
 
 Let's take the series **The Jungle Book** and that a similar naming convention was respected: **thejunglebook_s01_ep05_en.mov** (series The Jungle Book, season 1, episode 5, English sub)
@@ -219,7 +220,8 @@ Here are some examples of queries using operators to narrow your searches.
 - **\*jungle\* AND s01 NOT e*5** would find season 1 in any languages and all episodes except the ones with 5 in them. It is recommended to use the AND when mixing operators in the same query.
 
 >🔆 &nbsp;When using more than one, but especially a mix of different operators in a query, it is highly recommended to use parentheses **(example)** to group some elements as described in the next section, in order to help Diskover make sense of the query and return the desired results.
-<br>
+
+
 >🔆 &nbsp;Operators can only be used in the main search bar  at the top of the user interface. They cannot be used in the **search within results** field.
  
  <p id="complex_queries"></p>

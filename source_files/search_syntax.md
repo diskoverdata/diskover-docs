@@ -97,7 +97,7 @@ ___
 Wild cards are used to expand search results mostly due to [naming convention](#naming_convention), but also to go around possible misspellings, although the [fuzziness](#fuzziness) wild card, covered later in this chapter, might be a better choice for misspellings.
 
 >🔆 &nbsp;A search might be a tad slower when using wild cards, especially when it is placed in front of your query, because it is searching a much larger amount of data.
-<br>
+``
 >🔆 &nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > settings > [predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much. Throughout this chapter, we will assume the predictive search has not been selected.
 
 #### Examples with Long Strings of Characters or Numbers

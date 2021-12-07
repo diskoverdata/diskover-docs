@@ -210,6 +210,7 @@ You can use operators **AND OR NOT**  to narrow down a manual search. Although t
 
 >🔆 &nbsp;Operators are NOT case sensitive, but are capitalized in the examples for visual ease.
 
+<p></p>
 
 >🔆 &nbsp;IMPORTANT! When searching with more than one criteria, you don't need to put **AND** if that is the operator you would otherwise type, as Diskover uses the **AND** operator by default when non others are used. See examples below.
 
@@ -223,6 +224,7 @@ Here are some examples of queries using operators to narrow your searches.
 
 >🔆 &nbsp;When using more than one, but especially a mix of different operators in a query, it is highly recommended to use parentheses **(example)** to group some elements as described in the next section, in order to help Diskover make sense of the query and return the desired results.
 
+<p></p>
 
 >🔆 &nbsp;Operators can only be used in the main search bar  at the top of the user interface. They cannot be used in the **search within results** field.
  

@@ -25,6 +25,7 @@ ___
 ### Search Problems Resulting from Naming Conventions
 
 All organizations have issues with naming convention. Your search results might be limited if you try to be too restrictive when searching. For example, files associated with the movie **For Your Eyes Only** might be named:
+
 - ForYourEyesOnly
 - 4YourEyesOnly
 - foryoureyesonly
@@ -32,18 +33,23 @@ All organizations have issues with naming convention. Your search results might 
 - for your eyes
 - Not mentioning all the possible misspellings. 
 
-Trying to launch a query with too many words and/or criteria, unless you know that a strict naming convention was followed, will limit your results and you might think that some files are missing.
+Other examples:
+
+- Season: s01, s1, s_01, season1
+- Episodes: ep5, e5, e05, ep_05, ep_5, 05
+
+Unless you know that a strict naming convention was followed, trying to launch a query with very specific criteria may limit your results and you might think that some files are missing.
 
 Ways to either pinpoint or expand your results will be explained in this chapter.
 
 ___
 ### Basic Search and Query Rules
 
->🔆 &nbsp;Pay attention to all the messages in the green and blue information bars, they are very helpful!
+>🔆 &nbsp;Pay attention to all the messages in the green and blue information bars in the user interface, they are very helpful!
 
 #### Range of Search
 
-When typing a manual query, the value needs to be typed in the [search bar](#search_bar).
+When typing a manual query, the criteria need to be typed in the [search bar](#search_bar).
 
 Unless you select a specific [storage volume and/or directory](#limiting_searches), Diskover will search all the storage volumes and their parent paths during a manual search.
 
@@ -70,13 +76,13 @@ At times you will need to group criteria, so Diskover can make sense of the quer
 
 #### The Logic Behind Searching on a Single Word
 
-When typing a single word in the search bar, Diskover will look for that **isolated word**. In order to "split" and find isolated words, Diskover/Elasticsearch uses **tokenizers** like **space, underscore, hyphen, forward slash, period, other punctuation, as well as upper cases** to make sense of what is included in a file name. For example:
+When typing a single word in the search bar, Diskover will look for that **isolated word**. In order to "split" and find isolated words, Diskover/Elasticsearch uses **tokenizers** like **space, underscore, hyphen, forward slash, period, other punctuation, as well as upper cases** (aka CamelCase) make sense of how a file name is construed. For example:
 
 - If your file name is **for_your_eyes_only.mov** and you launch a search with the word **eyes**, Diskover will find that file because that word is isolated between underscores.
 
-- If your file name is **ForYourEyesOnly.mov** and you launch a search with the word **eyes**, Diskover will find that file because the first letters being capitalized are recognized as separate words.
+- If your file name is **ForYourEyesOnly.mov** and you launch a search with the word **eyes**, Diskover will find that file because the first letters of each words being capitalized are recognized as separate words.
 
-- If your file name is **foryoureyesonly.mov** and you launch a search with the word **eyes**, Diskover would not find that file because the whole name/string looks like a single word.
+- If your file name is **foryoureyesonly.mov** and you launch a search with the word **eyes**, Diskover would not find that file because the whole string of characters looks like a single word.
 
 <p id="wildcards"></p>
 
@@ -85,25 +91,26 @@ ___
 
 **? *is used to replace a single character*** 
 
-**\* *is used to replace zero, one or many characters*** (the most used wild card)
+**\* *is used to replace zero, one or many characters*** (the most popular and used wild card)
 
-Wild cards are used to expand search results mostly due to [naming convention](#naming_convention), but also to go around possible misspellings, although the [fuzziness](#fuzziness), covered later in this chapter, is a much better choice for misspellings.
+Wild cards are used to expand search results mostly due to [naming convention](#naming_convention), but also to go around possible misspellings, although the [fuzziness](#fuzziness) wild card, covered later in this chapter, might be a better choice for misspellings.
 
 >🔆 &nbsp;A search might be a tad slower when using wild cards, especially when it is placed in front of your query, because it is searching a much larger amount of data.
 
-#### Examples with Grouped Words or Numbers
+#### Examples with Long Strings of Characters or Numbers
+
 When searching on a single word for example, the results might be limited if you type the word alone. Let's take the example of trying to find the following file **foryoureyesonly.mov**:
 
 - If you only type **eyes**, that file would not be found as Diskover would search for that [isolated word](#search_single_word) and not being mixed with other characters right before and/or after.
 
-- If you type **\*eyes** or **eyes\***, that file would not be found either.
+- If you type **\*eyes** or **eyes\***, that file would not be found either as the beginning or the end would still be mixed with other characters.
 
-- You would need to type **\*eyes\*** to find this file following this example as it is preceded and succeeded by other characters.
+- You would need to type **\*eyes\*** to find that file as it is preceded and succeeded by other characters, therefore you need the * on each side.
 
 The same rule applies with numbers. For example:
 
 - If the file name would be **SomethingGood_20161031.mp4**, you would need to either:
-	- Type the all the numbers **20161031** to find that file with that specific date
+	- Type the all the numbers **20161031** to find that file with that specific date.
 	- Or typing **201610\*** would find all the files that have the year 2016 and the month of October, assuming that all those files were identified the same way with the same date format.
 
 #### Examples with Isolated Words
@@ -116,7 +123,7 @@ If the file name would be **for_your_eyes_only.mov** or **ForYourEyesOnly.mov**:
 #### Examples with Season Number
 Let's do another example with a season's number for a show. For example, if you want to search for **season 1**, the file name could have different spelling like **S1**, **season 1**, **s01**, **s_1**, etc. 
 
-In order to expand your results to include all possibilities, without at the same time expending too much, the best search syntax would be **s*1** because the **\*** would catch everything in between the **s** and the **1**. Now, this would also find season 11 for example, but it's better to widen your results at first and then narrow them down once you have an idea of the possible results.
+In order to expand your results to include all possibilities, without expending too much either, a logical search syntax would be **s*1** because the **\*** would catch everything in between the **s** and the **1**. Now, this would also find season 11 for example, but it's better to widen your results at first and then narrow them down once you have an idea of the possible results.
 
 #### Find all Files in a Sequence
 

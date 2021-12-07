@@ -81,6 +81,8 @@ The System Administrator of your facility is responsible for configuring the ind
 
 When you are not finding a file/directory in the indexed volumes, you can access the live directory and see if the files you are waiting to be onboarded will be available during the next indexing, as well as preemptively copy the links for a work order.
 
+This feature needs to be enabled by your System Administrator.
+
 ![Image: Select File Action](images/image_indices_file_action_select.png)
 
 A) Select one or multiple directories in the results pane.

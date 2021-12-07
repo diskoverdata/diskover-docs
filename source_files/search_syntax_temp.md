@@ -45,25 +45,26 @@ Ways to either pinpoint or expand your results will be explained in this chapter
 ___
 ### Basic Search and Query Rules
 
+- When typing a manual query, the criteria need to be typed in the [search bar](#search_bar).
+- There are several ways to achieve the same search results and different methods will be explained in this chapter; from built-in tools to manual searches, as well as a combination of both, it all depends on your personal preferences and comfort level.
+
 >🔆 &nbsp;Pay attention to all the messages in the green and blue information bars in the user interface, they are very helpful!
+
 
 #### Range of Search
 
-When typing a manual query, the criteria need to be typed in the [search bar](#search_bar).
-
-Unless you select a specific [storage volume and/or directory](#limiting_searches), Diskover will search all the storage volumes and their parent paths during a manual search.
+- Unless you select a specific [storage volume and/or directory](#limiting_searches), Diskover will search all the storage volumes and their parent paths during a manual search.
 
 #### Case Sensitivity
 
-Search queries are mostly case insensitive, even if upper or lowercases are used in the file name or path.
-
-But there are the few exceptions where queries are case sensitive:
+Search queries are case insensitive, even if upper or lowercases are used in the file name or path. Nonetheless, there are the few exceptions where queries are case sensitive:
 - When [searching on time](#search_time).
 - When searching on [field names](#search_field_names).
+- When searching on [media info fields](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/)
 
-#### Grouping
+#### Grouping Criteria
 
-At times you will need to group criteria, so Diskover can make sense of the queries.
+At times you will need to group criteria, so Diskover can make sense of the queries - think of it a little bit as grouping criteria when building formulas in Excel.
 
 - When writing complex queries, you will need to group some elements with parentheses `( )` as further described in [The Need of Grouping for Complex Queries](#complex_queries) section.
 
@@ -82,9 +83,9 @@ When typing a single word in the search bar, Diskover will look for that **isola
 
 - If your file name is **for your eyes only.mov** and you launch a search with the word **eyes**, Diskover will find that file because that word is isolated between spaces.
 
-- If your file name is **foryoureyesonly.mov** and you launch a search with the word **eyes**, Diskover would not find that file because the whole string of characters looks like a single word.
+- If your file name is **foryoureyesonly.mov** and you launch a search with the word **eyes**, Diskover would NOT find that file because the whole string of characters looks like a single word.
 
-- COMING SOON! If your file name is **ForYourEyesOnly.mov** and you launch a search with the word **eyes**, Diskover will find that file because the first letters of each words being capitalized are recognized as separate words.
+- COMING SOON! If your file name is **ForYourEyesOnly.mov** and you launch a search with the word **eyes**, Diskover will find that file because the first letters of each words being capitalized are recognized as separate words (aka CamelCase).
 
 <p id="wildcards"></p>
 
@@ -98,6 +99,8 @@ ___
 Wild cards are used to expand search results mostly due to [naming convention](#naming_convention), but also to go around possible misspellings, although the [fuzziness](#fuzziness)wild card, covered later in this chapter, might be a better choice for misspellings.
 
 >🔆 &nbsp;A search might be a tad slower when using wild cards, especially when it is placed in front of your query, because it is searching a much larger amount of data.
+
+>🔆 &nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > settings > [predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much. Throughout this chapter, we will assume the predictive search has not been selected.
 
 #### Examples with Long Strings of Characters or Numbers
 
@@ -113,7 +116,7 @@ The same rule applies with numbers. For example:
 
 - If the file name would be **SomethingGood_20161031.mp4**, you would need to either:
 	- Type the all the numbers **20161031** to find that file with that specific date.
-	- Or typing **201610\*** would find all the files that have the year 2016 and the month of October, assuming that all those files were identified the same way with the same date format.
+	- Or typing **201610\*** would find that file and all the files that have the year 2016 and the month of October, assuming that all those files were identified the same way with the same date format.
 
 #### Examples with Isolated Words
 If the file name would be **for_your_eyes_only.mov** or **For Your Eyes Only.mov**:
@@ -129,12 +132,10 @@ In order to expand your results to include all possibilities, without expending 
 
 #### Find all Files in a Sequence
 
-To find all files in a sequence, if you type for example **img\*.dpx** would find all files with the following similar names: img001.dpx, img002.dpx, etc.
+To find all files in a sequence, if you type for example **img\*.dpx**, Diskover would find all files with the following similar names: img001.dpx, img002.dpx, etc.
 
 #### Example Using * and ? in the Same Query
 Both **?** and **\*** wild cards can be used in the same query, for example searching for Johnny Smith: **John\* Sm?th**
-
->🔆 &nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > settings > [predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much. Throughout this chapter, we will assume the predictive search has not been selected.
 
 <p id="search_field_names"></p>
 
@@ -161,21 +162,37 @@ You can find mome examples with field names in the [Searching on Time](#search_t
 
 This list can also be found in the help page of the user interface:
 
-- **atime** - access Time
+- **atime** - [access time](#search_time)
 - **costpergb** - storage space cost
-- **ctime** - changed time
+- **ctime** - [changed time](#search_time)
 - **extension** - file extension
 - **group** - can vary depending on how Diskover was configured, see [User Analysis Report](#user_analysis) section and/or ask your system administrator
+- **hash** - 
+- index_crawl_time
+index_dir_count
+index_diskover_ver
+index_end_at
+index_file_count
+index_file_size
+index_file_size_du
+index_path
+index_start_at
 - **ino** - file inode number
-- **mtime** - modified time
+- **mtime** - [modified time](#search_time)
 - **name** - file name
 - **name.text** - same as **name** but is not case sensitive
 - **nlink** - number of [hardlinks](#hardlinks)
 - **owner** - can vary depending on how Diskover was configured, see [User Analysis Report](#user_analysis) section and/or ask your system administrator(#user_analysis) 
 - **parent_path** - ex: `\/some\/folder*` will search that folder and all sub-folders ([recursive](#recursive))
 - **parent_path.text** - same as **parent_path** but is not case sensitive
+- s3_etag
+s3_storageclass
 - **size** - file size, in bytes, see [searching by size](#search_size) for more details
 - **size_du** - disk usage size, aka allocated size, in bytes, see [searching by size](#search_size) for more details
+- space_available
+space_free
+space_total
+space_used
 - **tags** - any tag(s) associated with a file or directory
 - **type** - file or directory
 

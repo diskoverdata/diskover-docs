@@ -75,7 +75,7 @@ K) **Reload** **indices**: To refresh the list of indices.
 
 The System Administrator of your facility is responsible for configuring the indices’ scanning schedule. Scans are scheduled according to the users’ needs; for high pace work environment like media production, new scans may be scheduled soon after the previous one is completed. Diskover scans all storage volumes parallelly, not serially.
 
-#### File Action - a View of the Live Directory
+#### File Action - View Live Directory(ies)
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
@@ -87,7 +87,7 @@ A) Select one or multiple directories in the search pane.
 B) Click the **File Action** icon.
 C) Select **list dir**.
 
-![Image: Select File Action](images/image_indices_file_action_live_view.png)
+![Image: Directory Live View](images/image_indices_file_action_select.png)
 
 - This will give you a list of the file/directories in the live directory which will be indexed during the next scheduled task.
 - You can search using CTRL F or COMMAND F depending on your operating system.

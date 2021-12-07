@@ -75,7 +75,7 @@ K) **Reload** **indices**: To refresh the list of indices.
 
 The System Administrator of your facility is responsible for configuring the indices’ scanning schedule. Scans are scheduled according to the users’ needs; for high pace work environment like media production, new scans may be scheduled soon after the previous one is completed. Diskover scans all storage volumes parallelly, not serially.
 
-#### File Action - View Live Directory(ies)
+#### File Action - Live View Into Directory(ies) Pre-Indexing
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 

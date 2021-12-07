@@ -84,7 +84,9 @@ When you are not finding a file/directory in the indexed volumes, you can access
 ![Image: Select File Action](images/image_indices_file_action_select.png)
 
 A) Select one or multiple directories in the search pane.
+
 B) Click the **File Action** icon.
+
 C) Select **list dir**.
 
 ![Image: Directory Live View](images/image_indices_file_action_live_view.png)

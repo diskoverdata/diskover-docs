@@ -92,5 +92,5 @@ C) Select **list dir**.
 ![Image: Directory Live View](images/image_indices_file_action_live_view.png)
 
 - This will give you a list of the file/directories in the live directory which will be indexed during the next scheduled task.
-- You can search using CTRL F or COMMAND F depending on your operating system.
+- You can search using CTRL F for Windows or COMMAND F for Mac.
 - This view allows you to preemtively copy paths if needed, although you can only copy them one by one if they are random and not in a block.

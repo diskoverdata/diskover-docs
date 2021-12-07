@@ -87,7 +87,7 @@ A) Select one or multiple directories in the search pane.
 B) Click the **File Action** icon.
 C) Select **list dir**.
 
-![Image: Directory Live View](images/image_indices_file_action_select.png)
+![Image: Directory Live View](images/image_indices_file_action_live_view.png)
 
 - This will give you a list of the file/directories in the live directory which will be indexed during the next scheduled task.
 - You can search using CTRL F or COMMAND F depending on your operating system.

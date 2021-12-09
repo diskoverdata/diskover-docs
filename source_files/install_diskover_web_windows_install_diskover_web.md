@@ -56,7 +56,6 @@ cd 'C:\Program Files\Diskover-web\public\'
 copy .\costanalysis.txt.sample .\costanalysis.txt
 copy .\smartsearches.txt.sample .\smartsearches.txt
 copy .\customtags.txt.sample .\customtags.txt
-copy .\extrafields.txt.sample .\extrafields.txt
 ```
 
 🔴 &nbsp;Restart the NGINX Web server.

@@ -40,13 +40,14 @@ Other examples:
 
 Unless you know that a strict naming convention was followed, trying to launch a query with very specific criteria may limit your results and you might think that some files are missing.
 
-Ways to either pinpoint or expand your results will be explained in this chapter.
+Ways to either pinpoint or expand your results will be explained in this chapter in order to go around the naming convention issues, and make sure you are not missing any files in your results.
 
 ___
 ### Basic Search and Query Rules
 
 - When typing a manual query, the criteria need to be typed in the [search bar](#search_bar).
 - There are several ways to achieve the same search results and different methods will be explained in this chapter; from built-in tools to manual searches, as well as a combination of both, it all depends on your personal preferences and comfort level.
+- We highly recommend using all the built-in tools at first (ex: [filters](#filters), [quick search](#quick_search)), especially when searching on [time](#search_time) or [file size](#search_size), and until you get more comfortable with queries and their structures.
 
 >🔆 &nbsp;Pay attention to all the messages in the green and blue information bars in the user interface, they are very helpful!
 
@@ -85,12 +86,17 @@ When typing a single word in the search bar, Diskover will look for that **isola
 
 - If your file name is **foryoureyesonly.mov** and you launch a search with the word **eyes**, Diskover would NOT find that file because the whole string of characters looks like a single word.
 
+- COMING SOON! If your file name is **ForYourEyesOnly.mov** and you launch a search with the word eyes, Diskover will find that file because the first letters of each words being capitalized are recognized as separate words (aka CamelCase).
+
 <p id="wildcards"></p>
 
 ___
 ### Wild Cards
 
 **? is used to replace a single character**
+
+- **eye?** > would find **eye** and **eyes**
+- **678??4** > would find **678344**
 
 **\* is used to replace zero, one or many characters** (the most popular and used wild card)
 

@@ -162,8 +162,8 @@ This list can also be found in the help page of the user interface:
 - **hash** - hash value for duplicate files, feature needs to be enabled and is usually used by System Administrators
 - **ino** - file inode number > is usually used by System Administrators
 - **mtime** - modified time > refer to [Queries with Time](#search_time) for examples
-- **name** - file name > is case sensitive, ex: `name:\*Jungle\*` if the file name is TheJungleBook.mov
-- **name.text** - same as **name** but is not case sensitive, ex: `name.text:\*jungle\*` if the file name is TheJungleBook.mov
+- **name** - file name > is case sensitive, ex: `name:*Jungle*` if the file name is TheJungleBook.mov
+- **name.text** - same as **name** but is not case sensitive, ex: `name.text:*jungle*` if the file name is TheJungleBook.mov
 - **nlink** - number of [hardlinks](#hardlinks) > `nlink:3`
 - **owner** - can vary depending on how Diskover was configured > `owner:*Joe*` > see [User Analysis Report](#user_analysis) section for more details and/or ask your System Administrator
 - **parent_path** - will search that folder and all sub-folders ([recursive](#recursive)) > `parent_path:\/some\/folder*`

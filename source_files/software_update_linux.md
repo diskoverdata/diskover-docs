@@ -3,13 +3,13 @@ ___
 
 The update process for Diskover curation platform consists of updating two parts: 1) the Diskover indexer(s), and 2) the Diskover-Web server.
 
-The software can be updated using either 1) an update script that uses your Diskover ftp credentials to pull-down the latest version and update, or 2) extracting a tar file and copying the Diskover files to the proper locations.
+The software can be updated using either 1) an update script that uses a local Diskover tar.gz install file of the latest version and update, or 2) extracting a tar.gz file and copying the Diskover files to the proper locations.
 
 #### Upgrading with Update Script
 
-The following explains how to update the Diskover curation platform via the update script. To update Diskover v2, download the latest `update-diskover.sh` file from the [diskoverspace.com](https://github.com/diskoverdata/diskover-community) ftp server's scripts directory.
+The following explains how to update the Diskover curation platform via the update script `update-diskover.sh` file install the `install` directory.
 
-🔴 &nbsp;After downloading, edit the top of the file to include your ftp info, paths to Diskover v2, and then save it and run it. This will update Diskover v2 and Diskover-Web v2 to the latest version on the ftp server.
+🔴 &nbsp;After downloading, edit the top of the file to include the path to Diskover install tar.gz file, paths to Diskover v2, and then save it and run it. This will update Diskover v2 and Diskover-Web v2 to the latest version.
 
 🔴 &nbsp;Make a backup of your existing config files (optional):
 ```
@@ -68,8 +68,8 @@ cd /tmp/diskover-v2/
 
 🔴 &nbsp;Copy the Diskover files to proper locations:
 ```
-rsync -rcv --exclude=diskover.lic diskover/ /opt/diskover/
-rsync -rcv --exclude=diskover-web.lic diskover-web/ /var/www/diskover-web/
+rsync -rcv diskover/ /opt/diskover/
+rsync -rcv diskover-web/ /var/www/diskover-web/
 ```
 
 🔴 &nbsp;Set proper file systems permissions on Diskover files:

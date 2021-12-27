@@ -3,11 +3,11 @@ ___
 
 The update process for Diskover curation platform consists of updating two parts: 1) the Diskover indexer(s), and 2) the Diskover-Web server.
 
-The software can be updated using either 1) an update script that uses a local Diskover tar.gz install file of the latest version and update, or 2) extracting a tar.gz file and copying the Diskover files to the proper locations.
+The software can be updated using either 1) an update script that uses a Diskover tar.gz install file, or 2) extracting a tar.gz file and copying the Diskover files to the proper locations.
 
 #### Upgrading with Update Script
 
-The following explains how to update the Diskover curation platform via the update script `update-diskover.sh` file install the `install` directory.
+The following explains how to update the Diskover curation platform via the update script `update-diskover.sh` file located in the `install` directory.
 
 🔴 &nbsp;After downloading, edit the top of the file to include the path to Diskover install tar.gz file, paths to Diskover v2, and then save it and run it. This will update Diskover v2 and Diskover-Web v2 to the latest version.
 

@@ -4,9 +4,9 @@ Elasticsearch Windows MSI install instructions can be found here:
 
 [https://www.elastic.co/guide/en/elasticsearch/reference/current/windows.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/windows.html)
 
-🔴 &nbsp;Download the Windows MSI installer: 
+🔴 &nbsp;Download the Windows MSI installer - Install the latest version of Elasticsearch - you also need to keep up to date with patches, security enhancements, etc. as new versions are released:
 
-[https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.10.2.msi](https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.10.2.msi)
+[https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.16.1.msi](https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.16.1.msi)
 
 🔴 &nbsp;Select **Use default directories**:
 

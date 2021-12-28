@@ -34,10 +34,10 @@ yum -y install java-1.8.0-openjdk.x86_64
 
 The following section describes installing Elasticsearch on Linux CentOS and RHEL.
 
-🔴 &nbsp;Install Elasticsearch:
+🔴 &nbsp;Install the latest version of Elasticsearch - you also need to keep up to date with patches, security enhancements, etc. as new versions are released:
 ```
 yum install -y
-https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.10.2-x86_64.rpm
+https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.x.x-x86_64.rpm
 ```
 
 🔴 &nbsp;Configure Java JVM for Elasticsearch:

@@ -4,9 +4,9 @@ ___
 
 If you want to use Kibana in addition to the Diskover-Web user interface.
 
-🔴 &nbsp;Install Kibana:
+🔴 &nbsp;Install the latest version of Kibana and keep up to date with patches, security enhancements, etc. as new versions are released:
 ```
-yum install -y https://artifacts.elastic.co/downloads/kibana/kibana-7.10.2-x86_64.rpm
+yum install -y https://artifacts.elastic.co/downloads/kibana/kibana-7.12.0-x86_64.rpm
 vi /etc/kibana/kibana.yml
 ```
 

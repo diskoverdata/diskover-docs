@@ -18,7 +18,7 @@ ___
 ___
 ## User Guides
 
-#### Intended for the daily operations of Diskover by the Line of Business Users.
+**Intended for the daily operations of Diskover by the Line of Business Users.**
 
 [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/)
 

@@ -5,7 +5,7 @@
 ___
 ## Technical Guides
 
-Intended for Service Professionals and System Administrators.
+**Intended for Service Professionals and System Administrators.**
 
 [Diskover Installation Guide](https://docs.diskoverdata.com/diskover_installation_guide/)
 
@@ -18,7 +18,7 @@ Intended for Service Professionals and System Administrators.
 ___
 ## User Guides
 
-Intended for the daily operations of Diskover by the Line of Business Users.
+#### Intended for the daily operations of Diskover by the Line of Business Users.
 
 [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/)
 

@@ -57,4 +57,4 @@ const FILE_ACTIONS = [
 
 🔴 &nbsp;allowed_ldap_groups - list of allowed AD/LDAP group names that can run the File Action
 
-🔴 &nbsp;menu_icon_class - Font Awesome css class name for icon https://fontawesome.com/
+🔴 &nbsp;menu_icon_class - Font Awesome css class name for icon [https://fontawesome.com/](https://fontawesome.com/)

@@ -2,7 +2,7 @@ ___
 ## Develop Your Own Plugins
 ___
 
-### Diskover plugins
+### Diskover Plugins
 
 This section covers the basics on how to create your own plugin. For example, you can add extra metadata to an index during crawl time by adding a plugin to the Diskover crawler. Some other examples are database lookups to apply extra tags, content indexing and if keyword found tag file, copy or backup file if matches certain criteria, etc. This is all done during crawl time.
 
@@ -28,7 +28,7 @@ Plugins are stored in the `plugins/` folder in the root directory of Diskover. T
 python3 diskover.py -l
 ```
 
-### Diskover-web plugins - File Actions
+### Diskover-web Plugins - File Actions
 
 This section covers the basics on how to create your own web plugins, known as File Actions. There are several examples in the `public/fileactions/` directory in diskover-web. The examples all end with the extension `.sample`. 
 

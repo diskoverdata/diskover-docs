@@ -2,6 +2,8 @@ ___
 ## Develop Your Own Plugins
 ___
 
+### Diskover plugins
+
 This section covers the basics on how to create your own plugin. For example, you can add extra metadata to an index during crawl time by adding a plugin to the Diskover crawler. Some other examples are database lookups to apply extra tags, content indexing and if keyword found tag file, copy or backup file if matches certain criteria, etc. This is all done during crawl time.
 
 Plugins are stored in the `plugins/` folder in the root directory of Diskover. There are a few examples in the plugins folder to get you started. Plugins are run during a crawl.
@@ -25,3 +27,34 @@ Plugins are stored in the `plugins/` folder in the root directory of Diskover. T
 ```
 python3 diskover.py -l
 ```
+
+### Diskover-web plugins - File Actions
+
+This section covers the basics on how to create your own web plugins, known as File Actions. There are several examples in the `public/fileactions/` directory in diskover-web. The examples all end with the extension `.sample`. 
+
+You will need some basic familiarity with PHP to create a File Action. A File Action can also call system processes, as shown in some of the examples to run local and remote scripts/commands.
+
+After you have created a new File Action with an extension `.php`, you will need to add the File Action to the web config file in `src/diskover/Constants.php`. Edit the config file and look for the section titled File Actions. You will need to add the file action to the `const FILE_ACTIONS` array. There are some examples in the config file and in the `Constants.php.sample` default config file.
+
+Here is an example of adding a File Action:
+
+```
+const FILE_ACTIONS = [
+    'find file sequences' => [
+        'webpage' => 'filesequence.php',
+        'allowed_users' => [Constants::ADMIN_USER, Constants::USER],
+        'allowed_ldap_groups' => ['diskover-admins', 'diskover-powerusers', 'diskover-users'],
+        'menu_icon_class' => 'far fa-images'
+    ]
+];
+```
+
+🔴 &nbsp;Each file action is stored as an associative array with the key being the file action name
+
+🔴 &nbsp;webpage - the filename of the File Action
+
+🔴 &nbsp;allowed_users - list of allowed local and/or AD/LDAP user names that can run the File Action
+
+🔴 &nbsp;allowed_ldap_groups - list of allowed AD/LDAP group names that can run the File Action
+
+🔴 &nbsp;menu_icon_class - Font Awesome css class name for icon https://fontawesome.com/

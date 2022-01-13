@@ -5,7 +5,7 @@ For more detailed Elasticsearch guidelines refer to AWS sizing guidelines:
 
 [https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sizing-domains.html](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sizing-domains.html)
 
-Information on Resilience in Small Clusters:
+Information on resilience in small clusters:
 
 [https://www.elastic.co/guide/en/elasticsearch/reference/current/high-availability-cluster-small-clusters.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/high-availability-cluster-small-clusters.html)
 

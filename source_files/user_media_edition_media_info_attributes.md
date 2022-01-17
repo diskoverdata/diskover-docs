@@ -89,22 +89,22 @@ Field name: **media_info.bitrate**
 
 ___
 ### Search on Media Info Fields with Operators
-Operators (**and, or, not**) are explained in the [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#manual-search-syntax), but here are a few query examples of using media info fields with operators:
+Operators **and, or, not** are explained in the [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#operators), but here are a few query examples using media info fields with operators:
 
 >`media_info.resolution:1920x1080 AND media_info.codeclong:*quicktime*`
 >
 >_Would find all files with resolution 1920x1080 with QuickTime in codeclong._
-
+ 
 
 >`*jurassic* NOT media_info.resolution:*1080*`
 >
 >_Woud find all files containing "jurassic" in the file name and/or path, but with any other resolution beside 1080 being part of that field._
-
+ 
 
 >`media_info.resolution:*1080* AND mov NOT mp4`
 >
 >_Would find all files with 1080 being part of the resolution and with file extension .mov, but would exclude file extension .mp4 from the results._
-
+ 
 
 >`media_info.pixfmt:*444* OR media_info.pixfmt:*422*`
 >

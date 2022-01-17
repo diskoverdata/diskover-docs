@@ -41,6 +41,8 @@ When you are not finding a file/directory in the indexed volumes, you can access
 
 You can do an advanced search of media and playback right from Diskover.
 
+>🔆 &nbsp;Make sure you are logged in your Telestream account before trying to use this plugin.
+
 The easiest way is to click the gear icon by the file you want to preview with GLIM > select **open with Glim**
 
 ![Image: Telestream GLIM Preview File Selection](images/image_file_action_glim_gear_icon_selection.png)
@@ -53,3 +55,4 @@ This will launch GLIM where you'll be able to validate/preview the file.
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
+Instructions coming soon.

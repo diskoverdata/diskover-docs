@@ -43,7 +43,7 @@ You can do an advanced search of media and playback right from Diskover.
 
 The easiest way is to click the gear icon by the file you want to preview with GLIM > select **open with Glim**
 
-<img src="images/image_file_action_glim_gear_icon_selection.png" width="400">
+<img src="images/image_file_action_glim_gear_icon_selection.png" width="500">
 
 ![Image: Telestream GLIM Preview File Selection](images/image_file_action_glim_gear_icon_selection.png)
 

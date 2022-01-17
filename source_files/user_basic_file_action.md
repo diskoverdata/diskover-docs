@@ -15,9 +15,9 @@ C) Click **File Action** once you've A) selected items.
 
 D) **list dir** > Gives you a live view into the director(ies) pre-indexing, see details below.
 
-E) **open in Glim** To preview media using Telestream GLIM, see details below.
+E) **open in Glim** > To preview media using Telestream GLIM, see details below.
 
-F) **find file sequences** To find all files in a sequence, see details below.
+F) **find file sequences** > To find all files in a sequence, see details below.
 
 #### Live View Into Directory(ies) Pre-Indexing > list dir
 

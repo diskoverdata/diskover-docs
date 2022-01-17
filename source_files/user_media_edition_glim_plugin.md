@@ -4,7 +4,7 @@ ___
 
 You can do an advanced search of media and playback right from Diskover. 
 
->🔆 &nbsp;Make sure you are logged in your Telestream account before trying to use this plugin.
+>🔆 &nbsp;Make sure you are logged in your Telestream account before trying to use this feature.
 
 The easiest way is to click the gear icon by the file you want to preview with GLIM > select **open with Glim**
 

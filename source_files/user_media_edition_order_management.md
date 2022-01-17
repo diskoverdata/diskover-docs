@@ -4,7 +4,7 @@ ___
 This chapter describes the features that are currently released enhancing file-based production workflows. Please stay tuned as many more features are in development and on the roadmap.
 
 ___
-### MediaPulse Asset Creation
+### Xytech MediaPulse Asset Creation
 
 Post facilities often have customers’ assets that have been archived and lack findability, visibility, searchability, and therefore the opaque nature of these assets make them difficult to reuse or repurpose. Companies, with years of such archived assets, have often stored these on tape media or removable hard drives which are often stored in a physical vault.
 
@@ -25,3 +25,8 @@ Here are the same values displayed within Diskover:
 ![Image: Asset Information in Diskover at the Directory Level](images/image_aja_edition_mediapulse_asset_creation_in_diskover_ui_directory_level.png)
 
 ![Image: Asset Information in Diskover at the File Level](images/image_aja_edition_mediapulse_asset_creation_in_diskover_ui_file_level.png)
+
+___
+### Xytech MediaPulse Order Management
+
+In development.

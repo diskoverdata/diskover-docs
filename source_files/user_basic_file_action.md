@@ -1,6 +1,11 @@
-#### File Action - Live View Into Directory(ies) Pre-Indexing
+<p id="file_action"></p>
+
+___
+### File Action
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
+#### Live View Into Directory(ies) Pre-Indexing > list dir
 
 When you are not finding a file/directory in the indexed volumes, you can access the live directory and see if the files you are waiting to be onboarded will be available during the next indexing, as well as preemptively copy the links for a work order.
 

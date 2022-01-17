@@ -26,9 +26,7 @@ F) **find file sequences** To find all files in a sequence, see details below.
 When you are not finding a file/directory in the indexed volumes, you can access the live directory and see if the files you are waiting to be onboarded will be available during the next indexing, as well as preemptively copy the links for a work order.
 
 - Select one or multiple directories in the results pane.
-
 - Click the **File Action** icon.
-
 - Select **list dir**.
 
 ![Image: Directory Live View](images/image_indices_file_action_live_view.png)
@@ -41,6 +39,15 @@ When you are not finding a file/directory in the indexed volumes, you can access
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
+You can do an advanced search of media and playback right from Diskover.
+
+The easiest way is to click the gear icon by the file you want to preview with GLIM > select **open with Glim**
+
+![Image: Telestream GLIM Preview File Selection](images/image_file_action_glim_gear_icon_selection.png)
+
+This will launch GLIM where you'll be able to validate/preview the file.
+
+![Image: Telestream GLIM Preview](images/image_file_action_glim_preview.png)
 
 #### Find All Files in a Sequence > find file sequences
 

@@ -3,7 +3,7 @@ ___
 
 The Windows Owner plugin adds the Windows file owner of each file and directory to the Diskover index at time of indexing. It replaces all docs showing username 0 with the Windows file/directory owner name.
 
-Requirements:
+🔴 &nbsp;Requirements:
 * This plugin works in Windows only
 * pywin32 python module, install with pip [https://pypi.org/project/pywin32/](https://pypi.org/project/pywin32/)
 

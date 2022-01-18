@@ -10,4 +10,31 @@ File Actions are located in the `public/fileactions` directory.
 
 File Actions are written in PHP and have the extension `.php`. Diskover-web includes a few example file actions with the extension `.php.sample`. The extension will need to be renamed to `.php` in order to use them.
 
-To learn more about using and configuring web plugins, see File Actions in the [dev guide](https://docs.diskoverdata.com/diskover_dev_guide/#diskover-web-plugins-file-actions).
+After you have created a new File Action with an extension `.php`, you will need to add the File Action to the web config file in `src/diskover/Constants.php`. Edit the config file and look for the section titled File Actions. You will need to add the file action to the `const FILE_ACTIONS` array. There are some examples in the config file and in the `Constants.php.sample` default config file.
+
+Here is an example of adding a File Action:
+
+```
+const FILE_ACTIONS = [
+    'find file sequences' => [
+        'webpage' => 'filesequence.php',
+        'allowed_users' => [Constants::ADMIN_USER, Constants::USER],
+        'allowed_ldap_groups' => ['diskover-admins', 'diskover-powerusers', 'diskover-users'],
+        'menu_icon_class' => 'far fa-images'
+    ]
+];
+```
+
+🔴 &nbsp;Each File Action is stored as an associative array with the key being the file action name:
+
+- **webpage** > the filename of the File Action
+
+- **allowed_users** > list of allowed local and/or AD/LDAP user names that can run the File Action
+
+- **allowed_ldap_groups** > list of allowed AD/LDAP group names that can run the File Action
+
+- **menu_icon_class** > Font Awesome css class name for icon [https://fontawesome.com/](https://fontawesome.com/)
+
+#### File Action Logging
+
+All file actions log in the `public/fileactions/logs` directory. If you do not have that directory, create the logs directory and chown the directory to be owned by nginx so nginx can write log files into the directory.

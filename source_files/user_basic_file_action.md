@@ -11,7 +11,7 @@ This feature needs to be enabled by your System Administrator.
 
 A) You need to select files and/or directories before using C) **File Action** button.
 
-B) If you want to apply **File Action** to a single item, you can use the gear icon to do so.
+B) If you want to apply **File Action** to a single item, you can use the inline gear icon to do so.
 
 C) Click **File Action** once you've A) selected items.
 

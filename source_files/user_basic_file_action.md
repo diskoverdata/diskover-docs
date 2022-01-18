@@ -17,7 +17,7 @@ C) Click **File Action** once you've A) selected items.
 
 D) **list dir** > Gives you a live view into the director(ies) pre-indexing, see details below.
 
-E) **open in Glim** > To preview media using Telestream GLIM, see details below.
+E) **open in Glim** > To preview media using Telestream GLIM - you need to have a GLIM account for this feature and be logged in, see details below.
 
 F) **find file sequences** > To find all files in a sequence, see details below.
 
@@ -41,11 +41,11 @@ When you are not finding a file/directory in the indexed volumes, you can access
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
-You can do an advanced search of media and playback right from Diskover.
+You can do an advanced search/view of a media file and playback right from Diskover.
 
->🔆 &nbsp;Make sure you are logged in your Telestream account before trying to use this plugin.
+>🔆 &nbsp;You need to have a Telestream GLIM account for this feature and be logged in before launching this File Action.
 
-The easiest way is to click the gear icon by the file you want to preview with GLIM > select **open with Glim**
+The easiest way to launch is to click the gear icon by the file you want to preview with GLIM > select **open with Glim**
 
 ![Image: Telestream GLIM Preview File Selection](images/image_file_action_glim_gear_icon_selection.png)
 

@@ -62,13 +62,13 @@ $fileinfo is an associative array of each selected file/directory info which con
 
 ```
 $fileinfo[] = array(
-        'docid' => $queryResponse['hits']['hits'][0]['_id'],
-        'index' => $queryResponse['hits']['hits'][0]['_index'],
-        'index_nocluster' => $mnclient->getIndexNoCluster($docindices_arr[$key]),
-        'fullpath' => $queryResponse['hits']['hits'][0]['_source']['parent_path'] . '/' . $queryResponse['hits']['hits'][0]['_source']['name'],
-        'source' => $queryResponse['hits']['hits'][0]['_source'],
-        'type' => $queryResponse['hits']['hits'][0]['_source']['type']
-    );
+    'docid' => $queryResponse['hits']['hits'][0]['_id'],
+    'index' => $queryResponse['hits']['hits'][0]['_index'],
+    'index_nocluster' => $mnclient->getIndexNoCluster($docindices_arr[$key]),
+    'fullpath' => $queryResponse['hits']['hits'][0]['_source']['parent_path'] . '/' . $queryResponse['hits']['hits'][0]['_source']['name'],
+    'source' => $queryResponse['hits']['hits'][0]['_source'],
+    'type' => $queryResponse['hits']['hits'][0]['_source']['type']
+);
 ```
 
 So for example, to get the fullpath of the file, you would use `$file['fullpath']`, or to get the index name `$file['index']`, or to get the type (file or directory) `$file['type']`.

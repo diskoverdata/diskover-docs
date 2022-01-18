@@ -1,7 +1,7 @@
 ___
 ### File Sequence File Action
 
-![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
 The file sequence web plugin file action is designed to list out any file sequences in a directory or from a single file in a sequence. File sequences are printed out with %05d to show the 0 padding and number of digits in the sequence. Each sequence, whole or broken, are put into a [ ] list after the full path.
 

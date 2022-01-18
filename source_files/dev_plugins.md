@@ -73,7 +73,7 @@ $fileinfo[] = array(
 
 So for example, to get the fullpath of the file, you would use `$file['fullpath']`, or to get the index name `$file['index']`, or to get the type (file or directory) `$file['type']`.
 
-If you need to translate paths, you can do so with the built in `translate_path` function which accepts two args.
+If you need to translate paths, you can do so with the built in `translate_path` (includes/fileactions.php) function which accepts two args.
 
 ```
 $fullpath = $file['fullpath'];

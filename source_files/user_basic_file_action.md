@@ -3,6 +3,8 @@
 ___
 ### File Action
 
+The options within File Action pushes some boundaries around read-only files, allowing you to view and validate files in a way to facilitate your work.
+
 This feature needs to be enabled by your System Administrator.
 
 ![Image: Select File Action](images/image_file_action_options.png)
@@ -55,4 +57,22 @@ This will launch GLIM where you'll be able to validate/preview the file.
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
-Instructions coming soon.
+Diskover allows you to easily find all files in a sequence via File Action. You can launch it from either:
+
+A file > you do not need to select the line if you launch directly from the A) inline icon, it's been selected in this example to show the option of launching it from the B) File Action button:
+
+![Image: Launching Find File Sequences from a File](images/image_file_action_launch_from_file.png)
+
+Or from a directory > the same logic as launching form a file applies here as well:
+
+![Image: Launching Find File Sequences from a Directory](images/image_file_action_launch_from_directory.png)
+
+The results will open in a new page:
+
+A) Will confirm if a sequence was found.
+
+B) Give you the sequence range - if there was a break in the sequence, there would be [multiple brackets].
+
+C) In this example, the value means that the sequence has 0 padding and is 8 digits long, **DPX** being included in the digits > DPX86400
+
+![Image: Find File Sequences Results](images/image_file_action_results.png)

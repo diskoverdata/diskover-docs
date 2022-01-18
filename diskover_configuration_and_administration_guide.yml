@@ -28,6 +28,7 @@ ordered_documents:
   - task_management.md
   - plugins_intro.md
   - plugins_unix_permissions.md
+  - plugins_windows_owner.md
   - plugins_dupes_finder.md
   - plugins_autoclean.md
   - plugins_tag_copier.md

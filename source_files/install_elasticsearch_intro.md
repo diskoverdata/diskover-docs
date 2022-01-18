@@ -5,3 +5,4 @@ ___
 Diskover requires an Elasticsearch 7.x environment.
 >- One node is sufficient for initial testing.
 >- Production deployments should be configured with a minimum of 3 nodes to achieve redundancy in the Elasticsearch configuration.
+>- You can find the latest 7.x.x version on the [Elasticsearch download page](https://www.elastic.co/downloads/elasticsearch).

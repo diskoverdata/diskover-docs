@@ -23,7 +23,7 @@ cd <diskover-web_dir>/public && for f in *.txt; do cp $f $f.bak; done
 cd <diskover-web_dir>/public/tasks && for f in *.json; do cp $f $f.bak; done
 ```
 
-🔴 &nbsp;Stop **diskovered** if running:
+🔴 &nbsp;Stop **diskoverd** (Task worker daemon) if running:
 ```
 sudo systemctl stop diskoverd
 ps -ef | grep diskoverd
@@ -38,7 +38,15 @@ chmod +x update-diskover.sh
 🔴 &nbsp;Check your config files are not missing any new settings:
 ```
 diff <diskover_dir>/configs_sample/diskover/config.yaml ~/.config/diskover/config.yaml
+diff <diskover_dir>/configs_sample/diskoverd/config.yaml ~/.config/diskoverd/config.yaml
+...
 cd <diskover-web_dir>/src/diskover && diff Constants.php.sample Constants.php
+```
+
+🔴 &nbsp;Start **diskoverd** (Task worker daemon) if running previously:
+```
+sudo systemctl start diskoverd
+sudo systemctl status diskoverd
 ```
 
 🔴 &nbsp;Restart NGINX:
@@ -59,6 +67,12 @@ tail -f /var/log/nginx/error.log
 #### Upgrading from tar.gz File
 
 The following explains how to update both Diskover and Diskover-Web assuming they are installed in the default locations.
+
+🔴 &nbsp;Stop **diskoverd** (Task worker daemon) if running:
+```
+sudo systemctl stop diskoverd
+ps -ef | grep diskoverd
+```
 
 This example assumes the tar file was extracted to  **/tmp/diskover-v2/**
 ```
@@ -81,8 +95,16 @@ chmod 660 /var/www/diskover-web/public/tasks/*.json
 
 🔴 &nbsp;Check your config files are not missing any new settings:
 ```
-diff <diskover_dir>/configs/diskover/config.yaml ~/.config/diskover/config.yaml
+diff <diskover_dir>/configs_sample/diskover/config.yaml ~/.config/diskover/config.yaml
+diff <diskover_dir>/configs_sample/diskoverd/config.yaml ~/.config/diskoverd/config.yaml
+...
 cd <diskover-web_dir>/src/diskover && diff Constants.php.sample Constants.php
+```
+
+🔴 &nbsp;Start **diskoverd** (Task worker daemon) if running previously:
+```
+sudo systemctl start diskoverd
+sudo systemctl status diskoverd
 ```
 
 🔴 &nbsp;Restart NGINX:

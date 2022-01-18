@@ -69,10 +69,10 @@ Diskover allows you to easily find all files in a sequence via File Action.
 
 The results will open in a new page:
 
+![Image: Find File Sequences Results](images/image_file_action_results.png)
+
 A) Will confirm if a sequence was found.
 
 B) Give you the sequence range - if there was a break in the sequence, there would be [multiple brackets].
 
 C) In this example, the value means that the sequence has 0 padding and is 8 digits long, **DPX** being included in the digits > DPX86400
-
-![Image: Find File Sequences Results](images/image_file_action_results.png)

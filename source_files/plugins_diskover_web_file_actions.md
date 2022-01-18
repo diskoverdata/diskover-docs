@@ -35,6 +35,6 @@ const FILE_ACTIONS = [
 
 - **menu_icon_class** > Font Awesome css class name for icon [https://fontawesome.com/](https://fontawesome.com/)
 
-#### File Action Logging
+### File Action Logging
 
 All file actions log in the `public/fileactions/logs` directory. If you do not have that directory, create the logs directory and chown the directory to be owned by nginx so nginx can write log files into the directory.

@@ -57,13 +57,13 @@ This will launch GLIM where you'll be able to validate/preview the file.
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
-Diskover allows you to easily find all files in a sequence via File Action. You can launch it from either:
+Diskover allows you to easily find all files in a sequence via File Action.
 
-A file > you do not need to select the line if you launch directly from the A) inline icon, it's been selected in this example to show the option of launching it from the B) File Action button:
+**Launch from a file** > you do not need to select the line if you launch directly from the A) inline icon, it's been selected in this example to show the option of launching it from the B) File Action button:
 
 ![Image: Launching Find File Sequences from a File](images/image_file_action_launch_from_file.png)
 
-Or from a directory > the same logic as launching form a file applies here as well:
+**Launch from a directory** > the same logic as launching form a file applies here as well:
 
 ![Image: Launching Find File Sequences from a Directory](images/image_file_action_launch_from_directory.png)
 

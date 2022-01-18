@@ -1,9 +1,6 @@
 ___
 ### Install Elasticsearch for Linux Ubuntu
 
-___
-### Install Elasticsearch for Linux CentOS and RHEL
-
 Install Ubuntu 20.x
 
 #### Disable SELinux (Optional)

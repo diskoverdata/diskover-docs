@@ -1,7 +1,7 @@
 ___
 ### Unix Permissions Plugin
 
-The Unix permissions plugin adds the Unix permissions of each file and directory to the Diskover index at time of indexing. The field is populated with **ugo+rwx**  if a file or directory is found with fully open permissions.
+The Unix permissions plugin adds the Unix permissions of each file and directory to the Diskover index at time of indexing. Two tags are added, **unixperms-plugin** and **ugo+rwx**, if a file or directory is found with fully open permissions (777 or 666).
 
 ![Image: Unix Permissions Plugin](images/image_plugins_unix_permission_diskover_ui_column_in_results_pane.png)
 

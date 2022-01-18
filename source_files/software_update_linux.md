@@ -23,9 +23,10 @@ cd <diskover-web_dir>/public && for f in *.txt; do cp $f $f.bak; done
 cd <diskover-web_dir>/public/tasks && for f in *.json; do cp $f $f.bak; done
 ```
 
-🔴 &nbsp;Stop **diskoverd** (Task worker daemon) if running:
+🔴 &nbsp;Stop **diskoverd** (Task worker daemon) if running (warning: this could kill any running tasks):
 ```
 sudo systemctl stop diskoverd
+sudo systemctl status diskoverd
 ps -ef | grep diskoverd
 ```
 
@@ -68,7 +69,7 @@ tail -f /var/log/nginx/error.log
 
 The following explains how to update both Diskover and Diskover-Web assuming they are installed in the default locations.
 
-🔴 &nbsp;Stop **diskoverd** (Task worker daemon) if running:
+🔴 &nbsp;Stop **diskoverd** (Task worker daemon) if running (warning: this could kill any running tasks):
 ```
 sudo systemctl stop diskoverd
 ps -ef | grep diskoverd

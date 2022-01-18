@@ -67,7 +67,7 @@ Diskover allows you to easily find all files in a sequence via File Action.
 
 ![Image: Launching Find File Sequences from a Directory](images/image_file_action_launch_from_directory.png)
 
-The results will open in a new page:
+The results will open in a new page and showing the complete path where the sequence is located, as seen at the bottom here:
 
 ![Image: Find File Sequences Results](images/image_file_action_results.png)
 

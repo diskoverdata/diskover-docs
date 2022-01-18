@@ -34,31 +34,53 @@ This section covers the basics on how to create your own web plugins, known as F
 
 You will need some basic familiarity with PHP to create a File Action. A File Action can also call system processes, as shown in some of the examples to run local and remote scripts/commands.
 
-After you have created a new File Action with an extension `.php`, you will need to add the File Action to the web config file in `src/diskover/Constants.php`. Edit the config file and look for the section titled File Actions. You will need to add the file action to the `const FILE_ACTIONS` array. There are some examples in the config file and in the `Constants.php.sample` default config file.
-
-Here is an example of adding a File Action:
+At the top of every file action php file you will need:
 
 ```
-const FILE_ACTIONS = [
-    'find file sequences' => [
-        'webpage' => 'filesequence.php',
-        'allowed_users' => [Constants::ADMIN_USER, Constants::USER],
-        'allowed_ldap_groups' => ['diskover-admins', 'diskover-powerusers', 'diskover-users'],
-        'menu_icon_class' => 'far fa-images'
-    ]
-];
+// override debug output in fileactions include file
+$fileactions_debug = FALSE;
+
+include 'includes/fileactions.php';
+include 'includes/fileactions_header.php';
 ```
 
-🔴 &nbsp;Each File Action is stored as an associative array with the key being the file action name:
+and at the bottom:
 
-- **webpage** > the filename of the File Action
+```
+include 'includes/fileactions_footer.php';
+```
 
-- **allowed_users** > list of allowed local and/or AD/LDAP user names that can run the File Action
+In the example file actions you will see a foreach loop that itterates over the selected files/directories:
 
-- **allowed_ldap_groups** > list of allowed AD/LDAP group names that can run the File Action
+```
+foreach ($fileinfo as $file) {
+    ...
+}
+```
 
-- **menu_icon_class** > Font Awesome css class name for icon [https://fontawesome.com/](https://fontawesome.com/)
+$fileinfo is an associative array of each selected file/directory info which contains the ES index doc info (includes/fileactions.php):
 
-#### File Action Logging
+```
+$fileinfo[] = array(
+        'docid' => $queryResponse['hits']['hits'][0]['_id'],
+        'index' => $queryResponse['hits']['hits'][0]['_index'],
+        'index_nocluster' => $mnclient->getIndexNoCluster($docindices_arr[$key]),
+        'fullpath' => $queryResponse['hits']['hits'][0]['_source']['parent_path'] . '/' . $queryResponse['hits']['hits'][0]['_source']['name'],
+        'source' => $queryResponse['hits']['hits'][0]['_source'],
+        'type' => $queryResponse['hits']['hits'][0]['_source']['type']
+    );
+```
 
-All file actions log in the `public/fileactions/logs` directory. If you do not have that directory, create the logs directory and chown the directory to be owned by nginx so nginx can write log files into the directory.
+So for example, to get the fullpath of the file, you would use `$file['fullpath']`, or to get the index name `$file['index']`, or to get the type (file or directory) `$file['type']`.
+
+If you need to translate paths, you can do so with the built in `translate_path` function which accepts two args.
+
+```
+$fullpath = $file['fullpath'];
+$path_translations = array(
+    '/^\//' => '/mnt/'
+);
+$fullpath = translate_path($fullpath, $path_translations);
+```
+
+To learn more about using and configuring web plugins, see File Actions in the [config and admin guide](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#diskover-web-plugins-file-actions).

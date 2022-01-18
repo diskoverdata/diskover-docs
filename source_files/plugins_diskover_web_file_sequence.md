@@ -20,9 +20,14 @@ vi /var/www/diskover-web/src/diskover/filesequence_settings.py
 ```
 - Set Elasticsearch settings
 
-🔴 &nbsp;Install clique python module with pip (required by File Sequence file action)
+🔴 &nbsp;Install [clique python module](https://pypi.org/project/clique/) with pip (required by File Sequence file action)
 ```
 pip3 install clique
+
+```
+🔴 &nbsp;If you are running diskover-web on a different host than diskover, you will need to install the elasticsearch python module (required by File Sequence file action). Check the version to install on your diskover host in /opt/diskover/requirements.txt.
+```
+pip3 install elasticsearch==7.x.x
 ```
 
 🔴 &nbsp;[Add file sequence](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#diskover-web-plugins-file-actions) to diskover-web config file.

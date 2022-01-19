@@ -13,7 +13,7 @@ This section will talk about manual tagging, but Diskover can also be configured
 
 <p id="tags_options"></p>
 
-#### Tags Options
+#### Tags Overview
 
 ![Image: Manual Tag Selection](images/image_tags_manual_application.png)
 
@@ -79,7 +79,8 @@ This option is used to apply tags to multiple sub-directories and/or files in ju
 ##### Removing Recursive and Non-Recursive Tags
 
 1. In the results pane, select the directory for which you want to remove the tags recursively or non-recursively - remove the tag from this directory first by following the above instructions.
-2. Click the **Tag** drop-down list and make a selection - [get more info on recursive and non-recursive](#apply_tags_to) - this single action will remove the tag(s) to all the sub-directories and/or files so they have the same tags as the main directory.
+2. Click the **Tag** drop-down list.
+3. Click on **Apply tags to** and make a selection - [get more info on recursive and non-recursive](#apply_tags_to) - this single action will remove the tag(s) to all the sub-directories and/or files so they have the same tags as the main directory.
 
 #### Search on Tags
 

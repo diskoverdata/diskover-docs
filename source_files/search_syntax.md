@@ -86,7 +86,7 @@ When typing a single word in the search bar, Diskover will look for that **isola
 
 - If your file name is **foryoureyesonly.mov** and you launch a search with the word **eyes**, Diskover would NOT find that file because the whole string of characters looks like a single word.
 
-- COMING SOON! If your file name is **ForYourEyesOnly.mov** and you launch a search with the word eyes, Diskover will find that file because the first letters of each words being capitalized are recognized as separate words (aka CamelCase).
+- If your file name is **ForYourEyesOnly.mov** and you launch a search with the word eyes, Diskover will find that file because the first letters of each words being capitalized are recognized as separate words (aka CamelCase).
 
 <p id="wildcards"></p>
 
@@ -148,7 +148,7 @@ Both **?** and **\*** wild cards can be used in the same query, for example sear
 ___
 ### Searches Using Field Names
 
-Searching with field names can be effective if you search on a specific and/or hidden field and are looking for precise results.
+Searching with field names can be effective if you search on a specific and/or hidden field and are looking for precise results. You can compare searching on field names as searching on a specific column in a massive Excel spreadsheet.
 
 The query needs to be typed in this exact format **fieldname:value**
 

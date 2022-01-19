@@ -178,6 +178,8 @@ This list can also be found in the help page of the user interface:
 - **size_du** - disk usage size, aka allocated size, in bytes > see [Queries with File Size](#search_size) for examples
 - **tags** - any tag(s) associated with a file or directory > `tags:delete`
 - **type** - file or directory > `type:file` or `type:directory`
+- **s3_etag** - default field that gets added when performing an S3 scan (AWS cloud storage) > entity tag
+- **s3_storageclass** - default field that gets added when performing an S3 scan (AWS cloud storage) > storage class, ex: Standard or Glacier
 
 #### Examples of Searching with Field Names
 

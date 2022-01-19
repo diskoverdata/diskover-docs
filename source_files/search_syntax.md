@@ -6,7 +6,7 @@ ___
 
 Until you get familiar with Diskover, we strongly recommend using the built-in search tools and [filters](#filters) available in the interface when trying to achieve complex queries. Depending on what you are looking for, [quick searches](#quick_search) can also be an easy way to search.
 
-The examples used in this chapter are media and entertainment related, but the logic can be applied to any type of industry.
+The examples used in this chapter are media and entertainment related, but the same logic can be applied to any type of industry.
 
 The list of possible search queries and syntax is exhaustive therefore only the basics of manual searches will be explained in this chapter. For more search queries information, please visit  **gear icon** > **Help** at the top right corner of the user interface:
 
@@ -15,7 +15,7 @@ The list of possible search queries and syntax is exhaustive therefore only the 
 ___
 ### Syntax Based on Elasticsearch Rules
 
-As Diskover uses Elasticsearch in the backend, all search syntax within Diskover are based on Elasticsearch rules. We will discuss many of these rules in this chapter, but for more details and more examples, please visit: 
+As Diskover uses Elasticsearch in the backend, all search syntax within Diskover are based on Elasticsearch's rules and algorithms. We will discuss many of these rules in this chapter, but for more details and more examples, please visit: 
 
 [https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html)
 
@@ -24,7 +24,7 @@ As Diskover uses Elasticsearch in the backend, all search syntax within Diskover
 ___
 ### Search Problems Resulting from Naming Conventions
 
-All organizations have issues with naming convention. Your search results might be limited if you try to be too restrictive when searching. For example, files associated with the movie **For Your Eyes Only** might be named:
+A majority of organizations have issues with naming convention. Your search results might be limited if you try to be too restrictive when searching. For example, files associated with the movie **For Your Eyes Only** might be named:
 
 - ForYourEyesOnly
 - 4YourEyesOnly
@@ -33,10 +33,10 @@ All organizations have issues with naming convention. Your search results might 
 - for your eyes
 - Not mentioning all the possible misspellings. 
 
-Other examples:
+Other examples of naming convention issues:
 
-- Season: s01, s1, s_01, season1
-- Episodes: ep5, e5, e05, ep_05, ep_5, 05
+- Show season: s01, s1, s_01, season1
+- Episodes: ep5, eps5, e5, e05, ep_05, ep_5, 05
 
 Unless you know that a strict naming convention was followed, trying to launch a query with very specific criteria may limit your results and you might think that some files are missing.
 
@@ -61,54 +61,46 @@ ___
 Search queries are case insensitive, even if upper or lowercases are used in the file name or path. Nonetheless, there are the few exceptions where queries are case sensitive:
 - When [searching on time](#search_time).
 - When searching on [field names](#search_field_names).
-- When searching on [media info fields](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/)
-
-#### Grouping Criteria
-
-At times you will need to group criteria, so Diskover can make sense of the queries - think of it a little bit as grouping criteria when building formulas in Excel.
-
-- When writing complex queries, you will need to group some elements with parentheses `( )` as further described in [The Need of Grouping for Complex Queries](#complex_queries) section.
-
-- The square brackets `[ ]` or curly brackets `{ }` need be used to contain ranges for **time**, **dates**, **numeric** or **string fields**. They can even be mixed `[ }`. You can find examples in the [Searching on time](#search_time) section. How to apply them:
-	- **Inclusive** ranges need to be specified with square brackets, ex: **[min TO max]**, 
-
-	- **Exclusive** ranges need to be specified with curly brackets, ex: **{min TO max}**
 
 <p id="search_single_word"></p>
 
 #### The Logic Behind Searching on a Single Word
 
-When typing a single word in the search bar, Diskover will look for that **isolated word**. In order to "split" and find isolated words, Diskover/Elasticsearch uses **tokenizers** like **space, underscore, hyphen, forward slash, period, other punctuation, as well as upper cases** (aka CamelCase) make sense of how a file name is construed. For example:
+When typing a single word in the search bar, Diskover will look for that **isolated word**. In order to "split" and find isolated words, Diskover/Elasticsearch uses **tokenizers** like **space, underscore, hyphen, forward slash, period, other punctuation, as well as upper cases** (aka CamelCase) to make sense of how a file name is construed. 
 
-- If your file name is **for_your_eyes_only.mov** and you launch a search with the word **eyes**, Diskover will find that file because that word is isolated between underscores.
+For example, if you launch a query with the word **eyes** and the following are your file names:
 
-- If your file name is **ForYourEyesOnly.mov** and you launch a search with the word **eyes**, Diskover will find that file because the first letters of each words being capitalized are recognized as separate words (aka CamelCase).
+- **for_your_eyes_only.mov** > Diskover will find that file because that word is isolated between underscores.
 
-- If your file name is **foryoureyesonly.mov** and you launch a search with the word **eyes**, Diskover would NOT find that file because the whole string of characters looks like a single word.
+- **ForYourEyesOnly.mov** > Diskover will find that file because the first letters of each words being capitalized are recognized as separate words (aka CamelCase).
 
-- If your file name is **ForYourEyesOnly.mov** and you launch a search with the word eyes, Diskover will find that file because the first letters of each words being capitalized are recognized as separate words (aka CamelCase).
+- **foryoureyesonly.mov** > Diskover would NOT find that file because the whole string of characters looks like a single word.
+
+- **foryoureyes.mov** > Diskover would NOT find that file because the word **eyes** is only isolated at the end.
 
 <p id="wildcards"></p>
 
 ___
-### Wild Cards
+### HELPER - Wild Cards
 
-**? is used to replace a single character**
+Wild cards are used to expand search results mostly due to [naming convention](#naming_convention) issues, but also to go around possible misspellings, although the [fuzziness](#fuzziness) wild card, covered later in this chapter, might be a better choice for misspellings.
+
+>🔆 &nbsp;A search might be a tad slower when using wild cards, especially when it is placed in front of your query, because it is searching a much larger amount of data.
+
+#### ? Wild Card
+
+**?** > is used to replace a single character. For example:
 
 - **eye?** > would find **eye** and **eyes**
 - **678??4** > would find **678344**
 
-**\* is used to replace zero, one or many characters** (the most popular and used wild card)
+#### * Wild Card
 
-Wild cards are used to expand search results mostly due to [naming convention](#naming_convention), but also to go around possible misspellings, although the [fuzziness](#fuzziness) wild card, covered later in this chapter, might be a better choice for misspellings.
+**\*** > is used to replace zero, one or many characters, is the most popular and used wild card.
 
->🔆 &nbsp;A search might be a tad slower when using wild cards, especially when it is placed in front of your query, because it is searching a much larger amount of data.
-
-<p></p>
-	
 >🔆 &nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > settings > [predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much. Throughout this chapter, we will assume the predictive search has not been selected.
 
-#### Examples with Long Strings of Characters or Numbers
+##### How to use the * with Long Strings of Characters or Numbers
 
 When searching on a single word for example, the results might be limited if you type the word alone. Let's take the example of trying to find the following file **foryoureyesonly.mov**:
 
@@ -124,24 +116,49 @@ The same rule applies with numbers. For example:
 	- Type the all the numbers **20161031** to find that file with that specific date.
 	- Or typing **201610\*** would find that file and all the files that have the year 2016 and the month of October, assuming that all those files were identified the same way with the same date format.
 
-#### Examples with Isolated Words
+##### How to use the * with Isolated Words
+
 If the file name would be **for_your_eyes_only.mov** or **ForYourEyesOnly.mov**:
 
 - Launching a search with only **eyes** would find that file, but again, naming conventions being what they are, it is recommended to use an **\*** to expand your results at first to make sure you are not missing any files named differently.
 
 - Also, if you are not sure if **eyes** is plural or singular in the file name, you could use **eye?** to replace a single character.
 
-#### Examples with Season Number
+##### How to use the * with Season Number
+
 Let's do another example with a season's number for a show. For example, if you want to search for **season 1**, the file name could have different spelling like **S1**, **season 1**, **s01**, **s_1**, etc. 
 
 In order to expand your results to include all possibilities, without expending too much either, a logical search syntax would be **s*1** because the **\*** would catch everything in between the **s** and the **1**. Now, this would also find season 11 for example, but it's better to widen your results at first and then narrow them down once you have an idea of the possible results.
 
-#### Find all Files in a Sequence
+##### How to use the * to Find all Files in a Sequence
 
 To find all files in a sequence, if you type for example **img\*.dpx**, Diskover would find all files with the following similar names: img001.dpx, img002.dpx, etc.
 
-#### Example Using * and ? in the Same Query
+#### Using * and ? in the Same Query
 Both **?** and **\*** wild cards can be used in the same query, for example searching for Johnny Smith: **John\* Sm?th**
+
+<p id="fuzziness"></p>
+
+#### ~ Wild Card aka Fuzziness Wild Card
+
+You can run fuzzy queries with the **tilde ~** operator. 
+
+Fuzziness is mostly used to catch human misspellings, and will return vast results if not used with any other restrictions.
+
+The query uses the  [Damerau-Levenshtein distance](https://en.wikipedia.org/wiki/Damerau-Levenshtein_distance)  to find all terms with a maximum of two changes, where a change is the insertion, deletion or substitution of a single character, or transposition of two adjacent characters.
+
+If used alone, by default the **~** will look for the maximum of 2 changes, but it is best practice to use **~1** in order to limit the changes to 1, which should be sufficient to catch 80% of all human misspellings. 
+
+A few examples of words that would be found with and without limiting the changes to 1:
+
+- **jungle~1** would find: jungle, juggle, jingly, jingle, jingles, etc.
+- **jungle~** would find: jungle, juggle, jingly, jingle, jingles, june, judge, single, bundle, uncle, etc.
+
+>🔆 &nbsp;Do NOT mix fuzziness and wild cards as it is not supported, and only one of the operators would be applied, example of what NOT to do: **jungle\*~1**
+
+Be aware that launching a query with the fuzziness operator can use an enormous amount of memory and perform badly, ending in a "timed out" situation.
+
+
 
 <p id="search_field_names"></p>
 
@@ -243,6 +260,18 @@ ___
 
 When using more than one operator, it is recommended to use parentheses **( )** in order to group some elements and help Diskover make sense of the query. Think of this as the same premise as building formulas in Excel where you need to group criteria in order for Excel to understand what you are trying to accomplish.
 
+#### Grouping Criteria
+
+At times you will need to group criteria, so Diskover can make sense of the queries - think of it a little bit as grouping criteria when building formulas in Excel.
+
+- When writing complex queries, you will need to group some elements with parentheses `( )` as further described in [The Need of Grouping for Complex Queries](#complex_queries) section.
+
+- The square brackets `[ ]` or curly brackets `{ }` need be used to contain ranges for **time**, **dates**, **numeric** or **string fields**. They can even be mixed `[ }`. You can find examples in the [Searching on time](#search_time) section. How to apply them:
+	- **Inclusive** ranges need to be specified with square brackets, ex: **[min TO max]**, 
+
+	- **Exclusive** ranges need to be specified with curly brackets, ex: **{min TO max}**
+
+
 >🔆 &nbsp;You always need to group criteria when using the operator **or**.
 
 A few examples while still using the file name structure **thejunglebook_s01_ep05_en.mov**:
@@ -266,27 +295,7 @@ Another type of example with words only, and let's use **New York City**. If you
 	-  **news** must be excluded
 	-  **quick** and **brown** are optional — their presence increases the relevance
 
-<p id="fuzziness"></p>
 
-___
-### Fuzziness
-
-You can run fuzzy queries with the **tilde ~** operator. 
-
-Fuzziness is mostly used to catch human misspellings, and will return vast results if not used with any other restrictions.
-
-The query uses the  [Damerau-Levenshtein distance](https://en.wikipedia.org/wiki/Damerau-Levenshtein_distance)  to find all terms with a maximum of two changes, where a change is the insertion, deletion or substitution of a single character, or transposition of two adjacent characters.
-
-If used alone, by default the **~** will look for the maximum of 2 changes, but it is best practice to use **~1** in order to limit the changes to 1, which should be sufficient to catch 80% of all human misspellings. 
-
-A few examples of words that would be found with and without limiting the changes to 1:
-
-- **jungle~1** would find: jungle, juggle, jingly, jingle, jingles, etc.
-- **jungle~** would find: jungle, juggle, jingly, jingle, jingles, june, judge, single, bundle, uncle, etc.
-
->🔆 &nbsp;Do NOT mix fuzziness and wild cards as it is not supported, and only one of the operators would be applied, example of what NOT to do: **jungle\*~1**
-
-Be aware that launching a query with the fuzziness operator can use an enormous amount of memory and perform badly, ending in a "timed out" situation.
 
  <p id="search_size"></p>
 

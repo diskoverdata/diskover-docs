@@ -29,6 +29,7 @@ F) **Add new tag**: To quickly add a single new tag - an admin account is requir
 G) **Apply tags to**: Choices of applying tags [non-recursively or recursively](#recursive).
 
 > **Non-recursive**: Will apply tags to the next level of sub-directories and/or files of the selected directory.
+
 > **Recursive**: Will apply tags to the all next levels of sub-directories and/or files of the selected directory.
 
 ![Image: Recursive Options for Applying Tags](images/image_tags_apply_recursive.png)

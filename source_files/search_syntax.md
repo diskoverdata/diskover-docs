@@ -11,7 +11,7 @@ The examples used in this chapter are media and entertainment related, but the s
 The list of possible search queries and syntax is exhaustive therefore only the basics of manual searches will be explained in this chapter.
 
 ___
-### Syntax Based on Elasticsearch Rules
+### Search Syntax Based on Elasticsearch
 
 As Diskover uses Elasticsearch in the backend, all search syntax within Diskover are based on Elasticsearch's rules and algorithms. We will discuss many of these rules in this chapter, but for more details and more examples, please visit: 
 
@@ -150,7 +150,7 @@ Both **?** and **\*** wild cards can be used in the same query, for example sear
 
 >🔆 &nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > settings > [predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much. Throughout this chapter, we will assume the predictive search has not been selected.
 
-#### ~ Wild Card aka Fuzziness Wild Card
+#### ~ Fuzziness Wild Card
 
 **~** > is mostly used to catch human misspellings, and will return vast results if not used with any other restrictions.
 
@@ -279,13 +279,13 @@ ___
 
 Diskover shows file size (size) and allocated size (size_du) in bytes. We recommend using the [filters](#filters), as well as [quick search](#quick_search) when searching on size, but these fields can also be searched manually. Some examples:
 
-- **size:>1048576**  would find all files larger than 1 MB
+- **size:>1048576**  > would find all files larger than 1 MB
 
-- **size:>5242880 AND (type:file OR type:directory)**  would find all files and folders larger than 5 MB
+- **size:>5242880 AND (type:file OR type:directory)**  > would find all files and folders larger than 5 MB
 
-- **size:>=5242880 AND size:<=10485760**  would find all files equal or larger than 5 MB but equal or smaller than 10 MB
+- **size:>=5242880 AND size:<=10485760**  > would find all files equal or larger than 5 MB but equal or smaller than 10 MB
 
-- **extension:mov AND size:>32212254720** would find all files with .mov extension and larger than 30 GB
+- **extension:mov AND size:>32212254720** > would find all files with .mov extension and larger than 30 GB
 
 >🔆 &nbsp;When unsure how to translate size from MB, GB, etc. to bytes, you can use any free *byte converter* available online.
 
@@ -313,14 +313,14 @@ Format to use when searching for date and time.
 #### Examples to Find Recent Files
 A few helpful queries for looking for the **latest indexed files** for example. Variables can easily be adjusted to your needs:
 
-- **ctime:[now-30m TO now] OR mtime:[now-30m TO now]** > files that have been modified or changed within the last 30 minutes
+- **ctime:[now-30m TO now] OR mtime:[now-30m TO now]** > files that have been modified or changed within the last 30 minutes.
 - **ctime:[now-1h TO now] OR mtime:[now-1h TO now]** > files that have been modified or changed in the last hour.
 - **ctime:[now-1d TO now]  OR mtime:[now-1d TO now]** > files that have been modified or changed in the past day.
 
 #### Examples to Find Old Files
 Some helpful queries when looking for old files where you can easily change the variables to adjust the queries to your needs:
 
-- **mtime:[now-5Y TO now-3M]** > files that haven't been modified in over 3 months but less than 5 years
+- **mtime:[now-5Y TO now-3M]** > files that haven't been modified in over 3 months but less than 5 years.
 - **mtime:[\* TO now-1Y] AND atime:[\* TO now-1Y]** > files that haven't been modified or accessed in over 1 year (* in this case is used to represent "any time in the past").
 
 <p id="limiting_searches"></p>

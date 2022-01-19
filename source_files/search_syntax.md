@@ -241,7 +241,11 @@ Here are some examples of queries using operators to narrow your searches.
 ___
 ### The Need of Grouping for Complex Queries
 
-When using more than one operator, it is recommended to use parentheses **( )** in order to group some elements and help Diskover make sense of the query. A few examples while still using the file name structure **thejunglebook_s01_ep05_en.mov**:
+When using more than one operator, it is recommended to use parentheses **( )** in order to group some elements and help Diskover make sense of the query. Think of this as the same premise as building formulas in Excel where you need to group criteria in order for Excel to understand what you are trying to accomplish.
+
+>🔆 &nbsp;You always need to group criteria when using the operator **or**.
+
+A few examples while still using the file name structure **thejunglebook_s01_ep05_en.mov**:
 
 #### Examples with Single Grouping
 

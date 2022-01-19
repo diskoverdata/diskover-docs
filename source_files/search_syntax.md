@@ -93,7 +93,6 @@ When writing complex queries, you will need to group some elements with parenthe
 The square brackets `[ ]` or curly brackets `{ }` need be used to contain ranges for **time**, **dates**, **numeric** or **string fields**. They can even be mixed `[ }`. You can find examples in the [Searching on time](#search_time) section. Below is how/when to apply them:
 
 	- **Inclusive** ranges need to be specified with square brackets, ex: **[min TO max]**, 
-
 	- **Exclusive** ranges need to be specified with curly brackets, ex: **{min TO max}**
 
 <p id="wildcards"></p>
@@ -116,8 +115,6 @@ Wild cards are used to expand search results mostly due to [naming convention](#
 
 **\*** > is used to replace zero, one or many characters, is the most popular and used wild card.
 
->🔆 &nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > settings > [predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much. Throughout this chapter, we will assume the predictive search has not been selected.
-
 ##### How to use the * with Long Strings of Characters or Numbers
 
 When searching on a single word for example, the results might be limited if you type the word alone. Let's take the example of trying to find the following file **foryoureyesonly.mov**:
@@ -134,14 +131,6 @@ The same rule applies with numbers. For example:
 	- Type the all the numbers **20161031** to find that file with that specific date.
 	- Or typing **201610\*** would find that file and all the files that have the year 2016 and the month of October, assuming that all those files were identified the same way with the same date format.
 
-##### How to use the * with Isolated Words
-
-If the file name would be **for_your_eyes_only.mov** or **ForYourEyesOnly.mov**:
-
-- Launching a search with only **eyes** would find that file, but again, naming conventions being what they are, it is recommended to use an **\*** to expand your results at first to make sure you are not missing any files named differently.
-
-- Also, if you are not sure if **eyes** is plural or singular in the file name, you could use **eye?** to replace a single character.
-
 ##### How to use the * with Season or Episode Number
 
 Let's do another example with a season's number for a show. For example, if you want to search for **season 1**, the file name could have different spelling like **S1**, **season 1**, **s01**, **s_1**, etc. 
@@ -154,12 +143,14 @@ In order to expand your results to include all possibilities, without expending 
 
 You can use the **\*** to find all files in a sequence, but depending on which subscription you purchase, you may also have access to an easier way via [File Action](#file_action).
 
-To find all files in a sequence, if you type for example **img\*.dpx**, Diskover would find all files with the following similar names: img001.dpx, img002.dpx, etc.
+To find all files in a sequence using the **\***, if you type for example **img\*.dpx**, Diskover would find all files with the following similar names: img001.dpx, img002.dpx, etc.
 
 ##### Using both * and ? in the Same Query
 Both **?** and **\*** wild cards can be used in the same query, for example searching for Johnny Smith: **John\* Sm?th**
 
 <p id="fuzziness"></p>
+
+>🔆 &nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > settings > [predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much. Throughout this chapter, we will assume the predictive search has not been selected.
 
 #### ~ Wild Card aka Fuzziness Wild Card
 
@@ -177,6 +168,59 @@ A few examples of words that would be found with and without limiting the change
 >🔆 &nbsp;Do NOT mix fuzziness with other wild cards as it is not supported, and only one of the operators would be applied, example of what NOT to do: **jungle\*~1**
 
 Be aware that launching a query with the fuzziness operator can use an enormous amount of memory and perform badly, ending in a "timed out" situation.
+
+>🔆 &nbsp;Wild cards can only be used in the main search bar at the top of the user interface. They cannot be used in the [Search within results](#search_within_results) field.
+
+<p id="operators"></p>
+
+___
+### Operators
+
+You can use operators **and or not** to narrow down a manual search. 
+
+>🔆 &nbsp;IMPORTANT! When searching with more than one criteria, you don't need to put **and** if that is the operator you would otherwise type, as Diskover uses the **and** operator by default when no others are used. See examples below.
+
+Let's take the series **The Jungle Book** and that a similar naming convention was respected: **thejunglebook_s01_ep05_en.mov** (series The Jungle Book, season 1, episode 5, English sub)
+
+Here are some examples of queries using operators to pinpoint your searches.
+
+- **\*jungle\* and s01** would find all episodes within season 1, in any language or you could type **\*jungle\* s01** as the **and** is used by default as previously explained.
+
+- **\*jungle\* and s01 not e\*5** would find season 1 in any languages and all episodes except the ones with 5 in them.
+
+When using more than one, but especially a mix of different operators in a query, it is highly recommended to use parentheses, example **(s\*1 or s\*2)**, to group criteria as described in the [next section](#complex_queries), in order to help Diskover make sense of the query.
+
+>🔆 &nbsp;Operators can only be used in the main search bar at the top of the user interface. They cannot be used in the [Search within results](#search_within_results) field.
+ 
+ <p id="complex_queries"></p>
+ 
+___
+### The Need of Grouping Criteria for Complex Queries
+
+When using more than one operator, it is recommended to use parentheses **( )** in order to group some elements and help Diskover make sense of the query. Think of this as the same premise as building formulas in Excel where you need to group criteria in order for Excel to understand what you are trying to accomplish.
+
+>🔆 &nbsp;You always need to group criteria when using the operator **or**.
+
+A few examples while still using the file name structure **thejunglebook_s01_ep05_en.mov**:
+
+#### Examples with Single Grouping
+
+- **\*jungle\* AND (s\*1 OR s\*2)** > would find all files related to season 1 and season 2 for The Jungle Book series.
+
+- **\*jungle\* AND e\*5 AND (en OR it)** > would find all Italian (assuming **it** was respected in the naming convention) and English translations of episode 5.
+
+- **\*jungle\* AND s\*1 (AND extension:(mov OR mp4))** > would find all files of season 1 with .mov and .mp4 extension, a less precise query could be **\*jungle\* AND s\*1 AND (mov OR mp4)**
+
+Another type of example with words only, and let's use **New York City**. If you only want to find files that have all those 3 words in them, you can type **(new york city)** assuming that all the words are isolated of course.
+
+#### Examples with Multiple Groupings
+
+- **\*jungle\* AND (s\*1 OR s\*2) (NOT (en OR it))** > still using the same file name example as above, would find all files for season 1 and season 2, but in all other languages than English or Italian.
+
+- Let say that you have files with "quick brown fox", "quick fox", "brown fox", "Fox News", etc. this would be the query to use **((quick AND fox) OR (brown AND fox) OR fox) AND NOT news** to respect the following conditions:
+	- **fox** must be present
+	-  **news** must be excluded
+	-  **quick** and **brown** are optional — their presence increases the relevance
 
 <p id="search_field_names"></p>
 
@@ -230,57 +274,6 @@ Searching on field names is very effective for achieving specific results and th
 
 You can find mome examples with field names in the [Searching on Time](#search_time) and [Searching on Size](#search_size) sections.
 
-<p id="operators"></p>
-
-___
-### Operators
-
-You can use operators **and or not** to narrow down a manual search. 
-
->🔆 &nbsp;IMPORTANT! When searching with more than one criteria, you don't need to put **and** if that is the operator you would otherwise type, as Diskover uses the **and** operator by default when no others are used. See examples below.
-
-Let's take the series **The Jungle Book** and that a similar naming convention was respected: **thejunglebook_s01_ep05_en.mov** (series The Jungle Book, season 1, episode 5, English sub)
-
-Here are some examples of queries using operators to pinpoint your searches.
-
-- **\*jungle\* and s01** would find all episodes within season 1, in any language or you could type **\*jungle\* s01** as the **and** is used by default as previously explained.
-
-- **\*jungle\* and s01 not e\*5** would find season 1 in any languages and all episodes except the ones with 5 in them.
-
-When using more than one, but especially a mix of different operators in a query, it is highly recommended to use parentheses, example **(s\*1 or s\*2)**, to group criteria as described in the [next section](#complex_queries), in order to help Diskover make sense of the query.
-
->🔆 &nbsp;Operators can only be used in the main search bar at the top of the user interface. They cannot be used in the [Search within results](#search_within_results) field.
- 
- <p id="complex_queries"></p>
- 
-___
-### The Need of Grouping Criteria for Complex Queries
-
-When using more than one operator, it is recommended to use parentheses **( )** in order to group some elements and help Diskover make sense of the query. Think of this as the same premise as building formulas in Excel where you need to group criteria in order for Excel to understand what you are trying to accomplish.
-
->🔆 &nbsp;You always need to group criteria when using the operator **or**.
-
-A few examples while still using the file name structure **thejunglebook_s01_ep05_en.mov**:
-
-#### Examples with Single Grouping
-
-- **\*jungle\* AND (s\*1 OR s\*2)** would find all files related to season 1 and season 2 for The Jungle Book series.
-
-- **\*jungle\* AND e\*5 AND (en OR it)** would find all Italian (assuming **it** was respected in the naming convention) and English translations of episode 5.
-
-- **\*jungle\* AND s\*1 (AND extension:(mov OR mp4))** would find all files of season 1 with .mov and .mp4 extension, a less precise query could be **\*jungle\* AND s\*1 AND (mov OR mp4)**
-
-Another type of example with words only, and let's use **New York City**. If you only want to find files that have all those 3 words in them, you can type **(new york city)** assuming that all the words are isolated of course.
-
-#### Examples with Multiple Groupings
-
-- **\*jungle\* AND (s\*1 OR s\*2) (NOT (en OR it))** still using the same file name example as above, would find all files for season 1 and season 2, but in all other languages than English or Italian.
-
-- Let say that you have files with "quick brown fox", "quick fox", "brown fox", "Fox News", etc. this would be the query to use **((quick AND fox) OR (brown AND fox) OR fox) AND NOT news** to respect the following conditions:
-	- **fox** must be present
-	-  **news** must be excluded
-	-  **quick** and **brown** are optional — their presence increases the relevance
-
  <p id="search_size"></p>
 
 ___
@@ -322,20 +315,15 @@ Format to use when searching for date and time.
 #### Examples to Find Recent Files
 A few helpful queries for looking for the **latest indexed files** for example. Variables can easily be adjusted to your needs:
 
-- Files that have been modified or changed within the last 30 minutes:
-	-  **ctime:[now-30m TO now]  OR mtime:[now-30m TO now]**
-- Files that have been modified or changed in the last hour:
-	- **ctime:[now-1h TO now]  OR mtime:[now-1h TO now]**
-- Files that have been modified or changed in the past day: 
-	- **ctime:[now-1d TO now]  OR mtime:[now-1d TO now]**
+- **ctime:[now-30m TO now] OR mtime:[now-30m TO now]** > files that have been modified or changed within the last 30 minutes
+- **ctime:[now-1h TO now] OR mtime:[now-1h TO now]** > files that have been modified or changed in the last hour.
+- **ctime:[now-1d TO now]  OR mtime:[now-1d TO now]** > files that have been modified or changed in the past day.
 
 #### Examples to Find Old Files
 Some helpful queries when looking for old files where you can easily change the variables to adjust the queries to your needs:
 
-- Files that haven't been modified in over 3 months but less than 5 years:
-	- **mtime:[now-5Y TO now-3M]**
-- Files that haven't been modified or accessed in over 1 year (* in this case is used to represent "any time in the past"):  
-	- **mtime:[\* TO now-1Y] AND atime:[\* TO now-1Y]**
+- **mtime:[now-5Y TO now-3M]** > files that haven't been modified in over 3 months but less than 5 years
+- **mtime:[\* TO now-1Y] AND atime:[\* TO now-1Y]** > files that haven't been modified or accessed in over 1 year (* in this case is used to represent "any time in the past").
 
 <p id="limiting_searches"></p>
 
@@ -344,7 +332,7 @@ ___
 
 When searching on file extensions, it is recommended to either:
 - Use the dedicated fields in the [filters](#filters).
-- Use [quick search](#quick_search)
+- Use [quick search](#quick_search).
 - Type in the search bar the pre-determined field name for file extensions, example **extension:mov**
 
 The reason being that the file extension letters might be part of the file name and give you misleading results. For example:

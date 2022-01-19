@@ -8,9 +8,7 @@ Until you get familiar with Diskover, we strongly recommend using the built-in s
 
 The examples used in this chapter are media and entertainment related, but the same logic can be applied to any type of industry.
 
-The list of possible search queries and syntax is exhaustive therefore only the basics of manual searches will be explained in this chapter. For more search queries information, please visit  **gear icon** > **Help** at the top right corner of the user interface:
-
-![Image: Help with Queries and Syntax](images/image_menu_gear_icon_selection_help.png)
+The list of possible search queries and syntax is exhaustive therefore only the basics of manual searches will be explained in this chapter.
 
 ___
 ### Syntax Based on Elasticsearch Rules

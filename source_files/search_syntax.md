@@ -78,10 +78,28 @@ For example, if you launch a query with the word **eyes** and the following are 
 
 - **foryoureyes.mov** > Diskover would NOT find that file because the word **eyes** is only isolated at the end.
 
+<p id="parentheses_brackets"></p>
+
+#### When to Use Parentheses and Brackets
+
+At times you will need to group criteria, so Diskover can make sense of the queries; think of this as grouping criteria when building formulas in Excel.
+
+##### (Parentheses)
+
+When writing complex queries, you will need to group some elements with parentheses **( )** as further described in [The Need of Grouping Criteria for Complex Queries](#complex_queries) section.
+
+##### [Square] or {Curly} Brackets
+
+The square brackets `[ ]` or curly brackets `{ }` need be used to contain ranges for **time**, **dates**, **numeric** or **string fields**. They can even be mixed `[ }`. You can find examples in the [Searching on time](#search_time) section. Below is how/when to apply them:
+
+	- **Inclusive** ranges need to be specified with square brackets, ex: **[min TO max]**, 
+
+	- **Exclusive** ranges need to be specified with curly brackets, ex: **{min TO max}**
+
 <p id="wildcards"></p>
 
 ___
-### HELPER - Wild Cards
+### Wild Cards
 
 Wild cards are used to expand search results mostly due to [naming convention](#naming_convention) issues, but also to go around possible misspellings, although the [fuzziness](#fuzziness) wild card, covered later in this chapter, might be a better choice for misspellings.
 
@@ -124,26 +142,28 @@ If the file name would be **for_your_eyes_only.mov** or **ForYourEyesOnly.mov**:
 
 - Also, if you are not sure if **eyes** is plural or singular in the file name, you could use **eye?** to replace a single character.
 
-##### How to use the * with Season Number
+##### How to use the * with Season or Episode Number
 
 Let's do another example with a season's number for a show. For example, if you want to search for **season 1**, the file name could have different spelling like **S1**, **season 1**, **s01**, **s_1**, etc. 
 
-In order to expand your results to include all possibilities, without expending too much either, a logical search syntax would be **s*1** because the **\*** would catch everything in between the **s** and the **1**. Now, this would also find season 11 for example, but it's better to widen your results at first and then narrow them down once you have an idea of the possible results.
+In order to expand your results to include all possibilities, without expending too much either, a logical search syntax would be **s\*1** because the **\*** would catch everything in between the **s** and the **1**. Now, this would also find season 11 for example, but it's better to widen your results at first and then narrow them down once you have an idea of what you are dealing with.
+
+>🔆 &nbsp;The same logic applies to episode numbers.
 
 ##### How to use the * to Find all Files in a Sequence
 
+You can use the **\*** to find all files in a sequence, but depending on which subscription you purchase, you may also have access to an easier way via [File Action](#file_action).
+
 To find all files in a sequence, if you type for example **img\*.dpx**, Diskover would find all files with the following similar names: img001.dpx, img002.dpx, etc.
 
-#### Using * and ? in the Same Query
+##### Using both * and ? in the Same Query
 Both **?** and **\*** wild cards can be used in the same query, for example searching for Johnny Smith: **John\* Sm?th**
 
 <p id="fuzziness"></p>
 
 #### ~ Wild Card aka Fuzziness Wild Card
 
-You can run fuzzy queries with the **tilde ~** operator. 
-
-Fuzziness is mostly used to catch human misspellings, and will return vast results if not used with any other restrictions.
+**~** > is mostly used to catch human misspellings, and will return vast results if not used with any other restrictions.
 
 The query uses the  [Damerau-Levenshtein distance](https://en.wikipedia.org/wiki/Damerau-Levenshtein_distance)  to find all terms with a maximum of two changes, where a change is the insertion, deletion or substitution of a single character, or transposition of two adjacent characters.
 
@@ -154,16 +174,14 @@ A few examples of words that would be found with and without limiting the change
 - **jungle~1** would find: jungle, juggle, jingly, jingle, jingles, etc.
 - **jungle~** would find: jungle, juggle, jingly, jingle, jingles, june, judge, single, bundle, uncle, etc.
 
->🔆 &nbsp;Do NOT mix fuzziness and wild cards as it is not supported, and only one of the operators would be applied, example of what NOT to do: **jungle\*~1**
+>🔆 &nbsp;Do NOT mix fuzziness with other wild cards as it is not supported, and only one of the operators would be applied, example of what NOT to do: **jungle\*~1**
 
 Be aware that launching a query with the fuzziness operator can use an enormous amount of memory and perform badly, ending in a "timed out" situation.
-
-
 
 <p id="search_field_names"></p>
 
 ___
-### Searches Using Field Names
+### Queries with Field Names
 
 Searching with field names can be effective if you search on a specific and/or hidden field and are looking for precise results. You can compare searching on field names as searching on a specific column in a massive Excel spreadsheet.
 
@@ -174,8 +192,6 @@ The query needs to be typed in this exact format **fieldname:value**
 >- The variable after the colon needs to be typed in upper and/or lower case to match exactly what you are searching for. 
 
 #### Default Field Names
-
-This list can also be found in the help page of the user interface:
 
 - **atime** - access time > refer to [Queries with Time](#search_time) for examples
 - **costpergb** - storage space cost > `costpergb:[10 TO 500]`
@@ -214,63 +230,33 @@ Searching on field names is very effective for achieving specific results and th
 
 You can find mome examples with field names in the [Searching on Time](#search_time) and [Searching on Size](#search_size) sections.
 
-___
-### Queries with File Extensions
-
-When searching on file extensions, it is recommended to either:
-- Use the dedicated fields in the [pre-built filters](#filters). 
-- Type in the search bar the pre-determine field name for file extensions, example **extension:mov**
-
-The reason being that the file extension letters might be part of the file name and give you misleading results. For example:
-- If only typing **mov** in the search bar, the results would include all files with **.mov** extension, but could also return a file with the name **all_mov_titles_2021.txt**
-
-- If only typing **jpg** in the search bar, the results would include all files with **.jpg** extension, but could also return a file with the name **montage_jpg_png_images.gif**
-
 <p id="operators"></p>
 
 ___
 ### Operators
 
-You can use operators **AND OR NOT**  to narrow down a manual search. Although the operators in this section are capitalized for ease of understanding, the operators can be typed in lower case in the search bar.
+You can use operators **and or not** to narrow down a manual search. 
 
->🔆 &nbsp;Operators are NOT case sensitive, but are capitalized in the examples for visual ease.
-
-<br><br>
-
->🔆 &nbsp;IMPORTANT! When searching with more than one criteria, you don't need to put **AND** if that is the operator you would otherwise type, as Diskover uses the **AND** operator by default when non others are used. See examples below.
+>🔆 &nbsp;IMPORTANT! When searching with more than one criteria, you don't need to put **and** if that is the operator you would otherwise type, as Diskover uses the **and** operator by default when no others are used. See examples below.
 
 Let's take the series **The Jungle Book** and that a similar naming convention was respected: **thejunglebook_s01_ep05_en.mov** (series The Jungle Book, season 1, episode 5, English sub)
 
-Here are some examples of queries using operators to narrow your searches.
+Here are some examples of queries using operators to pinpoint your searches.
 
-- **\*jungle\* AND s01** would find all episodes within season 1, in any language or you could type **\*jungle\*  s01** as the AND is used by default as previously explained.
+- **\*jungle\* and s01** would find all episodes within season 1, in any language or you could type **\*jungle\* s01** as the **and** is used by default as previously explained.
 
-- **\*jungle\* AND s01 NOT e*5** would find season 1 in any languages and all episodes except the ones with 5 in them. It is recommended to use the AND when mixing operators in the same query.
+- **\*jungle\* and s01 not e\*5** would find season 1 in any languages and all episodes except the ones with 5 in them.
 
->🔆 &nbsp;When using more than one, but especially a mix of different operators in a query, it is highly recommended to use parentheses **(example)** to group some elements as described in the next section, in order to help Diskover make sense of the query and return the desired results.
+When using more than one, but especially a mix of different operators in a query, it is highly recommended to use parentheses, example **(s\*1 or s\*2)**, to group criteria as described in the [next section](#complex_queries), in order to help Diskover make sense of the query.
 
-<br><br>
-
->🔆 &nbsp;Operators can only be used in the main search bar  at the top of the user interface. They cannot be used in the **search within results** field.
+>🔆 &nbsp;Operators can only be used in the main search bar at the top of the user interface. They cannot be used in the [Search within results](#search_within_results) field.
  
  <p id="complex_queries"></p>
  
 ___
-### The Need of Grouping for Complex Queries
+### The Need of Grouping Criteria for Complex Queries
 
 When using more than one operator, it is recommended to use parentheses **( )** in order to group some elements and help Diskover make sense of the query. Think of this as the same premise as building formulas in Excel where you need to group criteria in order for Excel to understand what you are trying to accomplish.
-
-#### Grouping Criteria
-
-At times you will need to group criteria, so Diskover can make sense of the queries - think of it a little bit as grouping criteria when building formulas in Excel.
-
-- When writing complex queries, you will need to group some elements with parentheses `( )` as further described in [The Need of Grouping for Complex Queries](#complex_queries) section.
-
-- The square brackets `[ ]` or curly brackets `{ }` need be used to contain ranges for **time**, **dates**, **numeric** or **string fields**. They can even be mixed `[ }`. You can find examples in the [Searching on time](#search_time) section. How to apply them:
-	- **Inclusive** ranges need to be specified with square brackets, ex: **[min TO max]**, 
-
-	- **Exclusive** ranges need to be specified with curly brackets, ex: **{min TO max}**
-
 
 >🔆 &nbsp;You always need to group criteria when using the operator **or**.
 
@@ -280,22 +266,20 @@ A few examples while still using the file name structure **thejunglebook_s01_ep0
 
 - **\*jungle\* AND (s\*1 OR s\*2)** would find all files related to season 1 and season 2 for The Jungle Book series.
 
-- **\*jungle\* AND e*5 AND (en OR it)** would find all Italian (assuming **it** was respected in the naming convention) and English translations of episode 5.
+- **\*jungle\* AND e\*5 AND (en OR it)** would find all Italian (assuming **it** was respected in the naming convention) and English translations of episode 5.
 
-- **\*jungle\* AND s*1 (AND extension:(mov OR mp4))** would find all files of season 1 with .mov and .mp4 extension, a less precise query could be **\*jungle\* AND s*1 AND (mov OR mp4)**
+- **\*jungle\* AND s\*1 (AND extension:(mov OR mp4))** would find all files of season 1 with .mov and .mp4 extension, a less precise query could be **\*jungle\* AND s\*1 AND (mov OR mp4)**
 
 Another type of example with words only, and let's use **New York City**. If you only want to find files that have all those 3 words in them, you can type **(new york city)** assuming that all the words are isolated of course.
 
 #### Examples with Multiple Groupings
 
-- **\*jungle\* AND (s*1 OR s*2) (NOT (en OR it))** still using the same file name example as above, would find all files for season 1 and season 2, but in all other languages than English or Italian.
+- **\*jungle\* AND (s\*1 OR s\*2) (NOT (en OR it))** still using the same file name example as above, would find all files for season 1 and season 2, but in all other languages than English or Italian.
 
 - Let say that you have files with "quick brown fox", "quick fox", "brown fox", "Fox News", etc. this would be the query to use **((quick AND fox) OR (brown AND fox) OR fox) AND NOT news** to respect the following conditions:
 	- **fox** must be present
 	-  **news** must be excluded
 	-  **quick** and **brown** are optional — their presence increases the relevance
-
-
 
  <p id="search_size"></p>
 
@@ -322,19 +306,16 @@ ___
 Although it is strongly advised to use [filters](#filters) or [quick search](#quick_search) to query time, below are a few examples on how to do so with a manual query.
 
 #### Definitions
-- **atime**: last accessed
-	- The file may have been opened by you, or may have been accessed by some other program or a remote machine. Anytime a file has been accessed, its access time changes.
-- **ctime**: last changed 
-	- The modification can be in terms of its content or in terms of its attributes. Whenever anything about a file changes (except its access time), its ctime changes.
-- **mtime**: last modified 
-	- Indicates the time the contents of the file has been changed. Mind you, only the contents, not the attributes. For instance, if you open a file and change some (or all) of its content, its mtime gets updated. If you change a file's attribute (like read-write permissions, metadata), its mtime doesn't change, but ctime will.
+- **atime**: last accessed > The file may have been opened by you, or may have been accessed by some other program or a remote machine. Anytime a file has been accessed, its access time changes.
+- **ctime**: last changed > The modification can be in terms of its content or in terms of its attributes. Whenever anything about a file changes (except its access time), its ctime changes.
+- **mtime**: last modified > Indicates the time the contents of the file has been changed. Mind you, only the contents, not the attributes. For instance, if you open a file and change some (or all) of its content, its mtime gets updated. If you change a file's attribute (like read-write permissions, metadata), its mtime doesn't change, but ctime will.
 
 #### Formatting
 Format to use when searching for date and time. 
 
 - Date: **d** = day, **M** = month, **Y** = year
 - Time: **h** = hour, **m** = minute, **s** = second
-- These two types of brackets `[ ]` or `{ }` can be used to contain a range of time, they can even be mixed `[ }`
+- These [two types of brackets `[ ]` or `{ }`](#parentheses_brackets) can be used to contain a range of time, they can even be mixed `[ }`
 
 >🔆 &nbsp;Searching on time is case sensitive when it comes to formatting as detailed above, as well as writing the field name in lower case only.
 
@@ -357,6 +338,19 @@ Some helpful queries when looking for old files where you can easily change the 
 	- **mtime:[\* TO now-1Y] AND atime:[\* TO now-1Y]**
 
 <p id="limiting_searches"></p>
+
+___
+### Queries with File Extensions
+
+When searching on file extensions, it is recommended to either:
+- Use the dedicated fields in the [filters](#filters).
+- Use [quick search](#quick_search)
+- Type in the search bar the pre-determined field name for file extensions, example **extension:mov**
+
+The reason being that the file extension letters might be part of the file name and give you misleading results. For example:
+- If only typing **mov** in the search bar, the results would include all files with **.mov** extension, but could also return a file with the name **all_mov_titles_2021.txt**
+
+- If only typing **jpg** in the search bar, the results would include all files with **.jpg** extension, but could also return a file with the name **montage_jpg_png_images.gif**
 
 ___
 ### Limiting your Searches to a Specific Path

@@ -1,7 +1,7 @@
 <p id="tags"></p>
 
 ___
-### Tags
+### Tagging
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
@@ -21,12 +21,19 @@ C) **Tags** column: To see tags  associated with a file or directory.
 
 D) **Tags** selection: List of tags  that are available, you need an admin account to edit that list.
 
-E) **Remove all tags**: Select from column B) the items you wish to remove the associated tags.  
+E) **Remove all tags**: Select from column B) the items you wish to remove the associated tags first and then select E).
 >**WARNING!**  you cannot undo this action.
 
-F) **Add new tag**: An admin account is required to add/edit tags.
+F) **Add new tag**: To quickly add a single new tag - an admin account is required to add/edit tags.
 
-G) **Edit Tags**: An admin account is required to add/edit tags.
+G) **Apply tags to**: Choices of applying tags [non-recursively or recursively](#recursive).
+
+> **Non-recursive**: Will apply tags to the next level of sub-directories and/or files of the selected directory.
+> **Recursive**: Will apply tags to the all next levels of sub-directories and/or files of the selected directory.
+
+![Image: Recursive Options for Applying Tags](images/image_tags_apply_recursive.png)
+
+H) **Edit Tags**: An admin account is required to add/edit tags.
 
 #### Search on Tags
 

@@ -11,6 +11,10 @@ This section will talk about manual tagging, but Diskover can also be configured
 
 >🔆 &nbsp;A file or directory can have multiple tags.
 
+<p id="tags_options"></p>
+
+#### Tags Options
+
 ![Image: Manual Tag Selection](images/image_tags_manual_application.png)
 
 A) **Tag** drop-down list: To add or remove tags.
@@ -26,7 +30,9 @@ E) **Remove all tags**: Select from column B) the items you wish to remove the a
 
 F) **Add new tag**: To quickly add a single new tag - an admin account is required to add/edit tags.
 
-G) **Apply tags to**: Choices of applying tags [non-recursively or recursively](#recursive).
+<p id="apply_tags_to"></p>
+
+G) **Apply tags to**: Choices of applying tags [non-recursively or recursively](#recursive) - can only be achieved from a directory and that directory needs to have a tag assigned to it prior and in order to assign the same tag(s) recursively or non-recursively.
 
 > **Non-recursive**: Will only apply tags to the next level of sub-directories and/or files of the selected directory.
 >
@@ -35,6 +41,45 @@ G) **Apply tags to**: Choices of applying tags [non-recursively or recursively](
 ![Image: Recursive Options for Applying Tags](images/image_tags_apply_recursive.png)
 
 H) **Edit Tags**: An admin account is required to add/edit tags.
+
+#### Tags Application
+
+##### Applying a Single Tag
+
+1. In the results pane, select the item(s) you wish to tag.
+2. Click the **Tag** drop-down list and select a tag.
+
+>🔆 &nbsp;A file or directory can have multiple tags.
+
+##### Applying Recursive and Non-Recursive Tags
+
+This option is used to apply tags to multiple sub-directories and/or files in just a few clicks.
+
+1. In the results pane, select the main directory(ies) you wish to tag.
+2. Click the **Tag** drop-down list and select a tag - you need to tag the main directory first in order to continue.
+3. Reselect that same directory(ies) and click the **Tag** drop-down list.
+4. Click on **Apply tags to** and make a selection - [get more info on recursive and non-recursive](#apply_tags_to)
+
+>🔆 &nbsp;If the main directory has several tags applied to it, all these tags will be applied to their parent directories and/or files with this action.
+
+#### Tags Removal
+
+##### Removing a Single Tag
+
+1. In the results pane, select the item(s) you wish to remove the tag from.
+2. Click the **Tag** drop-down list and select the same tag that is already applied to it > trying to reapply the same tag will remove it.
+
+##### Removing Several Tags
+
+1. In the results pane, select the item(s) you wish to remove the tags from.
+2. Click the **Tag** drop-down list and select **Remove all tags** - careful, this action cannot be undone!
+
+>🔆 &nbsp;If an item has several tags, the above action will remove all of them at once.
+
+##### Removing Recursive and Non-Recursive Tags
+
+1. In the results pane, select the directory for which you want to remove the tags recursively or non-recursively - remove the tag from this directory first by following the above instructions.
+2. Click the **Tag** drop-down list and make a selection - [get more info on recursive and non-recursive](#apply_tags_to) - this single action will remove the tag(s) to all the sub-directories and/or files so they have the same tags as the main directory.
 
 #### Search on Tags
 

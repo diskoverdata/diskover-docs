@@ -182,7 +182,7 @@ Let's take the series **The Jungle Book** and that a similar naming convention w
 
 Here are some examples of queries using operators to pinpoint your searches.
 
-- **\*jungle\* and s01** would find all episodes within season 1, in any language or you could type **\*jungle\* s01** as the **and** is used by default as previously explained.
+- **\*jungle\* and s01** would find all episodes within season 1, in any language or you could just type **\*jungle\* s01** as the **and** is used by default as previously explained.
 
 - **\*jungle\* and s01 not e\*5** would find season 1 in any languages and all episodes except the ones with 5 in them.
 
@@ -279,7 +279,9 @@ ___
 
 Diskover shows file size (size) and allocated size (size_du) in bytes. We recommend using the [filters](#filters), as well as [quick search](#quick_search) when searching on size, but these fields can also be searched manually. Some examples:
 
-- **size:>1048576**  > would find all files larger than 1 MB
+- **size:>1048576**  > would find all files and directories larger than 1 MB
+
+- **size:>10485760 AND type:file** > would find all files larger than 10 MB
 
 - **size:>5242880 AND (type:file OR type:directory)**  > would find all files and folders larger than 5 MB
 
@@ -304,7 +306,7 @@ Although it is strongly advised to use [filters](#filters) or [quick search](#qu
 #### Formatting
 Format to use when searching for date and time. 
 
-- Date: **d** = day, **M** = month, **Y** = year
+- Date: **d** = day, **M** = month, **y** = year
 - Time: **h** = hour, **m** = minute, **s** = second
 - These [two types of brackets `[ ]` or `{ }`](#parentheses_brackets) can be used to contain a range of time, they can even be mixed `[ }`
 
@@ -320,8 +322,8 @@ A few helpful queries for looking for the **latest indexed files** for example. 
 #### Examples to Find Old Files
 Some helpful queries when looking for old files where you can easily change the variables to adjust the queries to your needs:
 
-- **mtime:[now-5Y TO now-3M]** > files that haven't been modified in over 3 months but less than 5 years.
-- **mtime:[\* TO now-1Y] AND atime:[\* TO now-1Y]** > files that haven't been modified or accessed in over 1 year (* in this case is used to represent "any time in the past").
+- **mtime:[now-5y TO now-3M]** > files that haven't been modified in over 3 months but less than 5 years.
+- **mtime:[\* TO now-1y] AND atime:[\* TO now-1y]** > files that haven't been modified or accessed in over 1 year (* in this case is used to represent "any time in the past").
 
 <p id="limiting_searches"></p>
 
@@ -330,7 +332,7 @@ ___
 
 When searching on file extensions, it is recommended to either:
 - Use the dedicated fields in the [filters](#filters).
-- Use [quick search](#quick_search).
+- Use [quick search](#quick_search) which is a best to find all video or audio file types for examples.
 - Type in the search bar the pre-determined field name for file extensions, example **extension:mov**
 
 The reason being that the file extension letters might be part of the file name and give you misleading results. For example:

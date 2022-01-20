@@ -1,9 +1,11 @@
 ___
-### File Sequence File Action
+### File Action > File Sequence 
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
-The file sequence web plugin file action is designed to list out any file sequences in a directory or from a single file in a sequence. File sequences are printed out with %05d to show the 0 padding and number of digits in the sequence. Each sequence, whole or broken, are put into a [ ] list after the full path.
+The file sequence web plugin File Action is designed to list out any file sequences in a directory or from a single file in a sequence. File sequences are printed out with `%05d` to show the 0 padding and number of digits in the sequence. Each sequence, whole or broken, are put into a [ ] list after the full path.
+
+![Image: File Sequences Results](images/image_file_action_results_tech.png)
 
 🔴 &nbsp;Copy default/samples files:
 ```
@@ -18,14 +20,14 @@ chown nginx:nginx /var/www/diskover-web/src/diskover/filesequence_settings.py
 ```
 vi /var/www/diskover-web/src/diskover/filesequence_settings.py
 ```
-- Set Elasticsearch settings
+🔴 &nbsp;Set Elasticsearch settings.
 
-🔴 &nbsp;Install [clique python module](https://pypi.org/project/clique/) with pip (required by File Sequence file action)
+🔴 &nbsp;Install [clique python module](https://pypi.org/project/clique/) with pip (required by File Sequence File Action):
 ```
 pip3 install clique
 ```
 
-🔴 &nbsp;If you are running diskover-web on a different host than diskover, you will need to install the [elasticsearch python module](https://pypi.org/project/elasticsearch/) (required by File Sequence file action). Check the version to install on your diskover host in `/opt/diskover/requirements.txt`.
+🔴 &nbsp;If you are running diskover-web on a different host than Diskover, you will need to install the [elasticsearch python module](https://pypi.org/project/elasticsearch/) (required by File Sequence File Action). Check the version to install on your Diskover host in `/opt/diskover/requirements.txt`:
 ```
 pip3 install elasticsearch==7.x.x
 ```

@@ -96,24 +96,23 @@ The square brackets `[ ]` or curly brackets `{ }` need be used to contain ranges
 <p id="wildcards"></p>
 
 ___
-### Wild Cards
-
-Wild cards are used to expand search results mostly due to [naming convention](#naming_convention) issues, but also to go around possible misspellings, although the [fuzziness](#fuzziness) wild card, covered later in this chapter, might be a better choice for misspellings.
-
->🔆 &nbsp;A search might be a tad slower when using wild cards, especially when it is placed in front of your query, because it is searching a much larger amount of data.
-
-#### ? Wild Card
+### ? Wild Card
 
 **?** > is used to replace a single character. For example:
 
 - **eye?** > would find **eye** and **eyes**
 - **678??4** > would find **678344**
 
-#### * Wild Card
+___
+### * Wild Card
+
+The * wild card is used to expand search results mostly due to [naming convention](#naming_convention) issues.
+
+>🔆 &nbsp;A search might be a tad slower when using wild cards, especially when it is placed in front of your query, because it is searching a much larger amount of data.
 
 **\*** > is used to replace zero, one or many characters, is the most popular and used wild card.
 
-##### How to use the * with Long Strings of Characters or Numbers
+#### How to use the * with Long Strings of Characters or Numbers
 
 When searching on a single word for example, the results might be limited if you type the word alone. Let's take the example of trying to find the following file **foryoureyesonly.mov**:
 
@@ -129,7 +128,7 @@ The same rule applies with numbers. For example:
 	- Type the all the numbers **20161031** to find that file with that specific date.
 	- Or typing **201610\*** would find that file and all the files that have the year 2016 and the month of October, assuming that all those files were identified the same way with the same date format.
 
-##### How to use the * with Season or Episode Number
+#### How to use the * with Season or Episode Number
 
 Let's do another example with a season's number for a show. For example, if you want to search for **season 1**, the file name could have different spelling like **S1**, **season 1**, **s01**, **s_1**, etc. 
 
@@ -137,20 +136,21 @@ In order to expand your results to include all possibilities, without expending 
 
 >🔆 &nbsp;The same logic applies to episode numbers.
 
-##### How to use the * to Find all Files in a Sequence
+#### How to use the * to Find all Files in a Sequence
 
 You can use the **\*** to find all files in a sequence, but depending on which subscription you purchase, you may also have access to an easier way via [File Action](#file_action).
 
 To find all files in a sequence using the **\***, if you type for example **img\*.dpx**, Diskover would find all files with the following similar names: img001.dpx, img002.dpx, etc.
 
-##### Using both * and ? in the Same Query
+#### Using both * and ? in the Same Query
 Both **?** and **\*** wild cards can be used in the same query, for example searching for Johnny Smith: **John\* Sm?th**
-
-<p id="fuzziness"></p>
 
 >🔆 &nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > settings > [predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much. Throughout this chapter, we will assume the predictive search has not been selected.
 
-#### ~ Fuzziness Wild Card
+<p id="fuzziness"></p>
+
+___
+### ~ Fuzziness Wild Card
 
 **~** > is mostly used to catch human misspellings, and will return vast results if not used with any other restrictions.
 
@@ -325,8 +325,6 @@ Some helpful queries when looking for old files where you can easily change the 
 - **mtime:[now-5y TO now-3M]** > files that haven't been modified in over 3 months but less than 5 years.
 - **mtime:[\* TO now-1y] AND atime:[\* TO now-1y]** > files that haven't been modified or accessed in over 1 year (* in this case is used to represent "any time in the past").
 
-<p id="limiting_searches"></p>
-
 ___
 ### Queries with File Extensions
 
@@ -339,6 +337,8 @@ The reason being that the file extension letters might be part of the file name 
 - If only typing **mov** in the search bar, the results would include all files with **.mov** extension, but could also return a file with the name **all_mov_titles_2021.txt**
 
 - If only typing **jpg** in the search bar, the results would include all files with **.jpg** extension, but could also return a file with the name **montage_jpg_png_images.gif**
+
+<p id="limiting_searches"></p>
 
 ___
 ### Limiting your Searches to a Specific Path

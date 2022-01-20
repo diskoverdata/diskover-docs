@@ -44,13 +44,13 @@ include 'includes/fileactions.php';
 include 'includes/fileactions_header.php';
 ```
 
-and at the bottom:
+And at the bottom:
 
 ```
 include 'includes/fileactions_footer.php';
 ```
 
-In the example file actions you will see a foreach loop that itterates over the selected files/directories:
+In the example file actions, you will see a `foreach` loop that itterates over the selected files/directories:
 
 ```
 foreach ($fileinfo as $file) {
@@ -58,7 +58,7 @@ foreach ($fileinfo as $file) {
 }
 ```
 
-$fileinfo is an associative array of each selected file/directory info which contains the ES index doc info (includes/fileactions.php):
+`$fileinfo` is an associative array of each selected file/directory info which contains the ES index doc info (includes/fileactions.php):
 
 ```
 $fileinfo[] = array(
@@ -83,4 +83,4 @@ $path_translations = array(
 $fullpath = translate_path($fullpath, $path_translations);
 ```
 
-To learn more about using and configuring web plugins, see File Actions in the [config and admin guide](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#diskover-web-plugins-file-actions).
+To learn more about using and configuring web plugins, please refer to the [File Actions section of the Configuration and Administration Guide](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#diskover-web-plugins-file-actions).

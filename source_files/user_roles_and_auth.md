@@ -109,8 +109,6 @@ const LDAP_GROUPS_EXCLUDED = ['diskover-admins', 'diskover-powerusers'];
 // example a directory with unix_perms = 777 or 770 or 755 will be visible to all
 // example a directory with unix_perms = 770 or 751 will not be visible to all
 const UNIXPERMS_FILTERING_ENABLED = TRUE;
-// HTTP Basic Auth for REST API
-// api authentication, set to TRUE to enable or FALSE to disable
 ```
 
 ___

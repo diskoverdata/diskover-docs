@@ -3,7 +3,7 @@ ___
 
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
-The Diskover indexer can add additional alternate scanners besides the default **scandir** Python module. The **scanners/** directory is the location of alternate Python modules for scanning. Included in the directory is a Python module **scandir_s3** for scanning AWS S3 buckets.
+Included in the alt scanners directory is a Python module **scandir_s3** for scanning AWS S3 buckets using the boto3 api.
 
 >_Note:_ If you want to install Diskover on existing AWS infrastructure, please refer to our [Diskover AWS Customer Deployment Guide](https://docs.diskoverdata.com/diskover_aws_deployment_guide/)
 

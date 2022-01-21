@@ -1,7 +1,7 @@
 ___
 ## Contact Diskover
 ___
-|Method|Coordinate|
+|Methods|Coordinates|
 |---|---|
 |Phone |800-560-5853 |
 |Sales |[sales@diskoverdata.com](mailto:sales@diskoverdata.com)  |

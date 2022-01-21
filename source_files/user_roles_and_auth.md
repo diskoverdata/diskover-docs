@@ -12,7 +12,7 @@ ___
 
 Diskover-Web currently has two local users: 1) admin, and 2) data user. To change the login details for the two sets of users:
 ```
-vim /var/www/diskover-web/src/Diskover/Constants.php
+vim /var/www/diskover-web/src/diskover/Constants.php
 ```
 
 <img src="images/image_user_auth_local_user_config.png" width="750">
@@ -48,14 +48,68 @@ ___
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
 
-Visibility can be limited by groups to specific indexes or branches within a given index. 
+Visibility can be limited by users/groups to specific indexes or branches within a given index. 
 
-🔴 &nbsp;To limit index visibility:
+🔴 &nbsp;To limit index visibility by users/groups:
 ```
-vim /var/www/diskover-web/src/Diskover/Constants.php
+vim /var/www/diskover-web/src/diskover/Constants.php
 ```
 
-![Image: Restricting Visibility and Access](images/image_user_auth_restricting_visibility_and_access.png)
+```
+// group/user index mappings
+// controls what indices and paths groups/users are allowed to view
+// enable index mappings, set to TRUE or FALSE
+const INDEX_MAPPINGS_ENABLED = FALSE;
+// index_patterns key is a list of index names user/group is allowed access to view
+// index_patterns_exclude key is a list of index names user/group is not allowed to view
+// index pattern wildcards * and ? are allowed, example diskover-* or diskover-indexname-*
+// to not exclude any indices/dirs, use empty list [] for index_patterns_exclude and excluded_dirs
+// excluded dirs use absolute path, example /top_path/dir_name
+// group/user names and excluded dirs are case-sensitive
+const INDEX_MAPPINGS = [
+    CONSTANTS::ADMIN_USER => [
+        ['index_patterns' => ['diskover-*'], 'index_patterns_exclude' => [], 'excluded_dirs' => []]
+    ],
+    CONSTANTS::USER => [
+        ['index_patterns' => ['diskover-*'], 'index_patterns_exclude' => [], 'excluded_dirs' => []]
+    ],
+    'diskover-admins' => [
+        ['index_patterns' => ['diskover-*'], 'index_patterns_exclude' => [], 'excluded_dirs' => []]
+    ],
+    'diskover-users' => [
+        ['index_patterns' => ['diskover-*'], 'index_patterns_exclude' => [], 'excluded_dirs' => []]
+    ],
+    'diskover-powerusers' => [
+        ['index_patterns' => ['diskover-*'], 'index_patterns_exclude' => [], 'excluded_dirs' => []]
+    ]
+];
+```
+
+Visibility can also be limited by AD/LDAP group permission and unix permissions filtering.
+
+🔴 &nbsp;To limit index visibility by AD/ldap group membership and unix permissions:
+```
+vim /var/www/diskover-web/src/diskover/Constants.php
+```
+
+```
+// AD/ldap group permission filtering
+// controls if directories in the index get fitered based on AD/ldap groups membership
+// local users admin and diskover always see all directories in the index
+// enable ldap filtering, set to TRUE or FALSE
+const LDAP_FILTERING_ENABLED = TRUE;
+// AD/ldap groups that are excluded from filtering
+// if a user is a member of one of these groups, they will see all folders
+// group names are case-sensitive
+const LDAP_GROUPS_EXCLUDED = ['diskover-admins', 'diskover-powerusers'];
+// use unix_perms index field (if exists) as well as group membership to determine filtering
+// if unix permissions is readable by other, they will be visible to the user, regardless of ldap group membership
+// example a directory with unix_perms = 777 or 770 or 755 will be visible to all
+// example a directory with unix_perms = 770 or 751 will not be visible to all
+const UNIXPERMS_FILTERING_ENABLED = TRUE;
+// HTTP Basic Auth for REST API
+// api authentication, set to TRUE to enable or FALSE to disable
+```
 
 ___
 ### Restricting Diskover-Web API Access
@@ -68,7 +122,7 @@ You can turn on HTTP Basic Auth for the Diskover-web api. This will make it requ
 
 🔴 &nbsp;Enable API auth and set a username and password:
 ```
-vim /var/www/diskover-web/src/Diskover/Constants.php
+vim /var/www/diskover-web/src/diskover/Constants.php
 ```
 
 ```

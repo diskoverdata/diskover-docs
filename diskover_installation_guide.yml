@@ -7,6 +7,7 @@ ordered_documents:
   - guide_title_install.md
   - intro_guide_intended_for_tech.md
   - intro_copyright.md
+  - changelog_buttons.md
   - intro_tech_guides_main_intro.md
   - intro_tech_guides_use_cases.md
   - intro_tech_guides_aws_approved.md

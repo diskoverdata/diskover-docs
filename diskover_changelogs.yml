@@ -6,7 +6,7 @@ ordered_documents:
   - index_diskover_guides_header.md
   - guide_title_changelogs.md
   - intro_copyright.md
-  - changelog_community.md
-  - changelog_subscriptions.md
+  - changelogs_community.md
+  - changelogs_subscriptions.md
   - contact.md
   - footer.md

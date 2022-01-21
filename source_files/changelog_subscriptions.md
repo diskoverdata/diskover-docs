@@ -1,5 +1,5 @@
 ___
-## Diskover Changelogs - Essential, Professional, Enterprise and Media Edition
+## Changelogs - Essential, Professional, Enterprise and Media Editions
 ___
 
 Content to come.

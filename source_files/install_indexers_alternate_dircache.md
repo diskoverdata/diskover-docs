@@ -9,7 +9,7 @@ Dir Cache Alt Scanner uses the Diskover cache module **diskover_cache** which us
 
 On subsequent crawls, when a directory mtime is the same as in cache, the directory list can be retrieved from cache rather than over the network mount.
 
->_Note:_ The first crawl for each top path can take longer as the cache is being built. Each top path has it's own cache db file stored in **__dircache__/ directory**.
+>_Note:_ The first crawl for each top path can take longer as the cache is being built. Each top path has it's own cache db file stored in **\__dircache\__/ directory**.
 
 🔴 &nbsp;To use the **dircache** alternate scanner, first copy the default/sample config:
 

@@ -9,7 +9,7 @@ Dir Cache Alt Scanner uses the Diskover cache module **diskover_cache** which us
 
 On subsequent crawls, when a directory mtime is the same as in cache, the directory list and all file stat attributes can be retrieved from cache rather than over the network mount.
 
->_Note:_ When a file gets modified in a directory, the directory's mtime does not get updated. Because of this, when using dircache, the file stat attributes for each file in the directory retrieved from cache may not be the same as on the storage.
+>_Important:_ When a file gets modified in a directory, the directory's mtime does not get updated. Because of this, when using dircache, the file stat attributes for each file in the directory retrieved from cache may not be the same as on the storage.
 
 >_Note:_ The first crawl for each top path can take longer as the cache is being built. Each top path has it's own cache db file stored in **\_\_dircache\_\_/** directory.
 

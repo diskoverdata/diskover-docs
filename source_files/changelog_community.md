@@ -1,5 +1,5 @@
 ___
-## Diskover Changelogs - Community Edition
+## Changelogs - Community Edition
 ___
 
 Content to come.

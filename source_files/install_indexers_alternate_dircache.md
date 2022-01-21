@@ -5,9 +5,11 @@ ___
 
 Directory Cache alt scanner can be used to speed up subsequent crawls when indexing slower network mounted storage.
 
-Dir Cache Alt Scanner uses the Diskover cache module **diskover_cache** which uses [Sqlite](https://www.sqlite.org/) DB to store a local cache of directory mtimes, directory file lists and file stat attributes.
+Dir Cache Alt Scanner uses the Diskover cache module **diskover_cache** which uses [Sqlite](https://www.sqlite.org/) DB to store a local cache of directory mtimes (modified times), directory file lists and file stat attributes.
 
-On subsequent crawls, when a directory mtime is the same as in cache, the directory list can be retrieved from cache rather than over the network mount.
+On subsequent crawls, when a directory mtime is the same as in cache, the directory list and all file stat attributes can be retrieved from cache rather than over the network mount.
+
+>_Note:_ When a file gets modified in a directory, the directory's mtime does not get updated. Because of this, when using dircache, the file stat attributes for each file in the directory retrieved from cache may not be the same as on the storage.
 
 >_Note:_ The first crawl for each top path can take longer as the cache is being built. Each top path has it's own cache db file stored in **\_\_dircache\_\_/** directory.
 
@@ -19,7 +21,7 @@ mkdir ~/.config/diskover_scandir_dircache
 cp scandir_dircache_config_sample/config.yaml ~/.config/diskover_scandir_dircache/config.yaml
 ```
 
-* `load_db_mem` setting can be set to `True` to load the Sqlite db into memory when crawl starts. This can help to improve db performance. Warning: check db file size before loading into memory to ensure you don't run out of memory on the indexing host.
+* `load_db_mem` setting can be set to `True` to load the Sqlite db into memory when crawl starts. This can help to improve db performance. **Warning**: check db file size before loading into memory to ensure you don't run out of memory on the indexing host.
 
 
 🔴 &nbsp;Scan and index using **dircache** using an auto-index name:

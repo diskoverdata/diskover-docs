@@ -45,7 +45,8 @@ ordered_documents:
   - install_indexers_windows.md
   - install_indexers_mac.md
   - install_indexers_alternate_intro.md
-  - install_indexers_s3.md
+  - install_indexers_alternate_s3.md
+  - install_indexers_alternate_dircache.md
   - install_indexers_alternate_dropbox.md
   - task_worker_intro.md
   - task_worker_linux.md

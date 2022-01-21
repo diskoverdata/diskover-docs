@@ -1,11 +1,11 @@
 ___
-# Changelogs - Essential +
+## Changelogs - Essential +
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 ___
 
-# Diskover v2 Change Log
+## Diskover v2 Change Log
 
-# [2.0-rc.3-5] - 2022-01-13
+## [2.0-rc.3-5] - 2022-01-13
 ### fixed
 - issue when using replace paths in diskover config would cause scanning to fail
 - issues with threaddirdepth
@@ -16,7 +16,7 @@ ___
 - threaddirdepth config setting when left empty/blank, now sets to a max limit of 3 directory depth, previously was unlimited
 
 
-# [2.0-rc.3] - 2021-12-27
+## [2.0-rc.3] - 2021-12-27
 ### fixed
 - issue with using a list of ES nodes (cluster) for Elasticsearch host setting in config file
 - issue with auto tags not applying to any new fields added with alt scanners or by plugins
@@ -61,7 +61,7 @@ ___
     - other optimizations
 
 
-# [2.0-rc.2] - 2021-10-19
+## [2.0-rc.2] - 2021-10-19
 ### fixed
 - issues with diskoverd (see changed)
 ### added
@@ -78,7 +78,7 @@ ___
     - other minor bug fixes and improvements
 
 
-# [2.0-rc.1] - 2021-10-10
+## [2.0-rc.1] - 2021-10-10
 ### note
 - if upgrading from version older than v2.0-b.11, please see v2.0-b.11 changelog
 ### fixed
@@ -90,7 +90,7 @@ ___
     - bug fixes and improvements
 
 
-# [2.0-b.11] - 2021-09-30
+## [2.0-b.11] - 2021-09-30
 ### fixed
 - memory leak/ high memory usage
 - occasional issue with diskover.py exiting before all es bulk uploads completed
@@ -132,7 +132,7 @@ ___
 - removed aws setting from diskover default/sample config, remove from your config
 
 
-# [2.0-b.10] - 2021-08-26
+## [2.0-b.10] - 2021-08-26
 ### fixed
 - number of dirs count for top directory's finishing crawling log output
 - ES bulk index error would cause diskover to print Exception but continue to run and consume memory, now any bulk index error will log the error and exit
@@ -163,7 +163,7 @@ ___
     - ES client 7.14 introduced check and error message when connecting to AWS ES (OpenSearch)
 
 
-# [2.0-b.9] - 2021-07-07
+## [2.0-b.9] - 2021-07-07
 ### fixed
 - plugin errors causing indexing to fail and skip directories
 - restore times enabled in config and using altscanner would cause error
@@ -232,7 +232,7 @@ ___
     - fixed issue with logging and errors/warnings not getting added to end crawl stats
 
 
-# [2.0-b.8] - 2021-05-11
+## [2.0-b.8] - 2021-05-11
 ### fixed
 - permission issues scanning directories over cifs/smb causing indexing to fail
 - es bulk upload unicode error from bad characters in file names causing indexing to fail
@@ -278,7 +278,7 @@ ___
     - a few minor updates
 
 
-# [2.0-b.7] - 2021-03-08
+## [2.0-b.7] - 2021-03-08
 ### fixed
 - issue with crawling Windows drive maps or unc paths and top path directory not getting indexed correctly
 - diskover-dupes-finder Exception error if file in index being hashed not longer exists
@@ -308,7 +308,7 @@ ___
     - cache now uses diskover_cache module for cacheing hashes to db when using --usecache cli option
 
 
-# [2.0-b.6] - 2021-02-09
+## [2.0-b.6] - 2021-02-09
 - added -m --maxdepth for limiting maximum depth to descend down directory tree
 - added Windows support for crawling UNC paths
 - changed Windows drive map crawling to set different top/root path depending on drive being scanned, example /z_drive for Z:\
@@ -322,7 +322,7 @@ ___
     - fixed issue with prev mtime not being compared to new mtime when using prev index for hashes with -U
 
 
-# [2.0-b.5] - 2021-01-25
+## [2.0-b.5] - 2021-01-25
 - added ability to use plugins (python) to add extra meta data to index and plugins/ directory (location of plugins)
 - added plugins section to default diskover config, copy to your config
 - added new cli option -l --listplugins to list plugins
@@ -340,7 +340,7 @@ ___
 - updated diskover-autotag to v2.0-b.3
 
 
-# [2.0-b.4] - 2021-01-20
+## [2.0-b.4] - 2021-01-20
 - fixed bugs with crawling in Windows
 - fixed bug with enabling skip empty dirs in config
 - fixed bug with some directories showing incorrect stat info
@@ -359,25 +359,25 @@ ___
     - added option to update all file docs file hash instead of just found dupes
 
 
-# [2.0-b.3] - 2021-01-03
+## [2.0-b.3] - 2021-01-03
 - added -a option to crawler for adding to an existing index
 - fixed issue connecting to AWS ES
 - improved crawl performance
 - Windows indexing now indexes real file owner names instead of just 0
 
 
-# [2.0-b.2] - 2020-12-19
+## [2.0-b.2] - 2020-12-19
 - added support for running crawler in Windows
 - added ability to crawl multiple paths into single index
 
 
-# [2.0-b.1] - 2020-12-15
+## [2.0-b.1] - 2020-12-15
 - first v2.0 beta release
 
 
-# Diskover-web v2 Change Log
+## Diskover-web v2 Change Log
 
-# [2.0-rc.3] - 2021-12-27
+## [2.0-rc.3] - 2021-12-27
 ### fixed
 - select indices table, task panel tables not saving sort order or show number of entries setting on page reload
 - directory info at top of charts not displaying when hide tree enabled on search results
@@ -420,7 +420,7 @@ ___
     - removed src/diskover/Fileactions.php
 
 
-# [2.0-rc.2] - 2021-10-19
+## [2.0-rc.2] - 2021-10-19
 ### fixed
 - issue when clicking on new file action task would cause error
 - issue with search filters being applied to analytics pages (filetree, treemap, etc)
@@ -446,7 +446,7 @@ ___
     - added new endpoint "toppaths" to get a list of top paths in an index
 
 
-# [2.0-rc.1] - 2021-10-10
+## [2.0-rc.1] - 2021-10-10
 ### note
 - if upgrading from version older than v2.0-b.11, please see v2.0-b.11 changelog
 ### fixed
@@ -463,7 +463,7 @@ ___
 - switched google analytics to opt-in with setting on settings page
 
 
-# [2.0-b.11] - 2021-09-30
+## [2.0-b.11] - 2021-09-30
 ### fixed
 - issues with ES scrolling causing PHP ES client errors
 - issue with indices page showing all index sizes as 0
@@ -522,7 +522,7 @@ ___
 - tags, smartsearch and costs edit pages now open in new window
 
 
-# [2.0-b.10] - 2021-08-26
+## [2.0-b.10] - 2021-08-26
 ### fixed
 - issue on select indices page and form to select show indices newer than and index name contains not reloading indices and using cached indices
 - issue on select indices page and deleting indices and reload indices link not clearing indices cache and reloading indices
@@ -574,7 +574,7 @@ ___
 - set default show indices newer than age to all on indices page
 
 
-# [2.0-b.9] - 2021-07-07
+## [2.0-b.9] - 2021-07-07
 ### fixed
 - bug with heatmap page setting index 1's indexname to same as index 2
 - current path only search filter not working
@@ -648,7 +648,7 @@ ___
 - set default show indices newer than to 2 weeks time on select indices page, previously was all
 
 
-# [2.0-b.8] - 2021-05-11
+## [2.0-b.8] - 2021-05-11
 ### fixed
 - reload button on search results page did not flush cache and reload tree data
 - indexing top root path / would not show correctly in path dropdown or on file search tree
@@ -686,7 +686,7 @@ ___
 - removed mouse right-click action from treemap and heatmap
 
 
-# [2.0-b.7] - 2021-03-08
+## [2.0-b.7] - 2021-03-08
 ### fixed
 - issue on select indices page for indexes with multiple top paths the "start time" was not showing the earliest start time of first path that was indexed
 - quick search when searching for tags
@@ -715,7 +715,7 @@ ___
 - docker nginx config in nginx/conf.d/diskover-web.conf
 
 
-# [2.0-b.6] - 2021-02-09
+## [2.0-b.6] - 2021-02-09
 - changed "Mtime filter" to "Time filter" on analytics pages (time field to use can be set in Constants.php)
 - added TIME and TIME_FIELD to Constants.php.sample, copy to your Constants.php
 - removed MTIME from Constants.php.sample, remove from your config
@@ -736,7 +736,7 @@ ___
 - fixed full path link on file view info page
 
 
-# [2.0-b.5] - 2021-01-25
+## [2.0-b.5] - 2021-01-25
 - added "Apply tags to" to tag drop down menu to allowing for tagging items recursively and non-recursively in directories
 - improved formatting for extra fields (array or string) on view info and search results pages (extra fields added by crawler plugins)
 - fixed issue with inode link on view file/directory info page
@@ -750,7 +750,7 @@ ___
 - fixed issue in file tree and tree map pages when switching between size and count and data not updating without having to click Reload button
 
 
-# [2.0-b.4] - 2021-01-17
+## [2.0-b.4] - 2021-01-17
 - fixed issue with dashboard and indexing / (root)
 - fixed issue with tags not working on search results page
 - fixed issue where not redirected to select index page when index being re-indexed and currently active
@@ -758,14 +758,14 @@ ___
 - added "Notify when newer index" option to select indices page
 
 
-# [2.0-b.3] - 2021-01-03
+## [2.0-b.3] - 2021-01-03
 - fixed minor issues on select index page
 - fixed bug where changing filters on filetree/ treemap page could cause page to not load
 - fixed issue connecting to AWS ES
 - improved ES query performance for time-based quick searches on nav
 
 
-# [2.0-b.2] - 2020-12-19
+## [2.0-b.2] - 2020-12-19
 - improved web ui nav bar
 - added ability to search by current path only or any path in nav search
 - added support to select multiple indices and search across more than one index in web ui
@@ -777,5 +777,5 @@ ___
 - improved Heat map page
 
 
-# [2.0-b.1] - 2020-12-15
+## [2.0-b.1] - 2020-12-15
 - first v2.0 beta release

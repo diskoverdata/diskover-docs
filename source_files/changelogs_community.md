@@ -1,5 +1,5 @@
 ___
-## Changelogs - Community Edition
+# Changelogs - Community Edition
 ___
 
 # Diskover v2 Community Edition Change Log

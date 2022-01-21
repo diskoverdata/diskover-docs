@@ -1,5 +1,5 @@
 ___
-## CHANGELOGS Community Edition
+## Changelogs - Community Edition
 ___
 
 Content to come.

@@ -1,10 +1,10 @@
 ___
-# Changelogs - Community Edition
+## Changelogs - Community Edition
 ___
 
-# Diskover v2 Community Edition Change Log
+## Diskover v2 Community Edition Change Log
 
-# [2.0-rc.3] - 2021-12-26
+## [2.0-rc.3] - 2021-12-26
 ### fixed
 - bug https://github.com/diskoverdata/diskover-community/issues/97
     - Exception ValueError: too many values to unpack (expected 4)
@@ -20,7 +20,7 @@ ___
 - improved crawl performance
 
 
-# [2.0-rc.2] - 2021-12-01
+## [2.0-rc.2] - 2021-12-01
 ### fixed
 ### added
 - Windows file owner indexing plugin
@@ -30,13 +30,13 @@ ___
 - removed Docker files, use linuxserver.io diskover docker container on docker hub
 
 
-# [2.0-rc.1] - 2021-10-08
+## [2.0-rc.1] - 2021-10-08
 - first community edition v2.0 rc release
 
 
-# Diskover-web v2 Community Edition Change Log
+## Diskover-web v2 Community Edition Change Log
 
-# [2.0-rc.3] - 2021-12-26
+## [2.0-rc.3] - 2021-12-26
 ### fixed
 - select indices table not saving sort order or show number of entries setting on page reload
 - issue when only single item on search results chart not showing bar in chart
@@ -45,7 +45,7 @@ ___
 - chart colors for items in bar and pie charts now match on dashboard and file search
 
 
-# [2.0-rc.2] - 2021-12-01
+## [2.0-rc.2] - 2021-12-01
 ### fixed
 - issue with setting ES_HTTPS to TRUE in config file or env var
 - directory info at top of charts not displaying when hide tree enabled on search results
@@ -64,5 +64,5 @@ ___
 - removed Docker files, use linuxserver.io diskover docker container on docker hub
 
 
-# [2.0-rc.1] - 2021-10-08
+## [2.0-rc.1] - 2021-10-08
 - first community edition v2.0 rc release

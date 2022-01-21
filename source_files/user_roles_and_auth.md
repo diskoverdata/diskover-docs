@@ -87,7 +87,7 @@ const INDEX_MAPPINGS = [
 
 Visibility can also be limited by AD/LDAP group permission and unix permissions filtering.
 
-> _Note:_ To use unix permissions filtering, you will need to enable and use the [unixperms plugin](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#unix-permissions-plugin) when scanning for both file and directory.
+> _Note:_ To use unix permissions filtering, you will need to enable and use the [unixperms plugin](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#unix-permissions-plugin) when indexing, for both file and directory.
 
 🔴 &nbsp;To limit index visibility by AD/ldap group membership and unix permissions:
 ```

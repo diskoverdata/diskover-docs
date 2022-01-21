@@ -62,8 +62,25 @@ ___
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
+#### Enable HTTP Basic Authentication
 
-#### Restricting API Access on Linux
+You can turn on HTTP Basic Auth for the Diskover-web api.
+
+🔴 &nbsp;Edit Diskover-web config and edit the below api auth settings:
+```
+vim /var/www/diskover-web/src/Diskover/Constants.php
+```
+
+```
+// HTTP Basic Auth for REST API
+    // api authentication, set to TRUE to enable or FALSE to disable
+    const API_AUTH_ENABLED = TRUE;
+    // api username and password
+    const API_USER = 'diskoverapi';
+    const API_PASS = 'apisecret';
+```
+
+#### Restricting API Access on Linux by Hosts
 
 To limit API access to certain hosts or networks, you can add an additional location block with allow/deny rules to your Diskover-Web NGINX config  **/etc/nginx/conf.d/diskover-web.conf**.
 ```

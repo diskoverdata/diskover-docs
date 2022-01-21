@@ -19,7 +19,7 @@ mkdir ~/.config/diskover_scandir_dircache
 cp scandir_dircache_config_sample/config.yaml ~/.config/diskover_scandir_dircache/config.yaml
 ```
 
-* load_db_mem setting can be set to True to load the Sqlite db into memory when crawl starts. This can help to improve db performance. Warning: check db file size before loading into memory to ensure you don't run out of memory on the indexing host.
+* `load_db_mem` setting can be set to True to load the Sqlite db into memory when crawl starts. This can help to improve db performance. Warning: check db file size before loading into memory to ensure you don't run out of memory on the indexing host.
 
 
 🔴 &nbsp;Scan and index using **dircache** using an auto-index name:

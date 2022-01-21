@@ -1,0 +1,12 @@
+website_name: Diskover SDK/API Guide
+# Folder on the website, if you specify "folder" it will deploy this guide to https://docs.diskoverdata.com/folder
+website_folder: diskover_dev_guide
+# All documents need to be in shared folder
+ordered_documents:
+  - index_diskover_guides_header.md
+  - guide_title_changelogs.md
+  - intro_copyright.md
+  - changelog_community.md
+  - changelog_subscriptions.md
+  - contact.md
+  - footer.md

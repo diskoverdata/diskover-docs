@@ -64,9 +64,9 @@ ___
 
 #### Enable HTTP Basic Authentication
 
-You can turn on HTTP Basic Auth for the Diskover-web api.
+You can turn on HTTP Basic Auth for the Diskover-web api. This will make it required to use a username and password to access the API.
 
-🔴 &nbsp;Edit Diskover-web config and edit the below api auth settings:
+🔴 &nbsp;Enable API auth and set a username and password:
 ```
 vim /var/www/diskover-web/src/Diskover/Constants.php
 ```
@@ -80,7 +80,9 @@ vim /var/www/diskover-web/src/Diskover/Constants.php
     const API_PASS = 'apisecret';
 ```
 
-#### Restricting API Access on Linux by Hosts
+> _Note:_ When enabling API Auth, remember to update your diskoverd task worker daemon config to use the new auth settings.
+
+#### Restricting API Access By Host/IP
 
 To limit API access to certain hosts or networks, you can add an additional location block with allow/deny rules to your Diskover-Web NGINX config  **/etc/nginx/conf.d/diskover-web.conf**.
 ```

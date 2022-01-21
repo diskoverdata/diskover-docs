@@ -127,14 +127,14 @@ vim /var/www/diskover-web/src/diskover/Constants.php
 
 ```
 // HTTP Basic Auth for REST API
-    // api authentication, set to TRUE to enable or FALSE to disable
-    const API_AUTH_ENABLED = TRUE;
-    // api username and password
-    const API_USER = 'diskoverapi';
-    const API_PASS = 'apisecret';
+// api authentication, set to TRUE to enable or FALSE to disable
+const API_AUTH_ENABLED = TRUE;
+// api username and password
+const API_USER = 'diskoverapi';
+const API_PASS = 'apisecret';
 ```
 
-> _Note:_ When changing API Auth settings, remember to update diskoverd task worker daemon config to use the new auth settings.
+> _Note:_ When changing API Auth settings, remember to update [diskoverd](https://docs.diskoverdata.com/diskover_installation_guide/#setting-up-diskover-task-worker-daemon) task worker daemon config to use the new auth settings.
 
 #### Restricting API Access By Host/IP
 

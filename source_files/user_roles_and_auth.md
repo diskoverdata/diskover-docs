@@ -80,7 +80,7 @@ vim /var/www/diskover-web/src/Diskover/Constants.php
     const API_PASS = 'apisecret';
 ```
 
-> _Note:_ When enabling API Auth, remember to update your diskoverd task worker daemon config to use the new auth settings.
+> _Note:_ When changing API Auth settings, remember to update diskoverd task worker daemon config to use the new auth settings.
 
 #### Restricting API Access By Host/IP
 

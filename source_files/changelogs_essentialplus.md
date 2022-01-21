@@ -3,7 +3,7 @@ ___
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 ___
 
-### Diskover v2 Changelog
+### Diskover v2 Essential + Changelog
 
 #### [2.0-rc.3-5] - 2022-01-13
 ##### fixed
@@ -375,7 +375,7 @@ ___
 - first v2.0 beta release
 
 ___
-### Diskover-web v2 Changelog
+### Diskover-web v2 Essential + Changelog
 
 #### [2.0-rc.3] - 2021-12-27
 ##### fixed

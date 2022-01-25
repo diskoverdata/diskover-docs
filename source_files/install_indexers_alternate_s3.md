@@ -3,10 +3,9 @@ ___
 
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
-Included in the alt scanners directory is a Python module **scandir_s3** for scanning AWS S3 buckets using the boto3 api.
+Included in the alt scanners directory is a Python module **scandir_s3** for scanning AWS S3 buckets using the boto3 API.
 
->_Note:_ If you want to install Diskover on existing AWS infrastructure, please refer to our [Diskover AWS Customer Deployment Guide](https://docs.diskoverdata.com/diskover_aws_deployment_guide/)
-
+>_Note:_ If you want to install Diskover on an existing AWS infrastructure, please refer to our [Diskover AWS Customer Deployment Guide](https://docs.diskoverdata.com/diskover_aws_deployment_guide/).
 <br>
 
 🔴 &nbsp;To use the **s3** alternate scanner, first install the **boto3** Python module:
@@ -15,11 +14,11 @@ Included in the alt scanners directory is a Python module **scandir_s3** for sca
 pip3 install boto3
 ```
 
-After you will need to set up and configure AWS credentials, etc. for **boto3**:
+🔴 &nbsp;After, you will need to set up and configure AWS credentials, etc. for **boto3**:
 
-[https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html)
+  [https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html)
 
-[https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html)
+  [https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html)
 
 🔴 &nbsp;Scan and index a **s3** bucket _**bucketname**_ using an auto-index name:
 

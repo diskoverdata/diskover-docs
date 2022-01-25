@@ -35,6 +35,8 @@ The typical use case is when you are not finding a file/directory in the indexed
 
 >🔆 &nbsp;If you want to **list dir** a single directory, you don't have to select it first; you can use the **gear icon** in the results pane by the directory name. 
 
+This image is an example of what could be seen following **list dir** selection:
+
 ![Image: Directory Live View](images/image_indices_file_action_live_view.png)
 
 - This will give you a list of the file/directories in the live directory which will be indexed during the next scheduled task.

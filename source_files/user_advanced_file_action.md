@@ -25,7 +25,7 @@ F) **find file sequences** > To find all files in a sequence, see details below.
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
-This feauture allows you to run a real-time scan of a directory, lists the content so you can search and pro-actively copy paths.
+This feauture allows you to run a real-time scan of a directory, lists the content so you can search and pro-actively copy paths. This feature only works for on-premise storage at the moment and is not avaiable for cloud storage.
 
 The typical use case is when you are not finding a file/directory in the indexed volumes within Diskover, you can access live directories and see if the files you are waiting to be onboarded will be available during the next indexing, as well as pro-actively copy paths for a work order.
 

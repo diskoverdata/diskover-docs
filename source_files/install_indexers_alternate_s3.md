@@ -27,7 +27,7 @@ cd /opt/diskover
 python3 diskover.py --altscanner scandir_s3 s3://bucketname
 ```
 
-#### Using Different Endpoint URL (other than AWS)
+#### Using Different Endpoint URL (Other than AWS)
 
 🔴 &nbsp;To use a different **s3 endpoint url** (Wasabi, etc.), set the **AWS_PROFILE** and the **S3_ENDPOINT_URL** environment variables before running the crawl:
 

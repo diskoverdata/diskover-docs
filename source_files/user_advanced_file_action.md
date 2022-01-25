@@ -3,7 +3,7 @@
 ___
 ### File Action
 
-The options within File Action pushes some boundaries around read-only files, allowing you to view and validate files in a way to facilitate your work.
+The options within File Action pushes some boundaries around read-only files, still safeguarding your files while allowing you to view and validate files in a way to facilitate your work.
 
 This feature needs to be enabled by your System Administrator.
 
@@ -25,17 +25,21 @@ F) **find file sequences** > To find all files in a sequence, see details below.
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
-When you are not finding a file/directory in the indexed volumes, you can access the live directory and see if the files you are waiting to be onboarded will be available during the next indexing, as well as preemptively copy the links for a work order.
+This feauture allows you to run a real-time scan of a directory, lists the content so you can search and pro-actively copy paths.
+
+The typical use case is when you are not finding a file/directory in the indexed volumes within Diskover, you can access live directories and see if the files you are waiting to be onboarded will be available during the next indexing, as well as pro-actively copy paths for a work order.
 
 - Select one or multiple directories in the results pane.
 - Click the **File Action** icon.
 - Select **list dir**.
 
+>🔆 &nbsp;If you want to **list dir** a single directory, you don't have to select it first; you can use the **gear icon** in the results pane by the directory name. 
+
 ![Image: Directory Live View](images/image_indices_file_action_live_view.png)
 
 - This will give you a list of the file/directories in the live directory which will be indexed during the next scheduled task.
 - You can search using CTRL F for Windows or COMMAND F for Mac.
-- This view allows you to preemtively copy paths if needed, although you can only copy them one by one if they are random and not in a block.
+- This view allows you to copy paths if needed, although you can only copy them one by one if they are random and not in a block.
 
 #### Preview Media with Telestream GLIM > open in Glim
 

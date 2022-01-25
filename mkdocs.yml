@@ -15,3 +15,5 @@ markdown_extensions:
         toc_depth: 3
 extra_css:
     - assets/css/extra.css
+extra_javascript:
+    - assets/js/extra.js

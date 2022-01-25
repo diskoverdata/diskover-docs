@@ -118,7 +118,7 @@ ___
 
 #### Enable HTTP Basic Authentication
 
-You can turn on HTTP Basic Auth for the Diskover-web api. This will make it required to use a username and password to access the API.
+You can turn on HTTP Basic Auth for the Diskover-Web API. This will make it required to use a username and password to access the API.
 
 🔴 &nbsp;Enable API auth and set a username and password:
 ```

@@ -39,7 +39,7 @@ ordered_documents:
   - backup_and_recovery_indexers.md
   - backup_and_recovery_diskover_web.md
   - maintenance_routine_intro.md
-  - maintenance_routine_diskover_web.md
+  - maintenance_routine_diskover_upgrade.md
   - maintenance_routine_elasticsearch_aws.md  
   - maintenance_emergency_intro.md
   - maintenance_emergency_diskover_web.md

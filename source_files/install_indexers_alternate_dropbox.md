@@ -37,7 +37,7 @@ cp scandir_dropbox.py /opt/diskover/scanners
 🔴 &nbsp;Create a new Dropbox Application:
 1.	Go to [https://www.dropbox.com/developers/](https://www.dropbox.com/developers/)
 2.	Select **App console** in the top menu.
-3.	Select **Create App**
+3.	Select **Create App**.
 
 ![Image: Create New Dropbox App](images/image_dropbox_create_app.png)
 

@@ -122,3 +122,5 @@ systemctl restart php-fpm
 ```
 tail -f /var/log/nginx/error.log
 ```
+
+🔴 &nbsp;After updating Diskover-web, it is recommended to [force/hard refresh](https://fabricdigital.co.nz/blog/how-to-hard-refresh-your-browser-and-clear-cache) your web browser to get the latest files from the web server and clear your local browser cache.

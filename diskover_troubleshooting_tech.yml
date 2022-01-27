@@ -6,6 +6,10 @@ ordered_documents:
   - index_diskover_guides_header.md
   - guide_title_troubleshooting_tech.md
   - intro_copyright.md
-  - troubleshooting_tech.md
+  - troubleshooting_tech_indexers.md
+  - troubleshooting_tech_diskover_web.md
+  - troubleshooting_tech_elasticsearch.md
+  - troubleshooting_tech_elasticsearch_aws.md
+  - troubleshooting_tech_misc.md
   - contact.md
   - footer.md

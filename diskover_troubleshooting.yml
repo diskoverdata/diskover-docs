@@ -1,0 +1,11 @@
+website_name: Diskover Technical Troubleshooting
+# Folder on the website, if you specify "folder" it will deploy this guide to https://docs.diskoverdata.com/folder
+website_folder: diskover_troubleshooting_tech
+# All documents need to be in shared folder
+ordered_documents:
+  - index_diskover_guides_header.md
+  - guide_title_troubleshooting_tech.md
+  - intro_copyright.md
+  - troubleshooting_tech.md
+  - contact.md
+  - footer.md

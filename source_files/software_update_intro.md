@@ -7,4 +7,3 @@ ___
 >Please refer to the `CHANGELOG.MD` files (for both diskover and diskover-web) in the tar.gz/zip download to see what has changed and any breaking changes. The software may fail to work after upgrading without referring to these files for important changes.
 
 >After updating Diskover-web, it is recommended to [force/hard reload](https://fabricdigital.co.nz/blog/how-to-hard-refresh-your-browser-and-clear-cache) your web browser to get the latest files from the web server.
->

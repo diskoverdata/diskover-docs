@@ -18,7 +18,7 @@ C:Program FilesNginxnginx-1.19.6logserror.log
 ```
 
 ___
-#### Diskover-Web Task Management
+### Diskover-Web Task Management
 
 🔴 &nbsp;To get started with the task panel, check that you have the json files in diskover-web `public/tasks/` directory.
 ```

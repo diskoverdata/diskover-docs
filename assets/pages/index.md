@@ -15,6 +15,8 @@ ___
 
 [Diskover SDK and API Guide](https://docs.diskoverdata.com/diskover_dev_guide/)
 
+[Troubleshooting](https://docs.diskoverdata.com/diskover_troubleshooting_tech)
+
 ___
 ## User Guides
 

@@ -10,6 +10,7 @@ ordered_documents:
   - troubleshooting_tech_diskover_web.md
   - troubleshooting_tech_elasticsearch.md
   - troubleshooting_tech_elasticsearch_aws.md
+  - troubleshooting_tech_web_interface.md
   - troubleshooting_tech_misc.md
   - contact.md
   - footer.md

@@ -1,5 +1,6 @@
 ___
-### AWS Elasticsearch Domain
+## AWS Elasticsearch Domain
+___
 
 The following reference page describes how to identify and solve common Amazon Elasticsearch Service (Amazon ES) issues. Consult the information in this section before contacting AWS Support. 
 

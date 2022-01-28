@@ -2,29 +2,30 @@ ___
 ## Elasticsearch
 ___
 
-### Support from elastic.co:
+### Elasticsearch troubleshooting Information
+
+Support from elastic.co:
 
 [https://docs.aws.amazon.com/opensearch-service/latest/developerguide/handling-errors.html](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/handling-errors.html)
 
 ___
-### Check Cluster Health
+### Useful Commands
+
+#### Check Cluster Health
 ```
 curl http://elasticsearch:9200/_cat/health?v
 ```
 
-___
-### List Indices
+#### List Indices
 ```
 curl -X GET http://elasticsearch:9200/_cat/indices
 ```
 
-___
-### Delete Indices
+#### Delete Indices
 ```
 curl -X DELETE http://elasticsearch:9200/diskover-indexname
 ```
 
-___
 ### Username/Password - To Query the Elasticsearch Cluster with Login Credentials
 ```
 curl -u login:password https://elasticsearch:9200/_cat/indices

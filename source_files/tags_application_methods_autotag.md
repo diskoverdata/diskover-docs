@@ -64,7 +64,7 @@ Autotag Keys:
 - `atime`: access time at least this number of older (days)
 - `tags`: a list of tags to apply if item matches
 
-> Note: name, name_exclude, path, path_exclude all use [Python re.search](https://docs.python.org/3.7/library/re.html) (regular expression).
+> Note: name, name_exclude, path, path_exclude, and ext all use [Python re.search](https://docs.python.org/3.7/library/re.html) (regular expression).
 > All list items should be in quotes and separated by comma
 
 

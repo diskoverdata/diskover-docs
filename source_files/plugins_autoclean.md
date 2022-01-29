@@ -7,6 +7,8 @@ The autoclean plugin is designed to move, delete, rename or run custom commands 
 
 With the use of tags, the autoclean plugin can be used to implement a RACI model or approval process for archive and deletion (approved_archive, approved_delete, etc.) tag application. The plugin criteria can then be set to meet desired set of tags (times, etc.) to invoke action.
 
+🔴 &nbsp;Check that you have the config file in `~/.config/diskover_autoclean/config.yaml`, if not, copy from default config folder in `configs_sample/diskover_autoclean/config.yaml`.
+
 🔴 &nbsp;The autoclean plugin runs post as scheduled job operating on completed indices, to enable:
 ```
 vim /root/.config/diskover_autoclean/config.yaml

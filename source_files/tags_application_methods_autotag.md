@@ -30,7 +30,7 @@ files: [
         'name': [],
         'name_exclude': [],
         'ext': [],
-        'path': ['/isilon2/sources/platforms/netflix/'],
+        'path': ['^/isilon2/sources/platforms/netflix'],
         'path_exclude': [],
         'ctime': 60,
         'mtime': 0,
@@ -40,9 +40,9 @@ files: [
         # autotag daily deletions for $RECYCLE.BIN
         {
         'name': [],
-        'name_exclude': ['desktop'],
+        'name_exclude': ['desktop.ini'],
         'ext': [],
-        'path': ['/*/$RECYCLE.BIN'],
+        'path': ['^/*/$RECYCLE.BIN'],
         'path_exclude': [],
         'ctime': 0,
         'mtime': 0,

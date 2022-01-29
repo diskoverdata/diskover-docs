@@ -1,12 +1,11 @@
 #### Tag Application via Autotag
 
-Tags can be applied automatically via a series of rules applied to directories or filenames. The rules can be very powerful based on a combination of name, location, age, tags, etc.
+Tags can be applied automatically via a series of rules applied to directories or file. The rules can be very powerful based on a combination of file name, extension, path, age, size, etc.
 
 - Auto-tagging rules can be found in the `diskover_autotag` config file for tagging files and directories.
 - Auto-tagging can also be done during a crawl by enabling autotag in diskover config and setting rules in the diskover config file.
 - All tags are stored in the `tags` field in the index - there is no limit to the number of tags.
 
-🔴 &nbsp;Check that you have the config file in `~/.config/diskover_autotag/config.yaml`, if not, copy from the default config folder in `configs_sample/diskover_autotag/config.yaml`.
 
 ##### Autotag During Indexing
 
@@ -21,37 +20,55 @@ vim /root/.config/diskover/config.yaml
 
 In the following example, the rules will:
 
-- Apply the **expired** tag to files in the **netflix** folder after **60** days
-- Apply the **autoclean** tag to files in the **$RECYCLE.BIN**
+- Apply the **expired** tag to files in the **netflix** folder with a ctime (change time) **60** days or older
+- Apply the **autoclean** tag to files in **$RECYCLE.BIN folder**
 
 ```
-        files: [
-                {
-                # autotag retention for /mnt/isilon2/sources/platforms/netflix
-                'name': [],
-                'name_exclude': [],
-                'ext': [],
-                'path': ['/isilon2/sources/platforms/netflix/'],
-                'path_exclude': [],
-                'ctime': 60,
-                'tags': ['expired']
-                },
-                # autotag daily deletions for $RECYCLE.BIN
-                {
-                'name': [],
-                'name_exclude': ['desktop'],
-                'ext': [],
-                'path': ['/*/$RECYCLE.BIN'],
-                'path_exclude': [],
-                'ctime': 0,
-                'tags': ['autoclean']
-                }
-            ]
+files: [
+        {
+        # autotag retention for /mnt/isilon2/sources/platforms/netflix
+        'name': [],
+        'name_exclude': [],
+        'ext': [],
+        'path': ['/isilon2/sources/platforms/netflix/'],
+        'path_exclude': [],
+        'ctime': 60,
+        'mtime': 0,
+        'atime': 0,
+        'tags': ['expired']
+        },
+        # autotag daily deletions for $RECYCLE.BIN
+        {
+        'name': [],
+        'name_exclude': ['desktop'],
+        'ext': [],
+        'path': ['/*/$RECYCLE.BIN'],
+        'path_exclude': [],
+        'ctime': 0,
+        'mtime': 0,
+        'atime': 0,
+        'tags': ['autoclean']
+        }
+    ]
 ```
+
+- name: a list of file names
+- name_exclude: a list of file names to exclude
+- ext: a list of file extensions (without the .)
+- path: a list of paths (parent_path field)
+- path_exclude: a list of paths (parent_path field) to exclude
+- ctime: change time
+- mtime: modified time
+- atime: access time
+- tags: a list of tags to apply if item matches
+
+> Note: name, name_exclude, path, path_exclude all use [Python re.search](https://docs.python.org/3.7/library/re.html) (regexp).
 
 ##### Autotag an Existing Index (Post Index Process)
 
-Tag application can be executed via a shell to an existing index (post actual index process). 
+Tag application can be executed via a shell to an existing index (post actual index process).
+
+🔴 &nbsp;Check that you have the config file in `~/.config/diskover_autotag/config.yaml`, if not, copy from the default config folder in `configs_sample/diskover_autotag/config.yaml`.
 
 🔴 &nbsp;To configure post index autotag rules:
 ```

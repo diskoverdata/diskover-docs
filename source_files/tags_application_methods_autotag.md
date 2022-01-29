@@ -54,14 +54,14 @@ files: [
 
 Autotag Keys:
 
-- `name`: a list of file names (case-sensitive)
-- `name_exclude`: a list of file names to exclude (case-sensitive)
+- `name`: a list of file/directory names (case-sensitive)
+- `name_exclude`: a list of file/directory names to exclude (case-sensitive)
 - `ext`: a list of file extensions (without the .) (use lowercase - all file extension are stored as lowercase in the index)
 - `path`: a list of paths (parent_path field, case-sensitive)
 - `path_exclude`: a list of paths to exclude (parent_path field, case-sensitive)
-- `ctime`: change time at least this number of older (days)
-- `mtime`: modified time at least this number of older (days)
-- `atime`: access time at least this number of older (days)
+- `ctime`: change time at least this number or older (days)
+- `mtime`: modified time at least this number or older (days)
+- `atime`: access time at least this number or older (days)
 - `tags`: a list of tags to apply if item matches
 
 > Note: name, name_exclude, path, path_exclude, and ext all use [Python re.search](https://docs.python.org/3.7/library/re.html) (regular expression).

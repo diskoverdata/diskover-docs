@@ -20,7 +20,59 @@ vim /root/.config/diskover_autoclean/config.yaml
 - Query can be any valid Elasticsearch query using [query string query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html).
 - Action can be: delete, rename, move or custom. Custom can be used to run a command or script.
 
-> Note: When using custom action, custommd is required. File/directory full path is passed as arg to customcmd.
+> Note: When using custom action, custocmd value is required. The full file/directory path is passed as arg to customcmd.
+
+Example using custom action:
+
+Set action to custom and specifiy customcmd, in this example we are using a bash script:
+```
+dirs: [
+    {
+    'query': 'tags:archive AND type:directory',
+    'action': 'custom',
+    'customcmd': './scripts/autoclean_move_dir.sh',
+    'renametext': '',
+    'movedir': '',
+    'checktimes': ['ctime', 'mtime'],
+    'tags': ['autocleaned', 'custommove']
+    }
+]
+```
+Create bash script to handle customcmd:
+```sh
+#!/bin/bash
+#
+# Move directory and modify it's destination path
+# We don't need to check if directory exists since autoclean takes care of that
+#
+
+# get source path from arg 1
+$SRC_PATH=$1
+
+# set destination directory
+$DST_PATH=/mnt/nas2/archive/
+
+# make destination directory if it does not exist
+if [ ! -d "$DST_PATH" ]; then
+  mkdir -p "$DST_PATH"
+fi
+
+# check if mkdir worked
+if [ $? -gt 0 ]; then
+  echo ERROR could not make destination directory!
+  exit 1
+fi
+
+# change directory to the source path
+cd "$SRC_PATH"
+# go up two directory levels since we want to move from that directory depth
+cd ../..
+# set source path to the current directory
+$SRC_PATH=`pwd`
+
+# use mv command to move directory
+mv -f "$SRC_PATH" "$DST_PATH"
+```
 
 
 #### Add Autoclean Task to Diskover-web

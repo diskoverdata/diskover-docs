@@ -86,7 +86,14 @@ fi
 # use mv command to move directory
 echo Moving "$SRC_PATH" to "$DST_PATH" ...
 mv -f "$SRC_PATH" "$DST_PATH"
-echo Done.
+# check if mv worked
+if [ $? -gt 0 ]; then
+  >&2 echo ERROR could not make destination directory $DST_PATH !
+  exit 1
+else
+  echo Done.
+fi
+exit 0
 ```
 
 

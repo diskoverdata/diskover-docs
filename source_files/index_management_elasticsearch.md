@@ -125,3 +125,8 @@ curl -X GET http://elasticsearch_endpoint:9200/_cat/indices
 curl -X DELETE http://elasticsearch_endpoint:9200/diskover-indexname
 ```
 > See Elasticsearch [delete index api](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-delete-index.html) for more info.
+
+🔴 &nbsp;Delete indices on AWS ES/OpenSearch:
+```
+curl -u username:password -X DELETE https://endpoint.es.amazonaws.com:443/diskover-indexname
+```

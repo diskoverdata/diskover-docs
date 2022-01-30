@@ -56,12 +56,11 @@ $DST_PATH=/mnt/nas2/archive/
 # make destination directory if it does not exist
 if [ ! -d "$DST_PATH" ]; then
   mkdir -p "$DST_PATH"
-fi
-
-# check if mkdir worked
-if [ $? -gt 0 ]; then
-  echo ERROR could not make destination directory!
-  exit 1
+  # check if mkdir worked
+  if [ $? -gt 0 ]; then
+    echo ERROR could not make destination directory!
+    exit 1
+  fi
 fi
 
 # change directory to the source path

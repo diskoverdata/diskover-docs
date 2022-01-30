@@ -88,7 +88,7 @@ echo Moving "$SRC_PATH" to "$DST_PATH" ...
 mv -f "$SRC_PATH" "$DST_PATH"
 # check if mv worked
 if [ $? -gt 0 ]; then
-  >&2 echo ERROR could not make destination directory $DST_PATH !
+  >&2 echo ERROR moving directory!
   exit 1
 else
   echo Done.

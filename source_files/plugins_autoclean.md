@@ -42,13 +42,20 @@ Create bash script to handle customcmd:
 ```sh
 #!/bin/bash
 #
-# Move directory and modify it's destination path
+# Move directory and modify it's source path
 # We don't need to check if source directory exists since autoclean 
 # takes care of that before calling this script
 #
 
 # get source path from arg 1
 SRC_PATH=$1
+
+# change directory to the source path
+cd "$SRC_PATH"
+# go up one directory level since we want to move from that directory depth
+cd ..
+# set source path to the current directory
+SRC_PATH=`pwd`
 
 # set destination directory
 DST_PATH=/mnt/nas2/archive/
@@ -63,15 +70,10 @@ if [ ! -d "$DST_PATH" ]; then
   fi
 fi
 
-# change directory to the source path
-cd "$SRC_PATH"
-# go up one directory level since we want to move from that directory depth
-cd ..
-# set source path to the current directory
-SRC_PATH=`pwd`
-
 # use mv command to move directory
+echo Moving "$SRC_PATH" to "$DST_PATH" ...
 mv -f "$SRC_PATH" "$DST_PATH"
+echo Done.
 ```
 
 

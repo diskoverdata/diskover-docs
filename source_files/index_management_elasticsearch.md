@@ -115,17 +115,16 @@ curl -u username:password -X POST "https://<aws es endpoint>:443/_opendistro/_is
 Indexes can be manually listed and deleted in Elasticsearch via:
 
 🔴 &nbsp;List indices:
+> See Elasticsearch [cat index api](https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-indices.html) for more info.
 ```
 curl -X GET http://elasticsearch_endpoint:9200/_cat/indices
 ```
-> See Elasticsearch [cat index api](https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-indices.html) for more info.
 
 🔴 &nbsp;Delete indices:
+> See Elasticsearch [delete index api](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-delete-index.html) for more info.
 ```
 curl -X DELETE http://elasticsearch_endpoint:9200/diskover-indexname
 ```
-> See Elasticsearch [delete index api](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-delete-index.html) for more info.
-
 🔴 &nbsp;Delete indices on AWS ES/OpenSearch:
 ```
 curl -u username:password -X DELETE https://endpoint.es.amazonaws.com:443/diskover-indexname

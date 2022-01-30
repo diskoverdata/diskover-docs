@@ -78,7 +78,7 @@ if [ ! -d "$DST_PATH" ]; then
   mkdir -p "$DST_PATH"
   # check if mkdir worked
   if [ $? -gt 0 ]; then
-    >&2 echo ERROR could not make destination directory!
+    >&2 echo ERROR could not make destination directory $DST_PATH !
     exit 1
   fi
 fi

@@ -48,10 +48,10 @@ Create bash script to handle customcmd:
 #
 
 # get source path from arg 1
-$SRC_PATH=$1
+SRC_PATH=$1
 
 # set destination directory
-$DST_PATH=/mnt/nas2/archive/
+DST_PATH=/mnt/nas2/archive/
 
 # make destination directory if it does not exist
 if [ ! -d "$DST_PATH" ]; then
@@ -68,7 +68,7 @@ cd "$SRC_PATH"
 # go up one directory level since we want to move from that directory depth
 cd ..
 # set source path to the current directory
-$SRC_PATH=`pwd`
+SRC_PATH=`pwd`
 
 # use mv command to move directory
 mv -f "$SRC_PATH" "$DST_PATH"

@@ -20,7 +20,7 @@ vim /root/.config/diskover_autoclean/config.yaml
 - Query can be any valid Elasticsearch query using [query string query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html).
 - Action can be: delete, rename, move or custom. Custom can be used to run a command or script.
 
-##### Add Task to Diskover-web
+#### Add Task to Diskover-web
 
 🔴 &nbsp;Create custom task in Task Panel to run on scheduled basis.
 

@@ -38,7 +38,7 @@ dirs: [
     }
 ]
 ```
-Create bash script to handle customcmd:
+Create bash script and make it executable for customcmd:
 
 ```sh
 touch autoclean_move_dir.sh

@@ -65,8 +65,8 @@ fi
 
 # change directory to the source path
 cd "$SRC_PATH"
-# go up two directory levels since we want to move from that directory depth
-cd ../..
+# go up one directory level since we want to move from that directory depth
+cd ..
 # set source path to the current directory
 $SRC_PATH=`pwd`
 

@@ -60,7 +60,7 @@ SRC_PATH=$1
 FILE_COUNT=`find "$SRC_PATH" -type f -name "*.doc" 2> /dev/null | wc -l`
 if [ $FILE_COUNT -gt 0 ]; then
   echo WARNING $SRC_PATH contains $FILE_COUNT .doc files, not moving!
-  exit 0
+  exit 1
 fi
 
 # change directory to the source path

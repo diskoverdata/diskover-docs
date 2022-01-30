@@ -3,6 +3,9 @@ ___
 
 Indices can be managed by policy and manually with Elasticsearch.
 
+>Note: For AWS ES/OpenSearch see Index State Management on AWS ES/OpenSearch below.
+
+
 #### Elasticsearch Index Lifecycle Management
 
 You can create and apply Index Lifecycle Management (ILM) policies to automatically manage your Diskover indices according to your performance, resiliency, and retention requirements.

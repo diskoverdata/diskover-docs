@@ -39,6 +39,13 @@ dirs: [
 ]
 ```
 Create bash script to handle customcmd:
+
+```sh
+touch scripts/autoclean_move_dir.sh
+chmod +x scripts/autoclean_move_dir.sh
+vim scripts/autoclean_move_dir.sh
+```
+
 ```sh
 #!/bin/bash
 #

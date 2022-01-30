@@ -43,12 +43,25 @@ Create bash script to handle customcmd:
 #!/bin/bash
 #
 # Move directory and modify it's source path
-# We don't need to check if source directory exists since autoclean 
+# Before moving, check if the directory, and all sub-dirs, have any 
+# .doc files and if so, don't move it
+#
+# Example:
+# /mnt/nas1/some/dir to /mnt/nas2/archive/some/dir
+#
+# Note: We don't need to check if source directory exists since autoclean 
 # takes care of that before calling this script
 #
 
 # get source path from arg 1
 SRC_PATH=$1
+
+# check for .doc files in source directory and all sub-directories
+FILE_COUNT=`find "$SRC_PATH" -type f -name "*.doc" 2> /dev/null | wc -l`
+if [ $FILE_COUNT -gt 0 ]; then
+  echo WARNING $SRC_PATH contains $FILE_COUNT .doc files, not moving!
+  exit 0
+fi
 
 # change directory to the source path
 cd "$SRC_PATH"

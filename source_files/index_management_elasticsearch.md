@@ -17,7 +17,7 @@ The following provides an example for managing Diskover indices on your Elastics
 
 🔴 &nbsp;Your Elasticsearch service endpoint url is `<aws es endpoint>`
 
-🔴 &nbsp;You want your indices to be purged after thirty days **30d**
+🔴 &nbsp;You want your indices to be purged after seven days **7d**
 
 🔴 &nbsp;Your policy name will be created as  **cleanup_policy_diskover**
 ```
@@ -30,7 +30,7 @@ curl -X PUT "http://elasticsearch:9200/_ilm/policy/cleanup_policy_diskover?prett
             "actions": {}
           },
           "delete": {
-            "min_age": "30d",
+            "min_age": "7d",
             "actions": { "delete": {} }
           }
         }
@@ -54,6 +54,59 @@ curl -X PUT "http://elasticsearch:9200/diskover-*/_settings?pretty" \
       "settings": { "index.lifecycle.name": "cleanup_policy_diskover" }
     }' 
 ```
+
+#### Index State Management on AWS ES/OpenSearch
+
+More information about [Index State Management in Amazon ES](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/ism.html) can be found on aws docs.
+
+Example:
+* Your AWS Elasticsearch Service endpoint url is `<aws es endpoint>`
+* You want your indices to be purged after seven days **7d**
+* Your policy name will be created as cleanup_policy_diskover
+
+🔴 &nbsp;Create a policy that deletes indices after one month for new diskover indices
+
+```sh
+curl -u username:password -X PUT "https://<aws es endpoint>:443/_opendistro/_ism/policies/cleanup_policy_diskover" \
+     -H 'Content-Type: application/json' \
+     -d '{
+	  "policy": {
+	    "description": "Cleanup policy for diskover indices on AWS ES.",
+	    "schema_version": 1,
+	    "default_state": "current",
+	    "states": [{
+	      "name": "current",
+	      "actions": [],
+	      "transitions": [{
+	        "state_name": "delete",
+	        "conditions": {
+	          "min_index_age": "30d"
+	        }
+	      }]
+	      },
+	      {
+	        "name": "delete",
+	        "actions": [{
+	          "delete": {}
+	        }],
+	        "transitions": []
+	      }
+	    ],
+	    "ism_template": {
+	      "index_patterns": ["diskover-*"],
+	      "priority": 100
+	    }
+	  }
+        }'
+```
+🔴 &nbsp;Apply this policy to all existing diskover indices
+
+```sh
+curl -u username:password -X POST "https://<aws es endpoint>:443/_opendistro/_ism/add/diskover-*" \
+     -H 'Content-Type: application/json' \
+     -d '{ "policy_id": "cleanup_policy_diskover" }'
+```
+
 
 #### Elasticsearch Manual Index Management
 

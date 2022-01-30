@@ -4,7 +4,7 @@ ___
 Indices can be managed by policy and manually with Elasticsearch.
 
 >Note: For AWS ES/OpenSearch see Index State Management on AWS ES/OpenSearch below.
-
+>Indices can also be managed using [Kibana index management](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/index-mgmt.html). 
 
 #### Elasticsearch Index Lifecycle Management
 

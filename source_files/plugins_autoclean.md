@@ -43,7 +43,8 @@ Create bash script to handle customcmd:
 #!/bin/bash
 #
 # Move directory and modify it's destination path
-# We don't need to check if directory exists since autoclean takes care of that
+# We don't need to check if source directory exists since autoclean 
+# takes care of that before calling this script
 #
 
 # get source path from arg 1

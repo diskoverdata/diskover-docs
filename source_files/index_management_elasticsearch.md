@@ -82,7 +82,7 @@ curl -u username:password -X PUT "https://<aws es endpoint>:443/_opendistro/_ism
 	      "transitions": [{
 	        "state_name": "delete",
 	        "conditions": {
-	          "min_index_age": "30d"
+	          "min_index_age": "7d"
 	        }
 	      }]
 	      },

@@ -59,7 +59,7 @@ SRC_PATH=$1
 # check for .doc files in source directory and all sub-directories
 FILE_COUNT=`find "$SRC_PATH" -type f -name "*.doc" 2> /dev/null | wc -l`
 if [ $FILE_COUNT -gt 0 ]; then
-  echo WARNING $SRC_PATH contains $FILE_COUNT .doc files, not moving!
+  >&2 echo WARNING $SRC_PATH contains $FILE_COUNT .doc files, not moving!
   exit 1
 fi
 
@@ -78,7 +78,7 @@ if [ ! -d "$DST_PATH" ]; then
   mkdir -p "$DST_PATH"
   # check if mkdir worked
   if [ $? -gt 0 ]; then
-    echo ERROR could not make destination directory!
+    >&2 echo ERROR could not make destination directory!
     exit 1
   fi
 fi

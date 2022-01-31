@@ -49,33 +49,16 @@ vim autoclean_move_dir.sh
 ```sh
 #!/bin/bash
 #
-# Move directory and modify it's source path
-# Before moving, check if the directory, and all sub-dirs, have any 
-# .doc files and if so, don't move it
-#
-# Example:
-# /mnt/nas1/some/dir to /mnt/nas2/archive/some/dir
+# Move directory using Linux mv command.
+# Before moving, check if the source directory has any 
+# .doc files and if so, don't move it.
 #
 # Note: We don't need to check if source directory exists since autoclean 
-# takes care of that before calling this script
+# takes care of that before calling this script.
 #
 
 # get source path from arg 1
 SRC_PATH=$1
-
-# check for .doc files in source directory and all sub-directories
-FILE_COUNT=`find "$SRC_PATH" -type f -name "*.doc" 2> /dev/null | wc -l`
-if [ $FILE_COUNT -gt 0 ]; then
-  >&2 echo WARNING $SRC_PATH contains $FILE_COUNT .doc files, not moving!
-  exit 1
-fi
-
-# change directory to the source path
-cd "$SRC_PATH"
-# go up one directory level since we want to move from that directory depth
-cd ..
-# set source path to the current directory
-SRC_PATH=`pwd`
 
 # set destination directory
 DST_PATH=/mnt/nas2/archive/
@@ -90,9 +73,25 @@ if [ ! -d "$DST_PATH" ]; then
   fi
 fi
 
+# check for .doc files in source directory
+echo Checking for any .doc files ...
+file_count=$(find "$SRC_PATH" -type f -name "*.doc" 2> /dev/null | wc -l)
+if [ $file_count -gt 0 ]; then
+  >&2 echo WARNING $SRC_PATH contains $file_count .doc files, not moving!
+  exit 1
+fi
+
+# check destination directory doesn't already exist
+destination_dirname="$(basename "$SRC_PATH")"
+destination="$DST_PATH/$destination_dirname"
+if [ -d "$destination" ]; then
+  >&2 echo ERROR $destination exists, not moving directory!
+  exit 1
+fi
+
 # use mv command to move directory
 echo Moving "$SRC_PATH" to "$DST_PATH" ...
-mv -f "$SRC_PATH" "$DST_PATH"
+mv "$SRC_PATH" "$DST_PATH"
 # check if mv worked
 if [ $? -gt 0 ]; then
   >&2 echo ERROR moving directory!

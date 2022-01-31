@@ -26,7 +26,7 @@ curl -X GET http://elasticsearch:9200/_cat/indices
 curl -X DELETE http://elasticsearch:9200/diskover-indexname
 ```
 
-### Username/Password - To Query the Elasticsearch Cluster with Login Credentials
+#### To Query the Elasticsearch Cluster with Login Credentials
 ```
 curl -u login:password https://elasticsearch:9200/_cat/indices
 ```

@@ -25,7 +25,16 @@ ___
 
 #### Empty directory(ies) in the search results
 
-To avoid having empty directories in your search results, open the search [Filters](https://docs.diskoverdata.com/diskover_user_guide/#search-filters) and type **1** in the **File size (min)** field, click **Save filters** and resume your search.
+- To avoid having empty directories in your search results, open the search [Filters](https://docs.diskoverdata.com/diskover_user_guide/#search-filters) and type **1** in the **File size (min)** field, click **Save filters** and resume your search.
+
+#### How to only have files or directories in your search results
+
+- Open the search [Filters](https://docs.diskoverdata.com/diskover_user_guide/#search-filters) and select **file** or **directory** from the **Doc type** drop-down list.
+- Use a [field name](https://docs.diskoverdata.com/diskover_user_guide/#queries-with-field-names) in the search bar:
+  - type:file
+  - type:directory
+
+
 
 
 

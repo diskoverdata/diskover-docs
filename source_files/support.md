@@ -6,7 +6,7 @@ ___
 
 [Technical Troubleshooting Guide](https://docs.diskoverdata.com/diskover_troubleshooting_tech/)
 
-[End-Users Troubleshooting Guide](https://docs.diskoverdata.com/diskover_troubleshooting_end_user/)
+[End-User Troubleshooting Guide](https://docs.diskoverdata.com/diskover_troubleshooting_end_user/)
 
 ### Documentation
 

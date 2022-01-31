@@ -62,6 +62,4 @@ ___
 
 #### How to achieve complex sorting of search results
 
-Efficiently sorting columns and analyzing data in the user interface can be tricky, especially when there are many pages of results involved. 
-
-It is best to [Export](https://docs.diskoverdata.com/diskover_user_guide/#export-search-results) the data in csv format and then open that file in Excel where you'll be able to achieve complex sorting.
+- Efficiently sorting columns and analyzing data in the user interface can be tricky, especially when there are many pages of results involved. It is best to [Export](https://docs.diskoverdata.com/diskover_user_guide/#export-search-results) the data in csv format and then open that file in Excel where you'll be able to achieve complex sorting.

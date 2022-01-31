@@ -4,9 +4,9 @@ ___
 
 ### Troubleshooting
 
-Please refer to our Technical Troubleshooting Guide: 
+[Technical Troubleshooting Guide](https://docs.diskoverdata.com/diskover_troubleshooting_tech/)
 
-[https://docs.diskoverdata.com/diskover_troubleshooting_tech/](https://docs.diskoverdata.com/diskover_troubleshooting_tech/)
+[End-Users Troubleshooting Guide](https://docs.diskoverdata.com/diskover_troubleshooting_end_user/)
 
 ### Documentation
 

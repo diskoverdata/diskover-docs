@@ -1,0 +1,13 @@
+website_name: Diskover Troubleshooting for End-Users
+# Folder on the website, if you specify "folder" it will deploy this guide to https://docs.diskoverdata.com/folder
+website_folder: diskover_troubleshooting_end_user
+# All documents need to be in shared folder
+ordered_documents:
+  - index_diskover_guides_header.md
+  - guide_title_troubleshooting_tech.md
+  - intro_copyright.md
+  - troubleshooting_end_user_search_results.md
+  - troubleshooting_end_user_user_interface.md
+  - troubleshooting_end_user_indices.md
+  - contact.md
+  - footer.md

@@ -34,7 +34,16 @@ ___
   - type:file
   - type:directory
 
+#### Green info bar shows thousands of results, but they are not all showing in the results pane
 
+- The default view is 10 results per page, but you can change that number to up to 1,000 via the [Show items selector](https://docs.diskoverdata.com/diskover_user_guide/#items_per_page). If you have more than 1,000 results, you will see more than one page of results, and that indicator is located at the top right of the search results pane.
 
+#### Search results are on several pages instead of just one
 
+- There are 3 reasons why Diskover’s search results were set-up that way: 1) for speed, 2) for speed and 3) to break up possible several thousands of lines of results, making it easier to manage.
+
+#### Lost my location and/or path
+
+- You can always see the path that you're in via the [path bar](https://docs.diskoverdata.com/diskover_user_guide/#path_navigation_bar) located below the green info bar. You can also select a directory directly from that bar to change location.
+- You can also see which path you're in via the [green info bar]((https://docs.diskoverdata.com/diskover_user_guide/#green_info_bar).
 

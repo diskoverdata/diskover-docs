@@ -12,7 +12,7 @@ ___
 - Make sure you don't have saved [Filters](https://docs.diskoverdata.com/diskover_user_guide/#search-filters) limiting your results.
 - Make sure [Current Dir](https://docs.diskoverdata.com/diskover_user_guide/#current_dir) is deselected in order for Diskover to search all your storage volumes and directories.
 - Make sure you don't have specific [index/indices](https://docs.diskoverdata.com/diskover_user_guide/#indices) selected.
-- Try to refresh your volumes with **Reload Indices** > click the **gear icon** in the top right corner of the user interface > Select **Reload Indices**
+- Try to refresh your volumes with **Reload Indices** > click the **gear icon** in the top right corner of the user interface > Select **Reload Indices**.
 
 #### There are too many items found in the search results
 

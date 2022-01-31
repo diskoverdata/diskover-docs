@@ -45,5 +45,23 @@ ___
 #### Lost my location and/or path
 
 - You can always see the path that you're in via the [path bar](https://docs.diskoverdata.com/diskover_user_guide/#path_navigation_bar) located below the green info bar. You can also select a directory directly from that bar to change location.
-- You can also see which path you're in via the [green info bar]((https://docs.diskoverdata.com/diskover_user_guide/#green_info_bar).
+- You can also see which path you're in via the [green info bar](https://docs.diskoverdata.com/diskover_user_guide/#green_info_bar).
 
+#### How to export results
+
+- Via the [Export button](https://docs.diskoverdata.com/diskover_user_guide/#export-search-results) in the search page: 
+
+  - Offers several options to export the paths, as well as many other metadata (size, ctime, mtime, atime, type, etc.), to your download folder.
+  - Offers several options to Copy the paths or just the file names, and paste wherever you need.
+
+#### How to share search results
+
+- You can use the [Export options](https://docs.diskoverdata.com/diskover_user_guide/#export-search-results) or use the [Share button](https://docs.diskoverdata.com/diskover_user_guide/#share-search-queries-and-results)
+  - Share the URL link of your search results with your co-workers.
+  - Share/copy the search query for repeatable results.
+
+#### How to achieve complex sorting of search results
+
+Efficiently sorting columns and analyzing data in the user interface can be tricky, especially when there are many pages of results involved. 
+
+It is best to [Export](https://docs.diskoverdata.com/diskover_user_guide/#export-search-results) the data in csv format and then open that file in Excel where you'll be able to achieve complex sorting.

@@ -54,6 +54,7 @@ ordered_documents:
   - task_worker_mac.md  
   - time_zone_settings.md
   - software_activation.md
+  - config_after_intall.md
   - health_check_diskover_intro.md
   - health_check_diskover_web_linux.md
   - health_check_diskover_web_windows.md

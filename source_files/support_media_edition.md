@@ -4,19 +4,15 @@ ___
 
 ### Troubleshooting
 
-Please visit our website for troubleshooting issues and solutions: 
+[Technical Troubleshooting Guide](https://docs.diskoverdata.com/diskover_troubleshooting_tech/)
 
-[https://www.diskoverdata.com/resources/troubleshooting/](https://www.diskoverdata.com/resources/troubleshooting/)
+[End-User Troubleshooting Guide](https://docs.diskoverdata.com/diskover_troubleshooting_end_user/)
 
 ### Documentation
 
 Provides in-depth instructions and descriptions to ensure end-users success on Diskover, as well as its installation, configuration and administration by System Administrators and other Technical Professionals. 
 
 [https://docs.diskoverdata.com/](https://docs.diskoverdata.com/)
-
-### Help Within the User Interface
-
-Provides support on various topics and is located at the right top corner of the user interface under the gear icon > Help.
 
 ### Community Support
 

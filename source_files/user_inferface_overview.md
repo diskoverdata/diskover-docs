@@ -67,6 +67,8 @@ O) [**Storage volumes**](#storage_volume): To view and select available storage 
 
 P) [**Directories**](#directory): To view and select available directories inside the selected storage volume.
 
+<p id="items_per_page"></p>
+
 Q) **Items per page**: To modify the number of items per page to display – choices between 10 to 1,000.
 
 R) **Pages of results**: The number of pages of results is directly related to the number of Q) items per page.

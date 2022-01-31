@@ -21,6 +21,8 @@ E) **open in Glim** > To preview media using Telestream GLIM - you need to have 
 
 F) **find file sequences** > To find all files in a sequence, see details below.
 
+<p id="file_action_list_dir"></p>
+
 #### Live View Into Directory(ies) Pre-Indexing > list dir
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
@@ -58,6 +60,8 @@ The easiest way to launch is to click the gear icon by the file you want to prev
 This will launch GLIM where you'll be able to validate/preview the file.
 
 ![Image: Telestream GLIM Preview](images/image_file_action_glim_preview.png)
+
+<p id="file_action_file_sequences"></p>
 
 #### Find All Files in a Sequence > find file sequences
 

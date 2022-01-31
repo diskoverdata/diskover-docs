@@ -29,7 +29,7 @@ More information can be found here:
 
 🔴 &nbsp;Initially, allow open access to the domain during install to confirm all components are operational (master username and strong password are still required during setup of configuration). This reduces initial troubleshooting that may be required during setup of configuration. Once confirmed working configuration, the access policy will be modified to increase security.
 
-![Image: Create an Elasticsearch Domain – Access Policy](https://www.diskoverdata.com/wp-content/uploads/2021/09/screenshot_diskover_aws_customer_deployment_elasticsearch_create_domain_access_policy_original_20210823.png)
+![Image: Create an Elasticsearch Domain – Access Policy](images/image_aws_customer_deployment_elasticsearch_create_master_username.png)
 
 <p id="modify_access_policy"></p>
 

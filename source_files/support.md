@@ -4,9 +4,9 @@ ___
 
 ### Troubleshooting
 
-Please visit our website for troubleshooting issues and solutions: 
+Please refer to our Technical Troubleshooting Guide: 
 
-[https://www.diskoverdata.com/resources/troubleshooting/](https://www.diskoverdata.com/resources/troubleshooting/)
+[https://docs.diskoverdata.com/diskover_troubleshooting_tech/](https://docs.diskoverdata.com/diskover_troubleshooting_tech/)
 
 ### Documentation
 

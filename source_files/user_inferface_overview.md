@@ -44,6 +44,8 @@ G) **Clear**: To clear the search bar.
 
 H) **Launch a search**: Same function as a  **Return**  key.
 
+<p id="current_dir"></p>
+
 I)  **Current Dir**: Toggle right to narrow your results to a selected storage volume and/or directory.
 
 J) [**Search Filters**](#filters): Built-in filters to refine your searches.

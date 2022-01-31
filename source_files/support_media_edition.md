@@ -4,9 +4,9 @@ ___
 
 ### Troubleshooting
 
-[Technical Troubleshooting Guide](https://docs.diskoverdata.com/diskover_troubleshooting_tech/)
+[Technical Troubleshooting Guide](https://docs.diskoverdata.com/diskover_troubleshooting_tech/) for answers related to installation, configuration and more.
 
-[End-User Troubleshooting Guide](https://docs.diskoverdata.com/diskover_troubleshooting_end_user/)
+[End-User Troubleshooting Guide](https://docs.diskoverdata.com/diskover_troubleshooting_end_user/) for answers related to the daily operation of Diskover.
 
 ### Documentation
 

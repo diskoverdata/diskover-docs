@@ -15,7 +15,7 @@ ___
 
 [Diskover SDK and API Guide](https://docs.diskoverdata.com/diskover_dev_guide/)
 
-[Troubleshooting](https://docs.diskoverdata.com/diskover_troubleshooting_tech/)
+[Technical Troubleshooting](https://docs.diskoverdata.com/diskover_troubleshooting_tech/)
 
 ___
 ## User Guides
@@ -27,6 +27,8 @@ ___
 [User Guide Companion for the AJA Diskover Media Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/)
 
 [Diskover Quick Reference Card](images/quick_reference_card_diskover_generic.png)
+
+[End-User Troubleshooting](https://docs.diskoverdata.com/diskover_troubleshooting_end_user/)
 
 ___
 ## Changelogs

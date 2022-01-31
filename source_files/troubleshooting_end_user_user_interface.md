@@ -18,9 +18,7 @@ ___
 
 2. As a last resort, try one of the following in this order: 
 
-  - Hard reload/refresh your browser.
-  > *Windows > CTRL + F5 
-  > *Mac > CMD + SHIFT + R
+  - Hard reload/refresh your browser (Windows > CTRL + F5, Mac > CMD + SHIFT + R)
   - Clear the cache > gear icon > Settings > Clear Diskover cache
   - Clear your cookies > Settings > Clear Diskover cookies – you will need to reselect your options if you had previously customized your [settings](https://docs.diskoverdata.com/diskover_user_guide/#settings).
   - Log out and log back in the Diskover application. 

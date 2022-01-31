@@ -54,12 +54,16 @@ K) [**Storage volumes**](#storage_volume): Drop-down list for selection of avail
 
 L) [**Settings**](#settings): To personalize your interface via the settings, access to indices, help and logout.
 
-M) **Info bar**: Depending on your interaction, this bar will give you one, or a combination, of the following:
+<p id="green_info_bar"></p>
+
+M) **Green Info bar**: Depending on your interaction, this bar will give you one, or a combination, of the following:
 
 >- Details on the results of your search, ex:  _Showing 1 to 100 of 270 items found in 0.0201 seconds. Results size: 664.3 GB (this page)_
 >- Which storage volume/directory you are pointing to, ex:  _parent_path:/mnt/media_
 >- Shows search query either you are typing a manual query or using a built-in search tool (Filters, Quick Search, etc.), ex:  _Search query: mov and tags:archive_
 >- This bar can be closed clicking the  **X**  at the far right.
+
+<p id="path_navigation_bar"></p>
 
 N) **Path navigation bar**: Shows the path you’re working in (storage volume, directory, sub-directory, etc.), you cannot type in it, but you can click on any storage volume or directory and navigate that way.
 

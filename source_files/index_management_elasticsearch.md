@@ -3,7 +3,9 @@ ___
 
 Indices can be managed by policy and manually with Elasticsearch using curl from the command line. Indices can also be managed using [Kibana index management](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/index-mgmt.html) which is not covered in this guide.
 
->Note: For AWS ES/OpenSearch see Index State Management on AWS ES/OpenSearch below. 
+>Note: For AWS ES/OpenSearch see Index State Management on AWS ES/OpenSearch below.
+
+>Note: It may be easier and less prone to shell issues, to put the json text (text after -d in the single quotes), into a file first and then use that file for -d using the syntaxt `curl -X POST -H "Content-Type: application/json" -d @FILENAME DESTINATION`.
 
 #### Elasticsearch Index Lifecycle Management
 
@@ -56,8 +58,6 @@ curl -X PUT "http://elasticsearch:9200/diskover-*/_settings?pretty" \
       "settings": { "index.lifecycle.name": "cleanup_policy_diskover" }
     }' 
 ```
-
-> Note: It may be easier to put the json text (text after -d in the single quotes), into a file first and then use that file for -d using the syntaxt `curl -X POST -H "Content-Type: application/json" -d @FILENAME DESTINATION`.
 
 #### Index State Management on AWS ES/OpenSearch
 
@@ -114,9 +114,6 @@ curl -u username:password -X POST "https://<aws es endpoint>:443/_opendistro/_is
      -H 'Content-Type: application/json' \
      -d '{ "policy_id": "cleanup_policy_diskover" }'
 ```
-
-> Note: It may be easier to put the json text (text after -d in the single quotes), into a file first and then use that file for -d using the syntaxt `curl -X POST -H "Content-Type: application/json" -d @FILENAME DESTINATION`.
-
 
 #### Elasticsearch Manual Index Management
 

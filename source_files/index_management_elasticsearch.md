@@ -59,7 +59,11 @@ curl -X PUT "http://elasticsearch:9200/diskover-*/_settings?pretty" \
 
 #### Index State Management on AWS ES/OpenSearch
 
-More information about [Index State Management in Amazon ES](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/ism.html) can be found on aws docs and [OpenDistro ism api doc](https://opendistro.github.io/for-elasticsearch-docs/docs/im/ism/api/).
+Helpful links:
+- [Index State Management in Amazon OpenSearch Service](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/ism.html)
+- [OpenDistro ism api doc](https://opendistro.github.io/for-elasticsearch-docs/docs/im/ism/api/)
+- [OpenSearch ism api doc](https://opensearch.org/docs/latest/im-plugin/ism/index/)
+
 
 Example:
 * Your AWS Elasticsearch Service endpoint url is `<aws es endpoint>`

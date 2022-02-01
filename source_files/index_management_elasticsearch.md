@@ -5,7 +5,7 @@ Indices can be managed by policy and manually with Elasticsearch using curl from
 
 >Note: For AWS ES/OpenSearch see Index State Management on AWS ES/OpenSearch below.
 
->It may be easier and less prone to shell issues, to put the json text (text after -d in the single quotes), into a file first and then use that file for -d using the syntaxt `curl -X POST -H "Content-Type: application/json" -d @FILENAME DESTINATION`.
+>It may be easier and less prone to shell issues, to put the json text (text after -d in the single quotes), into a file first and then use that file for -d using `curl -X PUT -H "Content-Type: application/json" -d @FILENAME DESTINATION`.
 
 #### Elasticsearch Index Lifecycle Management
 

@@ -57,6 +57,8 @@ curl -X PUT "http://elasticsearch:9200/diskover-*/_settings?pretty" \
     }' 
 ```
 
+> Note: It may be easier to put the json text (text after -d in the single quotes), into a file first and then use that file for -d using the syntaxt `curl -X POST -H "Content-Type: application/json" -d @FILENAME DESTINATION`.
+
 #### Index State Management on AWS ES/OpenSearch
 
 Helpful links:
@@ -112,6 +114,8 @@ curl -u username:password -X POST "https://<aws es endpoint>:443/_opendistro/_is
      -H 'Content-Type: application/json' \
      -d '{ "policy_id": "cleanup_policy_diskover" }'
 ```
+
+> Note: It may be easier to put the json text (text after -d in the single quotes), into a file first and then use that file for -d using the syntaxt `curl -X POST -H "Content-Type: application/json" -d @FILENAME DESTINATION`.
 
 
 #### Elasticsearch Manual Index Management

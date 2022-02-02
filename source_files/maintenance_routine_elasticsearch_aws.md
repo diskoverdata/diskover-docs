@@ -5,7 +5,7 @@ Routine maintenance of the AWS Elasticsearch environment consists of two compone
 
 #### Managing Indices
 
-See [Elasticsearch Index Management](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#elasticsearch-index-management).
+[Elasticsearch Index Management](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#elasticsearch-index-management).
 
 #### Upgrading Elasticsearch Versions
 

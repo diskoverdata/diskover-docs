@@ -5,59 +5,7 @@ Routine maintenance of the AWS Elasticsearch environment consists of two compone
 
 #### Managing Indices
 
-You can create and apply Index Lifecycle Management (ILM) policies to automatically manage your indices according to your performance, resiliency, and retention requirements. More information can be found here:
-
-[https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ism.html](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ism.html)
-
-The following provides an example for managing Diskover indices on your Elasticsearch cluster, by creating a policy that deletes indices after 30 days for new Diskover indices:
-
-🔴 &nbsp;Your Elasticsearch service endpoint url is `<aws es endpoint>`
-
-🔴 &nbsp;You want your indices to be purged after thirty days **30d**
-
-🔴 &nbsp;Your policy name will be created as **cleanup_policy_diskover**
-
-🔴 &nbsp;Create a policy that deletes indices after one month for new Diskover indices:
-```
-curl -u username:password -X PUT "https://<aws es endpoint>:443/_opendistro/_ism/policies/cleanup_policy_diskover" \
-     -H 'Content-Type: application/json' \
-     -d '{
-         "policy": {
-           "description": "Cleanup policy for diskover indices on AWS ES.",
-           "schema_version": 1,
-           "default_state": "current",
-           "states": [{
-             "name": "current",
-             "actions": [],
-             "transitions": [{
-               "state_name": "delete",
-               "conditions": {
-                 "min_index_age": "30d"
-               }
-             }]
-             },
-             {
-               "name": "delete",
-               "actions": [{
-                 "delete": {}
-               }],
-               "transitions": []
-             }
-           ],
-           "ism_template": {
-             "index_patterns": ["diskover-*"],
-             "priority": 100
-           }
-         }
-        }'
-``` 
-
-🔴 &nbsp;Apply this policy to all existing Diskover indices:
-```
-curl -u username:password -X POST "https://<aws es endpoint>:443/_opendistro/_ism/add/diskover-*" \
-     -H 'Content-Type: application/json' \
-     -d '{ "policy_id": "cleanup_policy_diskover" }'
-```
+Refer to [Elasticsearch Index Management](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#elasticsearch-index-management).
 
 #### Upgrading Elasticsearch Versions
 

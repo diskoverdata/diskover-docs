@@ -13,4 +13,4 @@ C) From **Analytics** menu > select **Tags** > **Edit tags** button > will open 
 
 <img src="images/image_tags_manual_tagging_tag_editor_access.png" width="250"> &nbsp; <img src="images/image_tags_manual_tagging_tag_editor.png" width="300">
 
->Note: If a tag name is missing from the list and has no matching color, a gray colored tag will be shown.
+>Note: If a tag name is missing from the list and has no color assigned to it, a gray colored tag will be shown.

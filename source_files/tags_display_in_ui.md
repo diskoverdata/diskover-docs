@@ -5,7 +5,7 @@ The tags displayed within the Diskover-Web user interface can be customized by u
 
 >Format to follow for tags: **tag name|#hexcolor** (instead of #hexcolor code, you can also type a simple color name, ex: red)
 
->Note: If a tag name is missing from the list and has no color assigned to it, a gray colored tag will be shown.
+>*Note:* If a tag name is missing from the list and has no color assigned to it, a gray colored tag will be shown.
 
 A) From the **file search page** > select any file and/or directory > **Tag** drop-down list > type/add a new tag in the **Add new** field.
 

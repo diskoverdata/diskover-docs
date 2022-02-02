@@ -10,4 +10,3 @@ Many parameters can and should be configured once Diskover has been installed, s
 
 - [Set up and configure diskoverd - Task Worker Daemon](https://docs.diskoverdata.com/diskover_installation_guide/#setting-up-diskover-task-worker-daemon).
 - [Set up and configure Elasticsearch index lifecycle](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#elasticsearch-index-management)
-- If you are running Diskover on your existing AWS infrastructure, you will need to [configure and manage your indices](https://docs.diskoverdata.com/diskover_aws_deployment_guide/#aws-elasticsearch-domain_1).

@@ -8,5 +8,5 @@ ___
 
 Many parameters can and should be configured once Diskover has been installed, so you can benefit from all the features. At the minimum, the following should be configured:
 
-- [Set up and configure diskoverd - Task Worker Daemon](https://docs.diskoverdata.com/diskover_installation_guide/#setting-up-diskover-task-worker-daemon).
-- [Set up and configure Elasticsearch index lifecycle](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#elasticsearch-index-management)
+- [Set up and configure diskoverd - Task Worker Daemon](https://docs.diskoverdata.com/diskover_installation_guide/#setting-up-diskover-task-worker-daemon)
+- [Set up and configure Elasticsearch Index Lifecycle](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#elasticsearch-index-management)

@@ -1,4 +1,4 @@
-#### Install PHP 7 and PHP-FPM (fastcgi)
+#### Install PHP 7
 
 ##### Centos/RHEL 7.X
 

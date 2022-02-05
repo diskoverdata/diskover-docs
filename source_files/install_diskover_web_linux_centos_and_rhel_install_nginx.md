@@ -6,15 +6,20 @@ yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarc
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 ```
 
+🔴 &nbsp;Install the NGINX Web server application on CentOS/RHEL 7.x:
+```
+yum -y install nginx
+```
+
 🔴 &nbsp;Install epel and remi repos on CentOS/RHEL 8.X:
 ```
 yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
 ```
 
-🔴 &nbsp;Install the NGINX Web server application on CentOS/RHEL:
+🔴 &nbsp;Install the NGINX Web server application on CentOS/RHEL 8.x:
 ```
-yum -y install nginx
+dnf install nginx
 ```
 
 🔴 &nbsp;Enable NGINX to start at boot and start it and check status:

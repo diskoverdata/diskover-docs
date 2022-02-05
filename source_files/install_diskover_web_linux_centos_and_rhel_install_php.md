@@ -1,17 +1,16 @@
 #### Install PHP 7 and PHP-FPM (fastcgi)
 
-🔴 &nbsp;Install epel repo on CentOS/RHEL 7.X (if not already installed):
-```
-yum -y install epel-release yum-utils
-```
+##### Centos/RHEL 7.X
 
-🔴 &nbsp;Install remi repo on CentOS/RHEL 7.X (if not already installed) (not needed on 8.X):
+🔴 &nbsp;Install epel and remi repos (if not already installed):
 ```
+yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 ```
 
-🔴 &nbsp;Enable remi php 7.4 on CentOS/RHEL 7.X (not needed on 8.X):
+🔴 &nbsp;Enable remi php 7.4:
 ```
+yum -y install yum-utils
 yum-config-manager --enable remi-php74
 ```
 
@@ -19,6 +18,26 @@ yum-config-manager --enable remi-php74
 ```
 yum -y install php php-common php-fpm php-opcache php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json
 ```
+
+##### Centos/RHEL 8.x
+
+🔴 &nbsp;Install epel and remi repos on CentOS/RHEL 8.X (if not already installed):
+```
+dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+dnf install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
+```
+
+🔴 &nbsp;Enable remi php 7.4:
+```
+dnf module enable php:remi-7.4
+```
+
+🔴 &nbsp;Install PHP, PHP-FPM and other PHP packages:
+```
+dnf install php php-common php-fpm php-opcache php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json
+```
+
+#### Configure Nginx
 
 🔴 &nbsp;Set PHP configuration settings for NGINX:
 ```
@@ -42,10 +61,14 @@ listen.group = nginx
 listen = /var/run/php-fpm/php-fpm.sock
 ```
 
-🔴 &nbsp;Change file system ownership, enable and start PHP-FPM service:
+🔴 &nbsp;Change directory ownership for nginx user:
 ```
 chown -R root:nginx /var/lib/php
-chown -R nginx:nginx /var/run/php-fpm/
+chown -R nginx:nginx /var/run/php-fpm
+```
+
+🔴 &nbsp;Enable at boot and start PHP-FPM service:
+```
 systemctl enable php-fpm
 systemctl start php-fpm
 systemctl status php-fpm

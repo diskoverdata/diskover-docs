@@ -50,7 +50,7 @@ systemctl start php-fpm
 systemctl status php-fpm
 ```
 
-#### NGINX Modifications Required for CentOS/RHEL 8.X
+#### NGINX Diskover-web Config Modifications Required for CentOS/RHEL 8.X
 
 🔴 &nbsp;Make the following change in the **/etc/nginx/conf.d/diskover-web.conf**. Change the following line from:
 ```

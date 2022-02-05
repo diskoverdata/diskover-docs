@@ -51,8 +51,6 @@ vi /etc/nginx/conf.d/diskover-web.conf
 
 🔴 &nbsp;Add the following to the **/etc/nginx/conf.d/diskover-web.conf** file:
 
->Note: For Centos/RHEL 8.X set fastcgi_pass unix:/var/run/php-fpm/www.sock;
-
 ```
 server {
         listen   8000;
@@ -81,6 +79,7 @@ server {
         }
 }
 ```
+>Note: For Centos/RHEL 8.X set fastcgi_pass unix:/var/run/php-fpm/www.sock;
 
 #### Open Firewall Ports for Diskover-Web
 

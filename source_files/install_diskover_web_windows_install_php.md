@@ -124,7 +124,7 @@ C:\Program Files\Nginx\nginx-1.19.6\html\info.php
 🔴 &nbsp;And test PHP configuration with the text below:
 ```
 <?php
-    phpinfo();
+phpinfo();
 ?>
 ```
 
@@ -132,7 +132,7 @@ C:\Program Files\Nginx\nginx-1.19.6\html\info.php
 
 🔴 &nbsp;Open Windows PowerShell as administrator and run:
 ```
-PS C:\Program Files\Nginx\nginx__-1.19.6> .\nginx.exe
+PS C:\Program Files\Nginx\nginx-1.19.6> .\nginx.exe
 ```
 
 ![Image: Start NGINX Web Server](images/image_diskover_web_install_for_windows_run_nginx_exe_from_powershell.png)

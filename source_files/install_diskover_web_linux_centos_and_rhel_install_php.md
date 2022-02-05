@@ -1,7 +1,5 @@
 #### Install PHP 7 and PHP-FPM (fastcgi)
 
->Note: For CentOS/RedHat 8.X, the **remi** repository is not needed, but access to the **EPEL repo** is for PHP modules. The issue is there are some PHP modules missing in the RHEL 8 distribution. The **php-pecl-mcrypt** module was dropped.
-
 🔴 &nbsp;Install epel repo on CentOS/RHEL 7.X (if already not installed):
 ```
 yum -y install epel-release yum-utils

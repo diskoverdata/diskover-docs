@@ -14,6 +14,7 @@ Multiple indexers can be ran on a single machine or multiple machines for parall
 #### Windows
 
 >- Windows 10
+>- Windows Server
 
 #### Recommended
 

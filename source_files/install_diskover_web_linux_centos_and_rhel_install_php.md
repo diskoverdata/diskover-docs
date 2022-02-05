@@ -8,7 +8,7 @@ yum-config-manager --enable remi-php74
 yum -y install php php-common php-fpm php-opcache php-pecl-mcrypt php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json
 ```
 
-🔴 &nbsp;The following modules need to be installed for **php-pecl-mcrypt** on CentOS/RHEL 8.X:
+🔴 &nbsp;The following packages need to be installed for **php-pecl-mcrypt** on CentOS/RHEL 8.X:
 ```
 yum -y install libtomcrypt-devel libmcrypt-devel libmcrypt libtomcrypt
 ```

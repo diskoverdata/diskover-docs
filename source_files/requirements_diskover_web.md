@@ -9,14 +9,11 @@ Multiple indexers can be ran on a single machine or multiple machines for parall
 
 >- 64-bit Red Hat Enterprise Linux Server v7.x, v8.x
 >- 64-bit CentOS v7.x, v8.x
->- Windows x.x
 >- On an EC2 instance with 64-bit Amazon Linux 2.x
 
 #### Windows
 
->- 64-bit Red Hat Enterprise Linux Server v7.x
->- 64-bit CentOS v7.x
->- Windows x.x
+>- Windows 10
 
 #### Recommended
 

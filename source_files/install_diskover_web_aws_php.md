@@ -1,5 +1,5 @@
 ___
-### Install PHP 7
+### Install PHP 7 and PHP-FPM (FastCGI)
 
 🔴 &nbsp;Perform the following commands to install PHP:
 ```

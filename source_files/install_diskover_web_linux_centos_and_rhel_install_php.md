@@ -1,8 +1,21 @@
 #### Install PHP 7 and PHP-FPM (fastcgi)
 
-🔴 &nbsp;Perform the following commands to install PHP and PHP-FPM:
+>Note: For CentOS/RedHat 8.X, the **remi** repository is not needed, but access to the **EPEL repo** is for PHP modules. The issue is there are some PHP modules missing in the RHEL 8 distribution. The **php-pecl-mcrypt** module was dropped.
+
+🔴 &nbsp;Perform the following commands to install PHP and PHP-FPM on CentOS/RHEL 7.X:
 ```
 yum-config-manager --enable remi-php74
+yum -y install php php-common php-fpm php-opcache php-pecl-mcrypt php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json
+```
+
+🔴 &nbsp;The following modules need to be installed for **php-pecl-mcrypt** on CentOS/RHEL 8.X:
+```
+yum -y install libtomcrypt-devel libmcrypt-devel libmcrypt libtomcrypt
+```
+For more information: [https://hostadvice.com/how-to/how-to-install-mcrypt-on-centos-8/](https://hostadvice.com/how-to/how-to-install-mcrypt-on-centos-8/)
+
+🔴 &nbsp;Perform the following commands to install PHP and PHP-FPM on CentOS/RHEL 8.X:
+```
 yum -y install php php-common php-fpm php-opcache php-pecl-mcrypt php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json
 ```
 
@@ -35,4 +48,21 @@ chown -R nginx:nginx /var/run/php-fpm/
 systemctl enable php-fpm
 systemctl start php-fpm
 systemctl status php-fpm
+```
+
+#### NGINX Modifications Required for CentOS/RHEL 8.X
+
+🔴 &nbsp;Make the following change in the **/etc/nginx/conf.d/diskover-web.conf**. Change the following line from:
+```
+fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
+```
+
+🔴 &nbsp;To:
+```
+fastcgi_pass unix:/var/run/php-fpm/www.sock;
+```
+
+🔴 &nbsp;Restart NGINX:
+```
+systemctl restart nginx
 ```

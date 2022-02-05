@@ -81,7 +81,7 @@ server {
 }
 ```
 
-#### NGINX Changes Required for CentOS 8.X / RHEL
+#### NGINX Changes Required for CentOS/RHEL 8.X
 
 🔴 &nbsp;If **IPV6** is not in use or disabled comment out the following line in the `/etc/nginx/nginx.conf` file:
 ```
@@ -101,34 +101,6 @@ firewall-cmd --add-port=8000/tcp --permanent
 firewall-cmd --reload
 ```
 
-#### Modifications Required to Install Diskover-Web on CentOS 8.X / RHEL
-
-The **remi** repository is not needed, but access to the **EPEL repo** is for PHP modules. The issue is there are some PHP modules missing in the RHEL 8 distribution. The **php-pecl-mcrypt** module was dropped.
-
-🔴 &nbsp;The following modules need to be installed for **php-pecl-mcrypt**:
-```
-yum install libtomcrypt-devel
-  yum install libmcrypt-devel
-  yum install libmcrypt
-  yum install libtomcrypt
-```
-
-For more information: [https://hostadvice.com/how-to/how-to-install-mcrypt-on-centos-8/](https://hostadvice.com/how-to/how-to-install-mcrypt-on-centos-8/)
-
-🔴 &nbsp;Make the following change in the **/etc/nginx/conf.d/diskover-web.conf**. Change the following line from:
-```
-fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
-```
-
-🔴 &nbsp;To:
-```
-fastcgi_pass unix:/var/run/php-fpm/www.sock;
-```
-
-🔴 &nbsp;Restart NGINX:
-```
-systemctl restart nginx
-```
 
 #### Create a Test Web Page to Verify NGINX Configuration for Linux
 

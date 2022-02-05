@@ -24,7 +24,6 @@ apt-get install -y php-fpm
 apt-get install -y php-mysql
 apt-get install -y php-cli
 apt-get install -y php-gd
-apt-get install -y php-mysql
 apt-get install -y php-ldap
 apt-get install -y php-pecl-zip
 apt-get install -y php-xml

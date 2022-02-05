@@ -10,7 +10,7 @@ systemctl start nginx
 systemctl status nginx
 ```
 
-#### NGINX Changes Required for CentOS 8.X / RHEL
+#### NGINX Changes Required for CentOS/RHEL 8.X
 
 🔴 &nbsp;For SELinux add the following to allow NGINX to start as well:
 ```

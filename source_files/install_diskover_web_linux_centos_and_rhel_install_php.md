@@ -1,4 +1,4 @@
-#### Install PHP 7
+#### Install PHP 7 and PHP-FPM (FastCGI)
 
 ##### Centos/RHEL 7.X
 
@@ -14,7 +14,7 @@ yum -y install yum-utils
 yum-config-manager --enable remi-php74
 ```
 
-🔴 &nbsp;Install PHP, PHP-FPM and other PHP packages:
+🔴 &nbsp;Install PHP and other PHP packages:
 ```
 yum -y install php php-common php-fpm php-opcache php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json
 ```
@@ -32,7 +32,7 @@ dnf install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
 dnf module enable php:remi-7.4
 ```
 
-🔴 &nbsp;Install PHP, PHP-FPM and other PHP packages:
+🔴 &nbsp;Install PHP and other PHP packages:
 ```
 dnf install php php-common php-fpm php-opcache php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json
 ```

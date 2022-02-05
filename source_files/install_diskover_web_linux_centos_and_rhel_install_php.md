@@ -2,7 +2,7 @@
 
 ##### Centos/RHEL 7.X
 
-🔴 &nbsp;Install epel and remi repos (if not already installed):
+🔴 &nbsp;Install epel and remi repos on CentOS/RHEL 7.X (if not already installed):
 ```
 yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm

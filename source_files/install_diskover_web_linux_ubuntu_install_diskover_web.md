@@ -79,7 +79,7 @@ server {
         }
 }
 ```
->Note: For Centos/RHEL 8.X change to `fastcgi_pass unix:/var/run/php-fpm/www.sock;`
+>Note: For Centos/RHEL 8.X change **fastcgi_pass** to `unix:/var/run/php-fpm/www.sock;`
 
 #### Open Firewall Ports for Diskover-Web
 

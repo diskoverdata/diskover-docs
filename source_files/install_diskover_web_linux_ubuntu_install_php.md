@@ -1,4 +1,4 @@
-#### Install PHP 7
+#### Install PHP 7 and PHP-FPM (FastCGI)
 
 🔴 &nbsp;Configure a repository on your system to add PHP PPA. Run the following command to add **ondrej** PHP repository to your Ubuntu system:
 ```

@@ -27,7 +27,7 @@ For more information: [https://hostadvice.com/how-to/how-to-install-mcrypt-on-ce
 
 🔴 &nbsp;Perform the following commands to install PHP and PHP-FPM on CentOS/RHEL 8.X:
 ```
-yum -y install php php-common php-fpm php-opcache php-pecl-mcrypt php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json
+yum -y install php php-common php-fpm php-opcache php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json
 ```
 
 🔴 &nbsp;Set PHP configuration settings for NGINX:
@@ -59,21 +59,4 @@ chown -R nginx:nginx /var/run/php-fpm/
 systemctl enable php-fpm
 systemctl start php-fpm
 systemctl status php-fpm
-```
-
-#### NGINX Diskover-web Config Modifications Required for CentOS/RHEL 8.X
-
-🔴 &nbsp;Make the following change in the **/etc/nginx/conf.d/diskover-web.conf**. Change the following line from:
-```
-fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
-```
-
-🔴 &nbsp;To:
-```
-fastcgi_pass unix:/var/run/php-fpm/www.sock;
-```
-
-🔴 &nbsp;Restart NGINX:
-```
-systemctl restart nginx
 ```

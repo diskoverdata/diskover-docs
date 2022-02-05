@@ -13,19 +13,12 @@ yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 yum -y install epel-release yum-utils
 ```
 
-🔴 &nbsp;Perform the following commands to install PHP and PHP-FPM on CentOS/RHEL 7.X:
+🔴 &nbsp;Enable remi php 7.4 on CentOS/RHEL 7.X:
 ```
 yum-config-manager --enable remi-php74
-yum -y install php php-common php-fpm php-opcache php-pecl-mcrypt php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json
 ```
 
-🔴 &nbsp;The following packages need to be installed for **php-pecl-mcrypt** on CentOS/RHEL 8.X:
-```
-yum -y install libtomcrypt-devel libmcrypt-devel libmcrypt libtomcrypt
-```
-For more information: [https://hostadvice.com/how-to/how-to-install-mcrypt-on-centos-8/](https://hostadvice.com/how-to/how-to-install-mcrypt-on-centos-8/)
-
-🔴 &nbsp;Perform the following commands to install PHP and PHP-FPM on CentOS/RHEL 8.X:
+🔴 &nbsp;Install PHP and PHP-FPM:
 ```
 yum -y install php php-common php-fpm php-opcache php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json
 ```

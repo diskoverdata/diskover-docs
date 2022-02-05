@@ -56,9 +56,14 @@ listen.owner = nginx
 listen.group = nginx
 ```
 
-🔴 &nbsp;Change the listen socket:
+🔴 &nbsp;Change the listen socket on Centos/RHEL 7.X:
 ```
 listen = /var/run/php-fpm/php-fpm.sock
+```
+
+🔴 &nbsp;Change the listen socket on Centos/RHEL 8.X:
+```
+listen = /var/run/php-fpm/www.sock
 ```
 
 🔴 &nbsp;Change directory ownership for nginx user:

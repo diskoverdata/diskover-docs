@@ -1,14 +1,13 @@
 #### Install NGINX
 
-🔴 &nbsp;Install the repos (epel and remi) on CentOS/RHEL 7.X:
+🔴 &nbsp;Install the epel repo on CentOS/RHEL:
 ```
 yum -y install epel-release yum-utils
-yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 ```
 
-🔴 &nbsp;Install the repo (epel) on CentOS/RHEL 8.X:
+🔴 &nbsp;Install the remi repo on CentOS/RHEL 7.X (not needed on 8.X):
 ```
-yum -y install epel-release yum-utils
+yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 ```
 
 🔴 &nbsp;Install the NGINX Web server application on CentOS/RHEL:

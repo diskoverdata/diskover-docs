@@ -27,7 +27,7 @@ dnf install nginx
 semanage permissive -a httpd_t
 ```
 
-🔴 &nbsp;Enable NGINX to start at boot and start it and check status:
+🔴 &nbsp;Enable NGINX to start at boot, start it now and check status:
 ```
 systemctl enable nginx
 systemctl start nginx

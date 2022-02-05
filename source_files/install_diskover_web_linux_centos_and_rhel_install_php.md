@@ -44,19 +44,19 @@ dnf install php php-common php-fpm php-opcache php-cli php-gd php-mysqlnd php-ld
 vi /etc/php-fpm.d/www.conf
 ```
 
-🔴 &nbsp;Change ownership to **nginx**:
+🔴 &nbsp;Set user and group to **nginx** user:
 ```
 user = nginx
 group = nginx
 ```
 
-🔴 &nbsp;Uncomment and change the NGINX listen parameters:
+🔴 &nbsp;Uncomment and change listen owner and group to nginx user:
 ```
 listen.owner = nginx
 listen.group = nginx
 ```
 
-🔴 &nbsp;Change the  NGINX listen socket:
+🔴 &nbsp;Change the listen socket:
 ```
 listen = /var/run/php-fpm/php-fpm.sock
 ```

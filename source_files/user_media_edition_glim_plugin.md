@@ -13,3 +13,5 @@ The easiest way is to click the gear icon by the file you want to preview with G
 This will launch GLIM where you'll be able to validate/preview the file.
 
 ![Image: Telestream GLIM Preview](images/image_file_action_glim_preview.png)
+
+[Click here to learn more about the Telestream GLIM product](https://www.telestream.net/glim/overview.htm)

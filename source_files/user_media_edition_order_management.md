@@ -27,6 +27,14 @@ Here are the same values displayed within Diskover:
 ![Image: Asset Information in Diskover at the File Level](images/image_aja_edition_mediapulse_asset_creation_in_diskover_ui_file_level.png)
 
 ___
-### Xytech MediaPulse Order Management
+### Xytech MediaPulse Order Status
 
-In development.
+Facilities often manually correlate the order management system with the storage repositories. However, manual processes are subject to human errors and difficult to scale as the volume of media orders and data turnover increases rapidly and constantly.
+
+Therefore, the lack of integration for file-based workflows between the order management system and the underlying storage repositories, makes data management decisions difficult as they are solely based on attributes of files or objects on storage. Additional business context is needed from the order management system to increase precision and accuracy of data management decisions.
+
+An instance of key information might be the invoice date for a work order. A status change for a work order can be a key indicator for data management, for example, once a [Xytech MediaPulse](https://www.xytechsystems.com/solution/mediapulse/) media order has been invoiced, then the data associated with that media order can be a candidate for archival.
+
+The MediaPulse order status plugin is designed to automate the correlation of the order management system and the storage system, by harvesting key business context from MediaPulse and applying that context within the AJA Diskover Media Edition platform.
+
+![Image: Order Status within Xytech MediaPulse Order Managemenet](images/image_aja_edition_mediapulse_order_status_in_xytech.png)

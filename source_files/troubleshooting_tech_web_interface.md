@@ -11,4 +11,4 @@ Sometimes when the Web user interface gets updated, it requires a forced/hard re
 For example, this overlay display of the volumes and directories might happen after a software update and a hard reload might be necessary:
 
 ![Image: Overlay Problem](images/image_troubleshooting_reload_cache_example.png)
-<img src="images/image_troubleshooting_reload_cache_example.png" width="500">
+<img src="images/image_troubleshooting_reload_cache_example.png" width="300">

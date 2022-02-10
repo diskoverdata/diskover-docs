@@ -69,6 +69,7 @@ listen = /var/run/php-fpm/www.sock
 🔴 &nbsp;Change directory ownership for nginx user:
 ```
 chown -R root:nginx /var/lib/php
+mkdir /var/run/php-fpm
 chown -R nginx:nginx /var/run/php-fpm
 ```
 

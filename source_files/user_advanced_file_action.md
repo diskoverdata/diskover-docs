@@ -49,17 +49,23 @@ This image is an example of what could be seen following **list dir** selection:
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
-You can do an advanced search/view of a media file and playback right from Diskover.
+You can do an advanced search/validation of a media file and playback right from Diskover.
 
->🔆 &nbsp;You need to have a Telestream GLIM account for this feature and be logged in before launching this File Action.
+>🔆 &nbsp;Make sure you are logged in your Telestream account before using this feature.
 
-The easiest way to launch is to click the gear icon by the file you want to preview with GLIM > select **open with Glim**
+You can access the **File Action > open in GLIM** by selecting a file and clicking the File Action button as shown below:
+
+![Image: Telestream GLIM Preview File Selection](images/image_file_action_glim_selection.png)
+
+Or click the gear icon location on the line item that you want to preview with GLIM > select **open with Glim**
 
 ![Image: Telestream GLIM Preview File Selection](images/image_file_action_glim_gear_icon_selection.png)
 
 This will launch GLIM where you'll be able to validate/preview the file.
 
 ![Image: Telestream GLIM Preview](images/image_file_action_glim_preview.png)
+
+[Click here to learn more about the Telestream GLIM product](https://www.telestream.net/glim/overview.htm)
 
 <p id="file_action_file_sequences"></p>
 

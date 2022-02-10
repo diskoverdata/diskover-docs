@@ -33,6 +33,7 @@ listen = /var/run/php-fpm/php-fpm.sock
 🔴 &nbsp;Change file system ownership, enable and start PHP-FPM service:
 ```
 chown -R root:nginx /var/lib/php
+mkdir /var/run/php-fpm
 chown -R nginx:nginx /var/run/php-fpm
 systemctl enable php-fpm
 systemctl start php-fpm

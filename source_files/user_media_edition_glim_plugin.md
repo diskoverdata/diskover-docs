@@ -2,11 +2,15 @@ ___
 ## Preview Media Files with Telestream GLIM
 ___
 
-You can do an advanced search of media and playback right from Diskover. 
+You can do an advanced search/validation of a media file and playback right from Diskover.
 
->🔆 &nbsp;Make sure you are logged in your Telestream account before trying to use this feature.
+>🔆 &nbsp;Make sure you are logged in your Telestream account before using this feature.
 
-The easiest way is to click the gear icon by the file you want to preview with GLIM > select **open with Glim**
+You can access the **File Action > open in GLIM** by selecting a file and clicking the File Action button as shown below:
+
+![Image: Telestream GLIM Preview File Selection](images/image_file_action_glim_selection.png)
+
+Or click the gear icon location on the line item that you want to preview with GLIM > select **open with Glim**
 
 ![Image: Telestream GLIM Preview File Selection](images/image_file_action_glim_gear_icon_selection.png)
 

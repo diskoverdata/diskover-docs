@@ -18,15 +18,15 @@ The plugin operates on the assumption that the assets restored to online media a
 
 The path location is added to the asset within MediaPulse and the asset number is assigned to the file via a tag within the Diskover Index.
 
-Here is an example of an asset rehydration as viewed in MediaPulse:
+Here is an example of an asset rehydration as viewed in the MediaPulse application:
 
-![Asset Information in MediaPulse](images/image_aja_edition_mediapulse_asset_creation_within_mediapulse_ui.png)
+![Asset Information in MediaPulse](images/image_aja_edition_mediapulse_asset_creation_within_mediapulse_ui_1495193.png)
 
-Here are the same values displayed within Diskover:
+Here are the same values, customer ID and asset ID, displayed within Diskover:
 
-![Image: Asset Information in Diskover at the Directory Level](images/image_aja_edition_mediapulse_asset_creation_in_diskover_ui_directory_level.png)
+![Image: Asset Information in Diskover Results Pane](images/image_aja_edition_mediapulse_asset_creation_within_diskover_ui_results_pane.png)
 
-![Image: Asset Information in Diskover at the File Level](images/image_aja_edition_mediapulse_asset_creation_in_diskover_ui_file_level.png)
+![Image: Asset Information in Diskover File Attributes](images/image_aja_edition_mediapulse_asset_creation_within_diskover_ui_file attribute.png)
 
 ___
 ### Xytech MediaPulse Order Status

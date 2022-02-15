@@ -35,6 +35,6 @@ vim /root/.config/diskover/config.yaml
 
 ![Image: Media Info Plugin Configuration in Terminal](images/image_plugins_media_info_config_in_terminal.png)
 
->_Note:_  The media info plugin is not supported for S3 based object storage. If the media info plugin is enabled in the default configuration file, and alternate configuration file must be created where the media info plugin is disabled. The alternate configuration file must be invoked when indexing S3 based volumes.
+>_Note:_  The media info plugin is currently not supported for S3 based object storage. If the media info plugin is enabled in the default configuration file, an alternate configuration file must be created where the media info plugin is disabled. The alternate configuration file must be invoked when indexing S3 based volumes.
 
 ![Image: Media Info Plugin Configuration in Task Panel](images/image_plugins_media_info_task_panel_config_for_s3_bucket.png)

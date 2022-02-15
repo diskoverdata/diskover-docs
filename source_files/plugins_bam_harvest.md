@@ -6,7 +6,7 @@ ___
 ![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
 The BAM info harvest plugin is designed to provide BAM metadata attributes about a file without granting the Diskover user any read/write file system access.
-The BAM info plugin enables additional metadata for the SAM and BAM file formats to be harvested at time of index. 
+The BAM info plugin enables additional metadata for the SAM and BAM file formats to be harvested at time of index, and are therefore searchable within Diskover.
 
 The specification for the SAM file format can be found here:
 
@@ -22,6 +22,65 @@ The attributes provide the ability to view storage and file system content from 
 
 You can view and search on BAM info attributes in Diskover-Web since it will store it in a new field for video files, the field name is **bam_info**.
 
+![Image: BAM Info Field in UI Results Pane](images/image_plugins_bam_field_file_search_page.png)
+
+The BAM info fields are shown as additional searchable attributes to each file. You can view detailed attributes when opening up a file in Diskover.
+
+![Image: BAM Info Detailed View in File Attributes](images/image_plugins_bam_file_attributes_view.png)
+
+#### Install BAM Info Dependencies
+
+🔴 &nbsp;Copy the BAM info content in the install location:
+```
+cp __init__.py /opt/diskover/plugins/baminfo/
+cp README.rnd /opt/diskover/plugins/baminfo/
+cp requirements.txt /opt/diskover/plugins/baminfo/
+mkdir /root/.config/diskover_baminfo/
+cp config.yaml /root/.config/diskover_baminfo/
+```
+
+🔴 &nbsp;Edit the BAM info plugin to specify programs used within the software pipeline, in the example below the following programs are used:
+```
+  - "STAR"
+  - "bwa"
+  - "BEDTools_bedToBam"
+  - "bowtie2"
+  - "CASAVA"
+  - "MarkDuplicates"
+  - "samtools"
+  - "TopHat"
+```
+
+![Image: Config BAM Info Plugin in Terminal](images/image_plugins_bam_config_in_terminal.png)
+
+🔴 &nbsp;The BAM info plugin requires the following dependencies on CentOS:
+```
+yum install  zlib-devel -y
+yum install bzip2-devel
+yum install xz-devel
+
+cd /opt/diskover/plugins/baminfo/
+pip3 install -r requirements.txt
+```
+
+🔴 &nbsp;The BAM info plugin runs as part of the indexing process, to enable:
+```
+vim /root/.config/diskover/config.yaml
+```
+
+🔴 &nbsp;Set > enable: `True`
+
+🔴 &nbsp;Set > files: `[‘baminfo’]`
+
+![Image: Config BAM yaml File](images/image_plugins_bam_yaml_config.png)
+
+>*Note:* The BAM info plugin is not supported for S3 based object storage. If the BAM info plugin is enabled in the default configuration file, an alternate configuration file must be created where the media info plugin is disabled. The alternate configuration file must be invoked when indexing S3 based volumes:
+
+```
+/root/.config/diskover_pluginsdisabled
+```
+
+![Image: Disable Plugin in Task Panel for S3 Storage](images/image_plugins_bam_task_panel.png)
 
 
 
@@ -32,17 +91,25 @@ You can view and search on BAM info attributes in Diskover-Web since it will sto
 
 
 
-The media info harvest plugin is designed to provide media metadata attributes about a file without granting the Diskover user any read/write file system access.
 
-The media info plugin enables additional metadata for video files to be harvested at time of index. The media info plugin uses **ffmpeg/ffprobe** to harvest attributes about the media file.
 
-New indices will use the plugin and any video file will get additional media info added to the Elasticsearch index’s **media_info** field.
 
-The attributes provide the ability to view storage and file system content from a workflow perspective, for example all the frame rates on any given storage.
+#### Searchable Attributes
 
-You can view and search on media info attributes in Diskover-Web since it will store it in a new field for video files, the field name is **media_info**.
+These attributes can be used in a manual search query by using the BAM field name `bam_info`. The structure is as follow:
+```
+media_info.<key>:<value>
+```
 
-![Image: Media Info Field in UI Results Pane](images/image_plugins_media_info_diskover_ui_column_in_results_pane.png)
+For example:
+
+```
+bam_info.pg.id:STAR
+```
+
+
+
+
 
 #### Install Media Info Dependencies
 

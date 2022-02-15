@@ -73,7 +73,7 @@ vim /root/.config/diskover/config.yaml
 🔴 &nbsp;Set > files: `[‘baminfo’]`
 
 ![Image: Config BAM yaml File](images/image_plugins_bam_yaml_config.png)
-
+<br>
 >*Note:* The BAM info plugin is currently not supported for S3 based object storage. If the BAM info plugin is enabled in the default configuration file, an alternate configuration file must be created where the media info plugin is disabled. The alternate configuration file must be invoked when indexing S3 based volumes:
 
 ```

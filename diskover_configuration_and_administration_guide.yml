@@ -35,6 +35,7 @@ ordered_documents:
   - plugins_index_differential.md
   - plugins_media_harvest.md
   - plugins_mediapulse_asset_creation.md
+  - plugins_bam_harvest.md
   - plugins_display_extra_fields.md
   - plugins_diskover_web_file_actions.md
   - plugins_diskover_web_file_sequence.md

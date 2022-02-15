@@ -74,7 +74,7 @@ vim /root/.config/diskover/config.yaml
 
 ![Image: Config BAM yaml File](images/image_plugins_bam_yaml_config.png)
 
->*Note:* The BAM info plugin is not supported for S3 based object storage. If the BAM info plugin is enabled in the default configuration file, an alternate configuration file must be created where the media info plugin is disabled. The alternate configuration file must be invoked when indexing S3 based volumes:
+>*Note:* The BAM info plugin is currently not supported for S3 based object storage. If the BAM info plugin is enabled in the default configuration file, an alternate configuration file must be created where the media info plugin is disabled. The alternate configuration file must be invoked when indexing S3 based volumes:
 
 ```
 /root/.config/diskover_pluginsdisabled
@@ -82,21 +82,25 @@ vim /root/.config/diskover/config.yaml
 
 ![Image: Disable Plugin in Task Panel for S3 Storage](images/image_plugins_bam_task_panel.png)
 
+#### BAM Info Field within Diskover-Web
 
+🔴 &nbsp;To display the `bam_info` fields within Diskover-Web, edit the `Contants.php` configuration:
+```
+vim /var/www/diskover-web/src/diskover/Constants.php
+```
 
+🔴 &nbsp;Add the following under `EXTRA_FIELDS`:
+```
+const EXTRA_FIELDS = [
+    'Bam Info' => 'bam_info'
+];
+```
 
+![Image: Extra Field for BAM Plugin](images/image_plugins_bam_field_file_search_page.png)
 
+#### Search BAM Attributes within Diskover-Web
 
-
-
-
-
-
-
-
-#### Searchable Attributes
-
-These attributes can be used in a manual search query by using the BAM field name `bam_info`. The structure is as follow:
+The BAM attributes can be used in a manual search query by using the BAM field name `bam_info`. The structure is as follow:
 ```
 media_info.<key>:<value>
 ```
@@ -106,29 +110,3 @@ For example:
 ```
 bam_info.pg.id:STAR
 ```
-
-
-
-
-
-#### Install Media Info Dependencies
-
-🔴 &nbsp;The media info plugin uses the **ffmpeg** [https://www.ffmpeg.org/](https://www.ffmpeg.org/) open-source package to harvest media attributes for media file types.
-```
-yum localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm
-yum install ffmpeg ffmpeg-devel
-```
-
-🔴 &nbsp;The media info plugin runs as part of the indexing process. To enable:
-```
-vim /root/.config/diskover/config.yaml
-```
-🔴 &nbsp;enable: set to **True**
-
-🔴 &nbsp;files: **[‘mediainfo’]**
-
-![Image: Media Info Plugin Configuration in Terminal](images/image_plugins_media_info_config_in_terminal.png)
-
->_Note:_  The media info plugin is not supported for S3 based object storage. If the media info plugin is enabled in the default configuration file, and alternate configuration file must be created where the media info plugin is disabled. The alternate configuration file must be invoked when indexing S3 based volumes.
-
-![Image: Media Info Plugin Configuration in Task Panel](images/image_plugins_media_info_task_panel_config_for_s3_bucket.png)

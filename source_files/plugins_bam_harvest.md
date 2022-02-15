@@ -102,7 +102,7 @@ const EXTRA_FIELDS = [
 
 The BAM attributes can be used in a manual search query by using the BAM field name `bam_info`. The structure is as follow:
 ```
-media_info.<key>:<value>
+bam_info.<key>:<value>
 ```
 
 For example:

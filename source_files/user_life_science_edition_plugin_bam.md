@@ -47,7 +47,7 @@ The searchable bam_info fields are:
 ```
 bam_info.co_cmd:
 ```
-Example: `bam_info.co_cmd:*genomedir*
+Example: `bam_info.co_cmd:*genomedir*`
 ```
 
 ```

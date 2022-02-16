@@ -47,12 +47,15 @@ The searchable bam_info fields are:
 ```
 bam_info.co_cmd:
 ```
-Example: `bam_info.co_cmd:*genomedir*`
-```
+>Example: `bam_info.co_cmd:*genomedir*`
 
 ```
 bam_info.co_cmd_checksum:
 ```
+>Example: `bam_info.co_cmd_checksum:e65ef53fdf1fbfc4aecc9ac99f991248`
+>To find other files with the same checksum value, although Diskover has automated tools to detect and find duplicate files.
+
+
 ```
 bam_info.co.key:
 ```

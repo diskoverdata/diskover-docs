@@ -31,15 +31,23 @@ Below is an example of the location where you can see detailed media attributes.
 ___
 ### Search on BAM Attributes
 
-In addition to the [manual file searches and syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#manual-search-syntax), the BAM plugin allows end-users to search on BAM specific attributes.
+In addition to the [manual file searches and syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#manual-search-syntax), the BAM plugin allows end-users to search on specific BAM attributes.
 
-As these fields are not always straight forward to search, it is highly recommended to use the [* wild card](https://docs.diskoverdata.com/diskover_user_guide/#wild-card_1) for easy fo searching and to expand your results.
-Case sensitive? 
+_Notes:_
 
-The BAM attributes can be used in a manual search query. The structure is as follow:
+- The BAM attributes can be used in a manual search query. The structure is as follow:
 ```
 bam_info.<key>:<value>
 ```
+
+- As these fields can be complex to search, it is highly recommended to use the [* wild card](https://docs.diskoverdata.com/diskover_user_guide/#wild-card_1) for ease of searching and to expand your results.
+
+- At the moment, searching on the BAM attributes is case sensitive, i.e. if the metadata harvested uses some or all capital letters, you will need to search with the same capital letters, for example:
+  - The attributes field portion of the query needs to be typed lower case **bam_info.\<key>:**
+  - If the metadata shows > **bam_info.pg.id: STAR**
+    - you launch a query with **bam_info.pg.id: star**
+
+
 
 The searchable bam_info fields are:
 

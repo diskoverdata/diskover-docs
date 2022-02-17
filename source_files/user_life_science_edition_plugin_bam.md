@@ -57,50 +57,39 @@ The searchable bam_info fields are:
 ```
 bam_info.co_cmd:
 ```
->Example: `bam_info.co_cmd:*genomedir*`
+>Example: `bam_info.co_cmd:*GenomeDir*`
 
 ```
 bam_info.co_cmd_checksum:
 ```
->Example: `bam_info.co_cmd_checksum:e65ef53fdf1fbfc4aecc9ac99f991248`
-<br>
->To find other files with the same checksum value, although Diskover has automated tools to detect and find duplicate files.
-
+>Example: `bam_info.co_cmd_checksum:e65ef53fdf1fbfc4aecc9ac99f991248` could be used to find other files with the same checksum value, although Diskover has automated tools to detect and find duplicate files.
 
 ```
 bam_info.co.key:
 ```
+>Example: `bam_info.co.key:*ANNID*`
+
 ```
 bam_info.co.value:
 ```
+>Example: `bam_info.co.value:*gencode.v19*`
+
 ```
 bam_info.pg.id:
 ```
+>Example: `bam_info.pg.id:*STAR*`
+
 ```
 bam_info.pg.vn:
 ```
+>Example: `bam_info.pg.vn:*2.4*`
+
 ```
 bam_info.pg.id:
 ```
+>Example: `bam_info.pg.id:*samtools*`
+
 ```
 bam_info.pg.vn:
 ```
-
-
-
-
-
-#### File resolution
-Field name: **media_info.resolution**
->`media_info.resolution:3840x2160`
->
->`media_info.resolution:*1080*` _(Would return all files with  **1080**  somewhere in the resolution)_
-
-
-
-
-For example:
-
-
-bam_info.pg.id:STAR
-
+>Example: `bam_info.pg.vn:*1.12*`

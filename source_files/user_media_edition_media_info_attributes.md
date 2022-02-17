@@ -27,7 +27,7 @@ ___
 
 The media attributes are part of the metadata harvested exclusively by the AJA Diskover Media Edition. If a file at the source doesn’t include any of these attributes, it goes without saying that no details will be harvested and/or be available.
 
-In addition to thefile searches and syntax explained in the Diskover User Guide, the AJA Diskover Media Edition allows end-users to search on media specific attributes.
+In addition to the [manual file searches and syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#manual-search-syntax), the AJA Diskover Media Edition allows end-users to search on media specific attributes.
 
 - As media fields’ info can be complex, unless you know exactly what you are looking for, we strongly recommend using the **\*** to expand your results. 
 - The fields described below are meant to be copied/typed in the search bar of the Diskover user interface.

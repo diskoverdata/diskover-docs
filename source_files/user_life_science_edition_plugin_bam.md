@@ -33,7 +33,7 @@ ___
 
 In addition to the [manual file searches and syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#manual-search-syntax), the BAM plugin allows end-users to search on specific BAM attributes.
 
-_Notes:_
+#### Important Notes for Searching on BAM Attributes
 
 - The BAM attributes can be used in a manual search query. The structure is as follow and the **< >** are not meant to by typed, they are only for visual and isolating where to input the variables:
 ```
@@ -63,6 +63,7 @@ bam_info.co_cmd:
 bam_info.co_cmd_checksum:
 ```
 >Example: `bam_info.co_cmd_checksum:e65ef53fdf1fbfc4aecc9ac99f991248`
+<br>
 >To find other files with the same checksum value, although Diskover has automated tools to detect and find duplicate files.
 
 

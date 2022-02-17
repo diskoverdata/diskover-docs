@@ -22,11 +22,13 @@ ___
 
 **Intended for the daily operations of Diskover by the Line of Business Users.**
 
+[Diskover Quick Reference Card](images/quick_reference_card_diskover_generic.png)
+
 [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/)
 
 [User Guide Companion for the AJA Diskover Media Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/)
 
-[Diskover Quick Reference Card](images/quick_reference_card_diskover_generic.png)
+[User Guide Companion for the Diskover Life Science Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/)
 
 [End-User Troubleshooting](https://docs.diskoverdata.com/diskover_troubleshooting_end_user/)
 

@@ -10,6 +10,8 @@ The additional metadata being searchable means that it is also reportable for an
 
 The BAM plugin regroups all the BAM file attributes under the **bam_info** field.
 
+[Watch this video for a demonstration of the plugin](https://vimeo.com/678914314)
+
 ___
 ### BAM Plugin Overview Diagram
 

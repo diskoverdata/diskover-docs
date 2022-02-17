@@ -29,9 +29,14 @@ The media attributes are part of the metadata harvested exclusively by the AJA D
 
 In addition to the [manual file searches and syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#manual-search-syntax), the AJA Diskover Media Edition allows end-users to search on media specific attributes.
 
-- As media fields’ info can be complex, unless you know exactly what you are looking for, we strongly recommend using the **\*** to expand your results. 
+- As media fields’ info can be complex, unless you know exactly what you are looking for, we strongly recommend using the [* wild card](https://docs.diskoverdata.com/diskover_user_guide/#wild-card_1) for ease of searching and to expand your results.
+
 - The fields described below are meant to be copied/typed in the search bar of the Diskover user interface.
-- The following syntax needs to be respected `media_info.<key>:<value>`
+
+- Searching on media_info is case insensitive.
+
+- The following syntax needs to be respected `media_info.<key>:<value>` and the **< >** are not meant to by typed, they are only for visual and isolating where to input the variables:
+
 - For more details on search syntax, please refer to our core [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#manual-search-syntax).
 
 #### File resolution

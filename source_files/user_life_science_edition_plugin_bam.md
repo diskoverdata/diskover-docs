@@ -86,19 +86,10 @@ bam_info.co.value:
 ```
 bam_info.pg.id:
 ```
->Example: `bam_info.pg.id:*STAR*`
+>Example: `bam_info.pg.id:*STAR*` or `bam_info.pg.id:*samtools*`
+>
 
 ```
 bam_info.pg.vn:
 ```
 >Example: `bam_info.pg.vn:*2.4*`
-
-```
-bam_info.pg.id:
-```
->Example: `bam_info.pg.id:*samtools*`
-
-```
-bam_info.pg.vn:
-```
->Example: `bam_info.pg.vn:*1.12*`

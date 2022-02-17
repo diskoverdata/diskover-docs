@@ -11,6 +11,13 @@ The additional metadata being searchable means that it is also reportable for an
 The BAM plugin regroups all the BAM file attributes under the **bam_info** field.
 
 ___
+### BAM Plugin Overview Diagram
+
+![Image: BAM Plugin Overview Diagram](images/diagram_diskover_life_science_plugins_overview_with_border.png)
+
+_[Click here for a full screen view of the BAM Plugin Overview Diagram.](images/diagram_diskover_life_science_plugins_overview_with_border.png)_
+
+___
 ### Hide/Unhide BAM Info Column in Search Results Pane
 
 When using the file search page, you have access to a column with all the **bam_info** attributes. If you cannot see that column, it means that it is hidden. To unhide that column, go to **gear icon** > **Settings** > **Hide fields in search results** > unclick the box in front of  **bam_info**.

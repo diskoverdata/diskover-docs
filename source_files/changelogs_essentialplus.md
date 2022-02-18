@@ -5,11 +5,11 @@ ___
 
 ### Diskover v2 Essential + Changelog
 
-# [2.0-rc.4] - 2022-02-18
-### BREAKING CHANGES
+#### [2.0-rc.4] - 2022-02-18
+##### BREAKING CHANGES
 - autoclean config new settings movePreservePath, copyPreservePath, see default/sample config and copy to your config
 - if using diskoverd api auth, auth will fail until api password changed on diskover-web settings page after logging in as admin, password now required to be hashed and stored in sqlite db
-### fixed
+##### fixed
 - issue with scanning multiple top paths and multiple top directory docs getting indexed for each toppath
 - issue with scanning multiple top paths and log output showing incorrect paths still being scanned for each top path
 - issue where at the start of scanning, if one of the subdir threads started has permission denied, would cause the scan to fail
@@ -19,10 +19,10 @@ ___
 - issue with finding latest index from toppath and indices with multiple top paths
 - issue where scanning a toppath with only few files and no subdirs hangs at start of scan when threaddirdepth set to empty/blank
 - optimized thread dir depth to not include any empty directories when threaddirdepth set to empty/blank and determining thread depth
-### added
+##### added
 - dir_depth, size_norecurs, size_du_norecurs, file_count_norecurs, dir_count_norecurs to ES index field mappings
     - additional fields added to directory docs
-### changed
+##### changed
 - hardlink files size_du (allocated size) set to 0 when same inode already in scan
 - indexing unrecognized Unicode utf-8 characters in file name or parent path, the characters are replaced with a ? character and file gets indexed with a warning log message
     - previously the file/directory was not indexed and just skipped with a warning message
@@ -414,12 +414,12 @@ ___
 ___
 ### Diskover-web v2 Essential + Changelog
 
-# [2.0-rc.4] - 2022-02-18
-### BREAKING CHANGES
+#### [2.0-rc.4] - 2022-02-18
+##### BREAKING CHANGES
 - added MAX_INDEX, INDEXINFO_CACHETIME, NEWINDEX_CHECKTIME settings to default/sample web config file, copy to your config file
 - password for diskover and admin users required to be hashed and stored in separate sqlite db, you will be prompted to change password at next login
 - api password now required to be hashed, change api password on settings page after logging in as admin to store in sqlite db
-### fixed
+##### fixed
 - reduced login time when many indices
 - spinner loading icon not displaying on search results page for directory charts
 - file action logs not wring to public/fileactions/ (missing logs directory)
@@ -432,7 +432,7 @@ ___
 - displaying error message when always use latest indices selected and an index gets deleted that is one of the latest indices
 - heatmap displaying Nan value for reduced size on mouse tooltip
 - issues with index aliases
-### added
+##### added
 - MAX_INDEX, INDEXINFO_CACHETIME, NEWINDEX_CHECKTIME settings to default/sample web config file, copy to your config file
 - password_hash.php - login password hash generator form
 - maxindex config setting to default/sample config, copy to your config
@@ -443,7 +443,7 @@ ___
 - Kibana file action sample web plugin
 - primary/replica shard table columns to indices page
 - Jquery ajax ajax.php.sample helper script for file actions (used by new file sequence file action)
-### changed
+##### changed
 - password for diskover and admin users required to be hashed and stored in separate sqlite db, you will be prompted to change password at next login
 - api password setting API_PASS in config file now required to be hashed, create hash with password_hash.php and update your config file
 - reduced api calls to ES to check for new index info

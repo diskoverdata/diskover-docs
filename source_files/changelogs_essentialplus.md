@@ -5,6 +5,43 @@ ___
 
 ### Diskover v2 Essential + Changelog
 
+# [2.0-rc.4] - 2022-02-18
+### BREAKING CHANGES
+- autoclean config new settings movePreservePath, copyPreservePath, see default/sample config and copy to your config
+- if using diskoverd api auth, auth will fail until api password changed on diskover-web settings page after logging in as admin, password now required to be hashed and stored in sqlite db
+### fixed
+- issue with scanning multiple top paths and multiple top directory docs getting indexed for each toppath
+- issue with scanning multiple top paths and log output showing incorrect paths still being scanned for each top path
+- issue where at the start of scanning, if one of the subdir threads started has permission denied, would cause the scan to fail
+- issue with setting domain to True in ownersgroups section in diskover config would case the scan to fail
+- UnicodeEncodeError exception when logging Unicode utf-8 file path warnings
+- issue when using cache db and diskover crashes from an unhandled Exception causing a corrupt sqlite cache db file
+- issue with finding latest index from toppath and indices with multiple top paths
+- issue where scanning a toppath with only few files and no subdirs hangs at start of scan when threaddirdepth set to empty/blank
+- optimized thread dir depth to not include any empty directories when threaddirdepth set to empty/blank and determining thread depth
+### added
+- dir_depth, size_norecurs, size_du_norecurs, file_count_norecurs, dir_count_norecurs to ES index field mappings
+    - additional fields added to directory docs
+### changed
+- hardlink files size_du (allocated size) set to 0 when same inode already in scan
+- indexing unrecognized Unicode utf-8 characters in file name or parent path, the characters are replaced with a ? character and file gets indexed with a warning log message
+    - previously the file/directory was not indexed and just skipped with a warning message
+- updated diskoverd to v2.0-rc.3-2
+    - fixed issue with stop task could cause diskoverd to stop working on new tasks
+    - fixed issue if diskoverd crashes, task list doesn't get set to empty list when diskoverd starts up next
+    - fixed issue when network connection timeout would cause diskoverd to stop working
+- updated diskover_cache to v0.0.6
+    - fixed issue causing fatal error when config set to load db cache into memory when running on python 3.6
+    - fixed issue with cache hit ratio not always logging
+- updated scandir_dircache alt scanner to v0.0.2
+    - bug fix causing scan to fail with UnicodeEncodeError
+- updated autoclean to v0.0.1-b.14
+    - added copy action, see default/sample config
+    - added movePreservePath and copyPreservePath settings to default/sample autoclean config - preserve source's full path when moving or copying a directory or file when using move or copy action, copy from sample config to your config file
+    - improved custom action to display realtime output of command in log
+    - added more logging info including delete/copy/move speed when running in verbose
+
+
 #### [2.0-rc.3-5] - 2022-01-13
 ##### fixed
 - issue when using replace paths in diskover config would cause scanning to fail
@@ -376,6 +413,52 @@ ___
 
 ___
 ### Diskover-web v2 Essential + Changelog
+
+# [2.0-rc.4] - 2022-02-18
+### BREAKING CHANGES
+- added MAX_INDEX, INDEXINFO_CACHETIME, NEWINDEX_CHECKTIME settings to default/sample web config file, copy to your config file
+- password for diskover and admin users required to be hashed and stored in separate sqlite db, you will be prompted to change password at next login
+- api password now required to be hashed, change api password on settings page after logging in as admin to store in sqlite db
+### fixed
+- reduced login time when many indices
+- spinner loading icon not displaying on search results page for directory charts
+- file action logs not wring to public/fileactions/ (missing logs directory)
+- issue with not staying logged in and getting logged out before login time limit expires
+- issue with always use latest indices and indices with multiple same top paths getting selected
+- issue with user analysis page and clicking users or groups with domain names does not return search results
+- issue with search results exports not using all set filters and sort order
+- issue with extra field value text on file view info page not wrapping when text string is very long
+- issue with extra field and object type not displaying correctly
+- displaying error message when always use latest indices selected and an index gets deleted that is one of the latest indices
+- heatmap displaying Nan value for reduced size on mouse tooltip
+- issues with index aliases
+### added
+- MAX_INDEX, INDEXINFO_CACHETIME, NEWINDEX_CHECKTIME settings to default/sample web config file, copy to your config file
+- password_hash.php - login password hash generator form
+- maxindex config setting to default/sample config, copy to your config
+- tag all search results on all pages to tag drop down menu
+- empty logs directory to public/fileactions/
+- after deleting indices on select indices page, index list will reload automatically after 3 seconds
+- optimized load time of user analysis page when cost data not stored in index
+- Kibana file action sample web plugin
+- primary/replica shard table columns to indices page
+- Jquery ajax ajax.php.sample helper script for file actions (used by new file sequence file action)
+### changed
+- password for diskover and admin users required to be hashed and stored in separate sqlite db, you will be prompted to change password at next login
+- api password setting API_PASS in config file now required to be hashed, create hash with password_hash.php and update your config file
+- reduced api calls to ES to check for new index info
+- improved file/directory view info page for extra fields
+- improved indices page
+- updated api to v2.0-rc.3
+    - fixed issue with latest endpoint and finding the latest index for indices with multiple top paths
+    - requires hashed api password, create new password hash with password_hash.php and update your config file
+- updated file sequence file action to v0.0.3
+    - bug fixes
+    - improved performance for large sequences
+    - changed to using Jquery ajax ajax.php helper script
+    - removed option to scan disk, only scan es index
+    - updated default/sample settings file
+
 
 #### [2.0-rc.3] - 2021-12-27
 ##### fixed

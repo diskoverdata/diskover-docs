@@ -432,6 +432,7 @@ ___
 - displaying error message when always use latest indices selected and an index gets deleted that is one of the latest indices
 - heatmap displaying Nan value for reduced size on mouse tooltip
 - issues with index aliases
+- tags, smart searches, cost analytics pages not using size_du (allocated size) when set on settings page
 ##### added
 - MAX_INDEX, INDEXINFO_CACHETIME, NEWINDEX_CHECKTIME settings to default/sample web config file, copy to your config file
 - password_hash.php - login password hash generator form

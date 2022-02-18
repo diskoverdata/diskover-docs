@@ -417,8 +417,8 @@ ___
 #### [2.0-rc.4] - 2022-02-18
 ##### BREAKING CHANGES
 - added MAX_INDEX, INDEXINFO_CACHETIME, NEWINDEX_CHECKTIME settings to default/sample web config file, copy to your config file
-- password for diskover and admin users required to be hashed and stored in separate sqlite db, you will be prompted to change password at next login
-- api password now required to be hashed, change api password on settings page after logging in as admin to store in sqlite db
+- password for diskover and admin users required to be hashed and stored in separate sqlite db, you will be prompted to change password at next login, config passwords are just used for defaults
+- api password now required to be hashed, change api password on settings page after logging in as admin to store in sqlite db, API_PASS in config is used as default password only and has to be changed before using api auth
 ##### fixed
 - reduced login time when many indices
 - spinner loading icon not displaying on search results page for directory charts
@@ -443,6 +443,8 @@ ___
 - Kibana file action sample web plugin
 - primary/replica shard table columns to indices page
 - Jquery ajax ajax.php.sample helper script for file actions (used by new file sequence file action)
+- dir size no recurs toggle to tags, smart searches, cost analytics pages
+    - show directory sizes not recursive for new indices that have size_norecurs and size_du_norecurs fields
 ##### changed
 - password for diskover and admin users required to be hashed and stored in separate sqlite db, you will be prompted to change password at next login
 - api password setting API_PASS in config file now required to be hashed, create hash with password_hash.php and update your config file
@@ -451,7 +453,7 @@ ___
 - improved indices page
 - updated api to v2.0-rc.3
     - fixed issue with latest endpoint and finding the latest index for indices with multiple top paths
-    - requires hashed api password, create new password hash with password_hash.php and update your config file
+    - api password now required to be hashed, change api password on settings page after logging in as admin to store in sqlite db, API_PASS in config is used as default password only and has to be changed before using api auth
 - updated file sequence file action to v0.0.3
     - bug fixes
     - improved performance for large sequences

@@ -72,14 +72,6 @@ if [ ! -d "$DST_PATH" ]; then
   fi
 fi
 
-# check destination directory doesn't already exist
-destination_dirname="$(basename "$SRC_PATH")"
-destination="$DST_PATH/$destination_dirname"
-if [ -d "$destination" ]; then
-  >&2 echo ERROR $destination exists, not moving directory!
-  exit 1
-fi
-
 # use rsync command to sync directory
 echo Syncing "$SRC_PATH" to "$DST_PATH" ...
 rsync -avz "$SRC_PATH" "$DST_PATH"

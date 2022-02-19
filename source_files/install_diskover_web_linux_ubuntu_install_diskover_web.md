@@ -19,7 +19,7 @@ const ES_PORT = 9200;
 const ES_USER = 'strong_username';
 const ES_PASS = 'strong_password';
 ```
->_Note:_ Diskover-Web uses a number of files to store the profiles of preferences and tasks. The default install has sample files, but not the actual files. The following will copy the sample files and create default starting point files.
+>_Note:_ Diskover-Web Essential+ uses a number of txt and json files to store some settings and task data. The default install has sample files, but not the actual files. The following will copy the sample files and create default starting point files. **Skip the next 3 steps for Community Edition**.
 
 🔴 &nbsp;Create actual files from the sample files **filename.txt.sample**:
 ```

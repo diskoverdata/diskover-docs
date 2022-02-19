@@ -17,13 +17,13 @@ notepad c:\Program Files\diskover\diskoverd-win-service.bat
 
 🔴 &nbsp;In the .bat file add:
 ```
-python.exe c:\Program Files\diskover\diskoverd.py -n <worker_name>
+python diskoverd.py -n <worker_name>
 ```
 >Note: <worker_name> replace with a unique worker name to identify the worker in diskover-web.
 
 🔴 &nbsp;Run nssm to install service:
 ```
-nssm.exe install "diskoverdService" "C:\Program Files\diskover\diskoverd-win-service.bat"
+nssm.exe install diskoverdService "C:\Program Files\diskover\diskoverd-win-service.bat"
 ```
 >IMPORTANT: When running nssm commands, tou need to run the Command Prompt as an Adminstrator. Right click on Command Prompt and choose Run as Administrator.
 
@@ -33,15 +33,22 @@ You should see a message that says something like:
 
 It will default to have Startup type: Automatic. This means it will start automatically when the computer restarts.
 
+🔴 &nbsp;Set I/O redirects for service:
+```
+nssm.exe set diskoverdService AppStdout "C:\Windows\Temp\diskoverd-service.log"
+nssm.exe set diskoverdService AppStderr "C:\Windows\Temp\diskoverd-service-error.log"
+```
+
 🔴 &nbsp;Start and stop your custom service
 You can use the normal Services manager `services.msc` or you can use NSSM from the Command Prompt. You can start and stop the service like this:
 ```
 nssm.exe start diskoverdService
 nssm.exe stop diskoverdService
+nssm.exe restart diskoverdService
 ```
 
 🔴 &nbsp;Delete the service
 If you no longer want the service you can remove it with the following command:
 ```
-nssm.exe remove "diskoverdService"
+nssm.exe remove diskoverdService
 ```

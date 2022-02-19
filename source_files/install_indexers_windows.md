@@ -34,13 +34,13 @@ copy "C:\Program Files\diskover\configs_sample\diskover\config.yaml" %APPDATA%\d
 For diskover auto tag:
 ```
 mkdir %APPDATA%\diskover_autotag\
-copy "C:\Program Files\diskover\configs\diskover_autotag\config.yaml" %APPDATA%\diskover_autotag\
+copy "C:\Program Files\diskover\configs_sample\diskover_autotag\config.yaml" %APPDATA%\diskover_autotag\
 ```
 
 For diskover dupes finder:
 ```
 mkdir %APPDATA%\diskover_dupesfinder\
-copy "C:\Program Files\diskover\configs\diskover_dupesfinder\config.yaml" %APPDATA%\diskover_dupesfinder\
+copy "C:\Program Files\diskover\configs_sample\diskover_dupesfinder\config.yaml" %APPDATA%\diskover_dupesfinder\
 ```
 
 Continue same steps for the other folders in diskover\configs_sample\

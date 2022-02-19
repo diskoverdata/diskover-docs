@@ -13,8 +13,8 @@ For convenience, you may want to place the file inside a directory in your %PATH
 🔴 &nbsp;Create and edit .bat file for service:
 ```
 notepad c:\Program Files\diskover\diskoverd-win-service.bat
-
 ```
+
 🔴 &nbsp;In the .bat file add:
 ```
 python.exe c:\Program Files\diskover\diskoverd.py -n <worker_name>

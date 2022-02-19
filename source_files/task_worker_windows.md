@@ -10,13 +10,22 @@ Download nssm and extract nssm.exe. NSSM is a single file nssm.exe that does not
 
 For convenience, you may want to place the file inside a directory in your %PATH% environment variable, otherwise you will need to execute it using the full path.
 
->IMPORTANT: When running nssm commands, tou need to run the Command Prompt as an Adminstrator. Right click on Command Prompt and choose Run as Administrator.
+🔴 &nbsp;Create and edit .bat file for service:
+```
+notepad c:\Program Files\diskover\diskoverd-win-service.bat
+
+```
+🔴 &nbsp;In the .bat file add:
+```
+python.exe c:\Program Files\diskover\diskoverd.py -n <worker_name>
+```
+>Note: <worker_name> replace with a unique worker name to identify the worker in diskover-web.
 
 🔴 &nbsp;Run nssm to install service:
 ```
-nssm.exe install "diskoverdService" "python.exe" "C:\Program Files\diskover\diskoverd.py -n <worker_name>"
+nssm.exe install "diskoverdService" "C:\Program Files\diskover\diskoverd-win-service.bat"
 ```
->Note: <worker_name> replace with a unique worker name to identify the worker in diskover-web.
+>IMPORTANT: When running nssm commands, tou need to run the Command Prompt as an Adminstrator. Right click on Command Prompt and choose Run as Administrator.
 
 You should see a message that says something like:
 

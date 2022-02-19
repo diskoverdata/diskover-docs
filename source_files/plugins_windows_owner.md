@@ -8,12 +8,12 @@ The Windows Owner plugin adds the Windows file owner of each file and directory 
 * pywin32 python module, install with pip [https://pypi.org/project/pywin32/](https://pypi.org/project/pywin32/)
 
 
-🔴 &nbsp;The windows-owner runs as part of the indexing process. To enable:
+🔴 &nbsp;The windows-owner runs as part of the indexing process. To enable edit diskover config:
 ```
-vim /root/.config/diskover/config.yaml
+notepad %APPDATA%\diskover\config.yaml
 ```
 
-🔴 &nbsp;enable: set to **True**
+🔴 &nbsp;enable: set plugins enable to **True**
 
 🔴 &nbsp;dirs: **[‘windows-owner’]**
 

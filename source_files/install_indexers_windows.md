@@ -5,7 +5,7 @@ The following outlines installing the Diskover indexer on Windows.
 
 #### Install Python
 
-🔴 &nbsp;Get **Python** **3.7 or greater** from Windows Store and install.
+🔴 &nbsp;Download **Python** **3.7 or greater** from Windows Store or [python.org](https://python.org) and install.
 
 #### Install Diskover Indexer
 
@@ -20,29 +20,31 @@ Xcopy C:\tmp\diskover "C:\Program Files\" /E /H /C /I
 🔴 &nbsp;Install Python dependencies required by Diskover. Open a command prompt and run as administrator:
 
 ```
-pip3 install pywin32
-pip3 install requests
-pip3 install psutil
 pip3 install -r requirements-win.txt
 ```
+
+🔴 &nbsp;Create config directories for Diskover, you will need to create a separate config folder for each folder in diskover\configs_sample\ folder.
+
+For diskover config:
 ```
 mkdir %APPDATA%\diskover\
+copy "C:\Program Files\diskover\configs_sample\diskover\config.yaml" %APPDATA%\diskover\
 ```
+
+For diskover auto tag:
 ```
 mkdir %APPDATA%\diskover_autotag\
-```
-```
-mkdir %APPDATA%\diskover_dupesfinder\
-```
-```
-copy "C:\Program Files\diskover\configs\diskover\config.yaml" %APPDATA%\diskover\
-```
-```
 copy "C:\Program Files\diskover\configs\diskover_autotag\config.yaml" %APPDATA%\diskover_autotag\
 ```
+
+For diskover dupes finder:
 ```
+mkdir %APPDATA%\diskover_dupesfinder\
 copy "C:\Program Files\diskover\configs\diskover_dupesfinder\config.yaml" %APPDATA%\diskover_dupesfinder\
 ```
+
+Continue same steps for the other folders in diskover\configs_sample\
+
 
 🔴 &nbsp;Setup Diskover configuration file. Use Notepad to open the following configuration file:
 
@@ -83,11 +85,13 @@ replace: True
 🔴 &nbsp;Generate an index/scan. Open command prompt or Windows PowerShell as administrator:
 
 ```
-cd 'C:\Program Files\Diskover\'
-python3 diskover.py -i diskover-vols-2021011501 C:\Users\paulh
+cd 'C:\Program Files\diskover\'
+python3 diskover.py -i diskover-vols-2021011501 C:\Users\someuser
 ```
 
 #### Tips for Windows Drive Mapping
+
+Windows drive map letters and unc paths can also be scanned.
 
 If you open a command shell or PowerShell as administrator and the mounted filesystems are not present.
 

@@ -66,7 +66,6 @@ nssm.exe remove diskoverdService
 ```
 
 🔴 &nbsp;Edit more service settings:
-If you no longer want the service you can remove it with the following command:
 ```
 nssm.exe edit diskoverdService
 ```

@@ -72,7 +72,7 @@ nssm.exe edit diskoverdService
 
 #### Add Indexing Task to Diskover-web Task Panel
 
-When adding new index task to Diskover-web Task panel, for crawl paths use double backslash, example:
+When adding new index task to Diskover-web Task panel, for crawl directory use double backslash (escaped), example:
 
 `C:\\Users\\someuser`
 

@@ -70,4 +70,9 @@ nssm.exe remove diskoverdService
 nssm.exe edit diskoverdService
 ```
 
->Note: When adding new index task to Diskover-web Task panel, for crawl paths use double backslash, example C:\\Users\\someuser
+#### Add Indexing Task to Diskover-web Task Panel
+
+When adding new index task to Diskover-web Task panel, for crawl paths use double backslash, example:
+
+`C:\\Users\\someuser`
+

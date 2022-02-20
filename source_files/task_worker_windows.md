@@ -3,6 +3,19 @@ ___
 
 If you want to run diskoverd task worker as a Windows service you can use [NSSM](https://nssm.cc/) to create the service. This application allows you to easily create a service using python and diskoverd.py that gets treated as a proper Windows service that you can manage Windows services by running `services.msc` or by going to the Services tab from the Task Manager.
 
+🔴 &nbsp;Copy diskoverd sample config file to config directory:
+```
+mkdir %APPDATA%\diskoverd
+copy "C:\Program Files\diskover\configs_sample\diskoverd\config.yaml" %APPDATA%\diskoverd\
+notepad %APPDATA%\diskoverd\config.yaml
+```
+
+🔴 &nbsp;Set in config:
+```
+logDirectory: C:\Windows\Temp
+pythoncmd: python
+diskoverpath: C:\Program Files\diskover
+```
 
 🔴 &nbsp;Download nssm:
 

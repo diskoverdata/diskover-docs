@@ -12,9 +12,9 @@ notepad %APPDATA%\diskoverd\config.yaml
 
 🔴 &nbsp;Set in config:
 ```
-logDirectory: C:\Windows\Temp
+logDirectory: C:\\Windows\\Temp
 pythoncmd: python
-diskoverpath: C:\Program\ Files\diskover\
+diskoverpath: C:\\Program\ Files\\diskover\\
 ```
 
 🔴 &nbsp;Download nssm:

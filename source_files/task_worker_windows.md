@@ -1,7 +1,7 @@
 ___
 ### Install Task Worker for Windows
 
-If you want to run diskoverd task worker as a Windows service you can use [NSSM](https://nssm.cc/) to create the service. This application allows you to easily create a service using python and diskoverd.py that gets treated as a proper Windows service that you can manage Windows services by running `services.msc` or by going to the Services tab from the Task Manager.
+If you want to run diskoverd task worker as a Windows service you can use [NSSM](https://nssm.cc/) to create the service. This application allows you to easily create a service using python and diskoverd.py that gets treated as a proper Windows service that you can manage the diskoverd Windows service by running `services.msc` or by going to the Services tab from the Task Manager.
 
 🔴 &nbsp;Copy diskoverd sample config file to config directory:
 ```

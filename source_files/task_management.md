@@ -46,7 +46,7 @@ The following **Create New Index Task** dialog box will appear. Configure as fol
 🔴 &nbsp;Name: **index-_volumename_** (where _**volumename**_ is the name of volume, in this example **snfs2**)
 
 🔴 &nbsp;Crawl Directory(s): **/mnt/_volumedir_** (where _**volumedir**_ is the volume mountpoint, in this example **/mnt/snfs2**)
->Note: For Windows task worker, set the crawl directory to for example C:\\Users\\someuser using double backslash (escaped).
+>Note: For Windows task worker, set the crawl directory to for example `C:\\Users\\someuser` using double backslashes (escaped).
 
 🔴 &nbsp;Auto Index Name: unselect box
 

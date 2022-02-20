@@ -12,9 +12,9 @@ notepad %APPDATA%\diskoverd\config.yaml
 
 🔴 &nbsp;Set in config:
 ```
-logDirectory: C:\\Windows\\Temp
+logDirectory: C:\Windows\Temp
 pythoncmd: python
-diskoverpath: C:\\Program Files\\diskover\\
+diskoverpath: C:\Program\ Files\diskover\
 ```
 
 🔴 &nbsp;Download nssm:
@@ -69,10 +69,3 @@ nssm.exe remove diskoverdService
 ```
 nssm.exe edit diskoverdService
 ```
-
-#### Add Indexing Task to Diskover-web Task Panel
-
-When adding new index task to Diskover-web Task panel, for crawl directory use double backslash (escaped), example:
-
-`C:\\Users\\someuser`
-

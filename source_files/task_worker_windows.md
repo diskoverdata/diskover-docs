@@ -46,10 +46,9 @@ You should see a message that says something like:
 
 It will default to have Startup type: Automatic. This means it will start automatically when the computer restarts.
 
-🔴 &nbsp;Set I/O redirects for service:
+🔴 &nbsp;Set Windows user account with Administrator access for service:
 ```
-nssm.exe set diskoverdService AppStdout "C:\Windows\Temp\diskoverd-service.log"
-nssm.exe set diskoverdService AppStderr "C:\Windows\Temp\diskoverd-service-error.log"
+nssm set diskoverdService ObjectName <username> <password>
 ```
 
 🔴 &nbsp;Start and stop your custom service
@@ -64,4 +63,10 @@ nssm.exe restart diskoverdService
 If you no longer want the service you can remove it with the following command:
 ```
 nssm.exe remove diskoverdService
+```
+
+🔴 &nbsp;Edit more service settings:
+If you no longer want the service you can remove it with the following command:
+```
+nssm.exe edit diskoverdService
 ```

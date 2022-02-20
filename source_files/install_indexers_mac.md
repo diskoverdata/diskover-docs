@@ -73,12 +73,12 @@ cd /Applications/Diskover.app/Contents/MacOS/diskover/
 
 🔴 &nbsp;Install Python dependencies required by Diskover indexer:
 ```
-Python3 -m pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 🔴 &nbsp;Copy default/sample configs to **~/.config/**
 ```
-cd /Applications/Diskover.app/Contents/MacOS/diskover/configs
+cd /Applications/Diskover.app/Contents/MacOS/diskover/configs_sample
 ```
 ```
 cp -R diskover* ~/.config/

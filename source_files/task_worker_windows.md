@@ -38,7 +38,7 @@ python diskoverd.py -n <worker_name>
 ```
 nssm.exe install diskoverdService "C:\Program Files\diskover\diskoverd-win-service.bat"
 ```
->IMPORTANT: When running nssm commands, tou need to run the Command Prompt as an Adminstrator. Right click on Command Prompt and choose Run as Administrator.
+>IMPORTANT: When running nssm commands, you need to run the Command Prompt as an Adminstrator. Right click on Command Prompt and choose Run as Administrator.
 
 You should see a message that says something like:
 

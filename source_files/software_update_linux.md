@@ -3,73 +3,13 @@ ___
 
 The update process for Diskover curation platform consists of updating two parts: 1) the Diskover indexer(s), and 2) the Diskover-Web server.
 
-The software can be updated using either 1) an update script that uses a Diskover tar.gz install file, or 2) extracting a tar.gz file and copying the Diskover files to the proper locations.
-
-#### Upgrading with Update Script
-
-The following explains how to update the Diskover curation platform via the update script `update-diskover.sh` file located in the `install` directory.
-
-🔴 &nbsp;After downloading, edit the top of the file to include the path to Diskover install tar.gz file, paths to Diskover v2, and then save it and run it. This will update Diskover v2 and Diskover-Web v2 to the latest version.
-
-🔴 &nbsp;Make a backup of your existing config files (optional):
-```
-cd ~/.config/diskover && cp config.yaml config.yaml.bak
-cd <diskover-web_dir>/src/diskover && cp Constants.php Constants.php.bak
-```
-
-🔴 &nbsp;Make a backup of your existing data files (optional):
-```
-cd <diskover-web_dir>/public && for f in *.txt; do cp $f $f.bak; done
-cd <diskover-web_dir>/public/tasks && for f in *.json; do cp $f $f.bak; done
-```
-
-🔴 &nbsp;Stop **diskoverd** (Task worker daemon) if running (warning: this could kill any running tasks):
-```
-sudo systemctl stop diskoverd
-sudo systemctl status diskoverd
-ps -ef | grep diskoverd
-```
-
-🔴 &nbsp;Run update script:
-```
-chmod +x update-diskover.sh
-./update-diskover.sh
-```
-
-🔴 &nbsp;Check your config files are not missing any new settings:
-```
-diff <diskover_dir>/configs_sample/diskover/config.yaml ~/.config/diskover/config.yaml
-diff <diskover_dir>/configs_sample/diskoverd/config.yaml ~/.config/diskoverd/config.yaml
-...
-cd <diskover-web_dir>/src/diskover && diff Constants.php.sample Constants.php
-```
-
-🔴 &nbsp;Start **diskoverd** (Task worker daemon) if running previously:
-```
-sudo systemctl start diskoverd
-sudo systemctl status diskoverd
-```
-
-🔴 &nbsp;Restart NGINX:
-```
-systemctl restart nginx
-```
-
-🔴 &nbsp;Restart PHP-FPM:
-```
-systemctl restart php-fpm
-```
-
-🔴 &nbsp;Check for any errors in NGINX log (ex: permission issues):
-```
-tail -f /var/log/nginx/error.log
-```
+The software can be updated by extracting the latest tar.gz or zip file downloaded from the Diskover download portal and copying the Diskover files to the proper locations.
 
 #### Upgrading from tar.gz File
 
 The following explains how to update both Diskover and Diskover-Web assuming they are installed in the default locations.
 
-🔴 &nbsp;Stop **diskoverd** (Task worker daemon) if running (warning: this could kill any running tasks):
+🔴 &nbsp;Stop **diskoverd** (Task worker daemon) if running (WARNING: this could kill any running tasks):
 ```
 sudo systemctl stop diskoverd
 ps -ef | grep diskoverd
@@ -94,7 +34,7 @@ chmod 660 /var/www/diskover-web/public/*.txt
 chmod 660 /var/www/diskover-web/public/tasks/*.json
 ```
 
-🔴 &nbsp;Check your config files are not missing any new settings:
+🔴 &nbsp;Check your config files are not missing any new settings (see CHANGELOG.md files for what's changed):
 ```
 diff <diskover_dir>/configs_sample/diskover/config.yaml ~/.config/diskover/config.yaml
 diff <diskover_dir>/configs_sample/diskoverd/config.yaml ~/.config/diskoverd/config.yaml

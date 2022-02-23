@@ -3,7 +3,7 @@ ___
 
 The update process for Diskover curation platform consists of updating two parts: 1) the Diskover indexer(s), and 2) the Diskover-Web server.
 
-The software can be updated by extracting the latest tar.gz or zip file downloaded from the Diskover download portal and copying the Diskover files to the proper locations.
+The software can be updated by extracting the latest tar.gz or zip file downloaded from the Diskover download portal and updating the Diskover source files in the proper locations.
 
 #### Upgrading from tar.gz File
 

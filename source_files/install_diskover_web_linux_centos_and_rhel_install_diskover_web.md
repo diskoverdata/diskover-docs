@@ -83,12 +83,17 @@ server {
 
 #### NGINX Changes Required for CentOS/RHEL 8.X
 
+🔴 &nbsp;Change `fastcgi_pass` in `/etc/nginx/conf.d/diskover-web.conf` file:
+```
+fastcgi_pass unix:/var/run/php-fpm/www.sock;
+```
+
 🔴 &nbsp;If **IPV6** is not in use or disabled comment out the following line in the `/etc/nginx/nginx.conf` file:
 ```
 # listen       [::]:80 default_server;
 ```
 
-🔴 &nbsp;This will keep NGINX from starting, restart NGINX:
+🔴 &nbsp;Restart NGINX:
 ```
 systemctl restart nginx
 ```

@@ -66,6 +66,8 @@ Once you have a reference for your index size, you can decide to shard if applic
 >- 1 GB for every 5 million files / folders
 >- 20 GB for every 100 million files / folders
 
+>_Note:_ The size of the files is not relevant.
+
 ##### Rolling Indices:
 
 >- Each Diskover scan results in the creation of a new Elasticsearch index.

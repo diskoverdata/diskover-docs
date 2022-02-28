@@ -65,9 +65,11 @@ M) **Green Info bar**: Depending on your interaction, this bar will give you one
 
 <p id="path_navigation_bar"></p>
 
-N) **Path navigation bar**: Shows the path you’re working in (storage volume, directory, sub-directory, etc.), you cannot type in it, but you can click on any storage volume or directory and navigate that way.
+N) **Path bar**: Shows the path you’re working in (storage volume, directory, sub-directory, etc.), you cannot type in it, but you can click on any storage volume or directory and navigate that way.
 
-O) [**Storage volumes**](#storage_volume): To view and select available storage volumes.
+O) [**Storage volumes**](#storage_volume): To view and select available storage volumes:
+>- If you hover over a volumes, you will see the last indexed date and time for that specific volume.
+>- If you hover over the fill bars on the right of the volumes, you will see the space used, free, and total for each volume.
 
 P) [**Directories**](#directory): To view and select available directories inside the selected storage volume.
 
@@ -95,7 +97,16 @@ U) **Storage volume last indexed**: Gives the date and time of the last scan of 
 
 <img src="images/image_file_search_hovering_directory.png" width="300"> ![Image: Hovering Over a Storage Volume](images/image_file_search_hovering_volume.png)
 
-It is preferable to use the  **backward**  and  **forward**  buttons on your web browser to navigate between pages you have already visited. You can also use the back and forth buttons on the left pane of the file search window, but we found that they are not always responsive depending on which browser is being used.
+V) **Extension**: Will show all the file extensions found in the path you are pointing to or search query you ran.
+
+W) Features will be explained later in this guide:
+>- [Select All and Unselect All](#line_selection)
+>- [Tag](#tags)
+>- [Export](#export)
+>- [Share](#share)
+>- [File Action](#file_action)
+
+X) **Navigation arrows**: You can navigate back and forth withing the user interface using these arrows and/or the browser's arrows; the results will be the same.
 
 <p id="select_volume"></p>
 

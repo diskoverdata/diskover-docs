@@ -49,13 +49,15 @@ L) **Info icon:** Will display the directory’s attributes by opening a new pag
 
 M) **Copy Path icon**: To copy and share the path of a file or directory. The path syntax is specific to your Operating System and setup by the System Administrator, but can also  be modified in your [settings](#path_translation).
 
-N) **Reports icon**:  Drop-down list  allowing you to load this path directly in [file tree](#filetree), [treemap](#treemap) or [heatmap report](#heatmap). Drop-down list also give you the option to search that path [recursively or non-recursively](#recursive).
+N) **File Action**: When you want to use a [file action](#file_action) using a single item.
 
-O) **%**: Percentage size of the current path compared to the total size of the volume/directory you're in.
+O) **Reports icon**:  Drop-down list  allowing you to load this path directly in [file tree](#filetree), [treemap](#treemap) or [heatmap report](#heatmap). Drop-down list also give you the option to search that path [recursively or non-recursively](#recursive).
 
-P) **Cost**: Storage cost for this path, cost calculation is explained in the [cost analysis](#cost_analysis) section.
+P) **%**: Percentage size of the current path compared to the total size of the volume/directory you're in.
 
-Q) **Rating**: Is based on the last modified time, the older the higher the rating and the brighter the icon.
+Q) **Cost**: Storage cost for this path, cost calculation is explained in the [cost analysis](#cost_analysis) section.
+
+R) **Rating**: Is based on the last modified time, the older the higher the rating and the brighter the icon.
 
 >🔆 &nbsp;You can right-click an item in the search results pane to access other opening/sharing features. Those are associated with the browser you are using, not Diskover, so the choices and results may differ per browser and are not supported by Diskover.
 
@@ -75,7 +77,7 @@ D) Allows you to search that path [recursively or non-recursively](#recursive).
 
 E) You can apply a [tag](#tags) to the current file or directory from this window, as well as see the tags that might already be applied.
 
-F) Not in function yet, stay tuned!
+F) When you want to launch a [file action](#file_action) on this file.
 
 #### Recent Searches
 

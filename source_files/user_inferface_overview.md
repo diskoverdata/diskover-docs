@@ -99,7 +99,7 @@ U) **Storage volume last indexed**: Gives the date and time of the last scan of 
 
 V) **Extension**: Will show all the file extensions found in the path you are pointing to or search query you ran.
 
-W) Features will be explained later in this guide:
+W) Features will be explained later in this guide, but you can click on the links below to go directly to that section:
 >- [Select All and Unselect All](#line_selection)
 >- [Tag](#tags)
 >- [Export](#export)

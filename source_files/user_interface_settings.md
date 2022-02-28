@@ -39,6 +39,8 @@ By default, Diskover shows the file size using the  **binary system**. Click the
 
 Also by default, Diskover’s file size decimals is set to  **1**. You can change that value to your own preference and click on  **Set**  to save.
 
+Select **Use size_du** if you want to use the real allocated disk size instead of the usual file size.
+
 ![Image: Settings – File Size Display](images/image_settings_file_size_display.png)
 
 <p id="predictive_search"></p>

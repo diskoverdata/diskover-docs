@@ -3,6 +3,8 @@
 ___
 ### File Action
 
+![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
+
 The options within File Action pushes some boundaries around read-only files, still safeguarding your files while allowing you to view and validate files in a way to facilitate your work.
 
 This feature needs to be enabled by your System Administrator.

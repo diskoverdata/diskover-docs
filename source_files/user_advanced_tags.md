@@ -117,7 +117,7 @@ A built-in report is accessible via the  **Analytics**  drop-down list:
 
 ![Image: Tags Report Overview](images/image_tags_report_overview.png)
 
-A) Slide the buttons to refine the results.
+A) Slide the buttons to refine the results: file and/or directories, and directory size not [recursive](#recursive).
 
 B) Gives a total count of items – click on any tag/report to open the results in the search  page.
 

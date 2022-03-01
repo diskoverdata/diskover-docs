@@ -35,8 +35,8 @@ chmod 660 /var/www/diskover-web/public/*.txt
 chmod 660 /var/www/diskover-web/public/tasks/*.json
 ```
 
-🔴 &nbsp;Check your config files are not missing any new settings (see CHANGELOG.md files for what's changed):
->Important: Refer to [changeelog](https://docs.diskoverdata.com/diskover_changelogs/) for any new breaking config changes.
+🔴 &nbsp;Check your config files are not missing any new settings:
+>Important: Refer to [changelog](https://docs.diskoverdata.com/diskover_changelogs/) for any new breaking config changes. Changes are also in CHANGELOG.md files in diskover and diskover-web directories.
 ```
 diff <diskover_dir>/configs_sample/diskover/config.yaml ~/.config/diskover/config.yaml
 diff <diskover_dir>/configs_sample/diskoverd/config.yaml ~/.config/diskoverd/config.yaml

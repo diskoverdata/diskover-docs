@@ -27,7 +27,7 @@ F) **find file sequences** > To find all files in a sequence, see details below.
 
 #### Live View Into Directory(ies) Pre-Indexing > list dir
 
-![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
 This feauture allows you to run a real-time scan of a directory, lists the content so you can search and pro-actively copy paths. This feature only works for on-premise storage at the moment and is not avaiable for cloud storage.
 
@@ -73,7 +73,7 @@ This will launch GLIM where you'll be able to validate/preview the file.
 
 #### Find All Files in a Sequence > find file sequences
 
-![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
 Diskover allows you to easily find all files in a sequence via File Action.
 

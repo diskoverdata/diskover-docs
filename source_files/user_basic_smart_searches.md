@@ -17,7 +17,7 @@ All saved reports can be found in this view offering a quick graphical snapshot:
 
 ![Image: Smart Searches Report Overview](images/image_analytics_smart_searches_report_overview.png)
 
-A) Apply selection for results to include files and/or directories.
+A) Apply selection for results to include files and/or directories, as well as directory size not [recusrsive](#recusrive).
 
 B) Reports with results in number format – click on a report to open in the search page.
 

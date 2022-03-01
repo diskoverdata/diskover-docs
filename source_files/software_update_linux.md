@@ -28,8 +28,9 @@ rsync -rcv diskover-web/ /var/www/diskover-web/
 ```
 
 🔴 &nbsp;Set proper file systems permissions on Diskover files:
+>Note: txt and json chmod only in Essential+ versions
 ```
-chown -R nginx:nginx /var/www/diskover-web  
+chown -R nginx:nginx /var/www/diskover-web
 chmod 660 /var/www/diskover-web/public/*.txt
 chmod 660 /var/www/diskover-web/public/tasks/*.json
 ```

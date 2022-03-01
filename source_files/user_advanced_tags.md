@@ -34,9 +34,11 @@ F) **Add new tag**: To quickly add a single new tag - an admin account is requir
 
 G) **Apply tags to**: Choices of applying tags [non-recursively or recursively](#recursive) - can only be achieved from a directory and that directory needs to have a tag assigned to it prior and in order to assign the same tag(s) recursively or non-recursively.
 
-> **Non-recursive**: Will only apply tags to the next level of sub-directories and/or files of the selected directory.
+> **All results (all pages)**: Will apply tags to all your search results, no matter if they are files or directory, and no matter how many pages of results, but will not apply tags recursively.
+
+> **Selected Folders - [Non-recursive](#recursive)**: Will only apply tags to the next level of sub-directories and/or files of the selected directory.
 >
-> **Recursive**: Will apply tags to the all next levels of sub-directories and/or files of the selected directory.
+> **Selected Folders - [Recursive](#recursive)**: Will apply tags to all next levels of sub-directories and/or files of the selected directory.
 
 ![Image: Recursive Options for Applying Tags](images/image_tags_apply_recursive.png)
 

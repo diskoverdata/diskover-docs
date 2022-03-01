@@ -1,8 +1,8 @@
 #### Install PHP 7 and PHP-FPM (FastCGI)
 
-##### Centos/RHEL 7.X
+##### Centos/RHEL 7.x
 
-🔴 &nbsp;Install epel and remi repos on CentOS/RHEL 7.X (if not already installed):
+🔴 &nbsp;Install epel and remi repos on CentOS/RHEL 7.x (if not already installed):
 ```
 yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
@@ -21,7 +21,7 @@ yum -y install php php-common php-fpm php-opcache php-cli php-gd php-mysqlnd php
 
 ##### Centos/RHEL 8.x
 
-🔴 &nbsp;Install epel and remi repos on CentOS/RHEL 8.X (if not already installed):
+🔴 &nbsp;Install epel and remi repos on CentOS/RHEL 8.x (if not already installed):
 ```
 dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 dnf install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
@@ -37,7 +37,7 @@ dnf module enable php:remi-7.4
 dnf install php php-common php-fpm php-opcache php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json
 ```
 
-#### Configure Nginx
+#### Configure NGNIX
 
 🔴 &nbsp;Set PHP configuration settings for NGINX:
 ```
@@ -56,12 +56,12 @@ listen.owner = nginx
 listen.group = nginx
 ```
 
-🔴 &nbsp;Change the listen socket on Centos/RHEL 7.X:
+🔴 &nbsp;Change the listen socket on Centos/RHEL 7.x:
 ```
 listen = /var/run/php-fpm/php-fpm.sock
 ```
 
-🔴 &nbsp;Change the listen socket on Centos/RHEL 8.X:
+🔴 &nbsp;Change the listen socket on Centos/RHEL 8.x:
 ```
 listen = /var/run/php-fpm/www.sock
 ```

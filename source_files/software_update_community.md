@@ -1,28 +1,23 @@
 ___
 ### Software Update for Community Edition
 
-🔴 &nbsp;Make a backup of your existing config files (optional):
+🔴 &nbsp;If the Diskover repo is no longer cloned in `/tmp/diskover-v2-ce`, clone again:
 ```
-cd ~/.config/diskover && cp config.yaml config.yaml.bak
-cd <diskover-web_dir>/src/diskover && cp Constants.php Constants.php.bak
-```
-
-🔴 &nbsp;If the Diskover repo is no longer cloned in `/tmp/diskover_install`, clone again:
-```
-mkdir /tmp/diskover_install
-git clone https://github.com/diskoverdata/diskover-community.git /tmp/diskover_install
+mkdir /tmp/diskover-v2-ce
+git clone https://github.com/diskoverdata/diskover-community.git /tmp/diskover-v2-ce
 ```
 
 🔴 &nbsp;Update local cloned repo and sync changes to installed locations:
 ```
-cd /tmp/diskover_install
-git pull
+cd /tmp/diskover-v2-ce
+git fetch && git pull
 rsync -rcv diskover/ /opt/diskover/
 rsync -rcv diskover-web/ /var/www/diskover-web/
 chown -R nginx:nginx /var/www/diskover-web
 ```
 
 🔴 &nbsp;Verify that your config files are not missing any new settings:
+>Note: refer to [changelogs](https://docs.diskoverdata.com/diskover_changelogs/) for any breaking config changes, or view CHANGELOG.md files in diskover and diskover-web directories
 ```
 diff <diskover_dir>/configs_sample/diskover/config.yaml ~/.config/diskover/config.yaml
 cd <diskover-web_dir>/src/diskover && diff Constants.php.sample Constants.php 

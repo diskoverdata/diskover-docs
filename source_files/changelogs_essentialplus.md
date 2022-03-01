@@ -1,9 +1,9 @@
 ___
-## Changelogs - Essential +
+## Changelogs - Annual Subscription Editions
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 ___
 
-### Diskover v2 Essential + Changelog
+### Diskover v2 Annual Subscription Editions Changelog
 
 #### [2.0-rc.4-1] - 2022-02-28
 ##### fixed
@@ -420,7 +420,7 @@ ___
 - first v2.0 beta release
 
 ___
-### Diskover-web v2 Essential + Changelog
+### Diskover-web v2 Annual Subscription Editions Changelog
 
 #### [2.0-rc.4] - 2022-02-18
 ##### BREAKING CHANGES

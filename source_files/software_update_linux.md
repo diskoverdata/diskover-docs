@@ -9,7 +9,8 @@ The software can be updated by extracting the latest tar.gz or zip file download
 
 The following explains how to update both Diskover and Diskover-Web assuming they are installed in the default locations.
 
-🔴 &nbsp;Stop **diskoverd** (Task worker daemon) if running (WARNING: this could kill any running tasks):
+🔴 &nbsp;Stop **diskoverd** (Task worker daemon) if running:
+>WARNING: check that no tasks are running in diskover-web task panel before stopping the service
 ```
 sudo systemctl stop diskoverd
 ps -ef | grep diskoverd
@@ -28,7 +29,6 @@ rsync -rcv diskover-web/ /var/www/diskover-web/
 ```
 
 🔴 &nbsp;Set proper file systems permissions on Diskover files:
->Note: txt and json chmod only in Essential+ versions
 ```
 chown -R nginx:nginx /var/www/diskover-web
 chmod 660 /var/www/diskover-web/public/*.txt

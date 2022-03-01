@@ -56,9 +56,9 @@ ___
 
 Diskover uses Elasticsearch in the backend for its speed and reliability. Below is an overview of the Diskover architecture.
 
-> 🔆 &nbsp;You can search across several indices with: &nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+> 🔆 &nbsp;You can search across several indices with: &nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Diskover Life Science Edition Label](images/button_edition_life_science.png)
 
-> 🔆 &nbsp;You can search across several clusters with: &nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+> 🔆 &nbsp;You can search across several clusters with: &nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Diskover Life Science Edition Label](images/button_edition_life_science.png)
 
 ![Image: Diskover Architecture Overview](images/diagram_diskover_architecture_overview.png)
 

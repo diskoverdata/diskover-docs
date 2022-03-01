@@ -81,7 +81,7 @@ server {
 }
 ```
 
-#### NGINX Changes Required for CentOS/RHEL 8.X
+#### NGINX Changes Required for CentOS/RHEL 8
 
 🔴 &nbsp;Change `fastcgi_pass` in `/etc/nginx/conf.d/diskover-web.conf` file:
 ```
@@ -120,7 +120,7 @@ vi /var/www/diskover-web/public/info.php
 phpinfo();
 ```
 
-🔴 &nbsp;For CentOS 8.X / RHEL insert the following text:
+🔴 &nbsp;For CentOS 8.x / RHEL insert the following text:
 ```
 <?php
 phpinfo();

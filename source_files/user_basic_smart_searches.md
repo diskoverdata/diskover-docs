@@ -3,7 +3,7 @@
 ___
 ### Smart Searches
 
-![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
 Smart searches were designed for repeatable reports; they are basically saved searches or shortcuts. The goal is to avoid having to recreate complex queries when you know you will need the same report on a regular basis. These reports are global and accessible by everyone in your organization.
 

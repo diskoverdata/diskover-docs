@@ -73,7 +73,7 @@ This will launch GLIM where you'll be able to validate/preview the file.
 
 #### Find All Files in a Sequence > find file sequences
 
-![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
+![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
 Diskover allows you to easily find all files in a sequence via File Action.
 

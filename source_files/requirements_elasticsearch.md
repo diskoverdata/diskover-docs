@@ -67,7 +67,7 @@ Once you have a reference for your index size, you can decide to shard if applic
 >- 20 GB for every 100 million files / folders
 
 >_Note:_ The size of the files is not relevant.
->Replicas increasse the size by tne number of replicas, so a 20GB index with 2 replicas would take a total storage capacity of 60GB, since a copy of the index (all docs) are on another ES node. Multiple shards do not increase the index size, as the index's docs are spread across the ES cluster nodes.
+>Replicas increasse the size by tne number of replicas, so a 20GB index with 2 replicas would require a total storage capacity of 60GB, since a copy of the index (all docs) are on other ES nodes. Multiple shards do not increase the index size, as the index's docs are spread across the ES cluster nodes.
 
 ##### Rolling Indices:
 

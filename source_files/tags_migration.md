@@ -1,7 +1,9 @@
 ___
-### Tags Migration - Copying from One Index to Another
+### Tags Migration - Copying from One Index to Another (tag copier)
 
-The Diskover indexing process creates a new index or point in time snapshot of the volume at time of index. Tags that are applied during the indexing process via autotag rules will be automatically reapplied based on the configuration rules in the configuration file.
+![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
+
+The Diskover indexing process creates a new index or point in time snapshot of the volume at time of index. Tags that are applied during the indexing process via autotag rules will be automatically re-applied based on the configuration rules in the configuration file.
 
 However, the Diskover indexer has no knowledge of tags applied outside of the indexing process, those tags that have been applied: a) manually, b) via Diskover API, or c) via plugins thru the API. Therefore, these tags must be migrated from one index to the next.
 
@@ -11,23 +13,23 @@ The following describes how to initial a tag migration/copy from a shell.
 
 🔴 &nbsp;Confirm existing of **tagcopier** configuration file:
 ```
-cat /root/.config/_diskover_tagcopier/config.yaml_
+cat /root/.config/diskover_tagcopier/config.yaml
 ```
 
 🔴 &nbsp;If the file does not exist:
 ```
-cd /opt/diskover/
-python3 diskover_tagcopier.py diskover-<source_indexname> diskover-<dest_indexname>
+mkdir /root/.config/diskover_tagcopier/
+cp /opt/diskover/configs_sample/diskover_tagcopier/config.yaml /root/.config/diskover_tagcopier/
 ```
 
 🔴 &nbsp;Configure any tags or tags applied via autotag process to exclude from migration:
 
 ![Image: Tags Copier Configuration](images/image_tags_tagcopier_config.png)
 
-🔴 &nbsp;Change directories and execute:
+🔴 &nbsp;Copy tags from source to destination index:
 ```
-mkdir /root/.config/_diskover_tagcopier/_
-cp /opt/diskover/_configs/diskover_tagcopier/config.yaml /root/.config/diskover_tagcopier/_
+cd /opt/diskover/
+python3 diskover_tagcopier.py diskover-<source_indexname> diskover-<dest_indexname>
 ```
 
 🔴 &nbsp;To view usage options:

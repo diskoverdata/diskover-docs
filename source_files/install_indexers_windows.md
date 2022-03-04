@@ -9,17 +9,18 @@ The following outlines installing the Diskover indexer on Windows.
 
 #### Install Diskover Indexer
 
-🔴 &nbsp;Extract **diskover** folder.
+🔴 &nbsp;Extract diskover tar.gz or zip archive.
 
 🔴 &nbsp;Copy **diskover** folder to **Program Files**:
 
 ```
-Xcopy C:\tmp\diskover "C:\Program Files\" /E /H /C /I
+Xcopy C:\tmp\diskover "C:\Program Files\diskover" /E /H /C /I
 ```
 
 🔴 &nbsp;Install Python dependencies required by Diskover. Open a command prompt and run as administrator:
 
 ```
+cd "C:\Program Files\diskover"
 pip3 install -r requirements-win.txt
 ```
 

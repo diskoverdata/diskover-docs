@@ -14,6 +14,7 @@ The following outlines installing the Diskover indexer on Windows.
 🔴 &nbsp;Copy **diskover** folder to **Program Files**:
 
 ```
+mkdir "C:\Program Files\diskover"
 Xcopy C:\tmp\diskover "C:\Program Files\diskover" /E /H /C /I
 ```
 

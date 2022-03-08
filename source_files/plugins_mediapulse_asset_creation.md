@@ -42,6 +42,11 @@ mv diskover-xytech-asset.py /opt/diskover/plugins_postindex/xytech_plugin/
 mv wsdl/ /opt/diskover/plugins_postindex/xytech_plugin/
 ```
 
+🔴 &nbsp;Install Python dependencies:
+```
+pip3 install suds-community
+```
+
 🔴 &nbsp;Configure plugin settings:
 
 ```

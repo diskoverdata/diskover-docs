@@ -74,6 +74,6 @@ ___
 
 By default diskover-web does not load all indices in Elasticsearch. This is for performance reasons in case there are thousands of indices in ES.
 
-On the indices page, there is a `max index` setting which controls the number of indices to load. Indices are loaded by creation date. If you are missing indices in the list, try increasing this number. This is a per user setting that gets stored in a cookie in each user's browser.
+On the indices page, there is a `max indices to load` input setting which controls the number of indices to load. Indices are loaded in order by creation date. If you are missing indices in the list, try increasing this number. This is a per user setting that gets stored in a cookie in each user's browser.
 
 This number can also be set for new user logins in web config's `MAX_INDEX` setting.

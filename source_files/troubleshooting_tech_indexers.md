@@ -35,14 +35,9 @@ If you are seeing this Elasticsearch warning, there are two things you can try.
 ___
 ### Diskover Indexer for Windows
 
-🔴 &nbsp;Make a tmp directory for logs:
-```
-mkdir C:\tmp
-```
-
 🔴 &nbsp;Enable debug logging in config by setting **logLevel** to `DEBUG` and enable logging to a file by setting **logToFile** to `True`:
 ```
 logLevel: DEBUG
 logToFile: True
-logDirectory: C:\\tmp
+logDirectory: C:\\Windows\\Temp
 ```

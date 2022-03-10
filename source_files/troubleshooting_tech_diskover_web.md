@@ -14,7 +14,7 @@ ___
 
 🔴 &nbsp;To view log files associated with Diskover-Web errors:
 ```
-C:Program FilesNginxnginx-1.19.6logserror.log
+C:\Program Files\Nginx\nginx-1.19.6\logs\error.log
 ```
 
 ___

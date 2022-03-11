@@ -12,6 +12,19 @@ ___
 
 No license key is required for **Diskover Community Edition**. If you would like to request a demo license key or purchase a [subscription for Diskover’s advanced solutions](https://www.diskoverdata.com/solutions/), please contact your Diskover Data point of contact or [info@diskoverdata.com](mailto:info@diskoverdata.com).
 
+___
+### Generating a Hardware ID
+
+You will need to generate a hardware id once you have installed and configured diskover before requesting a license.
+
+>Important: Check that you have configured your Elasticsearch host correctly in diskover config as it is part of the hardware id generation. If you change the host/ip, you will need new license keys.
+
+🔴 &nbsp;Get hardware id:
+```
+cd /opt/diskover
+python3 diskover_lic.py -g
+```
+
 #### License Key for Linux
 
 Place the license keys in the following locations. 

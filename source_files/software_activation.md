@@ -15,13 +15,16 @@ ___
 
 You will need to generate a hardware id once you have installed and configured diskover before requesting a license.
 
->Important: Check that you have configured your Elasticsearch host correctly in diskover config as it is part of the hardware id generation. If you change the host/ip, you will need new license keys.
+Check that you have configured your Elasticsearch host correctly in diskover config as it is part of the hardware id generation.
 
 🔴 &nbsp;Get hardware id:
 ```
 cd /opt/diskover
 python3 diskover_lic.py -g
 ```
+
+>Note: If you change the Elasticsearch host/ip or number of nodes in the ES cluster, you will need new license keys.
+
 
 #### License Key for Linux
 

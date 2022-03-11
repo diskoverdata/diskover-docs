@@ -61,7 +61,7 @@ tail -f /var/log/nginx/access.log
 ___
 ### Hard Reload After a Software Update
 
-Sometimes when the Web user interface gets updated, it requires a forced/hard reload of the browser, in order to reload the new Javascript, etc. cached files.
+Sometimes when the web user interface gets updated, it requires a forced/hard reload of the browser, in order to reload the new Javascript, etc. cached files.
 
 [Click here for more information](https://fabricdigital.co.nz/blog/how-to-hard-refresh-your-browser-and-clear-cache).
 
@@ -72,8 +72,8 @@ For example, this overlay display of the volumes and directories might happen af
 ___
 ### Missing Indicies
 
-By default diskover-web does not load all indices in Elasticsearch. This is for performance reasons in case there are thousands of indices in ES.
+By default Diskover-web does not load all indices in Elasticsearch. This is for performance reasons in case there are thousands of indices in Elasticsearch.
 
-On the indices page, there is a `max indices to load` input setting which controls the number of indices to load. Indices are loaded in order by creation date. If you are missing indices in the list, try increasing this number. This is a per user setting that gets stored in a cookie in each user's browser.
+On the indices page, there is a **max indices to load** input setting which controls the number of indices to load. Indices are loaded by order of creation date. If you are missing indices in the list, try increasing this number. This is a per user setting that gets stored in a cookie in each user's browser.
 
 This number can also be set for all users in web config's `MAX_INDEX` setting. If the user's browser `maxindex` cookie is lower than this number, their cookie will be set to this number.

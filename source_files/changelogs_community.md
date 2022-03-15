@@ -4,6 +4,21 @@ ___
 
 ### Diskover v2 Community Edition Changelog
 
+#### [2.0-rc.5] - 2022-03-15
+##### fixed
+- issue with enabling diskover logging in Windows causes exception
+- issue when scanning using just drive letter in Windows (example C:), would scan current directory
+##### added
+- defaults for config
+##### changed
+- if any missing config items are not in diskover config file, a default config value gets set and a warning message gets printed
+- log file names
+- updated Windows file owner plugin to v0.0.3
+    - added sid cache to improve performance
+    - primary group is also now indexed
+    - INC_DOMAIN variable at top of script to control if domain name is included in owner/group name
+
+
 #### [2.0-rc.4-1] - 2022-02-28
 ##### fixed
 - issue with slow indexing from hardlink checking, updated diskover.py to v2.0-rc.4-1

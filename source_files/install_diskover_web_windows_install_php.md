@@ -30,7 +30,7 @@ C:\Program Files\Php\php-7.4.14-Win32-vc15-x64
 🔴 &nbsp;Create **php.ini** file to enable required dynamic extensions **C:\Program Files\Php\php-7.4.14-Win32-vc15-x64\php.ini**
 ```
 ; Directory in which the loadable extensions (modules) reside.
-extension_dir = "C:\Program Files\Php\php-7.4.14-Win32-vc15-x64\ext\"
+extension_dir = "C:\Program Files\Php\php-7.4.14-Win32-vc15-x64\ext"
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Dynamic Extensions Required ;
@@ -43,7 +43,8 @@ extension=php_ldap.dll
 extension=php_xmlrpc.dll
 extension=php_mbstring.dll
 extension=php_openssl.dll
-extension=php_sqlite.dll
+extension=php_sqlite3.dll
+sqlite3.extension_dir = "C:\Program Files\Php\php-7.4.14-Win32-vc15-x64\ext"
 ```
 
 🔴 &nbsp;Configure integration of NGINX with PHP.

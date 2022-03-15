@@ -1,4 +1,4 @@
 mkdocs==1.2.3
-git+git://github.com/trackit/mdx-breakless-lists@master
+git+https://github.com/trackit/mdx-breakless-lists@master
 markdown-checklist==0.4.3
 mkdocs-material==7.3.6

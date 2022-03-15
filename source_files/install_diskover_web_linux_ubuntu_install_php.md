@@ -19,18 +19,7 @@ php -v
 
 🔴 &nbsp;Install PHP modules required for Diskover-Web
 ```
-apt-get install -y php-common
-apt-get install -y php-fpm
-apt-get install -y php-mysql
-apt-get install -y php-cli
-apt-get install -y php-gd
-apt-get install -y php-ldap
-apt-get install -y php-pecl-zip
-apt-get install -y php-xml
-apt-get install -y php-xmlrpc
-apt-get install -y php-mbstring
-apt-get install -y php-json
-apt install php7.4-curl
+apt-get install -y php-common php-fpm php-mysql php-cli php-gd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json php7.4-curl php7.4-sqlite
 ```
 
 🔴 &nbsp;Set PHP configuration settings for NGINX:

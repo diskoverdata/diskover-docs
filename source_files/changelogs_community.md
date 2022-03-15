@@ -73,6 +73,22 @@ ___
 ___
 ### Diskover-web v2 Community Edition Changelog
 
+#### [2.0-rc.5] - 2022-03-15
+##### fixed
+- multiple ES queries delay when typing text into search bar
+- index fields getting added multiple times to filters and help page
+- increasing MAX_INDEX setting in config not updating maxindex user browser cookie if set lower
+- issue with select indices page and php warning message if new index not in cache
+##### added
+- defaults for config
+- DATABASE to default/sample config (Constants.php.sample), can be used to change sqlite database file path
+##### changed
+- improved table text wrapping on search results page
+- if any missing config items are not in Constants.php (web config file), a default config value gets set and a message gets printed in web server error log
+- MAX_INDEX setting in default/sample config to 250
+- increasing MAX_INDEX in config also increases it for all users who may have it set lower in browser cookie
+
+
 #### [2.0-rc.4] - 2022-02-18
 ##### BREAKING CHANGES
 - added MAX_INDEX, INDEXINFO_CACHETIME, NEWINDEX_CHECKTIME settings to default/sample web config file, copy to your config file

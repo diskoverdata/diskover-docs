@@ -2,6 +2,8 @@ ___
 ## Telestream GLIM and Vantage Workflow Enhancements
 ___
 
+The GLIM and Vantage web tools allow end-users to view/confirm source files, as well as submit files for transcoding, directly from Diskover and without ever leaving your web browser.
+
 ![Image: Telestream Plugins Overview Diagram](images/diagram_diskover_media_edition_plugins_overview_telestream_20220314.png)
 
 _[Click here for a full screen view of the Storage Cost Configuration Overview diagram.](images/diagram_diskover_media_edition_plugins_overview_telestream_20220314.png)_

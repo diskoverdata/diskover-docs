@@ -13,8 +13,8 @@ ordered_documents:
   - intro_media_edition_challenges_solutions.md
   - user_media_edition_plugins_overview.md
   - user_media_edition_media_info_attributes.md
-  - user_media_edition_order_management.md
-  - user_media_edition_glim_plugin.md
+  - user_media_edition_xytech_plugins.md
+  - user_media_edition_telestream_plugins.md
   - support_media_edition.md
   - contact.md
   - footer_media_edition.md

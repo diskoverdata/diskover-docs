@@ -43,6 +43,7 @@ extension=php_ldap.dll
 extension=php_xmlrpc.dll
 extension=php_mbstring.dll
 extension=php_openssl.dll
+extension=php_sqlite.dll
 ```
 
 🔴 &nbsp;Configure integration of NGINX with PHP.

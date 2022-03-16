@@ -5,6 +5,45 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.0-rc.5] - 2022-03-15
+##### BREAKING CHANGES
+- new licensing
+    - contact Diskover Data support@diskoverdata.com to get new license key file as existing diskover.lic file will no longer work
+    - you will need to generate a hardware id using diskover_lic.py -g (in diskover folder) before requesting new license keys
+- media info plugin now uses and requires config file, see changed
+##### fixed
+- issue with enabling diskover logging in Windows causes exception
+- issue when scanning using just drive letter in Windows (example C:), would scan current directory
+- issue with default/sample autoclean config causing ConfigReadError exception
+##### added
+- new licensing
+- diskover_lic.py license helper module, use -h cli option for help
+- defaults for configs
+##### changed
+- if any missing config items are not in config files, a default config value gets set and a warning message gets printed
+- updated dupesfinder post index plugin to v2.0-rc.1
+- updated tagcopier post index plugin to v2.0-rc.1
+- updated autoclean post index plugin to v0.0.2
+    - Windows support
+- updated autotag post index plugin to v2.0-rc.1
+- updated indexdiff post index plugin to v2.0-rc.1
+- updated diskoverd to v2.0-rc.4
+    - added checks for Python command and diskover directory config settings
+    - fixed issue with setting alternate config directory not getting used if use default config is checked in index task
+    - fixed issue with task starting when already running and hasn't finished
+    - fixed thread lock issues
+- updated s3 alt scanner to v0.0.7
+- updated media info plugin to v0.0.11
+    - added config.yaml file to configs_sample/diskover_mediainfo_plugin/ directory, see top of file where to copy
+    - options in config for "human friendly" formating for bitrate and duration
+- updated dir cache alt scanner to v0.0.3
+- log file names
+- updated Windows file owner plugin to v0.0.3
+    - added sid cache to improve performance
+    - primary group is also now indexed
+    - INC_DOMAIN variable at top of script to control if domain name is included in owner/group name
+
+
 #### [2.0-rc.4-1] - 2022-02-28
 ##### fixed
 - issue with slow indexing from hardlink checking, updated diskover.py to v2.0-rc.4-5
@@ -421,6 +460,37 @@ ___
 
 ___
 ### Diskover-web v2 Annual Subscription Editions Changelog
+
+#### [2.0-rc.5] - 2022-03-15
+##### BREAKING CHANGES
+- new licensing
+    - contact Diskover Data support@diskoverdata.com to get new license key file as existing diskover-web.lic file will no longer work
+    - you will need to generate a hardware id using diskover_lic.py -g (in diskover folder) before requesting new license keys
+##### fixed
+- issues with analytics pages filter settings like size, maxdepth not getting set
+- viewing tags page when nothing tagged didn't show info message that nothing was tagged
+- multiple ES queries delay when typing text into search bar
+- index fields getting added multiple times to filters and help page
+- increasing MAX_INDEX setting in config not updating maxindex user browser cookie if set lower
+- when setting use alternate config in index task, use default config does not get set to false after saving
+- issue with select indices page and php warning message if new index not in cache
+- mouse tooltip on nav bar path dropdown not showing top path
+##### added
+- new licensing
+- additional license info on settings page
+- defaults for config
+- filetree, treemap, and heatmap analytics pages auto-reload to redraw d3 charts on browser window resize
+- DATABASE to default/sample config (Constants.php.sample), can be used to change sqlite database file path
+##### changed
+- improved always use latest indices auto index selection
+- improved table text wrapping on search results page
+- improved UX and reduced queries to ES for file tree and tree map analytics pages
+- removed public/lic.php, this file is no longer used
+- if any missing config items are not in Constants.php (web config file), a default config value gets set and a message gets printed in web server error log
+- updated api to v2.0-rc.4
+- MAX_INDEX setting in default/sample config to 250
+- increasing MAX_INDEX in config also increases it for all users who may have it set lower in browser cookie
+
 
 #### [2.0-rc.4] - 2022-02-18
 ##### BREAKING CHANGES

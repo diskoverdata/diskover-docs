@@ -3,7 +3,7 @@ ___
 ___
 This chapter describes the features that are currently released enhancing file-based production workflows. Please stay tuned as many more features are in development and on the roadmap.
 
-[Clikc here to learn more about the Xytech MediaPulse product](https://www.xytechsystems.com/solution/mediapulse/)
+[Click here to learn more about the Xytech MediaPulse product](https://www.xytechsystems.com/solution/mediapulse/)
 
 ___
 ### Xytech MediaPulse Asset Creation

@@ -2,8 +2,16 @@ ___
 ## Media Edition Plugins Overview
 ___
 
-This diagram illustrates the functionality of the initial features of the Media Edition. More plugins and features will be added over time.
+These diagrams illustrate the functionality of the current features of the Media Edition. More plugins and features will be added over time.
 
-![Image: AJA Diskover Media Edition Plugins Overview](images/diagram_diskover_media_edition_plugins_workflow_overview_with_border.png)
+![Image: Telestream Plugins Overview Diagram](images/diagram_diskover_media_edition_plugins_overview_mediainfo_and_file_sequences.png)
 
-_[Click here for a full screen view of the Plugins Overview diagram.](images/diagram_diskover_media_edition_plugins_workflow_overview_with_border.png)_
+_[Click here for a full screen view of the Storage Cost Configuration Overview diagram.](images/diagram_diskover_media_edition_plugins_overview_mediainfo_and_file_sequences.png)_
+
+![Image: Telestream Plugins Overview Diagram](images/diagram_diskover_media_edition_plugins_overview_xytech_mediapulse.png)
+
+_[Click here for a full screen view of the Storage Cost Configuration Overview diagram.](images/diagram_diskover_media_edition_plugins_overview_xytech_mediapulse.png)_
+
+![Image: Telestream Plugins Overview Diagram](images/diagram_diskover_media_edition_plugins_overview_telestream.png)
+
+_[Click here for a full screen view of the Storage Cost Configuration Overview diagram.](images/diagram_diskover_media_edition_plugins_overview_telestream.png)_

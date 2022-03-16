@@ -10,6 +10,7 @@ ___
 - new licensing
     - contact Diskover Data support@diskoverdata.com to get new license key file as existing diskover.lic file will no longer work
     - you will need to generate a hardware id before requesting new license keys https://docs.diskoverdata.com/diskover_installation_guide/#generating-a-hardware-id
+    - features which were previously unlocked, will now require a valid edition license (Essential, Pro, etc)
 - media info plugin now uses and requires config file, see changed
 ##### fixed
 - issue with enabling diskover logging in Windows causes exception
@@ -466,6 +467,7 @@ ___
 - new licensing
     - contact Diskover Data support@diskoverdata.com to get new license key file as existing diskover-web.lic file will no longer work
     - you will need to generate a hardware id before requesting new license keys https://docs.diskoverdata.com/diskover_installation_guide/#generating-a-hardware-id
+    - features which were previously unlocked, will now require a valid edition license (Essential, Pro, etc)
 ##### fixed
 - issues with analytics pages filter settings like size, maxdepth not getting set
 - viewing tags page when nothing tagged didn't show info message that nothing was tagged

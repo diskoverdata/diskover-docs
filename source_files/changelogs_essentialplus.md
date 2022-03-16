@@ -5,7 +5,7 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
-#### [2.0-rc.5] - 2022-03-15
+#### [2.0-rc.5] - 2022-03-16
 ##### BREAKING CHANGES
 - new licensing
     - contact Diskover Data support@diskoverdata.com to get new license key file as existing diskover.lic file will no longer work
@@ -462,7 +462,7 @@ ___
 ___
 ### Diskover-web v2 Annual Subscription Editions Changelog
 
-#### [2.0-rc.5] - 2022-03-15
+#### [2.0-rc.5] - 2022-03-16
 ##### BREAKING CHANGES
 - new licensing
     - contact Diskover Data support@diskoverdata.com to get new license key file as existing diskover-web.lic file will no longer work
@@ -477,12 +477,15 @@ ___
 - when setting use alternate config in index task, use default config does not get set to false after saving
 - issue with select indices page and php warning message if new index not in cache
 - mouse tooltip on nav bar path dropdown not showing top path
+- issue with file action button next to file name not always using correct index/path if different search result items were previously selected
+- heatmap change size column not sorting correctly
 ##### added
 - new licensing
 - additional license info on settings page
 - defaults for config
 - filetree, treemap, and heatmap analytics pages auto-reload to redraw d3 charts on browser window resize
 - DATABASE to default/sample config (Constants.php.sample), can be used to change sqlite database file path
+- public/fileactions/fileaction_samples/ directory
 ##### changed
 - improved always use latest indices auto index selection
 - improved table text wrapping on search results page
@@ -492,6 +495,7 @@ ___
 - updated api to v2.0-rc.4
 - MAX_INDEX setting in default/sample config to 250
 - increasing MAX_INDEX in config also increases it for all users who may have it set lower in browser cookie
+- all sample file actions are now in public/fileactions/fileaction_samples/ directory
 
 
 #### [2.0-rc.4] - 2022-02-18

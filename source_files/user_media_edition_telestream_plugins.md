@@ -6,6 +6,7 @@ The GLIM and Vantage web tools allow end-users to view/confirm source files, as 
 
 [Click here to learn more about the Telestream products](http://www.telestream.net/)
 
+___
 ### Preview/Validate Media Files with GLIM
 
 You can do an advanced search/validation of a media file and playback right from Diskover.

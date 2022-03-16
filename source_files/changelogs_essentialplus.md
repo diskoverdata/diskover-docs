@@ -9,7 +9,7 @@ ___
 ##### BREAKING CHANGES
 - new licensing
     - contact Diskover Data support@diskoverdata.com to get new license key file as existing diskover.lic file will no longer work
-    - you will need to generate a hardware id using diskover_lic.py -g (in diskover folder) before requesting new license keys
+    - you will need to generate a hardware id before requesting new license keys https://docs.diskoverdata.com/diskover_installation_guide/#generating-a-hardware-id
 - media info plugin now uses and requires config file, see changed
 ##### fixed
 - issue with enabling diskover logging in Windows causes exception
@@ -465,7 +465,7 @@ ___
 ##### BREAKING CHANGES
 - new licensing
     - contact Diskover Data support@diskoverdata.com to get new license key file as existing diskover-web.lic file will no longer work
-    - you will need to generate a hardware id using diskover_lic.py -g (in diskover folder) before requesting new license keys
+    - you will need to generate a hardware id before requesting new license keys https://docs.diskoverdata.com/diskover_installation_guide/#generating-a-hardware-id
 ##### fixed
 - issues with analytics pages filter settings like size, maxdepth not getting set
 - viewing tags page when nothing tagged didn't show info message that nothing was tagged

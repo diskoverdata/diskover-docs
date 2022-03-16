@@ -4,7 +4,7 @@ ___
 
 The GLIM and Vantage web tools allow end-users to view/confirm source files, as well as submit files for transcoding, directly from Diskover, without ever leaving your web browser.
 
-[Click here to learn more about the Telestream products](http://www.telestream.net/)
+[Click here to learn more about the Telestream products.](http://www.telestream.net/)
 
 ___
 ### Preview/Validate Media Files with GLIM
@@ -25,7 +25,7 @@ This will launch GLIM where you'll be able to validate/preview the file.
 
 ![Image: Telestream GLIM Preview](images/image_file_action_glim_preview.png)
 
-[Click here to learn more about the Telestream GLIM product](https://www.telestream.net/glim/overview.htm)
+[Click here to learn more about the Telestream GLIM product.](https://www.telestream.net/glim/overview.htm)
 
 ___
 ### Submit Transcoding Jobs to Vantage Direclty from Diskover
@@ -61,4 +61,4 @@ The major benefits:
 
 ![Image: Vantage Job Status](images/image_aja_edition_telestream_vantage_job_status.png)
 
-[Click here to learn more about the Telestream Vantage product](http://www.telestream.net/vantage/overview.htm)
+[Click here to learn more about the Telestream Vantage product.](http://www.telestream.net/vantage/overview.htm)

@@ -45,19 +45,17 @@ The major benefits:
 
 1. [Search for the desired file(s) within Diskover](https://docs.diskoverdata.com/diskover_user_guide/#manual-search-syntax) as you would normaly do.
  
-2. Select the file you wish to submit for transcoding by clicking the **File Action** icon (gears icon) in line with the file. If you wish to submit multiple files at a time, select the files by clicking the check box in front of the file, then select the **File Action** button.
-
-![Image: Select File Action](images/image_aja_edition_telestream_vantage_selection_multiple_files.png)
-
-3. From the **File Action** drop-down list select **submit to Vantage**:
+2. Select the file you wish to submit for transcoding by clicking the **File Action > submit to Vantage** icon (gears icon) in line with the file. If you wish to submit multiple files at a time, select the files by clicking the check box in front of the file, then select the **File Action > submit to Vantage** button.
 
 ![Image: Select Submit to Vantage](images/image_aja_edition_telestream_vantage_selection.png)
 
-4. A window will open with a series of submission options - after clicking the **Submit** button, you will get a message that the file has been submitted to Vantage successfully.
+![Image: Select File Action](images/image_aja_edition_telestream_vantage_selection_multiple_files.png)
+
+3. A window will open with a series of submission options - after clicking the **Submit** button, you will get a message that the file has been submitted to Vantage successfully.
 
 ![Image: Select Submission Option](images/image_aja_edition_telestream_vantage_job_submission.png)
 
-5. If you have access to the **jobs submission status** view in Vantage (webpage location to be supplied by your system administrator), you will see the progress status of your request(s).
+4. If you have access to the **jobs submission status** view in Vantage (webpage location to be supplied by your system administrator), you will see the progress status of your request(s).
 
 ![Image: Vantage Job Status](images/image_aja_edition_telestream_vantage_job_status.png)
 

@@ -57,6 +57,8 @@ The major benefits:
 
 4. If you have access to the **jobs submission status** view in Vantage (webpage location to be supplied by your system administrator), you will see the progress status of your request(s).
 
+![Image: Vantage Job Status](images/image_aja_edition_telestream_vantage_job_processing_status.png)
+
 ![Image: Vantage Job Status](images/image_aja_edition_telestream_vantage_job_status.png)
 
 [Click here to learn more about the Telestream Vantage product](http://www.telestream.net/vantage/overview.htm)

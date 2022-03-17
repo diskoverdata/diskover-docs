@@ -74,7 +74,7 @@ C:\Program Files\diskover-web\src\diskover\
 
 ### Get License Info
 
-After you have installed your license keys, you can see info about the license using diskover_lic.py or by going to the diskover-web settings page and scrolling to the license info section.
+After you have installed your license keys, you can see info about the license using `diskover_lic.py` or by going to the diskover-web settings page and scrolling to the license info section.
 
 🔴 &nbsp;Get license info:
 ```

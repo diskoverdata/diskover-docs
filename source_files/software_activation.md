@@ -73,6 +73,17 @@ C:\Program Files\diskover-web\src\diskover\
 ```
 
 ___
+### Get License Info
+
+After you have installed your license keys, you can see info about the license anytime using diskover_lic.py or by going to the Diskover-web settings page and scrolling to the license info section.
+
+🔴 &nbsp;Get license info:
+```
+cd /opt/diskover
+python3 diskover_lic.py -l
+```
+
+___
 ### Renewing a License Key
 
 If your demo license key has expired, contact your Diskover Data point of contact or [info@diskoverdata.com](mailto:info@diskoverdata.com). If you have a subscription license key, a Diskover Data team member will contact you prior to your license expiration.

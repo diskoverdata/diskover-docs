@@ -470,6 +470,11 @@ ___
 ___
 ### Diskover-web v2 Annual Subscription Editions Changelog
 
+# [2.0-rc.5-1] - 2022-03-18
+### fixed
+- api issue with diskoverd and license bug
+
+
 #### [2.0-rc.5] - 2022-03-16
 ##### BREAKING CHANGES
 - new licensing

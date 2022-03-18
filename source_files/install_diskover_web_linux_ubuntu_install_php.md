@@ -32,9 +32,14 @@ vim /etc/php/7.4/fpm/pool.d/www.conf
 listen = /var/run/php-fpm/php-fpm.sock
 ```
 
-🔴 &nbsp;Change file system ownership, enable and start PHP-FPM service:
+🔴 &nbsp;Set timezone to UTC in php.ini:
 ```
-chown -R www-data:www-data /var/www/diskover-web
+vim /etc/php/7.4/fpm/php.ini
+date.timezone = "UTC"
+```
+
+🔴 &nbsp;Enable and start PHP-FPM service:
+```
 systemctl enable php-fpm
 systemctl start php-fpm
 systemctl status php-fpm

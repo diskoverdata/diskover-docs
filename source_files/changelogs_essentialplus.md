@@ -5,6 +5,14 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.0-rc.5-1] - 2022-03-18
+##### fixed
+- license issues causing "this feature is unlicensed" with using valid license key
+##### changed
+- updated diskoverd to v2.0-rc.5
+    - fixed issue with diskoverd import module error
+
+
 #### [2.0-rc.5] - 2022-03-16
 ##### BREAKING CHANGES
 - new licensing

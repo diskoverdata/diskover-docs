@@ -39,7 +39,7 @@ for f in *.json.sample; do cp $f "${f%.*}"; done
 chmod 660 *.json
 ```
 
-🔴 &nbsp;Set the proper ownership on the default starting point files:
+🔴 &nbsp;Set ownership for `www-data` user and group:
 ```
 chown -R www-data:www-data /var/www/diskover-web
 ```

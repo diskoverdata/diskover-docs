@@ -29,7 +29,7 @@ vim /etc/php/7.4/fpm/pool.d/www.conf
 
 🔴 &nbsp;Change the NGINX listen socket:
 ```
-listen = /var/run/php-fpm/php-fpm.sock
+listen = /var/run/php/php-fpm.sock
 ```
 
 🔴 &nbsp;Set timezone to UTC in php.ini:

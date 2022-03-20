@@ -4,6 +4,14 @@ ___
 
 ### Diskover v2 Community Edition Changelog
 
+#### [2.0-rc.5-1] - 2022-03-20
+##### fixed
+- Windows scanning issue
+##### changed
+- updated windows-owner plugin to v0.0.4
+	- set INC_DOMAIN to False as default
+
+
 #### [2.0-rc.5] - 2022-03-15
 ##### fixed
 - issue with enabling diskover logging in Windows causes exception

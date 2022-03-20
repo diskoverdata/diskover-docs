@@ -5,6 +5,14 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.0-rc.5-2] - 2022-03-20
+##### fixed
+- Windows scanning issue
+##### changed
+- updated windows-owner plugin to v0.0.4
+	- set INC_DOMAIN to False as default
+
+
 #### [2.0-rc.5-1] - 2022-03-18
 ##### fixed
 - license issues causing "this feature is unlicensed" with using valid license key

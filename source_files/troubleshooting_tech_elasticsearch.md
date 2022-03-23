@@ -43,7 +43,7 @@ curl -X DELETE http://elasticsearch:9200/diskover-indexname
 curl -u login:password https://elasticsearch:9200/_cat/indices
 ```
 
->Note: More info for the above commands can be found here: [https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-indices.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-indices.html)
+More info for the above commands can be found here: [https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-indices.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-indices.html)
 
 ___
 ### Possible issues with Log4j and Elasticsearch

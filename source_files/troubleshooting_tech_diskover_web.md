@@ -98,7 +98,7 @@ ___
 
 If you are running nginx reverse proxy and see in your nginx error log "upstream sent too big header while reading response header from upstream" and you are seeing bad gateway 502 errors, you will need to adjust your nginx buffer sizes:
 
-On Nginx reverse proxy host:
+On Nginx reverse proxy host in nginx config file:
 ```
 server {
  proxy_busy_buffers_size   512k;
@@ -108,7 +108,7 @@ server {
 }
 ```
 
-On diskover-web nginx host in diskover-web.conf:
+On diskover-web nginx host in nginx config file diskover-web.conf:
 ```
 fastcgi_buffers 16 32k;
 fastcgi_buffer_size 64k;

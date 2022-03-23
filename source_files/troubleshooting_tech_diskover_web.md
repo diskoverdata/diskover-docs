@@ -100,21 +100,13 @@ If you are running nginx reverse proxy and see in your nginx error log "upstream
 
 On Nginx reverse proxy host in nginx config file:
 ```
-server {
- proxy_busy_buffers_size   512k;
- proxy_buffers   4 512k;
- proxy_buffer_size   256k;
- # rest of nginx config #
+http {
+  proxy_buffer_size   128k;
+  proxy_buffers   4 256k;
+  proxy_busy_buffers_size   256k;
 }
-```
-
-On diskover-web nginx host in nginx config file diskover-web.conf:
-```
-fastcgi_buffers 16 32k;
-fastcgi_buffer_size 64k;
-fastcgi_busy_buffers_size 64k;
 ```
 
 After making changes, you will need to restart/reload nginx service.
 
-More info here: [https://www.cyberciti.biz/faq/nginx-upstream-sent-too-big-header-while-reading-response-header-from-upstream/](https://www.cyberciti.biz/faq/nginx-upstream-sent-too-big-header-while-reading-response-header-from-upstream/)
+More info in the [nginx documentation](http://nginx.org/en/docs/http/ngx_http_proxy_module.html)

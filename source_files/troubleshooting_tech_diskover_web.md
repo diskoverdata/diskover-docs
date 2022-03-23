@@ -91,3 +91,30 @@ curl -X GET -u user:pass "http://<aws es endpoint>/_cat/indices/diskover-*?v=tru
 On the indices page, there is a **max indices to load** input setting which controls the number of indices to load. Indices are loaded by order of creation date. If you are missing indices in the list, try increasing this number. This is a per user setting that gets stored in a cookie in each user's browser.
 
 This number can also be set for all users in web config's `MAX_INDEX` setting. If the user's browser `maxindex` cookie is lower than this number, their cookie will be set to this number.
+
+
+___
+### Nginx Reverse Proxy/ Nginx too big header error/ Bad gateway 502 error
+
+If you are running nginx reverse proxy and see in your nginx error log "upstream sent too big header while reading response header from upstream" and you are seeing bad gateway 502 errors, you will need to adjust your nginx buffer sizes:
+
+On Nginx reverse proxy host:
+```
+server {
+ proxy_busy_buffers_size   512k;
+ proxy_buffers   4 512k;
+ proxy_buffer_size   256k;
+ # rest of nginx config #
+}
+```
+
+On diskover-web nginx host in diskover-web.conf:
+```
+fastcgi_buffers 16 32k;
+fastcgi_buffer_size 64k;
+fastcgi_busy_buffers_size 64k;
+```
+
+After making changes, you will need to restart/reload nginx service.
+
+More info here: [https://www.cyberciti.biz/faq/nginx-upstream-sent-too-big-header-while-reading-response-header-from-upstream/](https://www.cyberciti.biz/faq/nginx-upstream-sent-too-big-header-while-reading-response-header-from-upstream/)

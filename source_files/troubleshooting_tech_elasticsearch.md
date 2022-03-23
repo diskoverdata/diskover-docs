@@ -11,6 +11,18 @@ The following reference page describes how to identify and solve common Amazon E
 ___
 ### Useful Commands
 
+#### See all diskover indices in Elasticsearch:
+
+```
+curl -X GET "htt://<eshost>:9200/_cat/indices/diskover-*?v=true&s=index&pretty"
+```
+
+on AWS ES/OpenSearch:
+
+```
+curl -X GET -u user:pass "http://<aws es endpoint>/_cat/indices/diskover-*?v=true&s=index&pretty"
+```
+
 #### Check Cluster Health
 ```
 curl http://elasticsearch:9200/_cat/health?v

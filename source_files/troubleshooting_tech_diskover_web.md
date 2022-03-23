@@ -74,6 +74,20 @@ ___
 
 By default Diskover-web does not load all indices in Elasticsearch. This is for performance reasons in case there are thousands of indices in Elasticsearch.
 
+First check that there are not any missing indices in Elasticsearch.
+
+To see all diskover indices in Elasticsearch:
+
+```
+curl -X GET "htt://<eshost>:9200/_cat/indices/diskover-*?v=true&s=index&pretty"
+```
+
+on AWS ES/OpenSearch:
+
+```
+curl -X GET -u user:pass "http://<aws es endpoint>/_cat/indices/diskover-*?v=true&s=index&pretty"
+```
+
 On the indices page, there is a **max indices to load** input setting which controls the number of indices to load. Indices are loaded by order of creation date. If you are missing indices in the list, try increasing this number. This is a per user setting that gets stored in a cookie in each user's browser.
 
 This number can also be set for all users in web config's `MAX_INDEX` setting. If the user's browser `maxindex` cookie is lower than this number, their cookie will be set to this number.

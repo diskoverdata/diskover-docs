@@ -33,6 +33,8 @@ plugins:
 
 🔴 &nbsp;There are a few settings at the top of the windows-owner plugin:
 
-INC_DOMAIN : include domain in owner/group names, set to True or False
-GET_GROUP : get group info (primary group) as well as owner, set to True or False
-USE_SID : store sid if owner/group lookup returns None, set to True or False
+- INC_DOMAIN : include domain in owner/group names, set to True or False
+
+- GET_GROUP : get group info (primary group) as well as owner, set to True or False
+
+- USE_SID : store sid if owner/group lookup returns None, set to True or False

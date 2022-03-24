@@ -29,13 +29,13 @@ const FILE_ACTIONS = [
 
 🔴 &nbsp;Each File Action is stored as an associative array with the key being the file action name:
 
-- **webpage** > the filename of the File Action
+- **webpage** : the filename of the File Action
 
-- **allowed_users** > list of allowed local and/or AD/LDAP user names that can run the File Action
+- **allowed_users** : list of allowed local and/or AD/LDAP user names that can run the File Action
 
-- **allowed_ldap_groups** > list of allowed AD/LDAP group names that can run the File Action
+- **allowed_ldap_groups** : list of allowed AD/LDAP group names that can run the File Action
 
-- **menu_icon_class** > Font Awesome css class name for icon [https://fontawesome.com/](https://fontawesome.com/)
+- **menu_icon_class** : Font Awesome css class name for icon [https://fontawesome.com/](https://fontawesome.com/)
 
 ___
 

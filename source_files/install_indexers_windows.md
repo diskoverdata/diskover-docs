@@ -84,6 +84,8 @@ password: changeme
 replace: True
 ```
 
+🔴 &nbsp;[Generate your hardware ID](https://docs.diskoverdata.com/diskover_installation_guide/#software-activation) to obtain and install the license key.
+
 🔴 &nbsp;Generate an index/scan. Open command prompt or Windows PowerShell as administrator:
 
 ```

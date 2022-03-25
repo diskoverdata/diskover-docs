@@ -97,6 +97,8 @@ databases:
 
 ![Image: Create Indexes in Elasticsearch Endpoint](images/image_indexers_install_create_indexes_in_elasticsearch_endpoint_linux_and_mac.png)
 
+🔴 &nbsp;[Generate your hardware ID](https://docs.diskoverdata.com/diskover_installation_guide/#software-activation) to obtain and install the license key.
+
 #### Create Index of File System
 
 🔴 &nbsp;To run the Diskover indexing process from a shell prompt:

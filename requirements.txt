@@ -1,3 +1,4 @@
+jinja2==3.0.3
 mkdocs==1.2.3
 git+https://github.com/trackit/mdx-breakless-lists@master
 markdown-checklist==0.4.3

@@ -4,6 +4,11 @@ ___
 
 ### Diskover v2 Community Edition Changelog
 
+#### [2.0] - 2022-03-26
+##### fixed
+- minor bug fixes and improvements
+
+
 #### [2.0-rc.5-1] - 2022-03-20
 ##### fixed
 - Windows scanning issue
@@ -80,6 +85,11 @@ ___
 
 ___
 ### Diskover-web v2 Community Edition Changelog
+
+#### [2.0] - 2022-03-26
+##### fixed
+- minor bug fixes and improvements
+
 
 #### [2.0-rc.5] - 2022-03-15
 ##### fixed

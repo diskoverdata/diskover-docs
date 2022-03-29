@@ -9,11 +9,11 @@ The file sequence web plugin File Action is designed to list out any file sequen
 
 🔴 &nbsp;Copy default/samples files:
 ```
-cd /var/www/diskover-web/public/fileactions
-cp filesequence.php.sample filesequence.php
-cp filesequence.py.sample filesequence.py
-cp ajaxexec.php.sample ajaxexec.php
-chown nginx:nginx *
+cd /var/www/diskover-web/public/fileactions/fileaction_samples
+cp filesequence.php /var/www/diskover-web/public/fileactions/
+cp filesequence.py /var/www/diskover-web/public/fileactions/
+cp ajaxexec.php /var/www/diskover-web/public/fileactions/
+chown nginx:nginx /var/www/diskover-web/public/fileactions/*
 cp filesequence_settings.py.sample /var/www/diskover-web/src/diskover/filesequence_settings.py
 chown nginx:nginx /var/www/diskover-web/src/diskover/filesequence_settings.py
 ```

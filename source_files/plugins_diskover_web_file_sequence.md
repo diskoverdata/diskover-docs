@@ -13,9 +13,15 @@ cd /var/www/diskover-web/public/fileactions/fileaction_samples
 cp filesequence.php /var/www/diskover-web/public/fileactions/
 cp filesequence.py /var/www/diskover-web/public/fileactions/
 cp ajaxexec.php /var/www/diskover-web/public/fileactions/
+Centos:
 chown nginx:nginx /var/www/diskover-web/public/fileactions/*
+Ubuntu:
+chown www-data:www-data /var/www/diskover-web/public/fileactions/*
 cp filesequence_settings.py.sample /var/www/diskover-web/src/diskover/filesequence_settings.py
+Centos:
 chown nginx:nginx /var/www/diskover-web/src/diskover/filesequence_settings.py
+Ubuntu:
+chown www-data:www-data /var/www/diskover-web/src/diskover/filesequence_settings.py
 ```
 
 🔴 &nbsp;Configure file sequence settings file:

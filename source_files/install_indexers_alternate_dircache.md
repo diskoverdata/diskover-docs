@@ -33,7 +33,7 @@ cd /opt/diskover
 python3 diskover.py --altscanner scandir_dircache /toppath
 ```
 
-##### Corrupt sqlite db
+#### Corrupt sqlite db
 
 If you see this Traceback error when starting a scan, the sqlite db has become corrupt. This can happen if previous scans did not close and write out the in-memory database (when using sqlite in memory).
 

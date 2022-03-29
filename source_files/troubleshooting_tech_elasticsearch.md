@@ -14,13 +14,13 @@ ___
 #### See all diskover indices in Elasticsearch:
 
 ```
-curl -X GET "htt://<eshost>:9200/_cat/indices/diskover-*?v=true&s=index&pretty"
+curl -X GET "http://<eshost>:9200/_cat/indices/diskover-*?v=true&s=index&pretty"
 ```
 
 on AWS ES/OpenSearch:
 
 ```
-curl -X GET -u user:pass "http://<aws es endpoint>/_cat/indices/diskover-*?v=true&s=index&pretty"
+curl -X GET -u user:pass "https://<aws es endpoint>/_cat/indices/diskover-*?v=true&s=index&pretty"
 ```
 
 #### Check Cluster Health
@@ -28,19 +28,16 @@ curl -X GET -u user:pass "http://<aws es endpoint>/_cat/indices/diskover-*?v=tru
 curl http://elasticsearch:9200/_cat/health?v
 ```
 
-#### List Indices
-```
-curl -X GET http://elasticsearch:9200/_cat/indices
-```
-
 #### Delete Indices
 ```
 curl -X DELETE http://elasticsearch:9200/diskover-indexname
 ```
+>Note: Wildcards can be used to delete multiple indices.
+
 
 #### To Query the Elasticsearch Cluster with Login Credentials
 ```
-curl -u login:password https://elasticsearch:9200/_cat/indices
+curl -X GET -u login:password https://elasticsearch:9200/
 ```
 
 More info for the above commands can be found here: [https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-indices.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-indices.html)

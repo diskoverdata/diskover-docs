@@ -67,7 +67,7 @@ server {
             set $path_info $fastcgi_path_info;
             fastcgi_param PATH_INFO $path_info;
             try_files $fastcgi_script_name =404; 
-            fastcgi_pass unix:/var/run/php/php-fpm.sock;
+            fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
             #fastcgi_pass 127.0.0.1:9000;
             fastcgi_index index.php;
             include fastcgi_params;

@@ -7,22 +7,17 @@ The file sequence web plugin File Action is designed to list out any file sequen
 
 ![Image: File Sequences Results](images/image_file_action_results_tech.png)
 
-🔴 &nbsp;Copy default/samples files:
+🔴 &nbsp;Copy default/sample files:
 ```
 cd /var/www/diskover-web/public/fileactions/fileaction_samples
 cp filesequence.php /var/www/diskover-web/public/fileactions/
 cp filesequence.py /var/www/diskover-web/public/fileactions/
 cp ajaxexec.php /var/www/diskover-web/public/fileactions/
-Centos:
 chown nginx:nginx /var/www/diskover-web/public/fileactions/*
-Ubuntu:
-chown www-data:www-data /var/www/diskover-web/public/fileactions/*
 cp filesequence_settings.py.sample /var/www/diskover-web/src/diskover/filesequence_settings.py
-Centos:
 chown nginx:nginx /var/www/diskover-web/src/diskover/filesequence_settings.py
-Ubuntu:
-chown www-data:www-data /var/www/diskover-web/src/diskover/filesequence_settings.py
 ```
+>Note: On Ubuntu, change chown nginx user to www-data
 
 🔴 &nbsp;Configure file sequence settings file:
 ```

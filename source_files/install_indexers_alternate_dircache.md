@@ -32,3 +32,24 @@ cp scandir_dircache_config_sample/config.yaml ~/.config/diskover_scandir_dircach
 cd /opt/diskover
 python3 diskover.py --altscanner scandir_dircache /toppath
 ```
+
+##### Corrupt sqlite db
+
+If you see this Traceback error when starting a scan, the sqlite db has become corrupt. This can happen if previous scans did not close and write out the in-memory database (when using sqlite in memory).
+
+```
+sqlite3.DatabaseError: file is encrypted or is not a database
+```
+
+If you see this error message, you will need to delete the sqlite db file, refer to the scan log lines (example below) to find what db file to delete.
+
+```
+2022-03-29 10:28:55,397 - diskover_cache - INFO - Using cache DB __dircache__/eac817f78756a24821316430009bb0c2/cache_database.db (160.73 MB)
+2022-03-29 10:28:55,397 - diskover_cache - INFO - Loading cache DB __dircache__/eac817f78756a24821316430009bb0c2/cache_database.db into memory...
+```
+
+Delete the db directory and file:
+```
+cd /opt/diskover/__dircache__
+rm -rf eac817f78756a24821316430009bb0c2
+```

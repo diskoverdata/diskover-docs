@@ -9,7 +9,7 @@ Below is a few example Docker files that could be used to help set up Diskover i
 ### Elasticsearch container
 
 🔴 &nbsp;docker-compose.yml:
-```sh
+```
 version: '3'
 services:
   elasticsearch:
@@ -53,7 +53,7 @@ See [Elasticsearch Docker docs](https://www.elastic.co/guide/en/elasticsearch/re
 ### Diskover container
 
 🔴 &nbsp;Dockerfile:
-```sh
+```
 FROM python:3.7-alpine
 
 # Install additional packages
@@ -78,7 +78,7 @@ CMD ["python3", "diskoverd.py", "-v"]
 ```
 
 🔴 &nbsp;docker-compose.yml:
-```sh
+```
 version: '3'
 services:
   #diskover python app
@@ -90,7 +90,8 @@ services:
       dockerfile: Dockerfile
     working_dir: /app/diskover
     environment:
-      -  DISKOVERD_WORKERNAME=docker_worker
+      # diskoverd task worker (Essential + versions only)
+      -  DISKOVERD_WORKERNAME=docker-worker
     volumes:
       - .:/app/diskover
       # diskover config files
@@ -102,7 +103,7 @@ services:
 ### Diskover-web container
 
 🔴 &nbsp;Dockerfile:
-```sh
+```
 FROM php:7.4-fpm
 
 # Install php ldap extension (Essential + versions only)
@@ -118,7 +119,7 @@ EXPOSE 8000
 ```
 
 🔴 &nbsp;docker-compose.yml:
-```sh
+```
 version: '3'
 services:
   # diskover-web php app
@@ -144,7 +145,7 @@ services:
 ```
 
 🔴 &nbsp;diskover-web.conf nginx config:
-```sh
+```
 server {
         listen   8000;
         server_name  diskover-web-webserver;

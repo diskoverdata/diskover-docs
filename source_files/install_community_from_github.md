@@ -9,7 +9,7 @@ yum install -y git
 
 🔴 &nbsp;Install git on Ubuntu:
 ```
-apt install -y git
+apt install git
 ```
 
 🔴 &nbsp;Clone the Diskover Community Edition from the GitHub repository:

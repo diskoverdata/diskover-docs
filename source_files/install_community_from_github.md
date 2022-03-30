@@ -2,9 +2,14 @@ ___
 ## Preliminary Steps when Installing Diskover Community Edition
 ___
 
-🔴 &nbsp;Install git:
+🔴 &nbsp;Install git on Centos:
 ```
-yum -y install git
+yum install -y git
+```
+
+🔴 &nbsp;Install git on Ubuntu:
+```
+apt install -y git
 ```
 
 🔴 &nbsp;Clone the Diskover Community Edition from the GitHub repository:

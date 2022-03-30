@@ -22,6 +22,11 @@ vim /root/.config/diskover_autoclean/config.yaml
 
 > Note: When using custom action, custocmd value is required. The full file/directory path is passed as arg to customcmd.
 
+🔴 &nbsp;Run autoclean and get help to see cli options:
+```
+python3 diskover_autoclean.py -h
+```
+
 Example using custom action:
 
 Set action to custom and specifiy customcmd, in this example we are using a bash script:

@@ -2,6 +2,52 @@ ___
 ## Install Diskover in Docker
 ___
 
+### Elasticsearch container
+
+🔴 &nbsp;docker-compose.yml:
+```sh
+version: '3'
+services:
+  elasticsearch:
+    container_name: elasticsearch
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.16.1
+    environment:
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms1g -Xmx1g"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      # local ES data directory
+      - ./esdata:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+      - 9300:9300
+    #depends_on:
+    #  - elasticsearch-helper
+  #elasticsearch-helper:
+  #  image: alpine
+  #  command: sh -c "sysctl -w vm.max_map_count=262144"
+  #  privileged: true
+  #kibana:
+  #  image: docker.elastic.co/kibana/kibana:7.16.1
+  #  container_name: kibana
+  #  ports:
+  #    - 5601:5601
+  #  depends_on:
+  #    - elasticsearch
+  #  environment:
+  #    ELASTICSEARCH_URL: http://elasticsearch:9200
+  #    ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+```
+
+See Elasticsearch Docker docs for more info https://www.elastic.co/guide/en/elasticsearch/reference/7.17/docker.html
+
+
+### Diskover container
+
 🔴 &nbsp;Dockerfile:
 ```sh
 FROM python:3.7-alpine
@@ -48,4 +94,49 @@ services:
       - ./configs:/root/.config
       # mount points for crawling
       - /mnt/stor1:/data
+```
+
+### Diskover-web container
+
+🔴 &nbsp;Dockerfile:
+```sh
+FROM php:7.4-fpm
+LABEL maintainer "Diskover Data <info@diskoverdata.com>"
+
+# Install php ldap extension
+RUN apt-get update && \
+    apt-get install -y libldap2-dev
+RUN docker-php-ext-configure ldap
+RUN docker-php-ext-install ldap
+
+# Copy existing application directory contents
+COPY . /var/www
+
+EXPOSE 8000
+```
+
+🔴 &nbsp;docker-compose.yml:
+```sh
+version: '3'
+services:
+  # diskover-web php app
+  diskover-web:
+    image: php:7.4-fpm
+    container_name: diskover-web-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /var/www
+    volumes:
+      - .:/var/www
+  # Nginx web server
+  nginx:
+    image: nginx:1.21
+    container_name: diskover-web-nginx
+    working_dir: /var/www
+    volumes:
+      - ./diskover-web.conf:/etc/nginx/conf.d/diskover-web.conf
+      - .:/var/www
+    ports:
+      - 8000:8000
 ```

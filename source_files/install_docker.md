@@ -2,6 +2,8 @@ ___
 ## Install Diskover in Docker
 ___
 
+Below is a few example Docker files that could be used to help set up Diskover in Docker.
+
 ### Elasticsearch container
 
 🔴 &nbsp;docker-compose.yml:
@@ -51,7 +53,6 @@ See Elasticsearch Docker docs for more info https://www.elastic.co/guide/en/elas
 🔴 &nbsp;Dockerfile:
 ```sh
 FROM python:3.7-alpine
-LABEL maintainer "Diskover Data <info@diskoverdata.com>"
 
 # Install additional packages
 RUN apk update \
@@ -101,7 +102,6 @@ services:
 🔴 &nbsp;Dockerfile:
 ```sh
 FROM php:7.4-fpm
-LABEL maintainer "Diskover Data <info@diskoverdata.com>"
 
 # Install php ldap extension
 RUN apt-get update && \

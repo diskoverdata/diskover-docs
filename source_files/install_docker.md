@@ -2,6 +2,8 @@ ___
 ## Install Diskover in Docker
 ___
 
+If you want to run Diskover Community Edition in Docker, there are Docker Hub images built by LinuxServer.io at https://hub.docker.com/r/linuxserver/diskover and https://github.com/linuxserver/docker-diskover
+
 Below is a few example Docker files that could be used to help set up Diskover in Docker.
 
 ### Elasticsearch container

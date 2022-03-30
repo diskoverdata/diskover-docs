@@ -71,7 +71,7 @@ WORKDIR /app/diskover
 # Install required python3 pip modules
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-# Start diskoverd
+# Start diskoverd task woker (Essential + versions only)
 CMD ["python3", "diskoverd.py", "-v"]
 ```
 
@@ -103,7 +103,7 @@ services:
 ```sh
 FROM php:7.4-fpm
 
-# Install php ldap extension
+# Install php ldap extension (Essential + versions only)
 RUN apt-get update && \
     apt-get install -y libldap2-dev
 RUN docker-php-ext-configure ldap
@@ -139,4 +139,34 @@ services:
       - .:/var/www
     ports:
       - 8000:8000
+```
+
+🔴 &nbsp;diskover-web.conf nginx config:
+```sh
+server {
+        listen   8000;
+        server_name  diskover-web-webserver;
+        root   /var/www/public;
+        index  index.php index.html index.htm;
+        error_log  /var/log/nginx/error.log;
+        access_log /var/log/nginx/access.log;
+        location / {
+            try_files $uri $uri/ /index.php?$args =404;
+        }
+        location ~ \.php(/|$) {
+            fastcgi_split_path_info ^(.+\.php)(/.+)$;
+            set $path_info $fastcgi_path_info;
+            fastcgi_param PATH_INFO $path_info;
+            try_files $fastcgi_script_name =404; 
+            #fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
+            fastcgi_pass diskover-web-app:9000;
+            fastcgi_index index.php;
+            include fastcgi_params;
+            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+            include fastcgi_params;
+            fastcgi_read_timeout 900;
+            fastcgi_buffers 16 16k;
+            fastcgi_buffer_size 32k;
+        }
+}
 ```

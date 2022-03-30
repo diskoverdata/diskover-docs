@@ -2,7 +2,7 @@ ___
 ## Install Diskover in Docker
 ___
 
-If you want to run Diskover Community Edition in Docker, there is a Docker Hub container built by LinuxServer.io at https://hub.docker.com/r/linuxserver/diskover and https://github.com/linuxserver/docker-diskover
+If you want to run Diskover Community Edition in Docker, there is a Docker Hub container built by [LinuxServer.io](https://www.linuxserver.io/) at [Diskover Docker Hub](https://hub.docker.com/r/linuxserver/diskover) and [Diskover LinuxServer.io GitHub](https://github.com/linuxserver/docker-diskover).
 
 Below is a few example Docker files that could be used to help set up Diskover in Docker if you are using Essential + versions and/or want to build your own container.
 
@@ -47,7 +47,7 @@ services:
   #    ELASTICSEARCH_HOSTS: http://elasticsearch:9200
 ```
 
-See Elasticsearch Docker docs for more info https://www.elastic.co/guide/en/elasticsearch/reference/7.17/docker.html
+See [Elasticsearch Docker docs](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/docker.html) for more info.
 
 
 ### Diskover container

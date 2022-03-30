@@ -24,6 +24,7 @@ vim /root/.config/diskover_autoclean/config.yaml
 
 🔴 &nbsp;Run autoclean and get help to see cli options:
 ```
+cd /opt/diskover/plugins_postindex
 python3 diskover_autoclean.py -h
 ```
 

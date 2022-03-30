@@ -18,7 +18,6 @@ ordered_documents:
   - requirements_skills.md
   - architecture_overview.md
   - install_community_from_github.md
-  - install_docker.md
   - install_elasticsearch_intro.md
   - install_elasticsearch_linux_centos_and_rhel.md
   - install_elasticsearch_linux_ubuntu.md
@@ -56,6 +55,7 @@ ordered_documents:
   - time_zone_settings.md
   - software_activation.md
   - config_after_install.md
+  - install_docker.md
   - health_check_diskover_intro.md
   - health_check_diskover_web_linux.md
   - health_check_diskover_web_windows.md

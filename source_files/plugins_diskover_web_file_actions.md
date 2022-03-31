@@ -37,7 +37,7 @@ const FILE_ACTIONS = [
 
 - **menu_icon_class** : Font Awesome css class name for icon [https://fontawesome.com/](https://fontawesome.com/)
 
-Other File Action examples in Constants.php:
+Other File Action examples:
 
 ```
 const FILE_ACTIONS = [

@@ -12,7 +12,7 @@ File Actions are located in the `public/fileactions` directory.
 
 File Actions are written in PHP and have the extension `.php`. Diskover-web includes a few example file actions in the `fileaction_samples` directory. Any sample files that you wish to use need to be copied to `public/fileactions`.
 
-After you have created a new File Action with an extension `.php`, you will need to add the File Action to the web config file in `src/diskover/Constants.php`. Edit the config file and look for the section titled File Actions. You will need to add the file action to the `const FILE_ACTIONS` array. There are some examples in the config file and in the `Constants.php.sample` default config file.
+After you have created a new File Action with an extension `.php`, you will need to add the File Action to the web config file in `src/diskover/Constants.php`. Edit the config file and look for the section titled File Actions. You will need to add the file action to the `const FILE_ACTIONS` array. There are some examples in the `Constants.php.sample` default config file and below.
 
 Here is an example of adding a File Action:
 
@@ -37,7 +37,7 @@ const FILE_ACTIONS = [
 
 - **menu_icon_class** : Font Awesome css class name for icon [https://fontawesome.com/](https://fontawesome.com/)
 
-Other examples:
+Other File Action examples in Constants.php:
 
 ```
 const FILE_ACTIONS = [

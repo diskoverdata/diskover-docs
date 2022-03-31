@@ -37,6 +37,61 @@ const FILE_ACTIONS = [
 
 - **menu_icon_class** : Font Awesome css class name for icon [https://fontawesome.com/](https://fontawesome.com/)
 
+Other examples:
+
+```
+const FILE_ACTIONS = [
+    'list dir' => [
+        'webpage' => 'listdir.php',
+        'allowed_users' => [Constants::ADMIN_USER, Constants::USER],
+        'allowed_ldap_groups' => ['diskover-admins', 'diskover-powerusers', 'diskover-users'],
+        'menu_icon_class' => 'far fa-folder-open'
+    ],
+    'newer subdirs' => [
+        'webpage' => 'newersubdirs.php',
+        'allowed_users' => [Constants::ADMIN_USER, Constants::USER],
+        'allowed_ldap_groups' => ['diskover-admins', 'diskover-powerusers', 'diskover-users'],
+        'menu_icon_class' => 'fas fa-folder-minus'
+    ],
+    'get image http' => [
+        'webpage' => 'getimagehttp.php',
+        'allowed_users' => [Constants::ADMIN_USER, Constants::USER],
+        'allowed_ldap_groups' => ['diskover-admins', 'diskover-powerusers', 'diskover-users'],
+        'menu_icon_class' => 'far fa-file-image'
+    ],
+    'rclone sync local' => [
+        'webpage' => 'rclone.php?flags=sync -v -P -n&dest=/tmp/',
+        'allowed_users' => [Constants::ADMIN_USER, Constants::USER],
+        'allowed_ldap_groups' => ['diskover-admins', 'diskover-powerusers', 'diskover-users'],
+        'menu_icon_class' => 'far fa-copy'
+    ],
+    'python print path' => [
+        'webpage' => 'pythonprintpath.php',
+        'allowed_users' => [Constants::ADMIN_USER, Constants::USER],
+        'allowed_ldap_groups' => ['diskover-admins', 'diskover-powerusers', 'diskover-users'],
+        'menu_icon_class' => 'fab fa-python'
+    ],
+    'open in Glim' => [
+        'webpage' => 'glim.php',
+        'allowed_users' => [Constants::ADMIN_USER, Constants::USER],
+        'allowed_ldap_groups' => ['diskover-admins', 'diskover-powerusers', 'diskover-users'],
+        'menu_icon_class' => 'far fa-file-image'
+    ],
+    'find file sequences' => [
+        'webpage' => 'filesequence.php',
+        'allowed_users' => [Constants::ADMIN_USER, Constants::USER],
+        'allowed_ldap_groups' => ['diskover-admins', 'diskover-powerusers', 'diskover-users'],
+        'menu_icon_class' => 'far fa-images'
+    ],
+    'submit to Vantage' => [
+        'webpage' => 'vantageproxyjob.php',
+        'allowed_users' => [Constants::ADMIN_USER, Constants::USER],
+        'allowed_ldap_groups' => ['diskover-admins', 'diskover-powerusers', 'diskover-users'],
+        'menu_icon_class' => 'far fa-file-video'
+    ]
+];
+```
+
 ___
 
 ### File Action Logging

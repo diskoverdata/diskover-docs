@@ -25,7 +25,7 @@ C:\Program Files\Php\php-7.4.14-Win32-vc15-x64
 
 ![Image: Confirm PHP is Working](images/image_diskover_web_install_for_windows_verify_php_working.png)
 
-🔴 &nbsp;In **C:\Program Files\Php\php-7.4.14-Win32-vc15-x64\** copy php production ini file ***php.ini-production*** to **php.ini** file.
+🔴 &nbsp;In **C:\Program Files\Php\php-7.4.14-Win32-vc15-x64** folder copy php production ini file **php.ini-production** to **php.ini** file.
 
 🔴 &nbsp;Edit **php.ini** file and add the below to extensions section to enable required extensions and adjust as neccessary for your php version:
 ```

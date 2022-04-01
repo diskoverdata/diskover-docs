@@ -1,8 +1,8 @@
 #### Install PHP
 
-🔴 &nbsp;Go to the official download link and download the required version of PHP 7 for Windows: [https://www.php.net/downloads.php](https://www.php.net/downloads.php)
+🔴 &nbsp;Go to the official download link and download the required version of PHP 7.4.x for Windows: [https://www.php.net/downloads.php](https://www.php.net/downloads.php)
 
-🔴 &nbsp;Download the **Thread Safe** version 7.X for Windows.
+🔴 &nbsp;Download the **Thread Safe** version 7.4.X for Windows.
 
 🔴 &nbsp;Create the following folder **C:\Program Files\Php**
 
@@ -21,13 +21,13 @@ C:\Program Files\Php\php-7.4.14-Win32-vc15-x64
 
 <img src="images/image_diskover_web_install_for_windows_replace_php_install_location.png" width="750">
 
-#### Verify Environment Variables
-
 🔴 &nbsp;Open Windows PowerShell and type in `php -v` to verify PHP is working.
 
 ![Image: Confirm PHP is Working](images/image_diskover_web_install_for_windows_verify_php_working.png)
 
-🔴 &nbsp;Create **php.ini** file to enable required dynamic extensions **C:\Program Files\Php\php-7.4.14-Win32-vc15-x64\php.ini**
+🔴 &nbsp;In **C:\Program Files\Php\php-7.4.14-Win32-vc15-x64\** copy php production ini file ***php.ini-production*** to **php.ini** file.
+
+🔴 &nbsp;Edit **php.ini** file and add the below to extensions section to enable required extensions and adjust as neccessary for your php version:
 ```
 ; Directory in which the loadable extensions (modules) reside.
 extension_dir = "C:\Program Files\Php\php-7.4.14-Win32-vc15-x64\ext"
@@ -49,11 +49,15 @@ sqlite3.extension_dir = "C:\Program Files\Php\php-7.4.14-Win32-vc15-x64\ext"
 
 🔴 &nbsp;Configure integration of NGINX with PHP.
 
-🔴 &nbsp;Start PHP at **127.0.0.1:9999**
+In C:\Program Files\Php\php-7.4.14-Win32-vc15-x64 folder create a ***php-cgi.bat*** file with the below contents:
+```
+SET PHP_FCGI_MAX_REQUESTS=0
+php-cgi.exe -b 127.0.0.1:9999
+```
 
 🔴 &nbsp;Open Windows PowerShell as administrator and run:
 ```
-C:\Program Files\Php\php-7.4.14-Win32-vc15-x64> php-cgi.exe -b 127.0.0.1:9999
+C:\Program Files\Php\php-7.4.14-Win32-vc15-x64> php-cgi.bat
 ```
 
 ![Image: NGINX and PHP Integration Configuration](images/image_diskover_web_install_for_windows_nginx_php_integration.png)
@@ -80,21 +84,37 @@ worker_processes  1;
 #error_log  logs/error.log  info;
 
 #pid        logs/nginx.pid;
+
 events {
     worker_connections  1024;
 }
 
+
 http {
     include       mime.types;
     default_type  application/octet-stream;
+
+    #log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+    #                  '$status $body_bytes_sent "$http_referer" '
+    #                  '"$http_user_agent" "$http_x_forwarded_for"';
+
+    #access_log  logs/access.log  main;
+
+    sendfile        on;
+    #tcp_nopush     on;
+
+    #keepalive_timeout  0;
+    keepalive_timeout  65;
+
+    #gzip  on;
 
     server {
         listen   8000;
         server_name  diskover-web;
         root   "C:\Program Files\Diskover-web\public";
         index  index.php  index.html index.htm;
-        # error_log  "C:\Program Files\Nginx\nginx-1.20.2\logs\error.log";
-        # access_log "C:\Program Files\Nginx\nginx-1.20.2\logs\access.log";
+        # error_log  "C:\Program Files\Nginx\nginx-1.21.6\logs\error.log";
+        # access_log "C:\Program Files\Nginx\nginx-1.21.6\logs\access.log";
         location / {
             try_files $uri $uri/ /index.php?$args =404;
         }

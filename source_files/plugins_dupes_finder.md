@@ -35,13 +35,14 @@ vim /root/.config/diskover_dupesfinder/config.yaml
 ```
 
 🔴 &nbsp;At minimum configure the following:
-- mode: desired checksum **xxhash** or **md5**
-- extensions: desired file extensions to check, for all files use `[ ]`
+- mode: desired checksum **xxhash**, **md5**, **sha1**, or **sha256**
+- extensions: desired file extensions to check, for all files use `[]`
 
 🔴 &nbsp;Additional settings:
-- minsize and maxsize: of files to hash
-- otherquery: additional Elasticsearch query when searching an index for which files to hash.
-- replacepaths: for translating paths from source index path to destination path, example on Windows translating `/z_drive/` to `Z:\`
+- maxthreads: maximum number of threads to use for file hashing, leave empty/blank to auto-set based on number of cpu cores
+- minsize and maxsize: minimum and maximum size (in bytes) of files to hash
+- otherquery: additional Elasticsearch query when searching an index for which files to hash
+- replacepaths: for translating paths from index path to real path, example translating `/` to `/mnt/` . This is required if path translations were done in index or needing to convert to a Windows path.
 
 ![Image: Dupes-Finder Configuration](images/image_plugins_dupes_finder_config.png)
 

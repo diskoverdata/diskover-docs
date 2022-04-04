@@ -5,6 +5,32 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.0] - 2022-04-04
+##### fixed
+- issue with diskoverd where if task was disabled, task could not be sent stop from task panel
+- issue with Windows scanning and long paths or paths with trailing space
+- issue with Windows scanning and using unc path as top path with a trailing slash
+##### added
+- option to set diskoverd worker name with env var DISKOVERD_WORKERNAME
+##### changed
+- improved index analyzer word filter
+- updated diskoverd to v2.0
+- updated diskover-autotag to v2.0
+- updated diskover-dupesfinder to v2.0
+    - fixed issue with using replace path
+    - fixed issue with restore times
+    - added sha1 and sha256 hash modes options in config
+- updated diskover-indexdiff to v2.0
+- updated diskover-tagcopier to v2.0
+- updated diskover autoclean to v0.0.3
+    - fixed Windows bugs
+    - other minor bug fixes and improvements
+- updated windows-owner plugin to v0.0.5
+	- added GET_GROUP, USE_SID settings at top of script
+- update dircache alt scanner to v0.0.4
+    - fixed os stat blocks error running in Windows
+
+
 #### [2.0-rc.5-2] - 2022-03-20
 ##### fixed
 - Windows scanning issue
@@ -477,6 +503,25 @@ ___
 
 ___
 ### Diskover-web v2 Annual Subscription Editions Changelog
+
+#### [2.0] - 2022-04-04
+##### fixed
+- php UTC timezone issue with task worker showing as offline and unknown state when diskoverd task worker first started
+- php warning cannot sent header info on some task panel pages 
+- not being redirected to login page when session expires and on task panel pages
+- bool fields (like is_dupe) not showing as true or false on search results and view info page
+- fixed adding new tag on search results page tag dropdown menu caused page to return no search results rather than refreshing page
+- no docs showing for s3 indices when ldap/unix perms filtering enabled
+- directories with trailing whitespace not returning any search results
+- file file read/write locking issue on Windows for task panel/api
+- can't find license file message occasionally on fileactions pages
+- fileaction containing post form and after submission no selected file or directory message
+##### added
+- longrunningscript.php to file action samples in public/fileactions/fileaction_samples/
+##### changed
+- license for api to Essential +
+- removed nginx directory
+
 
 # [2.0-rc.5-1] - 2022-03-18
 ### fixed

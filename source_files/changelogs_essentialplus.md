@@ -523,8 +523,8 @@ ___
 - removed nginx directory
 
 
-# [2.0-rc.5-1] - 2022-03-18
-### fixed
+#### [2.0-rc.5-1] - 2022-03-18
+##### fixed
 - api issue with diskoverd and license bug
 
 

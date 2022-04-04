@@ -4,6 +4,15 @@ ___
 
 ### Diskover v2 Community Edition Changelog
 
+#### [2.0.1] - 2022-04-04
+##### fixed
+- issue with Windows scanning and long paths or paths with trailing space
+- issue with Windows scanning and using unc path as top path with a trailing slash
+##### added
+##### changed
+- improved index analyzer word filter
+
+
 #### [2.0] - 2022-03-26
 ##### fixed
 - minor bug fixes and improvements
@@ -85,6 +94,11 @@ ___
 
 ___
 ### Diskover-web v2 Community Edition Changelog
+
+#### [2.0.1] - 2022-04-04
+##### fixed
+- directories with trailing whitespace not returning any search results
+
 
 #### [2.0] - 2022-03-26
 ##### fixed

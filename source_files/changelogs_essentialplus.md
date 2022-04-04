@@ -17,9 +17,10 @@ ___
 - updated diskoverd to v2.0
 - updated diskover-autotag to v2.0
 - updated diskover-dupesfinder to v2.0
+    - added sha1 and sha256 hash modes options in config
     - fixed issue with using replace path
     - fixed issue with restore times
-    - added sha1 and sha256 hash modes options in config
+    - fixed Windows bugs
 - updated diskover-indexdiff to v2.0
 - updated diskover-tagcopier to v2.0
 - updated diskover autoclean to v0.0.3

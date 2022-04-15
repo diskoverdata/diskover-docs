@@ -6,6 +6,8 @@ If you want to run Diskover Community Edition in Docker, there is a Docker Hub c
 
 Below is a few example Docker files that could be used to help set up Diskover in Docker if you are using Essential + versions and/or want to build your own container.
 
+>Note: The Docker files below assume that you have downloaded Diskover archive file and extracted the source files into a directory and are in that directory.
+
 ### Elasticsearch container
 
 🔴 &nbsp;docker-compose.yml:

@@ -175,3 +175,5 @@ server {
         }
 }
 ```
+
+🔴  Install your license files as explained in the [software activation](https://docs.diskoverdata.com/diskover_installation_guide/#software_activation) chapter.

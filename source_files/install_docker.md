@@ -224,6 +224,24 @@ touch diskoverdb.sqlite3
 chmod 666 diskoverdb.sqlite3
 ```
 
+#### Data files
+
+>Note: Diskover-Web Essential+ uses a number of txt and json files to store some settings and task data. The default install has sample files, but not the actual files. The following will copy the sample files and create default starting point files. Skip the next 2 steps for Community Edition.
+
+🔴  Create actual files from the sample files filename.txt.sample:
+```
+cd <diskover-web dir>/public
+for f in *.txt.sample; do cp $f "${f%.*}"; done
+chmod 666 *.txt
+```
+
+🔴  Create actual task files from the sample task files filename.json.sample:
+```
+cd <diskover-web dir>/public/tasks
+for f in *.json.sample; do cp $f "${f%.*}"; done
+chmod 666 *.json
+```
+
 
 ### Install licenses (Essential + only)
 

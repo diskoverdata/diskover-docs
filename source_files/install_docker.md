@@ -214,6 +214,16 @@ cp Constants.php.sample Constants.php
 vi Constants.php
 ```
 
+#### Diskover-web sqlite file
+
+🔴  Create diskover-web sqlite db file:
+
+```
+cd <diskover-web dir>
+touch diskoverdb.sqlite3
+chmod 666 diskoverdb.sqlite3
+```
+
 
 ### Install licenses (Essential + only)
 
@@ -221,12 +231,12 @@ vi Constants.php
 
 🔴  Copy diskover.lic file to:
 ```
-/app/diskover/diskover.lic
+<diskover dir>/diskover.lic
 ```
 
-🔴  Copy diskover-web.lic file:
+🔴  Copy diskover-web.lic file to:
 ```
-/var/www/src/diskover/diskover-web.lic
+<diskover-web dir>/src/diskover/diskover-web.lic
 ```
 
 ### Docker Nginx logs

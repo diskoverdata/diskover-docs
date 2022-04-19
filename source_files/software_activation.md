@@ -22,7 +22,7 @@ Your license key is created and attached to 1. your hardware ID, 2. your [Diskov
 
 You will need to generate a hardware ID once you have installed and configured Diskover before requesting a license. 
 
-Check that you have configured your Elasticsearch host correctly in Diskover config as it is part of the hardware ID generation.
+**Check that you have configured your Elasticsearch host correctly in Diskover config as it is part of the hardware ID generation.**
 
 🔴 &nbsp;Get hardware id:
 ```

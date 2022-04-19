@@ -205,7 +205,7 @@ server {
 
 🔴  Copy default/sample diskover-web config file:
 ```
-cd <diskover-web dir>/src
+cd <diskover-web dir>/src/diskover
 cp Constants.php.sample Constants.php
 ```
 

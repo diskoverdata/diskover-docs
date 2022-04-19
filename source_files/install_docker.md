@@ -64,12 +64,15 @@ cp -R configs_sample configs
 ```
 cd configs/diskover
 vi config.yaml
+host: elasticsearch
 ```
 
-🔴 &nbsp;Edit config file for diskoverd and set `timezone`, `apiurl` and `diskoverpath`:
+🔴 &nbsp;Edit diskoverd config file and set `timezone`, `apiurl` and `diskoverpath`:
 ```
 cd configs/diskoverd
 vi config.yaml
+apiurl: http://diskover-web-nginx:8000/api.php
+diskoverpath: /app/diskover
 ```
 
 🔴 &nbsp;Dockerfile:
@@ -168,7 +171,7 @@ services:
 ```
 server {
         listen   8000;
-        server_name  diskover-web-webserver;
+        server_name  diskover-web-nginx;
         root   /var/www/public;
         index  index.php index.html index.htm;
         error_log  /var/log/nginx/error.log;

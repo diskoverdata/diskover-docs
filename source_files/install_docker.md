@@ -54,27 +54,6 @@ See [Elasticsearch Docker docs](https://www.elastic.co/guide/en/elasticsearch/re
 
 ### Diskover container
 
-🔴 &nbsp;Copy default/sample config files:
-```
-cd <diskover dir>
-cp -R configs_sample configs
-```
-
-🔴 &nbsp;Edit diskover config file and set Elasticsearch `host`:
-```
-cd configs/diskover
-vi config.yaml
-host: elasticsearch
-```
-
-🔴 &nbsp;Edit diskoverd config file and set `timezone`, `apiurl` and `diskoverpath`:
-```
-cd configs/diskoverd
-vi config.yaml
-apiurl: http://diskover-web-nginx:8000/api.php
-diskoverpath: /app/diskover
-```
-
 🔴 &nbsp;Dockerfile:
 ```
 FROM python:3.7-alpine
@@ -121,6 +100,31 @@ services:
       - ./configs:/root/.config
       # mount points for crawling
       - /mnt/stor1:/data
+```
+
+#### Diskover configs
+
+🔴 &nbsp;Copy default/sample config files:
+```
+cd <diskover dir>
+cp -R configs_sample configs
+```
+
+🔴 &nbsp;Edit diskover config file and set Elasticsearch `host`:
+```
+cd configs/diskover
+vi config.yaml
+
+host: elasticsearch
+```
+
+🔴 &nbsp;Edit diskoverd config file and set `timezone`, `apiurl` and `diskoverpath` (Essential + only):
+```
+cd configs/diskoverd
+vi config.yaml
+
+apiurl: http://diskover-web-nginx:8000/api.php
+diskoverpath: /app/diskover
 ```
 
 ### Diskover-web container
@@ -197,4 +201,35 @@ server {
 }
 ```
 
+#### Diskover-Web config
+
+🔴  Copy default/sample diskover-web config file:
+```
+cd <diskover-web dir>/src
+cp Constants.php.sample Constants.php
+```
+
+🔴  Set Elasticsearch host, timezone, etc in diskover-web config file:
+```
+vi Constants.php
+```
+
+
+### Install licenses (Essential + only)
+
 🔴  Install your license files as explained in the [software activation](https://docs.diskoverdata.com/diskover_installation_guide/#software_activation) chapter.
+
+
+### Docker Nginx logs
+
+🔴  View nginx error log:
+
+```
+docker logs -f diskover-web-nginx 1>/dev/null
+```
+
+🔴  View nginx access log:
+
+```
+docker logs -f diskover-web-nginx 2>/dev/null
+```

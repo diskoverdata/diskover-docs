@@ -217,8 +217,17 @@ vi Constants.php
 
 ### Install licenses (Essential + only)
 
-🔴  Install your license files as explained in the [software activation](https://docs.diskoverdata.com/diskover_installation_guide/#software_activation) chapter.
+🔴  Generate your hardware id as explained in the [software activation](https://docs.diskoverdata.com/diskover_installation_guide/#software_activation) chapter.
 
+🔴  Copy diskover.lic file to:
+```
+/app/diskover/diskover.lic
+```
+
+🔴  Copy diskover-web.lic file:
+```
+/var/www/src/diskover/diskover-web.lic
+```
 
 ### Docker Nginx logs
 

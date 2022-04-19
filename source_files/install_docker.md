@@ -54,6 +54,24 @@ See [Elasticsearch Docker docs](https://www.elastic.co/guide/en/elasticsearch/re
 
 ### Diskover container
 
+🔴 &nbsp;Copy default/sample config files:
+```
+cd <diskover dir>
+cp -R configs_sample configs
+```
+
+🔴 &nbsp;Edit diskover config file and set Elasticsearch `host`:
+```
+cd configs/diskover
+vi config.yaml
+```
+
+🔴 &nbsp;Edit config file for diskoverd and set `timezone`, `apiurl` and `diskoverpath`:
+```
+cd configs/diskoverd
+vi config.yaml
+```
+
 🔴 &nbsp;Dockerfile:
 ```
 FROM python:3.7-alpine

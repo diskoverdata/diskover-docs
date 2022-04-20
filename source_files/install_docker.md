@@ -216,6 +216,8 @@ vi Constants.php
 
 #### Diskover-web sqlite file
 
+>Note: The Docker user running nginx requires read/write permissions to the sqlite db file and to the directory containing the file. You can change where the db file is stored by setting DATABASE in Constants.php. Default location is in web root directory.
+
 🔴  Create diskover-web sqlite db file:
 
 ```

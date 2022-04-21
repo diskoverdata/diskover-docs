@@ -36,9 +36,9 @@ nohup python3 diskover.py ... > /var/log/<logname>.log 2>&1 &
 ```
 
 ___
-### Adding Additional Directory Tree(s) to an Existing Index (Essential +)
+### Adding Additional Directory Tree(s) to an Existing Index
 
-🔴 &nbsp;To add additional directory tree(s) to an existing index:
+🔴 &nbsp;To add additional directory tree(s) to an existing index (Essential +):
 ```
 python3 diskover.py -i diskover-<indexname> -a <tree_dir>
 ```

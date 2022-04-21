@@ -50,12 +50,11 @@ The advantage of running multiple index tasks is speed; you can run them in para
 
 🔴 &nbsp;Using these multiple index tasks:
 ```
-sh
 diskover.py -i diskover-nas1 /mnt/stor1
 diskover.py -i diskover-nas2 /mnt/stor2
 ```
 
-🔴 &nbsp;Will better perform than the following, as `stor2` may have a lot more files/directories and you won’t be able to use the `diskover-nas` index until both finish scanning:
+🔴 &nbsp;Will perform better than the following, as `stor2` may have a lot more files/directories and you won’t be able to use the `diskover-nas` index until both finish scanning:
 ```
 diskover.py -i diskover-nas /mnt/stor1 /mnt/stor2
 ```

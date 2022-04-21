@@ -26,10 +26,7 @@ python3 diskover.py -i diskover-<indexname> <tree_dir>
 python3 diskover.py -h
 ```
 
-#### Multiple Directory Trees
-
-Multiple directory trees **tree_dir** can be set to index multiple top paths into a single index.
-
+- Multiple directory trees **tree_dir** can be set to index multiple top paths into a single index.
 - UNC paths and drive maps are supported in Windows.
 - Index name requires `diskover-` prefix. 
 - Recommended index name `diskover-<mountname>-<datetime>`

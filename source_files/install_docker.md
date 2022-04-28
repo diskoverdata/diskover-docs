@@ -139,6 +139,9 @@ RUN apt-get update && \
 RUN docker-php-ext-configure ldap
 RUN docker-php-ext-install ldap
 
+# Copy php.ini
+RUN cp /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini
+
 # Copy existing application directory contents
 COPY . /var/www
 

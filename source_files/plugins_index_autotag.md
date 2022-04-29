@@ -28,6 +28,5 @@ python3 diskover-autotag.py indexname
 
 🔴 &nbsp;To get help and see all cli options:
 ```
-cd /opt/diskover/plugins_postindex
 python3 diskover-autotag.py -h
 ```

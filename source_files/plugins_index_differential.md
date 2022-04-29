@@ -22,9 +22,9 @@ vim /root/.config/diskover_indexdiff/config.yaml
 
 ![Image: Index Differential Plugin Configuration](images/image_plugins_indexdiff_configuration.png)
 
-🔴 &nbsp;To run the duplicates check via command line:
+🔴 &nbsp;To run the index diff via command line:
 ```
-cd /opt/diskover
+cd /opt/diskover/plugins_postindex
 python3 diskover_indexdiff.py -i indexname1 -I indexname2
 ```
 

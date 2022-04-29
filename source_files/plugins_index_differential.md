@@ -16,8 +16,6 @@ cp configs_sample/diskover_indexdiff/config.yaml /root/.config/diskover_indexdif
 vim /root/.config/diskover_indexdiff/config.yaml
 ```
 
-![Image: Index Differential Plugin Enabling](images/image_plugins_indexdiff_enabling.png)
-
 🔴 &nbsp;No configuration changes are required to the configuration file unless comparison involves indices from different Elasticsearch clusters.
 
 ![Image: Index Differential Plugin Configuration](images/image_plugins_indexdiff_configuration.png)
@@ -25,10 +23,12 @@ vim /root/.config/diskover_indexdiff/config.yaml
 🔴 &nbsp;To run the index diff via command line:
 ```
 cd /opt/diskover/plugins_postindex
-python3 diskover_indexdiff.py -i indexname1 -I indexname2
+python3 diskover-indexdiff.py -i indexname1 -I indexname2
 ```
+
+![Image: Index Differential Plugin Enabling](images/image_plugins_indexdiff_enabling.png)
 
 🔴 &nbsp;To get help and see all cli options:
 ```
-python3 diskover_indexdiff.py -h
+python3 diskover-indexdiff.py -h
 ```

@@ -5,6 +5,28 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.0.1] - 2022-05-31
+##### fixed
+- generating hardware id with multiple ES nodes in diskover config
+- life science edition (LSE) license not working
+- logging issues in Windows
+- scanning issues in Windows
+- issue with restore times
+##### added
+##### changed
+- improved crawl performance
+- improved log naming
+- updated diskover-dupesfinder to v2.0.1
+    - fixed issue with setting restoretimes config setting to True and traceback error if times can not be set
+- updated diskover-indexdiff to v2.0.1
+    - bug fixes
+    - fixed Windows issues
+    - added headers to csv
+    - added -q, --esquery add ES query string cli option
+    - reduced memory usage
+- default/sample diskover config autotag set to disabled
+
+
 #### [2.0] - 2022-04-04
 ##### fixed
 - issue with diskoverd where if task was disabled, task could not be sent stop from task panel
@@ -504,6 +526,16 @@ ___
 
 ___
 ### Diskover-web v2 Annual Subscription Editions Changelog
+
+#### [2.0.1] - 2022-05-31
+##### fixed
+- issue with fileaction containing form POST submit and multiple selected search results
+- issue with active index top root path changing to current path directory when indices reload and always use latest indices is enabled
+- issue with ldap logins and user being in both admin and regular user group and not being an admin after logging in
+##### added
+- sqlite db checks
+- LDAP_ALT_BIND2 config setting to Constants.php.sample to work with redhat idm/ipa
+
 
 #### [2.0] - 2022-04-04
 ##### fixed

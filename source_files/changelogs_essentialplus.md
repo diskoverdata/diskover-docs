@@ -5,6 +5,24 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.0.2] - 2022-07-20
+##### fixed
+- Windows scanning issue causing directories not to be found (long path fix)
+- python zero division error at end of crawl stats if crawl finished in 0 sec or 0 docs indexed
+- when scanning multiple top paths, crawl stats for the top path still printing out after crawl finishes
+##### added
+- Illegal file name post index plugin v0.1 (PRO +)
+    - plugins_postindex/diskover-illegalfilename.py
+    - configs_sample/diskover_illegalfilename/config.yaml
+- ES query csv/email report post index plugin v0.1 (PRO +)
+    - plugins_postindex/diskover-esqueryreport.py
+    - configs_sample/diskover_esqueryreport/config.yaml
+##### changed
+- updated dupes finder post index plugin to v2.0.2
+    - added -l, --latestindex cli arg
+- moved dircache alt scanner default/sample config directory to configs_sample directory and renamed to diskover_scandir_dircache
+
+
 #### [2.0.1] - 2022-05-31
 ##### fixed
 - generating hardware id with multiple ES nodes in diskover config
@@ -526,6 +544,18 @@ ___
 
 ___
 ### Diskover-web v2 Annual Subscription Editions Changelog
+
+#### [2.0.2] - 2022-07-20
+##### fixed
+- view file info page file and full path links not finding any search results when file name has double quote " in name
+- api file read/write locking issue causing task json files to become empty
+- file read/write locking issue with tasks json files
+##### changed
+- updated api to v2.0.1
+    - fixed file read/write locking issue with task json files
+- updated file sequence file action plugin to v0.0.5 in fileaction_samples directory
+    - reduced time assembling file sequences
+
 
 #### [2.0.1] - 2022-05-31
 ##### fixed

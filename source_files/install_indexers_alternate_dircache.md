@@ -16,12 +16,12 @@ On subsequent crawls, when a directory mtime is the same as in cache, the direct
 🔴 &nbsp;To use the **dircache** alternate scanner, first copy the default/sample config:
 
 ```
-cd /opt/diskover/scanners
 mkdir ~/.config/diskover_scandir_dircache
-cp scandir_dircache_config_sample/config.yaml ~/.config/diskover_scandir_dircache/config.yaml
+cd /opt/diskover/configs_sample/diskover_scandir_dircache
+cp config.yaml ~/.config/diskover_scandir_dircache
 ```
 
-🔴 &nbsp;`load_db_mem` setting can be set to **True** to load the Sqlite db into memory when crawl starts. This can sometimes help to improve db performance. Depending on disk speed and amount of ram for disk cache this may not help performance or even decrease performance. It is recommended to leave this set to False. 
+🔴 &nbsp;`load_db_mem` setting can be set to **True** to load the Sqlite db into memory when crawl starts. This can sometimes help to improve db performance. Depending on disk speed and amount of ram for disk cache this may not help performance or even decrease performance. **It is recommended to leave this set to False.**
 
 >_Warning!_ Setting this to True can cause the sqlite db file to occasionally become corrupt (see below). It's advised to keep this setting at the default False as it usually does not provide much of a performance improvement. If you do enable this, check db file size before loading into memory to ensure you don't run out of memory on the indexing host.
 

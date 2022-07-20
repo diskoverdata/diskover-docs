@@ -4,6 +4,11 @@ ___
 
 ### Diskover v2 Community Edition Changelog
 
+#### [2.0.3] - 2022-07-20
+##### fixed
+- Windows scanning issue causing directories not to be found (long path fix)
+
+
 #### [2.0.2] - 2022-05-31
 ##### fixed
 - logging issues in Windows
@@ -104,6 +109,11 @@ ___
 
 ___
 ### Diskover-web v2 Community Edition Changelog
+
+#### [2.0.3] - 2022-07-20
+##### fixed
+- view file info page file and full path links not finding any search results when file name has double quote " in name
+
 
 #### [2.0.2] - 2022-05-31
 ##### added

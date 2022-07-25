@@ -8,8 +8,8 @@ theme:
         primary: cyan
         accent: red
 markdown_extensions:
-    #- mdx_breakless_lists
-    - markdown_checklist.extension
+    - mdx_breakless_lists
+    #- markdown_checklist.extension
     - meta
     - toc:
         toc_depth: 3

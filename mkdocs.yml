@@ -9,7 +9,7 @@ theme:
         accent: red
 markdown_extensions:
     - mdx_breakless_lists
-    - markdown_checklist.extension
+    - pymdownx.tasklist
     - meta
     - toc:
         toc_depth: 3

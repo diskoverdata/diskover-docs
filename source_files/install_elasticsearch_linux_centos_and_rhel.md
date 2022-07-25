@@ -38,9 +38,8 @@ The following section describes installing Elasticsearch on Linux CentOS and RHE
 
 🔴 &nbsp;Install the latest version of Elasticsearch - you also need to keep up to date with patches, security enhancements, etc. as new versions are released:
 
-[https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.4-x86_64.rpm](https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.4-x86_64.rpm)
 ```
-yum install -y
+yum install -y https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.4-x86_64.rpm
 ```
 
 🔴 &nbsp;Configure Java JVM for Elasticsearch:

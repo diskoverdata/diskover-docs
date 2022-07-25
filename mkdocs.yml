@@ -8,7 +8,7 @@ theme:
         primary: cyan
         accent: red
 markdown_extensions:
-    - mdx_breakless_lists
+    #- mdx_breakless_lists
     - markdown_checklist.extension
     - meta
     - toc:

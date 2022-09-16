@@ -45,7 +45,9 @@ If using wildcards causes an ES api error, see here:
 curl -X GET -u login:password https://elasticsearch:9200/
 ```
 
-More info for the above commands can be found here: [https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-indices.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-indices.html)
+More info for the above commands can be found here: 
+
+[https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-indices.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-indices.html)
 
 ___
 ### Possible issues with Log4j and Elasticsearch

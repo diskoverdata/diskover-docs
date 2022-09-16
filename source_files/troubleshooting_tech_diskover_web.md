@@ -46,7 +46,7 @@ If tasks are not running when scheduled or are showing last status as failed, fo
 
 🔴 &nbsp; Check `Workers` tab in `Task Panel` has at least one worker online.
 
-🔴 &nbsp; For index tasks, check the mount being scanned is still mounted. You can use for example `mount` or `df` commands to check.
+🔴 &nbsp; For index tasks, check the mount being scanned is still mounted on the indexing host. You can use for example `mount` or `df` commands to check.
 
 🔴 &nbsp; Check diskoverd worker log files for any errors or warnings. You can find the log file location by checking the diskoverd config `logDirectory` setting. diskoverd config file is at `~/.config/diskoverd/config.yaml`.
 

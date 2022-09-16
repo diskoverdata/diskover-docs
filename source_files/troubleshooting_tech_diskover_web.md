@@ -36,11 +36,12 @@ chmod 660 *.json
 chown nginx:nginx *.json
 ```
 
+___
+### Diskover-Web Tasks Not Running or Failing
+
 - You will need to start at least one Diskover worker daemon `diskoverd` to work on tasks. 
 - `diskoverd` can run on the diskover host or on any host. 
 - `diskoverd` requires access to the Diskover-Web REST API which is located at `http://<diskover-web-host>:<port>/api.php`
-
-#### Diskover-Web Tasks Not Running or Failing
 
 If tasks are not running when scheduled or are showing last status as failed, follow the below steps to help troubleshoot.
 

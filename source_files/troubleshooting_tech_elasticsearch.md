@@ -20,12 +20,12 @@ curl -X GET "http://<eshost>:9200/_cat/indices/diskover-*?v=true&s=index&pretty"
 on AWS ES/OpenSearch:
 
 ```
-curl -X GET -u user:pass "https://<aws es endpoint>/_cat/indices/diskover-*?v=true&s=index&pretty"
+curl -X GET -u user:password "https://<aws es endpoint>/_cat/indices/diskover-*?v=true&s=index&pretty"
 ```
 
 #### Check Cluster Health
 ```
-curl http://elasticsearch:9200/_cat/health?v
+curl -X GET http://elasticsearch:9200/_cat/health?v
 ```
 
 #### Delete Indices
@@ -33,6 +33,11 @@ curl http://elasticsearch:9200/_cat/health?v
 curl -X DELETE http://elasticsearch:9200/diskover-indexname
 ```
 >Note: Wildcards can be used to delete multiple indices.
+
+Delete multiple indices with comma:
+```
+curl -XDELETE http://elasticsearch:9200/diskover-index1,diskover-index2,diskover-index3,diskover-index4
+```
 
 If using wildcards causes an ES api error, see here:
 

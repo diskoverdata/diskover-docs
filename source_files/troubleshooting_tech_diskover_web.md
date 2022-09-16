@@ -35,7 +35,6 @@ for f in *.json.sample; do cp $f "${f%.*}"; done
 chmod 660 *.json
 chown nginx:nginx *.json
 ```
-
 ___
 ### Diskover-Web Tasks Not Running or Failing
 
@@ -50,6 +49,23 @@ If tasks are not running when scheduled or are showing last status as failed, fo
 🔴 &nbsp; For index tasks, check the mount being scanned is still mounted on the indexing host. You can use for example `mount` or `df` commands to check.
 
 🔴 &nbsp; Check diskoverd worker log files for any errors or warnings. You can find the log file location by checking the diskoverd config `logDirectory` setting. diskoverd config file is at `~/.config/diskoverd/config.yaml`.
+
+___
+### Diskover-Web Tasks Running a Long Time
+
+If tasks are running a lot longer than usual or expected, it could be from an error in one of the task child processes that did not exit and is still running. Follow the below steps to help troubleshoot.
+
+🔴 &nbsp; Check diskoverd worker log files for any errors or warnings. You can find the log file location by checking the diskoverd config `logDirectory` setting. diskoverd config file is at `~/.config/diskoverd/config.yaml`.
+
+🔴 &nbsp; For index tasks, check the mount being scanned is still mounted on the indexing host. You can use for example `mount` or `df` commands to check.
+
+🔴 &nbsp; If it is an indexing task that is taking a long time, check on the indexing host for any diskover.py processes that are running a long time and kill the process. First try to `stop` or `force stop` the task using the task drop down button. If that still does not stop the task after a minute, kill the task manually.
+```
+ps -ef | grep diskover.py
+kill <pid>
+```
+>Note: Check after that the task shows last status as `Failed`. If it does not, you may need to reset the task status by clicking the task drop down button and clicking `Reset Status`.
+
 
 ___
 ### Unable to Access Diskover-Web from Browser

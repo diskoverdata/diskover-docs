@@ -64,8 +64,9 @@ If tasks are running a lot longer than usual or expected, it could be from an er
 ps -ef | grep diskover.py
 kill <pid>
 ```
->Note: Check after that the task shows last status as `Failed`. If it does not, you may need to reset the task status by clicking the task drop down button and clicking `Reset Status`.
+>Note: Any diskover.py index scan process that was killed will leave a corrupt index that should be deleted.
 
+🔴 &nbsp; Check after that the task shows last status as `Failed`. If it shows that it is still `Running`, you may need to reset the task status by clicking the task drop down button and clicking `Reset Status`.
 
 ___
 ### Unable to Access Diskover-Web from Browser

@@ -2,6 +2,11 @@ ___
 ## Diskoverd Task Workers
 ___
 
+- You will need to start at least one Diskover worker daemon `diskoverd` to work on tasks. 
+- `diskoverd` can run on the diskover host or on any host. 
+- `diskoverd` requires access to the Diskover-Web REST API which is located at `http://<diskover-web-host>:<port>/api.php`
+
+
 ### Verbose Output
 
 🔴 &nbsp;Enable verbose output:

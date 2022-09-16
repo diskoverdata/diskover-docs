@@ -34,6 +34,11 @@ curl -X DELETE http://elasticsearch:9200/diskover-indexname
 ```
 >Note: Wildcards can be used to delete multiple indices.
 
+If using wildcards causes an ES api error, see here:
+
+[https://www.elastic.co/guide/en/elasticsearch/reference/7.17/indices-delete-index.html#delete-index-api-path-params](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/indices-delete-index.html#delete-index-api-path-params)
+[https://www.elastic.co/guide/en/elasticsearch/reference/7.17/index-management-settings.html#action-destructive-requires-name](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/index-management-settings.html#action-destructive-requires-name)
+
 
 #### To Query the Elasticsearch Cluster with Login Credentials
 ```

@@ -2,7 +2,6 @@ ___
 ## Diskoverd Task Workers
 ___
 
-
 ### Verbose Output
 
 🔴 &nbsp;Enable verbose output:
@@ -10,7 +9,6 @@ ___
 python3 diskoverd.py -v -n <worker name>
 ```
 >Note: -n is optional, use -h for all cli options
-
 
 ### Log Debug
 
@@ -30,7 +28,6 @@ logDirectory: /tmp/
 ```
 python3 diskoverd.py ... > /var/log/diskoverd.log 2>&1
 ```
-
 
 ### Service Control
 

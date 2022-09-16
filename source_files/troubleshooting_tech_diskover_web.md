@@ -40,6 +40,14 @@ chown nginx:nginx *.json
 - `diskoverd` can run on the diskover host or on any host. 
 - `diskoverd` requires access to the Diskover-Web REST API which is located at `http://<diskover-web-host>:<port>/api.php`
 
+#### Diskover-Web Tasks Not Running or Failing
+
+If tasks are not running when scheduled or are showing last status as failed, follow the below steps to help troubleshoot.
+
+🔴 &nbsp; Check `Workers` tab in `Task Panel` has at least one worker online.
+🔴 &nbsp; For index tasks, check the mount being scanned is still mounted. You can use for example `mount` or `df` commands to check.
+🔴 &nbsp; Check diskoverd worker log files for any errors or warnings. You can find the log file location by checking the diskoverd config `logDirectory` setting. diskoverd config file is at `~/.config/diskoverd/config.yaml`.
+
 ___
 ### Unable to Access Diskover-Web from Browser
 

@@ -1,4 +1,5 @@
-#### Set up Elasticsearch Linux Cluster
+___
+### Set up Elasticsearch Linux Cluster
 
 The below steps are to set up a 3-node ES cluster on Linux. These instructions assume you have already installed the same version of Elasticsearch on 3 nodes. You will need to run the below on all 3 ES nodes.
 

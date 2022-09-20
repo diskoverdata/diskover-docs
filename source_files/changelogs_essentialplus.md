@@ -5,6 +5,50 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.0.3] - 2022-09-19
+##### BREAKING CHANGES
+- licensing changes
+    - contact Diskover Data support@diskoverdata.com to get new license key file as existing diskover.lic file will no longer work
+    - you will need to generate a new hardware id after updating before requesting new license keys https://docs.diskoverdata.com/diskover_installation_guide/#generating-a-hardware-id
+- dir cache alt scanner critical bug fix (see changed below)
+##### fixed
+- issue with replace paths config setting and using / as from path
+- issue with dircache alt scanner scan would crash if sqlite error occured when adding data to db
+- issue with dircache alt scanner scan indexing incorrect atime and mtime (see below changed)
+- issue with ES bulk indexing and unicode encode error caused scan to crash
+##### changed
+- changed license hardware id generation
+- all log locations in default/sample config files to /var/log/diskover/ directory, this directory must exist first before using and have read/write permissions for the user
+- updated autoclean to v0.0.4
+    - bug fixes
+    - added file size to log output
+    - removed extra duration log output lines
+    - added separate warnings/errors log file
+    - removed extra error log line when warning printed for file not found
+- updated media info plugin to v0.0.13
+    - changed default framerate decimal points to 2 (rounded float)
+    - added framerateDecimals to default/sample mediainfo plugin config, copy to your mediainfo plugin config
+- updated diskoverd to v2.0.2
+    - fixed issue when running multiple diskoverd on different hosts and task workers starting same task if assigned to any worker and diskoverd started at same time
+    - added default config fallback values if any settings from config are missing
+    - added support for task timeout
+- updated diskover cache module to v0.0.7
+    - added sqlite error exception handling to not cause fatal crash when errors occur adding data to db
+- updated scandir dircache alt scanner to v0.0.5
+    - fixed issue with stat atime (access time) and mtime (modified time) being indexed incorrectly
+        - remove existing dir cache alt scanner cache directory /opt/diskover/__dircache__ when no scans running that use it
+    - fixed issue with directory containing symlink that wasn't found would cause whole parent path directory to be skipped
+    - added default config fallback values if any settings from config are missing
+    - added warning if load_db_mem set to True in config
+- updates dupes finder post index plugin to v2.0.3
+    - improved dupes finding algorithm by skipping any files that have unique size and skipping any files with unique first chunksize bytes before doing full content hash (for single index arg only)
+    - added stats and performance log ouput
+    - added better stat info at end
+    - added -e --excludehashes cli option to exclude searching for any files that already have hash in index doc
+    - added excludeextensions, excludefiles, excludedirs to default/sample config file, copy to your config file
+    - changed minsize setting in default/sample config to 1024 bytes, previously was 1 bytes
+
+
 #### [2.0.2] - 2022-07-20
 ##### fixed
 - Windows scanning issue causing directories not to be found (long path fix)
@@ -544,6 +588,40 @@ ___
 
 ___
 ### Diskover-web v2 Annual Subscription Editions Changelog
+
+#### [2.0.3] - 2022-09-19
+##### BREAKING CHANGES
+- licensing changes
+    - contact Diskover Data support@diskoverdata.com to get new license key file as existing diskover-web.lic file will no longer work
+    - you will need to generate a new hardware id after updating before requesting new license keys https://docs.diskoverdata.com/diskover_installation_guide/#generating-a-hardware-id
+##### fixed
+- bug with file actions using post form submit and multiple selected files
+- select indices page selects multiple indices with similiar names even though not checked
+- bug showing uuid change in nginx error log and web ui to not display latest index correctly when using always use latest index (auto-index)
+- bug where path breadcrumbs in web ui disappears when index changes when using always use latest index (auto-index)
+- bug with selecting different index with manual index selection with different top path doesn't change the top path
+- bug with setting day of week in task to Sunday
+- issue with customtags.txt file being opened multiple times on search results page
+- bug with exports not exporting all search results when using a search query with OR
+##### added
+- refer url redirection to login.php
+- info messages on cost analysis, smart searches, and tags analytics pages when there are no ES search query results or .txt data files are empty
+- fix permissions file action (fixperms.php) to fileaction samples directory
+- make hardlinks file action (makehardlink.php) to fileaction samples directory
+- error output to license check if license verify issue
+- timeout setting for tasks
+- ldap group info to fileactions debug output when file action not authorized to run by user
+- extra Elasticsearch info to settings page
+- all charts on search results page and dashboard are now clickable for searching results
+##### changed
+- improved page load time on search results page when there are many tags
+- updated api to v2.0.2
+    - fixed get latest index endpoint returning es error if corrupt index
+- separated version and license info on settings page
+- removed change api password link on settings page for non-admin users
+- removed elasticsearch and license info from settings page for non-admin users
+- removed setting sort by size when clicking charts on search results and dashboard pages
+
 
 #### [2.0.2] - 2022-07-20
 ##### fixed

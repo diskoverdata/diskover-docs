@@ -13,35 +13,38 @@ systemctl stop elasticsearch
 vi /etc/elasticsearch/elasticsearch.yml
 ```
 
-🔴 &nbsp;Uncomment and change (any name you like):
+🔴 &nbsp;Uncomment and change (any name you like) same cluster name on all nodes:
 ```
-cluster.name: elastic-cluster
+cluster.name: es-cluster-diskover
 ```
 
-🔴 &nbsp;Uncomment and change (set Hostname for node name):
+🔴 &nbsp;Uncomment and change (to hostname) different node name on each node:
 ```
-node.name: ${HOSTNAME}
+node.name: server1
 ```
->Note: You can set node name to any name you want or use env var HOSTNAME to use the hostname.
+>Note: You can also set node.name to env var `${HOSTNAME}` to use the hostname or enter in the full hostname.
 
-🔴 &nbsp;Uncomment and change (listen all):
+🔴 &nbsp;Uncomment and change to the ip you want ES to bind to on each es node:
 ```
-network.host: 0.0.0.0
+network.host: 192.168.0.11
 ```
->Note: You can also set this to a specific IP to only have Elasticsearch listen on that ip.
+>Note: to find the IP use `ip addr` or `ifconfig` commands.
 
-🔴 &nbsp;Add (specify all Nodes - the Node name should be the same with `[node.name]`:
+🔴 &nbsp;Set discovery by specifying all Nodes IP addresses:
 ```
-cluster.initial_master_nodes:
-  - node01.srv.world
-  - node02.srv.world
-  - node03.srv.world
+discovery.seed_hosts: ["192.168.0.11", "192.168.0.12", "192.168.0.13"]
+```
+
+🔴 &nbsp;Set cluster initial master nodes by specifying all Nodes ip addresses:
+```
+cluster.initial_master_nodes: ["192.168.0.11", "192.168.0.12", "192.168.0.13"]
 ```
 
 🔴 &nbsp; Start Elasticsearch and enable service to start at boot if not already:
 ```
-systemctl start elasticsearch
+systemctl daemon-reload
 systemctl enable elasticsearch
+systemctl start elasticsearch
 ```
 
 🔴 &nbsp; Open firewall ports for Elasticsearch (if using firewall):
@@ -50,7 +53,8 @@ firewall-cmd --add-port={9200/tcp,9300/tcp} --permanent
 firewall-cmd --reload
 ```
 
-🔴 &nbsp; Check cluster status is green:
+🔴 &nbsp; Check ES node and cluster status is green:
 ```
+curl http://<es host>:9200
 curl http://<es host>:9200/_cluster/health?pretty
 ```

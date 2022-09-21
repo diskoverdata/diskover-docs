@@ -75,4 +75,4 @@ host: ['eshost1', 'eshost2', 'eshost3']
 shards: 1
 replicas: 2
 ```
->Note: shards can also be increased to 3 or more depending on size of ES index (number of docs).
+>Note: shards can also be increased to 3 or more depending on size of ES index (number of docs). See [Elasticsearch requirements](https://docs.diskoverdata.com/diskover_installation_guide/#elasticsearch-requirements) "Indices" section for more info.

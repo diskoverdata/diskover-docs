@@ -90,8 +90,8 @@ vi /var/www/diskover-web/src/diskover/Constants.php
 🔴 &nbsp; Change Elasticsearch ES_HOSTS hosts setting to include all 3 ES node hostnames (optional):
 ```
 const ES_HOSTS = [
-        [
-            'hosts' => ['eshost1', 'eshost2', 'eshost3'],
-            ...
+    [
+        'hosts' => ['eshost1', 'eshost2', 'eshost3'],
+        ...
 ```
 >Note: This is optional, you can also set this to just a single node in the cluster.

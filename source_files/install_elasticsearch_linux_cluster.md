@@ -60,7 +60,7 @@ curl http://<es host>:9200
 curl http://<es host>:9200/_cluster/health?pretty
 ```
 
-#### Modify Diskover Config for Cluster
+#### Modify Diskover Config Files for Cluster
 
 After setting up the ES cluster, you will want to adjust your diskover config file from the defaults.
 

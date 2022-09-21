@@ -59,3 +59,20 @@ firewall-cmd --reload
 curl http://<es host>:9200
 curl http://<es host>:9200/_cluster/health?pretty
 ```
+
+#### Modify Diskover Config for Cluster
+
+After setting up the ES cluster, you will want to adjust your diskover config file from the defaults.
+
+🔴 &nbsp; Change Elasticsearch host setting to include all 3 ES node hostnames (optional):
+```
+host: ['eshost1', 'eshost2', 'eshost3']
+```
+>Note: This is optional, you can also set this to just a single node in the cluster.
+
+🔴 &nbsp; Set index shards and replicas:
+```
+shards: 1
+replicas: 2
+```
+>Note: shards can also be increased to 3 or more depending on size of ES index (number of docs).

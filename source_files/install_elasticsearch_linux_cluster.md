@@ -64,6 +64,11 @@ curl http://<es host>:9200/_cluster/health?pretty
 
 After setting up the ES cluster, you will want to adjust your diskover config file from the defaults.
 
+🔴 &nbsp; Edit diskover config file:
+```
+vi /root/.config/diskover/config.yaml
+```
+
 🔴 &nbsp; Change Elasticsearch host setting to include all 3 ES node hostnames (optional):
 ```
 host: ['eshost1', 'eshost2', 'eshost3']
@@ -75,4 +80,18 @@ host: ['eshost1', 'eshost2', 'eshost3']
 shards: 1
 replicas: 2
 ```
->Note: shards can also be increased to 3 or more depending on size of ES index (number of docs). See [Elasticsearch requirements](https://docs.diskoverdata.com/diskover_installation_guide/#elasticsearch-requirements) "Indices" section for more info.
+>Note: shards can also be increased to 3 or more depending on size of ES index (number of docs). See [Elasticsearch requirements](https://docs.diskoverdata.com/diskover_installation_guide/#elasticsearch-requirements) Indices section for more info.
+
+🔴 &nbsp; Edit diskover-web config file:
+```
+vi /var/www/diskover-web/src/diskover/Constants.php
+```
+
+🔴 &nbsp; Change Elasticsearch ES_HOSTS hosts setting to include all 3 ES node hostnames (optional):
+```
+const ES_HOSTS = [
+        [
+            'hosts' => ['eshost1', 'eshost2', 'eshost3'],
+            ...
+```
+>Note: This is optional, you can also set this to just a single node in the cluster.

@@ -19,11 +19,11 @@ vi /etc/elasticsearch/elasticsearch.yml
 cluster.name: es-cluster-diskover
 ```
 
-🔴 &nbsp;Uncomment and change (to hostname) different node name on each node:
+🔴 &nbsp;Uncomment and change different node name on each node:
 ```
-node.name: server1
+node.name: esnode1
 ```
->Note: You can also set node.name to env var `${HOSTNAME}` to use the hostname or enter in the full hostname.
+>Note: By default node.name is set to the hostname.
 
 🔴 &nbsp;Uncomment and change to the ip you want ES to bind to on each es node:
 ```
@@ -36,22 +36,25 @@ network.host: 192.168.0.11
 discovery.seed_hosts: ["192.168.0.11", "192.168.0.12", "192.168.0.13"]
 ```
 
-🔴 &nbsp;Set cluster initial master nodes by specifying all Nodes ip addresses:
+🔴 &nbsp;Set cluster initial master nodes by specifying all Nodes node names (node.name):
 ```
-cluster.initial_master_nodes: ["192.168.0.11", "192.168.0.12", "192.168.0.13"]
+cluster.initial_master_nodes: ["esnode1", "esnode2", "esnode3"]
 ```
-
-🔴 &nbsp; Start Elasticsearch and enable service to start at boot if not already:
-```
-systemctl daemon-reload
-systemctl enable elasticsearch
-systemctl start elasticsearch
-```
+>Note: after the cluster starts, comment this line out on each node.
 
 🔴 &nbsp; Open firewall ports for Elasticsearch (if using firewall):
 ```
 firewall-cmd --add-port={9200/tcp,9300/tcp} --permanent
 firewall-cmd --reload
+```
+
+Proceed with the next steps after all 3 ES nodes configurations are updated.
+
+🔴 &nbsp; Start Elasticsearch on node 1, then 2 and 3 and enable service to start at boot if not already:
+```
+systemctl daemon-reload
+systemctl enable elasticsearch
+systemctl start elasticsearch
 ```
 
 🔴 &nbsp; Check ES node and cluster status is green:
@@ -71,7 +74,7 @@ vi /root/.config/diskover/config.yaml
 
 🔴 &nbsp; Change Elasticsearch host setting to include all 3 ES node hostnames (optional):
 ```
-host: ['eshost1', 'eshost2', 'eshost3']
+host: ['esnode1', 'esnode2', 'esnode3']
 ```
 >Note: This is optional, you can also set this to just a single node in the cluster.
 
@@ -91,7 +94,7 @@ vi /var/www/diskover-web/src/diskover/Constants.php
 ```
 const ES_HOSTS = [
     [
-        'hosts' => ['eshost1', 'eshost2', 'eshost3'],
+        'hosts' => ['esnode1', 'esnode2', 'esnode3'],
         ...
 ```
 >Note: This is optional, you can also set this to just a single node in the cluster.

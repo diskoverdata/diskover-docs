@@ -19,6 +19,7 @@ ordered_documents:
   - user_basic_search_filters.md
   - user_basic_line_selection.md
   - user_basic_export.md
+  - user_basic_search_path_recursive.md
   - user_basic_share.md
   - user_basic_smart_searches.md
   - user_basic_quick_search.md

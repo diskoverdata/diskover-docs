@@ -32,12 +32,28 @@ Once you export the desired info to a **csv** format, open that file with Excel.
 ![Image: Sort in Excel](images/image_file_search_results_export_excel_sort.png)
 
 A) From the Excel application menu, select **Data**.
+
 B) Click on the **Sort** icon.
-C) Select **parent_path** to sort by path/directories - you can cadd multiple levels of data sort by clicking on the **+** sign, please refer to **Excel > Help** menu for further instructions if needed.
+
+C) Select **parent_path** to sort by path/directories:
+>- You can add multiple levels of data sort by clicking on the **+** sign
+>- please refer to **Excel > Help** menu for further instructions if needed.
 
 >🔆 &nbsp;The same **Data > Sort** can be achieved from the Excel drop-down top menu.
 
+##### Excel > Data > Filter
 
+Once you export the desired info to a **csv** format, open that file with Excel.
+
+![Image: Filter in Excel](images/image_file_search_results_export_excel_filter.png)
+
+A) From the Excel application menu, select **Data**.
+
+B) Click on the **Filter** icon.
+
+C) Click on the down arrow in the **parent_path** column which will open a window with multiple options - select the path(s) for which you wish to pinpoint and click on **Apply Filter** - please refer to **Excel > Help** menu for further instructions if needed.
+
+>🔆 &nbsp;The same **Data > Sort** can be achieved from the Excel drop-down top menu.
 
 
 >- The export file will automatically go to your  **Downloads**  folder and will display all the columns/info as you see them in your result pane.

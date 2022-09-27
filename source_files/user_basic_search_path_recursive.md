@@ -71,4 +71,4 @@ C) Instead of clicking on the **down-arrow** in the **parent_path** column, clic
   - Please refer to **Excel > Help** menu for further instructions.
 
 
->🔆 &nbsp;In Excel, you can mix **sort** and **filters**.
+>🔆 &nbsp;In Excel, you can use both **sort** and **filters** to isolate and display the results you want to achieve.

@@ -36,8 +36,8 @@ A) From the Excel application menu, select **Data**.
 B) Click on the **Sort** icon.
 
 C) Select **parent_path** to sort by path/directories:
->- You can add multiple levels of data sort by clicking on the **+** sign
->- please refer to **Excel > Help** menu for further instructions if needed.
+  - You can add multiple levels of data sort by clicking on the **+** sign
+  - please refer to **Excel > Help** menu for further instructions if needed.
 
 >🔆 &nbsp;The same **Data > Sort** can be achieved from the Excel drop-down top menu.
 

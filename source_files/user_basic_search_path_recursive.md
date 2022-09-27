@@ -1,7 +1,7 @@
 <p id="search_path_recursive"></p>
 
 ___
-### Recursive and Non-Recursive Path Search and Data Manipulation in Excel
+### Recursive/Non-Recursive Path Search and Data Manipulation in Excel
 
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
@@ -11,7 +11,7 @@ From the [search page](#file_search), you can isolate in one click and then expo
 
 A) From the [results pane](#result_pane_columns), identify the path that you wish to search.
 
-B) Click the icon that can be found in the **Path** column - follow these [instructions](#hideunhide-fields-in-search-results) to unhide the **Path** column if that specific column is not visible in your [results pane](#result_pane_columns).
+B) Click the icon that can be found in the **Path** column - follow these [instructions to unhide the **Path** column](#hideunhide-fields-in-search-results) if that specific column is not visible in your [results pane](#result_pane_columns).
   
 C) Select **search path (non-recursive)** to include ONLY the directories and files included in the selected path.
   
@@ -23,7 +23,7 @@ Please refer to the instructions in the **[export](#export)** section of this gu
 
 #### Multiple Path/Directory Levels Manipulation in Excel
 
-When exporting data in a **csv** format, you will get all the metadata associated with a file and/or directory, displayed within multiple columns. This will allow you to use Excel **sort** and/or **filters** to easily pinpoint the specific details you are looking for.
+When exporting data in a **csv** format, you will get all the metadata associated with a file and/or directory, displayed within multiple columns. This will allow you to use Excel **sort** and/or **filters** to easily pinpoint the specific data you are looking for.
 
 ##### Excel > Data > Sort
 
@@ -42,7 +42,7 @@ C) Select **parent_path** to sort by path/directories:
 
 ##### Excel > Data > Filter - When Exporting Files from Diskover
 
-Once you [export](#export) the desired data to a **csv** format, open that file with Excel.
+Once you [export](#export) the desired **files** from Diskover to a **csv** format, open that file with Excel.
 
 ![Image: Filter in Excel](images/image_file_search_results_export_excel_filter.png)
 
@@ -57,7 +57,7 @@ C) Click on the **down-arrow** in the **parent_path** column which will open a w
 
 ##### Excel > Data > Filter - When Exporting Directories from Diskover
 
-The same instructions as above apply when you [export](#export) directories from Diskover, but the results will include a few more columns, giving you more filter options.
+The same instructions as above apply when you [export](#export) **directories** from Diskover, but the results will include a few more columns, giving you more filtering options.
 
 ![Image: Filter in Excel](images/image_file_search_results_export_excel_filter_dir_depth.png)
 

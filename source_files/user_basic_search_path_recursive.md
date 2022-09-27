@@ -5,13 +5,13 @@ ___
 
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
-From the [search page](#file_search), you can search in one click and then export all the directories and/or files that are [recursive or non-recursive](#recursive) under a path.
+From the [search page](#file_search), you can isolate in one click and then export all the directories and/or files that are [recursive or non-recursive](#recursive) under a path.
 
 ![Image: File Search Path Recursive](images/image_file_search_path_recursive.png)
 
 A) From the [results pane](#result_pane_columns), identify the path that you wish to search.
 
-B) Click the icon that can be found in the **Path** column - follow these [instructions](##hideunhide-fields-in-search-results) to unhide the **Path** column if that specific column is not visible in your results pane.
+B) Click the icon that can be found in the **Path** column - follow these [instructions](#hideunhide-fields-in-search-results) to unhide the **Path** column if that specific column is not visible in your [results pane](#result_pane_columns).
   
 C) Select **search path (non-recursive)** to include ONLY the directories and files included in the selected path.
   
@@ -27,7 +27,7 @@ When exporting data in a **csv** format, you will get all the metadata associate
 
 ##### Excel > Data > Sort
 
-Once you export the desired info to a **csv** format, open that file with Excel.
+Once you export the desired data to a **csv** format, open that file with Excel.
 
 ![Image: Sort in Excel](images/image_file_search_results_export_excel_sort.png)
 
@@ -36,14 +36,13 @@ A) From the Excel application menu, select **Data**.
 B) Click on the **Sort** icon.
 
 C) Select **parent_path** to sort by path/directories:
-  - You can add multiple levels of data sort by clicking on the **+** sign
-  - please refer to **Excel > Help** menu for further instructions if needed.
+  - You can add multiple levels of column sort by clicking on the **+** sign.
+  - The same **Data > Sort** selection can be achieved from the Excel drop-down top menu.
+  - Please refer to **Excel > Help** menu for further instructions.
 
->🔆 &nbsp;The same **Data > Sort** can be achieved from the Excel drop-down top menu.
+##### Excel > Data > Filter - When Exporting Files from Diskover
 
-##### Excel > Data > Filter
-
-Once you export the desired info to a **csv** format, open that file with Excel.
+Once you [export](#export) the desired data to a **csv** format, open that file with Excel.
 
 ![Image: Filter in Excel](images/image_file_search_results_export_excel_filter.png)
 
@@ -51,29 +50,25 @@ A) From the Excel application menu, select **Data**.
 
 B) Click on the **Filter** icon.
 
-C) Click on the down arrow in the **parent_path** column which will open a window with multiple options - select the path(s) for which you wish to pinpoint and click on **Apply Filter** - please refer to **Excel > Help** menu for further instructions if needed.
+C) Click on the **down-arrow** in the **parent_path** column which will open a window with multiple options:
+  - Select the path(s) which you want to isolate in your results and click on **Apply Filter**.
+  - The same **Data > Filter** selection can be achieved from the Excel drop-down top menu.
+  - Please refer to **Excel > Help** menu for further instructions.
 
->🔆 &nbsp;The same **Data > Sort** can be achieved from the Excel drop-down top menu.
+##### Excel > Data > Filter - When Exporting Directories from Diskover
+
+The same instructions as above apply when you [export](#export) directories from Diskover, but the results will include a few more columns, giving you more filter options.
+
+![Image: Filter in Excel](images/image_file_search_results_export_excel_filter_dir_depth.png)
+
+A) From the Excel application menu, select **Data**.
+
+B) Click on the **Filter** icon.
+
+C) Instead of clicking on the **down-arrow** in the **parent_path** column, click the down-arrow from the **dir_depth** column, which will open a window with multiple options:
+  - Select the depth of sub-directory(ies) you want to isolate in your results and click on **Apply Filter**.
+  - The same **Data > Filter** selection can be achieved from the Excel drop-down top menu.
+  - Please refer to **Excel > Help** menu for further instructions.
 
 
->- The export file will automatically go to your  **Downloads**  folder and will display all the columns/info as you see them in your result pane.
->- **This page**: Chose to export only the files showing on H) this page. The number of H) pages is affected by the number of search results and I) items per page.
->- **All pages**: Chose to export the files showing in H) all pages.
->- **json** or  **csv**: Chose the preferred export format for your results.
-
-C) To export  **directories**  only if you have directories in your results, otherwise the report will be empty. This method will export the directory names, paths, as well as the information contained in the various columns allowing for easy sorting in Excel for example.
-
-![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
-
->- The export file will automatically go to your  **Downloads**  folder and will display all the columns/info as you see them in your result pane.
->- **This page**: Chose to export only the directories showing on H) this page. The number of H) pages is affected by the number of search results and I) items per page.
->- **All pages**: Chose to export the directories showing in H) all pages.
->- **json**  or  **csv**: Chose the preferred export format for your results.
-
-D) **Copy all paths this page**: Will copy to your clipboard all paths listed on H) the current page, either they are files or directories.
-
-E) **Copy all file names this page**: Will copy to your clipboard all file names only, not the path, listed on H) the current page.
-
-F) **Copy selected paths this page**: Will copy to your clipboard all paths, either files or directories, that you have selected in J) column.
-
-G) **Copy selected file names this page**: Will copy to your clipboard all file names only, not the path, that you have selected in J) column.
+>🔆 &nbsp;In Excel, you can mix **sort** and **filters**.

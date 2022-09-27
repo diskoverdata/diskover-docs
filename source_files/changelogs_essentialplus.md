@@ -5,6 +5,13 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.0.3-1] - 2022-09-26
+##### UPDATE 1
+##### changed
+- updated scandir dircache alt scanner to v0.0.6
+    - fixed config read error exception when loading default config file
+
+
 #### [2.0.3] - 2022-09-19
 ##### BREAKING CHANGES
 - licensing changes

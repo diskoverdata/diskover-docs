@@ -5,6 +5,30 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.0.4] - 2022-10-05
+##### fixed
+- removed any colon from diskover linux log file names when log to file is enabled in config
+##### changed
+- updated diskoverd to v2.0.3
+    - fixed issue with post task exiting with status exit code > 0 and task not finishing
+    - fixed issue with task retries set to 1 and task not retrying
+    - fixed issue with sending stop command and command continues to retry if retries set to > 0
+    - fixed UnboundLocalError: local variable 'indx' referenced before assignment when running custom task and contains post command args
+- updated s3 alt scanner to v0.0.9
+    - can now scan all buckets using s3:// as top path arg for diskover.py
+    - owner is looked up in s3 instead of only using root (uid 0) and set for file and directory docs
+    - added boto s3 client InvalidObjectState error exception handling if an object is on Glacier and only logs if debug logging set
+- updated media info plugin to v0.0.14
+    - added cachedir and cacheexpiretime to default/sample mediainfo plugin config, copy to your mediainfo plugin config
+- updated scandir dircache alt scanner to v0.0.7
+    - add cachedir setting to default/sample config file, copy to your config file
+- updated illegal file name post index plugin to v0.1.1
+    - fixed issue with docs not getting tagged with both illegal and long tags
+- updated es query report post index plugin to v0.1.1
+    - bug fixes
+    - changed any index field that is an array (example tags) each item in array to be separated with semicolon in csv
+
+
 #### [2.0.3-1] - 2022-09-26
 ##### UPDATE 1
 ##### changed
@@ -595,6 +619,36 @@ ___
 
 ___
 ### Diskover-web v2 Annual Subscription Editions Changelog
+
+#### [2.0.4] - 2022-10-05
+##### BREAKING CHANGES
+- removed LDAP_ALT_BIND_USERS_DN from config, replaced with new config setting LDAP_USERSDN, see default/sample config file src/diskover/Constants.php.sample, update your config with these changes
+##### fixed
+- issue when searching for a path using absolute path or parent_path index field, tree and charts not updating on search results page
+- issue with using multiple browser tabs and not staying logged in
+- having multiple browser tabs open and not being automatically logged out of all tabs when session timeout expires
+- php ES error: Trying to create too many scroll contexts. Must be less than or equal to: [500]
+- searching smart search containing quotes returning no results from quotes getting removed in query
+- share search query containing spaces, etc characters not getting escaped when copying to clipboard
+- searching a directory that is different than active top path doesn't switch the top path if the directory is in a different top path
+- clicking on a search results page button with a large number would cause PHP to crash
+- file charts being displayed on search results page when directory contains no files
+##### added
+- saved queries menu item to Quick search nav button dropdown
+- buttons to add and remove (next to search query) your favorite queries to saved queries menu list
+- number of users drop down button to user analysis page to change numbers of users shown
+- support for nested ldap groups
+    - LDAP_NESTED_GROUPS setting to default/sample config file src/diskover/Constants.php.sample, copy to your config
+    - LDAP_USERSDN setting to default/sample config file src/diskover/Constants.php.sample, copy to your config
+- new config setting HIDE_SEARCH_CHARTS to hide search page charts by default to default/sample config file src/diskover/Constants.php.sample, copy to your config
+- new config setting TOPPATH_LABELS to set a different label name for top path in search page file tree and top nav top path drop down to default/sample config file src/diskover/Constants.php.sample, copy to your config
+##### changed
+- improved search page load times when searching directories, browsing using search file tree, and when using current directory only toggle
+- reduced diskover-web search ES scroll time from 1m to 30s and clear scroll window after done searching
+- improved user analysis page
+- removed LDAP_ALT_BIND_USERS_DN from config, replaced with new config setting LDAP_USERSDN, see default/sample config file src/diskover/Constants.php.sample, update your config with these changes
+- disabled search results page buttons > 1000 to prevent PHP crash
+
 
 #### [2.0.3] - 2022-09-19
 ##### BREAKING CHANGES

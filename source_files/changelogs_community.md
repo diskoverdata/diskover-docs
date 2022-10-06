@@ -119,7 +119,7 @@ ___
 #### [2.0.4] - 2022-09-19
 ##### added
 - all charts on search results page and dashboard are now clickable for searching results
-### changed
+##### changed
 - removed setting sort by size when clicking charts on search results and dashboard pages
 
 

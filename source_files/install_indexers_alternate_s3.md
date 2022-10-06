@@ -26,6 +26,7 @@ pip3 install boto3
 cd /opt/diskover
 python3 diskover.py --altscanner scandir_s3 s3://bucketname
 ```
+>Note: bucketname is optional, you can scan all buckets using s3://
 
 #### Using Different Endpoint URL (Other than AWS)
 

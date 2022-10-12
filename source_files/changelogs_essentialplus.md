@@ -5,6 +5,16 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.0.4-1] - 2022-10-11
+##### UPDATE 1
+##### changed
+- updated media info plugin to v0.0.15
+    - fixed UnboundLocalError: local variable 'cachedir' referenced before assignment causing scan to crash
+    - log absolute path for cache directory
+- updated scandir dircache alt scanner to v0.0.8
+    - log absolute path for cache directory
+
+
 #### [2.0.4] - 2022-10-05
 ##### fixed
 - removed any colon from diskover linux log file names when log to file is enabled in config
@@ -619,6 +629,15 @@ ___
 
 ___
 ### Diskover-web v2 Annual Subscription Editions Changelog
+
+#### [2.0.4-1] - 2022-10-11
+##### UPDATE 1
+##### fixed
+- slow logins from searching across all indices and es query type:(file OR directory)
+- issue with ldap logins
+##### changed
+- when logging in only the active top path index is searched rather than across all indices and search query is set to the active top path rather than type:(file OR directory)
+
 
 #### [2.0.4] - 2022-10-05
 ##### BREAKING CHANGES

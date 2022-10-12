@@ -641,6 +641,7 @@ ___
 
 #### [2.0.4] - 2022-10-05
 ##### BREAKING CHANGES
+- LDAP_USERSDN config setting is required for ldap logins, see default/sample config file src/diskover/Constants.php.sample, update your config with these changes and set to your ldap users dn
 - removed LDAP_ALT_BIND_USERS_DN from config, replaced with new config setting LDAP_USERSDN, see default/sample config file src/diskover/Constants.php.sample, update your config with these changes
 ##### fixed
 - issue when searching for a path using absolute path or parent_path index field, tree and charts not updating on search results page

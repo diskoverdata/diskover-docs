@@ -5,7 +5,7 @@ ___
 ```
 yum-config-manager --enable remi-php74
 amazon-linux-extras install php7.4
-yum -y install php php-common php-fpm php-opcache php-cli php-gd php-mysqlnd php-ldap php-zip php-xml php-xmlrpc php-mbstring php-json php-sqlite
+yum -y install php php-common php-fpm php-opcache php-cli php-gd php-mysqlnd php-ldap php-zip php-xml php-xmlrpc php-mbstring php-json php-sqlite3
 ```
 
 🔴 &nbsp;Set PHP configuration settings for NGINX:

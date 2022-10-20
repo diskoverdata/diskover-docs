@@ -16,7 +16,7 @@ yum-config-manager --enable remi-php74
 
 🔴 &nbsp;Install PHP and other PHP packages:
 ```
-yum -y install php php-common php-fpm php-opcache php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json php-sqlite
+yum -y install php php-common php-fpm php-opcache php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json php-sqlite3
 ```
 
 ##### Centos/RHEL 8.x
@@ -34,7 +34,7 @@ dnf module enable php:remi-7.4
 
 🔴 &nbsp;Install PHP and other PHP packages:
 ```
-dnf install php php-common php-fpm php-opcache php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json php-sqlite
+dnf install php php-common php-fpm php-opcache php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json php-sqlite3
 ```
 
 #### Configure NGNIX

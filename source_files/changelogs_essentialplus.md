@@ -5,6 +5,29 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.0.5] - 2022-10-21
+##### fixed
+- log file names using 12H timestamp instead of 24H
+##### added
+- Elasticsearch SSL verification setting (sslverification) to default/sample diskover config, copy to your config and set for your env
+    - ssl and certificate verification when connecting to ES
+##### changed
+- updates dupes finder post index plugin to v2.0.4
+    - log file name now uses 24H timestamp
+- updates auto clean post index plugin to v0.0.5
+    - log file name now uses 24H timestamp
+- updated auto tag post index plugin to v2.0.1
+    - log file name now uses 24H timestamp
+- updated es query report post index plugin to v0.1.2
+    - log file name now uses 24H timestamp
+- updated illegal file name post index plugin to v0.1.2
+    - log file name now uses 24H timestamp
+- updated index diff post index plugin to v2.0.2
+    - log file name now uses 24H timestamp
+- updated tag copier post index plugin to v2.0.1
+    - log file name now uses 24H timestamp
+
+
 #### [2.0.4-1] - 2022-10-11
 ##### UPDATE 1
 ##### changed
@@ -629,6 +652,20 @@ ___
 
 ___
 ### Diskover-web v2 Annual Subscription Editions Changelog
+
+#### [2.0.5] - 2022-10-21
+##### fixed
+- rootpath not getting set correct for multi-toppath indices
+- changing index in url params doesn't set the index or root path
+- other minor bug fixes and improvements
+##### added
+- ES_SSLVERIFICATION setting to default/sample web config file src/Constants.php.sample, copy to your config and set for your env
+    - ssl and certificate verification when connecting to ES
+- HIDE_SHAREDATA setting to default/sample web config file src/Constants.php.sample, copy to your config and set for your env 
+##### changed
+- updated api to v2.0.3
+    - set es search scroll context to 30s instead of 1m
+
 
 #### [2.0.4-1] - 2022-10-11
 ##### UPDATE 1

@@ -5,6 +5,8 @@ ___
 
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
+[🍿 Watch Quick Tips](https://vimeo.com/762454710)
+
 From the [search page](#file_search), you can isolate in one click and then export all the directories and/or files that are [recursive or non-recursive](#recursive) under a path.
 
 ![Image: File Search Path Recursive](images/image_file_search_path_recursive.png)

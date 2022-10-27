@@ -7,6 +7,8 @@ ___
 
 #### [🍿 Watch Quick Tips](https://vimeo.com/762454710/?target=_blank)
 
+<a href="[http://example.com/](https://vimeo.com/762454710)" target="_blank">🍿 Watch Quick Tips</a>
+
 From the [search page](#file_search), you can isolate in one click and then export all the directories and/or files that are [recursive or non-recursive](#recursive) under a path.
 
 ![Image: File Search Path Recursive](images/image_file_search_path_recursive.png)

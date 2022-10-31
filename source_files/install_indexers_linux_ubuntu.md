@@ -16,6 +16,7 @@ python --version
 apt-get update -y
 apt-get install -y python3-dev
 python3 -V
+apt install python3-pip
 pip3 -V
 ```
 

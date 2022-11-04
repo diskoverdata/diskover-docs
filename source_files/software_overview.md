@@ -1,6 +1,8 @@
 ___
 <a id="software_overview"></a>
 ## Software Overview
+
+#### [🍿 Watch Quick Tips](https://vimeo.com/766235515)
 ___
 
 ### What is Data Curation

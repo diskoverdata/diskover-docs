@@ -57,7 +57,7 @@ D) You can hide and unhide columns in the results pane via the **Column visibili
 
 E) You can **Search** for specific words and/or numbers and only the line items containing that value will remain visible - once you remove the characters from that field, the previous line items will come back.
 
-F) You can **Copy* paths:
+F) You can **Copy** paths:
   - If you want to copy all the paths in the results pane, you don't even have to select anything, just click the **Copy** button.
   - If you want to copy a block of paths, select the first line item, hold the SHIFT key, and click on the last line item.
   - If you want to copy random lines, hold the CTRL button for Windows or COMMAND for Mac, and select the desired lines.

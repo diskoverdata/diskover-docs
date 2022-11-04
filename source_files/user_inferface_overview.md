@@ -84,7 +84,10 @@ S) **Headers and Columns**: Columns can be added or removed in [Settings](#setti
 >- By using the arrows as specified in the legend.
 >- Choice of primary and secondary sort.
 >- Ascending or descending.
->- Start by clearing the [sorted columns by default](#default_columns_sort) by clicking on the colored arrows and then select the columns and orders you want.
+>- To assign a **primary sort** > just click on the column's arrow you desire, ascending or descending, and the green arrow will change to that column.
+>- To assign a **secondary sort** > start by clicking on the blue arrow to remove the current secondary sort, and then click on the column you want to apply the secondary sort to, ascending or descending.
+>
+>Start by clearing the [sorted columns by default](#default_columns_sort) by clicking on the colored arrows and then select the columns and orders you want.
 >![Image: Column Sorting](images/image_file_search_page_column_sorting.png)
 
 T) **Search results pane**: Section where you can either see the full content of a storage volume, a directory, or search results following a query.

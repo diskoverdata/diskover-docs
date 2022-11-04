@@ -23,6 +23,7 @@ ordered_documents:
   - user_basic_share.md
   - user_basic_smart_searches.md
   - user_basic_quick_search.md
+  - user_basic_save_query.md
   - user_basic_dashboard.md
   - user_advanced_intro.md 
   - user_advanced_tags.md

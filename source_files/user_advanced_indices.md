@@ -3,6 +3,8 @@
 ___
 ### Indices
 
+#### [🍿 Watch Quick Tips | Indexing and Live View](https://vimeo.com/767272643)
+
 > 🔆 &nbsp;Please refer to the [Elasticsearch Terminology](#elasticsearch_terminology) section for detailed information regarding the Diskover architecture as well as search limitations depending on which [Diskover solution](https://www.diskoverdata.com/solutions/) you are using.
 
 The default is set to use the most recent  indices. You may want to select multiple indices to search across different points in time for comparison purposes (ex: this file is not here today, was it there two days ago?). Selecting different indices is also needed for the [heatmap report](#heatmap).

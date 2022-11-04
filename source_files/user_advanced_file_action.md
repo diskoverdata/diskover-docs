@@ -31,7 +31,7 @@ H) **submit to Vantage** > To submit files for transcoding via [Telestream Vanta
 
 #### File Action > Live View
 
-#### [🍿 Watch Quick Tips](https://vimeo.com/767272643)
+#### [🍿 Watch Quick Tips | File Action > Live View](https://vimeo.com/767272643)
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
@@ -76,7 +76,7 @@ Please refer to the [User Guide Companion for the AJA Diskover Media Edition](ht
 
 #### File Action > Open in CineViewer
 
-#### [🍿 Watch Demo](https://vimeo.com/765285042)
+#### [🍿 Watch Demo | CineViewer Player](https://vimeo.com/765285042)
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 

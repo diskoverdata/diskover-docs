@@ -9,7 +9,7 @@ The options within File Actions push some boundaries around read-only files, sti
 
 This feature needs to be enabled by your System Administrator.
 
-![Image: Select File Action](image_file_action_options_20221104.png)
+![Image: Select File Action](images/image_file_action_options_20221104.png)
 
 A) You need to select files and/or directories before using C) **File Action** button.
 
@@ -33,23 +33,34 @@ H) **submit to Vantage** > To submit files for transcoding via [Telestream Vanta
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
-This feauture allows you to run a real-time scan of a directory, lists the content so you can search and pro-actively copy paths. This feature only works for on-premise storage at the moment and is not avaiable for cloud storage.
+This feauture allows you to view the content of a live directory(ies), lists the content so you can search and pro-actively copy paths. This feature only works for on-premise storage at the moment and is not avaiable for cloud storage.
 
-The typical use case is when you are not finding a file/directory in the indexed volumes within Diskover, you can access live directories and see if the files you are waiting to be onboarded will be available during the next indexing, as well as pro-actively copy paths for a work order.
+The typical use case is when you are not finding a file/directory in the indexed volumes within Diskover, you can access live directories and see if the files you are waiting to be onboarded will be available during the next indexing, as well as pro-actively copy paths for a work order for example.
 
 - Select one or multiple directories in the results pane.
 - Click the **File Action** icon.
-- Select **list dir**.
+- Select **live view**.
 
->🔆 &nbsp;If you want to **list dir** a single directory, you don't have to select it first; you can use the **gear icon** in the results pane by the directory name. 
+>🔆 &nbsp;If you want to **live view** a single directory, you don't have to select it first; you can use the **gears icon** in the results pane in line with the directory name. 
 
-This image is an example of what could be seen following **list dir** selection:
+This image is an example of what could be seen after selecting **live view**:
 
-![Image: Directory Live View](images/image_indices_file_action_live_view.png)
+![Image: Directory Live View](images/image_file_action_live_view_20221104.png)
 
-- This will give you a list of the file/directories in the live directory which will be indexed during the next scheduled task.
-- You can search using CTRL F for Windows or COMMAND F for Mac.
-- This view allows you to copy paths if needed, although you can only copy them one by one if they are random and not in a block.
+A) Time stamp of when you clicked **live view** in the search page - this time stamp will change is you refresh your browser tab, which will also refresh the data.
+
+B) You can opt to view between 10 to 1,000 line items per page.
+
+C) You can go **Up** one volume at a time - you can also drill down in the results pane.
+
+D) You can hide and unhide columns in the results pane via the **Column visibility** button.
+
+E) You can **Search** for specific words and/or numbers and only the line items containing that value will remain visible - once you remove the characters from that field, the previous line items will come back.
+
+F) You can **Copy* paths:
+  - If you want to copy all the paths in the results pane, you don't even have to select anything, just click the **Copy** button.
+  - If you want to copy a block of paths, select the first line item, hold the SHIFT key, and click on the last line item.
+  - If you want to copy random lines, hold the CTRL button for Windows or COMMAND for Mac, and select the desired lines.
 
 <p id="file_action_glim"></p>
 
@@ -57,7 +68,17 @@ This image is an example of what could be seen following **list dir** selection:
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
+Allows users to safely preview media files by launching GLIM seamlessly from Diskover.
+
 Please refer to the [User Guide Companion for the AJA Diskover Media Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#preview-media-files-with-telestream-glim) for details.
+
+#### File Action > Open in CineViewer
+
+![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
+Allows users to safely preview media files and launch the CineViewer Player seamlessly from Diskover.
+
+Please refer to the [User Guide Companion for the AJA Diskover Media Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#preview-media-files-with-cineviewer) for details.
 
 <p id="file_action_file_sequences"></p>
 
@@ -65,4 +86,16 @@ Please refer to the [User Guide Companion for the AJA Diskover Media Edition](ht
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
+Allows users to find all files in a sequence in one click.
+
 Please refer to the [User Guide Companion for the AJA Diskover Media Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#find-all-files-in-a-sequence) for details.
+
+<p id="file_action_vantage"></p>
+
+#### File Action > Open in GLIM
+
+![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
+Allows users to easily submit files for transcoding by launching Telestream Vantage seamlessly from Diskover.
+
+Please refer to the [User Guide Companion for the AJA Diskover Media Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#preview-media-files-with-telestream-glim) for details.

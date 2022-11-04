@@ -31,6 +31,8 @@ H) **submit to Vantage** > To submit files for transcoding via [Telestream Vanta
 
 #### File Action > Live View
 
+#### [🍿 Watch Quick Tips](https://vimeo.com/767272643)
+
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
 This feauture allows you to view the content of a live directory(ies), lists the content so you can search and pro-actively copy paths. This feature only works for on-premise storage at the moment and is not avaiable for cloud storage.
@@ -73,6 +75,8 @@ Allows users to safely preview media files by launching GLIM seamlessly from Dis
 Please refer to the [User Guide Companion for the AJA Diskover Media Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#preview-media-files-with-telestream-glim) for details.
 
 #### File Action > Open in CineViewer
+
+#### [🍿 Watch Demo](https://vimeo.com/765285042)
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 

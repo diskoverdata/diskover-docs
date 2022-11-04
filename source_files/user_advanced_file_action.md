@@ -31,9 +31,9 @@ H) **submit to Vantage** > To submit files for transcoding via [Telestream Vanta
 
 #### File Action > Live View
 
-#### [🍿 Watch Quick Tips | File Action > Live View](https://vimeo.com/767272643)
-
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
+
+#### [🍿 Watch Quick Tips | File Action > Live View](https://vimeo.com/767272643)
 
 This feauture allows you to view the content of a live directory(ies), lists the content so you can search and pro-actively copy paths. This feature only works for on-premise storage at the moment and is not avaiable for cloud storage.
 
@@ -45,7 +45,7 @@ The typical use case is when you are not finding a file/directory in the indexed
 
 >🔆 &nbsp;If you want to **live view** a single directory, you don't have to select it first; you can use the **gears icon** in the results pane in line with the directory name. 
 
-This image is an example of what could be seen after selecting **live view**:
+The **live view** directory will open in a new tab:
 
 ![Image: Directory Live View](images/image_file_action_live_view_20221104.png)
 
@@ -76,9 +76,9 @@ Please refer to the [User Guide Companion for the AJA Diskover Media Edition](ht
 
 #### File Action > Open in CineViewer
 
-#### [🍿 Watch Demo | CineViewer Player](https://vimeo.com/765285042)
-
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
+#### [🍿 Watch Demo | CineViewer Player](https://vimeo.com/765285042)
 
 Allows users to safely preview media files and launch the CineViewer Player seamlessly from Diskover.
 

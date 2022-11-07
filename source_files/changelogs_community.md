@@ -4,6 +4,11 @@ ___
 
 ### Diskover v2 Community Edition Changelog
 
+#### [2.0.6] - 2022-11-06
+##### changed
+- better handling of errors when importing alternate scanner modules
+
+
 #### [2.0.5] - 2022-10-21
 ##### fixed
 - log file names having 12H format instead of 24H
@@ -125,6 +130,15 @@ ___
 
 ___
 ### Diskover-web v2 Community Edition Changelog
+
+#### [2.0.6] - 2022-11-06
+##### fixed
+- issue searching for full paths to hidden dot files/folders and files with double extensions (e.g. tar.gz)
+- issue searching for full file path
+- issue with rootpath not updating and directory searches showing no results
+- es search error [ids] unknown field [type]
+- occasional php fatal error when search contains parent_path field
+
 
 #### [2.0.5] - 2022-10-21
 ##### fixed

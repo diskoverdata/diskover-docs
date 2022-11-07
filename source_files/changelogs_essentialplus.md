@@ -5,6 +5,11 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.0.6] - 2022-11-06
+##### changed
+- better handling of errors when importing alternate scanner modules
+
+
 #### [2.0.5] - 2022-10-21
 ##### fixed
 - log file names using 12H timestamp instead of 24H
@@ -652,6 +657,30 @@ ___
 
 ___
 ### Diskover-web v2 Annual Subscription Editions Changelog
+
+#### [2.0.6] - 2022-11-06
+##### fixed
+- issue searching for full paths to hidden dot files/folders and files with double extensions (e.g. tar.gz)
+- issue searching for full file path
+- issue with rootpath not updating and directory searches showing no results
+- ldap debug output
+- es search error [ids] unknown field [type]
+- show all not being toggled/checked on by default on tags, smart searches, cost analysis pages
+- issue with smart searches, tags, cost analysis pages links not searching across all indices and search results not matching values on analytics pages
+- issue with cost analysis and current top path only toggle not being used when clicking links for search query results
+- issue with cost analysis and clicking links not url encoding search query
+- occasional php fatal error when search contains parent_path field
+##### added
+- reduced search time when searching for paths
+- checkurlparams to fileactions.php include file
+    - can be used in file actions to not enforce url params (docid, docindex) check
+- diskover.js javascript to file actions include file fileactions_footer.php
+- comma separated $ values to cost analysis page
+- Live View v0.1.3 file action (enhanced listdir) in fileaction_samples directory
+- help text to cost analysis, smart searches, tags edit pages
+##### changed
+- set LDAP_USERSDN in default/sample config Constants.php.sample to empty string to search across whole domain for user
+
 
 #### [2.0.5] - 2022-10-21
 ##### fixed

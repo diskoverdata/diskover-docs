@@ -75,20 +75,35 @@ Search queries are case insensitive, even if upper or lowercases are used in the
 
 #### Isolated Characters
 
-When typing a word, a number, or a combination of both in the search bar, Diskover will look for those **isolated characters**. In order to "split" and find isolated characters, Diskover/Elasticsearch uses **isolators** like **spaces, underscores, hyphens, forward slashes, period, other punctuation, as well as upper cases** (aka CamelCase) to make sense of how a file name is construed.
+When typing a word, a number, or a combination of both in the search bar, Diskover will look for those **isolated characters**. In order to "split" and find isolated characters, Diskover/Elasticsearch uses **isolators** like **spaces, underscores, hyphens, forward slashes, period, other punctuation, as well as upper cases** (aka CamelCase).
 
 Of course, there are ways to find characters that are not isolated using [wild cards](#wildcards).
 
-##### Examples with Letters
-For example, if you launch a query with the word **eyes** and the following are your file names:
+##### Isolated Characters | Examples with Letters
 
-- **for_your_eyes_only.mov** > Diskover will find that file because that word is isolated between underscores.
+For example, if you launch a query with the word **eyes**:
 
-- **ForYourEyesOnly.mov** > Diskover will find that file because the first letters of each words being capitalized are recognized as separate words (aka CamelCase).
+- **for_your_eyes_only.mov** > this file would be found because **eyes** is isolated with underscores.
 
-- **foryoureyesonly.mov** > Diskover would NOT find that file because the whole string of characters looks like a single word.
+- **ForYourEyesOnly.mov** > this file would be found because the first letters of each words being capitalized are recognized as separate words (aka CamelCase).
 
-- **foryoureyes.mov** > Diskover would NOT find that file because the word **eyes** is only isolated at the end.
+- **foryoureyesonly.mov** > this file would NOT be found because the whole string of characters is read as a single word.
+
+- **4youreyes.mov** > this file would NOT be found because the word **eyes** is only isolated at the end.
+
+##### Isolated Characters | Examples with Numbers
+
+For example, if you launch a query with the number **12**:
+
+- **shot_12_20221110.mov** > this file would be found because **12** is isolated with underscores.
+
+- **Shot 12 20221110.mov** > this file would be found because **12** is isolated with spaces.
+
+- **shot12.mov** > this file would NOT be found because **12** is only isolated at the end.
+
+- **draft_V12.pdf** > this file would NOT be found because **12** is only isolated at the end AND CamelCase doesn't work with numbers.
+
+- **draft_123.pdf** > this file would NOT be found because **12** is not isolated at the end.
 
 <p id="parentheses_brackets"></p>
 
@@ -110,78 +125,84 @@ The square brackets `[ ]` or curly brackets `{ }` need be used to contain ranges
 <p id="wildcards"></p>
 
 ___
-### ? Wild Card
-
-**?** > is used to replace a single character. For example:
-
-- **eye?** > would find **eye** and **eyes**
-- **678??4** > would find **678344**
-
-___
 ### * Wild Card
 
-The * wild card is used to expand search results mostly due to [naming convention](#naming_convention) issues.
+The **\*** wild card is used to replace zero to many characters. It is the most popular and used wild card.
 
->🔆 &nbsp;A search might be a tad slower when using wild cards, especially when it is placed in front of your query, because it is searching a much larger amount of data.
+The * wild card is used to expand search results and is great to go around [naming convention](#naming_convention) issues.
 
-**\*** > is used to replace zero, one or many characters, is the most popular and used wild card.
+>🔆 &nbsp;A search might be a tad slower when using the * wild card, especially when it is placed in front of your query, because it is searching a much larger amount of data.
 
-#### How to use the * with Long Strings of Characters or Numbers
+>🔆 &nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > Settings > [Use predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much at all time. Throughout this user guide, we assume the predictive search has not been selected.
 
-When searching on a single word for example, the results might be limited if you type the word alone. Let's take the example of trying to find the following file **foryoureyesonly.mov**:
+#### How to Use the * | Examples with Letters
 
-- If you only type **eyes**, that file would not be found as Diskover would search for that [isolated word](#search_single_word) and not being mixed with other characters right before and/or after.
+If you would launch a search with **\*eyes***, the following files would be found:
+- foryoureyesonly
+- theseeyes_song
+- eyes18367
 
-- If you type **\*eyes** or **eyes\***, that file would not be found either as the beginning or the end would still be mixed with other characters.
+#### How to Use the * | Examples with Numbers
 
-- You would need to type **\*eyes\*** to find that file as it is preceded and succeeded by other characters, therefore you need the * on each side.
+If you would launch a search with **\*12***, the following files would be found:
+- draft12
+- draft_v12
+- draft123
 
-The same rule applies with numbers. For example:
+#### How to Use the * | Mix of Letters and Numbers
 
-- If the file name would be **SomethingGood_20161031.mp4**, you would need to either:
-	- Type the all the numbers **20161031** to find that file with that specific date.
-	- Or typing **201610\*** would find that file and all the files that have the year 2016 and the month of October, assuming that all those files were identified the same way with the same date format.
+For example, if you want to search for **season 1**, the file name could have different spelling like **S1**, **season 1**, **s01**, **s_1**, etc. 
 
-#### How to use the * with Season or Episode Number
+In order to expand your results to include all possibilities, a logical search syntax could be **s\*1** because the **\*** would catch everything in between the **s** and the **1**. Now, this would also find season 11 for example, but it's better to widen your results at first and then narrow them down once you have an idea of what you are dealing with.
 
-Let's do another example with a season's number for a show. For example, if you want to search for **season 1**, the file name could have different spelling like **S1**, **season 1**, **s01**, **s_1**, etc. 
+___
+### ? Wild Card
 
-In order to expand your results to include all possibilities, without expending too much either, a logical search syntax would be **s\*1** because the **\*** would catch everything in between the **s** and the **1**. Now, this would also find season 11 for example, but it's better to widen your results at first and then narrow them down once you have an idea of what you are dealing with.
+The **?** wild card is used to replace a single character. I can be used several times in a row to replace a specific number of variables.
 
->🔆 &nbsp;The same logic applies to episode numbers.
+A few examples of names that would be found when launching those queries:
 
-#### How to use the * to Find all Files in a Sequence
+- **scene?** > would find **scenes**, **scene1**...
+- **e?2** > would find **ep2**, **e02**, **e12**, **e22**...
+- **shot??1** > would find **shot001**, **shot101**, **shot991**...
+- **frame???** > would find **frame000** to **frame999**
 
-You can use the **\*** to find all files in a sequence, but depending on which subscription you purchase, you may also have access to an easier way via [File Action](#file_action).
-
-To find all files in a sequence using the **\***, if you type for example **img\*.dpx**, Diskover would find all files with the following similar names: img001.dpx, img002.dpx, etc.
-
-#### Using both * and ? in the Same Query
-Both **?** and **\*** wild cards can be used in the same query, for example searching for Johnny Smith: **John\* Sm?th**
-
->🔆 &nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > settings > [predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much. Throughout this chapter, we will assume the predictive search has not been selected.
+>🔆 &nbsp;Technically, the * could be used instead of typing several ? but then it would open results outside the specific range of characters you are aiming for, because the * replaces 0 to many characters. Therefore, the ? is sometimes better suited for preciseness.
 
 <p id="fuzziness"></p>
 
 ___
-### ~ Fuzziness Wild Card
+### ~ Wild Card
 
-**~** > is mostly used to catch human misspellings, and will return vast results if not used with any other restrictions.
+The **~** wild card is also called the **fuzziness** wild card. If is used to find similar words, and is mostly used to catch human misspellings.
 
-The query uses the  [Damerau-Levenshtein distance](https://en.wikipedia.org/wiki/Damerau-Levenshtein_distance)  to find all terms with a maximum of two changes, where a change is the insertion, deletion or substitution of a single character, or transposition of two adjacent characters.
+Be aware that launching a query with the **~** can use an enormous amount of memory and perform badly, ending in a "timed out" situation.
+
+The query uses the  [Damerau-Levenshtein distance](https://en.wikipedia.org/wiki/Damerau-Levenshtein_distance) to find all terms with a maximum of two changes, where a change is the insertion, deletion or substitution of a single character, or transposition of two adjacent characters.
 
 If used alone, by default the **~** will look for the maximum of 2 changes, but it is best practice to use **~1** in order to limit the changes to 1, which should be sufficient to catch 80% of all human misspellings. 
 
 A few examples of words that would be found with and without limiting the changes to 1:
 
-- **jungle~1** would find: jungle, juggle, jingly, jingle, jingles, etc.
-- **jungle~** would find: jungle, juggle, jingly, jingle, jingles, june, judge, single, bundle, uncle, etc.
+- **jungle~1** > would find: jungle, juggle, jingly, jingle, jingles, etc.
+- **jungle~** > would find: jungle, juggle, jingly, jingle, jingles, june, judge, single, bundle, uncle, etc.
 
->🔆 &nbsp;Do NOT mix fuzziness with other wild cards as it is not supported, and only one of the operators would be applied, example of what NOT to do: **jungle\*~1**
+___
+### Mixing Wild Cards
 
-Be aware that launching a query with the fuzziness operator can use an enormous amount of memory and perform badly, ending in a "timed out" situation.
+#### You Can Mix the ? and the *
 
->🔆 &nbsp;Wild cards can only be used in the main search bar at the top of the user interface. They cannot be used in the [Search within results](#search_within_results) field.
+Both **?** and **\*** wild cards can be used in the same query. 
+
+For example, assuming the naming convention used would be **scene01_frame000023**:
+
+**scene0?\_frame*** would find **scene** between **0 and 9** with **any frame number**
+
+#### You Can't Mix the ~ with Other Wild Cards
+
+Mixing the ~ wild card with the * or the ? wild cards is not supported. 
+
+Example of what NOT to do: **jungle\*~1**
 
 <p id="operators"></p>
 
@@ -352,6 +373,9 @@ The reason being that the file extension letters might be part of the file name 
 
 - If only typing **jpg** in the search bar, the results would include all files with **.jpg** extension, but could also return a file with the name **montage_jpg_png_images.gif**
 
+___
+### Golden Rules When Searching
 
-
-
+1. Expand your results.
+1. Validate your results as you go and make sure that you are not missing any files.
+1. Readjust your querie if needed.

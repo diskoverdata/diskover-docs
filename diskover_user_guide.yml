@@ -17,12 +17,13 @@ ordered_documents:
   - user_basic_intro.md
   - user_basic_file_search.md
   - user_basic_search_filters.md
+  - user_basic_quick_search.md
+  - user_basic_search_within_results.md  
+  - user_basic_search_path_recursive.md
   - user_basic_line_selection.md
   - user_basic_export.md
-  - user_basic_search_path_recursive.md
   - user_basic_share.md
   - user_basic_smart_searches.md
-  - user_basic_quick_search.md
   - user_basic_save_query.md
   - user_basic_dashboard.md
   - user_advanced_intro.md 

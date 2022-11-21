@@ -204,57 +204,65 @@ Mixing the ~ wild card with the * or the ? wild cards is not supported.
 
 Example of what NOT to do: **jungle\*~1**
 
-But you can mix the **~** with other criteria/[**operators**](#operators). Example:
+But you can mix the **~** with other criteria/[operators](#operators). Example:
 
 jungle~1 and e*\2
 
 <p id="operators"></p>
 
 ___
-### Operators
+### Operators for Multiple Criteria
 
-You can use operators **and or not** to narrow down a manual search. 
+There are 3 operators: **and**, **not**, **or**, and they are not case sensitive. Operators are needed when using multiple criteria in a single query. 
 
->🔆 &nbsp;IMPORTANT! When searching with more than one criteria, you don't need to put **and** if that is the operator you would otherwise type, as Diskover uses the **and** operator by default when no others are used. See examples below.
+#### AND Operator
 
-Let's take the series **The Jungle Book** and that a similar naming convention was respected: **thejunglebook_s01_ep05_en.mov** (series The Jungle Book, season 1, episode 5, English sub)
+Example:
 
-Here are some examples of queries using operators to pinpoint your searches.
+**jurassic and s\*1** > would find **jurassic** isolated anywhere in the path/file name and **seasons ending with 1**.
 
-- **\*jungle\* and s01** would find all episodes within season 1, in any language or you could just type **\*jungle\* s01** as the **and** is used by default as previously explained.
+>🔆 &nbsp;IMPORTANT TIME SAVER!Note that **and** is assumed if no operators are typed in between criteria, so you would get the same results as described above when searching with **jurassic s\*1**
 
-- **\*jungle\* and s01 not e\*5** would find season 1 in any languages and all episodes except the ones with 5 in them.
+#### NOT Operator
 
-When using more than one, but especially a mix of different operators in a query, it is highly recommended to use parentheses, example **(s\*1 or s\*2)**, to group criteria as described in the [next section](#complex_queries), in order to help Diskover make sense of the query.
+Example:
 
->🔆 &nbsp;Operators can only be used in the main search bar at the top of the user interface. They cannot be used in the [Search within results](#search_within_results) field.
- 
+**jurassic and s\*1 not e\*5** > would find **jurassic** isolated anywhere in the path/file name and **seasons ending with 1** but would exclude **episodes ending with 5**.
+
+#### OR Operator
+
+When using the **or** operator, you will need to group the criteria around the that operator in order for Diskover to make sense of the query. Think of this as building formulas in Excel, Excel will want you to group criteria in order to understand what you want to accomplish; Diskover works on the same premise.
+
+Example:
+
+**jurassic and (s\*1 or s\*2)** > would find **jurassic** isolated anywhere in the path/file name and **seasons ending with 1 or 2**.
+
  <p id="complex_queries"></p>
  
 ___
-### The Need of Grouping Criteria for Complex Queries
+### Complex Queries | Multiple Criteria and Operators
 
-When using more than one operator, it is recommended to use parentheses **( )** in order to group some elements and help Diskover make sense of the query. Think of this as the same premise as building formulas in Excel where you need to group criteria in order for Excel to understand what you are trying to accomplish.
+When using several criteria and more than one [operator](#operators), it is recommended to use parentheses **( )** in order to group some elements and help Diskover make sense of the query. Think of this as building formulas in Excel, Excel will want you to group criteria in order to understand what you want to accomplish; Diskover works on the same premise.
 
->🔆 &nbsp;You always need to group criteria when using the operator **or**.
+>🔆 &nbsp;You always need to group criteria when using the **or** operator.
 
-A few examples while still using the file name structure **thejunglebook_s01_ep05_en.mov**:
+A few examples with using the file name structure **thejunglebook_s01_ep05_en.mov**:
 
-#### Examples with Single Grouping
+##### Examples with Single Grouping
 
-- **\*jungle\* AND (s\*1 OR s\*2)** > would find all files related to season 1 and season 2 for The Jungle Book series.
+**\*jungle\* AND (s\*1 OR s\*2)** > would find all files related to season 1 and season 2 for The Jungle Book series.
 
-- **\*jungle\* AND e\*5 AND (en OR it)** > would find all Italian (assuming **it** was respected in the naming convention) and English translations of episode 5.
+**\*jungle\* AND e\*5 AND (en OR it)** > would find all Italian (assuming **it** was respected in the naming convention) and English translations of episode 5.
 
-- **\*jungle\* AND s\*1 (AND extension:(mov OR mp4))** > would find all files of season 1 with .mov and .mp4 extension, a less precise query could be **\*jungle\* AND s\*1 AND (mov OR mp4)**
+**\*jungle\* AND s\*1 (AND extension:(mov OR mp4))** > would find all files of season 1 with .mov and .mp4 extension, a less precise query could be **\*jungle\* AND s\*1 AND (mov OR mp4)**
 
 Another type of example with words only, and let's use **New York City**. If you only want to find files that have all those 3 words in them, you can type **(new york city)** assuming that all the words are isolated of course.
 
-#### Examples with Multiple Groupings
+##### Examples with Multiple Groupings
 
-- **\*jungle\* AND (s\*1 OR s\*2) (NOT (en OR it))** > still using the same file name example as above, would find all files for season 1 and season 2, but in all other languages than English or Italian.
+**\*jungle\* AND (s\*1 OR s\*2) (NOT (en OR it))** > still using the same file name example as above, would find all files for season 1 and season 2, but in all other languages than English or Italian.
 
-- Let say that you have files with "quick brown fox", "quick fox", "brown fox", "Fox News", etc. this would be the query to use **((quick AND fox) OR (brown AND fox) OR fox) AND NOT news** to respect the following conditions:
+Let say that you have files with "quick brown fox", "quick fox", "brown fox", "Fox News", etc. this would be the query to use **((quick AND fox) OR (brown AND fox) OR fox) AND NOT news** to respect the following conditions:
 	- **fox** must be present
 	-  **news** must be excluded
 	-  **quick** and **brown** are optional — their presence increases the relevance

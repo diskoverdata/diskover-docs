@@ -204,6 +204,10 @@ Mixing the ~ wild card with the * or the ? wild cards is not supported.
 
 Example of what NOT to do: **jungle\*~1**
 
+But you can mix the **~** with other criteria/[**operators**](#operators). Example:
+
+jungle~1 and e*\2
+
 <p id="operators"></p>
 
 ___

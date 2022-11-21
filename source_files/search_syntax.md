@@ -246,7 +246,7 @@ When using several criteria and more than one [operator](#operators), it is reco
 
 A few examples with using the file name structure **thejunglebook_s01_ep05_en.mov**:
 
-##### Examples with Single Grouping
+#### Examples with Single Grouping
 
 **\*jungle\* AND (s\*1 OR s\*2)** > would find all files related to season 1 and season 2 for The Jungle Book series.
 
@@ -256,7 +256,7 @@ A few examples with using the file name structure **thejunglebook_s01_ep05_en.mo
 
 Another type of example with words only, and let's use **New York City**. If you only want to find files that have all those 3 words in them, you can type **(new york city)** assuming that all the words are isolated of course.
 
-##### Examples with Multiple Groupings
+#### Examples with Multiple Groupings
 
 **\*jungle\* AND (s\*1 OR s\*2) (NOT (en OR it))** > still using the same file name example as above, would find all files for season 1 and season 2, but in all other languages than English or Italian.
 

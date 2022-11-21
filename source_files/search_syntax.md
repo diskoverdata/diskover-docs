@@ -1,10 +1,17 @@
 <p id="search_syntax"></p>
 
 ___
-## Manual Search Syntax
+## Syntax Rules for Manual Queries
 ___
 
-Until you get familiar with Diskover, we strongly recommend using the built-in search tools and [filters](#filters) available in the interface when trying to achieve complex queries. Depending on what you are looking for, [quick searches](#quick_search) can also be an easy way to search.
+Until you get familiar with Diskover and when trying to achieve complex queries, we strongly recommend using the built-in search tools like the [filters](#filters), [quick searches](#quick_search), or [search within results](#search_within_results) that are available directly in the interface. Those built-in tools can be combined with manual queries for extremly precise results.
+
+There are many ways to search with Diskover and get to the same results; you can use the built-in tools, manual queries, or a combination of both. It all depends on your personal preferences and comfort level.
+
+This chapter covers the rules around manual queries. You can navigate directly to the built-in tools sections via these links:
+- [Filters](#filters)
+- [Quick searches](#quick_search)
+- [Search within results](#search_within_results)
 
 The examples used in this chapter are media and entertainment related, but the same logic can be applied to any type of industry.
 
@@ -17,35 +24,42 @@ As Diskover uses Elasticsearch in the backend, all search syntax within Diskover
 
 [https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html)
 
+<p id="curret_dir"></p>
+
+___
+### Limiting Your Searches to a Specific Path
+
+Diskover searches all your [volumes](#storage_volume) at all time, either your data is in the cloud or on-premise. 
+
+If needed, you can limit your searches to a specific path via the [Current Dir](#current_dir) toggle button located at the right of the search bar. You can also limit your searches to a certain path by using the [filters](#filters) or by [selecting a single index in the indices page](#index_selection).
+
 <p id="naming_convention"></p>
 
 ___
 ### Search Problems Resulting from Naming Conventions
 
-A majority of organizations have issues with naming convention. Your search results might be limited if you try to be too restrictive when searching. For example, files associated with the movie **For Your Eyes Only** might be named:
+Many organizations have issues with naming conventions. Your search results might be limited if you try to be too restrictive when searching. For example, files associated with the movie **For Your Eyes Only** might be named:
 
 - ForYourEyesOnly
 - 4YourEyesOnly
 - foryoureyesonly
 - for_your_eyes_only
-- for your eyes
+- for your eyes only
 - Not mentioning all the possible misspellings. 
 
 Other examples of naming convention issues:
 
-- Show season: s01, s1, s_01, season1
+- Show season: s01, s1, s01, s_01, season1
 - Episodes: ep5, eps5, e5, e05, ep_05, ep_5, 05
 
 Unless you know that a strict naming convention was followed, trying to launch a query with very specific criteria may limit your results and you might think that some files are missing.
 
-Ways to either pinpoint or expand your results will be explained in this chapter in order to go around the naming convention issues, and make sure you are not missing any files in your results.
+Ways to either pinpoint or expand your results will be explained in this chapter in order to go around the naming convention issues, and make sure you are not missing files in your results.
 
 ___
-### Basic Search and Query Rules
+### Understanding the Basics of Manual Queries | Isolated Characters
 
 - When typing a manual query, the criteria need to be typed in the [search bar](#search_bar).
-- There are several ways to achieve the same search results and different methods will be explained in this chapter; from built-in tools to manual searches, as well as a combination of both, it all depends on your personal preferences and comfort level.
-- We highly recommend using all the built-in tools at first (ex: [filters](#filters), [quick search](#quick_search)), especially when searching on [time](#search_time) or [file size](#search_size), and until you get more comfortable with queries and their structures.
 
 >🔆 &nbsp;Pay attention to all the messages in the green and blue information bars in the user interface, they are very helpful!
 
@@ -62,10 +76,13 @@ Search queries are case insensitive, even if upper or lowercases are used in the
 
 <p id="search_single_word"></p>
 
-#### The Logic Behind Searching on a Single Word
+#### Understanding the Basics of Manual Queries | Isolated Characters
 
-When typing a single word in the search bar, Diskover will look for that **isolated word**. In order to "split" and find isolated words, Diskover/Elasticsearch uses **tokenizers** like **space, underscore, hyphen, forward slash, period, other punctuation, as well as upper cases** (aka CamelCase) to make sense of how a file name is construed. 
+When typing a word, a number, or a combination of both in the search bar, Diskover will look for those **isolated characters**. In order to "split" and find isolated characters, Diskover/Elasticsearch uses **isolators** like **spaces, underscores, hyphens, forward slashes, period, other punctuation, as well as upper cases** (aka CamelCase) to make sense of how a file name is construed.
 
+Of course, there are ways to find characters that are not isolated using [wild cards](#wildcards).
+
+##### Examples with Letters
 For example, if you launch a query with the word **eyes** and the following are your file names:
 
 - **for_your_eyes_only.mov** > Diskover will find that file because that word is isolated between underscores.

@@ -190,23 +190,21 @@ A few examples of words that would be found with and without limiting the change
 ___
 ### Mixing Wild Cards
 
-#### You Can Mix the ? and the *
+#### Mixing the ? and the *
 
 Both **?** and **\*** wild cards can be used in the same query. 
 
 For example, assuming the naming convention used would be **scene01_frame000023**:
 
-**scene0?\_frame*** would find **scene** between **0 and 9** with **any frame number**
+**scene0?\_frame*** > would find **scene** between **0 and 9** with **any frame number**
 
-#### You Can't Mix the ~ with Other Wild Cards
+#### Can't Mix the ~ with Other Wild Cards
 
 Mixing the ~ wild card with the * or the ? wild cards is not supported. 
 
 Example of what NOT to do: **jungle\*~1**
 
-But you can mix the **~** with other criteria/[operators](#operators). Example:
-
-jungle~1 and e*\2
+But you can mix the **~** with other criteria/[operators](#operators), ex: **jungle~1 and e*\2**
 
 <p id="operators"></p>
 

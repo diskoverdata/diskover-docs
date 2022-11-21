@@ -46,7 +46,7 @@ H) **Launch a search**: Same function as a  **Return**  key.
 
 <p id="current_dir"></p>
 
-I)  **Current Dir**: Toggle right to narrow your results to a selected storage volume and/or directory.
+I)  **Current Dir**: Toggle right to narrow your searches/results to a selected storage volume and/or directory.
 
 J) [**Search Filters**](#filters): Built-in filters to refine your searches.
 
@@ -56,12 +56,13 @@ L) [**Settings**](#settings): To personalize your interface via the settings, ac
 
 <p id="green_info_bar"></p>
 
-M) **Green Info bar**: Depending on your interaction, this bar will give you one, or a combination, of the following:
+M) **Green Info bar**: This bar displays the following details:
 
->- Details on the results of your search, ex:  _Showing 1 to 100 of 270 items found in 0.0201 seconds. Results size: 664.3 GB (this page)_
->- Which storage volume/directory you are pointing to, ex:  _parent_path:/mnt/media_
->- Shows search query either you are typing a manual query or using a built-in search tool (Filters, Quick Search, etc.), ex:  _Search query: mov and tags:archive_
->- This bar can be closed clicking the  **X**  at the far right.
+>- How many items were found during a query or just by drilling-down, ex:  _Showing 1 to 100 of 270 items found in 0.0201 seconds._
+>- Size resulting from a search or drill-down, ex: _Results size: 664.3 GB (this page)_
+>- Shows the storage volume/directory you are pointing to, ex:  _parent_path:/mnt/media_
+>- Shows search query either you are typing a manual query or using a built-in search tool ([Filters](#filters), [Quick Search](#quick_search), etc.), ex:  _Search query: mov and tags:archive_
+>- This bar can be cleared by clicking the  **X**  at the far right.
 
 <p id="path_navigation_bar"></p>
 

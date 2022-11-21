@@ -176,7 +176,7 @@ ___
 
 The **~** wild card is also called the **fuzziness** wild card. If is used to find similar words, and is mostly used to catch human misspellings.
 
-Be aware that launching a query with the **~** can use an enormous amount of memory and perform badly, ending in a "timed out" situation.
+>🔆 &nbsp;Be aware that launching a query with the **~** can use an enormous amount of memory and perform badly, ending in a "timed out" situation.
 
 The query uses the  [Damerau-Levenshtein distance](https://en.wikipedia.org/wiki/Damerau-Levenshtein_distance) to find all terms with a maximum of two changes, where a change is the insertion, deletion or substitution of a single character, or transposition of two adjacent characters.
 

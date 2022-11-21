@@ -84,16 +84,6 @@ server {
 }
 ```
 
-🔴 &nbsp;Make the following change in the /etc/nginx/conf.d/diskover-web.conf. Change the following line from:
-```
-fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
-```
-
-🔴 &nbsp;To:
-```
-fastcgi_pass unix:/var/run/php-fpm/www.sock;
-```
-
 🔴 &nbsp;Restart NGINX:
 ```
 systemctl restart nginx

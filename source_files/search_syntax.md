@@ -6,6 +6,11 @@ ___
 
 Until you get familiar with Diskover and when trying to achieve complex queries, we strongly recommend using the built-in search tools like the [filters](#filters), [quick searches](#quick_search), or [search within results](#search_within_results) that are available directly in the interface. Those built-in tools can be combined with manual queries for extremly precise results.
 
+The examples used in this chapter are mostly media and entertainment related, but the same logic can be applied to any type of industry.
+
+>🔆 &nbsp;Pay attention to all the messages in the green and blue information bars in the user interface, they are very helpful!
+
+#### Many Ways to Search and Get to the Same Results
 There are many ways to search with Diskover and get to the same results; you can use the built-in tools, manual queries, or a combination of both. It all depends on your personal preferences and comfort level.
 
 This chapter covers the rules around manual queries. You can navigate directly to the built-in tools sections via these links:
@@ -13,9 +18,11 @@ This chapter covers the rules around manual queries. You can navigate directly t
 - [Quick searches](#quick_search)
 - [Search within results](#search_within_results)
 
-The examples used in this chapter are media and entertainment related, but the same logic can be applied to any type of industry.
+#### Golden Rules of Searching
 
->🔆 &nbsp;Pay attention to all the messages in the green and blue information bars in the user interface, they are very helpful!
+1. Expand your results.
+1. Validate your results as you go and make sure that you are not missing any files.
+1. Readjust your querie if needed.
 
 The list of possible search queries and syntax is exhaustive therefore only the basics of manual searches will be explained in this chapter.
 
@@ -383,9 +390,3 @@ The reason being that the file extension letters might be part of the file name 
 
 - If only typing **jpg** in the search bar, the results would include all files with **.jpg** extension, but could also return a file with the name **montage_jpg_png_images.gif**
 
-___
-### Golden Rules When Searching
-
-1. Expand your results.
-1. Validate your results as you go and make sure that you are not missing any files.
-1. Readjust your querie if needed.

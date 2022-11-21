@@ -192,7 +192,7 @@ ___
 
 #### Mixing the ? and the *
 
-Both **?** and **\*** wild cards can be used in the same query. 
+Both **?** and **\*** wild cards can be used in the same criteria. 
 
 For example, assuming the naming convention used would be **scene01_frame000023**:
 
@@ -200,11 +200,11 @@ For example, assuming the naming convention used would be **scene01_frame000023*
 
 #### Can't Mix the ~ with Other Wild Cards
 
-Mixing the ~ wild card with the * or the ? wild cards is not supported. 
+Mixing the ~ wild card with the * or the ? wild cards in the same criteria is not supported. 
 
 Example of what NOT to do: **jungle\*~1**
 
-But you can mix the **~** with other criteria/[operators](#operators), ex: **jungle~1 and e\*2**
+But you can mix the **~** with other criteria and [operators](#operators), ex: **jungle~1 and e\*2**
 
 <p id="operators"></p>
 

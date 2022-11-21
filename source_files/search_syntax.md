@@ -15,6 +15,8 @@ This chapter covers the rules around manual queries. You can navigate directly t
 
 The examples used in this chapter are media and entertainment related, but the same logic can be applied to any type of industry.
 
+>🔆 &nbsp;Pay attention to all the messages in the green and blue information bars in the user interface, they are very helpful!
+
 The list of possible search queries and syntax is exhaustive therefore only the basics of manual searches will be explained in this chapter.
 
 ___
@@ -24,14 +26,18 @@ As Diskover uses Elasticsearch in the backend, all search syntax within Diskover
 
 [https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html)
 
-<p id="curret_dir"></p>
+<p id="limiting_searches"></p>
 
 ___
 ### Limiting Your Searches to a Specific Path
 
 Diskover searches all your [volumes](#storage_volume) at all time, either your data is in the cloud or on-premise. 
 
-If needed, you can limit your searches to a specific path via the [Current Dir](#current_dir) toggle button located at the right of the search bar. You can also limit your searches to a certain path by using the [filters](#filters) or by [selecting a single index in the indices page](#index_selection).
+If needed, you can limit your searches to a specific path:
+
+1. You can use **[Current Dir]**(#current_dir) toggle button located at the right of the search bar once you've selected the particular path (volumes and/or directory) which you want to use to narrow your searches. Be aware that this selection will remain active until you go back and deactivate that toggle button.
+1. You can use the **[filters]**(#filters), top right corner **search path** and select your option from the drop-down list. Remember that filters remain active until you go back and clear them.
+1.  You can **select a specific index** following the instructions in the [indices section](#indices) of this guide. Be aware that this selection will remain active until you go back and reselect **Always use latest indices**.
 
 <p id="naming_convention"></p>
 
@@ -56,27 +62,18 @@ Unless you know that a strict naming convention was followed, trying to launch a
 
 Ways to either pinpoint or expand your results will be explained in this chapter in order to go around the naming convention issues, and make sure you are not missing files in your results.
 
+<p id="search_single_word"></p>
+
 ___
-### Understanding the Basics of Manual Queries | Isolated Characters
-
-- When typing a manual query, the criteria need to be typed in the [search bar](#search_bar).
-
->🔆 &nbsp;Pay attention to all the messages in the green and blue information bars in the user interface, they are very helpful!
-
-
-#### Range of Search
-
-- Unless you select a specific [storage volume and/or directory](#limiting_searches), Diskover will search all the storage volumes and their parent paths during a manual search.
+### Understanding the Basics of Manual Queries
 
 #### Case Sensitivity
 
-Search queries are case insensitive, even if upper or lowercases are used in the file name or path. Nonetheless, there are the few exceptions where queries are case sensitive:
+Search queries are case insensitive, even if upper or lowercases are used in the file name or path. Nonetheless, there are few exceptions where queries are case sensitive:
 - When [searching on time](#search_time).
 - When searching on [field names](#search_field_names).
 
-<p id="search_single_word"></p>
-
-#### Understanding the Basics of Manual Queries | Isolated Characters
+#### Isolated Characters
 
 When typing a word, a number, or a combination of both in the search bar, Diskover will look for those **isolated characters**. In order to "split" and find isolated characters, Diskover/Elasticsearch uses **isolators** like **spaces, underscores, hyphens, forward slashes, period, other punctuation, as well as upper cases** (aka CamelCase) to make sense of how a file name is construed.
 
@@ -355,12 +352,6 @@ The reason being that the file extension letters might be part of the file name 
 
 - If only typing **jpg** in the search bar, the results would include all files with **.jpg** extension, but could also return a file with the name **montage_jpg_png_images.gif**
 
-<p id="limiting_searches"></p>
 
-___
-### Limiting your Searches to a Specific Path
 
-When wanting to limit your searches to a specific storage volume or directory, there are a many ways to achieve that, here are the easiest ones:
-1. You can use **current dir** toggle button at the top of the user interface once you've selected the particular path (volumes and/or directory) which you want to use to narrow your searches. Be aware that this selection will remain active until you go back and move that toggle button.
-1. You can use the [filters](#filters), top right corner **search path** and select your option from the drop-down list. Remember that filters remain active until you go back and clear them.
-1.  To search on a specific volume, select the desired index following the instructions in the [indices section](#indices) of this guide. Be aware that this selection will remain active until you go back and reselect **Always use latest indices**.
+

@@ -203,7 +203,7 @@ But you can mix the **~** with other criteria and [operators](#operators), ex: *
 <p id="operators"></p>
 
 ___
-### Operators for Multiple Criteria
+### Operators When Using Multiple Criteria
 
 There are 3 operators: **and**, **not**, **or**, and they are not case sensitive. Operators are needed when using multiple criteria in a single query. 
 
@@ -232,7 +232,7 @@ Example:
  <p id="complex_queries"></p>
  
 ___
-### Complex Queries | Multiple Criteria and Operators
+### Complex Queries and Grouping Criteria
 
 When using several criteria and more than one [operator](#operators), it is recommended to use parentheses **( )** in order to group some elements and help Diskover make sense of the query. Think of this as building formulas in Excel, Excel will want you to group criteria in order to understand what you want to accomplish; Diskover works on the same premise.
 

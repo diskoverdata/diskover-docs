@@ -36,7 +36,7 @@ As Diskover uses Elasticsearch in the backend, all search syntax within Diskover
 <p id="naming_convention"></p>
 
 ___
-### Search Problems Resulting from Naming Conventions
+### Search Issues Resulting from Naming Conventions
 
 Many organizations have issues with naming conventions. Your search results might be limited if you try to be too restrictive when searching. For example, files associated with the movie **For Your Eyes Only** might be named:
 

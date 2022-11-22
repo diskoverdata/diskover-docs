@@ -121,6 +121,8 @@ The square brackets `[ ]` or curly brackets `{ }` need be used to contain ranges
 ___
 ### * Wild Card
 
+#### [🍿 Watch Quick Tips](https://vimeo.com/772196768)
+
 The **\*** wild card is used to replace zero to many characters. It is the most popular and used wild card.
 
 The * wild card is used to expand search results and is great to go around [naming convention](#naming_convention) issues.
@@ -152,6 +154,8 @@ In order to expand your results to include all possibilities, a logical search s
 ___
 ### ? Wild Card
 
+#### [🍿 Watch Quick Tips](https://vimeo.com/772196768)
+
 The **?** wild card is used to replace a single character. I can be used several times in a row to replace a specific number of variables.
 
 A few examples of names that would be found when launching those queries:
@@ -168,6 +172,8 @@ A few examples of names that would be found when launching those queries:
 ___
 ### ~ Wild Card
 
+#### [🍿 Watch Quick Tips](https://vimeo.com/772196768)
+
 The **~** wild card is also called the **fuzziness** wild card. If is used to find similar words, and is mostly used to catch human misspellings.
 
 >🔆 &nbsp;Be aware that launching a query with the **~** can use an enormous amount of memory and perform badly, ending in a "timed out" situation.
@@ -183,6 +189,8 @@ A few examples of words that would be found with and without limiting the change
 
 ___
 ### Mixing Wild Cards
+
+#### [🍿 Watch Quick Tips](https://vimeo.com/772196768)
 
 #### Mixing the ? and the *
 

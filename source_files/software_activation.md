@@ -30,7 +30,7 @@ cd /opt/diskover
 python3 diskover_lic.py -g
 ```
 
->_Note:_ If you change the Elasticsearch host/ip or number of nodes in the ES cluster, you will need new license keys.
+>_Note:_ If your Elasticsearch cluser ID (unique id created at install) changes, you will need new license keys.
 
 ### License Key Locations
 

@@ -1,7 +1,7 @@
 <p id="limiting_searches"></p>
 
 ___
-## Limiting Your Searches to a Specific Path
+### Limiting Your Searches to a Specific Path
 ___
 
 Diskover searches all your [volumes](#storage_volume) at all time, either your data is in the cloud or on-premise. 

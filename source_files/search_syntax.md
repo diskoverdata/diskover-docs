@@ -69,6 +69,8 @@ Search queries are case insensitive, even if upper or lowercases are used in the
 
 #### Isolated Characters
 
+#### [🍿 Watch Quick Tips](https://vimeo.com/770024733)
+
 When typing a word, a number, or a combination of both in the search bar, Diskover will look for those **isolated characters**. In order to "split" and find isolated characters, Diskover/Elasticsearch uses **isolators** like **spaces, underscores, hyphens, forward slashes, period, other punctuation, as well as upper cases** (aka CamelCase).
 
 Of course, there are ways to find characters that are not isolated using [wild cards](#wildcards).

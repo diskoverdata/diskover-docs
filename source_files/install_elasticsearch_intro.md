@@ -2,7 +2,7 @@ ___
 ## Elasticsearch Installation
 ___
 
-Diskover requires an Elasticsearch 7.x environment.
+Diskover requires an Elasticsearch 7.x environment. Please not that Elasticsearch 8.x is not supported at the moment.
 >- One node is sufficient for initial testing.
 >- Production deployments should be configured with a [minimum of 3 nodes to achieve redundancy](https://docs.diskoverdata.com/diskover_installation_guide/#elasticsearch-requirements) in the Elasticsearch configuration.
 >- You can find the latest 7.x.x version on the [Elasticsearch download page](https://www.elastic.co/downloads/elasticsearch).

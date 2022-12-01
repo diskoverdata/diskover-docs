@@ -50,6 +50,8 @@ Once the repository is added, you can proceed and install Elasticsearch.
 
 #### Install Elasticsearch 7.x:
 
+>_Note_: Elasticsearch 8.x is not supported at the moment.
+
 The following section describes installing Elasticsearch on Linux Ubuntu.
 
 🔴 &nbsp;Update the repository cache and install Elasticsearch with the following command:

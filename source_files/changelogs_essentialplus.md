@@ -5,6 +5,24 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.0.7] - 2022-12-04
+##### fixed
+- exception handling for Elasticsearch exception TransportError during bulk uploads
+- fixed occasional directory scanning hanging at start of scan when searching for subdirs to start threads for calculating thread directory depth
+##### added
+- es field copier post-index plugin v0.1
+- log directry paths at start of scan when searching for subdirs to start threads for calculating thread directory depth when using -V or debug logging
+##### changed
+- reduced time to search for sub dirs at start of scan when calculating thread directory depth
+- updated dircache alt scanner to v0.0.9
+    - improved handling of errors for directory stat FileNotFoundError no such file or directory
+- updated dupes finder plugin to v2.0.5
+    - added index mappings for hash (keyword) and is_dupe (boolean) fields to index, allows for sorting by hash in diskover-web, Kibana, etc.
+    - stopped logging stats when hashing complete
+- updated diskoverd task worker daemon to v2.0.4
+    - added check for additional cli options/tags for index tasks
+
+
 #### [2.0.6] - 2022-11-06
 ##### changed
 - better handling of errors when importing alternate scanner modules
@@ -657,6 +675,32 @@ ___
 
 ___
 ### Diskover-web v2 Annual Subscription Editions Changelog
+
+#### [2.0.7] - 2022-12-04
+##### fixed
+- searches using multiple parent_path fields does not return results from multiple indices
+- toggling current top path only in tags or cost analysis pages shows no tags/no cost data found in the index and unable to toggle current top path only
+- tables not display correctly on user analysis page when no cost data in index
+- issue showing no items found in search results when sort order set on a field that not all selected indices have
+- exception handling for close function call for plugins and alt scanners
+- issue with UNIXPERMS_FILTERING_ENABLED set to TRUE in config
+- php warning when reloading indices and there is a corrupt index
+- added check in smart searches edit page for exclamation ! at start of smart search name
+##### added
+- current directory only toggle button to smart searches, user analysis, tags, cost analysis pages
+- load path in smart searches, user analysis, tags, cost analysis pages to path dropdown button on search results and view info pages
+- user alert when trying to sort on a field not found in index or trying to sort on a text field
+- cli options/flags input field to index task form in Task Panel
+- date/time to export file name
+- indication of how many indices selected on select indices page
+- number and name of indices to delete confirmation on select indices page
+- example indexing tasks to tasks.json.sample and templates.json.sample
+##### changed
+- when exporting to csv file, any array fields (e.g. media_info, tags) now have separate columns for each sub-field (e.g. media_info.resolution, tags.0)
+- updated api to v2.0.4
+    - added totalhits to return json for search and tags endpoints
+- made show files only toggle checkbox the default on smart searches, tags, cost analysis pages
+
 
 #### [2.0.6] - 2022-11-06
 ##### fixed

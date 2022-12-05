@@ -12,14 +12,15 @@ ___
 ##### added
 - es field copier post-index plugin v0.1
 - log directry paths at start of scan when searching for subdirs to start threads for calculating thread directory depth when using -V or debug logging
+- utf-8 encoding to all logging file handlers for diskover.py, diskoverd, and all post-index plugins
 ##### changed
 - reduced time to search for sub dirs at start of scan when calculating thread directory depth
 - updated dircache alt scanner to v0.0.9
     - improved handling of errors for directory stat FileNotFoundError no such file or directory
-- updated dupes finder plugin to v2.0.5
+- updated dupes finder plugin to v2.0.6
     - added index mappings for hash (keyword) and is_dupe (boolean) fields to index, allows for sorting by hash in diskover-web, Kibana, etc.
     - stopped logging stats when hashing complete
-- updated diskoverd task worker daemon to v2.0.4
+- updated diskoverd task worker daemon to v2.0.5
     - added check for additional cli options/tags for index tasks
 
 

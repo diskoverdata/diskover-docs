@@ -40,9 +40,9 @@ ordered_documents:
   - plugins_mediapulse_asset_creation.md
   - plugins_bam_harvest.md
   - plugins_display_extra_fields.md
-  - plugins_diskover_web_file_actions.md
-  - plugins_diskover_web_live_view.md
-  - plugins_diskover_web_file_sequence.md
+  - plugins_diskover_web_file_actions_intro.md
+  - plugins_diskover_web_file_actions_live_view.md
+  - plugins_diskover_web_file_actions_file_sequence.md
   - index_management_intro.md
   - index_management_diskover_web.md
   - index_management_elasticsearch.md

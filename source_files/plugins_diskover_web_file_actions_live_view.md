@@ -80,7 +80,7 @@ If you do not want to mount all your storage on the diskover-web host, you can s
 
 🔴 &nbsp;Edit the `liveview.js` file and change `scandir_url` located near the top of the file to be the url to your remote web server hosting scandir.php:
 ```
-vi /var/www/diskover-web/public/fileactions/liveview/liveview.js
+vi /var/www/diskover-web/public/fileactions/liveview/js/liveview.js
 
 // location of ajax url to scandir.php
 var scandir_url = 'https://<web server>:<port>/scandir.php';

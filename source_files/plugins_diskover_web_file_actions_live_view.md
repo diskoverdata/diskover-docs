@@ -87,3 +87,5 @@ var scandir_url = 'https://<web server>:<port>/scandir.php';
 ```
 
 🔴 &nbsp;Copy `fileactions/liveview/scandir.php` to the remote web server used in `liveview.js` file.
+
+🔴 &nbsp;See above for setting timezone, path translations, etc for `scandir.php`.

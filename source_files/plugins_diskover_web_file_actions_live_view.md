@@ -78,7 +78,7 @@ chown -R nginx:nginx /var/www/diskover-web
 
 If you do not want to mount all your storage on the diskover-web host, you can set Live View to use a remote web server which has the mounted file systems.
 
-Edit the `liveview.js` file and change `scandir_url` located near the top of the file to be the url to your remote web server hosting scandir.php.
+🔴 &nbsp;Edit the `liveview.js` file and change `scandir_url` located near the top of the file to be the url to your remote web server hosting scandir.php.
 ```
 vi /var/www/diskover-web/public/fileactions/liveview/liveview.js
 
@@ -86,4 +86,4 @@ vi /var/www/diskover-web/public/fileactions/liveview/liveview.js
 var scandir_url = 'https://<web server>:<port>/scandir.php';
 ```
 
-Copy `fileactions/liveview/scandir.php` to the remote web server used in `liveview.js` file.
+🔴 &nbsp;Copy `fileactions/liveview/scandir.php` to the remote web server used in `liveview.js` file.

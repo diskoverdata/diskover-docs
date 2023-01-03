@@ -30,6 +30,8 @@ python3 diskover.py -l
 
 ### Diskover-web Plugins - File Actions
 
+![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
+
 This section covers the basics on how to create your own web plugins, known as File Actions. There are several examples in the `public/fileactions/` directory in diskover-web. The examples all end with the extension `.sample`. 
 
 You will need some basic familiarity with PHP to create a File Action. A File Action can also call system processes, as shown in some of the examples to run local and remote scripts/commands.

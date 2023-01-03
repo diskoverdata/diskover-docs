@@ -74,7 +74,7 @@ vi /var/www/diskover-web/src/diskover/Constants.php
 chown -R nginx:nginx /var/www/diskover-web
 ```
 
-<h4 id="Live-View-mounts-on-remote-web-server">Live View mounts on remote web server</h4>
+<h3 id="Live-View-mounts-on-remote-web-server">Live View mounts on remote web server</h3>
 
 If you do not want to mount all your storage on the diskover-web host, you can set Live View to use a remote web server which has the mounted file systems.
 

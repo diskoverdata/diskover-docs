@@ -5,7 +5,7 @@ ___
 
 The File Action Live View plugin is designed to provide a live view of the file system between indexing intervals. It provides users with a live view of the file system at that moment in time.
 
-The Live View plugin requires mounts to the indexed storage in order to list the directories. The mounts do not need to be on the diskover-web server, they can be on a remote web server. See [Live View mounts on remote web server](#Live-View-mounts-on-remote-web-server) below.
+The Live View plugin requires mounts to the indexed storage in order to list the directories. The mounts do not need to be on the diskover-web server, they can be on a remote web server. See <a href="#Live-View-mounts-on-remote-web-server">Live View mounts on remote web server</a> below.
 
 
 ![Image: File Sequences Results](images/image_plugins_file_action_live_view_in_ui.png)
@@ -74,7 +74,7 @@ vi /var/www/diskover-web/src/diskover/Constants.php
 chown -R nginx:nginx /var/www/diskover-web
 ```
 
-#### Live View mounts on remote web server
+<h2 id="Live-View-mounts-on-remote-web-server">Live View mounts on remote web server</h2>
 
 If you do not want to mount all your storage on the diskover-web host, you can set Live View to use a remote web server which has the mounted file systems.
 

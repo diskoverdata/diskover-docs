@@ -29,7 +29,7 @@ cp /var/www/diskover-web/public/fileactions/fileaction_samples/liveview.php /var
 cp -a /var/www/diskover-web/public/fileactions/fileaction_samples/liveview /var/www/diskover-web/public/fileactions/
 ```
 
-🔴 &nbsp;Set timezone in scandir.php
+🔴 &nbsp;Set timezone in scandir.php:
 ```
 vi /var/www/diskover-web/public/fileactions/liveview/scandir.php
 
@@ -38,13 +38,13 @@ vi /var/www/diskover-web/public/fileactions/liveview/scandir.php
 $timezone = 'America/Vancouver';
 ```
 
-🔴 &nbsp;Set if you want to hide hidden dot files in scandir.php
+🔴 &nbsp;Set if you want to hide hidden dot files in scandir.php:
 ```
 // Ignore if file or folder is hidden (starts with .)
 $ignorehidden = TRUE;
 ```
 
-🔴 &nbsp;Set any path translations (from index path to mount path) in scandir.php
+🔴 &nbsp;Set any path translations (from index path to mount path) in scandir.php:
 ```
 // Path translation for listing files
 $path_translations = array(
@@ -52,7 +52,7 @@ $path_translations = array(
 );
 ```
 
-🔴 &nbsp;Set any path clipboard copy translations in scandir.php
+🔴 &nbsp;Set any path clipboard copy translations in scandir.php:
 ```
 // Path translation for path copied to clipboard
 $path_clipboard_translations = array(
@@ -78,7 +78,7 @@ chown -R nginx:nginx /var/www/diskover-web
 
 If you do not want to mount all your storage on the diskover-web host, you can set Live View to use a remote web server which has the mounted file systems.
 
-🔴 &nbsp;Edit the `liveview.js` file and change `scandir_url` located near the top of the file to be the url to your remote web server hosting scandir.php.
+🔴 &nbsp;Edit the `liveview.js` file and change `scandir_url` located near the top of the file to be the url to your remote web server hosting scandir.php:
 ```
 vi /var/www/diskover-web/public/fileactions/liveview/liveview.js
 

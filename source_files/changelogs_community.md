@@ -4,6 +4,15 @@ ___
 
 ### Diskover v2 Community Edition Changelog
 
+#### [2.0.7] - 2023-01-08
+##### fixed
+- python error when indexing spaceinfo doc and total disk space > max size for ES long field mapping (AWS storage gateway)
+- exception handling for Elasticsearch exception TransportError during bulk uploads
+- exception handling for close function call for plugins and alt scanners
+##### added
+- free_percent and available_percent to spaceinfo doc and to es index mappings
+
+
 #### [2.0.6] - 2022-11-06
 ##### changed
 - better handling of errors when importing alternate scanner modules
@@ -130,6 +139,17 @@ ___
 
 ___
 ### Diskover-web v2 Community Edition Changelog
+
+#### [2.0.7] - 2023-01-08
+##### fixed
+- Cross-Site Scripting (XSS) vulnerability in nav.php
+- php warning when reloading indices and there is a corrupt index
+- delete index not working on indices page
+##### added
+- show multi-fields on help page fields section and filter fields, e.g. field.subfield
+- user alert when trying to sort on a field not found in index or trying to sort on a text field
+- index name to delete prompt when deleting index on indices page
+
 
 #### [2.0.6] - 2022-11-06
 ##### fixed

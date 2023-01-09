@@ -142,7 +142,7 @@ media_info.bitrate:*765*
 
 ___
 ### Search on Media Info Fields with Operators
-Operators **and, or, not** are explained in the [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#operators), but here are a few query examples using media info fields with operators:
+Operators **and, or, not** are explained in the [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#operators), but here are a few query examples using media info fields with operators. Note that operators are not case sensitive, but they are being typed in capital letters below for visual only.
 
 #### AND Operator
 

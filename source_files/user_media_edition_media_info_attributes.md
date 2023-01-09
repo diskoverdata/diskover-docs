@@ -144,32 +144,48 @@ ___
 ### Search on Media Info Fields with Operators
 Operators **and, or, not** are explained in the [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#operators), but here are a few query examples using media info fields with operators:
 
->`media_info.resolution:1920x1080 AND media_info.codeclong:*quicktime*`
->
->_Would find all files with resolution 1920x1080 with QuickTime in codeclong._
+#### AND Operator
+
+```
+media_info.resolution:1920x1080 and media_info.codeclong:*quicktime*
+```
+
+> 🔎 _Would find all files with resolution 1920x1080 with QuickTime in codeclong._
+ 
+#### NOT Operator
+
+```
+*jurassic* NOT media_info.resolution:*1080*
+```
+
+> 🔎 _Woud find all files containing **jurassic** in the file name and/or path, with resolution excluding 1080._
+ 
+```
+media_info.resolution:*1080* AND extension:mov NOT extension:mp4
+```
+
+> 🔎 _Would find all files with 1080 being part of the resolution, with file extension .mov, but would exclude file extension .mp4 from the results._
  
 
->`*jurassic* NOT media_info.resolution:*1080*`
->
->_Woud find all files containing "jurassic" in the file name and/or path, but with any other resolution beside 1080 being part of that field._
- 
+```
+*jurassic* (media_info.pixfmt:*444* OR media_info.pixfmt:*422*)
+```
 
->`media_info.resolution:*1080* AND mov NOT mp4`
->
->_Would find all files with 1080 being part of the resolution and with file extension .mov, but would exclude file extension .mp4 from the results._
- 
-
->`media_info.pixfmt:*444* OR media_info.pixfmt:*422*`
->
->_Would find all files with pixel format either containing 444 or 422._
+> 🔎 _Woud find all files containing **jurassic** in the file name and/or path with pixel format either containing 444 or 422._
 
 ___
 ### Media Info Fields Containing Error or Warning
 
-If the media fields at the source are corrupted and/or Diskover determines the file as "suspect", the media info fields will show either **error** or **warning** within Diskover. Beloware search queries to either exclude or pinpoint files with those values:
+If the media fields at the source are corrupted and/or Diskover determines the file as "suspect", the media info fields will show either **error** or **warning** within Diskover. Below are search queries to either exclude or pinpoint files with those values:
 
-To search all files with valid media info fields while excluding files with *error* and *warning*:
->`media_info:* NOT (media_info.error:* OR media_info.warning:*)`
+To search all files with valid media info fields while excluding files with **error** and **warning**:
 
-To search all files with media info fields containing *error* and *warning*:
->`media_info.error:* OR media_info.warning:*`
+```
+media_info:* NOT (media_info.error:* OR media_info.warning:*)
+```
+
+To search all files with media info fields containing **error** and **warning**:
+
+```
+media_info.error:* OR media_info.warning:*
+```

@@ -15,15 +15,15 @@ You can do an advanced search/validation of a media file and playback right from
 
 You can access the GLIM by A) selecting a file in the results pane and B) clicking **File Action > open in Glim**:
 
-![Image: Telestream GLIM Preview File Selection](images/image_file_action_glim_selection.png)
+![Image: Telestream GLIM Preview File Selection](images/image_file_action_glim_multiple_selection.png)
 
 You can also click the **File Action/gear icon > open in Glim** located in the results pane to preview a media file:
 
-![Image: Telestream GLIM Preview File Selection](images/image_file_action_glim_gear_icon_selection.png)
+![Image: Telestream GLIM Preview File Selection](images/image_file_action_glim_single_selection.png)
 
 Either method will launch GLIM where you'll be able to validate/preview media files.
 
-![Image: Telestream GLIM Preview](images/image_file_action_glim_preview.png)
+![Image: Telestream GLIM Preview](images/image_file_action_glim_preview_gangnam.png)
 
 [Click here to learn more about the Telestream GLIM product.](https://www.telestream.net/glim/overview.htm)
 
@@ -46,11 +46,11 @@ The major benefits:
 1. Search for the desired file(s) within Diskover as you would normaly do.
 2. You can launch transcoding jobs by first selecting a single file or multiple files in the results pane and then select **File Action > submit to Vantage**:
 
-![Image: Select File Action](images/image_aja_edition_telestream_vantage_selection_multiple_files.png)
+![Image: Select File Action](images/image_aja_edition_telestream_vantage_multiple_selection.png)
  
 3. You can also launch Vantage in the results pane for a single transcoding job by selecting **File Action > submit to Vantage**:
 
-![Image: Select Submit to Vantage](images/image_aja_edition_telestream_vantage_selection.png)
+![Image: Select Submit to Vantage](images/image_aja_edition_telestream_vantage_single_selection.png)
 
 4. A window will open with a series of submission options - after clicking the **Submit** button, you will get a message that the file has been submitted to Vantage successfully.
 

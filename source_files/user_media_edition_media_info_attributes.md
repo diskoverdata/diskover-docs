@@ -61,6 +61,7 @@ media_info.resolution:*1080*
 
 #### Codec
 Field name: **media_info.codec**
+
 ```
 media_info.codec:prores
 ```
@@ -71,23 +72,38 @@ media_info.codec:h264
 
 #### Codec long
 Field name: **media_info.codeclong**
->`media_info.codeclong:*apple*`
->
->`media_info.codeclong:*quicktime*`
+```
+media_info.codeclong:*apple*
+```
+
+```
+media_info.codeclong:*quicktime*
+```
 
 #### Pixel format
 Field name: **media_info.pixfmt**
->`media_info.pixfmt:*yuv*`
->
->`media_info.pixfmt:*422*`
+
+```
+media_info.pixfmt:*yuv*
+```
+
+```
+media_info.pixfmt:*422*
+```
 
 #### Frames
 Field name: **media_info.frames**
->`media_info.frames:30`
->
->`media_info.frames:*30*`
->
-> _Note: Use a specific number only if you know the exact number of frames a file would have, otherwise use the * to expand your results._
+
+```
+media_info.frames:30
+```
+
+```
+media_info.frames:*30*
+```
+
+> 🔎 _Use a specific number only if you know the exact number of frames a file would have, otherwise use the **\*** wild card to expand your results._
+
 
 #### Duration
 Field name: **media_info.pixfmt**

@@ -46,10 +46,13 @@ Field name: **media_info.resolution**
 ```
 media_info.resolution:3840x2160
 ```
+     
       🔎 _Would only look for this specific resolution._
+
 ```
 media_info.resolution:*1080*
 ``` 
+
       🔎 _Would return all files with **1080** being part of the resolution, either width or height._
 
 #### Codec

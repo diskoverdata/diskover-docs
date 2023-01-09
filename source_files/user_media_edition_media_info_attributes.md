@@ -23,7 +23,7 @@ Below is an example of the location where you can see detailed media attributes.
 ![Image: Harvested Media Attributes](images/image_aja_edition_media_info_file_attributes.png)
 
 ___
-### General Notes - Searching on Media Attributes
+### General Notes on Searching Media Attributes
 
 The media attributes are part of the metadata harvested exclusively by the AJA Diskover Media Edition. If a file at the source doesn’t include any of these attributes, it goes without saying that no details will be harvested and/or be available.
 
@@ -49,17 +49,16 @@ ___
 #### File resolution
 Field name: **media_info.resolution**
 
-Examples:
-> ```
-> media_info.resolution:3840x2160
-> ```
-> 🔎 _Would only look for this specific resolution._
+```
+media_info.resolution:3840x2160
+```
+🔎 _Would only look for this specific resolution._
 
 
->```
->media_info.resolution:*1080*
->``` 
-> 🔎 _Would return all files with **1080** part of the resolution, either width or height._
+```
+media_info.resolution:*1080*
+``` 
+🔎 _Would return all files with **1080** part of the resolution, either width or height._
 
 #### Codec
 Field name: **media_info.codec**

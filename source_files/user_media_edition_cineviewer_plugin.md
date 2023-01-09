@@ -2,7 +2,7 @@ ___
 ## CineViewer Player
 ___
 
-The CineViewer Player is a seamless integration allowing end-users to view/confirm source files in one click from the Diskover web browser.
+The CineViewer Player is a seamless integration allowing end-users to securely view/validate media files in one click from the Diskover web browser, without ever accessing the source asset itself.
 
 [Click here to learn more about the CineViewer Player developed by CineSys.io](https://cinesys.io/portfolio/cineviewer-player/)
 
@@ -20,3 +20,17 @@ You can also click the **File Action/gear icon > open in CineViewer** located in
 Either method will launch the CineViewer Player where you'll be able to validate/preview media files.
 
 ![Image: Telestream GLIM Preview](images/image_file_action_cineviewer_preview_gagnam_style.png)
+
+A) Go back 15 seconds.
+
+B) Go forward 15 seconds.
+
+C) Audio tracks.
+
+D) Closed captions.
+
+E) Zoom in, zoom out, fit screen.
+
+F) Full screen mode.
+
+G) About CineViewer and go back to Diskover.

@@ -1,23 +1,28 @@
 ___
-## Find All Files in a Sequence 
+## Find File Sequences
 ___
 
 Diskover allows you to easily find all files in a sequence via **File Action**.
 
-**Launch from a file** > you do not need to select the line if you launch directly from the A) inline icon, it's been selected in this example to show the option of launching it from the B) File Action button:
+### How to Launch Find File Sequences
 
 ![Image: Launching Find File Sequences from a File](images/image_file_action_launch_from_file.png)
 
-**Launch from a directory** > the same logic as launching form a file applies here as well:
+A) You can launch from the inline File Action gears icon without having to select the file first.
 
-![Image: Launching Find File Sequences from a Directory](images/image_file_action_launch_from_directory.png)
+B) You can launch from the File Action gears icon above the results pane but you'll have to select the line item first.
 
-The results will open in a new page and showing the complete path where the sequence is located, as seen at the bottom here:
+### How to Read File Sequence Results
 
-![Image: Find File Sequences Results](images/image_file_action_results.png)
+The results will open in a new browser tab:
 
-A) Will confirm if a sequence was found.
+![Image: Find File Sequences Results](images/image_file_action_file_sequences_results.png)
 
-B) Give you the sequence range - if there was a break in the sequence, there would be [multiple brackets].
+A) How to read the file sequence results:
+  * DPX > constant digits in the beginning of the sequence
+  * %08d > sequence contains 8 digits starting with zeros/padding
+  * [86400-86619] > sequence detected, more brackets would show if broken sequences would be detected
 
-C) In this example, the value means that the sequence has 0 padding and is 8 digits long, **DPX** being included in the digits > DPX86400
+B) Path of sequences.
+
+C) Number of sequences found.

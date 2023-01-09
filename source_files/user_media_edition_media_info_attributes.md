@@ -37,7 +37,7 @@ In addition to the [manual file searches and syntax explained in the Diskover Us
 
 - The following syntax needs to be respected `media_info.<key>:<value>` and the **< >** are not meant to by typed, they are only for visual and isolating where to input the variables:
 
-- For more details on search syntax, please refer to our core [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#manual-search-syntax).
+- For more details on search syntax, please refer to our core [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#search_syntax).
 
 #### File resolution
 Field name: **media_info.resolution**

@@ -1,5 +1,5 @@
 ___
-## Xytech MediaPulse Order Management
+## Xytech MediaPulse Asset Creation and Order Status Plugins
 ___
 This chapter describes the features that are currently released enhancing file-based production workflows. Please stay tuned as many more features are in development and on the roadmap.
 

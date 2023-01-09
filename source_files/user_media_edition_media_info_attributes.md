@@ -80,7 +80,7 @@ media_info.codeclong:*apple*
 media_info.codeclong:*quicktime*
 ```
 
-#### Pixel format
+#### Pixel Format
 Field name: **media_info.pixfmt**
 
 ```
@@ -108,23 +108,31 @@ media_info.frames:*30*
 #### Duration
 Field name: **media_info.pixfmt**
 
-_Note: This field will eventually reads time in this format **hh:mm:ss**, but is currently showing duration in seconds, ex: 30.5071 = 30 seconds and 5071 milliseconds)_
+🔆 &nbsp;_Note: Time format is **H:MM:SS.MS**
 
->`media_info.duration:30.*`
->
->_Note: Use the * if you’re looking for a file for which you know the duration is 30 seconds but the milliseconds are unknown._
+```
+media_info.duration:*30.*
+```
+
+> 🔎 _Would find all files with a duration that includes exactly 30 seconds, with any number of hours, minutes and/or milliseconds, example **0:00:30.071708**_
 
 #### Framerate
 Field name: **media_info.framerate**
->`media_info.framerate:*23*`
->
->_Note: Would return all files with standard framerate of 23.976_
+
+```
+media_info.framerate:*23*
+```
+
+> 🔎 _Would return all files with standard framerate of 23.976_
 
 #### Bitrate
 Field name: **media_info.bitrate**
->`media_info.bitrate:*765*`
->
->_Note: Bitrate is a difficult field to search on, but not impossible._
+
+```
+media_info.bitrate:*765*
+```
+
+> 🔎 Bitrate is a difficult field to search, but not impossible._
 
 ___
 ### Search on Media Info Fields with Operators

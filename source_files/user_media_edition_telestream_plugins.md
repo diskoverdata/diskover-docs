@@ -1,5 +1,5 @@
 ___
-## Telestream GLIM and Vantage Workflow Automation
+## Telestream GLIM and Vantage Workflow Automations
 ___
 
 The GLIM and Vantage web tools allow end-users to view/confirm source files, as well as submit files for transcoding, directly from Diskover, without ever leaving your web browser.
@@ -7,28 +7,28 @@ The GLIM and Vantage web tools allow end-users to view/confirm source files, as 
 [Click here to learn more about the Telestream products.](http://www.telestream.net/)
 
 ___
-### Preview/Validate Media Files with GLIM
+### GLIM | Preview/Validate Media Files
 
-You can do an advanced search/validation of a media file and playback right from Diskover.
+You can do an advanced search/validation of a media file and playback right from Diskover. 
 
 >🔆 &nbsp;Make sure you are logged in your Telestream account before using this feature.
 
-You can access the **File Action > open in GLIM** by selecting a file and clicking the File Action button as shown below:
+You can access **File Action > open in GLIM** by first selecting a file in the results pane and then clicking the File Action button as shown below > select **open with Glim**:
 
 ![Image: Telestream GLIM Preview File Selection](images/image_file_action_glim_selection.png)
 
-Or click the gear icon location on the line item that you want to preview with GLIM > select **open with Glim**
+You can also click the File Action/gear icon located in the results pane to preview with GLIM > select **open with Glim**:
 
 ![Image: Telestream GLIM Preview File Selection](images/image_file_action_glim_gear_icon_selection.png)
 
-This will launch GLIM where you'll be able to validate/preview the file.
+This will launch GLIM where you'll be able to validate/preview a media file.
 
 ![Image: Telestream GLIM Preview](images/image_file_action_glim_preview.png)
 
 [Click here to learn more about the Telestream GLIM product.](https://www.telestream.net/glim/overview.htm)
 
 ___
-### Submit Transcoding Jobs to Vantage Direclty from Diskover
+### Vantage | Submit Transcoding Jobs direclty from Diskover
 
 The Diskover Telestream Vantage Plugin allows end-users to submit files for transcoding directly from the Diskover user interface. This process can be utilized by all end-users without needing access to the production tools and source files.
 
@@ -41,21 +41,22 @@ The major benefits:
 - Files are very easy to find within Diskover’s global index compared to Vantage where one needs to know where to look.
 - The learning curve is quick and easy for new end-users.
 
-#### Steps to Submit a File for Transcoding
+#### How to Submit a File for Transcoding
 
-1. [Search for the desired file(s) within Diskover](https://docs.diskoverdata.com/diskover_user_guide/#manual-search-syntax) as you would normaly do.
+1. Search for the desired file(s) within Diskover as you would normaly do.
+2. You can launch transcoding jobs via **File Action > submit to Vantage** by first selecting a single file or multiple files in the results pane and then select **submit to Vantage**:
+
+![Image: Select File Action](images/image_aja_edition_telestream_vantage_selection_multiple_files.png)
  
-2. Select the file you wish to submit for transcoding by clicking the **File Action > submit to Vantage** icon (gears icon) in line with the file. If you wish to submit multiple files at a time, select the files by clicking the check box in front of the file, then select the **File Action > submit to Vantage** button.
+3. You can also click the File Action/gear icon located in the results pane to launch a single transcoding job > select **submit to Vantage**:
 
 ![Image: Select Submit to Vantage](images/image_aja_edition_telestream_vantage_selection.png)
 
-![Image: Select File Action](images/image_aja_edition_telestream_vantage_selection_multiple_files.png)
-
-3. A window will open with a series of submission options - after clicking the **Submit** button, you will get a message that the file has been submitted to Vantage successfully.
+4. A window will open with a series of submission options - after clicking the **Submit** button, you will get a message that the file has been submitted to Vantage successfully.
 
 ![Image: Select Submission Option](images/image_aja_edition_telestream_vantage_job_submission.png)
 
-4. If you have access to the **jobs submission status** view in Vantage (webpage location to be supplied by your system administrator), you will see the progress status of your request(s).
+5. If you have access to the **jobs submission status** view in Vantage (webpage location to be supplied by your system administrator), you will see the progress status of your request(s).
 
 ![Image: Vantage Job Status](images/image_aja_edition_telestream_vantage_job_processing_status.png)
 

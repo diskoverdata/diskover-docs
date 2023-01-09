@@ -108,7 +108,7 @@ media_info.frames:*30*
 #### Duration
 Field name: **media_info.pixfmt**
 
-🔆 &nbsp;_Note: Time format is **H:MM:SS.MS**
+🔆 &nbsp;_Note: Time format is **H:MM:SS.MS**_
 
 ```
 media_info.duration:*30.*
@@ -132,7 +132,7 @@ Field name: **media_info.bitrate**
 media_info.bitrate:*765*
 ```
 
-> 🔎 Bitrate is a difficult field to search, but not impossible._
+> 🔎 _Bitrate is a difficult field to search, but not impossible._
 
 ___
 ### Search on Media Info Fields with Operators

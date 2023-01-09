@@ -33,9 +33,6 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 
 - The fields described below are meant to be copied/pasted/edited in the search bar of the Diskover user interface.
 
-- Searching on **media_info** fields is case insensitive.
-
-
 ___
 ### Search Syntax
 
@@ -43,6 +40,8 @@ ___
     * **media_info** is not a variable.
     * **key** is a variable like resolution, codec, pixel format, etc.
     * **value** is a variable as per the examples below.
+
+- Searching on **media_info** fields is case insensitive.
 
 ___
 ### Searchable Media Info Fields and Examples

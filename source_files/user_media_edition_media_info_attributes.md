@@ -52,14 +52,17 @@ Field name: **media_info.resolution**
 >```
 >media_info.resolution:*1080*
 >``` 
-
-      🔎 Would return all files with **1080** being part of the resolution, either width or height.
+> 🔎 _Would return all files with **1080** part of the resolution, either width or height._
 
 #### Codec
 Field name: **media_info.codec**
->`media_info.codec:prores`
->
->`media_info.codec:h264`
+> ```
+> media_info.codec:prores
+> ```
+
+>```
+> media_info.codec:h264
+> >```
 
 #### Codec long
 Field name: **media_info.codeclong**

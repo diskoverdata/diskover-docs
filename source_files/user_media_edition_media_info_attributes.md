@@ -31,11 +31,14 @@ In addition to the [manual file searches and syntax explained in the Diskover Us
 
 - As media fields’ info can be complex, unless you know exactly what you are looking for, we strongly recommend using the [* wild card](https://docs.diskoverdata.com/diskover_user_guide/#wild-card) for ease of searching and to expand your results.
 
-- The fields described below are meant to be copied/typed in the search bar of the Diskover user interface.
+- The fields described below are meant to be copied/pasted/edited in the search bar of the Diskover user interface.
 
-- Searching on media_info is case insensitive.
+- Searching on **media_info** fields is case insensitive.
 
-- The following syntax needs to be respected `media_info.<key>:<value>` and the **< >** are not meant to by typed, they are only for visual and isolating where to input the variables:
+- The following syntax needs to be respected `media_info.key:value`:
+ - **media_info** is not a variable.
+ - **key** is a variable like resolution, codec, pixel format, etc.
+ - **value** is a variable as per the examples below.
 
 - For more details on search syntax, please refer to our core [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#search_syntax).
 

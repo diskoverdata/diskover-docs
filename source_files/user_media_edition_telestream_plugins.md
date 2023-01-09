@@ -1,8 +1,8 @@
 ___
-## Telestream GLIM and Vantage Workflow Automations
+## Telestream GLIM and Vantage Seamless Integrations
 ___
 
-The GLIM and Vantage web tools allow end-users to view/confirm source files, as well as submit files for transcoding, directly from Diskover, without ever leaving your web browser.
+The GLIM and Vantage web tools are seamless integrations allowing end-users to securely view/validate source files, as well as submit files for transcoding, directly from Diskover, in one click from the Diskover web browser and without ever accessing the source assets themselves.
 
 [Click here to learn more about the Telestream products.](http://www.telestream.net/)
 
@@ -13,15 +13,15 @@ You can do an advanced search/validation of a media file and playback right from
 
 >🔆 &nbsp;Make sure you are logged in your Telestream account before using this feature.
 
-You can access **File Action > open in GLIM** by first selecting a file in the results pane and then clicking the File Action button as shown below > select **open with Glim**:
+You can access the GLIM by A) selecting a file in the results pane and B) clicking **File Action > open in Glim**:
 
 ![Image: Telestream GLIM Preview File Selection](images/image_file_action_glim_selection.png)
 
-You can also click the File Action/gear icon located in the results pane to preview with GLIM > select **open with Glim**:
+You can also click the **File Action/gear icon > open in Glim** located in the results pane to preview a media file:
 
 ![Image: Telestream GLIM Preview File Selection](images/image_file_action_glim_gear_icon_selection.png)
 
-This will launch GLIM where you'll be able to validate/preview a media file.
+Either method will launch GLIM where you'll be able to validate/preview media files.
 
 ![Image: Telestream GLIM Preview](images/image_file_action_glim_preview.png)
 
@@ -44,11 +44,11 @@ The major benefits:
 #### How to Submit a File for Transcoding
 
 1. Search for the desired file(s) within Diskover as you would normaly do.
-2. You can launch transcoding jobs via **File Action > submit to Vantage** by first selecting a single file or multiple files in the results pane and then select **submit to Vantage**:
+2. You can launch transcoding jobs by first selecting a single file or multiple files in the results pane and then select **File Action > submit to Vantage**:
 
 ![Image: Select File Action](images/image_aja_edition_telestream_vantage_selection_multiple_files.png)
  
-3. You can also click the File Action/gear icon located in the results pane to launch a single transcoding job > select **submit to Vantage**:
+3. You can also launch Vantage in the results pane for a single transcoding job by selecting **File Action > submit to Vantage**:
 
 ![Image: Select Submit to Vantage](images/image_aja_edition_telestream_vantage_selection.png)
 

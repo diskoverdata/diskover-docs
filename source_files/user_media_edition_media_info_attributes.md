@@ -160,18 +160,22 @@ media_info.resolution:1920x1080 and media_info.codeclong:*quicktime*
 
 > 🔎 _Woud find all files containing **jurassic** in the file name and/or path, with resolution excluding 1080._
  
-```
-media_info.resolution:*1080* AND extension:mov NOT extension:mp4
-```
-
-> 🔎 _Would find all files with 1080 being part of the resolution, with file extension .mov, but would exclude file extension .mp4 from the results._
  
+#### OR Operator
 
 ```
 *jurassic* (media_info.pixfmt:*444* OR media_info.pixfmt:*422*)
 ```
 
 > 🔎 _Woud find all files containing **jurassic** in the file name and/or path with pixel format either containing 444 or 422._
+
+#### Mixing Operators
+
+```
+(media_info.resolution:*1080* or media_info.resolution:*1920*) AND extension:mov NOT extension:mp4
+```
+
+> 🔎 _Would find all files with 1080 or 1920 being part of the resolution, with file extension .mov, but would exclude file extension .mp4 from the results._
 
 ___
 ### Media Info Fields Containing Error or Warning

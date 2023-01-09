@@ -17,6 +17,6 @@ You can also click the **File Action/gear icon > open in CineViewer** located in
 
 ![Image: CineViewer Player Preview File Selection](images/image_file_action_cineviewer_selection_from_results_pane.png)
 
-This will launch the CineViewer Player where you'll be able to validate/preview media files.
+Either method will launch the CineViewer Player where you'll be able to validate/preview media files.
 
 ![Image: Telestream GLIM Preview](images/image_file_action_cineviewer_preview_gagnam_style.png)

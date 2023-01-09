@@ -46,14 +46,13 @@ ___
 ___
 ### Searchable Media Info Fields and Examples
 
-#### File resolution
+#### File Resolution
 Field name: **media_info.resolution**
 
 ```
 media_info.resolution:3840x2160
 ```
-> 🔎 _Would only look for this specific resolution._
-
+> 🔎 _Would only look for this specific 3840x2160 resolution._
 
 ```
 media_info.resolution:*1080*
@@ -62,13 +61,13 @@ media_info.resolution:*1080*
 
 #### Codec
 Field name: **media_info.codec**
-> ```
-> media_info.codec:prores
-> ```
+```
+media_info.codec:prores
+```
 
->```
-> media_info.codec:h264
-> >```
+```
+media_info.codec:h264
+```
 
 #### Codec long
 Field name: **media_info.codeclong**

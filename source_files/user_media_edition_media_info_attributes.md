@@ -36,9 +36,9 @@ In addition to the [manual file searches and syntax explained in the Diskover Us
 - Searching on **media_info** fields is case insensitive.
 
 - The following syntax needs to be respected `media_info.key:value`:
- - **media_info** is not a variable.
- - **key** is a variable like resolution, codec, pixel format, etc.
- - **value** is a variable as per the examples below.
+    * **media_info** is not a variable.
+    * **key** is a variable like resolution, codec, pixel format, etc.
+    * **value** is a variable as per the examples below.
 
 - For more details on search syntax, please refer to our core [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#search_syntax).
 

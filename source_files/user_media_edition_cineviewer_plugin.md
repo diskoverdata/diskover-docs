@@ -4,7 +4,7 @@ ___
 
 The CineViewer Player is a seamless integration allowing end-users to view/confirm source files in one click from the Diskover web browser.
 
-[Click here to learn more about the CineViewer Player developed by CineSys.io]([http://www.telestream.net/](https://cinesys.io/portfolio/cineviewer-player/)
+[Click here to learn more about the CineViewer Player developed by CineSys.io](https://cinesys.io/portfolio/cineviewer-player/)
 
 ___
 ### How to Launch the CineViewer Player

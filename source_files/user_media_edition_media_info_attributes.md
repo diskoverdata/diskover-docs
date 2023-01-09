@@ -43,9 +43,9 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 
 #### File resolution
 Field name: **media_info.resolution**
-```
-media_info.resolution:3840x2160
-```
+> ```
+> media_info.resolution:3840x2160
+> ```
      
 _Would only look for this specific resolution._
 

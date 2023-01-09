@@ -2,7 +2,7 @@ ___
 ## Media Attributes
 ___
 
-Media attributes, like file resolution, codec, etc., are harvested during indexing and are therefore available to enhance in-depth searches and deliver accurate results.
+Media attributes, like file resolution, codec, pixel format, etc., are harvested during indexing and are therefore available to enhance in-depth searches and deliver accurate results.
 
 ___
 ### Hide/Unhide Media Info Column in Search Results Pane
@@ -23,7 +23,7 @@ Below is an example of the location where you can see detailed media attributes.
 ![Image: Harvested Media Attributes](images/image_aja_edition_media_info_file_attributes.png)
 
 ___
-### Search on Media Attributes
+### General Notes for Searching on Media Attributes
 
 The media attributes are part of the metadata harvested exclusively by the AJA Diskover Media Edition. If a file at the source doesn’t include any of these attributes, it goes without saying that no details will be harvested and/or be available.
 
@@ -35,11 +35,17 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 
 - Searching on **media_info** fields is case insensitive.
 
+
+___
+### Search Syntax
+
 - The following syntax needs to be respected `media_info.key:value`:
     * **media_info** is not a variable.
     * **key** is a variable like resolution, codec, pixel format, etc.
     * **value** is a variable as per the examples below.
 
+___
+### Searchable Media Info Fields and Examples
 
 #### File resolution
 Field name: **media_info.resolution**

@@ -116,6 +116,12 @@ media_info.duration:*30.*
 
 > 🔎 _Would find all files with a duration that includes exactly 30 seconds, with any number of hours, minutes and/or milliseconds, example **0:00:30.071708**_
 
+```
+media_info.duration:*1:15:30.*
+```
+
+> 🔎 _Would find all files with a duration that includes exactly 1 hour 15 minutes and 30 seconds, with any number milliseconds, example **1:15:30.0415**_
+
 #### Framerate
 Field name: **media_info.framerate**
 
@@ -123,7 +129,7 @@ Field name: **media_info.framerate**
 media_info.framerate:*23*
 ```
 
-> 🔎 _Would return all files with standard framerate of 23.976_
+> 🔎 _Would return all files with standard framerate of 23.976 or 23.98_
 
 #### Bitrate
 Field name: **media_info.bitrate**

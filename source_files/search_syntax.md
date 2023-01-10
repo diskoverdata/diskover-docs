@@ -69,7 +69,7 @@ Search queries are case insensitive, even if upper or lowercases are used in the
 
 #### Isolated Characters
 
-#### [🍿 Watch Quick Tips](https://vimeo.com/770024733)
+#### [🍿 Watch Quick Tips | Understanding the Basics of Manual Queries](https://vimeo.com/770024733)
 
 When typing a word, a number, or a combination of both in the search bar, Diskover will look for those **isolated characters**. In order to "split" and find isolated characters, Diskover/Elasticsearch uses **isolators** like **spaces, underscores, hyphens, forward slashes, period, other punctuation, as well as upper cases** (aka CamelCase).
 
@@ -123,7 +123,7 @@ The square brackets `[ ]` or curly brackets `{ }` need be used to contain ranges
 ___
 ### * Wild Card
 
-#### [🍿 Watch Quick Tips](https://vimeo.com/772196768)
+#### [🍿 Watch Quick Tips | Manual Search Tool: Wild Cards](https://vimeo.com/772196768)
 
 The **\*** wild card is used to replace zero to many characters. It is the most popular and used wild card.
 
@@ -156,7 +156,7 @@ In order to expand your results to include all possibilities, a logical search s
 ___
 ### ? Wild Card
 
-#### [🍿 Watch Quick Tips](https://vimeo.com/772196768)
+#### [🍿 Watch Quick Tips | Manual Search Tool: Wild Cards](https://vimeo.com/772196768)
 
 The **?** wild card is used to replace a single character. I can be used several times in a row to replace a specific number of variables.
 
@@ -174,7 +174,7 @@ A few examples of names that would be found when launching those queries:
 ___
 ### ~ Wild Card
 
-#### [🍿 Watch Quick Tips](https://vimeo.com/772196768)
+#### [🍿 Watch Quick Tips | Manual Search Tool: Wild Cards](https://vimeo.com/772196768)
 
 The **~** wild card is also called the **fuzziness** wild card. If is used to find similar words, and is mostly used to catch human misspellings.
 
@@ -192,7 +192,7 @@ A few examples of words that would be found with and without limiting the change
 ___
 ### Mixing Wild Cards
 
-#### [🍿 Watch Quick Tips](https://vimeo.com/772196768)
+#### [🍿 Watch Quick Tips | Manual Search Tool: Wild Cards](https://vimeo.com/772196768)
 
 #### Mixing the ? and the *
 

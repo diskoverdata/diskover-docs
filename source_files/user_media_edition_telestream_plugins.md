@@ -9,7 +9,7 @@ The GLIM and Vantage web tools are seamless integrations allowing end-users to s
 ___
 ### GLIM | Preview/Validate Media Files
 
-#### [🍿 Watch Demo Video](https://vimeo.com/665037937)
+#### [🍿 Watch Demo Video | Telestream GLIM](https://vimeo.com/665037937)
 
 You can do an advanced search/validation of a media file and playback right from Diskover. 
 
@@ -32,7 +32,7 @@ Either method will launch GLIM where you'll be able to validate/preview media fi
 ___
 ### Vantage | Submit Transcoding Jobs direclty from Diskover
 
-#### [🍿 Watch Demo Video](https://vimeo.com/669672933)
+#### [🍿 Watch Demo Video | Telestream Vantage](https://vimeo.com/669672933)
 
 The Diskover Telestream Vantage Plugin allows end-users to submit files for transcoding directly from the Diskover user interface. This process can be utilized by all end-users without needing access to the production tools and source files.
 

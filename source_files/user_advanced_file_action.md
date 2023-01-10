@@ -70,19 +70,35 @@ F) You can **Copy** paths:
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
+#### [🍿 Watch Demo Video | Telestream GLIM](https://vimeo.com/665037937)
+
 Allows users to safely preview media files by launching GLIM seamlessly from Diskover.
 
 Please refer to the [User Guide Companion for the AJA Diskover Media Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#preview-media-files-with-telestream-glim) for details.
+
+<p id="file_action_vantage"></p>
+
+#### File Action > Submit to Vantage
+
+![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
+#### [🍿 Watch Demo Video | Telestream Vantage](https://vimeo.com/669672933)
+
+Allows users to safely send transcoding jobs to Telestream Vantage seamlessly from Diskover.
+
+Please refer to the [User Guide Companion for the AJA Diskover Media Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#vantage-submit-transcoding-jobs-direclty-from-diskover) for details.
+
+<p id="file_action_cineviewer"></p>
 
 #### File Action > Open in CineViewer
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
-#### [🍿 Watch Demo | CineViewer Player](https://vimeo.com/765285042)
+#### [🍿 Watch Demo Video | CineViewer Player](https://vimeo.com/765285042)
 
-Allows users to safely preview media files and launch the CineViewer Player seamlessly from Diskover.
+Allows users to safely preview media files by launching the CineViewer Player seamlessly from Diskover.
 
-Please refer to the [User Guide Companion for the AJA Diskover Media Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#preview-media-files-with-cineviewer) for details.
+Please refer to the [User Guide Companion for the AJA Diskover Media Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#cineviewer-player) for details.
 
 <p id="file_action_file_sequences"></p>
 
@@ -93,13 +109,3 @@ Please refer to the [User Guide Companion for the AJA Diskover Media Edition](ht
 Allows users to find all files in a sequence in one click.
 
 Please refer to the [User Guide Companion for the AJA Diskover Media Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#find-all-files-in-a-sequence) for details.
-
-<p id="file_action_vantage"></p>
-
-#### File Action > Open in GLIM
-
-![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
-
-Allows users to easily submit files for transcoding by launching Telestream Vantage seamlessly from Diskover.
-
-Please refer to the [User Guide Companion for the AJA Diskover Media Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#preview-media-files-with-telestream-glim) for details.

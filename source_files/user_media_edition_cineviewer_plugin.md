@@ -2,7 +2,7 @@ ___
 ## CineViewer Player
 ___
 
-#### [🍿 Watch Demo Video](https://vimeo.com/765285042)
+#### [🍿 Watch Demo Video | CineViewer Player Plugin](https://vimeo.com/765285042)
 
 The CineViewer Player is a seamless integration allowing end-users to securely view/validate media files in one click from the Diskover web browser, without ever accessing the source asset itself.
 

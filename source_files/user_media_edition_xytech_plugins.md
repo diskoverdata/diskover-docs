@@ -8,6 +8,8 @@ This chapter describes the features that are currently released enhancing file-b
 ___
 ### Xytech MediaPulse Asset Creation
 
+#### [🍿 Watch Demo Video](https://vimeo.com/660789118)
+
 Post facilities often have customers’ assets that have been archived and lack findability, visibility, searchability, and therefore the opaque nature of these assets make them difficult to reuse or repurpose. Companies, with years of such archived assets, have often stored these on tape media or removable hard drives which are often stored in a physical vault.
 
 Assets were often stored on such “offline” media due to costs, however with the advent of cloud and object storage, the economics are now making it viable to store such vaulted assets on more “online media”. Although, simply putting these assets onto online media does not necessarily make these assets findable in context or within the facility’s order management system.
@@ -30,6 +32,8 @@ Here are the same values, customer ID and asset ID, displayed within Diskover:
 
 ___
 ### Xytech MediaPulse Order Status
+
+#### [🍿 Watch Demo Video](https://vimeo.com/768967081)
 
 Facilities often manually correlate the order management system with the storage repositories. However, manual processes are subject to human errors and difficult to scale as the volume of media orders and data turnover increases rapidly and constantly.
 

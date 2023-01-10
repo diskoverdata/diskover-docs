@@ -4,6 +4,9 @@ ___
 ## User Interface Overview
 ___
 
+#### [🍿 Watch Quick Tips | User Interface Overview](https://vimeo.com/787050664)
+
+___
 ### Web Browser
 
 Diskover should look and act the same on any browser. The only thing to keep in mind is if, for example, you apply some modifications in your [settings](#settings) in Google Chrome, they will not transfer to Safari because the [settings](#settings) are tied to the cookies  of a browser. In this example, you would need to apply the same [settings](#settings) in Safari.

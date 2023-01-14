@@ -20,21 +20,19 @@ vim /root/.config/diskover_indexdiff/config.yaml
 
 ![Image: Index Differential Plugin Configuration](images/image_plugins_indexdiff_configuration.png)
 
-🔴 &nbsp;To run the index diff via command line and compare two indices and output all diffs to csv file:
+🔴 &nbsp;To run the index diff via command line and compare two indices with same top paths and output all diffs to csv file:
 ```
 cd /opt/diskover/plugins_postindex
-python3 diskover-indexdiff.py -i indexname1 -I indexname2
+python3 diskover-indexdiff.py -i indexname1 -I indexname2 -d /mnt/stor1/foo
 ```
 
 🔴 &nbsp;Compare two indices with different top paths and also compare file sizes (not just file names):
 ```
-cd /opt/diskover/plugins_postindex
 python3 diskover-indexdiff.py -i indexname1 -I indexname2 -d /mnt/stor1/foo -D /mnt/stor2/foo -s
 ```
 
 🔴 &nbsp;Compare two indices and compare xxhash hash of files, tag indexname1 with diffs, and don't create csv file of diffs:
 ```
-cd /opt/diskover/plugins_postindex
 python3 diskover-indexdiff.py -i indexname1 -I indexname2 -d /mnt/stor1/foo -D /mnt/stor2/foo -c xxhash --tagindex --nocsv
 ```
 

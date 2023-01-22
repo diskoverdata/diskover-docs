@@ -136,6 +136,14 @@ const API_PASS = 'apisecret';
 
 > _Note:_ When changing API Auth settings, remember to update [diskoverd](https://docs.diskoverdata.com/diskover_installation_guide/#setting-up-diskover-task-worker-daemon) task worker daemon config to use the new auth settings.
 
+#### Configuring NGINX HTTPS SSL
+
+For securing communication to diskover-web and the api, it is recommended to configure nginx to use https using a ssl certificate. More information about configuring HTTP server in nginx can be found in the nginx docs below:
+
+http://nginx.org/en/docs/http/configuring_https_servers.html
+https://docs.nginx.com/nginx/admin-guide/security-controls/terminating-ssl-http/
+
+
 #### Restricting API Access By Host/IP
 
 To limit API access to certain hosts or networks, you can add an additional location block with allow/deny rules to your Diskover-Web NGINX config  **/etc/nginx/conf.d/diskover-web.conf**.

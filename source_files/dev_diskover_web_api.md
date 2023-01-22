@@ -11,7 +11,7 @@ ___
 
 Getting file/directory tag info is done with the GET method.
 
->For "tags" and "search" endpoints, you can set the page number and result size with ex. &page=1 and &size=100. Default is page 1 and size 1000.
+For "tags" and "search" endpoints, you can set the page number and result size with ex. &page=1 and &size=100. Default is page 1 and size 1000.
 
 **Curl example:**
 ```
@@ -93,16 +93,22 @@ GET http://localhost:8000/api.php/diskover-2018.01.17/tagcount?tag=version+1&typ
 GET http://localhost:8000/api.php/diskover-2018.01.17/search?query=extension:png%20AND%20type:file%20AND%20size:>1048576
 ```
 
-**Get latest index name for top path in index:**
+**Get latest completed index using top path in index:**
 ```
 GET http://localhost:8000/api.php/latest?toppath=/dirpath
+```
+
+**Get disk space info for all top paths in an index:**
+```
+GET http://localhost:8000/api.php/diskover-2018.01.17/diskspace
 ```
 
 ___
 ### Update (with JSON object)
 
-**Updating file/directory tags is done with the PUT method. You can send a JSON object in the body. The call returns the status and number of items updated.
-Curl example:**
+Updating file/directory tags is done with the PUT method. You can send a JSON object in the body. The call returns the status and number of items updated.
+
+**Curl example:**
 ```
 curl -X PUT http://localhost:8000/api.php/index/endpoint -d '{}'
 ```

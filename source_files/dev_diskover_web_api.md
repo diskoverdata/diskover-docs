@@ -9,6 +9,8 @@ Diskover-Web has a REST API for getting and updating index data.
 ___
 ### GET (with curl or web browser)
 
+>For "tags" and "search" endpoints, you can set the page number and result size with ex. &page=1 and &size=100. Default is page 1 and size 1000.
+
 **Getting file/directory tag info is done with the GET method. Curl example:**
 ```
 curl -X GET http://localhost:8000/api.php/indexname/endpoint
@@ -93,8 +95,6 @@ GET http://localhost:8000/api.php/diskover-2018.01.17/search?query=extension:png
 ```
 GET http://localhost:8000/api.php/latest?toppath=/dirpath
 ```
-
->For "tags" and "search" endpoints, you can set the page number and result size with ex. &page=1 and &size=100. Default is page 1 and size 1000.
 
 ___
 ### Update (with JSON object)

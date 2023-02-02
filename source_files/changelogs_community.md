@@ -4,6 +4,18 @@ ___
 
 ### Diskover v2 Community Edition Changelog
 
+#### [2.1.0] - 2023-02-02
+##### fixed
+- python error when indexing spaceinfo doc and total disk space > max size for ES long field mapping (s3fs mount)
+- trailing slashes not geting removed from paths in Windows
+- catching AttributeError exceptions in alt scanner log_setup, init, close functions
+- python error when scanning s3fs fuse mount and directory modified time (mtime) timestamp invalid
+##### added
+- Windows path examples for log directory to diskover default/sample config file
+##### changed
+- default log directory in diskover default/sample config from /tmp/ to /var/log/diskover/, create directory first before enabling logToFile
+
+
 #### [2.0.7] - 2023-01-08
 ##### fixed
 - python error when indexing spaceinfo doc and total disk space > max size for ES long field mapping (AWS storage gateway)
@@ -139,6 +151,30 @@ ___
 
 ___
 ### Diskover-web v2 Community Edition Changelog
+
+#### [2.1.0] - 2023-02-02
+##### fixed
+- not staying logged in when checking keep me logged in for 7 days on login page
+- Fatal error: Allowed memory size of n bytes exhausted in Diskover.php when searching for /nonexistpath
+- es search query error when searching for /nonexistpath
+- bug fixes searching full absolute paths
+- links on dashboard not loading root path in search results
+##### added
+- more options to quick search nav menu dropdown
+- filter charts checkbox to nav filters button modal and settings page to apply filters to search results and dashboard charts
+- css to wrap long text for extra fields on search results table
+- no index selected warning message on indices page
+- edit search query button to search results page
+- reload button to bottom of dashboard page to reload chart data
+##### changed
+- removed search path from filters
+- removed filters always being applied to search results charts
+- charts on dashboard and search page now display size/count on mouse over tips
+- top by count charts now display by doc counts rather than counts of top by size chart data
+- all chart links on dashboard and search page now open in new window
+- view file/directory info buttons, and search path menu items on search results page table now open in new window
+- links on view file/directory info page now open in new window
+
 
 #### [2.0.7] - 2023-01-08
 ##### fixed

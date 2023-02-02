@@ -160,6 +160,7 @@ ___
 - links on dashboard not loading root path in search results
 ##### added
 - more options to quick search nav menu dropdown
+- more options to filters modal
 - filter charts checkbox to nav filters button modal and settings page to apply filters to search results and dashboard charts
 - css to wrap long text for extra fields on search results table
 - no index selected warning message on indices page

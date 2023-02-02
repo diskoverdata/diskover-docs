@@ -18,7 +18,6 @@ ___
 
 #### [2.0.7] - 2023-01-08
 ##### fixed
-- python error when indexing spaceinfo doc and total disk space > max size for ES long field mapping (AWS storage gateway)
 - exception handling for Elasticsearch exception TransportError during bulk uploads
 - exception handling for close function call for plugins and alt scanners
 ##### added

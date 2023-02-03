@@ -158,6 +158,7 @@ ___
 - es search query error when searching for /nonexistpath
 - bug fixes searching full absolute paths
 - links on dashboard not loading root path in search results
+- filters for hardlinks not using nlink field
 ##### added
 - more options to quick search nav menu dropdown
 - more options to filters modal

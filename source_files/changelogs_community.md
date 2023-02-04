@@ -159,6 +159,7 @@ ___
 - bug fixes searching full absolute paths
 - links on dashboard not loading root path in search results
 - filters for hardlinks not using nlink field
+- searching "NOT parent_path:\/somepath" changing the directory in file tree
 ##### added
 - more options to quick search nav menu dropdown
 - more options to filters modal

@@ -9,9 +9,9 @@ ___
 
 [Diskover Installation Guide](https://docs.diskoverdata.com/diskover_installation_guide/)
 
-[Diskover AWS Customer Deployment Guide](https://docs.diskoverdata.com/diskover_aws_deployment_guide/) - installation of Diskover on an existing AWS infrastructure
+[Diskover AWS Customer Deployment Guide](https://docs.diskoverdata.com/diskover_aws_deployment_guide/) | Installation of Diskover on an existing AWS infrastructure
 
-[Diskover Configuration and Administration Guide](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/) - to configure and maintain Diskover once installed
+[Diskover Configuration and Administration Guide](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/) | To configure and maintain Diskover once installed
 
 [Diskover SDK and API Guide](https://docs.diskoverdata.com/diskover_dev_guide/)
 
@@ -22,7 +22,7 @@ ___
 
 **Intended for the daily operations of Diskover by the Line of Business Users.**
 
-[Diskover Quick Reference Card](images/quick_reference_card_diskover_core_features_20230203.png)
+[Diskover Quick Reference Card](images/quick_reference_card_diskover_core_features_20230203.pdf)
 
 [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/)
 

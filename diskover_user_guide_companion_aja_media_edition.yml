@@ -3,7 +3,6 @@ website_name: User Guide Companion for the AJA Diskover Media Edition
 website_folder: diskover_user_guide_companion_aja_media_edition
 # All documents need to be in shared folder
 ordered_documents:
-  - index_diskover_guides_header.md
   - aja_logo_and_icon.md
   - guide_title_companion_media_edition.md
   - intro_guide_intended_for_user.md

@@ -22,7 +22,9 @@ ___
 
 **Intended for the daily operations of Diskover by the Line of Business Users.**
 
-[Diskover Quick Reference Card](images/quick_reference_card_diskover_core_features_20230203.pdf)
+[Diskover Quick Reference Card | Core Features](images/quick_reference_card_diskover_core_features_20230206.pdf)
+
+[Diskover Quick Reference Card | AJA Diskover Media Edition](images/quick_reference_card_diskover_media_edition_20230206.pdf)
 
 [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/)
 

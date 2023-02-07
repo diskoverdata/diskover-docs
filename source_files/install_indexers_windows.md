@@ -25,6 +25,12 @@ cd "C:\Program Files\diskover"
 pip3 install -r requirements-win.txt
 ```
 
+🔴 &nbsp;Create logs directory. Open a command prompt and run as administrator:
+
+```
+mkdir "C:\Program Files\diskover\logs"
+```
+
 🔴 &nbsp;Create config directories for Diskover, you will need to create a separate config folder for each folder in diskover\configs_sample\ folder.
 
 For diskover config:
@@ -54,6 +60,12 @@ Continue same steps for the other folders in diskover\configs_sample\
 %APPDATA%\diskover\config.yaml
 ```
 
+🔴 &nbsp;Set **log directory** path:
+
+```
+logDirectory: C:\Program Files\diskover\logs
+```
+
 🔴 &nbsp;Setup Elasticsearch **host** information:
 
 ```
@@ -78,7 +90,7 @@ user: myusername
 password: changeme
 ```
 
-🔴 &nbsp;Set **replacepaths** in Windows to **True**:
+🔴 &nbsp;Set **replace paths** in Windows to **True**:
 
 ```
 replace: True

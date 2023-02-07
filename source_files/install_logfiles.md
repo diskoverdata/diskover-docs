@@ -2,7 +2,7 @@
 ___
 ### Create Diskover Logs Directory
 
-By default all log files when `logToFile` is set to `True` are stored in `/var/log/diskover/` directory. This directory can be changed by setting `logDirectory` in config file. For Windows you will want to change this directory to for example `C:\\Windows\\Temp`.
+By default all log files when `logToFile` is set to `True` are stored in `/var/log/diskover/` directory. This directory can be changed by setting `logDirectory` in config file. For Windows you will want to change this directory to for example `C:\Program Files\diskover\logs`.
 
 🔴 &nbsp;Create Diskover logs directory:
 ```

@@ -20,14 +20,6 @@ pip3 install boto3
 
   [https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html)
 
-🔴 &nbsp;Scan and index a **s3** bucket _**bucketname**_ using an auto-index name:
-
-```
-cd /opt/diskover
-python3 diskover.py --altscanner scandir_s3 s3://bucketname
-```
->Note: bucketname is optional, you can scan all buckets using s3://
-
 #### Using Different Endpoint URL (Other than AWS)
 
 🔴 &nbsp;To use a different **s3 endpoint url** (Wasabi, etc.), set the **AWS_PROFILE** and the **S3_ENDPOINT_URL** environment variables before running the crawl:
@@ -50,12 +42,13 @@ export S3_USE_SSL=false
 export S3_VERIFY=false
 ```
 
-🔴 &nbsp;Create an s3 index with auto index name:
+🔴 &nbsp;Scan and index a **s3** bucket _**bucketname**_ using an auto-index name:
 
 ```
 cd /opt/diskover
 python3 diskover.py --altscanner scandir_s3 s3://bucketname
 ```
+>Note: bucketname is optional, you can scan all buckets using s3://
 
 🔴 &nbsp;Create an s3 index with index name "diskover-s3-bucketname":
 

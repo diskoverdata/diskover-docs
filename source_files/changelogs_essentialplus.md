@@ -5,6 +5,68 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.1.0] - 2023-02-06
+##### fixed
+- python error when indexing spaceinfo doc and disk space > max size for ES long field mapping (s3fs mount)
+- diskover_cache not getting logged to file
+- trailing slashes not geting removed from paths in Windows
+- catching AttributeError exceptions in alt scanner log_setup, init, close functions
+- python error finding threaddirdepth for directory tree with only 1 subfolder
+- python error when scanning s3fs fuse mount and directory modified time (mtime) timestamp invalid
+- bugs using alt scanners in Windows
+##### added
+- free_percent and available_percent to spaceinfo doc and to es index mappings
+- Windows path examples for log directory, etc. to all default/sample config files
+- Azure Storage Blob alt scanner v0.0.4 (scandir_azure.py) in scanners directory and default/sample config in configs_sample/diskover_scandir_azure/ (Pro +)
+- Windows pre and post diskover-web task panel script examples in scripts directory
+##### changed
+- when not specifiying index name with -i cli option and using alt scanner, index name now contains alt scanner name in the index name, example diskover-s3_bucketname-datetime
+- updated es field copier post-index plugin to v0.1.2
+    - added copying field mappings from source to dst index if any missing
+- updated media info plugin to v0.0.19
+    - changed resolution, codec, codeclong, pixfmt, duration, bitrate field mappings to multi-field (keyword and text)
+    - added codec_tag_string (FourCC codes) from ffprobe output as new es index field named codectag (keyword/text field)
+    - fixed ffprobe errors getting cached in media info sqlite db
+    - added "excludedirs" config setting (excluded directories) to default/sample config, copy to your config
+    - fixed logs not getting output to file when logging to file enabled in diskover config
+- updated illegal file name post-index plugin to v0.1.4
+    - added -f --fixnames cli option to fix file names
+    - added --fixnamesdryrun cli option to fix file names dry-run
+    - added new config settings to default/sample config: normalizeunicode, encodeascii, filenamecharlimit, replacespaces
+- updated dupes finder post-index plugin to v2.0.8
+    - fixed issue with using -a, --alldocs cli option and not all files hashes getting indexed
+    - fixed issue with using -c, --csv cli option and if no dupes found csv file still gets created
+    - added -m --hashmode to cli options to set hash mode (overrides mode config setting)
+    - changed hash index field from keyword to object and added hash.xxhash, hash.md5, hash.sha1, or hash.sha256, hash gets stored in one of these sub-fields of hash field depending on what mode is used
+    - hash cache sqlite db now gets/sets separate hash keys (xxhash, md5, etc) for each hash type when retrieving/storing hashes instead of just single hash key
+    - added hash mode to Hash column title and filename when saving csv
+    - added datetime to filename when saving csv
+    - set encoding to utf-8 when saving csv file
+    - added file Size, Mtime columns when saving csv file
+    - added usediskmtime to default/sample config file
+- updated index diff post-index plugin to v2.0.4
+    - added -c --hashdiff to cli options to compare checksum/hash of files when doing diff as well as file names
+    - added --addtags to cli options to add diff tags to index for any file diffs
+    - added datetime to filename when saving csv using filelistonly cli option
+    - added hash column when saving csv using filelistonly cli option
+    - fixed issues when using comparecsvs cli option
+    - added "hashskipempty" and "hashskipmissing" settings to default/sample config, copy to your config
+- updated dircache alt scanner to v0.0.10
+    - fixed Windows path issues
+- updated diskoverd to v2.1.0
+    - added new config setting "sendemaillongruntask" to default/sample config for sending email when task taking more than n minutes to run, copy to your config
+    - fixed exception handling issue running subprocess
+    - fixed issue with task finishing but not getting removed from current tasks
+    - fixed issue with shutting down diskoverd service in Windows did not send shutdown to diskover-web api
+    - fixed issue with stopping diskoverd with kill command or ctrl+c and not stopping all running tasks causing diskoverd to not exit until subprocess tasks finish
+    - removed support for Task Panel File Action tasks
+    - added log warning if email config settings not set and task has email address set, causing python smtp email exception run connect() first and diskoverd not sending worker update to api
+- updated s3 alt scanner to v0.0.12
+    - added env vars S3_USE_SSL, and S3_VERIFY to set boto3 client use_ssl and verify params
+    - fixed botocore not logging to screen when logging to file enabled
+- slow directory scan warning time in diskover default/sample config to 10 minutes
+
+
 #### [2.0.7] - 2022-12-04
 ##### fixed
 - exception handling for Elasticsearch exception TransportError during bulk uploads
@@ -676,6 +738,78 @@ ___
 
 ___
 ### Diskover-web v2 Annual Subscription Editions Changelog
+
+#### [2.1.0] - 2023-02-06
+##### fixed
+- not staying logged in when checking keep me logged in for 7 days on login page
+- Cross-Site Scripting (XSS) vulnerability in nav.php
+- license issue
+- issue with smartsearches, tags, costs analytics pages and checking show directories only and no results causes page to load with "Sorry, no smart search results found in the index(s)" and unable to set back and see charts
+- issue with tags analytics page showing "Sorry, no tags found in the index(s)" and unable to see charts
+- issue with showing charts by count
+- INDEX_MAPPINGS excluded_dirs config setting not being recursive for the directory path
+- Fatal error: Allowed memory size of n bytes exhausted in Diskover.php when searching for /nonexistpath
+- es search query error when searching for /nonexistpath
+- bug fixes searching full absolute paths
+- php timeout when exporting large csv/json files
+- double quotes not displaying in task panel form input fields in tasks
+- links on dashboard not loading root path in search results
+- filters for hardlinks not using nlink field
+- searching "NOT parent_path:\/somepath" changing the directory in file tree
+##### added
+- Reports page (Pro +) - custom reporting analytics page
+- more options to quick search nav menu dropdown
+- more options to filters modal
+- filter charts checkbox to nav filters button modal and settings page to apply filters to search results and dashboard charts
+- reports link to nav analytics drop down menu and path drop down menus
+- ldap groups/index mapping paths filtering to smart searches, user analysis, and cost analysis
+- show error link on edit smart searches, edit cost analysis pages
+- show multi-fields on help page fields section and filter fields, e.g. media_info.framerate
+- diskspace api example to help page
+- additional file action samples: cat.php, md5.php
+- path url param check to fileactions.php include file
+- reload button to bottom of dashboard page to reload chart data
+- Hash Diffs file action to fileaction_samples directory
+- New Files file action to fileaction_samples directory
+- css to wrap long text for extra fields on search results table
+- waiting (run now) and stopping (stop task) last status icons/text to task panel task list page table
+- no index selected warning message on indices page
+- excluded_query key to INDEX_MAPPINGS config setting
+    - added example usage in default/sample config file Constants.php.sample
+- edit search query button to search results page
+- fileactions_pagetitle var to fileactions_header.php include file to set html page title for file action
+- fileactions_header_inc var to fileactions_header.php include file to add addtional header html for file action
+- fileactions_footer_inc var to fileactions_footer.php include file to add addtional footer html for file action
+- "LDAP_GROUPSDN" config settings to Constants.php.sample and config defaults, copy to your Constants.php config
+##### changed
+- removed search path from filters
+- removed filters always being applied to search results charts
+- charts on dashboard and search page
+    - now use analytics size and time filters set in Constants.php and analytics pages
+    - display size/count on mouse over tips
+- top by count charts now display by doc counts rather than counts of top by size chart data
+- all links on analytics pages open in new browser tab
+- removed need for escaped path separators, spaces, unc paths when creating new task in task panel
+- updated api to v2.0.5
+    - added diskspace endpoint to get disk space info from spaceinfo docs in index
+- updated Live View File Action to v0.1.8 (in fileaction_samples directory)
+    - fixed issue with using url for scandir.php
+    - added file actions menu example for files (commented out in liveview.js)
+    - added liveview.css and text wrapping for long file names/paths
+    - added scandirremote.php for web server to web server communication of directory lists
+    - improved timeout handling
+    - set directory item limit to 10,000 items in scandir.php, items are sorted by newest modified time (mtime)
+    - added setting at top of scandir.php for uid/gid name lookups
+    - moved php-posix extension check into scandir.php from liveview.php
+- removed checkurlparams from fileactions.php include file (no longer used by file actions)
+- improved file tree on File Tree and Treemap analytics pages
+    - arrow icon next to folder is no longer shown if folder has no sub dirs and show files is disabled
+- all chart links on dashboard and search page now open in new window
+- find similiar, view file/directory info buttons, and search path menu items on search results page table now open in new window
+- links on view file/directory info page now open in new window
+- exporting csv/json files now opens new browser window, changed php timeout to 10 min
+- removed File Action Task from task panel
+
 
 #### [2.0.7] - 2022-12-04
 ##### fixed

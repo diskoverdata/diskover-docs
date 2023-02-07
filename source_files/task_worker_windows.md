@@ -16,7 +16,7 @@ logDirectory: C:\Program Files\diskover\logs
 pythoncmd: python
 diskoverpath: C:\\Program\ Files\\diskover\\
 ```
->Note: Check the logs directory exists and is writable by the user running diskover
+>Note: Check the logs directory exists and is writable for the user running diskoverd
 
 🔴 &nbsp;Download nssm:
 

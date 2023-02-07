@@ -12,10 +12,11 @@ notepad %APPDATA%\diskoverd\config.yaml
 
 🔴 &nbsp;Set in config:
 ```
-logDirectory: C:\\Windows\\Temp
+logDirectory: C:\Program Files\diskover\logs
 pythoncmd: python
 diskoverpath: C:\\Program\ Files\\diskover\\
 ```
+>Note: Check the logs directory exists and is writable by the user running diskover
 
 🔴 &nbsp;Download nssm:
 

@@ -57,7 +57,6 @@ cd /opt/diskover
 python3 diskover.py --altscanner scandir_s3 s3://bucketname
 ```
 
-
 🔴 &nbsp;Create an s3 index with index name "diskover-s3-bucketname":
 
 ```

@@ -45,3 +45,15 @@ export S3_ENDPOINT_URL=https://<endpoint>
 cd /opt/diskover
 python3 diskover.py --altscanner scandir_s3 s3://bucketname
 ```
+
+
+#### SSL Certificate Verification
+
+🔴 &nbsp;To not use ssl and/or to not verify ssl certificates, set the **S3_USE_SSL** and the **S3_VERIFY** environment variables before running the crawl:
+
+```
+export S3_USE_SSL=false
+```
+```
+export S3_VERIFY=false
+```

@@ -112,7 +112,7 @@ The following outlines installing the dependencies for the Diskover indexer on M
 
 <img src="images/image_indexers_install_with_mac_installer_step_10_close_installer.png" width="250">
 
-#### Diskover license tools
+#### Diskover License Tools
 
 ##### Open The Diskover License Tools in a Browser
 
@@ -129,7 +129,7 @@ The following sections will discuss each of these options in the drop-down list 
 
 ##### Register License
 
-The very first thing you need to do is request and then install license keys in order to index your first directory. 
+The very first thing you need to do is request a license and then install the license file in order to index your first directory. 
 
 🔴 &nbsp;Select **Register license** in the drop-down list menu. This page will open. 
 
@@ -143,7 +143,7 @@ The very first thing you need to do is request and then install license keys in 
 
 ##### Install License
 
-🔴 &nbsp;You will receive your license key via email, the file name will be **diskover.lic**. Save that file on your system, then select **Install license** in the drop-down list. Click **Choose File** and select the **diskover.lic** file on your system, and click **Install**:
+🔴 &nbsp;You will receive your license key via email, the file name will be **diskover.lic**. Save that file on your system, then select **Install license** in the drop-down list. Click **Choose File** and select the **diskover.lic** file on your system, and then click **Install**:
 
 <img src="images/image_indexers_install_with_mac_installer_license_tool_install_license.png" width="250">
 
@@ -163,17 +163,6 @@ After the license is installed, you are now ready to index/scan your first direc
 >	- Did you install the license prior to launching your first index?
 >	- Did you move the directory being indexed while the indexing what still running?
 >	- If none of the above issues apply to your situation, please contact the [Diskover support team](https://diskoverdata.com/support/).
-
-🔴 &nbsp;Once you get a successful scan, load up the Diskover software by using the url link you were given.
-
-
-🔴 &nbsp;Your indexed directory should now be visible and ready to use within the Diskover software.
-
-![Image: Select Open Anyway](images/image_indexers_install_with_mac_installer_license_tool_index_visible.png)
-
-🔴 &nbsp;You can also see and uniquely select the desired indices by clicking on the **gear icon** at the top right corner, then select **Indices**.
-
-🔴 &nbsp;You can schedule regular scans of your index/indices as well as other parameters by clicking on on the **gear icon** at the top right corner,  select **Task Panel**, then follow [these configuration instructions](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#task-configuration-files).
 
 ##### Configure Instance
 
@@ -229,6 +218,18 @@ After the license is installed, you are now ready to index/scan your first direc
 **Disable replicas during crawl** > Details to come.
 
 🔴 &nbsp;Click **Update** if you've made any changes to this page.
+
+#### See Directory/ies in Diskover Software
+
+🔴 &nbsp;Once you get a successful scan, load up the Diskover software by using the url link you were given.
+
+🔴 &nbsp;Your indexed directory should now be visible and ready to use within the Diskover software.
+
+![Image: Select Open Anyway](images/image_indexers_install_with_mac_installer_license_tool_index_visible.png)
+
+🔴 &nbsp;You can also see and uniquely select the desired indices by clicking on the **gear icon** at the top right corner, then select **Indices**.
+
+🔴 &nbsp;You can schedule regular scans of your index/indices as well as other parameters by clicking on on the **gear icon** at the top right corner,  select **Task Panel**, then follow [these configuration instructions](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#task-configuration-files).
 
 #### Configure Your Indices
 

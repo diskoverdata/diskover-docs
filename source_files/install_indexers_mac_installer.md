@@ -84,7 +84,7 @@ The following outlines installing the dependencies for the Diskover indexer on M
 
 🔴 &nbsp;Depending on your setup, you may be requested to type your password or use your Touch ID.
 
-<img src="images/image_indexers_install_with_mac_installer_step_7_confirm_with_pswd.png" width="300">
+<img src="images/image_indexers_install_with_mac_installer_step_7_confirm_with_pswd.png" width="250">
 
 ##### Installation
 

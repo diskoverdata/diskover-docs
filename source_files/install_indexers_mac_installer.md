@@ -41,7 +41,7 @@ The following outlines installing the dependencies for the Diskover indexer on M
 >
 > 🔴 &nbsp;You might get this final security notice, if so click **Open**:
 >
-> <img src="images/image_indexers_install_with_mac_installer_safety_msg_open.png" width="350">
+> <img src="images/image_indexers_install_with_mac_installer_safety_msg_open.png" width="300">
 
 
 #### Dependencies Installation
@@ -84,7 +84,7 @@ The following outlines installing the dependencies for the Diskover indexer on M
 
 🔴 &nbsp;Depending on your setup, you may be requested to type your password or use your Touch ID.
 
-<img src="images/image_indexers_install_with_mac_installer_step_7_confirm_with_pswd.png" width="350">
+<img src="images/image_indexers_install_with_mac_installer_step_7_confirm_with_pswd.png" width="300">
 
 ##### Installation
 
@@ -111,7 +111,7 @@ The following outlines installing the dependencies for the Diskover indexer on M
 
 🔴 &nbsp;When closing the installer, you'll be prompted to either **Keep** the installation package or **Move to Trash**:
 
-<img src="images/image_indexers_install_with_mac_installer_step_10_close_installer.png" width="350">
+<img src="images/image_indexers_install_with_mac_installer_step_10_close_installer.png" width="300">
 
 #### Diskover license tools
 

@@ -3,7 +3,7 @@ ___
 
 🚧 &nbsp;**NOT AVAILABLE YET**
 
-The following outlines installing the dependencies for the Diskover indexer on MacOS using an installer, as well as information on how to get/install the license, as well as launch the first scan.
+The following outlines installing the dependencies for the Diskover indexer on MacOS using an installer, as well as information on how to get/install the license and launch the first scan.
 
 #### Download the Installation Package
 
@@ -19,9 +19,9 @@ The following outlines installing the dependencies for the Diskover indexer on M
 
 ![Image: Install Package in Finder](images/image_indexers_install_with_mac_installer_install_package_in_finder.png)
 
-> **! Possible Security Messages**
+> **! Possible Security Warnings**
 >
-> _Note:_ This security issue is more common for older MacOS installations.
+> _Note:_ These security warnings are more common for older MacOS installations.
 > 
 > 🔴 &nbsp;If the following safety message appears, click **OK**:
 >
@@ -46,7 +46,7 @@ The following outlines installing the dependencies for the Diskover indexer on M
 
 #### Dependencies Installation
 
->📝 _Note:_ You can print and/or save the text content of each step during the installation using the **Print** and **Save** buttons located at the bottom of the installation window. You can also go back one step at a time by clicking the **Go Back** button.
+>_Note:_ You can print and/or save the text content of each step during the installation using the **Print** and **Save** buttons located at the bottom of the installation window. You can also go back one step at a time by clicking the **Go Back** button.
 
 ##### Introduction
 
@@ -190,6 +190,7 @@ address for end-users
 **Host** > The host address should be automatically populated, if not, set host to your ES hostname or IP, when using AWS ES, set to your endpoint name without `http://` or `https://`
 
 **Port** > The port should be automatically populated and this allows access to remote host, if field is empty, set port to your ES port, default is 9200 for local and 443 or 80 for AWS ES.
+> You need to check **SSL verification** at the bottom of this page if port **443** is used.
 
 **User** > Modify the username as needed.
 

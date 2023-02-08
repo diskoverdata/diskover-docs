@@ -126,7 +126,7 @@ http://localhost:8080/index/
 
 The following sections will discuss each of these options in the drop-down list located at the top right corner:
 
-<img src="images/image_indexers_install_with_mac_installer_license_tool_drop_down_options.png" width="300">
+<img src="images/image_indexers_install_with_mac_installer_license_tool_drop_down_options.png" width="250">
 
 ##### Register License
 
@@ -184,7 +184,7 @@ address for end-users
 >📝 _Note:_ Changing most of these parameters can have negative effects on Diskover running smoothly.
 
 ![Image: Select Open Anyway](images/image_indexers_install_with_mac_installer_license_tool_configure_instance.png)
-<img src="images/image_indexers_install_with_mac_installer_license_tool_configure_instance.png" width="650">
+<img src="images/image_indexers_install_with_mac_installer_license_tool_configure_instance.png" width="750">
 
 >📝 _Note:_ Elasticsearch is abbreviated to ES below.
 

@@ -46,7 +46,7 @@ ordered_documents:
   - install_indexers_linux_centos_and_rhel.md
   - install_indexers_linux_ubuntu.md
   - install_indexers_windows.md
-  - install_indexers_mac.md
+  - install_indexers_mac_manual.md
   - install_indexers_alternate_intro.md
   - install_indexers_alternate_dircache.md
   - install_indexers_alternate_s3.md

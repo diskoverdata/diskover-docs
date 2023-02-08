@@ -1,21 +1,19 @@
 ___
-### Install Diskover Indexers for Mac | Using Installer
+### Install Diskover Indexers for Mac | Using Installer 🚧
 
-🚧 **NOT AVAILABLE YET**
+🚧 &nbsp;**NOT AVAILABLE YET**
 
-The following outlines installing the dependencies for the Diskover indexer on MacOS using an installer.
+The following outlines installing the dependencies for the Diskover indexer on MacOS using an installer, as well as information on how to get/install the license, as well as launch the first scan.
 
-#### Download of the Installation Package
+#### Download the Installation Package
 
-🔴 &nbsp;Use the url link you received to download the **Diskover_Amazon.dmg** package > click on the url link and it will open a tab in your default browser.
-
-🔴 &nbsp;Click **Download**:
+🔴 &nbsp;Use the url link you received to download the **Diskover_Amazon.dmg** package > click on the url link and it will open a tab in your default browser, then click **Download**:
  
 ![Image: Download DMG Package](images/image_indexers_install_with_mac_installer_instructions_download_dmg.png)
 
-> If you get the following message, select **Download anyway**
+> If you get the following message, select **Download anyway**:
 >
-> ![Image: Security Message](images/image_indexers_install_with_mac_installer_security_msg.png)
+> <img src="images/image_indexers_install_with_mac_installer_security_msg.png" width="350">
 
 🔴 &nbsp;The **Diskover_Amazon.dmg** package will go to your **Downloads** folder. Wait for the file to finish downloading and then double click the icon/file to launch the Diskover Mac Installer:
 
@@ -23,27 +21,28 @@ The following outlines installing the dependencies for the Diskover indexer on M
 
 > **Possible Security Messages**
 >
-> 📝&nbsp;_Note:_ This security issue is more common for older MacOS installations.
+> _Note:_ This security issue is more common for older MacOS installations.
 > 
 > 🔴 &nbsp;If the following safety message appears, click **OK**:
 >
-> ![Image: Security Message](images/image_indexers_install_with_mac_installer_safety_msg_unidentified_dev.png)
+> <img src="images/image_indexers_install_with_mac_installer_safety_msg_unidentified_dev.png" width="250">
 >
 > 🔴 &nbsp;Open **Apple** > **System Preferences**:
 >
-> ![Image: Open System Preferences](images/image_indexers_install_with_mac_installer_apple_sys_pref.png)
+> <img src="images/image_indexers_install_with_mac_installer_apple_sys_pref.png" width="200">
 >
 > 🔴 &nbsp;Select **Security & Privacy**:
 >
-> ![Image: Open Security & Privacy](images/image_indexers_install_with_mac_installer_sys_pref_security_privacy.png)
+> <img src="images/image_indexers_install_with_mac_installer_sys_pref_security_privacy.png" width="400">
 >
 > 🔴 &nbsp;Click **Open Anyway**:
 >
-> ![Image: Select Open Anyway](images/image_indexers_install_with_mac_installer_sys_pref_security_privacy_open_anyway.png)
+> <img src="images/image_indexers_install_with_mac_installer_sys_pref_security_privacy_open_anyway.png" width="400">
 >
 > 🔴 &nbsp;You might get this final security notice, if so click **Open**:
 >
-> ![Image: Last Security Message](images/image_indexers_install_with_mac_installer_safety_msg_open.png)
+> <img src="images/image_indexers_install_with_mac_installer_safety_msg_open.png" width="250">
+
 
 #### Dependencies Installation
 
@@ -53,7 +52,7 @@ The following outlines installing the dependencies for the Diskover indexer on M
 
 🔴 &nbsp;Click **Continue**:
 
-![Image: Mac Installer Step 1 - Introduction](images/image_indexers_install_with_mac_installer_step_1_intro.png)
+<img src="images/image_indexers_install_with_mac_installer_step_1_intro.png" width="400">
 
 ##### Read Me
 

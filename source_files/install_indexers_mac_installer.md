@@ -181,12 +181,11 @@ address for end-users
 
 🔴 &nbsp;You can configure the Elasticsearch host by selecting **Configure instance** in the drop-down list:
 
->📝 _Note:_ Changing most of these parameters can have negative effects on Diskover running smoothly.
+> _Note:_ Changing most of these parameters can have negative effects on Diskover running smoothly.
 
-![Image: Select Open Anyway](images/image_indexers_install_with_mac_installer_license_tool_configure_instance.png)
-<img src="images/image_indexers_install_with_mac_installer_license_tool_configure_instance.png" width="750">
+<img src="images/image_indexers_install_with_mac_installer_license_tool_configure_instance.png" width="850">
 
->📝 _Note:_ Elasticsearch is abbreviated to ES below.
+> _Note:_ Elasticsearch is abbreviated to ES below.
 
 **Host** > The host address should be automatically populated, if not, set host to your ES hostname or IP, when using AWS ES, set to your endpoint name without `http://` or `https://`
 

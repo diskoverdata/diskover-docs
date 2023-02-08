@@ -3,7 +3,7 @@ ___
 
 🚧 &nbsp;**NOT AVAILABLE YET**
 
-The following outlines installing the dependencies for the Diskover indexer on MacOS using an installer, as well as information on how to get/install the license and launch the first scan.
+The following outlines installing the dependencies for the Diskover indexer on MacOS using an installer, as well as information on how to get/install the license and launch your first scan.
 
 #### Download the Installation Package
 
@@ -39,7 +39,7 @@ The following outlines installing the dependencies for the Diskover indexer on M
 >
 > <img src="images/image_indexers_install_with_mac_installer_sys_pref_security_privacy_open_anyway.png" width="600">
 >
-> 🔴 &nbsp;You might get this final security notice, if so click **Open**:
+> 🔴 &nbsp;If you get this final security warning, click **Open**:
 >
 > <img src="images/image_indexers_install_with_mac_installer_safety_msg_open.png" width="300">
 
@@ -103,7 +103,6 @@ The following outlines installing the dependencies for the Diskover indexer on M
 > <img src="images/image_indexers_install_with_mac_installer_step_9b_install_failed.png" width="600">
 >
 >	- The selected disk might be full.
-> - What else?
 >	- If none of the above issues apply to your situation, please send the "zip 2 log directories" to [support@diskoverdata.com](mailto:support@diskoverdata.com)
 >	- Contact the [Diskover support team](https://diskoverdata.com/support/).
 
@@ -162,26 +161,25 @@ After the license is installed, you are now ready to index/scan your first direc
 
 > If you get a **FAILURE** status, please consider these possible issues:
 >	- Did you install the license prior to launching your first index?
-> - What else?
->	- If none of the above issues apply to your situation, contact the [Diskover support team](https://diskoverdata.com/support/).
+>	- Did you move the directory being indexed while the indexing what still running?
+>	- If none of the above issues apply to your situation, please contact the [Diskover support team](https://diskoverdata.com/support/).
 
-🔴 &nbsp;Once you get a successful scan, load up the Diskover software by coping this address in a web browser:
-```
-address for end-users
-```
-🔴 &nbsp;Your directory is now visible and ready to use within the Diskover software.
+🔴 &nbsp;Once you get a successful scan, load up the Diskover software by using the url link you were given.
+
+
+🔴 &nbsp;Your indexed directory should now be visible and ready to use within the Diskover software.
 
 ![Image: Select Open Anyway](images/image_indexers_install_with_mac_installer_license_tool_index_visible.png)
 
 🔴 &nbsp;You can also see and uniquely select the desired indices by clicking on the **gear icon** at the top right corner, then select **Indices**.
 
-🔴 &nbsp;You can schedule regular scans of your index/indices as well as other parameters by clicking on on the **gear icon** at the top right corner, then select **Task Panel**. Follow [these configuration instructions](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#task-configuration-files).
+🔴 &nbsp;You can schedule regular scans of your index/indices as well as other parameters by clicking on on the **gear icon** at the top right corner,  select **Task Panel**, then follow [these configuration instructions](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#task-configuration-files).
 
 ##### Configure Instance
 
-🔴 &nbsp;You can configure the Elasticsearch host by selecting **Configure instance** in the drop-down list:
+🔴 &nbsp;You can configure the Elasticsearch host by selecting **Configure instance** in the drop-down list. 
 
-> _Note:_ Changing most of these parameters can have negative effects on Diskover running smoothly.
+> _Note:_ Changing most of these parameters can have serious negative effects on Diskover running smoothly.
 
 <img src="images/image_indexers_install_with_mac_installer_license_tool_configure_instance.png" width="850">
 

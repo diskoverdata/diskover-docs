@@ -111,7 +111,7 @@ The following outlines installing the dependencies for the Diskover indexer on M
 
 🔴 &nbsp;When closing the installer, you'll be prompted to either **Keep** the installation package or **Move to Trash**:
 
-<img src="images/image_indexers_install_with_mac_installer_step_10_close_installer.png" width="300">
+<img src="images/image_indexers_install_with_mac_installer_step_10_close_installer.png" width="250">
 
 #### Diskover license tools
 

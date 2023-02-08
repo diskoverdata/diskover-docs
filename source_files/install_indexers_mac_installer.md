@@ -25,7 +25,7 @@ The following outlines installing the dependencies for the Diskover indexer on M
 > 
 > 🔴 &nbsp;If the following safety message appears, click **OK**:
 >
-> <img src="images/image_indexers_install_with_mac_installer_safety_msg_unidentified_dev.png" width="350">
+> <img src="images/image_indexers_install_with_mac_installer_safety_msg_unidentified_dev.png" width="300">
 >
 > 🔴 &nbsp;Open **Apple** > **System Preferences**:
 >

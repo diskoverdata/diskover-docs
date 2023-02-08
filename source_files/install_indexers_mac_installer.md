@@ -33,11 +33,11 @@ The following outlines installing the dependencies for the Diskover indexer on M
 >
 > 🔴 &nbsp;Select **Security & Privacy**:
 >
-> <img src="images/image_indexers_install_with_mac_installer_sys_pref_security_privacy.png" width="400">
+> <img src="images/image_indexers_install_with_mac_installer_sys_pref_security_privacy.png" width="600">
 >
 > 🔴 &nbsp;Click **Open Anyway**:
 >
-> <img src="images/image_indexers_install_with_mac_installer_sys_pref_security_privacy_open_anyway.png" width="400">
+> <img src="images/image_indexers_install_with_mac_installer_sys_pref_security_privacy_open_anyway.png" width="600">
 >
 > 🔴 &nbsp;You might get this final security notice, if so click **Open**:
 >
@@ -52,7 +52,7 @@ The following outlines installing the dependencies for the Diskover indexer on M
 
 🔴 &nbsp;Click **Continue**:
 
-<img src="images/image_indexers_install_with_mac_installer_step_1_intro.png" width="400">
+<img src="images/image_indexers_install_with_mac_installer_step_1_intro.png" width="600">
 
 ##### Read Me
 

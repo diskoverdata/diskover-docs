@@ -13,19 +13,19 @@ The following outlines installing the dependencies for the Diskover indexer on M
 
 > If you get the following message, select **Download anyway**:
 >
-> <img src="images/image_indexers_install_with_mac_installer_security_msg.png" width="350">
+> <img src="images/image_indexers_install_with_mac_installer_security_msg.png" width="450">
 
 🔴 &nbsp;The **Diskover_Amazon.dmg** package will go to your **Downloads** folder. Wait for the file to finish downloading and then double click the icon/file to launch the Diskover Mac Installer:
 
 ![Image: Install Package in Finder](images/image_indexers_install_with_mac_installer_install_package_in_finder.png)
 
-> **Possible Security Messages**
+> **! Possible Security Messages**
 >
 > _Note:_ This security issue is more common for older MacOS installations.
 > 
 > 🔴 &nbsp;If the following safety message appears, click **OK**:
 >
-> <img src="images/image_indexers_install_with_mac_installer_safety_msg_unidentified_dev.png" width="250">
+> <img src="images/image_indexers_install_with_mac_installer_safety_msg_unidentified_dev.png" width="350">
 >
 > 🔴 &nbsp;Open **Apple** > **System Preferences**:
 >
@@ -41,7 +41,7 @@ The following outlines installing the dependencies for the Diskover indexer on M
 >
 > 🔴 &nbsp;You might get this final security notice, if so click **Open**:
 >
-> <img src="images/image_indexers_install_with_mac_installer_safety_msg_open.png" width="250">
+> <img src="images/image_indexers_install_with_mac_installer_safety_msg_open.png" width="350">
 
 
 #### Dependencies Installation
@@ -58,60 +58,60 @@ The following outlines installing the dependencies for the Diskover indexer on M
 
 🔴 &nbsp;Take the time to read these basic instructions, then click **Continue**:
 
-![Image: Mac Installer Step 2 - Read Me](images/image_indexers_install_with_mac_installer_step_2_read_me.png)
+<img src="images/image_indexers_install_with_mac_installer_step_2_read_me.png" width="600">
 
 ##### License
 
 🔴 &nbsp;Read, save, and/or print the license agreement, then click **Continue**:
 
-![Image: Mac Installer Step 3 - License](images/image_indexers_install_with_mac_installer_step_3_license.png)
+<img src="images/image_indexers_install_with_mac_installer_step_3_license.png" width="600">
 
 🔴 &nbsp;You will be prompted to **Agree** to resume the installation. I you select **Disagree**, the installation process will stop before any files are installed:
 
-![Image: Mac Installer Step 4 - Agree or Not](images/image_indexers_install_with_mac_installer_step_4_license_agree.png)
+<img src="images/image_indexers_install_with_mac_installer_step_4_license_agree.png" width="600">
 
 ##### Destination Selection
 
 🔴 &nbsp;Select the disk/volume for the installation of the files and then click **Continue**:
 
-![Image: Mac Installer Step 5 - Select Destination](images/image_indexers_install_with_mac_installer_step_5_destination_selection.png)
+<img src="images/image_indexers_install_with_mac_installer_step_5_destination_selection.png" width="600">
 
 ##### Installation type
 
 🔴 &nbsp;This step will confirm the space required and disk/volume you selected for the installation. If you want to change the selection by default, either select **Change Install Location** or **Go Back**. If you are satisfied with your selection, click **Install** to launch the final step of the process:
 
-![Image: Mac Installer Step 6 - Installation Type](images/image_indexers_install_with_mac_installer_step_6_install_type.png)
+<img src="images/image_indexers_install_with_mac_installer_step_6_install_type.png" width="600">
 
 🔴 &nbsp;Depending on your setup, you may be requested to type your password or use your Touch ID.
 
-![Image: Mac Installer Step 7 - Confirm with Password or Touch ID](images/image_indexers_install_with_mac_installer_step_7_confirm_with_pswd.png)
+<img src="images/image_indexers_install_with_mac_installer_step_7_confirm_with_pswd.png" width="350">
 
 ##### Installation
 
 🔴 &nbsp;You can see the status of the installation via the progress bar:
 
-![Image: Mac Installer Step 8 - Installation Progress](images/image_indexers_install_with_mac_installer_step_8_install_progress.png)
+<img src="images/image_indexers_install_with_mac_installer_step_8_install_progress.png" width="600">
 
 ##### Summary
 
 🔴 &nbsp;You should see **The installation was successfull**, you can copy the following link and paste in a web browser: [http://localhost:8080/index/](http://localhost:8080/index/):
 
-![Image: Mac Installer Step 9 - Installation Status](images/image_indexers_install_with_mac_installer_step_9a_install_successful.png)
+<img src="images/image_indexers_install_with_mac_installer_step_9a_install_successful.png" width="600">
 
 > If you get the message **The installation failed**, please consider these possible issues:
 >
->![Image: Mac Installer Step 9 - Installation Status](images/image_indexers_install_with_mac_installer_step_9b_install_failed.png)
+> <img src="images/image_indexers_install_with_mac_installer_step_9b_install_failed.png" width="600">
 >
 >	- The selected disk might be full.
 > - What else?
 >	- If none of the above issues apply to your situation, please send the "zip 2 log directories" to [support@diskoverdata.com](mailto:support@diskoverdata.com)
->	- Contact the [Diskover support team](https://diskoverdata.com/support/)
+>	- Contact the [Diskover support team](https://diskoverdata.com/support/).
 
 ##### Closing of the installer
 
 🔴 &nbsp;When closing the installer, you'll be prompted to either **Keep** the installation package or **Move to Trash**:
 
-![Image: Select Open Anyway](images/image_indexers_install_with_mac_installer_step_10_close_installer.png)
+<img src="images/image_indexers_install_with_mac_installer_step_10_close_installer.png" width="350">
 
 #### Diskover license tools
 
@@ -126,7 +126,7 @@ http://localhost:8080/index/
 
 The following sections will discuss each of these options in the drop-down list located at the top right corner:
 
-![Image: Select Open Anyway](images/image_indexers_install_with_mac_installer_license_tool_drop_down_options.png)
+<img src="images/image_indexers_install_with_mac_installer_license_tool_drop_down_options.png" width="300">
 
 ##### Register License
 
@@ -136,17 +136,17 @@ The very first thing you need to do is request and then install license keys in 
 
 🔴 &nbsp;Click on **Get hardware ID and installed version** to automatically pre-populate those fields:
 
-![Image: Select Open Anyway](images/image_indexers_install_with_mac_installer_license_tool_register_license_empty.png)
+<img src="images/image_indexers_install_with_mac_installer_license_tool_register_license_empty.png" width="600">
 
 🔴 &nbsp;Fill out your **Email Address** and add **Notes** if desired, then click **Send email**. You can also copy your **Hardware ID** for future reference by clicking **Copy to clipboard**:
 
-![Image: Select Open Anyway](images/image_indexers_install_with_mac_installer_license_tool_register_license_ready_to_send.png)
+<img src="images/image_indexers_install_with_mac_installer_license_tool_register_license_ready_to_send.png" width="500">
 
 ##### Install License
 
-🔴 &nbsp;You will receive your license key via email, the file name will be **diskover.lic**. Save that file on your system, then select **Install license** in the drop-down list. Click **Choose File** and select the **diskover.lic** file on your system, and click **Install**
+🔴 &nbsp;You will receive your license key via email, the file name will be **diskover.lic**. Save that file on your system, then select **Install license** in the drop-down list. Click **Choose File** and select the **diskover.lic** file on your system, and click **Install**:
 
-![Image: Select Open Anyway](images/image_indexers_install_with_mac_installer_license_tool_install_license.png)
+<img src="images/image_indexers_install_with_mac_installer_license_tool_install_license.png" width="300">
 
 ##### Index a Directory
 
@@ -163,7 +163,7 @@ After the license is installed, you are now ready to index/scan your first direc
 > If you get a **FAILURE** status, please consider these possible issues:
 >	- Did you install the license prior to launching your first index?
 > - What else?
->	- If none of the above issues apply to your situation, contact the [Diskover support team](https://diskoverdata.com/support/)
+>	- If none of the above issues apply to your situation, contact the [Diskover support team](https://diskoverdata.com/support/).
 
 🔴 &nbsp;Once you get a successful scan, load up the Diskover software by coping this address in a web browser:
 ```
@@ -184,6 +184,7 @@ address for end-users
 >📝 _Note:_ Changing most of these parameters can have negative effects on Diskover running smoothly.
 
 ![Image: Select Open Anyway](images/image_indexers_install_with_mac_installer_license_tool_configure_instance.png)
+<img src="images/image_indexers_install_with_mac_installer_license_tool_configure_instance.png" width="650">
 
 >📝 _Note:_ Elasticsearch is abbreviated to ES below.
 
@@ -207,7 +208,7 @@ address for end-users
 
 **# of Replicas** > Number of replicas for index, recommended default is 0 (format in field **0**).
 
->📝 _Note:_ The following settings are to optimize ES for crawling.
+>_Note:_ The following settings are to optimize ES for crawling.
 
 **Index refresh interval** > Refresh interval during crawls, recommended default is 30 seconds (format in field **30s**).
 
@@ -219,11 +220,15 @@ address for end-users
 
 **Elasticsearch compression** > Use **default**, you can change for **best_compression** to reduce the size of your indices but it can decrease indexing and search performance.
 
-**HTTPS** > How to explain check or not? Checked by default, what happens if unchecked.
-**SSL verification** > How to explain check or not? Checked by default, what happens if unchecked.
-**HTTP compression** > How to explain check or not? Unchecked by default, what happens if checked.
-**Wait for status** > How to explain check or not? Unchecked by default, what happens if checked.
-**Disable replicas during crawl** > How to explain check or not? Checked by default, what happens if unchecked.
+**HTTPS** > Details to come.
+
+**SSL verification** > Details to come.
+
+**HTTP compression** > Details to come.
+
+**Wait for status** > Details to come.
+
+**Disable replicas during crawl** > Details to come.
 
 🔴 &nbsp;Click **Update** if you've made any changes to this page.
 

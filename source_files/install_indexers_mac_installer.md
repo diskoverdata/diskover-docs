@@ -126,7 +126,7 @@ http://localhost:8080/index/
 
 The following sections will discuss each of these options in the drop-down list located at the top right corner:
 
-<img src="images/image_indexers_install_with_mac_installer_license_tool_drop_down_options.png" width="250">
+<img src="images/image_indexers_install_with_mac_installer_license_tool_drop_down_options.png" width="200">
 
 ##### Register License
 
@@ -146,7 +146,7 @@ The very first thing you need to do is request and then install license keys in 
 
 🔴 &nbsp;You will receive your license key via email, the file name will be **diskover.lic**. Save that file on your system, then select **Install license** in the drop-down list. Click **Choose File** and select the **diskover.lic** file on your system, and click **Install**:
 
-<img src="images/image_indexers_install_with_mac_installer_license_tool_install_license.png" width="300">
+<img src="images/image_indexers_install_with_mac_installer_license_tool_install_license.png" width="250">
 
 ##### Index a Directory
 

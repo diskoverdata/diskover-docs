@@ -1,12 +1,12 @@
 ___
-## Chapter 15 - Cost Components
+## Cost Components
 ___
 
 ### AWS Costs
 
 Please refer to the [prerequisites and requirements section](#requirements) for the minimum and recommended nodes and instances.
 
-[https://aws.amazon.com/opensearch-service/pricing/](https://aws.amazon.com/opensearch-service/pricing/)
+Please visit AWS website for pricing based on your requirements: [https://aws.amazon.com/opensearch-service/pricing/](https://aws.amazon.com/opensearch-service/pricing/)
 
 ### Diskover Annual Subscriptions
 

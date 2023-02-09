@@ -29,9 +29,9 @@ vim ~/.config/diskover_scandir_azure/config.yaml
 cd /opt/diskover
 python3 diskover.py --altscanner scandir_azure az://containername
 ```
->Note: containername is optional, you can scan all containers in the storage account using az://
+> _Note:_ **containername** is optional, you can scan all containers in the storage account using **az://**
 
-🔴 &nbsp;Create an azure index with index name "diskover-azure-containername":
+🔴 &nbsp;Create an azure index with index name **diskover-azure-containername**:
 
 ```
 cd /opt/diskover

@@ -19,4 +19,4 @@ The Media Info column will now be displayed on the file search page of Diskover-
 
 #### List of Extra Fields
 
-For an exhaustive list of extra fields, please refer to the Diskover-Web user interface > gear icon > Help > Default index fields.
+For an exhaustive list of extra fields, please refer to the Diskover-Web user interface > **gear icon** > **Help** > Default index fields.

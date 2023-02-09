@@ -17,7 +17,7 @@ chown nginx:nginx /var/www/diskover-web/public/fileactions/*
 cp filesequence_settings.py.sample /var/www/diskover-web/src/diskover/filesequence_settings.py
 chown nginx:nginx /var/www/diskover-web/src/diskover/filesequence_settings.py
 ```
->Note: On Ubuntu, change chown nginx user to www-data
+> _Note:_ On Ubuntu, change chown nginx user to www-data
 
 🔴 &nbsp;Configure file sequence settings file:
 ```

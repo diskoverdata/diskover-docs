@@ -69,6 +69,8 @@ ordered_documents:
   - software_update_intro.md
   - software_update_community.md
   - software_update_linux.md
+  - software_update_windows.md
+  - software_update_mac.md
   - uninstall_intro.md
   - uninstall_elasticsearch.md
   - uninstall_php.md

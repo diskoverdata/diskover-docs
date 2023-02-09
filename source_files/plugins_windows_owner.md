@@ -3,7 +3,7 @@ ___
 
 The Windows Owner plugin adds the Windows file owner and primary group of each file and directory to the Diskover index at time of indexing. It replaces all docs showing username 0 with the Windows file/directory owner name.
 
->Note: Using this plugin increases scanning time due to name/sid lookups.
+> _Note:_ Using this plugin increases scanning time due to name/sid lookups.
 
 🔴 &nbsp;Requirements:
 * This plugin works in Windows only

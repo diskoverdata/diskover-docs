@@ -32,8 +32,8 @@ ordered_documents:
   - plugins_dupes_finder.md
   - plugins_autoclean.md
   - plugins_tag_copier.md
-  - plugins_index_differential.md
   - plugins_index_autotag.md
+  - plugins_index_differential.md
   - plugins_illegalfilename.md
   - plugins_esqueryreport.md
   - plugins_media_harvest.md

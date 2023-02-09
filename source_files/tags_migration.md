@@ -7,7 +7,7 @@ The Diskover indexing process creates a new index or point in time snapshot of t
 
 However, the Diskover indexer has no knowledge of tags applied outside of the indexing process, those tags that have been applied: a) manually, b) via Diskover API, or c) via plugins thru the API. Therefore, these tags must be migrated from one index to the next.
 
-Please also refer to our dedicated chapter [Tag Copier Plugin](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#tag-copier-plugin) for more information.
+**Please refer to our dedicated chapter [Tag Copier Plugin](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#tag-copier-plugin) for more information.**
 
 #### Tag Migration / Copy from Previous Index via Shell
 

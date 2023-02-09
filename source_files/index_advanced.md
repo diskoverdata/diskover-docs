@@ -1,12 +1,15 @@
 ___
 ## Advanced Index Creation and Manipulation for Diskover Indexers
+
+![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
+
 ___
 
 This chapter discusses ways to improve indexing performance.
 
 We recommend you have more/smaller indices than a few very large ones. Rather than indexing at the very top level of your storage mounts, you could index 1 level down into multiple indices and then run parallel `diskover.py` index processes which will be much faster to index a really large share with 100’s of millions of files.
 
-You can optimize your indices by setting the number of shards and replicas in the Diskover config file (Essential + versions). By default in Diskover config, shards are set to 1 and replicas are set to 0. It is important to note that these settings are not meant for production as they provide no load balancing or fault tolerance.
+You can optimize your indices by setting the number of shards and replicas in the Diskover config file. By default in Diskover config, shards are set to 1 and replicas are set to 0. It is important to note that these settings are not meant for production as they provide no load balancing or fault tolerance.
 
 Please refer to the [Diskover User Guide](https://docs.diskoverdata.com/diskover_installation_guide/#prerequisites-and-requirements) for more information on requirements and recommendations.
 
@@ -23,7 +26,7 @@ python3 diskover.py -i diskover-<indexname> <tree_dir>
 python3 diskover.py -h
 ```
 
-- Multiple directory trees **tree_dir** can be set to index multiple top paths into a single index. (Essential +)
+- Multiple directory trees **tree_dir** can be set to index multiple top paths into a single index [available for annual subscriptions only](https://diskoverdata.com/solutions/).
 - UNC paths and drive maps are supported in Windows.
 - Index name requires `diskover-` prefix. 
 - Recommended index name `diskover-<mountname>-<datetime>`
@@ -38,7 +41,7 @@ nohup python3 diskover.py ... > /var/log/<logname>.log 2>&1 &
 ___
 ### Adding Additional Directory Tree(s) to an Existing Index
 
-🔴 &nbsp;To add additional directory tree(s) to an existing index (Essential +):
+🔴 &nbsp;To add additional directory tree(s) to an existing index [available for annual subscriptions only](https://diskoverdata.com/solutions/):
 ```
 python3 diskover.py -i diskover-<indexname> -a <tree_dir>
 ```
@@ -62,4 +65,4 @@ diskover.py -i diskover-nas /mnt/stor1 /mnt/stor2
 ___
 ### Scan Threads
 
-Diskover uses threads for walking a directory tree, for example, if `maxthreads` in the Diskover config is set to `20`, up to `max 20` sub-directories under the index top path (top directory path/mount point/volume) can scan and index at once. This is important if you have a lot or very few sub-directories at level 1 in `/mnt/toppath`. If `/mnt/toppath` has only a single sub-directory at level 1, crawls will be slower since there will ever only be 1 thread running. To handle this, Diskover Essential + version uses thread directory depth config setting `threaddirdepth` to start threads deeper than level 1.
+Diskover uses threads for walking a directory tree, for example, if `maxthreads` in the Diskover config is set to `20`, up to `max 20` sub-directories under the index top path (top directory path/mount point/volume) can scan and index at once. This is important if you have a lot or very few sub-directories at level 1 in `/mnt/toppath`. If `/mnt/toppath` has only a single sub-directory at level 1, crawls will be slower since there will ever only be 1 thread running. To handle this, Diskover [available for annual subscriptions only](https://diskoverdata.com/solutions/) uses thread directory depth config setting `threaddirdepth` to start threads deeper than level 1.

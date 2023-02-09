@@ -3,7 +3,7 @@ ___
 
 The following outlines installing the Diskover indexer on Linux Ubuntu.
 
-#### Install Python 3.x, pip and Development Tools
+#### Install Python 3.x, pip, and Development Tools
 
 🔴 &nbsp;Check Python version - most factory versions come with Python pre-installed, check your version of Python:
 ```

@@ -16,7 +16,7 @@ Provides in-depth instructions and descriptions to ensure end-users success on D
 
 ### Help Within the User Interface
 
-Provides support on various topics and is located at the right top corner of the user interface under the gear icon > Help.
+Provides support on various topics and is located at the right top corner of the user interface under the **gear icon** > **Help**.
 
 ### Community Support
 

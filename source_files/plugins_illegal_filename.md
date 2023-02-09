@@ -19,7 +19,7 @@ cp configs_sample/diskover_illegalfilename/config.yaml /root/.config/diskover_il
 ```
 vim /root/.config/diskover_illegalfilename/config.yaml
 ```
->Note: By default any illegal file names are tagged with "illegalname" and any long file names are tagged with "longname"
+> _Note:_ By default any illegal file names are tagged with **illegalname** and any long file names are tagged with **longname**
 
 🔴 &nbsp;To run illegal file name plugin via command line:
 ```

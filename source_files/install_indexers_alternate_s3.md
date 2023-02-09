@@ -48,7 +48,7 @@ export S3_VERIFY=false
 cd /opt/diskover
 python3 diskover.py --altscanner scandir_s3 s3://bucketname
 ```
->Note: bucketname is optional, you can scan all buckets using s3://
+> _Note:_ bucketname is optional, you can scan all buckets using s3://
 
 🔴 &nbsp;Create an s3 index with index name "diskover-s3-bucketname":
 

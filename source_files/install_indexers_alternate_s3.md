@@ -46,7 +46,11 @@ export AWS_PROFILE=wasabi-eu
 export S3_ENDPOINT_URL=https://<endpoint>
 ```
 
-🔴 &nbsp;To add S3 endpoint via the Diskover-Web task panel, select **gear icon** > **Task Panel** > click **Info** then **Edit task** in line with the index you want to modify.
+🔴 &nbsp;To add a S3 endpoint via the Diskover-Web task panel, select **gear icon** > **Task Panel**:
+
+![Image: Open Edit Task in Task Panel](images/image_install_indexers_alternate_s3_select_task_panel.png)
+
+🔴 &nbsp;Click **Info** then **Edit task** in line with the index you want to modify.
 
 ![Image: Open Edit Task in Task Panel](images/image_install_indexers_alternate_s3_edit_task.png)
 

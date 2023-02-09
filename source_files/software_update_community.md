@@ -17,7 +17,7 @@ chown -R nginx:nginx /var/www/diskover-web
 ```
 
 🔴 &nbsp;Verify that your config files are not missing any new settings:
->Note: refer to [changelogs](https://docs.diskoverdata.com/diskover_changelogs/) for any breaking config changes, or view CHANGELOG.md files in diskover and diskover-web directories
+> _Note_: refer to [changelogs](https://docs.diskoverdata.com/diskover_changelogs/) for any breaking config changes, or view CHANGELOG.md files in diskover and diskover-web directories
 ```
 diff <diskover_dir>/configs_sample/diskover/config.yaml ~/.config/diskover/config.yaml
 cd <diskover-web_dir>/src/diskover && diff Constants.php.sample Constants.php 

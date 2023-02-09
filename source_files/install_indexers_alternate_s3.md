@@ -53,7 +53,7 @@ export S3_ENDPOINT_URL=https://<endpoint>
 🔴 &nbsp;Go down to **Environment Vars** and insert your endpoint in the dialog box for the task, for example:
 
 ```
-AWS_PROFILE=wasabi-eu,S3_ENDPOINT_URL=https://s3.us-central-1.wasabisys.com
+AWS_PROFILE=wasabi-west,S3_ENDPOINT_URL=https://s3.us-west-1.wasabisys.com
 ```
 
 ![Image: Open Edit Task in Task Panel](images/image_install_indexers_alternate_s3_edit_env_vars_endpoint.png)

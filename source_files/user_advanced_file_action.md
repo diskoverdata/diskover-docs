@@ -49,7 +49,7 @@ The **live view** directory will open in a new tab:
 
 ![Image: Directory Live View](images/image_file_action_live_view_20221104.png)
 
-A) Time stamp of when you clicked **live view** in the search page - this time stamp will change is you refresh your browser tab, which will also refresh the data.
+A) Time stamp of when you clicked **live view** in the search page - this time stamp will update if you refresh your browser tab, which will also refresh the data.
 
 B) You can opt to view between 10 to 1,000 line items per page.
 

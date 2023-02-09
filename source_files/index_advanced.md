@@ -41,7 +41,7 @@ nohup python3 diskover.py ... > /var/log/<logname>.log 2>&1 &
 ___
 ### Adding Additional Directory Tree(s) to an Existing Index
 
-🔴 &nbsp;To add additional directory tree(s) to an existing index [available for annual subscriptions only](https://diskoverdata.com/solutions/):
+🔴 &nbsp;To add additional directory tree(s) to an existing index ([available for annual subscriptions only](https://diskoverdata.com/solutions/)):
 ```
 python3 diskover.py -i diskover-<indexname> -a <tree_dir>
 ```
@@ -65,4 +65,4 @@ diskover.py -i diskover-nas /mnt/stor1 /mnt/stor2
 ___
 ### Scan Threads
 
-Diskover uses threads for walking a directory tree, for example, if `maxthreads` in the Diskover config is set to `20`, up to `max 20` sub-directories under the index top path (top directory path/mount point/volume) can scan and index at once. This is important if you have a lot or very few sub-directories at level 1 in `/mnt/toppath`. If `/mnt/toppath` has only a single sub-directory at level 1, crawls will be slower since there will ever only be 1 thread running. To handle this, Diskover [available for annual subscriptions only](https://diskoverdata.com/solutions/) uses thread directory depth config setting `threaddirdepth` to start threads deeper than level 1.
+Diskover uses threads for walking a directory tree, for example, if `maxthreads` in the Diskover config is set to `20`, up to `max 20` sub-directories under the index top path (top directory path/mount point/volume) can scan and index at once. This is important if you have a lot or very few sub-directories at level 1 in `/mnt/toppath`. If `/mnt/toppath` has only a single sub-directory at level 1, crawls will be slower since there will ever only be 1 thread running. To handle this, Diskover ([available for annual subscriptions only](https://diskoverdata.com/solutions/)) uses thread directory depth config setting `threaddirdepth` to start threads deeper than level 1.

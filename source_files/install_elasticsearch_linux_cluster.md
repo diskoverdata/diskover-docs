@@ -29,7 +29,7 @@ node.name: esnode1
 ```
 network.host: 192.168.0.11
 ```
->Note: to find the IP use `ip addr` or `ifconfig` commands.
+> _Note:_ To find the IP use `ip addr` or `ifconfig` commands.
 
 🔴 &nbsp;Set discovery by specifying all Nodes IP addresses:
 ```
@@ -40,7 +40,7 @@ discovery.seed_hosts: ["192.168.0.11", "192.168.0.12", "192.168.0.13"]
 ```
 cluster.initial_master_nodes: ["esnode1", "esnode2", "esnode3"]
 ```
->Note: after the cluster starts, comment this line out on each node.
+> _Note:_ After the cluster starts, comment this line out on each node.
 
 🔴 &nbsp; Open firewall ports for Elasticsearch (if using firewall):
 ```
@@ -76,14 +76,14 @@ vi /root/.config/diskover/config.yaml
 ```
 host: ['esnode1', 'esnode2', 'esnode3']
 ```
->Note: This is optional, you can also set this to just a single node in the cluster.
+> _Note:_ This is optional, you can also set this to just a single node in the cluster.
 
 🔴 &nbsp; Set index shards and replicas:
 ```
 shards: 1
 replicas: 2
 ```
->Note: shards can also be increased to 3 or more depending on size of ES index (number of docs). See [Elasticsearch requirements](https://docs.diskoverdata.com/diskover_installation_guide/#elasticsearch-requirements) Indices section for more info.
+> _Note:_ Shards can also be increased to 3 or more depending on size of ES index (number of docs). See [Elasticsearch requirements](https://docs.diskoverdata.com/diskover_installation_guide/#elasticsearch-requirements) Indices section for more info.
 
 🔴 &nbsp; Edit diskover-web config file:
 ```
@@ -97,4 +97,4 @@ const ES_HOSTS = [
         'hosts' => ['esnode1', 'esnode2', 'esnode3'],
         ...
 ```
->Note: This is optional, you can also set this to just a single node in the cluster.
+> _Note:_ This is optional, you can also set this to just a single node in the cluster.

@@ -8,4 +8,4 @@ By default all log files when `logToFile` is set to `True` are stored in `/var/l
 ```
 mkdir /var/log/diskover
 ```
->Note: Check that the user running Diskover has proper permissions to read and write to the log directory.
+> _Note:_ Check that the user running Diskover has proper permissions to read and write to the log directory.

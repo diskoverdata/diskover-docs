@@ -22,7 +22,21 @@ pip3 install boto3
 
 #### Using Different Endpoint URL (Other than AWS)
 
-🔴 &nbsp;To use a different **s3 endpoint url** (Wasabi, etc.), set the **AWS_PROFILE** and the **S3_ENDPOINT_URL** environment variables before running the crawl:
+To use a different **S3 endpoint url** (Wasabi, etc.), set the **AWS_PROFILE** and the **S3_ENDPOINT_URL** environment variables before running the crawl.
+
+🔴 &nbsp;Add credentials to default location for AWS S3 credentials:
+```
+cd /root/.aws
+```
+```
+vi credentials
+```
+Example:
+
+![Image: Alt S3 Credentials](images/image_install_indexers_alternate_s3_credentials.png)
+
+
+🔴 &nbsp;To export variables via the command line, for example:
 
 ```
 export AWS_PROFILE=wasabi-eu
@@ -30,6 +44,21 @@ export AWS_PROFILE=wasabi-eu
 ```
 export S3_ENDPOINT_URL=https://<endpoint>
 ```
+
+🔴 &nbsp;To add via Diskover-Web task panel, put the following in the export dialog box for the task, for example:
+
+```
+AWS_PROFILE=wasabi-eu,S3_ENDPOINT_URL=https://s3.us-central-1.wasabisys.com
+```
+
+🔴 &nbsp;Select **gear icon** > **Task Panel** > click **Info** then **Edit task** in line with the index you want to modify.
+
+![Image: Open Edit Task in Task Panel](images/image_install_indexers_alternate_s3_edit_task.png)
+
+🔴 &nbsp;Go down to **Environment Vars** and insert your endpoint, for example:
+
+![Image: Open Edit Task in Task Panel](images/image_install_indexers_alternate_s3_edit_env_vars_endpoint.png)
+
 
 #### SSL Certificate Verification
 

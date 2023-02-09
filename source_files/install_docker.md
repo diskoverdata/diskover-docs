@@ -4,9 +4,9 @@ ___
 
 If you want to run Diskover Community Edition in Docker, there is a Docker Hub container built by [LinuxServer.io](https://www.linuxserver.io/) at [Diskover Docker Hub](https://hub.docker.com/r/linuxserver/diskover) and [Diskover LinuxServer.io GitHub](https://github.com/linuxserver/docker-diskover).
 
-Below is a few example Docker files that could be used to help set up Diskover in Docker if you are using Essential + versions and/or want to build your own container.
+Below are a few examples of Docker files that could be used to help set up Diskover in Docker if you are using our [annual subscription editions](https://diskoverdata.com/solutions/) and/or want to build your own container.
 
->Note: The Diskover Docker files below assume that you have downloaded Diskover archive file and extracted the source files into a directory and are in the diskover or diskover-web directory (depending on what container is getting built).
+> _Note:_ The Diskover Docker files below assume that you have downloaded Diskover archive file and extracted the source files into a directory, and are in the diskover or diskover-web directory (depending on what container is getting built).
 
 ### Elasticsearch container
 
@@ -219,7 +219,7 @@ vi Constants.php
 
 #### Diskover-web sqlite file
 
->Note: The Docker user running nginx requires read/write permissions to the sqlite db file and to the directory containing the file. We recommend creating a `db` directory where the db file is stored and setting `DATABASE` in Constants.php to `../db/diskoverdb.sqlite3`. Default location is in web root directory.
+> _Note:_ The Docker user running nginx requires read/write permissions to the sqlite db file and to the directory containing the file. We recommend creating a `db` directory where the db file is stored and setting `DATABASE` in Constants.php to `../db/diskoverdb.sqlite3`. Default location is in web root directory.
 
 🔴  Create diskover-web db directory and sqlite db file:
 
@@ -251,7 +251,9 @@ chmod 666 *.json
 ```
 
 
-### Install licenses (Essential + only)
+### Install licenses
+
+![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
 🔴  Generate your hardware id as explained in the [software activation](https://docs.diskoverdata.com/diskover_installation_guide/#software_activation) chapter.
 

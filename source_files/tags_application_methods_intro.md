@@ -1,4 +1,4 @@
 ___
-### Methods for Tag Application
+### Methods for Tags Application
 
-The following sections describes the various methods for tag application within Diskover.
+The following sections describes the various methods for tags application within Diskover.

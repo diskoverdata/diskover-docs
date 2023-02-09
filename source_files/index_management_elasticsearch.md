@@ -3,9 +3,9 @@ ___
 
 Indices can be managed by policy and manually with Elasticsearch using curl from the command line. Indices can also be managed using [Kibana index management](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/index-mgmt.html) which is not covered in this guide.
 
->Note: For AWS ES/OpenSearch see Index State Management on AWS ES/OpenSearch below.
-
->It may be easier and less prone to shell issues, to put the json text (text after -d in the single quotes), into a file first and then use that file for -d using `curl -X PUT -H "Content-Type: application/json" -d @FILENAME DESTINATION`.
+> _Note:_ For AWS ES/OpenSearch see Index State Management on AWS ES/OpenSearch below.
+>
+> _Note:_ It may be easier and less prone to shell issues, to put the json text (text after -d in the single quotes), into a file first and then use that file for -d using `curl -X PUT -H "Content-Type: application/json" -d @FILENAME DESTINATION`.
 
 #### Elasticsearch Index Lifecycle Management
 

@@ -37,7 +37,7 @@ notepad "C:\Program Files\diskover\diskoverd-win-service.bat"
 ```
 python diskoverd.py -n <worker_name>
 ```
->Note: Replace `<worker_name>` with a unique name to identify the task worker in diskover-web.
+> _Note:_ Replace `<worker_name>` with a unique name to identify the task worker in diskover-web.
 
 🔴 &nbsp;Run nssm to install service:
 ```

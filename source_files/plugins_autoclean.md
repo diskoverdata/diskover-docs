@@ -20,7 +20,7 @@ vim /root/.config/diskover_autoclean/config.yaml
 - Query can be any valid Elasticsearch query using [query string query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html).
 - Action can be: delete, rename, move, copy or custom. Custom can be used to run a command or script.
 
-> Note: When using custom action, custocmd value is required. The full file/directory path is passed as arg to customcmd.
+> _Note:_ When using custom action, `custocmd` value is required. The full file/directory path is passed as `arg` to `customcmd`.
 
 Example using custom action:
 

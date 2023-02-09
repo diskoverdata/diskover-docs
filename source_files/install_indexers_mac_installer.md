@@ -237,8 +237,8 @@ Please refer to the [Diskover Configuration and Administration Guide](https://do
 
 #### Software Updates for Mac
 
-Stay tuned.
+Please refer to our [Software Update Installation for Mac](https://docs.diskoverdata.com/diskover_installation_guide/#software-update-for-mac) chapter.
 
 #### Uninstall Diskover for Mac
 
-Stay tuned.
+Please refer to our [Software Update Installation for Mac](https://docs.diskoverdata.com/diskover_installation_guide/#uninstall-diskover-on-mac) chapter.

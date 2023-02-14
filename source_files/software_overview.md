@@ -10,27 +10,12 @@ ___
 Data curation is the practice of managing data collected from various sources as a valuable asset to unlock its potential and organization. Managing data effectively requires having a data strategy and reliable methods to access, integrate, cleanse, govern, store, and prepare data for analytics. The value of the data is maintained over time and remains available for reuse and preservation.
 
 ___
-### The Basics of Diskover
-
-- Efficiently and quickly searches data fragmented across heterogenous repositories bringing you all the answers in one global view.
--  Works with Elasticsearch giving you extraordinary speed and reliability, as well as continuously updates all your indices in parallel in real-time.
-- Provides a global index in non-proprietary format, enabling organizations to maintain data independence of their index.
-- Well suited for long term asset preservation.
-- 100% open-source tool allows for add-on plug-ins to be developed.
-- Supports all known file types.
-
-___
 ### Features Overview
 
-- Diskover scales data by using Elasticsearch search engine in the backend, allowing for massive amounts of data to be searched instantaneously. It is able to scan/index all your storage volumes at the same time, without limitation in numbers. Elasticsearch is used by giants like ebay, airbnb, Adobe, Walmart, etc.
-- Enables everyone to accurately answer questions with the simplicity of clever search queries, which provide immediate relevant information.
-- Diskover can be accessed from any web browser.
-- Diskover harvests metadata to add business context to extensive searches and analytics.
-- Points in time indices snapshots, allowing to search and compare indexed data, as well as analyze anomalies.
-- The various analytical tools assist all stakeholders in making the right data related decisions about time, resources, and investments.
-- Enhances collective efficiency by streamlining file-based workflows.
-- Significantly improves the efficiency of the organization and its people, in addition to reducing storage cost.
-- The [cost analysis tool](#cost_analysis) assist with charging clients accurately for storage space.
+- Integrated SEARCHES > global searches using built-in tools, manual queries, or a combination of both.
+- Integrated ANALYTICS > several pre-established and customizable reports allowing for informed decision making.
+- Integrated ACTIONS > allowing limitless plugins possibilities, like seamless integration with third-party platforms and in-house plugins to automate their specific in-house workflows
+- Integrated WORKFLOWS > plugins to automate data movement to different stages of a workflow based on rules and using rich metadata.
 
 <p id="consumers_of_data"></p>
 

@@ -148,10 +148,9 @@ If you would launch a search with **\*eyes***, the following files would be foun
 - theseeyes_song
 - eyes18367
 
-|.**test**.|.**test2**.|
-|.___.|.___.|
-|.test line.|.test line 2.|
-
+| **Test** | Test 2 |
+| _________ | _________ |
+| Test | Test 2 |
 
 
 #### How to Use the * | Examples with Numbers

@@ -1,4 +1,5 @@
 <p id="terminology"></p>
+
 ___
 ## Terminology
 ___

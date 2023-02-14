@@ -5,16 +5,19 @@ ___
 #### [🍿 Watch Quick Tips | Fundamentals](https://vimeo.com/766235515)
 ___
 
-### What is Data Curation
+### You Can't Break Anything!
 
-Data curation is the practice of managing data collected from various sources as a valuable asset to unlock its potential and organization. Managing data effectively requires having a data strategy and reliable methods to access, integrate, cleanse, govern, store, and prepare data for analytics. The value of the data is maintained over time and remains available for reuse and preservation.
+As an end-user, you can’t break anything. You can't personally edit, move, or delete the files that you see in the user interface, because Diskover only contains an index of the metadata of the files, not the files themselves. So don’t be shy to click around.
 
 ___
 ### Features Overview
 
 - Integrated **SEARCHES** > global searches using built-in tools, manual queries, or a combination of both.
+
 - Integrated **ANALYTICS** > several pre-established and customizable reports allowing for informed decision making.
+
 - Integrated **ACTIONS** > limitless possibilities using plugins (ex: seamless integration with third-party platforms, automated actions, in-house plugins to automate your own specific in-house workflows, etc.)
+
 - Integrated **WORKFLOWS** > plugins to automate data movement to different stages of a workflow based on rules and using rich metadata.
 
 <p id="consumers_of_data"></p>

@@ -120,7 +120,7 @@ The square brackets `[ ]` or curly brackets `{ }` need be used to contain ranges
 
 <p id="wildcards"></p>
 
-<p id="asterisk_wild_card"></p>
+<p id="asterisk_wildcard"></p>
 
 ___
 ### * Wild Card
@@ -155,7 +155,7 @@ For example, if you want to search for **season 1**, the file name could have di
 
 In order to expand your results to include all possibilities, a logical search syntax could be **s\*1** because the **\*** would catch everything in between the **s** and the **1**. Now, this would also find season 11 for example, but it's better to widen your results at first and then narrow them down once you have an idea of what you are dealing with.
 
-<p id="question_mark_wild_card"></p>
+<p id="question_mark_wildcard"></p>
 
 ___
 ### ? Wild Card
@@ -173,7 +173,7 @@ A few examples of names that would be found when launching those queries:
 
 >🔆 &nbsp;Technically, the * could be used instead of typing several ? but then it would open results outside the specific range of characters you are aiming for, because the * replaces 0 to many characters. Therefore, the ? is sometimes better suited for preciseness.
 
-<p id="fuzziness"></p>
+<p id="tilda_wildcard"></p>
 
 ___
 ### ~ Wild Card

@@ -28,35 +28,39 @@ C) Click  **Login**.
 ___
 ### User Interface Overview
 
-This section offers an overview of the user interface. All icons, drop-down lists and tools will be further explained in the next chapters.
+This section offers an overview of the user interface. All other icons, drop-down lists and tools will be further explained in the next chapters.
 
 ![Image: Quick Tour of the User Interface](images/image_file_search_page_overview.png)
 
-A) **Company logo**: No functions.
+A) **Software logo**: No functions.
 
-B) **[Dashboard](#dashboard)**: Offers a visual summary of a selected storage volume.
+B) **[Dashboard](#dashboard)**: Built-in analytics, offers a visual summary of a selected volume.
 
-C) [**File search page**](#file_search): The file search tool with which most users will interact.
+C) [**File search page**](#file_search): The navigate to the file search tool showed in this image, where most users spend their time.
 
-D) **Analytics**: Built-in data analytic reports.
+D) **Analytics**: To select one of the several built-in analytic reports.
 
-E) [**Quick search**](#quick_search): To quickly search on a single pre-established criterion.
+E) [**Quick search**](#quick_search): To quickly search all volumes based on pre-established critera.
 
-F) **Search bar**: To type and paste [search queries](#search_syntax).
+F) **Search bar**: To type and/or paste [search queries](#search_syntax).
 
 G) **Clear**: To clear the search bar.
 
-H) **Launch a search**: Same function as a  **Return**  key.
+H) **Launch a search**: Same function as using your  **Return**  key to launch a query.
 
 <p id="current_dir"></p>
 
-I)  **Current Dir**: Toggle right to narrow your searches/results to a selected storage volume and/or directory.
+I)  **Current Dir**: Toggle on/right to narrow your searches/results to a selected [path](#path).
 
-J) [**Search Filters**](#filters): Built-in filters to refine your searches.
+J) [**Filters**](#filters): Built-in filters to refine your results.
 
-K) [**Storage volumes**](#storage_volume): Drop-down list for selection of available storage volumes.
+K) [**Volumes**](#storage_volume): Drop-down list to select a specific volume - volumes can also be selected via O) the left pane.
 
-L) [**Settings**](#settings): To personalize your interface via the settings, access to indices, help and logout.
+L) **Gear Icon**: 
+>- To access the interface [settings](#settings).
+>- To select specific [indices](#indices).
+>- Direct link to access our complete [documentation catalog](https://docs.diskoverdata.com/) under **Help** [https://docs.diskoverdata.com/](https://docs.diskoverdata.com/)
+>- To logout.
 
 <p id="green_info_bar"></p>
 

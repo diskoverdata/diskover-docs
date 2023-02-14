@@ -79,12 +79,13 @@ N) **Path bar**: Shows the [path](#path) you’re in, you cannot type in it, but
 O) [**Volumes**](#storage_volume): To view and select available volumes from the left pane:
 >- If you hover over the fill bars on the right of the volumes, you will see the space used, free, and total for each volume.
 >- If you hover over a volumes, you will see the last indexed date and time for that specific volume.
+>
 > ![Image: Hovering Over a Storage Volume](images/image_file_search_hovering_volume.png)
 
 P) [**Directories**](#directory): To view and/or drill-down the directories inside the selected volume in green above, you can also drill-down from the [results pane](#results_pane).
 >- Hovering your mouse over a directory in the left pane will give you a snapshot of its attributes.
 >
-><img src="images/image_file_search_hovering_directory.png" width="300">
+> <img src="images/image_file_search_hovering_directory.png" width="300">
 
 Q) **Last indexed**: Gives the date and time of the last scan of the selected volume.
 

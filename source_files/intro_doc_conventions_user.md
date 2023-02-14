@@ -10,6 +10,6 @@ A label with the name(s) of the applicable [Diskover Software Edition](https://w
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
 #### Quick Tips or Demo Videos
-The following will show if a demo or quick tips video is associated with the subject being explained.
+A similar link will appear if a demo or quick tips video is associated with a section.
 
 #### [🍿 Watch Diskover Videos](https://vimeo.com/user160841725)

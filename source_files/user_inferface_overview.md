@@ -14,7 +14,7 @@ A) Open a  **Web browser**  of your choice and type the  **URL address**  that w
 
 B) Enter your  **Username**  and  **Password** which was also supplied to you by the System Administrator.
 
-  >🔆 &nbsp;Select **Keep me logged in for 7 days** if you plan to use Diskover for a long period of time so you won't have to log in multiple times.
+>🔆 &nbsp;Select **Keep me logged in for 7 days** if you plan to use Diskover for a long period of time so you won't have to log in multiple times.
 
 C) Click  **Login**.
 

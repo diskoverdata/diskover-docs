@@ -28,7 +28,7 @@ C) Click  **Login**.
 ___
 ### User Interface Overview
 
-This section offers an overview of the user interface. All other icons, drop-down lists and tools will be further explained in the next chapters.
+By default and upon login, you will land on the file search page as shown below. This section offers an overview of the user interface. All other icons, drop-down lists, and tools will be further explained in the subsequent chapters.
 
 ![Image: Quick Tour of the User Interface](images/image_file_search_page_overview_20230214.png)
 

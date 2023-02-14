@@ -13,9 +13,9 @@ ___
 ### Features Overview
 
 - Integrated **SEARCHES** > global searches using built-in tools, manual queries, or a combination of both.
-- Integrated ANALYTICS > several pre-established and customizable reports allowing for informed decision making.
-- Integrated ACTIONS > allowing limitless plugins possibilities, like seamless integration with third-party platforms and in-house plugins to automate their specific in-house workflows
-- Integrated WORKFLOWS > plugins to automate data movement to different stages of a workflow based on rules and using rich metadata.
+- Integrated **ANALYTICS** > several pre-established and customizable reports allowing for informed decision making.
+- Integrated **ACTIONS** > limitless possibilities using plugins (ex: seamless integration with third-party platforms, automated actions, in-house plugins to automate your own specific in-house workflows, etc.)
+- Integrated **WORKFLOWS** > plugins to automate data movement to different stages of a workflow based on rules and using rich metadata.
 
 <p id="consumers_of_data"></p>
 

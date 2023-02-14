@@ -31,9 +31,9 @@ ___
 
 Diskover allows all stakeholders within an organization to have their own specific relationship with data. Here is an example of line of business users, their needs, and challenges:
 
-![Image: Consumers of Data Diagram](images/diagram_diskover_consumers_of_data_with_border.png)
+![Image: Consumers of Data Diagram](images/diagram_diskover_consumers_of_data_2023021401.png)
 
-_[Click here for a full screen view of the Consumers of Data diagram.](images/diagram_diskover_consumers_of_data_with_border.png)_
+_[Click here for a full screen view of the Consumers of Data diagram.](images/diagram_diskover_consumers_of_data_2023021401.png)_
 
 ___
 ### Access to Features

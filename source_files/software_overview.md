@@ -5,9 +5,11 @@ ___
 #### [🍿 Watch Quick Tips | Fundamentals](https://vimeo.com/766235515)
 ___
 
-### You Can't Break Anything!
+### You Can't Break Anything
 
 As an end-user, you can’t break anything. You can't personally edit, move, or delete the files that you see in the user interface, because Diskover only contains an index of the metadata of the files, not the files themselves. So don’t be shy to click around.
+
+![Image: Architecture Overview](images/diagram_diskover_architecture_overview_for_endusers.png)
 
 ___
 ### Features Overview

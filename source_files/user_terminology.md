@@ -11,11 +11,11 @@ Data curation is the practice of managing data collected from various sources as
 <p id="storage_volume"></p>
 
 ___
-### Storage Volume
+### Volume
 
-A storage location that you want to index, for example: Windows Share/drive, Linux mount/NFS Export, cloud storage, S3 bucket, etc.
+A storage location that you want to index, for example: Windows Share/drive, Linux mount/NFS Export, cloud storage/S3 bucket, etc.
 
-Examples of other names for storage volume that might be used in your organization: storage mount, mount point, top level path, top level storage directory, volume.
+Examples of other names for volume that might be used in your organization: storage volume, storage mount, mount point, top level path, top level storage directory.
 
 Read more about [how to select a volume](#select_volume).
 
@@ -24,14 +24,13 @@ Read more about [how to select a volume](#select_volume).
 ___
 ### Index/Indices
 
-An [index is an inventory of all the files on a storage volume](#elasticsearch_terminology); it allows the data to be searched quickly via the index instead of the operating system  find commands. Both  **indexes**  and  **indices**  have the same meaning, and are the plural of index, although indices is usually preferred in a technical context.
+An index is an inventory of all the files on a volume; it allows the data to be searched quickly via the index instead of the operating system "find commands". Both  **indexes**  and  **indices**  have the same meaning, and are the plural of index, although indices is usually preferred in a technical context.
 
 - You can have multiple inventories/indices of a storage volume at different times.
 - Indices typically contain directory name, file name, file size, creation date, modify date, owner, etc.
-- Diskover’s software populates the indices with additional metadata  and makes these attributes searchable, pushing the searches and reporting to a higher level of business and schedule awareness:
-	- Adds business context.
-	- Adds schedule context.
-	- Allow searches on image attributes for media files (resolution, frame rate, color bits), etc.
+- Diskover’s software populates the indices with additional metadata and makes these attributes searchable, pushing the searches, reporting, and workflows to a higher level of business and schedule awareness. For example:
+	- Adds business context (job status, client #, project manager, etc.)
+	- Adds media info attributes for media files (resolution, codec, framerate, etc.)
 
 Read more about [how to use indices](#indices).
 
@@ -49,7 +48,7 @@ Read more about [how to select a directory](#select_directory).
 ___
 ### Recursive and Non-Recursive
 
-**Non-Recursive**: Will search or apply action to only the path/directory/file you are pointing to.
+**Non-Recursive**: Will search or apply action exclusively to the path/directory you are pointing to.
 
 **Recursive**: Will search or apply action to the path/directory, as well as all sub-directories and files, inside that path.
 

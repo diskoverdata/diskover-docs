@@ -63,6 +63,15 @@ ___
 
 **Recursive**: Will search or apply action to the path/directory, as well as all sub-directories and files, inside that path.
 
+<p id="hardlinks"></p>
+
+___
+### Hardlinks
+
+A hard link is a directory that associates a name with a file. Thus, each file must have at least one hard link.
+
+A hardlink is a pointer/link that acts like a folder/directory. You can only hardlink files and not directories. The term hardlink is usually only used in file systems that allow more than one hard link for the same file. In addition, hardlinks can only refer to files within the same volume.
+
 <p id="elasticsearch_terminology"></p>
 
 ___

@@ -56,7 +56,7 @@ Clicking this box and selecting any [filters](#filters) will apply the criteria 
 - The charts at the top of the file search page, you can validate the query/criteria in the [green bar](#green_info_bar).
 - The [dashboard](#dashboard) results/analytics.
 
-![Image: Settings – Filter Charts](image_settings_filter_charts_20230214.png)
+![Image: Settings – Filter Charts](images/image_settings_filter_charts_20230214.png)
 
 <p id="predictive_search"></p>
 

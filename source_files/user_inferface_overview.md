@@ -66,8 +66,8 @@ L) **Gear Icon**:
 
 M) **Green bar**: This bar displays the following details:
 
->- How many items were found during a search query or drilling down, ex:  _Showing 1 to 100 of 270 items found_
->- Size of data listed on the current page, resulting from a search or drill down, ex: _Results size: 664.3 GB (this page)_
+>- How many items were found during a search query or drilling down, ex:  _Showing 1 to 1000 of 9 items found_
+>- Size of data listed on the current page, resulting from a search or drill down, ex: _Results size: 12 GB (this page)_
 >- Shows the [path](#path) you are pointing to, ex: _parent_path:\/mnt\/lucidlink\/projects_
 >- Shows search criteria either you are typing a manual query or using a [built-in search tool](#builtin_search_tools), ex:  _Search query: mov and tags:archive_
 >- This bar can be cleared by clicking the  **X**  at the far right.

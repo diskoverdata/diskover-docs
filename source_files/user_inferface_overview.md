@@ -144,4 +144,4 @@ A) Via the **left pane**  below the volumes, click on any directory to drill dow
 
 B) Via the **path bar**, click any directory to navigate directly to it.
 
-C) Within the  **search results pane** which you can also use to drill down.
+C) You can drill down via the  **results pane**.

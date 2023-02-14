@@ -1,4 +1,4 @@
-<p id="quick_search"></p>
+<p id="search_within_results"></p>
 
 ___
 ### Built-In Search Tool | Search Within Results

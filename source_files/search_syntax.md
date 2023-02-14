@@ -137,7 +137,7 @@ The **\*** wild card is used to replace zero to many characters. It is the most 
 
 The * wild card is used to expand search results and is great to go around [naming convention](#naming_convention) issues.
 
-	>🔆 &nbsp;A search might be slower when using the * wild card, especially when it is placed in front of your query, because it is searching a much larger amount of data.
+	> 🔆 &nbsp;A search might be slower when using the * wild card, especially when it is placed in front of your query, because it is searching a much larger amount of data.
 
 >🔆 &nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > Settings > [Use predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much at all time. Throughout this user guide, we assume the predictive search has not been selected.
 

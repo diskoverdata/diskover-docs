@@ -12,7 +12,7 @@ Data curation is the practice of managing data collected from various sources as
 ___
 ### Features Overview
 
-- Integrated SEARCHES > global searches using built-in tools, manual queries, or a combination of both.
+- Integrated **SEARCHES** > global searches using built-in tools, manual queries, or a combination of both.
 - Integrated ANALYTICS > several pre-established and customizable reports allowing for informed decision making.
 - Integrated ACTIONS > allowing limitless plugins possibilities, like seamless integration with third-party platforms and in-house plugins to automate their specific in-house workflows
 - Integrated WORKFLOWS > plugins to automate data movement to different stages of a workflow based on rules and using rich metadata.

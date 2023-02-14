@@ -120,6 +120,8 @@ The square brackets `[ ]` or curly brackets `{ }` need be used to contain ranges
 
 <p id="wildcards"></p>
 
+<p id="asterisk_wild_card"></p>
+
 ___
 ### * Wild Card
 
@@ -152,6 +154,8 @@ If you would launch a search with **\*12***, the following files would be found:
 For example, if you want to search for **season 1**, the file name could have different spelling like **S1**, **season 1**, **s01**, **s_1**, etc. 
 
 In order to expand your results to include all possibilities, a logical search syntax could be **s\*1** because the **\*** would catch everything in between the **s** and the **1**. Now, this would also find season 11 for example, but it's better to widen your results at first and then narrow them down once you have an idea of what you are dealing with.
+
+<p id="question_mark_wild_card"></p>
 
 ___
 ### ? Wild Card

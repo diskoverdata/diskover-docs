@@ -58,7 +58,7 @@ K) [**Volumes**](#storage_volume): Drop-down list to select a specific volume - 
 
 L) **Gear Icon**: 
 >- **Settings**: To access the interface [settings](#settings).
->- **Help**: Direct link to access our complete [documentation catalog docs.diskoverdata.com](https://docs.diskoverdata.com/)
+>- **Help**: Direct link to access our complete documentation catalog [docs.diskoverdata.com](https://docs.diskoverdata.com/)
 >- **Indices**: To select specific [indices](#indices).
 >- **Logout**: To log out of Diskover.
 

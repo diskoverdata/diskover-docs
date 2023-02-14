@@ -4,6 +4,10 @@ ___
 
 Although the terms described in this section may have slightly different interpretations in other contexts, they are defined here within the Diskover end-user environment.
 
+### Data Curation
+
+Data curation is the practice of managing data collected from various sources as a valuable asset to unlock its potential and organization. Managing data effectively requires having a data strategy and reliable methods to access, integrate, cleanse, govern, store, and prepare data for analytics. The value of the data is maintained over time and remains available for reuse and preservation.
+
 <p id="storage_volume"></p>
 
 ___

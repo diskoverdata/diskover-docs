@@ -114,7 +114,7 @@ W) **Results pane**: To see the results when you drill down or from a search que
 >- Contains several clickable icons which are explain in details in subsequent chapters.
 
 X) These features will be explained later in this guide, but you can click on the links below to go directly to a section:
->- [Select All and Unselect All](#line_selection)
+>- To [Select All and Unselect All](#line_selection) line items in your results pane.
 >- [Tag](#tags)
 >- [Export](#export)
 >- [Share](#share)

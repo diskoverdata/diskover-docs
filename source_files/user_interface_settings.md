@@ -130,4 +130,15 @@ ___
 
 This segment is informative only and provides details about your Diskover software.
 
-![Image: Settings – About Diskover](images/image_settings_about_diskover.png)
+![Image: Settings – About Diskover](images/image_settings_about_diskover_20230214.png)
+
+<p id="anonymous_data"></p>
+
+___
+### Send anonymous usage data
+
+Upon your first login and/or after a software update, you will be prompted to agree, or not, for Diskover to automatically receive anonymous data so we can compile the behavioral results and improve the software. No personal information is collected.
+
+If you wish to opt out of sending anonymous data, uncheck this box.
+
+![Image: Settings – About Diskover](images/image_settings_anonymous_data_20230214.png)

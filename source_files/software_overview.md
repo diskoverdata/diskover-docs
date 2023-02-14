@@ -11,6 +11,8 @@ As an end-user, you can’t break anything. You can't personally edit, move, or 
 
 ![Image: Architecture Overview](images/diagram_diskover_architecture_overview_for_endusers.png)
 
+_[Click here for a full screen view of the Diskover Overview.](images/diagram_diskover_architecture_overview_for_endusers.png)_
+
 ___
 ### Features Overview
 
@@ -27,7 +29,7 @@ ___
 ___
 ### Consumers of Data
 
-Diskover allows all stakeholders within an organization to have their own specific relationship with data. Here is an example of Line of Business Users, their needs, and challenges:
+Diskover allows all stakeholders within an organization to have their own specific relationship with data. Here is an example of line of business users, their needs, and challenges:
 
 ![Image: Consumers of Data Diagram](images/diagram_diskover_consumers_of_data_with_border.png)
 

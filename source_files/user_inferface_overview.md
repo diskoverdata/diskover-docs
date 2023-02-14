@@ -64,7 +64,7 @@ L) **Gear Icon**:
 
 <p id="green_info_bar"></p>
 
-M) **Green Info bar**: This bar displays the following details:
+M) **Green bar**: This bar displays the following details:
 
 >- How many items were found during a search query or drilling down, ex:  _Showing 1 to 100 of 270 items found_
 >- Size of data listed on the current page, resulting from a search or drill down, ex: _Results size: 664.3 GB (this page)_

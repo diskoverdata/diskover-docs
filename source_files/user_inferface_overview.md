@@ -94,7 +94,7 @@ R) **Other ways to navigate**:
 >- **Up**: To drill up one [directory](#directory) at a time.
 >- **Back and forth arrows**: To navigate back and forth between visited pages, you can also use the browser's arrows, the results will be the same.
 >- **Hide Tree**: Will hide the left pane allowing for more space to investigate W) your results.
->- **Charts**: To hide the charts that appear by default over W) the results pane.
+>- **Charts**: To hide the charts that are located by default above W) the results pane.
 >- **Reload**: To reload the data in the current page.
 
 S) **Extension**: Will show all the file extensions detected in your results, either from drilling down or resulting from a search query, any extension can be clicked to isolate these specific items.

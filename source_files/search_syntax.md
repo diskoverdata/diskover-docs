@@ -97,10 +97,10 @@ For example, if you launch a query with the word **eyes**:
 
 For example, if you launch a query with the number **12**:
 
-| **File name** | **File would be found** | **File would not be found** |
-| --- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+| File name | File would be found | File would not be found |
+| --- | --- | --- |
+| Header | Title | Test |
+| Paragraph | Text | Test |
 
 - **shot_12_20221110.mov** > this file would be found because **12** is isolated with underscores.
 

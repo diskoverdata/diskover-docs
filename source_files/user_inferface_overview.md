@@ -6,21 +6,21 @@ ___
 
 #### [🍿 Watch Quick Tips | User Interface Overview](https://vimeo.com/787050664)
 
-___
-### Web Browser
-
-Diskover should look and act the same on any browser. The only thing to keep in mind is if, for example, you apply some modifications in your [settings](#settings) in Google Chrome, they will not transfer to Safari because the [settings](#settings) are tied to the cookies  of a browser. In this example, you would need to apply the same [settings](#settings) in Safari.
-
 <p id="login"></p>
-
 ___
 ### Login
 
 A) Open a  **Web browser**  of your choice and type the  **URL address**  that was supplied to you by the System Administrator of your facility.
-B) Enter the  **Username**  and  **Password**. Your System Administrator configures the login mechanism.
-C) Click on  **Login**.
+
+B) Enter your  **Username**  and  **Password** which was also supplied to you by the System Administrator.
+
+>🔆 &nbsp;Select **Keep me logged in for 7 days** if you plan to use Diskover for a long period of time so you won't have to log in multiple times.
+
+C) Click  **Login**.
 
 <img src="images/image_login_window_logo_diskover.png" width="300">
+
+>🔆 &nbsp;Diskover should look and act the same on any web browser. The only thing to keep in mind is if you apply some modifications in your [settings](#settings) using Google Chrome for example, they will not transfer to Safari because the [settings](#settings) are tied to the cookies of a browser. In this example, you would need to apply the same [settings](#settings) in Safari.
 
 <p id="ui_overview"></p>
 

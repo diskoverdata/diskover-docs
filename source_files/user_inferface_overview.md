@@ -50,7 +50,7 @@ H) **Launch a search**: Same function as using your  **Return**  key to launch a
 
 <p id="current_dir"></p>
 
-I)  **Current Dir**: Toggle on/right to narrow your searches/results to a selected [path](#path).
+I)  [**Current Dir**](#current_dir): Toggle on/right to narrow your searches/results to a selected [path](#path).
 
 J) [**Filters**](#filters): Built-in filters to refine your results.
 

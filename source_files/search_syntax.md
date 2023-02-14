@@ -10,7 +10,7 @@ The examples used in this chapter are mostly media and entertainment related, bu
 
 >🔆 &nbsp;Pay attention to all the messages in the green and blue information bars in the user interface, they are very helpful!
 
-#### Many Ways to Search and Get to the Same Results
+#### Many Ways to Search and Get the Same Results
 There are many ways to search with Diskover and get to the same results; you can use the built-in tools, manual queries, or a combination of both. It all depends on your personal preferences and comfort level.
 
 This chapter covers the rules around manual queries. You can navigate directly to the built-in tools sections via these links:
@@ -20,14 +20,16 @@ This chapter covers the rules around manual queries. You can navigate directly t
 
 #### Golden Rules of Searching
 
-1. Expand your results.
-1. Validate your results as you go and make sure that you are not missing any files.
-1. Readjust your querie if needed.
+1. Expand your results using, by using the [wildcards](#wildcards) for example.
+1. Only add a criterion or a few criteria at a time and continiously validate your results.
+1. Readjust your query as needed.
 
-The list of possible search queries and syntax is exhaustive therefore only the basics of manual searches will be explained in this chapter.
+The list of possible search queries and syntax is exhaustive, therefore only the basics of manual searches will be explained in this chapter.
+
+<p id="es_rules"></p>
 
 ___
-### Search Syntax Based on Elasticsearch
+### Search Rules Based on Elasticsearch
 
 As Diskover uses Elasticsearch in the backend, all search syntax within Diskover are based on Elasticsearch's rules and algorithms. We will discuss many of these rules in this chapter, but for more details and more examples, please visit: 
 
@@ -56,24 +58,28 @@ Unless you know that a strict naming convention was followed, trying to launch a
 
 Ways to either pinpoint or expand your results will be explained in this chapter in order to go around the naming convention issues, and make sure you are not missing files in your results.
 
-<p id="search_single_word"></p>
+<p id="search_basics"></p>
 
 ___
 ### Understanding the Basics of Manual Queries
 
+<p id="case_sensitivity"></p>
+
 #### Case Sensitivity
 
-Search queries are case insensitive, even if upper or lowercases are used in the file name or path. Nonetheless, there are few exceptions where queries are case sensitive:
+Search queries are case insensitive in general, so you can type upper or lowercases in the search bar when launching a query. There are very few exceptions where queries are case sensitive:
 - When [searching on time](#search_time).
 - When searching on [field names](#search_field_names).
+
+<p id="isolated_characters"></p>
 
 #### Isolated Characters
 
 #### [🍿 Watch Quick Tips | Understanding the Basics of Manual Queries](https://vimeo.com/770024733)
 
-When typing a word, a number, or a combination of both in the search bar, Diskover will look for those **isolated characters**. In order to "split" and find isolated characters, Diskover/Elasticsearch uses **isolators** like **spaces, underscores, hyphens, forward slashes, period, other punctuation, as well as upper cases** (aka CamelCase).
+When typing a word, a number, or a combination of both in the search bar, Diskover will look for those **isolated characters**. In order to find isolated characters, Diskover uses **isolators** like **spaces, underscores, hyphens, forward slashes, period, other punctuation, as well as upper cases** (aka CamelCase).
 
-Of course, there are ways to find characters that are not isolated using [wild cards](#wildcards).
+Of course, there are ways to find characters that are not isolated by using [wild cards](#wildcards), which is explained in the next section.
 
 ##### Isolated Characters | Examples with Letters
 
@@ -131,7 +137,7 @@ The **\*** wild card is used to replace zero to many characters. It is the most 
 
 The * wild card is used to expand search results and is great to go around [naming convention](#naming_convention) issues.
 
->🔆 &nbsp;A search might be a tad slower when using the * wild card, especially when it is placed in front of your query, because it is searching a much larger amount of data.
+	>🔆 &nbsp;A search might be slower when using the * wild card, especially when it is placed in front of your query, because it is searching a much larger amount of data.
 
 >🔆 &nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > Settings > [Use predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much at all time. Throughout this user guide, we assume the predictive search has not been selected.
 
@@ -141,6 +147,10 @@ If you would launch a search with **\*eyes***, the following files would be foun
 - foryoureyesonly
 - theseeyes_song
 - eyes18367
+
+a
+
+
 
 #### How to Use the * | Examples with Numbers
 

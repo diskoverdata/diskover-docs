@@ -43,6 +43,15 @@ There are very subtle differences between a directory and a folder, but in the c
 
 Read more about [how to select a directory](#select_directory).
 
+<p id="path"></p>
+
+___
+### Path
+
+The complete location/name where a dictory or a file is located, for example:
+
+`/mnt/lucidlink/projects/Pistachio/WonderfulPistachios_GangnamStyle.mov`
+
 <p id="recursive"></p>
 
 ___

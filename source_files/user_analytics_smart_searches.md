@@ -13,7 +13,7 @@ The smart searches tool comes with pre-defined searches, but those [queries can 
 
 Access via the  **Analytics**  drop-down list:
 
-<img src="images/image_analytics_smart_searches_access_via_analytics_dropdown_20230214.png" width="400">
+<img src="images/image_analytics_smart_searches_access_via_analytics_dropdown_20230214.png" width="300">
 
 #### Smart Searches Overview
 

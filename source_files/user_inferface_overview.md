@@ -57,45 +57,45 @@ J) [**Filters**](#filters): Built-in filters to refine your results.
 K) [**Volumes**](#storage_volume): Drop-down list to select a specific volume - volumes can also be selected via O) the left pane.
 
 L) **Gear Icon**: 
->- **Settings**: To access the interface [settings](#settings).
->- **Help**: Direct link to access our complete documentation catalog [docs.diskoverdata.com](https://docs.diskoverdata.com/)
->- **Indices**: To select specific [indices](#indices).
->- **Logout**: To log out of Diskover.
+  - **Settings**: To access the interface [settings](#settings).
+  - **Help**: Direct link to access our complete documentation catalog [docs.diskoverdata.com](https://docs.diskoverdata.com/)
+  - **Indices**: To select specific [indices](#indices).
+  - **Logout**: To log out of Diskover.
 
 <p id="green_info_bar"></p>
 
 M) **Green bar**: This bar displays the following details:
 
->- How many items were found during a search query or drilling down, ex:  _Showing 1 to 1000 of 9 items found_
->- Size of data listed on the current page, resulting from a search or drill down, ex: _Results size: 12 GB (this page)_
->- Shows the [path](#path) you are pointing to, ex: _parent_path:\/mnt\/lucidlink\/projects_
->- Shows search criteria either you are typing a manual query or using a [built-in search tool](#builtin_search_tools), ex:  _Search query: mov and tags:archive_
->- This bar can be cleared by clicking the  **X**  at the far right.
+  - How many items were found during a search query or drilling down, ex:  _Showing 1 to 1000 of 9 items found_
+  - Size of data listed on the current page, resulting from a search or drill down, ex: _Results size: 12 GB (this page)_
+  - Shows the [path](#path) you are pointing to, ex: _parent_path:\/mnt\/lucidlink\/projects_
+  - Shows search criteria either you are typing a manual query or using a [built-in search tool](#builtin_search_tools), ex:  _Search query: mov and tags:archive_
+  - This bar can be cleared by clicking the  **X**  at the far right.
 
 <p id="path_navigation_bar"></p>
 
 N) **Path bar**: Shows the [path](#path) you’re in, you cannot type in it, but you can click on any directory to navigate directly to it.
 
 O) [**Volumes**](#storage_volume): To view and select available volumes from the left pane:
->- If you hover over the fill bars on the right of the volumes, you will see the space used, free, and total for each volume.
->- If you hover over a volumes, you will see the last indexed date and time for that specific volume.
->
-> ![Image: Hovering Over a Storage Volume](images/image_file_search_hovering_volume.png)
+  - If you hover over the fill bars on the right of the volumes, you will see the space used, free, and total for each volume.
+  - If you hover over a volumes, you will see the last indexed date and time for that specific volume.
+
+  ![Image: Hovering Over a Storage Volume](images/image_file_search_hovering_volume.png)
 
 P) [**Directories**](#directory): To view and/or drill-down the directories inside the selected volume in green above, you can also drill-down from the [results pane](#results_pane).
->- Hovering your mouse over a directory in the left pane will give you a snapshot of its attributes.
->
-> <img src="images/image_file_search_hovering_directory.png" width="300">
+  - Hovering your mouse over a directory in the left pane will give you a snapshot of its attributes.
+
+  <img src="images/image_file_search_hovering_directory.png" width="300">
 
 Q) **Last indexed**: Gives the date and time of the last scan of the selected volume.
 
 R) **Other ways to navigate**:
->- **Top**: Will bring you back to the top/root of the active [volume](#storage_volume).
->- **Up**: To drill up one [directory](#directory) at a time.
->- **Back and forth arrows**: To navigate back and forth between visited pages, you can also use the browser's arrows, the results will be the same.
->- **Hide Tree**: Will hide the left pane allowing for more space to investigate W) your results.
->- **Charts**: To hide/unhide the charts that are located by default above W) the results pane.
->- **Reload**: To reload the data in the current page.
+  - **Top**: Will bring you back to the top/root of the active [volume](#storage_volume).
+  - **Up**: To drill up one [directory](#directory) at a time.
+  - **Back and forth arrows**: To navigate back and forth between visited pages, you can also use the browser's arrows, the results will be the same.
+  - **Hide Tree**: Will hide the left pane allowing for more space to investigate W) your results.
+  - **Charts**: To hide/unhide the charts that are located by default above W) the results pane.
+  - **Reload**: To reload the data in the current page.
 
 S) **Extension**: Will show all the file extensions detected in your results, either from drilling down or resulting from a search query, any extension can be clicked to isolate these specific items.
 
@@ -108,17 +108,17 @@ U) **Pages of results**: The number of pages of results is directly related to t
 V) **Search within results**: Built-in search tool to [search within the results on the current page](#search_within_results), acts like CTRL or CMD F but is much more powerful.
 
 W) **Results pane**: To see the results when you drill down or from a search query, see the [file search chapter](#file_search) for more details:
->- You can see more or less columns > **gear icon** > [**Settings**](#settings) > [**Hide fields in search results**](#hide_columns).
->- You can change the width of the columns by holding/moving the line in between two columns.
->- You can [sort](#sort) the data.
->- Contains several clickable icons which are explain in details in subsequent chapters.
+  - You can see more or less columns > **gear icon** > [**Settings**](#settings) > [**Hide fields in search results**](#hide_columns).
+  - You can change the width of the columns by holding/moving the line in between two columns.
+  - You can [sort](#sort) the data.
+  - Contains several clickable icons which are explain in details in subsequent chapters.
 
 X) These features will be explained later in this guide, but you can click on the links below to go directly to a section:
->- [Select All and Unselect All](#line_selection) line items in your results pane.
->- Apply a manual [Tag](#tags).
->- [Export](#export) your results.
->- [Share](#share) your results.
->- [File Action](#file_action).
+  - [Select All and Unselect All](#line_selection) line items in your results pane.
+  - Apply a manual [Tag](#tags).
+  - [Export](#export) your results.
+  - [Share](#share) your results.
+  - [File Action](#file_action).
 
 
 <p id="select_volume"></p>

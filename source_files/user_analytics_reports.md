@@ -13,7 +13,7 @@ Via the  **Analytics**  drop-down list for global results:
 
 <img src="images/image_analytics_reports_access_via_analytics_dropdown_20230215.png" width="300">
 
-Via the results pane by clicking this icon to investigate for a particular path.
+Via the results pane by clicking this icon to investigate a particular path.
 
 <img src="images/image_analytics_reports_access_via_results_pane_20230215.png" width="600">
 

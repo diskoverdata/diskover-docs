@@ -15,7 +15,7 @@ Via the  **Analytics**  drop-down list for global results:
 
 Via the results pane by clicking this icon to investigate for a particular path.
 
-<img src="images/image_analytics_treemap_access_via_results_pane_20230215" width="600">
+<img src="images/image_analytics_treemap_access_via_results_pane_20230215.png" width="600">
 
 #### Treemap Overview
 

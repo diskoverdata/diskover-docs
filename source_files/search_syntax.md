@@ -214,13 +214,9 @@ ___
 
 You can mix the * and ? but not the ~
 
-🔎 What you can do:
+🔎 What you can do: **scene0?\_frame\*** > would find scene01_frame0023
 
-**scene0?\_frame\*** > would find scene01_frame0023
-
-🔎 What you CAN’T do:
-
-**\*jungle~1**
+🔎 What you CAN’T do: **\*jungle~1**
 
 <p id="operators"></p>
 
@@ -231,15 +227,15 @@ There are 3 operators: **and**, **not**, **or**, and they are not case sensitive
 
 #### AND Operator
 
-Example:
+🔎 Example:
 
 **jurassic and s\*1** > would find **jurassic** isolated anywhere in the path/file name and **seasons ending with 1**.
 
->🔆 &nbsp;IMPORTANT TIME SAVER!Note that **and** is assumed if no operators are typed in between criteria, so you would get the same results as described above when searching with **jurassic s\*1**
+>🔆 &nbsp;IMPORTANT TIME SAVER! Note that **and** is assumed if no operators are typed in between criteria, so you would get the same results as described above when searching with **jurassic s\*1**
 
 #### NOT Operator
 
-Example:
+🔎 Example:
 
 **jurassic and s\*1 not e\*5** > would find **jurassic** isolated anywhere in the path/file name and **seasons ending with 1** but would exclude **episodes ending with 5**.
 
@@ -247,9 +243,9 @@ Example:
 
 When using the **or** operator, you will need to group the criteria around the that operator in order for Diskover to make sense of the query. Think of this as building formulas in Excel, Excel will want you to group criteria in order to understand what you want to accomplish; Diskover works on the same premise.
 
-Example:
+🔎 Example:
 
-**jurassic and (s\*1 or s\*2)** > would find **jurassic** isolated anywhere in the path/file name and **seasons ending with 1 or 2**.
+**jurassic (s\*1 or s\*2)** > would find **jurassic** isolated anywhere in the path/file name and **seasons ending with 1 or 2**.
 
  <p id="complex_queries"></p>
  
@@ -260,26 +256,26 @@ When using several criteria and more than one [operator](#operators), it is reco
 
 >🔆 &nbsp;You always need to group criteria when using the **or** operator.
 
-A few examples with using the file name structure **thejunglebook_s01_ep05_en.mov**:
+🔎 A few examples with using the file name structure **thejunglebook_s01_ep05_en.mov**:
 
 #### Examples with Single Grouping
 
-**\*jungle\* AND (s\*1 OR s\*2)** > would find all files related to season 1 and season 2 for The Jungle Book series.
+**\*jungle\* AND (s\*1 OR s\*2)** > would find all files/paths and related to season 1 and season 2 for The Jungle Book series.
 
-**\*jungle\* AND e\*5 AND (en OR it)** > would find all Italian (assuming **it** was respected in the naming convention) and English translations of episode 5.
+**\*jungle\* AND e\*5 AND (en OR it)** > would find all Italian (assuming **it** was respected in the naming convention) and English (**en**) translations of episode 5 for The Jungle Book series.
 
 **\*jungle\* AND s\*1 (AND extension:(mov OR mp4))** > would find all files of season 1 with .mov and .mp4 extension, a less precise query could be **\*jungle\* AND s\*1 AND (mov OR mp4)**
 
-Another type of example with words only, and let's use **New York City**. If you only want to find files that have all those 3 words in them, you can type **(new york city)** assuming that all the words are isolated of course.
+Another type of example with words only, and let's use **New York City**. If you only want to find files/paths that have all those 3 words in them, you can type **(new york city)** assuming that all the words are isolated of course.
 
 #### Examples with Multiple Groupings
 
 **\*jungle\* AND (s\*1 OR s\*2) (NOT (en OR it))** > still using the same file name example as above, would find all files for season 1 and season 2, but in all other languages than English or Italian.
 
-Let say that you have files with "quick brown fox", "quick fox", "brown fox", "Fox News", etc. this would be the query to use **((quick AND fox) OR (brown AND fox) OR fox) AND NOT news** to respect the following conditions:
-	- **fox** must be present
-	-  **news** must be excluded
-	-  **quick** and **brown** are optional — their presence increases the relevance
+Let say that you have files with "quick brown fox", "quick fox", "brown fox", "Fox News", etc. This would be the query to use **((quick AND fox) OR (brown AND fox) OR fox) AND NOT news** to respect the following conditions:
+- **fox** must be present.
+- **news** must be excluded.
+- **quick** and **brown** are optional — their presence increases the relevance.
 
 <p id="search_field_names"></p>
 

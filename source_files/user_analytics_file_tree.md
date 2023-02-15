@@ -5,17 +5,17 @@ ___
 
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
-The file tree  report profiles the size and aging of files, in a selected storage volume or any of its directories. Note that the colors have no particular meaning in this report.
+The file tree  report profiles the size and aging of files for a selected storage volume or any of its directories. Some users find it easier to drill down using this page instead of the file search page. Note that the colors have no particular meaning in this report.
 
 #### Accessing the File Tree Report
 
 Via the  **Analytics**  drop-down list:
 
-<img src="images/image_analytics_file_tree_access_via_analytics_dropdown.png" width="400">
+<img src="images/image_analytics_file_tree_access_via_analytics_dropdown_20230215.png" width="300">
 
 Via the search page by clicking this icon:
 
-![Image: File Tree Report via the Search Page](images/image_analytics_file_tree_access_via_search_pane.png)
+<img src="images/image_analytics_file_tree_access_via_results_pane_20230215.png" width="600">
 
 #### Using the File Tree Report
 

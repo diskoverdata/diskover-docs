@@ -135,7 +135,7 @@ This segment is informative only and provides details about your Diskover softwa
 <p id="anonymous_data"></p>
 
 ___
-### Send anonymous usage data
+### Send Anonymous Usage Data
 
 Upon your first login and/or after a software update, you will be prompted to agree, or not, for Diskover to automatically receive anonymous data so we can compile the behavioral results and improve the software. No personal information is collected.
 

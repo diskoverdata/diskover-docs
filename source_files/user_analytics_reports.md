@@ -23,7 +23,7 @@ A) Reports with results in number of items – click on a report to open the res
 
 B) Same queries as A), but with results in size instead – click on a report to open the results in the search page.
 
-C) Select what you want to investigate. To customize that drop-down list - instructions to come.
+C) Select what you want to investigate. Those [sample options can be customized](#reports_customize).
 
   ![Image: Smart Searches Report Overview](images/image_analytics_reports_dropdown_20230215.png)
 

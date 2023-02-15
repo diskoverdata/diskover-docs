@@ -46,6 +46,6 @@ You can launch a smart search report at any time directly from the search bar by
 
 <p id="smart_searches_customize"></p>
 
-#### How to customize Smart Searches
+#### How to Customize Smart Searches
 
 The smart searches analytics comes with sample queries, but those [queries can be customized](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#smart-searches) by someone with and admin account.

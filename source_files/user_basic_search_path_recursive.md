@@ -1,4 +1,4 @@
-<p id="search_path_recursive"></p>
+<p id="recursive_search"></p>
 
 ___
 ### Recursive/Non-Recursive Path Search and Data Manipulation in Excel
@@ -7,13 +7,13 @@ ___
 
 #### [🍿 Watch Quick Tips | Recursive Search, Export, and Excel Manipulation](https://vimeo.com/762454710)
 
-From the [search page](#file_search), you can isolate in one click and then export all the directories and/or files that are [recursive or non-recursive](#recursive) under a path.
+From the [search page](#file_search), you can list in one click all the directories and/or files that are [recursive or non-recursive](#recursive) under a path.
 
 ![Image: File Search Path Recursive](images/image_file_search_path_recursive.png)
 
 A) From the [results pane](#result_pane_columns), identify the path that you wish to search.
 
-B) Click the icon that can be found in the **Path** column - follow these [instructions to unhide the **Path** column](#hideunhide-fields-in-search-results) if that specific column is not visible in your [results pane](#result_pane_columns).
+B) Click the **3 dots icon** that can be found in the **Path** column - follow these [instructions to unhide the **Path** column](#hide_columns) if it's not visible in your [results pane](#results_pane_overview).
   
 C) Select **search path (non-recursive)** to include ONLY the directories and files included in the selected path.
   
@@ -21,7 +21,7 @@ D) Select **search path (recursive)** to include ALL the sub-directories and fil
 
 #### Export Directories and/or Files to Excel
 
-Please refer to the instructions in the **[export](#export)** section of this guide regarding files and directories export to a **csv** format.
+Please refer to the **[export search results](#export)** section of this guide if needed to learn how to export to a **csv** format.
 
 #### Multiple Path/Directory Levels Manipulation in Excel
 
@@ -42,7 +42,7 @@ C) Select **parent_path** to sort by path/directories:
   - The same **Data > Sort** selection can be achieved from the Excel drop-down top menu.
   - Please refer to **Excel > Help** menu for further instructions.
 
-##### Excel > Data > Filter - When Exporting Files from Diskover
+##### Excel > Data > Filter - When Exporting _Files_ from Diskover
 
 Once you [export](#export) the desired **files** from Diskover to a **csv** format, open that file with Excel.
 
@@ -57,7 +57,7 @@ C) Click on the **down-arrow** in the **parent_path** column which will open a w
   - The same **Data > Filter** selection can be achieved from the Excel drop-down top menu.
   - Please refer to **Excel > Help** menu for further instructions.
 
-##### Excel > Data > Filter - When Exporting Directories from Diskover
+##### Excel > Data > Filter - When Exporting _Directories_ from Diskover
 
 The same instructions as above apply when you [export](#export) **directories** from Diskover, but the results will include a few more columns, giving you more filtering options.
 
@@ -73,4 +73,4 @@ C) Instead of clicking on the **down-arrow** in the **parent_path** column, clic
   - Please refer to **Excel > Help** menu for further instructions.
 
 
->🔆 &nbsp;In Excel, you can use both **sort** and **filters** to isolate and display the results you want to achieve.
+>🔆 &nbsp;In Excel, you can use both **sort** and **filters** at the same time to isolate and display the results you want to achieve.

@@ -27,13 +27,13 @@ A) **Path bar**: You can view as well as manually type in the path you want to i
 
 B) **Go**: If you manually edit a value in A) path bar, the  **Go**  button acts as a  **Return**  key.
 
-C) **Up Level**: Will bring you one directory up per click until you reach the top of the storage volume.
+C) **Up Level**: Will bring you one directory up per click until you reach the top of the volume.
 
 D) **Results pane**: You will only see directories sorted by size by default, the sorting will change if you change K) by count instead. You can drill down using this left pane as well as via N) pie slices.
 
 E) **Magnifying glass icon**: Click to open the directory and its file in the search page for further investigation.
 
-F) **Copy Path icon**: To copy the path of a directory to your clipboard.
+F) **Copy path icon**: To copy the path of a directory or file to your clipboard.
 
 G) **Reload**: To reload the chart and tree cache/data.
 
@@ -45,10 +45,10 @@ J) **Hide Thresh**: To make the graphics less busy by hiding the results with lo
 
 K) **Size or Count**: Select either you want to see the report by the  **Size**  of the data or **Count** of items  – this will affect results in O) and P).
 
-L) **Show Files**: By default, the results will only show directories, select if you want to see files as well in the left pane.
+L) **Show Files**: By default, the results pane will only show directories, select if you want to see files as well in the results pane.
 
 M) **Filters**: Summary of the filters or preferences that you might have selected.
 
 >🔆 &nbsp;Filters will stay active, even if you navigate away to another page.
 
-N) **Attributes**: You can drill-down directly from the pie slices.
+N) **Pie chart graphic**: You can drill-down by clicking on the pie slices.

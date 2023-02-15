@@ -9,11 +9,11 @@ Reports were designed to easily help you find what you don't know; it's like rev
 
 #### Accessing Reports
 
-Access via the  **Analytics**  drop-down list:
+Via the  **Analytics**  drop-down list for global results:
 
 <img src="images/image_analytics_reports_access_via_analytics_dropdown_20230215.png" width="300">
 
-Via the search page by clicking this icon:
+Via the results pane by clicking this icon to investigate for a particular path.
 
 <img src="images/image_analytics_reports_access_via_results_pane_20230215.png" width="600">
 

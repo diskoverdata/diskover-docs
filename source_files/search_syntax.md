@@ -83,7 +83,7 @@ Of course, there are ways to find characters that are not isolated by using [wil
 
 ##### Isolated Characters | Examples with Letters
 
-For example, if you launch a query with the word **eyes**:
+🔎 For example, if you launch a query with the word **eyes**:
 
 | File name | File would be found | File would not be found |
 | --- | --- | --- |

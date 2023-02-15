@@ -5,7 +5,7 @@ ___
 
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
-You can save queries in order to re-run them again in one click.
+You can save queries in order to re-run them again in one click. Those are saved in the local browser cache and are personal to each user.
 
 #### How to Save a Query
 
@@ -15,11 +15,15 @@ After you've ran a query that you want to save, click the **Save** icon in the g
 
 #### Where to Find a Saved Query
 
-You can find all your saved queries under **Quick** > **Saved Queries**.
-
-Just click on any query to launch.
+You can find all your saved queries under **Quick** > **Saved Queries**. Just click on any query to launch.
 
 ![Image: Save Query](images/image_file_search_save_query_quick_search.png)
+
+#### How to Edit a Saved Query
+
+Start by launching the query you want to **edit** > click the **edit** icon in the green bar > modify the query in the **search bar** and hit return > this will create a new query with the edited criteria under **Quick**.
+
+![Image: Save Query](images/image_file_search_edit_query_quick_search.png)
 
 #### How to Remove Saved Queries
 

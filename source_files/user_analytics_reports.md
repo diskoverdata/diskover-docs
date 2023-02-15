@@ -21,7 +21,7 @@ All saved reports can be found in this view offering a quick graphical snapshot:
 
 A) Reports with results in number of items – click on a report to open the results in the search page. Those [sample queries can be customized](#reports_customize).
 
-B) Reports with results in size – click on a report to open the results in the search page.
+B) Same queries as A), but with results in size instead – click on a report to open the results in the search page.
 
 C) Select what you want to investigate. To customize that drop-down list - instructions to come.
 

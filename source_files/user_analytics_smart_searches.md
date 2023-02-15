@@ -23,6 +23,8 @@ All saved reports can be found in this view offering a quick graphical snapshot:
 
 ![Image: Smart Searches Report Overview](images/image_analytics_smart_searches_report_overview_20230214.png)
 
+>🔆 &nbsp;Hovering over any rectangles will give you a snapshot of their attributes.
+
 A) Reports with results in number of items – click on a report to open the results in the search page. Those [sample queries can be customized](#smart_searches_customize).
 
 B) Same queries as A), but with results in size instead – click on a report to open the results in the search page.

@@ -19,7 +19,7 @@ All saved reports can be found in this view offering a quick graphical snapshot:
 
 ![Image: Smart Searches Report Overview](images/image_analytics_smart_searches_report_overview_20230214.png)
 
-A) Reports with results in number of items – click on a report to open the results in the search page.
+A) Reports with results in number of items – click on a report to open the results in the search page. Those [sample queries can be customized](#smart_searches_customize).
 
 B) Reports with results in size – click on a report to open the results in the search page.
 
@@ -43,6 +43,8 @@ E) **Edit smart searches**: You can view the queries used for the report, but an
 You can launch a smart search report at any time directly from the search bar by typing  **!**  and all the available reports will appear under the search bar, just click on the desired one to open the results in the search page.
 
 ![Image: Launching Smart Searches from the Search Bar](images/image_analytics_smart_searches_launch_from_search_bar.png)
+
+<p id="smart_searches_customize"></p>
 
 #### How to customize Smart Searches
 

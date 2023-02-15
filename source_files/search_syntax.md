@@ -1,7 +1,7 @@
 <p id="search_syntax"></p>
 
 ___
-## Syntax Rules for Manual Queries
+## Manual Queries | Syntax and Rules
 ___
 
 Until you get familiar with Diskover and when trying to achieve complex queries, we strongly recommend using the built-in search tools like the [filters](#filters), [quick searches](#quick_search), or [search within results](#search_within_results) that are available directly in the interface. Those built-in tools can be combined with manual queries for extremly precise results.
@@ -287,17 +287,17 @@ Searching with field names can be effective if you search on a specific and/or h
 🔎 The query needs to be typed in this exact format **fieldname:value**
 
 >🔆 &nbsp;Searching on field names is case sensitive:
->- The **fieldname** needs to be in lower case.
+>- The **fieldname** needs to be lower case.
 >- The variable after the colon needs to be typed in upper and/or lower case to match exactly what you are searching for. 
 
 #### Default Field Names
 
 | Field name | What it means | How to search and comments |
 | --- | --- | --- |
-| **atime** | last access time | refer to [Queries with Time](#search_time) for examples |
+| **atime** | last accessed | refer to [Queries with Time](#search_time) for examples |
 | **bam_info** | extra metadata for sam files | please refer to the [Diskover Life Science User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/) for complete details |
 | **costpergb** | storage space cost | `costpergb:[10 TO 500]` |
-| **ctime** | changed time  | refer to [Queries with Time](#search_time) for examples |
+| **ctime** | last changed  | refer to [Queries with Time](#search_time) for examples |
 | **dir_count** | number of directories | `dir_count:2` > would list directories with exactly 2 sub-directories |
 | **dir_count_norecurs** | number of directories [non-recursive](#recursive) | `dir_count_norecurs:1` > would list directories with exactly 2 sub-directories |
 | **dir_depth** |  | `dir_depth:2` |
@@ -311,7 +311,7 @@ Searching with field names can be effective if you search on a specific and/or h
 | **ino** | file inode number | `ino:8838389885` or `ino:8838*` > is usually used by System Administrators |
 | **is_dupe** | duplicate files | `is_dupe:*` > will list duplicate items |
 | **media_info** | extra metadata for media files | please refer to the [AJA Diskover Media Edition User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/) for complete details |
-| **mtime** | modified time | refer to [Queries with Time](#search_time) for examples |
+| **mtime** | last modified | refer to [Queries with Time](#search_time) for examples |
 | **name** | file name | is case sensitive, ex: `name:*Jungle*` if the file name is TheJungleBook.mov |
 | **name.text** | same as **name** but is not case sensitive | ex: `name.text:*jungle*` even if the file name is TheJungleBook.mov |
 | **nlink** | number of [hardlinks](#hardlinks) | `nlink:3` |
@@ -324,13 +324,13 @@ Searching with field names can be effective if you search on a specific and/or h
 | **size_norecurs** | file and/or directory size [non-recursive](#recursive) | in bytes > see [Queries with File Size](#search_size) for examples |
 | **size_du** | disk usage size aka allocated size for files and/or directories | in bytes > see [Queries with File Size](#search_size) for examples |
 | **size_du_norecurs** | disk usage size [non-recursive](#recursive) | in bytes > see [Queries with File Size](#search_size) for examples |
-| **tags** | manual or auto tags | `tags:delete` > any tag(s) associated with a file or directory |
-| **type** | file or directory | `type:file` or `type:directory` |
+| **tags** | manual or auto tags | `tags:delete` > any tag(s) associated with a file or directory, tag name is case sensitive |
+| **type** | file or directory | `type:file` or `type:directory` > is case sensitive, all lower case needed |
 
 
 #### Examples of Searching with Field Names
 
-Searching on field names is very effective for achieving specific results and they are often combined with other criteria. You will find examples throughout this chapter, but here are a few more:
+🔎  Searching on field names is very effective for achieving specific results and they are often combined with other criteria. You will find examples throughout this chapter, but here are a few more:
 
 - **name.text:\*jungle\* and (size:>=5242880 AND size:<=10485760)** > would find files with the word **jungle** that are between 5MB and 10MB, would exclude directories.
 
@@ -349,7 +349,11 @@ You can find mome examples with field names in the [Searching on Time](#search_t
 ___
 ### Queries with File Size
 
-Diskover shows file size (size) and allocated size (size_du) in bytes. We recommend using the [filters](#filters), as well as [quick search](#quick_search) when searching on size, but these fields can also be searched manually. Some examples:
+Diskover shows file size (size) and allocated size (size_du) in bytes. We recommend using the [filters](#filters), as well as [quick search](#quick_search) when searching on size, but these fields can also be searched manually. 
+
+>🔆 &nbsp;When unsure how to translate size from MB, GB, etc. to bytes, you can use any free *byte converter* available online.
+
+🔎 Some examples:
 
 - **size:>1048576**  > would find all files and directories larger than 1 MB
 
@@ -361,7 +365,7 @@ Diskover shows file size (size) and allocated size (size_du) in bytes. We recomm
 
 - **extension:mov AND size:>32212254720** > would find all files with .mov extension and larger than 30 GB
 
->🔆 &nbsp;When unsure how to translate size from MB, GB, etc. to bytes, you can use any free *byte converter* available online.
+
 
 <p id="search_time"></p>
 
@@ -385,14 +389,14 @@ Format to use when searching for date and time.
 >🔆 &nbsp;Searching on time is case sensitive when it comes to formatting as detailed above, as well as writing the field name in lower case only.
 
 #### Examples to Find Recent Files
-A few helpful queries for looking for the **latest indexed files** for example. Variables can easily be adjusted to your needs:
+🔎 A few helpful queries for looking for the **latest indexed files** for example. Variables can easily be adjusted to your needs:
 
 - **ctime:[now-30m TO now] OR mtime:[now-30m TO now]** > files that have been modified or changed within the last 30 minutes.
 - **ctime:[now-1h TO now] OR mtime:[now-1h TO now]** > files that have been modified or changed in the last hour.
 - **ctime:[now-1d TO now]  OR mtime:[now-1d TO now]** > files that have been modified or changed in the past day.
 
 #### Examples to Find Old Files
-Some helpful queries when looking for old files where you can easily change the variables to adjust the queries to your needs:
+🔎 Some helpful queries when looking for old files where you can easily change the variables to adjust the queries to your needs:
 
 - **mtime:[now-5y TO now-3M]** > files that haven't been modified in over 3 months but less than 5 years.
 - **mtime:[\* TO now-1y] AND atime:[\* TO now-1y]** > files that haven't been modified or accessed in over 1 year (* in this case is used to represent "any time in the past").
@@ -402,10 +406,10 @@ ___
 
 When searching on file extensions, it is recommended to either:
 - Use the dedicated fields in the [filters](#filters).
-- Use [quick search](#quick_search) which is a best to find all video or audio file types for examples.
+- Use [quick search](#quick_search) which you can combine with a manual queries for max efficiency.
 - Type in the search bar the pre-determined field name for file extensions, example **extension:mov**
 
-The reason being that the file extension letters might be part of the file name and give you misleading results. For example:
+🔎  Note that the file extension letters might be part of the file name and give you misleading results. For example:
 - If only typing **mov** in the search bar, the results would include all files with **.mov** extension, but could also return a file with the name **all_mov_titles_2021.txt**
 
 - If only typing **jpg** in the search bar, the results would include all files with **.jpg** extension, but could also return a file with the name **montage_jpg_png_images.gif**

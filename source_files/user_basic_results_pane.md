@@ -40,9 +40,9 @@ Sorting is possible within Diskover, but if you have a lot of sorting to do, we 
 ![Image: Main Features of the File Search Page](images/image_file_search_page_sort_data.png)
 
 A) **Sort legend**: You can do a primary and secondary sort on any columns, ascending or descending, using the arrows in the headers.
-  - Gray arrows: unsorted
-  - Blue arrow: primary sort
-  - Green arrow: secondary sort
+  - **Gray arrows**: unsorted
+  - **Blue arrow**: primary sort
+  - **Green arrow**: secondary sort
 
 B) **Blue arrow/primary sort**: To reassign the primary sort to any column, just click on the arrow in the column you want to reassign the primary sort.
 

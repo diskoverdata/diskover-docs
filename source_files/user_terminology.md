@@ -66,11 +66,30 @@ ___
 <p id="hardlinks"></p>
 
 ___
-### Hardlinks
+### Hard links
 
-A hard link is a directory that associates a name with a file. Thus, each file must have at least one hard link.
+A hardlink is a pointer/link that acts like a folder/directory. A hard link is a link that directly associates a name with a given file in an operating system. Unlike a soft link, which changes the pointer when the file is renamed, a hard link still points to the underlying file even if the file name changes.
 
-A hardlink is a pointer/link that acts like a folder/directory. You can only hardlink files and not directories. The term hardlink is usually only used in file systems that allow more than one hard link for the same file. In addition, hardlinks can only refer to files within the same volume.
+Think of hard links like copies but they dont use up any more disk space. Hard links are different than symbolic or soft links, those are more just pointers or links to the actual file.
+
+**Soft links**:
+	- Can cross the file system.
+	- Allows you to link between directories.
+	- Has different inode number and file permissions than original file.
+	- Permissions will not be updated.
+	- Has only the path of the original file, not the contents.
+
+**Hard links**:
+
+	- A hard link is a directory that associates a name with a file, thus each file must have at least one hard link.
+	- You can only hard link files and not directories.
+	- Hard links can only refer to files within the same volume/file system, they can't cross the file system boundaries.
+	- Has the same inode number and permissions of original file.
+	- Permissions will be updated if the permissions of source file is changed.
+	- Has the actual contents of the original file, so that you still can view the contents, even if the original file moved or removed.
+	- You can't free up disk space until all the hard links and original files are deleted, as they all reference same inode.
+
+>🔆 &nbsp;Hard links are used a lot in media and entertainment so that digital assets can be referenced in different shot folders without using additional space.
 
 <p id="elasticsearch_terminology"></p>
 

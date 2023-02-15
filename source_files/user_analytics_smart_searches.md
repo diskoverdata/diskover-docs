@@ -13,6 +13,10 @@ Access via the  **Analytics**  drop-down list:
 
 <img src="images/image_analytics_smart_searches_access_via_analytics_dropdown_20230214.png" width="300">
 
+Via the search page by clicking this icon:
+
+<img src="image_analytics_smart_searches_access_via_results_pane_20230215.png" width="600">
+
 #### Smart Searches Overview
 
 All saved reports can be found in this view offering a quick graphical snapshot:

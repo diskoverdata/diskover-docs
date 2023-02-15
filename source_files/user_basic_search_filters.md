@@ -28,7 +28,7 @@ H) **Group**: Select an operator  from the drop-down list and type a value in th
 I) **Extensions**: Select an operator  from the drop-down list and check the box(es) for the extensions you want to include or exclude.
 
 J) **Extension**: Diskover indexes all file types but does not necessarily recognize all extensions. If you need to search on an extension that is not listed in J), select an operator  from the drop-down list and type a value in the field to the right.
-> _Note:_ Only type the extension letters, do not put the  **.**  in front.
+>🔆 &nbsp; Only type the extension letters, do not put the  **.**  in front.
 
 K) **File type**: To search on a group of file type which can include multiple file extensions. Select an operator from the drop-down list and check the box(es) for the file type you want to include or exclude.
 
@@ -42,8 +42,8 @@ O) **Exclude folders**: For less restrictive search results and be able to drill
 
 P) **Filter charts**: Clicking this box will temporary apply the filters to the following items, until you come back and R) clear the filters. To permanently apply filters to these items, please refer to [filter charts settings](#settings_filter_charts).
 
-> - The charts at the top of the file search page, you can validate the query/criteria in the [green bar](#green_info_bar).
-> - The [dashboard](#dashboard) results/analytics.
+  - The charts at the top of the file search page, you can validate the query/criteria in the [green bar](#green_info_bar).
+  - The [dashboard](#dashboard) results/analytics.
 
 Q) **Tips**:  Refer to [Manual Queries | Syntax and Rules](#search_syntax) for more details, especially the [Operators](#operators), [Complex Queries and Grouping](#complex_queries), and [Queries with Field Names](#search_field_names) sections.
 

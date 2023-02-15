@@ -1,47 +1,48 @@
 <p id="smart_searches"></p>
 
 ___
-### Smart Searches
+### Reports
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
-Smart searches were designed for repeatable reports; they are basically saved searches or shortcuts. The goal is to avoid having to recreate complex queries when you know you will need the same report on a regular basis. These reports are global and accessible by everyone in your organization.
+Reports were designed to easily help you find what you don't know, it's like reverse engeneering. Fully customizable queries as well as customizable drop-down list with what matters to your business, therefore for you to be able to easily find those hidden items. These reports are global and accessible by everyone in your organization.
 
-The smart searches tool comes with pre-defined searches, but those [queries can be customized](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#smart-searches) by someone with and admin account.
+The reports tool comes with pre-defined queries and drop-down list, but those queries can be customized (instructions to come) by someone with and admin account.
 
-#### How to Launch Smart Searches
+#### How to Launch Reports
 
 Access via the  **Analytics**  drop-down list:
 
-<img src="images/image_analytics_smart_searches_access_via_analytics_dropdown_20230214.png" width="300">
+<img src="images/image_analytics_reports_access_via_analytics_dropdown_20230215.png" width="300">
 
 #### Smart Searches Overview
 
 All saved reports can be found in this view offering a quick graphical snapshot:
 
-![Image: Smart Searches Report Overview](images/image_analytics_smart_searches_report_overview_20230214.png)
+![Image: Smart Searches Report Overview](images/image_analytics_reports_report_overview_20230215.png)
 
 A) Reports with results in number of items – click on a report to open the results in the search page.
 
 B) Reports with results in size – click on a report to open the results in the search page.
 
-C) Apply filters to further customize your results:
+C) Select what you want to investigate. To customize that drop-down list - instructions to come.
 
+  ![Image: Smart Searches Report Overview](images/image_analytics_reports_dropdown_20230215.png)
+
+D) Select how many top results you want to see.
+
+E) Apply filters to further customize your results:
+
+  - **Sort by size**: Will sort by number of items by default, so active to change to sorting by size.
   - **Show files only**: Will exclude directories from the results.
   - **Show directories only**: Will exclude files from the results.
   - **Show all**: To show both files and directoreis in the results.
-  - **Dir size no recurs**: To limit directory size to not [recusrsive](#recusrive)
-  - **Current top path only**: To limit the results to D) selected [volume](#storage_volume).
-  - **Current dir only**: If applicable, to limit the results to the path you selected in the search page and locked down via [Current Dir](#current_dir) before navigating to Smart Searches.
+  - **Dir size no recurs**: To limit directory size to [non-recusrsive](#recusrive)
+  - **Current top path only**: To limit the results to F) selected [volume](#storage_volume).
+  - **Current dir only**: If applicable, to limit the results to the path you selected in the search page and locked down via [Current Dir](#current_dir) before navigating to Reports.
 
-D) Smart searches are global, if you want to narrow the results:
+F) Reports are global, if you want to narrow the results:
   - To a single volume > activate the **Current top path only** filter.
-  - To a specific path > activate the **Current dir only** filter as described in C).
+  - To a specific path > activate the **Current dir only** filter as described in E).
 
-E) **Edit smart searches**: You can view the queries used for the report, but an admin account is required to edit them. If you have a search query that you’d like to add to the list and do not have an admin account, copy the full query/criteria and share it with your System Administrator.
-
-#### Launch Smart Searches Results from the Search Bar
-
-You can launch a smart search report at any time directly from the search bar by typing  **!**  and all the available reports will appear under the search bar, just click on the desired one to open the results in the search page.
-
-![Image: Launching Smart Searches from the Search Bar](images/image_analytics_smart_searches_launch_from_search_bar.png)
+G) **Edit reports**: You can view the queries used for the report, but an admin account is required to edit them. If you have a search query that you’d like to add to the list and do not have an admin account, copy the full query/criteria and share it with your System Administrator.

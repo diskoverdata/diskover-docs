@@ -13,7 +13,7 @@ B) **Charts hide/unhide**: By default, the file search page displays colorful ch
 
 This section explains the few items that were not covered in the [user interface overview](#ui_overview), as well as explain further certain aspects.
 
-![Image: Main Features of the File Search Page](images/image_file_search_page_overview_20230214.png)
+![Image: Main Features of the File Search Page](images/image_file_results_pane_overview_20230214.png)
 
 A) **Info icon:** Will display the directory’s detailed [attributes](#attributes) by opening a new page.
 

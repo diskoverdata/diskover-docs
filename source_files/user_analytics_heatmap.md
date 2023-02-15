@@ -26,9 +26,9 @@ Before accessing the heatmap report, you need to [select 2 indices from 2 differ
 
 >🔆 &nbsp;Sometimes, the storage volumes don’t need to have the same name to be compared. For example, a storage volume could be on a physical server with one name, and another storage volume could be a backup with the same data set in the cloud with a different name.
 
-![Image: Indices Selection for Heatmap Report](images/image_analytics_heatmap_indices_selection.png)
-
 Here is a quick visual recap for heatmap purposes only:
+
+![Image: Indices Selection for Heatmap Report](images/image_analytics_heatmap_indices_selection.png)
 
 A) From the gear icon drop-down list, select  **Indices**.
 

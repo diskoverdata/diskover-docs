@@ -140,20 +140,14 @@ The * wild card is used to expand search results and is great to go around [nami
 
 #### How to Use the * | Examples with Letters
 
-If you would launch a search with **\*eyes***, the following files would be found:
+🔎 If you would launch a search with **\*eyes***, the following files would be found:
 - foryoureyesonly
 - theseeyes_song
 - eyes18367
 
-| Syntax | Description |
-| --- | ----------- |
-| Header | Title |
-| Paragraph | Text |
-
-
 #### How to Use the * | Examples with Numbers
 
-If you would launch a search with **\*12***, the following files would be found:
+🔎 If you would launch a search with **\*12***, the following files would be found:
 - draft12
 - draft_v12
 - draft123
@@ -173,7 +167,7 @@ ___
 
 The **?** wild card is used to replace a single character. I can be used several times in a row to replace a specific number of variables.
 
-A few examples of names that would be found when launching those queries:
+🔎 A few examples of what would be found when launching the following queries:
 
 - **scene?** > would find **scenes**, **scene1**...
 - **e?2** > would find **ep2**, **e02**, **e12**, **e22**...
@@ -193,11 +187,11 @@ The **~** wild card is also called the **fuzziness** wild card. If is used to fi
 
 >🔆 &nbsp;Be aware that launching a query with the **~** can use an enormous amount of memory and perform badly, ending in a "timed out" situation.
 
-The query uses the  [Damerau-Levenshtein distance](https://en.wikipedia.org/wiki/Damerau-Levenshtein_distance) to find all terms with a maximum of two changes, where a change is the insertion, deletion or substitution of a single character, or transposition of two adjacent characters.
+The query uses the [Damerau-Levenshtein distance](https://en.wikipedia.org/wiki/Damerau-Levenshtein_distance) to find all terms with a maximum of two changes, where a change is the insertion, deletion or substitution of a single character, or transposition of two adjacent characters.
 
 If used alone, by default the **~** will look for the maximum of 2 changes, but it is best practice to use **~1** in order to limit the changes to 1, which should be sufficient to catch 80% of all human misspellings. 
 
-A few examples of words that would be found with and without limiting the changes to 1:
+🔎 A few examples of words that would be found with and without limiting the changes to 1:
 
 - **jungle~1** > would find: jungle, juggle, jingly, jingle, jingles, etc.
 - **jungle~** > would find: jungle, juggle, jingly, jingle, jingles, june, judge, single, bundle, uncle, etc.
@@ -207,7 +201,17 @@ ___
 
 #### [🍿 Watch Quick Tips | Manual Search Tool: Wild Cards](https://vimeo.com/772196768)
 
-#### Mixing the ? and the *
+#### Mixing Wild Cards in the same QUERY
+
+🔎 You can mix any wild cards in the same query. For example:
+
+- **jungle~1 and e*2**
+- **project? not 2022\***
+
+
+
+
+
 
 Both **?** and **\*** wild cards can be used in the same criteria. 
 

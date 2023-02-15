@@ -28,7 +28,7 @@ C) Apply filters to further customize your results:
   - **Show files only**: Will exclude directories from the results.
   - **Show directories only**: Will exclude files from the results.
   - **Show all**: To show both files and directoreis in the results.
-  - **Dir size no recurs**: To limit directory size to [non-recusrsive](#recusrive)
+  - **Dir size no recurs**: To limit directory size to [non-recusrsive](#recusrive).
   - **Current top path only**: To limit the results to D) selected [volume](#storage_volume).
   - **Current dir only**: If applicable, to limit the results to the path you selected in the search page and locked down via [Current Dir](#current_dir) before navigating to Smart Searches.
 

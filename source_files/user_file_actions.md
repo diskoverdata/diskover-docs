@@ -1,13 +1,18 @@
 <p id="file_action"></p>
 
 ___
-### File Actions
+## File Actions
+___
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
-The options within File Actions push some boundaries around read-only files, still safeguarding your files while allowing you to view and validate them in a way to facilitate your work.
+The options within file actions push the boundaries around read-only files while still safeguarding your source assets. While some plugins are designed for seamless integration with third-party platforms, reducing time and complexity for users along with many other benefits, Diskover also embraces clients deploying their own plugins to automate their specific in-house workflows. 
 
-This feature needs to be enabled by your System Administrator.
+The [plugins/features needs to be enabled](#https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#diskover-web-plugins-file-actions) by your System Administrator.
+
+### File Action Overview
+
+Here is a sample of file actions offered with the Media Edition.
 
 ![Image: Select File Action](images/image_file_action_options_20221104.png)
 
@@ -23,13 +28,13 @@ E) **open in Glim** > To preview media files using [Telestream GLIM](https://dis
 
 F) **open in CineViewer** > To preview media files using [CineViewer Player](https://diskoverdata.com/products/products-aja-media-edition/#cineviewer).
 
-G) **find file sequences** > To find all files in a sequence.
+G) **find file sequences** > To find all [files in a sequence](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#find-file-sequences).
 
 H) **submit to Vantage** > To submit files for transcoding via [Telestream Vantage](https://diskoverdata.com/products/products-aja-media-edition/#vantage), directly from the Diskover user interface - you need to have a [Vantage account](http://www.telestream.net/vantage/overview.htm) to use this feature and be logged in.
 
 <p id="file_action_live_view"></p>
 
-#### File Action > Live View
+### File Action > Live View
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
@@ -37,7 +42,7 @@ H) **submit to Vantage** > To submit files for transcoding via [Telestream Vanta
 
 This feauture allows you to view the content of a live directory(ies), lists the content so you can search and pro-actively copy paths. This feature only works for on-premise storage at the moment and is not avaiable for cloud storage.
 
-The typical use case is when you are not finding a file/directory in the indexed volumes within Diskover, you can access live directories and see if the files you are waiting to be onboarded will be available during the next indexing, as well as pro-actively copy paths for a work order for example.
+The typical use case is when you are not finding a file/directory in the indexed volumes within Diskover, you can access live directories and see if the files you are waiting to be onboarded will be available during the next indexing, as well as pro-actively copy paths.
 
 - Select one or multiple directories in the results pane.
 - Click the **File Action** icon.
@@ -47,7 +52,7 @@ The typical use case is when you are not finding a file/directory in the indexed
 
 The **live view** directory will open in a new tab:
 
-![Image: Directory Live View](images/image_file_action_live_view_20221104.png)
+![Image: Directory Live View](images/image_file_action_live_view_20230215.png)
 
 A) Time stamp of when you clicked **live view** in the search page - this time stamp will update if you refresh your browser tab, which will also refresh the data.
 
@@ -63,6 +68,8 @@ F) You can **Copy** paths:
   - If you want to copy all the paths in the results pane, you don't even have to select anything, just click the **Copy** button.
   - If you want to copy a block of paths, select the first line item, hold the SHIFT key, and click on the last line item.
   - If you want to copy random lines, hold the CTRL button for Windows or COMMAND for Mac, and select the desired lines.
+
+G) You can launch file actions from the live view.
 
 <p id="file_action_glim"></p>
 

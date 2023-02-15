@@ -10,7 +10,7 @@ The options within file actions push the boundaries around read-only files while
 
 The [plugins/features needs to be enabled](#https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#diskover-web-plugins-file-actions) by your System Administrator.
 
-### File Action Overview
+### File Actions Overview
 
 Here is a sample of file actions offered with the Media Edition.
 
@@ -79,7 +79,7 @@ G) You can launch file actions from the live view.
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
-### [🍿 Watch Demo Video | Telestream GLIM](https://vimeo.com/665037937)
+#### [🍿 Watch Demo Video | Telestream GLIM](https://vimeo.com/665037937)
 
 Allows users to safely preview media files by launching GLIM seamlessly from Diskover.
 

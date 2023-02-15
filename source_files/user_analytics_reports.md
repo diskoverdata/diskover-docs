@@ -31,11 +31,11 @@ D) Select how many top results you want to see.
 
 E) Apply filters to further customize your results:
 
-  - **Sort by size**: Will sort by number of items by default, so active to change to sorting by size.
+  - **Sort by size**: Will sort by number of items by default, so activate to change to sorting by size.
   - **Show files only**: Will exclude directories from the results.
   - **Show directories only**: Will exclude files from the results.
   - **Show all**: To show both files and directoreis in the results.
-  - **Dir size no recurs**: To limit directory size to [non-recusrsive](#recusrive)
+  - **Dir size no recurs**: To limit directory size to [non-recusrsive](#recusrive).
   - **Current top path only**: To limit the results to F) selected [volume](#storage_volume).
   - **Current dir only**: If applicable, to limit the results to the path you selected in the search page and locked down via [Current Dir](#current_dir) before navigating to Reports.
 

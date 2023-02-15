@@ -7,7 +7,7 @@ ___
 
 Smart searches were designed for repeatable reports; they are basically saved searches or shortcuts. The goal is to avoid having to recreate complex queries when you know you will need the same report on a regular basis. These reports are global and accessible by everyone in your organization.
 
-The smart searches tool comes with pre-defined searches, but those [queries can be customized](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#smart-searches) by someone with and admin account.
+The smart searches tool comes with sample searches/queries, but those [queries can be customized](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#smart-searches) by someone with and admin account.
 
 #### How to Launch Smart Searches
 

@@ -87,16 +87,10 @@ For example, if you launch a query with the word **eyes**:
 
 | File name | File would be found | File would not be found |
 | --- | --- | --- |
-| for_your_eyes_only.mov | because **eyes** is isolated with underscores |  |
-| ForYourEyesOnly.mov | because the first letters of each words being capitalized are recognized as separate words (aka CamelCase) |  |
-
-
-
-- **ForYourEyesOnly.mov** > this file would be found because the first letters of each words being capitalized are recognized as separate words (aka CamelCase).
-
-- **foryoureyesonly.mov** > this file would NOT be found because the whole string of characters is read as a single word.
-
-- **4youreyes.mov** > this file would NOT be found because the word **eyes** is only isolated at the end.
+| for_your_eyes_only.mov | **eyes** is isolated with underscores |  |
+| ForYourEyesOnly.mov | the first letters of each words is capitalized, aka CamelCase |  |
+| foryoureyesonly.mov |  | the whole string of characters is read as a single word |
+| 4youreyes.mov |  | the word **eyes** is only isolated at the end |
 
 ##### Isolated Characters | Examples with Numbers
 

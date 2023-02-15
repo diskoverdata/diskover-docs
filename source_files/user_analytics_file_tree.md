@@ -21,7 +21,7 @@ Via the results pane by clicking this icon to investigate for a particular path.
 
 ![Image: File Tree Report Overview](images/image_analytics_file_tree_overview.png)
 
->🔆 &nbsp;Hovering over any graphics will give you a snapshot of attributes.
+>🔆 &nbsp;Hovering over any graphics will give you a snapshot of their attributes.
 
 A) **Path bar**: You can view as well as manually type in the path you want to investigate.
 

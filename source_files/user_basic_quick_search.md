@@ -18,7 +18,7 @@ You can always validate the criteria used for the quick search query in the gree
 Quick searches can be used on their own or:
 
 - They can be combined with [filters](#filters):
-  - start by selecting/saving the [filters](#filters).
+  - Start by selecting/saving the [filters](#filters).
   - Run a quick search.
 
 - They can be combined with [manual queries](#search_syntax):

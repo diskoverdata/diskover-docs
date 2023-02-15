@@ -114,7 +114,7 @@ Type your search query in the search bar at the top of the page:
 
 The tags built-in report gives a visual snapshot of all tagged items in all your storage volumes. Note that the colors have no particular meaning in this report.
 
-#### Accessing Tags Report
+#### Accessing the Tags Report
 
 Via the  **Analytics**  drop-down list for global results:
 
@@ -124,7 +124,7 @@ Via the results pane by clicking this icon to investigate a particular path.
 
 <img src="images/image_analytics_tags_access_via_results_pane_20230215.png" width="600">
 
-#### Using the Tags Report
+#### Tags Report Overview
 
 ![Image: Tags Report Overview](images/image_tags_report_overview_20230215.png)
 

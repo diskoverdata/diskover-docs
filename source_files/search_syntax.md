@@ -203,29 +203,24 @@ ___
 
 #### Mixing Wild Cards in the same QUERY
 
+>🔆 &nbsp;Mixing wild cards can be tricky, but below are the basic rules.
+
 🔎 You can mix any wild cards in the same query. For example:
 
 - **jungle~1 and e*2**
 - **project? not 2022\***
 
+#### Mixing wild cards in the same CRITERIA
 
+You can mix the * and ? but not the ~
 
+🔎 What you can do:
 
+**scene0?\_frame\*** > would find scene01_frame0023
 
+🔎 What you CAN’T do:
 
-Both **?** and **\*** wild cards can be used in the same criteria. 
-
-For example, assuming the naming convention used would be **scene01_frame000023**:
-
-**scene0?\_frame*** > would find **scene** between **0 and 9** with **any frame number**
-
-#### Can't Mix the ~ with Other Wild Cards
-
-Mixing the ~ wild card with the * or the ? wild cards in the same criteria is not supported. 
-
-Example of what NOT to do: **jungle\*~1**
-
-But you can mix the **~** with other criteria and [operators](#operators), ex: **jungle~1 and e\*2**
+**\*jungle~1**
 
 <p id="operators"></p>
 

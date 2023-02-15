@@ -7,8 +7,6 @@ ___
 
 Smart searches were designed for repeatable reports; they are basically saved searches or shortcuts. The goal is to avoid having to recreate complex queries when you know you will need the same report on a regular basis. These reports are global and accessible by everyone in your organization.
 
-The smart searches tool comes with sample searches/queries, but those [queries can be customized](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#smart-searches) by someone with and admin account.
-
 #### How to Launch Smart Searches
 
 Access via the  **Analytics**  drop-down list:
@@ -45,3 +43,7 @@ E) **Edit smart searches**: You can view the queries used for the report, but an
 You can launch a smart search report at any time directly from the search bar by typing  **!**  and all the available reports will appear under the search bar, just click on the desired one to open the results in the search page.
 
 ![Image: Launching Smart Searches from the Search Bar](images/image_analytics_smart_searches_launch_from_search_bar.png)
+
+#### How to customize Smart Searches
+
+The smart searches analytics comes with sample queries, but those [queries can be customized](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#smart-searches) by someone with and admin account.

@@ -85,7 +85,12 @@ Of course, there are ways to find characters that are not isolated by using [wil
 
 For example, if you launch a query with the word **eyes**:
 
-- **for_your_eyes_only.mov** > this file would be found because **eyes** is isolated with underscores.
+| File name | File would be found | File would not be found |
+| --- | --- | --- |
+| for_your_eyes_only.mov | because **eyes** is isolated with underscores |  |
+| ForYourEyesOnly.mov | because the first letters of each words being capitalized are recognized as separate words (aka CamelCase) |  |
+
+
 
 - **ForYourEyesOnly.mov** > this file would be found because the first letters of each words being capitalized are recognized as separate words (aka CamelCase).
 

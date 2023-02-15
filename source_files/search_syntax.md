@@ -293,7 +293,7 @@ Searching with field names can be effective if you search on a specific and/or h
 #### Default Field Names
 
 | Field name | What it means | How to search |
-| --- | --- |
+| --- | --- | --- |
 | **atime** | last access time | refer to [Queries with Time](#search_time) for examples |
 | **costpergb** | storage space cost | `costpergb:[10 TO 500]` |
 | **ctime** | changed time  | refer to [Queries with Time](#search_time) for examples |

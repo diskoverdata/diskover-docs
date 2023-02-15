@@ -284,7 +284,7 @@ ___
 
 Searching with field names can be effective if you search on a specific and/or hidden field and are looking for precise results. You can compare searching on field names as searching on a specific column in a massive Excel spreadsheet.
 
-The query needs to be typed in this exact format **fieldname:value**
+🔎 The query needs to be typed in this exact format **fieldname:value**
 
 >🔆 &nbsp;Searching on field names is case sensitive:
 >- The **fieldname** needs to be in lower case.
@@ -292,26 +292,28 @@ The query needs to be typed in this exact format **fieldname:value**
 
 #### Default Field Names
 
-- **atime** - access time > refer to [Queries with Time](#search_time) for examples
-- **costpergb** - storage space cost > `costpergb:[10 TO 500]`
-- **ctime** - changed time  > refer to [Queries with Time](#search_time) for examples
-- **extension** - file extension > `extension:mov`
-- **group** - can vary depending on how Diskover was configured > `group:colorists` > see [User Analysis Report](#user_analysis) section for more details and/or ask your System Administrator
-- **hash** - hash value for duplicate files, feature needs to be enabled and is usually used by System Administrators
-- **ino** - file inode number > is usually used by System Administrators
-- **mtime** - modified time > refer to [Queries with Time](#search_time) for examples
-- **name** - file name > is case sensitive, ex: `name:*Jungle*` if the file name is TheJungleBook.mov
-- **name.text** - same as **name** but is not case sensitive, ex: `name.text:*jungle*` if the file name is TheJungleBook.mov
-- **nlink** - number of [hardlinks](#hardlinks) > `nlink:3`
-- **owner** - can vary depending on how Diskover was configured > `owner:*Joe*` > see [User Analysis Report](#user_analysis) section for more details and/or ask your System Administrator
-- **parent_path** - is case sensitive, will search the specified folder and all its sub-folders ([recursive](#recursive)) > `parent_path:\/some\/folder*`
-- **parent_path.text** - same as **parent_path** but is not case sensitive
-- **size** - file size, in bytes > see [Queries with File Size](#search_size) for examples
-- **size_du** - disk usage size, aka allocated size, in bytes > see [Queries with File Size](#search_size) for examples
-- **tags** - any tag(s) associated with a file or directory > `tags:delete`
-- **type** - file or directory > `type:file` or `type:directory`
-- **s3_etag** - default field that gets added when performing an S3 scan (AWS cloud storage) > entity tag
-- **s3_storageclass** - default field that gets added when performing an S3 scan (AWS cloud storage) > storage class, ex: Standard or Glacier
+| Field name | What it means | How to search |
+| --- | --- |
+| **atime** | last access time | refer to [Queries with Time](#search_time) for examples |
+| **costpergb** | storage space cost | `costpergb:[10 TO 500]` |
+| **ctime** | changed time  | refer to [Queries with Time](#search_time) for examples |
+| **extension** | file extension | `extension:mov` |
+| **group** | user group name | `group:colorists` > can vary depending on how Diskover was configured, see [User Analysis Report](#user_analysis) section for more details and/or ask your System Administrator |
+| **hash** | hash value for duplicate files | `hash:*` `hash.xxhash:*` `hash.md5:*` `hash.sha256:*` `hash.sha1:*` feature needs to be enabled/configured and is usually used by System Administrators |
+| **ino** | file inode number | `ino:8838389885` or `ino:8838*` > is usually used by System Administrators |
+| **mtime** | modified time | refer to [Queries with Time](#search_time) for examples |
+| **name** | file name | is case sensitive, ex: `name:*Jungle*` if the file name is TheJungleBook.mov |
+| **name.text** | same as **name** but is not case sensitive | ex: `name.text:*jungle*` even if the file name is TheJungleBook.mov |
+| **nlink** | number of [hardlinks](#hardlinks) | `nlink:3` |
+| **owner** | owner name | `owner:*Joe*` > can vary depending on how Diskover was configured, see [User Analysis Report](#user_analysis) section for more details and/or ask your System Administrator |
+| **parent_path** | path name | `parent_path:\/Some\/Folder*` > is case sensitive, will search the specified folder and all its sub-folders ([recursive](#recursive)) |
+| **parent_path.text** | same as **parent_path** but is not case sensitive | `parent_path:\/some\/folder*` |
+| **size** | file size | in bytes > see [Queries with File Size](#search_size) for examples |
+| **size_du** | disk usage size aka allocated size | in bytes > see [Queries with File Size](#search_size) for examples
+| **tags** | manual or auto tags | `tags:delete` > any tag(s) associated with a file or directory |
+| **type** | file or directory | `type:file` or `type:directory` |
+| **s3_etag** | s3 entity tag | `s3_etag:*` > default field that gets added when performing an S3 scan (cloud storage) |
+| **s3_storageclass** | s3 storage class | `s3_storageclass:standard` > default field that gets added when performing an S3 scan (cloud storage) |
 
 #### Examples of Searching with Field Names
 

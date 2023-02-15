@@ -15,7 +15,7 @@ Access via the  **Analytics**  drop-down list:
 
 Via the search page by clicking this icon:
 
-<img src="image_analytics_smart_searches_access_via_results_pane_20230215.png" width="600">
+<img src="images/image_analytics_smart_searches_access_via_results_pane_20230215.png" width="600">
 
 #### Smart Searches Overview
 

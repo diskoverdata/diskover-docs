@@ -1,21 +1,27 @@
 <p id="quick_search"></p>
 
 ___
-### Built-In Search Tool | Quick Search
+### Quick Search
 
-Quick searches  are convenient when searching on a single pre-established criterion. The drop-down list, and its sub-menus, offer several selections. Here is an example:
+Quick searches will search all your volumes and their directories. They are very intuitive and based on pre-establish smart group of criteria. The drop-down list, and its sub-menus, offer several options. 
 
-![Image: Quick Search](images/image_file_search_quick_search.png)
+Select any criteria and the results will automatically open in the search page. Here is an example:
 
-Select a criterion and the results will automatically open in the search page.
+![Image: Quick Search](images/image_file_search_quick_search_20230214.png)
 
-The possible selections in the drop-down menu are self-explanatory, except maybe hardlinks* which is less common. Select the hardlink criterion if you want to find files with more than 1 hardlink.
+You can always validate the criteria used for the quick search query in the green info bar, example:
 
-Quick searches  can be used on their own or combined with [filters](#filters). When using the combination of  [filters](#filters) and quick searches, start by selecting the [filters](#filters), then select your quick search criterion. You can always validate your results in the green info bar, example:
+![Image: Green Info Bar](images/image_file_search_green_info_bar_20230214.png)
 
-![Image: Green Info Bar](images/image_file_search_green_info_bar.png)
-A) Criterion selected in the quick searches > for this example, we selected files bigger than 25 MB > 26214400 shows the equivalence of 25 MB in bytes in [binary format](#binary_decimal).
+#### Combine Quick Searches with Other Tools
 
-B) Storage volume and directory selected for the search.
+Quick searches can be used on their own or:
 
-C) Criterion selected in the [filters](#filters).
+- They can be combined with [filters](#filters):
+  1. start by selecting/saving the [filters](#filters).
+  2. Run a quick search.
+
+- They can be combined with [manual queries](#search_syntax):
+  1. Start by launching a quick search.
+  2. Copy the criteria from the green bar as per the example/image above.
+  3. Type a manual query in the search bar then paste the copied quick search criteria.

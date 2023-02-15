@@ -7,7 +7,7 @@ ___
 
 Smart searches were designed for repeatable reports; they are basically saved searches or shortcuts. The goal is to avoid having to recreate complex queries when you know you will need the same report on a regular basis. These reports are global and accessible by everyone in your organization.
 
-#### How to Launch Smart Searches
+#### Accessing Smart Searches Analytics
 
 Access via the  **Analytics**  drop-down list:
 
@@ -40,7 +40,7 @@ E) **Edit smart searches**: You can view the queries used for the report, but an
 
 #### Launch Smart Searches Results from the Search Bar
 
-You can launch a smart search report at any time directly from the search bar by typing  **!**  and all the available reports will appear under the search bar, just click on the desired one to open the results in the search page.
+You can launch a smart search report at any time directly from the search bar by typing  **!**  and all the available reports will appear under the search bar, just click on the desired one to open the results of any report in the search page.
 
 ![Image: Launching Smart Searches from the Search Bar](images/image_analytics_smart_searches_launch_from_search_bar.png)
 

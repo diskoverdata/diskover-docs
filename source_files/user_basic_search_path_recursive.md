@@ -15,9 +15,9 @@ A) From the [results pane](#result_pane_columns), identify the path that you wis
 
 B) Click the **3 dots icon** that can be found in the **Path** column - follow these [instructions to unhide the **Path** column](#hide_columns) if it's not visible in your [results pane](#results_pane_overview).
   
-C) Select **search path (non-recursive)** to include ONLY the directories and files included in the selected path.
+C) Select **search path (non-recursive)** to include ONLY the directories and files included in the selected path, the results will open in a new browser tab.
   
-D) Select **search path (recursive)** to include ALL the sub-directories and files included under the selected path.
+D) Select **search path (recursive)** to include ALL the sub-directories and files included under the selected path, the results will open in a new browser tab.
 
 #### Export Directories and/or Files to Excel
 

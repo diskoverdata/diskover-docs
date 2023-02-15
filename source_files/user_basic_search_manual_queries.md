@@ -294,24 +294,24 @@ Searching with field names can be effective if you search on a specific and/or h
 
 | Field name | What it means | How to search and comments |
 | --- | --- | --- |
-| **atime** | last accessed | refer to [Queries with Time](#search_time) for examples |
+| **atime** | last accessed | refer to [Queries with Time](#search_time) for syntax examples |
 | **bam_info** | extra metadata for sam files | please refer to the [Diskover Life Science User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/) for complete details |
 | **costpergb** | storage space cost | `costpergb:[10 TO 500]` |
-| **ctime** | last changed  | refer to [Queries with Time](#search_time) for examples |
+| **ctime** | last changed  | refer to [Queries with Time](#search_time) for syntax examples |
 | **dir_count** | number of directories | `dir_count:2` > would list directories with exactly 2 sub-directories |
 | **dir_count_norecurs** | number of directories [non-recursive](#recursive) | `dir_count_norecurs:1` > would list directories with exactly 2 sub-directories |
-| **dir_depth** |  | `dir_depth:2` |
+| **dir_depth** | directory depth in a path | `dir_depth:2` |
 | **extension** | file extension | `extension:mov` |
-| **file_count** | number of files inside a directory | `file_count:85` `file_count:500*` > to find directories with a specific or approximate number of files |
+| **file_count** | number of files inside a directory | `file_count:85` `file_count:500*` `file_count:10?` > to find directories with a specific or approximate number of files |
 | **file_count_norecurs** | number of files inside a directory [non-recursive](#recursive) | `file_count_norecurs:*` > to find directories with a specific or approximate number of files |
 | **file_size** | file size | in bytes > see [Queries with File Size](#search_size) for examples |
 | **file_size_du** | disk usage size aka allocated size for files only | in bytes > see [Queries with File Size](#search_size) for examples |
 | **group** | user group name | `group:colorists` > can vary depending on how Diskover was configured, see [User Analysis Report](#user_analysis) section for more details and/or ask your System Administrator |
-| **hash** | hash value for duplicate files | `hash:*` `hash.xxhash:*` `hash.md5:*` `hash.sha256:*` `hash.sha1:*` feature needs to be enabled/configured and is usually used by System Administrators |
+| **hash** | hash value for duplicate files | `hash:*` `hash.xxhash:*` `hash.md5:*` `hash.sha256:*` `hash.sha1:*` this [feature needs to be enabled/configured](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#duplicates-plugin)  |
 | **ino** | file inode number | `ino:8838389885` or `ino:8838*` > is usually used by System Administrators |
 | **is_dupe** | duplicate files | `is_dupe:*` > will list duplicate items |
 | **media_info** | extra metadata for media files | please refer to the [AJA Diskover Media Edition User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/) for complete details |
-| **mtime** | last modified | refer to [Queries with Time](#search_time) for examples |
+| **mtime** | last modified | refer to [Queries with Time](#search_time) for syntax examples |
 | **name** | file name | is case sensitive, ex: `name:*Jungle*` if the file name is TheJungleBook.mov |
 | **name.text** | same as **name** but is not case sensitive | ex: `name.text:*jungle*` even if the file name is TheJungleBook.mov |
 | **nlink** | number of [hardlinks](#hardlinks) | `nlink:3` |
@@ -320,10 +320,10 @@ Searching with field names can be effective if you search on a specific and/or h
 | **parent_path.text** | same as **parent_path** but is not case sensitive | `parent_path:\/some\/folder*` |
 | **s3_etag** | s3 entity tag | `s3_etag:*` > default field that gets added when performing an S3 scan (cloud storage) |
 | **s3_storageclass** | s3 storage class | `s3_storageclass:standard` > default field that gets added when performing an S3 scan (cloud storage) |
-| **size** | file and/or directory size | in bytes > see [Queries with File Size](#search_size) for examples |
-| **size_norecurs** | file and/or directory size [non-recursive](#recursive) | in bytes > see [Queries with File Size](#search_size) for examples |
-| **size_du** | disk usage size aka allocated size for files and/or directories | in bytes > see [Queries with File Size](#search_size) for examples |
-| **size_du_norecurs** | disk usage size [non-recursive](#recursive) | in bytes > see [Queries with File Size](#search_size) for examples |
+| **size** | file and/or directory size | in bytes > see [Queries with Data Size](#search_size) for syntax examples on how to search on size |
+| **size_norecurs** | file and/or directory size [non-recursive](#recursive) | in bytes > see [Queries with Data Size](#search_size) for syntax examples on how to search on size |
+| **size_du** | disk usage size aka allocated size for files and/or directories | in bytes > see [Queries with Data Size](#search_size) for syntax examples on how to search on sizes |
+| **size_du_norecurs** | disk usage size [non-recursive](#recursive) | in bytes > see [Queries with Data Size](#search_size) for syntax examples on how to search on size |
 | **tags** | manual or auto tags | `tags:delete` > any tag(s) associated with a file or directory, tag name is case sensitive |
 | **type** | file or directory | `type:file` or `type:directory` > is case sensitive, all lower case needed |
 
@@ -347,7 +347,7 @@ You can find mome examples with field names in the [Searching on Time](#search_t
  <p id="search_size"></p>
 
 ___
-### Queries with File Size
+### Queries with Data Size
 
 Diskover shows file size (size) and allocated size (size_du) in bytes. We recommend using the [filters](#filters), as well as [quick search](#quick_search) when searching on size, but these fields can also be searched manually. 
 

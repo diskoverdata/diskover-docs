@@ -107,6 +107,8 @@ U) **Pages of results**: The number of pages of results is directly related to t
 
 V) **Search within results**: Built-in search tool to [search within the results on the current page](#search_within_results), acts like CTRL or CMD F but is much more powerful.
 
+<p id="results_pane_overview"></p>
+
 W) **Results pane**: To see the results when you drill down or from a search query, see the [file search chapter](#file_search) for more details:
   - You can see more or less columns > **gear icon** > [**Settings**](#settings) > [**Hide fields in search results**](#hide_columns).
   - You can change the width of the columns by holding/moving the line in between two columns.

@@ -7,13 +7,13 @@ ___
 
 Reports were designed to easily help you find what you don't know; it's like reverse engeneering. Fully customizable queries as well as customizable drop-down list with what matters to your business, therefore for you to be able to quickly pinpoint those hard to find statistics. These reports are global and accessible by everyone in your organization.
 
-#### How to Launch Reports
+#### Accessing Reports
 
 Access via the  **Analytics**  drop-down list:
 
 <img src="images/image_analytics_reports_access_via_analytics_dropdown_20230215.png" width="300">
 
-#### Smart Searches Overview
+#### Reports Overview
 
 All saved reports can be found in this view offering a quick graphical snapshot:
 
@@ -47,6 +47,6 @@ G) **Edit reports**: You can view the queries used for the report, but an admin 
 
 <p id="reports_customize"></p>
 
-#### How to customize Reports
+#### How to Customize Reports
 
 The reports tool comes with sample queries and drop-down list options, but both can be customized (instructions to come) by someone with and admin account.

@@ -73,11 +73,13 @@ G) You can launch file actions from the live view.
 
 <p id="file_action_glim"></p>
 
+### Industry Specific File Actions
+
 #### File Action > Open in GLIM
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
-#### [🍿 Watch Demo Video | Telestream GLIM](https://vimeo.com/665037937)
+### [🍿 Watch Demo Video | Telestream GLIM](https://vimeo.com/665037937)
 
 Allows users to safely preview media files by launching GLIM seamlessly from Diskover.
 

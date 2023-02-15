@@ -18,10 +18,10 @@ You can always validate the criteria used for the quick search query in the gree
 Quick searches can be used on their own or:
 
 - They can be combined with [filters](#filters):
-  1. start by selecting/saving the [filters](#filters).
-  2. Run a quick search.
+  - start by selecting/saving the [filters](#filters).
+  - Run a quick search.
 
 - They can be combined with [manual queries](#search_syntax):
-  1. Start by launching a quick search.
-  2. Copy the criteria from the green bar as per the example/image above.
-  3. Type a manual query in the search bar then paste the copied quick search criteria.
+  - Start by launching a quick search.
+  - Copy the criteria from the green bar as per the example/image above.
+  - Type a manual query in the search bar then paste the copied quick search criteria.

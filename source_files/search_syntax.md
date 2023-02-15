@@ -94,22 +94,15 @@ Of course, there are ways to find characters that are not isolated by using [wil
 
 ##### Isolated Characters | Examples with Numbers
 
-For example, if you launch a query with the number **12**:
+🔎 For example, if you launch a query with the number **12**:
 
 | File name | File would be found | File would not be found |
 | --- | --- | --- |
-| Header | Title | Test |
-| Paragraph | Text | Test |
-
-- **shot_12_20221110.mov** > this file would be found because **12** is isolated with underscores.
-
-- **Shot 12 20221110.mov** > this file would be found because **12** is isolated with spaces.
-
-- **shot12.mov** > this file would NOT be found because **12** is only isolated at the end.
-
-- **draft_V12.pdf** > this file would NOT be found because **12** is only isolated at the end AND CamelCase doesn't work with numbers.
-
-- **draft_123.pdf** > this file would NOT be found because **12** is not isolated at the end.
+| shot_12_20221110.mov | **12** is isolated with underscores |  |
+| Shot 12 20221110.mov | **12** is isolated with spaces |  |
+| shot12.mov |  | **12** is only isolated at the end |
+| draft_V12.pdf |  | **12** is only isolated at the end AND CamelCase doesn't work with numbers |
+| draft_123.pdf |  | **12** is not isolated at the end |
 
 <p id="parentheses_brackets"></p>
 

@@ -84,10 +84,9 @@ O) [**Volumes**](#storage_volume): To view and select available volumes from the
 
 P) [**Directories**](#directory): To view and/or drill-down the directories inside the selected volume in green above, you can also drill-down from the [results pane](#results_pane).
   - Hovering your mouse over a directory in the left pane will give you a snapshot of its attributes.
+  - Note that the left pane will only show directories with data in them, all directories either with data or empty will show in the W) results pane.
 
   <img src="images/image_file_search_hovering_directory.png" width="300">
-  
-  >🔆 &nbsp;Note that the left pane will only show directories with data in them, all directories either with data or empty will show in W) the results pane.
 
 Q) **Last indexed**: Gives the date and time of the last scan of the selected volume.
 

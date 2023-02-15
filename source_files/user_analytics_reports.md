@@ -5,9 +5,7 @@ ___
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
-Reports were designed to easily help you find what you don't know, it's like reverse engeneering. Fully customizable queries as well as customizable drop-down list with what matters to your business, therefore for you to be able to easily find those hidden items. These reports are global and accessible by everyone in your organization.
-
-The reports tool comes with pre-defined queries and drop-down list, but those queries can be customized (instructions to come) by someone with and admin account.
+Reports were designed to easily help you find what you don't know; it's like reverse engeneering. Fully customizable queries as well as customizable drop-down list with what matters to your business, therefore for you to be able to quickly pinpoint those hard to find statistics. These reports are global and accessible by everyone in your organization.
 
 #### How to Launch Reports
 
@@ -21,7 +19,7 @@ All saved reports can be found in this view offering a quick graphical snapshot:
 
 ![Image: Smart Searches Report Overview](images/image_analytics_reports_report_overview_20230215.png)
 
-A) Reports with results in number of items – click on a report to open the results in the search page.
+A) Reports with results in number of items – click on a report to open the results in the search page. Those [sample queries can be customized](#reports_customize).
 
 B) Reports with results in size – click on a report to open the results in the search page.
 
@@ -46,3 +44,9 @@ F) Reports are global, if you want to narrow the results:
   - To a specific path > activate the **Current dir only** filter as described in E).
 
 G) **Edit reports**: You can view the queries used for the report, but an admin account is required to edit them. If you have a search query that you’d like to add to the list and do not have an admin account, copy the full query/criteria and share it with your System Administrator.
+
+<p id="reports_customize"></p>
+
+#### How to customize Reports
+
+The reports tool comes with sample queries and drop-down list options, but both can be customized (instructions to come) by someone with and admin account.

@@ -313,7 +313,7 @@ Searching with field names can be effective if you search on a specific and/or h
 | **media_info** | extra metadata for media files | please refer to the [AJA Diskover Media Edition User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/) for complete details |
 | **mtime** | last modified | refer to [Queries with Time](#search_time) for syntax examples |
 | **name** | file name | is case sensitive, ex: `name:*Jungle*` if the file name is TheJungleBook.mov |
-| **name.text** | same as **name** but is not case sensitive | ex: `name.text:*jungle*` even if the file name is TheJungleBook.mov |
+| **name.text** | same as **name** but is not case sensitive | `name.text:*jungle*` even if the file name is TheJungleBook.mov |
 | **nlink** | number of [hardlinks](#hardlinks) | `nlink:3` |
 | **owner** | owner name | `owner:*Joe*` > can vary depending on how Diskover was configured, see [User Analysis Report](#user_analysis) section for more details and/or ask your System Administrator |
 | **parent_path** | path name | `parent_path:\/Some\/Folder*` > is case sensitive, will search the specified folder and all its sub-folders ([recursive](#recursive)) |

@@ -30,7 +30,7 @@ ___
 
 By default and upon login, you will land on the file search page as shown below. This section offers an overview of the user interface. All other icons, drop-down lists, and tools will be further explained in the subsequent chapters.
 
-![Image: Quick Tour of the User Interface](images/image_file_search_page_overview_20230214.png)
+![Image: Quick Tour of the User Interface](images/image_file_user_interface_overview_20230214.png)
 
 A) **Software logo**: No functions.
 
@@ -86,6 +86,8 @@ P) [**Directories**](#directory): To view and/or drill-down the directories insi
   - Hovering your mouse over a directory in the left pane will give you a snapshot of its attributes.
 
   <img src="images/image_file_search_hovering_directory.png" width="300">
+  
+  >🔆 &nbsp;Note that the left pane will only show directories with data in them, all directories either with data or empty will show in W) the results pane.
 
 Q) **Last indexed**: Gives the date and time of the last scan of the selected volume.
 

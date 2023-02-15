@@ -1,7 +1,7 @@
 <p id="filters"></p>
 
 ___
-### Built-In Search Tool | Filters
+### Filters
 
 Using the built-in filters is an easy way to start getting acquainted with Diskover, as well as get quick and accurate results. Using the filters adds a layer of criteria to your results without you having to type in complicated queries in the search bar. Filters can be used on their own or can be combined with manual searches and/or other built-in search tools.
 

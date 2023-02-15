@@ -36,7 +36,7 @@ A) **Software logo**: No functions.
 
 B) **[Dashboard](#dashboard)**: Built-in analytics, offers a visual summary of a selected volume.
 
-C) [**Folder icon | File search page**](#file_search): To navigate back to the file search page showed in this image, it is where most users spend their time.
+C) [**Folder icon/File search page**](#file_search): To navigate back to the file search page showed in this image, it is where most users spend their time.
 
 D) **Analytics**: To select one of the several built-in [analytic reports](#analytics).
 

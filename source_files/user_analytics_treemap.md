@@ -23,6 +23,8 @@ Via the results pane by clicking this icon to investigate for a particular path.
 
 ![Image: Treemap Report Overview](images/image_analytics_treemap_overview.png)
 
+>🔆 &nbsp;Hovering over any rectangles will give you a snapshot of their attributes.
+
 A) **Path bar**: You can view as well as manually type in the path you want to investigate.
 
 B) **Go**: If you manually edit a value in A) path bar, the  **Go**  button acts as a  **Return**  key.

@@ -14,9 +14,9 @@ The following outlines:
  
 ![Image: Download DMG Package](images/image_indexers_install_with_mac_installer_instructions_download_dmg_v006.png)
 
- > 🔴 &nbsp;If you get the following message, select **Download anyway**:
- >
- > <img src="images/image_indexers_install_with_mac_installer_security_msg_v6.png" width="450">
+    🔴 &nbsp;If you get the following message, select **Download anyway**:
+
+    <img src="images/image_indexers_install_with_mac_installer_security_msg_v6.png" width="450">
 
 🔴 &nbsp;The `Diskover Amazon Indexer_vx.dmg` package will go to your **Downloads** folder. Wait for the file to finish downloading and then double click the icon/file to launch the Diskover Mac Installer:
 

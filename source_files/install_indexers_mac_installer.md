@@ -10,7 +10,7 @@ The following outlines:
 
 #### Download the Installation Package
 
-🔴 &nbsp;Use the url link you received to download the `Diskover Amazon Indexer_vx.dmg` package > click on the url link and it will open a tab in your default browser, then click **Download**:
+🔴 &nbsp;Use the url link you received to download the **Diskover Amazon Indexer_vx.dmg** package > click on the url link and it will open a tab in your default browser, then click **Download**:
  
 ![Image: Download DMG Package](images/image_indexers_install_with_mac_installer_instructions_download_dmg_v006.png)
 
@@ -28,7 +28,7 @@ The following outlines:
  > 
  > 🔴 &nbsp;If the following safety message appears, click **OK**:
  >
- > <img src="images/image_indexers_install_with_mac_installer_safety_msg_unidentified_dev_v6.png" width="300">
+ > <img src="images/image_indexers_install_with_mac_installer_safety_msg_unidentified_dev.png" width="300">
  >
  > 🔴 &nbsp;Open **Apple** > **System Preferences**:
  >
@@ -110,24 +110,16 @@ If you get the message **The installation failed**, please consider these possib
 <img src="images/image_indexers_install_with_mac_installer_step_9b_install_failed.png" width="600">
 
 - The selected disk might be full.
-- The installer package `Diskover Amazon Indexer_vx.dmg` was moved from the **Downloads** folder to another location during the installation.
-- The installer package `Diskover Amazon Indexer_vx.dmg` was deleted during the installation.
+- The installer package **Diskover Amazon Indexer_vx.dmg** was moved from the **Downloads** folder to another location during the installation.
+- The installer package **Diskover Amazon Indexer_vx.dmg** was deleted during the installation.
 - If none of the above issues apply to your situation:
 	 - Go back to your finder with the **Utils** folder:
 	   <img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_v6.png" width="600">
 	 - Double-click the **Utils** folder:
 	 - A new finder window will open, double-click on **GatherLogs.command**
 	 - This will create a zip file on your desktop **diskover-tools-logs-_time stamp_.zip**
-	 - Email that zip file to [support@diskoverdata.com](mailto:support@diskoverdata.com)
+	 - Email that zip file to [support@diskoverdata.com](mailto:support@diskoverdata.com) with a description of your problem.
 	 - For any other questions, please contact the [Diskover support team](https://diskoverdata.com/support/).
-
-
-  - test
-  - 
- >	
- >	
- >	please send the "zip 2 log directories" to [support@diskoverdata.com](mailto:support@diskoverdata.com)
- >	- Contact the [Diskover support team](https://diskoverdata.com/support/).
 
 ##### Closing of the installer
 
@@ -135,38 +127,43 @@ If you get the message **The installation failed**, please consider these possib
 
 <img src="images/image_indexers_install_with_mac_installer_step_10_close_installer.png" width="250">
 
-#### Diskover License Tools
+#### Diskover Indexing Tool
 
-##### Open The Diskover License Tools in a Browser
+##### Open The Diskover Indexing Tool in a Browser
 
-🔴 &nbsp;Type or copy/paste the following address in any web browser:
+🔴 &nbsp;If a web browser didn't open automatically with the **Diskover Indexing Tool** as described in the last section, copy this address and paste it in a browser:
 ```
 http://localhost:8080/index/
 ```
+![Image: Select Open Anyway](images/image_indexers_install_with_mac_installer_license_tool_main_page_v6.png)
 
-![Image: Select Open Anyway](images/image_indexers_install_with_mac_installer_license_tool_main_page.png)
+The following will discuss each of these options in the drop-down list located at the top right corner:
 
-The following sections will discuss each of these options in the drop-down list located at the top right corner:
+<img src="images/image_indexers_install_with_mac_installer_license_tool_drop_down_options_v6.png" width="200">
 
-<img src="images/image_indexers_install_with_mac_installer_license_tool_drop_down_options.png" width="200">
-
-##### Register License
+##### Request License
 
 The very first thing you need to do is request a license and then install the license file in order to index your first directory. 
 
-🔴 &nbsp;Select **Register license** in the drop-down list menu. This page will open. 
+🔴 &nbsp;Select **Request license** in the drop-down list menu. 
 
-🔴 &nbsp;Click on **Get hardware ID and installed version** to automatically pre-populate those fields:
+<img src="images/image_indexers_install_with_mac_installer_license_tool_drop_down_request_license_v6.png" width="200">
+
+🔴 Click **Get hardware ID and installed version** to automatically pre-populate these fields:
 
 <img src="images/image_indexers_install_with_mac_installer_license_tool_register_license_empty.png" width="600">
 
-🔴 &nbsp;Fill out your **Email Address** and add **Notes** if desired, then click **Send email**. You can also copy your **Hardware ID** for future reference by clicking **Copy to clipboard**:
+🔴 &nbsp;Fill out your **Email Address** and add **Notes** if desired, then click **Send email**. You can also copy your **Hardware ID** for future references by clicking **Copy to clipboard** and then paste in a safe location:
 
 <img src="images/image_indexers_install_with_mac_installer_license_tool_register_license_ready_to_send.png" width="500">
 
 ##### Install License
 
-🔴 &nbsp;You will receive your license key via email, the file name will be **diskover.lic**. Save that file on your system, then select **Install license** in the drop-down list. Click **Choose File** and select the **diskover.lic** file on your system, and then click **Install**:
+🔴 &nbsp;You will receive your license key via email, the file name will be **diskover.lic**. Save that file on your system. Go back to the **Diskover Indexing Tool** and select **Install license** in the drop-down list. 
+
+<img src="images/image_indexers_install_with_mac_installer_index_tool_select_install_license_v6.png" width="200">
+
+🔴 &nbsp;Click **Choose File** and select the **diskover.lic** file on your system, and then click **Install**:
 
 <img src="images/image_indexers_install_with_mac_installer_license_tool_install_license.png" width="250">
 
@@ -174,71 +171,77 @@ The very first thing you need to do is request a license and then install the li
 
 After the license is installed, you are now ready to index/scan your first directory/volume.
 
-🔴 &nbsp;Select **Index a directory** from the drop-down list, then select your root volume or browse to index a particular directory, then click **Index selected directory**. _Redo this step as many times as needed to index/scan all your desired directories_:
+🔴 &nbsp;Select **Index a directory** from the drop-down list:
+
+<img src="images/image_indexers_install_with_mac_installer_license_tool_drop_down_index_dir_v6.png" width="200">
+
+🔴 &nbsp;Select your root volume or browse to index a particular directory, then click **Index selected directory**.
+	- Redo this step as many times as needed to index/scan all your desired directories.
+	- Diskover scans in parallel, so you don't have to wait for a scan to be finished to start another one.
 
 ![Image: Select Open Anyway](images/image_indexers_install_with_mac_installer_license_tool_index_a_directory.png)
 
-🔴 &nbsp;The diskover indexer will start scanning in the background. This might take a few minutes depending on the amount of data contained in that directory. You can monitor the status of a scan by selecting **Monitor tasks** in the drop-down list:
+🔴 &nbsp;The diskover indexer will start scanning in the background. This might take a few seconds to some minutes depending on the amount of data contained in that directory. You can monitor the status of a scan by selecting **Monitor tasks** in the drop-down list:
+
+<img src="images/image_indexers_install_with_mac_installer_license_tool_drop_down_monitor_v6.png" width="200">
+
+🔴 &nbsp;Check the **Status** column for the result of your scan(s):
 
 ![Image: Select Open Anyway](images/image_indexers_install_with_mac_installer_license_tool_monitor_task.png)
 
 > If you get a **FAILURE** status, please consider these possible issues:
 >	- Did you install the license prior to launching your first index?
->	- Did you move the directory being indexed while the indexing what still running?
->	- If none of the above issues apply to your situation, please contact the [Diskover support team](https://diskoverdata.com/support/).
+>	- Did you move the directory being indexed while the indexing task what still running?
+>	- If none of the above issues apply to your situation:
+>		- From the **Monitor tasks** window, click on **View log** in line with the failed indexing job.
+>		- From your browser's top menu, select **File**, **Save as** and choose a readable **Format**.
+>		- Email that **output** file to [support@diskoverdata.com](mailto:support@diskoverdata.com) with a description of your problem.
+>		- For any other questions, please contact the [Diskover support team](https://diskoverdata.com/support/).
 
 ##### Configure Instance
 
 🔴 &nbsp;You can configure the Elasticsearch host by selecting **Configure instance** in the drop-down list. 
 
-> _Note:_ Changing most of these parameters can have serious negative effects on Diskover running smoothly.
+<img src="images/image_indexers_install_with_mac_installer_license_tool_drop_down_config_v6.png" width="200">
 
-<img src="images/image_indexers_install_with_mac_installer_license_tool_configure_instance.png" width="850">
+🔴 &nbsp;Note that changing most of these parameters can have _serious negative effects_ on Diskover running smoothly.
+
+<img src="images/image_indexers_install_with_mac_installer_license_tool_configure_instance_v6.png" width="850">
 
 > _Note:_ Elasticsearch is abbreviated to ES below.
 
-**Host** > The host address should be automatically populated, if not, set host to your ES hostname or IP, when using AWS ES, set to your endpoint name without `http://` or `https://`
+| FIELD | COMMENTS |
+| --- | --- |
+| **Host** | The host address should be automatically populated, if not, set host to your ES hostname or IP, when using AWS ES, set to your endpoint name without `http://` or `https://` |
+| **Port** | The port should be automatically populated and this allows access to remote host, if field is empty, set port to your ES port, default is 9200 for local and 443 or 80 for AWS ES. You need to check **SSL verification** at the bottom of this page if port **443** is used |
+| **User** | Modify the username as needed using ES http auth or leave blank/empty if no user |
+| **Password** | Modify the password as needed using ES http auth or leave blank/empty if no user |
+| **Timeout** | Timeout for connection to ES > 60 seconds recommended > format to use in field is **60** (original default is 10) |
+| **Max connections** | Number of connections kept open to ES when crawling > 20 is recommended > format to use in field is **20** (original default is 10) |
+| **Max retries** | Maximum retries for ES operations > 3 is recommended > format to use in field is **3** (original default is 0) |
+| **Chunk size** | Chunk size for ES bulk operations > 1,000 is recommended > format to use in field is **1000** (original default is 500) |
+| **# of Shards** | Number of shards for index > 1 is recommended > format to use in field is **1** (original default is 1) |
+| **# of Replicas** | Number of replicas for index > 0 is recommended > format to use in field is **0** (original default is 1) |
 
-**Port** > The port should be automatically populated and this allows access to remote host, if field is empty, set port to your ES port, default is 9200 for local and 443 or 80 for AWS ES.
-> You need to check **SSL verification** at the bottom of this page if port **443** is used.
+**The following settings are to optimize ES for crawling.**
 
-**User** > Modify the username as needed.
+| FIELD | COMMENTS |
+| --- | --- |
+| **Index refresh interval** | Index refresh interval > 30 seconds is recommended > format to use in field is **30s** (original default is 1s, set to -1 to disable refresh during crawl - fastest performance but no index searches - after crawl is set back to 1s) |
+| **Transaction log flush threshold size** | Transaction log flush threshold size > 1 GB is recommended > format to use in field is **1gb** (original default is 512mb) |
+| **Transaction log sync interval time** | Transaction log log sync interval time > 30 seconds is recommended > format to use in field is **30s** (original default is 5s) |
+| **Search scroll size** | Search scrool size > 1,000 docs is recommended > format to use in field is **1000** (original default is 100) |
+| **Elasticsearch compression** | ES compression > use **default** (set to **default** (LZ4) or **best_compression** (DEFLATE), using **best_compression** can reduce the size of your indices but can decrease indexing and search persormance) |
 
-**Password** > Modify the password as needed.
+**For the following fields: True = Checked ✅  and False = Unchecked ⬛️**
 
-**Timeout** > Timeout for connection to ES, recommended default is 60 seconds (format in field **60**).
-
-**Max connections** > Number of connections kept open to ES when crawling, recommended default is 20 (format in field **20**).
-
-**Max retries** > Maximum retries for ES operations, recommended default is 3 (format in field **3**).
-
-**Chunk size** > Chunk size for ES bulk operations, recommended default is 1,000 (format in field **1000**).
-
-**# of Shards** > Number of shards for index, recommended default is 1 (format in field **1**).
-
-**# of Replicas** > Number of replicas for index, recommended default is 0 (format in field **0**).
-
->_Note:_ The following settings are to optimize ES for crawling.
-
-**Index refresh interval** > Refresh interval during crawls, recommended default is 30 seconds (format in field **30s**).
-
-**Transaction log flush threshold size** > What?, recommended default is 1 GB (format in field **1gb**)
-
-**Transaction log sync interval time** > What?, recommended default is 30 seconds (format in field **30s**)
-
-**Search scroll size** > Number of documents per scroll, recommended default is 1,000 (format in field **1000**)
-
-**Elasticsearch compression** > Use **default**, you can change for **best_compression** to reduce the size of your indices but it can decrease indexing and search performance.
-
-**HTTPS** > Details to come.
-
-**SSL verification** > Details to come.
-
-**HTTP compression** > Details to come.
-
-**Wait for status** > Details to come.
-
-**Disable replicas during crawl** > Details to come.
+| FIELD | COMMENTS |
+| --- | --- |
+| **HTTPS** | Set to **true**  if using HTTP TLS/SSL or **false** if using http for AWS ES, you will most likely want to set this to **true** |
+| **SSL verification** | Set to **false** if you do not want to verify SSL or **true** to verify (default is true) |
+| **HTTP compression** | Compress HTTP data > for AWS ES, you will most likely want to set this to **true** |
+| **Wait for status** | Wait for at least yellow status before bulk uploading > set to **true** if you want to wait (default is **false**) |
+| **Disable replicas during crawl** | Disable replicas during crawl > set to **true** to turn off replicas or **false** to keep on, after crawl is set back to replicas value above (default is **false** |
 
 🔴 &nbsp;Click **Update** if you've made any changes to this page.
 
@@ -250,9 +253,9 @@ After the license is installed, you are now ready to index/scan your first direc
 
 ![Image: Select Open Anyway](images/image_indexers_install_with_mac_installer_license_tool_index_visible.png)
 
-🔴 &nbsp;You can also see and uniquely select the desired indices by clicking on the **gear icon** at the top right corner, then select **Indices**.
+🔴 &nbsp;You can also see and uniquely select the desired indices by clicking on the **gear icon** at the top right corner, then select [**Indices**](https://docs.diskoverdata.com/diskover_user_guide/#indices).
 
-🔴 &nbsp;You can schedule regular scans of your index/indices as well as other parameters by clicking on on the **gear icon** at the top right corner,  select **Task Panel**, then follow [these configuration instructions](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#task-configuration-files).
+🔴 &nbsp;You can schedule regular scans of your index/indices as well as other parameters by clicking on on the **gear icon** at the top right corner,  then select **Task Panel**, then follow [these configuration instructions](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#task-configuration-files).
 
 #### Configure Your Indices
 

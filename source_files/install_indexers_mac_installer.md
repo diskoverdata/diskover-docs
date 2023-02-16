@@ -20,7 +20,7 @@ The following outlines:
 
 🔴 &nbsp;The `Diskover Amazon Indexer_vx.dmg` package will go to your **Downloads** folder. Wait for the file to finish downloading and then double click the icon/file to launch the Diskover Mac Installer:
 
-![Image: Install Package in Finder](images/image_indexers_install_with_mac_installer_install_package_in_finder_v6.png)
+<img src="images/image_indexers_install_with_mac_installer_downloads_folder.png" width="600">
 
  > **⚠️ Possible Security Warnings**
  >
@@ -45,6 +45,10 @@ The following outlines:
  > 🔴 &nbsp;If you get this final security warning, click **Open**:
  >
  > <img src="images/image_indexers_install_with_mac_installer_safety_msg_open_v6.png" width="300">
+
+🔴 &nbsp;The following window will open with the installer **Diskover-Indexer.pkg** and a utilities folder **Utils**. Click on the **Diskover-Indexer.pkg** to launch the installer:
+
+<img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_v6.png" width="600">
 
 
 #### Dependencies Installation
@@ -101,7 +105,7 @@ The following outlines:
 
 <img src="images/image_indexers_install_with_mac_installer_step_9a_install_successful_v6.png" width="600">
 
-	If you get the message **The installation failed**, please consider these possible issues:
+If you get the message **The installation failed**, please consider these possible issues:
 
 <img src="images/image_indexers_install_with_mac_installer_step_9b_install_failed.png" width="600">
 
@@ -109,7 +113,7 @@ The following outlines:
 - The installer package `Diskover Amazon Indexer_vx.dmg` was moved from the **Downloads** folder to another location during the installation.
 - The installer package `Diskover Amazon Indexer_vx.dmg` was deleted during the installation.
 - If none of the above issues apply to your situation:
-	 - xx
+	 - Go back to 
   - test
   - 
  >	

@@ -109,8 +109,9 @@ If you get the message **The installation failed**, please consider these possib
 - The installer package `Diskover Amazon Indexer_vx.dmg` was moved from the **Downloads** folder to another location during the installation.
 - The installer package `Diskover Amazon Indexer_vx.dmg` was deleted during the installation.
 - If none of the above issues apply to your situation:
- - xx
- >	
+	 - xx
+  - test
+  - 
  >	
  >	
  >	please send the "zip 2 log directories" to [support@diskoverdata.com](mailto:support@diskoverdata.com)

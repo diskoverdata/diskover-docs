@@ -3,21 +3,24 @@ ___
 
 🚧 &nbsp;**NOT AVAILABLE YET**
 
-The following outlines installing the dependencies for the Diskover indexer on MacOS using an installer, as well as information on how to get/install the license and launch your first scan.
+The following outlines:
+ - Installing the dependencies for the Diskover indexer on MacOS using an installer.
+ - How to get/install the license
+ - Launching your first scan using the Diskover web Indexing Tool.
 
 #### Download the Installation Package
 
-🔴 &nbsp;Use the url link you received to download the **Diskover_Amazon.dmg** package > click on the url link and it will open a tab in your default browser, then click **Download**:
+🔴 &nbsp;Use the url link you received to download the `Diskover Amazon Indexer_vx.dmg` package > click on the url link and it will open a tab in your default browser, then click **Download**:
  
-![Image: Download DMG Package](images/image_indexers_install_with_mac_installer_instructions_download_dmg.png)
+![Image: Download DMG Package](images/image_indexers_install_with_mac_installer_instructions_download_dmg_v006.png)
 
-> If you get the following message, select **Download anyway**:
->
-> <img src="images/image_indexers_install_with_mac_installer_security_msg.png" width="450">
+ > 🔴 &nbsp;If you get the following message, select **Download anyway**:
+ >
+ > <img src="images/image_indexers_install_with_mac_installer_security_msg_v6.png" width="450">
 
-🔴 &nbsp;The **Diskover_Amazon.dmg** package will go to your **Downloads** folder. Wait for the file to finish downloading and then double click the icon/file to launch the Diskover Mac Installer:
+🔴 &nbsp;The `Diskover Amazon Indexer_vx.dmg` package will go to your **Downloads** folder. Wait for the file to finish downloading and then double click the icon/file to launch the Diskover Mac Installer:
 
-![Image: Install Package in Finder](images/image_indexers_install_with_mac_installer_install_package_in_finder.png)
+![Image: Install Package in Finder](images/image_indexers_install_with_mac_installer_install_package_in_finder_v6.png)
 
 > **! Possible Security Warnings**
 >

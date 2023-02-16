@@ -12,15 +12,15 @@ The following outlines:
 
 🔴 &nbsp;Use the url link you received to download the **Diskover Amazon Indexer_vx.dmg** package > click on the url link and it will open a tab in your default browser, then click **Download**:
  
-![Image: Download DMG Package](images/image_indexers_install_with_mac_installer_instructions_download_dmg_v006.png)
+![Image: Download DMG Package](images/image_indexers_install_with_mac_installer_instructions_download_dmg_v6.png)
 
- > 🔴 &nbsp;If you get the following message, select **Download anyway**:
- >
- > <img src="images/image_indexers_install_with_mac_installer_security_msg_v6.png" width="450">
+🔴 &nbsp;If you get the following message, select **Download anyway**:
 
-🔴 &nbsp;The `Diskover Amazon Indexer_vx.dmg` package will go to your **Downloads** folder. Wait for the file to finish downloading and then double click the icon/file to launch the Diskover Mac Installer:
+img src="images/image_indexers_install_with_mac_installer_security_msg_v6.png" width="450">
 
-<img src="images/image_indexers_install_with_mac_installer_downloads_folder.png" width="600">
+🔴 &nbsp;The **Diskover Amazon Indexer_vx.dmg** package will go to your **Downloads** folder. Wait for the file to finish downloading and then double click the icon/file to launch the Diskover Mac Installer:
+
+<img src="images/image_indexers_install_with_mac_installer_downloads_folder.png" width="750">
 
  > **⚠️ Possible Security Warnings**
  >
@@ -28,7 +28,7 @@ The following outlines:
  > 
  > 🔴 &nbsp;If the following safety message appears, click **OK**:
  >
- > <img src="images/image_indexers_install_with_mac_installer_safety_msg_unidentified_dev.png" width="300">
+ > <img src="images/image_indexers_install_with_mac_installer_safety_msg_unidentified_dev.png" width="250">
  >
  > 🔴 &nbsp;Open **Apple** > **System Preferences**:
  >
@@ -48,7 +48,7 @@ The following outlines:
 
 🔴 &nbsp;The following window will open with the installer **Diskover-Indexer.pkg** and a utilities folder **Utils**. Click on the **Diskover-Indexer.pkg** to launch the installer:
 
-<img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_v6.png" width="600">
+<img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_v6.png" width="700">
 
 
 #### Dependencies Installation
@@ -91,7 +91,7 @@ The following outlines:
 
 🔴 &nbsp;Depending on your Mac settings, you may be requested to **type your password** or use your **Touch ID**.
 
-<img src="images/image_indexers_install_with_mac_installer_step_7_confirm_with_pswd.png" width="250">
+<img src="images/image_indexers_install_with_mac_installer_step_7_confirm_with_pswd.png" width="300">
 
 ##### Installation
 
@@ -113,19 +113,21 @@ If you get the message **The installation failed**, please consider these possib
 - The installer package **Diskover Amazon Indexer_vx.dmg** was moved from the **Downloads** folder to another location during the installation.
 - The installer package **Diskover Amazon Indexer_vx.dmg** was deleted during the installation.
 - If none of the above issues apply to your situation:
-	 - Go back to your finder with the **Utils** folder:
-	   <img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_v6.png" width="600">
-	 - Double-click the **Utils** folder:
-	 - A new finder window will open, double-click on **GatherLogs.command**
+	- Go back to your finder with the **Utils** folder:
 
-	   <img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_gatherlogs.png" width="600">
+	<img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_v6.png" width="900">
+	   
+	- Double-click the **Utils** folder:
+	- A new finder window will open, double-click on **GatherLogs.command**
 
-	 - This will create a zip file on your desktop **diskover-tools-logs-_time stamp_.zip**
+	<img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_gatherlogs.png" width="600">
 
-	   <img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_zip_file.png" width="400">
+	- This will create a zip file on your desktop **diskover-tools-logs-_time stamp_.zip**
 
-	 - Email that zip file to [support@diskoverdata.com](mailto:support@diskoverdata.com) with a description of your problem.
-	 - For any other questions, please contact the [Diskover support team](https://diskoverdata.com/support/).
+	<img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_zip_file.png" width="500">
+
+	- Email that zip file to [support@diskoverdata.com](mailto:support@diskoverdata.com) with a description of your problem.
+	- For any other questions, please contact the [Diskover support team](https://diskoverdata.com/support/).
 
 ##### Closing of the installer
 
@@ -143,7 +145,7 @@ http://localhost:8080/index/
 ```
 ![Image: Select Open Anyway](images/image_indexers_install_with_mac_installer_license_tool_main_page_v6.png)
 
-The following will discuss each of these options in the drop-down list located at the top right corner:
+The following sections will discuss each of these options in the drop-down list located at the top right corner:
 
 <img src="images/image_indexers_install_with_mac_installer_license_tool_drop_down_options_v6.png" width="200">
 
@@ -199,8 +201,8 @@ After the license is installed, you are now ready to index/scan your first direc
 >	- Did you install the license prior to launching your first index?
 >	- Did you move the directory being indexed while the indexing task what still running?
 >	- If none of the above issues apply to your situation:
->		- From the **Monitor tasks** window, click on **View log** in line with the failed indexing job.
->		- From your browser's top menu, select **File**, **Save as** and choose a readable **Format**.
+>		- From the **Monitor tasks** window above, click on **View log** in line with the failed indexing job.
+>		- From your browser's top menu, select **File**, **Save As** and choose a readable/shareable **Format**.
 >		- Email that **output** file to [support@diskoverdata.com](mailto:support@diskoverdata.com) with a description of your problem.
 >		- For any other questions, please contact the [Diskover support team](https://diskoverdata.com/support/).
 
@@ -210,11 +212,11 @@ After the license is installed, you are now ready to index/scan your first direc
 
 <img src="images/image_indexers_install_with_mac_installer_license_tool_drop_down_config_v6.png" width="200">
 
-🔴 &nbsp;Note that changing most of these parameters can have _serious negative effects_ on Diskover running smoothly.
-
-<img src="images/image_indexers_install_with_mac_installer_license_tool_configure_instance_v6.png" width="850">
+🔴 &nbsp;Note that changing most of these parameters can have _serious negative effects_ on Diskover running smoothly. All the fields are explained after the image.
 
 > _Note:_ Elasticsearch is abbreviated to ES below.
+
+<img src="images/image_indexers_install_with_mac_installer_license_tool_configure_instance_v6.png" width="850">
 
 | FIELD | COMMENTS |
 | --- | --- |

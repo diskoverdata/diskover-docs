@@ -59,17 +59,17 @@ The following outlines:
 
 ##### Read Me
 
-🔴 &nbsp;Take the time to read these basic instructions, then click **Continue**:
+🔴 &nbsp;Take the time to read this basic information, plus you might want to **save** or **print** for future references, then click **Continue**:
 
-<img src="images/image_indexers_install_with_mac_installer_step_2_read_me.png" width="600">
+<img src="images/image_indexers_install_with_mac_installer_step_2_read_me_v6.png" width="600">
 
 ##### License
 
 🔴 &nbsp;Read, save, and/or print the license agreement, then click **Continue**:
 
-<img src="images/image_indexers_install_with_mac_installer_step_3_license.png" width="600">
+<img src="images/image_indexers_install_with_mac_installer_step_3_license_v6.png" width="475">
 
-🔴 &nbsp;You will be prompted to **Agree** to resume the installation. I you select **Disagree**, the installation process will stop before any files are installed:
+🔴 &nbsp;You will be prompted to **Agree** to resume the installation. If you select **Disagree**, the installation process will stop before any files are installed:
 
 <img src="images/image_indexers_install_with_mac_installer_step_4_license_agree.png" width="600">
 
@@ -79,35 +79,42 @@ The following outlines:
 
 <img src="images/image_indexers_install_with_mac_installer_step_5_destination_selection.png" width="600">
 
-##### Installation type
+##### Installation Type
 
-🔴 &nbsp;This step will confirm the space required and disk/volume you selected for the installation. If you want to change the selection by default, either select **Change Install Location** or **Go Back**. If you are satisfied with your selection, click **Install** to launch the final step of the process:
+🔴 &nbsp;This step will confirm the space required and the disk/volume you selected for the installation. If you want to change the selection by default, either select **Change Install Location** or **Go Back**. Once you are satisfied with your selection, click **Install** to launch the final step of the process:
 
 <img src="images/image_indexers_install_with_mac_installer_step_6_install_type.png" width="600">
 
-🔴 &nbsp;Depending on your setup, you may be requested to type your password or use your Touch ID.
+🔴 &nbsp;Depending on your Mac settings, you may be requested to **type your password** or use your **Touch ID**.
 
 <img src="images/image_indexers_install_with_mac_installer_step_7_confirm_with_pswd.png" width="250">
 
 ##### Installation
 
-🔴 &nbsp;You can see the status of the installation via the progress bar:
+🔴 &nbsp;You can see the status of the installation via the progress bar. This process takes about 6 minutes in general depending on your hardware and MacOS:
 
 <img src="images/image_indexers_install_with_mac_installer_step_8_install_progress.png" width="600">
 
 ##### Summary
 
-🔴 &nbsp;You should see **The installation was successfull**, you can copy the following link and paste in a web browser: [http://localhost:8080/index/](http://localhost:8080/index/):
+🔴 &nbsp;You should see **Success!**. At this point, a web browser should open automatically with the **Diskover Indexing Tool**. If it doesn't, copy this address http://localhost:8080/index/ and paste it in a browser of your choice _OR_ click the following link [http://localhost:8080/index/](http://localhost:8080/index/) to open the **Diskover Indexing Tool** in your default browser:
 
-<img src="images/image_indexers_install_with_mac_installer_step_9a_install_successful.png" width="600">
+<img src="images/image_indexers_install_with_mac_installer_step_9a_install_successful_v6.png" width="600">
 
-> If you get the message **The installation failed**, please consider these possible issues:
->
-> <img src="images/image_indexers_install_with_mac_installer_step_9b_install_failed.png" width="600">
->
->	- The selected disk might be full.
->	- If none of the above issues apply to your situation, please send the "zip 2 log directories" to [support@diskoverdata.com](mailto:support@diskoverdata.com)
->	- Contact the [Diskover support team](https://diskoverdata.com/support/).
+ > If you get the message **The installation failed**, please consider these possible issues:
+ >
+ > <img src="images/image_indexers_install_with_mac_installer_step_9b_install_failed.png" width="600">
+ >
+ >	- The selected disk might be full.
+ >	- The installer package `Diskover Amazon Indexer_vx.dmg` was moved from the **Downloads** folder to another location during the installation.
+ >	- The installer package `Diskover Amazon Indexer_vx.dmg` was deleted during the installation.
+ >	- If none of the above issues apply to your situation:
+ >	 - 
+ >	
+ >	
+ >	
+ >	please send the "zip 2 log directories" to [support@diskoverdata.com](mailto:support@diskoverdata.com)
+ >	- Contact the [Diskover support team](https://diskoverdata.com/support/).
 
 ##### Closing of the installer
 

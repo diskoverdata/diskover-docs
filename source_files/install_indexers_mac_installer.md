@@ -115,12 +115,12 @@ If you get the message **The installation failed**, please consider these possib
 - If none of the above issues apply to your situation:
 	- Go back to your finder with the **Utils** folder:
 
-	<img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_v6.png" width="900">
+	<img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_v6.png" width="700">
 	   
 	- Double-click the **Utils** folder:
 	- A new finder window will open, double-click on **GatherLogs.command**
 
-	<img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_gatherlogs.png" width="600">
+	<img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_gatherlogs.png" width="750">
 
 	- This will create a zip file on your desktop **diskover-tools-logs-_time stamp_.zip**
 

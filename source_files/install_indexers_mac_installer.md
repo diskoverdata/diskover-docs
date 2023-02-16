@@ -22,9 +22,9 @@ The following outlines:
 
 <img src="images/image_indexers_install_with_mac_installer_downloads_folder.png" width="750">
 
- > **⚠️ Possible Security Warnings**
- >
- > _Note:_ These security warnings are more common for older MacOS installations.
+	> **⚠️ Possible Security Warnings**
+	>
+	> _Note:_ These security warnings are more common for older MacOS installations.
  > 
  > 🔴 &nbsp;If the following safety message appears, click **OK**:
  >
@@ -120,7 +120,7 @@ If you get the message **The installation failed**, please consider these possib
 	- Double-click the **Utils** folder:
 	- A new finder window will open, double-click on **GatherLogs.command**
 
-	<img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_gatherlogs.png" width="750">
+	<img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_gatherlogs.png" width="850">
 
 	- This will create a zip file on your desktop **diskover-tools-logs-_time stamp_.zip**
 
@@ -131,7 +131,7 @@ If you get the message **The installation failed**, please consider these possib
 
 ##### Closing of the installer
 
-🔴 &nbsp;When closing the installer, you'll be prompted to either **Keep** the installation package or **Move to Trash**:
+🔴 &nbsp;When closing the installer, you'll be prompted to either **Keep** the installation package or **Move to Trash**. We recommend you **Keep** the installer in case you need 
 
 <img src="images/image_indexers_install_with_mac_installer_step_10_close_installer.png" width="250">
 
@@ -276,3 +276,67 @@ Please refer to our [Software Update Installation for Mac](https://docs.diskover
 #### Uninstall Diskover for Mac
 
 Please refer to our [Software Update Installation for Mac](https://docs.diskoverdata.com/diskover_installation_guide/#uninstall-diskover-on-mac) chapter.
+
+
+🔴 &nbsp;Open the **Utils** folder:
+
+<img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_v6.png" width="700">
+
+🔴 &nbsp;Double-click on **Uninstall**:
+
+<img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_uninstall.png" width="850">
+
+	> **⚠️ Possible Security Warnings**
+	>
+ You may get the following message, click **OK**:
+
+<img src="images/image_indexers_install_with_mac_installer_uninstall_warning_1.png" width="300">
+
+
+
+
+ > _Note:_ These security warnings are more common for older MacOS installations.
+ > 
+ > 🔴 &nbsp;If the following safety message appears, click **OK**:
+ >
+ > <img src="images/image_indexers_install_with_mac_installer_safety_msg_unidentified_dev.png" width="250">
+ >
+ > 🔴 &nbsp;Open **Apple** > **System Preferences**:
+ >
+ > <img src="images/image_indexers_install_with_mac_installer_apple_sys_pref.png" width="200">
+ >
+ > 🔴 &nbsp;Select **Security & Privacy**:
+ >
+ > <img src="images/image_indexers_install_with_mac_installer_sys_pref_security_privacy.png" width="600">
+ >
+ > 🔴 &nbsp;Click **Open Anyway**:
+ >
+ > <img src="images/image_indexers_install_with_mac_installer_sys_pref_security_privacy_open_anyway_v6.png" width="600">
+ >
+ > 🔴 &nbsp;If you get this final security warning, click **Open**:
+ >
+ > <img src="images/image_indexers_install_with_mac_installer_safety_msg_open_v6.png" width="300">
+
+
+
+
+
+
+
+
+
+
+- Double-click the **Utils** folder:
+	- A new finder window will open, double-click on **GatherLogs.command**
+
+	<img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_gatherlogs.png" width="850">
+
+	- This will create a zip file on your desktop **diskover-tools-logs-_time stamp_.zip**
+
+	<img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_zip_file.png" width="500">
+
+	- Email that zip file to [support@diskoverdata.com](mailto:support@diskoverdata.com) with a description of your problem.
+	- For any other questions, please contact the [Diskover support team](https://diskoverdata.com/support/).
+
+
+

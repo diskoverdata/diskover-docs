@@ -114,8 +114,12 @@ If you get the message **The installation failed**, please consider these possib
 - The installer package `Diskover Amazon Indexer_vx.dmg` was deleted during the installation.
 - If none of the above issues apply to your situation:
 	 - Go back to your finder with the **Utils** folder:
-	 <img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_v6.png" width="600">
-	 - 
+	   <img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_v6.png" width="600">
+	 - Double-click the **Utils** folder:
+	 - A new finder window will open, double-click on **GatherLogs.command**
+	 - This will create a zip file on your desktop **diskover-tools-logs-_time stamp_.zip**
+	 - Email that zip file to [support@diskoverdata.com](mailto:support@diskoverdata.com)
+	 - For any other questions, please contact the [Diskover support team](https://diskoverdata.com/support/).
 
 
   - test

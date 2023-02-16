@@ -22,29 +22,29 @@ The following outlines:
 
 <img src="images/image_indexers_install_with_mac_installer_downloads_folder.png" width="750">
 
-	> **⚠️ Possible Security Warnings**
-	>
-	> _Note:_ These security warnings are more common for older MacOS installations.
- > 
- > 🔴 &nbsp;If the following safety message appears, click **OK**:
- >
- > <img src="images/image_indexers_install_with_mac_installer_safety_msg_unidentified_dev.png" width="250">
- >
- > 🔴 &nbsp;Open **Apple** > **System Preferences**:
- >
- > <img src="images/image_indexers_install_with_mac_installer_apple_sys_pref.png" width="200">
- >
- > 🔴 &nbsp;Select **Security & Privacy**:
- >
- > <img src="images/image_indexers_install_with_mac_installer_sys_pref_security_privacy.png" width="600">
- >
- > 🔴 &nbsp;Click **Open Anyway**:
- >
- > <img src="images/image_indexers_install_with_mac_installer_sys_pref_security_privacy_open_anyway_v6.png" width="600">
- >
- > 🔴 &nbsp;If you get this final security warning, click **Open**:
- >
- > <img src="images/image_indexers_install_with_mac_installer_safety_msg_open_v6.png" width="300">
+> **⚠️ Possible Security Warnings**
+>
+> _Note:_ These security warnings are more common for older MacOS installations.
+> 
+> 🔴 &nbsp;If the following safety message appears, click **OK**:
+>
+> <img src="images/image_indexers_install_with_mac_installer_safety_msg_unidentified_dev.png" width="250">
+>
+> 🔴 &nbsp;Open **Apple** > **System Preferences**:
+>
+> <img src="images/image_indexers_install_with_mac_installer_apple_sys_pref.png" width="200">
+>
+> 🔴 &nbsp;Select **Security & Privacy**:
+>
+> <img src="images/image_indexers_install_with_mac_installer_sys_pref_security_privacy.png" width="600">
+>
+> 🔴 &nbsp;Click **Open Anyway**:
+>
+> <img src="images/image_indexers_install_with_mac_installer_sys_pref_security_privacy_open_anyway_v6.png" width="600">
+>
+> 🔴 &nbsp;If you get this final security warning, click **Open**:
+>
+> <img src="images/image_indexers_install_with_mac_installer_safety_msg_open_v6.png" width="300">
 
 🔴 &nbsp;The following window will open with the installer **Diskover-Indexer.pkg** and a utilities folder **Utils**. Click on the **Diskover-Indexer.pkg** to launch the installer:
 
@@ -286,36 +286,36 @@ Please refer to our [Software Update Installation for Mac](https://docs.diskover
 
 <img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_uninstall.png" width="850">
 
-	> **⚠️ Possible Security Warnings**
-	>
- You may get the following message, click **OK**:
+> **⚠️ Possible Security Warnings**
+>
+> You may get the following message, click **OK**:
+>
+> <img src="images/image_indexers_install_with_mac_installer_uninstall_warning_1.png" width="300">
+>
+> 🔴 &nbsp;Open **Apple** > **System Preferences**:
+>
+> <img src="images/image_indexers_install_with_mac_installer_apple_sys_pref.png" width="200">
+>
+> 🔴 &nbsp;Select **Security & Privacy**:
+>
+> <img src="images/image_indexers_install_with_mac_installer_sys_pref_security_privacy.png" width="600">
+>
+> 🔴 &nbsp;Click **Open Anyway**:
+>
+> <img src="images/image_indexers_install_with_mac_installer_uninstall_warning_open_anyway.png" width="600">
+>
+> 🔴 &nbsp;If you get this final security warning, click **Open**:
+>
+> <img src="images/image_indexers_install_with_mac_installer_uninstall_warning_2.png" width="300">
 
-<img src="images/image_indexers_install_with_mac_installer_uninstall_warning_1.png" width="300">
+🔴 &nbsp;You will be prompted to enter your **password**:
 
+<img src="images/image_indexers_install_with_mac_installer_uninstall_enter_pswd.png" width="300">
 
+🔴 &nbsp;You will receive a confirmation message:
 
+<img src="images/image_indexers_install_with_mac_installer_uninstall_sucessful.png" width="400">
 
- > _Note:_ These security warnings are more common for older MacOS installations.
- > 
- > 🔴 &nbsp;If the following safety message appears, click **OK**:
- >
- > <img src="images/image_indexers_install_with_mac_installer_safety_msg_unidentified_dev.png" width="250">
- >
- > 🔴 &nbsp;Open **Apple** > **System Preferences**:
- >
- > <img src="images/image_indexers_install_with_mac_installer_apple_sys_pref.png" width="200">
- >
- > 🔴 &nbsp;Select **Security & Privacy**:
- >
- > <img src="images/image_indexers_install_with_mac_installer_sys_pref_security_privacy.png" width="600">
- >
- > 🔴 &nbsp;Click **Open Anyway**:
- >
- > <img src="images/image_indexers_install_with_mac_installer_sys_pref_security_privacy_open_anyway_v6.png" width="600">
- >
- > 🔴 &nbsp;If you get this final security warning, click **Open**:
- >
- > <img src="images/image_indexers_install_with_mac_installer_safety_msg_open_v6.png" width="300">
 
 
 

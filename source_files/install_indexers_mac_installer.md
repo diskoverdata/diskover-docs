@@ -101,15 +101,15 @@ The following outlines:
 
 <img src="images/image_indexers_install_with_mac_installer_step_9a_install_successful_v6.png" width="600">
 
- > If you get the message **The installation failed**, please consider these possible issues:
- >
- > <img src="images/image_indexers_install_with_mac_installer_step_9b_install_failed.png" width="600">
- >
- >	- The selected disk might be full.
- >	- The installer package `Diskover Amazon Indexer_vx.dmg` was moved from the **Downloads** folder to another location during the installation.
- >	- The installer package `Diskover Amazon Indexer_vx.dmg` was deleted during the installation.
- >	- If none of the above issues apply to your situation:
- >	 - 
+If you get the message **The installation failed**, please consider these possible issues:
+
+<img src="images/image_indexers_install_with_mac_installer_step_9b_install_failed.png" width="600">
+
+- The selected disk might be full.
+- The installer package `Diskover Amazon Indexer_vx.dmg` was moved from the **Downloads** folder to another location during the installation.
+- The installer package `Diskover Amazon Indexer_vx.dmg` was deleted during the installation.
+- If none of the above issues apply to your situation:
+ - xx
  >	
  >	
  >	

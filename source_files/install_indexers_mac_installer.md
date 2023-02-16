@@ -101,7 +101,7 @@ The following outlines:
 
 <img src="images/image_indexers_install_with_mac_installer_step_9a_install_successful_v6.png" width="600">
 
-If you get the message **The installation failed**, please consider these possible issues:
+	If you get the message **The installation failed**, please consider these possible issues:
 
 <img src="images/image_indexers_install_with_mac_installer_step_9b_install_failed.png" width="600">
 

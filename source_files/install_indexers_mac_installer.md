@@ -113,7 +113,11 @@ If you get the message **The installation failed**, please consider these possib
 - The installer package `Diskover Amazon Indexer_vx.dmg` was moved from the **Downloads** folder to another location during the installation.
 - The installer package `Diskover Amazon Indexer_vx.dmg` was deleted during the installation.
 - If none of the above issues apply to your situation:
-	 - Go back to 
+	 - Go back to your finder with the **Utils** folder:
+	 <img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_v6.png" width="600">
+	 - 
+
+
   - test
   - 
  >	

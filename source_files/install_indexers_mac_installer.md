@@ -287,7 +287,7 @@ Please refer to our [Software Update Installation for Mac](https://docs.diskover
 >
 > You may get the following message, click **OK**:
 >
-> <img src="images/image_indexers_install_with_mac_installer_uninstall_warning_1.png" width="250">
+> <img src="images/image_indexers_install_with_mac_installer_uninstall_warning_1.png" width="300">
 >
 > 🔴 &nbsp;Open **Apple** > **System Preferences**:
 >

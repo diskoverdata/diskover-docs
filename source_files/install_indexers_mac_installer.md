@@ -275,9 +275,6 @@ Please refer to our [Software Update Installation for Mac](https://docs.diskover
 
 #### Uninstall Diskover for Mac
 
-Please refer to our [Software Update Installation for Mac](https://docs.diskoverdata.com/diskover_installation_guide/#uninstall-diskover-on-mac) chapter.
-
-
 🔴 &nbsp;Open the **Utils** folder:
 
 <img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_v6.png" width="700">
@@ -315,28 +312,3 @@ Please refer to our [Software Update Installation for Mac](https://docs.diskover
 🔴 &nbsp;You will receive a confirmation message:
 
 <img src="images/image_indexers_install_with_mac_installer_uninstall_sucessful.png" width="400">
-
-
-
-
-
-
-
-
-
-
-
-- Double-click the **Utils** folder:
-	- A new finder window will open, double-click on **GatherLogs.command**
-
-	<img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_gatherlogs.png" width="850">
-
-	- This will create a zip file on your desktop **diskover-tools-logs-_time stamp_.zip**
-
-	<img src="images/image_indexers_install_with_mac_installer_install_package_in_finder_zip_file.png" width="500">
-
-	- Email that zip file to [support@diskoverdata.com](mailto:support@diskoverdata.com) with a description of your problem.
-	- For any other questions, please contact the [Diskover support team](https://diskoverdata.com/support/).
-
-
-

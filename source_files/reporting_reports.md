@@ -14,7 +14,9 @@ Within the Diskover-Web user interface, Reports is located under **Analytics** >
 
 The following provides an example smart search configuration by **_client_** - The names in the report are fictitious and for demonstration only:
 
-![Image: Smart Searches Report](images/image_reporting_reports_report_example_diskover_ui.png)
+![Image: Reports](images/image_reporting_reports_report_example_diskover_ui.png)
+
+_[Click here for a full-screen view.](images/image_reporting_reports_report_example_diskover_ui.png)_
 
 #### Using Reports
 
@@ -47,4 +49,4 @@ code files|extension:(py OR c OR class OR cpp OR cs OR h OR java OR sh OR swift 
 sys files|extension:(bak OR cab OR cfg OR cpl OR cur OR dll OR dmp OR drv OR icns OR ico OR ini OR lnk OR msi OR sys OR tmp OR plist)|extension
 ```
 
-![Image: Smart Searches Editing Window](images/image_reporting_reports_report_editing_window.png)
+![Image: Reports Editing Window](images/image_reporting_reports_report_editing_window.png)

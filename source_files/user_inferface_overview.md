@@ -13,7 +13,7 @@ ___
 
 A) Open a  **Web browser**  of your choice and type the  **URL address**  that was supplied to you by the System Administrator of your facility.
 
-B) Enter your  **Username**  and  **Password** which was also supplied to you by the System Administrator.
+B) Enter your  **Username**  and  **Password** which were also supplied to you by the System Administrator.
 
 >🔆 &nbsp;Select **Keep me logged in for 7 days** if you plan to use Diskover for a long period of time so you won't have to log in multiple times.
 
@@ -36,11 +36,11 @@ A) **Software logo**: No functions.
 
 B) **[Dashboard](#dashboard)**: Built-in analytics, offers a visual summary of a selected volume.
 
-C) [**Folder icon/File search page**](#file_search): To navigate back to the file search page showed in this image, it is where most users spend their time.
+C) [**Folder icon/File search page**](#file_search): To navigate back to the file search page shown in this image, it is where most users spend their time.
 
 D) **Analytics**: To select one of the several built-in [analytic reports](#analytics).
 
-E) [**Quick search**](#quick_search): To quickly search all volumes based on pre-established critera.
+E) [**Quick search**](#quick_search): To quickly search all volumes based on pre-established criteria.
 
 F) **Search bar**: To type and/or paste [search queries](#search_syntax).
 
@@ -78,11 +78,11 @@ N) **Path bar**: Shows the [path](#path) you’re in, you cannot type in it, but
 
 O) [**Volumes**](#storage_volume): To view and select available volumes from the left pane:
   - If you hover over the fill bars on the right of the volumes, you will see the space used, free, and total for each volume.
-  - If you hover over a volumes, you will see the last indexed date and time for that specific volume.
+  - If you hover over a volume, you will see the last indexed date and time for that specific volume.
 
   ![Image: Hovering Over a Storage Volume](images/image_file_search_hovering_volume.png)
 
-P) [**Directories**](#directory): To view and/or drill-down the directories inside the selected volume in green above, you can also drill-down from the [results pane](#results_pane).
+P) [**Directories**](#directory): To view and/or drill down the directories inside the selected volume in green above, you can also drill down from the [results pane](#results_pane).
   - Hovering your mouse over a directory in the left pane will give you a snapshot of its attributes.
   - Note that the left pane will only show directories with data in them, all directories either with data or empty will show in the W) results pane.
 

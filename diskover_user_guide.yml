@@ -21,9 +21,9 @@ ordered_documents:
   - user_basic_export.md
   - user_basic_share.md
   - user_basic_save_query.md
-  - built_in_search_tools_intro.md
+  - user_basic_search_builtin_tools_intro.md
   - user_basic_search_filters.md
-  - user_basic_quick_search.md
+  - user_basic_search_quick_search.md
   - user_basic_search_within_results.md
   - user_basic_search_path_recursive.md
   - user_basic_search_manual_queries.md

@@ -40,7 +40,7 @@ H) **submit to Vantage** > To submit files for transcoding via [Telestream Vanta
 
 #### [🍿 Watch Quick Tips | Indexing and Live View](https://vimeo.com/767272643)
 
-This feauture allows you to view the content of a live directory(ies), lists the content so you can search and pro-actively copy paths. This feature only works for on-premise storage at the moment and is not avaiable for cloud storage.
+This feature allows you to view the content of a live directory(ies), and lists the content so you can search and pro-actively copy paths. This feature only works for on-premise storage and is not available for cloud storage at the moment.
 
 The typical use case is when you are not finding a file/directory in the indexed volumes within Diskover, you can access live directories and see if the files you are waiting to be onboarded will be available during the next indexing, as well as pro-actively copy paths.
 
@@ -54,7 +54,7 @@ The **live view** directory will open in a new tab:
 
 ![Image: Directory Live View](images/image_file_action_live_view_20230215.png)
 
-A) Time stamp of when you clicked **live view** in the search page - this time stamp will update if you refresh your browser tab, which will also refresh the data.
+A) Timestamp of when you clicked **live view** in the search page - this timestamp will update if you refresh your browser tab, which will also refresh the data.
 
 B) You can opt to view between 10 to 1,000 line items per page.
 
@@ -73,7 +73,7 @@ G) You can launch file actions from the live view.
 
 <p id="file_action_glim"></p>
 
-### Industry Specific File Actions
+### Industry-Specific File Actions
 
 #### File Action > Open in GLIM
 

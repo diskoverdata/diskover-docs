@@ -12,7 +12,7 @@ Any users can access Reports, but only users with an admin level account can add
 
 Within the Diskover-Web user interface, Reports is located under **Analytics** > **Reports**.
 
-The following provides an example smart search configuration by **_client_** - The names in the report are fictitious and for demonstration only:
+The following provides an example configured by **_order status_** when using the Xytech Order Status Plugin.
 
 ![Image: Reports](images/image_reporting_reports_report_example_diskover_ui.png)
 
@@ -28,8 +28,8 @@ By default, Diskover has preconfigured reports by file types/extensions, but any
 
 - To add, edit or delete a query > **Analytics** > **Reports** > click the **Edit reports** button.
 - For queries syntax and rules, please refer to the Diskover User Guide:
-  - Queries with [built-in search tools](https://docs.diskoverdata.com/diskover_user_guide/#built-in-search-tools)
-  - [Syntax and rules for manual queries](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries-syntax-and-rules)
+    - Queries with [built-in search tools](https://docs.diskoverdata.com/diskover_user_guide/#built-in-search-tools)
+    - [Syntax and rules for manual queries](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries-syntax-and-rules)
 
 > Reports queries need to be built in the following format: **report name|query|top value**
 

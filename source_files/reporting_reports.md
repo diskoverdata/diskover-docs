@@ -12,7 +12,7 @@ Any users can access Reports, but only users with an admin level account can add
 
 Within the Diskover-Web user interface, Reports is located under **Analytics** > **Reports**.
 
-The following provides an example configured by **_order status_** when using the Xytech Order Status Plugin.
+The following report provides an example configured by **_order status_** when using the [Xytech Order Status Plugin](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-order-status-plugin).
 
 ![Image: Reports](images/image_reporting_reports_report_example_diskover_ui.png)
 

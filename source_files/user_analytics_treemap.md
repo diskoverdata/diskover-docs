@@ -39,7 +39,7 @@ F) **Mtime Filter**: To select a specific period when the data was last modified
 
 G) **Hide Thresh**: To make the graphics less busy by hiding the results with low percentages.
 
-H) **Size or Count**: Select either you want to see the report by the  **Size**  of the data or **Count** of items.
+H) **Size or Count**: Select whether you want to see the report by the  **Size**  of the data or **Count** of items.
 
 I) **Maxdepth**: Select how many levels/directories deep you want the results to show.
 
@@ -53,4 +53,4 @@ L) **Magnifying glass icon**: Click to open the directory and its file in the se
 
 M) **Copy path icon**: To copy the path of a file or directory to your clipboard.
 
-N) **Graphics area**: You can drill-down by clicking on the rectangles.
+N) **Graphics area**: You can drill down by clicking on the rectangles.

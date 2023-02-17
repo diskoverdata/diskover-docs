@@ -4,7 +4,7 @@ ___
 ## Manual Queries | Syntax and Rules
 ___
 
-Until you get familiar with Diskover and when trying to achieve complex queries, we strongly recommend using the built-in search tools like the [filters](#filters), [quick searches](#quick_search), or [search within results](#search_within_results) that are available directly in the interface. Those built-in tools can be combined with manual queries for extremly precise results.
+Until you get familiar with Diskover and when trying to achieve complex queries, we strongly recommend using the built-in search tools like the [filters](#filters), [quick searches](#quick_search), or [search within results](#search_within_results) that are available directly in the interface. Those built-in tools can be combined with manual queries for extremely precise results.
 
 The examples used in this chapter are mostly media and entertainment related, but the same logic can be applied to any type of industry.
 
@@ -20,8 +20,8 @@ This chapter covers the rules around manual queries. You can navigate directly t
 
 #### Golden Rules of Searching
 
-1. Expand your results using, by using the [wildcards](#wildcards) for example.
-1. Only add a criterion or a few criteria at a time and continiously validate your results.
+1. Expand your results using, by using [wildcards](#wildcards) for example.
+1. Only add a criterion or a few criteria at a time and continuously validate your results.
 1. Readjust your query as needed.
 
 The list of possible search queries and syntax is exhaustive, therefore only the basics of manual searches will be explained in this chapter.
@@ -56,7 +56,7 @@ Other examples of naming convention issues:
 
 Unless you know that a strict naming convention was followed, trying to launch a query with very specific criteria may limit your results and you might think that some files are missing.
 
-Ways to either pinpoint or expand your results will be explained in this chapter in order to go around the naming convention issues, and make sure you are not missing files in your results.
+Ways to either pinpoint or expand your results will be explained in this chapter in order to go around the naming convention issues and make sure you are not missing files in your results.
 
 <p id="search_basics"></p>
 
@@ -67,7 +67,7 @@ ___
 
 #### Case Sensitivity
 
-Search queries are case insensitive in general, so you can type upper or lowercases in the search bar when launching a query. There are very few exceptions where queries are case sensitive:
+Search queries are case insensitive in general, so you can type upper or lower cases in the search bar when launching a query. There are very few exceptions where queries are case-sensitive:
 - When [searching on time](#search_time).
 - When searching on [field names](#search_field_names).
 
@@ -77,7 +77,7 @@ Search queries are case insensitive in general, so you can type upper or lowerca
 
 #### [🍿 Watch Quick Tips | Understanding the Basics of Manual Queries](https://vimeo.com/770024733)
 
-When typing a word, a number, or a combination of both in the search bar, Diskover will look for those **isolated characters**. In order to find isolated characters, Diskover uses **isolators** like **spaces, underscores, hyphens, forward slashes, period, other punctuation, as well as upper cases** (aka CamelCase).
+When typing a word, a number, or a combination of both in the search bar, Diskover will look for those **isolated characters**. In order to find isolated characters, Diskover uses **isolators** like **spaces, underscores, hyphens, forward slashes, periods, other punctuation, as well as upper cases** (aka CamelCase).
 
 Of course, there are ways to find characters that are not isolated by using [wild cards](#wildcards), which is explained in the next section.
 
@@ -116,7 +116,7 @@ When writing complex queries, you will need to group some elements with parenthe
 
 ##### [Square] or {Curly} Brackets
 
-The square brackets `[ ]` or curly brackets `{ }` need be used to contain ranges for **time**, **dates**, **numeric** or **string fields**. They can even be mixed `[ }`. You can find examples in the [Searching on time](#search_time) section. Below is how/when to apply them:
+The square brackets `[ ]` or curly brackets `{ }` need to be used to contain ranges for **time**, **dates**, **numeric** or **string fields**. They can even be mixed `[ }`. You can find examples in the [Searching on time](#search_time) section. Below is how/when to apply them:
 
 	- **Inclusive** ranges need to be specified with square brackets, ex: **[min TO max]**, 
 	- **Exclusive** ranges need to be specified with curly brackets, ex: **{min TO max}**
@@ -134,9 +134,9 @@ The **\*** wild card is used to replace zero to many characters. It is the most 
 
 The * wild card is used to expand search results and is great to go around [naming convention](#naming_convention) issues.
 
-> 🔆 &nbsp;A search might be slower when using the * wild card, especially when it is placed in front of your query, because it is searching a much larger amount of data.
+> 🔆 &nbsp;A search might be slower when using the * wild card, especially when it is placed in front of your query because it is searching a much larger amount of data.
 
->🔆 &nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > Settings > [Use predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much at all time. Throughout this user guide, we assume the predictive search has not been selected.
+>🔆 &nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > Settings > [Use predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much at all times. Throughout this user guide, we assume the predictive search has not been selected.
 
 #### How to Use the * | Examples with Letters
 
@@ -154,7 +154,7 @@ The * wild card is used to expand search results and is great to go around [nami
 
 #### How to Use the * | Mix of Letters and Numbers
 
-For example, if you want to search for **season 1**, the file name could have different spelling like **S1**, **season 1**, **s01**, **s_1**, etc. 
+For example, if you want to search for **season 1**, the file name could have different spellings like **S1**, **season 1**, **s01**, **s_1**, etc. 
 
 In order to expand your results to include all possibilities, a logical search syntax could be **s\*1** because the **\*** would catch everything in between the **s** and the **1**. Now, this would also find season 11 for example, but it's better to widen your results at first and then narrow them down once you have an idea of what you are dealing with.
 
@@ -174,7 +174,7 @@ The **?** wild card is used to replace a single character. I can be used several
 - **shot??1** > would find **shot001**, **shot101**, **shot991**...
 - **frame???** > would find **frame000** to **frame999**
 
->🔆 &nbsp;Technically, the * could be used instead of typing several ? but then it would open results outside the specific range of characters you are aiming for, because the * replaces 0 to many characters. Therefore, the ? is sometimes better suited for preciseness.
+>🔆 &nbsp;Technically, the **\*** could be used instead of typing several **?** but then it would open results outside the specific range of characters you are aiming for because the * replaces 0 to many characters. Therefore, the ? is sometimes better suited for preciseness.
 
 <p id="tilda_wildcard"></p>
 
@@ -183,7 +183,7 @@ ___
 
 #### [🍿 Watch Quick Tips | Manual Search Tool: Wild Cards](https://vimeo.com/772196768)
 
-The **~** wild card is also called the **fuzziness** wild card. If is used to find similar words, and is mostly used to catch human misspellings.
+The **~** wild card is also called the **fuzziness** wild card. It is used to find similar words, and is mostly used to catch human misspellings.
 
 >🔆 &nbsp;Be aware that launching a query with the **~** can use an enormous amount of memory and perform badly, ending in a "timed out" situation.
 
@@ -241,7 +241,7 @@ There are 3 operators: **and**, **not**, **or**, and they are not case sensitive
 
 #### OR Operator
 
-When using the **or** operator, you will need to group the criteria around the that operator in order for Diskover to make sense of the query. Think of this as building formulas in Excel, Excel will want you to group criteria in order to understand what you want to accomplish; Diskover works on the same premise.
+When using the **or** operator, you will need to group the criteria around that operator in order for Diskover to make sense of the query. Think of this as building formulas in Excel, Excel will want you to group criteria in order to understand what you want to accomplish; Diskover works on the same premise.
 
 🔎 Example:
 
@@ -256,11 +256,11 @@ When using several criteria and more than one [operator](#operators), it is reco
 
 >🔆 &nbsp;You always need to group criteria when using the **or** operator.
 
-🔎 A few examples with using the file name structure **thejunglebook_s01_ep05_en.mov**:
+🔎 A few examples using the file name structure **thejunglebook_s01_ep05_en.mov**:
 
 #### Examples with Single Grouping
 
-**\*jungle\* AND (s\*1 OR s\*2)** > would find all files/paths and related to season 1 and season 2 for The Jungle Book series.
+**\*jungle\* AND (s\*1 OR s\*2)** > would find all files/paths related to season 1 and season 2 for The Jungle Book series.
 
 **\*jungle\* AND e\*5 AND (en OR it)** > would find all Italian (assuming **it** was respected in the naming convention) and English (**en**) translations of episode 5 for The Jungle Book series.
 
@@ -272,7 +272,7 @@ Another type of example with words only, and let's use **New York City**. If you
 
 **\*jungle\* AND (s\*1 OR s\*2) (NOT (en OR it))** > still using the same file name example as above, would find all files for season 1 and season 2, but in all other languages than English or Italian.
 
-Let say that you have files with "quick brown fox", "quick fox", "brown fox", "Fox News", etc. This would be the query to use **((quick AND fox) OR (brown AND fox) OR fox) AND NOT news** to respect the following conditions:
+Let's say that you have files with "quick brown fox", "quick fox", "brown fox", "Fox News", etc. This would be the query to use **((quick AND fox) OR (brown AND fox) OR fox) AND NOT news** to respect the following conditions:
 - **fox** must be present.
 - **news** must be excluded.
 - **quick** and **brown** are optional — their presence increases the relevance.
@@ -287,12 +287,12 @@ Searching with field names can be effective if you search on a specific and/or h
 🔎 The query needs to be typed in this exact format **fieldname:value**
 
 >🔆 &nbsp;Searching on field names is case sensitive:
->- The **fieldname** needs to be lower case.
+>- The **fieldname** needs to be lowercase.
 >- The variable after the colon needs to be typed in upper and/or lower case to match exactly what you are searching for. 
 
 #### Default Field Names
 
-| Field name | What it means | How to search and comments |
+| Field name | What it means | How to search |
 | --- | --- | --- |
 | **atime** | last accessed | refer to [Queries with Time](#search_time) for syntax examples |
 | **bam_info** | extra metadata for sam files | please refer to the [Diskover Life Science User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/) for complete details |
@@ -314,7 +314,7 @@ Searching with field names can be effective if you search on a specific and/or h
 | **mtime** | last modified | refer to [Queries with Time](#search_time) for syntax examples |
 | **name** | file name | is case sensitive, ex: `name:*Jungle*` if the file name is TheJungleBook.mov |
 | **name.text** | same as **name** but is not case sensitive | `name.text:*jungle*` even if the file name is TheJungleBook.mov |
-| **nlink** | number of [hardlinks](#hardlinks) | `nlink:3` |
+| **nlink** | number of [hard links](#hardlinks) | `nlink:3` |
 | **owner** | owner name | `owner:*Joe*` > can vary depending on how Diskover was configured, see [User Analysis Report](#user_analysis) section for more details and/or ask your System Administrator |
 | **parent_path** | path name | `parent_path:\/Some\/Folder*` > is case sensitive, will search the specified folder and all its sub-folders ([recursive](#recursive)) |
 | **parent_path.text** | same as **parent_path** but is not case sensitive | `parent_path:\/some\/folder*` |
@@ -336,13 +336,13 @@ Searching with field names can be effective if you search on a specific and/or h
 
 - **\*jungle*\ and (ctime:[now-1h TO now] OR mtime:[now-1h TO now])** would find files or directories with the word **jungle** and that have been modified or changed in the last hour.
 
-- **\*jungle\* and nlink:2** > would find files with the word **jungle** that have 2 hardlinks.
+- **\*jungle\* and nlink:2** > would find files with the word **jungle** that have 2 hard links.
 
 - **tags:delete** > would find all files and directories with the tag **delete** applied to them, it would not find a tag spelled **Delete** for example because of the capital D.
 
 - **tags:(manual_delete AND approve_delete)** > same logic as above and please refer to the section [grouping for complex queries](#complex_queries) regarding the use of the parentheses.
 
-You can find mome examples with field names in the [Searching on Time](#search_time) and [Searching on Size](#search_size) sections.
+You can find more examples with field names in the [Searching on Time](#search_time) and [Searching on Size](#search_size) sections.
 
  <p id="search_size"></p>
 
@@ -386,7 +386,7 @@ Format to use when searching for date and time.
 - Time: **h** = hour, **m** = minute, **s** = second
 - These [two types of brackets `[ ]` or `{ }`](#parentheses_brackets) can be used to contain a range of time, they can even be mixed `[ }`
 
->🔆 &nbsp;Searching on time is case sensitive when it comes to formatting as detailed above, as well as writing the field name in lower case only.
+>🔆 &nbsp;Searching on time is case-sensitive when it comes to formatting as detailed above, as well as writing the field name in lowercase only.
 
 #### Examples to Find Recent Files
 🔎 A few helpful queries for looking for the **latest indexed files** for example. Variables can easily be adjusted to your needs:
@@ -399,15 +399,15 @@ Format to use when searching for date and time.
 🔎 Some helpful queries when looking for old files where you can easily change the variables to adjust the queries to your needs:
 
 - **mtime:[now-5y TO now-3M]** > files that haven't been modified in over 3 months but less than 5 years.
-- **mtime:[\* TO now-1y] AND atime:[\* TO now-1y]** > files that haven't been modified or accessed in over 1 year (* in this case is used to represent "any time in the past").
+- **mtime:[\* TO now-1y] AND atime:[\* TO now-1y]** > files that haven't been modified or accessed in over 1 year (**\*** in this case is used to represent "any time in the past").
 
 ___
 ### Queries with File Extensions
 
 When searching on file extensions, it is recommended to either:
 - Use the dedicated fields in the [filters](#filters).
-- Use [quick search](#quick_search) which you can combine with a manual queries for max efficiency.
-- Type in the search bar the pre-determined field name for file extensions, example **extension:mov**
+- Use [quick search](#quick_search) which you can combine with a manual query for max efficiency.
+- Type in the search bar the pre-determined field name for file extensions, for example **extension:mov**
 
 🔎  Note that the file extension letters might be part of the file name and give you misleading results. For example:
 - If only typing **mov** in the search bar, the results would include all files with **.mov** extension, but could also return a file with the name **all_mov_titles_2021.txt**

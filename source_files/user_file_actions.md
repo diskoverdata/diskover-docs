@@ -8,7 +8,7 @@ ___
 
 The options within file actions push the boundaries around read-only files while still safeguarding your source assets. While some plugins are designed for seamless integration with third-party platforms, reducing time and complexity for users along with many other benefits, Diskover also embraces clients deploying their own plugins to automate their specific in-house workflows. 
 
-The [plugins/features needs to be enabled](#https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#diskover-web-plugins-file-actions) by your System Administrator.
+The [plugins/features need to be enabled](#https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#diskover-web-plugins-file-actions) by your System Administrator.
 
 ### File Actions Overview
 
@@ -20,9 +20,9 @@ A) You need to select files and/or directories before using C) **File Action** b
 
 B) If you want to apply a **File Action** to a single item, you can use the inline gear icon to do so.
 
-C) Click **File Action** once you've A) selected items.
+C) Click **File Action** once you have A) selected items.
 
-D) **live view** > Gives you a live view into the director(ies).
+D) **live view** > Gives you a live view of the director(ies).
 
 E) **open in Glim** > To preview media files using [Telestream GLIM](https://diskoverdata.com/products/products-aja-media-edition/#glim) - you need to have a [GLIM account](https://www.telestream.net/glim/overview.htm) to use this feature and be logged in.
 

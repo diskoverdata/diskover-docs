@@ -8,9 +8,9 @@ ___
 
 The heatmap report is a powerful analytical snapshot offering a differential comparison of two indices across two different points in time:
 
-- Instant visual of location of data growth and shrinkage, as well as the absence of activity if no colors.
+- An instant visual of the location of data growth and shrinkage, as well as the absence of activity if no colors.
 - Insightful for data curation efforts.
-- Useful tool to monitor activity, ex: awaiting new project to be onboarded, monitor backups, etc.
+- A useful tool to monitor activity, ex: awaiting new project to be onboarded, monitor backups, etc.
 
 The **red** and **green** colors in the heatmap report have meaning. All other colors are just a gradation between the red and the green.
 
@@ -18,7 +18,7 @@ The **red** and **green** colors in the heatmap report have meaning. All other c
 > 
 > Green = Data shrinkage
 
-The absence of colors in a heatmap report is also very meaningful, revealing data inertia, alerting you of possible anomalies. The lack of colors/activity is also a good indicator when comparing, for example, an on-premise server to a backup of that server in the cloud where you want data in both storage volumes to be identical; inertia in that case being favorable.
+The absence of colors in a heatmap report is also very meaningful, revealing data inertia, and therefore alerting you of possible anomalies. The lack of colors/activity is also a good indicator when comparing, for example, an on-premise server to a backup of that server in the cloud where you want data in both storage volumes to be identical; inertia in that case being favorable.
 
 #### How to Select Indices for the Heatmap Report
 
@@ -42,11 +42,11 @@ E) Select one index from  **Index 2**  column, it should technically be the same
 
 F) Click  **Save selection**.
 
->🔆 &nbsp;The tips in the blue info bars are practical for quick references.
+>🔆 &nbsp;The tips in the blue info bars are practical for quick reference.
 
 #### Accessing the Heatmap Report
 
-You need to select the [indices](#index_selection) to compare as explained above before accessing the report, otherwise you’ll get an error message.
+You need to select the [indices](#index_selection) to compare as explained above before accessing the report, otherwise, you’ll get an error message.
 
 Via the  **Analytics**  drop-down list for global results:
 
@@ -77,7 +77,7 @@ F) **Mtime Filter**: To select a specific period when the data was last modified
 
 G) **Hide Thresh**: To make the graphics less busy by hiding the results with low percentages.
 
-H) **Size or Count**: elect either you want to see the report by the  **Size**  of the data or **Count** of items.
+H) **Size or Count**: Select whether you want to see the report by the  **Size**  of the data or **Count** of items.
 
 I) **Maxdepth**: Select how many levels/directories deep you want the results to show.
 
@@ -92,8 +92,8 @@ L) **Filters**: Summary of the filters or preferences that you might have select
 M) **Items per page**: To modify the number of items per page (between 10 to 100).
 
 N) **Search within page**: To refine your search for the current page only, it acts similarly as CTRL or CMD + F would, but will only leave the line items for which it finds a match:
-  - You can enter more than one search word and/or numbers as per the above example.
-  - This field will recognize or know what to do with [operators](#operators).
+  - You can enter more than one search word and/or number.
+  - This field will not recognize or know what to do with [operators](#operators).
   - You do not need to use [wild cards](#wildcards) as this field will search on partial words or numbers.
   - You cannot use this field to search on [tags](#tags).
   - It will not search other pages if you have more than one page of results, nor will it search [recursively](#recursive).

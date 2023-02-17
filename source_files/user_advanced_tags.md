@@ -27,13 +27,13 @@ D) **Tag selection**: List of tags that are available, you need an admin account
 
 E) **Remove all tags**: Select from column B) the items you wish to remove the associated tags first and then select E) > **WARNING!** you cannot undo this action.
 
-F) **Add new tag**: To quickly add a single new tag in the drop down list - an admin account is required to [add/edit tags](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#tags-display-and-editor-within-diskover-web-user-interface).
+F) **Add new tag**: To quickly add a single new tag in the drop-down list - an admin account is required to [add/edit tags](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#tags-display-and-editor-within-diskover-web-user-interface).
 
 <p id="apply_tags_to"></p>
 
-G) **Apply tags to**: Choices of applying tags [non-recursively or recursively](#recursive) - can only be achieved from a directory and that directory needs to have a tag assigned to it prior and in order to assign the same tag(s) recursively or non-recursively.
+G) **Apply tags to**: Choices of applying tags [non-recursively or recursively](#recursive) - can only be achieved from a directory and that directory needs to have a tag assigned to it prior in order to assign the same tag(s) recursively or non-recursively.
 
-  - **All results (all pages)**: Will apply tags to all current your search results, no matter if they are files or directory, and no matter how many pages of results, but will not apply tags recursively.
+  - **All results (all pages)**: Will apply tags to all your current search results, no matter if they are files or directories, and no matter how many pages of results, but will not apply tags recursively.
 
   - **Selected Folders - [Non-recursive](#recursive)**: Will apply tags exclusively to the path/directory you are pointing to.
 
@@ -91,7 +91,7 @@ You can quickly search on tags using the [filters](#filters) tool or using a man
 
 ##### Searching tags with [Filters](#filters):
 
-Either you are drilling down or running manual queries, adding tags rules to your filters will filter in OR out all items following depending on the filters you apply.
+Whether you are drilling down or running manual queries, adding tags rules to your filters will filter in OR out all items depending on the filters you apply.
 
 1. Click on the  **[Filters](#filters)**  icon at the top of the interface.
 3. Go to the  **Tags** section.
@@ -103,7 +103,7 @@ Either you are drilling down or running manual queries, adding tags rules to you
 
 Type your search query in the search bar at the top of the page:
 
-  - When starting a query with  **#**  Diskover will automatically detect your intentions and offer you to select one of the available tags, you can also direclty type, ex: **#archive**
+  - When starting a query with  **#**  Diskover will automatically detect your intentions and offer you to select one of the available tags, you can also directly type, ex: **#archive**
 
   ![Image: Manual Search for Tags](images/image_tags_report_access_from_search_bar.png)
 
@@ -136,8 +136,8 @@ C) Apply filters to further customize your results:
 
   - **Show files only**: Will exclude directories from the results.
   - **Show directories only**: Will exclude files from the results.
-  - **Show all**: To show both files and directoreis in the results.
-  - **Dir size no recurs**: To limit directory size to [non-recusrsive](#recusrive).
+  - **Show all**: To show both files and directories in the results.
+  - **Dir size no recurs**: To limit directory size to [non-recursive](#recusrive).
   - **Current top path only**: To limit the results to D) selected [volume](#storage_volume).
   - **Current dir only**: If applicable, to limit the results to the path you selected in the search page and locked down via [Current Dir](#current_dir) before navigating to Smart Searches.
 

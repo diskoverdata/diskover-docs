@@ -9,7 +9,7 @@ Diskover continuously scans all your volumes and creates new indices to give you
 
 ![Image: Architecture Overview](images/diagram_diskover_architecture_overview_for_endusers.png)
 
-_[Click here for a full screen view of the Diskover Overview.](images/diagram_diskover_architecture_overview_for_endusers.png)_
+_[Click here for a full-screen view of the Diskover Overview.](images/diagram_diskover_architecture_overview_for_endusers.png)_
 
 #### Always Use Latest Indices by Default
 
@@ -19,7 +19,7 @@ You can access the available indices by clicking the  **gear icon** drop-down me
 
 ![Image: Accessing the Indices Page](images/image_menu_gear_icon_selection_indices.png)
 
-The indices default is set to **always use latest indices** so you can search all the latest indexed data and volumes at all time. 
+The indices default is set to **always use latest indices** so you can search all the latest indexed data and volumes at all times. 
 
 ![Image: Always Use Latest Indices](images/image_indices_always_use_latest_indices.png)
 
@@ -29,7 +29,7 @@ The indices default is set to **always use latest indices** so you can search al
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
-This section will guide you on how to select specific indices, some examples why this could be relevant:
+This section will guide you on how to select specific indices, some examples of why this could be relevant:
 
 - You need to go back to an older index (or indices) for search, comparison, monitoring, or reporting purposes.
 - You may want to select two indices to search across different points in time for comparison purposes (ex: this file is not here today, was it there two days ago?). Selecting different indices is also needed for the [heatmap report](#heatmap).
@@ -53,7 +53,7 @@ F) **Show # Entries**: You can change how many rows of indices you want to displ
 
 G) **Search**: You can search within the indices with a name or date (indices name will show date of each scan with format yyyymmdd), but you cannot use [operators](#operators), [wildcards](#wildcards), or complex syntax - see the [search within results](#search_within_results) section for more details.
 
-H) **Index** column: If you are not using A) always use latest indices, you need to select at least one index by clicking a box in this column and click E) Save selection.
+H) **Index** column: If you are not using A) always use latest indices, you need to select at least one index by clicking a box in this column and then click E) Save selection.
 
 >🔆 &nbsp;Selecting multiple indices in the H) index column allows you to search across more than one index, as well as quickly access/switch the said indices using the  **Storage volumes**  drop-down list in the file search page.
 
@@ -75,4 +75,4 @@ L) **Max indices to load**: To reduce the number of indices to load at all time.
 
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
-The System Administrator of your facility is responsible for configuring the indices’ scanning schedule. Scans are scheduled according to your organization's work pace and how much data a [volume](#storage_volume) contains. For high pace work environment like media production for example, new scans may be scheduled soon after the previous one is completed. Note that Diskover scans all storage volumes parallelly, not serially.
+The System Administrator of your facility is responsible for configuring the indices’ scanning schedule. Scans are scheduled according to your organization's work pace and how much data a [volume](#storage_volume) contains. For high pace work environments like media production for example, new scans may be scheduled soon after the previous one is completed. Note that Diskover scans all storage volumes parallelly, not serially.

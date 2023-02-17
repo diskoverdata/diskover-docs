@@ -9,7 +9,7 @@ Select any criteria and the results will automatically open in the search page. 
 
 ![Image: Quick Search](images/image_file_search_quick_search_20230214.png)
 
-You can always validate the criteria used for the quick search query in the green info bar, example:
+You can always validate the criteria used for the quick search query in the green info bar, for example:
 
 ![Image: Green Info Bar](images/image_file_search_green_info_bar_20230214.png)
 

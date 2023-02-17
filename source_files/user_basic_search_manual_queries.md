@@ -298,8 +298,8 @@ Searching with field names can be effective if you search on a specific and/or h
 | **bam_info** | extra metadata for sam files | please refer to the [Diskover Life Science User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/) for complete details |
 | **costpergb** | storage space cost | `costpergb:[10 TO 500]` |
 | **ctime** | last changed  | refer to [Queries with Time](#search_time) for syntax examples |
-| **dir_count** | number sub-directories in a directory [recursive](#recursive) | `dir_count:2` > would list directories with exactly 2 directories in them |
-| **dir_count_norecurs** | number of directories [non-recursive](#recursive) | `dir_count_norecurs:1` > would list directories with exactly 2 sub-directories |
+| **dir_count** | number of sub-directories in a directory [recursive](#recursive) | `dir_count:2` > would list directories with exactly 2 sub-directories in them |
+| **dir_count_norecurs** | number of directories [non-recursive](#recursive) | `dir_count_norecurs:1` > would list directories with at least 1 sub-directory in them |
 | **dir_depth** | directory depth in a path | `dir_depth:2` > would search directories at level 2 in the file tree | 
 | **extension** | file extension | `extension:mov` |
 | **file_count** | number of files inside a directory | `file_count:85` `file_count:500*` `file_count:10?` > to find directories with a specific or approximate number of files |

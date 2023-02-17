@@ -86,8 +86,8 @@ The Cost Analysis reports are repeatable queries which can be customized and are
 
 - To add, edit or delete a report > **Analytics** > **Cost Analysis** > click the **Edit cost analysis** button.
 - For queries syntax and rules, please refer to the Diskover User Guide:
-  - Queries with [built-in search tools](https://docs.diskoverdata.com/diskover_user_guide/#built-in-search-tools)
-  - [Syntax and rules for manual queries](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries-syntax-and-rules)
+    - Queries with [built-in search tools](https://docs.diskoverdata.com/diskover_user_guide/#built-in-search-tools)
+    - [Syntax and rules for manual queries](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries-syntax-and-rules)
 
 > **Cost Analysis** queries need to be built in the following format: **report name|querycriteria**
 

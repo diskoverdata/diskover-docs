@@ -1,3 +1,5 @@
+<p id="tags_application_harvest_plugin"></p>
+
 #### Tag Application via Harvest Plugins
 
 Harvest plugins are typically designed to:

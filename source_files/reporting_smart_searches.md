@@ -32,8 +32,8 @@ By default, Diskover has preconfigured reports by file types/extensions, but any
 
 - To add, edit or delete a report > **Analytics** > **Smart Searches** > click the **Edit smart searches** button.
 - For queries syntax and rules, please refer to the Diskover User Guide:
-  - Queries with [built-in search tools](https://docs.diskoverdata.com/diskover_user_guide/#built-in-search-tools)
-  - [Syntax and rules for manual queries](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries-syntax-and-rules)
+    - Queries with [built-in search tools](https://docs.diskoverdata.com/diskover_user_guide/#built-in-search-tools)
+    - [Syntax and rules for manual queries](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries-syntax-and-rules)
 
 
 > Smart searches queries need to be built in the following format: **!report name|query**

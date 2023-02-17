@@ -17,9 +17,9 @@ Data curation is the practice of managing data collected from various sources as
 ___
 ### Volume
 
-A storage location that you want to index, for example: Windows Share/drive, Linux mount/NFS Export, cloud storage/S3 bucket, etc.
+A storage location that you want to index, for example Windows Share/drive, Linux mount/NFS Export, cloud storage/S3 bucket, etc.
 
-Examples of other names for volume that might be used in your organization: storage volume, storage mount, mount point, top level path, top level storage directory.
+Examples of other names for volume that might be used in your organization: storage volume, storage mount, mount point, top-level path, top-level storage directory.
 
 Read more about [how to select a volume](#select_volume).
 
@@ -28,7 +28,7 @@ Read more about [how to select a volume](#select_volume).
 ___
 ### Index/Indices
 
-An index is an inventory of all the files on a volume; it allows the data to be searched quickly via the index instead of the operating system "find commands". Both  **indexes**  and  **indices**  have the same meaning, and are the plural of index, although indices is usually preferred in a technical context.
+An index is an inventory of all the files on a volume; it allows the data to be searched quickly via the index instead of the operating system's "find commands". Both  **indexes**  and  **indices**  have the same meaning, and are the plural of index, although indices is usually preferred in a technical context.
 
 - You can have multiple inventories/indices of a storage volume at different times.
 - Indices typically contain directory name, file name, file size, creation date, modify date, owner, etc.
@@ -52,7 +52,7 @@ Read more about [how to select a directory](#select_directory).
 ___
 ### Path
 
-The complete location/name where a dictory or a file is located, for example:
+The complete location/name where a directory or a file is located, for example:
 
 `/mnt/lucidlink/projects/Pistachio/WonderfulPistachios_GangnamStyle.mov`
 
@@ -70,14 +70,14 @@ ___
 ___
 ### Hard links
 
-A hardlink is a pointer/link that acts like a folder/directory. A hard link is a link that directly associates a name with a given file in an operating system. Unlike a soft link, which changes the pointer when the file is renamed, a hard link still points to the underlying file even if the file name changes.
+A hard link is a pointer/link that acts like a folder/directory. A hard link is a link that directly associates a name with a given file in an operating system. Unlike a soft link, which changes the pointer when the file is renamed, a hard link still points to the underlying file even if the file name changes.
 
-Think of hard links like copies but they dont use up any more disk space. Hard links are different than symbolic or soft links, those are more just pointers or links to the actual file.
+Think of hard links like copies but they don't use up any more disk space. Hard links are different than symbolic or soft links, those are more just pointers or links to the actual file.
 
 **Soft links**:
 	- Can cross the file system.
 	- Allows you to link between directories.
-	- Has different inode number and file permissions than original file.
+	- Has different inode number and file permissions than the original file.
 	- Permissions will not be updated.
 	- Has only the path of the original file, not the contents.
 
@@ -86,10 +86,10 @@ Think of hard links like copies but they dont use up any more disk space. Hard l
 	- A hard link is a directory that associates a name with a file, thus each file must have at least one hard link.
 	- You can only hard link files and not directories.
 	- Hard links can only refer to files within the same volume/file system, they can't cross the file system boundaries.
-	- Has the same inode number and permissions of original file.
-	- Permissions will be updated if the permissions of source file is changed.
-	- Has the actual contents of the original file, so that you still can view the contents, even if the original file moved or removed.
-	- You can't free up disk space until all the hard links and original files are deleted, as they all reference same inode.
+	- Has the same inode number and permissions of the original file.
+	- Permissions will be updated if the permissions of the source file is changed.
+	- Has the actual contents of the original file, so that you still can view the contents, even if the original file moved or was removed.
+	- You can't free up disk space until all the hard links and original files are deleted, as they all reference the same inode.
 
 >🔆 &nbsp;Hard links are used a lot in media and entertainment so that digital assets can be referenced in different shot folders without using additional space.
 
@@ -106,10 +106,10 @@ Diskover uses Elasticsearch in the backend for its speed and reliability. Below 
 
 ![Image: Diskover Architecture Overview](images/diagram_diskover_architecture_overview.png)
 
-_[Click here for a full screen view of the Diskover Architecture Overview diagram.](images/diagram_diskover_architecture_overview.png)_
+_[Click here for a full-screen view of the Diskover Architecture Overview diagram.](images/diagram_diskover_architecture_overview.png)_
 
 In order to better understand the terminology used by Elasticsearch and throughout the Diskover documentation, please refer to this diagram.
 
 ![Image: Diskover Architecture Overview](images/diagram_diskover_elasticsearch_architecture.png)
 
-_[Click here for a full screen view of the Elasticsearch Architecture diagram.](images/diagram_diskover_elasticsearch_architecture.png)_
+_[Click here for a full-screen view of the Elasticsearch Architecture diagram.](images/diagram_diskover_elasticsearch_architecture.png)_

@@ -18,7 +18,7 @@ The following outlines:
 
 <img src="images/image_indexers_install_with_mac_installer_security_msg_v6.png" width="450">
 
-🔴 &nbsp;The **Diskover Amazon Indexer_vx.dmg** package will go to your **Downloads** folder. Wait for the file to finish downloading and then double click the icon/file to launch the Diskover Mac Installer:
+🔴 &nbsp;The **Diskover Amazon Indexer_vx.dmg** package will go to your **Downloads** folder. Wait for the file to finish downloading and then double-click the icon/file to launch the Diskover Mac Installer:
 
 <img src="images/image_indexers_install_with_mac_installer_downloads_folder.png" width="750">
 
@@ -63,7 +63,7 @@ The following outlines:
 
 ##### Read Me
 
-🔴 &nbsp;Take the time to read this basic information, plus you might want to **save** or **print** for future references, then click **Continue**:
+🔴 &nbsp;Take the time to read this basic information, plus you might want to **save** or **print** for future reference, then click **Continue**:
 
 <img src="images/image_indexers_install_with_mac_installer_step_2_read_me_v6.png" width="600">
 
@@ -101,7 +101,7 @@ The following outlines:
 
 ##### Summary
 
-🔴 &nbsp;You should see **Success!**. At this point, a web browser should open automatically with the **Diskover Indexing Tool**. If it doesn't, copy this address http://localhost:8080/index/ and paste it in a browser of your choice _OR_ click the following link [http://localhost:8080/index/](http://localhost:8080/index/) to open the **Diskover Indexing Tool** in your default browser:
+🔴 &nbsp;You should see **Success!** At this point, a web browser should open automatically with the **Diskover Indexing Tool**. If it doesn't, copy this address http://localhost:8080/index/ and paste it in a browser of your choice _OR_ click the following link [http://localhost:8080/index/](http://localhost:8080/index/) to open the **Diskover Indexing Tool** in your default browser:
 
 <img src="images/image_indexers_install_with_mac_installer_step_9a_install_successful_v6.png" width="600">
 
@@ -198,7 +198,7 @@ After the license is installed, you are now ready to index/scan your first direc
 ![Image: Select Open Anyway](images/image_indexers_install_with_mac_installer_license_tool_monitor_task.png)
 
 > If you get a **FAILURE** status, please consider these possible issues:
->	- Did you install the license prior to launching your first index?
+>	- Did you install the license before launching your first index?
 >	- Did you move the directory being indexed while the indexing task what still running?
 >	- If none of the above issues apply to your situation:
 >		- From the **Monitor tasks** window above, click on **View log** in line with the failed indexing job.
@@ -237,9 +237,9 @@ After the license is installed, you are now ready to index/scan your first direc
 | --- | --- |
 | **Index refresh interval** | Index refresh interval > 30 seconds is recommended > format to use in field is **30s** (original default is 1s, set to -1 to disable refresh during crawl - fastest performance but no index searches - after crawl is set back to 1s) |
 | **Transaction log flush threshold size** | Transaction log flush threshold size > 1 GB is recommended > format to use in field is **1gb** (original default is 512mb) |
-| **Transaction log sync interval time** | Transaction log log sync interval time > 30 seconds is recommended > format to use in field is **30s** (original default is 5s) |
-| **Search scroll size** | Search scrool size > 1,000 docs is recommended > format to use in field is **1000** (original default is 100) |
-| **Elasticsearch compression** | ES compression > use **default** (set to **default** (LZ4) or **best_compression** (DEFLATE), using **best_compression** can reduce the size of your indices but can decrease indexing and search persormance) |
+| **Transaction log sync interval time** | Transaction log sync interval time > 30 seconds is recommended > format to use in field is **30s** (original default is 5s) |
+| **Search scroll size** | Search scroll size > 1,000 docs is recommended > format to use in field is **1000** (original default is 100) |
+| **Elasticsearch compression** | ES compression > use **default** (set to **default** (LZ4) or **best_compression** (DEFLATE), using **best_compression** can reduce the size of your indices but can decrease indexing and search performance) |
 
 **For the following fields: True = Checked ✅  and False = Unchecked ⬛️**
 
@@ -263,7 +263,7 @@ After the license is installed, you are now ready to index/scan your first direc
 
 🔴 &nbsp;You can also see and uniquely select the desired indices by clicking on the **gear icon** at the top right corner, then select [**Indices**](https://docs.diskoverdata.com/diskover_user_guide/#indices).
 
-🔴 &nbsp;You can schedule regular scans of your index/indices as well as other parameters by clicking on on the **gear icon** at the top right corner,  then select **Task Panel**, then follow [these configuration instructions](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#task-configuration-files).
+🔴 &nbsp;You can schedule regular scans of your index/indices as well as other parameters by clicking on the **gear icon** at the top right corner,  then select **Task Panel**, then follow [these configuration instructions](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#task-configuration-files).
 
 #### Configure Your Indices
 

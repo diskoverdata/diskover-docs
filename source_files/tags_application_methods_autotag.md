@@ -1,3 +1,5 @@
+<p id="tags_application_autotag"></p>
+
 #### Tag Application via Autotag
 
 Tags can be applied automatically via a series of rules applied to directories or file. The rules can be very powerful based on a combination of file name, extension, path, age, size, etc.

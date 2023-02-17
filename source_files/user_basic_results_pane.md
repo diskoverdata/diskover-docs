@@ -11,15 +11,15 @@ B) **Charts hide/unhide**: By default, the file search page displays colorful ch
 
 ### Results Pane Overview
 
-This section explains the few items that were not covered in the [user interface overview](#ui_overview), as well as explain further certain aspects.
+This section explains the few items that were not covered in the [user interface overview](#ui_overview), as well as explains further certain aspects.
 
 ![Image: Main Features of the File Search Page](images/image_file_results_pane_overview_20230214.png)
 
 A) **Info icon:** Will display the directory’s detailed [attributes](#attributes) by opening a new page.
 
-B) **Copy path/clipboard icon**: To copy the path of a file or directory (E+F). The path syntax is specific to your Operating System and setup by the System Administrator, but can also be modified in your [settings](#path_translation).
+B) **Copy path/clipboard icon**: To copy the path of a file or directory (E+F). The path syntax is specific to your Operating System and set up by the System Administrator, but can also be modified in your [settings](#path_translation).
 
-C) **Find similar**: To find similar item, example of automatic query that would be run if this would be used on the **highres_images** directory as shown in the image above > **Search query: highres OR images**
+C) **Find similar**: To find similar items, example of automatic query that would be run if this would be used on the **highres_images** directory as shown in the image above > **Search query: highres OR images**
 
 D) **File Action**: When you want to use a [file action](#file_action) using a single item.
 
@@ -64,7 +64,7 @@ The help text in blue will guide you to:
 
 #### Most Recent Searches
 
-Under **Recent searches** you will find the past 10 queries that you've launched and/or the most recent [paths](#path) you’ve visited. You can click on any of these links to relaunch the same query.
+Under **Recent searches**, you will find the past 10 queries that you've launched and/or the most recent [paths](#path) you’ve visited. You can click on any of these links to relaunch the same query.
 
 ### No Items Found Message
 

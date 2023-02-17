@@ -112,7 +112,7 @@ You can only use **:** with letters, but you can use any of the following with n
 
 | Syntax | Equation |
 | --- | --- |
-| **:** | equals |
+| **:** | equal to |
 | **:>** | greater than |
 | **:>=** | equal to or greater than |
 | **:<** | lesser than |

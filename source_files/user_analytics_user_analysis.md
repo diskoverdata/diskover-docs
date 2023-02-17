@@ -5,7 +5,7 @@ ___
 
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
-The user analysis  report gives a snapshot of data utilization; it was designed to help with operating costs  management, as well as customers’ storage consumption for billing accuracy.
+The user analysis report gives a snapshot of data utilization by user or by group of users; it was designed to help with operating costs  management, as well as customers’ storage consumption for billing accuracy. The owner/group value in Diskover is populated from your organization's Filesystem assigned owner and group.
 
 This report needs to be enabled and configured by your System Administrator.
 

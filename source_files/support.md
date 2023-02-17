@@ -4,13 +4,13 @@ ___
 
 ### Troubleshooting
 
-[Technical Troubleshooting Guide](https://docs.diskoverdata.com/diskover_troubleshooting_tech/) for answers related to installation, configuration and more.
+[Technical Troubleshooting Guide](https://docs.diskoverdata.com/diskover_troubleshooting_tech/) for answers related to installation, configuration, and more.
 
 [End-User Troubleshooting Guide](https://docs.diskoverdata.com/diskover_troubleshooting_end_user/) for answers related to the daily operation of Diskover.
 
 ### Documentation
 
-Provides in-depth instructions and descriptions to ensure end-users success on Diskover, as well as its installation, configuration and administration by System Administrators and other Technical Professionals. 
+Provides in-depth instructions and descriptions to ensure end-users' success on Diskover, as well as its installation, configuration and administration by System Administrators and other Technical Professionals. 
 
 [https://docs.diskoverdata.com/](https://docs.diskoverdata.com/)
 
@@ -20,7 +20,7 @@ Provides support on various topics and is located at the right top corner of the
 
 ### Community Support
 
-Reliant on the Diskover Slack workspace, this forum is a great place to ask question to the Diskover community.
+Reliant on the Diskover Slack workspace, this forum is a great place to ask questions to the Diskover community.
 
 [https://diskoverworkspace.slack.com/ssb/redirect#/](https://diskoverworkspace.slack.com/ssb/redirect#/)
 

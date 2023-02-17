@@ -5,7 +5,7 @@ ___
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
-Reports were designed to easily help you find what you don't know; it's like reverse engeneering. Fully customizable queries as well as customizable drop-down list with what matters to your business, therefore for you to be able to quickly pinpoint those hard to find statistics. These reports are global and accessible by everyone in your organization.
+Reports were designed to easily help you find what you don't know; it's like reverse engineering. Fully customizable queries with what matters to your business, therefore for you to be able to quickly pinpoint those hard-to-find files and statistics. These reports are global and accessible to everyone in your organization.
 
 #### Accessing Reports
 
@@ -38,8 +38,8 @@ E) Apply filters to further customize your results:
   - **Sort by size**: Will sort by number of items by default, so activate to change to sorting by size.
   - **Show files only**: Will exclude directories from the results.
   - **Show directories only**: Will exclude files from the results.
-  - **Show all**: To show both files and directoreis in the results.
-  - **Dir size no recurs**: To limit directory size to [non-recusrsive](#recusrive).
+  - **Show all**: To show both files and directories in the results.
+  - **Dir size no recurs**: To limit directory size to [non-recursive](#recusrive).
   - **Current top path only**: To limit the results to F) selected [volume](#storage_volume).
   - **Current dir only**: If applicable, to limit the results to the path you selected in the search page and locked down via [Current Dir](#current_dir) before navigating to Reports.
 
@@ -53,4 +53,4 @@ G) **Edit reports**: You can view the queries used for the report, but an admin 
 
 #### How to Customize Reports
 
-The reports tool comes with sample queries and drop-down list options, but both can be customized (instructions to come) by someone with and admin account.
+The reports tool comes with sample queries and drop-down list options, but both can be customized (instructions to come) by someone with an admin account.

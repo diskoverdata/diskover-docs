@@ -110,12 +110,14 @@ Of course, there are ways to find characters that are not isolated by using [wil
 
 You can only use **:** with letters, but you can use any of the following with numbers.
 
-**:** equal
-**:>** greater than
-**:>=** equal to or greater than
-**:<** lesser than
-**:<=** equal to or lesser than
-**:<>** is not equal to
+| Syntax | Equation |
+| --- | --- |
+| **:** | equals |
+| **:>** | greater than |
+| **:>=** | equal to or greater than |
+| **:<** | lesser than |
+| **:<=** | equal to or lesser than |
+| **:<>** | is not equal to |
 
 <p id="parentheses_brackets"></p>
 

@@ -104,9 +104,22 @@ Of course, there are ways to find characters that are not isolated by using [wil
 | draft_V12.pdf |  | **12** is only isolated at the end AND CamelCase doesn't work with numbers |
 | draft_123.pdf |  | **12** is not isolated at the end |
 
+<p id="math_symbols"></p>
+
+#### Syntax for Mathematical Symbols in Queries
+
+You can only use **:** with letters, but you can use any of the following with numbers.
+
+**:** equal
+**:>** greater than
+**:>=** equal to or greater than
+**:<** lesser than
+**:<=** equal to or lesser than
+**:<>** is not equal to
+
 <p id="parentheses_brackets"></p>
 
-#### When to Use Parentheses and Brackets
+#### Parentheses and Brackets
 
 At times you will need to group criteria, so Diskover can make sense of the queries; think of this as grouping criteria when building formulas in Excel.
 
@@ -256,9 +269,9 @@ When using several criteria and more than one [operator](#operators), it is reco
 
 >🔆 &nbsp;You always need to group criteria when using the **or** operator.
 
-🔎 A few examples using the file name structure **thejunglebook_s01_ep05_en.mov**:
-
 #### Examples with Single Grouping
+
+🔎 A few examples using the file name structure **thejunglebook_s01_ep05_en.mov**:
 
 **\*jungle\* AND (s\*1 OR s\*2)** > would find all files/paths related to season 1 and season 2 for The Jungle Book series.
 
@@ -269,6 +282,8 @@ When using several criteria and more than one [operator](#operators), it is reco
 Another type of example with words only, and let's use **New York City**. If you only want to find files/paths that have all those 3 words in them, you can type **(new york city)** assuming that all the words are isolated of course.
 
 #### Examples with Multiple Groupings
+
+🔎 A few examples using the file name structure **thejunglebook_s01_ep05_en.mov**:
 
 **\*jungle\* AND (s\*1 OR s\*2) (NOT (en OR it))** > still using the same file name example as above, would find all files for season 1 and season 2, but in all other languages than English or Italian.
 
@@ -285,6 +300,7 @@ ___
 Searching with field names can be effective if you search on a specific and/or hidden field and are looking for precise results. You can compare searching on field names as searching on a specific column in a massive Excel spreadsheet.
 
 🔎 The query needs to be typed in this exact format **fieldname:value**
+🔎 Make sure you are using the proper [syntax for mathematical symbols](#math_symbols) when searching with numbers.
 
 >🔆 &nbsp;Searching on field names is case sensitive:
 >- The **fieldname** needs to be lowercase.
@@ -298,8 +314,8 @@ Searching with field names can be effective if you search on a specific and/or h
 | **bam_info** | extra metadata for sam files | please refer to the [Diskover Life Science User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/) for complete details |
 | **costpergb** | storage space cost | `costpergb:[10 TO 500]` |
 | **ctime** | last changed  | refer to [Queries with Time](#search_time) for syntax examples |
-| **dir_count** | number of sub-directories in a directory [recursive](#recursive) | `dir_count:2` > would list directories with exactly 2 sub-directories in them |
-| **dir_count_norecurs** | number of directories [non-recursive](#recursive) | `dir_count_norecurs:1` > would list directories with at least 1 sub-directory in them |
+| **dir_count** | number of sub-directories in a directory [recursive](#recursive) | `dir_count:2` > would list directories with exactly 2 sub-directories _or_ 1 file and 1 directory _or_ 2 files |
+| **dir_count_norecurs** | number of items (files and folders) in a directory [non-recursive](#recursive) | `dir_count_norecurs:1` > would list directories with at least 1 sub-directory in them |
 | **dir_depth** | directory depth in a path | `dir_depth:2` > would search directories at level 2 in the file tree | 
 | **extension** | file extension | `extension:mov` |
 | **file_count** | number of files inside a directory | `file_count:85` `file_count:500*` `file_count:10?` > to find directories with a specific or approximate number of files |
@@ -349,11 +365,11 @@ You can find more examples with field names in the [Searching on Time](#search_t
 ___
 ### Queries with Data Size
 
-Diskover shows file size (size) and allocated size (size_du) in bytes. We recommend using the [filters](#filters), as well as [quick search](#quick_search) when searching on size, but these fields can also be searched manually. 
+Diskover shows file size (size) and allocated size (size_du) in bytes. We recommend using the [filters](#filters), as well as [quick search](#quick_search) when searching on size, but these fields can also be searched manually. Make sure you are using the proper [syntax for mathematical symbols](#math_symbols) when searching with numbers.
 
 >🔆 &nbsp;When unsure how to translate size from MB, GB, etc. to bytes, you can use any free *byte converter* available online.
 
-🔎 Some examples:
+🔎 Some examples when searching on data size:
 
 - **size:>1048576**  > would find all files and directories larger than 1 MB
 
@@ -364,7 +380,6 @@ Diskover shows file size (size) and allocated size (size_du) in bytes. We recomm
 - **size:>=5242880 AND size:<=10485760**  > would find all files equal or larger than 5 MB but equal or smaller than 10 MB
 
 - **extension:mov AND size:>32212254720** > would find all files with .mov extension and larger than 30 GB
-
 
 
 <p id="search_time"></p>
@@ -380,7 +395,7 @@ Although it is strongly advised to use [filters](#filters) or [quick search](#qu
 - **mtime**: last modified > Indicates the time the contents of the file has been changed. Mind you, only the contents, not the attributes. For instance, if you open a file and change some (or all) of its content, its mtime gets updated. If you change a file's attribute (like read-write permissions, metadata), its mtime doesn't change, but ctime will.
 
 #### Formatting
-Format to use when searching for date and time. 
+Format to use when searching for date and time.
 
 - Date: **d** = day, **M** = month, **y** = year
 - Time: **h** = hour, **m** = minute, **s** = second

@@ -19,11 +19,11 @@ D) **Last accessed**: Select a value from the drop-down list for  **from** (defa
 
 E) **Last changed**: Select a value from the drop-down list for  **from** (default is  **any time**)  and/or  **to** (default is  **now**).
 
-F) **Hardlinks**: When searching for a file with [hardlinks](#hardlinks), select the  **min**imum and/or  **max**imum number of hardlinks.
+F) **Hardlinks**: When searching for a file with [hard links](#hardlinks), select the  **min**imum and/or  **max**imum number of hardlinks.
 
-G) **Owner**: Select an operator  from the drop-down list and type a value in the field to the right. Owners are setup by the System Administrator during the configuration and are also linked to the [user analysis report](#user_analysis).
+G) **Owner**: Select an operator  from the drop-down list and type a value in the field to the right. Owners are set up by the System Administrator during the configuration and are also linked to the [user analysis report](#user_analysis).
 
-H) **Group**: Select an operator  from the drop-down list and type a value in the field to the right. Groups are setup by the System Administrator during the configuration and are also linked to the [user analysis report](#user_analysis).
+H) **Group**: Select an operator  from the drop-down list and type a value in the field to the right. Groups are set up by the System Administrator during the configuration and are also linked to the [user analysis report](#user_analysis).
 
 I) **Extensions**: Select an operator  from the drop-down list and check the box(es) for the extensions you want to include or exclude.
 
@@ -40,7 +40,7 @@ N) **Other field**: 1) Select a field in the first drop-down list, 2) select an 
 
 O) **Exclude folders**: For less restrictive search results and be able to drill down a tree, will exclude the filtering from the folder view.
 
-P) **Filter charts**: Clicking this box will temporary apply the filters to the following items, until you come back and R) clear the filters. To permanently apply filters to these items, please refer to [filter charts settings](#settings_filter_charts).
+P) **Filter charts**: Clicking this box will temporarily apply the filters to the following items until you come back and R) clear the filters. To permanently apply filters to these items, please refer to [filter charts settings](#settings_filter_charts).
 
   - The charts at the top of the file search page, you can validate the query/criteria in the [green bar](#green_info_bar).
   - The [dashboard](#dashboard) results/analytics.
@@ -53,7 +53,7 @@ R) **Clear filters**: To clear all the filters in this window.
 
 S) **Save filters**: To save all the filters in this window.
 
->🔆 &nbsp;Search criteria selected in the [filters will remain active](#clear_filters) and affect all your future searches, until you go back in the filters window and click Q) clear filters.
+>🔆 &nbsp;Search criteria selected in the [filters will remain active](#clear_filters) and affect all your future searches until you go back in the filters window and click Q) clear filters.
 
 When you close the filters window, you will see if you have some saved criteria in a blue square by the filters icon.
 

@@ -3,7 +3,7 @@ ___
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
-Storage Cost reporting are configured similar to Smart Searches. Cost reporting can be generated to align with business context and can be constructed from any Elasticsearch query. Therefore, any combination of names, tags, metadata fields, etc. can be used to construct business facing reports.
+Cost reporting can be generated to align with business context and can be constructed from any Elasticsearch query. Therefore, any combination of names, tags, metadata fields, etc. can be used to construct business facing reports.
 
 Storage cost can be set globally or per storage volume, directory, etc. This tool is designed to control operating costs by 1) charging clients accurately for storage of their projects, and 2) clean-up/data curation incentivizing.
 
@@ -74,14 +74,22 @@ Within the Diskover-Web user interface, cost information is displayed in differe
 - **Analytics** > **Cost Analysis** > to access a report, users can click on a report link.
 - **Analytics** > **User Analysis**
 
+#### Using Cost and User Analysis Reports
+
+Please refer to the Diskover User Guide:
+  - [Cost Analysis](https://docs.diskoverdata.com/diskover_user_guide/#cost-analysis)
+  - [User Analysis](https://docs.diskoverdata.com/diskover_user_guide/#user-analysis)
+
 #### Cost Analysis Reports Configuration
 
 The Cost Analysis reports are repeatable queries which can be customized and are located in **Analytics** > **Cost Analysis**. Any users can access the reports, but only users with an admin level account can add/edit/delete reports.
 
 - To add, edit or delete a report > **Analytics** > **Cost Analysis** > click the **Edit cost analysis** button.
-- For queries syntax, please refer to **gear icon** > **Help** and/or Chapter 4 of the **User Guide**.
+- For queries syntax and rules, please refer to the Diskover User Guide:
+  - Queries with [built-in search tools](https://docs.diskoverdata.com/diskover_user_guide/#built-in-search-tools)
+  - [Syntax and rules for manual queries](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries-syntax-and-rules)
 
-> **Cost Analysis** queries need to be built in the following format: **queryname|querycriteria**
+> **Cost Analysis** queries need to be built in the following format: **report name|querycriteria**
 
 Here are the very simple queries from the example displayed at the beginning of this section - you can copy the following queries and replace by your company's variables to achieve similar results:
 ```

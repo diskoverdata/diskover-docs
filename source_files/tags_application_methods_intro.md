@@ -6,4 +6,4 @@ The following sections describes the various methods for tags application within
 - Autotagging.
 - Tags application via Diskover API
 - Tags application via Harvest Plugins.
-- Manual tagging.
+- [Manual tagging](#tags_application_manual).

@@ -43,7 +43,7 @@ I) **Mtime Filter**: To select a specific period when the data was last modified
 
 J) **Hide Thresh**: To make the graphics less busy by hiding the results with low percentages.
 
-K) **Size or Count**: Select either you want to see the report by the  **Size**  of the data or **Count** of items  – this will affect results in O) and P).
+K) **Size or Count**: Select whether you want to see the report by the  **Size**  of the data or **Count** of items  – this will affect results in O) and P).
 
 L) **Show Files**: By default, the results pane will only show directories, select if you want to see files as well in the results pane.
 
@@ -51,4 +51,4 @@ M) **Filters**: Summary of the filters or preferences that you might have select
 
 >🔆 &nbsp;Filters will stay active, even if you navigate away to another page.
 
-N) **Pie chart graphic**: You can drill-down by clicking on the pie slices.
+N) **Pie chart graphic**: You can drill down by clicking on the pie slices.

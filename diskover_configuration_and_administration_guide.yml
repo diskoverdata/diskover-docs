@@ -24,6 +24,7 @@ ordered_documents:
   - reporting_intro.md
   - reporting_smart_searches.md
   - reporting_cost_analysis.md
+  - reporting_reports.md
   - task_config_files.md
   - task_management.md
   - plugins_intro.md

@@ -27,13 +27,13 @@ There are many other factors that can be compounded to the cost of the storage i
 - System Administrator’s salary.
 - Diskover’s annual subscription cost.
 
->🔆  &nbsp;Different storage volumes can have different costs associated to them.
+>🔆  &nbsp;Different storage volumes can have different costs associated with them.
 
 This diagram explains how storage cost is [enabled and configured](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#storage-cost-reporting) by your System Administrator.
 
 ![Image: Storage Cost Configuration Overview Diagram](images/diagram_diskover_storage_cost_configuration_overview_with_border.png)
 
-_[Click here for a full screen view of the Storage Cost Configuration Overview diagram.](images/diagram_diskover_storage_cost_configuration_overview_with_border.png)_
+_[Click here for a full-screen view of the Storage Cost Configuration Overview diagram.](images/diagram_diskover_storage_cost_configuration_overview_with_border.png)_
 
 #### Accessing the Cost Analysis Report
 
@@ -61,8 +61,8 @@ C) Apply filters to further customize your results:
 
   - **Show files only**: Will exclude directories from the results.
   - **Show directories only**: Will exclude files from the results.
-  - **Show all**: To show both files and directoreis in the results.
-  - **Dir size no recurs**: To limit directory size to [non-recusrsive](#recusrive).
+  - **Show all**: To show both files and directories in the results.
+  - **Dir size no recurs**: To limit directory size to [non-recursive](#recusrive).
   - **Current top path only**: To limit the results to D) selected [volume](#storage_volume).
   - **Current dir only**: If applicable, to limit the results to the path you selected in the search page and locked down via [Current Dir](#current_dir) before navigating to Smart Searches.
 

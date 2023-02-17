@@ -29,7 +29,7 @@ B) **Group**: A group might include several owners (ex: a department) and is con
 
 C) **Size**: Total data size under an owner or a group.
 
-D) **Allocated**: The actual size that the files are occupying, can be helpful for [charging storage cost accordingly to clients](#cost_analysis).
+D) **Allocated**: The actual size that the files are occupying can be helpful for [charging storage costs accordingly to clients](#cost_analysis).
 
 E) **% Allocated**: Owner’s storage space usage divided by the total of all owners or groups.
 

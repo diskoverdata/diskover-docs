@@ -4,13 +4,13 @@ ___
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
 
-Smart Searches provide a mechanism to create repeatable reports or bookmarks based on search queries.
+Smart Searches provide a mechanism to create repeatable reports or bookmarks based on search queries. Any combination of names, tags, metadata fields, etc. can be used to construct business facing reports.
 
-Any users can access the reports, but only users with an admin level account can add, edit or delete reports.
+Any users can access Smart Searches, but only users with an admin level account can add, edit or delete queries.
 
 #### Accessing Smart Searches
 
-Within the Diskover-Web user interface, Smart Searches are located in **Analytics** > **Smart Searches**.
+Within the Diskover-Web user interface, Smart Searches is located under **Analytics** > **Smart Searches**.
 
 The following provides an example smart search configuration by **_client_** - The names in the report are fictitious and for demonstration only:
 
@@ -22,14 +22,21 @@ When typing a **!** in the search bar, the list of existing Smart Searches repor
 
 ![Image: Shortcut to Launch Smart Searches Report](images/image_reporting_smart_searches_launch_shortcut.png)
 
+#### Using Smart Searches
+
+Please refer to the [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#smart-searches) for information on how to use **Smart Searches**.
+
 #### Smart Searches Configuration
 
 By default, Diskover has preconfigured reports by file types/extensions, but any type of queries with single or mixed criteria can be added.
 
 - To add, edit or delete a report > **Analytics** > **Smart Searches** > click the **Edit smart searches** button.
-- For queries syntax, please refer to **gear icon** > **Help** and/or the [**Diskover User Guide**](https://docs.diskoverdata.com/diskover_user_guide/).
+- For queries syntax and rules, please refer to the Diskover User Guide:
+  - Queries with [built-in search tools](https://docs.diskoverdata.com/diskover_user_guide/#built-in-search-tools)
+  - [Syntax and rules for manual queries](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries-syntax-and-rules)
 
-> Smart searches queries need to be built in the following format: **!queryname|querycriteria**
+
+> Smart searches queries need to be built in the following format: **!report name|query**
 
 The above example report by **_client_** was configured using these smart search logic queries - you can copy the following queries and replace by your company's own variables to achieve similar results:
 ```

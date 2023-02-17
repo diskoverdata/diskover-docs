@@ -53,4 +53,6 @@ G) **Edit reports**: You can view the queries used for the report, but an admin 
 
 #### How to Customize Reports
 
-The reports tool comes with sample queries and drop-down list options, but both can be customized (instructions to come) by someone with an admin account.
+The Reports analytics comes with sample queries, but those [queries can be customized](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#reports) by someone with and admin account.
+
+The following report provides an example configured by **_order status_** when using the [Xytech Order Status Plugin](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-order-status-plugin).

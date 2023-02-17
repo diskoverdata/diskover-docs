@@ -27,7 +27,7 @@ On top of giving you some informative details about your account, you can also c
 ___
 ### Time Display
 
-You can opt to change the time for your  **local time zone**  instead of  **UTC**  (Coordinated Universal Time).  We strongly recommend you select/click the **Show times in local timezone** so there will be no confusions when you look at the indexing time for example. Your selection will be saved automatically.
+You can opt to change the time for your  **local time zone**  instead of  **UTC**  (Coordinated Universal Time).  We strongly recommend you select/click the **Show times in local timezone** so there will be no confusion when you look at the indexing time for example. Your selection will be saved automatically.
 
 This change will affect the [storage time of your indices](#indices), file date creation, modification, etc.
 
@@ -40,7 +40,7 @@ ___
 
 By default, Diskover shows the file size using the  **binary system**. Click the box if you prefer using the  **decimal system**  and your selection will be saved automatically.
 
-Also by default, Diskover’s file size decimals is set to  **1**. You can change that value to your own preference and click on  **Set**  to save.
+Also by default, Diskover’s file size decimal is set to  **1**. You can change that value to your own preference and click on  **Set**  to save.
 
 Select **Use size_du** if you want to use the real allocated disk size instead of the usual file size.
 
@@ -53,7 +53,7 @@ ___
 
 Clicking this box and selecting any [filters](#filters) will apply the criteria to:
 
-- The charts at the top of the file search page, you can validate the query/criteria in the [green bar](#green_info_bar).
+- In the charts at the top of the file search page, you can validate the query/criteria in the [green bar](#green_info_bar).
 - The [dashboard](#dashboard) results/analytics.
 
 ![Image: Settings – Filter Charts](images/image_settings_filter_charts_20230214.png)
@@ -85,7 +85,7 @@ Only click the boxes (showing as a green check mark below) for the fields/column
 
 The available fields are initially configured by your System Administrator. Other fields might be available for viewing and could be added to your selection.
 
-Click the  **Reset**  button if you have modified the columns width and wish to reset them to the default width.
+Click the  **Reset**  button if you have modified the columns' width and wish to reset them to the default width.
 
 ![Image: Settings – Hide/Unhide Columns in Search Results](images/image_settings_hide_fields_in_search_results.png)
 
@@ -107,7 +107,7 @@ ___
 
 A cache is used to store website content for performance purposes and is stored in the browser only. There are a few instances in which you will need to clear the cache, but it should be used as a last resort:
 
--  Sometimes the cache might prevent a browser-based software from working properly overtime and the cache needs to be cleared.
+-  Sometimes the cache might prevent a browser-based software from working properly over time and the cache needs to be cleared.
 -  If you get a pop-up message on the Diskover interface asking you to clear the cache.
 
 ![Image: Settings – Clear Diskover Cache](images/image_settings_clear_cache.png)
@@ -117,7 +117,7 @@ A cache is used to store website content for performance purposes and is stored 
 ___
 ### Clear Diskover Cookies
 
-Cookies  are used by the browser to store user’s preferences, like the personal settings described in this chapter, and are stored in both server and browser. There are a few instances in which you may need to clear the cookies:
+Cookies  are used by the browser to store user’s preferences, like the personal settings described in this chapter, and are stored in both the server and browser. There are a few instances in which you may need to clear the cookies:
 - After a software update/upgrade to clear the cookies from the previous version that might affect the behavior of the new version.
 - If you get a pop-up message on the Diskover interface asking you to clear the cookies.
 

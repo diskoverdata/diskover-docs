@@ -55,4 +55,9 @@ G) **Edit reports**: You can view the queries used for the report, but an admin 
 
 The Reports analytics comes with sample queries, but those [queries can be customized](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#reports) by someone with and admin account.
 
-The following report provides an example configured by **_order status_** when using the [Xytech Order Status Plugin](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-order-status-plugin).
+The following report provides an example configured by **_order phase/status_** when using the [Xytech Order Status Plugin](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-order-status-plugin).
+
+![Image: Reports](images/image_reporting_reports_report_example_diskover_ui.png)
+
+_[Click here for a full-screen view.](images/image_reporting_reports_report_example_diskover_ui.png)_
+

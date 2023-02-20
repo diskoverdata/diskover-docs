@@ -33,7 +33,13 @@ By default, Diskover has preconfigured reports by file types/extensions, but any
 
 > Reports queries need to be built in the following format: **report name|query|top value**
 
-The example below is the default by **file type**:
+🔴 This is the query that was used in the example above to report on the Xytech order phase:
+
+```
+Xytech Phase|xytech:*|xytech.phase
+```
+
+🔴 The example below is the default query by **file type** the first time you open **Reports**:
 ```
 tmp files|extension:(cache OR tmp OR temp OR bak OR old)|extension
 compressed files|extension:(7z OR arj OR deb OR gz OR pkg OR rar OR rpm OR tar OR zip OR zipx OR z OR z64 OR bz2)|extension

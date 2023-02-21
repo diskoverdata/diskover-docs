@@ -115,6 +115,7 @@ vi /var/www/diskover-web/public/fileactions/liveview/remotescandir.php
 // remote web server host url hosting scandir.php
 $remote_server_url = "https://<web server host>";
 ```
+>Note: When using https, you will need to set up and configure a valid ssl cert on the remote web server hosting scandir.php
 
 🔴 &nbsp;Copy `fileactions/liveview/scandir.php` to the remote web server used in `remotescandir.php` file.
 

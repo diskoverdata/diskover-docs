@@ -10,11 +10,11 @@ The Live View plugin requires mounts to the indexed storage in order to list the
 
 ![Image: File Sequences Results](images/image_plugins_file_action_live_view_in_ui.png)
 
-🔴 &nbsp;Install `php-process` with `yum` as required by Live View File Action:
+🔴 &nbsp;Install `php-process` with `yum` as required by Live View File Action's scandir.php:
 ```
 yum install php-process
-
 ```
+>Note: This needs to be installed on the web host serving scandir.php
 
 🔴 &nbsp;Restart `php-fpm` service:
 ```
@@ -78,6 +78,13 @@ chown -R nginx:nginx /var/www/diskover-web
 
 If you do not want to mount all your storage on the diskover-web host, you can set Live View to use a remote web server which has the mounted file systems.
 
+There are two options for remote scandir:
+
+1) web browser client to remote web server communication
+2) diskover-web web server to remote web server communication
+
+**Option 1**
+
 🔴 &nbsp;Edit the `liveview.js` file and change `scandir_url` located near the top of the file to be the url to your remote web server hosting scandir.php:
 ```
 vi /var/www/diskover-web/public/fileactions/liveview/js/liveview.js
@@ -85,7 +92,30 @@ vi /var/www/diskover-web/public/fileactions/liveview/js/liveview.js
 // location of ajax url to scandir.php
 var scandir_url = 'https://<web server>:<port>/scandir.php';
 ```
+>Note: When using https, you will need to set up and configure a valid ssl cert on the remote web server hosting scandir.php
 
 🔴 &nbsp;Copy `fileactions/liveview/scandir.php` to the remote web server used in `liveview.js` file.
+
+🔴 &nbsp;See above for setting timezone, path translations, etc for `scandir.php`.
+
+**Option 2**
+
+🔴 &nbsp;Edit the `liveview.js` file and change `scandir_url` located near the top of the file to be remotescandir.php:
+```
+vi /var/www/diskover-web/public/fileactions/liveview/js/liveview.js
+
+// for web server to web server communication using php cURL instead of web browser ajax to remote web server use remotescandir.php
+var scandir_url = 'liveview/remotescandir.php';
+```
+
+🔴 &nbsp;Edit the `remotescandir.php` file and change `remote_server_url` located near the top of the file to your remote web server host url:
+```
+vi /var/www/diskover-web/public/fileactions/liveview/remotescandir.php
+
+// remote web server host url hosting scandir.php
+$remote_server_url = "https://<web server host>";
+```
+
+🔴 &nbsp;Copy `fileactions/liveview/scandir.php` to the remote web server used in `remotescandir.php` file.
 
 🔴 &nbsp;See above for setting timezone, path translations, etc for `scandir.php`.

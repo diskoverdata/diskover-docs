@@ -1,5 +1,5 @@
 ___
-## Xytech Asset Creation and Order Status Plugins
+## Xytech Plugins
 ___
 This chapter describes the features that are currently released enhancing file-based production workflows when using the Xytech Media Operations Platform. Extra metadata can be harvested to give addition business context allowing for efficient data flow management.
 

@@ -46,19 +46,17 @@ ___
 ___
 ### Searchable Media Info Fields and Examples
 
-#### File Resolution
-Field name: **media_info.resolution**
-
 | Attribute | Media Info Syntax | Examples |
 | --- | --- | --- |
 | **File Resolution** | ```media_info.resolution:``` | ```media_info.resolution:3840x2160``` |
 
-
+#### File Resolution
+Field name: **media_info.resolution**
 
 ```
 media_info.resolution:3840x2160
 ```
-> 🔎 _Would only look for this specific 3840x2160 resolution._
+   🔎 _Would only look for this specific 3840x2160 resolution._
 
 ```
 media_info.resolution:*1080*

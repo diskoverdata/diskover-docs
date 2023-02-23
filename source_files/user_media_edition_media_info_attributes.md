@@ -49,6 +49,12 @@ ___
 #### File Resolution
 Field name: **media_info.resolution**
 
+| Attribute | Media Info Syntax | Examples |
+| --- | --- | --- |
+| **File Resolution** | ```media_info.resolution:``` | ```media_info.resolution:3840x2160``` |
+
+
+
 ```
 media_info.resolution:3840x2160
 ```

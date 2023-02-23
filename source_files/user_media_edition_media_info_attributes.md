@@ -46,17 +46,29 @@ ___
 ___
 ### Searchable Media Info Fields and Examples
 
-| Attribute | Media Info Syntax | Examples |
-| --- | --- | --- |
-| **File Resolution** | ```media_info.resolution:``` | ```media_info.resolution:3840x2160``` |
+Here is a list of all the indexable media info attributes. Below this table you'll find examples/comments for each media info field, which you can copy using the icon at the right of each example > paste in the Diskover user interface search bar > edit as per your environment.
 
-#### File Resolution
+| Attribute | Media Info Syntax |
+| --- | --- |
+| **File resolution** | `media_info.resolution:` |
+| **Codec** | `media_info.codec:` |
+| **Codec long** | `media_info.codeclong:` |
+| **Codec tag** | `media_info.codectag:` |
+| **Pixel format** | `media_info.pixfmt:` |
+| **Frames** | `media_info.frames:` |
+| **Duration** | `media_info.duration:` |
+| **Frame rate** | `media_info.framerate:` |
+| **Bitrate** | `media_info.bitrate:` |
+| **Error** | `media_info.error:` |
+| **Warning** | `media_info.warning: |
+
+#### File resolution
 Field name: **media_info.resolution**
 
 ```
 media_info.resolution:3840x2160
 ```
-   🔎 _Would only look for this specific 3840x2160 resolution._
+> 🔎 _Would only look for this specific 3840x2160 resolution._
 
 ```
 media_info.resolution:*1080*
@@ -84,6 +96,13 @@ media_info.codeclong:*apple*
 media_info.codeclong:*quicktime*
 ```
 
+#### Codec tag
+Field name: **media_info.codectag**
+```
+media_info.codectag:*avc1*
+```
+
+
 #### Pixel Format
 Field name: **media_info.pixfmt**
 
@@ -110,7 +129,7 @@ media_info.frames:*30*
 
 
 #### Duration
-Field name: **media_info.pixfmt**
+Field name: **media_info.duration**
 
 🔆 &nbsp;_Note: Time format is **H:MM:SS.MS**_
 
@@ -124,9 +143,14 @@ media_info.duration:*30.*
 media_info.duration:*1:15:30.*
 ```
 
-> 🔎 _Would find all files with a duration that includes exactly 1 hour 15 minutes and 30 seconds, with any number milliseconds, example **1:15:30.0415**_
+#### Error
+Field name: **media_info.error**
 
-#### Framerate
+```
+media_info.error:*
+```
+
+#### Frame rate
 Field name: **media_info.framerate**
 
 ```
@@ -143,6 +167,23 @@ media_info.bitrate:*765*
 ```
 
 > 🔎 _Bitrate is a difficult field to search, but not impossible._
+
+___
+### Media Info Fields Containing Error or Warning
+
+If the media fields at the source are corrupted and/or Diskover determines the file as "suspect", the media info fields will show either **error** or **warning** within Diskover. Below are search queries to either exclude or pinpoint files with those values:
+
+To search all files with valid media info fields while excluding files with **error** and **warning**:
+
+```
+media_info:* NOT (media_info.error:* OR media_info.warning:*)
+```
+
+To search all files with media info fields containing **error** and **warning**:
+
+```
+media_info.error:* OR media_info.warning:*
+```
 
 ___
 ### Search on Media Info Fields with Operators
@@ -181,19 +222,3 @@ media_info.resolution:1920x1080 and media_info.codeclong:*quicktime*
 
 > 🔎 _Would find all files with 1080 or 1920 being part of the resolution, with file extension .mov, but would exclude file extension .mp4 from the results._
 
-___
-### Media Info Fields Containing Error or Warning
-
-If the media fields at the source are corrupted and/or Diskover determines the file as "suspect", the media info fields will show either **error** or **warning** within Diskover. Below are search queries to either exclude or pinpoint files with those values:
-
-To search all files with valid media info fields while excluding files with **error** and **warning**:
-
-```
-media_info:* NOT (media_info.error:* OR media_info.warning:*)
-```
-
-To search all files with media info fields containing **error** and **warning**:
-
-```
-media_info.error:* OR media_info.warning:*
-```

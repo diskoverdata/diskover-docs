@@ -4,7 +4,6 @@ ___
 
 Media attributes, like file resolution, codec, pixel format, etc., are harvested during indexing and are therefore available to enhance in-depth searches and deliver accurate results.
 
-___
 ### Hide/Unhide Media Info Column in Search Results Pane
 
 When using the file search page, you have access to a column with all the media attributes. If you cannot see that column, it means that it is hidden. To unhide that column, go to  **Settings**  >  **Hide fields in search results**  > unclick the box in front of  **media_info**.

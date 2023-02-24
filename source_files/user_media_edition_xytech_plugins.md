@@ -34,16 +34,22 @@ Here are the same values, customer ID and asset ID, displayed within Diskover:
 
 ![Image: Asset Information in Diskover File Attributes](images/image_aja_edition_mediapulse_asset_creation_within_diskover_ui_file attribute.png)
 
-### How to Search for Asset IDs in Diskover
+#### How to Search for Asset IDs in Diskover
 
-#### General Information
-The **asset id** is part of the metadata harvested by Diskover. If a file at the source doesn’t have an asset ID attached to it, it goes without saying that no details will be harvested and/or be available.
+##### General Information
+The **asset id** is part of the metadata harvested by Diskover. If a file at the source doesn’t have an asset ID attached to it, it goes without saying that no details will be harvested and/or be available within Diskover.
 
 In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#search_syntax), the AJA Diskover Media Edition allows end-users to search on Xytech asset ID number.
 
-#### Search Syntax
+##### Search Syntax
 
-Below is a list of all the indexable media info attributes. Following this table you'll find examples/comments for each media info field, which you can copy using the icon at the right of each example > paste in the Diskover user interface search bar > edit as per your needs.
+- The following syntax needs to be respected `xytech.asset_id:value`:
+    * **xytech.asset_id:** is not a variable.
+    * **value** is a variable as per the examples below.
+
+- Searching on **xytech** fields is case insensitive.
+
+- Your search query needs to be typed or pasted in the Diskover search bar.
 
 | Search Query Examples | Search Results |
 | --- | --- |
@@ -78,4 +84,30 @@ Example of Diskover customized Reports using order status attributes harvested f
 
 ![Image: Order Status within Xytech Media Order Platform](images/image_reporting_reports_report_example_diskover_ui.png)
 
-### How to Search for Assets in Diskover
+#### How to Search for Asset IDs in Diskover
+
+##### General Information
+The **order status** fields are part of the metadata harvested by Diskover. If a file at the source doesn’t have an asset ID attached to it, it goes without saying that no details will be harvested and/or be available within Diskover.
+
+In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#search_syntax), the AJA Diskover Media Edition allows end-users to search on Xytech order status information.
+
+##### Search Syntax
+
+- The following syntax needs to be respected `xytech.key:value`:
+    * **xytech** is not a variable.
+    * **key** is a variable like phase, account manager, etc.
+    * **value** is a variable as per the examples below.
+
+- Searching on **xytech** fields is case insensitive.
+
+- Your search query needs to be typed or pasted in the Diskover search bar.
+
+| Search Query Examples | Search Results |
+| --- | --- |
+| `xytech.phase:invoiced` | would find all files/directories with an invoiced status |
+| `xytech.account_manager:*Joe*` | would search for all files/directories with Joe as the account manager |
+| `xytech.begin_date:*2022-07-19*` | would search for all files/directories with a order status beginning date of 19 July, 20202 |
+| `xytech.due_date:*2022-07-19*` | would search for all files/directories with an order status due date of 19 July, 20202 |
+| `xytech.invoice_id:19782` | would search for all files/directories with invoice number 19782 |
+| `xytech.invoice_date:*2022-07-19*` | would search for all files/directories with an invoice date of 19 July, 20202 |
+

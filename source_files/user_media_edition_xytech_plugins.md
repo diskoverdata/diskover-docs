@@ -1,7 +1,7 @@
 ___
 ## Xytech Plugins
 ___
-This chapter describes the features that are currently released enhancing file-based production workflows when using the Xytech Media Operations Platform. Extra metadata can be harvested to give addition business context allowing for efficient data flow management.
+This chapter describes the features that are currently released enhancing file-based production workflows when using the Xytech Media Operations Platform. Extra metadata can be harvested to give additional business context allowing for efficient data flow management.
 
 [Click here to learn more about the Xytech Media Operations Platform.](https://www.xytechsystems.com/)
 
@@ -10,9 +10,9 @@ ___
 
 #### [🍿 Watch Demo Video | Xytech Asset Creation Plugin](https://vimeo.com/660789118)
 
-Post facilities often have customers’ assets that have been archived and lack findability, visibility, searchability, and therefore the opaque nature of these assets make them difficult to reuse or repurpose. Companies, with years of such archived assets, have often stored these on tape media or removable hard drives which are often stored in a physical vault.
+Post facilities often have customers’ assets that have been archived and lack findability, visibility, searchability, and therefore the opaque nature of these assets makes them difficult to reuse or repurpose. Companies, with years of such archived assets, have often stored these on tape media or removable hard drives which are often stored in a physical vault.
 
-Assets were often stored on such “offline” media due to costs, however with the advent of cloud and object storage, the economics are now making it viable to store such vaulted assets on more “online media”. Although, simply putting these assets onto online media does not necessarily make these assets findable in context or within the facility’s order management system.
+Assets were often stored on such “offline” media due to costs, however, with the advent of cloud and object storage, the economics are now making it viable to store such vaulted assets on more “online media”. Although, simply putting these assets onto online media does not necessarily make these assets findable in context or within the facility’s order management system.
 
 The Xytech asset creation tool is designed to find and index newly restored online assets from LTO tapes, removable hard drives, etc., making them available, findable, and searchable within the Xytech order management system, as well as Diskover.
 
@@ -39,7 +39,7 @@ Here are the same values, customer ID and asset ID, displayed within Diskover:
 ##### General Information
 The **asset id** is part of the metadata harvested by Diskover. If a file at the source doesn’t have an asset ID attached to it, it goes without saying that no details will be harvested and/or be available within Diskover.
 
-In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#search_syntax), the AJA Diskover Media Edition allows end-users to search on Xytech asset ID number.
+In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#search_syntax), the AJA Diskover Media Edition allows end-users to search on Xytech asset ID numbers.
 
 ##### Search Syntax
 
@@ -49,7 +49,7 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 
 - Searching on **xytech** fields is case insensitive.
 
-- Your search query needs to be typed or pasted in the Diskover search bar.
+- Your search query needs to be typed or pasted into the Diskover search bar.
 
 | Search Query Examples | Search Results |
 | --- | --- |
@@ -68,7 +68,7 @@ Facilities often manually correlate the order management system with the storage
 
 Therefore, the lack of integration for file-based workflows between the order management system and the underlying storage repositories, makes data management decisions difficult as they are solely based on attributes of files or objects on storage. Additional business context is needed from the order management system to increase precision and accuracy of data management decisions.
 
-An instance of key information might be the invoice date for a work order. A status change for a work order can be aa key indicator for data management, for example, once a [Xytech media order](https://www.xytechsystems.com/) has been “invoiced”, then the data associated with that media order can be a candidate for archival.
+An instance of key information might be the invoice date for a work order. A status change for a work order can be a key indicator for data management, for example, once a [Xytech media order](https://www.xytechsystems.com/) has been “invoiced”, then the data associated with that media order can be a candidate for archival.
 
 #### Order Status Information Within Xytech Application
 

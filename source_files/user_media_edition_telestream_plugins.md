@@ -1,5 +1,5 @@
 ___
-## Telestream GLIM and Vantage Seamless Integrations
+## Telestream GLIM and Vantage Plugins
 ___
 
 The GLIM and Vantage web tools are seamless integrations allowing end-users to securely view/validate source files, as well as submit files for transcoding, directly from Diskover, in one click from the Diskover web browser and without ever accessing the source assets themselves.

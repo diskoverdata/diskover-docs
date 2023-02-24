@@ -39,7 +39,7 @@ ___
 
 #### [🍿 Watch Demo Video | Xytech Order Status Plugin](https://vimeo.com/768967081)
 
-The Xytech order status plugin is designed to automate the correlation of the order management system and the storage system, by harvesting key business context from Xytech and applying that context within the [AJA Diskover Media Edition](https://diskoverdata.com/products/products-aja-media-edition/#xytech-order-status). In turn, this business context metadata can be used to automate workflows, monitor costs, create customized reports, etc.
+The Xytech order status plugin is designed to automate the correlation of the order management system and the storage system, by harvesting key business context from Xytech and applying that context within the AJA Diskover Media Edition. In turn, this business context metadata can be used to automate workflows, monitor costs, create customized reports, etc.
 
 Facilities often manually correlate the order management system with the storage repositories. However, manual processes are subject to human errors and difficult to scale as the volume of media orders and data turnover increases constantly.
 
@@ -51,11 +51,11 @@ An instance of key information might be the invoice date for a work order. A sta
 
 ![Image: Order Status within Xytech Media Order Platform](images/image_aja_edition_mediapulse_order_status_in_xytech.png)
 
-#### Asset Information Within Diskover
+#### Order Status Information Within Diskover
 
 Examples of order status attributes harvested from Xytech during Diskover indexing, which can be used to search, analyze, and automate workflows:
 
-<img src="images/image_diskover_xytech_order_status_attributes_completed.png" width="400"><img src="images/image_diskover_xytech_order_status_attributes_invoiced.png" width="400">
+<img src="images/image_diskover_xytech_order_status_attributes_completed.png" width="350">&nbsp;&nbsp;&nbsp;<img src="images/image_diskover_xytech_order_status_attributes_invoiced.png" width="350">
 
 Example of Diskover customized Reports using order status attributes harvested from Xytech, giving business context to regular data. 
 

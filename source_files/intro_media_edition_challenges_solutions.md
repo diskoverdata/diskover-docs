@@ -22,7 +22,7 @@ Tremendous person-hours wasted due to a lack of continuity and automation around
 
 | CHALLENGES | SOLUTIONS |
 |--|--|
-|Need to track orders through the production process, from order creation to invoicing and delivery.  | Diskover order management and scheduling plugins reduce or eliminate manual correlations and provide automation and scaling capabilities. One example of such plugin is Xytech MediaPulse. |
+|Need to track orders through the production process, from order creation to invoicing and delivery.  | Diskover order management and scheduling plugins reduce or eliminate manual correlations and provide automation and scaling capabilities. One example of such is the [Xytech Order Status Plugin](https://diskoverdata.com/products/products-aja-media-edition/#xytech-order-status). |
 |Order system is usually not an integral part of the storage infrastructure, affecting the ability to charge accurately for storage per specific project. | The cost analysis tool within Diskover provides the ability to associate a storage element to the cost of goods sold to a project, client, work order, etc. |
 |The inability to identify files that need to be managed at the source. | Diskover’s manual tagging and automated scheduled tasks insure for safe and methodical file management, as well as file findability. |
 

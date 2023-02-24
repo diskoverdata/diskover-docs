@@ -46,7 +46,7 @@ ___
 ___
 ### Searchable Media Info Fields and Examples
 
-Here is a list of all the indexable media info attributes. Below this table you'll find examples/comments for each media info field, which you can copy using the icon at the right of each example > paste in the Diskover user interface search bar > edit as per your environment.
+Below is a list of all the indexable media info attributes. Following this table you'll find examples/comments for each media info field, which you can copy using the icon at the right of each example > paste in the Diskover user interface search bar > edit as per your needs.
 
 | Attribute | Media Info Syntax |
 | --- | --- |
@@ -60,7 +60,7 @@ Here is a list of all the indexable media info attributes. Below this table you'
 | **Frame rate** | `media_info.framerate:` |
 | **Bitrate** | `media_info.bitrate:` |
 | **Error** | `media_info.error:` |
-| **Warning** | `media_info.warning: |
+| **Warning** | `media_info.warning:` |
 
 #### File resolution
 Field name: **media_info.resolution**

@@ -34,6 +34,23 @@ Here are the same values, customer ID and asset ID, displayed within Diskover:
 
 ![Image: Asset Information in Diskover File Attributes](images/image_aja_edition_mediapulse_asset_creation_within_diskover_ui_file attribute.png)
 
+### How to Search for Asset IDs in Diskover
+
+#### General Information
+The **asset id** is part of the metadata harvested by Diskover. If a file at the source doesn’t have an asset ID attached to it, it goes without saying that no details will be harvested and/or be available.
+
+In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#search_syntax), the AJA Diskover Media Edition allows end-users to search on Xytech asset ID
+
+#### Search Syntax
+
+Below is a list of all the indexable media info attributes. Following this table you'll find examples/comments for each media info field, which you can copy using the icon at the right of each example > paste in the Diskover user interface search bar > edit as per your needs.
+
+| Search Query Examples | Search Results |
+| --- | --- |
+| `xytech.asset_id:*` | would find all files/directories with any asset ID attached to them |
+| `xytech.asset_id:1495193` | would search for the specific asset ID number 1495193 |
+| `xytech.asset_id:*123*` | would search for partial digits 123 anywhere in the asset ID number |
+
 ___
 ### Xytech Order Status Plugin
 
@@ -61,3 +78,4 @@ Example of Diskover customized Reports using order status attributes harvested f
 
 ![Image: Order Status within Xytech Media Order Platform](images/image_reporting_reports_report_example_diskover_ui.png)
 
+### How to Search for Assets in Diskover

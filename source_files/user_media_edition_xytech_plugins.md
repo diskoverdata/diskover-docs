@@ -20,9 +20,13 @@ The plugin operates on the assumption that the assets restored to online media a
 
 The path location is added to the asset within Xytech and the asset number is assigned to the file via a tag within the Diskover Index.
 
+#### Asset Information Within Xytech Application
+
 Here is an example of an asset rehydration as viewed in the Xytech application:
 
-![Asset Information in MediaPulse](images/image_aja_edition_mediapulse_asset_creation_within_mediapulse_ui_1495193.png)
+![Asset Information in Xytech](images/image_aja_edition_mediapulse_asset_creation_within_mediapulse_ui_1495193.png)
+
+#### Asset Information Within Diskover
 
 Here are the same values, customer ID and asset ID, displayed within Diskover:
 
@@ -35,12 +39,25 @@ ___
 
 #### [🍿 Watch Demo Video | Xytech Order Status Plugin](https://vimeo.com/768967081)
 
-Facilities often manually correlate the order management system with the storage repositories. However, manual processes are subject to human errors and difficult to scale as the volume of media orders and data turnover increases rapidly and constantly.
+The Xytech order status plugin is designed to automate the correlation of the order management system and the storage system, by harvesting key business context from Xytech and applying that context within the [AJA Diskover Media Edition](https://diskoverdata.com/products/products-aja-media-edition/#xytech-order-status). In turn, this business context metadata can be used to automate workflows, monitor costs, create customized reports, etc.
+
+Facilities often manually correlate the order management system with the storage repositories. However, manual processes are subject to human errors and difficult to scale as the volume of media orders and data turnover increases constantly.
 
 Therefore, the lack of integration for file-based workflows between the order management system and the underlying storage repositories, makes data management decisions difficult as they are solely based on attributes of files or objects on storage. Additional business context is needed from the order management system to increase precision and accuracy of data management decisions.
 
-An instance of key information might be the invoice date for a work order. A status change for a work order can be a key indicator for data management, for example, once a [Xytech](https://www.xytechsystems.com/) media order has been invoiced, then the data associated with that media order can be a candidate for archival.
+An instance of key information might be the invoice date for a work order. A status change for a work order can be aa key indicator for data management, for example, once a [Xytech media order](https://www.xytechsystems.com/) has been “invoiced”, then the data associated with that media order can be a candidate for archival.
 
-The Xytech order status plugin is designed to automate the correlation of the order management system and the storage system, by harvesting key business context from Xytech and applying that context within the AJA Diskover Media Edition platform.
+#### Order Status Information Within Xytech Application
 
-![Image: Order Status within Xytech MediaPulse Order Managemenet](images/image_aja_edition_mediapulse_order_status_in_xytech.png)
+![Image: Order Status within Xytech Media Order Platform](images/image_aja_edition_mediapulse_order_status_in_xytech.png)
+
+#### Asset Information Within Diskover
+
+Examples of order status attributes harvested from Xytech during Diskover indexing, which can be used to search, analyze, and automate workflows:
+
+<img src="images/image_diskover_xytech_order_status_attributes_completed.png" width="400"><img src="images/image_diskover_xytech_order_status_attributes_invoiced.png" width="400">
+
+Example of Diskover customized Reports using order status attributes harvested from Xytech, giving business context to regular data. 
+
+![Image: Order Status within Xytech Media Order Platform](images/image_reporting_reports_report_example_diskover_ui.png)
+

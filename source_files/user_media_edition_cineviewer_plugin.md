@@ -33,6 +33,6 @@ D) Closed captions.
 
 E) Zoom in, zoom out, fit screen.
 
-F) Full screen mode.
+F) Full-screen mode.
 
 G) About CineViewer and go back to Diskover.

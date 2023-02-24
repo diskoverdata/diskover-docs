@@ -24,9 +24,9 @@ Below is an example of the location where you can see detailed media attributes.
 ___
 ### General Notes on Searching Media Attributes
 
-The media attributes are part of the metadata harvested exclusively by the AJA Diskover Media Edition. If a file at the source doesn’t include any of these attributes, it goes without saying that no details will be harvested and/or be available.
+The media attributes are part of the metadata harvested exclusively by the AJA Diskover Media Edition. If a file at the source doesn’t include any of these attributes, it goes without saying that no details will be harvested and/or available.
 
-In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#search_syntax), the AJA Diskover Media Edition allows end-users to search on media specific attributes.
+In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#search_syntax), the AJA Diskover Media Edition allows end-users to search on media-specific attributes.
 
 - As media fields’ info can be complex, unless you know exactly what you are looking for, we strongly recommend using the [* wild card](https://docs.diskoverdata.com/diskover_user_guide/#wild-card) for ease of searching and to expand your results.
 
@@ -156,7 +156,7 @@ Field name: **media_info.framerate**
 media_info.framerate:*23*
 ```
 
-> 🔎 _Would return all files with standard framerate of 23.976 or 23.98_
+> 🔎 _Would return all files with a standard framerate of 23.976 or 23.98_
 
 #### Bitrate
 Field name: **media_info.bitrate**

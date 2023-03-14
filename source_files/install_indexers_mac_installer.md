@@ -105,7 +105,7 @@ The following outlines:
 
 <img src="images/image_indexers_install_with_mac_installer_step_9a_install_successful_v6.png" width="600">
 
-If you get the message **The installation failed**, please consider these possible issues:
+⚠️ If you get the message **The installation failed**, please consider these possible issues:
 
 <img src="images/image_indexers_install_with_mac_installer_step_9b_install_failed.png" width="600">
 
@@ -190,16 +190,19 @@ After the license is installed, you are now ready to index/scan your first direc
 
 ![Image: Index selected directory](images/image_indexers_install_with_mac_installer_license_tool_index_a_directory.png)
 
-> If the user see's the following error mesasge when trying to browse to a directory to index, it means that the installed version of Python needs to be given full-disk-access in System Preferences.
+> ⚠️ If the user see's the following error mesasge when trying to browse to a directory to index, it means that the installed version of Python needs to be given full-disk-access in System Preferences.
 > <img src="images/image_indexers_install_with_mac_installer_python_needs_full_access_1.png" width="700">
 >
 > 🔴 &nbsp;Start by opening **System Preferences** to the **Security & Privacy** tab and select **Full Disk Access** in the left pane.
+>
 > <img src="images/image_indexers_install_with_mac_installer_python_needs_full_access_2.png" width="500">
 >
 > 🔴 &nbsp;Open the Finder application by clicking on the icon in the dock OR just click anywhere on your desktop and hit COMMAND + SHIFT + G. 
-> <img src="icon_mac_finder_app.png" width="200">
+>
+> <img src="images/icon_mac_finder_app.png" width="200">
 >
 > 🔴 &nbsp;This will open a Finder window with a bar on it which you can paste a path into.
+>
 > <img src="images/image_indexers_install_with_mac_installer_python_needs_full_access_3.png" width="500">
 >
 > 🔴 &nbsp;Click on a bar to edit it and paste the following path into that bar and hit return. The finder window will then change to that directory:
@@ -208,9 +211,11 @@ After the license is installed, you are now ready to index/scan your first direc
 > ```
 >
 > 🔴 &nbsp;_If you are running the latest OS version:_ Go back to your **System Preferences** and **Privacy & Security**. Click the **+** at the bottom of the window, you may need to type your desktop password. A finder window will open, select the directory **Library > Frameworks > Python.fremework > Versions > 3.11 > bin**, then select **python3.11** which will then be added to your **Full Disk Access** list. Toggle the button **on** to allow full access.
+>
 > <img src="images/image_indexers_install_with_mac_installer_python_needs_full_access_4.png" width="400">
 > 
 > 🔴 &nbsp;_If you are running an older OS version:_ Locate the file in that directory named **python3.11** and drag it into **Full Disk Access** window on **System Preferences** as shown below where it says **Allow the applications below…**. Make sure there is a check mark next to it so it is enabled. 
+>
 > <img src="images/image_indexers_install_with_mac_installer_python_needs_full_access_5.png" width="400">
 >
 > 🔴 &nbsp;Now you can either **restart** your computer or for the more technically inclined users, you can execute the two following commands.

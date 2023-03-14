@@ -197,7 +197,7 @@ After the license is installed, you are now ready to index/scan your first direc
 >
 > <img src="images/image_indexers_install_with_mac_installer_python_needs_full_access_2.png" width="500">
 >
-> 🔴 &nbsp;Open the Finder application by clicking on the icon in the dock OR just click anywhere on your desktop and hit COMMAND + SHIFT + G. 
+> 🔴 &nbsp;Open the Finder application by clicking on the icon in the dock OR just click anywhere on your desktop and hit **COMMAND + SHIFT + G**: 
 >
 > <img src="images/icon_mac_finder_app.png" width="200">
 >

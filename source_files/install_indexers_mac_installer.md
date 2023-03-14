@@ -226,6 +226,7 @@ After the license is installed, you are now ready to index/scan your first direc
 >
 >```
 > sudo systemctl unload /Library/LaunchDaemons/com.diskoverdata.diskover-tools.plist
+> 
 > sudo systemctl load -w /Library/LaunchDaemons/com.diskoverdata.diskover-tools.plist
 > ```
 

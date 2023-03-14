@@ -189,7 +189,6 @@ After the license is installed, you are now ready to index/scan your first direc
 
 ![Image: Index selected directory](images/image_indexers_install_with_mac_installer_license_tool_index_a_directory.png)
 
-⚠️ 
 > ⚠️ &nbsp;If you see the following error message when trying to browse to a directory to index, it means that the installed version of Python needs to be given **Full Disk Access** in **System Preferences**.
 >
 > <img src="images/image_indexers_install_with_mac_installer_python_needs_full_access_1.png" width="700">

@@ -184,13 +184,13 @@ After the license is installed, you are now ready to index/scan your first direc
 <img src="images/image_indexers_install_with_mac_installer_license_tool_drop_down_index_dir_v6.png" width="200">
 
 🔴 &nbsp;Select your root volume or browse to index a particular directory, then click **Index selected directory**.
-
-	- Redo this step as many times as needed to index/scan all your desired directories.
-	- Diskover scans in parallel, so you don't have to wait for a scan to be finished to start another one.
+- Redo this step as many times as needed to index/scan all your desired directories.
+- Diskover scans in parallel, so you don't have to wait for a scan to be finished to start another one.
 
 ![Image: Index selected directory](images/image_indexers_install_with_mac_installer_license_tool_index_a_directory.png)
 
-> ⚠️ If the user see's the following error mesasge when trying to browse to a directory to index, it means that the installed version of Python needs to be given full-disk-access in System Preferences.
+> ⚠️ &nbsp;If the user see's the following error mesasge when trying to browse to a directory to index, it means that the installed version of Python needs to be given full-disk-access in **System Preferences**.
+>
 > <img src="images/image_indexers_install_with_mac_installer_python_needs_full_access_1.png" width="700">
 >
 > 🔴 &nbsp;Start by opening **System Preferences** to the **Security & Privacy** tab and select **Full Disk Access** in the left pane.

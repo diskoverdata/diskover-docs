@@ -208,11 +208,12 @@ After the license is installed, you are now ready to index/scan your first direc
 >
 > <img src="images/image_indexers_install_with_mac_installer_python_needs_full_access_3.png" width="800">
 >
-> 🔴 &nbsp;_If you are running the latest OS version:_ Go back to your **System Preferences** and **Privacy & Security**. Click the **+** at the bottom of the window, you may need to type your desktop password. A finder window will open, select the directory **Library > Frameworks > Python.fremework > Versions > 3.11 > bin**, then select **python3.11** which will then be added to your **Full Disk Access** list. Toggle the button **on** to allow full access.
+> 🔴 &nbsp;_**If you are running the latest OS version:**_ Go back to your **System Preferences** and **Privacy & Security**. Click the **+** at the bottom of the window, you may need to type your desktop password. A finder window will open, select the directory **Library > Frameworks > Python.fremework > Versions > 3.11 > bin**, then select **python3.11** which will then be added to your **Full Disk Access** list. Toggle the button **on** to allow full access.
 >
 > <img src="images/image_indexers_install_with_mac_installer_python_needs_full_access_4.png" width="500">
-> 
-> 🔴 &nbsp;_If you are running an older OS version:_ Locate the file in that directory named **python3.11** and drag it into **Full Disk Access** window on **System Preferences** as shown below where it says **Allow the applications below…**. Make sure there is a check mark next to it so it is enabled. 
+>
+>
+> 🔴 &nbsp;_**If you are running an older OS version:**_ Locate the file in that directory named **python3.11** and drag it into **Full Disk Access** window on **System Preferences** as shown below where it says **Allow the applications below…**. Make sure there is a check mark next to it so it is enabled. 
 >
 > <img src="images/image_indexers_install_with_mac_installer_python_needs_full_access_5.png" width="600">
 >

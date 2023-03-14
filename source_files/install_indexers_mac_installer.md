@@ -222,7 +222,8 @@ After the license is installed, you are now ready to index/scan your first direc
 > <img src="images/image_indexers_install_with_mac_installer_python_needs_full_access_5.png" width="600">
 >
 >
-> 🔴 &nbsp;Now you can either **restart** your computer or for the more technically inclined users, you can execute the two following commands.
+> 🔴 &nbsp;Now you can either **restart** your computer, or for the more technically inclined users you can execute the two following commands.
+>
 >```
 > sudo systemctl unload /Library/LaunchDaemons/com.diskoverdata.diskover-tools.plist
 > sudo systemctl load -w /Library/LaunchDaemons/com.diskoverdata.diskover-tools.plist

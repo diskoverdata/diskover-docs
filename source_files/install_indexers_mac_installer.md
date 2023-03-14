@@ -192,11 +192,11 @@ After the license is installed, you are now ready to index/scan your first direc
 > ⚠️ &nbsp;If you see the following error message when trying to browse to a directory to index, it means that the installed version of Python needs to be given **Full Disk Access** in **System Preferences**.
 >
 > <img src="images/image_indexers_install_with_mac_installer_python_needs_full_access_1.png" width="700">
->
+> <br>
 > 🔴 &nbsp;Start by opening **System Preferences** to the **Security & Privacy** tab and select **Full Disk Access** in the left pane.
->
+> 
 > <img src="images/image_indexers_install_with_mac_installer_python_needs_full_access_2.png" width="600">
->
+> <br>
 > 🔴 &nbsp;Open the Finder application by clicking on the icon in the dock OR just click anywhere on your desktop and hit **COMMAND + SHIFT + G**: 
 >
 > <img src="images/icon_mac_finder_app.png" width="125">

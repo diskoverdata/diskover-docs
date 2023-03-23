@@ -91,11 +91,11 @@ python3 diskover.py -i diskover-s3-bucketname --altscanner scandir_s3 s3://bucke
 
 #### Additional s3 Index Fields
 
-🔴 &nbsp;Additional ES index fields are added for s3 and can be added to diskover-web's config file to **EXTRA_FIELDS** setting:
+🔴 &nbsp;Additional ES index fields (keywords) are added for s3 and can be added to diskover-web's config file to **EXTRA_FIELDS** setting:
 
 ```
  const EXTRA_FIELDS = [
-     'Azure Tier' => 'azure_tier',
-     'Azure Etag' => 'azure_etag'
+     's3 tier' => 's3_storageclass',
+     's3 etag' => 's3_etag'
 ];
 ```

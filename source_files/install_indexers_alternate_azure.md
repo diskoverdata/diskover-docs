@@ -44,7 +44,7 @@ python3 diskover.py -i diskover-azure-containername --altscanner scandir_azure a
 
 ```
  const EXTRA_FIELDS = [
-     'azure tier' => 'azure_tier',
-     'azure etag' => 'azure_etag'
+     'Azure tier' => 'azure_tier',
+     'Azure etag' => 'azure_etag'
 ];
 ```

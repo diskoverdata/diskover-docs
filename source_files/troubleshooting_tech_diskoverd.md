@@ -13,7 +13,7 @@ ___
 ```
 python3 diskoverd.py -v -n <worker name>
 ```
->Note: -n is optional, use -h for all cli options
+> _Note:_ -n is optional, use -h for all cli options
 
 ### Log Debug
 
@@ -67,4 +67,4 @@ ps -ef | grep diskover
 ```
 kill <pid>
 ```
->Note: after killing a diskover.py indexing process, the index will be in a corrupt state and should be deleted.
+> _Note:_ after killing a diskover.py indexing process, the index will be in a corrupt state and should be deleted.

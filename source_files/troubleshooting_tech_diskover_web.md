@@ -64,7 +64,7 @@ If tasks are running a lot longer than usual or expected, it could be from an er
 ps -ef | grep diskover.py
 kill <pid>
 ```
->Note: Any diskover.py index scan process that was killed will leave a corrupt index that should be deleted.
+> _Note:_ Any diskover.py index scan process that was killed will leave a corrupt index that should be deleted.
 
 🔴 &nbsp; Check after that the task shows last status as `Failed`. If it shows that it is still `Running`, you may need to reset the task status by clicking the task drop down button and clicking `Reset Status`.
 
@@ -102,15 +102,13 @@ ___
 
 By default Diskover-web does not load all indices in Elasticsearch. This is for performance reasons in case there are thousands of indices in Elasticsearch.
 
-First check that there are not any missing indices in Elasticsearch.
-
-To see all diskover indices in Elasticsearch:
+🔴 &nbsp;First check that there are not any missing indices in Elasticsearch. To see all diskover indices in Elasticsearch:
 
 ```
 curl -X GET "htt://<eshost>:9200/_cat/indices/diskover-*?v=true&s=index&pretty"
 ```
 
-on AWS ES/OpenSearch:
+  On AWS ES/OpenSearch:
 
 ```
 curl -X GET -u user:pass "http://<aws es endpoint>/_cat/indices/diskover-*?v=true&s=index&pretty"
@@ -126,7 +124,7 @@ ___
 
 If you are running nginx reverse proxy and see in your nginx error log "upstream sent too big header while reading response header from upstream" and you are seeing bad gateway 502 errors, you will need to adjust your nginx buffer sizes:
 
-On Nginx reverse proxy host in nginx config file:
+🔴 &nbsp;On Nginx reverse proxy host in nginx config file:
 ```
 http {
   proxy_buffer_size   128k;
@@ -135,6 +133,21 @@ http {
 }
 ```
 
-After making changes, you will need to restart/reload nginx service.
+🔴 &nbsp;After making changes, you will need to restart/reload nginx service.
 
 More info in the [nginx documentation](http://nginx.org/en/docs/http/ngx_http_proxy_module.html)
+
+___
+### Error 500 Upon Login
+
+🔴 &nbsp;Double-check your permissions are set properly for RHEL / CentOS:
+
+```
+chmod 660 /var/www/diskover-web/public/*.txt
+
+chmod 660 /var/www/diskover-web/public/tasks/*.json
+
+chown -R root:nginx /var/lib/php
+
+chown -R nginx:nginx /var/lib/php/session
+```

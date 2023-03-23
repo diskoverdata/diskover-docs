@@ -37,3 +37,14 @@ python3 diskover.py --altscanner scandir_azure az://containername
 cd /opt/diskover
 python3 diskover.py -i diskover-azure-containername --altscanner scandir_azure az://containername
 ```
+
+#### Additional Azure Blob Index Fields
+
+🔴 &nbsp;Additional ES index fields (keywords) are added for Azure blobs and can be added to diskover-web's config file to **EXTRA_FIELDS** setting:
+
+```
+ const EXTRA_FIELDS = [
+     'azure tier' => 'azure_tier',
+     'azure etag' => 'azure_etag'
+];
+```

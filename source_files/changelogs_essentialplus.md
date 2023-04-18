@@ -5,6 +5,41 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.1.1] - 2023-04-18
+##### fixed
+- diskover.py SIGTERM handling
+- diskover.py bad file/directory timestamp handling
+##### added
+- Elasticsearch 8.x support
+- checksums crawl plugin v0.0.2
+- checksums post index plugin v0.0.3
+- checksums s3 post index plugin v0.0.4
+- offline media scanner v0.0.1
+- Windows attributes post index plugin v0.0.3 (Pro +)
+    - gets and indexes Windows owner, group, dacl
+##### changed
+- updated diskoverd to v2.1.1
+    - bug fixes
+- updated dupes finder plugin to v2.0.10
+    - SIGTERM handling
+    - added csvdir config setting to default/sample config
+    - added handling of ES BulkIndexError/TransportError Exception to exit
+- updated indexdiff plugin to v1.0.5
+    - added csvdir config setting to default/sample config
+- updated es query report plugin to v0.1.4
+    - bug fixes
+- updated tag copier to v2.0.3
+    - added handling of ES BulkIndexError/TransportError Exception to exit
+    - minor improvements
+- updated es field copier to v0.1.3
+    - added handling of ES BulkIndexError/TransportError Exception to exit
+    - minor improvements
+- updated illegal file name plugin to v0.1.5
+    - minor improvements
+- updated autoclean plugin to v0.0.7
+    - added Windows long path support
+
+
 #### [2.1.0] - 2023-02-06
 ##### fixed
 - python error when indexing spaceinfo doc and disk space > max size for ES long field mapping (s3fs mount)
@@ -738,6 +773,35 @@ ___
 
 ___
 ### Diskover-web v2 Annual Subscription Editions Changelog
+
+#### [2.1.1] - 2023-04-18
+##### fixed
+- issue with tagging and Elasticsearch 8.x
+- export to csv/json not working when large number of search results being exported
+- issue with ES_SSLVERIFICATION config setting
+- tagging issues in Windows
+- issue with always use latest indices (auto select indices) and some indices with similar names not loading
+- setting crawl directory to / in task panel not working
+##### added
+- Elasticsearch 8.x support
+- PHP 8.x support
+- Okta logins/auth (Pro +)
+    - new OKTA config settings in default/sample config Constants.php.sample
+- option to use json file for index mappings
+    - new INDEX_MAPPINGS_USE_FILE config setting in default/sample config Constants.php.sample
+- edit index mappings to settings page (admin)
+- Top Paths collapsible tree/menu on search results and nav menu
+    - "TOPPATH_TREE" config setting to Constants.php.sample and config defaults, copy to your Constants.php config
+- API ldap/ad auth
+    - "API_AUTH_LDAP_ENABLED" config setting to Constants.php.sample and config defaults, copy to your Constants.php config 
+- index mappings can now use ldap usernames
+- index mappings group/user names now support wildcards
+##### changed
+- updated Hash Diffs file action web plugin to v0.0.2 (in fileaction_samples directory)
+    - bug fixes
+- updated api to v2.0.8
+    - added ldap/ad auth
+ 
 
 #### [2.1.0] - 2023-02-06
 ##### fixed

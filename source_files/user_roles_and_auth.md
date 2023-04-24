@@ -32,7 +32,9 @@ The following information is required to configure LDAP authentication:
 
 **LDAP_PORT** - Examples: 389 or 636
 
-**LDAP_BASEDN** - The LDAP base domain name, example: dc=DOMAIN,dc=COM
+**LDAP_DOMAIN** - The LDAP domain name, example: `domain.com`
+
+**LDAP_BASEDN** - The LDAP base dn of domain, example: `dc=DOMAIN,dc=COM`
 
 At least three AD groups should be established for Diskover and set in web config:
 1. Admin group added to **LDAP_ADMIN_GROUPS**

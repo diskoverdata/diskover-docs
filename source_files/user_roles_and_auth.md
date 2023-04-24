@@ -53,7 +53,7 @@ vim /var/www/diskover-web/src/diskover/Constants.php
 ___
 ### Okta Authentication
 
-Diskover-Web supports authenticating/authorizing users using Okta.
+Diskover-Web supports authenticating/authorizing users using Okta. This doc does not cover adding an application to Okta admin page. You will need to first add an Oauth application (Web app) to your Okta admin page for Diskover-Web.
 
 The following information is required to configure Okta authentication/authorization:
 

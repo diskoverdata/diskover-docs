@@ -28,7 +28,7 @@ The following information is required to configure LDAP authentication:
 
 **LDAP_LOGINS** - set to TRUE to enable and use ldap logins
 
-**LDAP_HOST** - The URL to use to contact the DC, examples: ldap://dc.domain.com or ldaps://dc.domain.com
+**LDAP_HOST** - The URL to use to contact the DC, examples: `ldap://dc.domain.com` or `ldaps://dc.domain.com`
 
 **LDAP_PORT** - Examples: 389 or 636
 
@@ -62,10 +62,10 @@ The following information is required to configure Okta authentication/authoriza
 
 **OKTA_OAUTH2_CLIENT_SECRET** - your Okta oauth2 application client secret
 
-**OKTA_OAUTH2_REDIRECT_URI** - your Okta login redirect URI, example: https://diskover.domain.com/login.php?callback
+**OKTA_OAUTH2_REDIRECT_URI** - your Okta login redirect URI, example: `https://diskover.domain.com/login.php?callback`
 >Note: login.php page handles the redirect uri when using `callback` parameter
 
-**OKTA_OAUTH2_LOGOUT_REDIRECT_URI** - your Okta post logout redirect URI, example: https://diskover.domain.com/
+**OKTA_OAUTH2_LOGOUT_REDIRECT_URI** - your Okta post logout redirect URI, example: `https://diskover.domain.com/`
 
 **OKTA_OAUTH2_ISSUER** - your Okta API authorization server issuer URI
 

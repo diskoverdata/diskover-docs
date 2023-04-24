@@ -17,23 +17,29 @@ vim /var/www/diskover-web/src/diskover/Constants.php
 
 <img src="images/image_user_auth_local_user_config.png" width="750">
 
+>Note: The passwords stored in web config file (Constants.php) are only used as the default initial passwords when first logging in to Diskover-Web. On first login, you will be asked to change the password and the password will be stored and encrypted in sqlite db and default password in web config will no longer be used.
+
 ___
 ### LDAP / Active Directory Authentication
 
-Diskover-Web supports authenticating users from Active Directory over Lightweight Directory Access Protocol. LDAP integration can be used to authenticate users against a Microsoft Domain Controller (DC).
+Diskover-Web supports authenticating users from Active Directory over Lightweight Directory Access Protocol (LDAP). LDAP integration can be used to authenticate users against a Microsoft Domain Controller (DC).
 
 The following information is required to configure LDAP authentication:
 
-**LDAP HOST** - The URL to use to contact the DC, example: ldap://dc.diskoverdata.com
+**LDAP_LOGINS** - set to TRUE to enable and use ldap logins
 
-**LDAP PORT** - Example: 389
+**LDAP_HOST** - The URL to use to contact the DC, examples: ldap://dc.domain.com or ldaps://dc.domain.com
 
-**LDAP BASE DOMAIN** - The LDAP name space to use for queries, example: DC=diskoverdata, DC=com
+**LDAP_PORT** - Examples: 389 or 636
 
-At least three AD groups should be established for Diskover:
-1. Admin group
-2. User group  
-3. Task panel group  
+**LDAP_BASEDN** - The LDAP base domain name, example: dc=DOMAIN,dc=COM
+
+At least three AD groups should be established for Diskover and set in web config:
+1. Admin group added to **LDAP_ADMIN_GROUPS**
+2. User group added to **LDAP_USER_GROUPS**
+3. Task panel group added to **LDAP_TASK_PANEL_GROUPS**
+
+>Note: at login, the ad/ldap user will be checked if they are in one of these above ad/ldap groups. If they are not in any of these groups, they will be denied access to log in.
 
 🔴 &nbsp;To configure AD / LDAP login authentication:
 ```
@@ -41,6 +47,37 @@ vim /var/www/diskover-web/src/diskover/Constants.php
 ```
 
 ![Image: LADP / Active Directory Authentication](images/image_user_auth_ladp_login_auth.png)
+
+___
+### Okta Authentication
+
+Diskover-Web supports authenticating/authorizing users using Okta.
+
+The following information is required to configure Okta authentication/authorization:
+
+**OKTA_LOGINS** - set to TRUE to enable and use Okta login
+>Note: when using Okta login, local and ldap login is not used
+
+**OKTA_OAUTH2_CLIENT_ID** - your Okta oauth2 application client id
+
+**OKTA_OAUTH2_CLIENT_SECRET** - your Okta oauth2 application client secret
+
+**OKTA_OAUTH2_REDIRECT_URI** - your Okta login redirect URI, example: https://diskover.domain.com/login.php?callback
+>Note: login.php page handles the redirect uri when using `callback` parameter
+
+**OKTA_OAUTH2_LOGOUT_REDIRECT_URI** - your Okta post logout redirect URI, example: https://diskover.domain.com/
+
+**OKTA_OAUTH2_ISSUER** - your Okta API authorization server issuer URI
+
+**OKTA_API_URL_BASE** - your Okta API URL
+
+**OKTA_API_TOKEN** - your Okta API Token
+
+At least two Okta groups should be established for Diskover and set in web config:
+1. Admin group added to **OKTA_ADMIN_GROUPS**
+2. Task panel group added to **OKTA_TASK_PANEL_GROUPS**
+
+>Note: at login, the Okta user will be checked if they are in one of these above Okta groups.
 
 ___
 ### Restricting Visibility and Access

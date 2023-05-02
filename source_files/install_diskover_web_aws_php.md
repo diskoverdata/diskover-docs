@@ -1,6 +1,8 @@
 ___
 ### Install PHP 7 and PHP-FPM (FastCGI)
 
+>Note: PHP 8 can also be used instead of PHP 7, replace php74/php7.4 with php81/php8.1
+
 🔴 &nbsp;Perform the following commands to install PHP:
 ```
 yum-config-manager --enable remi-php74

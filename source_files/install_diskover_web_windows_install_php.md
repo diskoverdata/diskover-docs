@@ -1,5 +1,7 @@
 #### Install PHP
 
+>Note: PHP 8.1 can also be used instead of PHP 7.4
+
 🔴 &nbsp;Go to the official download link and download the required version of PHP 7.4.x for Windows: [https://www.php.net/downloads.php](https://www.php.net/downloads.php)
 
 🔴 &nbsp;Download the **Thread Safe** version 7.4.X for Windows.

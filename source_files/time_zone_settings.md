@@ -2,6 +2,12 @@ ___
 ## Setting Time Zones
 ___
 
+### OS Date/Time
+
+It is important that all hosts running Elasticsearch, Diskover, Diskover-web, etc. have their OS date/time configured correctly and NTP (network time protocol) set up to ensure times are set correct. Please check your OS time is set up correctly after install.
+
+### Time Zone Settings for Diskover
+
 Diskover can be configured for local time zones, since Diskover is a distributed, scale out architecture, the time zone will need to be configured for each distributed component.
 
 Use the official **TZ database name** options for Diskover that can be found here:

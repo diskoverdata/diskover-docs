@@ -23,10 +23,10 @@ diff <diskover_dir>/configs_sample/diskover/config.yaml ~/.config/diskover/confi
 cd <diskover-web_dir>/src/diskover && diff Constants.php.sample Constants.php 
 ```
 
-🔴 &nbsp;Restart NGINX and PHP-FPM:
+🔴 &nbsp;Set permissions:
 ```
-systemctl restart nginx
-systemctl restart php-fpm
+chown -R root:nginx /var/run/php-fpm
+chown -R nginx:nginx /var/lib/php/session
 ```
 
 🔴 &nbsp;Check for any errors in NGINX log (ex: permission issues):

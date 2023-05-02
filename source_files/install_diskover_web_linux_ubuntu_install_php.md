@@ -1,6 +1,6 @@
 #### Install PHP 7 and PHP-FPM (FastCGI)
 
->Note: PHP 8 can also be used instead of PHP 7, replace php7.4 with php8.1
+>Note: PHP 8 can also be used instead of PHP 7, replace php74/php7.4 with php81/php8.1
 
 🔴 &nbsp;Configure a repository on your system to add PHP PPA. Run the following command to add **ondrej** PHP repository to your Ubuntu system:
 ```

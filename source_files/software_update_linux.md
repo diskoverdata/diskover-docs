@@ -50,14 +50,10 @@ sudo systemctl start diskoverd
 sudo systemctl status diskoverd
 ```
 
-🔴 &nbsp;Restart NGINX:
+🔴 &nbsp;Set permissions:
 ```
-systemctl restart nginx
-```
-
-🔴 &nbsp;Restart PHP-FPM:
-```
-systemctl restart php-fpm
+chown -R root:nginx /var/run/php-fpm
+chown -R nginx:nginx /var/lib/php/session
 ```
 
 🔴 &nbsp;Check for any errors in NGINX log (ex: permission issues):

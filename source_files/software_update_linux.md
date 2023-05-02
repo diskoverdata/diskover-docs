@@ -30,10 +30,12 @@ rsync -rcv diskover-web/ /var/www/diskover-web/
 
 🔴 &nbsp;Set proper file systems permissions on Diskover files:
 ```
+CentOS/RedHat:
 chown -R nginx:nginx /var/www/diskover-web
 chmod 660 /var/www/diskover-web/public/*.txt
 chmod 660 /var/www/diskover-web/public/tasks/*.json
 ```
+>Note: For Ubuntu, use www-data user instead of nginx.
 
 🔴 &nbsp;Check your config files are not missing any new settings:
 >Important: Refer to [changelog](https://docs.diskoverdata.com/diskover_changelogs/) for any new breaking config changes. Changes are also in CHANGELOG.md files in diskover and diskover-web directories.
@@ -55,6 +57,7 @@ sudo systemctl status diskoverd
 chown -R root:nginx /var/run/php-fpm
 chown -R nginx:nginx /var/lib/php/session
 ```
+>Note: For Ubuntu, use www-data user instead of nginx.
 
 🔴 &nbsp;Check for any errors in NGINX log (ex: permission issues):
 ```

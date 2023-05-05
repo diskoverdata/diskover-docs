@@ -180,7 +180,7 @@ const API_USER = 'diskoverapi';
 const API_PASS = 'apisecret';
 ```
 
-🔴 &nbsp; The password API_PASS in web config is only used as default password and this password needs to be changed. Login to Diskover-web as admin, go to settings page and scroll to the API Password section and click change password. A new secure password will be set and stored in sqlite db.
+🔴 &nbsp; The api password `API_PASS` in web config is only used as default password and this password needs to be changed. Login to Diskover-web as admin, go to settings page and scroll to the API Password section and click change password. Set a new password and the password will be securely stored in sqlite db.
 
 > _Note:_ When changing API Auth settings, remember to update [diskoverd](https://docs.diskoverdata.com/diskover_installation_guide/#setting-up-diskover-task-worker-daemon) task worker daemon config to use the new auth settings.
 

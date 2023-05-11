@@ -28,7 +28,8 @@ The following information is required to configure LDAP authentication:
 
 **LDAP_LOGINS** - set to TRUE to enable and use ldap logins
 
-**LDAP_HOST** - The URL to use to contact the DC, examples: `ldap://dc.domain.com` or `ldaps://dc.domain.com`
+**LDAP_HOST** - The full LDAP URI, examples: `ldap://dc.domain.com:389` or `ldaps://dc.domain.com:636` for SSL encryption.
+>Note: You can also provide multiple LDAP-URIs separated by a space as one string.
 
 **LDAP_PORT** - Examples: 389 or 636
 

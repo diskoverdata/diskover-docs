@@ -6,7 +6,24 @@ ___
 
 The CineViewer Player is a seamless integration allowing end-users to securely view/validate media files in one click from the Diskover web browser, without ever accessing the source asset itself.
 
-[Click here to learn more about the CineViewer Player developed by CineSys.io](https://cinesys.io/portfolio/cineviewer-player/)
+[Click here to learn more about the CineViewer Player developed and sold exclusively by CineSys.io](https://cinesys.io/portfolio/cineviewer-player/)
+
+___
+### License Key and Credientials
+
+The first time you launch the CineViewer, you will need to request and install a license key.
+
+1. Click on **Request License Key** and fill out the required fields. 
+
+![Image: CineViewer Player License Request and Installation](images/image_file_action_cineviewer_license.png)
+
+2. The license key will be emailed to the address you entered in the previous step. Click on **Enter License Key** and paste all the lines including **====BEGIN LICENSE KEY====** and **====END LICENSE KEY====** as shown in this example:
+
+![Image: CineViewer Player License Key Installation](images/image_file_action_cineviewer_license_key.png)
+
+3. You will then be prompted to enter your login credentials:
+
+![Image: CineViewer Player Login](images/image_file_action_cineviewer_login.png)
 
 ___
 ### How to Launch the CineViewer Player

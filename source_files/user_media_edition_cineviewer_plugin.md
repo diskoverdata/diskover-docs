@@ -56,7 +56,7 @@ ___
 | = | zoom in |
 | - | zoom out |
 | m | audio mute toggle |
-| <arrow up> | audio volume up |
+| ↑ | audio volume up |
 | <arrow down> | audio volume down |
 | <arrow left> | previous frame |
 | <arrow right> | next frame |

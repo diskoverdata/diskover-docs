@@ -57,9 +57,9 @@ ___
 | - | zoom out |
 | m | audio mute toggle |
 | ↑ | audio volume up |
-| <arrow down> | audio volume down |
-| <arrow left> | previous frame |
-| <arrow right> | next frame |
+| ↓ | audio volume down |
+| ← | previous frame |
+| → | next frame |
 | space bar | play/pause |
 | p | play/pause |
   

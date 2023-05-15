@@ -43,3 +43,18 @@ E) Zoom in, zoom out, fit screen.
 F) Full-screen mode.
 
 G) About CineViewer and go back to Diskover.
+
+___
+### Keyboard Shortcuts
+
+
+| KEY | COMMAND |
+| --- | --- |
+| a | Zoom fit |
+| c | Zoom center |
+| <1-9> | Zoom X |
+| = | Zoom in |
+| - | Zoom out |
+| m | Audio mute toggle |
+| ˰ | Audio volume up |
+| ˰ | Audio volume up |

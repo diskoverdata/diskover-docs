@@ -7,7 +7,7 @@ ___
 
 The CineViewer Player is designed to securely view high resolution media from a remote browser, without giving users access to the source files. Through the Diskover user interface, CineViewer allows for seamless validation of media assets, therefore increasing productivity, while safeguarding your production network.
 
-![Image: Media Info Field in UI Results Pane](images/image_plugins_media_info_diskover_ui_column_in_results_pane.png)
+![Image: CineViewer Player Preview](images/image_file_action_cineviewer_preview.png)
 
 #### CineViewer Plugin Configuration
 

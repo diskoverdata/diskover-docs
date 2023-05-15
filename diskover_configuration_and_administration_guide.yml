@@ -39,6 +39,7 @@ ordered_documents:
   - plugins_es_query_report.md
   - plugins_media_harvest.md
   - plugins_xytech_asset_creation.md
+  - plugins_cineviewer_player.md
   - plugins_bam_harvest.md
   - plugins_display_extra_fields.md
   - plugins_diskover_web_file_actions_intro.md

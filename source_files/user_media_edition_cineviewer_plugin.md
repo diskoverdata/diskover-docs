@@ -13,6 +13,8 @@ ___
 
 The first time you launch the CineViewer, you might be prompted to enter the login credentials you received from your system administrator:
 
+<img src="images/image_file_action_cineviewer_login.png" width="500">
+
 ![Image: CineViewer Player Login](images/image_file_action_cineviewer_login.png)
 
 ___

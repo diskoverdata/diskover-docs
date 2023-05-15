@@ -1,14 +1,14 @@
 ___
-### Xytech MediaPulse Asset Creation Plugin
+### Xytech Media Operations Platform Asset Creation Plugin
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
-#### Xytech MediaPulse Asset Creation Plugin Introduction
-Post facilities often have customer assets stored on LTO tape media. However, these assets are difficult to discover within Xytech MediaPulse if there is no MediaPulse Asset ID in the customers vault of assets. The plugin is designed to use the Diskover indexer to discover newly restored customer assets from any media. The assets are restored into a folder with naming convention **CustomerNumber_CustomerName**. 
+#### Xytech Asset Creation Plugin Introduction
+Post facilities often have customer assets stored on LTO tape media. However, these assets are difficult to discover within the Xytech Media Operations Platform if there is no Asset ID in the customers vault of assets. The plugin is designed to use the Diskover indexer to discover newly restored customer assets from any media. The assets are restored into a folder with naming convention **CustomerNumber_CustomerName**. 
 
-The MediaPulse Asset Creation plugin then uses the Xytech API to create an asset for the customer in the vault library. The path location is added to the asset within MediaPulse and the asset # is assigned as a tag to the file/object within the Diskover index.
+The Xytech Asset Creation plugin then uses the Xytech API to create an asset for the customer in the vault library. The path location is added to the asset within Xytech and the asset # is assigned as a tag to the file/object within the Diskover index.
 
-#### Xytech MediaPulse Asset Creation Plugin Installation
+#### Xytech Asset Creation Plugin Installation
 
 🔴 &nbsp;Extract **DiskoverXytechPlugin-master.zip**:
 
@@ -31,7 +31,7 @@ mkdir /opt/diskover/plugins_postindex/xytech_plugin
 ls -l /tmp/DiskoverXytechPlugin-master
 ```
 
-![Image: List MediaPulse Asset Creation Plugin Content](images/image_plugin_mediapulse_asset_list_content.png)
+![Image: List Xytech Asset Creation Plugin Content](images/image_plugin_mediapulse_asset_list_content.png)
 
 🔴 &nbsp;Copy files to proper locations:
 
@@ -53,7 +53,7 @@ pip3 install suds-community
 vim /root/.config/diskover_xytech_asset/config.yaml
 ```
 
-![Image: Configure MediaPulse Asset Creation Plugin Settings](images/image_plugin_mediapulse_asset_config_settings.png)
+![Image: Configure Xytech Asset Creation Plugin Settings](images/image_plugin_mediapulse_asset_config_settings.png)
 
 **Diskover Endpoint:**
 
@@ -63,7 +63,7 @@ vim /root/.config/diskover_xytech_asset/config.yaml
 
 `ESEndpoint: http://172.22.8.31:9200`
 
-**MediaPulse Credentials:**
+**Xytech Credentials:**
 
 `MPDBName: VIZ_DEV`
 
@@ -72,7 +72,7 @@ vim /root/.config/diskover_xytech_asset/config.yaml
 `MPPassword: p4ssword`
 
 
-**MediaPulse WSDL file ABSOLUTE path:**
+**Xytech WSDL file ABSOLUTE path:**
 
 `MPWSDLAbsolutePath: /opt/diskover/plugins_postindex/xytech_plugin/wsdl/XytechAPI.wsdl`
 
@@ -94,14 +94,14 @@ vim /root/.config/diskover_xytech_asset/config.yaml
 vim /opt/diskover/plugins_postindex/xytech_plugin/XytechAPI.wsdl
 ```
 
-![Image: Configure MediaPulse Asset Creation API Endpoint](images/image_plugin_mediapulse_config_api_endpoint.png)
+![Image: Configure Xytech Asset Creation API Endpoint](images/image_plugin_mediapulse_config_api_endpoint.png)
 
 **Set Xytech API Endpoint:**
 ```
 <soap:address location="http://172.23.1.154:8008/XytechAPI" />
 ```
 
-🔴 &nbsp;Run MediaPulse Asset Creation Plugin:
+🔴 &nbsp;Run Xytech Asset Creation Plugin:
 
 ```
 cd /opt/diskover/plugins_postindex/xytech_plugin/
@@ -113,4 +113,4 @@ cd /opt/diskover/plugins_postindex/xytech_plugin/
 ./diskover-xytech-asset.py
 ```
 
-![Image: Run MediaPulse Asset Creation Plugin](images/image_plugin_mediapulse_run_plugin.png)
+![Image: Run Xytech Asset Creation Plugin](images/image_plugin_mediapulse_run_plugin.png)

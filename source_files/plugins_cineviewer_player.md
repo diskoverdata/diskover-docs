@@ -23,11 +23,11 @@ The CineViewer Player is designed to securely view high resolution media from a 
 
 The first time you launch the CineViewer, you will need to request and install a license key from CineSys.io.
 
-1. Click on **Request License Key** and fill out the required fields. 
+🔴 &nbsp;Click on **Request License Key** and fill out the required fields. 
 
 ![Image: CineViewer Player License Request and Installation](images/image_file_action_cineviewer_license.png)
 
-2. The license key will be emailed to the address you entered in the previous step. Click **Enter License Key** and paste all the lines including **====BEGIN LICENSE KEY====** and **====END LICENSE KEY====** as shown in this example:
+🔴 &nbsp;The license key will be emailed to the address you entered in the previous step. Click **Enter License Key** and paste all the lines including **====BEGIN LICENSE KEY====** and **====END LICENSE KEY====** as shown in this example:
 
 ![Image: CineViewer Player License Key Installation](images/image_file_action_cineviewer_license_key.png)
 

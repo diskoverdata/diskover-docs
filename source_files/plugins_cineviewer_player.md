@@ -17,7 +17,7 @@ The CineViewer Player is designed to securely view high resolution media from a 
 
 🔴 &nbsp;Details coming soon.
 
-![Image: CineViewer Player Login](images/image_file_action_cineviewer_login.png)
+<img src="images/image_file_action_cineviewer_login.png" width="500">
 
 #### License Key Request and Installation
 

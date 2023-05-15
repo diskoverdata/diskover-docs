@@ -50,11 +50,16 @@ ___
 
 | KEY | COMMAND |
 | --- | --- |
-| a | Zoom fit |
-| c | Zoom center |
-| <1-9> | Zoom X |
-| = | Zoom in |
-| - | Zoom out |
-| m | Audio mute toggle |
-| ˰ | Audio volume up |
-| ˰ | Audio volume up |
+| a | zoom fit |
+| c | zoom center |
+| 1 to 9 | zoom X |
+| = | zoom in |
+| - | zoom out |
+| m | audio mute toggle |
+| <arrow up> | audio volume up |
+| <arrow down> | audio volume down |
+| <arrow left> | previous frame |
+| <arrow right> | next frame |
+| space bar | play/pause |
+| p | play/pause |
+  

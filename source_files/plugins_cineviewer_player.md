@@ -5,7 +5,7 @@ ___
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
-CineViewer is a video playback and management system designed for video and broadcast professionals. It is designed to securely view high resolution media from a remote browser, without giving users access to the source files, as well as play content that may not be supported by standard web browsers, including file formats such as ProRes and MXF. Additionally, Cineviewer allows users to play back image sequences in formats such as DPX and EXR. The player can be launched in one click from the AJA Diskover Media Edition user interface, allowing for seamless validation of media assets, therefore increasing productivity, while safeguarding your production network.
+CineViewer is a video playback and management system designed for video and broadcast professionals. It is designed to securely view high-resolution media from a remote browser, without giving users access to the source files, as well as play content that may not be supported by standard web browsers, including file formats such as ProRes and MXF. Additionally, Cineviewer allows users to play back image sequences in formats such as DPX and EXR. The player can be launched in one click from the AJA Diskover Media Edition user interface, allowing for seamless validation of media assets, therefore increasing productivity, while safeguarding your production network.
 
 With its timecode-accurate playback and seeking capabilities, CineViewer enables users to navigate through content with precision. The system also supports up to 16 channels of audio, providing a variety of audio configuration options to accommodate different projects. Furthermore, Cineviewer includes closed captioning functionality, ensuring an accessible experience for all users.
 
@@ -129,11 +129,11 @@ journalctl --lines 0 --follow _SYSTEMD_UNIT=cineviewer.service
 
 #### Configuration
 
-CineViewer has two configuration files to control the app. The first is the app defualt configuration, usually `/opt/cinesys/cineveiwer/app/configure-default.json` which contains all the default values for the app.
+CineViewer has two configuration files to control the app. The first is the app default configuration, usually `/opt/cinesys/cineveiwer/app/configure-default.json` which contains all the default values for the app.
 
 The other configuration file, usually `/opt/cinesys/cineveiwer/configure.json` contains the changes specific to the installation.
 
-🔴 &nbsp;A `configure.json` only needs to assign values that are different from the defaults. For example the configure file to change the port used:
+🔴 &nbsp;A `configure.json` only needs to assign values that are different from the defaults. For example, the configure file to change the port used:
 
 ```
 { 
@@ -153,7 +153,7 @@ The other configuration file, usually `/opt/cinesys/cineveiwer/configure.json` c
 
 #### User Configuration | Login Credentials
 
-By default Cineviewer is not login protected. To enable basic logins a users config setting can be added. Note the app can also make use of the Active Directory module to enable logins at larger facilities.
+By default, CineViewer is not login protected. To enable basic logins a users' config setting can be added. Note the app can also make use of the Active Directory module to enable logins at larger facilities.
 
 ```
 "users": {
@@ -244,7 +244,7 @@ All file system mounts have 3 common fields:
 
 ##### File System Mounts
 
-To make files on a standard operating system available use the **FS mount**. The FS mount uses the field **path** to point towards the desired directory.
+To make files on a standard operating system available use the **FS mount**. The FS mount uses the field **path** to point toward the desired directory.
 
 ```
 "toast": {
@@ -284,12 +284,12 @@ To make files on a standard operating system available use the **FS mount**. The
 
 #### Navigating and Finding Content
 
-- You can click on a directory to change into that directory.
+- You can click on a directory to change to that directory.
 - Clicking on a media file will open the Viewer. 
 - You can sort the current directory by clicking on the headers above the file list, clicking twice will reverse the order. 
-- On the right side there is **Search** field where you can search from the current directory. 
+- On the right side, there is a **Search** field where you can search from the current directory. 
 - To go back up a directory you can click the **Up Directory** button in the file list or click on the **Path** text in the upper left corner of the app.
 
-One great feature of Cineviewer is that when you move through directories or view content, the browser URL updates to link to that directory or content. This way simply copying the url allows you to share a particular directory, video, or even a single frame of content.
+One great feature of Cineviewer is that when you move through directories or view content, the browser URL updates to link to that directory or content. This way simply copying the URL allows you to share a particular directory, video, or even a single frame of content.
 
 <img src="images/image_file_action_cineviewer_localhost.png" width="900">

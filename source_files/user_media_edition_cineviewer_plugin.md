@@ -4,9 +4,9 @@ ___
 
 #### [🍿 Watch Demo Video | CineViewer Player Plugin](https://vimeo.com/765285042)
 
-Cineviewer is a video playback and management system designed for video and broadcast professionals. It is designed to securely view high resolution media from a remote browser, without giving users access to the source files. The player can be launched in one click from the AJA Diskover Media Edition user interface, allowing for seamless validation of media assets, therefore increasing productivity, while safeguarding your production network.
+CineViewer is a video playback and management system designed for video and broadcast professionals. It is designed to securely view high resolution media from a remote browser, without giving users access to the source files. The player can be launched in one click from the AJA Diskover Media Edition user interface, allowing for seamless validation of media assets, therefore increasing productivity, while safeguarding your production network.
 
-The following sections will guide you through the features and functions of Cineviewer, helping you utilize this tool effectively for your video and broadcast needs.
+The following sections will guide you through the features and functions of CineViewer, helping you utilize this tool effectively for your video and broadcast needs.
 
 [Click here to learn more about the CineViewer Player developed and sold exclusively by CineSys.io](https://cinesys.io/portfolio/cineviewer-player/)
 
@@ -48,11 +48,11 @@ F) Audio panel toggle to open the audio controls, will show levels for up to 16 
 
 <img src="images/image_file_action_cineviewer_audio_panel.png" width="500">
 
-G) Closed captions panel toggle to open the controls. Cineviewer supports multiple closed caption languages from SRT files. Cineviewer will look for a **.srt** with the same base name as well as in a **Subs** directory.
+G) Closed captions panel toggle to open the controls. CineViewer supports multiple closed caption languages from SRT files. CineViewer will look for a **.srt** with the same base name as well as in a **Subs** directory.
 
 <img src="images/image_file_action_cineviewer_closed_caption.png" width="275">
 
-H) Zoom panel toggle to open the zoom and pan controls, Cineviewer supports zoom and pan on content for better inspection of frames. Zoom can also be controled through the keyboard shortcuts as described in the next section.
+H) Zoom panel toggle to open the zoom and pan controls, CineViewer supports zoom and pan on content for better inspection of frames. Zoom can also be controled through the keyboard shortcuts as described in the next section.
 
 <img src="images/image_file_action_cineviewer_zoom_panel.png" width="300">
 
@@ -85,7 +85,7 @@ J) Menu to open extra interfaces for plugins and core features:
 ___
 ### Keyboard Shortcuts
 
-The following keyboard shortcuts can be found in the **Help** menu of the Cineviewer app.
+The following keyboard shortcuts can be found in the **Help** menu of the CineViewer app.
 
 | KEY | COMMAND |
 | --- | --- |
@@ -105,4 +105,4 @@ The following keyboard shortcuts can be found in the **Help** menu of the Cinevi
 ___
 ### Conclusion
 
-We hope you will find Cineviewer to be easy to use and of great benefit at your facility. Please be sure to let us know what you think and also any ideas you may have to improve the product by [contacting the CineSys and Diskover team](mailto:support@cineviewer.io,support@diskoverdata.com).
+We hope you will find CineViewer to be easy to use and of great benefit at your facility. Please be sure to let us know what you think and also any ideas you may have to improve the product by [contacting the CineSys and Diskover team](mailto:support@cineviewer.io,support@diskoverdata.com).

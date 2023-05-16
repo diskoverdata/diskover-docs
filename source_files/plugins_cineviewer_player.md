@@ -79,7 +79,7 @@ When Cineviewer is first installed or the license expires you will see the licen
 
 🔴 &nbsp;The license key will be emailed to the address you entered in the previous step. Click **Enter License Key** and paste all the lines including **====BEGIN LICENSE KEY====** and **====END LICENSE KEY====** as shown in this example. Click **Update License**:
 
-![Image: CineViewer Player License Key Installation](images/image_file_action_cineviewer_license_key.png)
+![Image: CineViewer Player License Key Installation](images/image_file_action_cineviewer_paste_license_key.png)
 
 🔴 &nbsp;Cineviewer should reload the page and be operational.
 

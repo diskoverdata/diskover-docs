@@ -224,7 +224,7 @@ Cineviewer has basically two modes of operation, the **file browser** and the **
 
 One of Cineviewer's biggest strengths is its file system abstraction layer called **Toast**. Toast allows the app to treat files on the local file system the same as files on S3 or even in an asset management system such as Portal or Iconik. Toast directories are configured via the `toast.mounts` configuration.
 
-![Image: CineViewer File Browser](images/image_file_action_cineviewer_file_browser.png)
+<img src="images/image_file_action_cineviewer_file_browser.png" width="750">
 
 ##### Configuring Different Types of File System
 

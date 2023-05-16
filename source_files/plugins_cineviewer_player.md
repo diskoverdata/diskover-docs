@@ -185,14 +185,14 @@ The Diskover module option has multiple settings. The most important is the `dis
 
 ```
 "diskover": {
-    "login": false, 
-    "strict": true,
-    "path": "/var/www/diskover-web",
-    "sessdir": "/var/lib/php/session",
-    "self_url": "https://diskover-demo.cinesys.io/cineplayer/",
-    "diskover_url": "https://diskover-demo.cinesys.io/",
-    "search_url": "https://diskover-demo.cinesys.io/searchjson.php",
-    "login_page": "https://diskover-demo.cinesys.io/login.php"
+        "login":   false,
+        "strict":   true,
+        "path":    "/var/www/diskover-web",
+        "sessdir": "/var/lib/php/session",
+        "self_url": "https://diskover-demo.cinesys.io/cineplayer/",
+        "diskover_url": "https://diskover-demo.cinesys.io/",
+        "search_url": "https://diskover-demo.cinesys.io/searchjson.php",
+        "login_page":   "https://diskover-demo.cinesys.io/login.php"
 }
 ```
 
@@ -261,24 +261,24 @@ To make files on a standard operating system available use the **FS mount**. The
         "name":"Record",
         "path": "/mnt/records"
     },
-}
+ }
 ```
 
 ##### AWS S3 Mounts
 
 ```
-   {
-       "type":"s3",
-           "prefix":"S3:",
-           "name":"cinesys-io-s3",
-            "path": "cinesys-io-s3",
-            "bucket": "cinesys-io",
-           "path": "support",
-            "region": "us-east-1",
-           "key": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-           "secret": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-   },
-  ]
+    {
+         "type":"s3",
+         "prefix":"S3:",
+         "name":"cinesys-io-s3",
+         "path": "cinesys-io-s3",
+         "bucket": "cinesys-io",
+         "path": "support",
+         "region": "us-east-1",
+         "key": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+         "secret": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    },
+   ]
 }
 ```
 

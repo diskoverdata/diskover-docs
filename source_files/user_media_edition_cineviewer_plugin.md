@@ -48,7 +48,7 @@ F) Audio panel toggle to open the audio controls, will show levels for up to 16 
 
 G) Closed captions panel toggle to open the controls. Cineviewer supports multiple closed caption languages from SRT files. Cineviewer will look for a **.srt** with the same base name as well as in a **Subs** directory.
 
-<img src="images/image_file_action_cineviewer_closed_caption.png" width="250">
+<img src="images/image_file_action_cineviewer_closed_caption.png" width="275">
 
 H) Zoom panel toggle to open the zoom and pan controls, Cineviewer supports zoom and pan on content for better inspection of frames. Zoom can also be controled through the keyboard shortcuts as described in the next section.
 
@@ -58,17 +58,22 @@ I) Fullscreen mode, either press the same button or **ESC** to close fullscreen 
 
 J) Menu to open extra interfaces for plugins and core features:
 
-<img src="images/image_file_action_cineviewer_menu.png" width="150">
+<img src="images/image_file_action_cineviewer_menu.png" width="175">
 
-  **Metadata**:
-
-the latest documentation under **Help**, and the CineViewer version under **About**.
-
-
-
-<img src="images/image_file_action_cineviewer_about.png" width="400">
-
-<img src="images/image_file_action_cineviewer_about.png" width="400">
+> **About** provides info about the current installed version:
+> <img src="images/image_file_action_cineviewer_about.png" width="400">
+>
+> **Open** returns the system to the file browser mode:
+>![Image: CineViewer File Browser](images/image_file_action_cineviewer_file_browser.png)
+>
+> **Help** offers direct access to the latest documentation, keyboard shortcuts, and info about contacting support for the product:
+> <img src="image_file_action_cineviewer_help.png" width="300">
+> 
+> **Metadata** to see the attributes of the current media file:
+> <img src="images/image_file_action_cineviewer_metadata.png" width="300">
+>
+> **Diskover** to do a quick search within Diskover without leaving the CineViewer app:
+> <img src="images/image_file_action_cineviewer_menu_diskover.png" width="300">
 
 ___
 ### Keyboard Shortcuts
@@ -90,3 +95,7 @@ The following keyboard shortcuts can be found in the **Help** menu of the Cinevi
 | space bar | play/pause |
 | p | play/pause |
   
+___
+### Conclusion
+
+We hope you will find Cineviewer to be easy to use and of great benefit at your facility. Please be sure to let us know what you think and also any ideas you may have to improve the product by [contacting the CineSys and Diskover team](mailto:support@cineviewer.io,support@diskoverdata.com).

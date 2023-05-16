@@ -141,9 +141,9 @@ The other configuration file, usually `/opt/cinesys/cineveiwer/configure.json` c
 
 | SETTING | PURPOSE |
 | --- | --- |
-| **transcode** | for switching out transcoders ffmpeg |
-| **cineplay** | for controlling the cache location |
-| **toast** | for adding file mounts and access |
+| **transcode** | For switching out transcoders ffmpeg |
+| **cineplay** | For controlling the cache location |
+| **toast** | For adding file mounts and access |
 
 #### User Configuration | Login Credentials
 
@@ -196,7 +196,7 @@ The Diskover module option has multiple settings. The most important is the `dis
 "cineplay": {
     "cache": "./cache",
     "cache_expire": "120"
-}
+},
 ```
 
 #### File Mounts
@@ -222,7 +222,7 @@ Cineviewer has basically two modes of operation, the **file browser** and the **
 
 ##### Using the File Browser
 
-One of Cineviewer's biggest strengths is its file system abstraction layer called **Toast**. Toast allows the app to treat files on the local filesystem the same as files on S3 or even in an asset management system such as Portal or Iconik. Toast directories are configured via the `toast.mounts` configuration.
+One of Cineviewer's biggest strengths is its file system abstraction layer called **Toast**. Toast allows the app to treat files on the local file system the same as files on S3 or even in an asset management system such as Portal or Iconik. Toast directories are configured via the `toast.mounts` configuration.
 
 ![Image: CineViewer File Browser](images/image_file_action_cineviewer_file_browser.png)
 
@@ -230,5 +230,60 @@ One of Cineviewer's biggest strengths is its file system abstraction layer calle
 
 All file system mounts have 3 common fields:
 
-**type**
+| FIELD | PURPOSE |
+| --- | --- |
+| **type** | File system type |
+| **prefix** | Prefix shown on the Path |
+| **name** | Name shown on the navigation button |
 
+##### File System Mounts
+
+To make files on a standard operating system available use the **FS mount**. The FS mount uses the field **path** to point towards the desired directory.
+
+```
+"toast": {
+    "mounts": [
+    {
+        "type":"fs",
+        "prefix":"Production:",
+        "name":"Production",
+        "path": "/mnt/production"
+    },
+    {
+        "type":"fs",
+        "prefix":"Records:",
+        "name":"Record",
+        "path": "/mnt/records"
+    },
+}
+```
+
+##### AWS S3 Mounts
+
+```
+   {
+       "type":"s3",
+           "prefix":"S3:",
+           "name":"cinesys-io-s3",
+            "path": "cinesys-io-s3",
+            "bucket": "cinesys-io",
+           "path": "support",
+            "region": "us-east-1",
+           "key": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+           "secret": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+   },
+  ]
+}
+```
+
+#### Navigating and Finding Content
+
+- You can click on a directory to change into that directory.
+- Clicking on a media file will open the Viewer. 
+- You can sort the current directory by clicking on the headers above the file list, clicking twice will reverse the order. 
+- On the right side there is **Search** field where you can search from the current directory. 
+- To go back up a directory you can click the **Up Directory** button in the file list or click on the **Path** text in the upper left corner of the app.
+
+One great feature of Cineviewer is that when you move through directories or view content, the browser URL updates to link to that directory or content. This way simply copying the url allows you to share a particular directory, video, or even a single frame of content.
+
+<img src="images/image_file_action_cineviewer_localhost.png" width="700">

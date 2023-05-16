@@ -4,14 +4,14 @@ ___
 
 #### [🍿 Watch Demo Video | CineViewer Player Plugin](https://vimeo.com/765285042)
 
-CineViewer is a video playback and management system designed for video and broadcast professionals. It is designed to securely view high resolution media from a remote browser, without giving users access to the source files. The player can be launched in one click from the AJA Diskover Media Edition user interface, allowing for seamless validation of media assets, therefore increasing productivity, while safeguarding your production network.
+CineViewer is a video playback and management system designed for video and broadcast professionals. It is designed to securely view high-resolution media from a remote browser, without giving users access to the source files. The player can be launched in one click from the AJA Diskover Media Edition user interface, allowing for seamless validation of media assets, therefore increasing productivity, while safeguarding your production network.
 
 The following sections will guide you through the features and functions of CineViewer, helping you utilize this tool effectively for your video and broadcast needs.
 
 [Click here to learn more about the CineViewer Player developed and sold exclusively by CineSys.io](https://cinesys.io/portfolio/cineviewer-player/)
 
 ___
-### Login Credientials
+### Login Credentials
 
 The first time you launch the CineViewer, you might be prompted to enter the login credentials you received from your system administrator:
 
@@ -44,7 +44,7 @@ D) Jump forward by 15 seconds increment.
 
 E) Jump backward by 15 seconds increment.
 
-F) Audio panel toggle to open the audio controls, will show levels for up to 16 channels. Clicking on the **S** button will solo channels while muting others. Clicking on the **M** button will mute that channel. There is also a main **mute** and **volume** slider at the top of this audio panel. Alternatively the keyboard can be used for main volume control via the **up** and **down** arrows.
+F) Audio panel toggle to open the audio controls, will show levels for up to 16 channels. Clicking on the **S** button will solo channels while muting others. Clicking on the **M** button will mute that channel. There is also a main **mute** and **volume** slider at the top of this audio panel. Alternatively, the keyboard can be used for main volume control via the **up** and **down** arrows.
 
 <img src="images/image_file_action_cineviewer_audio_panel.png" width="500">
 
@@ -52,7 +52,7 @@ G) Closed captions panel toggle to open the controls. CineViewer supports multip
 
 <img src="images/image_file_action_cineviewer_closed_caption.png" width="275">
 
-H) Zoom panel toggle to open the zoom and pan controls, CineViewer supports zoom and pan on content for better inspection of frames. Zoom can also be controled through the keyboard shortcuts as described in the next section.
+H) Zoom panel toggle to open the zoom and pan controls, CineViewer supports zoom and pan on content for better inspection of frames. Zoom can also be controlled through the keyboard shortcuts as described in the next section.
 
 <img src="images/image_file_action_cineviewer_zoom_panel.png" width="300">
 
@@ -62,7 +62,7 @@ J) Menu to open extra interfaces for plugins and core features:
 
 <img src="images/image_file_action_cineviewer_menu.png" width="175">
 
-> **About** provides info about the current installed version:
+> **About** provides info about the currently installed version:
 >
 > <img src="images/image_file_action_cineviewer_about.png" width="400">
 >

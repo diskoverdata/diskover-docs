@@ -48,7 +48,7 @@ F) Audio panel toggle to open the audio controls, will show levels for up to 16 
 
 G) Closed captions panel toggle to open the controls. Cineviewer supports multiple closed caption languages from SRT files. Cineviewer will look for a **.srt** with the same base name as well as in a **Subs** directory.
 
-<img src="images/image_file_action_cineviewer_closed_caption.png" width="350">
+<img src="images/image_file_action_cineviewer_closed_caption.png" width="300">
 
 H) Zoom panel toggle to open the zoom and pan controls, Cineviewer supports zoom and pan on content for better inspection of frames. Zoom can also be controled through the keyboard shortcuts as described in the next section.
 
@@ -58,7 +58,7 @@ I) Fullscreen mode, either press the same button or **ESC** to close fullscreen 
 
 J) Menu to open extra interfaces for plugins and core features:
 
-<img src="images/image_file_action_cineviewer_menu.png" width="400">
+<img src="images/image_file_action_cineviewer_menu.png" width="250">
 
   **Metadata**:
 

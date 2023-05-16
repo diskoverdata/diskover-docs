@@ -61,18 +61,23 @@ J) Menu to open extra interfaces for plugins and core features:
 <img src="images/image_file_action_cineviewer_menu.png" width="175">
 
 > **About** provides info about the current installed version:
+>
 > <img src="images/image_file_action_cineviewer_about.png" width="400">
 >
 > **Open** returns the system to the file browser mode:
->![Image: CineViewer File Browser](images/image_file_action_cineviewer_file_browser.png)
+>
+> ![Image: CineViewer File Browser](images/image_file_action_cineviewer_file_browser.png)
 >
 > **Help** offers direct access to the latest documentation, keyboard shortcuts, and info about contacting support for the product:
+>
 > <img src="image_file_action_cineviewer_help.png" width="300">
 > 
 > **Metadata** to see the attributes of the current media file:
+>
 > <img src="images/image_file_action_cineviewer_metadata.png" width="300">
 >
 > **Diskover** to do a quick search within Diskover without leaving the CineViewer app:
+>
 > <img src="images/image_file_action_cineviewer_menu_diskover.png" width="300">
 
 ___

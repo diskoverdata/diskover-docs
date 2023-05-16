@@ -139,12 +139,11 @@ The other configuration file, usually `/opt/cinesys/cineveiwer/configure.json` c
 
 🔴 &nbsp;A quick overview of some of the settings:
 
-| transcode | test |
-| cineplay | test |
-
-**transcode** > for switching out transcoders ffmpeg
-**cineplay** > for controlling the cache location
-**toast** > for adding file mounts and access
+| SETTING | PURPOSE |
+| --- | --- |
+| **transcode** | for switching out transcoders ffmpeg |
+| **cineplay** | for controlling the cache location |
+| **toast** | for adding file mounts and access |
 
 #### User Configuration | Login Credentials
 

@@ -71,11 +71,11 @@ When Cineviewer is first installed or the license expires you will see the licen
 
 🔴 &nbsp;To get a license key start by clicking the **Request License Key** button and fill out the required fields.
 
-<img src="images/image_file_action_cineviewer_license_request.png" width="500">
+<img src="images/image_file_action_cineviewer_license_request.png" width="400">
 
 🔴 &nbsp;After clicking the **Request License** button you should the screen below.
 
-<img src="images/image_file_action_cineviewer_license_check_email.png" width="500">
+<img src="images/image_file_action_cineviewer_license_check_email.png" width="400">
 
 🔴 &nbsp;The license key will be emailed to the address you entered in the previous step. Click **Enter License Key** and paste all the lines including **====BEGIN LICENSE KEY====** and **====END LICENSE KEY====** as shown in this example. Click **Update License**:
 

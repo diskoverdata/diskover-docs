@@ -34,7 +34,7 @@ A) Play/pause, start/stop playback, can also be activated with the **space key**
 
 B) Timecode, can be clicked to open the timecode editor, you can change the timecode numbers and hit **Enter** or **Goto** to go to that frame.
 
-<img src="images/image_file_action_cineviewer_timecode.png" width="400">
+<img src="images/image_file_action_cineviewer_timecode.png" width="350">
 
 C) Frame slider, click and drag to navigate the timeline.
 

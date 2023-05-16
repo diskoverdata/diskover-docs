@@ -5,11 +5,11 @@ ___
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
-Cineviewer is a video playback and management system designed for video and broadcast professionals. It is designed to securely view high resolution media from a remote browser, without giving users access to the source files, as well as play content that may not be supported by standard web browsers, including file formats such as ProRes and MXF. Additionally, Cineviewer allows users to play back image sequences in formats such as DPX and EXR. The player can be launched in one click from the AJA Diskover Media Edition user interface, allowing for seamless validation of media assets, therefore increasing productivity, while safeguarding your production network.
+CineViewer is a video playback and management system designed for video and broadcast professionals. It is designed to securely view high resolution media from a remote browser, without giving users access to the source files, as well as play content that may not be supported by standard web browsers, including file formats such as ProRes and MXF. Additionally, Cineviewer allows users to play back image sequences in formats such as DPX and EXR. The player can be launched in one click from the AJA Diskover Media Edition user interface, allowing for seamless validation of media assets, therefore increasing productivity, while safeguarding your production network.
 
-With its timecode-accurate playback and seeking capabilities, Cineviewer enables users to navigate through content with precision. The system also supports up to 16 channels of audio, providing a variety of audio configuration options to accommodate different projects. Furthermore, Cineviewer includes closed captioning functionality, ensuring an accessible experience for all users.
+With its timecode-accurate playback and seeking capabilities, CineViewer enables users to navigate through content with precision. The system also supports up to 16 channels of audio, providing a variety of audio configuration options to accommodate different projects. Furthermore, Cineviewer includes closed captioning functionality, ensuring an accessible experience for all users.
 
-The following sections will guide you through the installation and configuration of Cineviewer, helping you utilize this tool effectively for your video and broadcast needs.
+The following sections will guide you through the installation and configuration of CineViewer, helping you utilize this tool effectively for your video and broadcast needs.
 
 ![Image: CineViewer Player Preview](images/image_file_action_cineviewer_preview.png)
 
@@ -19,11 +19,11 @@ The following sections will guide you through the installation and configuration
 
 **Browsers:** Chrome, Safari, Firefox
 
-**File Formats:** The video player uses FFMPEG under the hood for real-time transcoding of creative content. Cineviewer supports a wide range of file types and codecs including Animation, AVC-Intra, AVI, Cineform, DNxHD, DNxHR, DV, DVCPPRO HD, H.264, HEVC/H.265, IMX, MKV, MOV/QT, MP4/M4V, MPEG/M2V/MPG, TS, MPEG-2, MXF, OGG, ProRes, OGG, ProRes, VP-8, VP-9, WebM
+**File Formats:** The video player uses FFMPEG under the hood for real-time transcoding of creative content. CineViewer supports a wide range of file types and codecs including Animation, AVC-Intra, AVI, Cineform, DNxHD, DNxHR, DV, DVCPPRO HD, H.264, HEVC/H.265, IMX, MKV, MOV/QT, MP4/M4V, MPEG/M2V/MPG, TS, MPEG-2, MXF, OGG, ProRes, OGG, ProRes, VP-8, VP-9, WebM
 
 #### Linux Installation
 
-Cineviewer runs best on Centos 7 Linux.
+CineViewer runs best on Centos 7 Linux.
 
 🔴 &nbsp;Untar the distribution:
 
@@ -61,11 +61,11 @@ Version cineviewer_dev_20230410-4 installed successfully.
 Default url is http://localhost:3000
 ```
 
-🔴 &nbsp;At this point you should be able to browse to the Cineviewer page.
+🔴 &nbsp;At this point you should be able to browse to the CineViewer page.
 
 #### License Key Request and Installation
 
-When Cineviewer is first installed or the license expires you will see the license key page appear.
+When CineViewer is first installed or the license expires you will see the license key page appear.
 
 ![Image: CineViewer Player License Request and Installation](images/image_file_action_cineviewer_license.png)
 
@@ -81,7 +81,7 @@ When Cineviewer is first installed or the license expires you will see the licen
 
 ![Image: CineViewer Player License Key Installation](images/image_file_action_cineviewer_paste_license_key.png)
 
-🔴 &nbsp;Cineviewer should reload the page and be operational.
+🔴 &nbsp;CineViewer should reload the page and be operational.
 
 #### Command Line Key Management
 
@@ -129,7 +129,7 @@ journalctl --lines 0 --follow _SYSTEMD_UNIT=cineviewer.service
 
 #### Configuration
 
-Cineviewer has two configuration files to control the app. The first is the app defualt configuration, usually `/opt/cinesys/cineveiwer/app/configure-default.json` which contains all the default values for the app.
+CineViewer has two configuration files to control the app. The first is the app defualt configuration, usually `/opt/cinesys/cineveiwer/app/configure-default.json` which contains all the default values for the app.
 
 The other configuration file, usually `/opt/cinesys/cineveiwer/configure.json` contains the changes specific to the installation.
 

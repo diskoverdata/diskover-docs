@@ -70,7 +70,7 @@ J) Menu to open extra interfaces for plugins and core features:
 >
 > **Help** offers direct access to the latest documentation, keyboard shortcuts, and info about contacting support for the product:
 >
-> <img src="images/image_file_action_cineviewer_help.png" width="300">
+> <img src="images/image_file_action_cineviewer_help.png" width="425">
 > 
 > **Metadata** to see the attributes of the current media file:
 >

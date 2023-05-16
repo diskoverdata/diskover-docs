@@ -66,7 +66,7 @@ J) Menu to open extra interfaces for plugins and core features:
 >
 > **Open** returns the system to the file browser mode:
 >
-> <img src="images/image_file_action_cineviewer_file_browser.png" width="600">
+> <img src="images/image_file_action_cineviewer_file_browser.png" width="700">
 >
 > **Help** offers direct access to the latest documentation, keyboard shortcuts, and info about contacting support for the product:
 >

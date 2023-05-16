@@ -50,11 +50,25 @@ G) Closed captions panel toggle to open the controls. Cineviewer supports multip
 
 <img src="images/image_file_action_cineviewer_closed_caption.png" width="500">
 
-H) Zoom panel toggle to open the zoom and pan controls.
+H) Zoom panel toggle to open the zoom and pan controls, Cineviewer supports zoom and pan on content for better inspection of frames. Zoom can also be controled through the keyboard shortcuts as described in the next section.
+
+<img src="images/image_file_action_cineviewer_zoom_panel.png" width="400">
 
 I) Fullscreen mode, either press the same button or **ESC** to close fullscreen mode.
 
-J) Menu to open extra interfaces for plugins and core features like metadata.
+J) Menu to open extra interfaces for plugins and core features:
+
+<img src="images/image_file_action_cineviewer_menu.png" width="400">
+
+  **Metadata**:
+
+the latest documentation under **Help**, and the CineViewer version under **About**.
+
+
+
+<img src="images/image_file_action_cineviewer_about.png" width="400">
+
+<img src="images/image_file_action_cineviewer_about.png" width="400">
 
 ___
 ### Keyboard Shortcuts

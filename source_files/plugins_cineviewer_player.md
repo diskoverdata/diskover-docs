@@ -7,9 +7,9 @@ ___
 
 Cineviewer is a video playback and management system designed for video and broadcast professionals. It is designed to securely view high resolution media from a remote browser, without giving users access to the source files, as well as play content that may not be supported by standard web browsers, including file formats such as ProRes and MXF. Additionally, Cineviewer allows users to play back image sequences in formats such as DPX and EXR. The player can be launched in one click from the AJA Diskover Media Edition user interface, allowing for seamless validation of media assets, therefore increasing productivity, while safeguarding your production network.
 
-With its timecode-accurate playback and seeking capabilities, Cineviewer enables users to navigate through content with precision. The system also supports up to 16 channels of audio, providing a variety of audio configuration options to accommodate different projects. Furthermore,Cineviewer includes closed captioning functionality, ensuring an accessible experience for all users.
+With its timecode-accurate playback and seeking capabilities, Cineviewer enables users to navigate through content with precision. The system also supports up to 16 channels of audio, providing a variety of audio configuration options to accommodate different projects. Furthermore, Cineviewer includes closed captioning functionality, ensuring an accessible experience for all users.
 
-This user manual will guide you through the features and functions of Cineviewer, helping you utilize this tool effectively for your video and broadcast needs.
+The following sections will guide you through the installation and configuration of Cineviewer, helping you utilize this tool effectively for your video and broadcast needs.
 
 ![Image: CineViewer Player Preview](images/image_file_action_cineviewer_preview.png)
 
@@ -85,7 +85,13 @@ When Cineviewer is first installed or the license expires you will see the licen
 
 #### Command Line Key Management
 
-You can also edit the license file directly. Locate the keyfile at the install directory, by default `/opt/cinesys/cineviewer/license.dat`
+You can also edit the license file directly. 
+
+🔴 &nbsp;Locate the keyfile at the install directory, by default:
+
+```
+/opt/cinesys/cineviewer/license.dat
+```
 
 🔴 &nbsp;Edit the file using `nano` or `vi…` after saving the file, you may need to restart Cinevieiwer using the following command:
 
@@ -141,7 +147,7 @@ The other configuration file, usually `/opt/cinesys/cineveiwer/configure.json` c
 
 | SETTING | PURPOSE |
 | --- | --- |
-| **transcode** | For switching out transcoders ffmpeg |
+| **transcode** | For switching out transcoders ffmpeg or ffprobe |
 | **cineplay** | For controlling the cache location |
 | **toast** | For adding file mounts and access |
 
@@ -286,4 +292,4 @@ To make files on a standard operating system available use the **FS mount**. The
 
 One great feature of Cineviewer is that when you move through directories or view content, the browser URL updates to link to that directory or content. This way simply copying the url allows you to share a particular directory, video, or even a single frame of content.
 
-<img src="images/image_file_action_cineviewer_localhost.png" width="700">
+<img src="images/image_file_action_cineviewer_localhost.png" width="900">

@@ -170,7 +170,7 @@ By default, CineViewer is not login protected. To enable basic logins a users' c
 
 #### Transcoding Settings
 
-By default, Cineviewer uses `ffmpeg` to do most transcoding. The paths can se modified to `ffprobe` using the transcode settings:
+🔴 &nbsp;By default, Cineviewer uses `ffmpeg` to do most transcoding. The paths can se modified to `ffprobe` using the transcode settings:
 
 ```
 "transcode": {
@@ -179,7 +179,68 @@ By default, Cineviewer uses `ffmpeg` to do most transcoding. The paths can se mo
 }
 ```
 
-#### Diskover Module Settings
+#### Diskover Module for CineViewer
+
+The Diskover File Action Plugin Module for Cineviewer allows you to open files or directories seamlessly from the Diskover user interface. Inside Cineviewer the user can also take advantage of Diskover high-speed indexed search.
+
+##### Installing CineViewer Plugin for Diskover
+
+This plugin adds **open in CineViewer** to the **File Action** menu in Diskover.
+
+🔴 &nbsp;Copy `cineviewer.php` to the `/var/www/diskover-web/public/fileactions` directory
+
+```
+<div style='overflow:wrap;'>
+<pre style='overflow:wrap;'>
+     sudo cp /opt/cinesys/cineviewer/app/modules/diskover/diskover_install/cineviewer.php /var/www/diskover-web/public/fileactions
+     sudo chown nginx  /var/www/diskover-web/public/fileactions/cineviewer.php
+</pre>
+</div>
+```
+
+🔴 &nbsp;Depending on your web setup you may need to edit `cineviewer.php` and adjust the following line:
+
+```
+    $cineviewer_host = "http://" + $_SERVER['HTTP_HOST'] + ":3000";
+```
+
+🔴 &nbsp;Edit the Diskover `Constants.php` file and add a file action:
+
+```
+    sudo vi /var/www/diskover-web/src/diskover/Constants.php
+```
+
+🔴 &nbsp;Add `File Actions`:
+
+```
+       const FILE_ACTIONS = [
+        'open in CineViewer' => [
+            'webpage' => 'cineviewer.php',
+            'allowed_users' => [Constants::ADMIN_USER, Constants::USER],
+            'allowed_ldap_groups' => ['diskover-admins', 'diskover-powerusers', 'diskover-users'],
+            'menu_icon_class' => 'far fa-file-image'
+           ]
+       ];
+```
+
+🔴 &nbsp;Test the installation by finding a file in Diskover and using the **open in CineViewer** under the **File Action** menu.
+
+#####  Installing the Diskover Search Feature for CineViewer
+
+This config change for CineViewer will allow you to search Diskover from Cineviewer. 
+
+🔴 &nbsp;Edit your CineViewer configuration file `/opt/cinesys/cineviewer/configure.json` and make sure there is a setting for `diskover_url` that points
+to your local `diskover`:
+
+```
+    sudo vi /opt/cinesys/cineviewer/configure.json
+
+    "diskover": {
+        "diskover_url": "http://127.0.0.1/"
+    }
+```
+
+##### Diskover Module Settings
 
 The Diskover module option has multiple settings. The most important is the `diskover_url`.
 

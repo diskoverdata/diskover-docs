@@ -1,7 +1,7 @@
 <p id="cineviewer_plugin"></p>
 
 ___
-### CineViewer Player Plugin
+### File Action > CineViewer Player
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 

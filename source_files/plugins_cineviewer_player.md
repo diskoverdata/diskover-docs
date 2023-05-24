@@ -309,7 +309,7 @@ This plugin adds **open in CineViewer** to the **File Action** menu in Diskover.
     sudo vi /var/www/diskover-web/src/diskover/Constants.php
 ```
 
-🔴 &nbsp;Add `File Actions`:
+🔴 &nbsp;Add **File Actions**:
 
 ```
        const FILE_ACTIONS = [
@@ -360,9 +360,9 @@ to your local `diskover`:
 
 🔴 &nbsp;After restarting CineViewer, your mounts/paths should appear:
 
-<img src="images/image_file_action_cineviewer_search_diskover_mount.jpg" width="900">
+<img src="images/image_file_action_cineviewer_search_diskover_mount.jpg" width="600">
 
 🔴 &nbsp;Click on a volume to open the search tools, then click on a search result to load into CineViewer:
 
-<img src="images/image_file_action_cineviewer_search_diskover_search_results.jpg " width="900">
+<img src="images/image_file_action_cineviewer_search_diskover_search_results.jpg " width="600">
 

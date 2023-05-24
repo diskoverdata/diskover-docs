@@ -78,9 +78,9 @@ J) Menu to open extra interfaces for plugins and core features:
 >
 > <img src="images/image_file_action_cineviewer_metadata.png" width="425">
 >
-> **Diskover** to do a quick search within Diskover without leaving the CineViewer app:
+> **Diskover** to do a quick search of Diskover without leaving the CineViewer application:
 >
-> <img src="images/image_file_action_cineviewer_menu_diskover.png" width="300">
+> <img src="images/image_file_action_cineviewer_search_diskover_search_results.jpg" width="500">
 
 ___
 ### Keyboard Shortcuts

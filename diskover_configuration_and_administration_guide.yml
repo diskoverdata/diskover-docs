@@ -45,6 +45,7 @@ ordered_documents:
   - plugins_diskover_web_file_actions_live_view.md
   - plugins_diskover_web_file_actions_file_sequence.md
   - plugins_diskover_web_file_actions_cineviewer_player.md
+  - plugins_diskover_web_file_actions_imf_package_validator.md
   - index_management_intro.md
   - index_management_diskover_web.md
   - index_management_elasticsearch.md

@@ -364,5 +364,5 @@ to your local `diskover`:
 
 🔴 &nbsp;Click on a volume to open the search tools, then click on a search result to load into CineViewer:
 
-<img src="images/image_file_action_cineviewer_search_diskover_search_results.jpg " width="600">
+<img src="images/image_file_action_cineviewer_search_diskover_search_results.jpg " width="500">
 

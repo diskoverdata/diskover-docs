@@ -11,7 +11,7 @@ With its timecode-accurate playback and seeking capabilities, CineViewer enables
 
 The following sections will guide you through the installation and configuration of CineViewer, helping you utilize this tool effectively for your video and broadcast needs.
 
-The CineViewer Player is developed by [CineSys LLC](https://cinesys.io/), a major technological and channel partner working with both Diskover Data and [AJA Video Systems](https://www.aja.com/). For more information or to purchase the CineViewer Player, please contact [CineSys.io](https://cinesys.io/contact-us/).
+The CineViewer Player is developed by [CineSys LLC](https://cinesys.io/), a major technological and channel partner working with both Diskover Data and [AJA Video Systems](https://www.aja.com/). For more information, support, or to purchase the CineViewer Player, please contact [CineSys.io](https://cinesys.io/contact-us/).
 
 ![Image: CineViewer Player Preview](images/image_file_action_cineviewer_preview.png)
 

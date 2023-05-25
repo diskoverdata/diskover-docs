@@ -48,7 +48,7 @@ The IMF Package Validator plugin is developed by [Oxagile](https://www.oxagile.c
       
 3. For Java IMF-PlugIn - from linux Docker container:
 
-> _Note:_**IMF-Plugin** must be on the same machine as the python worker and validation files.
+> _Note:_&nbsp;**IMF-Plugin** must be on the same machine as the python worker and validation files.
 
 🔴 &nbsp;Create folder:
 
@@ -64,7 +64,7 @@ Dockerfile
 docker-compose.yml
 ```
 
-🔴 &nbsp;In `docker-compose.yml` file, change the `DISKOVER_URL` address, `ELASTICSEARCH_HOST`, and `ELASTICSEARCH_PORT` in the **environment" block**. For example:
+🔴 &nbsp;In `docker-compose.yml` file, change the `DISKOVER_URL` address, `ELASTICSEARCH_HOST`, and `ELASTICSEARCH_PORT` in the **environment** block. For example:
 
 ```
 DISKOVER_URL=http://192.189.117.68:8000

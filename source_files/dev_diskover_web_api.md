@@ -4,7 +4,7 @@ ___
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 ___
 
-Diskover-Web has a REST API for getting and updating index data.
+Diskover-Web has a REST API for creating, getting, updating and deleting index and task data.
 
 ___
 ### GET (with curl or web browser)
@@ -106,7 +106,7 @@ GET http://localhost:8000/api.php/diskover-2018.01.17/diskspace
 ___
 ### Update (with JSON object)
 
-Updating file/directory tags is done with the PUT method. You can send a JSON object in the body. The call returns the status and number of items updated.
+Updating file/directory tags and tasks is done with the PUT method. You can send a JSON object in the body. The call returns the status and number of items updated.
 
 **Curl example:**
 ```
@@ -179,9 +179,45 @@ PUT http://localhost:8000/api.php/diskover-2018.01.17/tagdirs
 {"tags": [], "dirs": ["/Users/shirosai/Downloads"], "recursive": "true", "tagfiles": "true"}
 ```
 
+**Update task as disabled (or enabled)**
+```
+PUT http://localhost:8000/api.php/diskover-2018.01.17/updatetask
+{"id": "4eba40842e2248b1fb3b1f6631bef7e8", "disabled": true}
+```
+
+### Create (with JSON object)
+
+Updating tasks is done with the POST method. You can send a JSON object in the body. The call returns the item that was created.
+
+**Curl example:**
+```
+curl -X POST http://localhost:8000/api.php/endpoint -d '{}'
+```
+
+**Create an index task**
+```
+POST http://localhost:8000/api.php/diskover-2018.01.17/addtask
+{"type": "index", "name": "FOO", "crawl_paths": "/foo", "retries": 1, "timeout": 30, "retry_delay": 1, "run_min": 0, "run_hour": ,"run_month": "*", "run_day_month": "*", "run_day_week": "*"}
+```
+___
+### Delete (with JSON object)
+
+Deleting tasks is done with the DELETE method. You can send a JSON object in the body. The call returns the status.
+
+**Curl example:**
+```
+curl -X DELETE http://localhost:8000/api.php/endpoint -d '{}'
+```
+
+**Delete a task**
+```
+DELETE http://localhost:8000/api.php/diskover-2018.01.17/deletetask
+{"id": "4eba40842e2248b1fb3b1f6631bef7e8"}
+```
+
 ___
 ### Examples of API calls in Python
-```
+```python
 """example usage of diskover-web rest-api using requests and urllib
 """
 import requests
@@ -195,14 +231,14 @@ url = "http://localhost:8000/api.php"
 ```
 
 **List all diskover indices:**
-```
+```python
 r = requests.get('%s/list' % url)
 print(r.url + "\n")
 print(r.text + "\n")
 ```
 
 **List total number of files for each tag in diskover-index index:**
-```
+```python
 index = "diskover-index"
 r = requests.get('%s/%s/tagcount?type=file' % (url, index))
 print(r.url + "\n")
@@ -210,7 +246,7 @@ print(r.text + "\n")
 ```
 
 **List all png files in diskover-index index:**
-```
+```python
 q = quote("extension:png AND _type:file AND filesize:>1048576")
 r = requests.get('%s/%s/search?query=%s' % (url, index, q))
 print(r.url + "\n")
@@ -218,9 +254,37 @@ print(r.text + "\n")
 ```
 
 **Tag directory and all files in directory with tag "archive" (non-recursive):**
-```
+```python
 d = {'tag': 'archive', 'path_parent': '/Users/cp/Downloads', 'tagfiles': 'true'}
 r = requests.put('%s/%s/tagdir' % (url, index), data = json.dumps(d))
+print(r.url + "\n")
+print(r.text + "\n")
+```
+
+**Create a custom task**
+```python
+d = {'type': 'Custom', 'name': 'FOOBAR', 'run_command': 'python3',
+     'runcommand_args': '/home/foo/myscript.py', 'run_min': 0, 'run_hour': 1,
+     'run_month': '*', 'run_day_month': '*', 'run_day_week': '*', 'retries': 1,
+     'timeout': 30, 'retry_delay': 1, 'description': 'YAHOO!'
+}
+r = requests.post('%s/%s/addtask' % (url, index), data = json.dumps(d))
+print(r.url + "\n")
+print(r.text + "\n")
+```
+
+**Update a task to enabled and have it run now**
+```python
+d = {'id': '4eba40842e2248b1fb3b1f6631bef7e8', 'disabled': false, 'run_now': true}
+r = requests.put('%s/%s/updatetask' % (url, index), data = json.dumps(d))
+print(r.url + "\n")
+print(r.text + "\n")
+```
+
+**Delete a task**
+```python
+d = {'id': '4eba40842e2248b1fb3b1f6631bef7e8'}
+r = requests.delete('%s/%s/deletetask' % (url, index), data = json.dumps(d))
 print(r.url + "\n")
 print(r.text + "\n")
 ```

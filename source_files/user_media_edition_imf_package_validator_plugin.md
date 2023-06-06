@@ -96,3 +96,6 @@ You can find the XML file in your **Downloads** folder. Here is an example when 
 
 ![Image: CineViewer Player Preview File Selection](images/image_file_action_imf_validator_xml_report.png)
 
+#### Reports Using Tags
+
+There are several ways to [report on tags](https://docs.diskoverdata.com/diskover_user_guide/#tags). To quickly report on successful (green tag) or failed (red tag) validation, please follow the instructions using [Quick Search](https://docs.diskoverdata.com/diskover_user_guide/#quick-search).

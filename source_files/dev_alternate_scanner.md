@@ -74,8 +74,8 @@ Let's talk about them one by one.
 | FUNCTION | DESCRIPTION |
 | --- | --- |
 | **stat(path)** | `stat()` accepts a path and returns an object that resembles a [stat_result](https://docs.python.org/3/library/os.html#os.stat_result) object. It needs to have the following attributes: `st_mode`, `st_inode`, `st_dev`, `st_nlink`, `st_uid`, `st_gid`, `st_size`, `st_sizedu`, `st_ctime`, `st_mtime`, and `st_atime`. It's okay for some of these to be **None**, but they must all be present on the object. |
-| ** scandir(path)** | `scandir()` accepts a path and returns a list of objects that resemble [DirEntry](https://docs.python.org/3/library/os.html#os.DirEntry) objects. Each one needs to have the following attributes and methods: `path`, `name`, `stat()`, `is_dir()`, `is_file()`, `is_symlink()`, `inode()` |
-| ** walk(path)** | `walk()` is a function (resembling [os.walk()](https://docs.python.org/3/library/os.html#os.walk)) that takes a path and recursively walks down the tree returning a tuple of the (path walked, files in the path, dirs in the path) for each directory found. |
+| **scandir(path)** | `scandir()` accepts a path and returns a list of objects that resemble [DirEntry](https://docs.python.org/3/library/os.html#os.DirEntry) objects. Each one needs to have the following attributes and methods: `path`, `name`, `stat()`, `is_dir()`, `is_file()`, `is_symlink()`, `inode()` |
+| **walk(path)** | `walk()` is a function (resembling [os.walk()](https://docs.python.org/3/library/os.html#os.walk)) that takes a path and recursively walks down the tree returning a tuple of the (path walked, files in the path, dirs in the path) for each directory found. |
 | **check_dirpath(path)** | `check_dirpath()` takes a root path and verifies that it actually exists. |
 | **abspath(path)** | `abspath()` converts a path given on the command line to an absolute path usable by Diskover. |
 | **get_storage_size(path)** | `get_storage_size()` attempts to figure out the total and free size of the storage we are working on. |

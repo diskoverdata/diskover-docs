@@ -59,6 +59,7 @@ ___
 Return to the search page and refresh the tab. The results of the validation is shown as a tag.
 
 **Green tag** > imf valid = validation successful for all items inside the package
+
 **Red tag** > imf not valid = validation failed for some or all items inside the package
 
 ![Image: IMF Validation Results with Tags](images/image_file_action_imf_validator_results_tags.png)

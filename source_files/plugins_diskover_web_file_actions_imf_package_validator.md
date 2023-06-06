@@ -9,11 +9,21 @@ Oxagile’s IMF Package Validator Plugin, exclusively designed for the AJA Disko
 
 IMF stands for Interoperable Master Format, which is a technical standard used in the Media and Entertainment industry for the exchange of digital content between different platforms and systems. The IMF format is used by content creators, distributors, and broadcasters to deliver high-quality video content to a variety of devices, including TVs, mobile devices, and web browsers.
 
-Several production studios require all their content to be delivered in IMF format, which undergoes rigorous validation to ensure compliance with industry standards. The validation process involves extensive testing of the content's video, audio, and metadata to ensure that it meets the production studios' technical specifications and can be delivered to viewers in the highest quality possible.
+Netflix, for example, requires all their content to be delivered in IMF format, which undergoes rigorous validation to ensure compliance with industry standards. The validation process involves extensive testing of the content's video, audio, and metadata to ensure that it meets the technical specifications and can be delivered to viewers in the highest quality possible.
 
-Once the content has been validated, it is then encoded into various formats, including 4K and HDR, and made available for streaming on various platforms. The IMF validation process is a critical step in the content delivery pipeline, ensuring that viewers receive high-quality content that meets industry standards and can be enjoyed on a variety of devices.
+Once the content has been validated, it is then encoded into various formats, including 4K and HDR, and made available for streaming on various platforms. The IMF validation process is a critical step in the content delivery pipeline.
 
 The IMF Package Validator plugin is developed by [Oxagile](https://www.oxagile.com/), a major technological partner working with both Diskover Data and [AJA Video Systems](https://www.aja.com/). For more information or to purchase the IMF Package Validator plugin, please contact [Oxagile](mailto:IMF@Oxagile.com).
+
+#### Functional Limitations
+
+The following are the limitations of the current plugin version:
+
+1.	Verification capabilities are limited with those of the latest version of Netflix Photon tool.
+2.	Validation by schedule is not supported.
+3.	Cloud storage is not supported.
+4.	Archives are not supported.
+5.	DCP packages are not supported.
 
 #### IMF Package Validator Plugin Installation
  

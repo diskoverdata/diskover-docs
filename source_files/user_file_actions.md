@@ -123,7 +123,7 @@ Please refer to the [User Guide Companion for the AJA Diskover Media Edition](ht
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
-#### [🍿 Watch Demo Video | IMF Package Validator](https://vimeo.com/833500176?share=copy))
+#### [🍿 Watch Demo Video | IMF Package Validator](https://vimeo.com/833500176?share=copy)
 
 Allows users to validate IMF packages prior to content delivery.
 

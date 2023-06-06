@@ -41,7 +41,7 @@ There are 3 ways to launch the **validate IMF package** file action:
 
 ![Image: Launch Validate IMF Package from the Results Pane](images/image_file_action_imf_validator_launch_single_package.png)
 
-2. If you want to validate multiple packages at onece, use this global file action button located above the results pane.
+2. If you want to validate multiple packages at once, use this global file action button located above the results pane.
 
 ![Image: Launch Validate IMF Package from the Global File Action Button](images/image_file_action_imf_validator_launch_multiple_packages.png)
 

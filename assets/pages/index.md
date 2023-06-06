@@ -24,7 +24,7 @@ ___
 
 [Diskover Quick Reference Card | Core Features](images/quick_reference_card_diskover_core_features_20230206.pdf)
 
-[Diskover Quick Reference Card | AJA Diskover Media Edition](images/quick_reference_card_diskover_media_edition_2023020602.pdf)
+[Diskover Quick Reference Card | AJA Diskover Media Edition](images/quick_reference_card_diskover_media_edition_20230606.pdf)
 
 [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/)
 

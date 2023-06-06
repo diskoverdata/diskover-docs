@@ -111,20 +111,20 @@ Please refer to the [User Guide Companion for the AJA Diskover Media Edition](ht
 
 <p id="file_action_file_sequences"></p>
 
+#### File Action > Validate IMF Package
+
+![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+
+#### [🍿 Watch Demo Video | IMF Package Validator](https://vimeo.com/833500176?share=copy)
+
+The IMF package validator file action allows organizations to validate IMF content/packages before delivery directly from the Diskover user interface.
+
+Please refer to the [User Guide Companion for the AJA Diskover Media Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#imf-package-validator) for details.
+
 #### File Action > Find File Sequences
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
 Allows users to find all files in a sequence in one click.
-
-Please refer to the [User Guide Companion for the AJA Diskover Media Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#find-all-files-in-a-sequence) for details.
-
-#### File Action > Validate IMF Package
-
-![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
-
-#### [🍿 Watch Demo Video | IMF Package Validator](https://vimeo.com/833500176?share=copy)
-
-Allows users to validate IMF packages prior to content delivery.
 
 Please refer to the [User Guide Companion for the AJA Diskover Media Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#find-all-files-in-a-sequence) for details.

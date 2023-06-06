@@ -81,7 +81,7 @@ Let's talk about them one by one.
 | **get_storage_size(path)** | `get_storage_size()` attempts to figure out the total and free size of the storage we are working on. |
 
 
-### Building the Scanner
+### Building the Scanner | The Foundation
 
 Now that we've defined the six functions we need to implement, let's see how we can use the `ftputil` package to begin building an alternate scanner. 
 
@@ -310,6 +310,8 @@ for root, dirs, files in ftpserver.walk('/'):
 ```
 
 > _Note:_ Now we have some basic functionality that will walk our FTP server, but it's missing quite a few details to work with Diskover. Let's see if we can start to fill in some of the details. 
+
+### Building the Scanner | The Final Steps
 
 🔴 &nbsp;The first thing that Diskover will try to do with our scanner is to run `check_dirpath()` on the root path we pass in on the command line and make sure it's a valid path on the FTP server. We can check if a path exists on the FTP server by trying to list the remote directory. So let's have `check_dirpath()` call `ftp_host.listdir` and try it with **'/'** which should always work (since it's the root), and **'/foo'** which doesn't exist. It should return a tuple of (bool, error_code):
 

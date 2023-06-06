@@ -90,7 +90,7 @@ Here is an example of a failed validation report upon clicking the <img src="ima
 
 #### Validation Report in XML Format
 
-It is possible to export the validation report in XML format using the <img src="images/icon_diskover_export_img_report_xml_format.png" alt="test" width="70" /> button in the IMF reports window.
+It is possible to export the validation report in XML format using the <img src="images/icon_diskover_export_img_report_xml_format.png" alt="test" width="120" /> button in the IMF reports window.
 
 You can find the XML file in your **Downloads** folder. Here is an example when opening the file with a web browser:
 

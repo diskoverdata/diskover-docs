@@ -22,7 +22,7 @@ The IMF Package Validator plugin is developed by [Oxagile](https://www.oxagile.c
 
 The following are the limitations of the current plugin version:
 
-1.	Verification capabilities are limited with those of the latest version of Netflix Photon tool.
+1.	Verification capabilities are limited to those of the latest version of the Netflix Photon tool.
 2.	Validation by schedule is not supported.
 3.	Cloud storage is not supported.
 4.	Archives are not supported.
@@ -31,7 +31,7 @@ The following are the limitations of the current plugin version:
 ___
 ### How to Launch the IMF Package Validator Plugin
 
-First, locate the package(s) you want to validate by either [searching using the built-in tools](https://docs.diskoverdata.com/diskover_user_guide/#built-in-search-tools), [searching using manual queries](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries-syntax-and-rules) or [drilling-down the file tree](https://docs.diskoverdata.com/diskover_user_guide/#basic-usage).
+First, locate the package(s) you want to validate by either [searching using the built-in tools](https://docs.diskoverdata.com/diskover_user_guide/#built-in-search-tools), [searching using manual queries](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries-syntax-and-rules), or [drilling down the file tree](https://docs.diskoverdata.com/diskover_user_guide/#basic-usage).
 
 There are 3 ways to launch the **validate IMF package** file action:
 
@@ -56,11 +56,11 @@ After launching the **validate IMF package** file action, a new tab will open di
 ___
 ### Validation Results Via Tags
 
-Return to the search page and refresh the tab. The results of the validation is shown as a tag.
+Return to the search page and refresh the tab. The results of the validation are shown as tags.
 
-**Green tag** > imf valid = validation successful for all items inside the package
+**Green tag > imf valid** = validation successful for all items inside the package
 
-**Red tag** > imf not valid = validation failed for some or all items inside the package
+**Red tag > imf not valid** = validation failed for some or all items inside the package
 
 ![Image: IMF Validation Results with Tags](images/image_file_action_imf_validator_results_tags.png)
 
@@ -74,7 +74,7 @@ This new report icon <img src="images/icon_diskover_imf_report.png" alt="test" w
 Here is an example of a successful validation report upon clicking the <img src="images/icon_diskover_imf_report.png" alt="test" width="22" /> icon.
 - The report is displayed in a new tab.
 - At the top you can see the global validation status for the package, as well as the status per file. 
-- All items inside a package need to successfully pass validation in order for the package to be valid.
+- All items inside a package need to successfully pass validation for the package to be valid.
 
 <img src="images/image_file_action_imf_validator_report_valid.png" width="800">
 
@@ -83,7 +83,7 @@ Here is an example of a successful validation report upon clicking the <img src=
 Here is an example of a failed validation report upon clicking the <img src="images/icon_diskover_imf_report.png" alt="test" width="22" /> icon. 
 - The report is displayed in a new tab.
 - At the top you can see the global validation status for the package, as well as the status per file. 
-- The error(s) encoutered during the validation process are listed in red under each failed item.
+- The error(s) encountered during the validation process are listed in red under each failed item.
 - A package will be identified as not valid if one or more items inside that package failed the validation process.
 
 <img src="images/image_file_action_imf_validator_report_invalid.png" width="800">

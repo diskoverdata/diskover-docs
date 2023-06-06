@@ -72,7 +72,7 @@ This new report icon <img src="images/icon_diskover_imf_report.png" alt="test" w
 #### Successful Validation
 
 Here is an example of a successful validation report upon clicking the <img src="images/icon_diskover_imf_report.png" alt="test" width="22" /> icon.
-- The report will be displayed in a new tab.
+- The report is displayed in a new tab.
 - At the top you can see the global validation status for the package, as well as the status per file. 
 - All items inside a package need to successfully pass validation in order for the package to be valid.
 
@@ -81,7 +81,7 @@ Here is an example of a successful validation report upon clicking the <img src=
 #### Failed Validation
 
 Here is an example of a failed validation report upon clicking the <img src="images/icon_diskover_imf_report.png" alt="test" width="22" /> icon. 
-- The report will be displayed in a new tab.
+- The report is displayed in a new tab.
 - At the top you can see the global validation status for the package, as well as the status per file. 
 - The error(s) encoutered during the validation process are listed in red under each failed item.
 - A package will be identified as not valid if one or more items inside that package failed the validation process.

@@ -43,10 +43,9 @@ There are 3 ways to launch the **validate IMF package** file action:
 
 ![Image: Launch Validate IMF Package from the Global File Action Button](images/image_file_action_imf_validator_launch_multiple_packages.png)
 
-3. You can first validate the attributes of a package by clicking the **i** button <img src="images/icon_diskover_information_attributes_folder.png
-" width="50">, then use the file action button located in the attributes page.
+3. You can first validate the attributes of a package by clicking the **i** button ![Image: Launch Validate IMF Package from the Attributes Window](images/icon_diskover_information_attributes_folder.png), then use the file action button located in the attributes page.
 
-![Image: Launch Validate IMF Package from the Attributes Window](image_file_action_imf_validator_launch_from_attributes.png)
+![Image: Launch Validate IMF Package from the Attributes Window](images/image_file_action_imf_validator_launch_from_attributes.png)
 
 
 

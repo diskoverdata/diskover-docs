@@ -35,6 +35,8 @@ First, locate the package(s) you want to validate by either [searching using the
 
 There are 3 ways to launch the **validate IMF package** file action:
 
+>🔆 &nbsp;Note that this action is only available for directory items and will not work if you're trying to launch using a file.
+
 1. If you want to validate a single package, use the file action button in line with that package in the results pane.
 
 ![Image: Launch Validate IMF Package from the Results Pane](images/image_file_action_imf_validator_launch_single_package.png)
@@ -47,18 +49,49 @@ There are 3 ways to launch the **validate IMF package** file action:
 
 ![Image: Launch Validate IMF Package from the Attributes Window](images/image_file_action_imf_validator_launch_from_attributes.png)
 
+After launching the **validate IMF package** file action, a new tab will open displaying the packages being validated, as well as the version of the plugin. The process should take about 5 seconds per package. In this example, only one package is being validated:
 
-
-___
-### Login Credentials
-
-
-
-<img src="images/image_file_action_cineviewer_login.png" width="500">
+<img src="images/image_file_action_imf_validator_msg_upon_launch.png" width="400">
 
 ___
-### How to Launch the CineViewer Player
+### Validation Results Via Tags
 
+Return to the search page and refresh the tab. The results of the validation is shown as a tag.
 
-![Image: CineViewer Player Preview File Selection](images/image_file_action_cineviewer_selection.png)
+**Green tag** > imf valid = validation successful for all items inside the package
+**Red tag** > imf not valid = validation failed for some or all items inside the package
+
+![Image: IMF Validation Results with Tags](images/image_file_action_imf_validator_results_tags.png)
+
+___
+### Reports Following Validation
+
+This new report icon <img src="images/icon_diskover_imf_report.png" alt="test" width="22" /> will be available for the validated directories in the results pane, as well as in the attributes window. 
+
+#### Successful Validation
+
+Here is an example of a successful validation report upon clicking the <img src="images/icon_diskover_imf_report.png" alt="test" width="22" /> icon.
+- The report will be displayed in a new tab.
+- At the top you can see the global validation status for the package, as well as the status per file. 
+- All items inside a package need to successfully pass validation in order for the package to be valid.
+
+<img src="images/image_file_action_imf_validator_report_valid.png" width="800">
+
+#### Failed Validation
+
+Here is an example of a failed validation report upon clicking the <img src="images/icon_diskover_imf_report.png" alt="test" width="22" /> icon. 
+- The report will be displayed in a new tab.
+- At the top you can see the global validation status for the package, as well as the status per file. 
+- The error(s) encoutered during the validation process are listed in red under each failed item.
+- A package will be identified as not valid if one or more items inside that package failed the validation process.
+
+<img src="images/image_file_action_imf_validator_report_invalid.png" width="800">
+
+#### Validation Report in XML Format
+
+It is possible to export the validation report in XML format using the <img src="images/icon_diskover_export_img_report_xml_format.png" alt="test" width="22" /> button in the IMF reports window.
+
+You can find the XML file in your **Downloads** folder. Here is an example when opening the file with a web browser:
+
+![Image: CineViewer Player Preview File Selection](images/image_file_action_imf_validator_xml_report.png)
 

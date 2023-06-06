@@ -51,7 +51,7 @@ There are 3 ways to launch the **validate IMF package** file action:
 
 After launching the **validate IMF package** file action, a new tab will open displaying the packages being validated, as well as the version of the plugin. The process should take about 5 seconds per package. In this example, only one package is being validated:
 
-<img src="images/image_file_action_imf_validator_msg_upon_launch.png" width="400">
+<img src="images/image_file_action_imf_validator_msg_upon_launch.png" width="600">
 
 ___
 ### Validation Results Via Tags

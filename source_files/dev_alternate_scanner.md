@@ -54,7 +54,7 @@ sudo python3 ftp_server.py
 
 As an example, we are going to build an alternate scanner that scans an FTP site and displays the data in Diskover. As mentioned, to be able to do this we are going to need to be able to connect to the FTP site, stat files and directories in it, list directories, and walk the tree. Instead of working with the low-level `ftplib` python library, we'll use a high-level library that will do a lot of the work for us, called [ftputil](https://ftputil.sschwarzer.net/).
 
-🔴 &nbsp;Run the following to get it installed.
+🔴 &nbsp;Run the following to get it installed:
 
 ```python
 python3 -m pip install ftputil
@@ -85,7 +85,7 @@ Let's talk about them one by one.
 
 Now that we've defined the six functions we need to implement, let's see how we can use the `ftputil` package to begin building an alternate scanner. 
 
-🔴 &nbsp;First, we will make an `FTPServer` class that will wrap the `ftputil` server connection and give it the six required functions.
+🔴 &nbsp;First, we will make an `FTPServer` class that will wrap the `ftputil` server connection and give it the six required functions:
 
 ```python
 import ftputil
@@ -129,7 +129,7 @@ ftpserver = FTPServer(
 )
 ```
 
-🔴 &nbsp;Before we even try running the scanner with Diskover, it's often helpful to run it as a standalone script and get the directory walking and scanning functions in place first. To do that, we can call the `ftpserver.walk()` function as it will be called from Diskover and just print out the results. First, let's start with the `scandir()` function as that is called from the `walk()` function, `scandir()` should list the contents of a directory on the server and return them. Here's what it looks like so far.
+🔴 &nbsp;Before we even try running the scanner with Diskover, it's often helpful to run it as a standalone script and get the directory walking and scanning functions in place first. To do that, we can call the `ftpserver.walk()` function as it will be called from Diskover and just print out the results. First, let's start with the `scandir()` function as that is called from the `walk()` function, `scandir()` should list the contents of a directory on the server and return them. Here's what it looks like so far:
 
 ```python
 import os
@@ -309,7 +309,7 @@ for root, dirs, files in ftpserver.walk('/'):
         print(f'FILE: {f}')
 ```
 
-> _Note:_ Now we have some basic functionality that will walk our FTP server, but it's missing quite a few details to work with Diskover. Let's see if we can start to fill in some of the details. 
+> _Note:_ Now we have some basic functionality that will walk our FTP server, but it's missing quite a few details to work with Diskover. Let's fill in some of the details as described in the next section. 
 
 ### Building the Scanner | The Final Steps
 
@@ -328,7 +328,7 @@ print(ftpserver.check_dirpath('/'))
 print(ftpserver.check_dirpath('/FOO'))
 ```
 
-🔴 &nbsp;After running it, it looks like the first one succeeded and the second threw a `ftputil.error.PermanentError: 550` when we tried to list a non-existent directory. Now that we know that error, we can modify `check_dirpath()` and have it handle that error and return **False** and an **error code** when we get it, instead of letting it kill the program. What this means is that if a user calls the scanner with a bad path on the command line, they will get a nice error telling them that the folder does not exist.
+🔴 &nbsp;After running it, it looks like the first one succeeded and the second threw a `ftputil.error.PermanentError: 550` when we tried to list a non-existent directory. Now that we know that error, we can modify `check_dirpath()` and have it handle that error and return **False** and an **error code** when we get it, instead of letting it kill the program. What this means is that if a user calls the scanner with a bad path on the command line, they will get a nice error telling them that the folder does not exist:
 
 ```python
     def check_dirpath(self, path):
@@ -369,7 +369,7 @@ get_storage_size = ftpserver.get_storage_size
 stat = ftpserver.stat
 ```
 
-🔴 &nbsp;Here's what it should now look like.
+🔴 &nbsp;Here's what it should look like:
 
 ```python
 import os
@@ -485,7 +485,7 @@ python3 diskover.py --altscanner=ftp_scanner /
 🔴 &nbsp;When we run this command, it runs for a little bit and then throws an error when it's calling our `stat()` function on the root directory `ftputil.error.RootDirError: can't stat remote root directory` 
 
 It looks like a limitation of the `ftputil` package, so we will have to handle the error in `stat()` and return default information in this case. We can use a 
-`SimpleNamespace` object from the built-in **types** library to mimic a `stat_result` object with default info set. 
+`SimpleNamespace` object from the built-in **types** library to mimic a `stat_result` object with default info set:
 
 > _Note:_ Don't forget to import `SimpleNamespace!*` from types import SimpleNamespace.
 
@@ -550,7 +550,7 @@ StatResult(st_mode=33204, st_ino=None, st_dev=None, st_nlink=1, st_uid='sean', s
           })
 ```
 
-🔴 &nbsp;Finally, let's add two top-level functions that Diskover requires that we haven't mentioned yet. These are functions that allow you to add extra metadata and tags to each file as a scan is running. For now, we are just going to leave them empty.
+🔴 &nbsp;Finally, let's add two top-level functions that Diskover requires that we haven't mentioned yet. These are functions that allow you to add extra metadata and tags to each file as a scan is running. For now, we are just going to leave them empty:
 
 ```python
 def add_meta(path, stat):

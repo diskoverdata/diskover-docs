@@ -27,13 +27,17 @@ The following are the limitations of the current plugin version:
 
 #### IMPORTANT NOTE
 
-Please refer to the **Read Me** document and any other documentation attached to the plugin from Oxagile, as they may contain more recent information.
+Please refer to the **Read Me** document and any other documentation attached to the plugin you will receive from Oxagile, as they may contain more recent information.
 
 #### IMF Package Validator Plugin Installation
  
-1. There are no changes in python part and/or diskover folder.
+##### Python / Diskover Folder
 
-2. For PHP diskover-web folder:
+There are no changes in python part and/or diskover folder.
+
+##### PHP Diskover-Web Folder
+
+For PHP diskover-web folder:
 
 🔴 &nbsp;Copy the new file action from `/src/diskover/Constants.php.sample` and add file action **validate IMF package**. For more information on [adding a file action](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#diskover-web-plugins-file-actions).
 
@@ -43,7 +47,7 @@ Please refer to the **Read Me** document and any other documentation attached to
 
 🔴 &nbsp;Copy new custom tags **imf valid** and **imf not valid** from `/public/customtags.txt.sample` into `/public/customtags.txt`
 
-🔴 &nbsp;There are files that should be updated from this archive (if it's not a fresh install):
+🔴 &nbsp;There are files that should be updated from this archive if it's not a fresh install:
 
 ```
       /src/diskover/Diskover.php

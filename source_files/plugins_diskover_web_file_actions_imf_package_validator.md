@@ -163,24 +163,55 @@ docker compose up -d
 
 6) In the Application tab, insert the following settings:
 
-> **Path**: path to `java.exe` file, for example:
-> ```
-> C:\Program Files\Java\jdk1.8.0_152\bin\java.exe`
-> ```
+**Path**: path to `java.exe` file, for example:
 
- - **Startup directory**: path to any work folder with imf-plugin, for example: `C:\aja\imf-plugin`
+```
+C:\Program Files\Java\jdk1.8.0_152\bin\java.exe
+```
+
+**Startup directory**: path to any work folder with imf-plugin, for example: 
+
+```C:\aja\imf-plugin
+```
  
- - **Arguments**: path to jar file with property file path parameter for property file path, for example: `-jar "C:\aja\imf-plugin\imfplugin-0.0.1.jar" --spring.config.location=C:/aja/imf-plugin/imf-plugin.properties`
+**Arguments**: path to jar file with property file path parameter for property file path, for example: 
+
+```
+-jar "C:\aja\imf-plugin\imfplugin-0.0.1.jar" --spring.config.location=C:/aja/imf-plugin/imf-plugin.properties
+```
  
- - **Service name**: name of service, for example just *"imf-plugin"*
+**Service name**: name of service, for example just `imf-plugin`
 
+7) Click **Install service**
+8) Open Windows services (Windows search by "services"), find your service by name and start it.
 
-8. click "Install service"
-9. open windows services (windows search by "services"), find your service by name and start it
-
-
+#### Setting Up Application As Linux Service
 
 🔴 &nbsp;
+- install Open JDK 8
+        * `sudo apt-get update`
+        * `sudo apt-get install openjdk-8-jdk -y`
+        * `java -version`
+    - create a folder for Imf plugin
+        * `mkdir ~/imfplugin`
+    - unzip archive
+        * `sudo apt-get install unzip -y`
+        * `mv imfplugin.zip ~/imfplugin/`
+        * `cd ~/imfplugin/`
+        * `unzip imfplugin.zip`
+        * `rm imfplugin.zip`
+    - update `imf-plugin.properties` for your environment
+    - create a service
+        * customize `imfplugin.service` to yourself by following comments
+        * `mv imfplugin.service /etc/systemd/system/`
+        * `sudo systemctl daemon-reload`
+        * `sudo systemctl start imfplugin.service`
+        * check service status
+
+          `sudo systemctl status imfplugin.service`
+        * enable a service and start it immediately
+
+          `sudo systemctl enable imfplugin.service`
 
 
 

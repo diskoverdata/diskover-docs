@@ -13,7 +13,9 @@ Netflix, for example, requires all their content to be delivered in IMF format, 
 
 Once the content has been validated, it is then encoded into various formats, including 4K and HDR, and made available for streaming on various platforms. The IMF validation process is a critical step in the content delivery pipeline.
 
-The IMF Package Validator plugin is developed by [Oxagile](https://www.oxagile.com/), a major technological partner working with both Diskover Data and [AJA Video Systems](https://www.aja.com/). For more information or to purchase the IMF Package Validator plugin, please contact [Oxagile](mailto:IMF@Oxagile.com).
+#### Trial and Purchase of the plugin
+
+The IMF Package Validator plugin is developed by [Oxagile](https://www.oxagile.com/), a major technological partner working with both Diskover Data and [AJA Video Systems](https://www.aja.com/). For more information, to start a 30 day trial, or to purchase the IMF Package Validator plugin, please contact [Oxagile](mailto:IMF@Oxagile.com).
 
 #### Functional Limitations
 
@@ -183,39 +185,78 @@ docker compose up -d
 > 
 > **Service name**: name of service, for example just `imf-plugin`
 
-7) Click **Install service**
+7) Click **Install service**.
+
 8) Open Windows services (Windows search by "services"), find your service by name and start it.
 
 #### Setting Up Application As Linux Service
 
-🔴 &nbsp;
-- install Open JDK 8
-        * `sudo apt-get update`
-        * `sudo apt-get install openjdk-8-jdk -y`
-        * `java -version`
-    - create a folder for Imf plugin
-        * `mkdir ~/imfplugin`
-    - unzip archive
-        * `sudo apt-get install unzip -y`
-        * `mv imfplugin.zip ~/imfplugin/`
-        * `cd ~/imfplugin/`
-        * `unzip imfplugin.zip`
-        * `rm imfplugin.zip`
-    - update `imf-plugin.properties` for your environment
-    - create a service
-        * customize `imfplugin.service` to yourself by following comments
-        * `mv imfplugin.service /etc/systemd/system/`
-        * `sudo systemctl daemon-reload`
-        * `sudo systemctl start imfplugin.service`
-        * check service status
+🔴 &nbsp;Install `Open JDK 8`:
 
-          `sudo systemctl status imfplugin.service`
-        * enable a service and start it immediately
+```
+sudo apt-get update
+```
 
-          `sudo systemctl enable imfplugin.service`
+```
+sudo apt-get install openjdk-8-jdk -y
+```
 
+```
+java -version
+```
 
+🔴 &nbsp;Create a folder for IMF plugin:
 
+```
+mkdir ~/imfplugin
+```
 
+🔴 &nbsp;Unzip archive:
 
+```
+sudo apt-get install unzip -y
+```
 
+```
+mv imfplugin.zip ~/imfplugin/
+```
+
+```
+cd ~/imfplugin/
+```
+
+```
+unzip imfplugin.zip
+```
+
+```
+rm imfplugin.zip
+```
+
+🔴 &nbsp;Update `imf-plugin.properties` for your environment.
+
+🔴 &nbsp;Create a service by first customizing `imfplugin.service` to your environment with the following comments:
+
+```
+mv imfplugin.service /etc/systemd/system/
+```
+
+```
+sudo systemctl daemon-reload
+```
+
+```
+sudo systemctl start imfplugin.service
+```
+
+🔴 &nbsp;Check service status:
+
+```
+sudo systemctl status imfplugin.service
+```
+
+🔴 &nbsp;Enable a service and start it immediately:
+
+```
+sudo systemctl enable imfplugin.service
+```

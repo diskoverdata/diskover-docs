@@ -163,11 +163,11 @@ docker compose up -d
 
 6) In the Application tab, insert the following settings:
 
-**Path**: path to `java.exe` file, for example:
+ **Path**: path to `java.exe` file, for example:
 
-```
-C:\Program Files\Java\jdk1.8.0_152\bin\java.exe
-```
+ ```
+ C:\Program Files\Java\jdk1.8.0_152\bin\java.exe
+ ```
 
 **Startup directory**: path to any work folder with imf-plugin, for example: 
 

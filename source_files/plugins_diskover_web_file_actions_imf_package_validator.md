@@ -168,19 +168,20 @@ docker compose up -d
 > ```
 > C:\Program Files\Java\jdk1.8.0_152\bin\java.exe
 > ```
-
-**Startup directory**: path to any work folder with imf-plugin, for example: 
-
-```C:\aja\imf-plugin
-```
- 
-**Arguments**: path to jar file with property file path parameter for property file path, for example: 
-
-```
--jar "C:\aja\imf-plugin\imfplugin-0.0.1.jar" --spring.config.location=C:/aja/imf-plugin/imf-plugin.properties
-```
- 
-**Service name**: name of service, for example just `imf-plugin`
+>
+> **Startup directory**: path to any work folder with imf-plugin, for example: 
+>
+> ```
+> C:\aja\imf-plugin
+> ```
+> 
+> **Arguments**: path to jar file with property file path parameter for property file path, for example: 
+>
+> ```
+> -jar "C:\aja\imf-plugin\imfplugin-0.0.1.jar" --spring.config.location=C:/aja/imf-plugin/imf-plugin.properties
+> ```
+> 
+> **Service name**: name of service, for example just `imf-plugin`
 
 7) Click **Install service**
 8) Open Windows services (Windows search by "services"), find your service by name and start it.

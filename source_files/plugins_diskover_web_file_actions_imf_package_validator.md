@@ -63,12 +63,27 @@ For PHP diskover-web folder:
       /public/results.php
       /public/view.php
 ```      
-      
-3. For Java IMF-PlugIn - from linux Docker container:
 
-> _Note:_&nbsp;**IMF-Plugin** must be on the same machine as the python worker and validation files.
+##### Java IMF-Plugin
 
-🔴 &nbsp;Create folder:
+**Important**
+
+- The IMF-Plugin must be on the same machine as the python worker and validation files.
+- The optimal versions of ElasticSearch against which the plugin was tested are 7.17.9 and 7.10.2
+
+🔴 &nbsp;If ElasticSearch is configured with security enabled username and password for connection, then you need to set the appropriate username and password values in these files, depending on the deployment method:
+
+```
+imf-plugin.properties
+```
+
+Or
+
+```
+docker-compose.yml
+```
+
+🔴 &nbsp;From Linux Docker container, create folder:
 
 ```
 /root/imf-plugin
@@ -78,32 +93,97 @@ For PHP diskover-web folder:
 
 ```
 imfplugin-0.0.1.jar
+```
+
+```
 Dockerfile
+```
+
+```
 docker-compose.yml
 ```
 
-🔴 &nbsp;In `docker-compose.yml` file, change the `DISKOVER_URL` address, `ELASTICSEARCH_HOST`, and `ELASTICSEARCH_PORT` in the **environment** block. For example:
+🔴 &nbsp;In `docker-compose.yml` file, change the URL for Diskover `DISKOVER_URL`, host and port (username and password if needed) for `ELASTICSEARCH_HOST` and `ELASTICSEARCH_PORT` in the **environment** block. For example:
 
 ```
 DISKOVER_URL=http://192.189.117.68:8000
+```
+
+```
 ELASTICSEARCH_HOST=192.189.117.68
+```
+
+```
 ELASTICSEARCH_PORT=9200
 ```
 
-🔴 &nbsp;If the shared folder for validation is not `/media` on your host machine, then you need to change volumes in `docker-compose.yml`, for example, if the folder for validation is `/usr/imf`, then the volumes should be like this:
+🔴 &nbsp;If the shared folder for validation is not `/media` on your host machine, then you need to change volumes in `docker-compose.yml`. For example, if the folder for validation is `/usr/imf`, then the volumes should be like this:
 
 ```
 /usr/imf:/media
 ```
 
-🔴 &nbsp;Build from `/root/imf-plugin`:
+🔴 &nbsp;In order to launch the IMF plugin, we have to mount local directory to a container:
+
+```
+./:/home/imf-plugin
+```
+
+🔴 &nbsp;From `/root/imf-plugin` build:
 
 ```
 docker build -t imf-plugin:0.0.1 .
 ```
 
-🔴 &nbsp;Run from `/root/imf-plugin`:
+🔴 &nbsp;From `/root/imf-plugin` run:
 
 ```
 docker compose up -d
-``` 
+```
+
+#### Setting Up Application As Windows Service
+
+🔴 &nbsp;Unzip archive `jdk1.8.0_152.zip` to folder `C:\Program Files\Java\`
+   
+🔴 &nbsp;Copy `imf-plugin` folder (with jar and imf-plugin.properties files) into work folder, for example: `C:\aja\imf-plugin`
+
+🔴 &nbsp;If necessary, configure the `imf-plugin.properties` file.
+      
+🔴 &nbsp;Setting up application as windows service - if there is already `nssm.exe` file in the plugin folder and you have 64bit system, then you can skip steps 1 to 3:
+
+1) Download `NSSM` application from [https://nssm.cc/download](https://nssm.cc/download), for example `nssm-2.24.zip`
+
+2) Unzip archive to temporary folder and copy `nssm.exe` file from win64 or win32 folder relative to your system version.
+
+3) Paste `nssm.exe` file into folder where imf-plugin jar file is located.
+
+4) Run cmd as administrator and go to folder with `nssm.exe` file.
+
+5) Run command `nssm install` (`.\nssm install` for PowerShell) and you will see a window with `nssm` settings.
+
+6) In the Application tab, insert the following settings:
+
+> **Path**: path to `java.exe` file, for example:
+> ```
+> C:\Program Files\Java\jdk1.8.0_152\bin\java.exe`
+> ```
+
+ - **Startup directory**: path to any work folder with imf-plugin, for example: `C:\aja\imf-plugin`
+ 
+ - **Arguments**: path to jar file with property file path parameter for property file path, for example: `-jar "C:\aja\imf-plugin\imfplugin-0.0.1.jar" --spring.config.location=C:/aja/imf-plugin/imf-plugin.properties`
+ 
+ - **Service name**: name of service, for example just *"imf-plugin"*
+
+
+8. click "Install service"
+9. open windows services (windows search by "services"), find your service by name and start it
+
+
+
+🔴 &nbsp;
+
+
+
+
+
+

@@ -25,13 +25,17 @@ The following are the limitations of the current plugin version:
 4.	Archives are not supported.
 5.	DCP packages are not supported.
 
+#### IMPORTANT NOTE
+
+Please refer to the **Read Me** document and any other documentation attached to the plugin from Oxagile, as they may contain more recent information.
+
 #### IMF Package Validator Plugin Installation
  
 1. There are no changes in python part and/or diskover folder.
 
 2. For PHP diskover-web folder:
 
-🔴 &nbsp;Copy the new file action from `/src/diskover/Constants.php.sample` and add **validate IMF package**. For more information on [adding a file action](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#diskover-web-plugins-file-actions).
+🔴 &nbsp;Copy the new file action from `/src/diskover/Constants.php.sample` and add file action **validate IMF package**. For more information on [adding a file action](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#diskover-web-plugins-file-actions).
 
 🔴 &nbsp;Copy file `imfvalidate.php` from `/public/fileactions/fileaction_samples` into `/public/fileactions`
 

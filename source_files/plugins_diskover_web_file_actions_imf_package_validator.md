@@ -27,9 +27,9 @@ The following are the limitations of the current plugin version:
 4.	Archives are not supported.
 5.	DCP packages are not supported.
 
-#### IMPORTANT NOTE
+#### IMPORTANT! Notes For Installation Instructions
 
-Please refer to the **Read Me** document and any other documentation attached to the plugin you will receive from Oxagile, as they may contain more recent information.
+Please refer to the **Read Me** document and any other documentation attached to the plugin, like the **Secure FTP Server Settings**  you will receive from Oxagile, as they may contain more recent information.
 
 #### IMF Package Validator Plugin Installation
  

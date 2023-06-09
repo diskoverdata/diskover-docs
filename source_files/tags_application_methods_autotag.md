@@ -2,7 +2,7 @@
 
 #### Tag Application via Autotag
 
-Tags can be applied automatically via a series of rules applied to directories or file. The rules can be very powerful based on a combination of file name, extension, path, age, size, etc.
+Tags can be applied automatically via a series of rules applied to directories or files. The rules can be very powerful based on a combination of file name, extension, path, age, size, etc.
 
 - Auto-tagging rules can be found in the `diskover_autotag` config file for tagging files and directories.
 - Auto-tagging can also be done during a crawl by enabling autotag in diskover config and setting rules in the diskover config file.
@@ -58,13 +58,13 @@ Autotag Keys:
 
 - `name`: a list of file/directory names (case-sensitive)
 - `name_exclude`: a list of file/directory names to exclude (case-sensitive)
-- `ext`: a list of file extensions (without the .) (use lowercase - all file extension are stored as lowercase in the index)
+- `ext`: a list of file extensions (without the .) (use lowercase - all file extensions are stored as lowercase in the index)
 - `path`: a list of paths (parent_path field, case-sensitive)
 - `path_exclude`: a list of paths to exclude (parent_path field, case-sensitive)
 - `ctime`: change time at least this number or older (days)
 - `mtime`: modified time at least this number or older (days)
 - `atime`: access time at least this number or older (days)
-- `tags`: a list of tags to apply if item matches
+- `tags`: a list of tags to apply if the item matches
 
 > _Note:_ name, name_exclude, path, path_exclude, and ext all use [Python re.search](https://docs.python.org/3.7/library/re.html) (regular expression).
 > All list items should be in quotes and separated by comma

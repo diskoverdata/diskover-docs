@@ -24,7 +24,7 @@ The path location is added to the asset within Xytech and the asset number is as
 
 Here is an example of an asset rehydration as viewed in the Xytech application:
 
-![Asset Information in Xytech](images/image_aja_edition_mediapulse_asset_creation_within_mediapulse_ui_1495193.png)
+![Asset Information in Xytech](images/image_xytech_asset_creation_example.png.png)
 
 #### Asset Information Within Diskover
 
@@ -72,7 +72,7 @@ An instance of key information might be the invoice date for a work order. A sta
 
 #### Order Status Information Within Xytech Application
 
-![Image: Order Status within Xytech Media Order Platform](images/image_aja_edition_mediapulse_order_status_in_xytech.png)
+![Image: Order Status within Xytech Media Order Platform](images/image_xytech_order_status_example.png.png)
 
 #### Order Status Information Within Diskover
 

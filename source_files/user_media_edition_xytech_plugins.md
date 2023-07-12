@@ -30,7 +30,7 @@ The following are examples of media asset attributes within Diskover, allowing c
 
 ![Image: Asset Information in Diskover Results Pane](images/image_aja_edition_mediapulse_asset_creation_within_diskover_ui_results_pane.png)
 
-![Image: Asset Information in Diskover File Attributes](images/image_aja_edition_mediapulse_asset_creation_within_diskover_ui_file attribute.png)
+![Image: Asset Information in Diskover File Attributes](images/image_aja_edition_xytech_asset_creation_within_diskover_ui_file attribute.png)
 
 #### How to Search for Xytech Media Assets in Diskover
 

@@ -51,9 +51,9 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 
 | Search Query Examples | Search Results |
 | --- | --- |
-| **xytech.asset_id:**__*\**__ | would find all files/directories with any asset ID attached to them |
-| **xytech.asset_id:**__*1495193*__ | would search for the specific asset ID number 1495193 |
-| **xytech.asset_id:**__*1234**__ | would search for asset ID number starting with 1234 |
+| **xytech.asset_id:**__*\**__ | would find all files/directories with __*any*__ asset ID attached to them |
+| **xytech.asset_id:**__*1495193*__ | would find all files/directories with the specific asset ID number __*1495193*__ |
+| **xytech.asset_id:**__*1234**__ | would find all files/directories with an asset ID number starting with __*1234*__ |
 
 ___
 ### Xytech Order Status Plugin Overview
@@ -64,7 +64,7 @@ The Xytech order status plugin is designed to automate the correlation of the or
 
 Facilities often manually correlate the order management system with the storage repositories. However, manual processes are subject to human errors and difficult to scale as the volume of media orders and data turnover increases constantly.
 
-Therefore, the lack of integration for file-based workflows between the order management system and the underlying storage repositories, makes data management decisions difficult as they are solely based on attributes of files or objects on storage. Additional business context is needed from the order management system to increase precision and accuracy of data management decisions.
+Therefore, the lack of integration for file-based workflows between the order management system and the underlying storage repositories, makes data management decisions difficult as they are solely based on attributes of files or objects on storage. Additional business context is needed from the order management system to increase the precision and accuracy of data management decisions.
 
 An instance of key information might be the invoice date for a work order. A status change for a work order can be a key indicator for data management, for example, once a [Xytech media order](https://www.xytechsystems.com/) has been “invoiced”, then the data associated with that media order can be a candidate for archival.
 
@@ -72,9 +72,9 @@ An instance of key information might be the invoice date for a work order. A sta
 
 ![Image: Order Status within Xytech Media Order Platform](images/image_xytech_order_status_example.png)
 
-#### Xytech Media Asset Attributes Within Diskover
+#### Xytech Order Status Attributes Within Diskover
 
-The following are examples of media asset attributes within Diskover, allowing correlation with the Xytech application, therefore, enabling that data to be searched, analyzed, as well as engaged in workflows.
+The following are examples of order status attributes within Diskover, allowing correlation with the Xytech application, therefore, enabling that data to be searched, analyzed, as well as engaged in workflows.
 
 #### Order Status Information Within Diskover
 
@@ -84,23 +84,25 @@ Examples of order status attributes harvested from Xytech during Diskover indexi
 
 <img src="images/image_diskover_xytech_order_status_attributes_completed.png" width="350">&nbsp;&nbsp;&nbsp;<img src="images/image_diskover_xytech_order_status_attributes_invoiced.png" width="350">
 
+#### Order Status Analytics Withing Diskover
+
 Example of Diskover customized Reports using order status attributes harvested from Xytech, giving business context to regular data. 
 
 ![Image: Order Status within Xytech Media Order Platform](images/image_reporting_reports_report_example_diskover_ui.png)
 
 #### How to Search for Xytech Order Status in Diskover
 
-##### General Information
+##### Attributes Overview
 The **order status** fields are part of the metadata harvested by Diskover. If a file at the source doesn’t have an asset ID attached to it, it goes without saying that no details will be harvested and/or be available within Diskover.
 
 In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#search_syntax), the AJA Diskover Media Edition allows end-users to search on Xytech order status information.
 
 ##### Search Syntax
 
-- The following syntax needs to be respected `xytech.key:value`:
+- The following syntax needs to be respected **xytech.key:**__*value*__:
     * **xytech** is not a variable.
     * **key** is a variable like phase, account manager, etc.
-    * **value** is a variable as per the examples below.
+    * __*value*__ is a variable as per the examples below.
 
 - Searching on **xytech** fields is case insensitive.
 
@@ -109,7 +111,8 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 | Search Query Examples | Search Results |
 | --- | --- |
 | `xytech.phase:invoiced` | would find all files/directories with an invoiced status |
-| `xytech.account_manager:*Joe*` | would search for all files/directories with Joe as the account manager |
+| `xytech.customer_id:9999` | would find all files/directories with an invoiced status |
+| `xytech.account_manager:*Smith*` | would search for all files/directories with Smith as the account manager |
 | `xytech.begin_date:*2022-07-19*` | would search for all files/directories with a order status beginning date of 19 July, 20202 |
 | `xytech.due_date:*2022-07-19*` | would search for all files/directories with an order status due date of 19 July, 20202 |
 | `xytech.invoice_id:19782` | would search for all files/directories with invoice number 19782 |

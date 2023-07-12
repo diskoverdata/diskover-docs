@@ -1,12 +1,12 @@
 ___
 ## Xytech Plugins
 ___
-This chapter describes the features that are currently released enhancing file-based production workflows when using the Xytech Media Operations Platform. Extra metadata can be harvested to give additional business context allowing for efficient data flow management.
+This chapter describes features enhancing file-based production workflows when using the Xytech Media Operations Platform. Extra metadata is harvested to give additional business context allowing for efficient data flow management, including searches, analytics, and data curation.
 
 [Click here to learn more about the Xytech Media Operations Platform.](https://www.xytechsystems.com/)
 
 ___
-### Xytech Asset Creation Plugin
+### Xytech Asset Creation Plugin Overview
 
 #### [🍿 Watch Demo Video | Xytech Asset Creation Plugin](https://vimeo.com/660789118)
 
@@ -20,32 +20,30 @@ The plugin operates on the assumption that the assets restored to online media a
 
 The path location is added to the asset within Xytech and the asset number is assigned to the file via a tag within the Diskover Index.
 
-#### Asset Information Within Xytech Application
-
-Here is an example of an asset rehydration as viewed in the Xytech application:
+#### Media Asset Interface Within Xytech Application
 
 ![Asset Information in Xytech](images/image_xytech_asset_creation_example.png)
 
-#### Asset Information Within Diskover
+#### Xytech Media Asset Attributes Within Diskover
 
-Here are the same values, customer ID and asset ID, displayed within Diskover:
+The following are examples of media asset attributes within Diskover, allowing correlation with the Xytech application, therefore, enabling that data to be searched, analyzed, as well as engaged in workflows.
 
 ![Image: Asset Information in Diskover Results Pane](images/image_aja_edition_mediapulse_asset_creation_within_diskover_ui_results_pane.png)
 
 ![Image: Asset Information in Diskover File Attributes](images/image_aja_edition_mediapulse_asset_creation_within_diskover_ui_file attribute.png)
 
-#### How to Search for Asset IDs in Diskover
+#### How to Search for Xytech Media Assets in Diskover
 
-##### General Information
+##### Attributes Overview
 The **asset id** is part of the metadata harvested by Diskover. If a file at the source doesn’t have an asset ID attached to it, it goes without saying that no details will be harvested and/or be available within Diskover.
 
 In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#search_syntax), the AJA Diskover Media Edition allows end-users to search on Xytech asset ID numbers.
 
 ##### Search Syntax
 
-- The following syntax needs to be respected `xytech.asset_id:value`:
+- The following syntax needs to be respected **xytech.asset_id:**_value_:
     * **xytech.asset_id:** is not a variable.
-    * **value** is a variable as per the examples below.
+    * _value_ is a variable as per the examples below.
 
 - Searching on **xytech** fields is case insensitive.
 
@@ -53,16 +51,16 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 
 | Search Query Examples | Search Results |
 | --- | --- |
-| `xytech.asset_id:*` | would find all files/directories with any asset ID attached to them |
-| `xytech.asset_id:1495193` | would search for the specific asset ID number 1495193 |
-| `xytech.asset_id:*123*` | would search for partial digits 123 anywhere in the asset ID number |
+| **xytech.asset_id:**_\*_ | would find all files/directories with any asset ID attached to them |
+| **xytech.asset_id:**_1495193_ | would search for the specific asset ID number 1495193 |
+| **xytech.asset_id:**_123_ | would search for partial digits 123 anywhere in the asset ID number |
 
 ___
-### Xytech Order Status Plugin
+### Xytech Order Status Plugin Overview
 
 #### [🍿 Watch Demo Video | Xytech Order Status Plugin](https://vimeo.com/768967081)
 
-The Xytech order status plugin is designed to automate the correlation of the order management system and the storage system, by harvesting key business context from Xytech and applying that context within the AJA Diskover Media Edition. In turn, this business context metadata can be used to automate workflows, monitor costs, create customized reports, etc.
+The Xytech order status plugin is designed to automate the correlation of the order management system and the storage system, by harvesting key business context from Xytech and applying that context within the AJA Diskover Media Edition. In turn, this business context metadata can be used to curate data, automate workflows, monitor costs, create customized reports, etc.
 
 Facilities often manually correlate the order management system with the storage repositories. However, manual processes are subject to human errors and difficult to scale as the volume of media orders and data turnover increases constantly.
 
@@ -70,11 +68,17 @@ Therefore, the lack of integration for file-based workflows between the order ma
 
 An instance of key information might be the invoice date for a work order. A status change for a work order can be a key indicator for data management, for example, once a [Xytech media order](https://www.xytechsystems.com/) has been “invoiced”, then the data associated with that media order can be a candidate for archival.
 
-#### Order Status Information Within Xytech Application
+#### Order Status User Interface Within Xytech Application
 
 ![Image: Order Status within Xytech Media Order Platform](images/image_xytech_order_status_example.png)
 
+#### Xytech Media Asset Attributes Within Diskover
+
+The following are examples of media asset attributes within Diskover, allowing correlation with the Xytech application, therefore, enabling that data to be searched, analyzed, as well as engaged in workflows.
+
 #### Order Status Information Within Diskover
+
+The plugin finds all of the Xytech Media Order folders on the storage volume(s) then pulls additional status and attributes/metadata and adds them as basically "properties" of that folder.
 
 Examples of order status attributes harvested from Xytech during Diskover indexing, which can be used to search, analyze, and automate workflows:
 
@@ -84,7 +88,7 @@ Example of Diskover customized Reports using order status attributes harvested f
 
 ![Image: Order Status within Xytech Media Order Platform](images/image_reporting_reports_report_example_diskover_ui.png)
 
-#### How to Search for Asset IDs in Diskover
+#### How to Search for Xytech Order Status in Diskover
 
 ##### General Information
 The **order status** fields are part of the metadata harvested by Diskover. If a file at the source doesn’t have an asset ID attached to it, it goes without saying that no details will be harvested and/or be available within Diskover.

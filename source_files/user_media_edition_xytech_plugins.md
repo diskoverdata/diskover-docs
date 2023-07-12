@@ -120,7 +120,7 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 | --- | --- |
 | **xytech.phase:**__*Invoiced*__ | would find all files/directories with an __*Invoiced*__ status, note that case sensitivity needs to be respected for the __*value*__ and needs to start with a capital letter |
 | **xytech.customer_id:**__*9999*__ | would find all files/directories with customer ID __*9999*__ |
-| **xytech.account_manager:**__*\*Smith*\*__ | would find all files/directories with __*Smith*__ as the account manager, note that case sensitivity needs to be respected for the __*value*__ and needs to start with a capital letter unless all lower cases were used in the Xytech application |
+| **xytech.account_manager:**__*\*Smith*\*__ | would find all files/directories with __*Smith*__ being part of the account manager's name, note that case sensitivity needs to be respected for the __*value*__ and needs to start with a capital letter unless all lower cases were used in the Xytech application |
 | **xytech.begin_date:**__**2022-10-02**__ | would find all files/directories with an order status beginning date of __*October 2, 2022*__ |
 | **xytech.due_date:**__**2023-04-19**__ | would find all files/directories with an order status due date of __*April 10, 2023*__ |
 | **xytech.invoice_date:**__**2023-05-08**__ | would search for all files/directories with an invoice date of __*May 8, 2023*__ |

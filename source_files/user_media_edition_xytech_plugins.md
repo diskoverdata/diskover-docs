@@ -51,9 +51,9 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 
 | Search Query Examples | Search Results |
 | --- | --- |
-| **xytech.asset_id:**__**\**__ | would find all files/directories with any asset ID attached to them |
-| **xytech.asset_id:**1495193_ | would search for the specific asset ID number 1495193 |
-| **xytech.asset_id:**_123_ | would search for partial digits 123 anywhere in the asset ID number |
+| **xytech.asset_id:**__*\**__ | would find all files/directories with any asset ID attached to them |
+| **xytech.asset_id:**__*1495193*__ | would search for the specific asset ID number 1495193 |
+| **xytech.asset_id:**__*123*__ | would search for partial digits 123 anywhere in the asset ID number |
 
 ___
 ### Xytech Order Status Plugin Overview

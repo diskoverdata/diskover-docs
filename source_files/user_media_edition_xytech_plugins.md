@@ -41,9 +41,9 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 
 ##### Search Syntax
 
-- The following syntax needs to be respected **xytech.asset_id:**_value_:
+- The following syntax needs to be respected **xytech.asset_id:**__*value*__:
     * **xytech.asset_id:** is not a variable.
-    * _value_ is a variable as per the examples below.
+    * __*value*__ is a variable as per the examples below.
 
 - Searching on **xytech** fields is case insensitive.
 
@@ -51,8 +51,8 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 
 | Search Query Examples | Search Results |
 | --- | --- |
-| **xytech.asset_id:**_\*_ | would find all files/directories with any asset ID attached to them |
-| **xytech.asset_id:**_1495193_ | would search for the specific asset ID number 1495193 |
+| **xytech.asset_id:**__**\**__ | would find all files/directories with any asset ID attached to them |
+| **xytech.asset_id:**1495193_ | would search for the specific asset ID number 1495193 |
 | **xytech.asset_id:**_123_ | would search for partial digits 123 anywhere in the asset ID number |
 
 ___

@@ -34,7 +34,8 @@ The following are examples of media asset attributes within Diskover, allowing c
 
 #### How to Search for Xytech Media Assets in Diskover
 
-##### Attributes Overview
+##### Search Overview
+
 The **asset id** is part of the metadata harvested by Diskover. If a file at the source doesn’t have an asset ID attached to it, it goes without saying that no details will be harvested and/or be available within Diskover.
 
 In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#search_syntax), the AJA Diskover Media Edition allows end-users to search on Xytech asset ID numbers.
@@ -48,6 +49,8 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 - Searching on **xytech** fields is case insensitive.
 
 - Your search query needs to be typed or pasted into the Diskover search bar.
+
+##### Search Examples
 
 | Search Query Examples | Search Results |
 | --- | --- |
@@ -100,10 +103,11 @@ Below are examples of analytics using Diskover's [Reports](https://docs.diskover
 
 #### How to Search for Xytech Order Status in Diskover
 
-##### Attributes Overview
+##### Search Overview
+
 The **order status** fields are part of the metadata harvested by Diskover. If a file at the source doesn’t have an asset ID attached to it, it goes without saying that no details will be harvested and/or be available within Diskover.
 
-In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#search_syntax), the AJA Diskover Media Edition allows end-users to search on Xytech order status information.
+In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#search_syntax), the AJA Diskover Media Edition allows end-users to search on multiple Xytech order status attributes.
 
 ##### Search Syntax
 
@@ -115,6 +119,8 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 - Searching on **xytech** fields is case insensitive.
 
 - Your search query needs to be typed or pasted in the Diskover search bar.
+
+##### Search Examples
 
 | Search Query Examples | Search Results |
 | --- | --- |

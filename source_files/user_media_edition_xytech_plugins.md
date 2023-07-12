@@ -1,7 +1,7 @@
 ___
 ## Xytech Plugins
 ___
-This chapter describes features enhancing file-based production workflows when using the Xytech Media Operations Platform. Extra metadata is harvested to give additional business context allowing for efficient data flow management, including searches, analytics, and data curation.
+This chapter describes features enhancing file-based production workflows when using the [Xytech Media Operations Platform](https://www.xytechsystems.com/). Extra metadata is harvested to give additional business context allowing for efficient data flow management, including searches, analytics, and data curation.
 
 [Click here to learn more about the Xytech Media Operations Platform.](https://www.xytechsystems.com/)
 
@@ -74,21 +74,27 @@ An instance of key information might be the invoice date for a work order. A sta
 
 #### Xytech Order Status Attributes Within Diskover
 
-The following are examples of order status attributes within Diskover, allowing correlation with the Xytech application, therefore, enabling that data to be searched, analyzed, as well as engaged in workflows.
+The plugin finds all of the Xytech Media Order folders on the storage volume(s), then pulls additional status and attributes/metadata and adds them as "properties" of that folder.
 
-#### Order Status Information Within Diskover
+The following are examples of order status [attributes](https://docs.diskoverdata.com/diskover_user_guide/#attributesmetadata) within Diskover, allowing correlation with the Xytech application, therefore, enabling that data to be searched, analyzed, as well as engaged in workflows.
 
-The plugin finds all of the Xytech Media Order folders on the storage volume(s) then pulls additional status and attributes/metadata and adds them as basically "properties" of that folder.
+<img src="images/image_diskover_xytech_order_status_attributes_invoiced.png" width="350">
 
-Examples of order status attributes harvested from Xytech during Diskover indexing, which can be used to search, analyze, and automate workflows:
+A Xytech column can be added in the Diskover search page giving a summary of the [attributes](https://docs.diskoverdata.com/diskover_user_guide/#attributesmetadata).
 
-<img src="images/image_diskover_xytech_order_status_attributes_completed.png" width="350">&nbsp;&nbsp;&nbsp;<img src="images/image_diskover_xytech_order_status_attributes_invoiced.png" width="350">
+![Image: Xytech Attributes in Diskover Search Page](images/image_diskover_xytech_order_status_search_page.png)
 
-#### Order Status Analytics Withing Diskover
+#### Order Status Analytics Within Diskover
 
-Example of Diskover customized Reports using order status attributes harvested from Xytech, giving business context to regular data. 
+Business context metadata allows for granular and powerful analytics with information relevant to your business. Below are examples of analytics using Diskover's [Reports](https://docs.diskoverdata.com/diskover_user_guide/#reports) feature.
 
-![Image: Order Status within Xytech Media Order Platform](images/image_reporting_reports_report_example_diskover_ui.png)
+##### Top Results by Manager
+
+![Image: Order Status within Xytech Media Order Platform](images/screenshot_aja_diskover_media_edition_xytech_order_status_reports_by_manager.png)
+
+##### Top Results by Order Status
+
+![Image: Order Status within Xytech Media Order Platform](images/screenshot_aja_diskover_media_edition_xytech_order_status_reports_by_phase.png)
 
 #### How to Search for Xytech Order Status in Diskover
 
@@ -110,11 +116,11 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 
 | Search Query Examples | Search Results |
 | --- | --- |
-| `xytech.phase:invoiced` | would find all files/directories with an invoiced status |
-| `xytech.customer_id:9999` | would find all files/directories with an invoiced status |
-| `xytech.account_manager:*Smith*` | would search for all files/directories with Smith as the account manager |
-| `xytech.begin_date:*2022-07-19*` | would search for all files/directories with a order status beginning date of 19 July, 20202 |
-| `xytech.due_date:*2022-07-19*` | would search for all files/directories with an order status due date of 19 July, 20202 |
-| `xytech.invoice_id:19782` | would search for all files/directories with invoice number 19782 |
-| `xytech.invoice_date:*2022-07-19*` | would search for all files/directories with an invoice date of 19 July, 20202 |
+| **xytech.phase:**__*Invoiced*__ | would find all files/directories with an __*Invoiced*__ status, note that case sensitivity needs to be respected for the __*value*__ and needs to start with a capital letter |
+| **xytech.customer_id:**__*9999*__ | would find all files/directories with customer ID __*9999*__ |
+| **xytech.account_manager:**__*\*Smith*\*__ | would find all files/directories with __*Smith*__ as the account manager, note that case sensitivity needs to be respected for the __*value*__ and needs to start with a capital letter unless all lower cases were used in the Xytech application |
+| **xytech.begin_date:**__**2022-10-02**__ | would find all files/directories with an order status beginning date of __*October 2, 2022*__ |
+| **xytech.due_date:**__**2023-04-19**__ | would find all files/directories with an order status due date of __*April 10, 2023*__ |
+| **xytech.invoice_date:**__**2023-05-08**__ | would search for all files/directories with an invoice date of __*May 8, 2023*__ |
+| **xytech.invoice_id:**__*233890*__ | would find all files/directories with invoice number __*233890*__ |
 

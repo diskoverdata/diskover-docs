@@ -76,7 +76,7 @@ An instance of key information might be the invoice date for a work order. A sta
 
 The plugin finds all of the Xytech Media Order folders on the storage volume(s), then pulls additional status and attributes/metadata and adds them as "properties" of that folder.
 
-The following are examples of order status [attributes](https://docs.diskoverdata.com/diskover_user_guide/#attributesmetadata) within Diskover, allowing correlation with the Xytech application, therefore, enabling that data to be searched, analyzed, as well as engaged in workflows.
+The following are examples of order status [attributes](https://docs.diskoverdata.com/diskover_user_guide/#attributesmetadata) within Diskover, allowing correlation with the Xytech application, therefore, enabling that data to be searched, analyzed, as well as engaged in workflows. Please note that the fields harvested from Xytech are configurable.
 
 <img src="images/image_diskover_xytech_order_status_attributes_invoiced.png" width="350">
 
@@ -86,7 +86,9 @@ A Xytech column can be added in the Diskover search page giving a summary of the
 
 #### Order Status Analytics Within Diskover
 
-Business context metadata allows for granular and powerful analytics with information relevant to your business. Below are examples of analytics using Diskover's [Reports](https://docs.diskoverdata.com/diskover_user_guide/#reports) feature.
+Business context metadata allows for granular and powerful analytics with information relevant to your business. Once the Xytech attributes are indexed by Diskover, they can be used in various [reporting tools](https://docs.diskoverdata.com/diskover_user_guide/#analytics).
+
+Below are examples of analytics using Diskover's [Reports](https://docs.diskoverdata.com/diskover_user_guide/#reports) feature.
 
 ##### Top Results by Manager
 

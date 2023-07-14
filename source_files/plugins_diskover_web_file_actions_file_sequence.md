@@ -1,5 +1,5 @@
 ___
-### File Action > File Sequence 
+### File Action > Find File Sequences 
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 

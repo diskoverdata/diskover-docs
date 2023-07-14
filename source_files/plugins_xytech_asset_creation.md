@@ -1,9 +1,9 @@
 ___
-### Xytech Media Operations Platform Asset Creation Plugin
+### Xytech Asset Creation Plugin
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
-#### Xytech Asset Creation Plugin Introduction
+#### Xytech Asset Creation Plugin Overview
 Post facilities often have customer assets stored on LTO tape media. However, these assets are difficult to discover within the Xytech Media Operations Platform if there is no Asset ID in the customers vault of assets. The plugin is designed to use the Diskover indexer to discover newly restored customer assets from any media. The assets are restored into a folder with naming convention **CustomerNumber_CustomerName**. 
 
 The Xytech Asset Creation plugin then uses the Xytech API to create an asset for the customer in the vault library. The path location is added to the asset within Xytech and the asset # is assigned as a tag to the file/object within the Diskover index.

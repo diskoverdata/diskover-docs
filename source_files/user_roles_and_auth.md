@@ -185,6 +185,23 @@ const API_PASS = 'apisecret';
 
 > _Note:_ When changing API Auth settings, remember to update [diskoverd](https://docs.diskoverdata.com/diskover_installation_guide/#setting-up-diskover-task-worker-daemon) task worker daemon config to use the new auth settings.
 
+#### Restricting API Access By LDAP/AD login
+
+You can use LDAP/AD logins using HTTP Basic Auth for the Diskover-Web API.
+
+🔴 &nbsp;Enable API ldap auth:
+```
+vim /var/www/diskover-web/src/diskover/Constants.php
+```
+
+```
+// LDAP/AD Auth for REST API
+// api ldap/ad authentication, set to TRUE to enable or FALSE to disable
+const API_AUTH_LDAP_ENABLED = TRUE;
+```
+
+> _Note:_ When enabling API ldap auth, config index/ldap filter settings are used, see [Restricting Visibility and Access]([#restricting-visibility-and-access](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#restricting-visibility-and-access)).
+
 
 #### Restricting API Access By Host/IP
 

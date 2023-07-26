@@ -1,5 +1,5 @@
 ___
-## Media Attributes
+## Media Info Attributes
 ___
 
 Media attributes, like file resolution, codec, pixel format, etc., are harvested during indexing and are therefore available to enhance in-depth searches and deliver accurate results.

@@ -1,9 +1,9 @@
 ___
-### Duplicates Plugin (Dupes Finder)
+### Duplicates Finder Plugin
 
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
-The Diskover duplicate plugin (dupes-finder) leverages post processing of index to check for duplicates, across all file systems, or subset thereof. The plugin supports **xxhash**, **md5**, **sha1**, and **sha256** checksums. The plugin is designed for multiple use cases:
+The Diskover duplicates finder plugin (dupes-finder) leverages post processing of index to check for duplicates, across all file systems, or subset thereof. The plugin supports **xxhash**, **md5**, **sha1**, and **sha256** checksums. The plugin is designed for multiple use cases:
 
 - To check for duplicate files across a single or all file systems (single or multiple indices) and indexing the file docs in index that are dupes
 - Calculating file checksums/hashes for all duplicate files or all files and indexing hashes to file docs in index

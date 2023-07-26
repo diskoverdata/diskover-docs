@@ -1,8 +1,5 @@
 ___
 ## User Roles and Authentication
-
-![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
-
 ___
 
 This chapter discusses setting up authenticated user access to Diskover-Web.
@@ -17,10 +14,12 @@ vim /var/www/diskover-web/src/diskover/Constants.php
 
 <img src="images/image_user_auth_local_user_config.png" width="750">
 
->Note: The passwords stored in web config file (Constants.php) are only used as the default initial passwords when first logging in to Diskover-Web. On first login, you will be asked to change the password and the password will be stored and encrypted in sqlite db and default password in web config will no longer be used.
+>_Note:_ The passwords stored in web config file (Constants.php) are only used as the default initial passwords when first logging in to Diskover-Web. On first login, you will be asked to change the password and the password will be stored and encrypted in sqlite db and default password in web config will no longer be used.
 
 ___
 ### LDAP / Active Directory Authentication
+
+![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
 Diskover-Web supports authenticating users from Active Directory over Lightweight Directory Access Protocol (LDAP). LDAP integration can be used to authenticate users against a Microsoft Domain Controller (DC).
 
@@ -29,7 +28,7 @@ The following information is required to configure LDAP authentication:
 **LDAP_LOGINS** - set to TRUE to enable and use ldap logins
 
 **LDAP_HOST** - The full LDAP URI, examples: `ldap://dc.domain.com:389` or `ldaps://dc.domain.com:636` for SSL encryption.
->Note: You can also provide multiple LDAP-URIs separated by a space as one string.
+>_Note:_ You can also provide multiple LDAP-URIs separated by a space as one string.
 
 **LDAP_PORT** - Examples: 389 or 636
 
@@ -42,7 +41,7 @@ At least three AD groups should be established for Diskover and set in web confi
 2. User group added to **LDAP_USER_GROUPS**
 3. Task panel group added to **LDAP_TASK_PANEL_GROUPS**
 
->Note: at login, the ad/ldap user will be checked if they are in one of these above ad/ldap groups. If they are not in any of these groups, they will be denied access to log in.
+>_Note:_ at login, the ad/ldap user will be checked if they are in one of these above ad/ldap groups. If they are not in any of these groups, they will be denied access to log in.
 
 🔴 &nbsp;To configure AD / LDAP login authentication:
 ```
@@ -54,9 +53,11 @@ vim /var/www/diskover-web/src/diskover/Constants.php
 ___
 ### Okta Authentication
 
+![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
+
 Diskover-Web supports authenticating/authorizing users using Okta Identity.
 
->Note: this doc does not cover adding an application to Okta admin page. You will need to first add an Oauth application (Web app) to your Okta admin page for Diskover-Web
+>_Note:_ this doc does not cover adding an application to Okta admin page. You will need to first add an Oauth application (Web app) to your Okta admin page for Diskover-Web
 
 🔴 &nbsp;To configure Okta logins:
 ```
@@ -66,14 +67,14 @@ vim /var/www/diskover-web/src/diskover/Constants.php
 The following information is required to configure Okta authentication/authorization:
 
 **OKTA_LOGINS** - set to TRUE to enable and use Okta login
->Note: when using Okta login, local and ldap login is not used
+>_Note:_ when using Okta login, local and ldap login is not used
 
 **OKTA_OAUTH2_CLIENT_ID** - your Okta oauth2 application client id
 
 **OKTA_OAUTH2_CLIENT_SECRET** - your Okta oauth2 application client secret
 
 **OKTA_OAUTH2_REDIRECT_URI** - your Okta login redirect URI, example: `https://diskover.domain.com/login.php?callback`
->Note: login.php page handles the redirect uri when using `callback` parameter
+>_Note:_ login.php page handles the redirect uri when using `callback` parameter
 
 **OKTA_OAUTH2_LOGOUT_REDIRECT_URI** - your Okta post logout redirect URI, example: `https://diskover.domain.com/`
 
@@ -87,7 +88,7 @@ At least two Okta groups should be established for Diskover and set in web confi
 1. Admin group added to **OKTA_ADMIN_GROUPS**
 2. Task panel group added to **OKTA_TASK_PANEL_GROUPS**
 
->Note: at login, the Okta user will be checked if they are in one of these above Okta groups.
+>_Note:_ at login, the Okta user will be checked if they are in one of these above Okta groups.
 
 
 ___
@@ -95,7 +96,7 @@ ___
 
 Diskover-Web supports authenticating/authorizing users using either Okta Identity or Azure Active Directory OIDC SSO.
 
->Note: this doc does not cover adding an application to Okta or Azure admin page. You will need to first add an Oauth OIDC SSO application (Web app) to your Okta Identity or Azure admin page for Diskover-Web
+>_Note:_ this doc does not cover adding an application to Okta or Azure admin page. You will need to first add an Oauth OIDC SSO application (Web app) to your Okta Identity or Azure admin page for Diskover-Web
 
 🔴 &nbsp;To configure Oauth2 logins:
 ```
@@ -105,14 +106,14 @@ vim /var/www/diskover-web/src/diskover/Constants.php
 The following information is required to configure Oauth2 OIDC SSO authentication/authorization:
 
 **OAUTH2_LOGINS** - set to TRUE to enable and use oauth2 login
->Note: when using Oauth2 login, local and ldap login is not used
+>_Note:_ when using Oauth2 login, local and ldap login is not used
 
 **OAUTH2_CLIENT_ID** - your oauth2 application client id
 
 **OAUTH2_CLIENT_SECRET** - your oauth2 application client secret
 
 **OAUTH2_REDIRECT_URI** - your oauth2 login redirect URI, example: `https://diskover.domain.com/login.php?callback`
->Note: login.php page handles the redirect uri when using `callback` parameter
+>_Note:_ login.php page handles the redirect uri when using `callback` parameter
 
 **OAUTH2_LOGOUT_REDIRECT_URI** - your oauth2 post logout redirect URI, example: `https://diskover.domain.com/`
 
@@ -132,7 +133,7 @@ At least two Okta groups should be established for Diskover and set in web confi
 1. Admin group added to **OKTA_ADMIN_GROUPS**
 2. Task panel group added to **OKTA_TASK_PANEL_GROUPS**
 
->Note: at login, the Okta user will be checked if they are in one of these above Okta groups.
+>_Note:_ at login, the Okta user will be checked if they are in one of these above Okta groups.
 
 ___
 ### Restricting Visibility and Access

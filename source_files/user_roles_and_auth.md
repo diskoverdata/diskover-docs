@@ -92,7 +92,9 @@ At least two Okta groups should be established for Diskover and set in web confi
 
 
 ___
-### Oauth2 OIDC SSO Authentication
+### Azure AD Oauth2 OIDC SSO Authentication
+
+![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
 Diskover-Web supports authenticating/authorizing users using either Okta Identity or Azure Active Directory OIDC SSO.
 
@@ -139,7 +141,6 @@ ___
 ### Restricting Visibility and Access
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
-
 
 Visibility can be limited by users/groups to specific indexes or branches within a given index. 
 

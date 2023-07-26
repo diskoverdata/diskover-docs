@@ -245,7 +245,7 @@ vim /var/www/diskover-web/src/diskover/Constants.php
 const API_AUTH_LDAP_ENABLED = TRUE;
 ```
 
-> _Note:_ When enabling API ldap auth, config index/ldap filter settings are used, see [Restricting Visibility and Access]([#restricting-visibility-and-access](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#restricting-visibility-and-access)).
+> _Note:_ When enabling API ldap auth, config index/ldap filter settings are used, see [Restricting Visibility and Access](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#restricting-visibility-and-access).
 
 
 #### Restricting API Access By Host/IP

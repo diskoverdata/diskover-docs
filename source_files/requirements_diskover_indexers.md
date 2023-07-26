@@ -9,7 +9,7 @@ The indexing host uses a separate thread for each directory at level 1 of a top 
 
 >- 64-bit Red Hat Enterprise Linux Server v7.x, v8.x
 >- 64-bit CentOS v7.x, v8.x
->- 64-bit Rocky 8.x
+>- 64-bit Rocky v8.x
 
 #### Windows
 

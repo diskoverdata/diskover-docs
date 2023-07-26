@@ -89,6 +89,51 @@ At least two Okta groups should be established for Diskover and set in web confi
 
 >Note: at login, the Okta user will be checked if they are in one of these above Okta groups.
 
+
+___
+### Oauth2 OIDC SSO Authentication
+
+Diskover-Web supports authenticating/authorizing users using either Okta Identity or Azure Active Directory OIDC SSO.
+
+>Note: this doc does not cover adding an application to Okta or Azure admin page. You will need to first add an Oauth OIDC SSO application (Web app) to your Okta Identity or Azure admin page for Diskover-Web
+
+🔴 &nbsp;To configure Oauth2 logins:
+```
+vim /var/www/diskover-web/src/diskover/Constants.php
+```
+
+The following information is required to configure Oauth2 OIDC SSO authentication/authorization:
+
+**OAUTH2_LOGINS** - set to TRUE to enable and use oauth2 login
+>Note: when using Oauth2 login, local and ldap login is not used
+
+**OAUTH2_CLIENT_ID** - your oauth2 application client id
+
+**OAUTH2_CLIENT_SECRET** - your oauth2 application client secret
+
+**OAUTH2_REDIRECT_URI** - your oauth2 login redirect URI, example: `https://diskover.domain.com/login.php?callback`
+>Note: login.php page handles the redirect uri when using `callback` parameter
+
+**OAUTH2_LOGOUT_REDIRECT_URI** - your oauth2 post logout redirect URI, example: `https://diskover.domain.com/`
+
+**OAUTH2_AUTH_ENDPOINT** - your Oauth2 API Authorization Server Issuer URI authorization endpoint, example: `https://diskover.domain.com/oauth2/default/v1/authorize`
+
+**OAUTH2_TOKEN_ENDPOINT** - your Oauth2 API Authorization Server Issuer URI token endpoint, example: `https://diskover.domain.com/oauth2/default/v1/token`
+
+**OAUTH2_LOGOUT_ENDPOINT** - your Oauth2 API Authorization Server Issuer URI logout endpoint, example: `https://diskover.domain.com/oauth2/default/v1/logout`
+
+**OAUTH2_API_TYPE** - Oauth2 API Type, types are Okta or Azure (Graph API)
+
+**OAUTH2_API_URL_BASE** - your oauth2 API URL for getting user/group info, example `https://diskover.domain.com/api/v1/`
+
+**OKTA_API_TOKEN** - your oauth2 API Token
+
+At least two Okta groups should be established for Diskover and set in web config:
+1. Admin group added to **OKTA_ADMIN_GROUPS**
+2. Task panel group added to **OKTA_TASK_PANEL_GROUPS**
+
+>Note: at login, the Okta user will be checked if they are in one of these above Okta groups.
+
 ___
 ### Restricting Visibility and Access
 

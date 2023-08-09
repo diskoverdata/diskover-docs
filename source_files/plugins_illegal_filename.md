@@ -3,6 +3,8 @@ ___
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
+#### [🍿 Watch Quick Tips](https://vimeo.com/851931510)
+
 The index illegal file name plugin is designed to search for illegal file names and directory names in an existing completed index.
 
 🔴 &nbsp;The index illegal file name plugin runs post index and operates on completed indices as a scheduled job or on demand job to search for and tag docs in an index.

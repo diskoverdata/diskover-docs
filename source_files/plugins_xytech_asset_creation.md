@@ -3,6 +3,8 @@ ___
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
+#### [🍿 Watch Demo Video](https://vimeo.com/660789118?share=copy)
+
 #### Xytech Asset Creation Plugin Overview
 Post facilities often have customer assets stored on LTO tape media. However, these assets are difficult to discover within the Xytech Media Operations Platform if there is no Asset ID in the customers vault of assets. The plugin is designed to use the Diskover indexer to discover newly restored customer assets from any media. The assets are restored into a folder with naming convention **CustomerNumber_CustomerName**. 
 

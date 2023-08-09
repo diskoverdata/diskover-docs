@@ -3,6 +3,8 @@ ___
 
 ![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
 
+#### [🍿 Watch Demo Video](https://vimeo.com/833500176?share=copy)
+
 The IMF package validator plugin allows organizations to validate IMF packages before delivery from a remote platform, saving immense amounts of man-hours over the course of a business year.
 
 Oxagile’s IMF Package Validator Plugin, exclusively designed for the AJA Diskover Media Edition, allows users to scan and validate IMF packages before delivery from any location, regardless of the location of the IMF package data.

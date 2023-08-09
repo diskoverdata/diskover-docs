@@ -5,6 +5,8 @@ ___
 
 ![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
+#### [🍿 Watch Demo Video](https://vimeo.com/678914314?share=copy)
+
 The BAM info harvest plugin is designed to provide BAM metadata attributes about a file without granting the Diskover user any read/write file system access.
 The BAM info plugin enables additional metadata for the SAM and BAM file formats to be harvested at time of index, and are therefore searchable within Diskover.
 

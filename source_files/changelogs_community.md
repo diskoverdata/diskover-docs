@@ -4,6 +4,18 @@ ___
 
 ### Diskover v2 Community Edition Changelog
 
+#### [2.1.1] - 2023-08-10
+##### fixed
+- SIGTERM handling
+- bad file/directory timestamp handling
+- ctrl-c interupt handling log error in Windows
+- warnings error message at end of crawl
+##### added
+- Elasticsearch 8.x support
+- checkfiletimes to default/sample diskover config file excludes section
+- more detailed logging for directory/file exclusions
+
+
 #### [2.1.0] - 2023-02-02
 ##### fixed
 - python error when indexing spaceinfo doc and total disk space > max size for ES long field mapping (s3fs mount)
@@ -150,6 +162,15 @@ ___
 
 ___
 ### Diskover-web v2 Community Edition Changelog
+
+#### [2.1.1] - 2023-08-10
+##### fixed
+- xss vulnerabilities
+##### added
+- Elasticsearch 8.x support
+- PHP 8.x support
+- faster log in and initial search page load time
+
 
 #### [2.1.0] - 2023-02-02
 ##### fixed

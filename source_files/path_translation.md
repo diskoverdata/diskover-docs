@@ -2,7 +2,7 @@ ___
 ## Path Translation
 ___
 
-The path translation feature is designed to support heterogenous client environments like Windows, MacOS, and Linux. The path for each client to access or locate a file or directory will vary depending on client operation system. For example, Windows operating systems use the backslash slash `\` and Linux operating systems use a forward `/`. Path translation provides the capability to translate paths within Diskover to appropriate the client’s operating system. The following describes two mechanisms for translating paths within Diskover.
+The path translation feature is designed to support heterogenous client environments like Windows, MacOS, and Linux. The path for each client to access or locate a file or directory will vary depending on client operation system. For example, Linux operating systems use the backslash slash `\` and Windows operating systems use a forward slash `/`. Path translation provides the capability to translate paths within Diskover to appropriate the client’s operating system. The following describes two mechanisms for translating paths within Diskover.
 
 ___
 ### Translating Paths Stored in Elasticsearch Index

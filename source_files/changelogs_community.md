@@ -4,6 +4,13 @@ ___
 
 ### Diskover v2 Community Edition Changelog
 
+#### [2.2.0] - 2023-10-07
+##### fixed
+- python error when scanning file/directory with invalid future timestamps causing scan to exit with critical error
+##### added
+- exception handling and logging for file/directory with invalid future timestamps, times are now set to 1970-01-01T00:00:00
+
+
 #### [2.1.1] - 2023-08-10
 ##### fixed
 - SIGTERM handling
@@ -162,6 +169,18 @@ ___
 
 ___
 ### Diskover-web v2 Community Edition Changelog
+
+#### [2.2.0] - 2023-10-07
+##### fixed
+- slow logins when indexing
+- select indices page taking long time to load when indexing
+##### added
+- directory size percent and item count percent bar charts to search file tree
+- option to sort search file tree by size to settings page
+- directory chart select dropdown to search results page
+##### changed
+- search directory charts are not all displayed at same time, added a select option dropdown to change the chart
+
 
 #### [2.1.1] - 2023-08-10
 ##### fixed

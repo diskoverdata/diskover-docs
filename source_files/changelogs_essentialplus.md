@@ -5,6 +5,67 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.2.0] - 2023-10-07
+##### fixed
+- ctrl-c interupt handling log error in Windows
+- Fix for filesystems that don't show a size
+##### added
+- first index time crawl plugin v0.0.1
+- more detailed logging for directory/file exclusions
+- checkfiletimes to default/sample diskover config file excludes section
+- added hostname to crawlend indexinfo
+- --nofiles cli option to not index file docs
+- fileagegroups config setting to diskover default/sample config
+    - add file age range groups into directory docs fileages field
+- rolluptimes to diskover default/sample config
+    - roll up sub-directory times (atime, mtime, ctime) into directory docs timerollup field
+##### changed
+- updated diskoverd to v2.1.9
+    - fixed issue where starting multiple workers at same time could cause same task to be ran by different workers
+    - changed task queue size to be same as worker threads (workthreads config setting), previously was infinite queue size. This way tasks will not get queued by the task worker if the task queue is full
+	- allows better task sharing/load balancing for multiple workers since an individual worker will not queue up (and run) all tasks scheduled at same time
+    - changed frequency to look for new tasks to 10-15 sec
+    - fixed issue with tasks retrying when worker shutting down
+    - fixed issue where tasks could be missed if scheduled to run every minute
+    - fixed issue with not exiting if api returns no tasks data
+- updated diskover cache (diskover_cache.py) to v0.0.9
+    - fixed issue sqlite3.OperationalError: database is locked sleep error
+    - minor improvements
+- updated autoclean plugin to v0.0.10
+    - fixed issue with files not deleting due to permission error on Windows
+    - added ctrl-c handling
+    - fixes for custom action commands
+- updated mediainfo plugin to v0.0.20
+    - fixed issue with directory excludes
+- updated checksums plugin to v0.0.3
+    - fixed issue with directory excludes
+- updated requests version in pip requirements txt files
+    - security update
+- updated autotag plugin to v2.0.3
+    - added ctrl-c handling
+- updated autotag checksums to v0.0.4
+    - added windows ctrl-c handling
+- updated dupesfinder plugin to v2.0.11
+    - added windows ctrl-c handling
+- updated esfieldcopier plugin to v0.1.4
+    - added ctrl-c handling
+- updated esqueryreport plugin to v0.1.6
+    - added ctrl-c handling
+    - added check for es query
+- updated illegalfilename plugin to v0.1.6
+    - added ctrl-c handling
+- updated indexdiff plugin to v2.0.6
+    - added ctrl-c handling
+- updated tagcopier plugin to v2.0.4
+    - added ctrl-c handling
+- updated winattrib plugin to v0.0.4
+    - added ctrl-c handling
+- updated checksums plugin to v0.0.5
+    - fixed issue with stats log output ValueError
+- updated s3 alt scanner to v0.0.13
+    - added check to see if bucket exists
+
+
 #### [2.1.1] - 2023-04-18
 ##### fixed
 - diskover.py SIGTERM handling
@@ -773,6 +834,60 @@ ___
 
 ___
 ### Diskover-web v2 Annual Subscription Editions Changelog
+
+#### [2.2.0] - 2023-10-07
+##### BREAKING CHANGES
+- removed all OKTA config setting, changed to OAUTH2 config settings, see default/sample config file Constants.php.sample and copy to your config Constants.php
+##### fixed
+- slow logins when indexing
+- select indices page taking long time to load when indexing
+- issue with breadcrumbs when top path is / on Windows
+- issue with setting LATEST_INDEX_ENABLED = FALSE in config; unable to select an index when set to FALSE, web error message shows "selected indices are no longer available, select a different index"
+- duplicate worker pool names in task panel assigned worker dropdown list
+- issue with exporting search queries with double quotes
+- xss vulnerabilities
+- indices with more than 100 top paths caused web ui issues, now up to 500 are supported
+- run command/args missing from view task info page
+- issue with exporting large number 100k + csv/json would cause other diskover-web browser tabs to freeze until download finished
+- issue with trailing slashes being removed from Windows drive letters and s3://, etc in edit index task page when saving task
+- issue with force stopping task in task panel and alert that task not running
+- file locking issues in task panel
+- http 500 error on login page when Elasticsearch host not alive
+##### added
+- Oauth2 OIDC SSO logins for Okta and Azure AD (Pro +)
+    - new OAUTH2 config settings in default/sample config Constants.php.sample, copy to your Constants.php config file
+    - SSO signin link to login page
+    - Oauth2 SSO groups file/directory permission filtering
+    - Oauth2 OIDC groups check for file action auth
+- faster log in and initial search page load time
+- last worker column to task panel task list table
+- crawl host column in indices page
+- max export item limit and alert when exporting csv/json file
+- MAX_EXPORT to default/sample config Constants.php.sample, copy to your Constants.php config file
+    - sets the maximum number of export items when exporting csv/json file
+- HIDE_SEARCH_CHARTS_DIRCHANGE to default/sample config Constants.php.sample, copy to your Constants.php config file
+    - setting to hide search charts by default when changing directories
+- directory size percent and item count percent bar charts to search file tree
+- option to sort search file tree by size to settings page
+- directory chart select dropdown to search results page
+- DIRDOC_CHARTDATA to default/sample config Constants.php.sample, copy to your Constants.php config file
+    - setting to try to load chart data from directory docs
+##### changed
+- removed OKTA config settings from default/sample Constants.php.sample, changed to OAUTH config settings
+- when using Oauth2 SSO logins, must click SSO signin link on login page to login with Oauth2 SSO, no longer auto-redirect to SSO login page
+- changed allowed_ldap_groups to allowed_groups for FILE_ACTIONS in Constants.php.sample
+    - allowed_ldap_groups can still be used for backwards compatiblity
+- updated Live View file action to v0.1.9
+    - fixed issues with handling special characters including spaces in paths
+- updated api to v2.0.17
+    - api endpoint updatetask to accept "disabled" attribute to toggle the state
+    - api endpoints deletetask, addtask, workers, worker4index
+    - fixed issues with multiple json response when index not found
+    - fixed file locking issues
+- search directory charts are not all displayed at same time, added a select option dropdown to change the chart
+- hide Task Panel link in nav gear menu for non-task panel users
+- indices that are indexing are hidden from select indices page for non-admin users
+
 
 #### [2.1.1] - 2023-04-18
 ##### fixed

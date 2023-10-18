@@ -11,7 +11,7 @@ The image below shows the resulting folder structure:
 
 ![Image: Diskover-Web  Folder Structure](images/image_diskover_web_install_for_windows_folder_structure.png)
 
-🔴 &nbsp;Move the file as follow:
+🔴 &nbsp;Copy default/sample config file:
 ```
 cd 'C:\Program Files\Diskover-web\src\diskover\'
 copy .\Constants.php.sample .\Constants.php
@@ -35,6 +35,10 @@ cd "C:\Program Files\Diskover-web\public"
 
 🔴 &nbsp;Delete **index.php** file.
 
+```
+del index.php
+```
+
 🔴 &nbsp;Create symbolic link from **index.php** to **dashboard.php**
 
 🔴 &nbsp;Using command prompt as administrator:
@@ -52,7 +56,7 @@ cmd /c mklink "C:\Program Files\Diskover-web\public\index.php" "C:\Program Files
 ![Image: Using Windows PowerShell as an Administrator](images/image_diskover_web_install_for_windows_create_symbolic_link_with_powershell_index_to_dashboard.png)
 
 
-🔴 &nbsp;Copy sample txt and json data files.
+🔴 &nbsp;Copy sample txt and json data files:
 ```
 cd 'C:\Program Files\Diskover-web\public\'
 copy .\costanalysis.txt.sample .\costanalysis.txt

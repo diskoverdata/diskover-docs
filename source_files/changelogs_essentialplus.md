@@ -840,9 +840,10 @@ ___
 ___
 ### Diskover-web v2 Annual Subscription Editions Changelog
 
-#### [2.2.1] - 2023-10-17
+#### [2.2.1] - 2023-10-18
 ##### fixed
 - json file locking issues in task panel
+- Windows issues
 ##### changed
 - updated api to v2.0.18
     - fixed json file locking issues

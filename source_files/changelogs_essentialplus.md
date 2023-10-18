@@ -5,6 +5,11 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.2.1] - 2023-10-18
+##### changed
+- version change only
+
+
 #### [2.2.0] - 2023-10-07
 ##### fixed
 - ctrl-c interupt handling log error in Windows
@@ -834,6 +839,14 @@ ___
 
 ___
 ### Diskover-web v2 Annual Subscription Editions Changelog
+
+#### [2.2.1] - 2023-10-17
+##### fixed
+- json file locking issues in task panel
+##### changed
+- updated api to v2.0.18
+    - fixed json file locking issues
+
 
 #### [2.2.0] - 2023-10-07
 ##### BREAKING CHANGES

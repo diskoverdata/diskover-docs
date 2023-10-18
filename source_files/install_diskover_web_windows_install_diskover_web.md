@@ -51,11 +51,19 @@ cmd /c mklink "C:\Program Files\Diskover-web\public\index.php" "C:\Program Files
 
 ![Image: Using Windows PowerShell as an Administrator](images/image_diskover_web_install_for_windows_create_symbolic_link_with_powershell_index_to_dashboard.png)
 
+
+🔴 &nbsp;Copy sample txt and json data files.
 ```
 cd 'C:\Program Files\Diskover-web\public\'
 copy .\costanalysis.txt.sample .\costanalysis.txt
 copy .\smartsearches.txt.sample .\smartsearches.txt
 copy .\customtags.txt.sample .\customtags.txt
+
+cd 'C:\Program Files\Diskover-web\public\tasks\'
+copy .\workers.json.sample .\workers.json
+copy .\tasks.json.sample .\tasks.json
+copy .\templates.json.sample .\templates.json
+copy .\tasklog.json.sample .\tasklog.json
 ```
 
 🔴 &nbsp;Restart the NGINX Web server.

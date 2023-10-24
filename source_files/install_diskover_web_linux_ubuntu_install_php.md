@@ -34,6 +34,13 @@ vim /etc/php/7.4/fpm/pool.d/www.conf
 listen = /var/run/php/php7.4-fpm.sock
 ```
 
+🔴 &nbsp;Copy php production ini file to php.ini file:
+```
+find / -mount -name php.ini-production
+find / -mount -name php.ini
+cp php.ini-production php.ini
+```
+
 🔴 &nbsp;Set timezone to UTC in php.ini:
 ```
 vim /etc/php/7.4/fpm/php.ini

@@ -21,6 +21,13 @@ yum-config-manager --enable remi-php74
 yum -y install php php-common php-fpm php-opcache php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json php-sqlite3
 ```
 
+🔴 &nbsp;Copy php production ini file php.ini-production to php.ini file:
+```
+find / -mount -name php.ini-production
+find / -mount -name php.ini
+cp php.ini-production php.ini
+```
+
 ##### Centos/RHEL 8.x
 
 🔴 &nbsp;Install epel and remi repos on CentOS/RHEL 8.x (if not already installed):
@@ -37,6 +44,13 @@ dnf module enable php:remi-7.4
 🔴 &nbsp;Install PHP and other PHP packages:
 ```
 dnf install php php-common php-fpm php-opcache php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json php-sqlite3
+```
+
+🔴 &nbsp;Copy php production ini file php.ini-production to php.ini file:
+```
+find / -mount -name php.ini-production
+find / -mount -name php.ini
+cp php.ini-production php.ini
 ```
 
 #### Configure NGNIX

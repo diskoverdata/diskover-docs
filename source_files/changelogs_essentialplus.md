@@ -5,6 +5,20 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.2.2] - 2023-11-03
+##### added
+- file kind crawl plugin v0.0.1
+- costs post-index plugin v0.0.1
+##### changed
+- updated diskoverd to v2.1.10
+    - fixes for multiple workers picking up same task
+    - run now fixes
+- updated s3 alt scanner to v0.0.14
+    - fix for bucket does not exist when using s3://bucket/folder for scan path
+- update index-diff plugin to v2.0.7
+    - can now find differences in the number of hard links of files between indexes
+
+
 #### [2.2.1] - 2023-10-18
 ##### changed
 - version change only
@@ -839,6 +853,13 @@ ___
 
 ___
 ### Diskover-web v2 Annual Subscription Editions Changelog
+
+#### [2.2.2] - 2023-11-03
+##### fixed
+- indices page showing some indices as indexing even though they are complete
+##### changed
+- hide php notices, warnings, deprecated messages from nginx error log
+
 
 #### [2.2.1] - 2023-10-18
 ##### fixed

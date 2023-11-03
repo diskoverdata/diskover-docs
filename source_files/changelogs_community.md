@@ -4,6 +4,11 @@ ___
 
 ### Diskover v2 Community Edition Changelog
 
+#### [2.2.1] - 2023-11-03
+##### changed
+- version change only
+
+
 #### [2.2.0] - 2023-10-07
 ##### fixed
 - python error when scanning file/directory with invalid future timestamps causing scan to exit with critical error
@@ -169,6 +174,12 @@ ___
 
 ___
 ### Diskover-web v2 Community Edition Changelog
+
+#### [2.2.1] - 2023-11-03
+##### fixed
+- Windows issues
+- hide php notices, warnings, deprecated messages from nginx error log
+
 
 #### [2.2.0] - 2023-10-07
 ##### fixed

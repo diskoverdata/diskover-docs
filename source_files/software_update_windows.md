@@ -26,3 +26,10 @@ Xcopy c:\windows\temp\diskover-v2\diskover-web\ "c:\program files\diskover-web\"
 ```
 
 🔴 &nbsp;Start diskoverd service
+
+🔴 &nbsp;Check for any errors in NGINX log (ex: permission issues):
+```
+notepad c:\program files\nginx\logs\error.log
+```
+
+🔴 &nbsp;After updating Diskover-web, it is recommended to [force/hard refresh](https://fabricdigital.co.nz/blog/how-to-hard-refresh-your-browser-and-clear-cache) your web browser to get the latest files from the web server and clear your local browser cache.

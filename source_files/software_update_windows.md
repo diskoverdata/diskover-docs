@@ -11,17 +11,18 @@ The following explains how to update both Diskover and Diskover-Web assuming the
 
 🔴 &nbsp;Stop **diskoverd** (Task worker daemon) service if running:
 >WARNING: check that no tasks are running in diskover-web task panel before stopping the service
+
 🔴 &nbsp;Extract the zip from download portal to c:\windows\temp\diskover-v2\ or other temp folder
 
 🔴 &nbsp;Run command prompt (cmd) as Administrator and sync new diskover files:
 
 ```cmd
-Xcopy c:\windows\temp\diskover\ "c:\program files\diskover\" /e /d /c /y
+Xcopy c:\windows\temp\diskover-v2\diskover\ "c:\program files\diskover\" /e /d /c /y
 ```
 
 🔴 &nbsp;Sync new diskover-web files:
 ```cmd
-Xcopy c:\windows\temp\diskover-web\ "c:\program files\diskover-web\" /e /d /c /y
+Xcopy c:\windows\temp\diskover-v2\diskover-web\ "c:\program files\diskover-web\" /e /d /c /y
 ```
 
 🔴 &nbsp;Start diskoverd service

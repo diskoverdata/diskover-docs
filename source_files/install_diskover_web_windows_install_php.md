@@ -66,12 +66,12 @@ C:\Program Files\Php\php-7.4.14-Win32-vc15-x64> php-cgi.bat
 
 🔴 &nbsp;Make a backup of **nginx.conf** file and copy:
 ```
-C:\Program Files\Nginx\nginx-1.19.6\conf\nginx.conf” “C:\Program Files\Nginx\nginx-1.19.6\conf\nginx.conf.bak
+copy "C:\Program Files\Nginx\nginx-1.19.6\conf\nginx.conf" "C:\Program Files\Nginx\nginx-1.19.6\conf\nginx.conf.bak"
 ```
 
 🔴 &nbsp;Edit **nginx.conf** file:
 ```
-C:\Program Files\Nginx\nginx-1.19.6\conf\nginx.conf
+notepad C:\Program Files\Nginx\nginx-1.19.6\conf\nginx.conf
 ```
 
 >*Note:* This configuration file assumes Diskover-Web is the only Web server running on the machine.
@@ -81,7 +81,7 @@ C:\Program Files\Nginx\nginx-1.19.6\conf\nginx.conf
 #user  nobody;
 worker_processes  1;
 
-#error_log  logs/error.log;
+error_log  logs/error.log;
 #error_log  logs/error.log  notice;
 #error_log  logs/error.log  info;
 
@@ -115,8 +115,8 @@ http {
         server_name  diskover-web;
         root   "C:\Program Files\Diskover-web\public";
         index  index.php  index.html index.htm;
-        # error_log  "C:\Program Files\Nginx\nginx-1.21.6\logs\error.log";
-        # access_log "C:\Program Files\Nginx\nginx-1.21.6\logs\access.log";
+        error_log  logs/error.log;
+        access_log logs/access.log;
         location / {
             try_files $uri $uri/ /index.php?$args =404;
         }

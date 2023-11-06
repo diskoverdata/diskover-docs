@@ -8,7 +8,7 @@ The following outlines how to clone an existing task worker to a new machine.
 🔴 &nbsp;Copy the program files and license:
 
 ```
-rsync -avz /opt/diskover/ root@ip_address:/opt/diskover/
+rsync -avz --exclude=__dircache__* /opt/diskover/ root@ip_address:/opt/diskover/
 ```
 
 🔴 &nbsp;Copy the Diskover config files:

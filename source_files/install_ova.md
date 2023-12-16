@@ -61,9 +61,12 @@ xfs_growfs -d /
 
 ### How to Install OVA
 
-🔴  To obtain the Diskover OVA, download the software using this link:
+🔴  To obtain the Diskover OVA software:
 
-[https://drive.google.com/file/d/1EIFz0EvP61RN0LkrCb9mRJY-DXRtWKtu/view?usp=drive_link](https://drive.google.com/file/d/1EIFz0EvP61RN0LkrCb9mRJY-DXRtWKtu/view?usp=drive_link).
+1. If you are new to the **Diskover Download Portal**, you will fist need to [create an account](https://download.diskoverdata.com/register.php).
+2. Once your account is approved, you'll receive a confirmation email.
+3. You can then log in and download the software at [https://download.diskoverdata.com/](https://download.diskoverdata.com/)
+
 
 🔴  Linux Login:
 

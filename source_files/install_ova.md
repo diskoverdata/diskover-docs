@@ -84,11 +84,11 @@ Password: **darkdata**
 
 🔴 Request a license by sending us your [hardware ID](https://docs.diskoverdata.com/diskover_installation_guide/#generating-a-hardware-id) so we can generate a license. 
 
-1. First, you can click on the **Diskover Install Tools** icon on the desktop to open the **Diskover License Tools** application.
+- First, you can click on the **Diskover Install Tools** icon on the desktop to open the **Diskover License Tools** application.
 
 ![Image: Centos Desktop](images/image_ov_install_desktop.png)
 
-2. Select **Register license** in the drop-down list located at the upper right corner, and then click on **Get hardware ID and installed version** to get your hardware ID number:
+- Select **Register license** in the drop-down list located at the upper right corner, and then click on **Get hardware ID and installed version** to get your hardware ID number:
 
 ![Image: Diskover License Tools](images/image_ov_install_diskover_license_tools_hardware_id.png)
 

@@ -65,8 +65,6 @@ xfs_growfs -d /
 
 [https://drive.google.com/file/d/1EIFz0EvP61RN0LkrCb9mRJY-DXRtWKtu/view?usp=drive_link](https://drive.google.com/file/d/1EIFz0EvP61RN0LkrCb9mRJY-DXRtWKtu/view?usp=drive_link).
 
-![Image: Centos Desktop](images/image_ov_install_desktop.png)
-
 🔴  Linux Login:
 
 User: **diskover**
@@ -84,7 +82,11 @@ User: **admin**
 
 Password: **darkdata**
 
-🔴 Request a license by sending us your [hardware ID](https://docs.diskoverdata.com/diskover_installation_guide/#generating-a-hardware-id) so we can generate a license. You can click on the **diskover tools** icon on the desktop to get your hardware ID.
+🔴 Request a license by sending us your [hardware ID](https://docs.diskoverdata.com/diskover_installation_guide/#generating-a-hardware-id) so we can generate a license. First, you can click on the **Diskover Install Tools** icon on the desktop to get your hardware ID.
+
+![Image: Centos Desktop](images/image_ov_install_desktop.png)
+
+🔴 Select **Register license** in the drop-down list located at the upper right corner, and then click on **Get hardware ID and installed version** to get your hardware ID number:
 
 ![Image: Diskover License Tools](images/image_ov_install_diskover_license_tools_hardware_id.png)
 

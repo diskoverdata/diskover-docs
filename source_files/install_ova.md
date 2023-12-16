@@ -68,7 +68,9 @@ xfs_growfs -d /
 ![Image: Centos Desktop](images/image_ov_install_desktop.png)
 
 🔴  Linux Login:
+
 User: **diskover**
+
 Password: **darkdata**
 
 🔴  You can elevate yourself via:
@@ -77,7 +79,9 @@ sudo -s
 ```
 
 🔴  Diskover Login:
+
 User: **admin**
+
 Password: **darkdata**
 
 🔴 Request a license by sending us your [hardware ID](https://docs.diskoverdata.com/diskover_installation_guide/#generating-a-hardware-id) so we can generate a license. You can click on the **diskover tools** icon on the desktop to get your hardware ID.

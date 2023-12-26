@@ -5,6 +5,28 @@ ___
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.2.3] - 2023-12-26
+##### added
+- tag copier runtime plugin v0.0.1
+- index gets deleted if diskover.py exits with critical error
+##### changed
+- added mtime and atime to fileages field in diskover.py
+- updated diskoverd to v2.1.11
+    - reduced tasks get api calls when task queue full
+- updated diskoverd to v2.1.14
+    - send "last_worker" instead of "worker" to updatetask endpoint for the new api changes
+    - send worker and workerpools to tasks endpoint for the new api changes
+    - fixed issue with tasks getting queued even if task queue is full
+- updated diskover_cache.py module to v0.0.10
+    - increased sqlite db timeout to 20 sec
+    - fixed issues with database locked python error
+- updated offline_media_scanner.py to v0.0.2
+    - override diskover_helpers.replace_path so runtime plugins work with offline_media_scanner
+##### fixed
+- re-arranged CLI options so remove_from_tree can happen when files don't exist
+- moved plugin init call below create_index() so we can access the current index
+
+
 #### [2.2.2] - 2023-11-03
 ##### added
 - file kind crawl plugin v0.0.1
@@ -853,6 +875,37 @@ ___
 
 ___
 ### Diskover-web v2 Annual Subscription Editions Changelog
+
+#### [2.2.3] - 2023-12-26
+##### fixed
+- issues with csv/json exports
+- issue with search page occasionally not loading results
+- group names with spaces not being quoted when using ldap/ad/oauth2 search filtering
+- dashboard freezing when large index selected
+- changing FILE_TYPES config setting not updating dashboard file type usage chart
+- issues with User Analysis page
+- issue with Okta and Azure OAUTH2 groups in OAUTH2_TASK_PANEL_GROUPS config setting
+- issue with task panel edit task and assigned worker showing as any and not the assigned worker/pool (worker/pool that no longer exists)
+##### added
+- loading spinner to dashboard
+- clickable bars on dashboard File Type Usage chart
+- File Age by Size Accessed chart to dashboard
+- File Age Accessed chart to search results page chart dropdown menu
+- new config settings to default/sample config:
+    - GROUPNAME_FILTERING_LOWERCASE
+    - UNIXPERMS_FILTERING_STRING
+- collapsible file tree on search page
+##### changed
+- updated api to v2.0.22
+    - allow setting "assigned_worker" from updatetask api endpoint
+    - updated diskoverd to send "last_worker" in updatetask request so it can distinguish between the two
+    - updatetask and updateworker endpoints - made all args passed in optional, so setting an individual one doesn't blow out the others that were not passed
+    - tasks endpoint
+        - optimized to only send tasks that worker can work on (no disabled, running, starting or assigned to different worker/pools)
+        - added "alltasks" param to get a list of all tasks
+        - added "id" and "name" params to get specific task by id or name
+    - updatetask endpoint - send error if task id not found in tasks.json
+
 
 #### [2.2.2] - 2023-11-03
 ##### fixed

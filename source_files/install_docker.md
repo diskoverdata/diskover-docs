@@ -33,7 +33,7 @@ tar -xf diskover_docker.tar.gz
 cd diskover_docker
 ```
   
-🔴 Edit the settings in [.env](./.env) to match the current environment. Pay special attention to the `DISKOVER_SCAN_DIR` setting as this is the directory that will be accessible to the container for the scan. 
+🔴 Edit the settings in `.env` to match the current environment. Pay special attention to the `DISKOVER_SCAN_DIR` setting as this is the directory that will be accessible to the container for the scan. 
 
 > *Note:* You can also use execution (shell) environment variables which override those in the `.env` file.
 
@@ -44,7 +44,7 @@ vi .env
 #### Multiple Directories Cannot be Scanned/Mounted under a Single Parent Directory
 
 🔴 **If** you have more than one directory to scan and they cannot be mounted under a single parent directory, then you will have to add volumes directly in the 
-  [./docker-compose.yml](./docker-compose.yml) file under the diskover-worker service:
+  `./docker-compose.yml` file under the diskover-worker service:
 
 ```shell
 vi docker-compose.yml
@@ -54,13 +54,13 @@ vi docker-compose.yml
   
 🔴 **If the application files are included:** No action is required.
     
-🔴 **If the application is in separate archive files:** Copy application archive files into [./resources](./resources):
+🔴 **If the application is in separate archive files:** Copy application archive files into `./resources`:
 
 ```shell
 cp <somewhere on your filesystem>/diskover*.tar.gz ./resources
 ```
 
-🔴 **If you have an existing application:** Edit `HOST_MOUNT_*` settings in the [.env](./.env) to point to the existing directories:
+🔴 **If you have an existing application:** Edit `HOST_MOUNT_*` settings in the `.env` to point to the existing directories:
 
 ```shell
 vi .env  # if the HOST_MOUNT_* variables have not already been set
@@ -80,7 +80,7 @@ cp <somewhere on your filesystem>/your-disover-web.key ./resources
 
 #### Certificate Authority and/or Intermediate Certs
   
-🔴 **If** you have certificate authority and/or intermediate certs, place them in [./resources/cacerts](./diskover_docker/resources/cacerts).
+🔴 **If** you have certificate authority and/or intermediate certs, place them in `./resources/cacerts`.
 
 > *Note:* Currently, they will only installed in the worker container.
 
@@ -119,8 +119,8 @@ docker compose --profile worker up -d
 
 ### Web Endpoints
 
-- [Diskover](http://localhost)
-- [Kibana - indexes](http://localhost:5601/app/management/data/index_management/indices)
+- [Diskover](http://localhost): http://localhost
+- [Kibana - indexes](http://localhost:5601/app/management/data/index_management/indices): http://localhost:5601/app/management/data/index_management/indices
 
 ### Configuration and Data Files
 
@@ -132,7 +132,7 @@ The intention of this project is to eventually obviate direct editing of project
 docker exec <container> find /templates -type f
 ```
 
-All application host (bind) mounts are in the mount directory by default. The directory structure of all containers closely follows the standard install paths as detailed in the [Diskover installation guide](https://docs.diskoverdata.com/diskover_installation_guide/). Here is a list of a few core configuration files:
+All application host (bind) mounts are in the mount directory by default. The directory structure of all containers closely follows the standard install paths as detailed in the [Diskover Installation Guide](https://docs.diskoverdata.com/diskover_installation_guide/). Here is a list of a few core configuration files:
 
 **Core**
 [Settings](./mount/web/www/src/diskover/Constants.php): ./mount/web/www/src/diskover/Constants.php

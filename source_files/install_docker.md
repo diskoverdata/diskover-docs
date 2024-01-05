@@ -1,5 +1,5 @@
 ___
-## Docker Installation
+## Docker Installation | General
 ___
 
 This project produces no-source docker images that, provided with application source, will run the full Diskover stack with zero or minimal configuration. 
@@ -149,11 +149,37 @@ All application host (bind) mounts are in the mount directory by default. The di
 ./mount/worker/config/diskoverd/config.yaml
 ```
 
+___
+## Docker Installation | Dell DataIQ Migration
+___
+
+### Diskover Community Edition for Dell DataIQ Migration
+
+This section gives instructions to install the free Diskover Community Edition for Dell DataIQ migration.
+
+#### Docker Installation for Windows
+
+🔴 Go to [www.docker.com/products/docker-desktop/](www.docker.com/products/docker-desktop/) and select **Download for Windows**.
+
+🔴 Installation instructions: [https://docs.docker.com/desktop/install/windows-install/](https://docs.docker.com/desktop/install/windows-install/)
 
 
 
 
 
+#### Docker Installation for Linux
+
+🔴 Go to [www.docker.com/products/docker-desktop/](www.docker.com/products/docker-desktop/) and select **Download for Linux**.
+
+🔴 Installation instructions: [https://docs.docker.com/desktop/install/windows-install/](https://docs.docker.com/desktop/install/windows-install/)
+
+
+
+#### Docker Installation for Mac
+
+🔴 Go to [www.docker.com/products/docker-desktop/](www.docker.com/products/docker-desktop/) and select **Download for Mac**.
+
+🔴 Installation instructions: [https://docs.docker.com/desktop/install/windows-install/](https://docs.docker.com/desktop/install/windows-install/)
 
 
 

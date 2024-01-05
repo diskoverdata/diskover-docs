@@ -134,14 +134,20 @@ docker exec <container> find /templates -type f
 
 All application host (bind) mounts are in the mount directory by default. The directory structure of all containers closely follows the standard install paths as detailed in the [Diskover Installation Guide](https://docs.diskoverdata.com/diskover_installation_guide/). Here is a list of a few core configuration files:
 
-**Core**
-- Settings: ./mount/web/www/src/diskover/Constants.php
+**Core settings:**
+```
+./mount/web/www/src/diskover/Constants.php
+```
 
-**Worker**
-- Scanner: ./mount/worker/config/diskover/config.yaml
-- Worker daemon: ./mount/worker/config/diskoverd/config.yaml
+**Worker - scanner:**
+```
+./mount/worker/config/diskover/config.yaml
+```
 
-
+**Worker - daemon:**
+```
+./mount/worker/config/diskoverd/config.yaml
+```
 
 
 

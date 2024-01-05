@@ -9,8 +9,8 @@ The rapid growth of unstructured data has required a transition of traditional h
 
 #### System Administrators
 
-The use case for System Administrators is often centered around data cleanup, data disposition, and ensuring data redundancy. System Administrators are often tasked with controlling costs associated with unstructured data.
+The use case for System Administrators is often centered around data cleanup, data disposition, ensuring data redundancy, and automating data. System Administrators are often tasked with controlling costs associated with unstructured data.
 
 #### Line of Business Users
 
-The use cases for Line of Business users is often centered around adding value to data, finding relevant data, correlating, analyzing,  data sets, adding business context to data.
+The use cases for Line of Business users is often centered around adding value to data, finding relevant data, correlating, analyzing, taking action on data sets, and adding business context to data.

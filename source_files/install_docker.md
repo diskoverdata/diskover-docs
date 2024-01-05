@@ -2,9 +2,9 @@ ___
 ## Docker Installation | General
 ___
 
-This project produces no-source docker images that, provided with application source, will run the full Diskover stack with zero or minimal configuration. 
+This project produces no-source Docker images that, provided with the application source, will run the full Diskover stack with zero or minimal configuration. 
 
-### Quickstart Demo
+### Quick Start
 
 Distributions of this project can run as-is, out of the box, with default settings. Custom setup and customizations can be performed as you go. 
 
@@ -35,11 +35,11 @@ cd diskover_docker
   
 🔴 Edit the settings in `.env` to match the current environment. Pay special attention to the `DISKOVER_SCAN_DIR` setting as this is the directory that will be accessible to the container for the scan. 
 
-> *Note:* You can also use execution (shell) environment variables which override those in the `.env` file.
-
 ```shell
 vi .env
 ```
+
+> *Note:* You can also use execution (shell) environment variables which override those in the `.env` file.
 
 #### Multiple Directories Cannot be Scanned/Mounted under a Single Parent Directory
 
@@ -68,35 +68,35 @@ vi .env  # if the HOST_MOUNT_* variables have not already been set
 
 #### SSL Certificate and Private Key for Diskover 
     
-🔴 **If** you have an ssl certificate and private key for diskover, place them in the resources directory along side the application `tar` files. If not, a self-signed cert
+🔴 **If** you have an ssl certificate and private key for diskover, place them in the resources directory alongside the application `tar` files. If not, a self-signed cert
   will be generated. 
   
-> *Note:* If you provide your own files they must have `.crt` and `.key` extensions or they will be ignored.
- 
 ```shell
 cp <somewhere on your filesystem>/your-disover-web.crt ./resources
 cp <somewhere on your filesystem>/your-disover-web.key ./resources
 ```
 
+> *Note:* If you provide your own files they must have `.crt` and `.key` extensions or they will be ignored.
+
 #### Certificate Authority and/or Intermediate Certs
   
 🔴 **If** you have certificate authority and/or intermediate certs, place them in `./resources/cacerts`.
-
-> *Note:* Currently, they will only installed in the worker container.
 
 ```shell
 cp <somewhere on your filesystem>/your-root-ca.crt ./resources/cacerts
 cp <somewhere on your filesystem>/your-intermediate-ca.crt ./resources/cacerts
 ```
 
+> *Note:* Currently, they will only installed in the worker container.
+
 ### Run
 
 The compose services are categorized into three profiles: 
-- web
-- worker
-- elasticsearch
+- Web
+- Worker
+- Elasticsearch
 
-This allows the same `docker-compose.yml` file to be used to run the application different hosts or on a single host, as desired.
+This allows the same `docker-compose.yml` file to be used to run the application on different hosts or on a single host, as desired.
 
 🔴 To run all, assuming the default setting `COMPOSE_PROFILES=web,worker,elasticsearch`
 
@@ -110,12 +110,12 @@ docker compose up -d
 docker compose --profile worker up -d
 ```
 
-> *NOTE:* Docker compose commands on individual services will may not work when there are dependencies across profiles and you will see an eror like this example below. To work around this just don't specify the individual service and operate on the level of profile.
->
-> ```shell
-> $ docker-compose --profile web restart diskover-web-app
-> no such service: elasticsearch
-> ```
+> *NOTE:* Docker compose commands on individual services may not work when there are dependencies across profiles and you will see an error like this example below. To work around this just don't specify the individual service and operate on the level of profile.
+
+```shell
+$ docker-compose --profile web restart diskover-web-app
+no such service: elasticsearch
+```
 
 ### Web Endpoints
 
@@ -124,7 +124,7 @@ docker compose --profile worker up -d
 
 ### Configuration and Data Files
 
-The intention of this project is to eventually obviate direct editing of project config files, but that option is still available.
+This project intends to eventually obviate direct editing of project config files, but that option is still available.
 
 > *Note:* If you do directly edit configuration files, then set the `S6_TEMPLATE_OVERWRITES variable=false` for the corresponding container if the edited file is templated. To list template files for a given service execute the following:
 
@@ -155,7 +155,7 @@ ___
 
 ### Diskover Community Edition for Dell DataIQ Migration
 
-This section gives instructions to install the free Diskover Community Edition for Dell DataIQ migration.
+This section gives instructions to install the free Diskover Community Edition for Dell DataIQ migration using Docker.
 
 #### Docker Installation for Windows
 

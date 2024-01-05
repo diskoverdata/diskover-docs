@@ -1,0 +1,18 @@
+website_name: Diskover Docker Installation Guide
+# Folder on the website, if you specify "folder" it will deploy this guide to https://docs.diskoverdata.com/folder
+website_folder: diskover_installation_guide_ova
+# All documents need to be in shared folder
+ordered_documents:
+  - index_diskover_guides_header.md
+  - guide_title_install.md
+  - intro_guide_intended_for_tech.md
+  - intro_copyright.md
+  - intro_tech_guides_main_intro.md
+  - intro_tech_guides_use_cases.md
+  - intro_tech_guides_aws_approved.md
+  - intro_doc_conventions.md
+  - install_docker.md
+  - software_activation.md
+  - support.md
+  - contact.md
+  - footer.md

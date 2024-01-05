@@ -9,7 +9,7 @@ ___
 
 [Diskover Installation Guide](https://docs.diskoverdata.com/diskover_installation_guide/)
 
-[Diskover OVA Installation Guide](https://docs.diskoverdata.com/diskover_installation_guide_ova/)
+[Diskover Installation Guide for OVA](https://docs.diskoverdata.com/diskover_installation_guide_ova/)
 
 [Diskover AWS Customer Deployment Guide](https://docs.diskoverdata.com/diskover_aws_deployment_guide/) | Installation of Diskover on an existing AWS infrastructure
 

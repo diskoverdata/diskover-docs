@@ -13,4 +13,4 @@ The use case for System Administrators is often centered around data cleanup, da
 
 #### Line of Business Users
 
-The use cases for Line of Business users is often centered around adding value to data, finding relevant data, correlating, analyzing, taking action on data sets, and adding business context to data.
+The use cases for Line of Business users are often centered around adding value to data, finding relevant data, correlating, analyzing, taking action on data sets, and adding business context to data.

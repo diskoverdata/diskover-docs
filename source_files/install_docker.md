@@ -19,6 +19,8 @@ docker compose up -d
 
 ### Setup
 
+#### Initial Setup
+
 🔴 Unpack the archive file containing the dockerized application. The file will be named something like `diskover_docker.tar.gz`:
 
 ```shell
@@ -38,46 +40,82 @@ cd diskover_docker
 ```shell
 vi .env
 ```
-  
-🔴 **IF** you have more than one directory to scan and they cannot be mounted under a single parent directory, then you will have to add volumes directly in the 
+
+#### Multiple Directories Cannot be Scanned/Mounted under a Single Parent Directory
+
+🔴 **If** you have more than one directory to scan and they cannot be mounted under a single parent directory, then you will have to add volumes directly in the 
   [./docker-compose.yml](./docker-compose.yml) file under the diskover-worker service:
 
 ```shell
 vi docker-compose.yml
 ```
   
-- Position the application files/directories. Depending on your dockerized diskover 
-  distribution, you will need to do one of the following:
+🔴 Position the application files/directories. Depending on your dockerized diskover distribution, you will need to do one of the following...
   
-  - **If the application files are included:** No action is required.
+🔴 **If the application files are included:** No action is required.
     
-  - **If the application is in separate archive files:** copy application archive files
-    into [./resources](./resources):
-    ```shell
-     cp <somewhere on your filesystem>/diskover*.tar.gz ./resources
-     ```
-  - **If you have an existing application:** edit HOST_MOUNT_* settings in the [.env](./.env)
-    to point to the existing directories:
-      ```shell
-    vi .env  # if the HOST_MOUNT_* variables have not already been set
-    ```
+🔴 **If the application is in separate archive files:** Copy application archive files into [./resources](./resources):
+
+```shell
+cp <somewhere on your filesystem>/diskover*.tar.gz ./resources
+```
+
+🔴 **If you have an existing application:** Edit `HOST_MOUNT_*` settings in the [.env](./.env) to point to the existing directories:
+
+```shell
+vi .env  # if the HOST_MOUNT_* variables have not already been set
+```
+
+#### SSL Certificate and Private Key for Diskover 
     
-- **If** you have an ssl certificate and private key for diskover, place them in the 
-  resources directory along side the application tar files. If not, a self-signed cert
-  will be generated. **NOTE** - If you provide your own files they must have .crt and 
-  .key extensions or they will be ignored.
-    ```shell
-     cp <somewhere on your filesystem>/your-disover-web.crt ./resources
-     cp <somewhere on your filesystem>/your-disover-web.key ./resources
-     ```
+🔴 **If** you have an ssl certificate and private key for diskover, place them in the resources directory along side the application `tar` files. If not, a self-signed cert
+  will be generated. 
   
-- **If** you have certificate authority and/or intermediate certs, place them in 
-  [./resources/cacerts](./diskover_docker/resources/cacerts). **NOTE** - Currently 
-  they will only installed in the worker container
-    ```shell
-     cp <somewhere on your filesystem>/your-root-ca.crt ./resources/cacerts
-     cp <somewhere on your filesystem>/your-intermediate-ca.crt ./resources/cacerts
-     ```
+> *Note:* If you provide your own files they must have `.crt` and `.key` extensions or they will be ignored.
+ 
+```shell
+cp <somewhere on your filesystem>/your-disover-web.crt ./resources
+cp <somewhere on your filesystem>/your-disover-web.key ./resources
+```
+
+#### Certificate Authority and/or Intermediate Certs
+  
+🔴 **If** you have certificate authority and/or intermediate certs, place them in [./resources/cacerts](./diskover_docker/resources/cacerts).
+
+> *Note:* Currently, they will only installed in the worker container.
+
+```shell
+cp <somewhere on your filesystem>/your-root-ca.crt ./resources/cacerts
+cp <somewhere on your filesystem>/your-intermediate-ca.crt ./resources/cacerts
+```
+
+### Run
+
+The compose services are categorized into three profiles: 
+- web
+- worker
+- elasticsearch
+
+This allows the same `docker-compose.yml` file to be used to run the application different hosts or on a single host, as desired.
+
+🔴 To run all, assuming the default setting `COMPOSE_PROFILES=web,worker,elasticsearch`
+
+```shell
+docker compose up -d
+```
+
+🔴 To run a specific set of containers, the worker for example:
+
+```shell
+docker compose --profile worker up -d
+```
+
+> *NOTE:* Docker compose commands on individual services will may not work when there are dependencies across profiles and you will see an eror like this example below. To work around this just don't specify the individual service and operate on the level of profile.
+
+> ```shell
+> $ docker-compose --profile web restart diskover-web-app
+> no such service: elasticsearch
+> ```
 
 
 

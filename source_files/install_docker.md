@@ -119,8 +119,8 @@ docker compose --profile worker up -d
 
 ### Web Endpoints
 
-- [Diskover](http://localhost): http://localhost
-- [Kibana - indexes](http://localhost:5601/app/management/data/index_management/indices): http://localhost:5601/app/management/data/index_management/indices
+- Diskover: http://localhost
+- Kibana - indexes: http://localhost:5601/app/management/data/index_management/indices
 
 ### Configuration and Data Files
 
@@ -135,11 +135,11 @@ docker exec <container> find /templates -type f
 All application host (bind) mounts are in the mount directory by default. The directory structure of all containers closely follows the standard install paths as detailed in the [Diskover Installation Guide](https://docs.diskoverdata.com/diskover_installation_guide/). Here is a list of a few core configuration files:
 
 **Core**
-[Settings](./mount/web/www/src/diskover/Constants.php): ./mount/web/www/src/diskover/Constants.php
+- Settings: ./mount/web/www/src/diskover/Constants.php
 
 **Worker**
-[Scanner](./mount/worker/config/diskover/config.yaml): ./mount/worker/config/diskover/config.yaml
-[Worker daemon](./mount/worker/config/diskoverd/config.yaml): ./mount/worker/config/diskoverd/config.yaml
+- Scanner: ./mount/worker/config/diskover/config.yaml
+- Worker daemon: ./mount/worker/config/diskoverd/config.yaml
 
 
 

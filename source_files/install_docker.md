@@ -111,12 +111,35 @@ docker compose --profile worker up -d
 ```
 
 > *NOTE:* Docker compose commands on individual services will may not work when there are dependencies across profiles and you will see an eror like this example below. To work around this just don't specify the individual service and operate on the level of profile.
-
+>
 > ```shell
 > $ docker-compose --profile web restart diskover-web-app
 > no such service: elasticsearch
 > ```
 
+### Web Endpoints
+
+- [Diskover](http://localhost)
+- [Kibana - indexes](http://localhost:5601/app/management/data/index_management/indices)
+
+### Configuration and Data Files
+
+The intention of this project is to eventually obviate direct editing of project config files, but that option is still available.
+
+> *Note:* If you do directly edit configuration files, then set the `S6_TEMPLATE_OVERWRITES variable=false` for the corresponding container if the edited file is templated. To list template files for a given service execute the following:
+
+```shell
+docker exec <container> find /templates -type f
+```
+
+All application host (bind) mounts are in the mount directory by default. The directory structure of all containers closely follows the standard install paths as detailed in the [Diskover installation guide](https://docs.diskoverdata.com/diskover_installation_guide/). Here is a list of a few core configuration files:
+
+**Core**
+[Settings](./mount/web/www/src/diskover/Constants.php): ./mount/web/www/src/diskover/Constants.php
+
+**Worker**
+[Scanner](./mount/worker/config/diskover/config.yaml): ./mount/worker/config/diskover/config.yaml
+[Worker daemon](./mount/worker/config/diskoverd/config.yaml): ./mount/worker/config/diskoverd/config.yaml
 
 
 

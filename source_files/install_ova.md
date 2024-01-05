@@ -85,7 +85,7 @@ User: **admin**
 
 Password: **darkdata**
 
-🔴 Request a license by sending us your [hardware ID](https://docs.diskoverdata.com/diskover_installation_guide/#generating-a-hardware-id) so we can generate a license. 
+🔴 Request a license by sending us your [hardware ID](https://docs.diskoverdata.com/diskover_installation_guide_ova/#generating-a-hardware-id) so we can generate a license. 
 
 - First, you can click on the **Diskover Install Tools** icon on the desktop to open the **Diskover License Tools** application.
 
@@ -95,7 +95,7 @@ Password: **darkdata**
 
 ![Image: Diskover License Tools](images/image_ov_install_diskover_license_tools_hardware_id.png)
 
-🔴  Install your license files as explained in the [software activation chapter](https://docs.diskoverdata.com/diskover_installation_guide/#software_activation).
+🔴  Install your license files as explained in the [software activation chapter](https://docs.diskoverdata.com/diskover_installation_guide_ova/#software_activation).
 
 🔴  You will need to mount the file system(s) of interest to the virtual machine then start indexing. You can create a [scheduled index task by following these instructions](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#managing-diskover-tasks-via-the-task-panel).
 

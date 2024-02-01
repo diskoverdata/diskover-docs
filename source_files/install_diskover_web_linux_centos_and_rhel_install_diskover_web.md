@@ -98,6 +98,17 @@ fastcgi_pass unix:/var/run/php-fpm/www.sock;
 systemctl restart nginx
 ```
 
+#### OS Security Changes Required for CentOS/RHEL 8
+
+🔴 &nbsp;Update crypto policies to allow for sha1 rsa keys:
+```
+update-crypto-policies --show
+update-crypto-policies --set DEFAULT:SHA1
+```
+
+🔴 &nbsp;Reboot
+
+
 #### Open Firewall Ports for Diskover-Web
 
 🔴 &nbsp;Diskover-Web listens on **port 8000** by default. To open the firewall for ports required by Diskover-Web:

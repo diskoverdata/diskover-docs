@@ -14,13 +14,28 @@ vi Constants.php
 
 <p id="change_user_pass_linux"></p>
 
-🔴 &nbsp;Set your Elasticsearch **endpoint**, **port**, **username**, and **password**:
+🔴 &nbsp;Set your Elasticsearch (ES) **host(s)**, **port**, **username**, **password**, etc:
+
+Community Edition (ce):
 ```
-const ES_HOSTS = 'localhost';
+const ES_HOST = 'localhost';
 const ES_PORT = 9200;
 const ES_USER = 'strong_username';
 const ES_PASS = 'strong_password';
 ```
+
+Essential +:
+```
+const ES_HOSTS = [
+    [
+        'hosts' => ['localhost'],
+        'port' => 9200,
+        'user' => 'strong_username',
+        'pass' => 'strong_password',
+        'https' => FALSE
+    ]
+```
+
 >_Note:_ Diskover-Web Essential+ uses a number of txt and json files to store some settings and task data. The default install has sample files, but not the actual files. The following will copy the sample files and create default starting point files. **Skip the next 3 steps for Community Edition**.
 
 🔴 &nbsp;Create actual files from the sample files **filename.txt.sample**:

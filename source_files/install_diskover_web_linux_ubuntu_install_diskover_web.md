@@ -12,7 +12,7 @@ cp Constants.php.sample Constants.php
 vi Constants.php
 ```
 
-🔴 &nbsp;Set your Elasticsearch **endpoint**, **port**, **username**, and **password**:
+🔴 &nbsp;Set your Elasticsearch (ES) **host(s)**, **port**, **username**, **password**, etc:
 
 Community Edition (ce):
 ```

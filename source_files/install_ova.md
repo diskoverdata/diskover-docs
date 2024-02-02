@@ -2,10 +2,10 @@ ___
 ## OVA Installation
 ___
 
-This section contains instructions to quickly get up and running with Diskover using OVA (Open Virtual Appliance) on VMware.
+This section contains instructions to quickly get up and running with Diskover using an OVA (Open Virtual Appliance) on VMware.
 
 ### Features
-- Diskover and dependencies already installed.
+- Diskover and built-in dependencies (Elasticsearch, Python, etc.).
 - Diskover is configured to start at boot.
 - Hostname set to `diskover`
 - DHCP enabled
@@ -15,11 +15,15 @@ This section contains instructions to quickly get up and running with Diskover u
 
 Understand the networking architecture of the site you will be deploying into. If the site has DHCP already configured,
 the virtual machine will acquire an IP address from the offered range. Ensure the offered IP address will route to the
-clients who will use the service. The file systems to be scanned must also be reachable from offered DHCP range.
+clients using the service. The file systems to be scanned must also be reachable from the offered DHCP range.
 
 For clients to access the service, they will need to route to the hostname provided in the license file. The hostname
 in the license file must match the hostname on the Linux host. It is recommended that DNS be used to resolve the
 service.
+
+### Performance Limitations
+
+There are performance limitations when running Diskover using an OVA, as it will start to get sluggish at around 200 million files.
 
 ### Requirements
 
@@ -31,7 +35,7 @@ The OVA is designed to run on VMware hypervisors and includes _VMware Tools_ alr
 
 ### Size the Instance
 
-Before you begin, ensure there is sufficient memory and disk resources for the OVA:
+Before you begin, ensure there are sufficient memory and disk resources for the OVA:
 
 - Memory 32GB RAM
 - Disk:
@@ -97,7 +101,7 @@ Password: **darkdata**
 
 🔴  Install your license files as explained in the [software activation chapter](https://docs.diskoverdata.com/diskover_installation_guide_ova/#software_activation).
 
-🔴  You will need to mount the file system(s) of interest to the virtual machine then start indexing. You can create a [scheduled index task by following these instructions](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#managing-diskover-tasks-via-the-task-panel).
+🔴  You will need to mount the file system(s) of interest to the virtual machine and then start indexing. You can create a [scheduled index task by following these instructions](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#managing-diskover-tasks-via-the-task-panel).
 
 🔴  Or you can manually initiate an index:
 

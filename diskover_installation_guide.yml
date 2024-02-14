@@ -55,7 +55,6 @@ ordered_documents:
   - install_indexers_alternate_azure.md
   - install_indexers_alternate_dropbox.md
   - install_indexers_dev_your_own_alternate_scanner.md
-  - install_docker_manual.md
   - task_worker_intro.md
   - task_worker_linux.md
   - task_worker_windows.md

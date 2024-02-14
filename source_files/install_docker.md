@@ -273,7 +273,7 @@ cd diskover_docker
 vi .env
 ```
 
-> *Note:* You can also use execution (shell) environment variables which override those in the `.env` file.
+> *Note:* You can also use execution (shell) environment variables that override those in the `.env` file.
 
 ##### Multiple Directories Cannot be Scanned/Mounted under a Single Parent Directory
 
@@ -382,8 +382,3 @@ All application host (bind) mounts are in the mount directory by default. The di
 ```
 ./mount/worker/config/diskoverd/config.yaml
 ```
-
-
-
-
-

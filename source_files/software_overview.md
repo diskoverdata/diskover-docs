@@ -41,15 +41,15 @@ ___
 
 Even though some plugins may allow users some actionable power over the data (ex, data movement), Diskover will mostly remain a search and read-only tool, data integrity and protection being the ultimate objective.
 
-DisKover allows all end-users to have access to the data via a global index in a read-only format for them to make informed decisions and then, in turn, for the System Administrators to curate the data in a secure and controlled environment.
+Diskover allows all end-users to have access to the data via a global index in a read-only format for them to make informed decisions and then, in turn, for the System Administrators to curate the data in a secure and controlled environment.
 
-Your System Administrator creates all [login](#login) accounts. Depending on your role, your account level will be as an end-user or an admin, the latter allowing for additional editing access (reports, etc.). While working with Diskover as an end-user, you might come across the icon below, indicating that you need to communicate any requests with someone with an admin-level account.
+Your System Administrator creates all [login](#login) accounts. Depending on your role, your account level will be as an end-user or and admin user, the latter allowing for additional editing access. While working with Diskover as an end-user, you might come across the icon below, indicating that you need to communicate any requests with someone with an admin-level account.
 
 <img src="images/image_admin_user_required.png" width="200">
 
-Here is a brief list of the shared roles:
+Here is a brief list of what you can access depending on your role. 
 
-| FEATURE | END-USER | ADMIN | SYS ADMIN |
+| FEATURE | END-USER| ADMIN | SYS ADMIN |
 | --- | :---: | :---: | :---: |
 | Software install and config | | | ✔ |
 | File search and search tools | ✔ | ✔ | ✔ |
@@ -62,3 +62,8 @@ Here is a brief list of the shared roles:
 | Plugins/File actions use | ✔ | ✔ | ✔ |
 | Plugins/File actions config | | | ✔ |
 | Scheduled automated tasks for data curation | | | ✔ |
+
+You can confirm your role in your [profile](#profile).
+- End-user = local user
+- Admin = admin user
+- Sys admin = task panel user

@@ -17,24 +17,26 @@ Data curation is the practice of managing data collected from various sources as
 ___
 ### Volume
 
-A storage location that you want to index, for example Windows Share/drive, Linux mount/NFS Export, cloud storage/S3 bucket, etc.
+A storage location that you want to index, for example Windows Share/drive, Linux mount/NFS Export, cloud storage/S3 bucket, Dell PowerScale, etc.
 
-Examples of other names for volume that might be used in your organization: storage volume, storage mount, mount point, top-level path, top-level storage directory.
+Examples of other names for volume that might be used in your organization: storage volume, storage mount, mount point, top-level path, top-level storage directory, etc.
 
 Read more about [how to select a volume](#select_volume).
 
 <p id="index"></p>
 
 ___
-### Index/Indices
+### Index/Indexes/Indices
 
-An index is an inventory of all the files on a volume; it allows the data to be searched quickly via the index instead of the operating system's "find commands". Both  **indexes**  and  **indices**  have the same meaning, and are the plural of index, although indices is usually preferred in a technical context.
+An index is an inventory of all the files on a volume; it allows the data to be searched quickly via the index instead of the operating system's "find command". Both  **indexes**  and  **indices**  have the same meaning, and are the plural of index, although indices is usually preferred in a technical context.
 
-- You can have multiple inventories/indices of a storage volume at different times.
-- Indices typically contain directory name, file name, file size, creation date, modify date, owner, etc.
-- Diskover’s software populates the indices with additional metadata and makes these attributes searchable, pushing the searches, reporting, and workflows to a higher level of business and schedule awareness. For example:
-	- Adds business context (job status, client #, project manager, etc.)
-	- Adds media info attributes for media files (resolution, codec, framerate, etc.)
+- You can have multiple [inventories/indices](#indices) of a storage volume at different times.
+- Indices typically contain directory name, file name, file size, file type, creation date, modify date, owner, etc.
+- Diskover can populate the indices with additional metadata adding business context. For example:
+	- Storage environment attributes, for example [Dell PowerScale](https://diskoverdata.com/products/dataiq-migration/).
+  	- [Xytech](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-plugins), [ShotGrid](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#shotgrid-production-status-plugin), etc. (job status, client #, project manager, project dates, etc.)
+	- Adds [media info](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#media-info-attributes) attributes for media files (resolution, codec, framerate, etc.)
+ 	- Adds metadata for [life science purposes](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/) (genome sequencing file attributes, research grant project attributes, etc.)
 
 Read more about [how to use indices](#indices).
 
@@ -74,22 +76,21 @@ A hard link is a pointer/link that acts like a folder/directory. A hard link is 
 
 Think of hard links like copies but they don't use up any more disk space. Hard links are different than symbolic or soft links, those are more just pointers or links to the actual file.
 
-**Soft links**:
-	- Can cross the file system.
-	- Allows you to link between directories.
-	- Has different inode number and file permissions than the original file.
-	- Permissions will not be updated.
-	- Has only the path of the original file, not the contents.
+####Soft links
+- Can cross the file system.
+- Allows you to link between directories.
+- Has different inode number and file permissions than the original file.
+- Permissions will not be updated.
+- Has only the path of the original file, not the contents.
 
-**Hard links**:
-
-	- A hard link is a directory that associates a name with a file, thus each file must have at least one hard link.
-	- You can only hard link files and not directories.
-	- Hard links can only refer to files within the same volume/file system, they can't cross the file system boundaries.
-	- Has the same inode number and permissions of the original file.
-	- Permissions will be updated if the permissions of the source file is changed.
-	- Has the actual contents of the original file, so that you still can view the contents, even if the original file moved or was removed.
-	- You can't free up disk space until all the hard links and original files are deleted, as they all reference the same inode.
+####Hard links
+- A hard link is a directory that associates a name with a file, thus, each file must have at least one hard link.
+- You can only hard link files and not directories.
+- Hard links can only refer to files within the same volume/file system, they can't cross the file system boundaries.
+- Has the same inode number and permissions of the original file.
+- Permissions will be updated if the permissions of the source file is changed.
+- It has the actual contents of the original file so that you can still view the contents, even if the original file was moved or removed.
+- You can't free up disk space until all the hard links and original files are deleted, as they all reference the same inode.
 
 >🔆 &nbsp;Hard links are used a lot in media and entertainment so that digital assets can be referenced in different shot folders without using additional space.
 

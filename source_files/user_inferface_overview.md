@@ -110,29 +110,35 @@ S) **Extension bar**: Will show all the file extensions detected in your results
 
 <p id="items_per_page"></p>
 
-T) **Items per page**: To modify the number of items per page to display in W) the results pane – 10 minimum and 1,000 maximum.
+T) **Items per page**: To modify the number of items per page to display in W) the results pane – 10 minimum and 1,000 maximum - the reason to limit the number of items per page is speed, so data loads faster.
 
 U) **Pages of results**: The number of pages of results is directly related to the number of T) items per page.
 
-V) **Search within results**: Built-in search tool to [search within the results on the current page](#search_within_results), acts like CTRL or CMD F but is much more powerful.
+V) **Search within results**: Built-in search tool to [search within the results on the current page](#search_within_results), acts like CTRL or CMD F but is more powerful.
 
 <p id="results_pane_overview"></p>
 
-W) **Results pane**: To see the results when you drill down or from a search query, see the [file search chapter](#file_search) for more details:
+W) **Results pane**: To see the results when you drill down or from a [search](#file_search):
   - You can see more or less columns > **gear icon** > [**Settings**](#settings) > [**Hide fields in search results**](#hide_columns).
-  - You can change the width of the columns by holding/moving the line in between two columns.
-  - You can [sort](#sort) the data.
-  - Contains several clickable icons which are explain in details in subsequent chapters.
+  - You can change the width of the columns by holding/dragging the line between two columns.
+  - Contains several clickable icons which are explained in later in this guide, but briefly:
+    - Grey **i** button: Will open the [attributes/metadata](#attributes) window for a [directory](#directory).
+    - Grey **clipboard** button: To copy a [path](#path).
+    - Blue **gears** button: To launch a [file action](#file_action)
+    - Pinkish **dots** button - quick load: To launch a path in an [analytic](#analytics) format or to search [non-recursively or recursively](#recursive)
 
-X) These features will be explained later in this guide, but you can click on the links below to go directly to a section:
-  - [Select All and Unselect All](#line_selection) line items in your results pane.
-  - Apply a manual [Tag](#tags).
-  - [Export](#export) your results.
-  - [Share](#share) your results.
-  - [File Action](#file_action).
+X) [**Sort**](#sort): You can sort the data in the W) results pane.
 
+Y) **Action buttons**: These features are explained later in this guide or click a link below:
+  - To [select all and unselect all](#line_selection) line items in your results pane.
+  - To apply a manual [tag](#tags).
+  - To [export](#export) your results, copy paths, or copy file names.
+  - To [share](#share) your results URL with a co-worker or to copy a search query.
+  - To launch a [file action](#file_action).
 
 <p id="select_volume"></p>
+
+Z) **[Charts](#file_search_charts): Quick analytics of the selected path with different options in the drop-down list at the left top corner.
 
 ___
 ### How to Select a Volume

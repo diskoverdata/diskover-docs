@@ -3,7 +3,7 @@ ___
 
 #### Links
 
-Click any link in [bold blue font](#introduction) to navigate directly to that section.
+Click any text/link in [blue font](#introduction) to navigate directly to that section.
 
 #### Notes and Tips
 > 🔆 &nbsp;Indicates a note or a tip throughout this guide.

@@ -28,6 +28,8 @@ ___
 
 By default and upon login, you will land on the file search page as shown below, which is the most used page. This section offers an overview of this main user interface. All other icons, drop-down lists, and tools will be further explained in the subsequent chapters.
 
+>🔆 &nbsp;Hovering almost anything(buttons, charts, volumes, etc.) in the user interface will give you additional information.
+
 ![Image: Quick Tour of the User Interface](images/image_file_user_interface_overview_20240219.png)
 
 A) **Software logo**: No functions.
@@ -79,16 +81,21 @@ N) **Path bar**: Shows the [path](#path) you're drilling down, you cannot type i
 
 O) [**Volumes**](#storage_volume): To view and select available volumes from the left pane:
   - Your instance may have **top paths** as per this example where some [volumes](#storage_volume) may be regrouped under geo locations, data centers, etc.
-  - If you hover over the fill bars on the right of the volumes, you will see the space used, free, and total for each volume.
-  - If you hover over a volume, you will see the date and time that volume was last indexed.
+  - If you hover a volume name, you will see the date and time that volume was last indexed.
 
   ![Image: Hovering Over a Storage Volume](images/image_file_search_hovering_volume.png)
+  
+  - If you hover a fill bar, you will see the space used, free, and total for each volume.
 
-P) [**Directories**](#directory): To view and/or drill down the directories inside the selected volume in green above, you can also drill down from the [results pane](#results_pane).
-  - Hovering your mouse over a directory in the left pane will give you a snapshot of its attributes.
-  - Note that the left pane will only show directories with data in them, all directories either with data or empty will show in the W) results pane.
+  ![Image: Hovering Over a Storage Volume](images/image_file_search_hovering_fill_bar.png)
 
-  <img src="images/image_file_search_hovering_directory.png" width="300">
+P) [**Directories**](#directory): To view or drill down the directories inside the O) selected volume:
+  - You can also drill down from the W) [results pane](#results_pane).
+  - The **red** bar represents the size of the data and the **orange** bar is the number of items.
+  - Hovering your mouse over a directory in the left pane will give you a snapshot of additional information.
+  - Note that the left pane will only show directories with data in them. You can find all directories, empty or containing data, in the W) results pane.
+
+  ![Image: Hovering Over a Storage Volume](images/image_file_search_hovering_directory.png)
 
 Q) **Last indexed**: Gives the date and time of the last scan of the selected volume.
 
@@ -98,7 +105,7 @@ R) **Other ways to navigate**:
   - **Back and forth arrows**: To navigate back and forth between visited pages, you can also use the browser's arrows, the results will be the same.
   - **Hide Tree**: Will hide the left pane allowing for more space to investigate W) your results.
   - **Charts**: To hide/unhide the charts that are located by default above W) the results pane.
-  - **Reload**: To reload the data in the current page.
+  - **Reload**: To refresh the data and charts the current page.
 
 S) **Extension**: Will show all the file extensions detected in your results, either from drilling down or resulting from a search query, any extension can be clicked to isolate these specific items.
 

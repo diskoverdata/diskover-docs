@@ -74,11 +74,12 @@ M) **Green bar**: This bar displays the following details:
 
 <p id="path_navigation_bar"></p>
 
-N) **Path bar**: Shows the [path](#path) you’re in, you cannot type in it, but you can click on any directory to navigate directly to it.
+N) **Path bar**: Shows the [path](#path) you're drilling down, you cannot type in it, but you can click on any directory to navigate directly to it.
 
 O) [**Volumes**](#storage_volume): To view and select available volumes from the left pane:
+  - Your instance may have **top paths** as per this example where some [volumes](#storage_volume) may be regrouped under geo locations, data centers, etc.
   - If you hover over the fill bars on the right of the volumes, you will see the space used, free, and total for each volume.
-  - If you hover over a volume, you will see the last indexed date and time for that specific volume.
+  - If you hover over a volume, you will see the date and time that volume was last indexed.
 
   ![Image: Hovering Over a Storage Volume](images/image_file_search_hovering_volume.png)
 

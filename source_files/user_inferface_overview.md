@@ -15,36 +15,34 @@ A) Open a  **Web browser**  of your choice and type the  **URL address**  that w
 
 B) Enter your  **Username**  and  **Password** which were also supplied to you by the System Administrator.
 
->🔆 &nbsp;Select **Keep me logged in for 7 days** if you plan to use Diskover for a long period of time so you won't have to log in multiple times.
-
 C) Click  **Login**.
 
 <img src="images/image_login_window_logo_diskover.png" width="300">
 
->🔆 &nbsp;Diskover should look and act the same on any web browser. The only thing to keep in mind is if you apply some modifications in your [settings](#settings) using Google Chrome for example, they will not transfer to Safari because the [settings](#settings) are tied to the cookies of a browser. In this example, you would need to apply the same [settings](#settings) in Safari. Click the following links to learn more about how [cookies](#clear_cookies) and [cache](#clear_cache) affect the Diskover user interface.
+>🔆 &nbsp;Diskover should look and act the same on any web browser. The only thing to keep in mind is if you apply some modifications in your [settings](#settings) using Google Chrome, they will not transfer if you switch to Safari, for example, because the [settings](#settings) are tied to the cookies of a browser. In this example, you would need to apply the same [settings](#settings) in Safari. Learn more about how [cookies](#clear_cookies) and [cache](#clear_cache) affect the Diskover user interface.
 
 <p id="ui_overview"></p>
 
 ___
 ### User Interface Overview
 
-By default and upon login, you will land on the file search page as shown below. This section offers an overview of the user interface. All other icons, drop-down lists, and tools will be further explained in the subsequent chapters.
+By default and upon login, you will land on the file search page as shown below, which is the most used page. This section offers an overview of this main user interface. All other icons, drop-down lists, and tools will be further explained in the subsequent chapters.
 
-![Image: Quick Tour of the User Interface](images/image_file_user_interface_overview_20230214.png)
+![Image: Quick Tour of the User Interface](images/image_file_user_interface_overview_20240219.png)
 
 A) **Software logo**: No functions.
 
-B) **[Dashboard](#dashboard)**: Built-in analytics, offers a visual summary of a selected volume.
+B) **[Dashboard](#dashboard)**: Analytical snapshot of a [volume](#storage_volume).
 
-C) [**Folder icon/File search page**](#file_search): To navigate back to the file search page shown in this image, it is where most users spend their time.
+C) [📍 **File search page**](#file_search): Use the folder icon to navigate back to this file search page.
 
-D) **Analytics**: To select one of the several built-in [analytic reports](#analytics).
+D) [**Analytics**](#analytics): To select one of the several built-in analytics.
 
-E) [**Quick search**](#quick_search): To quickly search all volumes based on pre-established criteria.
+E) [**Quick search**](#quick_search): To quickly search all volumes using pre-established criteria/queries.
 
-F) **Search bar**: To type and/or paste [search queries](#search_syntax).
+F) **Search bar**: To type and/or paste [search queries](#search_syntax) or a [path](#search_path).
 
-G) **Clear search bar**: To clear the search bar.
+G) **Clear**: To clear the search bar.
 
 H) **Launch a search**: Same function as using your  **Return**  key to launch a query.
 

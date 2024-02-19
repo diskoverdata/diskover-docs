@@ -71,6 +71,7 @@ M) **Green bar**: This bar displays the following details:
   - **Path**: Shows the [path](#path) you are pointing to when drilling down, ex: _parent_path:\/mnt\/lucidlink\/projects_
   - **Search criteria**: Shows the criteria used for a search, either you are typing a manual query or using a [built-in search tool](#builtin_search_tools), ex:  _Search query: mov and tags:archive_
   - **Close green bar**: You can close this green bar by clicking the  **X**  at the far right, but it will reappear following your next action.
+  - **Save queries**: You can [save a personal query](#save_query) that will only be visible to you by clicking the **Save** button in the green bar. You can then find and rerun that query under E) Quick > Saved Queries
 
 <p id="path_navigation_bar"></p>
 

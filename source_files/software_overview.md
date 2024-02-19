@@ -9,20 +9,22 @@ ___
 
 As an end-user, you can’t break anything. You can't personally edit, move, or delete the files that you see in the user interface because Diskover only contains an index of the metadata of the files, not the files themselves. So don’t be shy to click around.
 
-![Image: Architecture Overview](images/diagram_diskover_architecture_overview_for_endusers.png)
+![Image: Architecture Overview](images/diagram_diskover_overview_with_dell_2024011701.png)
 
-_[Click here for a full-screen view of the Diskover Overview.](images/diagram_diskover_architecture_overview_for_endusers.png)_
+_[Click here for a full-screen view of the Diskover Overview.](images/diagram_diskover_overview_with_dell_2024011701.png)_
 
 ___
 ### Features Overview
 
-- Integrated **SEARCHES** > global searches using built-in tools, manual queries, or a combination of both.
+Diskover offers several integrated features and plugins that are configurable depending on your own environment and needs.
 
-- Integrated **ANALYTICS** > several pre-established and customizable reports allowing for informed decision-making.
+- **SEARCHES**: Global and powerful searches using built-in tools, manual queries, or a combination of both.
 
-- Integrated **ACTIONS** > limitless possibilities using plugins (ex: seamless integration with third-party platforms, automated actions, in-house plugins to automate your own specific in-house workflows, etc.)
+- **ANALYTICS**: Several pre-established and customizable reports allowing for informed decision-making.
 
-- Integrated **WORKFLOWS** > plugins to automate data movement to different stages of a workflow based on rules and using rich metadata.
+- **ACTIONS**: Limitless possibilities through plugins, for example, seamless integration with third-party platforms, automated actions, in-house plugins to automate your own specific in-house workflows, etc.
+
+- **WORKFLOWS**: Data automation configured based on rules and using the rich indexed metadata, for example, data movement to different storage, deletion, archival, etc.
 
 <p id="consumers_of_data"></p>
 
@@ -38,24 +40,26 @@ _[Click here for a full-screen view of the Consumers of Data diagram.](images/di
 ___
 ### Access to Features
 
-Even though several features will be added over time, Diskover will mostly remain a search and read-only tool for the end-users; data integrity and protection being the ultimate objective.
+Even though some plugins may allow users some actionable power over the data (ex, data movement), Diskover will mostly remain a search and read-only tool, data integrity and protection being the ultimate objective.
 
-Diskover allows all end-users to have access to the data via a global index  in a read-only format, for them to make informed decisions, and then in turn for the System Administrators to curate the data in a secure and controlled environment.
+DisKover allows all end-users to have access to the data via a global index in a read-only format for them to make informed decisions and then, in turn, for the System Administrators to curate the data in a secure and controlled environment.
 
-Your System Administrator creates all [login](#login) accounts. Depending on your data relation needs within your scope of work, your account level will be as an end-user or an admin, the latter allowing for additional editing access (reports, etc.). While working with Diskover as an end-user, you might come across the icon below, indicating that you need to communicate any requests with someone with an admin-level account.
+Your System Administrator creates all [login](#login) accounts. Depending on your role, your account level will be as an end-user or an admin, the latter allowing for additional editing access (reports, etc.). While working with Diskover as an end-user, you might come across the icon below, indicating that you need to communicate any requests with someone with an admin-level account.
 
-![Image: Admin User Required](images/image_admin_user_required.png)
+<img src="images/image_admin_user_required.png" width="300">
 
 Here is a brief list of shared roles:
-![Image: Shared Roles](images/image_shared_roles_table.png)
 
-___
-### Use Cases
-
-Diskover offers numerous search tools, reports, and other manual/automated functions, to fulfill the needs of all stakeholders and different business verticals.
-
-Let’s use the example of the Media and Entertainment environment. With theatrical workflows, there is the need to protect content from piracy; facilities often build two completely independent networks 1) where users have access to the internet, and 2) a production network with no internet access and strict controls on personnel that have access to this network. However, in production workflows, Customer Service Representatives, Producers, and Operations often need to search the production network. Diskover provides visibility to search for content, without providing access to the actual content.
-
-![Image: Diskover Tools and Workflow Overview Diagram](images/diagram_diskover_tools_and_workflow_overview_with_border.png)
-
-_[Click here for a full-screen view of the Tools and Workflow Overview diagram.](images/diagram_diskover_tools_and_workflow_overview_with_border.png)_
+| FEATURE | END-USER | ADMIN | SYS ADMIN |
+| --- | --- | --- | --- |
+| Software install and config | | | ✔ |
+| File search and search tools | ✔ | ✔ | ✔ |
+| Analytics access and filters | ✔ | ✔ | ✔ |
+| Analytics editing | | ✔ | ✔ |
+| Export and/or share results | ✔ | ✔ | ✔ |
+| Manual tagging | ✔ | ✔ | ✔ |
+| Manual tags editing | | ✔ | ✔ |
+| Automated tags | | | ✔ |
+| Plugins/File actions use | ✔ | ✔ | ✔ |
+| Plugins/File actions config | | | ✔ |
+| Scheduled automated tasks for data curation | | | ✔ |

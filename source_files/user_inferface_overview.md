@@ -66,11 +66,11 @@ L) **Gear Icon**:
 
 M) **Green bar**: This bar displays the following details:
 
-  - How many items were found during a search query or drilling down, ex:  _Showing 1 to 1000 of 9 items found_
-  - Size of data listed on the current page, resulting from a search or drill down, ex: _Results size: 12 GB (this page)_
-  - Shows the [path](#path) you are pointing to, ex: _parent_path:\/mnt\/lucidlink\/projects_
-  - Shows search criteria either you are typing a manual query or using a [built-in search tool](#builtin_search_tools), ex:  _Search query: mov and tags:archive_
-  - This bar can be cleared by clicking the  **X**  at the far right.
+  - **Items per page**: Number of items found during a search or when drilling down, ex:  _Showing 1 to 1000 of **9 items found**_
+  - **Size of data**: Listed on the current page, ex: _Results size: **12 GB (this page)**_
+  - **Path**: Shows the [path](#path) you are pointing to when drilling down, ex: _parent_path:\/mnt\/lucidlink\/projects_
+  - **Search criteria**: Shows the criteria used for a search, either you are typing a manual query or using a [built-in search tool](#builtin_search_tools), ex:  _Search query: mov and tags:archive_
+  - **Close green bar**: You can close this green bar by clicking the  **X**  at the far right, but it will reappear following your next action.
 
 <p id="path_navigation_bar"></p>
 

@@ -4,21 +4,34 @@ ___
 ## Settings
 ___
 
+### Settings Overview
+
 You can access the settings  via the gear icon at the top right corner of the interface.
 
 ![Image: Accessing the Settings](images/image_menu_gear_icon_selection_settings.png)
 
 **IMPORTANT!**
 
-- Changing the settings are personal to your own web browser, even if you share a login account with others. Your customizations are stored as cookies. When you [clear the cookies](#clear_cookies) from the settings, your customized settings will also be cleared and reset to Diskover’s default values. 
-- If you switch browsers, for example from Chrome to Safari, you will have to reselect your settings as they will not follow, again due to the settings being stored as cookies to a specific browser.
+- Changing the settings is personal to your own web browser, even if you share a login account with others. Your customizations are stored as cookies. When you [clear the cookies](#clear_cookies) from the settings, your customized settings will also be cleared and reset to Diskover’s default values. 
+- If you switch browsers, for example from Chrome to Safari, you will have to reselect your settings as they will not follow. Again, this is due to the settings being stored as cookies to a specific browser.
 - Your cookies might also be cleared and need to be reselected after a software update.
 - Click the following links to learn more about how [cookies](#clear_cookies) and [cache](#clear_cache) affect the Diskover user interface.
+
+**GOOD NEWS!**
+
+There are very few settings to select, so reselecting when needed is quickly achieved.
+
+<p id="profile"></p>
 
 ___
 ### Profile
 
-On top of giving you some informative details about your account, you can also change your password. If you click **Change Password**, you will be prompted to enter your current password and type a new one.
+- **Username**
+- Determines your **[role/access]**(#role_access):
+  - End-user = local user
+  - Admin = admin user
+  - Sys admin = task panel user
+- Where to change your password. Click **Change Password**, and you will be prompted to enter your current password and type a new one.
 
 ![Image: Settings - Profile](images/image_settings_profile_20230214.png)
 

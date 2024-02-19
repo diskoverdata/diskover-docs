@@ -83,21 +83,18 @@ O) [**Volumes**](#storage_volume): To view and select available volumes from the
   - Your instance may have **top paths** as per this example where some [volumes](#storage_volume) may be regrouped under geo locations, data centers, etc.
   - If you hover a volume name, you will see the date and time that volume was last indexed.
 
- ![Image: Hovering Over a Storage Volume](images/image_file_search_hovering_volume.png)
-    <img src="images/image_file_search_hovering_volume.png" width="200">
+    <img src="images/image_file_search_hovering_volume.png" width="300">
 
   - If you hover a fill bar, you will see the space used, free, and total for each volume.
 
-    <img src="images/image_file_search_hovering_fill_bar.png" width="200">
-
-  ![Image: Hovering Over a Storage Volume](images/image_file_search_hovering_fill_bar.png)
+    <img src="images/image_file_search_hovering_fill_bar.png" width="300">
 
 P) [**Directories**](#directory): To view or drill down the directories inside the O) selected volume:
 @@ -95,6 +97,8 @@ P) [**Directories**](#directory): To view or drill down the directories inside t
   - Hovering your mouse over a directory in the left pane will give you a snapshot of additional information.
   - Note that the left pane will only show directories with data in them. You can find all directories, empty or containing data, in the W) results pane.
 
-    <img src="images/image_file_search_hovering_directory.png" width="250">
+    <img src="images/image_file_search_hovering_directory.png" width="350">
 
 Q) **Last indexed**: Gives the date and time of the last scan of the selected volume.
 

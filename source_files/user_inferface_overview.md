@@ -138,7 +138,7 @@ Y) **Action buttons**: These features are explained later in this guide or click
 
 <p id="select_volume"></p>
 
-Z) **[Charts](#file_search_charts): Quick analytics of the selected path with different options in the drop-down list at the left top corner.
+Z) [**Charts**](#file_search_charts): Quick analytics of the selected path with different options in the drop-down list at the left top corner.
 
 ___
 ### How to Select a Volume

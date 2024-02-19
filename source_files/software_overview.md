@@ -48,7 +48,7 @@ Your System Administrator creates all [login](#login) accounts. Depending on you
 
 <img src="images/image_admin_user_required.png" width="200">
 
-Here is a brief list of what you can access depending on your role. 
+Here is a brief list your access depending on your role. 
 
 | FEATURE | END-USER| ADMIN | SYS ADMIN |
 | --- | :---: | :---: | :---: |

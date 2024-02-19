@@ -36,6 +36,7 @@ Diskover allows all stakeholders within an organization to have their own specif
 
 _[Click here for a full-screen view of the Consumers of Data diagram.](images/diagram_diskover_consumers_of_data_2023021401.png)_
 
+<p id="role_access"></p>
 ___
 ### Access to Features
 

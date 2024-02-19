@@ -17,7 +17,7 @@ B) Enter your  **Username**  and  **Password** which were also supplied to you b
 
 C) Click  **Login**.
 
-<img src="images/image_login_window_logo_diskover.png" width="300">
+    <img src="images/image_login_window_logo_diskover.png" width="300">
 
 >🔆 &nbsp;Diskover should look and act the same on any web browser. The only thing to keep in mind is if you apply some modifications in your [settings](#settings) using Google Chrome, they will not transfer if you switch to Safari, for example, because the [settings](#settings) are tied to the cookies of a browser. In this example, you would need to apply the same [settings](#settings) in Safari. Learn more about how [cookies](#clear_cookies) and [cache](#clear_cache) affect the Diskover user interface.
 

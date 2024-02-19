@@ -18,7 +18,7 @@ ___
 
 Diskover offers several integrated features and plugins that are configurable depending on your own environment and needs.
 
-| INTEGRATED FEATURE | DESCRIPTION |
+| INTEGRATED | DESCRIPTION |
 | --- | --- |
 | SEARCHES | Global and powerful searches using built-in tools, manual queries, or a combination of both. |
 | ANALYTICS | Several pre-established and customizable reports allow for informed decision-making. |

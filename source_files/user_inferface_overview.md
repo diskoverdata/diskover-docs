@@ -17,7 +17,7 @@ B) Enter your  **Username**  and  **Password** which were also supplied to you b
 
 C) Click  **Login**.
 
-    <img src="images/image_login_window_logo_diskover.png" width="300">
+<img src="images/image_login_window_logo_diskover.png" width="300">
 
 >🔆 &nbsp;Diskover should look and act the same on any web browser. The only thing to keep in mind is if you apply some modifications in your [settings](#settings) using Google Chrome, they will not transfer if you switch to Safari, for example, because the [settings](#settings) are tied to the cookies of a browser. In this example, you would need to apply the same [settings](#settings) in Safari. Learn more about how [cookies](#clear_cookies) and [cache](#clear_cache) affect the Diskover user interface.
 
@@ -87,7 +87,7 @@ O) [**Volumes**](#storage_volume): To view and select available volumes from the
 
   - If you hover a fill bar, you will see the space used, free, and total for each volume.
 
-    <img src="images/image_file_search_hovering_fill_bar.png" width="250">
+    <img src="images/image_file_search_hovering_fill_bar.png" width="325">
 
 P) [**Directories**](#directory): To view or drill down the directories inside the O) selected volume:
 @@ -95,6 +97,8 @@ P) [**Directories**](#directory): To view or drill down the directories inside t
@@ -98,15 +98,15 @@ P) [**Directories**](#directory): To view or drill down the directories inside t
 
 Q) **Last indexed**: Gives the date and time of the last scan of the selected volume.
 
-R) **Other ways to navigate**:
+R) **Optional navigation buttons**:
   - **Top**: Will bring you back to the top/root of the active [volume](#storage_volume).
   - **Up**: To drill up one [directory](#directory) at a time.
-  - **Back and forth arrows**: To navigate back and forth between visited pages, you can also use the browser's arrows, the results will be the same.
+  - **Back and forth arrows**: To navigate back and forth between visited pages, you can also use the browser's arrows and the results will be the same.
   - **Hide Tree**: Will hide the left pane allowing for more space to investigate W) your results.
-  - **Charts**: To hide/unhide the charts that are located by default above W) the results pane.
-  - **Reload**: To refresh the data and charts the current page.
+  - **Charts**: To hide/unhide the Z) charts.
+  - **Reload**: To refresh your [indices](#indices) and Z) charts.
 
-S) **Extension**: Will show all the file extensions detected in your results, either from drilling down or resulting from a search query, any extension can be clicked to isolate these specific items.
+S) **Extension bar**: Will show all the file extensions detected in your results, either from drilling down or resulting from a search. Click any extension to list these specific items.
 
 <p id="items_per_page"></p>
 

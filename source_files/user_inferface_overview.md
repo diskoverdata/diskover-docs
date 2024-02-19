@@ -143,11 +143,11 @@ Z) [**Charts**](#file_search_charts): Quick analytics of the selected path with 
 ___
 ### How to Select a Volume
 
-![Image: How to Select a Storage Volume](images/image_file_search_page_select_volume_20230214.png)
+![Image: How to Select a Storage Volume](images/image_file_search_page_select_volume_20240219.png)
 
-A) Via the **left pane**.
+A) From the **left pane**, click on an arrow first to open a top path, if applicable, as you may not have any top paths in your instance.
 
-B) Via the **drop-down list** in the top menu.
+B) From the **drop-down list** in the top menu.
 
 
 <p id="select_directory"></p>
@@ -155,10 +155,16 @@ B) Via the **drop-down list** in the top menu.
 ___
 ### How to Select a Directory
 
-![Image: How to Select a Directory](images/image_file_search_page_select_directory_20230214.png)
+![Image: How to Select a Directory](images/image_file_search_page_select_directory_20240219.png)
 
-A) Via the **left pane**  below the volumes, click on any directory to drill down the file tree.
+There are several ways to drill down a file tree, here are the main ones:
 
-B) Via the **path bar**, click any directory to navigate directly to it.
+A) From the **left pane**  below the volumes.
 
-C) You can drill down via the  **results pane**.
+B) From the  **results pane**.
+
+C) From the **path bar**, click any directory to navigate back to that specific directory.
+
+D) Some people like to drill down using the [file tree analytic](#filetree).
+
+>🔆 &nbsp;Note that the directories in A) the left pane and B) the results pane may differ as the left pane only shows directories with data in them. Empty directories will only be listed in the results pane.

@@ -51,7 +51,7 @@ Your System Administrator creates all [login](#login) accounts. Depending on you
 Here is a brief list of shared roles:
 
 | FEATURE | END-USER | ADMIN | SYS ADMIN |
-| --- | --- | --- | --- |
+| --- | :---: | :---: | :---: |
 | Software install and config | | | ✔ |
 | File search and search tools | ✔ | ✔ | ✔ |
 | Analytics access and filters | ✔ | ✔ | ✔ |

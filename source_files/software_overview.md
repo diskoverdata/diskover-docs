@@ -18,11 +18,10 @@ ___
 
 Diskover offers several integrated features and plugins that are configurable depending on your own environment and needs.
 
-| --- | --- |
 | **SEARCHES** | Global and powerful searches using built-in tools, manual queries, or a combination of both. |
-| ANALYTICS | Several pre-established and customizable reports allow for informed decision-making. |
-| ACTIONS | Limitless possibilities through plugins, for example, seamless integration with third-party platforms, automated actions, in-house plugins to automate your own specific in-house needs, etc. |
-| WORKFLOWS | Data automation based on rules and using the rich indexed metadata, for example, data movement to a different storage location, deletion, archival, etc. |
+| **ANALYTICS** | Several pre-established and customizable reports allow for informed decision-making. |
+| **ACTIONS** | Limitless possibilities through plugins, for example, seamless integration with third-party platforms, automated actions, in-house plugins to automate your own specific in-house needs, etc. |
+| **WORKFLOWS** | Data automation based on rules and using the rich indexed metadata, for example, data movement to a different storage location, deletion, archival, etc. |
 
 <p id="consumers_of_data"></p>
 

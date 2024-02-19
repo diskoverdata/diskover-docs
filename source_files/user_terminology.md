@@ -76,14 +76,14 @@ A hard link is a pointer/link that acts like a folder/directory. A hard link is 
 
 Think of hard links like copies but they don't use up any more disk space. Hard links are different than symbolic or soft links, those are more just pointers or links to the actual file.
 
-####Soft links
+#### Soft links
 - Can cross the file system.
 - Allows you to link between directories.
 - Has different inode number and file permissions than the original file.
 - Permissions will not be updated.
 - Has only the path of the original file, not the contents.
 
-####Hard links
+#### Hard links
 - A hard link is a directory that associates a name with a file, thus, each file must have at least one hard link.
 - You can only hard link files and not directories.
 - Hard links can only refer to files within the same volume/file system, they can't cross the file system boundaries.

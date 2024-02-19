@@ -34,7 +34,7 @@ A) **Software logo**: No functions.
 
 B) **[Dashboard](#dashboard)**: Analytical snapshot of a [volume](#storage_volume).
 
-C) [📍 **File search page**](#file_search): Use the folder icon to navigate back to this file search page.
+C) 📍 [**File search page**](#file_search): Use the folder icon to navigate back to this file search page.
 
 D) [**Analytics**](#analytics): To select one of the several built-in analytics.
 
@@ -48,16 +48,18 @@ H) **Launch a search**: Same function as using your  **Return**  key to launch a
 
 <p id="current_dir"></p>
 
-I)  [**Current Dir**](#current_dir): Toggle on/right to narrow your searches/results to a selected [path](#path).
+I) **Current Dir**: Toggle on/right to narrow your searches/results to a selected [path](#path), it will remain active until you manually toggle off.
 
-J) [**Filters**](#filters): Built-in filters to refine your results.
+J) [**Filters**](#filters): Built-in filters to refine your results either when drilling down or searching.
 
 K) [**Volumes**](#storage_volume): Drop-down list to select a specific volume - volumes can also be selected via O) the left pane.
 
 L) **Gear Icon**: 
-  - **Settings**: To access the interface [settings](#settings).
-  - **Help**: Direct link to access our complete documentation catalog [docs.diskoverdata.com](https://docs.diskoverdata.com/)
+  - **Settings**: To modify the [settings](#settings) of the Diskover interface.
   - **Indices**: To select specific [indices](#indices).
+  - **Task Panel**: For system administrators.
+  - **Help**: Direct link to access our complete documentation catalog [docs.diskoverdata.com](https://docs.diskoverdata.com/)
+  - **Reload Indices**: To refresh your [indices](#indices) and Z) charts.
   - **Logout**: To log out of Diskover.
 
 <p id="green_info_bar"></p>

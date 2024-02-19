@@ -13,10 +13,10 @@ ordered_documents:
   - user_media_edition_plugins_overview.md
   - user_media_edition_media_info_attributes.md
   - user_media_edition_file_action_file_sequences.md
+  - user_media_edition_cineviewer_plugin.md
   - user_media_edition_xytech_plugins.md
   - user_media_edition_shotgrid_plugins.md
   - user_media_edition_telestream_plugins.md
-  - user_media_edition_cineviewer_plugin.md
   - user_media_edition_imf_package_validator_plugin.md
   - support_media_edition.md
   - contact.md

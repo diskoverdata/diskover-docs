@@ -119,51 +119,55 @@ ___
 ___
 ### Path Translations for Copying Paths
 
-Depending on how your System Administrator configured Diskover, your operating system, and with whom you need to share paths, you may need to adjust this parameter to easily copy paths. This will basically change all forward slash / to backslash \\ and add some when needed for Windows.
-
-For example, to translate from `/isilon1/data/dm/tools/staging_files.xls` to `\\isilon1\data\dm\tools\staging_files.xls`
-
 ![Image: Settings – Path Translations for Copying Paths](images/image_settings_path_translation.png)
+
+- Depending on 1) how your System Administrator configured Diskover, 2) your operating system, and 3) with whom you need to share paths, you may need to make a selection to copy paths accordingly for your instance.
+- If you select a **path translations**, click **Set** to save.
+- For a Windows environment, for example, you may have a choice where a forward slash / will be changed to two backslashes \\, to translate a path from `/isilon1/data/dm/tools/staging_files.xls` to `\\isilon1\data\dm\tools\staging_files.xls`
+- Please see your System Administrator for details.
 
 <p id="clear_cache"></p>
 
 ___
 ### Clear Diskover Cache
 
-A cache is used to store website content for performance purposes and is stored in the browser only. There are a few instances in which you will need to clear the cache, but it should be used as a last resort:
-
--  Sometimes the cache might prevent a browser-based software from working properly over time and the cache needs to be cleared.
--  If you get a pop-up message on the Diskover interface asking you to clear the cache.
-
 ![Image: Settings – Clear Diskover Cache](images/image_settings_clear_cache.png)
+
+- A **cache** is used to store website content for performance purposes and is saved in the browser.
+- There are random instances where you will need to clear the cache, but it should be used as a last resort:
+  - Sometimes, the cache needs to be cleared because it might prevent a browser-based software from working properly over time.
+  - If you get a pop-up message on the Diskover interface asking you to clear the cache.
 
 <p id="clear_cookies"></p>
 
 ___
 ### Clear Diskover Cookies
 
-Cookies  are used by the browser to store user’s preferences, like the personal settings described in this chapter, and are stored in both the server and browser. There are a few instances in which you may need to clear the cookies:
-- After a software update/upgrade to clear the cookies from the previous version that might affect the behavior of the new version.
-- If you get a pop-up message on the Diskover interface asking you to clear the cookies.
-
-Clearing the cookies  will also remove the customized settings discussed in this chapter and that you might have previously selected.
-
 ![Image: Settings – Clear Diskover Cookies](images/image_settings_clear_cookies.png)
 
-___
-### About Diskover
+- **Cookies** are used by the browser to store user’s preferences, like the personal settings described in this chapter, and are stored in both the server and browser.
+- Clearing the cookies will remove the customized settings you may have selected, as discussed in this chapter.
+- There are a few instances in which you may need to clear the cookies:
+  - After a software update/upgrade to clear the cookies from the previous version that may affect the behavior of the new version.
+  - If you get a pop-up message on the Diskover interface asking you to clear the cookies.
 
-This segment is informative only and provides details about your Diskover software.
+___
+### About Diskover | Version, License Info, and Elasticsearch Info
 
 ![Image: Settings – About Diskover](images/image_settings_about_diskover_20230214.png)
+
+- These sections are informative only and provide details about your Diskover software.
+
 
 <p id="anonymous_data"></p>
 
 ___
 ### Send Anonymous Usage Data
 
-Upon your first login and/or after a software update, you will be prompted to agree, or not, for Diskover to automatically receive anonymous data so we can compile the behavioral results and improve the software. No personal information is collected.
-
-If you wish to opt out of sending anonymous data, uncheck this box.
-
 ![Image: Settings – About Diskover](images/image_settings_anonymous_data_20230214.png)
+
+- Upon your first login and/or after a software update, you will be prompted to agree or not for Diskover to automatically receive anonymous data so we can compile the behavioral results and improve the software.
+- No personal information is collected.
+- Uncheck this box if you wish to opt out of sending anonymous data.
+- Your selection will be saved automatically.
+

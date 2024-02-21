@@ -83,18 +83,17 @@ O) [**Volumes**](#storage_volume): To view and select available volumes from the
   - Your instance may have **top paths** as per this example where some [volumes](#storage_volume) may be regrouped under geo locations, data centers, etc.
   - If you hover a volume name, you will see the date and time that volume was last indexed.
 
-    <img src="images/image_file_search_hovering_volume.png" width="325">
+    <img src="images/image_file_search_hovering_volume.png" width="350">
 
   - If you hover a fill bar, you will see the space used, free, and total for each volume.
 
-    <img src="images/image_file_search_hovering_fill_bar.png" width="325">
+    <img src="images/image_file_search_hovering_fill_bar.png" width="350">
 
 P) [**Directories**](#directory): To view or drill down the directories inside the O) selected volume:
-@@ -95,6 +97,8 @@ P) [**Directories**](#directory): To view or drill down the directories inside t
   - Hovering your mouse over a directory in the left pane will give you a snapshot of additional information.
   - Note that the left pane will only show directories with data in them. You can find all directories, empty or containing data, in the W) results pane.
 
-    <img src="images/image_file_search_hovering_directory.png" width="375">
+    <img src="images/image_file_search_hovering_directory.png" width="400">
 
 Q) **Last indexed**: Gives the date and time of the last scan of the selected volume.
 
@@ -119,7 +118,7 @@ V) **Search within results**: Built-in search tool to [search within the results
 <p id="results_pane_overview"></p>
 
 W) **Results pane**: To see the results when you drill down or from a [search](#file_search):
-  - You can see more or less columns > **gear icon** > [**Settings**](#settings) > [**Hide fields in search results**](#hide_columns).
+  - You can see more or less columns > gear icon > [Settings](#settings) > [Hide fields in search results](#hide_columns).
   - You can change the width of the columns by holding/dragging the line between two columns.
   - Contains several clickable icons which are explained in later in this guide, but briefly:
     - Grey **i** button: Will open the [attributes/metadata](#attributes) window for a [directory](#directory).

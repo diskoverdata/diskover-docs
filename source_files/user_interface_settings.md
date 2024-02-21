@@ -122,8 +122,8 @@ ___
 ![Image: Settings – Path Translations for Copying Paths](images/image_settings_path_translation.png)
 
 - Depending on 1) how your System Administrator configured Diskover, 2) your operating system, and 3) with whom you need to share paths, you may need to make a selection to copy paths accordingly for your instance.
-- If you select a **path translations**, click **Set** to save.
 - For a Windows environment, for example, you may have a choice where a forward slash / will be changed to two backslashes \\, to translate a path from `/isilon1/data/dm/tools/staging_files.xls` to `\\isilon1\data\dm\tools\staging_files.xls`
+- If you select a **path translations**, click **Set** to save.
 - Please see your System Administrator for details.
 
 <p id="clear_cache"></p>
@@ -135,8 +135,8 @@ ___
 
 - A **cache** is used to store website content for performance purposes and is saved in the browser.
 - There are random instances where you will need to clear the cache, but it should be used as a last resort:
-  - Sometimes, the cache needs to be cleared because it might prevent a browser-based software from working properly over time.
-  - If you get a pop-up message on the Diskover interface asking you to clear the cache.
+      - Sometimes, the cache needs to be cleared because it might prevent a browser-based software from working properly over time.
+      - If you get a pop-up message on the Diskover interface asking you to clear the cache.
 
 <p id="clear_cookies"></p>
 
@@ -148,8 +148,8 @@ ___
 - **Cookies** are used by the browser to store user’s preferences, like the personal settings described in this chapter, and are stored in both the server and browser.
 - Clearing the cookies will remove the customized settings you may have selected, as discussed in this chapter.
 - There are a few instances in which you may need to clear the cookies:
-  - After a software update/upgrade to clear the cookies from the previous version that may affect the behavior of the new version.
-  - If you get a pop-up message on the Diskover interface asking you to clear the cookies.
+      - After a software update/upgrade to clear the cookies from the previous version that may affect the behavior of the new version.
+      - If you get a pop-up message on the Diskover interface asking you to clear the cookies.
 
 ___
 ### About Diskover | Version, License Info, and Elasticsearch Info

@@ -6,101 +6,113 @@ ___
 
 ### Settings Overview
 
-You can access the settings  via the gear icon at the top right corner of the interface.
+You can access the settings via the gear icon at the top right corner of the interface.
 
 ![Image: Accessing the Settings](images/image_menu_gear_icon_selection_settings.png)
 
 **IMPORTANT!**
 
 - Changing the settings is personal to your own web browser, even if you share a login account with others. Your customizations are stored as cookies. When you [clear the cookies](#clear_cookies) from the settings, your customized settings will also be cleared and reset to Diskover’s default values. 
-- If you switch browsers, for example from Chrome to Safari, you will have to reselect your settings as they will not follow. Again, this is due to the settings being stored as cookies to a specific browser.
+- If you switch browsers, for example, from Chrome to Firefox, you will have to reselect your settings as they will not follow. Again, this is due to the settings being stored as cookies to a specific browser.
 - Your cookies might also be cleared and need to be reselected after a software update.
 - Click the following links to learn more about how [cookies](#clear_cookies) and [cache](#clear_cache) affect the Diskover user interface.
-
-**GOOD NEWS!**
-
-There are very few settings to select, so reselecting when needed is quickly achieved.
+- **GOOD NEWS!** There are very few settings to select, so reselecting when needed is an easy task.
 
 <p id="profile"></p>
 
 ___
 ### Profile
 
-- **Username**
-- Determines your **[role/access]**(#role_access):
-  - End-user = local user
-  - Admin = admin user
-  - Sys admin = task panel user
-- Where to change your password. Click **Change Password**, and you will be prompted to enter your current password and type a new one.
-
 ![Image: Settings - Profile](images/image_settings_profile_20230214.png)
+
+- Shows your **Username**
+- Determines your [role/access](#role_access):
+  - **Admin user** = admin
+  - **Local user** = non-technical user
+  - **Task panel user** = sys admin/technical user
+- Click **Change Password** as needed, and you will be prompted to enter your current password and type a new one.
 
 <p id="time"></p>
 
 ___
 ### Time Display
 
-You can opt to change the time for your  **local time zone**  instead of  **UTC**  (Coordinated Universal Time).  We strongly recommend you select/click the **Show times in local timezone** so there will be no confusion when you look at the indexing time for example. Your selection will be saved automatically.
-
-This change will affect the [storage time of your indices](#indices), file date creation, modification, etc.
-
 ![Image: Settings – Time Display](images/image_settings_time_display.png)
+
+- You can opt to change the time to your **local time zone**  instead of  **UTC**  (Coordinated Universal Time).
+- We strongly recommend you select/click the **Show times in local timezone** so there will be no confusion when you look at the indexing time, for example. 
+- This change will also affect the [storage time of your indices](#indices), file date creation, modification, etc.
+- Your selection will be saved automatically.
 
 <p id="binary_decimal"></p>
 
 ___
 ### File Size Display
 
-By default, Diskover shows the file size using the  **binary system**. Click the box if you prefer using the  **decimal system**  and your selection will be saved automatically.
-
-Also by default, Diskover’s file size decimal is set to  **1**. You can change that value to your own preference and click on  **Set**  to save.
-
-Select **Use size_du** if you want to use the real allocated disk size instead of the usual file size.
-
 ![Image: Settings – File Size Display](images/image_settings_file_size_display_20230214.png)
+
+- By default, Diskover shows the file size using the  **binary system**. Click the first box **Use decimal system base-10...** if you prefer using the  **decimal system**. Your selection will be saved automatically.
+- By default, Diskover’s file size decimal is set to  **1**. You can change that value to your own preference and click on  **Set**  to save.
+- Select **Use size_du(allocated size) instead...** if you want to use the real allocated disk size instead of the actual file size. Your selection will be saved automatically.
+
+<p id="search_file_tree"></p>
+
+___
+### Search File Tree
+
+![Image: Settings – Filter Charts](images/image_settings_search_file_tree_20240220.png)
+
+- By default, the [file tree analytic](#filetree) is sorted alphanumerically.
+- Click this box if you want the [file tree analytic](#filetree) to be sorted by size instead.
+- Your selection will be saved automatically.
 
 <p id="settings_filter_charts"></p>
 
 ___
 ### Filter Charts
 
-Clicking this box and selecting any [filters](#filters) will apply the criteria to:
-
-- In the charts at the top of the file search page, you can validate the query/criteria in the [green bar](#green_info_bar).
-- The [dashboard](#dashboard) results/analytics.
-
 ![Image: Settings – Filter Charts](images/image_settings_filter_charts_20230214.png)
+
+- By default, [filters](#filters) do not affect the [charts](#file_search_charts) at the top of the file search page or the [dashboard](#dashboard).
+- Check the **Use filters on charts** box if you want the filters to apply to the [charts](#file_search_charts) at the top of the file search page and the [dashboard](#dashboard).
+- Your selection(s) will be saved automatically.
 
 <p id="predictive_search"></p>
 
 ___
 ### Use Predictive Search
 
-Check this box if you want your searches to _always_ be expanded with the [**\* wild card**](#asterisk_wildcard) without having to type the **\*** in the search bar. The [wild cards](#wildcards) are further explained in the [Syntax Rules for Manual Queries chapter](#search_syntax).
-
 ![Image: Settings - Use Predictive Search](images/image_settings_use_predictive_search.png)
+
+- Check this box if you want your searches to _always_ be expanded with the [**\* wild card**](#asterisk_wildcard) without having to type the **\*** in the search bar.
+- Be aware that using this setting may get many additional and/or unwanted results.
+- Your selection(s) will be saved automatically.
+- The [wild cards](#wildcards) are further explained in the [Manual Queries chapter](#search_syntax).
 
 <p id="default_columns_sort"></p>
 
 ___
 ### Default Search Sort
 
-By default, the columns in the file search page will be [sorted by path and then by name](#sort). Select this box if you want to show unsorted search results instead.
-
 ![Image: Settings - Default Search Sort](images/image_settings_default_search_sort.png)
+
+- By default, the columns in the file search page are sorted by **path name** and then by **file or directory name**.
+- Check this box if you want to show unsorted search results instead.
+- Your selection(s) will be saved automatically.
+- Learn how to [assign primary and secondary sort](#sort) in the [results pane](#results_pane).
 
 <p id="hide_columns"></p>
 
 ___
 ### Hide/Unhide Fields in Search Results
 
-Only click the boxes (showing as a green check mark below) for the fields/columns you _DO NOT_ wish to see in your [search results](#results_pane). Your selection(s) will be saved automatically.
-
-The available fields are initially configured by your System Administrator. Other fields might be available for viewing and could be added to your selection.
-
-Click the  **Reset**  button if you have modified the columns' width and wish to reset them to the default width.
-
 ![Image: Settings – Hide/Unhide Columns in Search Results](images/image_settings_hide_fields_in_search_results.png)
+
+- Boxes unchecked means that these fields/columns are visible in your [results pane](#results_pane).
+- Check the boxes for fields/columns you don't want to see in your [results pane](#results_pane).
+- Your selection(s) will be saved automatically.
+- Note that each column represents basic metadata indexed by Diskover, which is available by default. Additional metadata may be indexed in your instance; therefore, different/additional columns may be available on your end.
+- Click the  **Reset**  button if you have modified the columns' width and wish to reset to their default width.
 
 <p id="path_translation"></p>
 

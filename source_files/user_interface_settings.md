@@ -27,9 +27,9 @@ ___
 
 - Shows your **Username**
 - Determines your [role/access](#role_access):
-  - **Admin user** = admin
-  - **Local user** = non-technical user
-  - **Task panel user** = sys admin/technical user
+    - **Admin user** = admin
+    - **Local user** = non-technical user
+    - **Task panel user** = sys admin/technical user
 - Click **Change Password** as needed, and you will be prompted to enter your current password and type a new one.
 
 <p id="time"></p>

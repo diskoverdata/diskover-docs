@@ -61,7 +61,7 @@ chown -R nginx:nginx /var/www/diskover-web
 
 🔴 &nbsp;Configure the NGINX Web server with **diskover-web** configuration file:
 ```
-vi /etc/nginx/conf.d/diskover-web.conf
+vi  /etc/nginx/conf.d/diskover-web.conf
 ```
 
 🔴 &nbsp;Add the following to the **/etc/nginx/conf.d/diskover-web.conf** file:

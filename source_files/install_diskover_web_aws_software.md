@@ -12,9 +12,16 @@ cp -a diskover-web /var/www/
 🔴 &nbsp;Edit the Diskover-Web configuration file **Constants.php** to authenticate against your Elasticsearch endpoint:
 ```
 cd /var/www/diskover-web/src/diskover
+```
+
+```
 cp Constants.php.sample Constants.php
+```
+
+```
 vi Constants.php
 ```
+
 
 🔴 &nbsp;Set your Elasticsearch **endpoint**, **port**, **username**, and **password**:
 ```

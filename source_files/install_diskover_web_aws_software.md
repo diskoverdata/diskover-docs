@@ -6,10 +6,10 @@ ___
 cp -a diskover-web /var/www/
 ```
 
-`cp -a diskover-web /var/www/`
 
 
-🔴 &nbsp;Edit the Diskover-Web configuration file **Constants.php** to authenticate against your Elasticsearch endpoint:
+
+🔴 &nbsp;Edit the Diskover-Web configuration file **Constants.php** to authenticate against your Elasticsearch `cp -a diskover-web /var/www/` endpoint:
 ```
 cd /var/www/diskover-web/src/diskover
 cp Constants.php.sample Constants.php

@@ -2,9 +2,9 @@ ___
 ## Elasticsearch Installation
 ___
 
-Diskover requires an Elasticsearch 7.x environment. Please note that Elasticsearch 8.x is also supported but not covered in this install guide.
->- One node is sufficient for initial testing.
->- Production deployments should be configured with a [minimum of 3 nodes to achieve redundancy](https://docs.diskoverdata.com/diskover_installation_guide/#elasticsearch-requirements) in the Elasticsearch configuration.
->- You can find the latest 7.x.x version on the [Elasticsearch download page](https://www.elastic.co/downloads/past-releases#elasticsearch).
->- You can find the latest 8.x.x version on the [Elasticsearch download page](https://www.elastic.co/downloads/enterprise-search).
->- Diskover can run on all flavors of Linux, although only CentOS, RHEL, and Ubuntu are covered in this guide.
+### Introduction
+
+- Diskover is currently tested and deployed with Elasticsearch v7.x. Note that Elasticsearch v8.x testing is underway, therefore, it is not recommended to use Elasticsearch v8.x until further notice.
+    - [Download page for past Elasticsearch versions](https://www.elastic.co/downloads/past-releases#elasticsearch).
+    - [Download page for current Elasticsearch version](https://www.elastic.co/downloads/elasticsearch).
+- Diskover can run on all flavors of Linux, although only CentOS, RHEL, and Ubuntu are covered in this guide.

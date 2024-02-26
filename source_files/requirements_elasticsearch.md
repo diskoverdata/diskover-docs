@@ -7,7 +7,7 @@ For more detailed Elasticsearch guidelines, refer to AWS sizing guidelines:
 
 #### Elasticsearch Version
 
-Diskover is currently tested and deployed with Elasticsearch 7.x. Note that Elasticsearch v8.x testing is underway, therefore, it is not recommended to use Elasticsearch v8.x until further notice.
+Diskover is currently tested and deployed with Elasticsearch v7.x. Note that Elasticsearch v8.x testing is underway, therefore, it is not recommended to use Elasticsearch v8.x until further notice.
 
 #### Architecture Overview and Terminology
 

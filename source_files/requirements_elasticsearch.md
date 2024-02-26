@@ -1,13 +1,13 @@
 ___
 ### Elasticsearch Requirements
 
-For more detailed Elasticsearch guidelines refer to AWS sizing guidelines:
+For more detailed Elasticsearch guidelines, refer to AWS sizing guidelines:
 
 [https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sizing-domains.html](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sizing-domains.html)
 
-Information on resilience in small clusters:
+#### Elasticsearch Version
 
-[https://www.elastic.co/guide/en/elasticsearch/reference/current/high-availability-cluster-small-clusters.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/high-availability-cluster-small-clusters.html)
+Diskover is currently tested and deployed with Elasticsearch 7.x. Note that Elasticsearch v8.x testing is underway, therefore, it is not recommended to use Elasticsearch v8.x until further notice.
 
 #### Architecture Overview and Terminology
 
@@ -27,7 +27,9 @@ _[Click here for a full screen view of the Elasticsearch Architecture diagram.](
 
 An important configuration for Elasticsearch is that you will want to [set Java heap mem size](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/advanced-configuration.html#set-jvm-heap-size) - it should be half your Elasticsearch host ram up to 32 GB.
 
-##### Production Deployments
+For more information on [resilience in small clusters](https://www.elastic.co/guide/en/elasticsearch/reference/current/high-availability-cluster-small-clusters.html).
+
+##### Production Deployment
 
 >- Minimum 3 nodes for performance and redundancy
 >- 16 CPU cores per node

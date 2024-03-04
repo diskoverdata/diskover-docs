@@ -142,6 +142,11 @@ ___
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
+Diskover-web uses multiple levels to limit Elasticsearch index and directory visiblity and access:
+1) Index mappings (INDEX_MAPPINGS) can be configured and set to control what indices groups and users are allowed to see. Excluded dirs and es search query can also be added to index mappings for more granular control.
+2) AD/LDAP and Oauth2 group directory permissions
+3) Unix directory permissions
+
 Visibility can be limited by users/groups to specific indexes or branches within a given index. 
 
 🔴 &nbsp;To limit index visibility by users/groups:
@@ -157,52 +162,91 @@ const INDEX_MAPPINGS_ENABLED = FALSE;
 // index_patterns key is a list of index names user/group is allowed access to view
 // index_patterns_exclude key is a list of index names user/group is not allowed to view
 // index pattern wildcards * and ? are allowed, example diskover-* or diskover-indexname-*
-// to not exclude any indices/dirs, use empty list [] for index_patterns_exclude and excluded_dirs
-// excluded dirs use absolute path, example /top_path/dir_name
-// group/user names and excluded dirs are case-sensitive
+// to not exclude any indices/dirs, use empty list [] for index_patterns_exclude, excluded_dirs, and excluded_query
+// excluded_dirs use absolute paths and are recursive, example /top_path/dir_name
+// excluded_query uses ES query string including regular expression syntax
+// group/user names, excluded_dirs, and excluded_query are case-sensitive
+// group/user name wildcards * and ? are allowed
+
 const INDEX_MAPPINGS = [
     CONSTANTS::ADMIN_USER => [
-        ['index_patterns' => ['diskover-*'], 'index_patterns_exclude' => [], 'excluded_dirs' => []]
-    ],
-    CONSTANTS::USER => [
-        ['index_patterns' => ['diskover-*'], 'index_patterns_exclude' => [], 'excluded_dirs' => []]
-    ],
-    'diskover-admins' => [
-        ['index_patterns' => ['diskover-*'], 'index_patterns_exclude' => [], 'excluded_dirs' => []]
-    ],
-    'diskover-users' => [
-        ['index_patterns' => ['diskover-*'], 'index_patterns_exclude' => [], 'excluded_dirs' => []]
-    ],
-    'diskover-powerusers' => [
-        ['index_patterns' => ['diskover-*'], 'index_patterns_exclude' => [], 'excluded_dirs' => []]
-    ]
+      [
+            'index_patterns' => [
+                'diskover-*'
+           ], 
+           'index_patterns_exclude' => [], 
+           'excluded_dirs' => [], 
+           // allow access to projectA directory only in /mnt/stor1/projects
+           'excluded_query' => ['((parent_path:\/mnt\/stor1\/projects AND name:/project[^A]/) OR parent_path:/\/mnt\/stor1\/projects\/project[^A]*/)']
+       ]
+   ],
+   CONSTANTS::USER => [
+       ['index_patterns' => ['diskover-*'], 'index_patterns_exclude' => [], 'excluded_dirs' => [], 'excluded_query' => []]
+   ],
+   'diskover-admins' => [
+       ['index_patterns' => ['diskover-*'], 'index_patterns_exclude' => [], 'excluded_dirs' => [], 'excluded_query' => []]
+   ],
+   'diskover-users' => [
+       ['index_patterns' => ['diskover-*'], 'index_patterns_exclude' => [], 'excluded_dirs' => [], 'excluded_query' => []]
+   ],
+   'diskover-powerusers' => [
+       ['index_patterns' => ['diskover-*'], 'index_patterns_exclude' => [], 'excluded_dirs' => [], 'excluded_query' => []]
+   ]
 ];
 ```
 
-Visibility can also be limited by AD/LDAP group permission and unix permissions filtering.
+Visibility can also be limited by AD/LDAP and Oauth2 group permissions.
 
-> _Note:_ To use unix permissions filtering, you will need to enable and use the [Unix Permissions plugin](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#unix-permissions-plugin) when indexing, for both file and directory.
-
-🔴 &nbsp;To limit index visibility by AD/LDAP group membership and unix permissions:
+🔴 &nbsp;To limit index visibility by AD/LDAP or Oauth2 group membership:
 ```
 vim /var/www/diskover-web/src/diskover/Constants.php
 ```
 
 ```
 // AD/ldap group permission filtering
-// controls if directories in the index get fitered based on AD/ldap groups membership
+// controls if files/directories get fitered based on AD/ldap groups membership of the user logged in
 // local users admin and diskover always see all directories in the index
+// aws s3 indices are not filtered
 // enable ldap filtering, set to TRUE or FALSE
 const LDAP_FILTERING_ENABLED = TRUE;
 // AD/ldap groups that are excluded from filtering
-// if a user is a member of one of these groups, they will see all folders
+// if a user is a member of one of these groups, they will see all files/directories
 // group names are case-sensitive
 const LDAP_GROUPS_EXCLUDED = ['diskover-admins', 'diskover-powerusers'];
-// use unix_perms index field (if exists) as well as group membership to determine filtering
-// if unix permissions is readable by other, they will be visible to the user, regardless of ldap group membership
-// example a directory with unix_perms = 777 or 770 or 755 will be visible to all
-// example a directory with unix_perms = 770 or 751 will not be visible to all
+
+// Oauth2 SSO group permission filtering
+// controls if files/directories get fitered based on Oauth2 SSO groups membership of the user logged in
+// local users admin and diskover always see all directories in the index
+// aws s3 indices are not filtered
+// Diskover Pro license required
+// enable Oauth2 filtering, set to TRUE or FALSE
+const OAUTH2_FILTERING_ENABLED = FALSE;
+
+// Oauth2 SSO groups that are excluded from filtering
+// if a user is a member of one of these groups, they will see all files/directories
+// group names are case-sensitive
+const OAUTH2_GROUPS_EXCLUDED = ['diskover-admins', 'diskover-powerusers'];
+
+// lower case group names when filtering
+const GROUPNAME_FILTERING_LOWERCASE = FALSE;
+```
+
+🔴 &nbsp;To limit index visibility by Unix file permissions:
+
+> _Note:_ To use unix permissions filtering, you will need to enable and use the [Unix Permissions plugin](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#unix-permissions-plugin) when indexing, for both file and directory.
+
+```
+vim /var/www/diskover-web/src/diskover/Constants.php
+```
+
+```
+// use UNIXPERMS_FILTERING_STRING as well as group membership to determine filtering
 const UNIXPERMS_FILTERING_ENABLED = TRUE;
+
+// unix perms filtering ES search string
+// could also use other fields besides unix_perms such as owner, group, etc
+//const UNIXPERMS_FILTERING_STRING = 'owner:root AND group:root AND unix_perms:755'
+const UNIXPERMS_FILTERING_STRING = 'unix_perms:/..[57]/';
 ```
 
 ___

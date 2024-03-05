@@ -39,6 +39,7 @@ ordered_documents:
   - plugins_tag_copier.md  
   - plugins_unix_permissions.md
   - plugins_windows_owner.md
+  - plugins_windows_attrib.md
   - plugins_xytech_asset_creation.md 
   - plugins_display_extra_fields.md
   - plugins_diskover_web_file_actions_intro.md

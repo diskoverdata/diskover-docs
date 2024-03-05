@@ -1,6 +1,8 @@
 ___
 ### Windows Attributes Plugin
 
+![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
+
 The Windows Attributes plugin adds the Windows file owner, primary group and ACE's of each file and directory to the Diskover index after indexing is complete. It replaces all docs showing owner 0 and group 0 with the Windows file/directory owner name and primary group. 
 It updates owner, group and windacls fields meta data of each file or directory to diskover index after indexing with the Windows owner, primary group and acl info.
 
@@ -22,4 +24,16 @@ notepad %APPDATA%\diskover_winattrib\config.yaml
 ```
 cd "C:\Program Files\diskover\plugins_postindex"
 python diskover-winattrib.py -h
+```
+
+🔴 &nbsp;Run windows-attrib plugin using index name:
+```
+cd "C:\Program Files\diskover\plugins_postindex"
+python diskover-winattrib.py diskover-index1
+```
+
+🔴 &nbsp;Run windows-attrib plugin using latest index found for top path and using sqlite db cache:
+```
+cd "C:\Program Files\diskover\plugins_postindex"
+python diskover-winattrib.py -l /somepath -u
 ```

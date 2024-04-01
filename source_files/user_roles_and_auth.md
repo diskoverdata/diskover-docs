@@ -66,30 +66,35 @@ vim /var/www/diskover-web/src/diskover/Constants.php
 
 The following information is required to configure Okta authentication/authorization:
 
-**OKTA_LOGINS** - set to TRUE to enable and use Okta login
->_Note:_ when using Okta login, local and ldap login is not used
+**OAUTH2_LOGINS** - set to TRUE to enable and use Okta oauth2 login
+>_Note:_ when using Oauth2 login, local and ldap login is not used
 
-**OKTA_OAUTH2_CLIENT_ID** - your Okta oauth2 application client id
+**OAUTH2_CLIENT_ID** - your Okta oauth2 application client id
 
-**OKTA_OAUTH2_CLIENT_SECRET** - your Okta oauth2 application client secret
+**OAUTH2_CLIENT_SECRET** - your Okta oauth2 application client secret
 
-**OKTA_OAUTH2_REDIRECT_URI** - your Okta login redirect URI, example: `https://diskover.domain.com/login.php?callback`
+**OAUTH2_REDIRECT_URI** - your Okta oauth2 login redirect URI, example: `https://diskover.domain.com/login.php?callback`
 >_Note:_ login.php page handles the redirect uri when using `callback` parameter
 
-**OKTA_OAUTH2_LOGOUT_REDIRECT_URI** - your Okta post logout redirect URI, example: `https://diskover.domain.com/`
+**OAUTH2_LOGOUT_REDIRECT_URI** - your Okta oauth2 post logout redirect URI, example: `https://diskover.domain.com/`
 
-**OKTA_OAUTH2_ISSUER** - your Okta API authorization server issuer URI
+**OAUTH2_AUTH_ENDPOINT** - your Okta Oauth2 API Authorization Server Issuer URI authorization endpoint, example: `https://diskover.domain.com/oauth2/default/v1/authorize`
 
-**OKTA_API_URL_BASE** - your Okta API URL
+**OAUTH2_TOKEN_ENDPOINT** - your Okta Oauth2 API Authorization Server Issuer URI token endpoint, example: `https://diskover.domain.com/oauth2/default/v1/token`
 
-**OKTA_API_TOKEN** - your Okta API Token
+**OAUTH2_LOGOUT_ENDPOINT** - your Okta Oauth2 API Authorization Server Issuer URI logout endpoint, example: `https://diskover.domain.com/oauth2/default/v1/logout`
 
-At least two Okta groups should be established for Diskover and set in web config:
-1. Admin group added to **OKTA_ADMIN_GROUPS**
-2. Task panel group added to **OKTA_TASK_PANEL_GROUPS**
+**OAUTH2_API_TYPE** - Oauth2 API Type, types are Okta or Azure (Graph API). Set this to Okta.
 
->_Note:_ at login, the Okta user will be checked if they are in one of these above Okta groups.
+**OAUTH2_API_URL_BASE** - your Okta oauth2 API URL for getting user/group info, example `https://diskover.domain.com/api/v1/`
 
+**OAUTH2_API_TOKEN** - your Okta oauth2 API Token
+
+At least two Okta Oauth2 groups should be established for Diskover and set in web config:
+1. Admin group added to **OAUTH2_ADMIN_GROUPS**
+2. Task panel group added to **OAUTH2_TASK_PANEL_GROUPS**
+
+>_Note:_ at login, the Okta oauth2 user will be checked if they are in one of these above Okta oauth2 groups.
 
 ___
 ### Azure AD Oauth2 OIDC SSO Authentication
@@ -105,37 +110,37 @@ Diskover-Web supports authenticating/authorizing users using either Okta Identit
 vim /var/www/diskover-web/src/diskover/Constants.php
 ```
 
-The following information is required to configure Oauth2 OIDC SSO authentication/authorization:
+The following information is required to configure Azure Oauth2 OIDC SSO authentication/authorization:
 
-**OAUTH2_LOGINS** - set to TRUE to enable and use oauth2 login
+**OAUTH2_LOGINS** - set to TRUE to enable and use Azure oauth2 login
 >_Note:_ when using Oauth2 login, local and ldap login is not used
 
-**OAUTH2_CLIENT_ID** - your oauth2 application client id
+**OAUTH2_CLIENT_ID** - your Azure oauth2 application client id
 
-**OAUTH2_CLIENT_SECRET** - your oauth2 application client secret
+**OAUTH2_CLIENT_SECRET** - your Azure oauth2 application client secret
 
-**OAUTH2_REDIRECT_URI** - your oauth2 login redirect URI, example: `https://diskover.domain.com/login.php?callback`
+**OAUTH2_REDIRECT_URI** - your Azure oauth2 login redirect URI, example: `https://diskover.domain.com/login.php?callback`
 >_Note:_ login.php page handles the redirect uri when using `callback` parameter
 
-**OAUTH2_LOGOUT_REDIRECT_URI** - your oauth2 post logout redirect URI, example: `https://diskover.domain.com/`
+**OAUTH2_LOGOUT_REDIRECT_URI** - your Azure oauth2 post logout redirect URI, example: `https://diskover.domain.com/`
 
-**OAUTH2_AUTH_ENDPOINT** - your Oauth2 API Authorization Server Issuer URI authorization endpoint, example: `https://diskover.domain.com/oauth2/default/v1/authorize`
+**OAUTH2_AUTH_ENDPOINT** - your Azure Oauth2 API Authorization Server Issuer URI authorization endpoint, example: `https://diskover.domain.com/oauth2/default/v1/authorize`
 
-**OAUTH2_TOKEN_ENDPOINT** - your Oauth2 API Authorization Server Issuer URI token endpoint, example: `https://diskover.domain.com/oauth2/default/v1/token`
+**OAUTH2_TOKEN_ENDPOINT** - your Azure Oauth2 API Authorization Server Issuer URI token endpoint, example: `https://diskover.domain.com/oauth2/default/v1/token`
 
-**OAUTH2_LOGOUT_ENDPOINT** - your Oauth2 API Authorization Server Issuer URI logout endpoint, example: `https://diskover.domain.com/oauth2/default/v1/logout`
+**OAUTH2_LOGOUT_ENDPOINT** - your Azure Oauth2 API Authorization Server Issuer URI logout endpoint, example: `https://diskover.domain.com/oauth2/default/v1/logout`
 
-**OAUTH2_API_TYPE** - Oauth2 API Type, types are Okta or Azure (Graph API)
+**OAUTH2_API_TYPE** - Oauth2 API Type, types are Okta or Azure (Graph API). Set this to Azure.
 
-**OAUTH2_API_URL_BASE** - your oauth2 API URL for getting user/group info, example `https://diskover.domain.com/api/v1/`
+**OAUTH2_API_URL_BASE** - your Azure oauth2 API URL for getting user/group info, example `https://diskover.domain.com/api/v1/`
 
-**OKTA_API_TOKEN** - your oauth2 API Token
+**OAUTH2_API_TOKEN** - your Azure oauth2 API Token
 
-At least two Okta groups should be established for Diskover and set in web config:
-1. Admin group added to **OKTA_ADMIN_GROUPS**
-2. Task panel group added to **OKTA_TASK_PANEL_GROUPS**
+At least two Okta Oauth2 groups should be established for Diskover and set in web config:
+1. Admin group added to **OAUTH2_ADMIN_GROUPS**
+2. Task panel group added to **OAUTH2_TASK_PANEL_GROUPS**
 
->_Note:_ at login, the Okta user will be checked if they are in one of these above Okta groups.
+>_Note:_ at login, the Okta oauth2 user will be checked if they are in one of these above Okta oauth2 groups.
 
 ___
 ### Restricting Visibility and Access

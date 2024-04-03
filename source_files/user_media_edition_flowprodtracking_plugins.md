@@ -2,9 +2,6 @@ ___
 ## Flow Production Tracking Plugin
 ___
 
-   >**Important | Diskover Software Still Using ShotGrid**
-   >
-   >Please note that Autodesk recently changed their product name **ShotGrid** to **Flow Production Tracking**. Although our literature now refers to Flow Production Tracking, ShotGrid is still being used in Diskover's user interface and backend post-index harvesting until further notice.
 
 The Autodesk Flow Production Tracking (formerly ShotGrid) Plugin is designed to enhance basic metadata with detailed production status information, aligning data management with production schedules. The Diskover Flow Production Tracking Plugin harvests additional attributes from the Autodesk ShotGrid platform for every **shot** directory located on storage. These attributes become properties of the **shot** directories and include status information such as **finaled**, **out-of-picture**, multiple project **tracking dates**, and many more, totaling over one hundred indexable fields.
 
@@ -15,6 +12,10 @@ For each shot directory within Diskover, the Flow Production Tracking attributes
 [Click here to learn more about the Autodesk Flow Production Tracking Platform.]([https://www.autodesk.com/products/shotgrid/overview?term=1-YEAR&tab=subscription&plc=SGSUB)
 
 #### Flow Production Tracking Attributes in the Diskover User Interface
+
+ >**Important | Diskover Software Still Using ShotGrid**
+   >
+   >Please note that Autodesk recently changed their product name **ShotGrid** to **Flow Production Tracking**. Although our literature now refers to Flow Production Tracking, ShotGrid is still being used in Diskover's user interface and backend post-index harvesting until further notice.
 
 Search page showing a dedicated column with a summary of the Flow Production Tracking attributes.
 

@@ -11,7 +11,7 @@ For each shot directory within Diskover, the Flow Production Tracking attributes
 
 [Click here to learn more about the Autodesk Flow Production Tracking Platform.]([https://www.autodesk.com/products/shotgrid/overview?term=1-YEAR&tab=subscription&plc=SGSUB)
 
-#### Flow Production Tracking Attributes in the Diskover User Interface
+### Flow Production Tracking Attributes in the Diskover User Interface
 
  >**Important | Diskover Software Still Using ShotGrid**
    >
@@ -25,7 +25,7 @@ Detailed Flow Production Tracking indexed fields can be found in the Diskover at
 
 ![Image: Flow Production Tracking Attributes in Diskover User Interface](images/image_aja_edition_shotgrid_plugin_attributes_window.png)
 
-#### Flow Production Tracking Status Analytics Within Diskover
+### Flow Production Tracking Status Analytics Within Diskover
 
 Business context metadata allows for granular and powerful analytics with information relevant to your business. Once the Flow Production Tracking attributes are indexed by Diskover, they can be used in various [reporting tools](https://docs.diskoverdata.com/diskover_user_guide/#analytics).
 
@@ -49,15 +49,13 @@ Amount of data by **creator**:
 
 ![Image: Order Status within Xytech Media Order Platform](images/image_aja_edition_shotgrid_plugin_reports_by_creator.png)
 
-#### How to Search for Flow Production Tracking Attributes in Diskover
-
-##### Search Overview
+### How to Search for Flow Production Tracking Attributes in Diskover
 
 The **Flow Production Tracking** (formerly **ShotGrid**) fields are part of the metadata harvested by Diskover. If a file at the source doesn’t have any of those attributes attached to it, it goes without saying that no details will be harvested and/or be available within Diskover.
 
 In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#search_syntax), the AJA Diskover Media Edition allows end-users to search on multiple Flow Production Tracking attributes.
 
-##### Search Syntax
+#### Search Syntax
 
    >**Important | Diskover Software Still Using ShotGrid**
    >
@@ -72,13 +70,20 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 
 - Your search query needs to be typed or pasted in the Diskover search bar.
 
-##### Search Examples
+#### Searchable Fields and Examples
 
-Diskover can harvest over 100 attributes from the Flow Production Tracking platform and they will all be listed over time. Here are a few examples:
+Diskover can harvest over 100 attributes from the Flow Production Tracking platform.
+
+##### Examples of How to Search
 
 | Search Query Examples | Search Results |
 | --- | --- |
 | **shotgrid.sequence:_3336_** | would find all files with **sequence** number __*3336*__ |
 | **shotgrid.date_updated:**__*\*2023-03-22*\*__ | would find all files/directories with an **updated status date** of __*March 22, 2023*__ |
 | **shotgrid.shot_code:**__*\*li0304*\*__ | would find all **shot code** files with full or partial number __*li0304*__ |
+
+##### List of Searchable Fields
+
+Coming soon...
+
 

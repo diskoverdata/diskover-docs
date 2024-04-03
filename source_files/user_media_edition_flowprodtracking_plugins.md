@@ -13,9 +13,9 @@ For each shot directory within Diskover, the Flow Production Tracking attributes
 
 ### Flow Production Tracking Attributes in the Diskover User Interface
 
-   >**Important | Diskover Software Still Using ShotGrid**
-   >
-   >Please note that Autodesk recently changed its product name from **ShotGrid** to **Flow Production Tracking**." Although our literature now refers to Flow Production Tracking, ShotGrid will still be used in Diskover's user interface and backend post-index harvesting until further notice.
+      >**Important | Diskover Software Still Using ShotGrid**
+      >
+      >Please note that Autodesk recently changed its product name from **ShotGrid** to **Flow Production Tracking**." Although our literature now refers to Flow Production Tracking, ShotGrid will still be used in Diskover's user interface and backend post-index harvesting until further notice.
 
 Search page showing a dedicated column with a summary of the Flow Production Tracking attributes.
 

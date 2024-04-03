@@ -70,17 +70,11 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 
 - Your search query needs to be typed or pasted into the Diskover search bar.
 
+- For [all information on manual search queries](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries-syntax-and-rules).
+
 #### Searchable Fields and Examples
 
 The Autodesk Flow Production Tracking platform has around one hundred indexable fields. Users can opt to index all or just the ones relevant to their business.
-
-##### Examples of How to Search
-
-| Search Query Examples | Search Results |
-| --- | --- |
-| **shotgrid.sequence:_3336_** | would find all files with **sequence** number __*3336*__ |
-| **shotgrid.date_updated:**__*\*2023-03-22*\*__ | would find all files/directories with an **updated status date** of __*March 22, 2023*__ |
-| **shotgrid.shot_code:**__*\*li0304*\*__ | would find all **shot code** files with full or partial number __*li0304*__ |
 
 ##### List of All Indexable and Searchable Fields
 
@@ -119,3 +113,12 @@ The Autodesk Flow Production Tracking platform has around one hundred indexable 
 | shotgrid.	sg_comments	| shotgrid.	smart_cut_duration	| shotgrid.	updated_at	 |
 | shotgrid.	sg_cut_duration	| shotgrid.	smart_cut_in	| shotgrid.	updated_by	 |
 | shotgrid.	sg_cut_duration_timecode	| shotgrid.	smart_cut_out	|		 |
+
+##### Search Examples  
+
+| Search Query Examples | Search Results |
+| --- | --- |
+| **shotgrid.sequence:_3336_** | would find all files with **sequence** number __*3336*__ |
+| **shotgrid.date_updated:**__*\*2023-03-22*\*__ | would find all files/directories with an **updated status date** of __*March 22, 2023*__ |
+| **shotgrid.shot_code:**__*\*li0304*\*__ | would find all **shot code** files with full or partial number __*li0304*__ |
+

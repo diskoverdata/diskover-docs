@@ -4,7 +4,7 @@ ___
 
    >**Important | Diskover Software Still Using ShotGrid**
    >
-   >Please note that Autodesk recently changed their product name "ShotGrid" to "Flow Production Tracking". Although our literature now refers to Flow Production Tracking, ShotGrid is still being used in Diskover's user interface and backend post-index harvesting until further notice.
+   >Please note that Autodesk recently changed their product name **ShotGrid** to **Flow Production Tracking**. Although our literature now refers to Flow Production Tracking, ShotGrid is still being used in Diskover's user interface and backend post-index harvesting until further notice.
 
 The Autodesk Flow Production Tracking (formerly ShotGrid) Plugin is designed to enhance basic metadata with detailed production status information, aligning data management with production schedules. The Diskover Flow Production Tracking Plugin harvests additional attributes from the Autodesk ShotGrid platform for every **shot** directory located on storage. These attributes become properties of the **shot** directories and include status information such as **finaled**, **out-of-picture**, multiple project **tracking dates**, and many more, totaling over one hundred indexable fields.
 
@@ -60,7 +60,7 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 
    >**Important | Diskover Software Still Using ShotGrid**
    >
-   >Please note that Autodesk recently changed their product name "ShotGrid" to "Flow Production Tracking". Although our literature now refers to Flow Production Tracking, ShotGrid is still being used in Diskover's user interface and backend post-index harvesting until further notice.
+   >Please note that Autodesk recently changed their product name **ShotGrid** to **Flow Production Tracking**. Although our literature now refers to Flow Production Tracking, ShotGrid is still being used in Diskover's user interface and backend post-index harvesting until further notice.
 
 - The following syntax needs to be respected **shotgrid.key:**__*value*__:
     * **shotgrid** is not a variable.

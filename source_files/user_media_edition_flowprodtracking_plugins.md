@@ -3,6 +3,7 @@ ___
 ___
 
    >**Important | Diskover Software Still Using ShotGrid**
+   >
    >Please note that Autodesk recently changed their product name "ShotGrid" to "Flow Production Tracking". Although our literature now refers to Flow Production Tracking, ShotGrid is still being used in Diskover's user interface and backend post-index harvesting until further notice.
 
 The Autodesk Flow Production Tracking (formerly ShotGrid) Plugin is designed to enhance basic metadata with detailed production status information, aligning data management with production schedules. The Diskover Flow Production Tracking Plugin harvests additional attributes from the Autodesk ShotGrid platform for every **shot** directory located on storage. These attributes become properties of the **shot** directories and include status information such as **finaled**, **out-of-picture**, multiple project **tracking dates**, and many more, totaling over one hundred indexable fields.
@@ -51,14 +52,15 @@ Amount of data by **creator**:
 
 ##### Search Overview
 
-   >**Important | Diskover Software Still Using ShotGrid**
-   >Please note that Autodesk recently changed their product name "ShotGrid" to "Flow Production Tracking". Although our literature now refers to Flow Production Tracking, ShotGrid is still being used in Diskover's user interface and backend post-index harvesting until further notice.
-
 The **Flow Production Tracking** (formerly **ShotGrid**) fields are part of the metadata harvested by Diskover. If a file at the source doesn’t have any of those attributes attached to it, it goes without saying that no details will be harvested and/or be available within Diskover.
 
 In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#search_syntax), the AJA Diskover Media Edition allows end-users to search on multiple Flow Production Tracking attributes.
 
 ##### Search Syntax
+
+   >**Important | Diskover Software Still Using ShotGrid**
+   >
+   >Please note that Autodesk recently changed their product name "ShotGrid" to "Flow Production Tracking". Although our literature now refers to Flow Production Tracking, ShotGrid is still being used in Diskover's user interface and backend post-index harvesting until further notice.
 
 - The following syntax needs to be respected **shotgrid.key:**__*value*__:
     * **shotgrid** is not a variable.

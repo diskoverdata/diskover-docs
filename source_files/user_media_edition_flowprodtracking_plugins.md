@@ -13,9 +13,9 @@ For each shot directory within Diskover, the Flow Production Tracking attributes
 
 ### Flow Production Tracking Attributes in the Diskover User Interface
 
- >**Important | Diskover Software Still Using ShotGrid**
+   >**Important | Diskover Software Still Using ShotGrid**
    >
-   >Please note that Autodesk recently changed their product name **ShotGrid** to **Flow Production Tracking**. Although our literature now refers to Flow Production Tracking, ShotGrid is still being used in Diskover's user interface and backend post-index harvesting until further notice.
+   >Please note that Autodesk recently changed its product name from **ShotGrid** to **Flow Production Tracking**." Although our literature now refers to Flow Production Tracking, ShotGrid will still be used in Diskover's user interface and backend post-index harvesting until further notice.
 
 Search page showing a dedicated column with a summary of the Flow Production Tracking attributes.
 
@@ -59,7 +59,7 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 
    >**Important | Diskover Software Still Using ShotGrid**
    >
-   >Please note that Autodesk recently changed their product name **ShotGrid** to **Flow Production Tracking**. Although our literature now refers to Flow Production Tracking, ShotGrid is still being used in Diskover's user interface and backend post-index harvesting until further notice.
+   >Please note that Autodesk recently changed its product name from **ShotGrid** to **Flow Production Tracking**." Although our literature now refers to Flow Production Tracking, ShotGrid will still be used in Diskover's user interface and backend post-index harvesting until further notice.
 
 - The following syntax needs to be respected **shotgrid.key:**__*value*__:
     * **shotgrid** is not a variable.

@@ -309,13 +309,13 @@ Searching with field names can be effective if you search on a specific and/or h
 >- The **fieldname** needs to be lowercase.
 >- The variable after the colon needs to be typed in upper and/or lower case to match exactly what you are searching for. 
 
-#### Default Field Names
+#### Field Names | Basic Metadata
+
+These fields are harvested during indexing, without any plugins needed.
 
 | Field name | What it means | How to search |
 | --- | --- | --- |
 | **atime** | last accessed | refer to [Queries with Time](#search_time) for syntax examples |
-| **bam_info** | extra metadata for sam files | please refer to the [Diskover Life Science User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/) for complete details |
-| **costpergb** | storage space cost | `costpergb:[10 TO 500]` |
 | **ctime** | last changed  | refer to [Queries with Time](#search_time) for syntax examples |
 | **dir_count** | number of sub-directories in a directory [recursive](#recursive) | `dir_count:2` > would list directories with exactly 2 sub-directories _or_ 1 file and 1 directory _or_ 2 files |
 | **dir_count_norecurs** | number of items (files and folders) in a directory [non-recursive](#recursive) | `dir_count_norecurs:1` > would list directories with at least 1 sub-directory in them |
@@ -326,10 +326,7 @@ Searching with field names can be effective if you search on a specific and/or h
 | **file_size** | file size | in bytes > see [Queries with File Size](#search_size) for examples |
 | **file_size_du** | disk usage size aka allocated size for files only | in bytes > see [Queries with File Size](#search_size) for examples |
 | **group** | user group name | `group:colorists` > can vary depending on how Diskover was configured, see [User Analysis Report](#user_analysis) section for more details and/or ask your System Administrator |
-| **hash** | hash value for duplicate files | `hash:*` `hash.xxhash:*` `hash.md5:*` `hash.sha256:*` `hash.sha1:*` this [feature needs to be enabled/configured](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#duplicates-plugin)  |
 | **ino** | file inode number | `ino:8838389885` or `ino:8838*` > is usually used by System Administrators |
-| **is_dupe** | duplicate files | `is_dupe:*` > will list duplicate items |
-| **media_info** | extra metadata for media files | please refer to the [AJA Diskover Media Edition User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/) for complete details |
 | **mtime** | last modified | refer to [Queries with Time](#search_time) for syntax examples |
 | **name** | file name | is case sensitive, ex: `name:*Jungle*` if the file name is TheJungleBook.mov |
 | **name.text** | same as **name** but is not case sensitive | `name.text:*jungle*` even if the file name is TheJungleBook.mov |
@@ -337,14 +334,35 @@ Searching with field names can be effective if you search on a specific and/or h
 | **owner** | owner name | `owner:*Joe*` > can vary depending on how Diskover was configured, see [User Analysis Report](#user_analysis) section for more details and/or ask your System Administrator |
 | **parent_path** | path name | `parent_path:\/Some\/Folder*` > is case sensitive, will search the specified folder and all its sub-folders ([recursive](#recursive)) |
 | **parent_path.text** | same as **parent_path** but is not case sensitive | `parent_path:\/some\/folder*` |
-| **s3_etag** | s3 entity tag | `s3_etag:*` > default field that gets added when performing an S3 scan (cloud storage) |
-| **s3_storageclass** | s3 storage class | `s3_storageclass:standard` > default field that gets added when performing an S3 scan (cloud storage) |
 | **size** | file and/or directory size | in bytes > see [Queries with Data Size](#search_size) for syntax examples on how to search on size |
 | **size_norecurs** | file and/or directory size [non-recursive](#recursive) | in bytes > see [Queries with Data Size](#search_size) for syntax examples on how to search on size |
 | **size_du** | disk usage size aka allocated size for files and/or directories | in bytes > see [Queries with Data Size](#search_size) for syntax examples on how to search on sizes |
 | **size_du_norecurs** | disk usage size [non-recursive](#recursive) | in bytes > see [Queries with Data Size](#search_size) for syntax examples on how to search on size |
-| **tags** | manual or auto tags | `tags:delete` > any tag(s) associated with a file or directory, tag name is case sensitive |
 | **type** | file or directory | `type:file` or `type:directory` > is case sensitive, all lower case needed |
+
+#### Field Names | Extra Metadata
+
+These extra fields are harvested using plugins, alternate indexers, or when configuring certain Diskover features.
+
+| Plugin or Indexer | What it means | Field names |
+| --- | --- | --- |
+| **azure** | collected when using the Microsoft Azure Blob indexer | `azure_etag` and `azure_tier` |
+| **bam_info** | extra metadata for [sam and bam files when using the BAM plugin](https://diskoverdata.com/products/life-science-edition/#bam-plugin) | refer to the [Diskover Life Science User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/#bam-harvest-plugin) for the list of fields |
+| **costpergb** | storage space cost when [feature is configured in Diskover](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#storage-cost-reporting) | `costpergb`, search example: `costpergb:[10 TO 500]` |
+| **grant** | extra metadata for [research grant info when using the Grant plugin](https://diskoverdata.com/products/life-science-edition/#grant-plugin) | `assigned_grant`, `SG-group`, `ProjectId` |
+| **pscale** | multiple Dell PowerScale data catalog when using the alternate indexer | please refer to the [indexer diagram for all fields harvested](https://diskoverdata.com/products/dataiq-migration/) |
+| **hash** | harvested using the hash value plugin for checksums | `hash.xxhash`, `hash.md5`, `hash.sha256`, `hash.sha1` this [feature needs to be configured](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#duplicates-plugin)  |
+| **is_dupe** | duplicate files plugin | `is_dupe:*` > will list duplicate items |
+| **media_info** | media files resolution, codec, etc. harvested using the [Media Info plugin](https://diskoverdata.com/products/products-aja-media-edition/#mediainfo) | refer to the [AJA Diskover Media Edition User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#media-info-attributes) for the list of fields and how to use them |
+| **s3_etag** | collected when using the S3 alternate indexer | `s3_etag`, `s3_storageclass` |
+| **s3_storageclass** | s3 storage class | `s3_storageclass:standard` > default field that gets added when performing an S3 scan (cloud storage) |
+| **shotgrid** | fields harvested when using the [Autodesk Flow Production Tracking (formerly ShotGrid) plugin](https://diskoverdata.com/products/products-aja-media-edition/#flowprodtracking) | refer to the [AJA Diskover Media Edition User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#flow-production-tracking-plugin) for the list of fields |
+| **tags** | manual or auto tags for [items tagged within Diskover](https://docs.diskoverdata.com/diskover_user_guide/#tags) | `tags`, search example `tags:delete` > any tag(s) associated with a file or directory, tag name is case sensitive |
+| **unix_perms** | field harvested when using the Unix Permission plugin | search example `unix_perms:777` |
+| **windows_attributes** | fields harvested when using the Windows Attributes plugin | info to come |
+| **windows_owner** | fields harvested when using the Windows Owner plugin | info to come |
+| **xytech asset creation** | fields harvested when using the [Xytech Asset Creation plugin] (https://diskoverdata.com/products/products-aja-media-edition/#xytech-asset-creation) | refer to the [AJA Diskover Media Edition User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-asset-creation-plugin-overview) for the list of fields and how to use them |
+| **xytech order status** | fields harvested when using the [Xytech Order Status plugin] (https://diskoverdata.com/products/products-aja-media-edition/#xytech-order-status) | refer to the [AJA Diskover Media Edition User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-order-status-plugin-overview) for the list of fields and how to use them |
 
 
 #### Examples of Searching with Field Names

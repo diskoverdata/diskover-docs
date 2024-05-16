@@ -354,8 +354,7 @@ These extra fields are harvested using plugins, alternate indexers, or when conf
 | **hash** | harvested using the hash value plugin for checksums | `hash.xxhash`, `hash.md5`, `hash.sha256`, `hash.sha1` this [feature needs to be configured](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#duplicates-plugin)  |
 | **is_dupe** | duplicate files plugin | `is_dupe:*` > will list duplicate items |
 | **media_info** | media files resolution, codec, etc. harvested using the [Media Info plugin](https://diskoverdata.com/products/products-aja-media-edition/#mediainfo) | refer to the [AJA Diskover Media Edition User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#media-info-attributes) for the list of fields and how to use them |
-| **s3_etag** | collected when using the S3 alternate indexer | `s3_etag`, `s3_storageclass` |
-| **s3_storageclass** | s3 storage class | `s3_storageclass:standard` > default field that gets added when performing an S3 scan (cloud storage) |
+| **s3** | collected when using the S3 alternate indexer | `s3_etag`, `s3_storageclass` |
 | **shotgrid** | fields harvested when using the [Autodesk Flow Production Tracking (formerly ShotGrid) plugin](https://diskoverdata.com/products/products-aja-media-edition/#flowprodtracking) | refer to the [AJA Diskover Media Edition User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#flow-production-tracking-plugin) for the list of fields |
 | **tags** | manual or auto tags for [items tagged within Diskover](https://docs.diskoverdata.com/diskover_user_guide/#tags) | `tags`, search example `tags:delete` > any tag(s) associated with a file or directory, tag name is case sensitive |
 | **unix_perms** | field harvested when using the Unix Permission plugin | search example `unix_perms:777` |

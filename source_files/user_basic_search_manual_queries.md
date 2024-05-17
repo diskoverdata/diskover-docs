@@ -338,13 +338,13 @@ These fields are harvested during indexing, without any plugins needed.
 | **size_norecurs** | file and/or directory size [non-recursive](#recursive) | in bytes > see [Queries with Data Size](#search_size) for syntax examples on how to search on size |
 | **size_du** | disk usage size aka allocated size for files and/or directories | in bytes > see [Queries with Data Size](#search_size) for syntax examples on how to search on sizes |
 | **size_du_norecurs** | disk usage size [non-recursive](#recursive) | in bytes > see [Queries with Data Size](#search_size) for syntax examples on how to search on size |
-| **type** | file or directory | `type:file` or `type:directory` > is case sensitive, all lower case needed |
+| **type** | file or directory | `type:file` or `type:directory` > is case sensitive, all lowercase needed |
 
 #### Field Names | Extra Metadata
 
 These extra fields are harvested using plugins, alternate indexers, or when configuring certain Diskover features.
 
-| Plugin or Indexer | What it means | Field names |
+| Tool | What it means | Field names |
 | --- | --- | --- |
 | **BAM** | extra metadata for [sam and bam files when using the BAM plugin](https://diskoverdata.com/products/life-science-edition/#bam-plugin) | refer to the [Diskover Life Science User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/#bam-harvest-plugin) for the list of fields |
 | **Cost** | storage space cost when [Cost Analysis feature is configured in Diskover](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#storage-cost-reporting) | `costpergb` > search example `costpergb:[10 TO 500]` |
@@ -359,8 +359,8 @@ These extra fields are harvested using plugins, alternate indexers, or when conf
 | **Tags** | manual or auto tags attributed for [items tagged within Diskover](https://docs.diskoverdata.com/diskover_user_guide/#tags) | `tags`, search example `tags:delete` > any tag name associated with a file or directory, tag name is case sensitive |
 | **Unix Permissions** | field harvested when using the [Unix Permission plugin](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#unix-permissions-plugin) | `unix_perms` > search example `unix_perms:777` |
 | **Windows Owner** | fields harvested when using the [Windows Owner plugin](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#windows-owner-plugin) | `windows_owner`, `windows_group` |
-| **Xytech Asset Creation** | fields harvested when using the [Xytech Asset Creation plugin] (https://diskoverdata.com/products/products-aja-media-edition/#xytech-asset-creation) | refer to the [AJA Diskover Media Edition User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-asset-creation-plugin-overview) for the list of fields and how to use them |
-| **Xytech Order Status** | fields harvested when using the [Xytech Order Status plugin] (https://diskoverdata.com/products/products-aja-media-edition/#xytech-order-status) | refer to the [AJA Diskover Media Edition User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-order-status-plugin-overview) for the list of fields and how to use them |
+| **Xytech Asset Creation** | fields harvested when using the [Xytech Asset Creation plugin](https://diskoverdata.com/products/products-aja-media-edition/#xytech-asset-creation) | refer to the [AJA Diskover Media Edition User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-asset-creation-plugin-overview) for the list of fields and how to use them |
+| **Xytech Order Status** | fields harvested when using the [Xytech Order Status plugin](https://diskoverdata.com/products/products-aja-media-edition/#xytech-order-status) | refer to the [AJA Diskover Media Edition User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-order-status-plugin-overview) for the list of fields and how to use them |
 
 
 #### Examples of Searching with Field Names

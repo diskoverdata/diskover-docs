@@ -17,7 +17,7 @@ ___
    - [The Structure of the Worker](#the-structure-of-the-worker)
    - [Writing a Simple Task](#writing-a-simple-task)
 
-## Introduction
+### Introduction
 The Diskover Admin app is a secondary web interface designed to incorporate new features into Diskover. 
 Written in Python using the Flask framework and served by `uvicorn`, it runs under nginx as a reverse 
 proxy, taking over the `/diskover_admin` route of the main Diskover web application.

@@ -3,9 +3,11 @@ ___
 
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
+___
 ### Overview
 Diskover-Web has a REST API for creating, getting, updating, and deleting index and task data.
 
+___
 ### GET (with curl or web browser)
 
 Getting file/directory tag info is done with the GET method.
@@ -102,6 +104,7 @@ GET http://localhost:8000/api.php/latest?toppath=/dirpath
 GET http://localhost:8000/api.php/diskover-2018.01.17/diskspace
 ```
 
+___
 ### Update (with JSON object)
 
 Updating file/directory tags and tasks is done with the PUT method. You can send a JSON object in the body. The call returns the status and number of items updated.
@@ -183,6 +186,7 @@ PUT http://localhost:8000/api.php/diskover-2018.01.17/updatetask
 {"id": "4eba40842e2248b1fb3b1f6631bef7e8", "disabled": true}
 ```
 
+___
 ### Create (with JSON object)
 
 Updating tasks is done with the POST method. You can send a JSON object in the body. The call returns the item that was created.
@@ -197,6 +201,8 @@ curl -X POST http://localhost:8000/api.php/endpoint -d '{}'
 POST http://localhost:8000/api.php/diskover-2018.01.17/addtask
 {"type": "index", "name": "FOO", "crawl_paths": "/foo", "retries": 1, "timeout": 30, "retry_delay": 1, "run_min": 0, "run_hour": ,"run_month": "*", "run_day_month": "*", "run_day_week": "*"}
 ```
+
+___
 ### Delete (with JSON object)
 
 Deleting tasks is done with the DELETE method. You can send a JSON object in the body. The call returns the status.
@@ -212,6 +218,7 @@ DELETE http://localhost:8000/api.php/diskover-2018.01.17/deletetask
 {"id": "4eba40842e2248b1fb3b1f6631bef7e8"}
 ```
 
+___
 ### Examples of API calls in Python
 ```python
 """example usage of diskover-web rest-api using requests and urllib

@@ -2,8 +2,6 @@ ___
 ## Develop Your Own File Actions
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
-___
-## Creating a Python File Action as a Flask Blueprint in the Diskover Admin App
 
 ### Table of Contents
 1. [Introduction](#introduction)
@@ -12,12 +10,17 @@ ___
 4. [The Instance Directory](#the-instance-directory)
 5. [An Example Fileaction](#an-example-fileaction)
 6. [The Anatomy of a Fileaction](#the-anatomy-of-a-fileaction)
-7. [How to Register Fileactions](#how-to-register-fileactions)
-8. [Celery Tasks](#celery-tasks)
+7. [Template Structure](#template-structure)
+8. [How to Register Fileactions](#how-to-register-fileactions)
+9. [Celery Tasks](#celery-tasks)
    - [The Structure of the Worker](#the-structure-of-the-worker)
    - [Writing a Simple Task](#writing-a-simple-task)
 
+<a id=“introduction”></a>
 ### Introduction
+
+This chapter describes how to create a Python File Action as a Flask Blueprint in the Diskover Admin App.
+
 The Diskover Admin app is a secondary web interface designed to incorporate new features into Diskover. 
 Written in Python using the Flask framework and served by `uvicorn`, it runs under nginx as a reverse 
 proxy, taking over the `/diskover_admin` route of the main Diskover web application.
@@ -26,7 +29,8 @@ The app is modular, allowing separate development and registration of components
 up the shared environment for all components, including logging, base templates, static files, error 
 handling, Celery, database, and Elasticsearch connections.
 
-## Structure
+<a id=“structure”></a>
+### Structure
 When developing, consider the project's file and directory structure, as each area plays a role in the 
 overall app.
 
@@ -40,10 +44,10 @@ diskover-admin/ - Project dir
 - sessions/        - On-disk session data for each user
 - wsgi.py          - Script for starting the Diskover Admin app with uvicorn
 
-Most important to us are the `instance/` and `diskover_admin/` directories. Let's take a look at the Flask 
-application in the `diskover_admin` directory first.
+Most important to us are the `instance/` and `diskover_admin/` directories. Let's take a look at the Flask application in the `diskover_admin` directory first.
 
-## Source Code
+<a id=“source-code”></a>
+### Source Code
 diskover_admin/  - Source code for the Diskover Admin app
 - common/    - Contains libraries and modules that are used in many places throughout the app.
 - routers/   - Each module/directory at this level constitutes a route of the main app and children 
@@ -56,7 +60,8 @@ diskover_admin/  - Source code for the Diskover Admin app
 - templates/ - Project-wide templates used to ensure all components have base functionality and look 
                the same.
 
-## The Instance Directory
+<a id=“the-instance-directory”></a>
+### The Instance Directory
 
 The `instance` directory contains configuration specific to your installation. Project-wide configs are 
 stored and loaded from `/diskover-admin/instance/config.py`. Setting up this file should be one of the 
@@ -66,7 +71,8 @@ components might not load, or even the whole app.
 You should find a `config.sample.py` file here that you can rename to `config.py` and modify to suit your 
 needs.
 
-## An Example Fileaction
+<a id=“an-example-fileaction”></a>
+### An Example Fileaction
 
 Just like other parts of the app, each fileaction directory follows a common pattern. It's so rigid that 
 you can often begin development of a new fileaction by copying another and renaming the different parts. 
@@ -81,7 +87,8 @@ diskover-admin/diskover_admin/fileactions/ - The root of the fileactions route
   - config.yaml   - Optional config variables visible only to this fileaction.
   - views.py      - The main file that defines the routes and how each is processed.
 
-## The Anatomy of a Fileaction
+<a id=“the-anatomy-of-a-fileaction”></a>
+### The Anatomy of a Fileaction
 
 Let's look at the "example" fileaction piece by piece and call out some important aspects of how it works. 
 The `views.py` file contains all the routes that can be called, and the logic behind them. It either 
@@ -211,7 +218,8 @@ The tasks route has a few helpers to use when handling Celery tasks. The synchro
 using here waits for the result and then returns a JSON encoded string with the result returned by the fileaction.
 This result is then received by the AJAX function which displays it in the web page.
 
-## Template Structure
+<a id=“template-structure”></a>
+### Template Structure
 In each of our fileaction templates, we follow a few simple guidelines to ensure they all have the same format.
 Here is a simplified version of the example.html template to show the guidelines.
 
@@ -240,7 +248,8 @@ should include links to any specific JavaScript files we want in this fileaction
 here to point it to the example/static/js/example.js file. Once included we can call functions from that
 JavaScript file.
 
-## How to Register Fileactions
+<a id=“how-to-register-fileactions”></a>
+### How to Register Fileactions
 During development of a fileaction, you will want to register it in the main app so that you can navigate
 to the routes during testing and select the fileaction from within diskover-web. There are three steps:
 
@@ -253,7 +262,8 @@ Generally, you just need to change the name component to the name of your fileac
 3) In the instance/config.py file, add a COMPONENT to the list with the name of your fileaction.
 4) Restart the diskover-admin service.
 
-# Celery Tasks
+<a id=“celery-tasks”></a>
+### Celery Tasks
 One unique feature of the Diskover Admin app, and the fileactions in particular, is the ability of the
 web application to execute tasks on remote systems. The Diskover Admin app has no direct visibility to
 the files that were scanned. Instead, the indexer machines that scanned the data do. To execute processes
@@ -263,7 +273,8 @@ process on each indexer to listen for messages and run the task. Celery is the f
 facilitate these processes, and a message broker like RabbitMQ is deployed between the web server and
 workers to pass messages back and forth.
 
-## The Structure of the Worker
+<a id=“the-structure-of-the-worker”></a>
+#### The Structure of the Worker
 On each indexer/worker exists a folder containing the tasks that can be executed and configuration needed
 at /opt/diskover/diskover_celery. The basic structure is described below.
 
@@ -278,7 +289,8 @@ at /opt/diskover/diskover_celery. The basic structure is described below.
 The celeryconfig.py file needs to be configured with variables to connect to the RabbitMQ broker and also
 contains a section of imports to denote which task files should be registered and exposed.
 
-## Writing a Simple Task
+<a id=“writing-a-simple-task”></a>
+#### Writing a Simple Task
 Once registered, the worker listens for messages from the web server and routes the message to the task with
 the matching name. They are passed arguments in the message for context on how to run. Let's take a look at
 a simple task function. You can find it in tasks/example.py.

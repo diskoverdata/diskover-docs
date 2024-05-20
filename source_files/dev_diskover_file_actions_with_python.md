@@ -39,7 +39,7 @@ ___
 <a id=“source-code”></a>
 ### Source Code
 
-| `diskover_admin` Directory | Purpose |
+| diskover_admin/ Directory | Purpose |
 | --- | --- |
 | diskover_admin/ | Source code for the Diskover Admin app |
 | common/ | Contains libraries and modules that are used in many places throughout the app |
@@ -137,6 +137,7 @@ In the example case, we create a form and an output container. Finally, we inclu
 During the development of a fileaction, you will want to register it in the main app so that you can navigate to the routes during testing and select the fileaction from within diskover-web. There are three steps:
 
 1) Duplicate another fileaction.php file from/to /var/www/diskover-web/public/fileactions with the name of the new fileaction, and modify the form action to point to the base URL of this new action. Generally, you just need to change the name component to the name of your fileaction:
+
 ```
 <form id="myForm" action="../diskover_admin/fileactions/example/" method="post">
 ```
@@ -159,7 +160,7 @@ ___
 <a id=“the-structure-of-the-worker”></a>
 #### The Structure of the Worker
 
-On each indexer/worker exists a folder containing the tasks that can be executed and the configuration needed at `/opt/diskover/diskover_celery`. 
+On each indexer/worker, a folder containing the tasks that can be executed and the configuration needed is located at `/opt/diskover/diskover_celery`. 
 
 The basic structure for `/opt/diskover/` is described below.
 
@@ -195,3 +196,18 @@ Each task should be defined by the `@shared_task decorator` and passed `bind=Tru
 The @json_exception decorator is designed to catch any exceptions that occur inside the task and return a dictionary response with the error and traceback filled in. On successful execution, a dictionary is
 returned with the relevant data in the result value. Tasks should always return a dictionary with the three key-value pairs defined so the calling application can interpret the results. The result field can
 contain anything you want but must be JSON serializable.
+
+
+
+
+
+diskover-admin/ - Project dir
+- diskover_admin/  - Source code for the Diskover Admin app
+- etc/             - Installation files and miscellaneous items
+- instance/        - Data unique to this instance, including the main configuration file
+- log/             - Log files
+- run/             - Socket for nginx communication
+- scripts/         - Project-wide scripts
+- sessions/        - On-disk session data for each user
+- wsgi.py          - Script for starting the Diskover Admin app with uvicorn
+

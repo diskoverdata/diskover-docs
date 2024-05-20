@@ -3,19 +3,6 @@ ___
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
-### Table of Contents
-1. [Introduction](#introduction)
-2. [Structure](#structure)
-3. [Source Code](#source-code)
-4. [The Instance Directory](#the-instance-directory)
-5. [An Example Fileaction](#an-example-fileaction)
-6. [The Anatomy of a Fileaction](#the-anatomy-of-a-fileaction)
-7. [Template Structure](#template-structure)
-8. [How to Register Fileactions](#how-to-register-fileactions)
-9. [Celery Tasks](#celery-tasks)
-   - [The Structure of the Worker](#the-structure-of-the-worker)
-   - [Writing a Simple Task](#writing-a-simple-task)
-
 <a id=“introduction”></a>
 ### Introduction
 

@@ -166,7 +166,7 @@ The basic structure for `/opt/diskover/` is described below.
 
 | /opt/diskover/ File or Directory | Purpose | 
 | --- | --- |
-| diskover_celery/ |
+| diskover_celery/ | DESCRIPTION MISSING SEAN! |
 | etc/ | Install files and miscellaneous items |
 | common/ | Libraries and modules used in different tasks |
 | tasks/ | Files containing all of the tasks that can be executed |
@@ -196,18 +196,3 @@ Each task should be defined by the `@shared_task decorator` and passed `bind=Tru
 The @json_exception decorator is designed to catch any exceptions that occur inside the task and return a dictionary response with the error and traceback filled in. On successful execution, a dictionary is
 returned with the relevant data in the result value. Tasks should always return a dictionary with the three key-value pairs defined so the calling application can interpret the results. The result field can
 contain anything you want but must be JSON serializable.
-
-
-
-
-
-diskover-admin/ - Project dir
-- diskover_admin/  - Source code for the Diskover Admin app
-- etc/             - Installation files and miscellaneous items
-- instance/        - Data unique to this instance, including the main configuration file
-- log/             - Log files
-- run/             - Socket for nginx communication
-- scripts/         - Project-wide scripts
-- sessions/        - On-disk session data for each user
-- wsgi.py          - Script for starting the Diskover Admin app with uvicorn
-

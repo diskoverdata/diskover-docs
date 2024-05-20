@@ -194,5 +194,7 @@ Each task should be defined by the `@shared_task decorator` and passed `bind=Tru
 > *Note:* The task's filename is not relevant when calling the task, only the name.
 
 The @json_exception decorator is designed to catch any exceptions that occur inside the task and return a dictionary response with the error and traceback filled in. On successful execution, a dictionary is
-returned with the relevant data in the result value. Tasks should always return a dictionary with the three key-value pairs defined so the calling application can interpret the results. The result field can
+returned with the relevant data in the result value. 
+
+Tasks should always return a dictionary with the three key-value pairs defined so the calling application can interpret the results. The result field can
 contain anything you want but must be JSON serializable.

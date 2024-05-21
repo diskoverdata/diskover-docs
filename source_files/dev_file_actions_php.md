@@ -1,10 +1,14 @@
 ___
-## Develop Your Own Plugins
+## Develop Your Own PHP File Action Plugins
+
+![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 ___
 
-### Diskover Plugins
+### Overview
 
 This section covers the basics on how to create your own plugin. For example, you can add extra metadata to an index during crawl time by adding a plugin to the Diskover crawler. Some other examples are database lookups to apply extra tags, content indexing and if keyword found tag file, copy or backup file if matches certain criteria, etc. This is all done during crawl time.
+
+### Getting Started
 
 Plugins are stored in the `plugins/` folder in the root directory of Diskover. There are a few examples in the plugins folder to get you started. Plugins are run during a crawl.
 
@@ -29,9 +33,7 @@ python3 diskover.py -l
 ```
 
 ___
-### Diskover-Web File Action Plugins
-
-![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
+### How to Create Diskover-Web File Action Plugins
 
 This section covers the basics on how to create your own web plugins, known as File Actions. There are several examples in the `public/fileactions/` directory in diskover-web. The examples all end with the extension `.sample`. 
 

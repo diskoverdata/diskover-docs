@@ -229,7 +229,6 @@ response back to us.
 
 This is accomplished by defining "tasks" that can be run, and starting a worker process on each indexer to listen for messages and run the task. Celery is the framework used to facilitate these processes, and a message broker like RabbitMQ is deployed between the web server and workers to pass messages back and forth.
 
-___
 <a id=“the-structure-of-the-worker”></a>
 #### The Structure of the Worker
 
@@ -248,7 +247,6 @@ The basic structure for `/opt/diskover/` is described below.
 
 The `celeryconfig.py` file needs to be configured with variables to connect to the RabbitMQ broker and also contains a section of imports to denote which task files should be registered and exposed.
 
-___
 <a id=“writing-a-simple-task”></a>
 #### Writing a Simple Task
 

@@ -10,7 +10,7 @@ ordered_documents:
   - intro_tech_guides_main_intro.md
   - intro_tech_guides_aws_approved.md
   - intro_doc_conventions_dev.md
-  - dev_plugins.md
+  - dev_file_actions_php.md
   - dev_alternate_scanner.md
   - dev_diskover_web_api.md
   - support.md

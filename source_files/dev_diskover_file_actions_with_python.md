@@ -70,7 +70,7 @@ Each fileaction is a Flask `blueprint` that attaches to the main app at a specif
 | example/ | An example fileaction directory |
 | static/ | Static directory with files only visible to this fileaction |
 | templates/ | Template files only visible to this fileaction |
-| `__`init`__`.py | Needed to set up the directory as a project and point to the views |
+| \__\init__.py | Needed to set up the directory as a project and point to the views |
 | config.yaml | Optional config variables visible only to this fileaction |
 | views.py | The main file that defines the routes and how each is processed |
 

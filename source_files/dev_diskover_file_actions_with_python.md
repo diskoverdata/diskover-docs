@@ -60,7 +60,78 @@ ___
 <a id=“an-example-fileaction”></a>
 ### An Example Fileaction
 
-`diskover-admin/diskover_admin/fileactions/example/` with the variables we passed in from the context in different parts of the page. Notice the **Submit** button at the bottom of the page. We are going to use jQuery and AJAX in our JS file to bind the submit action of this button to a JavaScript function that will submit the fileaction and wait for a response. Take a look at the included JavaScript file at
+Just like other parts of the app, each fileaction directory follows a common pattern. It's so rigid that you can often begin the development of a new fileaction by copying another and renaming the different parts. 
+
+Each fileaction is a Flask `blueprint` that attaches to the main app at a specific route and serves all the routes under that.
+
+| Directory | Purpose |
+| --- | --- |
+| diskover-admin/diskover_admin/fileactions/ | The root of the fileactions route |
+| example/ | An example fileaction directory |
+| static/ | Static directory with files only visible to this fileaction |
+| templates/ | Template files only visible to this fileaction |
+| `__init__.py | Needed to set up the directory as a project and point to the views |
+| config.yaml | Optional config variables visible only to this fileaction |
+| views.py | The main file that defines the routes and how each is processed |
+
+___
+<a id=“anatomy-of-a-fileaction”></a>
+## The Anatomy of a Fileaction
+
+Let's look at the "example" fileaction piece by piece and call out some important aspects of how it works. The `views.py` file contains all the routes that can be called and the logic behind them. It either renders a new page with the given template or returns JSON data that can be consumed by an AJAX call. 
+
+Besides imports, the blueprint is the first part of a fileaction you will see. This defines the Flask blueprint for this action. It defines which route the action will be served on `/example` and the name of the static and template dirs.
+
+Note that because all fileactions parents are served under `/fileactions`, this will actually be served at `/fileactions/examples` under the main `/diskover_admin` route. You can find more info about Flask blueprints here: [Flask Blueprints](https://flask.palletsprojects.com/en/2.3.x/blueprints/)
+
+```python
+blueprint = Blueprint(
+    'example', __name__,
+    static_folder='static',
+    template_folder='templates',
+    url_prefix='/example'
+)
+```
+
+Next, we define some global variables that are available to all templates in the fileaction. These will be rendered in the nav bar on the left to identify them.
+
+```python
+blueprint.context_processor(lambda: {'app_name': 'Fileaction Example', 'version': str(VERSION)})
+```
+
+Next, we load config options from the optional `config.yaml` in the same directory into a `config` dictionary:
+
+```python
+parent_dir = os.path.dirname(__file__)
+config = parse_config_yaml(os.path.join(parent_dir, 'config.yaml'))
+```
+
+Finally, we get to the first of two view functions that expose a page of the fileaction. This is the default (index) page that renders when you first visit.
+
+```python
+@blueprint.route('/', methods=['POST'])
+@get_es_files
+def index():
+    worker = session.get('worker')
+    sources = request.args.getlist('files')
+    context = {
+        'worker': worker,
+        'sources': [s.to_dict() for s in sources],
+        'config': config
+    }
+    return render_template('example.html', **context)
+```
+
+Let's take this step by step:
+
+1) First we use the `@blueprint.route `decorator to register a route for this view. This route will accept POST requests at /. Because we are using nested blueprints, the actual route will be
+`/diskover_admin/fileactions/example/`. Most of the route is built by the parent blueprints, and the slash at the end corresponds to this specific route. Remember that routes are always relative to their parent, so when we define / on a blueprint with a route of /example we are really creating the route at /example/.
+2) `@get_es_files` is a special decorator that converts the Elasticsearch doc and index that are passed by diskover-web into SimpleFileInfo objects that correspond to a path on the filesystem and what type of item it is (file or directory). This needs to be present on the index function in every fileaction or else you won't have the paths of the objects you intend to work on. It also sets the worker in the session from the Elasticsearch index. With this worker, we know who we should send any task to that has access to the selected files.
+3) `Sources` are a list of SimpleFileInfo objects that describe the selected files. See more at `diskover-admin/diskover_admin/common/util.py`.
+4) We create the `context `dictionary to encapsulate all the variables we want passed to and available in the template.
+5) When we return and render_template, we instruct Flask to render the given template using the context variables we just set. We will get to templating in a bit.
+
+If you were to run this now, with the provided `example.html`, you would see that it renders a web page at `diskover-admin/diskover_admin/fileactions/example/` with the variables we passed in from the context in different parts of the page. Notice the **Submit** button at the bottom of the page. We are going to use jQuery and AJAX in our JS file to bind the submit action of this button to a JavaScript function that will submit the fileaction and wait for a response. Take a look at the included JavaScript file at
 `example/static/js/example.js`.
 
 We are not going to get into details about the JavaScript, but in general, it calls `fileaction/example/submit/` with arguments of a form we made in the `example.html`, including the sources we previously selected. This call is made asynchronously, so we start and stop a spinner in the upper right corner of the navbar, and register a few callbacks to execute when it receives a response. When the response is received, it will flash a message at the top of the screen, show the hidden output container, and write the response of the fileaction in the output window.
@@ -106,6 +177,7 @@ routes in the application. In this case, the url_for() generates a URL like `tas
 
 The tasks route has a few helpers for handling Celery tasks. The synchronous version that we are using here waits for the result and then returns a JSON-encoded string with the result returned by the fileaction. The AJAX function then receives this result and displays it on the web page.
 
+___
 <a id=“template-structure”></a>
 ### Template Structure
 
@@ -131,6 +203,7 @@ In the first line, we are "extending" the `base.html` template. This template de
 
 In the example case, we create a form and an output container. Finally, we include the `example_footer.html` which should include links to any specific JavaScript files we want in this fileaction. We use another url_for() here to point it to the `example/static/js/example.js` file. Once included we can call functions from that JavaScript file.
 
+___
 <a id=“how-to-register-fileactions”></a>
 ### How to Register Fileactions
 

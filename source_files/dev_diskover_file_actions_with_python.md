@@ -64,7 +64,7 @@ Just like other parts of the app, each fileaction directory follows a common pat
 
 Each fileaction is a Flask `blueprint` that attaches to the main app at a specific route and serves all the routes under that.
 
-| Directory | Purpose |
+| Directory or File | Purpose |
 | --- | --- |
 | diskover-admin/diskover_admin/fileactions/ | The root of the fileactions route |
 | example/ | An example fileaction directory |

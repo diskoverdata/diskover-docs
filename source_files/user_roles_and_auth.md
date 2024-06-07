@@ -101,9 +101,11 @@ ___
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
-Diskover-Web supports authenticating/authorizing users using either Okta Identity or Azure Active Directory OIDC SSO.
+Diskover-Web supports authenticating/authorizing users using Azure Active Directory OIDC SSO.
 
->_Note:_ this doc does not cover adding an application to Okta or Azure admin page. You will need to first add an Oauth OIDC SSO application (Web app) to your Okta Identity or Azure admin page for Diskover-Web
+🔴 &nbsp;Set up an App Registration in Azure with the following API Permissions
+
+![Image: Azure Oauth App Permissions](images/azure_app_permissions.png)
 
 🔴 &nbsp;To configure Oauth2 logins:
 ```
@@ -134,13 +136,11 @@ The following information is required to configure Azure Oauth2 OIDC SSO authent
 
 **OAUTH2_API_URL_BASE** - your Azure oauth2 API URL for getting user/group info, example `https://diskover.domain.com/api/v1/`
 
-**OAUTH2_API_TOKEN** - your Azure oauth2 API Token
-
-At least two Okta Oauth2 groups should be established for Diskover and set in web config:
+At least two Azure Oauth2 groups should be established for Diskover and set in web config:
 1. Admin group added to **OAUTH2_ADMIN_GROUPS**
 2. Task panel group added to **OAUTH2_TASK_PANEL_GROUPS**
 
->_Note:_ at login, the Okta oauth2 user will be checked if they are in one of these above Okta oauth2 groups.
+>_Note:_ at login, the Azure oauth2 user will be checked if they are in one of these above Azure oauth2 groups.
 
 ___
 ### Restricting Visibility and Access

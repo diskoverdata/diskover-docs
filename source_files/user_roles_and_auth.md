@@ -30,7 +30,7 @@ vim /var/www/diskover-web/src/diskover/Constants.php
 
 ![Image: LADP / Active Directory Authentication](images/image_user_auth_ladp_login_auth.png)
 
-The following information is required to configure LDAP authentication:
+🔴 &nbsp;The following information is required to configure LDAP authentication:
 
 | FIELD | DESCRIPTION |
 | --- | --- |
@@ -40,7 +40,7 @@ The following information is required to configure LDAP authentication:
 | **LDAP_DOMAIN** | The LDAP domain name, ex: `domain.com` |
 | **LDAP_BASEDN** | The LDAP base dn of domain, ex: `dc=DOMAIN,dc=COM` |
 
-At least three AD groups should be established for Diskover and set in web config. Note that at login, the **ad/ldap user** will be checked if they are in one of the **ad/ldap groups** below. If they are not in any of these groups, they will be denied access to log in.
+🔴 &nbsp;At least three AD groups should be established for Diskover and set in web config. Note that at login, the **ad/ldap user** will be checked if they are in one of the **ad/ldap groups** below. If they are not in any of these groups, they will be denied access to log in.
 
 | GROUP | DESCRIPTION |
 | --- | --- |
@@ -63,23 +63,23 @@ Diskover-Web supports authenticating/authorizing users using Okta Identity.
 vim /var/www/diskover-web/src/diskover/Constants.php
 ```
 
-The following information is required to configure Okta authentication/authorization:
+🔴 &nbsp;The following information is required to configure Okta authentication/authorization:
 
 | FIELD | DESCRIPTION |
 | --- | --- |
-| **OAUTH2_LOGINS** | Set to **TRUE** to enable and use Okta Oauth2 login <br>_Note:_ When using Oauth2 login, local and ldap login is not used |
+| **OAUTH2_LOGINS** | Set to **TRUE** to enable and use Okta Oauth2 login <br> _Note:_ When using Oauth2 login, local and ldap login is not used |
 | **OAUTH2_CLIENT_ID** | Your Okta Oauth2 application client id |
 | **OAUTH2_CLIENT_SECRET** | Your Okta Oauth2 application client secret |
-| **OAUTH2_REDIRECT_URI** | Your Okta Oauth2 login redirect URI, ex: `https://diskover.domain.com/login.php?callback`<br>_Note:_ `login.php` page handles the redirect URI when using `callback` parameter |
+| **OAUTH2_REDIRECT_URI** | Your Okta Oauth2 login redirect URI, ex: `https://diskover.domain.com/login.php?callback`<br> _Note:_ `login.php` page handles the redirect URI when using `callback` parameter |
 | **OAUTH2_LOGOUT_REDIRECT_URI** | Your Okta Oauth2 post logout redirect URI, ex: `https://diskover.domain.com/` |
 | **OAUTH2_AUTH_ENDPOINT** | Your Okta Oauth2 API Authorization Server Issuer URI authorization endpoint, ex: `https://diskover.domain.com/oauth2/default/v1/authorize` |
 | **OAUTH2_TOKEN_ENDPOINT** | Your Okta Oauth2 API Authorization Server Issuer URI token endpoint, ex: `https://diskover.domain.com/oauth2/default/v1/token` |
 | **OAUTH2_LOGOUT_ENDPOINT** | Your Okta Oauth2 API Authorization Server Issuer URI logout endpoint, ex: `https://diskover.domain.com/oauth2/default/v1/logout` |
-| **OAUTH2_API_TYPE** | Oauth2 API Type, types are **Okta** or **Azure** (Graph API), set this to Okta |
+| **OAUTH2_API_TYPE** | Oauth2 API Type, types are **Okta** or **Azure** (Graph API), set this to **Okta** |
 | **OAUTH2_API_URL_BASE** | Your Okta Oauth2 API URL for getting user/group info, ex: `https://diskover.domain.com/api/v1/` |
 | **OAUTH2_API_TOKEN** | Your Okta Oauth2 API Token |
 
-At least two Okta Oauth2 groups should be established for Diskover and set in web config. Note that at login, the Okta Oauth2 user will be checked if they are in one of the following Okta Oauth2 groups.
+🔴 &nbsp;At least two Okta Oauth2 groups should be established for Diskover and set in web config. Note that at login, the Okta Oauth2 user will be checked if they are in one of the following Okta Oauth2 groups.
 
 | GROUP | DESCRIPTION |
 | --- | --- |
@@ -98,57 +98,48 @@ Diskover-Web supports authenticating/authorizing users using Azure Active Direct
 ![Image: Azure Oauth App Permissions](images/azure_app_permissions.png)
 
 🔴 &nbsp;To configure Oauth2 logins:
+
 ```
 vim /var/www/diskover-web/src/diskover/Constants.php
 ```
 
-The following information is required to configure Azure Oauth2 OIDC SSO authentication/authorization:
+🔴 &nbsp;The following information is required to configure Azure Oauth2 OIDC SSO authentication/authorization:
 
-**OAUTH2_LOGINS** - set to TRUE to enable and use Azure oauth2 login
->_Note:_ when using Oauth2 login, local and ldap login is not used
+| FIELD | DESCRIPTION |
+| --- | --- |
+| **OAUTH2_LOGINS** | Set to **TRUE** to enable and use Azure oauth2 login<br> _Note:_ When using Oauth2 login, local and ldap login is not used |
+| **OAUTH2_CLIENT_ID** | Your Azure Oauth2 application client ID |
+| **OAUTH2_CLIENT_SECRET** | Your Azure Oauth2 application client secret |
+| **OAUTH2_REDIRECT_URI** | Your Azure Oauth2 login redirect URI, ex: `https://diskover.domain.com/login.php?callback`<br> _Note:_ login.php page handles the redirect URI when using `callback` parameter |
+| **OAUTH2_LOGOUT_REDIRECT_URI** | Your Azure Oauth2 post logout redirect URI, ex: `https://diskover.domain.com/` |
+| **OAUTH2_AUTH_ENDPOINT** | Your Azure Oauth2 API Authorization Server Issuer URI authorization endpoint, ex: `https://diskover.domain.com/oauth2/default/v1/authorize` |
+| **OAUTH2_TOKEN_ENDPOINT** | Your Azure Oauth2 API Authorization Server Issuer URI token endpoint, ex: `https://diskover.domain.com/oauth2/default/v1/token` |
+| **OAUTH2_LOGOUT_ENDPOINT** | Your Azure Oauth2 API Authorization Server Issuer URI logout endpoint, ex: `https://diskover.domain.com/oauth2/default/v1/logout` |
+| **OAUTH2_API_TYPE** | Oauth2 API Type, types are **Okta** or **Azure** (Graph API), set this to **Azure** |
+| **OAUTH2_API_URL_BASE** | Your Azure Oauth2 API URL for getting user/group info, ex: `https://diskover.domain.com/api/v1/` |
 
-**OAUTH2_CLIENT_ID** - your Azure oauth2 application client id
+🔴 &nbsp;At least two Azure Oauth2 groups should be established for Diskover and set in web config. Note that at login, the Azure Oauth2 user will be checked if they are in one of these above Azure Oauth2 groups.
 
-**OAUTH2_CLIENT_SECRET** - your Azure oauth2 application client secret
-
-**OAUTH2_REDIRECT_URI** - your Azure oauth2 login redirect URI, example: `https://diskover.domain.com/login.php?callback`
->_Note:_ login.php page handles the redirect uri when using `callback` parameter
-
-**OAUTH2_LOGOUT_REDIRECT_URI** - your Azure oauth2 post logout redirect URI, example: `https://diskover.domain.com/`
-
-**OAUTH2_AUTH_ENDPOINT** - your Azure Oauth2 API Authorization Server Issuer URI authorization endpoint, example: `https://diskover.domain.com/oauth2/default/v1/authorize`
-
-**OAUTH2_TOKEN_ENDPOINT** - your Azure Oauth2 API Authorization Server Issuer URI token endpoint, example: `https://diskover.domain.com/oauth2/default/v1/token`
-
-**OAUTH2_LOGOUT_ENDPOINT** - your Azure Oauth2 API Authorization Server Issuer URI logout endpoint, example: `https://diskover.domain.com/oauth2/default/v1/logout`
-
-**OAUTH2_API_TYPE** - Oauth2 API Type, types are Okta or Azure (Graph API). Set this to Azure.
-
-**OAUTH2_API_URL_BASE** - your Azure oauth2 API URL for getting user/group info, example `https://diskover.domain.com/api/v1/`
-
-At least two Azure Oauth2 groups should be established for Diskover and set in web config:
-1. Admin group added to **OAUTH2_ADMIN_GROUPS**
-2. Task panel group added to **OAUTH2_TASK_PANEL_GROUPS**
-
->_Note:_ at login, the Azure oauth2 user will be checked if they are in one of these above Azure oauth2 groups.
+| GROUP | DESCRIPTION |
+| --- | --- |
+| **OAUTH2_ADMIN_GROUPS** | To add **admin group** |
+| **OAUTH2_TASK_PANEL_GROUPS** | To add **task panel group** |
 
 ___
 ### Restricting Visibility and Access
 
 ![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
-Diskover-web uses multiple levels to limit Elasticsearch index and directory visiblity and access:
+Diskover-Web uses multiple levels to limit Elasticsearch index and directory visibility and access:
 
-1) Index mappings can be configured and set to control what indices groups and users are allowed to see. Excluded dirs and es search query can also be added to index mappings for more granular control.
+1) Index mappings can be configured and set to control what indices groups and users are allowed to see. Excluded dirs and ES search query can also be added to index mappings for more granular control.
 
-2) AD/LDAP and Oauth2 group directory permissions
+2) AD/LDAP and Oauth2 group directory permissions.
 
-3) Unix directory permissions
+3) Unix directory permissions.
 
+🔴 &nbsp;Visibility can be limited by users/groups to specific indexes or branches within a given index. To limit index visibility by users/groups:
 
-Visibility can be limited by users/groups to specific indexes or branches within a given index. 
-
-🔴 &nbsp;To limit index visibility by users/groups:
 ```
 vim /var/www/diskover-web/src/diskover/Constants.php
 ```
@@ -194,9 +185,8 @@ const INDEX_MAPPINGS = [
 ];
 ```
 
-Visibility can also be limited by AD/LDAP and Oauth2 group permissions.
+🔴 &nbsp;Visibility can also be limited by AD/LDAP and Oauth2 group permissions. To limit index visibility by AD/LDAP or Oauth2 group membership:
 
-🔴 &nbsp;To limit index visibility by AD/LDAP or Oauth2 group membership:
 ```
 vim /var/www/diskover-web/src/diskover/Constants.php
 ```
@@ -232,7 +222,7 @@ const GROUPNAME_FILTERING_LOWERCASE = FALSE;
 
 🔴 &nbsp;To limit index visibility by Unix file permissions:
 
-> _Note:_ To use unix permissions filtering, you will need to enable and use the [Unix Permissions plugin](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#unix-permissions-plugin) when indexing, for both file and directory.
+> _Note:_ To use Unix permissions filtering, you will need to enable and use the [Unix Permissions plugin](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#unix-permissions-plugin) when indexing, for both file and directory.
 
 ```
 vim /var/www/diskover-web/src/diskover/Constants.php
@@ -257,7 +247,8 @@ ___
 
 You can turn on HTTP Basic Auth for the Diskover-Web API. This will make it required to use a username and password to access the API.
 
-🔴 &nbsp;Enable API auth and set a username and password:
+🔴 &nbsp;Enable API auth and set a **username** and **password**:
+
 ```
 vim /var/www/diskover-web/src/diskover/Constants.php
 ```
@@ -271,15 +262,16 @@ const API_USER = 'diskoverapi';
 const API_PASS = 'apisecret';
 ```
 
-🔴 &nbsp;The api password `API_PASS` in web config is only used as default password and this password needs to be changed. Login to Diskover-web as admin, go to settings page and scroll to the API Password section and click change password. Set a new password and the password will be securely stored in sqlite db.
+🔴 &nbsp;The API password `API_PASS` in web config is only used as a default password and this password needs to be changed. To login to Diskover-Web as admin, go to the **Settings** page and scroll to the **API Password** section and click **change password**. Set a new password and the password will be securely stored in `sqlite db`.
 
 > _Note:_ When changing API Auth settings, remember to update [diskoverd](https://docs.diskoverdata.com/diskover_installation_guide/#setting-up-diskover-task-worker-daemon) task worker daemon config to use the new auth settings.
 
 #### Restricting API Access By LDAP/AD login
 
-You can use LDAP/AD logins using HTTP Basic Auth for the Diskover-Web API.
+You can use LDAP/AD logins using `HTTP Basic Auth` for the Diskover-Web API.
 
-🔴 &nbsp;Enable API ldap auth:
+🔴 &nbsp;Enable API LDAP auth:
+
 ```
 vim /var/www/diskover-web/src/diskover/Constants.php
 ```
@@ -290,22 +282,24 @@ vim /var/www/diskover-web/src/diskover/Constants.php
 const API_AUTH_LDAP_ENABLED = TRUE;
 ```
 
-> _Note:_ When enabling API ldap auth, config index/ldap filter settings are used, see [Restricting Visibility and Access](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#restricting-visibility-and-access).
-
+> _Note:_ When enabling API LDAP auth, config index/ldap filter settings are used, see [Restricting Visibility and Access](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#restricting-visibility-and-access).
 
 #### Restricting API Access By Host/IP
 
-To limit API access to certain hosts or networks, you can add an additional location block with allow/deny rules to your Diskover-Web NGINX config  **/etc/nginx/conf.d/diskover-web.conf**.
+🔴 &nbsp;To limit API access to certain hosts or networks, you can add an additional location block with allow/deny rules to your Diskover-Web NGINX config **/etc/nginx/conf.d/diskover-web.conf**.
+
 ```
 vi /etc/nginx/conf.d/diskover-web.conf
 ```
 
 The NGINX location block below needs to go above the other location block that starts with:
+
 ```
 location ~ \.php(/|$) {
 ```
 
 🔴 &nbsp;Change **1.2.3.4** to the IP address you want to allow access to the API. You can add additional lines if you want to allow more hosts/networks to access the API. The **deny all** line needs to come after all **allow** lines:
+
 ```
 location ~ /api\.php(/|$) {
     allow 1.2.3.4;
@@ -326,16 +320,19 @@ location ~ /api\.php(/|$) {
 ```
 
 🔴 &nbsp;Restart NGINX:
+
 ```
 systemctl restart nginx
 ```
 
 🔴 &nbsp;Then verify you can access API with **curl** or web browser on an allowed host:
+
 ```
 curl http://<diskover-web-host>:<port>/api.php
 ```
 
 🔴 &nbsp;You should see this:
+
 ```
 {
     "status": true,

@@ -14,34 +14,14 @@ vim /var/www/diskover-web/src/diskover/Constants.php
 
 <img src="images/image_user_auth_local_user_config.png" width="750">
 
->_Note:_ The passwords stored in web config file (Constants.php) are only used as the default initial passwords when first logging in to Diskover-Web. On first login, you will be asked to change the password and the password will be stored and encrypted in sqlite db and default password in web config will no longer be used.
+>_Note:_ The passwords stored in the web config file (Constants.php) are only used as the default initial passwords when first logging in to Diskover-Web. On first login, you will be asked to change the password, and the password will be stored and encrypted in `sqlite db`, and the default password in web config will no longer be used.
 
 ___
-### LDAP / Active Directory Authentication
+### LDAP/Active Directory Authentication
 
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
 
 Diskover-Web supports authenticating users from Active Directory over Lightweight Directory Access Protocol (LDAP). LDAP integration can be used to authenticate users against a Microsoft Domain Controller (DC).
-
-The following information is required to configure LDAP authentication:
-
-**LDAP_LOGINS** - set to TRUE to enable and use ldap logins
-
-**LDAP_HOST** - The full LDAP URI, examples: `ldap://dc.domain.com:389` or `ldaps://dc.domain.com:636` for SSL encryption.
->_Note:_ You can also provide multiple LDAP-URIs separated by a space as one string.
-
-**LDAP_PORT** - Examples: 389 or 636
-
-**LDAP_DOMAIN** - The LDAP domain name, example: `domain.com`
-
-**LDAP_BASEDN** - The LDAP base dn of domain, example: `dc=DOMAIN,dc=COM`
-
-At least three AD groups should be established for Diskover and set in web config:
-1. Admin group added to **LDAP_ADMIN_GROUPS**
-2. User group added to **LDAP_USER_GROUPS**
-3. Task panel group added to **LDAP_TASK_PANEL_GROUPS**
-
->_Note:_ at login, the ad/ldap user will be checked if they are in one of these above ad/ldap groups. If they are not in any of these groups, they will be denied access to log in.
 
 🔴 &nbsp;To configure AD / LDAP login authentication:
 ```
@@ -50,6 +30,24 @@ vim /var/www/diskover-web/src/diskover/Constants.php
 
 ![Image: LADP / Active Directory Authentication](images/image_user_auth_ladp_login_auth.png)
 
+The following information is required to configure LDAP authentication:
+
+| FIELD | DESCRIPTION |
+| --- | --- |
+| **LDAP_LOGINS** | Set to **TRUE** to enable and use ldap logins |
+| **LDAP_HOST** | The full **LDAP URI**, ex: `ldap://dc.domain.com:389` or `ldaps://dc.domain.com:636` for SSL encryption <br> _Note:_ You can also provide multiple LDAP-URIs separated by a space as one string. |
+| **LDAP_PORT** | Ex: 389 or 636 |
+| **LDAP_DOMAIN** | The LDAP domain name, ex: `domain.com` |
+| **LDAP_BASEDN** | The LDAP base dn of domain, ex: `dc=DOMAIN,dc=COM` |
+
+At least three AD groups should be established for Diskover and set in web config. Note that at login, the **ad/ldap user** will be checked if they are in one of the **ad/ldap groups** below. If they are not in any of these groups, they will be denied access to log in.
+
+| GROUP | DESCRIPTION |
+| --- | --- |
+| **LDAP_ADMIN_GROUPS** | To add **admin group** |
+| **LDAP_USER_GROUPS** | To add **user group** | 
+| **LDAP_TASK_PANEL_GROUPS** | To add **task panel group** |
+
 ___
 ### Okta Authentication
 
@@ -57,44 +55,36 @@ ___
 
 Diskover-Web supports authenticating/authorizing users using Okta Identity.
 
->_Note:_ this doc does not cover adding an application to Okta admin page. You will need to first add an Oauth application (Web app) to your Okta admin page for Diskover-Web
+>_Note:_ This section does not cover adding an application to the Okta admin page. You will need to first add an Oauth application (Web app) to your Okta admin page for Diskover-Web
 
 🔴 &nbsp;To configure Okta logins:
+
 ```
 vim /var/www/diskover-web/src/diskover/Constants.php
 ```
 
 The following information is required to configure Okta authentication/authorization:
 
-**OAUTH2_LOGINS** - set to TRUE to enable and use Okta oauth2 login
->_Note:_ when using Oauth2 login, local and ldap login is not used
+| FIELD | DESCRIPTION |
+| --- | --- |
+| **OAUTH2_LOGINS** | Set to **TRUE** to enable and use Okta Oauth2 login <br>_Note:_ When using Oauth2 login, local and ldap login is not used |
+| **OAUTH2_CLIENT_ID** | Your Okta Oauth2 application client id |
+| **OAUTH2_CLIENT_SECRET** | Your Okta Oauth2 application client secret |
+| **OAUTH2_REDIRECT_URI** | Your Okta Oauth2 login redirect URI, ex: `https://diskover.domain.com/login.php?callback`<br>_Note:_ `login.php` page handles the redirect URI when using `callback` parameter |
+| **OAUTH2_LOGOUT_REDIRECT_URI** | Your Okta Oauth2 post logout redirect URI, ex: `https://diskover.domain.com/` |
+| **OAUTH2_AUTH_ENDPOINT** | Your Okta Oauth2 API Authorization Server Issuer URI authorization endpoint, ex: `https://diskover.domain.com/oauth2/default/v1/authorize` |
+| **OAUTH2_TOKEN_ENDPOINT** | Your Okta Oauth2 API Authorization Server Issuer URI token endpoint, ex: `https://diskover.domain.com/oauth2/default/v1/token` |
+| **OAUTH2_LOGOUT_ENDPOINT** | Your Okta Oauth2 API Authorization Server Issuer URI logout endpoint, ex: `https://diskover.domain.com/oauth2/default/v1/logout` |
+| **OAUTH2_API_TYPE** | Oauth2 API Type, types are **Okta** or **Azure** (Graph API), set this to Okta |
+| **OAUTH2_API_URL_BASE** | Your Okta Oauth2 API URL for getting user/group info, ex: `https://diskover.domain.com/api/v1/` |
+| **OAUTH2_API_TOKEN** | Your Okta Oauth2 API Token |
 
-**OAUTH2_CLIENT_ID** - your Okta oauth2 application client id
+At least two Okta Oauth2 groups should be established for Diskover and set in web config. Note that at login, the Okta Oauth2 user will be checked if they are in one of the following Okta Oauth2 groups.
 
-**OAUTH2_CLIENT_SECRET** - your Okta oauth2 application client secret
-
-**OAUTH2_REDIRECT_URI** - your Okta oauth2 login redirect URI, example: `https://diskover.domain.com/login.php?callback`
->_Note:_ login.php page handles the redirect uri when using `callback` parameter
-
-**OAUTH2_LOGOUT_REDIRECT_URI** - your Okta oauth2 post logout redirect URI, example: `https://diskover.domain.com/`
-
-**OAUTH2_AUTH_ENDPOINT** - your Okta Oauth2 API Authorization Server Issuer URI authorization endpoint, example: `https://diskover.domain.com/oauth2/default/v1/authorize`
-
-**OAUTH2_TOKEN_ENDPOINT** - your Okta Oauth2 API Authorization Server Issuer URI token endpoint, example: `https://diskover.domain.com/oauth2/default/v1/token`
-
-**OAUTH2_LOGOUT_ENDPOINT** - your Okta Oauth2 API Authorization Server Issuer URI logout endpoint, example: `https://diskover.domain.com/oauth2/default/v1/logout`
-
-**OAUTH2_API_TYPE** - Oauth2 API Type, types are Okta or Azure (Graph API). Set this to Okta.
-
-**OAUTH2_API_URL_BASE** - your Okta oauth2 API URL for getting user/group info, example `https://diskover.domain.com/api/v1/`
-
-**OAUTH2_API_TOKEN** - your Okta oauth2 API Token
-
-At least two Okta Oauth2 groups should be established for Diskover and set in web config:
-1. Admin group added to **OAUTH2_ADMIN_GROUPS**
-2. Task panel group added to **OAUTH2_TASK_PANEL_GROUPS**
-
->_Note:_ at login, the Okta oauth2 user will be checked if they are in one of these above Okta oauth2 groups.
+| GROUP | DESCRIPTION |
+| --- | --- |
+| **OAUTH2_ADMIN_GROUPS** | To add **admin group** |
+| **OAUTH2_TASK_PANEL_GROUPS** | To add **task panel group** |
 
 ___
 ### Azure AD Oauth2 OIDC SSO Authentication
@@ -103,7 +93,7 @@ ___
 
 Diskover-Web supports authenticating/authorizing users using Azure Active Directory OIDC SSO.
 
-🔴 &nbsp;Set up an App Registration in Azure with the following API Permissions
+🔴 &nbsp;Set up an App Registration in Azure with the following API Permissions:
 
 ![Image: Azure Oauth App Permissions](images/azure_app_permissions.png)
 

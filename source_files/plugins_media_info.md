@@ -7,7 +7,7 @@ ___
 
 The media info harvest plugin is designed to provide media metadata attributes about a file without granting the Diskover user any read/write file system access.
 
-The media info plugin enables additional metadata for video files to be harvested at time of index. The media info plugin uses **ffmpeg/ffprobe** to harvest attributes about the media file.
+The media info plugin enables additional metadata for video files to be harvested at time of index or post-index. The media info plugin uses **ffmpeg/ffprobe** to harvest attributes about the media file.
 
 New indices will use the plugin and any video file will get additional media info added to the Elasticsearch index’s **media_info** field.
 
@@ -69,3 +69,21 @@ vim /root/.config/diskover_mediainfo_plugin/config.yaml
 >_Note:_  The media info plugin is currently not supported for S3 based object storage. If the media info plugin is enabled in the default configuration file, an alternate configuration file must be created where the media info plugin is disabled. The alternate configuration file must be invoked when indexing S3 based volumes.
 
 ![Image: Media Info Plugin Configuration in Task Panel](images/image_plugins_media_info_task_panel_config_for_s3_bucket.png)
+
+#### Visibility of the Media Info Field in Diskover UI
+
+Technically at this point, the **media info** field should be [visible](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#hideunhide-media-info-column-in-search-results-pane) and [searchable](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#general-notes-on-searching-media-attributes) in the Diskover UI, but if it's not:
+
+🔴 &nbsp;Globally expose that column in the user interface:
+
+```
+cd /var/www/diskover-web/src/diskover/
+```
+
+```
+vi Constants.php
+```
+
+🔴 &nbsp;Uncomment the **EXTRA_FIELDS** array to look something like this:
+
+![Image: Media Info Plugin Configuration in Terminal](images/image_plugins_media_uncomment_extra_fields.png)

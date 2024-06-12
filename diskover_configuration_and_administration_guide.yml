@@ -35,7 +35,7 @@ ordered_documents:
   - plugins_illegal_filename.md  
   - plugins_index_autotag.md
   - plugins_index_differential.md
-  - plugins_media_harvest.md  
+  - plugins_media_info.md  
   - plugins_tag_copier.md  
   - plugins_unix_permissions.md
   - plugins_windows_owner.md

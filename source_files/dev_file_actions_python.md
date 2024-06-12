@@ -58,7 +58,7 @@ You should find a `config.sample.py` file here that you can rename to `config.py
 
 ___
 <a id=“an-example-fileaction”></a>
-### An Example Fileaction
+### A Fileaction Example
 
 Just like other parts of the app, each fileaction directory follows a common pattern. It's so rigid that you can often begin the development of a new fileaction by copying another and renaming the different parts. 
 
@@ -76,7 +76,7 @@ Each fileaction is a Flask `blueprint` that attaches to the main app at a specif
 
 ___
 <a id=“anatomy-of-a-fileaction”></a>
-## The Anatomy of a Fileaction
+### The Anatomy of a Fileaction
 
 Let's look at the "example" fileaction piece by piece and call out some important aspects of how it works. The `views.py` file contains all the routes that can be called and the logic behind them. It either renders a new page with the given template or returns JSON data that can be consumed by an AJAX call. 
 
@@ -126,9 +126,13 @@ Let's take this step by step:
 
 1) First we use the `@blueprint.route `decorator to register a route for this view. This route will accept POST requests at /. Because we are using nested blueprints, the actual route will be
 `/diskover_admin/fileactions/example/`. Most of the route is built by the parent blueprints, and the slash at the end corresponds to this specific route. Remember that routes are always relative to their parent, so when we define / on a blueprint with a route of /example we are really creating the route at /example/.
+
 2) `@get_es_files` is a special decorator that converts the Elasticsearch doc and index that are passed by diskover-web into SimpleFileInfo objects that correspond to a path on the filesystem and what type of item it is (file or directory). This needs to be present on the index function in every fileaction or else you won't have the paths of the objects you intend to work on. It also sets the worker in the session from the Elasticsearch index. With this worker, we know who we should send any task to that has access to the selected files.
+
 3) `Sources` are a list of SimpleFileInfo objects that describe the selected files. See more at `diskover-admin/diskover_admin/common/util.py`.
+
 4) We create the `context `dictionary to encapsulate all the variables we want passed to and available in the template.
+
 5) When we return and render_template, we instruct Flask to render the given template using the context variables we just set. We will get to templating in a bit.
 
 If you were to run this now, with the provided `example.html`, you would see that it renders a web page at `diskover-admin/diskover_admin/fileactions/example/` with the variables we passed in from the context in different parts of the page. Notice the **Submit** button at the bottom of the page. We are going to use jQuery and AJAX in our JS file to bind the submit action of this button to a JavaScript function that will submit the fileaction and wait for a response. Take a look at the included JavaScript file at
@@ -167,9 +171,13 @@ def submit():
 Again, let's break it down:
 
 1) First, we register the `/submit` route on our example blueprint.
+
 2) Next, we get the worker; this should execute from our session and verify it's valid.
+
 3) Then we take the data from the form that was sent and load the JSON string for sources into a list of dictionaries.
+
 4) Next we create the task with the name `echo` and pass the sources list and send it to the queue of the worker that has access to the files.
+
 5) Finally, we tell the app to use the `task.id`, the task created when it was submitted to wait for the result and return it.
 
 The last step there is a bit confusing, so a little more detail is in order. First of all, this might be the first time you are seeing the `url_for()` construct. This is an internal way Flask uses to identify other
@@ -216,7 +224,9 @@ During the development of a fileaction, you will want to register it in the main
 ```
 
 2) Add a section in the `Constants.php` pointing to the new fileaction.php file.
+
 3) In the `instance/config.py` file, add a COMPONENT to the list with the name of your fileaction.
+
 4) Restart the diskover-admin service.
 
 ___
@@ -264,8 +274,7 @@ Each task should be defined by the `@shared_task decorator` and passed `bind=Tru
 
 > *Note:* The task's filename is not relevant when calling the task, only the name.
 
-The @json_exception decorator is designed to catch any exceptions that occur inside the task and return a dictionary response with the error and traceback filled in. On successful execution, a dictionary is
-returned with the relevant data in the result value. 
+The @json_exception decorator is designed to catch any exceptions that occur inside the task and return a dictionary response with the error and traceback filled in. On successful execution, a dictionary is returned with the relevant data in the result value. 
 
 Tasks should always return a dictionary with the three key-value pairs defined so the calling application can interpret the results. The result field can
 contain anything you want but must be JSON serializable.

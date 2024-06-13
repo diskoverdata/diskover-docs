@@ -39,7 +39,7 @@ G) **Reload**: To reload the chart and tree cache/data.
 
 H) **Size Filter**: To select a minimum data size you want to pinpoint in the results – this will affect results in O).
 
-I) **Mtime Filter**: To select a specific period when the data was last modified – this will affect results in P).
+I) **Mtime Filter**: To focus on older data, for example if you select **2 years**, data will be filtered to only show data with an mtime equal or older than 2 years – this will affect results in P).
 
 J) **Hide Thresh**: To make the graphics less busy by hiding the results with low percentages.
 

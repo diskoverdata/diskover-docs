@@ -1,0 +1,31 @@
+___
+## Top Paths
+
+![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
+
+___
+
+By default, users will see a list of all volumes indexed by Diskover in the left pane of the user interface. You can however create Top Paths to organize your volumes (by location, project, etc.).
+
+Here are two examples. Note that the first collapsible option will always be **All Top Paths** and will list all your repositories. The collapsible choices after that are customizable.
+
+![Image: Top Paths by Location Label](images/image_top_path_by_location.png)&nbsp;![Image: Top Paths by Project](images/image_top_path_by_project.png)
+
+🔴 &nbsp;Open the **TOPPATH_TREE** constants.php file:
+
+```
+/var/www/diskover-web/src/diskover/Constants.php
+```
+
+🔴 &nbsp;Edit the file and change for your variables, example below using **Tokyo** and **Vancouver**:
+
+```
+// top path collapsible tree/menu
+// top path tree displayed in search file tree and top path drop down menu in nav bar
+// default is have all top paths under All tree
+// set to [] to use defaults
+// uses php's preg_match for reg exp of top paths
+// Example to set /mnt/tokyo_stor* to be nested under Tokyo and /mnt/van_stor* to be nested under Vancouver:
+// const TOPPATH_TREE = [ 'Tokyo' => ['/\/mnt\/tokyo_stor*/'], 'Vancouver' => ['/\/mnt\/van_stor*/'] ];
+const TOPPATH_TREE = [ 'Stor' => ['/\/mnt\/tokyo_stor*/', '/\/mnt\/van_stor*/']];
+```

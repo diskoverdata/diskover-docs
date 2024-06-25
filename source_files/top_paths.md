@@ -30,7 +30,7 @@ Here are two examples. Note that the first collapsible option will always be **A
 const TOPPATH_TREE = [ 'Stor' => ['/\/mnt\/tokyo_stor*/', '/\/mnt\/van_stor*/']];
 ```
 
-🔴 &nbsp;To edit the top path **labels**:
+🔴 &nbsp;To organize and edit the top path **labels**:
 
 ```
 // alternate top path labels to display in search file tree and top path drop down menu in nav bar

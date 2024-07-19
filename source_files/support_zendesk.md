@@ -77,7 +77,7 @@ Good news! We've upgraded to Zendesk for even better support. The super small in
 | **See all articles by category** | Click on a **subject/button** to see all the related articles |
 | **Diskover Community** | Access the [Community space](https://support.diskoverdata.com/hc/en-us/community/topics) by clicking **Join the conversation** or **Community** in the top menu |
 | **Create a support ticket** | Click **Submit a request** in the top menu beside your profile |
-| **Your profile** | The drop-down list will offer the following options:<br>Profile: To edit your profile and see basic information<br>Requests: To see your support tickets<br>Activities: To see your contributions to Diskover Community<br>Change password<br>Sign out
+| **Your profile** | The drop-down list will offer the following options:<br>- **Profile**: To edit your profile and see basic information<br>- **Requests**: To see your support tickets<br>- **Activities**: To see your contributions to Diskover Community<br>- **Change password**<br>- **Sign out**
 
 
 ![Image: Zendesk Check your Email Notice](images/zendesk_account_creation_step6.png)

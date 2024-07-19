@@ -1,2 +1,2 @@
 <br>
-<h1>Diskover Technical Troubleshooting & Support Tickets</h1>
+<h1>Technical Support and Troubleshooting</h1>

@@ -76,7 +76,8 @@ ___
 
 🔴 &nbsp;If a solution to your issue is not found in the knowledge base, please complete the support request form and fill out as many fields as possible. This will help us solve your issue rapidly by reducing the number of back-and-forth communications asking for more details.
 
-![Image: Zendesk Check your Email Notice](images/zendesk_submit_request_step2.png)
+![Image: Zendesk Check your Email Notice](images/zendesk_submit_request_step2a.png)
+![Image: Zendesk Check your Email Notice](images/zendesk_submit_request_step2b.png)
 
 ### Step 4 | Ticket Submission Confirmation
 

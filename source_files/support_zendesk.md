@@ -83,7 +83,7 @@ Good news! We've upgraded to Zendesk for even better support. The super small in
 ![Image: Zendesk Check your Email Notice](images/zendesk_account_creation_step6.png)
 
 ___
-## Open a Ticket
+## Create a Support Ticket
 
 
 

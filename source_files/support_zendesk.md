@@ -127,11 +127,10 @@ ___
 
 ### Create a Post in Diskover Community
 
-🔴 &nbsp;Under **Topic** you can choose:
-
-- General Discussion
-- Feature Requests
+🔴 &nbsp;Under **Topic** you can choose **General Discussion** or **Feature Requests**, then fill out the rest of the form and click on **Submit**. You can see all your submissions by going to your **Profile** then select **Activities**:
 
 ![Image: Zendesk Community Post](images/zendesk_community_new_post.png)
 
-🔴 &nbsp;Click on the logo at the top left corner of the page to leave the [Diskover Community space](https://support.diskoverdata.com/hc/en-us/community/topics) and return to the main [support/ticketing page](https://diskoverdata.zendesk.com/).
+### Go Back to the Support Page
+
+🔴 &nbsp;Click on the logo at the top left corner of the page to leave the [Diskover Community space](https://support.diskoverdata.com/hc/en-us/community/topics) and return to the main [support page](https://diskoverdata.zendesk.com/).

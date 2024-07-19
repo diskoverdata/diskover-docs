@@ -1,36 +1,54 @@
 ___
-## Technical Support and Resources
+## Technical Support and Resources for Community Edition
 ___
 
-### Troubleshooting
+### Slack Community Support
 
-[Technical Troubleshooting Guide](https://docs.diskoverdata.com/diskover_troubleshooting_tech/) for answers related to installation, configuration, and more.
+Reliant on the [Diskover Slack workspace](https://diskoverworkspace.slack.com/ssb/redirect#/), this forum is a great place to ask questions to the Diskover community.
 
-[End-User Troubleshooting Guide](https://docs.diskoverdata.com/diskover_troubleshooting_end_user/) for answers related to the daily operation of Diskover.
+### Zendesk Knowledge Base
 
-### Documentation
+Community Edition users are welcome to refer to the Knowledge Base on the [Diskover Zendesk space](https://diskoverdata.zendesk.com/). Support tickets for the free Community Edition will not be accepted, and we thank you for your understanding. Please use [Slack Community Support](https://diskoverworkspace.slack.com/ssb/redirect#/) for all technical assistance.
 
-Provides in-depth instructions and descriptions to ensure end-users' success on Diskover, as well as its installation, configuration and administration by System Administrators and other Technical Professionals. 
+### Online Documentation
 
-[https://docs.diskoverdata.com/](https://docs.diskoverdata.com/)
+The [Diskover online documentation](https://docs.diskoverdata.com/) provides several guides to ensure technical and non-technical end-user success with Diskover.
 
-### Help Within the User Interface
 
-Provides support on various topics and is located at the right top corner of the user interface under the **gear icon** > **Help**.
-
-### Community Support
-
-Reliant on the Diskover Slack workspace, this forum is a great place to ask questions to the Diskover community.
-
-[https://diskoverworkspace.slack.com/ssb/redirect#/](https://diskoverworkspace.slack.com/ssb/redirect#/)
-
-### Email & Phone Support for Paid Subscription Solutions
+___
+## Technical Support and Resources for Annual Subscriptions
+___
 
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Diskover Life Science Edition Label](images/button_edition_life_science.png)
 
-Focused on meeting customer needs with proven services and support.
+### Support and Troubleshooting
 
-[www.diskoverdata.com/support/](https://www.diskoverdata.com/support/)
+#### For Technical Users
+
+Diskover has partnered with Zendesk to offer a rich knowledge base and an easy-to-use and track support ticketing system.
+
+[For instructions on how to use Zendesk](https://docs.diskoverdata.com/tech_support_and_troubleshooting/)
+
+[Go to Diskover Zendesk space](https://diskoverdata.zendesk.com/)
+
+#### For Non-Technical Users
+
+[End-User Troubleshooting Guide](https://docs.diskoverdata.com/diskover_troubleshooting_end_user/) for answers related to the daily operation of Diskover.
+
+### Online Documentation
+
+The [Diskover online documentation](https://docs.diskoverdata.com/) provides several guides to ensure technical and non-technical end-user success with Diskover.
+
+
+### Community Support
+
+#### Zendesk
+
+In addition to our [knowledge base articles](https://diskoverdata.zendesk.com/), you can visit and collaborate on the [Diskover Community Zendesk space](https://support.diskoverdata.com/hc/en-us/community/topics).
+
+#### Slack
+
+Reliant on the [Diskover Slack workspace](https://diskoverworkspace.slack.com/ssb/redirect#/), this forum is a great place to ask questions to the Diskover community.
 
 ### Feedback
 

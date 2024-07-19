@@ -4,10 +4,10 @@ ___
 
 Diskover has partnered with [Zendesk](https://diskoverdata.zendesk.com/) to enhance our customer support experience. This collaboration and AI-powered platform brings you:
 
-- Streamlined Support: Access our knowledge base and submit tickets through a user-friendly interface.
-- Faster Resolution: The rich information contained in ticket submission allows for quick routing and resolution.
-- Self-Service Options: Find answers quickly with an extensive, searchable knowledge base.
-- [Diskover Community](https://support.diskoverdata.com/hc/en-us/community/topics): Share, learn, and connect with other awesome Diskover users.
+- **Streamlined Support**: Access our knowledge base and submit tickets through a user-friendly interface.
+- **Faster Resolution**: The rich information contained in ticket submission allows for quick routing and resolution.
+- **Self-Service Options**: Find answers quickly with an extensive, searchable knowledge base.
+- **[Diskover Community](https://support.diskoverdata.com/hc/en-us/community/topics)**: Share, learn, and connect with other awesome Diskover users.
   
 ___
 ## Create a Zendesk Account

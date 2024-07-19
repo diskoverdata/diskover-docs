@@ -117,7 +117,7 @@ We already have key troubleshooting articles providing self-help in [Zendesk](ht
 ___
 ## Diskover Community
 
-[Zendesk](https://diskoverdata.zendesk.com/) offers a [Community space](https://support.diskoverdata.com/hc/en-us/community/topics) where all Diskover users can collaborate.
+[Zendesk](https://diskoverdata.zendesk.com/) offers a [Community space](https://support.diskoverdata.com/hc/en-us/community/topics) where all Diskover users can share, learn, and collaborate.
 
 ### Community Space
 

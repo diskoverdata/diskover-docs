@@ -46,13 +46,13 @@ Creating an account is unfortunately unavoidable, but will only take a few minut
 
 🔴 &nbsp;This is the main support page where the following options are available:
 
-| OPTION | DESCRIPTION |
-| --- | --- |
-| **Create a support ticket** | Click **Submit a request** in the top menu beside your profile |
-| **Search our knowledge base** | Use the **search field** in the middle of the header to search our knowledge base |
-| **See all articles by category** | Click on a **subject/button** to see all the related articles |
-| **Diskover Community** | Access the [Community space](https://support.diskoverdata.com/hc/en-us/community/topics) by clicking **Join the conversation** or **Community** in the top menu |
-| **Your profile** | The drop-down list will offer the following options:<br>- **Profile**: To see/edit your profile information<br>- **Requests**: To see/access your support tickets<br>- **Activities**: To see/access your contributions to Diskover Community<br>- **Change password**<br>- **Sign out**
+| | OPTION | DESCRIPTION |
+| --- | --- | --- |
+| 1 | **Create a support ticket** | Click **Submit a request** in the top menu beside your profile |
+| 2 | **Search our knowledge base** | Use the **search field** in the middle of the header to search our knowledge base |
+| 3 | **See all articles by category** | Click on a **subject/button** to see all the related articles |
+| 4 | **Diskover Community** | Access the [Community space](https://support.diskoverdata.com/hc/en-us/community/topics) by clicking **Join the conversation** or **Community** in the top menu |
+| 5 | **Your profile** | The drop-down list will offer the following options:<br>- **Profile**: To see/edit your profile information<br>- **Requests**: To see/access your support tickets<br>- **Activities**: To see/access your contributions to Diskover Community<br>- **Change password**<br>- **Sign out**
 
 
 ![Image: Zendesk Check your Email Notice](images/zendesk_account_creation_step6.png)

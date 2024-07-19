@@ -68,7 +68,7 @@ ___
 
 ### Step 2 | Suggested Articles
 
-🔴 &nbsp;When you start typing the subject of your issue, Zendesk will search the knowledge base and gather possible articles related to the keywords. You can click on any suggested article and you may find an immediate resolution to your issue without having to contact support.
+🔴 &nbsp;When you start typing the subject of your issue, Zendesk will search the knowledge base and gather possible articles related to the keywords. You can click on any suggested article and you may find an immediate resolution to your issue without having to create a ticket.
 
 ![Image: Zendesk Check your Email Notice](images/zendesk_submit_request_step3.png)
 

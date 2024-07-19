@@ -23,6 +23,8 @@ ___
 
 🔴 &nbsp;Once you create an account as described in the next section, you'll be able to create and view posts from other fabulous collaborators like you, as well as propose new features, in the [Diskover Community space](https://support.diskoverdata.com/hc/en-us/community/topics).
 
+<img src="images/zendesk_community_page.png" alt="Description" style="border: 2px solid black; padding: 5px;">
+
 ![Image: Zendesk Community Page](images/zendesk_community_page.png)
 
 ### Create a Post in Diskover Community

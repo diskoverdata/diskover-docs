@@ -105,7 +105,7 @@ ___
 ___
 ## Post-Submission Process
 
-1. Your ticket will be rapidly assigned to one of our support team members, who are all fabulous engineers.
+1. Your ticket will be rapidly assigned to one of our support team members.
 2. You will get email notifications anytime the status is changed, collaborative exchanges, etc.
 3. The problem/solution to your ticket may be anonymously added to our knowledge base for future use if our support team evaluates that it can help someone else.
 

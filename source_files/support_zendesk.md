@@ -66,35 +66,52 @@ ___
 
 ![Image: Zendesk Check your Email Notice](images/zendesk_submit_request_step1.png)
 
-### Step 3 | Suggested Articles
+### Step 2 | Suggested Articles
 
 🔴 &nbsp;When you start typing the subject of your issue, Zendesk will search the knowledge base and gather possible articles related to the keywords. You can click on any suggested article and you may find an immediate resolution to your issue without having to contact support.
 
 ![Image: Zendesk Check your Email Notice](images/zendesk_submit_request_step3.png)
 
-### Step 2 | Fill out the Form
+### Step 3 | Fill out the Form
 
 🔴 &nbsp;If a solution to your issue is not found in the knowledge base, please complete the support request form and fill out as many fields as possible. This will help us solve your issue rapidly by reducing the number of back-and-forth communications asking for more details.
 
 ![Image: Zendesk Check your Email Notice](images/zendesk_submit_request_step2.png)
 
-### Step 3 | Ticket Submission Confirmation
+### Step 4 | Ticket Submission Confirmation
 
 Once you click **Submit**, you will get a confirmation of your ticket information and the assigned ticket number:
 
 ![Image: Zendesk Check your Email Notice](images/zendesk_submit_request_step4.png)
 
+### Step 5 Optional | Add Comments to Your Ticket
 
+🔴 &nbsp;You will receive an email with the ticket number information once submitted. If you think of something else to help us help you, you may add more information to your ticket by simply replying to the email at any time.
 
-Add Comments
+![Image: Zendesk Check your Email Notice](images/zendesk_submit_request_step5.png)
 
+___
+## View Your Tickets in Zendesk
 
+🔴 &nbsp;If you login to Zendesk, you can find the list of your ticket(s) under **Your Name/Profile** and select **Requests**. You can also easily see the status of any tickets you submitted:
 
+![Image: Zendesk Check your Email Notice](images/zendesk_submit_request_step7.png)
+
+🔴 &nbsp;When you open an existing ticket, you can see all the details including additional comments you may have added by replying to the email. You can also directly add comments to your ticket from that view.
+
+![Image: Zendesk Check your Email Notice](images/zendesk_submit_request_step6.png)
+
+___
+## Post-Submission Process
+
+1. Your ticket will be rapidly assigned to one of our support team members, who are all fabulous engineers.
+2. You will get email notifications anytime the status is changed, collaborative exchanges, etc.
+3. The problem/solution to your ticket may be anonymously added to our knowledge base for future use if our support team evaluates that it can help someone else.
 
 ___
 ## Troubleshooting via Zendesk Knowledge Base
 
-We already have key troubleshooting articles providing self-help in [Zendesk](https://diskoverdata.zendesk.com/). What we are very excited about is that each ticket and resolution will grow the knowledge base, offering a rich catalog of ready-to-go answers.
+We already have key troubleshooting articles providing self-help in [Zendesk](https://diskoverdata.zendesk.com/). What we are very excited about is that ticket problems/resolutions may be used to grow the knowledge base, offering a rich catalog of ready-to-go answers.
 
 ___
 ## Diskover Community

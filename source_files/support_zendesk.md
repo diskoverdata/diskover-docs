@@ -48,7 +48,7 @@ Creating an account is unfortunately unavoidable, but will only take a few minut
 
 | ACTION | DESCRIPTION |
 | --- | --- |
-| **Search** | Click on the **search bar** in the middle of the header and search our knowledge base |
+| **Search** | Use the **search field** in the middle of the header to search our knowledge base |
 | **See all articles by category** | Click on a **subject/button** to see all the related articles |
 | **Diskover Community** | Access the [Community space](https://support.diskoverdata.com/hc/en-us/community/topics) by clicking **Join the conversation** or **Community** in the top menu |
 | **Create a support ticket** | Click **Submit a request** in the top menu beside your profile |

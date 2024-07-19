@@ -12,12 +12,23 @@ We're thrilled to announce that Diskover Data has partnered with [Zendesk](https
 ___
 ## Troubleshooting via Zendesk Knowledge Base
 
-We already have several articles providing self-help in [Zendesk](https://diskoverdata.zendesk.com/). What we are excited about is that each ticket and resolution will grow the knowledge base.
+We already have several articles providing self-help in [Zendesk](https://diskoverdata.zendesk.com/). What we are excited about is that each ticket and resolution will grow the knowledge base, offering a rich catalog of ready-to-go answers.
 
 ___
 ## Diskover Community
 
-[Zendesk](https://diskoverdata.zendesk.com/) offers a [Community space](https://support.diskoverdata.com/hc/en-us/community/topics) where all Diskover users can share, learn, and connect. 
+[Zendesk](https://diskoverdata.zendesk.com/) offers a [Community space](https://support.diskoverdata.com/hc/en-us/community/topics) where all Diskover users can collaborate.
+
+![Image: Zendesk Community Page](images/zendesk_community_page.png)
+
+Once you create an account as described in the next section, you'll be able to create and view posts from other fabulous collaborators like you, as well as propose new features, in the [Diskover Community space](https://support.diskoverdata.com/hc/en-us/community/topics).
+
+Under **Topic** you can choose:
+
+- General Discussion
+- Feature Requests
+
+![Image: Zendesk Community Post](images/zendesk_community_new_post.png)
 
 
 

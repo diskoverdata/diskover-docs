@@ -25,7 +25,7 @@ ___
 
 
 
-<img src="images/zendesk_community_page.png" border="2">
+<img src="images/zendesk_community_page.png" border="2 px red">
 
 <img src="images/image_file_action_glim_gear_icon_selection.png" width="500">
 

@@ -1,5 +1,5 @@
 ___
-## Technical Support and Resources for Community Edition
+## Support and Resources for Community Edition
 ___
 
 ### Slack Community Support
@@ -21,7 +21,7 @@ The [Diskover online documentation](https://docs.diskoverdata.com/) provides sev
 
 
 ___
-## Technical Support and Resources for Annual Subscriptions
+## Support and Resources for Annual Subscriptions
 ___
 
 ![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Diskover Life Science Edition Label](images/button_edition_life_science.png)

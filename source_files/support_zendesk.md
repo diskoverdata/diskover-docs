@@ -44,7 +44,7 @@ Creating an account is unfortunately unavoidable, but will only take a few minut
 
 ### Step 4 | You're Ready to Use Zendesk
 
-🔴 &nbsp;This is the main support page where you can:
+🔴 &nbsp;This is the main support page where the following options are available:
 
 | OPTION | DESCRIPTION |
 | --- | --- |

@@ -9,11 +9,22 @@ Diskover has partnered with [Zendesk](https://diskoverdata.zendesk.com/) to enha
 - **Self-Service Options**: Find answers quickly with an extensive, searchable knowledge base.
 - **Diskover Community**: Share, learn, and connect with other awesome Diskover users.
 
+**What this guide is:** This guide aims to help you navigate and use the highly configurable Zendesk platform.
+
+**What this guide is not:** This guide is not intended to be an all-encompassing Zendesk guide. Some rarely needed views have been deliberately left out, as they are reserved for platform administrators.
+
 ___
 ## Views Overview
 ___
 
+Next to your profile, you have **four squares**, which are the main menu. When you select one, it will open a whole other menu with multiple sub-menus on the left, which are explained in the subsequent sections of this guide.
 
+![Image: Zendesk Menu](images/zendesk_internal_menu.png)
+
+
+
+| MENU | PURPOSE | DESCRIPTION |
+| --- | --- | --- |
 | **Support** | Support Tickets | Workspace for tickets management: view, assign, status |
 | **Guide** | Knowledge Base | Where to see, add, edit, and manage all help articles |
 | **Gather** | Diskover Community forum | Where users can post and request features |
@@ -21,6 +32,8 @@ ___
 | **Talk** | Voice | Not currently in use |
 | **Explore** | Reporting and Analytics | No custom report at the moment, standard reports only for now |
 | **Sell** | Sales CRM | Not currently in use |
+| **Workforce management** | | |
+| **Admin Center** | | |
 
 
 ___
@@ -46,10 +59,35 @@ ___
 ___
 
 
+
+___
+## Explore | Reporting and Analytics
+___
+
+
+___
+## Administration
+___
+
+### Users
+
 ___
 ## Terminology
 ___
 
+We’ll break this section down into each of the important units and discuss how we utilize them.
+
+Agents
+The bread and butter of Zendesk, all of the users in the system who have access to client tickets are Agents. Our Zendesk costs are based on a flat usage fee + how many Agent seats are we using. More Agents means more hands to work tickets and view the tickets as intended in Zendesk, currently we utilize a few generic accounts in the system to increase people’s ability to see more things, as we grow as an organization and company we may want to give more individual seats to directly offboard work or to increase that “personal touch”.
+
+Admins
+Elevated Agent accounts. There is no cost distinction or client visible difference between these accounts and standard Agent accounts, being an Admin user allows the Agent access to the Admin tab. Currently most of our Agents are also Admin users, as we continue to grow this is likely to be reduced and phased out as with a more defined process and hierarchy comes more restrictions and regulations to govern the increased structure. As a note, only one account is deemed the “Owner” of Zendesk and that is the only account with the necessary permissions to increase total headcount and adjust any billing, Admins can create other Agent accounts provided the headcount is available to allot.
+
+End Users
+Basic accounts required to create/view support tickets. These accounts are free and can be created by anyone - specifically configured this way as we are a support organization so anyone who knows where to contact us in turn can contact us. End Users are defined by their email address and we use that to filter and assign them to specific organizations. Agents/Admins do not need to create individual accounts for End-Users they will be created automatically as users interact with the Portal, however at the beginning of a project or client onboarding we may create these as a step in the process for our major points of contact and ensure they are assigned to the org as it’s made.
+
+When navigating the system and interacting with End-User accounts there are some very helpful components to know, and for that we’ll use a fan-favorite: Lody!!
+![image](https://github.com/user-attachments/assets/b200db9b-8852-4381-b200-873693001fc5)
 
 
 

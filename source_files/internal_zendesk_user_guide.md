@@ -32,7 +32,7 @@ When you select an option from that menu, it will open a whole other menu with m
  📕 *Documented in this guide*
 
 | MENU | PURPOSE | DESCRIPTION |
-| --- | --- | --- |
+| :---: | --- | --- |
 | **Support** 📕 | Support Tickets | Workspace for tickets management: view, assign, status |
 | **Guide** 📕 | Knowledge Base | Where to see, add, edit, and manage all help articles |
 | **Gather** 📕 | Diskover Community forum | Where users can post and request features |
@@ -62,12 +62,10 @@ This section is mainly used by engineers, so you will undoubtedly find your way 
 | 5 | See tickets a co-worker involved you with |
 | 6 | You can follow tickets, posts, etc. in Zendesk, this lists the tickets you opted to follow |
 | 7 | Another view to see all tickets by status, priority, agent assigned, etc. |
-| 8 | To see all profiles for customers/contacts who have created a support ticket or not:<ul><li>You can add contacts manually, or delete them but don't do that!</li><li>You can open their profile by clicking on their name to see more information as well as the tickets related to that contact</li><li>Note that every time you open a profile, a tab will open at the very top of your view and stay there until you close it using the **x** in that tab</li></ul> |
-| 9 | Log of domains for organizations (customers, partners, and most deals in motion) that were proactively created for ease of future ticket submission. When a customer/contact creates a new profile, Zendesk will recognize the domain and associate the new contact with the appropriate company whenever possible:<ul><li>You can add contacts manually, or delete them but don't do that!</li><li>You can open their profile by clicking on their name to see more information as well as the tickets related to that contact</li><li>Note that every time you open a profile, a tab will open at the very top of your view and stay there until you close it using the **x** in that tab</li></ul> |
+| 8 | Add, search, and manage customers/contacts who have created a support ticket or not:<ul><li>You can add contacts manually, or delete them but don't do that!</li><li>You can open their profile by clicking on their name to see more information as well as the tickets related to that contact</li><li>Note that every time you open a profile, a tab will open at the very top of your view and stay there until you close it using the **x** in that tab</li></ul> |
+| 9 | Add, search, and manage organizations (customers, partners, and most deals in motion):<ul><li>List of domains that were proactively created for ease of future ticket submission</li><li>When a customer/contact creates a new profile, Zendesk will recognize the domain and associate the new contact with the appropriate company whenever possible</li><li>You can add contacts manually, or delete them but don't do that!</li><li>You can open their profile by clicking on their name to see more information as well as the tickets related to that contact</li><li>Note that every time you open a profile, a tab will open at the very top of your view and stay there until you close it using the **x** in that tab</li></ul> |
 | 10 | Statistics about support tickets, not configured yet |
 | 11 | Link to redirect you to the **Admin Center** where live all settings related to the Zendesk platform |
-
-
 
 ___
 ## Guide | Knowledge Base Management
@@ -103,7 +101,7 @@ ___
 
 | | DESCRIPTION |
 | --- | --- |
-| **Customer** | Contact |
+| **Customer** | Contacts |
 | **Organization** | Company |
 
 We’ll break this section down into each of the important units and discuss how we utilize them.

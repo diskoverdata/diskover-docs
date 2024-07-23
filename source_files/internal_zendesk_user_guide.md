@@ -23,7 +23,7 @@ ___
 ## Overview of Zendesk Menu
 ___
 
-There is a **four squares** icon next to your profile in the top right corner. That icon is where to click to access the **main menu**. 
+There is a **four squares** icon next to your profile in the top right corner. That icon is where to click to access the **main menu**, it is your "home" button to navigate between the different main  
 
 ![Image: Zendesk Menu](images/zendesk_internal_guide_main_menu.png)
 
@@ -51,18 +51,21 @@ ___
 
 This section is mainly used by engineers, so you will undoubtedly find your way around it.
 
-| POINTS OF INTEREST | DESCRIPTION |
-| --- | --- |
+![Image: Zendesk Menu](images/zendesk_internal_guide_tickets_main_view.png)
+
+| OPTIONS | DESCRIPTION |
+| :---: | --- |
 | 1 | Tickets assigned to you |
-| 2 | All open tickets |
+| 2 | All open tickets for the whole team |
 | 3 | To filter by status |
-| 4 | To filter by channel > how the tickets were communicated to us |
+| 4 | To filter by channel > the method use to create the ticket (web, email, etc.) |
 | 5 | See tickets a co-worker involved you with |
-| 6 | Another view to see all tickets |
-| 7 | See all profiles for customers/contacts who have created a support ticket or not:<ul><li>You can add contacts manually, delete them but don't do that!</li><li>You can open their profile to see more information as well as the tickets related to that contact</li><li>Note that every time you open a profile, a tab will open at the top of your view and stay there until you close it</li></ul> |
-| 8 | Log of domains for customers, partners, and most deals in motion. When a contact creates a new profile, Zendesk will recognize the domain and associate the new contact to the appropriate company whenever possible:<ul><li>You can add domains manually, delete them but don't do that!</li><li>You can open their profile to see more information as well as the tickets related to that domain</li><li>Note that every time you open a profile, a tab will open at the top of your view and stay there until you close it</li></ul> |
-| 9 | Statistics about support tickets |
-| 10 | Link sending you to the **Admin Center** to access all settings related to support tickets |
+| 6 | You can follow tickets, posts, etc. in Zendesk, this lists the tickets you opted to follow |
+| 7 | Another view to see all tickets by status, priority, agent assigned, etc. |
+| 8 | To see all profiles for customers/contacts who have created a support ticket or not:<ul><li>You can add contacts manually, or delete them but don't do that!</li><li>You can open their profile by clicking on their name to see more information as well as the tickets related to that contact</li><li>Note that every time you open a profile, a tab will open at the very top of your view and stay there until you close it using the **x** in that tab</li></ul> |
+| 9 | Log of domains for organizations (customers, partners, and most deals in motion) that were proactively created for ease of future ticket submission. When a customer/contact creates a new profile, Zendesk will recognize the domain and associate the new contact with the appropriate company whenever possible:<ul><li>You can add contacts manually, or delete them but don't do that!</li><li>You can open their profile by clicking on their name to see more information as well as the tickets related to that contact</li><li>Note that every time you open a profile, a tab will open at the very top of your view and stay there until you close it using the **x** in that tab</li></ul> |
+| 10 | Statistics about support tickets, not configured yet |
+| 11 | Link to redirect you to the **Admin Center** where live all settings related to the Zendesk platform |
 
 
 
@@ -98,6 +101,11 @@ ___
 ## Terminology
 ___
 
+| | DESCRIPTION |
+| --- | --- |
+| **Customer** | Contact |
+| **Organization** | Company |
+
 We’ll break this section down into each of the important units and discuss how we utilize them.
 
 Agents
@@ -112,27 +120,6 @@ Basic accounts required to create/view support tickets. These accounts are free 
 When navigating the system and interacting with End-User accounts there are some very helpful components to know, and for that we’ll use a fan-favorite: Lody!!
 ![image](https://github.com/user-attachments/assets/b200db9b-8852-4381-b200-873693001fc5)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-___
-## Terminology
-___
-
 Requester: Who put in the ticket, this can be edited by the agent or filled in manually and allow someone to submit a ticket on behalf of someone. As much as possible we want to limit the number of tickets Requested by Levels Beyond (that aren’t internal tickets) so it is encouraged that if the ticket is about a client it should come from the client so it’s associated with their org.
 
 Assignee: Group and Agent the ticket is assigned to, Zendesk is permissioned around this to a degree so the Partner managed group can only see what is assigned to their Group.
@@ -141,6 +128,7 @@ CCs: This one is pretty self explanatory, we add CCs here just like in email, th
 Sharing: We don’t use this and I just haven;t gone hunting to see if I can remove it.
 
 Tags: These don’t need to be interacted with and form naturally as you answer the different fields, you can dive into this with the Tag option to see the Tag Cloud it creates. The only time we add to this is when submitting a Feature Request, make sure that tag is included and it goes straight to the Product Board.
+
 
 Resolution Code: The intent of this option is for the Agent to categorize what the issue was so when we look at reporting we can group issues together and see where we spend the majority of our time - we want this to be specific, but not too specific and ideally we don’t want to update it frequently as it would add new metrics into the reporting. The other note is we set this up with nested options so we could split Implementation and Support answers, there is overlap in the responses as a result but still shows which team is doing what.
 
@@ -173,9 +161,11 @@ Does documentation exist for this issue: This field is the newest addition and w
 
 
 
+___
+## Zendesk Administrative Contact
+___
 
-
-
+Please address all requests to [Brandon Langley and Nathalie Sampson](mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com).
 
   
 ___

@@ -60,7 +60,7 @@ This section is mainly used by engineers, so you will undoubtedly find your way 
 | 5 | See tickets a co-worker involved you with |
 | 6 | Another view to see all tickets |
 | 7 | See all profiles for customers/contacts who have created a support ticket or not:<ul><li>You can add contacts manually, delete them but don't do that!</li><li>You can open their profile to see more information as well as the tickets related to that contact</li><li>Note that every time you open a profile, a tab will open at the top of your view and stay there until you close it</li></ul> |
-| 8 | Log of domains for customers, partners, and most deals in motion. When a contact creates a profile, Zendesk will recognize the domain and associate the new contact to the appropriate company:<ul><li>You can add domains manually, delete them but don't do that!</li><li>You can open their profile to see more information as well as the tickets related to that domain</li><li>Note that every time you open a profile, a tab will open at the top of your view and stay there until you close it</li></ul> |
+| 8 | Log of domains for customers, partners, and most deals in motion. When a contact creates a new profile, Zendesk will recognize the domain and associate the new contact to the appropriate company whenever possible:<ul><li>You can add domains manually, delete them but don't do that!</li><li>You can open their profile to see more information as well as the tickets related to that domain</li><li>Note that every time you open a profile, a tab will open at the top of your view and stay there until you close it</li></ul> |
 | 9 | Statistics about support tickets |
 | 10 | Link sending you to the **Admin Center** to access all settings related to support tickets |
 

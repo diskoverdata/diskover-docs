@@ -43,7 +43,7 @@ When you select an option from that menu, it will open a whole other menu with m
 | **Workforce management** | Direct Access to Zendesk Website | Great for further help than what is covered in this guide |
 | **Admin Center** 📕 | Account Settings | Where to set up users, forms, fields used in forms, etc. |
 
-When you select an option from that menu, it will open a whole other set of menus and sub-menus on the left particular to that subject. 
+When you select an option from that menu, it will open a whole other set of menus and sub-menus on the left particular to that subject.
 
 ___
 ## Support | Tickets Management
@@ -51,7 +51,18 @@ ___
 
 This section is mainly used by engineers, so you will undoubtedly find your way around it.
 
-
+| POINTS OF INTEREST | DESCRIPTION |
+| --- | --- |
+| 1 | Tickets assigned to you |
+| 2 | All open tickets |
+| 3 | To filter by status |
+| 4 | To filter by channel > how the tickets were communicated to us |
+| 5 | See tickets a co-worker involved you with |
+| 6 | Another view to see all tickets |
+| 7 | - See all customers/contacts who have created a support ticket, you can add contacts manually, delete them but don't do that!<br> - You can open their profile to see more information as well as the tickets related to that contact<br> - Note that every time you open a profile, a tab will open at the top of your view and stay there until you close it |
+| 8 | - Where domains for customers, partners and most deals in motion are logged, you can add domains manually, delete them but don't do that!<br> - You can open their profile to see more information as well as the tickets related to that domain<br> - Note that every time you open a profile, a tab will open at the top of your view and stay there until you close it |
+| 9 | Statistics about support tickets |
+| 10 | Link sending you to the **Admin Center** to access all settings related to support tickets |
 
 
 ___

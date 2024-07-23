@@ -49,6 +49,8 @@ ___
 ## Support | Tickets Management
 ___
 
+### Overview
+
 This section is mainly used by engineers, so you will undoubtedly find your way around it.
 
 ![Image: Zendesk Menu](images/zendesk_internal_guide_tickets_main_view.png)
@@ -66,6 +68,24 @@ This section is mainly used by engineers, so you will undoubtedly find your way 
 | 9 | Add, search, and manage organizations (customers, partners, and most deals in motion):<ul><li>List of domains that were proactively created for ease of future ticket submission</li><li>When a customer/contact creates a new profile, Zendesk will recognize the domain and associate the new contact with the appropriate company whenever possible</li><li>You can add contacts manually, or delete them but don't do that!</li><li>You can open their profile by clicking on their name to see more information as well as the tickets related to that contact</li><li>Note that every time you open a profile, a tab will open at the very top of your view and stay there until you close it using the **x** in that tab</li></ul> |
 | 10 | Statistics about support tickets, not configured yet |
 | 11 | Link to redirect you to the **Admin Center** where live all settings related to the Zendesk platform |
+
+### Manual Ticket Creation
+
+Especially during the transition between email support and Zendesk, you may have to create tickets manually. Wherever you are in the **Support** menu, you'll see the **+Add** option at the left top corner. Note that more than a ticket creation option will be offered:
+
+![Image: Zendesk Menu](images/zendesk_internal_guide_support_add_options.png)
+
+
+
+
+
+### Create a Customer/Contact Profile
+
+
+
+### Create an Organization/Company Profile
+
+
 
 ___
 ## Guide | Knowledge Base Management

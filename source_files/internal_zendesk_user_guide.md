@@ -59,8 +59,8 @@ This section is mainly used by engineers, so you will undoubtedly find your way 
 | 4 | To filter by channel > how the tickets were communicated to us |
 | 5 | See tickets a co-worker involved you with |
 | 6 | Another view to see all tickets |
-| 7 | <ul><li>See all customers/contacts who have created a support ticket, you can add contacts manually, delete them but don't do that!</li><li>You can open their profile to see more information as well as the tickets related to that contact</li><li>Note that every time you open a profile, a tab will open at the top of your view and stay there until you close it</li></ul> |
-| 8 | - Where domains for customers, partners and most deals in motion are logged, you can add domains manually, delete them but don't do that!<br> - You can open their profile to see more information as well as the tickets related to that domain<br> - Note that every time you open a profile, a tab will open at the top of your view and stay there until you close it |
+| 7 | See all customers/contacts who have created a support ticket or not:<ul><li>You can add contacts manually, delete them but don't do that!</li><li>You can open their profile to see more information as well as the tickets related to that contact</li><li>Note that every time you open a profile, a tab will open at the top of your view and stay there until you close it</li></ul> |
+| 8 | Log of domains for customers, partners, and most deals in motion:<ul><li>You can add domains manually, delete them but don't do that!</li><li>You can open their profile to see more information as well as the tickets related to that domain</li><li>Note that every time you open a profile, a tab will open at the top of your view and stay there until you close it</li></ul> |
 | 9 | Statistics about support tickets |
 | 10 | Link sending you to the **Admin Center** to access all settings related to support tickets |
 

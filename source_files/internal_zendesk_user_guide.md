@@ -13,7 +13,7 @@ Diskover has partnered with [Zendesk](https://diskoverdata.zendesk.com/) to enha
 
 ### What to Expect from this Guide
 
-Zendesk is highly configurable and offers hundreds of menus and sub-menus.
+Zendesk is highly configurable, and offers hundreds of menus and sub-menus and settings galore.
 
 **👍🏼 What this guide is:** This guide aims to help you in the daily navigation and use of the Zendesk platform.
 
@@ -23,7 +23,7 @@ ___
 ## Overview of Zendesk Menu
 ___
 
-Next to your profile, you have **four squares** icon, which is where to click to access the **main menu**. 
+There is a **four squares** icon next to your profile in the top right corner. That icon is where to click to access the **main menu**. 
 
 ![Image: Zendesk Menu](images/zendesk_internal_menu.png)
 
@@ -42,11 +42,13 @@ When you select an option from that menu, it will open a whole other menu with m
 | **Workforce management** | Direct Access to Zendesk Website | Great for further help than what is covered in this guide |
 | **Admin Center** | Account Settings | Where to set up users, forms, fields used in forms, etc. |
 
-When you select an option from that menu, it will open a whole other menu with multiple sub-menus on the left particular to that subject. Each currently used options are explained in the subsequent sections of this guide.
+When you select an option from that menu, it will open a whole other set of menus and sub-menus on the left particular to that subject. The subsequent sections of this guide explain each currently used option.
 
 ___
 ## Support | Tickets Management
 ___
+
+This section is mainly used by engineers, so you will undoubtedly find your way around it.
 
 
 

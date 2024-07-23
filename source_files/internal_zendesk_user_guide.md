@@ -1,6 +1,8 @@
 ___
-## Why Zendesk?
+## Overview
 ___
+
+### Why Zendesk
 
 Diskover has partnered with [Zendesk](https://diskoverdata.zendesk.com/) to enhance our customer support experience. This collaboration and AI-powered platform brings you:
 
@@ -9,18 +11,23 @@ Diskover has partnered with [Zendesk](https://diskoverdata.zendesk.com/) to enha
 - **Self-Service Options**: Find answers quickly with an extensive, searchable knowledge base.
 - **Diskover Community**: Share, learn, and connect with other awesome Diskover users.
 
-**What this guide is:** This guide aims to help you navigate and use the highly configurable Zendesk platform.
+### What to Expect from this Guide
 
-**What this guide is not:** This guide is not intended to be an all-encompassing Zendesk guide. Some rarely needed views have been deliberately left out, as they are reserved for platform administrators.
+Zendesk is highly configurable and offers hundreds of menus and sub-menus.
+
+**👍🏼 What this guide is:** This guide aims to help you in the daily navigation and use of the Zendesk platform.
+
+**👎🏼 What this guide is not:** This guide is not intended to be an all-encompassing Zendesk guide and/or address all the exhaustive administrative options.
 
 ___
-## Views Overview
+## Overview of Zendesk Menu
 ___
 
-Next to your profile, you have **four squares**, which are the main menu. When you select one, it will open a whole other menu with multiple sub-menus on the left, which are explained in the subsequent sections of this guide.
+Next to your profile, you have **four squares** icon, which is where to click to access the **main menu**. 
 
 ![Image: Zendesk Menu](images/zendesk_internal_menu.png)
 
+When you select an option from that menu, it will open a whole other menu with multiple sub-menus on the left. Only the necessary ones for the daily use of Zendesk are explained in the subsequent sections of this guide.
 
 
 | MENU | PURPOSE | DESCRIPTION |
@@ -32,9 +39,10 @@ Next to your profile, you have **four squares**, which are the main menu. When y
 | **Talk** | Voice | Not currently in use |
 | **Explore** | Reporting and Analytics | No custom report at the moment, standard reports only for now |
 | **Sell** | Sales CRM | Not currently in use |
-| **Workforce management** | | |
-| **Admin Center** | | |
+| **Workforce management** | Direct Access to Zendesk Website | Great for further help than what is covered in this guide |
+| **Admin Center** | Account Settings | Where to set up users, forms, fields used in forms, etc. |
 
+When you select an option from that menu, it will open a whole other menu with multiple sub-menus on the left particular to that subject. Each currently used options are explained in the subsequent sections of this guide.
 
 ___
 ## Support | Tickets Management
@@ -66,7 +74,7 @@ ___
 
 
 ___
-## Administration
+## Admin Center
 ___
 
 ### Users

@@ -32,15 +32,15 @@ When you select an option from that menu, it will open a whole other menu with m
 
 | MENU | PURPOSE | DESCRIPTION |
 | --- | --- | --- |
-| **Support** | Support Tickets | Workspace for tickets management: view, assign, status |
-| **Guide** | Knowledge Base | Where to see, add, edit, and manage all help articles |
-| **Gather** | Diskover Community forum | Where users can post and request features |
+| **Support** | 🌟 Support Tickets | Workspace for tickets management: view, assign, status |
+| **Guide** | 🌟 Knowledge Base | Where to see, add, edit, and manage all help articles |
+| **Gather** | 🌟 Diskover Community forum | Where users can post and request features |
 | **Chat** | Live Chat and Messaging | Not currently in use |
 | **Talk** | Voice | Not currently in use |
-| **Explore** | Reporting and Analytics | No custom report at the moment, standard reports only for now |
+| **Explore** | 🌟 Reporting and Analytics | No custom report at the moment, standard reports only for now |
 | **Sell** | Sales CRM | Not currently in use |
 | **Workforce management** | Direct Access to Zendesk Website | Great for further help than what is covered in this guide |
-| **Admin Center** | Account Settings | Where to set up users, forms, fields used in forms, etc. |
+| **Admin Center** | 🌟 Account Settings | Where to set up users, forms, fields used in forms, etc. |
 
 When you select an option from that menu, it will open a whole other set of menus and sub-menus on the left particular to that subject. The subsequent sections of this guide explain each currently used option.
 

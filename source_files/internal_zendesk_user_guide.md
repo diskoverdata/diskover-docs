@@ -55,7 +55,7 @@ This section is mainly used by engineers, so you will undoubtedly find your way 
 
 ![Image: Zendesk Menu](images/zendesk_internal_guide_tickets_main_view.png)
 
-| OPTIONS | DESCRIPTION |
+| OPTION | DESCRIPTION |
 | :---: | --- |
 | 1 | Tickets assigned to you |
 | 2 | All open tickets for the whole team |

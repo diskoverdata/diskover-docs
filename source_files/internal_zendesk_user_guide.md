@@ -21,7 +21,7 @@ Zendesk is highly configurable, and offers hundreds of menus and sub-menus and s
 
 ### Access Level
 
-Access levels were applied depending on each team member and what is required for their work. Send<a class="email-link" href= "mailto:brandon.langley@diskoverdata.com?subject=Please increase my Zendesk access"> us an email </a>if you feel you need additional access to do your work.
+Access levels were applied depending on each team member and what is required for their work. Send <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com?subject=Dude! Please increase my Zendesk access">us an email</a> if you feel you need additional access to do your work.
 
 ### Links
 
@@ -36,8 +36,7 @@ Access levels were applied depending on each team member and what is required fo
 
 ### Need Help?
 
-Zendesk has support links throughout the application, but please<a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help with Zendesk"> email us </a>your internal help requests if needed.
-
+Zendesk has support links throughout the application for help on the fly, but please <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help figuring out Zendesk">email us</a>your internal help requests if needed.
 
 ___
 ## Overview of Zendesk Menu
@@ -280,7 +279,7 @@ ___
 ## Zendesk Administrative Contact
 ___
 
-<a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need support with Zendesk">Email us</a> if you need support with Zendesk or any other inquiries.
+<a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need support with Zendesk">Email us</a> if you need support with Zendesk or any other Zendesk-related inquiries.
 
 ___
 ## Create a Zendesk Account

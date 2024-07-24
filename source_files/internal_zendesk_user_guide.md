@@ -189,40 +189,17 @@ ___
 
 ### Overview
 
-This is where all our troubleshooting or other articles live and how to access what can be confusing at first. This is the hierarchy/nomenclature used by Zendesk:
+This is where all our troubleshooting and other articles live and "how to access what" may be confusing at first. This is the hierarchy/nomenclature used by Zendesk:
 
 ```mermaid
 graph LR
 A(Category) -->B(Section) -->C(Article)
 ```
 
-Here are a few articles to give you an idea of the hierarchy:
 
 ```mermaid
 graph LR
-A(Troubleshooting)
-    A --> B(Elasticsearch)
-    B --> C (es 1)
-    B --> D (es 2)
-    A --> B(Diskover-Web)
-    B --> E (dw 1)
-    B --> F (dw 2)
-```
-
-
-
-
-
-
-```mermaid
-graph LR
-A(Troubleshooting)
-    A --> B(Elasticsearch)
-    B --> C (es 1)
-    B --> D (es 2)
-    A --> B(Diskover-Web)
-    B --> C (dw 1)
-    B --> D (dw 2)
+A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->C(CATEGORY)
 ```
 
 

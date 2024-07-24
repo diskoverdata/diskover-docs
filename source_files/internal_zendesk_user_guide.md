@@ -27,7 +27,7 @@ Not everybody in the Diskover team has the same Zendesk access level. If you fee
 
 | USE | PURPOSE | LINK |
 | --- | --- | --- |
-| External & Internal | Diskover Zendesk platform | https://diskoverdata.zendesk.com/ |
+| External & Internal | Diskover Zendesk platform | https://diskoverdata.zendesk.com/ or https://support.diskoverdata.com/ |
 | External | Technical Support and Troubleshooting Guide | https://docs.diskoverdata.com/tech_support_and_troubleshooting/ |
 | External | How to create an account | https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-zendesk-account |
 | External | How to create a support ticket | https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-support-ticket |
@@ -116,7 +116,7 @@ In addition to the main view above, the second option on the left is another pro
 
 ### Manage Customer Profiles (User)
 
-🔶⚠️📌&nbsp;Depending on your Zendesk account access, you will be able to view, create, and/or modify user profiles.
+⚠️&nbsp;Depending on your Zendesk account access, you will be able to view, create, and/or modify user profiles.
 
 🔴 &nbsp;You shouldn't have to do much of that, as users need to create an account before they can submit a ticket:
 
@@ -135,7 +135,7 @@ In addition to the main view above, the second option on the left is another pro
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
-| 1 | See and edit the profile information |
+| 1 | See and edit the profile information, make sure to fill out as many fields as possible |
 | 2 | See tickets associated with that contact |
 | 3 | Manually create a ticket for that contact |
 | 4 | Navigate to different views |
@@ -144,7 +144,7 @@ In addition to the main view above, the second option on the left is another pro
 
 ### Manage Organization Profile (Company)
 
-🔶⚠️📌&nbsp;Depending on your Zendesk account access, you will be able to view, create, and/or modify user profiles.
+⚠️&nbsp;Depending on your Zendesk account access, you will be able to view, create, and/or modify user profiles.
 
 🔴 &nbsp;You shouldn't have to do much of that as most accounts have been pre-populated or are created automatically when a new user creates an account. But in case you do need to manually add a customer/domain:
 
@@ -159,16 +159,29 @@ In addition to the main view above, the second option on the left is another pro
 
 🔴 &nbsp;When you open a user profile:
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_manage_profile_user.png)
+![Image: Zendesk Menu](images/zendesk_internal_guide_manage_profile_company.png)
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
-| 1 | See and edit the profile information |
-| 2 | See tickets associated with that contact |
-| 3 | Manually create a ticket for that contact |
-| 4 | Navigate to different views |
-| 5 | Take different actions on the profile |
-| 6 | If no **organization**/domain exists for that contact in Zendesk, you can add it from there |
+| 1 | See and edit the profile information, make sure to fill out as many fields as possible |
+| 2 | See tickets associated with that company, they can be from different users |
+| 3 | Navigate to different views |
+| 4 | Take different actions on the profile |
+
+# Support Reporting
+
+Support metrics will grow over time, but you can already refer to basic information. Some numbers and parts of graphics are clickable to see the details, a little bit like Diskover!
+
+![Image: Zendesk Menu](images/zendesk_internal_guide_support_stats.png)
+
+| OPTION | DESCRIPTION |
+| :---: | --- |
+| 1 | Select this menu to access **Reporting** or from the main menu select **Explore** |
+| 2 | Select the **Support** tab |
+| 3 | Navigate to different metrics |
+| 4 | Apply different filters |
+| 5 | Modify the **time** filter |
+| 6 | To view the same thing but from the **Explore** menu |
 
 ___
 ## Guide | Knowledge Base Management

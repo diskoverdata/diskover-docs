@@ -36,7 +36,7 @@ Access levels were applied depending on each team member and what is required fo
 
 ### Need Help?
 
-Zendesk has support links throughout the application for help on the fly, but please <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help figuring out Zendesk">email us</a>your internal help requests if needed.
+Zendesk has support links throughout the application for help on the fly, but please <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help figuring out Zendesk">email us</a> your internal help requests if needed.
 
 ___
 ## Overview of Zendesk Menu
@@ -187,7 +187,14 @@ ___
 ## Guide | Knowledge Base Management
 ___
 
+### Overview
 
+This is where all our troubleshooting or other articles live. This is the hierarchy/nomenclature used by Zendesk
+
+```mermaid
+graph LR
+A(Category) -->B(Section) -->C(Article)
+```
 
 Articles, Sections, Categories
 

@@ -38,6 +38,11 @@ Not everybody in the Diskover team has the same Zendesk access level. If you fee
 
 Zendesk has support links throughout the application, but please send your internal help requests to [Brandon Langley and Nathalie Sampson](mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com).
 
+<a href="mailto:mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help with Zendesk">
+ 
+<a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help with Zendesk"> Brandon Langley and Nathalie Sampson </a>
+
+
 ___
 ## Overview of Zendesk Menu
 ___

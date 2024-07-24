@@ -34,6 +34,10 @@ Not everybody in the Diskover team has the same Zendesk access level. If you fee
 | External | Diskover Community on Zendesk | https://docs.diskoverdata.com/tech_support_and_troubleshooting/#diskover-community |
 | Internal | This guide |  |
 
+### Need Help?
+
+Zendesk has support links throughout the application, but please send your internal help requests to [Brandon Langley and Nathalie Sampson](mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com).
+
 ___
 ## Overview of Zendesk Menu
 ___
@@ -138,16 +142,16 @@ In addition to the main view above, the second option on the left is another pro
 
 ### Create an Organization Profile (Company)
 
+🔴 &nbsp;You shouldn't have to do much of that as most accounts have been pre-populated or are created automatically when a new user creates an account. But in case you do need to manually add a customer/domain:
 
-
-![Image: Zendesk Menu](images/zendesk_internal_guide_create_profile_user.png)
+![Image: Zendesk Menu](images/zendesk_internal_guide_create_profile_company.png)
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
-| 1 | To manually add a customer |
-| 2 | For bulk import and delete, but don't do the latter |
-| 3 | To search for a contact |
-| 4 | Click on a name to open and see all related information and tickets associated with that contact |
+| 1 | This is where you'll find the Organizations/companies profiles |
+| 2 | Search for existing profiles before creating a new one |
+| 3 | Start the manual profile creation here for a company/domain |
+| 4 | Click on a name to open and see all related information and tickets associated with that company |
 
 
 ___

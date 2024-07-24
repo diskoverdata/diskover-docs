@@ -21,7 +21,7 @@ Zendesk is highly configurable, and offers hundreds of menus and sub-menus and s
 
 ### Access Level
 
-Not everybody in the Diskover team has the same Zendesk access level. If you feel you need more access in order to do your work, please contact [Brandon Langley](mailto:brandon.langley@diskoverdata.com).
+Access levels were applied depending on each team member and what is required for their work. Send<a class="email-link" href= "mailto:brandon.langley@diskoverdata.com?subject=Please increase my Zendesk access"> us an email </a>if you feel you need additional access to do your work.
 
 ### Links
 
@@ -36,11 +36,7 @@ Not everybody in the Diskover team has the same Zendesk access level. If you fee
 
 ### Need Help?
 
-Zendesk has support links throughout the application, but please send your internal help requests to [Brandon Langley and Nathalie Sampson](mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com).
-
-<a href="mailto:mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help with Zendesk">
- 
-<a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help with Zendesk"> Brandon Langley and Nathalie Sampson </a>
+Zendesk has support links throughout the application, but please<a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help with Zendesk"> email us </a>your internal help requests if needed.
 
 
 ___
@@ -284,9 +280,8 @@ ___
 ## Zendesk Administrative Contact
 ___
 
-Please address all requests to [Brandon Langley and Nathalie Sampson](mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com).
+<a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need support with Zendesk">Email us</a> if you need support with Zendesk or any other inquiries.
 
-  
 ___
 ## Create a Zendesk Account
 

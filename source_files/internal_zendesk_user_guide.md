@@ -39,7 +39,7 @@ Access levels were applied depending on each team member and what is required fo
 Zendesk has support links throughout the application for help on the fly, but please <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help figuring out Zendesk">email us</a> if you need support.
 
 ___
-## Overview of Zendesk Menu
+## Overview of Zendesk Main Menu
 ___
 
 There is a **four squares** icon next to your profile in the top right corner. That icon is where to click to access the **main menu**, it is your "home" button to navigate between the different main  
@@ -67,6 +67,10 @@ There is a **four squares** icon next to your profile in the top right corner. T
 ___
 ## Support | Tickets Management
 ___
+
+### How to Get Here
+
+![Image: Zendesk Menu](images/zendesk_internal_guide_menu_support.png)
 
 ### Overview
 
@@ -187,6 +191,10 @@ ___
 ## Guide | Knowledge Base Management
 ___
 
+### How to Get Here
+
+![Image: Zendesk Menu](images/zendesk_internal_guide_menu_guide.png)
+
 ### Overview
 
 What you will find in this menu:
@@ -201,16 +209,17 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 
 ### Articles Management
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_support_stats.png)
+![Image: Zendesk Menu](images/zendesk_internal_guide_guide_manage_articles.png)
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
-| 1 | Select this menu to access **Reporting** or from the main menu select [**Explore**](#main_menu) |
-| 2 | Select the **Support** tab |
-| 3 | Navigate to different metrics |
-| 4 | Apply different filters |
-| 5 | Modify the **time** filter |
-| 6 | To view the same thing but from the **Explore** menu |
+| 1 | To see the list of all articles, drafts or published |
+| 2 | That view will show you all the last additions, edits, etc. and who did it when |
+| 3 | Search articles using key words |
+| 4 | Apply filters to your search |
+| 5 | Open any article just by clicking on one |
+| 6 | Add columns to your current view (dates, author, etc.) |
+
 
 ### How to Create an Article
 
@@ -232,12 +241,22 @@ ___
 ## Gather | Diskover Community 
 ___
 
+### How to Get Here
+
+![Image: Zendesk Menu](images/zendesk_internal_guide_menu_gather.png)
+
+### Overview
 
 
 ___
 ## Explore | Reporting and Analytics
 ___
 
+### How to Get Here
+
+![Image: Zendesk Menu](images/zendesk_internal_guide_menu_explore.png)
+
+### Overview
 
 ___
 ## Admin Center

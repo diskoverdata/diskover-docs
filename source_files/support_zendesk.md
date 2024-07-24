@@ -91,8 +91,7 @@ Once you click **Submit**, you will get a confirmation of your ticket informatio
 
 ![Image: Zendesk Check your Email Notice](images/zendesk_submit_request_step5.png)
 
-___
-## View Your Tickets in Zendesk
+### View Your Tickets in Zendesk
 
 🔴 &nbsp;If you login to Zendesk, you can find the list of your ticket(s) under **Your Name/Profile** and select **Requests**. You can also easily see the status of any tickets you submitted:
 
@@ -102,8 +101,7 @@ ___
 
 ![Image: Zendesk Check your Email Notice](images/zendesk_submit_request_step6.png)
 
-___
-## Post-Submission Process
+### Post-Submission Process
 
 1. Your ticket will be rapidly assigned to one of our support team members.
 2. You will get email notifications anytime the status is changed, collaborative exchanges, etc.

@@ -19,6 +19,17 @@ Zendesk is highly configurable, and offers hundreds of menus and sub-menus and s
 
 **👎🏼 What this guide is not:** This guide is not intended to be an all-encompassing Zendesk guide and/or address all the exhaustive administrative options.
 
+### Links to Share
+
+| USE | PURPOSE | LINK |
+| --- | --- | --- |
+| External & Internal | Diskover Zendesk platform | https://diskoverdata.zendesk.com/ |
+| External | Technical Support and Troubleshooting Guide | https://docs.diskoverdata.com/tech_support_and_troubleshooting/ |
+| External | How to create an account | https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-zendesk-account |
+| External | How to create a support ticket | https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-support-ticket |
+| External | Diskover Community on Zendesk | https://docs.diskoverdata.com/tech_support_and_troubleshooting/#diskover-community |
+| Internal | This guide |  |
+
 ___
 ## Overview of Zendesk Menu
 ___

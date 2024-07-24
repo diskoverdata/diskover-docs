@@ -204,8 +204,8 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 
 ### Categories
 
-<a id=“customize_site”></a>
 
+<p id="customize_site"></p>
 ### Themes
 
 

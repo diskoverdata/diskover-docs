@@ -19,6 +19,10 @@ Zendesk is highly configurable, and offers hundreds of menus and sub-menus and s
 
 **👎🏼 What this guide is not:** This guide is not intended to be an all-encompassing Zendesk guide and/or address all the exhaustive administrative options.
 
+### Access Level
+
+Not everybody in the Diskover team has the same Zendesk access level. If you feel you need more access in order to do your work, please contact [Brandon Langley](mailto:brandon.langley@diskoverdata.com).
+
 ### Links
 
 | USE | PURPOSE | LINK |
@@ -94,7 +98,7 @@ Especially during the transition between email support to Zendesk, you may have 
 
 ### Tickets Management
 
-Besides the main view above, another productive way to manage and view the tickets is by using the second option in the left blue column. From there, you can:
+In addition to the main view above, the second option on the left is another productive way to view and manage the tickets.
 
 ![Image: Zendesk Menu](images/zendesk_internal_guide_ticket_management.png)
 
@@ -108,11 +112,42 @@ Besides the main view above, another productive way to manage and view the ticke
 
 ### Create a Customer Profile (User)
 
+🔴 &nbsp;You shouldn't have to do much of that, as users need to create an account before they can submit a ticket:
 
+![Image: Zendesk Menu](images/zendesk_internal_guide_create_profile_user.png)
 
+| OPTION | DESCRIPTION |
+| :---: | --- |
+| 1 | To manually add a customer |
+| 2 | For bulk import and delete, but don't do the latter |
+| 3 | To search for a contact |
+| 4 | Click on a name to open and see all related information and tickets associated with that contact |
+
+🔴 &nbsp;When you open the profile of a user:
+
+![Image: Zendesk Menu](images/zendesk_internal_guide_manage_profile_user.png)
+
+| OPTION | DESCRIPTION |
+| :---: | --- |
+| 1 | See and edit the profile information |
+| 2 | See tickets associated with that contact |
+| 3 | Manually create a ticket for that contact |
+| 4 | Navigate to different views |
+| 5 | Take different actions on the profile |
+| 6 | If no **organization**/domain exists for that contact in Zendesk, you can add it from there |
 
 ### Create an Organization Profile (Company)
 
+
+
+![Image: Zendesk Menu](images/zendesk_internal_guide_create_profile_user.png)
+
+| OPTION | DESCRIPTION |
+| :---: | --- |
+| 1 | To manually add a customer |
+| 2 | For bulk import and delete, but don't do the latter |
+| 3 | To search for a contact |
+| 4 | Click on a name to open and see all related information and tickets associated with that contact |
 
 
 ___

@@ -34,9 +34,9 @@ Access levels were applied depending on each team member and what is required fo
 | External | Diskover Community on Zendesk | https://docs.diskoverdata.com/tech_support_and_troubleshooting/#diskover-community |
 | Internal | This guide |  |
 
-### Need Help?
+### Need Help with Zendesk?
 
-Zendesk has support links throughout the application for help on the fly, but please <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help figuring out Zendesk">email us</a> your internal help requests if needed.
+Zendesk has support links throughout the application for help on the fly, but please <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help figuring out Zendesk">email us</a> if you need support.
 
 ___
 ## Overview of Zendesk Menu
@@ -46,7 +46,7 @@ There is a **four squares** icon next to your profile in the top right corner. T
 
 ![Image: Zendesk Menu](images/zendesk_internal_guide_main_menu.png)
 
-When you select an option from that menu, it will open a whole other menu with multiple sub-menus on the left. Only the necessary ones for the daily use of Zendesk are explained in the subsequent sections of this guide.
+⚠️&nbsp;When you select an option from that menu, it will open a whole other menu with multiple sub-menus on the left. Only the necessary ones for the daily use of Zendesk are explained in the subsequent sections of this guide.
 
  📕 *Documented in this guide*
 
@@ -63,8 +63,6 @@ When you select an option from that menu, it will open a whole other menu with m
 | **Sell** | Sales CRM | Not currently in use |
 | **Workforce management** | Direct Access to Zendesk Website | Great for further help than what is covered in this guide |
 | **Admin Center** 📕 | Account Settings | Where to set up users, forms, fields used in forms, etc. |
-
-When you select an option from that main menu, a whole other set of menus and sub-menus, particular to that subject, will open on the left.
 
 ___
 ## Support | Tickets Management
@@ -146,7 +144,7 @@ In addition to the main view above, the second option on the left is another pro
 
 ### Manage Organization Profile (Company)
 
-⚠️&nbsp;Depending on your Zendesk account access, you will be able to view, create, and/or modify user profiles.
+⚠️&nbsp;Depending on your Zendesk account access, you will be able to view, create, and/or modify company profiles.
 
 🔴 &nbsp;You shouldn't have to do much of that as most accounts have been pre-populated or are created automatically when a new user creates an account. But in case you do need to manually add a customer/domain:
 
@@ -191,15 +189,30 @@ ___
 
 ### Overview
 
-This is where all our troubleshooting and other articles live and "how to access what" may be confusing at first. This is the hierarchy/nomenclature used by Zendesk:
+What you will find in this menu:
+
+- A log of the **discussions** and **feature requests** that stems from the [Diskover Community](#diskover_community) forum.
+- All **help articles** used for troubleshooting, tips, etc. Note that "how to access what" may be confusing at first. This is the hierarchy/nomenclature used by Zendesk:
 
 ```mermaid
 graph LR
 A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->C(CATEGORY)
 ```
 
-### Articles
+### Articles Management
 
+![Image: Zendesk Menu](images/zendesk_internal_guide_support_stats.png)
+
+| OPTION | DESCRIPTION |
+| :---: | --- |
+| 1 | Select this menu to access **Reporting** or from the main menu select [**Explore**](#main_menu) |
+| 2 | Select the **Support** tab |
+| 3 | Navigate to different metrics |
+| 4 | Apply different filters |
+| 5 | Modify the **time** filter |
+| 6 | To view the same thing but from the **Explore** menu |
+
+### How to Create an Article
 
 ### Sections
 
@@ -213,6 +226,7 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 
 
 
+<p id="diskover_community"></p>
 
 ___
 ## Gather | Diskover Community 
@@ -298,11 +312,6 @@ ___
 
 [what](#customize_site)
 
-___
-## Zendesk Administrative Contact
-___
-
-<a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need support with Zendesk">Email us</a> if you need support with Zendesk or any other Zendesk-related inquiries.
 
 ___
 ## Create a Zendesk Account

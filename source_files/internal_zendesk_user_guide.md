@@ -57,7 +57,7 @@ When you select an option from that menu, it will open a whole other menu with m
 | **Gather** 📕 | Diskover Community forum | Where users can post and request features |
 | **Chat** | Live Chat and Messaging | Not currently in use |
 | **Talk** | Voice | Not currently in use |
-| <p id="explore"></p> **Explore** 📕 | Reporting and Analytics | No custom report at the moment, standard reports only for now |
+| < id="explore"> **Explore** 📕 | Reporting and Analytics | No custom report at the moment, standard reports only for now |
 | **Sell** | Sales CRM | Not currently in use |
 | **Workforce management** | Direct Access to Zendesk Website | Great for further help than what is covered in this guide |
 | **Admin Center** 📕 | Account Settings | Where to set up users, forms, fields used in forms, etc. |

@@ -50,6 +50,8 @@ When you select an option from that menu, it will open a whole other menu with m
 
  📕 *Documented in this guide*
 
+<p id="main_menu"></p>
+
 | MENU | PURPOSE | DESCRIPTION |
 | :---: | --- | --- |
 | **Support** 📕 | Support Tickets | Workspace for tickets management: view, assign, status |
@@ -57,7 +59,7 @@ When you select an option from that menu, it will open a whole other menu with m
 | **Gather** 📕 | Diskover Community forum | Where users can post and request features |
 | **Chat** | Live Chat and Messaging | Not currently in use |
 | **Talk** | Voice | Not currently in use |
-| < id="explore"> **Explore** 📕 | Reporting and Analytics | No custom report at the moment, standard reports only for now |
+| **Explore** 📕 | Reporting and Analytics | No custom report at the moment, standard reports only for now |
 | **Sell** | Sales CRM | Not currently in use |
 | **Workforce management** | Direct Access to Zendesk Website | Great for further help than what is covered in this guide |
 | **Admin Center** 📕 | Account Settings | Where to set up users, forms, fields used in forms, etc. |
@@ -176,7 +178,7 @@ Support metrics will grow over time, but you can already refer to basic informat
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
-| 1 | Select this menu to access **Reporting** or from the main menu select [**Explore**](#explore) |
+| 1 | Select this menu to access **Reporting** or from the main menu select [**Explore**](#main_menu) |
 | 2 | Select the **Support** tab |
 | 3 | Navigate to different metrics |
 | 4 | Apply different filters |

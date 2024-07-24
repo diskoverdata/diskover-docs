@@ -123,7 +123,7 @@ In addition to the main view above, the second option on the left is another pro
 | 3 | To search for a contact |
 | 4 | Click on a name to open and see all related information and tickets associated with that contact |
 
-🔴 &nbsp;When you open the profile of a user:
+🔴 &nbsp;When you open a user profile:
 
 ![Image: Zendesk Menu](images/zendesk_internal_guide_manage_profile_user.png)
 

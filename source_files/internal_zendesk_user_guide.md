@@ -205,9 +205,26 @@ A(Troubleshooting)
     B --> C (es 1)
     B --> D (es 2)
     A --> B(Diskover-Web)
+    B --> E (dw 1)
+    B --> F (dw 2)
+```
+
+
+
+
+
+
+```mermaid
+graph LR
+A(Troubleshooting)
+    A --> B(Elasticsearch)
+    B --> C (es 1)
+    B --> D (es 2)
+    A --> B(Diskover-Web)
     B --> C (dw 1)
     B --> D (dw 2)
 ```
+
 
 
 

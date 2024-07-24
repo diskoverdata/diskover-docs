@@ -193,16 +193,20 @@ This is where all our troubleshooting and other articles live and "how to access
 
 ```mermaid
 graph LR
-A(Category) -->B(Section) -->C(Article)
-```
-
-
-```mermaid
-graph LR
 A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->C(CATEGORY)
 ```
 
+### Articles
 
+
+### Sections
+
+
+### Categories
+
+<a id=“customize_site”></a>
+
+### Themes
 
 
 
@@ -285,8 +289,11 @@ Does documentation exist for this issue: This field is the newest addition and w
 
 
 
+___
+## Site Theme Customization
+___
 
-
+[what](#customize_site)
 
 ___
 ## Zendesk Administrative Contact

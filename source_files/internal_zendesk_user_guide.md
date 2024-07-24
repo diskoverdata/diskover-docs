@@ -88,7 +88,7 @@ This section is mainly used by engineers, so you will undoubtedly find your way 
 | 10 | Statistics about support tickets, not configured yet |
 | 11 | Link to redirect you to the **Admin Center** where live all settings related to the Zendesk platform |
 
-### Manual Ticket Creation
+### Manual Support Ticket Creation
 
 Especially during the transition between email support to Zendesk, you may have to create tickets manually. Wherever you are in the **Support** menu, you'll see the **+Add** option at the left top corner. Note that more than just a ticket creation option will be offered:
 
@@ -100,7 +100,7 @@ Especially during the transition between email support to Zendesk, you may have 
 
 ![Image: Zendesk Menu](images/zendesk_internal_guide_ticket_manual_creation.png)
 
-### Tickets Management
+### Support Tickets Management
 
 In addition to the main view above, the second option on the left is another productive way to view and manage the tickets.
 
@@ -114,7 +114,9 @@ In addition to the main view above, the second option on the left is another pro
 | 4 | Add filters to the filtered view |
 | 5 | When no tickets are selected, you have more options like exporting as CSV, editing, or cloning the view |
 
-### Create a Customer Profile (User)
+### Manage Customer Profiles (User)
+
+🔶⚠️📌&nbsp;Depending on your Zendesk account access, you will be able to view, create, and/or modify user profiles.
 
 🔴 &nbsp;You shouldn't have to do much of that, as users need to create an account before they can submit a ticket:
 
@@ -140,7 +142,9 @@ In addition to the main view above, the second option on the left is another pro
 | 5 | Take different actions on the profile |
 | 6 | If no **organization**/domain exists for that contact in Zendesk, you can add it from there |
 
-### Create an Organization Profile (Company)
+### Manage Organization Profile (Company)
+
+🔶⚠️📌&nbsp;Depending on your Zendesk account access, you will be able to view, create, and/or modify user profiles.
 
 🔴 &nbsp;You shouldn't have to do much of that as most accounts have been pre-populated or are created automatically when a new user creates an account. But in case you do need to manually add a customer/domain:
 
@@ -153,6 +157,18 @@ In addition to the main view above, the second option on the left is another pro
 | 3 | Start the manual profile creation here for a company/domain |
 | 4 | Click on a name to open and see all related information and tickets associated with that company |
 
+🔴 &nbsp;When you open a user profile:
+
+![Image: Zendesk Menu](images/zendesk_internal_guide_manage_profile_user.png)
+
+| OPTION | DESCRIPTION |
+| :---: | --- |
+| 1 | See and edit the profile information |
+| 2 | See tickets associated with that contact |
+| 3 | Manually create a ticket for that contact |
+| 4 | Navigate to different views |
+| 5 | Take different actions on the profile |
+| 6 | If no **organization**/domain exists for that contact in Zendesk, you can add it from there |
 
 ___
 ## Guide | Knowledge Base Management

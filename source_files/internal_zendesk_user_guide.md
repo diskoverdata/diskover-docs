@@ -19,7 +19,7 @@ Zendesk is highly configurable, and offers hundreds of menus and sub-menus and s
 
 **👎🏼 What this guide is not:** This guide is not intended to be an all-encompassing Zendesk guide and/or address all the exhaustive administrative options.
 
-### Links to Share
+### Links
 
 | USE | PURPOSE | LINK |
 | --- | --- | --- |
@@ -54,7 +54,7 @@ When you select an option from that menu, it will open a whole other menu with m
 | **Workforce management** | Direct Access to Zendesk Website | Great for further help than what is covered in this guide |
 | **Admin Center** 📕 | Account Settings | Where to set up users, forms, fields used in forms, etc. |
 
-When you select an option from that menu, it will open a whole other set of menus and sub-menus on the left particular to that subject.
+When you select an option from that main menu, a whole other set of menus and sub-menus, particular to that subject, will open on the left.
 
 ___
 ## Support | Tickets Management
@@ -82,19 +82,36 @@ This section is mainly used by engineers, so you will undoubtedly find your way 
 
 ### Manual Ticket Creation
 
-Especially during the transition between email support and Zendesk, you may have to create tickets manually. Wherever you are in the **Support** menu, you'll see the **+Add** option at the left top corner. Note that more than a ticket creation option will be offered:
+Especially during the transition between email support to Zendesk, you may have to create tickets manually. Wherever you are in the **Support** menu, you'll see the **+Add** option at the left top corner. Note that more than just a ticket creation option will be offered:
 
 ![Image: Zendesk Menu](images/zendesk_internal_guide_support_add_options.png)
 
+🔴 &nbsp;Fill out all the fields with as much information as possible. An **asterisk** denotes a required field. 
+
+🔴 &nbsp;Before clicking on **Submit as New**, you can apply a different status than **New** to the ticket if applicable using the arrow beside the button.
+
+![Image: Zendesk Menu](images/zendesk_internal_guide_ticket_manual_creation.png)
+
+### Tickets Management
+
+Besides the main view above, another productive way to manage and view the tickets is by using the second option in the left blue column. From there, you can:
+
+![Image: Zendesk Menu](images/zendesk_internal_guide_ticket_management.png)
+
+| OPTION | DESCRIPTION |
+| :---: | --- |
+| 1 | See tickets filtered in different ways |
+| 2 | Filters/views can be added, deleted, modified |
+| 3 | Take action on a single or multiple tickets, at least one needs to be selected to view these options |
+| 4 | Add filters to the filtered view |
+| 5 | When no tickets are selected, you have more options like exporting as CSV, editing, or cloning the view |
+
+### Create a Customer Profile (User)
 
 
 
 
-### Create a Customer/Contact Profile
-
-
-
-### Create an Organization/Company Profile
+### Create an Organization Profile (Company)
 
 
 

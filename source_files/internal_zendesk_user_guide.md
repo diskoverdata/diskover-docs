@@ -172,7 +172,7 @@ In addition to the main view above, the second option on the left is another pro
 | 3 | Navigate to different views |
 | 4 | Take different actions on the profile |
 
-# Support Reporting
+# Support Tickets Reporting
 
 Support metrics will grow over time, but you can already refer to basic information. Some numbers and parts of graphics are clickable to see the details, a little bit like Diskover!
 

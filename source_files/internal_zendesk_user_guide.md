@@ -207,7 +207,41 @@ graph LR
 A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->C(CATEGORY)
 ```
 
+### Categories Management
+
+🔴 &nbsp;Start with familiaring yourself with the construct of the Diskover **categories**, **sections**, and **articles**. This will help greatly when you [create an **article**](#create_article).
+
+🔴 &nbsp;This menu allows you to view the **categories**. Click twice to see the **sections** inside a **category**.
+
+![Image: Zendesk Menu](images/zendesk_internal_guide_guide_manage_categories.png)
+
+| OPTION | DESCRIPTION |
+| :---: | --- |
+| 1 | It says **Arrange articles** but what you see at first are **categories** |
+| 2 | This is to view/moderate the posts and feature requests from the [**Diskover Community** Space](#diskover_community) |
+| 3 | Using [tags](#tags_management) when creating articles makes it easier for users to search content |
+| 4 | Double click on a **category** to see the **sections** contained in that category |
+| 5 | Click on those 3 dots to edit a category |
+| 6 | Grab and move the dots to change the order of **categories** |
+
+### Sections Management
+
+🔴 &nbsp;When you double-click on a **category** as explained above, you will see the **section(s)** inside that **category**. 
+
+![Image: Zendesk Menu](images/zendesk_internal_guide_guide_manage_sections.png)
+
+| OPTION | DESCRIPTION |
+| :---: | --- |
+| 1 | The **sections** you see are all part of this **category** |
+| 2 | Grab and move the dots to change the order of **categories** |
+| 3 | Click on those 3 dots to edit a category |
+| 4 | Double click on a **category** to see the **sections** contained in that category |
+| 5 | Click on those 3 dots to edit a category |
+| 6 | Grab and move the dots to change the order of **categories** |
+
 ### Articles Management
+
+🔴 &nbsp;This menu allows you to view all **articles**, open, edit, and archive them.
 
 ![Image: Zendesk Menu](images/zendesk_internal_guide_guide_manage_articles.png)
 
@@ -215,18 +249,54 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 | :---: | --- |
 | 1 | To see the list of all articles, drafts or published |
 | 2 | That view will show you all the last additions, edits, etc. and who did it when |
-| 3 | Search articles using key words |
+| 3 | Search articles using keywords |
 | 4 | Apply filters to your search |
 | 5 | Open any article just by clicking on one |
 | 6 | Add columns to your current view (dates, author, etc.) |
 
+<p id="edit_article"></p>
 
-### How to Create an Article
+### Edit an Article
 
-### Sections
+🔴 &nbsp;Double-click on any article as explained above.
+
+![Image: Zendesk Menu](images/zendesk_internal_guide_guide_edit_articles.png)
+
+| OPTION | DESCRIPTION |
+| :---: | --- |
+| 1 | Use these tools to format your content |
+| 2 | That view will show you all the last additions, edits, etc. and who did it when |
+| 3 | Search articles using keywords |
+| 4 | Apply filters to your search |
+| 5 | Open any article just by clicking on one |
+| 6 | Add columns to your current view (dates, author, etc.) |
+
+🔶
+markdown doesn't work
+
+<pre><code id="codeSnippet">cd /var/www/diskover-web/public/tasks
+ls *.json
+tasklog.json    tasks.json  templates.json  workers.json
+</code></pre>
 
 
-### Categories
+<p id="create_content"></p>
+
+### Create an Article, Section, or Category
+
+<p id="tags_management"></p>
+
+### Tags Management
+
+
+
+
+
+### Community Content Management and Moderation
+
+
+
+
 
 
 <p id="customize_site"></p>

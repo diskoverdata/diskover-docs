@@ -13,9 +13,9 @@ The task panel can be used to schedule building indices or running any type of f
 
 Diskover has a distributed task system where workers can be distributed among many resources. For each resource providing a task worker, services will need to have  **diskoverd**  installed. Please refer to instructions on how to set up the the  **diskoverd** task service in the [Diskover Installation Guide - Setting Up Diskover Task Worker Daemon](https://docs.diskoverdata.com/diskover_installation_guide/#setting-up-diskover-task-worker-daemon). This section will describe setting up both indexing and custom tasks within the Diskover-Web Task Panel.
 
-![Image: Diskover Architecture Reference Diagram](images/diagram_diskover_architecture_reference_generic_with_border.png)
+![Image: Diskover Architecture Reference Diagram](images/diagram_diskover_architecture_config_2024072401.png)
 
-_[Click here for a full view of the diagram.](images/diagram_diskover_architecture_reference_generic_with_border.png)_
+_[Click here for a full view of the diagram.](images/diagram_diskover_architecture_config_2024072401.png)_
 
 ___
 ### Validate Task Management System has Task Worker(s)

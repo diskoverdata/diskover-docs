@@ -46,7 +46,7 @@ There is a **four squares** icon next to your profile in the top right corner. T
 
 ![Image: Zendesk Menu](images/zendesk_internal_guide_main_menu.png)
 
-⚠️&nbsp;When you select an option from that menu, it will open a whole other menu with multiple sub-menus on the left. Only the necessary ones for the daily use of Zendesk are explained in the subsequent sections of this guide.
+🔶&nbsp;When you select an option from that menu, it will open a whole other menu with multiple sub-menus on the left. Only the necessary ones for the daily use of Zendesk are explained in the subsequent sections of this guide.
 
  📕 *Documented in this guide*
 
@@ -120,7 +120,7 @@ In addition to the main view above, the second option on the left is another pro
 
 ### Manage Customer Profiles (User)
 
-⚠️&nbsp;Depending on your Zendesk account access, you will be able to view, create, and/or modify user profiles.
+🔶&nbsp;Depending on your Zendesk account access, you will be able to view, create, and/or modify user profiles.
 
 🔴 &nbsp;You shouldn't have to do much of that, as users need to create an account before they can submit a ticket:
 
@@ -148,7 +148,7 @@ In addition to the main view above, the second option on the left is another pro
 
 ### Manage Organization Profile (Company)
 
-⚠️&nbsp;Depending on your Zendesk account access, you will be able to view, create, and/or modify company profiles.
+🔶&nbsp;Depending on your Zendesk account access, you will be able to view, create, and/or modify company profiles.
 
 🔴 &nbsp;You shouldn't have to do much of that as most accounts have been pre-populated or are created automatically when a new user creates an account. But in case you do need to manually add a customer/domain:
 
@@ -264,15 +264,15 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
-| 1 | Use these tools to format your content |
-| 2 | That view will show you all the last additions, edits, etc. and who did it when |
-| 3 | Search articles using keywords |
-| 4 | Apply filters to your search |
-| 5 | Open any article just by clicking on one |
+| 1 | Click on the pencil to edit the **title** of the article and make sure it's very descriptive and easy to understand the purpose of the article |
+| 2 | Plain text is easy to do but if you want to **write codes** see # 5 and 6 below.<br><br>🔶 &nbsp;Zendesk doesn't seem to understand Markdown formatting, but is HTML friendly. |
+| 3 | Text formatting tools |
+| 4 | This will open the body of the text in code format, which you may need for code formatting as the platform tends to be confused sometimes:<br><br>To put a word(s) in a sentence in code format: ** |
+| 5 | for users to easily copy, then see below. There is no way unfortunately in Zendesk to have a copy icon show up, but user can click once in a code block and that will select all the text automatically: **<code>~/insert content here</code>** |
 | 6 | Add columns to your current view (dates, author, etc.) |
 
 🔶
-markdown doesn't work
+
 
 <pre><code id="codeSnippet">cd /var/www/diskover-web/public/tasks
 ls *.json
@@ -297,11 +297,19 @@ tasklog.json    tasks.json  templates.json  workers.json
 
 
 
+### Switch from User to Admin View
 
 
-<p id="customize_site"></p>
 
-### Themes
+### Switch from Admin to User View
+
+
+
+
+
+
+
+
 
 
 
@@ -328,9 +336,19 @@ ___
 
 ### Overview
 
+
+<p id="customize_site"></p>
+
+___
+## Themes
+___
+
 ___
 ## Admin Center
 ___
+
+
+
 
 ### Users
 

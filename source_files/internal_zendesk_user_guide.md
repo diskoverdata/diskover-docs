@@ -268,7 +268,7 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 | 2 | Plain text is easy to do but if you want to **write codes** see # 5 and 6 below.<br><br>🔶 &nbsp;Zendesk doesn't seem to understand Markdown formatting, but is HTML friendly. |
 | 3 | Text formatting tools |
 | 4 | This will open the body of the text in code format, which you may need for code formatting as the platform tends to be confused sometimes:<br><br>To put a word(s) in a sentence in code format: ** |
-| 5 | for users to easily copy, then see below. There is no way unfortunately in Zendesk to have a copy icon show up, but user can click once in a code block and that will select all the text automatically: **<code>~/insert content here</code>** |
+| 5 | for users to easily copy, then see below. There is no way unfortunately in Zendesk to have a copy icon show up, but user can click once in a code block and that will select all the text automatically: **``<code>insert content here</code>``** |
 | 6 | Add columns to your current view (dates, author, etc.) |
 
 🔶

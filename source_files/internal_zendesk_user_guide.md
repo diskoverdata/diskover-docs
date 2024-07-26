@@ -70,7 +70,7 @@ ___
 
 ### How to Get Here
 
-![Image: Zendesk Support Sub-Menu](images/zendesk_internal_guide_menu_support.png)
+<img src="images/zendesk_internal_guide_menu_support.png" width="300">
 
 ### Overview
 
@@ -193,7 +193,7 @@ ___
 
 ### How to Get Here
 
-![Image: Zendesk Guide Sub-Menu](images/zendesk_internal_guide_menu_guide.png)
+<img src="images/zendesk_internal_guide_menu_guide.png" width="300">
 
 ### Overview
 
@@ -239,6 +239,8 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 | 5 | Click on those 3 dots to edit a category |
 | 6 | Grab and move the dots to change the order of **categories** |
 
+<p id="article_management"></p>
+
 ### Articles Management
 
 🔴 &nbsp;This menu allows you to view all **articles**, open, edit, and archive them.
@@ -265,6 +267,8 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 
 <img src="images/zendesk_internal_guide_guide_create_category.png" width="250">
 
+🔴 &nbsp;Fill out the new **Category** information:
+
 ![Image: Zendesk Create a Category](images/zendesk_internal_guide_guide_create_category_how.png)
 
 | OPTION | DESCRIPTION |
@@ -273,9 +277,6 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 | 2 | Enter a **description** - optional |
 | 3 | **Save** to add your new category |
 
-
-🔴 &nbsp;Fill out 
-
 <p id="create_section"></p>
 
 ### Create a Section
@@ -283,11 +284,22 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 🔴 &nbsp;From any sub-menu in the **Guide** menu, you will see this **Add** menu at the top left corner:
 
 1. Click on the down arrow beside it.
-2. Select **Category**.
+2. Select **Section**.
 
 <img src="images/zendesk_internal_guide_guide_create_section.png" width="250">
 
-🔴 &nbsp;Fill out 
+🔴 &nbsp;Fill out the new **Section** information:
+
+![Image: Zendesk Create a Category](images/zendesk_internal_guide_guide_create_section_how.png)
+
+| OPTION | DESCRIPTION |
+| :---: | --- |
+| 1 | Enter the name of the new **Section** you want to create |
+| 2 | Enter a **description** - optional |
+| 3 | Select **Manually** |
+| 4 | Select **Manually** |
+| 5 | Select the **Category** in which you want that **Section** to live |
+| 6 | **Save** to add your new category |
 
 <p id="create_article"></p>
 
@@ -296,42 +308,47 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 🔴 &nbsp;From any sub-menu in the **Guide** menu, you will see this **Add** menu at the top left corner:
 
 1. Click on the down arrow beside it.
-2. Select **Category**.
+2. Select **Article**.
 
 <img src="images/zendesk_internal_guide_guide_create_article.png" width="250">
 
+🔴 &nbsp;Fill out the new **Article** information - Here you see an example of a created article:
 
-
-
+<p id="article_formatting"></p>
 
 ![Image: Zendesk Articles Formatting](images/zendesk_internal_guide_guide_article_formatting.png)
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
 | 1 | Click on the pencil to edit the **title** of the article and make sure it's very descriptive and easy to understand the purpose of the article |
-| 2 | Plain text is easy to do but if you want to **write codes** see # 5 and 6 below.<br>🔶 &nbsp;Zendesk doesn't seem to understand Markdown formatting, but is HTML friendly |
-| 3 | Text formatting tools:<ul><li>There are no formal guidelines to follow, for now anyway.</li><li>We recommend you look at other articles and follow the same/similar formatting.</li><li>Make sure that articles are nice and easy to read.</li><li>Share your formatting ideas with the team!</li></ul> |
-| 4 | This will open the body of the text in **source code format**, which you may need to do sometimes, especially for code formatting. Zendesk sometimes wants to include too much or too little of the text. This way you'll have perfect control |
+| 2 | Plain text is easy to do but if you want to **write codes** see # 5 and 6 below.<br>🔶 &nbsp;Zendesk doesn't understand Markdown formatting, but is HTML friendly |
+| 3 | Text formatting tools:<ul><li>There are no formal guidelines to follow, for now anyway:</li><li>We recommend you look at other articles and follow the same/similar formatting.</li><li>Make sure that articles are nice and easy to read.</li><li>Share your formatting ideas with the team!</li></ul> |
+| 4 | This will open the body of the text in **source code format**, which you may need to do sometimes, especially for code formatting. Zendesk sometimes wants to include too much or too little of the codes. This way you'll have perfect control, see # 5 and #6. |
 | 5 | Unfortunately, Zendesk doesn't offer a copy icon for codes like we have in our GitHub docs, but users can click once in a code block which will select all the text automatically, then they can just copy the whole code content.<ul><li>You should be able to click the **code block** option in the formatting menu and that should create a code block.</li><li>If you can't get this to work the way you want, open the source code format as per #4 and use the following:<br><br>**``<pre><code id="codeSnippet">first line of code``<br>``second line of code``<br>``third line of code</code></pre>``**<br><br>This is what the results will be:<br><img src="images/zendesk_internal_guide_guide_code_block.png" width="800"></li></ul> |
 | 6 | If you want to show only part of a sentence as codes:<ul><li>Open the source code format as per #4</li><li>Use the following:<br><br> This is an example of how to **``<code>insert code here</code>``** in a sentence.<br><br>This is what the results will be:<br><img src="images/zendesk_internal_guide_guide_code_block_in_sentence.png" width="500"></li></ul> |
 | 7 | As of July 2024, there is only the **Administrators** category of **Management Permissions** so there is nothing to edit here for now, but you can check it out anyway by clicking on the forward arrow |
-| 8 | Either you're creating or editing an article you should always review this panel, start by clicking on the forward arrow:<ul><li>item1</li><li>item2</li></ul> | 
-| 9 | Save, save, save! | 
-| 10 | view as a user |
-
-🔶
-
-
+| 8 | Whether you're creating or editing an article, you should always review this panel, go to [**Article Placement**](#article_placement) section for more information | 
+| 9 | Save, save, save!<ul><li>This will save your modifications if you're editing an existing article</li><li>If you are creating a new article, this will save a draft only, see #11 if you are ready to publish</li></ul> | 
+| 10 | Click the **View** button to see how your article will look for end users. When you are done and want to go back to the admin view click **Guide admin**:<br>![Image: Zendesk Create a Category](images/zendesk_internal_guide_guide_go_to_admin_view.png) |
+| 11 | Click the arrow and select **Publish** for the public to see your article - it's easy to see the status of an article:<ul><li>Green = Published</li><li>White = Draft</li></ul><br><img src="images/zendesk_internal_guide_guide_article_status.png" width="600">
 
 <p id="edit_article"></p>
 
 ### Edit an Existing Article
 
-there are many ways to go the list of existingt articles
+🔴 &nbsp;Double-click on an [existing article](#article_management).
 
-🔴 &nbsp;Double-click on any article as explained above.
+🔴 &nbsp;Follow these [instructions and formatting guideline](#article_formatting).
+
+🔴 &nbsp;Follow these [article placement instructions](#article_placement)
 
 
+<p id="article_placement"></p>
+
+### Article Placement
+
+
+<img src="images/zendesk_internal_guide_guide_article_placement.png" width="500">
 
 
 <p id="tags_management"></p>
@@ -339,6 +356,16 @@ there are many ways to go the list of existingt articles
 ### Tags Management
 
 
+
+
+
+
+🔶
+
+
+
+
+<ul><li>item1</li><li>item2</li></ul>
 
 
 
@@ -385,7 +412,8 @@ ___
 
 ### How to Get Here
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_menu_explore.png)
+<img src="images/zendesk_internal_guide_menu_explore.png" width="300">
+
 
 ### Overview
 

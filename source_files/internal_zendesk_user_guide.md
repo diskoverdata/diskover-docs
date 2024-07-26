@@ -44,7 +44,7 @@ ___
 
 There is a **four squares** icon next to your profile in the top right corner. That icon is where to click to access the **main menu**, it is your "home" button to navigate between the different main  
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_main_menu.png)
+![Image: Zendesk Main Menu](images/zendesk_internal_guide_main_menu.png)
 
 🔶&nbsp;When you select an option from that menu, it will open a whole other menu with multiple sub-menus on the left. Only the necessary ones for the daily use of Zendesk are explained in the subsequent sections of this guide.
 
@@ -70,13 +70,13 @@ ___
 
 ### How to Get Here
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_menu_support.png)
+![Image: Zendesk Support Sub-Menu](images/zendesk_internal_guide_menu_support.png)
 
 ### Overview
 
 This section is mainly used by engineers, so you will undoubtedly find your way around it.
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_tickets_main_view.png)
+![Image: Zendesk Support Ticket Global View](images/zendesk_internal_guide_tickets_main_view.png)
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
@@ -96,19 +96,19 @@ This section is mainly used by engineers, so you will undoubtedly find your way 
 
 Especially during the transition between email support to Zendesk, you may have to create tickets manually. Wherever you are in the **Support** menu, you'll see the **+Add** option at the left top corner. Note that more than just a ticket creation option will be offered:
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_support_add_options.png)
+![Image: Zendesk Manual Ticket Creation](images/zendesk_internal_guide_support_add_options.png)
 
 🔴 &nbsp;Fill out all the fields with as much information as possible. An **asterisk** denotes a required field. 
 
 🔴 &nbsp;Before clicking on **Submit as New**, you can apply a different status than **New** to the ticket if applicable using the arrow beside the button.
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_ticket_manual_creation.png)
+![Image: Zendesk Manual Ticket Creation](images/zendesk_internal_guide_ticket_manual_creation.png)
 
 ### Support Tickets Management
 
 In addition to the main view above, the second option on the left is another productive way to view and manage the tickets.
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_ticket_management.png)
+![Image: Zendesk Tickets Management](images/zendesk_internal_guide_ticket_management.png)
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
@@ -124,7 +124,7 @@ In addition to the main view above, the second option on the left is another pro
 
 🔴 &nbsp;You shouldn't have to do much of that, as users need to create an account before they can submit a ticket:
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_create_profile_user.png)
+![Image: Zendesk Create User Profile](images/zendesk_internal_guide_create_profile_user.png)
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
@@ -135,7 +135,7 @@ In addition to the main view above, the second option on the left is another pro
 
 🔴 &nbsp;When you open a user profile:
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_manage_profile_user.png)
+![Image: Zendesk Manage User Profile](images/zendesk_internal_guide_manage_profile_user.png)
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
@@ -152,7 +152,7 @@ In addition to the main view above, the second option on the left is another pro
 
 🔴 &nbsp;You shouldn't have to do much of that as most accounts have been pre-populated or are created automatically when a new user creates an account. But in case you do need to manually add a customer/domain:
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_create_profile_company.png)
+![Image: Zendesk Create Company Profile](images/zendesk_internal_guide_create_profile_company.png)
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
@@ -163,7 +163,7 @@ In addition to the main view above, the second option on the left is another pro
 
 🔴 &nbsp;When you open a user profile:
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_manage_profile_company.png)
+![Image: Zendesk Manage Company Profile](images/zendesk_internal_guide_manage_profile_company.png)
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
@@ -176,7 +176,7 @@ In addition to the main view above, the second option on the left is another pro
 
 Support metrics will grow over time, but you can already refer to basic information. Some numbers and parts of graphics are clickable to see the details, a little bit like Diskover!
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_support_stats.png)
+![Image: Zendesk Support Stats](images/zendesk_internal_guide_support_stats.png)
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
@@ -193,7 +193,7 @@ ___
 
 ### How to Get Here
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_menu_guide.png)
+![Image: Zendesk Guide Sub-Menu](images/zendesk_internal_guide_menu_guide.png)
 
 ### Overview
 
@@ -213,7 +213,7 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 
 🔴 &nbsp;This menu allows you to view the **categories**. Click twice to see the **sections** inside a **category**.
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_guide_manage_categories.png)
+![Image: Zendesk Categories Management](images/zendesk_internal_guide_guide_manage_categories.png)
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
@@ -228,7 +228,7 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 
 🔴 &nbsp;When you double-click on a **category** as explained above, you will see the **section(s)** inside that **category**. 
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_guide_manage_sections.png)
+![Image: Zendesk Sections Management](images/zendesk_internal_guide_guide_manage_sections.png)
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
@@ -243,7 +243,7 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 
 🔴 &nbsp;This menu allows you to view all **articles**, open, edit, and archive them.
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_guide_manage_articles.png)
+![Image: Zendesk Articles Management](images/zendesk_internal_guide_guide_manage_articles.png)
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
@@ -251,42 +251,88 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 | 2 | That view will show you all the last additions, edits, etc. and who did it when |
 | 3 | Search articles using keywords |
 | 4 | Apply filters to your search |
-| 5 | Open any article just by clicking on one |
-| 6 | Add columns to your current view (dates, author, etc.) |
+| 5 | Open any article just by clicking on one, follow [these instructions to edit an article](#edit_article) |
+| 6 | Add columns to your current view (dates, author, etc.) for better browsing and filtering |
 
-<p id="edit_article"></p>
+<p id="create_category"></p>
 
-### Edit an Article
+### Create a Category
 
-🔴 &nbsp;Double-click on any article as explained above.
+🔴 &nbsp;From any sub-menu in the **Guide** menu, you will see this **Add** menu at the top left corner:
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_guide_edit_articles.png)
+1. Click on the down arrow beside it.
+2. Select **Category**.
+
+<img src="images/zendesk_internal_guide_guide_create_category.png" width="500">
+
+![Image: Zendesk Create a Category](images/zendesk_internal_guide_guide_create_category_how.png.png)
+
+| OPTION | DESCRIPTION |
+| :---: | --- |
+| 1 | Enter the name of the new **Category** you want to create |
+| 2 | Enter a **description** - optional |
+| 3 | **Save** to add your new category |
+
+
+🔴 &nbsp;Fill out 
+
+<p id="create_section"></p>
+
+### Create a Section
+
+🔴 &nbsp;From any sub-menu in the **Guide** menu, you will see this **Add** menu at the top left corner:
+
+1. Click on the down arrow beside it.
+2. Select **Category**.
+
+<img src="images/zendesk_internal_guide_guide_create_section.png" width="500">
+
+🔴 &nbsp;Fill out 
+
+<p id="create_article"></p>
+
+### Create an Article
+
+🔴 &nbsp;From any sub-menu in the **Guide** menu, you will see this **Add** menu at the top left corner:
+
+1. Click on the down arrow beside it.
+2. Select **Category**.
+
+<img src="images/zendesk_internal_guide_guide_create_article.png" width="500">
+
+
+
+
+
+![Image: Zendesk Articles Formatting](images/zendesk_internal_guide_guide_article_formatting.png)
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
 | 1 | Click on the pencil to edit the **title** of the article and make sure it's very descriptive and easy to understand the purpose of the article |
-| 2 | Plain text is easy to do but if you want to **write codes** see # 5 and 6 below.<br>🔶 &nbsp;Zendesk doesn't seem to understand Markdown formatting, but is HTML friendly. |
+| 2 | Plain text is easy to do but if you want to **write codes** see # 5 and 6 below.<br>🔶 &nbsp;Zendesk doesn't seem to understand Markdown formatting, but is HTML friendly |
 | 3 | Text formatting tools:<ul><li>There are no formal guidelines to follow, for now anyway.</li><li>We recommend you look at other articles and follow the same/similar formatting.</li><li>Make sure that articles are nice and easy to read.</li><li>Share your formatting ideas with the team!</li></ul> |
-| 4 | This will open the body of the text in **source code format**, which you may need to do sometimes, especially for code formatting. Zendesk sometimes wants to include too much or too little of the text. This way you'll have perfect control. |
-| 5 | Unfortunately, Zendesk doesn't offer a copy icon for codes like we have in our GitHub docs, but users can click once in a code block which will select all the text automatically, then they can just copy the whole code content.<ul><li>You should be able to click the **code block** option in the formatting menu and that should create a code block.</li><li>If you can't get this to work the way you want, open the source code format as per #4 and use the following:<br><br>**``<pre><code id="codeSnippet">first line of code``<br>``second line of code``<br>``third line of code</code></pre>``**<br><br>This is what the results will be:<br><img src="images/zendesk_internal_guide_guide_code_block.png" width="700"></li></ul> |
-| 6 | If you want to show only part of a sentence as codes:<ul><li>Open the source code format as per #4</li><li>Use the following:<br><br> This is an example of how to **``<code>insert code here</code>``** in a sentence.<br><br>This is what the results will be:<br><img src="images/zendesk_internal_guide_guide_code_block_in_sentence.png" width="400"></li></ul> |
-| 7 | permissions |
-| 8 | Placement | 
-| 9 | Save! | 
+| 4 | This will open the body of the text in **source code format**, which you may need to do sometimes, especially for code formatting. Zendesk sometimes wants to include too much or too little of the text. This way you'll have perfect control |
+| 5 | Unfortunately, Zendesk doesn't offer a copy icon for codes like we have in our GitHub docs, but users can click once in a code block which will select all the text automatically, then they can just copy the whole code content.<ul><li>You should be able to click the **code block** option in the formatting menu and that should create a code block.</li><li>If you can't get this to work the way you want, open the source code format as per #4 and use the following:<br><br>**``<pre><code id="codeSnippet">first line of code``<br>``second line of code``<br>``third line of code</code></pre>``**<br><br>This is what the results will be:<br><img src="images/zendesk_internal_guide_guide_code_block.png" width="800"></li></ul> |
+| 6 | If you want to show only part of a sentence as codes:<ul><li>Open the source code format as per #4</li><li>Use the following:<br><br> This is an example of how to **``<code>insert code here</code>``** in a sentence.<br><br>This is what the results will be:<br><img src="images/zendesk_internal_guide_guide_code_block_in_sentence.png" width="500"></li></ul> |
+| 7 | As of July 2024, there is only the **Administrators** category of **Management Permissions** so there is nothing to edit here for now, but you can check it out anyway by clicking on the forward arrow |
+| 8 | Either you're creating or editing an article you should always review this panel, start by clicking on the forward arrow:<ul><li>item1</li><li>item2</li></ul> | 
+| 9 | Save, save, save! | 
 | 10 | view as a user |
 
 🔶
 
 
-<pre><code id="codeSnippet">cd /var/www/diskover-web/public/tasks
-ls *.json
-tasklog.json    tasks.json  templates.json  workers.json
-</code></pre>
+
+<p id="edit_article"></p>
+
+### Edit an Existing Article
+
+there are many ways to go the list of existingt articles
+
+🔴 &nbsp;Double-click on any article as explained above.
 
 
-<p id="create_content"></p>
 
-### Create an Article, Section, or Category
 
 <p id="tags_management"></p>
 

@@ -348,7 +348,7 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 ### Article Placement
 
 
-<img src="images/zendesk_internal_guide_guide_article_placement.png" width="500">
+<img src="images/zendesk_internal_guide_guide_article_placement.png" width="300">
 
 
 <p id="tags_management"></p>

@@ -265,11 +265,15 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 | OPTION | DESCRIPTION |
 | :---: | --- |
 | 1 | Click on the pencil to edit the **title** of the article and make sure it's very descriptive and easy to understand the purpose of the article |
-| 2 | Plain text is easy to do but if you want to **write codes** see # 5 and 6 below.<br><br>🔶 &nbsp;Zendesk doesn't seem to understand Markdown formatting, but is HTML friendly. |
-| 3 | Text formatting tools |
-| 4 | This will open the body of the text in code format, which you may need for code formatting as the platform tends to be confused sometimes:<br><br>To put a word(s) in a sentence in code format: ** |
-| 5 | for users to easily copy, then see below. There is no way unfortunately in Zendesk to have a copy icon show up, but user can click once in a code block and that will select all the text automatically: **``<code>insert content here</code>``** |
-| 6 | Add columns to your current view (dates, author, etc.) |
+| 2 | Plain text is easy to do but if you want to **write codes** see # 5 and 6 below.<br>🔶 &nbsp;Zendesk doesn't seem to understand Markdown formatting, but is HTML friendly. |
+| 3 | Text formatting tools:<ul><li>There are no formal guidelines to follow, for now anyway.</li><li>We recommend you look at other articles and follow the same/similar formatting.</li><li>Make sure that articles are nice and easy to read.</li><li>Share your formatting ideas with the team!</li></ul> |
+| 4 | This will open the body of the text in **source code format**, which you may need to do sometimes, especially for code formatting. Zendesk sometimes wants to include too much or too little of the text. This way you'll have perfect control. |
+| 5 | Unfortunately, Zendesk doesn't offer a copy icon for codes like we have in our GitHub docs, but users can click once in a code block which will select all the text automatically.<ul><li>You should be able to click the **code block** formatting option and that should create a code block.</li><li>If you can get this to work your way, open the source code format as per #4 and use the following: **``<pre><code id="codeSnippet">first line of code<br>second line of code<br>third line of code</code></pre>``**<br><br>This is what the results will be:<br>br>```first line of code<br>second line of code<br>third line of code```</li></ul>  |
+| 6 | If you want to show only part of a sentence as codes, open the source code format as per #4 and use the following: Example of how to **``<code>insert code here</code>``** in a sentence |
+| 7 | permissions |
+| 8 | Placement | 
+| 9 | Save! | 
+| 10 | view as a user |
 
 🔶
 
@@ -304,7 +308,9 @@ tasklog.json    tasks.json  templates.json  workers.json
 ### Switch from Admin to User View
 
 
+### You Don't Want to Edit or Write an Article Yourself?
 
+Zendesk has support links throughout the application for help on the fly, but please <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help figuring out Zendesk">email us</a> if you need support.
 
 
 

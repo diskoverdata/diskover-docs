@@ -373,7 +373,8 @@ ___
 
 ### How to Get Here
 
-![Image: Zendesk Menu](images/zendesk_internal_guide_menu_gather.png)
+<img src="images/zendesk_internal_guide_menu_gather.png" width="300">
+
 
 ### Overview
 

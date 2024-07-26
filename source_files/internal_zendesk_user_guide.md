@@ -263,9 +263,9 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 1. Click on the down arrow beside it.
 2. Select **Category**.
 
-<img src="images/zendesk_internal_guide_guide_create_category.png" width="500">
+<img src="images/zendesk_internal_guide_guide_create_category.png" width="250">
 
-![Image: Zendesk Create a Category](images/zendesk_internal_guide_guide_create_category_how.png.png)
+![Image: Zendesk Create a Category](images/zendesk_internal_guide_guide_create_category_how.png)
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
@@ -285,7 +285,7 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 1. Click on the down arrow beside it.
 2. Select **Category**.
 
-<img src="images/zendesk_internal_guide_guide_create_section.png" width="500">
+<img src="images/zendesk_internal_guide_guide_create_section.png" width="250">
 
 🔴 &nbsp;Fill out 
 
@@ -298,7 +298,7 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 1. Click on the down arrow beside it.
 2. Select **Category**.
 
-<img src="images/zendesk_internal_guide_guide_create_article.png" width="500">
+<img src="images/zendesk_internal_guide_guide_create_article.png" width="250">
 
 
 

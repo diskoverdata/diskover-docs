@@ -68,7 +68,7 @@ ___
 ## Support | Tickets Management
 ___
 
-### How to Get Here
+### How to Access Support Tickets
 
 <img src="images/zendesk_internal_guide_menu_support.png" width="300">
 
@@ -191,8 +191,7 @@ ___
 ## Guide | Knowledge Base Management
 ___
 
-### How to Get Here
-
+### How to Access the Knowledge Base
 <img src="images/zendesk_internal_guide_menu_guide.png" width="300">
 
 ### Overview
@@ -206,6 +205,8 @@ What you will find in this menu:
 graph LR
 A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->C(CATEGORY)
 ```
+
+<p id="category_management"></p>
 
 ### Categories Management
 
@@ -223,6 +224,8 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 | 4 | Double click on a **category** to see the **sections** contained in that category |
 | 5 | Click on those 3 dots to edit a category |
 | 6 | Grab and move the dots to change the order of **categories** |
+
+<p id="section_management"></p>
 
 ### Sections Management
 
@@ -327,7 +330,7 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 | 5 | Unfortunately, Zendesk doesn't offer a copy icon for codes like we have in our GitHub docs, but users can click once in a code block which will select all the text automatically, then they can just copy the whole code content.<ul><li>You should be able to click the **code block** option in the formatting menu and that should create a code block.</li><li>If you can't get this to work the way you want, open the source code format as per #4 and use the following:<br><br>**``<pre><code id="codeSnippet">first line of code``<br>``second line of code``<br>``third line of code</code></pre>``**<br><br>This is what the results will be:<br><img src="images/zendesk_internal_guide_guide_code_block.png" width="800"></li></ul> |
 | 6 | If you want to show only part of a sentence as codes:<ul><li>Open the source code format as per #4</li><li>Use the following:<br><br> This is an example of how to **``<code>insert code here</code>``** in a sentence.<br><br>This is what the results will be:<br><img src="images/zendesk_internal_guide_guide_code_block_in_sentence.png" width="500"></li></ul> |
 | 7 | As of July 2024, there is only the **Administrators** category of **Management Permissions** so there is nothing to edit here for now, but you can check it out anyway by clicking on the forward arrow |
-| 8 | Whether you're creating or editing an article, you should always review this panel, go to [**Article Placement**](#article_placement) section for more information | 
+| 8 | You can't create a new article without filling out this section, and it's always a good idea to review if you're editing an article, go to [**Article Placement**](#article_placement) for more information | 
 | 9 | Save, save, save!<ul><li>This will save your modifications if you're editing an existing article</li><li>If you are creating a new article, this will save a draft only, see #11 if you are ready to publish</li></ul> | 
 | 10 | Click the **View** button to see how your article will look for end users. When you are done and want to go back to the admin view click **Guide admin**:<br>![Image: Zendesk Create a Category](images/zendesk_internal_guide_guide_go_to_admin_view.png) |
 | 11 | Click the arrow and select **Publish** for the public to see your article - it's easy to see the status of an article:<ul><li>Green = Published</li><li>White = Draft</li></ul><br><img src="images/zendesk_internal_guide_guide_article_status.png" width="600">
@@ -347,9 +350,21 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 
 ### Article Placement
 
+🔴 &nbsp;You can't create an article without filling out these parameters.
 
-<img src="images/zendesk_internal_guide_guide_article_placement.png" width="300">
+<img src="images/zendesk_internal_guide_guide_article_placement.png" width="350">
 
+| OPTION | DESCRIPTION |
+| :---: | --- |
+| 1 | Select the most appropriate [**section**](#section_management), by default [**category**](#category_management) that your article will be placed under |
+| 2 | Select or edit the article's author's name |
+| 3 | Select who can see the article<br><br><img src="images/zendesk_internal_guide_guide_article_visibility.png" width="350"> |
+| 4 | Apply appropriate [**tags](#tags_management) to make the articles easier to find |
+| 5 | Not really sure this is applicable yet, but easy enough to apply the same [**tags](#tags_management) while you're there |
+| 6 | Check the box if you are ok with users commenting on your article |
+| 7 | You can promote an article so it's listed on the main page when users login, here's an example:<br><img src="images/zendesk_internal_guide_guide_article_promote.png.png" width="350"> |
+| 8 | You can attach a file to your article for users to download |
+| 9 | Click **Update settings** to save your work |
 
 <p id="tags_management"></p>
 

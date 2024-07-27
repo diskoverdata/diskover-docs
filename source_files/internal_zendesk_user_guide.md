@@ -54,6 +54,8 @@ Depending on your [role and access](#access), you will find a **four squares** i
 
 ![Image: Zendesk Main Menu](images/zendesk_internal_guide_main_home_menu.png)
 
+![Image: Zendesk Main Menu](source_files/images/zendesk_internal_guide_support_stats.png)
+
 🔶&nbsp;When you select an option from that menu, it will open a whole other menu with multiple sub-menus on the left. Only the necessary ones for the daily use of Zendesk are explained in the subsequent sections of this guide.
 
  📕 *Documented in this guide*

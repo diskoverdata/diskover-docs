@@ -92,7 +92,7 @@ ___
 
 ### How to Access Support Tickets
 
-<img src="images/zendesk_internal_guide_menu_support.png" width="300">
+<img src="images/image_zendesk_internal_guide_menu_support.png" width="300">
 
 ### Overview
 

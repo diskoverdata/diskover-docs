@@ -515,10 +515,10 @@ ___
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
-| 1 | **Account**<br><img src="images/zendesk_internal_guide_admin_center_account.png" width="300"> |
-| 2 | **People**<br><img src="images/zendesk_internal_guide_admin_center_people.png" width="300"> |
-| 3 | **Channels**<br><img src="images/zendesk_internal_guide_admin_center_channels.png" width="300"> |
-| 4 | **Workspaces**<br><img src="images/zendesk_internal_guide_admin_center_workspaces.png" width="300"> |
+| 1 | **Account**<br><img src="images/zendesk_internal_guide_admin_center_account.png" width="200"> |
+| 2 | **People**<br><img src="images/zendesk_internal_guide_admin_center_people.png" width="200"> |
+| 3 | **Channels**<br><img src="images/zendesk_internal_guide_admin_center_channels.png" width="200"> |
+| 4 | **Workspaces**<br><img src="images/zendesk_internal_guide_admin_center_workspaces.png" width="200"> |
 | 5 | **Objects and rules** is where forms and fields are created/edited.<br><img src="images/zendesk_internal_guide_admin_center_objects_and_rules.png" width="300"> |
 | 6 | **Apps and integrations**<br><img src="images/zendesk_internal_guide_admin_center_apps_and_integrations.png" width="300"> |
 

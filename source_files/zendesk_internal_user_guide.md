@@ -24,7 +24,7 @@ Diskover has partnered with [Zendesk](https://diskoverdata.zendesk.com/) to enha
 | USE | PURPOSE | LINK |
 | --- | --- | --- |
 | Public & Internal | Diskover Zendesk platform | [https://diskoverdata.zendesk.com/](https://diskoverdata.zendesk.com/) or [https://support.diskoverdata.com/](https://support.diskoverdata.com/) |
-| Public | Technical Support and Troubleshooting Guide | [https://support.diskoverdata.com/](https://docs.diskoverdata.com/tech_support_and_troubleshooting/) |
+| Public | Technical Support and Troubleshooting Guide | [[https://support.diskoverdata.com/](https://docs.diskoverdata.com/tech_support_and_troubleshooting/)](https://docs.diskoverdata.com/tech_support_and_troubleshooting/) |
 | Public | How to create a user account | [https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-zendesk-account](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-zendesk-account) |
 | Public | How to create a support ticket | [https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-support-ticket](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-support-ticket) |
 | Public | Diskover Community on Zendesk | [https://docs.diskoverdata.com/tech_support_and_troubleshooting/#diskover-community](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#diskover-community) |
@@ -36,13 +36,13 @@ You should have received an email in early July inviting you to complete your Ze
 
 <p id="access"></p>
 
-### Access Level
+### Roles and Access
 
-Access levels were applied depending on each team member and what is required for their work. <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com?subject=Dude! Please increase my Zendesk access">Send us an email</a> if you feel you need additional access to do your work.
+Roles and access levels were applied depending on each team member and what is required for their work. <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=Dude! Please increase my Zendesk access">Send us an email</a> if you feel you need additional access to do your work.
 
 ### Need Help with Zendesk?
 
-Zendesk has support links throughout the application for help on the fly, but please <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help figuring out Zendesk">email us</a> if you need support.
+Zendesk has support links throughout the application for help on the fly, but please <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help figuring out Zendesk">email us if you need support</a>.
 
 ___
 ## Zendesk Main Menu
@@ -50,18 +50,18 @@ ___
 
 ### Overview
 
-Depending on your [role and access](#access), you will find a **four squares** icon next to your profile in the top right corner. That icon is where to click to access the **main menu**, it is your "home" button to navigate between the different sections
+You can find a **four squares** icon next to your profile in the top right corner. Note that depending on your [role and access](#access), you may not see or have access to all the features described in this guide. That icon is where to click to access the admin **main menu**, it is your "home" button to navigate between the different sections.
 
 ![Image: Zendesk Main Menu](images/zendesk_internal_guide_main_home_menu.png)
 
-🔶&nbsp;When you select an option from that menu, it will open a whole other menu with multiple sub-menus on the left. Only the necessary ones for the daily use of Zendesk are explained in the subsequent sections of this guide.
+🔶&nbsp;When you select an option from that menu, it will open another menu on the left side. Only the necessary ones for the daily use of Zendesk are explained in the subsequent sections of this guide.
 
  📕 *Documented in this guide*
 
 <p id="main_menu"></p>
 
 | MENU | PURPOSE | DESCRIPTION |
-| :---: | --- | --- |
+| --- | --- | --- |
 | **Support** 📕 | [Support Tickets](#tickets_management) | Workspace for tickets management |
 | **Guide** 📕 | [Knowledge Base](#knowledge_base) | Where to see, add, edit, and manage all help articles |
 | **Gather** 📕 | [Diskover Community Forum](#diskover_community) | Where users can post and request features |
@@ -72,22 +72,10 @@ Depending on your [role and access](#access), you will find a **four squares** i
 | **Workforce management** | Direct Access to Zendesk Website | Great for further help than what is covered in this guide |
 | **Admin Center** 📕 | [Account Settings](#admin_center) | Where to set up users, forms, fields used in forms, etc. |
 
-### Switch from User to Admin View
-
-When you are working in the Guide space, you can switch from **admin** to **user** view.
-
-🔴 &nbsp;When you are in the user view and want to switch to admin, you will see this or something similar:
-
-![Image: Zendesk Admin View](images/zendesk_internal_guide_guide_switch_to_admin_view.png)
-
-🔴 &nbsp;When you are in the admin view and want to preview what users will experience, you will see this or something similar:
-
-![Image: Zendesk User View](images/zendesk_internal_guide_guide_switch_to_user_view.png)
-
 <p id="tickets_management"></p>
 
 ___
-## Support | Tickets Management
+## SUPPORT | Tickets Management
 ___
 
 ### How to Access Support Tickets
@@ -96,7 +84,7 @@ ___
 
 ### Overview
 
-This section is mainly used by engineers, so you will undoubtedly find your way around it.
+This section is mainly used by our fabulous engineers, so you will undoubtedly find your way around it.
 
 ![Image: Zendesk Support Ticket Global View](images/zendesk_internal_guide_tickets_main_view.png)
 
@@ -109,20 +97,20 @@ This section is mainly used by engineers, so you will undoubtedly find your way 
 | 5 | See tickets a co-worker involved you with |
 | 6 | You can follow tickets, posts, etc. in Zendesk, this lists the tickets you opted to follow |
 | 7 | Another view to see all tickets by status, priority, agent assigned, etc. |
-| 8 | Add, search, and manage customers/contacts who have created a support ticket or not:<ul><li>You can add contacts manually, or delete them but don't do that!</li><li>You can open their profile by clicking on their name to see more information as well as the tickets related to that contact</li><li>Note that every time you open a profile, a tab will open at the very top of your view and stay there until you close it using the **x** in that tab</li></ul> |
-| 9 | Add, search, and manage organizations (customers, partners, and most deals in motion):<ul><li>List of domains that were proactively created for ease of future ticket submission</li><li>When a customer/contact creates a new profile, Zendesk will recognize the domain and associate the new contact with the appropriate company whenever possible</li><li>You can add contacts manually, or delete them but don't do that!</li><li>You can open their profile by clicking on their name to see more information as well as the tickets related to that contact</li><li>Note that every time you open a profile, a tab will open at the very top of your view and stay there until you close it using the **x** in that tab</li></ul> |
+| 8 | Add, search, and [manage customers/contacts](#manage_users) who have created a support ticket or not:<br><ul><li>You can add contacts manually, or delete them but don't do that!</li><li>You can open their profile by clicking on their name to see more information as well as the tickets related to that contact</li><li>Note that every time you open a profile, a tab will open at the very top of your view and stay there until you close it using the **x** in that tab</li></ul> |
+| 9 | Add, search, and [manage organizations](#manage_companies) (customers, partners, and most deals in motion):<br><ul><li>List of domains that were proactively created for ease of future ticket submission</li><li>When a customer/contact creates a new profile, Zendesk will recognize the domain and associate the new contact with the appropriate company whenever possible</li><li>You can add contacts manually, or delete them but don't do that!</li><li>You can open their profile by clicking on their name to see more information as well as the tickets related to that contact</li><li>Note that every time you open a profile, a tab will open at the very top of your view and stay there until you close it using the **x** in that tab</li></ul> |
 | 10 | Statistics about support tickets, not configured yet |
-| 11 | Link to redirect you to the **Admin Center** where live all settings related to the Zendesk platform |
+| 11 | Link to the [Admin Center](#admin_center) where live most of the settings related to the Zendesk platform including the forms and fields for support tickets |
 
 ### Manual Support Ticket Creation
 
-Especially during the transition between email support to Zendesk, you may have to create tickets manually. Wherever you are in the **Support** menu, you'll see the **+Add** option at the left top corner. Note that more than just a ticket creation option will be offered:
+Especially during the transition between email support to Zendesk, you may have to create tickets manually. Wherever you are in the **Support** menu, you'll see the **+ Add** option at the left top corner. Note that more than just a ticket creation is possible:
 
 ![Image: Zendesk Manual Ticket Creation](images/zendesk_internal_guide_support_add_options.png)
 
 🔴 &nbsp;Fill out all the fields with as much information as possible. An **asterisk** denotes a required field. 
 
-🔴 &nbsp;Before clicking on **Submit as New**, you can apply a different status than **New** to the ticket if applicable using the arrow beside the button.
+🔴 &nbsp;Before clicking on **Submit as New**, you can apply a different status than **New**, if applicable, using the arrow beside the button.
 
 ![Image: Zendesk Manual Ticket Creation](images/zendesk_internal_guide_ticket_manual_creation.png)
 
@@ -137,8 +125,10 @@ In addition to the main view above, the second option on the left is another pro
 | 1 | See tickets filtered in different ways |
 | 2 | Filters/views can be added, deleted, modified |
 | 3 | Take action on a single or multiple tickets, at least one needs to be selected to view these options |
-| 4 | Add filters to the filtered view |
+| 4 | Add filters |
 | 5 | When no tickets are selected, you have more options like exporting as CSV, editing, or cloning the view |
+
+<p id="manage_users"></p>
 
 ### Manage Customer Profiles (User)
 
@@ -168,6 +158,8 @@ In addition to the main view above, the second option on the left is another pro
 | 5 | Take different actions on the profile |
 | 6 | If no **organization**/domain exists for that contact in Zendesk, you can add it from there |
 
+<p id="manage_companies"></p>
+
 ### Manage Organization Profile (Company)
 
 🔶&nbsp;Depending on your Zendesk account access, you will be able to view, create, and/or modify company profiles.
@@ -183,7 +175,7 @@ In addition to the main view above, the second option on the left is another pro
 | 3 | Start the manual profile creation here for a company/domain |
 | 4 | Click on a name to open and see all related information and tickets associated with that company |
 
-🔴 &nbsp;When you open a user profile:
+🔴 &nbsp;When you open a company profile:
 
 ![Image: Zendesk Manage Company Profile](images/zendesk_internal_guide_manage_profile_company.png)
 
@@ -194,7 +186,7 @@ In addition to the main view above, the second option on the left is another pro
 | 3 | Navigate to different views |
 | 4 | Take different actions on the profile |
 
-# Support Tickets Reporting
+### Support Tickets Reporting
 
 Support metrics will grow over time, but you can already refer to basic information. Hover the graphs to see more details, a little bit like Diskover!
 
@@ -212,23 +204,32 @@ Support metrics will grow over time, but you can already refer to basic informat
 <p id="knowledge_base"></p>
 
 ___
-## Guide | Knowledge Base Management
+## GUIDE | Knowledge Base Management
 ___
 
 ### How to Access the Knowledge Base
 <img src="images/zendesk_internal_guide_menu_guide.png" width="300">
 
+### Switch to/from User and Admin View
+
+When you are working in most admin space, you can switch from **admin** to **user** view.
+
+🔴 &nbsp;When you are in the user view and want to switch to admin, you will see this or something similar:
+
+![Image: Zendesk Admin View](images/zendesk_internal_guide_guide_switch_to_admin_view.png)
+
+🔴 &nbsp;When you are in the admin view and want to preview what users will experience, you will see this or something similar:
+
+![Image: Zendesk User View](images/zendesk_internal_guide_guide_switch_to_user_view.png)
+
 ### Overview
 
-What you will find in this menu:
+What you will find under this menu:
 
 - A log of the **discussions** and **feature requests** that stems from the [Diskover Community](#diskover_community) forum.
 - All **help articles** used for troubleshooting, tips, etc. Note that "how to access what" may be confusing at first. This is the hierarchy/nomenclature used by Zendesk:
 
-```mermaid
-graph LR
-A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->C(CATEGORY)
-```
+![Image: Zendesk User View](images/zendesk_internal_guide_guide_hierarchy.png)
 
 <p id="category_management"></p>
 
@@ -246,25 +247,22 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 | 2 | This is to view/moderate the posts and feature requests from the [**Diskover Community** Space](#diskover_community) |
 | 3 | Using [tags](#tags_management) when creating articles makes it easier for users to search content |
 | 4 | Double click on a **category** to see the **sections** contained in that category |
-| 5 | Click on those 3 dots to edit a category |
-| 6 | Grab and move the dots to change the order of **categories** |
+| 5 | Click on those 3 dots to edit the name of a **category** |
+| 6 | Grab and move to change the order of **categories** |
 
 <p id="section_management"></p>
 
 ### Sections Management
 
-🔴 &nbsp;When you double-click on a **category** as explained above, you will see the **section(s)** inside that **category**. 
+🔴 &nbsp;If you double-click on a **section**, it will open a view to the **article(s)** inside that **section**. 
 
 ![Image: Zendesk Sections Management](images/zendesk_internal_guide_guide_manage_sections.png)
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
-| 1 | The **sections** you see are all part of this **category** |
-| 2 | Grab and move the dots to change the order of **categories** |
-| 3 | Click on those 3 dots to edit a category |
-| 4 | Double click on a **category** to see the **sections** contained in that category |
-| 5 | Click on those 3 dots to edit a category |
-| 6 | Grab and move the dots to change the order of **categories** |
+| 1 | The **sections** you see on this page are all part of this **category** |
+| 2 | Grab and move to change the order of **sections** |
+| 3 | Click on those 3 dots to edit the name of a **section** |
 
 <p id="article_management"></p>
 
@@ -276,7 +274,7 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
-| 1 | To see the list of all articles, drafts or published |
+| 1 | To see the list of all articles, drafts, or published |
 | 2 | That view will show you all the last additions, edits, etc. and who did it when |
 | 3 | Search articles using keywords |
 | 4 | Apply filters to your search |
@@ -349,13 +347,13 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 | :---: | --- |
 | 1 | Click on the pencil to edit the **title** of the article and make sure it's very descriptive and easy to understand the purpose of the article |
 | 2 | Plain text is easy to do but if you want to **write codes** see # 5 and 6 below.<br><br>🔶 &nbsp;Zendesk doesn't understand Markdown formatting, but is HTML friendly |
-| 3 | Text formatting tools:<ul><li>There are no formal guidelines to follow, for now anyway:</li><li>We recommend you look at other articles and follow the same/similar formatting.</li><li>Make sure that articles are nice and easy to read.</li><li>Share your formatting ideas with the team!</li></ul> |
+| 3 | Text formatting tools:<br><ul><li>There are no formal guidelines to follow, for now anyway:</li><li>We recommend you look at other articles and follow the same/similar formatting.</li><li>Make sure that articles are nice and easy to read.</li><li>Share your formatting ideas with the team!</li></ul> |
 | 4 | This will open the body of the text in **source code format**, which you may need to do sometimes, especially for code formatting. Zendesk sometimes wants to include too much or too little of the codes. This way you'll have perfect control, see # 5 and #6. |
-| 5 | Unfortunately, Zendesk doesn't offer a copy icon for codes like we have in our GitHub docs, but users can click once in a code block which will select all the text automatically, then they can just copy the whole code content.<ul><li>You should be able to click the **code block** option in the formatting menu and that should create a code block.</li><li>If you can't get this to work the way you want, open the source code format as per #4 and use the following:<br><br>**``<pre><code id="codeSnippet">first line of code``<br>``second line of code``<br>``third line of code</code></pre>``**<br><br>This is what the results will be:<br><img src="images/zendesk_internal_guide_guide_code_block.png" width="800"></li></ul> |
-| 6 | If you want to show only part of a sentence as codes:<ul><li>Open the source code format as per #4</li><li>Use the following:<br><br> This is an example of how to **``<code>insert code here</code>``** in a sentence.<br><br>This is what the results will be:<br><img src="images/zendesk_internal_guide_guide_code_block_in_sentence.png" width="500"></li></ul> |
-| 7 | As of July 2024, there is only the **Administrators** category of **Management Permissions** so there is nothing to edit here for now, but you can check it out anyway by clicking on the forward arrow |
-| 8 | You can't create a new article without filling out this section, and it's always a good idea to review if you're editing an article, go to [**Article Placement**](#article_placement) for more information | 
-| 9 | Save, save, save!<ul><li>This will save your modifications if you're editing an existing article</li><li>If you are creating a new article, this will save a draft only, see #11 if you are ready to publish</li></ul> | 
+| 5 | Unfortunately, Zendesk doesn't offer a copy icon for codes like we have in our GitHub docs, but users can click once in a code block which will select all the text automatically, then they can just copy the whole code content.<br><ul><li>You should be able to click the **code block** option in the formatting menu and that should create a code block.</li><li>If you can't get this to work the way you want, open the source code format as per #4 and use the following:<br><br>**``<pre><code id="codeSnippet">first line of code``<br>``second line of code``<br>``third line of code</code></pre>``**<br><br>Result:<br><img src="images/zendesk_internal_guide_guide_code_block.png" width="800"></li></ul> |
+| 6 | If you want to show only part of a sentence as codes:<br><ul><li>Open the source code format as per #4</li><li>Use the following:<br><br> This is an example of how to **``<code>insert code here</code>``** in a sentence.<br><br>Result:<br><img src="images/zendesk_internal_guide_guide_code_block_in_sentence.png" width="500"></li></ul> |
+| 7 | As of July 2024, there is only an **Administrators** category inside **Management Permissions** so there is nothing to edit here for now, but you can check it out anyway by clicking on the forward arrow |
+| 8 | You can't create a new article without filling out this section, and it's always a good idea to review the information if you're editing an article, go to [**Article Placement**](#article_placement) for more information | 
+| 9 | Save, save, save!<br><ul><li>This will save your modifications if you're editing an existing article</li><li>If you are creating a new article, this will save a draft only, see #11 if you are ready to publish</li></ul> | 
 | 10 | Click the **View** button to see how your article will look for end users. When you are done and want to go back to the admin view click **Guide admin**:<br>![Image: Zendesk Create a Category](images/zendesk_internal_guide_guide_go_to_admin_view.png) |
 | 11 | Click the arrow and select **Publish** for the public to see your article - it's easy to see the status of an article:<ul><li>Green = Published</li><li>White = Draft</li></ul><br><img src="images/zendesk_internal_guide_guide_article_status.png" width="650">
 
@@ -380,13 +378,13 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 
 | OPTION | DESCRIPTION |
 | :---: | --- |
-| 1 | Select the most appropriate [**section**](#section_management), by default [**category**](#category_management) that your article will be placed under |
+| 1 | Select the most appropriate [**section**](#section_management), by default [**category**](#category_management) that your article will live in |
 | 2 | Select or edit the article's author's name |
 | 3 | Select who can see the article<br><br><img src="images/zendesk_internal_guide_guide_article_visibility.png" width="350"> |
-| 4 | Type or select appropriate [**tags](#tags_management) to make the articles easier to find |
-| 5 | Not really sure this is applicable yet, but easy enough to apply the same [**tags](#tags_management) while you're there |
+| 4 | Type or select appropriate [**tags**](#tags_management) to make the articles easier to find |
+| 5 | Not really sure this is applicable yet, but easy enough to apply the same [**tags**](#tags_management) while you're there |
 | 6 | Check the box if you are ok with users commenting on your article |
-| 7 | You can promote an article so it's listed on the main page when users login, here's an example:<br><img src="images/zendesk_internal_guide_guide_article_promote.png" width="900"> |
+| 7 | You can promote an article so it's listed on the main page when users login, here's an example of a featured article:<br><img src="images/zendesk_internal_guide_guide_article_promote.png" width="900"> |
 | 8 | You can attach a file to your article for users to download |
 | 9 | Click **Update settings** to save your work |
 
@@ -403,24 +401,24 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 | 1 | Click here to access the tags |
 | 2 | Search tags | 
 | 3 | <ul><li>Take action on tags.</li><li>You can click on a tag to edit the tag.</li><li>Once you open a tag click on **View tagged content** to see all articles using that tag.</li></ul> |
-| 4 | Create a new tag - note that you can create tags directly in the [**article placement**](#article_placement) |
+| 4 | Create a new tag - note that you can create tags directly when working in the [**article placement**](#article_placement) space |
 
 <p id="community_content"></p>
 
 ### Community Content Management and Moderation
 
-There's nothing to see here yet!
+There's nothing to see here...yet!
 
 ![Image: Zendesk Categories Management](images/zendesk_internal_guide_guide_community_content.png)
 
 ### Need Help Writing an Article?
 
-<a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help writing an article in Zendesk">We've got your back.</a> 
+<a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=Here's an article I'd like to add to Zendesk">Email us the content, we've got your back 🙌🏽</a> 
 
 <p id="diskover_community"></p>
 
 ___
-## Gather | Diskover Community 
+## GATHER | Diskover Community 
 ___
 
 ### How to Access the Diskover Community
@@ -433,7 +431,7 @@ ___
 
 🔶 &nbsp;This section will be a bit of an experiment and we'll see over time if we need to moderate, add restrictions, etc.
 
-- Clicking on **Guide Admin** at the top will bring you to [**article management**](#article_management), from there you can navigate to the [**Community Content page**](#community_content).
+🔴 &nbsp;Clicking on **Guide Admin** at the top will bring you to [**article management**](#article_management), from there you can navigate to the [**Community Content page**](#community_content).
 
 ![Image: Zendesk Categories Management](images/zendesk_internal_guide_community_user_view.png)
 
@@ -444,13 +442,13 @@ ___
 | 3 | Users can click **New post** to create **general posts/topics** or **feature requests** |
 | 4 | Users can search on existing posts or feature requests |
 | 5 | List of the latest users' posts, for now only canned posts are available |
-| 6 | For Diskover staff to add [articles](#create_article) for the support page OR create posts for this Community section |
+| 6 | For Diskover staff to add [**articles**](#create_article) for the support page OR create posts for this Community section |
 | 7 | Will bring you back to the [**Knowledge Base**](#knowledge_base) |
 
 <p id="explore"></p>
 
 ___
-## Explore | Reporting and Analytics
+## EXPLORE | Reporting and Analytics
 ___
 
 ### How to Get Here
@@ -482,7 +480,7 @@ ___
 
 <img src="images/zendesk_internal_guide_menu_guide.png" width="300">
 
-🔴 &nbsp;And then select the **eye** on the left and then **Customize**:
+🔴 &nbsp;Select the "**eye**" menu on the left and then **Customize**:
 
 ![Image: Zendesk Themes Access](images/zendesk_internal_guide_themes_access.png)
 
@@ -507,7 +505,7 @@ ___
 
 <p id="admin_center"></p>
 
-__
+___
 ## Admin Center
 ___
 
@@ -527,6 +525,6 @@ ___
 | 2 | **People**<br><img src="images/zendesk_internal_guide_admin_center_people.png" width="200"> |
 | 3 | **Channels**<br><img src="images/zendesk_internal_guide_admin_center_channels.png" width="200"> |
 | 4 | **Workspaces**<br><img src="images/zendesk_internal_guide_admin_center_workspaces.png" width="200"> |
-| 5 | **Objects and rules** is where forms and fields are created/edited.<br><img src="images/zendesk_internal_guide_admin_center_objects_and_rules.png" width="200"> |
+| 5 | **Objects and rules** is where forms and fields are created/edited but they also work with a conditions and whatnot so it's not straightforward<br><img src="images/zendesk_internal_guide_admin_center_objects_and_rules.png" width="200"> |
 | 6 | **Apps and integrations**<br><img src="images/zendesk_internal_guide_admin_center_apps_and_integrations.png" width="200"> |
 

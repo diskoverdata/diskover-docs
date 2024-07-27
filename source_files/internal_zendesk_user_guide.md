@@ -19,24 +19,24 @@ Zendesk is highly configurable, and offers hundreds of menus and sub-menus and s
 
 **👎🏼 What this guide is not:** This guide is not intended to be an all-encompassing Zendesk guide and/or address all the exhaustive administrative options.
 
-### Access Level
-
-Access levels were applied depending on each team member and what is required for their work. Send <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com?subject=Dude! Please increase my Zendesk access">us an email</a> if you feel you need additional access to do your work.
-
 ### Links
 
 | USE | PURPOSE | LINK |
 | --- | --- | --- |
-| External & Internal | Diskover Zendesk platform | https://diskoverdata.zendesk.com/ or https://support.diskoverdata.com/ |
-| External | Technical Support and Troubleshooting Guide | https://docs.diskoverdata.com/tech_support_and_troubleshooting/ |
-| External | How to create an account | https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-zendesk-account |
-| External | How to create a support ticket | https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-support-ticket |
-| External | Diskover Community on Zendesk | https://docs.diskoverdata.com/tech_support_and_troubleshooting/#diskover-community |
-| Internal | This guide |  |
+| Public & Internal | Diskover Zendesk platform | [https://diskoverdata.zendesk.com/](https://diskoverdata.zendesk.com/) or [https://support.diskoverdata.com/](https://support.diskoverdata.com/) |
+| Public | Technical Support and Troubleshooting Guide | [https://support.diskoverdata.com/](https://docs.diskoverdata.com/tech_support_and_troubleshooting/) |
+| Public | How to create a user account | [https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-zendesk-account](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-zendesk-account) |
+| Public | How to create a support ticket | [https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-support-ticket](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-support-ticket) |
+| Public | Diskover Community on Zendesk | [https://docs.diskoverdata.com/tech_support_and_troubleshooting/#diskover-community](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#diskover-community) |
+| Internal | This administrative guide | [https://docs.diskoverdata.com/zendesk_internal_user_guide](https://docs.diskoverdata.com/zendesk_internal_user_guide) |
 
 ### Login
 
 You should have received an email in early July inviting you to complete your Zendesk account. <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help with my Zendesk login, it's my fault for not doing it in time 😫">Click here if you need assistance with your Zendesk login</a>.
+
+### Access Level
+
+Access levels were applied depending on each team member and what is required for their work. <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com?subject=Dude! Please increase my Zendesk access">Send us an email</a> if you feel you need additional access to do your work.
 
 ### Need Help with Zendesk?
 

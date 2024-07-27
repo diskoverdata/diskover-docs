@@ -353,7 +353,7 @@ What you will find under this menu:
 | 8 | You can't create a new article without filling out this section, and it's always a good idea to review the information if you're editing an article, go to [**Article Placement**](#article_placement) for more information | 
 | 9 | Save, save, save!<br><ul><li>This will save your modifications if you're editing an existing article</li><li>If you are creating a new article, this will save a draft only, see #11 if you are ready to publish</li></ul> | 
 | 10 | Click the **View** button to see how your article will look for end users. When you are done and want to go back to the admin view click **Guide admin**:<br>![Image: Zendesk Create a Category](images/zendesk_internal_guide_guide_go_to_admin_view.png) |
-| 11 | Click the arrow and select **Publish** for the public to see your article - it's easy to see the status of an article:<ul><li>Green = Published</li><li>White = Draft</li></ul><br><img src="images/zendesk_internal_guide_guide_article_status.png" width="650">
+| 11 | Click the arrow and select **Publish** for the public to see your article - it's easy to see the status of an article:<ul><li>Green = Published</li><li>White = Draft</li></ul><br><img src="images/zendesk_internal_guide_guide_article_status.png" width="800">
 
 <p id="edit_article"></p>
 
@@ -382,7 +382,7 @@ What you will find under this menu:
 | 4 | Type or select appropriate [**tags**](#tags_management) to make the articles easier to find |
 | 5 | Not really sure this is applicable yet, but easy enough to apply the same [**tags**](#tags_management) while you're there |
 | 6 | Check the box if you are ok with users commenting on your article |
-| 7 | You can promote an article so it's listed on the main page when users login, here's an example of a featured article:<br><img src="images/zendesk_internal_guide_guide_article_promote.png" width="900"> |
+| 7 | You can promote an article so it's listed on the main page when users login, here's an example of a featured article:<br><br><img src="images/zendesk_internal_guide_guide_article_promote.png" width="900"> |
 | 8 | You can attach a file to your article for users to download |
 | 9 | Click **Update settings** to save your work |
 

@@ -1,5 +1,5 @@
 ___
-## Overview
+## ZENDESK OVERVIEW
 ___
 
 ### What to Expect from this Guide
@@ -45,10 +45,8 @@ Roles and access levels were applied depending on each team member and what is r
 Zendesk has support links throughout the application for help on the fly, but please <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help figuring out Zendesk">email us if you need support</a>.
 
 ___
-## Zendesk Main Menu
+## MAIN MENU
 ___
-
-### Overview
 
 You can find a **four squares** icon next to your profile in the top right corner. Note that depending on your [role and access](#access), you may not see or have access to all the features described in this guide. That icon is where to click to access the admin **main menu**, it is your "home" button to navigate between the different sections.
 
@@ -473,7 +471,7 @@ There is not a whole lot going on here as of July 2024 and it's basically all ca
 <p id="customize_site"></p>
 
 ___
-## Site Theme Customization
+## THEME | Site Customization
 ___
 
 ### How to Access Themes
@@ -506,7 +504,7 @@ ___
 <p id="admin_center"></p>
 
 ___
-## Admin Center
+## ADMIN CENTER
 ___
 
 ### How to Access Admin Center

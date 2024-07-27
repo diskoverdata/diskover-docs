@@ -50,7 +50,7 @@ ___
 
 There is a **four squares** icon next to your profile in the top right corner. That icon is where to click to access the **main menu**, it is your "home" button to navigate between the different main  
 
-![Image: Zendesk Main Menu](images/zendesk_internal_guide_main_menu.png)
+![Image: Zendesk Main Menu](images/zendesk_internal_guide_main_home_menu.png)
 
 🔶&nbsp;When you select an option from that menu, it will open a whole other menu with multiple sub-menus on the left. Only the necessary ones for the daily use of Zendesk are explained in the subsequent sections of this guide.
 

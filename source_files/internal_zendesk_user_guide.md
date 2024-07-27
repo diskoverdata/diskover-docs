@@ -333,7 +333,7 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 | 8 | You can't create a new article without filling out this section, and it's always a good idea to review if you're editing an article, go to [**Article Placement**](#article_placement) for more information | 
 | 9 | Save, save, save!<ul><li>This will save your modifications if you're editing an existing article</li><li>If you are creating a new article, this will save a draft only, see #11 if you are ready to publish</li></ul> | 
 | 10 | Click the **View** button to see how your article will look for end users. When you are done and want to go back to the admin view click **Guide admin**:<br>![Image: Zendesk Create a Category](images/zendesk_internal_guide_guide_go_to_admin_view.png) |
-| 11 | Click the arrow and select **Publish** for the public to see your article - it's easy to see the status of an article:<ul><li>Green = Published</li><li>White = Draft</li></ul><br><img src="images/zendesk_internal_guide_guide_article_status.png" width="800">
+| 11 | Click the arrow and select **Publish** for the public to see your article - it's easy to see the status of an article:<ul><li>Green = Published</li><li>White = Draft</li></ul><br><img src="images/zendesk_internal_guide_guide_article_status.png" width="650">
 
 <p id="edit_article"></p>
 

@@ -50,7 +50,7 @@ Creating an account is unfortunately unavoidable, but will only take a few minut
 
 | | OPTION | DESCRIPTION |
 | --- | --- | --- |
-| 1 | **Create a support ticket** | Click **Submit a request** in the top menu beside your profile |
+| 1 | **Create a support ticket** | Start the process by clicking **Submit a request** in the top menu beside your profile |
 | 2 | **Search our knowledge base** | Use the **search field** in the middle of the header to search our knowledge base |
 | 3 | **See all articles by category** | Click on a **subject/button** to see all the related articles |
 | 4 | **Diskover Community** | Access the [Community space](https://support.diskoverdata.com/hc/en-us/community/topics) by clicking **Join the conversation** or **Community** in the top menu |
@@ -71,7 +71,7 @@ ___
 
 ![Image: Zendesk Check your Email Notice](images/zendesk_submit_request_step3.png)
 
-### Step 3 | Fill out the Form
+### Step 3 | Fill Out the Form
 
 🔴 &nbsp;If a solution to your issue is not found in the knowledge base, please complete the support request form and fill out as many fields as possible. This will help us solve your issue rapidly by reducing the number of back-and-forth communications asking for more details.
 

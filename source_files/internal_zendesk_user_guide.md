@@ -423,7 +423,7 @@ ___
 
 ### Overview
 
-- Selecting that menu will redirect you to the **Diskover Community** user page.
+- Selecting that menu will send you to the **Diskover Community** user page.
 - You can see all recent activities.
 - Clicking on **Guide Admin** at the top will bring you to [**article management**](#article_management), from there you can navigate to the [**Community Content page**](#community_content).
 

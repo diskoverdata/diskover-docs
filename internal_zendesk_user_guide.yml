@@ -1,4 +1,4 @@
-website_name: Zendesk | Internal User Guide
+website_name: Zendesk Internal User Guide
 # Folder on the website, if you specify "folder" it will deploy this guide to https://docs.diskoverdata.com/folder
 website_folder: zendesk_internal_user_guide
 # All documents need to be in shared folder

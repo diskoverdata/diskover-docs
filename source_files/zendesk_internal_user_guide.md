@@ -462,7 +462,7 @@ There is not a whole lot going on here as of July 2024 and it's basically all ca
 | OPTION | DESCRIPTION |
 | :---: | --- |
 | 1 | **Dashboards** note that creating a new dashboard is not super intuitive |
-| 2 | We are basicallly using **Support** and **Guide** at the moment, so click on either to open stats, here's an example when clicking on **Zendesk Support**:<br>![Image: Zendesk Explore](images/zendesk_internal_guide_explore_support.png.png) |
+| 2 | We are basicallly using **Support** and **Guide** at the moment, so click on either to open stats, here's an example when clicking on **Zendesk Support**:<br>![Image: Zendesk Explore](images/zendesk_internal_guide_explore_support.png) |
 | 3 | You can use shared dashboards or create your own, again creating a new dashboard is not super intuitive |
 | 4 | **Reports** those are all canned reports for now |
 | 5 | **Datasets** nothing to see here for now |
@@ -497,7 +497,7 @@ ___
 | OPTION | DESCRIPTION |
 | :---: | --- |
 | 1 | Collapsible sections where you can adjust the look and feel |
-| 2 | Go to different pages to view what users will experience<br><img src="images/zendesk_internal_guide_themes_user_views.png" width="300"> |
+| 2 | Go to different pages to view what users will experience<br><img src="images/zendesk_internal_guide_themes_user_views.png" width="175"> |
 | 3 | Alternate between different user roles to experience the diffent views |
 | 4 | Publish your changes |
 
@@ -514,6 +514,8 @@ ___
 ### Overview
 
 🔶 You don't have permission and/or you don't want to risk changing something? <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I'd like to change something in the Admin Center section">Send us an email</a> detailing what you would like to change.
+
+🔴 &nbsp; The following is more to show you what is inside each section than tell you how to deal with them.
 
 ![Image: Zendesk Themes Access](images/zendesk_internal_guide_admin_center_overview.png)
 

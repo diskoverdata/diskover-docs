@@ -61,4 +61,4 @@ ___
 |GitHub |[Visit us on GitHub](https://github.com/diskoverdata/)  |
 
 ___
->© 2022 Diskover Data, Inc.
+>© Diskover Data Inc.

@@ -480,27 +480,60 @@ ___
 <p id="customize_site"></p>
 
 ___
-## Themes
+## Site Theme Customization
 ___
 
-___
+### How to Access Themes
+
+<img src="images/zendesk_internal_guide_menu_guide.png" width="300">
+
+🔴 &nbsp;And then select the **eye** on the left and then **Customize**:
+
+![Image: Zendesk Themes Access](images/zendesk_internal_guide_themes_access.png)
+
+### Overview
+
+**Themes** is where the logo, fonts, colors, etc. are determined. There is not a ton we can do with the current theme, but the goal was to take the fastest route to launching Zendesk.
+
+🔶 You don't want to risk doing it yourself but you'd like to request a change to the current look and feel? <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I'd like to change something to Zendesk theme/branding">Send us an email</a> detailing what you would like to change.
+
+<p id="theme_management"></p>
+
+### Theme Management
+
+![Image: Zendesk Themes Access](images/zendesk_internal_guide_themes_settings.png)
+
+| OPTION | DESCRIPTION |
+| :---: | --- |
+| 1 | Collapsible sections where you can adjust the look and feel |
+| 2 | Go to different pages to view what users will experience<br><img src="images/zendesk_internal_guide_themes_user_views.png" width="300"> |
+| 3 | Alternate between different [user roles](#terminology) to experience the diffent views |
+| 4 | Publish your changes |
+
+__
 ## Admin Center
 ___
 
+### How to Access Admin Center
+
+<img src="images/zendesk_internal_guide_admin_center.png" width="300">
+
+### Overview
 
 
 
-### Users
+
+
+
+<p id="terminology"></p>
 
 ___
 ## Terminology
 ___
 
+Roles: admin, agent, user, 
 
 
-___
-## Site Theme Customization
-___
 
 
 
@@ -514,7 +547,7 @@ ___
 ___
 ## Create a Zendesk Account
 
-Creating an account is unfortunately unavoidable, but will only take a few minutes.
+
 
 ### Step 1 | Sign Up
 

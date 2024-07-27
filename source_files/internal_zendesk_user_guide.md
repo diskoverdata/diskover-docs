@@ -74,11 +74,11 @@ There is a **four squares** icon next to your profile in the top right corner. T
 
 When you are working in the Guide space, you can switch from **admin** to **user** view.
 
-🔴 &nbsp;When you are in the user view and want to switch to admin:
+🔴 &nbsp;When you are in the user view and want to switch to admin, you will see this or something similar:
 
 ![Image: Zendesk Admin View](images/zendesk_internal_guide_guide_switch_to_admin_view.png)
 
-🔴 &nbsp;When you are in the admin view and want to preview what users will see:
+🔴 &nbsp;When you are in the admin view and want to preview what users will experience, you will see this or something similar:
 
 ![Image: Zendesk User View](images/zendesk_internal_guide_guide_switch_to_user_view.png)
 
@@ -192,7 +192,7 @@ In addition to the main view above, the second option on the left is another pro
 
 # Support Tickets Reporting
 
-Support metrics will grow over time, but you can already refer to basic information. Some numbers and parts of graphics are clickable to see the details, a little bit like Diskover!
+Support metrics will grow over time, but you can already refer to basic information. Hover the graphs to see more details, a little bit like Diskover!
 
 ![Image: Zendesk Support Stats](images/zendesk_internal_guide_support_stats.png)
 
@@ -204,6 +204,8 @@ Support metrics will grow over time, but you can already refer to basic informat
 | 4 | Apply different filters |
 | 5 | Modify the **time** filter |
 | 6 | To view the same thing but from the **Explore** menu |
+
+<p id="knowledge_base"></p>
 
 ___
 ## Guide | Knowledge Base Management
@@ -423,9 +425,23 @@ ___
 
 ### Overview
 
-- Selecting that menu will send you to the **Diskover Community** user page.
-- You can see all recent activities.
+🔴 &nbsp;Selecting **Gather** in the admin menu will send you to the **Diskover Community** user page.
+
+🔶 &nbsp;This section will be a bit of an experiment and we'll see over time if we need to moderate, add restrictions, etc.
+
 - Clicking on **Guide Admin** at the top will bring you to [**article management**](#article_management), from there you can navigate to the [**Community Content page**](#community_content).
+
+![Image: Zendesk Categories Management](images/zendesk_internal_guide_community_user_view.png)
+
+| OPTION | DESCRIPTION |
+| :---: | --- |
+| 1 | Users can view proposed **Feature Requests** posted by other users |
+| 2 | Users can view general posts from other users under **General Discussion** |
+| 3 | Users can click **New post** to create **general posts/topics** or **feature requests** |
+| 4 | Users can search on existing posts or feature requests |
+| 5 | List of the latest users' posts, for now only canned posts are available |
+| 6 | For Diskover staff to add [articles](#create_article) for the support page OR create posts for this Community section |
+| 7 | Will bring you back to the [**Knowledge Base**](#knowledge_base) |
 
 ___
 ## Explore | Reporting and Analytics
@@ -435,47 +451,20 @@ ___
 
 <img src="images/zendesk_internal_guide_menu_explore.png" width="300">
 
-
 ### Overview
 
+There is not a whole lot going on here as of July 2024 and it's basically all canned reports. Stay tuned for customized reports and stats coming soon.
 
+![Image: Zendesk Categories Management](images/zendesk_internal_guide_explore_overview.png)
 
-
-
-
-
-
-🔶
-
-
-
-
-<ul><li>item1</li><li>item2</li></ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Overview
-
-
-
+| OPTION | DESCRIPTION |
+| :---: | --- |
+| 1 | **Dashboards** note that creating a new dashboard is not super intuitive |
+| 2 | We are basicallly using **Support** and **Guide** at the moment, so click on either to open stats, here's an example when clicking on **Zendesk Support**:<br>![Image: Zendesk Explore](images/zendesk_internal_guide_explore_support.png.png) |
+| 3 | You can use shared dashboards or create your own, again creating a new dashboard is not super intuitive |
+| 4 | **Reports** those are all canned reports for now |
+| 5 | **Datasets** nothing to see here for now |
+| 6 | **Settings** nothing to see here for now |
 
 <p id="customize_site"></p>
 
@@ -507,7 +496,7 @@ ___
 | :---: | --- |
 | 1 | Collapsible sections where you can adjust the look and feel |
 | 2 | Go to different pages to view what users will experience<br><img src="images/zendesk_internal_guide_themes_user_views.png" width="300"> |
-| 3 | Alternate between different [user roles](#terminology) to experience the diffent views |
+| 3 | Alternate between different user roles to experience the diffent views |
 | 4 | Publish your changes |
 
 __
@@ -520,37 +509,16 @@ ___
 
 ### Overview
 
+🔶 You don't have permission and/or you don't want to risk changing something? <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I'd like to change something in the Admin Center section">Send us an email</a> detailing what you would like to change.
 
+![Image: Zendesk Themes Access](images/zendesk_internal_guide_admin_center_overview.png)
 
+| OPTION | DESCRIPTION |
+| :---: | --- |
+| 1 | **Account**<br><img src="images/zendesk_internal_guide_admin_center_account.png" width="300"> |
+| 2 | **People**<br><img src="images/zendesk_internal_guide_admin_center_people.png" width="300"> |
+| 3 | **Channels**<br><img src="images/zendesk_internal_guide_admin_center_channels.png" width="300"> |
+| 4 | **Workspaces**<br><img src="images/zendesk_internal_guide_admin_center_workspaces.png" width="300"> |
+| 5 | **Objects and rules** is where forms and fields are created/edited.<br><img src="images/zendesk_internal_guide_admin_center_objects_and_rules.png" width="300"> |
+| 6 | **Apps and integrations**<br><img src="images/zendesk_internal_guide_admin_center_apps_and_integrations.png" width="300"> |
 
-
-
-<p id="terminology"></p>
-
-___
-## Terminology
-___
-
-Roles: admin, agent, user, 
-
-
-
-
-
-
-
-
-
-[what](#customize_site)
-
-
-___
-## Create a Zendesk Account
-
-
-
-### Step 1 | Sign Up
-
-🔴 &nbsp;Go to [https://diskoverdata.zendesk.com/](https://diskoverdata.zendesk.com/) and click on **Sign up**:
-
-![Image: Zendesk Sign Up](images/zendesk_account_creation_step1.png)

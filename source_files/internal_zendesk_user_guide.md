@@ -2,6 +2,14 @@ ___
 ## Overview
 ___
 
+### What to Expect from this Guide
+
+Zendesk is highly configurable, and offers hundreds of menus and sub-menus and settings galore.
+
+**👍🏼 What this guide is:** This guide aims to help you in the daily navigation and use of the Zendesk platform.
+
+**👎🏼 What this guide is not:** This guide is not intended to be an all-encompassing Zendesk guide and/or address all the exhaustive administrative options.
+
 ### Why Zendesk
 
 Diskover has partnered with [Zendesk](https://diskoverdata.zendesk.com/) to enhance our customer support experience. This collaboration and AI-powered platform brings you:
@@ -10,14 +18,6 @@ Diskover has partnered with [Zendesk](https://diskoverdata.zendesk.com/) to enha
 - **Faster Resolution**: The rich information contained in ticket submission allows for quick routing and resolution.
 - **Self-Service Options**: Find answers quickly with an extensive, searchable knowledge base.
 - **Diskover Community**: Share, learn, and connect with other awesome Diskover users.
-
-### What to Expect from this Guide
-
-Zendesk is highly configurable, and offers hundreds of menus and sub-menus and settings galore.
-
-**👍🏼 What this guide is:** This guide aims to help you in the daily navigation and use of the Zendesk platform.
-
-**👎🏼 What this guide is not:** This guide is not intended to be an all-encompassing Zendesk guide and/or address all the exhaustive administrative options.
 
 ### Links
 

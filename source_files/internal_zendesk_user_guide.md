@@ -206,6 +206,18 @@ graph LR
 A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->C(CATEGORY)
 ```
 
+### Switch from User to Admin View
+
+When you are working in the Guide space, you can switch from **admin** to **user** view.
+
+🔴 &nbsp;When you are in the user view and want to switch to admin:
+
+![Image: Zendesk Admin View](images/zendesk_internal_guide_guide_switch_to_admin_view.png)
+
+🔴 &nbsp;When you are in the admin view and want to preview what users will see:
+
+![Image: Zendesk User View](images/zendesk_internal_guide_guide_switch_to_user_view.png)
+
 <p id="category_management"></p>
 
 ### Categories Management
@@ -359,16 +371,45 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 | 1 | Select the most appropriate [**section**](#section_management), by default [**category**](#category_management) that your article will be placed under |
 | 2 | Select or edit the article's author's name |
 | 3 | Select who can see the article<br><br><img src="images/zendesk_internal_guide_guide_article_visibility.png" width="350"> |
-| 4 | Apply appropriate [**tags](#tags_management) to make the articles easier to find |
+| 4 | Type or select appropriate [**tags](#tags_management) to make the articles easier to find |
 | 5 | Not really sure this is applicable yet, but easy enough to apply the same [**tags](#tags_management) while you're there |
 | 6 | Check the box if you are ok with users commenting on your article |
-| 7 | You can promote an article so it's listed on the main page when users login, here's an example:<br><img src="images/zendesk_internal_guide_guide_article_promote.png" width="800"> |
+| 7 | You can promote an article so it's listed on the main page when users login, here's an example:<br><img src="images/zendesk_internal_guide_guide_article_promote.png" width="900"> |
 | 8 | You can attach a file to your article for users to download |
 | 9 | Click **Update settings** to save your work |
 
 <p id="tags_management"></p>
 
 ### Tags Management
+
+🔴 &nbsp;This space allows you to view, edit or create new tags.
+
+![Image: Zendesk Categories Management](images/zendesk_internal_guide_guide_tags.png)
+
+| OPTION | DESCRIPTION |
+| :---: | --- |
+| 1 | Click here to access the tags |
+| 2 | Search tags | 
+| 3 | <ul><li>Take action on tags.</li><li>You can click on a tag to edit the tag.</li><li>Once you open a tag click on **View tagged content** to see all articles using that tag.</li></ul> |
+| 4 | Create a new tag - note that you can create tags directly in the [**article placement**](#article_placement) |
+
+### Community Content Management and Moderation
+
+There's nothing to see here yet!
+
+![Image: Zendesk Categories Management](images/zendesk_internal_guide_guide_community_content.png)
+
+### Need Help Writing an Article?
+
+<a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help writing an article in Zendesk">We've got your back.</a> 
+
+
+
+
+
+
+
+
 
 
 
@@ -384,21 +425,11 @@ A(an ARTICLE lives inside a section) -->B(a SECTION lives inside a category) -->
 
 
 
-### Community Content Management and Moderation
 
 
 
 
-### Switch from User to Admin View
 
-
-
-### Switch from Admin to User View
-
-
-### You Don't Want to Edit or Write an Article Yourself?
-
-Zendesk has support links throughout the application for help on the fly, but please <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help figuring out Zendesk">email us</a> if you need support.
 
 
 

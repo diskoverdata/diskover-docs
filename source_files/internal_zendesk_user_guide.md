@@ -34,6 +34,8 @@ Zendesk is highly configurable, and offers hundreds of menus and sub-menus and s
 
 You should have received an email in early July inviting you to complete your Zendesk account. <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com,nathalie.sampson@diskoverdata.com?subject=I need help with my Zendesk login, it's my fault for not doing it in time 😫">Click here if you need assistance with your Zendesk login</a>.
 
+<p id="access"></p>
+
 ### Access Level
 
 Access levels were applied depending on each team member and what is required for their work. <a class="email-link" href= "mailto:brandon.langley@diskoverdata.com?subject=Dude! Please increase my Zendesk access">Send us an email</a> if you feel you need additional access to do your work.
@@ -48,7 +50,7 @@ ___
 
 ### Overview
 
-There is a **four squares** icon next to your profile in the top right corner. That icon is where to click to access the **main menu**, it is your "home" button to navigate between the different main  
+Depending on your [role and access](#access), you will find a **four squares** icon next to your profile in the top right corner. That icon is where to click to access the **main menu**, it is your "home" button to navigate between the different sections
 
 ![Image: Zendesk Main Menu](images/zendesk_internal_guide_main_home_menu.png)
 
@@ -60,15 +62,15 @@ There is a **four squares** icon next to your profile in the top right corner. T
 
 | MENU | PURPOSE | DESCRIPTION |
 | :---: | --- | --- |
-| **Support** 📕 | Support Tickets | Workspace for tickets management: view, assign, status |
-| **Guide** 📕 | Knowledge Base | Where to see, add, edit, and manage all help articles |
-| **Gather** 📕 | Diskover Community forum | Where users can post and request features |
+| **Support** 📕 | [Support Tickets](#tickets_management) | Workspace for tickets management |
+| **Guide** 📕 | [Knowledge Base](#knowledge_base) | Where to see, add, edit, and manage all help articles |
+| **Gather** 📕 | [Diskover Community Forum](#diskover_community) | Where users can post and request features |
 | **Chat** | Live Chat and Messaging | Not currently in use |
 | **Talk** | Voice | Not currently in use |
-| **Explore** 📕 | Reporting and Analytics | No custom report at the moment, standard reports only for now |
+| **Explore** 📕 | [Reporting and Analytics](#explore) | No custom report at the moment, standard reports only for now |
 | **Sell** | Sales CRM | Not currently in use |
 | **Workforce management** | Direct Access to Zendesk Website | Great for further help than what is covered in this guide |
-| **Admin Center** 📕 | Account Settings | Where to set up users, forms, fields used in forms, etc. |
+| **Admin Center** 📕 | [Account Settings](#admin_center) | Where to set up users, forms, fields used in forms, etc. |
 
 ### Switch from User to Admin View
 
@@ -81,6 +83,8 @@ When you are working in the Guide space, you can switch from **admin** to **user
 🔴 &nbsp;When you are in the admin view and want to preview what users will experience, you will see this or something similar:
 
 ![Image: Zendesk User View](images/zendesk_internal_guide_guide_switch_to_user_view.png)
+
+<p id="tickets_management"></p>
 
 ___
 ## Support | Tickets Management
@@ -443,6 +447,8 @@ ___
 | 6 | For Diskover staff to add [articles](#create_article) for the support page OR create posts for this Community section |
 | 7 | Will bring you back to the [**Knowledge Base**](#knowledge_base) |
 
+<p id="explore"></p>
+
 ___
 ## Explore | Reporting and Analytics
 ___
@@ -498,6 +504,8 @@ ___
 | 2 | Go to different pages to view what users will experience<br><img src="images/zendesk_internal_guide_themes_user_views.png" width="300"> |
 | 3 | Alternate between different user roles to experience the diffent views |
 | 4 | Publish your changes |
+
+<p id="admin_center"></p>
 
 __
 ## Admin Center

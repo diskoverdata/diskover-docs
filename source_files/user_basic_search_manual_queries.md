@@ -340,6 +340,8 @@ These fields are harvested during indexing, without any plugins needed.
 | **size_du_norecurs** | disk usage size [non-recursive](#recursive) | in bytes > see [Queries with Data Size](#search_size) for syntax examples on how to search on size |
 | **type** | file or directory | `type:file` or `type:directory` > is case sensitive, all lowercase needed |
 
+<p id="extra_metadata"></p>
+
 #### Field Names | Extra Metadata
 
 These extra fields are harvested using plugins, alternate indexers, or when configuring certain Diskover features.

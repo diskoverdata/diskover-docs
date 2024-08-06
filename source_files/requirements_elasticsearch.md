@@ -3,7 +3,7 @@ ___
 
 #### Elasticsearch Version
 
-Diskover is currently tested and deployed with Elasticsearch v7.x. Note that Elasticsearch v8.x testing is underway, therefore, it is not recommended to use Elasticsearch v8.x until further notice.
+Diskover is currently tested and deployed with Elasticsearch v8.x. Note that until further notice, Elasticsearch v7.x is also needed to connect to the python library.
 
 #### Elasticsearch Architecture Overview and Terminology
 

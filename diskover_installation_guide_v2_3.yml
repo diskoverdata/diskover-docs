@@ -93,7 +93,6 @@ ordered_documents:
   - uninstall_task_worker.md
   - uninstall_indexers.md
   - uninstall_diskover_on_mac.md
-  - support_community_edition.md
-  - support_subscriptions.md
+  - support.md
   - contact.md
   - copyright.md

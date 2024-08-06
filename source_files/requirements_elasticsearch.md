@@ -1,23 +1,13 @@
 ___
 ### Elasticsearch Requirements
 
-For more detailed Elasticsearch guidelines, refer to AWS sizing guidelines:
-
-[https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sizing-domains.html](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sizing-domains.html)
-
 #### Elasticsearch Version
 
 Diskover is currently tested and deployed with Elasticsearch v7.x. Note that Elasticsearch v8.x testing is underway, therefore, it is not recommended to use Elasticsearch v8.x until further notice.
 
-#### Architecture Overview and Terminology
+#### Elasticsearch Architecture Overview and Terminology
 
-Below is an overview of the Diskover architecture.
-
-![Image: Diskover Architecture Overview](images/diagram_diskover_architecture_overview.png)
-
-_[Click here for a full screen view of the Diskover Architecture Overview diagram.](images/diagram_diskover_architecture_overview.png)_
-
-In order to better understand the terminology used by Elasticsearch and throughout the Diskover documentation, please refer to this diagram.
+Please refer to this diagram to better understand the terminology used by Elasticsearch and throughout the Diskover documentation.
 
 ![Image: Diskover Architecture Overview](images/diagram_diskover_elasticsearch_architecture.png)
 
@@ -25,23 +15,19 @@ _[Click here for a full screen view of the Elasticsearch Architecture diagram.](
 
 #### Elasticsearch Cluster
 
-An important configuration for Elasticsearch is that you will want to [set Java heap mem size](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/advanced-configuration.html#set-jvm-heap-size) - it should be half your Elasticsearch host ram up to 32 GB.
+- The foundation of the Diskover platform consists of a series of Elasticsearch indexes, which are created and stored within the Elasticsearch endpoint. 
+- An important configuration for Elasticsearch is that you will want to [set Java heap mem size](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/advanced-configuration.html#set-jvm-heap-size) - it should be half your Elasticsearch host ram up to 32 GB.
+- For more detailed Elasticsearch guidelines, please refer to [AWS sizing guidelines](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sizing-domains.html).
+- For more information on [resilience in small clusters](https://www.elastic.co/guide/en/elasticsearch/reference/current/high-availability-cluster-small-clusters.html).
 
-For more information on [resilience in small clusters](https://www.elastic.co/guide/en/elasticsearch/reference/current/high-availability-cluster-small-clusters.html).
+##### Requirements for POC and Deployment
 
-##### Production Deployment
-
->- Minimum 3 nodes for performance and redundancy
->- 16 CPU cores per node
->- 32 GB RAM per node (16 GB reserved to Elasticsearch memory heap)
->- 1 TB of SSD storage per node (see Elasticsearch Storage Requirements below)
-
-##### Proof of Concept Minimum Deployment
-
->- Minimum of 1 node for testing
->- 8 CPU cores
->- 16 GB RAM per node (8 GB reserved to Elasticsearch memory heap)
->- 500 GB of SSD storage per node (see Elasticsearch Storage Requirements below)
+| | Proof of Concept | Production Deployment |
+| --- | --- | --- |
+| Nodes | 1 node | 3 nodes for performance and redundancy recommended |
+| CPU | 8 to 32 cores | 8 to 32 cores |
+| RAM | 8 to 16 GB (8 GB reserved to Elasticsearch memory heap) | 64 GB per node (16 GB reserved to Elasticsearch memory heap |
+| DISK | 250 to 500 GB of SSD storage per node (see Elasticsearch Storage Requirements below) | 500 to 1 TB of SSD storage per node (see Elasticsearch Storage Requirements below) |
 
 #### Indices
 

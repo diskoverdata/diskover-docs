@@ -6,7 +6,6 @@ ordered_documents:
   - index_diskover_guides_header.md
   - guide_title_install.md
   - intro_guide_intended_for_tech.md
-  - intro_copyright.md
   - intro_tech_guides_main_intro.md
   - intro_tech_guides_use_cases.md
   - intro_tech_guides_aws_approved.md
@@ -94,6 +93,7 @@ ordered_documents:
   - uninstall_task_worker.md
   - uninstall_indexers.md
   - uninstall_diskover_on_mac.md
-  - support.md
+  - support_community_edition.md
+  - support_subscriptions.md
   - contact.md
-  - footer.md
+  - copyright.md

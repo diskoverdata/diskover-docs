@@ -44,7 +44,8 @@ ordered_documents:
   - maintenance_emergency_intro.md
   - maintenance_emergency_diskover_web.md
   - maintenance_emergency_elasticsearch_aws.md
-  - support.md
   - aws_cost.md
+  - support_community_edition.md
+  - support_subscriptions.md
   - contact.md
   - copyright.md

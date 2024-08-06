@@ -6,7 +6,6 @@ ordered_documents:
   - index_diskover_guides_header.md
   - guide_title_troubleshooting_tech.md
   - support_zendesk.md
-  - support_community_edition.md
-  - support_subscriptions.md
+  - support.md
   - contact.md
   - copyright.md

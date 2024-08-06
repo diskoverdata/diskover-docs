@@ -62,7 +62,6 @@ ordered_documents:
   - maintenance_emergency_diskover_web.md
   - maintenance_emergency_elasticsearch.md
   - maintenance_emergency_elasticsearch_aws.md
-  - support_community_edition.md
-  - support_subscriptions.md
+  - support.md
   - contact.md
   - copyright.md

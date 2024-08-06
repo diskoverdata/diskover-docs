@@ -4,8 +4,6 @@ ___
 
 ### Support Options
 
-<img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
-
 | Support & Ressources | Free Community Edition | Subscriptions<br><img src="images/button_edition_essential.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="90"><br><img src="images/button_edition_media.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="90"> |
 | --- | :---: | :---: |
 | **Online Documentation**<ul><li>[Diskover online documentation](https://docs.diskoverdata.com/)</li></ul> | ✅ | ✅ |

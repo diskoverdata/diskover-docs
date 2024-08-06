@@ -1,4 +1,4 @@
-website_name: Diskover AWS Customer Deployment Guide
+website_name: Diskover AWS Deployment Guide
 # Folder on the website, if you specify "folder" it will deploy this guide to https://docs.diskoverdata.com/folder
 website_folder: diskover_aws_deployment_guide
 # All documents need to be in shared folder

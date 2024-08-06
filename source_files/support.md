@@ -13,19 +13,12 @@ ___
 | **Technical Support**<ul><li>[Go to Diskover Zendesk space](https://diskoverdata.zendesk.com/)</li><li>[How to create a Zendesk account](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-zendesk-account)</li><li>[How to create a support ticket](https://docs.diskoverdata.com/tech_support_and_troubleshooting/)</li></ul> | | ✅ |
 | **Remote Training** | | <a class="email-link" href= "mailto:info@diskoverdata.com?subject=Training Information Request">Contact us for details</a> |
 
-**\*** <br><img src="images/button_edition_essential.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="90"><br><img src="images/button_edition_media.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="90">
-
-
-
-
-
+**\*** <img src="images/button_edition_essential.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="90">
 
 ### Feedback
 
-Please email Diskover at [info@diskoverdata.com](mailto:info@diskoverdata.com)
+We'd love to hear from you! Email us at [info@diskoverdata.com](mailto:info@diskoverdata.com)
 
 ### Warranty & Liability Information
 
-Please refer to the Diskover End-User License Agreement for the latest warranty and liability disclosures that can be found online at the following address:  
-
-[https://www.diskoverdata.com/legal-docs/](https://www.diskoverdata.com/legal-docs/)
+Please refer to our [Diskover End-User License Agreements](https://www.diskoverdata.com/legal-docs/) for the latest warranty and liability disclosures. 

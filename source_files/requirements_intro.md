@@ -4,7 +4,7 @@ ___
 ## Prerequisites and Requirements
 ___
 
-### Main Requirements
+### Prerequisites
 
 - Python 3.8+
 - Elasticsearch 8.x

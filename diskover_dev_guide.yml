@@ -13,6 +13,7 @@ ordered_documents:
   - dev_file_actions_php.md
   - dev_alternate_scanner.md
   - dev_diskover_web_api.md
-  - support.md
+  - support_community_edition.md
+  - support_subscriptions.md
   - contact.md
   - copyright.md

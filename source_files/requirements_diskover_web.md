@@ -1,28 +1,20 @@
 ___
 ### Diskover-Web Server Requirements
 
-The Diskover-Web HTML5 user interface requires a Web server platform. A Linux or Windows instance can be configured with applications to provide Web serving capabilities is required. The Diskover-Web user interfaces provides visibility, analysis, and actions from the indexes that reside on the Elasticsearch endpoint.
+The Diskover-Web HTML5 user interface requires a Web server platform. It provides visibility, analysis, workflows, and file actions from the indexes that reside on the Elasticsearch endpoint.
 
-Multiple indexers can be ran on a single machine or multiple machines for parallel crawling.
+##### Requirements for POC and Deployment
 
-#### Linux
+| | Proof of Concept | Production Deployment |
+| --- | --- | --- |
+| CPU | 8 to 32 cores | 8 to 32 cores |
+| RAM | 8 to 16 GB | 8 to 16 GB |
+| DISK | 250 to 500 GB | 250 to 500 GB |
 
->- 64-bit Red Hat Enterprise Linux Server v7.x, v8.x
->- 64-bit CentOS v7.x, v8.x
->- 64-bit Rocky v8.x
->- On an EC2 instance with 64-bit Amazon Linux 2.x
+#### Linux OS
 
-#### Windows
-
->- Windows 10
->- Windows Server
-
-#### Recommended
-
->- 4 CPU cores
->- 8 GB RAM
-
-#### Minimum
-
->- 2 CPU cores
->- 4 GB RAM
+- 64-bit Red Hat Enterprise Linux Server v7.x, v8.x
+- 64-bit CentOS v7.x, v8.x
+- 64-bit Rocky v8.x
+- Ubuntu?
+- On an EC2 instance with 64-bit Amazon Linux 2.x

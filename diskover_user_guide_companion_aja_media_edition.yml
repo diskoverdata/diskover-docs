@@ -6,7 +6,6 @@ ordered_documents:
   - aja_logo_and_icon.md
   - guide_title_companion_media_edition.md
   - intro_guide_intended_for_user.md
-  - intro_copyright.md
   - contact_aja.md
   - intro_media_edition_main.md
   - intro_media_edition_challenges_solutions.md
@@ -20,4 +19,4 @@ ordered_documents:
   - user_media_edition_imf_package_validator_plugin.md
   - support_media_edition.md
   - contact.md
-  - footer_media_edition.md
+  - copyright.md

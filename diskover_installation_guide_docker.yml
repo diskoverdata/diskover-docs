@@ -12,7 +12,6 @@ ordered_documents:
   - intro_doc_conventions.md
   - install_docker.md
   - software_activation.md
-  - support_community_edition.md
-  - support_subscriptions.md
+  - support.md
   - contact.md
   - copyright.md

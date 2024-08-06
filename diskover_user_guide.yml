@@ -6,7 +6,6 @@ ordered_documents:
   - index_diskover_guides_header.md
   - guide_title_user.md
   - intro_guide_intended_for_user.md
-  - intro_copyright.md
   - intro_user_guides_main_intro.md
   - intro_doc_conventions_user.md
   - software_overview.md
@@ -42,4 +41,4 @@ ordered_documents:
   - user_advanced_indices.md
   - support.md
   - contact.md
-  - footer.md
+  - copyright.md

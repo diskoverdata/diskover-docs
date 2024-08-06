@@ -17,7 +17,10 @@ ordered_documents:
   - requirements_diskover_indexers.md
   - requirements_skills.md
   - architecture_overview.md
+ 
+  - INSTALL
   - install_community_from_github.md
+  - upgrade from CE
   - install_elasticsearch_intro.md
   - install_elasticsearch_linux_centos_and_rhel.md
   - install_elasticsearch_linux_ubuntu.md
@@ -55,13 +58,22 @@ ordered_documents:
   - install_indexers_alternate_azure.md
   - install_indexers_alternate_dropbox.md
   - install_indexers_dev_your_own_alternate_scanner.md
+  - software_activation.md
   - task_worker_intro.md
   - task_worker_linux.md
   - task_worker_windows.md
   - task_worker_mac.md  
-  - time_zone_settings.md
-  - software_activation.md
+
+
+  - CONFIG
   - config_after_install.md
+  - time_zone_settings.md
+  - reporting_intro.md
+  - reporting_smart_searches.md
+  - reporting_reports.md
+  - reporting_cost_analysis.md
+
+  - UPGRADE, HEALTH, BACKUP
   - health_check_diskover_intro.md
   - health_check_diskover_web_linux.md
   - health_check_diskover_web_windows.md

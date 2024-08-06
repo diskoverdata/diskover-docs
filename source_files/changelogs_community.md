@@ -4,6 +4,18 @@ ___
 
 ### Diskover v2 Community Edition Changelog
 
+#### [2.3.0] - 2024-08-01
+##### BREAKING CHANGES
+- diskover yaml config file no longer used, changed to using diskover-web sqlite db for storing diskover config settings instead of config file, settings from existing config file are copied over on upgrade and config.yaml renamed to config.yaml.old
+##### added
+- additional crawl stats log output for min, max, avg for inodes/s and docs/s and also skipped files/dirs
+- env vars for ES config settings overrides are now used by diskover.py
+- timeout to ES connection check
+##### changed
+- changed to using diskover-web sqlite db for storing diskover config settings instead of config file
+    - settings for diskover are now configurable in diskover-web settings page
+
+
 #### [2.2.2] - 2023-12-12
 ##### added
 - index gets deleted if diskover.py exits with critical error
@@ -181,6 +193,21 @@ ___
 
 ___
 ### Diskover-web v2 Community Edition Changelog
+
+#### [2.3.0] - 2024-08-01
+##### BREAKING CHANGES
+- Constants.php config file no longer used, changed to using sqlite db for storing diskover-web config settings instead of config file, existing settings are copied from Constants.php on upgrade
+##### fixed
+- getting logged out when LOGIN_REQUIRED set to false in config
+- es time not showing on dashboard
+- issue with setting browser cookie expiry dates
+##### added
+- config settings are now stored in sqlite db
+- new tabs to settings page
+- additional Elasticsearch info to settings page
+##### changed
+- Constants.php and Constants.php.sample are no longer used, settings are now stored in sqlite db
+
 
 #### [2.2.2] - 2023-12-12
 ##### fixed

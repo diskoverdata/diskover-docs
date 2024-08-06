@@ -5,7 +5,7 @@ ___
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
-| Support & Ressources | Free Community Edition | Subscriptions<br><img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125"> |
+| Support & Ressources | Free Community Edition | Subscriptions<br><img src="images/button_edition_essential.png" width="75">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="75">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="75">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="75">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="75"> |
 | --- | :---: | :---: |
 | **Online Documentation**<br>Access to [Diskover online documentation](https://docs.diskoverdata.com/) | ✅ | ✅ |
 

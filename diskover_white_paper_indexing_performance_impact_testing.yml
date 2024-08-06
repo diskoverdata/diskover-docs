@@ -5,7 +5,6 @@ website_folder: diskover_white_paper_indexing_performance_impact_testing
 ordered_documents:
   - index_diskover_guides_header.md
   - guide_title_white_paper_indexing_performance_impact.md
-  - intro_copyright.md
   - white_paper_indexing_perfomance_impact.md
   - contact.md
-  - footer.md
+  - copyright.md

@@ -5,8 +5,7 @@ website_folder: diskover_changelogs
 ordered_documents:
   - index_diskover_guides_header.md
   - guide_title_changelogs.md
-  - intro_copyright.md
   - changelogs_community.md
   - changelogs_essentialplus.md
   - contact.md
-  - footer.md
+  - copyright.md

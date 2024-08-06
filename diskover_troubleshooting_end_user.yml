@@ -5,9 +5,9 @@ website_folder: diskover_troubleshooting_end_user
 ordered_documents:
   - index_diskover_guides_header.md
   - guide_title_troubleshooting_end_user.md
-  - intro_copyright.md
   - troubleshooting_end_user_search_results.md
   - troubleshooting_end_user_user_interface.md
   - troubleshooting_end_user_indices.md
+  - support.md
   - contact.md
-  - footer.md
+  - copyright.md

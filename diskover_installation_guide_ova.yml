@@ -12,6 +12,7 @@ ordered_documents:
   - intro_doc_conventions.md
   - install_ova.md
   - software_activation.md
-  - support.md
+  - support_community_edition.md
+  - support_subscriptions.md
   - contact.md
   - copyright.md

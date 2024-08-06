@@ -2,48 +2,25 @@ ___
 ## Support
 ___
 
+### Support Options
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
 | Support & Ressources | Free Community Edition | Subscriptions<br><img src="images/button_edition_essential.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="90"><br><img src="images/button_edition_media.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="90"> |
 | --- | :---: | :---: |
-| **Online Documentation**<br>Access to [Diskover online documentation](https://docs.diskoverdata.com/) | ✅ | ✅ |
+| **Online Documentation**<ul><li>[Diskover online documentation](https://docs.diskoverdata.com/)</li></ul> | ✅ | ✅ |
+| **Slack Community Support**<ul><li>[#Diskover Slack Channel](https://diskoverworkspace.slack.com/ssb/redirect#/)</li></ul> | ✅ | ✅ |
+| **Diskover Community Forum**<ul><li>[Share, learn and connect on Zendesk](https://support.diskoverdata.com/hc/en-us/community/topics)</li><li>[How to create a Zendesk account](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-zendesk-account)</li></ul> | ✅ | ✅ |
+| **Knowledge Base**<ul><li>[Access our knowledge base articles](https://diskoverdata.zendesk.com/)</li><li>[How to create a Zendesk account](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-zendesk-account)</li></ul> | ✅ | ✅ |
+| **Technical Support**<ul><li>[Go to Diskover Zendesk space](https://diskoverdata.zendesk.com/)</li><li>[How to create a Zendesk account](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-zendesk-account)</li><li>[How to create a support ticket](https://docs.diskoverdata.com/tech_support_and_troubleshooting/)</li></ul> | | ✅ |
+| **Remote Training** | | <a class="email-link" href= "mailto:info@diskoverdata.com?subject=Training Information Request">Contact us for details</a> |
 
 
 
 
 
 
-### Support and Troubleshooting
 
-#### For Technical Users
-
-Diskover has partnered with Zendesk to offer a rich knowledge base and an easy-to-use support ticketing system.
-
-- Go to [Diskover Zendesk space](https://diskoverdata.zendesk.com/)
-- Learn [how to create a Zendesk account](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-zendesk-account)
-- Learn [how to create a support ticket](https://docs.diskoverdata.com/tech_support_and_troubleshooting/)
-
-#### For Non-Technical Users
-
-Consult the [End-User Troubleshooting Guide](https://docs.diskoverdata.com/diskover_troubleshooting_end_user/) for answers related to the daily operation of Diskover.
-
-### Online Documentation
-
-The [Diskover online documentation](https://docs.diskoverdata.com/) provides several guides to ensure technical and non-technical user success with Diskover.
-
-### Community Support
-
-#### Zendesk
-
-In addition to our [knowledge base articles](https://diskoverdata.zendesk.com/), you can visit and collaborate on the [Diskover Community Zendesk space](https://support.diskoverdata.com/hc/en-us/community/topics).
-
-- Learn [how to create a Zendesk account](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-zendesk-account).
-- Learn [how to collaborate on the Diskover Community Zendesk space](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#diskover-community).
-
-#### Slack
-
-Reliant on the [Diskover Slack workspace](https://diskoverworkspace.slack.com/ssb/redirect#/), this forum is a great place to ask questions to the Diskover community.
 
 ### Feedback
 

@@ -5,7 +5,6 @@ website_folder: tech_support_and_troubleshooting
 ordered_documents:
   - index_diskover_guides_header.md
   - guide_title_troubleshooting_tech.md
-  - intro_copyright.md
   - support_zendesk.md
   - contact.md
-  - footer.md
+  - copyright.md

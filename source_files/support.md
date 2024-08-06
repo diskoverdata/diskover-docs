@@ -2,8 +2,11 @@ ___
 ## Support
 ___
 
+
+<img src="images/button_edition_essential.png" width="125"><img src="images/button_edition_professional.png" width="125"><img src="images/button_edition_enterprise.png" width="125"><img src="images/button_edition_media.png" width="125"><img src="images/button_edition_life_science.png" width="125">
+
 | Support & Ressources | Free Community Edition | Subscriptions<br>![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Diskover Life Science Edition Label](images/button_edition_life_science.png) |
-| --- | --- | --- |
+| --- | :---: | :---: |
 | **Online Documentation**<br>Access to [Diskover online documentation](https://docs.diskoverdata.com/) | ✅ | ✅ |
 
 

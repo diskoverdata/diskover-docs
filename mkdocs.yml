@@ -5,8 +5,8 @@ theme:
     logo: 'assets/images/logo.png'
     palette:
         scheme: default
-        primary: deepskyblue
-        accent: crimson
+        primary: blue
+        accent: orange
 markdown_extensions:
     - mdx_breakless_lists
     - pymdownx.tasklist

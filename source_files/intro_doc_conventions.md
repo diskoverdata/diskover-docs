@@ -16,7 +16,7 @@ code snippet - use icon on the far right to copy me
 
 #### Diskover Editions
 
-A label with the name(s) of the applicable [Diskover Software Edition](https://www.diskoverdata.com/solutions/) is displayed when a section of the guide applies to an annual paid subscription, therefore not included in the free Community Edition.
+When a section of the guide applies to a single or multiple annual subscription, a label with the name(s) of the applicable [Diskover Software Edition](https://www.diskoverdata.com/solutions/) is displayed.
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 

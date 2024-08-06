@@ -6,7 +6,6 @@ ordered_documents:
   - index_diskover_guides_header.md
   - guide_title_dev.md
   - intro_guide_intended_for_tech.md
-  - intro_copyright.md
   - intro_tech_guides_main_intro.md
   - intro_tech_guides_aws_approved.md
   - intro_doc_conventions_dev.md
@@ -16,4 +15,4 @@ ordered_documents:
   - dev_diskover_web_api.md
   - support.md
   - contact.md
-  - footer.md
+  - copyright.md

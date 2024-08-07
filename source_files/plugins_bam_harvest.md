@@ -3,7 +3,7 @@
 ___
 ### BAM Info Harvest Plugin
 
-![Image: Life Science Edition Label](images/button_edition_life_science.png)
+<img src="images/button_edition_life_science.png" width="125">
 
 #### [🍿 Watch Demo Video](https://vimeo.com/678914314?share=copy)
 

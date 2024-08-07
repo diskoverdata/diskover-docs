@@ -2,7 +2,7 @@
 
 ___
 ## Software Activation
-![Image: Essential Edition Label](images/button_edition_essential.png)&nbsp;![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
+<img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 ___
 ### Obtaining a License Key
 
@@ -12,11 +12,14 @@ No license key is required for **Diskover Community Edition**. If you would like
 
 ### Download the Latest Software Version
 
-First, you need to [create an account on the Diskover Download Portal](https://download.diskoverdata.com/register.php). Once your account is approved, you can [login](https://download.diskoverdata.com/) and download the lastest version.
+First, you need to [create an account on the Diskover Download Portal](https://download.diskoverdata.com/register.php). Once your account is approved, you can [login](https://download.diskoverdata.com/) and download the latest version.
 
 ### License Key Creation Criteria
 
-Your license key is created and attached to 1. your hardware ID, 2. your [Diskover subcription edition](https://www.diskoverdata.com/solutions/), and 3. the number of nodes.
+Your license key is created and attached to:
+1. Your hardware ID
+2. Your [Diskover subscription edition](https://www.diskoverdata.com/solutions/)
+3. The number of nodes.
 
 ### Generating a Hardware ID
 
@@ -30,7 +33,7 @@ cd /opt/diskover
 python3 diskover_lic.py -g
 ```
 
->_Note:_ If your Elasticsearch cluser ID (unique id created at install) changes, you will need new license keys.
+>_Note:_ If your Elasticsearch cluster ID (unique ID created at install) changes, you will need new license keys.
 
 ### License Key Locations
 
@@ -74,7 +77,7 @@ C:\Program Files\diskover-web\src\diskover\
 
 ### Get License Info
 
-After you have installed your license keys, you can see info about the license using `diskover_lic.py` or by going to the diskover-web settings page and scrolling to the license info section.
+After you have installed your license keys, you can see info about the license using `diskover_lic.py` or by going to the Diskover-Web settings page and scrolling to the license info section.
 
 🔴 &nbsp;Get license info:
 ```

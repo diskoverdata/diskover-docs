@@ -5,8 +5,8 @@ theme:
     logo: 'assets/images/logo.png'
     palette:
         scheme: default
-        primary: 005c99
-        accent: ef7001
+        primary: #005c99
+        accent: #ef7001
 markdown_extensions:
     - mdx_breakless_lists
     - pymdownx.tasklist

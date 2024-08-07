@@ -24,4 +24,4 @@ As per the config diagram in the previous chapter, note that Windows and Mac are
 | --- | --- | --- |
 | <ul><li>CentOS8</li><li>CentOS Stream 9</li><li>Rocky 8</li><li>RHEL (Red Hat Enterprise Linux) 8</li></ul> | <ul><li>Windows 10 &11</li><li>Windows Server 2022</li></ul> | <ul><li>MacOS 10.11+ ElCapitan</li></ul> |
 
-* Diskover can technically run on all flavors of Linux, although only CentOS and Rocky are covered in this guide.
+* Diskover can technically run on all flavors of Linux, although only the ones mentioned above are fully supported.

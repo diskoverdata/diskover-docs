@@ -38,7 +38,6 @@ Please consult the [Diskover AWS Customer Deployment Guide](https://docs.diskove
 | ---| --- | --- | --- |
 | Minimum | i3.large | t3.small | t3.large |
 | Recommended | i3.xlarge | t3.medium | t3.xlarge |
-| Comments | The foundation of the Diskover platform consists of a series of Elasticsearch indexes. These indexes are created and stored within the AWS Elasticsearch endpoint. | The Diskover-Web HTML5 user interface requires a web-server platform. An EC2 instance configured with applications to provide web serving capabilities is required. The Diskover-Web user interfaces provides visibility, analysis, and actions from the indexes that reside on the AWS Elasticsearch endpoint. |  |
 
 #### Indices
 

@@ -3,7 +3,7 @@
 ___
 ### Media Info Harvest Plugin
 
-![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+<img src="images/button_edition_media.png" width="125">
 
 The media info harvest plugin is designed to provide media metadata attributes about a file without granting the Diskover user any read/write file system access.
 

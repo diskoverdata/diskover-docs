@@ -1,7 +1,7 @@
 ___
 ### File Action > IMF Package Validator
 
-![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+<img src="images/button_edition_media.png" width="125">
 
 #### [🍿 Watch Demo Video](https://vimeo.com/833500176?share=copy)
 

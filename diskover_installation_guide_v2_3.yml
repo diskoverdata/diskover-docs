@@ -7,15 +7,16 @@ ordered_documents:
   - guide_title_install.md
   - intro_guide_intended_for_tech.md
   - intro_tech_guides_main_intro.md
-  - intro_tech_guides_use_cases.md
   - intro_tech_guides_aws_approved.md
+  - intro_tech_guides_use_cases.md
   - intro_doc_conventions.md
+  - architecture_overview.md 
   - requirements_intro.md
-  - requirements_elasticsearch.md
+  - requirements_elasticsearch.md 
   - requirements_diskover_web.md
   - requirements_diskover_indexers.md
   - requirements_skills.md
-  - architecture_overview.md
+
  
   - INSTALL
   - install_community_from_github.md

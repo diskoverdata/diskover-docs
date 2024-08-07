@@ -21,7 +21,7 @@ _[Click here for a full-screen view of the Elasticsearch Architecture diagram.](
 - For more detailed Elasticsearch guidelines, please refer to [AWS sizing guidelines](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sizing-domains.html).
 - For more information on [resilience in small clusters](https://www.elastic.co/guide/en/elasticsearch/reference/current/high-availability-cluster-small-clusters.html).
 
-##### Requirements for POC and Deployment
+#### Requirements for POC and Deployment
 
 | | Proof of Concept | Production Deployment |
 | --- | --- | --- |
@@ -29,6 +29,16 @@ _[Click here for a full-screen view of the Elasticsearch Architecture diagram.](
 | CPU | 8 to 32 cores | 8 to 32 cores |
 | RAM | 8 to 16 GB (8 GB reserved to Elasticsearch memory heap) | 64 GB per node (16 GB reserved to Elasticsearch memory heap |
 | DISK | 250 to 500 GB of SSD storage per node (see Elasticsearch Storage Requirements below) | 500 to 1 TB of SSD storage per node (see Elasticsearch Storage Requirements below) |
+
+#### AWS Sizing Resource Requirements
+
+Please consult the [Diskover AWS Customer Deployment Guide](https://docs.diskoverdata.com/diskover_aws_deployment_guide/) for all details.
+
+| | Elasticsearch Domain | EC2 Web-Server | Indexers |
+| ---| --- | --- | --- |
+| Minimum | i3.large | t3.small | t3.large |
+| Recommended | i3.xlarge | t3.medium | t3.xlarge |
+| Comments | The foundation of the Diskover platform consists of a series of Elasticsearch indexes. These indexes are created and stored within the AWS Elasticsearch endpoint. | The Diskover-Web HTML5 user interface requires a web-server platform. An EC2 instance configured with applications to provide web serving capabilities is required. The Diskover-Web user interfaces provides visibility, analysis, and actions from the indexes that reside on the AWS Elasticsearch endpoint. |  |
 
 #### Indices
 

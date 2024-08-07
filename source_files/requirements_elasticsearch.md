@@ -34,7 +34,7 @@ _[Click here for a full-screen view of the Elasticsearch Architecture diagram.](
 
 Please consult the [Diskover AWS Customer Deployment Guide](https://docs.diskoverdata.com/diskover_aws_deployment_guide/) for all details.
 
-| | Elasticsearch Domain | EC2 Web-Server | Indexers |
+| | AWS Elasticsearch Domain | AWS EC2 Web-Server | AWS Indexers |
 | ---| --- | --- | --- |
 | Minimum | i3.large | t3.small | t3.large |
 | Recommended | i3.xlarge | t3.medium | t3.xlarge |

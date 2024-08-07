@@ -1,3 +1,5 @@
+<p id="requirements_es"></p>
+
 ___
 ### Elasticsearch Requirements
 
@@ -51,8 +53,8 @@ _[Click here for a full-screen view of this image.](images/image_indices_index_s
 
 ##### Individual Index Size
 
-- 1 GB for every 5 million files / folders
-- 20 GB for every 100 million files / folders
+- 1 GB for every 5 million files/folders
+- 20 GB for every 100 million files/folders
 
 ⚠️ &nbsp; The size of the files is not relevant.
 

@@ -6,7 +6,7 @@ theme:
     palette:
         scheme: default
         primary: blue
-        accent: red
+        accent: orange
 markdown_extensions:
     - mdx_breakless_lists
     - pymdownx.tasklist

@@ -2,8 +2,6 @@
 
 ___
 ## Diskover-Web Plugins | File Actions
-
-<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 ___
 
 Diskover-web is designed for extensibility. The open-source architecture is designed to promote extensibility via web plugins known as File Actions.

@@ -1,1 +1,1 @@
-![Image: Diskover Data Logo](images/diskover_logo_for_light_background.png)
+<img src="images/diskover_logo_for_light_background.png" width="500">

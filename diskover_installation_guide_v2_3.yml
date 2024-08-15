@@ -18,7 +18,7 @@ ordered_documents:
   - requirements_skills.md
 
  
-  - INSTALL
+INSTALL
   - install_community_from_github.md
   - upgrade from CE
   - install_elasticsearch_intro.md
@@ -65,15 +65,17 @@ ordered_documents:
   - task_worker_mac.md  
 
 
-  - CONFIG
+CONFIG
   - config_after_install.md
-  - time_zone_settings.md
   - reporting_intro.md
   - reporting_smart_searches.md
   - reporting_reports.md
   - reporting_cost_analysis.md
 
-  - UPGRADE, HEALTH, BACKUP
+UPGRADE
+  
+  
+HEALTH, 
   - health_check_diskover_intro.md
   - health_check_diskover_web_linux.md
   - health_check_diskover_web_windows.md
@@ -86,6 +88,13 @@ ordered_documents:
   - software_update_mac.md
   - software_upgrade_intro.md
   - software_upgrade_from_ce_to_subscription.md
+
+
+BACKUP
+
+
+UNINSTALL
+  
   - uninstall_intro.md
   - uninstall_elasticsearch.md
   - uninstall_php.md

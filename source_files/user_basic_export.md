@@ -11,7 +11,7 @@ A) **Export** drop-down list button.
 
 B) To export  **files**  only if you have files in your results, otherwise, the report will be empty. This method will export the file names, paths, as well as various [attributes](#attributes) allowing for easy sorting in Excel for example.
 
-<img src="images/button_edition_essential.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="90"><img src="images/button_edition_media.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="90">
+<img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
   - **This page**: Choose to export only the files showing on H) this page. The number of H) pages is affected by the number of search results and I) items per page - will disregard if you have selected items.
   - **All pages**: Chose to export the files showing in H) all pages - will disregard if you have selected items.
@@ -20,7 +20,7 @@ B) To export  **files**  only if you have files in your results, otherwise, the 
 
 C) To export  **directories**  only if you have directories in your results, otherwise, the report will be empty. This method will export the directory names, paths, as well as various [attributes](#attributes) allowing for easy sorting in Excel for example.
 
-<img src="images/button_edition_essential.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="90"><img src="images/button_edition_media.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="90">
+<img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
   - **This page**: Chose to export only the directories showing on H) this page. The number of H) pages is affected by the number of search results and I) items per page - will disregard if you have selected items.
   - **All pages**: Chose to export the directories showing in H) all pages - will disregard if you have selected items.

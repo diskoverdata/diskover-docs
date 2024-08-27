@@ -344,7 +344,7 @@ These fields are harvested during indexing, without any plugins needed.
 
 ### Field Names | Extra Metadata
 
-These extra fields are harvested using plugins, alternate indexers, or when configuring certain Diskover features.
+These extra metadata fields are harvested using index and post-index plugins.
 
 | Tool | What it means | Field names |
 | --- | --- | --- |

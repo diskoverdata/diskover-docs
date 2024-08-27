@@ -309,7 +309,7 @@ Searching with field names can be effective if you search on a specific and/or h
 >- The **fieldname** needs to be lowercase.
 >- The variable after the colon needs to be typed in upper and/or lower case to match exactly what you are searching for. 
 
-#### Field Names | Basic Metadata
+### Field Names | Basic Metadata
 
 These fields are harvested during indexing, without any plugins needed.
 
@@ -342,7 +342,7 @@ These fields are harvested during indexing, without any plugins needed.
 
 <p id="extra_metadata"></p>
 
-#### Field Names | Extra Metadata
+### Field Names | Extra Metadata
 
 These extra fields are harvested using plugins, alternate indexers, or when configuring certain Diskover features.
 

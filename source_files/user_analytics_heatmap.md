@@ -3,7 +3,7 @@
 ___
 ### Heatmap 
 
-<img src="images/button_edition_essential.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="90"><img src="images/button_edition_media.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="90">
+<img src="images/button_edition_essential.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="90">
 
 
 

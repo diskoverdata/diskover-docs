@@ -49,7 +49,7 @@ yum install -y https://artifacts.elastic.co/downloads/elasticsearch/elasticsearc
 vi /etc/elasticsearch/jvm.options
 ```
 
-🔴 &nbsp;Set the set the following memory heap size options to 50% of memory, up to 32g max:
+🔴 &nbsp;Set the following memory heap size options to 50% of memory, up to 32g max:
 ```
 -Xms8g
 -Xmx8g

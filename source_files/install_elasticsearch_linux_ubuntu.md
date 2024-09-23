@@ -1,7 +1,7 @@
 ___
 ### Install Elasticsearch for Linux Ubuntu
 
-Install Ubuntu 20.x
+🔴 &nbsp;Install Ubuntu 20.x
 
 #### Disable SELinux (Optional)
 
@@ -48,9 +48,7 @@ sh -c 'echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" > /e
 
 Once the repository is added, you can proceed and install Elasticsearch.
 
-#### Install Elasticsearch 7.x:
-
->_Note_: Elasticsearch 8.x is not supported at the moment.
+#### Install Elasticsearch 8.x:
 
 The following section describes installing Elasticsearch on Linux Ubuntu.
 
@@ -91,7 +89,7 @@ vim /etc/elasticsearch/jvm.options
 -Xmx8g
 ```
 
-🔴 &nbsp;Update the Elasticsearch configuration file to define desired Elasticsearch endpoint:
+🔴 &nbsp;Update the Elasticsearch configuration file to define the desired Elasticsearch endpoint:
 ```
 vi /etc/elasticsearch/elasticsearch.yml
 ```

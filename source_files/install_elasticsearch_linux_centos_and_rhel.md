@@ -1,7 +1,7 @@
 ___
 ### Install Elasticsearch for Linux CentOS and RHEL
 
-Install CentOS 7.x, CentOS 8.x, RHEL 7.x, or RHEL8.x
+🔴 &nbsp;Install CentOS 8.x or RHEL8.x
 
 #### Disable SELinux (Optional)
 
@@ -30,13 +30,11 @@ yum -y update
 yum -y install java-1.8.0-openjdk.x86_64
 ```
 
-#### Install Elasticsearch 7.x:
-
->_Note_: Elasticsearch 8.x is not supported at the moment.
+#### Install Elasticsearch 8.x:
 
 The following section describes installing Elasticsearch on Linux CentOS and RHEL.
 
-🔴 &nbsp;You can find the latest 7.x.x version on the [Elasticsearch download page](https://www.elastic.co/downloads/elasticsearch).
+🔴 &nbsp;You can find the latest 8.x.x version on the [Elasticsearch download page](https://www.elastic.co/downloads/elasticsearch).
 
 🔴 &nbsp;Install the latest version of Elasticsearch - you also need to keep up to date with patches, security enhancements, etc. as new versions are released:
 

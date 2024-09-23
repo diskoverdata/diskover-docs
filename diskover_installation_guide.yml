@@ -20,9 +20,6 @@ ordered_documents:
   - install_elasticsearch_intro.md
   - install_elasticsearch_linux_centos_and_rhel.md
   - install_elasticsearch_linux_ubuntu.md
-  - install_elasticsearch_windows_intro.md
-  - install_elasticsearch_windows_steps.md
-  - install_elasticsearch_windows_settings_config.md
   - install_elasticsearch_linux_cluster.md
   - install_kibana.md
   - install_diskover_web_intro.md

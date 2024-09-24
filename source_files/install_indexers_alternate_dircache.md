@@ -41,7 +41,7 @@ If you see this traceback error when starting a scan, the SQLite database has be
 sqlite3.DatabaseError: file is encrypted or is not a database
 ```
 
-If you see this error message, you will need to delete the SQLite database file, refer to the scan log lines (example below) to find what db file to delete.
+If you see this error message, you need to delete the SQLite database file. Refer to the scan log lines (example below) to find the DB file to delete.
 
 ```
 2022-03-29 10:28:55,397 - diskover_cache - INFO - Using cache DB __dircache__/eac817f78756a24821316430009bb0c2/cache_database.db (160.73 MB)

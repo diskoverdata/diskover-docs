@@ -1,8 +1,8 @@
 ___
-## Alternate Elasticsearch Visualization Tools (Optional)
+## Optional Elasticsearch Visualization Tools
 ___
 
-You can use other visualization tools to read the Elasticsearch data catalog besides Diskover-Web. Diskover does not technically support these optional tools, and only Kibana is described in this section.
+You can optionally use other visualization tools to read the Elasticsearch metadata catalog besides Diskover-Web. Diskover does not technically support these optional tools, and only Kibana is described in this section.
 
 ### Using Kibana in Addition to Diskover-Web
 

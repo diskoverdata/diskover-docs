@@ -42,7 +42,7 @@ wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | apt-key add
 🔴 &nbsp;Next, add the Elasticsearch repository with the following command:
 
 ```
-sh -c 'echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" > /etc/apt/sources.list.d/elastic-7.x.list'
+sh -c 'echo "deb https://artifacts.elastic.co/packages/8.x/apt stable main" > /etc/apt/sources.list.d/elastic-8.x.list'
 
 ```
 

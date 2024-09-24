@@ -1,6 +1,7 @@
 ___
 ## Diskover Alternate Indexers
 
+This section outlines information needed outside the guidelines included in the user interface **System Configuration** Panel.
 
 ___
 ### Alternate Indexer | Directory Cache (DirCache)

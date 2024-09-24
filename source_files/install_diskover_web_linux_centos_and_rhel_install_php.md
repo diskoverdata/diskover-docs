@@ -1,32 +1,6 @@
 #### Install PHP 7 and PHP-FPM (FastCGI)
 
->Note: PHP 8.1 can also be used instead of PHP 7.4, replace php74/php7.4 with php81/php8.1
-
-##### Centos/RHEL 7.x
-
-🔴 &nbsp;Install epel and remi repos on CentOS/RHEL 7.x (if not already installed):
-```
-yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
-```
-
-🔴 &nbsp;Enable remi php 7.4:
-```
-yum -y install yum-utils
-yum-config-manager --enable remi-php74
-```
-
-🔴 &nbsp;Install PHP and other PHP packages:
-```
-yum -y install php php-common php-fpm php-opcache php-cli php-gd php-mysqlnd php-ldap php-pecl-zip php-xml php-xmlrpc php-mbstring php-json php-sqlite3
-```
-
-🔴 &nbsp;Copy php production ini file php.ini-production to php.ini file:
-```
-find / -mount -name php.ini-production
-find / -mount -name php.ini
-cp php.ini-production php.ini
-```
+>_Note:_ PHP 8.1 can also be used instead of PHP 7.4, replace php74/php7.4 with php81/php8.1
 
 ##### Centos/RHEL 8.x
 

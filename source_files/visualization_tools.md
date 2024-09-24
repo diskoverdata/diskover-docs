@@ -1,8 +1,10 @@
 ___
-## Kibana Installation (Optional)
+## Alternate Elasticsearch Visualization Tools (Optional)
 ___
 
-If you want to use Kibana in addition to the Diskover-Web user interface.
+You can use other visualization tools to read the Elasticsearch data catalog besides Diskover-Web. Diskover does not technically support these optional tools, and only Kibana is described in this section.
+
+### Using Kibana in Addition to Diskover-Web
 
 🔴 &nbsp;Install the latest version of Kibana and keep up to date with patches, security enhancements, etc. as new versions are released:
 ```
@@ -29,6 +31,6 @@ systemctl start kibana.service
 systemctl status kibana.service
 ```
 
-For securing Elasticsearch and Kibana, follow this user guide to set up security, as by default Elasticsearch has no security enabled:
+For securing Elasticsearch and Kibana, follow this user guide to set up security, as by default, Elasticsearch has no security enabled:
 
 [https://www.elastic.co/guide/en/elasticsearch/reference/7.x/secure-cluster.html](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/secure-cluster.html)

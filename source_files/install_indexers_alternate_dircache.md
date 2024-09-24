@@ -3,7 +3,7 @@ ___
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
-The Directory Cache alternate scanner can be used to speed up subsequent crawls when indexing slower network mounted storage.
+The DirCache alternate scanner can be used to speed up subsequent crawls when indexing slower network-mounted storage.
 
 DirCache alternate scanner uses the Diskover cache module **diskover_cache**, which uses [SQLite](https://www.sqlite.org/) database to store a local cache of directory mtimes (modified times), directory file lists, and file stat attributes.
 

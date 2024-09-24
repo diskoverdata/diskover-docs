@@ -3,7 +3,7 @@ ___
 
 
 ___
-### Directory Cache Alternate Scanner
+### Alternate Indexer | Directory Cache (DirCache)
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
@@ -37,3 +37,18 @@ Delete the database directory and file:
 cd /opt/diskover/__dircache__
 rm -rf eac817f78756a24821316430009bb0c2
 ```
+
+___
+### Alternate Indexer | S3 Bucket
+
+
+___
+### Alternate Indexer | Azure torage Blob
+
+
+___
+### Alternate Indexer | Dropbox
+
+
+___
+### Alternate Indexer | Develop Your Own Scanner

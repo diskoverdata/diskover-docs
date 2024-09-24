@@ -17,7 +17,7 @@ ordered_documents:
   - requirements_diskover_indexers.md
   - requirements_skills.md
 
-WHERE TO FIND WHAT IN THE NEW ADMIN PANEL
+WHERE TO FIND WHAT IN THE NEW ADMIN PANEL > search
 
 
  
@@ -31,7 +31,6 @@ INSTALL
   - install_elasticsearch_windows_steps.md
   - install_elasticsearch_windows_settings_config.md
   - install_elasticsearch_linux_cluster.md
-  - install_kibana.md
   - install_diskover_web_intro.md
   - install_diskover_web_linux_centos_and_rhel_intro.md
   - install_diskover_web_linux_centos_and_rhel_install_nginx.md
@@ -67,6 +66,10 @@ INSTALL
   - task_worker_windows.md
   - task_worker_mac.md  
 
+
+  - indexers_alternate.md
+
+  - install_kibana.md
 
 CONFIG
   - config_after_install.md

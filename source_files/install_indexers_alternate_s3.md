@@ -74,7 +74,7 @@ export S3_USE_SSL=false
 export S3_VERIFY=false
 ```
 
-🔴 &nbsp;Scan and index a **s3** bucket **bucketname** using an auto-index name:
+🔴 &nbsp;Scan and index a **s3** bucket _**bucketname**_ using an auto-index name:
 
 ```
 cd /opt/diskover

@@ -13,7 +13,7 @@ vi /root/.config/diskoverd/config.yaml
 
 #### Configure diskoverd Task Worker to Run as a Service
 
-Setting up **diskoverd** task worker daemon as a service in CentOS 7.
+Setting up **diskoverd** task worker daemon as a service in CentOS 8.
 
 🔴 &nbsp;First, we need to enable logging to a file in **diskoverd** config file(s) by setting the **logToFile** setting to **True** for every worker node that is running tasks.
 

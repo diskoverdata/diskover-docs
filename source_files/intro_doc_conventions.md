@@ -9,10 +9,13 @@ Throughout this document, all the lines displayed in a different font are design
 code snippet - use icon on the far right to copy me
 ```
 
-#### Action Items
+#### Proposed Actions
 
 🔴 &nbsp;All proposed action items are preceded by a red dot.
 
+#### Warnings
+
+🟨 &nbsp;All warnings are preceded by a yellow square.
 
 #### Diskover Editions
 

@@ -1,5 +1,5 @@
 ___
-### Create an Index of an S3 Bucket
+### Alternate Indexer | S3 Bucket
 
 <img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
@@ -82,7 +82,7 @@ python3 diskover.py --altscanner scandir_s3 s3://bucketname
 ```
 > _Note:_ **bucketname** is optional, you can scan all buckets using **s3://**
 
-🔴 &nbsp;Create an S3 index with index name **diskover-s3-bucketname**:
+🔴 &nbsp;Create an S3 index with index name **diskover-s3-_bucketname_**:
 
 ```
 cd /opt/diskover

@@ -3,7 +3,7 @@
 ___
 ### Reports
 
-![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
+<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
 Reports were designed to easily help you find what you don't know; it's like reverse engineering. Fully customizable queries with what matters to your business, therefore for you to be able to quickly pinpoint those hard-to-find files and statistics. These reports are global and accessible to everyone in your organization.
 

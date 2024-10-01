@@ -4,7 +4,7 @@ ___
 ## File Actions
 ___
 
-![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
+<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
 The options within file actions push the boundaries around read-only files while still safeguarding your source assets. While some plugins are designed for seamless integration with third-party platforms, reducing time and complexity for users along with many other benefits, Diskover also embraces clients deploying their own plugins to automate their specific in-house workflows. 
 
@@ -36,7 +36,7 @@ H) **submit to Vantage** > To submit files for transcoding via [Telestream Vanta
 
 ### File Action | Live View
 
-![Image: Professional Edition Label](images/button_edition_professional.png)&nbsp;![Image: Enterprise Edition Label](images/button_edition_enterprise.png)&nbsp;![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
+<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
 #### [🍿 Watch Quick Tips | Indexing and Live View](https://vimeo.com/767272643)
 
@@ -77,7 +77,7 @@ G) You can launch file actions from the live view.
 
 #### File Action > Open in GLIM
 
-![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+<img src="images/button_edition_media.png" width="125">
 
 #### [🍿 Watch Demo Video | Telestream GLIM](https://vimeo.com/665037937)
 
@@ -89,7 +89,7 @@ Please refer to the [User Guide Companion for the AJA Diskover Media Edition](ht
 
 #### File Action > Submit to Vantage
 
-![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+<img src="images/button_edition_media.png" width="125">
 
 #### [🍿 Watch Demo Video | Telestream Vantage](https://vimeo.com/669672933)
 
@@ -101,7 +101,7 @@ Please refer to the [User Guide Companion for the AJA Diskover Media Edition](ht
 
 #### File Action > Open in CineViewer
 
-![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
+<img src="images/button_edition_media.png" width="125">
 
 #### [🍿 Watch Demo Video | CineViewer Player](https://vimeo.com/765285042)
 
@@ -113,8 +113,7 @@ Please refer to the [User Guide Companion for the AJA Diskover Media Edition](ht
 
 #### File Action > Validate IMF Package
 
-![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)
-
+<img src="images/button_edition_media.png" width="125">
 #### [🍿 Watch Demo Video | IMF Package Validator](https://vimeo.com/833500176?share=copy)
 
 The IMF package validator file action allows organizations to validate IMF content/packages before delivery directly from the Diskover user interface.
@@ -123,7 +122,7 @@ Please refer to the [User Guide Companion for the AJA Diskover Media Edition](ht
 
 #### File Action > Find File Sequences
 
-![Image: AJA Diskover Media Edition Label](images/button_edition_media.png)&nbsp;![Image: Life Science Edition Label](images/button_edition_life_science.png)
+<img src="images/button_edition_media.png" width="125">
 
 Allows users to find all files in a sequence in one click.
 

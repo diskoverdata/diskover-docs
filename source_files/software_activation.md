@@ -52,8 +52,6 @@ python3 diskover_lic.py -g
 
 ### License Keys Location for Manual Installation
 
-For manual installation.
-
 #### Linux
 
 Place the license keys in the following locations. 

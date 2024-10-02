@@ -6,10 +6,15 @@ ___
 Click any text/link in [blue font](#introduction) to navigate directly to that section.
 
 #### Notes and Tips
-> 🔆 &nbsp;Indicates a note or a tip throughout this guide.
+> 🔆 &nbsp;Indicates a note or a tip.
 
-#### Diskover Editions
-A label with the name(s) of the applicable [Diskover Software Edition](https://www.diskoverdata.com/solutions/) is displayed when a section of the guide applies to an annual paid subscription, therefore not included in the free Community Edition.
+####  Warnings
+
+🟨 &nbsp;Indicates a warning.
+
+#### Restricted Diskover Editions
+
+When a feature and/or section of the guide applies to a specific edition(s), a label with the name(s) of the applicable [Diskover Edition](https://www.diskoverdata.com/solutions/) is displayed.
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 

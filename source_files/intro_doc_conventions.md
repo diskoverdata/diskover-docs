@@ -17,9 +17,9 @@ code snippet - use icon on the far right to copy me
 
 🟨 &nbsp;All warnings are preceded by a yellow square.
 
-#### Diskover Editions
+#### Restricted Diskover Editions
 
-When a section of the guide applies to a specific edition(s), a label with the name(s) of the applicable [Diskover Edition](https://www.diskoverdata.com/solutions/) is displayed.
+When a feature and/or section of the guide applies to a specific edition(s), a label with the name(s) of the applicable [Diskover Edition](https://www.diskoverdata.com/solutions/) is displayed.
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 

@@ -20,7 +20,7 @@ Please reach out to your designated Diskover contact person or [contact us](mail
 Licenses are created using these variables:
 1. Your email address
 2. Your [hardware ID number](https://docs.diskoverdata.com/diskover_installation_guide_ova/#generating-a-hardware-id)
-3. Your [Diskover Editiondition](https://www.diskoverdata.com/solutions/)
+3. Your [Diskover Edition](https://www.diskoverdata.com/solutions/)
 4. The number of Elasticsearch nodes.
 
 ### Download the Latest Software Version

@@ -6,7 +6,7 @@ ___
 Click any text/link in [blue font](#introduction) to navigate directly to that section.
 
 #### Notes and Tips
-> 🔆 &nbsp;Indicates a note or a tip.
+🔆 &nbsp;Indicates a note or a tip.
 
 ####  Warnings
 

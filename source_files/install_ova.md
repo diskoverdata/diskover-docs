@@ -9,7 +9,7 @@ This section contains instructions to quickly get up and running with Diskover u
 - Diskover is configured to start at boot.
 - Hostname set to `diskover`
 - DHCP enabled
-- CentOS 7.x
+- CentOS 9.x
 
 ### Understand the Network
 
@@ -23,7 +23,7 @@ service.
 
 ### Performance Limitations
 
-There are performance limitations when running Diskover using an OVA, as it will start to get sluggish at around 200 million files.
+🟨 There are performance limitations when running Diskover using an OVA, as it will start to get sluggish at around **200 million files**.
 
 ### Requirements
 
@@ -39,9 +39,9 @@ Before you begin, ensure there are sufficient memory and disk resources for the 
 
 - Memory 32GB RAM
 - Disk:
-  - Media & Entertainment workflows: 256GB fast disk/SSD
-  - Life Science, EDA, etc. workflows: 512GB fast disk/SSD
-
+    - Media & Entertainment workflows: 256GB fast disk/SSD
+    - Life Science, EDA, etc. workflows: 512GB fast disk/SSD
+<br>
 🔴 To Expand the root partition and filesystem:
 
 ```
@@ -89,7 +89,7 @@ User: **admin**
 
 Password: **darkdata**
 
-🔴 Request a license by sending us your [hardware ID](https://docs.diskoverdata.com/diskover_installation_guide_ova/#generating-a-hardware-id) so we can generate a license. 
+🔴 Request a license by sending us your **hardware ID** as described below, so we can generate a license. 
 
 - First, you can click on the **Diskover Install Tools** icon on the desktop to open the **Diskover License Tools** application.
 
@@ -105,11 +105,11 @@ Password: **darkdata**
 
 🔴  Or you can manually initiate an index:
 
-1. To run the Diskover indexing process from a shell prompt:
+- To run the Diskover indexing process from a shell prompt:
 ```
 cd /opt/diskover
 ```
-2. Start your first crawl:
+- Start your first crawl:
 ```
 python3 diskover.py -i diskover-<indexname> <storage_top_dir>
 ```

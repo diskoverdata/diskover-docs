@@ -9,7 +9,7 @@ ___
 
 The [**Diskover Community Edition**](https://diskoverdata.com/solutions/) doesn't require a license key and can be used for an unlimited time. 
 
-The **Diskover paid [Editions/Subscriptions](https://diskoverdata.com/solutions/) require a license. Unless otherwise agreed:
+The [**Diskover Editions/paid subscriptions**](https://diskoverdata.com/solutions/) require a license. Unless otherwise agreed:
 - A trial license is valid for 30 days and is issued for 1 Elasticsearch node.
 - A paid subscription license is valid for 1 year. Clients will be contacted about 90 days prior to their license expiration with a renewal proposal.
 

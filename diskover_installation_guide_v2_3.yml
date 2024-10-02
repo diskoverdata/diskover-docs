@@ -54,12 +54,6 @@ INSTALL
   - install_indexers_windows.md
   - install_indexers_mac_manual.md
   - install_indexers_mac_installer.md
-  - install_indexers_alternate_intro.md
-  - install_indexers_alternate_dircache.md
-  - install_indexers_alternate_s3.md
-  - install_indexers_alternate_azure.md
-  - install_indexers_alternate_dropbox.md
-  - install_indexers_dev_your_own_alternate_scanner.md
   - software_activation.md
   - task_worker_intro.md
   - task_worker_linux.md
@@ -68,8 +62,9 @@ INSTALL
 
 
   - indexers_alternate.md
-
-  - install_kibana.md
+  - install_indexers_alt_dev_your_own.md
+  
+  - visualization_tools.md
 
 CONFIG
   - config_after_install.md

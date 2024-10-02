@@ -93,7 +93,7 @@ Password: **darkdata**
 
 ![Image: Centos Desktop](images/image_ov_install_desktop.png)
 
-- Select **Register license** in the drop-down list located at the upper right corner, and then click on **Get hardware ID and installed version** to get your hardware ID number:
+- Select **Register license** in the drop-down list located at the upper right corner, and then click on **Get hardware ID and installed version** to get your hardware ID number. This will trigger an automated [email to Diskover](mailto:licenses@diskoverdata.com) with your license request.
 
 ![Image: Diskover License Tools](images/image_ov_install_diskover_license_tools_hardware_id.png)
 

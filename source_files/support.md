@@ -6,7 +6,7 @@ ___
 
 | Support & Ressources | Free Community Edition | Subscriptions* |
 | --- | :---: | :---: |
-| **Online Documentation**<ul><li>[Diskover online documentation](https://docs.diskoverdata.com/)</li></ul> | ✅ | ✅ |
+| Online Documentation<ul><li>[Diskover online documentation](https://docs.diskoverdata.com/)</li></ul> | ✅ | ✅ |
 | **Slack Community Support**<ul><li>[#Diskover Slack Channel](https://diskoverworkspace.slack.com/ssb/redirect#/)</li></ul> | ✅ | ✅ |
 | **Diskover Community Forum**<ul><li>[Share, learn, and connect on Zendesk](https://support.diskoverdata.com/hc/en-us/community/topics)</li><li>[How to create a Zendesk account](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-zendesk-account)</li></ul> | ✅ | ✅ |
 | **Knowledge Base**<ul><li>[Access our knowledge base articles](https://diskoverdata.zendesk.com/)</li><li>[How to create a Zendesk account](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-zendesk-account)</li></ul> | ✅ | ✅ |

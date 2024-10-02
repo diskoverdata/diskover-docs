@@ -46,8 +46,6 @@ Before you begin, ensure there are sufficient memory and disk resources for the 
 
 ```
 sudo -s
-```
-```
 yum install cloud-utils-growpart-0.27-10.el7.x86_64
 ```
 

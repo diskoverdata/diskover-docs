@@ -4,30 +4,37 @@ ___
 ## Software Activation
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 ___
-### Obtaining a License Key
+### Licensing Overview
 
-A license key is needed for Diskover’s paid subscriptions. Unless otherwise agreed, a license via a subscription is valid for a one (1) year period, and clients will be contacted prior to their license expiration.
+The [**Diskover Community Edition**](https://diskoverdata.com/solutions/) doesn't require a license key and can be used for an unlimited time. 
 
-No license key is required for **Diskover Community Edition**. If you would like to request a demo license key or purchase a [subscription for Diskover’s advanced solutions](https://www.diskoverdata.com/solutions/), please contact your Diskover Data point of contact or [info@diskoverdata.com](mailto:info@diskoverdata.com).
+The **Diskover paid [Editions/Subscriptions](https://diskoverdata.com/solutions/) require a license. Unless otherwise agreed:
+- A trial license is valid for 30 days and is issued for 1 Elasticsearch node.
+- A paid subscription license is valid for 1 year. Clients will be contacted about 90 days prior to their license expiration with a renewal proposal.
+
+Please reach out to your designated Diskover contact person or [contact us](mailto:info@diskoverdata.com) directly for more information.
+
+### License Issuance Criteria
+
+Licenses are created using these variables:
+1. Your email address
+2. Your [hardware ID](https://docs.diskoverdata.com/diskover_installation_guide_ova/#generating-a-hardware-id)
+3. Your [Diskover Editiondition](https://www.diskoverdata.com/solutions/)
+4. The number of Elasticsearch nodes.
 
 ### Download the Latest Software Version
 
-First, you need to [create an account on the Diskover Download Portal](https://download.diskoverdata.com/register.php). Once your account is approved, you can [login](https://download.diskoverdata.com/) and download the latest version.
+1. Create an account for the [Diskover Download Portal](https://download.diskoverdata.com/register.php).
+2. Your account will be validated and approved within 24 hours. Note that we will contact you if we need more information prior to approval.
+3. Once your account is approved, you can [login](https://download.diskoverdata.com/) and download the latest version.
 
-### License Key Creation Criteria
+### Hardware ID Generation
 
-Your license key is created and attached to:
-1. Your hardware ID
-2. Your [Diskover subscription edition](https://www.diskoverdata.com/solutions/)
-3. The number of nodes.
+You will need to generate a hardware ID once you have installed and configured Diskover, and send that information along with your license request. 
 
-### Generating a Hardware ID
-
-You will need to generate a hardware ID once you have installed and configured Diskover before requesting a license. 
-
-**Check that you have configured your Elasticsearch host correctly in Diskover config as it is part of the hardware ID generation.**
-
-🔴 &nbsp;Get hardware id:
+>**IMPORTANT! Check that you have configured your Elasticsearch host correctly as it is part of the hardware ID encoding.**
+>**NOTE!** 
+🔴 &nbsp;To get your hardware ID:
 ```
 cd /opt/diskover
 python3 diskover_lic.py -g

@@ -15,6 +15,14 @@ The [**Diskover Editions/paid subscriptions**](https://diskoverdata.com/solution
 
 Please reach out to your designated Diskover contact person or [contact us](mailto:info@diskoverdata.com) directly for more information.
 
+### Download Portal
+
+If not already done, download the latest software version.
+
+1. Create an account for the [Diskover Download Portal](https://download.diskoverdata.com/register.php).
+2. Your account will be validated and approved within 24 hours. Note that we will contact you if we need more information prior to approval.
+3. Once your account is approved, you can [login](https://download.diskoverdata.com/) and download the latest version.
+
 ### License Issuance Criteria
 
 Licenses are created using these variables:
@@ -22,12 +30,6 @@ Licenses are created using these variables:
 2. Your [hardware ID number](https://docs.diskoverdata.com/diskover_installation_guide_ova/#generating-a-hardware-id)
 3. Your [Diskover Edition](https://www.diskoverdata.com/solutions/)
 4. The number of Elasticsearch nodes.
-
-### Download the Latest Software Version
-
-1. Create an account for the [Diskover Download Portal](https://download.diskoverdata.com/register.php).
-2. Your account will be validated and approved within 24 hours. Note that we will contact you if we need more information prior to approval.
-3. Once your account is approved, you can [login](https://download.diskoverdata.com/) and download the latest version.
 
 ### Hardware ID Generation
 

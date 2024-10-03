@@ -8,6 +8,7 @@ ___
 
 - Python 3.8+
 - Elasticsearch 8.x
+- ES7 Python packages
 - PHP 8.x + PHP-FPM
 - NGINX or Apache (Apache can be used instead of NGINX but the setup is not supported or covered in this guide)
 

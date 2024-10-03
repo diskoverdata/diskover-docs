@@ -13,6 +13,6 @@ Out of the box, Diskover efficiently scans generic filesystems. However, in toda
 
 _[Click here for a full screen view of the Diskover Architecture Overview diagram.](images/diskover_architecture_overview.png)_
 
-![Image: Diskover Reference Diagram Architecture](images/diskover_config_overview.png)
+![Image: Diskover Reference Diagram Architecture](images/diskover_config_template.png)
 
-_[Click here for the full screen view of this diagram.](images/diskover_config_overview.png)_
+_[Click here for the full screen view of this diagram.](images/diskover_config_template.png)_

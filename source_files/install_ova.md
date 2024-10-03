@@ -67,8 +67,7 @@ xfs_growfs -d /
 
 1. If you are new to the **Diskover Download Portal**, you will fist need to [create an account](https://download.diskoverdata.com/register.php).
 2. Once your account is approved, you'll receive a confirmation email.
-3. You can then log in and download the software at [https://download.diskoverdata.com/](https://download.diskoverdata.com/)
-
+3. You can then login at [https://download.diskoverdata.com/](https://download.diskoverdata.com/) and download the latest OVA file.
 
 🔴  Linux Login:
 

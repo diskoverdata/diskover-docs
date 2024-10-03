@@ -48,8 +48,8 @@ Please consult the [Diskover AWS Customer Deployment Guide](https://docs.diskove
 
 Once you have a reference for your index size, you can decide to shard if applicable. To check the size of your indices, from the user interface go to > **gear icon** > **Indices**:
 
-![Image: Index Sizing](images/image_indices_index_size.png)
-_[Click here for a full-screen view of this image.](images/image_indices_index_size.png)_
+![Image: Index Sizing](images/indices_index_size.png)
+_[Click here for a full-screen view of this image.](images/indices_index_size.png)_
 
 ##### Examples
 

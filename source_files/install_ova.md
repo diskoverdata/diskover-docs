@@ -61,7 +61,7 @@ growpart /dev/sda 3
 xfs_growfs -d /
 ```
 
-### How to Install OVA
+### OVA Installation Instructions
 
 🔴  To obtain the Diskover OVA software:
 

@@ -26,4 +26,4 @@ The appropriate label(s) will be displayed for features and/or sections of the g
 #### Videos
 A similar link will appear if a video is available for a specific topic.
 
-#### [🍿 Watch Diskover Videos](https://vimeo.com/user160841725)
+##### [🍿 Watch Diskover Videos](https://vimeo.com/user160841725)

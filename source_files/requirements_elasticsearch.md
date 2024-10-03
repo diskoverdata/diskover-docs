@@ -7,9 +7,6 @@ ___
 
 Diskover is currently tested and deployed with Elasticsearch v8.x. Note that until further notice, Elasticsearch v7.x is also needed to connect to the python library.
 
-- [Download current release of Elasticsearch](https://www.elastic.co/downloads/elasticsearch).
-- [Download past releases of Elasticsearch](https://www.elastic.co/downloads/past-releases#elasticsearch).
-
 #### Elasticsearch Architecture Overview and Terminology
 
 Please refer to this diagram to better understand the terminology used by Elasticsearch and throughout the Diskover documentation.

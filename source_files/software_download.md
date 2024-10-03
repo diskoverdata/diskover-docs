@@ -35,12 +35,12 @@ cd /tmp/diskover
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
-#### OVA Download
-
-🔴 &nbsp;Please follow [the Diskover Installation Guide for OVA](https://docs.diskoverdata.com/diskover_installation_guide_ova/#how-to-install-ova) and download the latest OVA software.
-
 #### Download Portal
 
 1. Create an account for the [Diskover Download Portal](https://download.diskoverdata.com/register.php).
 2. Your account will be validated and approved within 24 hours. Note that we will contact you if we need more information before approval.
 3. Once your account is approved, you can [login](https://download.diskoverdata.com/) and download the latest version.
+
+#### OVA Download
+
+🔴 &nbsp;Follow the steps above, except download the OVA software instead, and then complete the installation as outlined in the [Diskover Installation Guide for OVA](https://docs.diskoverdata.com/diskover_installation_guide_ova/#how-to-install-ova).

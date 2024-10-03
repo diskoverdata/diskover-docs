@@ -91,11 +91,11 @@ Password: **darkdata**
 
 - First, you can click on the **Diskover Install Tools** icon on the desktop to open the **Diskover License Tools** application.
 
-![Image: Centos Desktop](images/image_ov_install_desktop.png)
+![Image: Centos Desktop](images/ova_install_desktop.png)
 
 - Select **Register license** in the drop-down list located at the upper right corner, and then click on **Get hardware ID and installed version** to get your hardware ID number. This will trigger an automated [email to Diskover](mailto:licenses@diskoverdata.com) with your license request.
 
-![Image: Diskover License Tools](images/image_ov_install_diskover_license_tools_hardware_id.png)
+![Image: Diskover License Tools](images/ova_install_diskover_licensing_tool.png)
 
 🔴  Install your license files as explained in the [software activation chapter](https://docs.diskoverdata.com/diskover_installation_guide_ova/#software_activation).
 

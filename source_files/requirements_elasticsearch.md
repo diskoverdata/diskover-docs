@@ -56,7 +56,7 @@ _[Click here for a full-screen view of this image.](images/indices_index_size.pn
 - An index that is 60 GB in size: you will want to set shards to 3 and replicas* to 1 or 2 and spread across 3 ES nodes.
 - An index that is 5 GB in size: you will want to set shards to 1 and replicas* to 1 or 2 and be on 1 ES node or spread across 3 ES nodes (recommended).
 
-⚠️ &nbsp; Replicas help with search performance, redundancy and provide fault tolerance. When you change shard/replica numbers, you have to delete the index and re-index.
+🟨 &nbsp; Replicas help with search performance, redundancy and provide fault tolerance. When you change shard/replica numbers, you have to delete the index and re-index.
 
 #### Estimating Elasticsearch Storage Requirements
 
@@ -65,13 +65,13 @@ _[Click here for a full-screen view of this image.](images/indices_index_size.pn
 - 1 GB for every 5 million files/folders
 - 20 GB for every 100 million files/folders
 
-⚠️ &nbsp; The size of the files is not relevant.
+🟨 &nbsp; The size of the files is not relevant.
 
 ##### Replicas/Shard Sizes
 
 Replicas increase the size requirements by the number of replicas. For example, a 20 GB index with 2 replicas will require a total storage capacity of 60 GB since a copy of the index (all docs) is on other Elasticsearch nodes. Multiple shards do not increase the index size, as the index's docs are spread across the ES cluster nodes.
 
-⚠️ &nbsp; The number of docs per share is limited to 2 billion, which is a hard Lucene limit.
+🟨 &nbsp; The number of docs per share is limited to 2 billion, which is a hard Lucene limit.
 
 ##### Rolling Indices
 

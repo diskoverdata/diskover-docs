@@ -140,6 +140,24 @@ server {
 
 Let's install Diskover-Web now that we have our NGINX and PHP packages installed and configured. You need to ensure that you have the latest [Diskover 2.3 zip archive](https://download.diskoverdata.com/). Once you have the zip file, you can `SCP` it to the machine that is designated for Diskover-Web.
 
+🔴 &nbsp;**On-prem** | Will scp the file to the root user's home directory:
+```
+scp <path to diskover.zip> root@ipAddress:~/
+```
+
+🔴 &nbsp;**AWS** | Will scp the file to the user's home directory. Example using Rocky:
+```
+scp -i <path to PEM file> <path to diskover.zip> rocky@bastion-IP:~/
+```
+
+🟨 &nbsp;Note that the user will differ depending on your OS. It is best to consult your AWS EC2 Console to get the exact user to connect to the bastion. Generally, these are the users for the following OS:
+
+| OS | User |
+| --- | --- |
+| Rocky Linux | rocky |
+| Centos 7 or 8 | centos |
+| RHEL or Amazon Linux | ec2-user |
+
 🔴 &nbsp;Extract your zip archive:
 ```
 unzip diskover-2.3.0.zip

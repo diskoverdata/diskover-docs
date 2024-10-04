@@ -8,7 +8,7 @@ The following images provide a high-level overview of the Diskover scale-out arc
 
 - **Elasticsearch Cluster(s)**
 - **Diskover-Web**
-- **Diskover's Indexers/Task Workers**
+- **Diskover's Indexers/Workers**
 
 It is recommended to separate the Elasticsearch node/cluster, web server, and indexing host(s). The indexers should ideally be using SSD. NFS data stores do not usually perform well for indices.
 

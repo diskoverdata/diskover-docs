@@ -30,7 +30,7 @@ reboot now
 getenforce
 ```
 
-### DNF Package Upgrade
+#### DNF Package Upgrade
 
 Before installing custom packages or any of the Diskover software, upgrade all base-level system packages installed with your Linux system. There might be cases where specific package management repositories have to be enabled on your Linux machine prior to running this installation block.
 
@@ -47,7 +47,7 @@ iotop strace tree pv atop lsof git zip unzip wget \
 hdparm telnet glances sudo nss-util iftop tldr make
 ```
 
-### Enable NTP for S3 Indexing
+#### Enable NTP for S3 Indexing
 
 Enabling NTP is optional but recommended if your system is not already synchronized. Without NTP enabled, attempting to index S3 buckets may result in crawler failures due to a significant mismatch between the request time and the current system time.
 
@@ -70,3 +70,11 @@ timedatectl set-ntp true
 ```
 systemctl status chronyd
 ```
+
+### Windows System Readiness
+
+Instructions coming soon. Meanwhile, please note that Diskover currently only [supports Windows for indexers/workers]().
+
+### Mac System Readiness
+
+Instructions coming soon. Meanwhile, please note that Diskover currently only [supports Mac for indexers/workers]().

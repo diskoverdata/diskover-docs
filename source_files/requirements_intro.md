@@ -6,11 +6,12 @@ ___
 
 ### Prerequisites
 
-- Python 3.8+
-- Elasticsearch 8.x
-- ES7 Python packages
-- PHP 8.x + PHP-FPM
-- NGINX or Apache (Apache can be used instead of NGINX but the setup is not supported or covered in this guide)
+| Packages | Usage |
+| --- | --- |
+| Python 3.8+ | Required for Diskover indexers/workers and Diskover-Web, [go to installation instructions]() |
+| Elasticsearch 8.x | Is the heart of Diskover, [go to installation instructions]() |
+| PHP 8.x and PHP-FPM | Required for Diskover-Web, [go to installation instructions]() |
+| NGINX or Apache | Required for Diskover-Web,  [go to installation instructions]()<br> _Note that Apache can be used instead of NGINX but the setup is not supported or covered in this guide._ |
 
 ### Security
 

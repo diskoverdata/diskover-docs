@@ -12,9 +12,27 @@ During this process, you will need the latest [Diskover 2.3x zip archive](https:
 
 If your environment includes multiple indexers, repeat the process in this chapter for each one of your workers. Once you have the zip file, you can `SCP` it to all machines that are designated to be a Diskover Worker. 
 
+🔴 &nbsp;**On-prem** | Will scp the file to the root user's home directory:
+```
+scp <path to diskover.zip> root@ipAddress:~/
+```
+
+🔴 &nbsp;**AWS** | Will scp the file to the user's home directory. Example using Rocky:
+```
+scp -i <path to PEM file> <path to diskover.zip> rocky@bastion-IP:~/
+```
+
+🟨 &nbsp;Note that the user will differ depending on your OS. It is best to consult your AWS EC2 Console to get the exact user to connect to the bastion. Generally, these are the users for the following OS:
+
+| OS | User |
+| --- | --- |
+| Rocky Linux | rocky |
+| Centos 7 or 8 | centos |
+| RHEL or Amazon Linux | ec2-user |
+
 ### Linux Indexers/Workers
 
-#### Software Installation
+#### Python Installation
 
 🔴 &nbsp;Install Python:
 ```
@@ -32,6 +50,9 @@ python3 -V
 python3 -m ensurepip
 python3 -m pip install --upgrade pip
 ```
+
+#### Diskover Indexer Installation
+
 🔴 &nbsp;Extract your [zip archive](https://download.diskoverdata.com/):
 ```
 unzip diskover-2.3.0.zip

@@ -4,57 +4,57 @@ website_folder: diskover_install_and_config_guide_v2-3
 # All documents need to be in shared folder
 ordered_documents:
   - index_diskover_guides_header.md
-  - guide_title_install.md
+  - guide_title_install_and_config.md
   - intro_guide_intended_for_tech.md
   - intro_tech_guides_main_intro.md
   - intro_tech_guides_aws_approved.md
   - intro_tech_guides_use_cases.md
-  - intro_doc_conventions.md
+  - intro_doc_conventions_tech.md
   - architecture_overview.md 
   - requirements_intro.md
   - requirements_elasticsearch.md 
   - requirements_diskover_web.md
   - requirements_diskover_indexers.md
   - requirements_skills.md
+  - software_download.md
+  - system_readiness.md
+  - install_elasticsearch_2-3.md
+  - install_indexers.md
+  - install_celery.md
+  - install_rabbitmq.md
+  - install_diskover_web.md
+  -
+
+
+
+CONFIG
+everything in UI for ES, web, indexers, diskoverd
+
+Set up a multi-node Elasticsearch cluster]()
+Confifure Elasticsearch SSL and authentication for use with Diskover
+
+
+
+
+plugins
+
+
+
+ADMIN
+
+
 
 WHERE TO FIND WHAT IN THE NEW ADMIN PANEL > search
 
+AWS INSTALL
 
- 
-INSTALL
-  - install_community_from_github.md
-  - upgrade from CE
-  - install_elasticsearch_intro.md
-  - install_elasticsearch_linux_centos_and_rhel.md
-  - install_elasticsearch_linux_ubuntu.md
-  - install_elasticsearch_windows_intro.md
-  - install_elasticsearch_windows_steps.md
-  - install_elasticsearch_windows_settings_config.md
-  - install_elasticsearch_linux_cluster.md
-  - install_diskover_web_intro.md
-  - install_diskover_web_linux_centos_and_rhel_intro.md
-  - install_diskover_web_linux_centos_and_rhel_install_nginx.md
-  - install_diskover_web_linux_centos_and_rhel_install_php.md
-  - install_diskover_web_linux_centos_and_rhel_install_diskover_web.md
-  - install_diskover_web_linux_ubuntu_intro.md
-  - install_diskover_web_linux_ubuntu_install_nginx.md
-  - install_diskover_web_linux_ubuntu_install_php.md
-  - install_diskover_web_linux_ubuntu_install_diskover_web.md
-  - install_diskover_web_windows_intro.md
-  - install_diskover_web_windows_install_nginx.md
-  - install_diskover_web_windows_install_php.md
-  - install_diskover_web_windows_install_diskover_web.md
-  - install_diskover_web_launch.md
-  - install_diskover_web_secure.md
-  - install_indexers_intro.md
-  - install_logfiles.md
-  - install_indexers_linux_centos_and_rhel.md
-  - install_indexers_clone_existing_centos_and_rhel.md
-  - install_indexers_linux_ubuntu.md
-  - install_indexers_windows.md
-  - install_indexers_mac_manual.md
-  - install_indexers_mac_installer.md
+   
+INSTALL SUBS
+
+
   - software_activation.md
+
+  
   - task_worker_intro.md
   - task_worker_linux.md
   - task_worker_windows.md
@@ -74,7 +74,9 @@ CONFIG
   - reporting_cost_analysis.md
   - file action mount remote web server
 
-UPGRADE
+
+UPGRADE from editions
+UPGRADE from CE
   
   
 HEALTH, 

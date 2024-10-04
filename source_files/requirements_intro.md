@@ -17,7 +17,7 @@ Visit the [System Readiness]() section for further information on preparing your
 
 ### Security
 
-- Disabling SELinux and using a software firewall are optional although not required to run Diskover.
+- [Disabling SELinux]() and using a software firewall are optional although not required to run Diskover.
 - Internet access is required during the installation to download packages with yum.
 
 ### Recommended Operating Systems

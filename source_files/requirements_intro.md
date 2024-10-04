@@ -6,6 +6,8 @@ ___
 
 ### Prerequisites
 
+Visit the [System Readiness]() section for further information on preparing your system for Diskover.
+
 | Packages | Usage |
 | --- | --- |
 | Python 3.8+ | Required for Diskover indexers/workers and Diskover-Web, [go to installation instructions]() |

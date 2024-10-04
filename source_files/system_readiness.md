@@ -2,6 +2,11 @@ ___
 ## System Readiness
 ___
 
+### Overview
+
+This section describes the preliminary steps to installing Diskover. Other software installations will be covered in the subsequent sections.
+
+
 ### Linux System Readiness
 
 This section breaks down the recommended hardening of a Linux system prior to the deployment of the Diskover software.

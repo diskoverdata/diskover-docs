@@ -6,7 +6,27 @@ ___
 
 Diskover-Web is nothing without its new Administrator! The DiskoverAdmin configuration management user interface will allow us to further configure our Diskover system once it’s up and running.
 
-During this process, you will need the latest [Diskover 2.3x zip archive](https://download.diskoverdata.com/). Note that this is subject to change to RPMs in the near future. Once you have the zip file, you can `SCP` it to the machine that is designated for DiskoverAdmin. Note that DiskoverAdmin must be installed on the same host as Diskover-Web.
+🟨 &nbsp;Note that DiskoverAdmin must be installed on the same host as Diskover-Web.
+
+During this process, you will need the latest [Diskover 2.3x zip archive](https://download.diskoverdata.com/). Note that this is subject to change to RPMs in the near future. Once you have the zip file, you can `SCP` it to the machine that is designated for DiskoverAdmin. 
+
+🔴 &nbsp;**On-prem** | Will scp the file to the root user's home directory:
+```
+scp <path to diskover.zip> root@ipAddress:~/
+```
+
+🔴 &nbsp;**AWS** | Will scp the file to the user's home directory. Example using Rocky:
+```
+scp -i <path to PEM file> <path to diskover.zip> rocky@bastion-IP:~/
+```
+
+🟨 &nbsp;Note that the user will differ depending on your OS. It is best to consult your AWS EC2 Console to get the exact user to connect to the bastion. Generally, these are the users for the following OS:
+
+| OS | User |
+| --- | --- |
+| Rocky Linux | rocky |
+| Centos 7 or 8 | centos |
+| RHEL or Amazon Linux | ec2-user |
 
 ### Python Installation
 

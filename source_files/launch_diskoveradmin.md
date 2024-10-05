@@ -8,4 +8,4 @@ You have reached THE big moment. Paste this link in a browser to access Diskover
 
 <img src="images/diskoveradmin_menu.png" width="">
 
-🟨 Can't find what you are looking for? Select **search** and type a simple word to find where a feature is located in the DiskoverAdmin menu.
+🟨 Can't find what you are looking for? Select **Search** and type a simple word to find where a feature is located in the DiskoverAdmin menu.

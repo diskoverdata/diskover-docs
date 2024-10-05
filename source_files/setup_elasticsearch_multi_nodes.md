@@ -74,7 +74,7 @@ vi /etc/elasticsearch/elasticsearch.yml:
 ```
 mkdir /etc/systemd/system/elasticsearch.service.d
 ```
-
+<br>
 🔴 &nbsp;Create the service config file: 
 ```
 vi /etc/systemd/system/elasticsearch.service.d/elasticsearch.conf:

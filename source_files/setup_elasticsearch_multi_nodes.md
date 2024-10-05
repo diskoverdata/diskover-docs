@@ -14,7 +14,7 @@ This section will guide you through setting up an Elasticsearch cluster with mul
 telnet <es-ip> 9200
 ```
 
-    If this is successful, you should see the following:
+- If this is successful, you should see the following:
 
 ```
 [root@es1 ~]# telnet 192.168.64.19 9200
@@ -23,7 +23,7 @@ Connected to 192.168.64.19.
 Escape character is '^]'.
 ```
 
-If you see a Connection Refused, you should check to see if SELinux and Firewalld are disabled and off, respectively
+- If you see **Connection Refused**, you should validate if [**SELinux** and **Firewalld** are disabled and off](), respectively.
 
 
 

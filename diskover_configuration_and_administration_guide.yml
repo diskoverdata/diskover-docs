@@ -9,7 +9,7 @@ ordered_documents:
   - intro_tech_guides_main_intro.md
   - intro_tech_guides_use_cases.md
   - intro_tech_guides_aws_approved.md
-  - intro_doc_conventions.md
+  - intro_doc_conventions_tech.md
   - user_roles_and_auth.md
   - path_translation.md
   - top_paths.md

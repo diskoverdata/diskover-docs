@@ -22,7 +22,7 @@ _Intended for Service Professionals and System Administrators._
 ___
 ## User Guides
 
-_Intended for the daily operations of Diskover by the Line of Business Users._
+_Intended for the daily operation of Diskover._
 
 [Diskover Quick Reference Card | Core Features](images/quick_reference_card_diskover_core_features_20240216.pdf)
 

@@ -6,6 +6,8 @@ ___
 
 RabbitMQ or Amazon MQ serves as the messaging bus/queue system that communicates with all Celery systems on your Diskover Worker nodes. We recommend installing this service on a dedicated standalone host.
 
+Later in the deployment, you will be able to [configure your messaging environment]() once all the components are installed; we highly recommend following the deployment order outlined in this guide.
+
 ### RabbitMQ for Linux
 
 🔴 &nbsp;Configure yum repositories:

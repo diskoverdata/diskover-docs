@@ -1,5 +1,5 @@
 ___
-## Launch Diskover-Web
+## Launch DiskoverAdmin
 ___
 
 You have reached THE big moment. Paste this link in a browser to access DiskoverAdmin and complete the configuration process.

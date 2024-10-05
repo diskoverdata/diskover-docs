@@ -4,7 +4,7 @@ ___
 
 ### Overview
 
-This section covers the basic installation of Elasticsearch v8 (commonly referred to as **ES**). We will walk through the steps for setting up a single-node cluster, and we will leave ES authentication disabled by default.
+This section covers the basic installation of Elasticsearch v8 (commonly referred to as **ES**). We will walk through the steps for setting up a **single-node cluster**, and we will leave ES authentication disabled by default.
 
 Once all components are installed, you will be able to [configure your Elasticsearch environment](). We strongly recommend following the deployment order outlined in this guide.
 

@@ -10,8 +10,9 @@ Some helpful links you will or might need:
 
 - [Set up a multi-node cluster]()
 - [Configure Elasticsearch SSL and authentication for use with Diskover]()
-- [Download the current release of Elasticsearch](https://www.elastic.co/downloads/elasticsearch).
-- [Download past releases of Elasticsearch](https://www.elastic.co/downloads/past-releases#elasticsearch).
+- [Configure your Elasticsearch environment]() once all the main components are installed, we highly recommend following the deployment order outlined in this guide.
+- [Download the current release of Elasticsearch](https://www.elastic.co/downloads/elasticsearch)
+- [Download past releases of Elasticsearch](https://www.elastic.co/downloads/past-releases#elasticsearch)
 
 
 ### Java Open JDK Package Installation

@@ -69,12 +69,14 @@ vi /etc/elasticsearch/elasticsearch.yml:
 | discovery.seed_hosts | **IMPORTANT!** You need to enter the IP addresses of each Elasticsearch node that will be part of the cluster, for example:<br>```discovery.seed_hosts: ["192.168.64.18", "192.168.64.19", "192.168.64.20"]``` |
 | cluster.initial_master_nodes | **IMPORTANT!** You need to enter the name of each node for the node.name setting, for example:<br>```cluster.initial_master_nodes: ["diskover-node-1", "diskover-node-2", "diskover-node-3"]``` |
 | xpack.ml.enabled | This should be set to **false** to disable the Machine Learning within ES. If you do not have this set to false, then Elasticsearch will fail upon startup. |
-<br>
+
+
 🔴 &nbsp;Make the directory for the custom ES `systemd` settings: 
 ```
 mkdir /etc/systemd/system/elasticsearch.service.d
 ```
-<br>
+
+
 🔴 &nbsp;Create the service config file: 
 ```
 vi /etc/systemd/system/elasticsearch.service.d/elasticsearch.conf:
@@ -83,10 +85,9 @@ vi /etc/systemd/system/elasticsearch.service.d/elasticsearch.conf:
 LimitMEMLOCK=infinity
 LimitNPROC=4096
 LimitNOFILE=65536
-
 ```
 
-### Start lasticsearch Cluster
+### Start Elasticsearch Cluster
 
 🔴 &nbsp;Reload the daemon on all ES nodes: 
 ```

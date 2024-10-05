@@ -4,7 +4,7 @@ ___
 
 ### Overview
 
-Diskover-Web is nothing without its new Administrator! The DiskoverAdmin configuration management user interface will allow us to further configure our Diskover system once it’s up and running.
+Diskover-Web is nothing without its new Administrator! The DiskoverAdmin configuration management user interface will allow you to further configure your Diskover system once it’s up and running.
 
 🟨 &nbsp;Note that DiskoverAdmin must be installed on the same host as Diskover-Web.
 

@@ -4,4 +4,6 @@ ___
 
 ### Overview
 
-Placeholder.
+Most help information is available directly within the user interface. This section provides additional guidance to assist you during the configuration phase.
+
+<img src="diskoveradmin_menu_plugins_post_index.png" width="400">

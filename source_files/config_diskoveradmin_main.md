@@ -6,4 +6,23 @@ ___
 
 ### Overview
 
-Order of what to configure and in which order will go here.
+Most help information is available directly within the user interface. This section provides additional guidance to assist you during the configuration phase.
+
+🚧 **The Order of what to configure and in which order will change - placeholders for now.**
+
+### Diskover-Web
+
+<img src="images/diskoveradmin_menu_web.png" width="250">
+
+### Diskover
+
+<img src="images/diskoveradmin_menu_diskover.png" width="250">
+
+### Diskoverd
+
+<img src="images/diskoveradmin_menu_diskoverd.png" width="250">
+
+### System
+
+<img src="images/diskoveradmin_menu_system.png" width="250">
+

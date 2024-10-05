@@ -6,11 +6,12 @@ ___
 
 This section covers the basic installation of Elasticsearch v8 (commonly referred to as **ES**). We will walk through the steps for setting up a single-node cluster, and we will leave ES authentication disabled by default.
 
+Once all components are installed, you will be able to [configure your Elasticsearch environment](). We strongly recommend following the deployment order outlined in this guide.
+
 Some helpful links you will or might need:
 
 - [Set up a multi-node cluster]()
 - [Configure Elasticsearch SSL and authentication for use with Diskover]()
-- [Configure your Elasticsearch environment]() once all the main components are installed, we highly recommend following the deployment order outlined in this guide.
 - [Download the current release of Elasticsearch](https://www.elastic.co/downloads/elasticsearch)
 - [Download past releases of Elasticsearch](https://www.elastic.co/downloads/past-releases#elasticsearch)
 

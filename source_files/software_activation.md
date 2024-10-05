@@ -52,6 +52,8 @@ python3 diskover_lic.py -g
 2. Select **⛭ System Configuration**.
 3. Open the **License** tab and follow the instructions on that page.
 
+<img src="images/diskoveradmin_license.png" width="">
+
 ### License Keys Location for Manual Installation
 
 #### Linux

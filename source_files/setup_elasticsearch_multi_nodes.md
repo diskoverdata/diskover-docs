@@ -99,5 +99,5 @@ sudo systemctl start elasticsearch
 ```
 
 🟨 &nbsp;You can watch the startup logs at **/var/log/elasticsearch/<cluster-name>.log**
-<br>
+<br><br>
 🔴 &nbsp;Once Node 1 is online, start **Node 2**, then once Node 2 is online, start **Node 3**.

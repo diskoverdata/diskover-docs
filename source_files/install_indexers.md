@@ -8,6 +8,8 @@ This process will walk you through installing node workers for your Diskover v2.
 
 During this process, you will need the latest [Diskover 2.3x zip archive](https://download.diskoverdata.com/). Note that this is subject to change to RPMs in the near future.
 
+Later in the deployment, you will be able to [configure your indexing environment]() once all the components are installed; we highly recommend following the deployment order outlined in this guide.
+
 ### Multiple Indexers/Workers Environment
 
 If your environment includes multiple indexers, repeat the process in this chapter for each one of your workers. Once you have the zip file, you can `SCP` it to all machines that are designated to be a Diskover Worker. 

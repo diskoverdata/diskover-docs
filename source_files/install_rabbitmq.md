@@ -50,10 +50,10 @@ http://$rabbitMQHost:15672/#/
 
 ### RabbitMQ for Windows
 
-Instructions coming soon.
+🚧 Instructions coming soon.
 
 ### RabbitMQ for Mac
 
-Instructions coming soon.
+🚧 Instructions coming soon.
 
 ### Amazon MQ

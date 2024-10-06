@@ -23,7 +23,6 @@ Some helpful links you will or might need:
 dnf install java-21-openjdk
 ```
 
-___
 ### Elasticsearch Installation
 
 🔴 &nbsp;To install Elasticsearch via RPM directly:
@@ -55,7 +54,6 @@ yum -y install --enablerepo=elasticsearch elasticsearch
 
 🟨 &nbsp;Elasticsearch v8 should be installed at this point. Stop here and go to [Set up a multi-node cluster]() if applicable.
 
-___
 ### Elasticsearch Initial Configuration
 
 Let's perform some basic configurations to ensure our single-node ES cluster is up and running, and ready for integration with Diskover.
@@ -118,7 +116,6 @@ elasticsearch soft memlock unlimited
 elasticsearch hard memlock unlimited
 ```
 
-___
 ### Elasticsearch Health Check
 
 With the ES cluster installed and running, you can now run a simple curl command to check the health of your cluster.

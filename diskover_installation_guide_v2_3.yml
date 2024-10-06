@@ -32,7 +32,6 @@ ordered_documents:
   - config_diskoveradmin_plugins_file_actions.md
   - setup_elasticsearch_multi_nodes.md
   - visualization_tools.md
-
   
   - upgrade_to_2-3.md
   - software_update_2-3.md
@@ -51,12 +50,7 @@ Configure Elasticsearch SSL and authentication for use with Diskover
 
 
 
-AWS INSTALL
-
    
-
-
-  
   - task_worker_intro.md
   - task_worker_linux.md
   - task_worker_windows.md
@@ -67,26 +61,4 @@ AWS INSTALL
   - install_indexers_alt_dev_your_own.md
   
 
-  
-  
-HEALTH, 
-  - health_check_diskover_intro.md
-  - health_check_diskover_web_linux.md
-  - health_check_diskover_web_windows.md
-  - health_check_elasticsearch_linux.md
-  - health_check_elasticsearch_windows.md
-
-
-
-
-UNINSTALL
-  
-  - uninstall_intro.md
-  - uninstall_elasticsearch.md
-  - uninstall_php.md
-  - uninstall_nginx.md
-  - uninstall_diskover_web.md
-  - uninstall_task_worker.md
-  - uninstall_indexers.md
-  - uninstall_diskover_on_mac.md
 

@@ -1,6 +1,5 @@
 <p id="requirements_es"></p>
 
-___
 ### Elasticsearch Requirements
 
 #### Elasticsearch Version

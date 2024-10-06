@@ -1,7 +1,12 @@
 ___
 ## Diskover Alternate Indexers
 
-This section outlines information needed outside the guidelines included in the user interface **System Configuration** Panel.
+Out of the box, Diskover efficiently scans generic filesystems. However, in today’s complex IT architectures, files are often stored across a variety of repositories. To address this, Diskover provides a robust foundation for building alternate scanners, enabling comprehensive indexing of any file storage location.
+
+These repositories often contain relevant additional metadata which can be leveraged by adding it to the index. This enhanced metadata inclusion allows for more precise data management workflows and analysis, with the ultimate goal of reusing and optimizing your data storage solutions.
+
+
+This section provides additional information to the **DiskoverAdmin panel** in the user interface.
 
 ___
 ### Alternate Indexer | Directory Cache (DirCache)

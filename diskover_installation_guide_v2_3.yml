@@ -30,7 +30,7 @@ ordered_documents:
   - config_diskoveradmin_plugins_index.md
   - config_diskoveradmin_plugins_post_index.md
   - config_diskoveradmin_plugins_file_actions.md
-  - setup_elasticsearch_multi_nodes.md
+  - elasticsearch_multi_nodes.md
   - visualization_tools.md
   
   - upgrade_to_2-3.md

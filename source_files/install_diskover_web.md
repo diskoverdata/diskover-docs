@@ -8,7 +8,6 @@ This section covers all the necessary steps to set up your Diskover-Web user int
 
 Once all components are installed, you will be able to [configure your Diskover-Web environment](). We strongly recommend following the deployment order outlined in this guide.
 
-___
 ### NGINX and PHP Installation
 
 Let's install NGINX and all the necessary PHP packages.
@@ -139,7 +138,6 @@ server {
 }
 ```
 
-___
 ### Diskover-Web Installation
 
 Let's install Diskover-Web now that we have our NGINX and PHP packages installed and configured. You need to ensure that you have the latest [Diskover 2.3 zip archive](https://download.diskoverdata.com/). Once you have the zip file, you can `SCP` it to the machine that is designated for Diskover-Web.

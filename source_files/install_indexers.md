@@ -10,7 +10,6 @@ During this process, you will need the latest [Diskover 2.3x zip archive](https:
 
 Once all components are installed, you will be able to [configure your indexing environment](). We strongly recommend following the deployment order outlined in this guide.
 
-___
 ### Multiple Indexers/Workers Environment
 
 If your environment includes multiple indexers, repeat the process in this chapter for each one of your workers. Once you have the zip file, you can `SCP` it to all machines that are designated to be a Diskover Worker. 
@@ -33,7 +32,6 @@ scp -i <path to PEM file> <path to diskover.zip> rocky@bastion-IP:~/
 | Centos 7 or 8 | centos |
 | RHEL or Amazon Linux | ec2-user |
 
-___
 ### Linux Indexers/Workers
 
 #### Python Installation
@@ -130,12 +128,10 @@ systemctl enable diskoverd
 
 🟨 &nbsp;Please proceed to the next sections, as you will be unable to start the diskoverd worker service until your API server and [license]() are installed.
 
-___
 ### Windows Indexers/Workers
 
 🚧 Instructions coming soon.
 
-___
 ### Mac Indexers/Workers
 
 🚧 Instructions coming soon.

@@ -1,11 +1,11 @@
 ___
-## Software Update
+## Software Updates
 ___
 
-### Software Update for Community Edition
+### Software Updates for Community Edition
 
 This section outlines the process of installing regular software updates for the Diskover Community Edition.
 
-### Software Update for Subscriptions
+### Software Updates for Subscriptions
 
 This section outlines the process of installing regular software updates for the Diskover annual subscriptions.

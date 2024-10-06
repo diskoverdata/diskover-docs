@@ -1,6 +1,5 @@
 <p id="requirements_diskoverweb"></p>
 
-___
 ### Diskover-Web Server Requirements
 
 The Diskover-Web HTML5 user interface requires a Web server platform. It provides visibility, analysis, workflows, and file actions from the indexes that reside on the Elasticsearch endpoint.

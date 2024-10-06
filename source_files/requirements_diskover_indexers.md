@@ -1,6 +1,5 @@
 <p id="requirements_indexers"></p>
 
-___
 ### Diskover Indexer(s) Requirements
 
 You can install Diskover indexers on a server or [virtual machine](https://docs.diskoverdata.com/diskover_installation_guide_ova/). Multiple indexers can be run on a single machine or multiple machines for parallel crawling.

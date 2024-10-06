@@ -6,7 +6,7 @@ ___
 
 This section describes the preliminary steps to installing Diskover. Other software installations will be covered in the subsequent sections.
 
-
+___
 ### Linux System Readiness
 
 This section breaks down the recommended hardening of a Linux system prior to the deployment of the Diskover software.
@@ -76,10 +76,12 @@ timedatectl set-ntp true
 systemctl status chronyd
 ```
 
+___
 ### Windows System Readiness
 
-Instructions coming soon. Meanwhile, please note that Diskover currently only [supports Windows for indexers/workers]().
+🚧 Instructions coming soon. Meanwhile, please note that Diskover currently only [supports Windows for indexers/workers]().
 
+___
 ### Mac System Readiness
 
-Instructions coming soon. Meanwhile, please note that Diskover currently only [supports Mac for indexers/workers]().
+🚧 Instructions coming soon. Meanwhile, please note that Diskover currently only [supports Mac for indexers/workers]().

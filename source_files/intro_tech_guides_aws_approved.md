@@ -1,4 +1,3 @@
-___
 ### Approved AWS Technology Partner
 
 Diskover Data is an official [AWS Technology Partner](https://aws.amazon.com/partners/technology/). Please note that AWS has renamed **Amazon Elasticsearch Service** to **Amazon OpenSearch Service**. Most operating and configuration details for OpenSearch Service should also be applicable to Elasticsearch..

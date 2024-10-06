@@ -6,7 +6,6 @@ ___
 
 This Celery component will need to be installed on each of your worker nodes.
 
-___
 ### Celery for Linux
 
 🔴 &nbsp;Install celery:
@@ -48,12 +47,10 @@ systemctl enable celery
 
 🟨 The API server must be installed before starting the Celery service.
 
-___
 ### Celery for Windows
 
 🚧 Instructions coming soon.
 
-___
 ### Celery for Mac
 
 🚧 Instructions coming soon.

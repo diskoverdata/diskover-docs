@@ -16,7 +16,7 @@ You have reached THE big moment. Paste this link in a browser to access Diskover
 
 ### DiskoverAdmin Wizard
 
-The DiskoverAdmin service allows for the fine-tuning of Diskover's core components and plugins. The setup wizard will guide you through the initial configuration of the DiskoverAdmin services, which can be further customized later.
+The DiskoverAdmin service allows for the fine-tuning of Diskover's core components and plugins. The setup wizard will guide you through the first part of the initial configuration of the DiskoverAdmin services, which can be further customized later.
 
 🔴 &nbsp;Access the Wizard by selecting **System** > **Meta** > **Wizard** > **Setup**:
 

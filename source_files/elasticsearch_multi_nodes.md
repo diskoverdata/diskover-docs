@@ -34,12 +34,12 @@ sudo dnf update -y
 
 🔴 &nbsp;Install Java 8: 
 ```
-sudo dnf install -y java-1.8.0-openjdk.x86_64
+sudo dnf install -y java-21-openjdk
 ```
 
 🔴 &nbsp;Install Elasticsearch 7: 
 ```
-sudo dnf install -y https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.4-x86_64.rpm
+sudo dnf install -y https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.15.2-x86_64.rpm
 ```
 
 🔴 &nbsp;Configure the JVM for Elastic: 

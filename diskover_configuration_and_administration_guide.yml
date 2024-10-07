@@ -26,7 +26,7 @@ ordered_documents:
   - reporting_reports.md
   - reporting_cost_analysis.md
   - task_config_files.md
-  - task_management.md
+  - task_management_2-2.md
   - plugins_intro.md
   - plugins_autoclean.md
   - plugins_bam_harvest.md 

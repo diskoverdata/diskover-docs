@@ -4,8 +4,6 @@ ___
 
 ### Access DiskoverAdmin
 
-The DiskoverAdmin service enables fine-tuning of settings for Elasticsearch, Diskover-Web, and worker services, which were previously set up within PHP files on the server. This update simplifies configuration and maintenance, eliminating the need for a Linux sysadmin to manage your Diskover environment.
-
 You have reached THE big moment. Paste this link in a browser to access DiskoverAdmin and complete the configuration process for all Diskover's components and plugins.
 
 [http://diskover-web:8000/diskover_admin/config/](http://diskover-web:8000/diskover_admin/config/)
@@ -16,6 +14,8 @@ You have reached THE big moment. Paste this link in a browser to access Diskover
 
 
 ### DiskoverAdmin Wizard Setup
+
+The DiskoverAdmin service enables fine-tuning of settings for the main components and plugins, which were previously set up within PHP files on the server. This update simplifies configuration and maintenance, eliminating the need for a Linux sysadmin to manage your Diskover environment.
 
 🔴 &nbsp;The following will walk you through setting up the basic DiskoverAdmin services. Under Configuration, select **System** > **Meta** > **Wizard** > **Setup**:
 

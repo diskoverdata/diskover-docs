@@ -1,5 +1,5 @@
 ___
-## Initial DiskoverAdmin Setup
+## Initial DiskoverAdmin Configuration
 ___
 
 ### Access DiskoverAdmin
@@ -10,20 +10,20 @@ You have reached THE big moment. Paste this link in a browser to access Diskover
 
 <img src="images/diskoveradmin_menu.png" width="">
 
-🟨 Can't find what you are looking for? Select **Search** and type a simple word to find where a feature is located in the DiskoverAdmin menu, or refer to the [**Navigating the DiskoverAdmin Panel**]() section.
+🟨 &nbsp;Can't find what you are looking for? Select **Search** and type a simple word to find where a feature is located in the DiskoverAdmin menu, or refer to the [**DiskoverAdmin Panel Navigation**]() section.
 
 
-### DiskoverAdmin Wizard Setup
+### DiskoverAdmin Wizard
 
-The DiskoverAdmin service enables fine-tuning of settings for the main components and plugins, which were previously set up within PHP files on the server. This update simplifies configuration and maintenance, eliminating the need for a Linux sysadmin to manage your Diskover environment.
+The DiskoverAdmin service allows for the fine-tuning of Diskover's core components and plugins. The setup wizard will guide you through the initial configuration of the DiskoverAdmin services, which can be further customized later.
 
-🔴 &nbsp;The following will walk you through setting up the basic DiskoverAdmin services. Under Configuration, select **System** > **Meta** > **Wizard** > **Setup**:
+🔴 &nbsp;Access the Wizard by selecting **System** > **Meta** > **Wizard** > **Setup**:
 
 <img src="images/diskoveradmin_menu_wizard.png" width="250"> 
 
-#### Elasticsearch Basic Settings
+#### Elasticsearch Connection for Diskover-Web
 
-The following will set the basic parameters for Elasticsearch. Note that you can modify any of these later on.
+🟨 &nbsp;Note that Diskover-Web and the indexer(s) can point to two different Elasticsearch hosts, hence the next 2 steps.
 
 🔴 &nbsp;Input the **IP/AWS endpoint** where your Elasticsearch is running. If you have a clustered ES setup, click **+ Add Item** to list your other IPs.
 
@@ -33,14 +33,54 @@ The following will set the basic parameters for Elasticsearch. Note that you can
 
 🔴 &nbsp;If you select **HTTPS**, enter your Elasticsearch username & password.
 
-🔴 &nbsp;Click **Test** to see if Diskover can connect to your Elasticsearch system. The page will refresh and output the health of your cluster, number of shards, nodes, etc. If this completes successfully, you're ready to proceed forward.
+🔴 &nbsp;Click **Test** to see if Diskover can connect to your Elasticsearch system. The page will refresh and output the health of your cluster at the top of the page (number of shards, nodes, etc.) If this completes successfully, you're ready to proceed forward.
 
-### Diskover-Web Basic Settings
+<img src="images/es_connection_test.png" width="600"> 
 
-You can copy the settings from Diskover Web to make the setup easier. Be sure to review them!
-After each section have been tested, be sure to click Save & Continue
-More info on how to generate a license: Diskover Installation Guide
-You’re finished when you reach Basic setup is complete
+🔴 &nbsp;If the test is successfull, click **Save & Continue**.
+
+#### Elasticsearch Connection for Indexers
+
+🔴 &nbsp;**Copy connection settings from Diskover-Web?**:
+- If your Diskover-Web and indexer(s) point to the same ES host, click **Yes**.
+- If your Diskover-Web and indexer(s) point to different ES hosts, click **No**, go through each field, and click:
+    - **Test** to test your connection.
+    - **Save & Continue** once done.
+
+#### License
+
+This is the point where you need to send your license request and the wizard partially automates this task for you. Note that if you skip this part for now, you can always send a [license request]() manually at any time.
+
+🔴 &nbsp;The wizard will prompt you through the steps to collect the information for your license request: email, Diskover edition, number of nodes, and hardware ID. 
+
+<img src="images/wizard_license_request.png" width=""> 
+
+🔴 &nbsp;You should receive your license within 24 hours, usually much less than 24 hours. You have 2 choices at this point:
+
+- Pause and wait to receive the license to continue.
+- Click **Skip** and come back once you receive the license.
+
+🔴 &nbsp;Once you receive the license, copy/paste the keys as instructed on the License Configuration page.
+
+🔴 &nbsp;Click **Test** if you want to validate your license, example below, then click **Save & Continue**.
+
+<img src="images/wizard_license_test.png" width="350"> 
+
+#### Time Zone
+
+🔴 &nbsp;Select your **Time Zone**. More customization can be done later on regarding this parameter, click **Save & Continue**.
+
+🔴 &nbsp;Click the box to enable your time zone selection, click **Save & Continue**.
+
+#### RabbitMQ or Amazon MQ
+
+🔴 &nbsp;If applicable to your environment, follow the instructions on this page, click **Test** to check the connection, and then **Save & Continue**, or click **Skip** if not applicable. You can configure or edit your entries at any time.
+
+🟨 &nbsp;The basic setup using the wizard is not completed. CONGRATS!
+
+### API Configuration
+
+
 Once you’re finished with the Diskover Admin Wizard, click System → API:
 
 

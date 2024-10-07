@@ -24,7 +24,7 @@ The DiskoverAdmin service allows for the fine-tuning of Diskover's core componen
 
 #### Elasticsearch Connection for Diskover-Web
 
-🟨 &nbsp;Note that Diskover-Web and the indexer(s) can point to two different Elasticsearch hosts, hence the next 2 steps.
+🟨 &nbsp;Note that Diskover-Web and the indexer(s) can point to two different Elasticsearch hosts, hence the next steps.
 
 🔴 &nbsp;Input the **IP/AWS endpoint** where your Elasticsearch is running in the **host** field. If you have a clustered ES setup, click **+ Add Item** to list your other IPs.
 

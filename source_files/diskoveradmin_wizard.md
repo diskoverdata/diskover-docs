@@ -10,6 +10,8 @@ You have reached THE big moment. Paste this link in a browser to access Diskover
 
 [http://diskover-web:8000/diskover_admin/config/](http://diskover-web:8000/diskover_admin/config/)
 
+| | |
+| --- | --- |
 | <img src="images/diskoveradmin_menu.png" width=""> | 🟨 Can't find what you are looking for? Select **Search** and type a simple word to find where a feature is located in the DiskoverAdmin menu, or refer to the [**Navigating the DiskoverAdmin Panel**]() section. |
 
 

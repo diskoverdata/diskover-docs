@@ -52,7 +52,7 @@ The DiskoverAdmin service allows for the fine-tuning of Diskover's core componen
 
 This is the point where you need to send your license request and the wizard partially automates this task for you. Note that if you skip this part for now, you can always send a [license request]() manually at any time.
 
-🔴 &nbsp;The wizard will prompt you through the steps to collect the information for your license request: email, Diskover edition, number of nodes, and hardware ID will be automatically generated. 
+🔴 &nbsp;The wizard will prompt you through the steps to collect the information for your license request: email, Diskover edition, number of nodes, and your hardware ID which will be automatically generated during this process.
 
 <img src="images/wizard_license_request.png" width=""> 
 

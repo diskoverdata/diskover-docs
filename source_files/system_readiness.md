@@ -24,7 +24,7 @@ Be default, SELinux should be disabled. If you have a corporate firewall in plac
 systemctl disable firewalld --now
 ```
   
-🔴 &nbsp;Disabling SELinux requires a reboot of the system in order to take affect, lets do that now! 
+🔴 &nbsp;Disabling SELinux requires a reboot of the system in order to take affect, lets do that now:
 ```
 reboot now
 ```

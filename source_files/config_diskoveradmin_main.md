@@ -14,7 +14,7 @@ Most help information is available directly within the user interface. This sect
 
 <img src="images/diskoveradmin_menu_web.png" width="250">
 
-### Diskover
+### Diskover Indexer/Worker and Alternate Indexers
 
 <img src="images/diskoveradmin_menu_diskover.png" width="250">
 

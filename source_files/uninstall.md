@@ -13,7 +13,7 @@ rpm -qa | grep elastic
 
 ![Image: Determine Elasticsearch Version](images/image_uninstall_elasticsearch_determine_version.png)
 
-🔴 &nbsp;In the above example, remove **elasticsearch-7.10.1-1.x86_64**:
+🔴 &nbsp;In the above example, remove **elasticsearch-7.10.1-1.x86_64**. 🚧 Note that instructions for Elaticsearch v8 are coming soon:
 ```
 rpm -e elasticsearch-7.10.1-1.x86_64
 ```
@@ -27,7 +27,7 @@ rpm -e elasticsearch-7.10.1-1.x86_64
 rpm -qa | grep php-fpm
 ```
 
-🔴 &nbsp;In the previous example, remove **php-fpm-7.3.26-1.el7.remi.x86_64**:
+🔴 &nbsp;In the previous example, remove **php-fpm-7.3.26-1.el7.remi.x86_64**. 🚧 Note that instructions for PHP v8 are coming soon:
 
 ```
 rpm -e php-fpm-7.3.26-1.el7.remi.x86_64
@@ -53,7 +53,7 @@ rpm -e --nodeps rpm -qa | grep nginx
 
 ### Uninstall Diskover-Web
 
-🔴 &nbsp;To uninstall the Diskover-Web components simply remove the install location:
+🔴 &nbsp;To uninstall the Diskover-Web components, simply remove the install location:
 ```
 rm -rf /var/www/diskover-web
 ```

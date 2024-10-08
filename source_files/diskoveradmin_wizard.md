@@ -75,7 +75,9 @@ This is the point where you need to send your license request and the wizard par
 
 #### RabbitMQ or Amazon MQ
 
-🔴 &nbsp;If applicable to your environment, follow the instructions on this page, click **Test** to check the connection, and then **Save & Continue**, or click **Skip** if not applicable. You can configure or edit your entries at any time.
+This section is only needed if you are planning to use [File Action]() plugins.
+
+🔴 &nbsp;Follow the instructions on this page, click **Test** to check the connection, and then **Save & Continue**, or click **Skip**. You can configure or edit your entries at any time.
 
 🟨 &nbsp;The basic setup using the wizard is not completed. CONGRATS!
 
@@ -104,3 +106,5 @@ This is the point where you need to send your license request and the wizard par
 🔴 &nbsp;Check **Enable Log File** and modify the **Log File Location** as needed:
 
 <img src="images/diskoverd_configuration_log_file.png" width=""> 
+
+RUN YOUR FIRST INDEX!!

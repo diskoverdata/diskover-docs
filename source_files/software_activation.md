@@ -35,16 +35,16 @@ Licenses are created using these variables:
 
 After installing Diskover and completing the basic configuration, you will need to generate a hardware ID. Please [send](mailto:info@diskoverdata.com) that unique identifier along with your license request.
 
-🟨 &nbsp;**IMPORTANT!**
-
-- Check that you have configured your Elasticsearch host correctly, as it is part of the hardware ID encoding process.
-- Note that if your [Elasticsearch cluster]((https://docs.diskoverdata.com/diskover_installation_guide/#elasticsearch-requirements)) ID changes, you will need new license keys.
-
 🔴 &nbsp;To create your hardware ID:
 ```
 cd /opt/diskover
 python3 diskover_lic.py -g
 ```
+
+🟨 &nbsp;**IMPORTANT!**
+
+- Check that you have configured your Elasticsearch host correctly, as it is part of the hardware ID encoding process.
+- Note that if your [Elasticsearch cluster]((https://docs.diskoverdata.com/diskover_installation_guide/#elasticsearch-requirements)) ID changes, you will need new license keys.
 
 ### License Key Locations
 

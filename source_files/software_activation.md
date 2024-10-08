@@ -31,7 +31,7 @@ Licenses are created using these variables:
 3. Your [Diskover Edition](https://www.diskoverdata.com/solutions/)
 4. The number of Elasticsearch nodes.
 
-### Hardware ID Generation
+### Generating a Hardware ID
 
 After installing Diskover and completing the basic configuration, you will need to generate a hardware ID. Please [send](mailto:info@diskoverdata.com) that unique identifier along with your license request.
 
@@ -46,15 +46,7 @@ cd /opt/diskover
 python3 diskover_lic.py -g
 ```
 
-### License Keys Location in Configuration Panel (2.3.x +)
-
-1. From the main Diskover user interface, click on the ⛭ at the top right corner.
-2. Select **⛭ System Configuration**.
-3. Open the **License** tab and follow the instructions on that page.
-
-<img src="images/diskoveradmin_license.png" width="">
-
-### License Keys Location for Manual Installation
+### License Key Locations
 
 #### Linux
 

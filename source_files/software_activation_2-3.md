@@ -10,8 +10,8 @@ ___
 The [**Diskover Community Edition**](https://diskoverdata.com/solutions/) doesn't require a license key and can be used for an unlimited time. 
 
 The [**Diskover Editions/paid subscriptions**](https://diskoverdata.com/solutions/) require a license. Unless otherwise agreed:
-- A trial license is valid for 30 days and is issued for 1 Elasticsearch node.
-- A paid subscription license is valid for 1 year. Clients will be contacted about 90 days prior to their license expiration with a renewal proposal.
+- A trial license is usually valid for 30 days and is issued for 1 Elasticsearch node.
+- A paid subscription license is valid for 1 year. Clients will be contacted about 90 days before their license expiration with a renewal proposal.
 
 Please reach out to your designated Diskover contact person or [contact us](mailto:info@diskoverdata.com) directly for more information.
 
@@ -32,6 +32,8 @@ Licenses are created using these variables:
 4. The number of Elasticsearch nodes.
 
 ### Hardware ID Generation
+
+Your hardware ID should have been automatically generated when going through the [Initial Configuration]() section. The following command is listed in case you need to manually generate your hardware ID. Please [send that unique identifier along with your license request](mailto:info@diskoverdata.com) as needed.
 
 🔴 &nbsp;To manually create your hardware ID:
 ```
@@ -70,7 +72,7 @@ Place the license keys in the following locations.
 /var/www/diskover-web/src/diskover/diskover-web.lic
 ```
 
-🔴 &nbsp;Check that the **diskover-web.lic** file is owned by NGINX user and permissions are 644:
+🔴 &nbsp;Check that the **diskover-web.lic** file is owned by NGINX user, and permissions are **644**:
 ```
 chown nginx:nginx diskover-web.lic && chmod 644 diskover-web.lic
 ```

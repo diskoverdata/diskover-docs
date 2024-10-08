@@ -27,19 +27,19 @@ If not already done, download the latest software version.
 
 Licenses are created using these variables:
 1. Your email address
-2. Your [hardware ID number](https://docs.diskoverdata.com/diskover_installation_guide_ova/#generating-a-hardware-id)
+2. Your [hardware ID number]()
 3. Your [Diskover Edition](https://www.diskoverdata.com/solutions/)
 4. The number of Elasticsearch nodes.
 
 ### Hardware ID Generation
+
+Your hardware ID should have been automatically generated when going through the [Initial Configuration]() section. The following command is listed in case you need to manually generate your hardware ID. Please [send that unique identifier along with your license request](mailto:info@diskoverdata.com) as needed.
 
 🔴 &nbsp;To manually create your hardware ID:
 ```
 cd /opt/diskover
 python3 diskover_lic.py -g
 ```
-
-After installing Diskover and completing the basic configuration, you will need to generate a hardware ID. Please [send that unique identifier along with your license request](mailto:info@diskoverdata.com).
 
 🟨 &nbsp;**IMPORTANT!**
 
@@ -58,7 +58,7 @@ After installing Diskover and completing the basic configuration, you will need 
 
 #### Linux
 
-Place the license keys in the following locations. 
+Place the license keys in the following locations.
 
 🔴 &nbsp;Copy **diskover.lic** file to:
 ```
@@ -70,7 +70,7 @@ Place the license keys in the following locations.
 /var/www/diskover-web/src/diskover/diskover-web.lic
 ```
 
-🔴 &nbsp;Check that the **diskover-web.lic** file is owned by NGINX user and permissions are 644:
+🔴 &nbsp;Check that the **diskover-web.lic** file is owned by NGINX user, and permissions are **644**:
 ```
 chown nginx:nginx diskover-web.lic && chmod 644 diskover-web.lic
 ```

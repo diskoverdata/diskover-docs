@@ -4,7 +4,7 @@ ___
 
 ### Overview
 
-This Celery component will need to be installed on each of your worker nodes.
+This Celery component will need to be installed on each of your indexer/worker nodes.
 
 ### Celery for Linux
 

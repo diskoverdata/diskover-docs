@@ -101,8 +101,8 @@ The Workers tab shows the status and performance of task workers, which are resp
 | **Retries** | Enter the number of times to retry running the task if the task fails to complete successfully. |
 | **Retry Delay (sec)** | Enter the delay, in seconds, in between retries. |
 | **Timeout (sec)** | Enter the amount of time, in seconds, after which to stop a task running long. Note that this field is different than [**Time Limit for Long-Running Tasks** in DiskoverD in the DiskoverAdmin panel]. |
-| **Assigned Worker** | Select the appropriate **DiskoverD** config for this task.<br><br><img src="images/diskoveradmin_diskoverd_config.png" width="500"> |
-| **Email** | Overrides what's in DiskoverD config. task panel will overide what's in admin panel |
+| **Assigned Worker** | Select the appropriate **DiskoverD** config for this task.<br><br><img src="images/diskoveradmin_diskoverd_config.png" width="250"> |
+| **Email** | Enter an email address for the notifications. This will override the email that you might have input in DiskoverAdmin > DiskoverD config. |
 | **Disabled** | Check this box to disable this task without deleting it. |
 | **Make Template** | If you wish to reuse the settings from this task, check this box to create a template that will be saved under the **Templates** tab. |
 | **Template Name** | Enter the custom template name you want to give to this group of settings. |

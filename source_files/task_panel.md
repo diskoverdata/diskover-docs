@@ -18,13 +18,13 @@ _[Click here for the full screen view of this diagram.](images/diagram_indexer_d
 
 #### Accessing the Task Panel
 
-**From the Diskover user interface** Access the Task Panel within the Diskover-Web user interface > ⛭ > **Task Panel** > **Workers** tab.
+🔴 &nbsp;**From the DiskoverAdmin panel**: Click on the **** 
 
+<img src="images/diskoveradmin_menu_home.png" width="250">
 
+🔴 &nbsp;**From the Diskover user interface**: Access the Task Panel within the Diskover-Web user interface > ⛭ > **Task Panel** > **Workers** tab.
 
 <img src="images/task_panel_access.png" width="">
-
-
 
 These tabs work together to give you full control over task creation, execution, monitoring, and overall management, ensuring smooth and efficient data indexing and task processing in Diskover.
 

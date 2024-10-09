@@ -18,11 +18,11 @@ _[Click here for the full screen view of this diagram.](images/diagram_indexer_d
 
 #### Accessing the Task Panel
 
-🔴 &nbsp;**From the DiskoverAdmin panel**: Click on **DiskoverAdmin**.
+🔴 &nbsp;**From the DiskoverAdmin panel**: Click on **DiskoverAdmin**
 
 <img src="images/diskoveradmin_menu_home.png" width="250">
 
-🔴 &nbsp;**From the Diskover user interface**: ⛭ > **Task Panel** > **Workers** tab.
+🔴 &nbsp;**From the Diskover user interface**: ⛭ > **Task Panel**
 
 <img src="images/task_panel_access.png" width="">
 
@@ -73,7 +73,7 @@ The Workers tab shows the status and performance of task workers, which are resp
 
 <img src="images/task_panel_workers.png" width="">
 
-### Fields Description for Indexing Task
+### Task Fields Description
 
 | Field | Description |
 | --- | --- |
@@ -82,7 +82,7 @@ The Workers tab shows the status and performance of task workers, which are resp
 | **Name** | Assing a custom name to your **task**. Note that this name is not related to any configuration in the DiskoverAdmin panel. |
 | **Description** | You can enter a detailed description for this indexing task. |
 | **Crawl Directory(s)** | Specify top path where to start the crawl, for example: **/mnt/snfs2** or **/home** |
-| **Alt Scanner** | Enter the name of an [alternate indexer]() if applicable for this task, for example: scandir_s3, scandir_azure, scandir_offline_media. You can [configure your alternate indexers via the DiskoverAdmin panel](). <br><br><img src="images/diskoveradmin_menu_alt_cache.png" width="800"> |
+| **Alt Scanner** | Enter the name of an [alternate indexer]() if applicable for this task, for example: scandir_s3, scandir_azure, scandir_offline_media. You can [configure your alternate indexers via the DiskoverAdmin panel]().<br><img src="images/diskoveradmin_menu_alt_cache.png" width="800"> |
 | **Use DirCache** | Check this box to optimize future scanning, make sure to [configure DirCache accordingly in the DiskoverAdmin panel](). Note that this box is just a shortcut as entering **scandir_dircache** in the field above will do the same. |
 | **CLI Options/Flags** | Allows users to fine-tune tasks directly through additional parameters, providing more control over how the indexing runs. Follow the help instructions in the interface. |
 | **Auto Index Name** | Check this box for Diskover to assign a name to your index using the format **diskover-_toppath_-_datetime_** |
@@ -101,31 +101,25 @@ The Workers tab shows the status and performance of task workers, which are resp
 | **Retries** | Enter the number of times to retry running the task if the task fails to complete successfully. |
 | **Retry Delay (sec)** | Enter the delay, in seconds, in between retries. |
 | **Timeout (sec)** | Enter the amount of time, in seconds, after which to stop a task running long. Note that this field is different than [**Time Limit for Long-Running Tasks** in DiskoverD in the DiskoverAdmin panel]. |
-| **Assigned Worker** | Select the appropriate **DiskoverD** config for this task.<br><br><img src="images/diskoveradmin_diskoverd_config.png" width="200"> |
+| **Assigned Worker** | Select the appropriate **DiskoverD** config for this task.<br><img src="images/diskoveradmin_diskoverd_config.png" width="200"> |
 | **Email** | Enter an email address for the notifications. This will override the email that you might have input in DiskoverAdmin > DiskoverD config. |
 | **Disabled** | Check this box to disable this task without deleting it. |
 | **Make Template** | If you wish to reuse the settings from this task, check this box to create a template that will be saved under the **Templates** tab. |
 | **Template Name** | Enter the custom template name you want to give to this group of settings. |
 
-
-Enter the name of the [indexer]() you created and configured in the DiskoverAdmin panel. If the task you are creating is for an alternate scanner, then leave this field empty and enter the **Alt Scanner** name a few fields below<br><img src="images/diskoveradmin_index_name.png" width="500">
-
-
-### Fields Description for Custom Task
-
-#### Validate Task Worker Configuration
+### Validate Task Worker Presence
 
 🔴 &nbsp;Ensure the presence of at least one online task worker under the **Status** column.
 
-![Image: Tasks Management System](images/image_tasks_task_panel_management_task_workers.png)
+![Image: Tasks Management System](images/task_panel_worker_status.png)
 
 ### Create an Indexing Task
 
-Our goal is to help you run your first index as quickly as possible. However, keep in mind that some configurations may still require customization, even if we haven’t reached those steps yet.
+This is your last step to complete your first index! Keep in mind that some configurations may still require customization, even if we haven’t reached those steps yet.
 
 The configuration for indexing tasks varies between Posix File Systems and S3-based object storage.
 
- The following sections will guide you through setting up basic indexing tasks for each. However, in both cases, start here:
+ The following sections will guide you through setting up basic indexing tasks for each.
 
  🔴 &nbsp;From the **Task Panel** go to > **Task List** tab > select **New Index Task**:
 
@@ -133,7 +127,14 @@ The configuration for indexing tasks varies between Posix File Systems and S3-ba
 
 #### Posix File System Indexing Task
 
-> _Note:_ Paths are case-sensitive and must exist on the indexing task worker host. For Windows task worker, set the crawl directory to for example `H:\\Somefolder` or `C:\\` using double backslashes (escaped) or for UNC paths use `\\\\UNC\\share`.
+🟨 &nbsp;Please note:
+
+- The paths are case-sensitive and must exist on the indexing task worker host. 
+- For Windows task workers, set the crawl directory to, for example, `H:\\Somefolder` or `C:\\` using double backslashes to escape or for UNC paths use `\\\\UNC\\share`.
+
+🔴 &nbsp;Select **New Index Task** in the **Task List** tab:
+
+<img src="images/task_panel_new_task_index.png" width="">
 
 🔴 &nbsp;Auto Index Name: unselect box
 

@@ -4,26 +4,33 @@ ___
 
 ### Overview
 
-This section covers the basic installation of Elasticsearch v8 (commonly referred to as **ES**). We will walk through the steps for setting up a **single-node cluster**, and we will leave ES authentication disabled by default.
+This section covers the basic installation of Elasticsearch v8, commonly referred to as **ES**, throughout Diskover's documentation and user interface. This section covers:
 
-Once all components are installed, you will be able to [configure your Elasticsearch environment](). We strongly recommend following the deployment order outlined in this guide.
+- Setting up your first Elasticsearch node and we will leave ES authentication disabled by default for now.
+- If you have multiple nodes in your environment, you will need to repeat this process for each node, as [each node requires its dedicated system]().
 
-Some helpful links you will or might need:
+Once all the components are installed, you will be able to refine your [Elasticsearch environment configuration](). We strongly recommend following the deployment order outlined in this guide.
+
+Some links you might need:
 
 - [Set up a multi-node cluster]()
+- [Set up multiple clusters]()
 - [Configure Elasticsearch SSL and authentication for use with Diskover]()
 - [Download the current release of Elasticsearch](https://www.elastic.co/downloads/elasticsearch)
 - [Download past releases of Elasticsearch](https://www.elastic.co/downloads/past-releases#elasticsearch)
 
+### Single Node Installation
 
-### Java Open JDK Package Installation
+#### Java Open JDK Package Installation
+
+Let's start this process by setting up your first node:
 
 🔴 &nbsp;Install Java v21 for Centos v8, and Rocky or RHEL v8 or v9: 
 ```
 dnf install java-21-openjdk
 ```
 
-### Elasticsearch Installation
+#### Elasticsearch Installation
 
 🔴 &nbsp;To install Elasticsearch via RPM directly:
 ```
@@ -54,7 +61,7 @@ yum -y install --enablerepo=elasticsearch elasticsearch
 
 🟨 &nbsp;Elasticsearch v8 should be installed at this point. Stop here and go to [Set up a multi-node cluster]() if applicable.
 
-### Elasticsearch Initial Configuration
+#### Elasticsearch Initial Configuration
 
 Let's perform some basic configurations to ensure our single-node ES cluster is up and running, and ready for integration with Diskover.
 
@@ -116,7 +123,7 @@ elasticsearch soft memlock unlimited
 elasticsearch hard memlock unlimited
 ```
 
-### Elasticsearch Health Check
+#### Elasticsearch Health Check
 
 With the ES cluster installed and running, you can now run a simple curl command to check the health of your cluster.
 
@@ -146,3 +153,121 @@ curl -XGET -u elastic:password https://${ESHOST}:9200/_cluster/health?pretty --c
   "active_shards_percent_as_number" : 100.0
 }
 ```
+
+### Multiple Nodes Environment
+
+If you have more than 1 node in your environment, redo all the [Single Node Installation]() steps for each node/system.
+
+### Setting Up a Cluster
+
+#### Overview
+
+While it’s not mandatory to set up a cluster, if you have 3 or more Elasticsearch nodes, setting up a cluster is highly recommended for ensuring high availability, reliability, load balancing, and fault tolerance. It’s the preferred setup for production environments.
+
+This section will walk you through the steps to configure a cluster, enabling your nodes to work together efficiently and securely distribute data across the system.
+
+#### Requirements
+
+- Each ES node needs to be installed on its own system.
+- All nodes must be able to communicate with each other. To test this, install Elasticsearch on the nodes, start the services, and use telnet to connect to each host.
+
+```
+telnet <es-ip> 9200
+```
+
+- If this is successful, you should see the following:
+
+```
+[root@es1 ~]# telnet 192.168.64.19 9200
+Trying 192.168.64.19...
+Connected to 192.168.64.19.
+Escape character is '^]'.
+```
+
+- If you see **Connection Refused**, you should validate if [**SELinux** and **Firewalld** are disabled and off](), respectively.
+
+#### Cluster Setup
+
+🔴 &nbsp;Run DNF updates:
+```
+sudo dnf update -y
+```
+
+🔴 &nbsp;Install Java 8: 
+```
+sudo dnf install -y java-21-openjdk
+```
+
+🔴 &nbsp;Install Elasticsearch 7: 
+```
+sudo dnf install -y https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.15.2-x86_64.rpm
+```
+
+🔴 &nbsp;Configure the JVM for Elastic: 
+```
+vi /etc/elasticsearch/jvm.options.d/jvm.options:
+```
+
+🔴 &nbsp;Set the memory heap size - memory allocation should never exceed half of your system's total configured memory:
+```
+-Xms8g
+-Xmx8g
+```
+
+🔴 &nbsp;Set up the Elastic config:
+```
+vi /etc/elasticsearch/elasticsearch.yml:
+```
+
+| Field | Description |
+| --- | --- |
+| cluster.name | It should include **diskover** in the name to make it easily distinguishable for the customer, example: **diskover-es** |
+| node.name | It can be named anything, but should include a number to identify the node, example: **diskover-node-1** |
+| path.data | Set this to the desired storage location for your data. If a large amount of data is expected, it's recommended to use an external storage location. The default location is **/var/lib/elasticsearch** |
+| path.logs | This defines the path where Elasticsearch logs will be stored. The default location is **/var/log/elasticsearch** |
+| bootstrap.memory_lock | This should always be set to **true**. It will prevent Elasticsearch from trying to use the swap memory. |
+| network.host | This should be set to the IP address of the host where you're configuring Elasticsearch. |
+| discovery.seed_hosts | **IMPORTANT!** You need to enter the IP addresses of each Elasticsearch node that will be part of the cluster, for example:<br>```discovery.seed_hosts: ["192.168.64.18", "192.168.64.19", "192.168.64.20"]``` |
+| cluster.initial_master_nodes | **IMPORTANT!** You need to enter the name of each node for the node.name setting, for example:<br>```cluster.initial_master_nodes: ["diskover-node-1", "diskover-node-2", "diskover-node-3"]``` |
+| xpack.ml.enabled | This should be set to **false** to disable the Machine Learning within ES. If you do not have this set to false, then Elasticsearch will fail upon startup. |
+
+
+🔴 &nbsp;Make the directory for the custom ES `systemd` settings: 
+```
+mkdir /etc/systemd/system/elasticsearch.service.d
+```
+
+
+🔴 &nbsp;Create the service config file: 
+```
+vi /etc/systemd/system/elasticsearch.service.d/elasticsearch.conf:
+
+[Service]
+LimitMEMLOCK=infinity
+LimitNPROC=4096
+LimitNOFILE=65536
+```
+
+#### Start Elasticsearch Cluster
+
+🔴 &nbsp;Reload the daemon on all ES nodes: 
+```
+sudo systemctl daemon-reload
+```
+
+🔴 &nbsp;Start up **Node 1** first:
+```
+sudo systemctl start elasticsearch
+```
+
+🟨 &nbsp;You can watch the startup logs at **/var/log/elasticsearch/<cluster-name>.log**
+<br><br>
+🔴 &nbsp;Once Node 1 is online, start **Node 2**, then once Node 2 is online, start **Node 3**.
+
+### Setting Up a Multiple Cluster Environment
+
+<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
+
+In a multiple-cluster setup for Elasticsearch, you can run and manage multiple independent clusters, each with its own set of nodes and indices. This setup is typically used when you need to isolate data or workloads across different environments (such as production, testing, and development) or geographically distributed locations. Each cluster operates independently, and you can configure cross-cluster search or replication to share data or search across clusters as needed.
+
+Please [contact us]() for assistance.

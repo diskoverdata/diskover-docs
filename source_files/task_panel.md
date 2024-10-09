@@ -13,6 +13,7 @@ The Task Panel can be used to schedule indexing tasks or run any custom task, su
 Diskover has a [distributed task system]() where [**indexers/workers**]() can be distributed among many resources. For each resource providing a task worker, services need to have a [**DiskoverD**]() installed. This section will describe setting up both indexing and custom tasks within the Diskover-Web **Task Panel**.
 
 <img src="images/diagram_indexer_daemon_task_panel.png" width="">
+
 _[Click here for the full screen view of this diagram.](images/diagram_indexer_daemon_task_panel.png)_
 
 #### Accessing the Task Panel

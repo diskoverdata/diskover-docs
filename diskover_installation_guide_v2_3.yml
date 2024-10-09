@@ -19,7 +19,6 @@ ordered_documents:
   - software_download.md
   - system_readiness.md
   - install_elasticsearch.md
-  - elasticsearch_multi_nodes.md
   - install_indexers.md
   - install_celery.md
   - install_rabbitmq.md

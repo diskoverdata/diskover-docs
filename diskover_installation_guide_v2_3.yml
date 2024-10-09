@@ -32,7 +32,9 @@ ordered_documents:
   - config_diskoveradmin_plugins_index.md
   - config_diskoveradmin_plugins_post_index.md
   - config_diskoveradmin_plugins_file_actions.md
+  - config_plugins_manual.md
   - visualization_tools.md
+  - indices_management.md
   - software_activation_2-3.md
   - upgrade_to_2-3.md
   - software_update_2-3.md

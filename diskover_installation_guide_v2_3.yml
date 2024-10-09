@@ -19,20 +19,21 @@ ordered_documents:
   - software_download.md
   - system_readiness.md
   - install_elasticsearch.md
+  - elasticsearch_multi_nodes.md
   - install_indexers.md
   - install_celery.md
   - install_rabbitmq.md
   - install_diskover_web.md
   - install_diskoveradmin.md
-  - software_activation.md
-  - launch_diskoveradmin.md
+  - config_initial.md
+  - task_panel.md
+  - diskoveradmin_navigation.md
   - config_diskoveradmin_main.md
   - config_diskoveradmin_plugins_index.md
   - config_diskoveradmin_plugins_post_index.md
   - config_diskoveradmin_plugins_file_actions.md
-  - elasticsearch_multi_nodes.md
   - visualization_tools.md
-  
+  - software_activation_2-3.md
   - upgrade_to_2-3.md
   - software_update_2-3.md
   - backup.md
@@ -47,18 +48,3 @@ ordered_documents:
 Configure Elasticsearch SSL and authentication for use with Diskover
   - reporting_cost_analysis.md
   - file action mount remote web server
-
-
-
-   
-  - task_worker_intro.md
-  - task_worker_linux.md
-  - task_worker_windows.md
-  - task_worker_mac.md  
-
-
-  - indexers_alternate.md
-  - install_indexers_alt_dev_your_own.md
-  
-
-

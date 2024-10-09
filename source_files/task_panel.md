@@ -18,11 +18,11 @@ _[Click here for the full screen view of this diagram.](images/diagram_indexer_d
 
 #### Accessing the Task Panel
 
-🔴 &nbsp;**From the DiskoverAdmin panel**: Click on DiskoverAdmin.
+🔴 &nbsp;**From the DiskoverAdmin panel**: Click on **DiskoverAdmin**.
 
 <img src="images/diskoveradmin_menu_home.png" width="250">
 
-🔴 &nbsp;**From the Diskover user interface**: Access the Task Panel within the Diskover-Web user interface > ⛭ > **Task Panel** > **Workers** tab.
+🔴 &nbsp;**From the Diskover user interface**: ⛭ > **Task Panel** > **Workers** tab.
 
 <img src="images/task_panel_access.png" width="">
 

@@ -93,7 +93,7 @@ vi /root/.config/diskoverd/config.yaml
 apiurl: http://${WEBHOST}:8000/api.php
 ```
 
-#### Daemons 
+#### DiskoverD Task Worker Daemon
 
 Now that your first worker node is installed and configured, let’s daemonize this service with **systemd**.
 

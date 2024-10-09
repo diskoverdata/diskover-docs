@@ -33,6 +33,24 @@ ordered_documents:
   - config_diskoveradmin_plugins_post_index.md
   - config_diskoveradmin_plugins_file_actions.md
   - config_plugins_manual.md
+  - plugin_bam_harvest.md
+  - plugin_edl_upload.md
+  - plugin_file_action_cineviewer.md
+  - plugin_find_file_sequence.md
+  - plugin_grant.md
+  - plugin_imf_validator.md
+  - plugin_mover_ngenea.md
+  - plugin_mover_rclone.md
+  - plugin_shotgrid.md
+  - plugin_mover_vcinity.md
+  - plugin_telestream_glim.md
+  - plugin_telestream_vantage.md
+  - plugin_xytech_asset_creation.md
+  - plugin_xytech_order_status.md
+
+
+
+  
   - visualization_tools.md
   - indices_management.md
   - software_activation_2-3.md

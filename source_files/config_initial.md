@@ -69,7 +69,7 @@ This is the point where you need to send your license request and the wizard par
 
 #### Time Zone
 
-🔴 &nbsp;Using the dropdown list, select your **Time Zone**. More customization can be done later regarding this parameter, click **Save & Continue**.
+🔴 &nbsp;Using the dropdown list, select your **Time Zone**. More customization can be done later regarding time zones, click **Save & Continue**.
 
 🔴 &nbsp;Click the box to enable your time zone selection, click **Save & Continue**.
 

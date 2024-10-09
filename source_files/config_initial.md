@@ -91,7 +91,7 @@ This section is only needed if you are planning to use [File Action]() plugins.
 
 🔴 &nbsp;Specify an **API Port** if different than the default of **8000**.
 
-### Diskover
+### Diskover Indexers/Workers
 
 🔴 &nbsp;Navigate to **Diskover** > **Configurations** > **Default**.
 

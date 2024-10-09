@@ -160,6 +160,8 @@ If you have more than 1 node in your environment, redo all the [Single Node Inst
 
 ### Setting Up a Cluster
 
+<img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
+
 #### Overview
 
 While it’s not mandatory to set up a cluster, if you have 3 or more Elasticsearch nodes, setting up a cluster is highly recommended for ensuring high availability, reliability, load balancing, and fault tolerance. It’s the preferred setup for production environments.

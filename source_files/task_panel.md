@@ -1,5 +1,5 @@
 ___
-## Task Management
+## Task Management via Task Panel
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 ___
@@ -18,9 +18,13 @@ _[Click here for the full screen view of this diagram.](images/diagram_indexer_d
 
 #### Accessing the Task Panel
 
-Access the Task Panel within the Diskover-Web user interface > ⛭ > **Task Panel** > **Workers** tab.
+**From the Diskover user interface** Access the Task Panel within the Diskover-Web user interface > ⛭ > **Task Panel** > **Workers** tab.
+
+
 
 <img src="images/task_panel_access.png" width="">
+
+
 
 These tabs work together to give you full control over task creation, execution, monitoring, and overall management, ensuring smooth and efficient data indexing and task processing in Diskover.
 
@@ -67,26 +71,57 @@ The Workers tab shows the status and performance of task workers, which are resp
 
 <img src="images/task_panel_workers.png" width="">
 
+### Create an Indexing Task
+
+A default indexing task is available in the **Templates** tab in the Task Panel. The configuration for indexing tasks varies between Posix File Systems and S3-based object storage. The following sections will guide you through setting up basic indexing tasks for each. However, in both cases, start here:
+
+🔴 &nbsp;From the **Task Panel** go to > **Task List** tab > select **New Index Task**:
+
+<img src="images/task_panel_new_task_index.png" width="400">
+
+| Field | Description |
+| --- | --- |
+| **Template** | Select a template if applicable |
+| **ID** | Diskover will automatically assign an ID number to task, this field is non-editabled |
+| **Name** | random name, not attached to anything
+
+Enter the name of the [indexer]() you created and configured in the DiskoverAdmin panel. If the task you are creating is for an alternate scanner, then leave this field empty and enter the **Alt Scanner** name a few fields below<br><img src="images/diskoveradmin_index_name.png" width="500"> |
+| **Description** | You can enter a description for this indexing task for personal use |
+| **Crawl Directory(s)** | specify top path
 
 
+Enter the mount, for example **/mnt/snfs2** |
+| **Alt Scanner** | drop down coming? or scandir_s3, scandir_azure, scandir_offline_media
 
+Only input something in this field if you are creating a task for an alternate scanner, which you will need to configure in the DiskoverAdmin panel first.<br><img src="images/diskoveradmin_menu_alt_cache.png" width="600"> |
+| **Use DirCache** | Check this box to optimize future scanning, make sure to configure **DirCache** accordingly in the DiskoverAdmin panel |
+| **CLI Options/Flags** | |
+| **Auto Index Name** | Check this box to ... |
+| **Custom Index Name** | diskover-test-current. no correlation with default
 
+|
+| **Overwrite Existing** | delete existing one and create new one |
+| **Add to Index** | add stuff to existing index |
+| **Use Default Config** | If only one indexer and name was left **Default**  |
+| **Alternate Config Name** | use add config created in admin panel |
+| **Schedule** | Using the drop-down lists for minute, hour, day of month, month or day of week, OR the **Custom Schedule** field, choose how often you want this task to repeat. |
+| **Custom Schedule** | for expert users with chron schedule  overides |
+| **Environment Vars** | |
+| **Pre-Crawl Command** | before a task for example zip folder name, then move |
+| **Pre-Crawl Command Args** | |
+| **Post-Crawl Command** | unzip  |
+| **Post-Crawl Command Args** | |
+| **Retries** | If the task fails to complete successfully, enter the number of times to retry |
+| **Retry Delay (sec)** | Enter the delay in between retries in seconds |
+| **Timeout (sec)** | Enter the timeout xxx in seconds = kill it = not the same as time limit in admin |
+| **Assigned Worker** | Enter the **DiskoverD** ... <br><img src="images/diskoveradmin_diskoverd_config.png" width="500"> |
+| **Email** | Overrides what's in DiskoverD config. task panel will overide what's in admin panel |
+| **Disabled** | Check this box to temporarily disable this task without deleting it |
+| **Make Template** | If you wish to reuse the settings from this task, check this box to create a template that will be saved under the **Templates** tab |
+| **Template Name** | Enter the custom template name you want to give to this group of settings |
 
-### Create an Index Task
-
-A default indexing task is provided in the task panel. The configuration of indexing tasks is different for Posix File Systems and S3-based object storage, the following will illustrate setting up basic indexing tasks for each.
 
 #### Posix File System Indexing Task
-
-🔴 &nbsp;Select **New Index Task** from > **Task Panel** > **Task List** tab:
-
-<img src="images/image_tasks_task_panel_new_index_task_creation_button.png" width="600">
-
-The following **Create New Index Task** dialog box will appear. Configure as follow:
-
-🔴 &nbsp;Name: **index-_volumename_** (where _**volumename**_ is the name of volume, in this example **snfs2**)
-
-🔴 &nbsp;Crawl Directory(s): **/mnt/_volumedir_** (where _**volumedir**_ is the volume mountpoint, in this example **/mnt/snfs2**)
 
 > _Note:_ Paths are case-sensitive and must exist on the indexing task worker host. For Windows task worker, set the crawl directory to for example `H:\\Somefolder` or `C:\\` using double backslashes (escaped) or for UNC paths use `\\\\UNC\\share`.
 
@@ -112,6 +147,8 @@ The following **Create New Index Task** dialog box will appear. Configure as fol
 ![Image: Create Task](images/image_tasks_task_panel_create_task_button.png)
 
 #### S3 Bucket Indexing Task
+
+
 
 Indexing tasks for S3 buckets are slightly different than Posix File systems, the following outlines the configuration differences required in the **Create New Index Task** in the Task Panel.
 
@@ -149,3 +186,9 @@ AWS_PROFILE=profile,S3_ENDPOINT_URL=https://alternate_endpoint.com
 ![Image: Tasks Management System](images/image_tasks_task_panel_management_task_workers.png)
 
 ### Create a Custom Task
+
+🔴 &nbsp;From the **Task Panel** go to > **Task List** tab > select **New Custom Task**:
+
+<img src="images/task_panel_new_task_custom.png" width="400">
+
+🚧 Instructions to follow.

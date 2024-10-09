@@ -14,6 +14,8 @@ Diskover has a [distributed task system]() where [**indexers/workers**]() can be
 
 <img src="images/diagram_indexer_daemon_task_panel.png" width="">
 
+_[Click here for the full screen view of this diagram.](images/diagram_indexer_daemon_task_panel.png)_
+
 #### Accessing the Task Panel
 
 Access the Task Panel within the Diskover-Web user interface > ⛭ > **Task Panel** > **Workers** tab.

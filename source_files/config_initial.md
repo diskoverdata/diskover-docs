@@ -107,6 +107,6 @@ This section is only needed if you are planning to use [File Action]() plugins.
 
 <img src="images/diskoverd_configuration_log_file.png" width=""> 
 
-### Run Your First Index
+### Schedule Your First Scan
 
-🔴 &nbsp;X
+You are now ready to schedule and then run your first scan! Go to the next section, [Task Management via Task Panel](), for the details.

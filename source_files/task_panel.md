@@ -127,30 +127,31 @@ The configuration for indexing tasks varies between Posix File Systems and S3-ba
 
 #### Posix File System Indexing Task
 
+🔴 &nbsp;Select **New Index Task** in the **Task List** tab:
+
+<img src="images/task_panel_create_new_task.png" width="">
+
+🔴 &nbsp;**Name**: **_volumename_**, for this example, **snfs2**
+
+🔴 &nbsp;**Crawl Directory(s)**: **/mnt/_volumedir_** where volumedir is the volume mount point, for this example, **/mnt/snfs2**
+
 🟨 &nbsp;Please note:
 
 - The paths are case-sensitive and must exist on the indexing task worker host. 
-- For Windows task workers, set the crawl directory to, for example, `H:\\Somefolder` or `C:\\` using double backslashes to escape or for UNC paths use `\\\\UNC\\share`.
+- For Windows task workers, set the crawl directory to, for example, **H:\\Somefolder** or **C:\\** using double backslashes to escape, or for UNC paths use **\\\\UNC\\share**
 
-🔴 &nbsp;Select **New Index Task** in the **Task List** tab:
+🔴 &nbsp;**Auto Index Name**: Make sure the box is unchecked.
 
-<img src="images/task_panel_new_task_index.png" width="">
+🔴 &nbsp;**Custom Index Name**: For this example, **diskover-snfs2-%Y%m%d%H**
 
-🔴 &nbsp;Auto Index Name: unselect box
+![Image: New Index Task Creation](images/task_panel_new_index_part1.png)
 
-🔴 &nbsp;Custom Index Name: **diskover-_volumename_-%Y%m%d%H**
+🔴 &nbsp;**Schedule**: A schedule is required to create the indexing task. The example below > **Hour** > **1** will run the indexing task every day at 1:00 am.
 
-![Image: New Index Task Creation](images/image_tasks_task_panel_custom_index_name.png)
+![Image: Configure Schedule for New Index Task](images/image_tasks_task_panel_schedule_indexing_task.png)
 
-🔴 &nbsp;A schedule is required to create the indexing task. The example below > **Hour** > **1** will run the indexing task every day at 1:00 am.
-
-![Image 1 - Configure Schedule for New Index Task](images/image_tasks_task_panel_schedule_indexing_task.png)
-
-🔴 &nbsp;To use a custom schedule to set the volume to index every hour from 7 am to 11pm for example, enter the following in the  **Custom Schedule**  box:
+🔴 &nbsp;**Custom Schedule**: To use a custom schedule to set the volume to index every hour from 7 am to 11pm, for example, enter the following **0 7-23 \* \* \***
 ```
-0 7-23 * * *
-```
-
 ![Image: Custom Schedule Configuration](images/image_tasks_task_panel_schedule_custom_indexing_task.png)
 
 🔴 &nbsp;Then select **Create Task**:
@@ -190,11 +191,6 @@ AWS_PROFILE=profile,S3_ENDPOINT_URL=https://alternate_endpoint.com
 
 ![Image: Non S3 Bucket Indexing Task Configuration](images/image_tasks_task_panel_s3_bucket_alternate_endpoint.png)
 
-#### Validate Task Worker Configuration
-
-🔴 &nbsp;Ensure the presence of at least one online task worker under the **Status** column.
-
-![Image: Tasks Management System](images/image_tasks_task_panel_management_task_workers.png)
 
 ### Create a Custom Task
 

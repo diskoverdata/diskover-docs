@@ -70,11 +70,11 @@ The Workers tab shows the status and performance of task workers, which are resp
 
 
 
-#### Index Tasks
+### Create an Index Task
 
 A default indexing task is provided in the task panel. The configuration of indexing tasks is different for Posix File Systems and S3-based object storage, the following will illustrate setting up basic indexing tasks for each.
 
-##### Posix File System Indexing Task
+#### Posix File System Indexing Task
 
 🔴 &nbsp;Select **New Index Task** from > **Task Panel** > **Task List** tab:
 
@@ -109,7 +109,7 @@ The following **Create New Index Task** dialog box will appear. Configure as fol
 
 ![Image: Create Task](images/image_tasks_task_panel_create_task_button.png)
 
-##### S3 Bucket Indexing Task
+#### S3 Bucket Indexing Task
 
 Indexing tasks for S3 buckets are slightly different than Posix File systems, the following outlines the configuration differences required in the **Create New Index Task** in the Task Panel.
 
@@ -125,7 +125,7 @@ Where **bucketname** is the actual name of the S3 bucket desired for indexing, i
 
 ![Image: Disable Media Info Plugin for S3 Based Storage](images/image_tasks_task_panel_disable_media_info_plugin_for_s3_storage.png)
 
-##### Non-S3 Bucket Indexing Task
+#### Non-S3 Bucket Indexing Task
 
 Indexing tasks for non-AWS S3 buckets is slightly different than the previous section. The following outlines the configuration differences required for alternate credentials and endpoints.
 
@@ -140,10 +140,10 @@ AWS_PROFILE=profile,S3_ENDPOINT_URL=https://alternate_endpoint.com
 
 ![Image: Non S3 Bucket Indexing Task Configuration](images/image_tasks_task_panel_s3_bucket_alternate_endpoint.png)
 
-### Validate Task Worker Configuration
+#### Validate Task Worker Configuration
 
 🔴 &nbsp;Ensure the presence of at least one online task worker under the **Status** column.
 
 ![Image: Tasks Management System](images/image_tasks_task_panel_management_task_workers.png)
 
-### Create a _"custom"_ Task
+### Create a Custom Task

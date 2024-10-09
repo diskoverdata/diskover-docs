@@ -18,7 +18,7 @@ _[Click here for the full screen view of this diagram.](images/diagram_indexer_d
 
 #### Accessing the Task Panel
 
-🔴 &nbsp;**From the DiskoverAdmin panel**: Click on the **** 
+🔴 &nbsp;**From the DiskoverAdmin panel**: Click on the logo 
 
 <img src="images/diskoveradmin_menu_home.png" width="250">
 

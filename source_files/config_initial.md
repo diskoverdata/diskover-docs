@@ -107,4 +107,6 @@ This section is only needed if you are planning to use [File Action]() plugins.
 
 <img src="images/diskoverd_configuration_log_file.png" width=""> 
 
-RUN YOUR FIRST INDEX!!
+### Run Your First Index
+
+🔴 &nbsp;X

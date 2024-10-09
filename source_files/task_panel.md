@@ -26,6 +26,8 @@ _[Click here for the full screen view of this diagram.](images/diagram_indexer_d
 
 <img src="images/task_panel_access.png" width="">
 
+#### Task Panel Options
+
 These tabs work together to give you full control over task creation, execution, monitoring, and overall management, ensuring smooth and efficient data indexing and task processing in Diskover.
 
 <img src="images/task_panel_tabs.png" width="">

@@ -180,7 +180,7 @@ AWS_PROFILE=profile,S3_ENDPOINT_URL=https://alternate_endpoint.com
 
 🔴 &nbsp;From the **Task Panel** go to → **Task List** tab → select **New Custom Task**:
 
-<img src="images/task_panel_new_task_custom.png" width="450">
+<img src="images/task_panel_new_task_custom.png" width="600">
 
 🚧 Instructions to follow.
 

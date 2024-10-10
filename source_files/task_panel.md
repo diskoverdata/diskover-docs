@@ -102,7 +102,7 @@ The Workers tab shows the status and performance of task workers, which are resp
 | **Retry Delay (sec)** | Enter the delay, in seconds, in between retries. |
 | **Timeout (sec)** | Enter the amount of time, in seconds, after which to stop a task running long. Note that this field is different than [**Time Limit for Long-Running Tasks** in DiskoverD in the DiskoverAdmin panel]. |
 | **Assigned Worker** | Select the appropriate **DiskoverD** config for this task.<br><img src="images/diskoveradmin_diskoverd_config.png" width="200"> |
-| **Email** | Enter an email address for the notifications. This will override the email that you might have input in DiskoverAdmin > DiskoverD config. |
+| **Email** | Enter an email address for the notifications. This will override the email that you might have input in DiskoverAdmin → DiskoverD config. |
 | **Disabled** | Check this box to disable this task without deleting it. |
 | **Make Template** | If you wish to reuse the settings from this task, check this box to create a template that will be saved under the **Templates** tab. |
 | **Template Name** | Enter the custom template name you want to give to this group of settings. |
@@ -121,9 +121,9 @@ The configuration for indexing tasks varies between **Posix File Systems** and *
 
 The following sections will guide you through setting up basic indexing tasks for each.
 
-🔴 &nbsp;From the **Task Panel** go to > **Task List** tab > select **New Index Task**:
+🔴 &nbsp;From the **Task Panel** go to → **Task List** tab → select **New Index Task**:
 
-<img src="images/task_panel_create_new_task.png" width="400">
+<img src="images/task_panel_create_new_task.png" width="275">
 
 #### Posix File System Indexing Task
 
@@ -142,7 +142,7 @@ The following sections will guide you through setting up basic indexing tasks fo
 
 ![Image: New Index Task Creation](images/task_panel_new_index_part1.png)
 
-🔴 &nbsp;**Schedule**: A schedule is required to create the indexing task. The example below > **Hour** > **1** will run the indexing task every day at 1:00 am.
+🔴 &nbsp;**Schedule**: A schedule is required to create the indexing task. The example below → **Hour** → **1** will run the indexing task every day at 1:00 am.
 
 🔴 &nbsp;**Custom Schedule**: To use a custom schedule to set the volume to index every hour from 7 am to 11pm, for example, enter the following **0 7-23 \* \* \***. Note that any entries in this field will override values entered in **Schedule**.
 
@@ -180,7 +180,7 @@ AWS_PROFILE=profile,S3_ENDPOINT_URL=https://alternate_endpoint.com
 
 ### Create a Custom Task
 
-🔴 &nbsp;From the **Task Panel** go to > **Task List** tab > select **New Custom Task**:
+🔴 &nbsp;From the **Task Panel** go to → **Task List** tab → select **New Custom Task**:
 
 <img src="images/task_panel_new_task_custom.png" width="400">
 

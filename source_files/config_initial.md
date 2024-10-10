@@ -20,7 +20,7 @@ The DiskoverAdmin service allows for the fine-tuning of Diskover's core componen
 
 🔴 &nbsp;Access the Wizard by selecting **System** → **Meta** → **Wizard** → **Setup**:
 
-<img src="images/diskoveradmin_menu_wizard.png" width="250"> 
+<img src="images/diskoveradmin_menu_wizard.png" width="200"> 
 
 #### Elasticsearch Connection for Diskover-Web
 
@@ -85,7 +85,7 @@ This section is only needed if you are planning to use [File Action]() plugins.
 
 🔴 &nbsp;Now navigate to **System** → **API**.
 
-<img src="images/diskoveradmin_menu_api.png" width="250"> 
+<img src="images/diskoveradmin_menu_api.png" width="200"> 
 
 🔴 &nbsp;The **API Host** needs to be the IP address where Diskover-Web is running.
 

@@ -75,7 +75,7 @@ The Workers tab shows the status and performance of task workers, which are resp
 
 ### Task Fields Description
 
-| Field | Description |
+| FIELD | DESCRIPTION |
 | --- | --- |
 | **Template** | Select a template whenever possible to pre-populate some of the fields. |
 | **ID** | Diskover will automatically assign an ID number to a task. This field is non-editable. |

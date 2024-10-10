@@ -20,7 +20,7 @@ _[Click here for the full screen view of this diagram.](images/diagram_indexer_d
 
 🔴 &nbsp;**From the DiskoverAdmin panel**: Click on **DiskoverAdmin** and you'll be redirected to the main Diskover user interface:
 
-<img src="images/diskoveradmin_menu_home.png" width="250">
+<img src="images/diskoveradmin_menu_home.png" width="200">
 
 🔴 &nbsp;**From the Diskover user interface**: click the ⛭ in the upper right corner → **Task Panel**
 
@@ -123,7 +123,7 @@ The following sections will guide you through setting up basic indexing tasks fo
 
 🔴 &nbsp;From the **Task Panel** go to → **Task List** tab → select **New Index Task**:
 
-<img src="images/task_panel_create_new_task.png" width="275">
+<img src="images/task_panel_create_new_task.png" width="200">
 
 #### Posix File System Indexing Task
 
@@ -180,7 +180,7 @@ AWS_PROFILE=profile,S3_ENDPOINT_URL=https://alternate_endpoint.com
 
 🔴 &nbsp;From the **Task Panel** go to → **Task List** tab → select **New Custom Task**:
 
-<img src="images/task_panel_new_task_custom.png" width="400">
+<img src="images/task_panel_new_task_custom.png" width="350">
 
 🚧 Instructions to follow.
 

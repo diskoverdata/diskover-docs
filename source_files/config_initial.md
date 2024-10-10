@@ -36,7 +36,7 @@ The DiskoverAdmin service allows for the fine-tuning of Diskover's core componen
 
 🔴 &nbsp;Click **Test** to see if Diskover can connect to your Elasticsearch system. The page will refresh and output the health of your cluster at the top of the page (number of shards, nodes, etc.):
 
-<img src="images/es_connection_test.png" width="600"> 
+<img src="images/es_connection_test.png" width="500"> 
 
 🔴 &nbsp;If the test is successful, click **Save & Continue**, otherwise review the information you entered.
 

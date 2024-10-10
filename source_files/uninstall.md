@@ -50,7 +50,6 @@ rpm -qa | grep nginx
 rpm -e --nodeps rpm -qa | grep nginx
 ```
 
-
 ### Uninstall Diskover-Web
 
 🔴 &nbsp;To uninstall the Diskover-Web components, simply remove the install location:
@@ -73,11 +72,11 @@ rm /etc/systemd/system/diskoverd.service
 
 #### Uninstall Task Daemon for Windows
 
-🚧 Instructions to come.
+🚧 We're hard at work preparing these instructions. Thanks for your patience!
 
 #### Uninstall Task Daemon for Mac
 
-🚧 Instructions to come.
+🚧 We're hard at work preparing these instructions. Thanks for your patience!
 
 ### Uninstall Diskover Indexers
 
@@ -95,8 +94,8 @@ rm -rf /root/.config/diskover*
 
 #### Uninstall Indexers for Windows
 
-🚧 Instructions to come.
+🚧 We're hard at work preparing these instructions. Thanks for your patience!
 
 #### Uninstall Indexers for Mac
 
-🚧 Instructions to come.
+🚧 We're hard at work preparing these instructions. Thanks for your patience!

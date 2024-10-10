@@ -43,7 +43,6 @@ ordered_documents:
   - plugin_shotgrid.md
   - plugin_mover_vcinity.md
   - plugin_telestream_glim.md
-  - plugin_telestream_vantage.md
   - plugin_xytech_asset_creation.md
   - plugin_xytech_order_status.md
 

@@ -6,11 +6,11 @@ The first feature on the menu for the Life Science Edition is the BAM Plugin, al
 
 The BAM harvest plugin is designed to provide BAM and SAM metadata attributes about a file without granting the Diskover user any read/write file system access for data integrity measures. The BAM plugin enables additional metadata for the SAM and BAM file formats to be harvested at time of index, and those extra fields are therefore searchable within Diskover.
 
-The additional metadata being searchable means that it is also reportable for analysis, therefore actionable, allowing for potential upstream file management, manually or via automated scheduled tasks. If a file at the source doesn’t include any BAM attributes, it goes without saying that no details will be harvested and/or be available within Diskover.
+The additional metadata being searchable means that it is also reportable for analysis and, therefore, actionable, allowing for potential upstream file management, manually or via automated scheduled tasks. If a file at the source doesn’t include any BAM attributes, it goes without saying that no details will be harvested and/or be available within Diskover.
 
 The BAM plugin regroups all the BAM file attributes under the **bam_info** field.
 
-[Click here to watch a video demonstrating of the plugin.](https://vimeo.com/678914314)
+[Click here to watch a video demonstrating the plugin.](https://vimeo.com/678914314)
 
 ___
 ### BAM Plugin Overview Diagram
@@ -44,7 +44,7 @@ In addition to the [manual file searches and syntax explained in the Diskover Us
 
 #### Important Notes for Searching on BAM Attributes
 
-- The BAM attributes can be used in a manual search query. The structure is as follow and the **< >** are not meant to by typed, they are only for visual and isolating where to input the variables:
+- The BAM attributes can be used in a manual search query. The structure is as follows and the **< >** are not meant to be typed, they are only for visual and isolating where to input the variables:
 ```
 bam_info.<key>:<value>
 ```
@@ -54,14 +54,13 @@ bam_info.<key>:<value>
 - The fields described below are meant to be copied/typed in the search bar of the Diskover user interface.
 
 - At the moment, searching on the BAM attributes is case sensitive, i.e. if the metadata harvested uses some or all capital letters, you will need to search with the same capital letters, for example:
-  - The attributes field portion of the query needs to be typed lower case **bam_info.\<key>:**
+  - The attributes field portion of the query needs to be typed lowercase **bam_info.\<key>:**
   - As for the **\<value>** if the metadata shows **bam_info.pg.id: STAR**
     - If you launch a query with **bam_info.pg.id: star**, that file would not be found.
     - If you launch a query with **bam_info.pg.id: Star**, that file would not be found.
     - If you launch a query with **bam_info.pg.id: STAR**, that file would be found.
 
 The searchable bam_info fields are:
-
 
 ```
 bam_info.co_cmd:

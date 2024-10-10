@@ -35,7 +35,7 @@ bam_info.pg.id:
 bam_info.pg.vn:
 ```
 
-![Image: BAM Info Detailed View in File Attributes](images/image_life_science_edition_baminfo_file_attributes.png)
+![Image: BAM Info Detailed View in File Attributes](images/plugin_bam_attributes_window.png)
 
 #### Install BAM Info Dependencies
 

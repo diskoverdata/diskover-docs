@@ -49,8 +49,8 @@ systemctl enable celery
 
 ### Celery for Windows
 
-🚧 Instructions coming soon.
+🚧 Instructions to follow.
 
 ### Celery for Mac
 
-🚧 Instructions coming soon.
+🚧 Instructions to follow.

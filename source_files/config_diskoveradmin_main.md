@@ -18,7 +18,7 @@ Most help information is available directly within the user interface. This sect
 
 <img src="images/diskoveradmin_menu_diskover.png" width="200">
 
-### Diskoverd
+### DiskoverD
 
 <img src="images/diskoveradmin_menu_diskoverd.png" width="200">
 

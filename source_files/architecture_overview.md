@@ -10,7 +10,7 @@ Diskover's deployment uses 3 major components:
 
 | Component | Role |
 | --- | --- |
-| **Elasticsearch Cluster(s)** | Elasticsearch is the backbone of Diskover’s indexing and search functionality. It stores and organizes the metadata collected during the indexing process, allowing for fast and efficient querying of large datasets. Elasticsearch is a distributed, RESTful search engine capable of handling vast amounts of data, making it crucial for retrieving information from indexed file systems and directories. |
+| **Elasticsearch** | Elasticsearch is the backbone of Diskover’s indexing and search functionality. It stores and organizes the metadata collected during the indexing process, allowing for fast and efficient querying of large datasets. Elasticsearch is a distributed, RESTful search engine capable of handling vast amounts of data, making it crucial for retrieving information from indexed file systems and directories. |
 | **Diskover-Web** | Diskover-Web is the user interface that allows users to interact with the Diskover system. Through this web-based platform, users can search, filter, and visualize the data indexed by Elasticsearch. It provides a streamlined and intuitive experience for managing, analyzing, and curating data. Diskover-Web is where users can explore results, run tasks, and monitor processes. |
 | **Diskover's Indexers/Workers** | The Indexers are the components responsible for scanning file systems and collecting metadata. These indexers feed that metadata into Elasticsearch for storage and later retrieval. Diskover supports various types of indexers, which are optimized for different file systems, ensuring efficient and comprehensive data collection. |
 

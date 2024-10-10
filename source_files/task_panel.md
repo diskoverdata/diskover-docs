@@ -119,17 +119,13 @@ This is your last step to start your first index! Keep in mind that some configu
 
 The configuration for indexing tasks varies between **Posix File Systems** and **S3-based object storage**.
 
- The following sections will guide you through setting up basic indexing tasks for each.
+The following sections will guide you through setting up basic indexing tasks for each.
 
- 🔴 &nbsp;From the **Task Panel** go to > **Task List** tab > select **New Index Task**:
+🔴 &nbsp;From the **Task Panel** go to > **Task List** tab > select **New Index Task**:
 
-<img src="images/task_panel_new_task_index.png" width="400">
+<img src="images/task_panel_create_new_task.png" width="400">
 
 #### Posix File System Indexing Task
-
-🔴 &nbsp;Select **New Index Task** in the **Task List** tab:
-
-<img src="images/task_panel_create_new_task.png" width="">
 
 🔴 &nbsp;**Name**: **_volumename_**, for this example, **snfs2**
 

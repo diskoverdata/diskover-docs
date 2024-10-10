@@ -18,7 +18,7 @@ You have reached THE big moment. Paste this link in a browser to access Diskover
 
 The DiskoverAdmin service allows for the fine-tuning of Diskover's core components and plugins. The setup wizard will guide you through the first part of the initial configuration of the DiskoverAdmin services, which can be further customized later.
 
-🔴 &nbsp;Access the Wizard by selecting **System** > **Meta** > **Wizard** > **Setup**:
+🔴 &nbsp;Access the Wizard by selecting **System** → **Meta** → **Wizard** → **Setup**:
 
 <img src="images/diskoveradmin_menu_wizard.png" width="250"> 
 
@@ -83,7 +83,7 @@ This section is only needed if you are planning to use [File Action]() plugins.
 
 ### API
 
-🔴 &nbsp;Now navigate to **System** > **API**.
+🔴 &nbsp;Now navigate to **System** → **API**.
 
 <img src="images/diskoveradmin_menu_api.png" width="250"> 
 
@@ -93,7 +93,7 @@ This section is only needed if you are planning to use [File Action]() plugins.
 
 ### Diskover Indexers/Workers
 
-🔴 &nbsp;Navigate to **Diskover** > **Configurations** > **Default**.
+🔴 &nbsp;Navigate to **Diskover** → **Configurations** → **Default**.
 
 🔴 &nbsp;Check **Enable Log File** and modify the **Log File Location** as needed:
 
@@ -101,7 +101,7 @@ This section is only needed if you are planning to use [File Action]() plugins.
 
 ### DiskoverD
 
-🔴 &nbsp;Navigate to **DiskoverD** > **Default**.
+🔴 &nbsp;Navigate to **DiskoverD** → **Default**.
 
 🔴 &nbsp;Check **Enable Log File** and modify the **Log File Location** as needed:
 

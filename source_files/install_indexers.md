@@ -130,8 +130,8 @@ systemctl enable diskoverd
 
 ### Windows Indexers/Workers
 
-🚧 Instructions to follow.
+🚧 We're hard at work preparing these instructions. Thanks for your patience!
 
 ### Mac Indexers/Workers
 
-🚧 Instructions to follow.
+🚧 We're hard at work preparing these instructions. Thanks for your patience!

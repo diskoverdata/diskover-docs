@@ -26,7 +26,7 @@ ordered_documents:
   - install_diskoveradmin.md
   - config_initial.md
   - task_panel.md
-  - diskoveradmin_navigation.md
+  - features_finder_list.md
   - config_diskoveradmin_main.md
   - config_diskoveradmin_plugins_index.md
   - config_diskoveradmin_plugins_post_index.md

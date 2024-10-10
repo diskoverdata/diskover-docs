@@ -17,9 +17,11 @@ The BAM info plugin enables additional metadata for the SAM and BAM file formats
 - The BAM info plugin uses the Python **pysam** to harvest attributes about the BAM and SAM files:
   [https://pysam.readthedocs.io/en/latest/](https://pysam.readthedocs.io/en/latest/)
 
-New indices will use the plugin, and any SAM or BAM file will get additional info added to the Elasticsearch index’s **bam_info** field.
+New indices will use the plugin, and any SAM or BAM file will get additional info added to the Elasticsearch index’s **bam_info** field. The attributes provide the ability to view storage and file system content from a workflow perspective, for example, all the frame rates on any given storage.
 
-The attributes provide the ability to view storage and file system content from a workflow perspective, for example, all the frame rates on any given storage.
+![Image: Diskover BAM Plugin Overview](images/diagram_diskover_plugin_bam.png)
+
+_[Click here for a full-screen view of this image.](images/diagram_diskover_plugin_bam.png)_
 
 #### BAM Info Fields in Diskover-Web
 

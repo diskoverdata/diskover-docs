@@ -188,4 +188,4 @@ AWS_PROFILE=profile,S3_ENDPOINT_URL=https://alternate_endpoint.com
 
 Once a task is created, you can further manage it from the **Task List** view.
 
-<img src="images/task_panel_edit_task.png" width="350">
+<img src="images/task_panel_edit_task.png" width="250">

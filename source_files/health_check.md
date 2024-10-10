@@ -17,6 +17,16 @@ systemctl status elasticsearch.service
 
 ![Image: Health Check of Elasticsearch for Linux](images/image_health_check_linux_elasticsearch.png)
 
+#### Status of Elasticsearch Cluster for Linux
+🔴 &nbsp;Check status of Elasticsearch  Cluster Health:
+```
+curl http://ip_address:9200/_cluster/health?pretty
+curl -u username:p4ssword http://ip_address:9200/_cluster/health?pretty
+curl -u username:password https://aws_endpoint:443/_cluster/health?pretty
+List Master Node - 
+curl http://ip_address:9200/_cat/master?v
+```
+
 #### Status of Elasticsearch Service for Windows
 
 🔴 &nbsp;To check the status of the Elasticsearch service under Windows, open **Services** by typing **services** in the search bar.

@@ -152,9 +152,7 @@ The following sections will guide you through setting up basic indexing tasks fo
 
 #### S3 Bucket Indexing Task
 
-Indexing tasks for S3 buckets are slightly different than Posix File systems, the following outlines the configuration differences required when creating a new index task.
-
-Configure the following differences for indexing S3 buckets:
+Indexing tasks for S3 buckets are slightly different than Posix File systems, the following outlines the configuration differences required when creating a new index task. Configure the following differences for indexing S3 buckets.
 
 🔴 &nbsp;**Crawl Directory(s)**: **s3://_bucketname_** where **bucketname** is the actual name of the S3 bucket desired for indexing, in this example, the bucket name is **dps-offload**:
 

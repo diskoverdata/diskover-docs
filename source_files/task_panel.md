@@ -22,7 +22,7 @@ _[Click here for the full screen view of this diagram.](images/diagram_indexer_d
 
 <img src="images/diskoveradmin_menu_home.png" width="250">
 
-🔴 &nbsp;**From the Diskover user interface**: ⛭ ⇢ ➟ ➞ → **Task Panel**
+🔴 &nbsp;**From the Diskover user interface**: click the ⛭ in the upper right → **Task Panel**
 
 <img src="images/task_panel_access.png" width="">
 

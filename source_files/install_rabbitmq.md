@@ -50,12 +50,12 @@ http://$rabbitMQHost:15672/#/
 
 ### RabbitMQ for Windows
 
-🚧 Instructions coming soon.
+🚧 We're hard at work preparing these instructions. Thanks for your patience!
 
 ### RabbitMQ for Mac
 
-🚧 Instructions coming soon.
+🚧 We're hard at work preparing these instructions. Thanks for your patience!
 
 ### Amazon MQ
 
-🚧 Instructions coming soon.
+🚧 We're hard at work preparing these instructions. Thanks for your patience!

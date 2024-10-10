@@ -182,7 +182,7 @@ AWS_PROFILE=profile,S3_ENDPOINT_URL=https://alternate_endpoint.com
 
 <img src="images/task_panel_new_task_custom.png" width="550">
 
-🚧 Instructions to follow.
+🚧 We're hard at work preparing these instructions. Thanks for your patience!
 
 ### Existing Tasks Management
 

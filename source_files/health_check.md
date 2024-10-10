@@ -2,7 +2,9 @@ ___
 ## Health Check
 ___
 
-The following section outlines health checks for the various Diskover's components. 🚧 Note that this section is currently being updated.
+The following section outlines health checks for the various Diskover's components. 
+
+🚧 Note that this chapter is currently being updated.
 
 ### Elasticsearch Domain
 

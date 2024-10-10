@@ -12,17 +12,17 @@ Most help information is available directly within the user interface. This sect
 
 ### Diskover-Web
 
-<img src="images/diskoveradmin_menu_web.png" width="250">
+<img src="images/diskoveradmin_menu_web.png" width="200">
 
 ### Diskover Indexers/Workers and Alternate Indexers
 
-<img src="images/diskoveradmin_menu_diskover.png" width="250">
+<img src="images/diskoveradmin_menu_diskover.png" width="200">
 
 ### Diskoverd
 
-<img src="images/diskoveradmin_menu_diskoverd.png" width="250">
+<img src="images/diskoveradmin_menu_diskoverd.png" width="200">
 
 ### System
 
-<img src="images/diskoveradmin_menu_system.png" width="250">
+<img src="images/diskoveradmin_menu_system.png" width="200">
 

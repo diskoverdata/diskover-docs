@@ -24,19 +24,7 @@ The plugins in this chapter are listed alphabetically, but here is a quick acces
 ___
 ### BAM Info | Index Plugin
 
-| --- | --- |
-| Availability | <img src="images/button_edition_life_science.png" width="125"> |
-| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
-| Want to know more |[contact us](mailto:sales@diskoverdata.com) |
-| Video | [🍿 Watch Demo Video](https://vimeo.com/678914314?share=copy) |
-
-
-| Availability | <img src="images/button_edition_life_science.png" width="125"> |
-| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
-| Want to know more |[contact us](mailto:sales@diskoverdata.com) |
-| Video | [🍿 Watch Demo Video](https://vimeo.com/678914314?share=copy) |
-
-| | |
+|  | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_life_science.png" width="125"> |
 | To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |

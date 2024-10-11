@@ -1,4 +1,4 @@
-<p id="requirements_diskoverweb"></p>
+<p id="requirements_diskover_web"></p>
 
 ### Diskover-Web Server Requirements
 

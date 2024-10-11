@@ -12,7 +12,7 @@ The plugins in this chapter are listed alphabetically, but here is a quick acces
 
 | CATEGORY | PLUGIN |
 | --- | --- |
-| **Core** | [Ngenea Data Orchestrator by PixitMedia | Data Mover Plugin](#plugin_ngenea)<br>
+| **Core** | [Ngenea Data Orchestrator/Mover by PixitMedia | File Action Plugin](#plugin_ngenea)<br>
 
 | **Media Edition** | [CineViewer Player by CineSys | File Action Plugin](#plugin_cineviewer)<br>[Find File Sequences | File Action Plugin](#plugin_find_file_sequences)<br>[IMF Package Validator by Oxagile | File Action Plugin](#plugin_imf_validator)
 
@@ -24,12 +24,12 @@ The plugins in this chapter are listed alphabetically, but here is a quick acces
 ___
 ### BAM Info | Index Plugin
 
-|  | RESOURCE |
+| HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_life_science.png" width="125"> |
+| Availability | <img src="images/button_edition_life_science.png" width="100"> |
 | To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
-| Want to know more |[contact us](mailto:sales@diskoverdata.com) |
-| Video | [🍿 Watch Demo Video](https://vimeo.com/678914314?share=copy) |
+| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Demo | [🍿 Watch Demo Video](https://vimeo.com/678914314?share=copy) |
 
 #### Overview
 
@@ -69,11 +69,12 @@ bam_info.pg.vn:
 ___
 ### CineViewer Player by CineSys | File Action Plugin
 
-<img src="images/button_edition_media.png" width="125">
-
-#### [🍿 Watch Demo Video](https://vimeo.com/765285042?share=copy)
-
-🟨 &nbsp;If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) or [contact us](mailto:sales@aja.com) if you want to learn more.
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_media.png" width="100"> |
+| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| To learn more | [Contact AJA Video Systems](mailto:sales@aja.com) |
+| Demo | [🍿 Watch Demo Video](https://vimeo.com/765285042?share=copy) |
 
 #### Overview
 
@@ -440,16 +441,16 @@ to your local `diskover`:
 
 <img src="images/image_file_action_cineviewer_search_diskover_search_results.jpg " width="500">
 
-🟨 &nbsp;If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) or [contact us](mailto:sales@diskoverdata.com) if you want to learn more.
-
 <p id=“plugin_find_file_sequences”></p>
 
 ___
 ### Find File Sequences | File Action Plugin
 
-<img src="images/button_edition_media.png" width="125">
-
-🟨 &nbsp;If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) or [contact us](mailto:sales@diskoverdata.com) if you want to learn more.
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_media.png" width="100"> |
+| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 The File Sequence web plugin File Action is designed to list out any file sequences in a directory or from a single file in a sequence. File sequences are printed out with `%08d` to show the 0 padding and number of digits in the sequence. Each sequence, whole or broken, are put into a [ ] list. [Learn more about this plugin](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#find-file-sequences).
 
@@ -460,9 +461,11 @@ The File Sequence web plugin File Action is designed to list out any file sequen
 ___
 ### Grant Research | File Action Plugin
 
-<img src="images/button_edition_life_science.png" width="125">
-
-🟨 &nbsp;If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) or [contact us](mailto:sales@diskoverdata.com) if you want to learn more.
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_life_science.png" width="100"> |
+| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 The Grant Plugin has a dual purpose 1) assisting research institutes in managing their grants/members/storage costs internally, and 2) fulfilling the requirements for the new NIH DMS Policy.
 
@@ -477,11 +480,12 @@ _[Click here for a full-screen view of this image.](images/diagram_diskover_plug
 ___
 ### IMF Package Validator by Oxagile | File Action Plugin
 
-<img src="images/button_edition_media.png" width="125">
-
-🟨 &nbsp;If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) or [contact us](mailto:IMF@Oxagile.com) if you want to learn more.
-
-#### [🍿 Watch Demo Video](https://vimeo.com/833500176?share=copy)
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_media.png" width="100"> |
+| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| To learn more | [Contact Oxagile](mailto:IMF@Oxagile.com) |
+| Demo | [🍿 Watch Demo Video](https://vimeo.com/833500176?share=copy) |
 
 #### Overview
 
@@ -514,10 +518,18 @@ The following are the limitations of the current plugin version:
 ___
 ### Ngenea Data Orchestrator by PixitMedia | File Action Plugin
 
-<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
-
-🟨 &nbsp;If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) or [contact us](mailto:sales@diskoverdata.com) if you want to learn more.
-
-#### [🍿 Watch Demo Video](https://vimeo.com/833500176?share=copy)
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Demo | [🍿 Watch Demo Video](https://vimeo.com/833500176?share=copy) |
 
 With the Ngenea Data Orchestrator File Action, authorized users can quickly and securely transport data, directly from the Diskover UI, to and from globally distributed cloud, object storage, traditional NAS files, and tape resources, automatically moving data into the ‘right cost’ resource according to value and usage as your work teams and business needs demand.
+
+
+
+
+
+
+

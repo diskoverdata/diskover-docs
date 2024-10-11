@@ -1,14 +1,22 @@
-___
+<p id=“install_indexers”></p>
+
 ## Diskover Indexers/Workers Installation
-___
 
 ### Overview
 
-This process will walk you through installing node workers for your Diskover v2.3+ environment. Please note that throughout this guide, the terms **indexers** and **workers** are used interchangeably.
+Diskover has a [distributed task system](#architecture_diagram) where indexers/workers can be distributed among many resources. For each resource providing a task worker, services need to have a [DiskoverD](#install_diskoverd) installed. The [Task Panel](#task_panel) will be covered after the installation and initial configuration of the main components. 
+
+___
+
+<img src="images/diagram_indexer_daemon_task_panel.png" width="">
+
+_[Click here for the full screen view of this diagram.](images/diagram_indexer_daemon_task_panel.png)_
+
+This section will walk you through installing node workers for your Diskover v2.3+ environment. Please note that throughout this guide, the terms **indexers** and **workers** are used interchangeably.
 
 During this process, you will need the latest [Diskover 2.3x zip archive](https://download.diskoverdata.com/). Note that this is subject to change to RPMs in the near future.
 
-Once all components are installed, you will be able to [configure your indexing environment](). We strongly recommend following the deployment order outlined in this guide.
+Once all components are installed, you will be able to [configure your indexing environment](#config_indexers). We strongly recommend following the deployment order outlined in this guide.
 
 ### Multiple Indexers/Workers Environment
 
@@ -93,6 +101,8 @@ vi /root/.config/diskoverd/config.yaml
 apiurl: http://${WEBHOST}:8000/api.php
 ```
 
+<p id=“install_diskovered”></p>
+
 #### DiskoverD Task Worker Daemon
 
 Now that your first worker node is installed and configured, let’s daemonize this service with **systemd**.
@@ -126,7 +136,7 @@ systemctl daemon-reload
 systemctl enable diskoverd
 ```
 
-🟨 &nbsp;Please proceed to the next sections, as you will be unable to start the diskoverd worker service until your API server and [license]() are installed.
+🟨 &nbsp;Please proceed to the next sections, as you will be unable to start the diskoverd worker service until your API server and [license](#config_wizard) are installed.
 
 ### Windows Indexers/Workers
 

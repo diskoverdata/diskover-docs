@@ -30,11 +30,11 @@ ___
 | User Guide | [Diskover Life Science Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/#bam-harvest-plugin) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/678914314?share=copy) |
 
-#### Overview
-
 <details>
 
 <summary>📂 <strong>Open plugin overview details.</strong></summary>
+
+#### Overview
 
 The BAM info plugin is designed to enable additional metadata collection for BAM (Binary Alignment Map) and SAM (Sequence Alignment Map) about a file without granting the Diskover user any read/write file system access. The BAM info plugin enables additional metadata for the SAM and BAM file formats to be harvested at time of index, and are therefore searchable, reportable, actionable, and can be engaged in workflows within Diskover.
 
@@ -81,6 +81,10 @@ ___
 | To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#cineviewer) and/or [contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#cineviewer-player) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/765285042?share=copy) |
+
+<details>
+
+<summary>📂 <strong>Open plugin overview details.</strong></summary>
 
 #### Overview
 
@@ -455,7 +459,7 @@ to your local `diskover`:
 
 <p id=“plugin_find_file_sequences”></p>
 
-</details>
+</details></details>
 
 ___
 ### Find File Sequences | File Action Plugin

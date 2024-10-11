@@ -1,9 +1,10 @@
+<br><br>
+
 <p id="requirements"></p>
 
-___
 ## Prerequisites and Requirements
-___
 
+___
 ### Prerequisites
 
 Visit the [System Readiness]() section for further information on preparing your system for Diskover.
@@ -15,11 +16,13 @@ Visit the [System Readiness]() section for further information on preparing your
 | PHP 8.x and PHP-FPM | Required for Diskover-Web, [go to installation instructions]() |
 | NGINX or Apache | Required for Diskover-Web,  [go to installation instructions]()<br> _Note that Apache can be used instead of NGINX but the setup is not supported or covered in this guide._ |
 
+___
 ### Security
 
 - [Disabling SELinux]() and using a software firewall are optional although not required to run Diskover.
 - Internet access is required during the installation to download packages with yum.
 
+___
 ### Recommended Operating Systems
 
 As per the config diagram in the previous chapter, note that Windows and Mac are only supported for indexers.

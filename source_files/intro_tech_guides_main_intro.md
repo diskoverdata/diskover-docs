@@ -1,7 +1,5 @@
-<br><br>
-
 <p id="introduction"></p>
-
+<br><br>
 ## Introduction
 
 ### Overview

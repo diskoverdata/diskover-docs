@@ -30,6 +30,19 @@ ___
 | Want to know more |[contact us](mailto:sales@diskoverdata.com) |
 | Video | [🍿 Watch Demo Video](https://vimeo.com/678914314?share=copy) |
 
+
+| Availability | <img src="images/button_edition_life_science.png" width="125"> |
+| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| Want to know more |[contact us](mailto:sales@diskoverdata.com) |
+| Video | [🍿 Watch Demo Video](https://vimeo.com/678914314?share=copy) |
+
+| | |
+| --- | --- |
+| Availability | <img src="images/button_edition_life_science.png" width="125"> |
+| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| Want to know more |[contact us](mailto:sales@diskoverdata.com) |
+| Video | [🍿 Watch Demo Video](https://vimeo.com/678914314?share=copy) |
+
 #### Overview
 
 The BAM info plugin is designed to enable additional metadata collection for BAM (Binary Alignment Map) and SAM (Sequence Alignment Map) about a file without granting the Diskover user any read/write file system access. The BAM info plugin enables additional metadata for the SAM and BAM file formats to be harvested at time of index, and are therefore searchable, reportable, actionable, and can be engaged in workflows within Diskover.

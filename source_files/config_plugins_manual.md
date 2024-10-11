@@ -6,7 +6,7 @@ ___
 
 All plugins will eventually be included in [**DiskoverAdmin**](), but a few are still only configurable manually.
 
-Please [open a support ticket](https://support.diskoverdata.com/) if you currently use one of these plugins and need to upgrade to v2.3 and/or if you are interested in using a plugin for the first time.
+🟨 **IMPORTANT!** Please [open a support ticket](https://support.diskoverdata.com/) if you currently use one of these plugins and need to upgrade to v2.3 and/or if you are interested in using a plugin for the first time.
 
 ### BAM Info Plugin
 
@@ -16,8 +16,7 @@ Please [open a support ticket](https://support.diskoverdata.com/) if you current
 
 #### Overview
 
-The BAM info harvest plugin is designed to provide BAM metadata attributes about a file without granting the Diskover user any read/write file system access.
-The BAM info plugin enables additional metadata for the SAM and BAM file formats to be harvested at time of index, and are therefore searchable, reportable, actionable, and can be engaged in workflows within Diskover.
+The BAM info plugin is designed to enable additional metadata collection for BAM (Binary Alignment Map) and SAM (Sequence Alignment Map) about a file without granting the Diskover user any read/write file system access. The BAM info plugin enables additional metadata for the SAM and BAM file formats to be harvested at time of index, and are therefore searchable, reportable, actionable, and can be engaged in workflows within Diskover.
 
 - The specification for the SAM file format can be found here:
   [https://samtools.github.io/hts-specs/SAMv1.pdf](https://samtools.github.io/hts-specs/SAMv1.pdf)
@@ -47,3 +46,5 @@ bam_info.pg.vn:
 ![Image: Extra Field for BAM Plugin](images/plugin_bam_attributes_search_page.png)
 
 ![Image: BAM Info Detailed View in File Attributes](images/plugin_bam_attributes_window.png)
+
+###

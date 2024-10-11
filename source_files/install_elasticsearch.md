@@ -1,23 +1,25 @@
-___
+<p id=“install_es”></p>
+
 ## Elasticsearch Installation 
-___
 
 ### Overview
 
 This section covers the basic installation of Elasticsearch v8, commonly referred to as **ES**, throughout Diskover's documentation and user interface. This section covers:
 
 - Setting up your first Elasticsearch node and we will leave ES authentication disabled by default for now.
-- If you have multiple nodes in your environment, you will need to repeat this process for each node, as [each node requires its dedicated system]().
+- If you have multiple nodes in your environment, you will need to repeat this process for each node, as [each node requires its dedicated system](#architecture_diagram).
 
-Once all the components are installed, you will be able to refine your [Elasticsearch environment configuration](). We strongly recommend following the deployment order outlined in this guide.
+Once all the components are installed, you will be able to refine your [Elasticsearch environment configuration](#config_es). We strongly recommend following the deployment order outlined in this guide.
 
 Some links you might need:
 
-- [Set up a multi-node cluster]()
-- [Set up multiple clusters]()
+- [Set up a cluster](set_es_cluster)
+- [Set up multiple clusters](#set_es_multi_cluster)
 - [Configure Elasticsearch SSL and authentication for use with Diskover]()
 - [Download the current release of Elasticsearch](https://www.elastic.co/downloads/elasticsearch)
 - [Download past releases of Elasticsearch](https://www.elastic.co/downloads/past-releases#elasticsearch)
+
+<p id=“install_es_node”></p>
 
 ### Single Node Installation
 
@@ -59,7 +61,7 @@ type=rpm-md
 yum -y install --enablerepo=elasticsearch elasticsearch
 ```
 
-🟨 &nbsp;Elasticsearch v8 should be installed at this point. Stop here and go to [Set up a multi-node cluster]() if applicable.
+🟨 &nbsp;Elasticsearch v8 should be installed at this point.
 
 #### Elasticsearch Initial Configuration
 
@@ -156,7 +158,9 @@ curl -XGET -u elastic:password https://${ESHOST}:9200/_cluster/health?pretty --c
 
 ### Multiple Nodes Environment
 
-If you have more than 1 node in your environment, redo all the [Single Node Installation]() steps for each node/system.
+If you have more than 1 node in your environment, redo all the [Single Node Installation](#install_es_node) steps for each node/system.
+
+<p id=“set_es_cluster”></p>
 
 ### Setting Up a Cluster
 
@@ -186,7 +190,7 @@ Connected to 192.168.64.19.
 Escape character is '^]'.
 ```
 
-- If you see **Connection Refused**, you should validate if [**SELinux** and **Firewalld** are disabled and off](), respectively.
+- If you see **Connection Refused**, you should validate if [**SELinux** and **Firewalld** are disabled and off](#disable_selinux), respectively.
 
 #### Cluster Setup
 
@@ -265,6 +269,8 @@ sudo systemctl start elasticsearch
 🟨 &nbsp;You can watch the startup logs at **/var/log/elasticsearch/<cluster-name>.log**
 <br><br>
 🔴 &nbsp;Once Node 1 is online, start **Node 2**, then once Node 2 is online, start **Node 3**.
+
+<p id=“set_es_multi_cluster”></p>
 
 ### Setting Up a Multiple Cluster Environment
 

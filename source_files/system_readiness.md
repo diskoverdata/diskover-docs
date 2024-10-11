@@ -77,8 +77,8 @@ systemctl status chronyd
 
 ### Windows System Readiness
 
-🚧 Instructions to follow. Meanwhile, please note that Diskover currently only [supports Windows for indexers/workers]().
+🚧 Instructions to follow. Meanwhile, please note that Diskover currently only [supports Windows for indexers/workers](#architecture_diagram).
 
 ### Mac System Readiness
 
-🚧 Instructions to follow. Meanwhile, please note that Diskover currently only [supports Mac for indexers/workers]().
+🚧 Instructions to follow. Meanwhile, please note that Diskover currently only [supports Mac for indexers/workers](#architecture_diagram).

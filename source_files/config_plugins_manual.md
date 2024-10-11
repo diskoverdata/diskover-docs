@@ -13,9 +13,7 @@ The plugins in this chapter are listed alphabetically, but here is a quick acces
 | CATEGORY | PLUGIN |
 | --- | --- |
 | **Core** | <ul><li>[Hash Differential Checksums File Action Plugin](#plugin_hash_diff)</li><li>[Ngenea Data Orchestrator/Mover by PixitMedia File Action Plugin](#plugin_ngenea)</li><li>[Vcinity High-Speed Data Transfer File Action Plugin](#plugin_vcinity)</li></ul> |
-
 | **Media Edition** | <ul><li>[CineViewer Player by CineSys File Action Plugin](#plugin_cineviewer)</li><li>[Find File Sequences File Action Plugin](#plugin_find_file_sequences)</li><li>[Flow Production Tracking (formerly ShotGrid) Index Plugin](#plugin_shotgrid)</li><li>[IMF Package Validator by Oxagile File Action Plugin](#plugin_imf_validator)</li><li>[Telestream GLIM File Action Plugin](#plugin_glim)</li><li>[Xytech Asset Creation Index Plugin](#xytech_asset_creation)</li><li>[Xytech Order Status Index Plugin](#xytech_asset_creation)</li></ul> |
-
 | **Life Science Edition** | <ul><li>[BAM Info Index Plugin](#plugin_bam)</li><li>[Research Grant File Action Plugin](#plugin_grant)</li></ul> |
 
 
@@ -33,6 +31,10 @@ ___
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/678914314?share=copy) |
 
 #### Overview
+
+<details>
+
+<summary>📂 Open plugin overview details.</summary>
 
 The BAM info plugin is designed to enable additional metadata collection for BAM (Binary Alignment Map) and SAM (Sequence Alignment Map) about a file without granting the Diskover user any read/write file system access. The BAM info plugin enables additional metadata for the SAM and BAM file formats to be harvested at time of index, and are therefore searchable, reportable, actionable, and can be engaged in workflows within Diskover.
 
@@ -64,6 +66,8 @@ bam_info.pg.vn:
 ![Image: Extra Field for BAM Plugin](images/plugin_bam_attributes_search_page.png)
 
 ![Image: BAM Info Detailed View in File Attributes](images/plugin_bam_attributes_window.png)
+
+</details>
 
 <p id=“plugin_cineviewer”></p>
 

@@ -34,7 +34,7 @@ ___
 
 <details>
 
-<summary>📂 Open plugin overview details.</summary>
+<summary>📂 <strong>Open plugin overview details.</strong></summary>
 
 The BAM info plugin is designed to enable additional metadata collection for BAM (Binary Alignment Map) and SAM (Sequence Alignment Map) about a file without granting the Diskover user any read/write file system access. The BAM info plugin enables additional metadata for the SAM and BAM file formats to be harvested at time of index, and are therefore searchable, reportable, actionable, and can be engaged in workflows within Diskover.
 

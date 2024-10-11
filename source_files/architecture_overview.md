@@ -16,6 +16,7 @@ Out of the box, Diskover efficiently scans generic filesystems. However, in toda
 <br><br><br>
 
 ### Diskover Scale-Out Architecture Overview Diagram
+___
 
 ![Image: Diskover Architecture Overview](images/diskover_architecture_overview.png)
 
@@ -23,6 +24,7 @@ _[Click here for a full screen view of the Diskover Architecture Overview diagra
 <br><br><br>
 
 ### Diskover Config Architecture Overview
+___
 
 It is recommended to separate the Elasticsearch node/cluster, web server, and indexing host(s).
 

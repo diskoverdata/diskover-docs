@@ -47,6 +47,7 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **Grafana** | DiskoverAdmin<br>Configuration → Plugins → Index → Grafana | 
 | **Grafana Cloud** | Configuration → Plugins → Index → Grafana Cloud | 
 | **Grant Plugin** | [Research Grant File Action Plugin](#plugin_grant) | 
+| **Hash Differential Checksums** | [Hash Differential Checksums File Action Plugin](#plugin_hash_diff) |
 | **Illegal Filename** | DiskoverAdmin<br>Configuration → Plugins → Post Index → Illegal Filename | 
 | **IMF Change Report** | DiskoverAdmin<br>Configuration → Plugins → File Actions → IMF Change Report |
 | **IMF Package Validator** | [IMF Package Validator File Action Plugin by Oxagile](#plugin_imf_validator) |
@@ -82,7 +83,7 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **Windows Owner** | DiskoverAdmin<br>Configuration → Plugins → Index → Windows Owner | 
 | **Wizard** | DiskoverAdmin<br>Configuration → System → Meta → Wizard |
 | **Xytech Asset Creation** | [Xytech Asset Creation Index Plugin](#plugin_xytech_asset_creation) |
-| **Xytech Order Status** | |
+| **Xytech Order Status** | [Xytech Order Status Index Plugin](#plugin_xytech_order_status) |
 
 
 

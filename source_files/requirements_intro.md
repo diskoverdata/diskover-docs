@@ -1,5 +1,3 @@
-<br><br>
-
 <p id="requirements"></p>
 
 ## Prerequisites and Requirements

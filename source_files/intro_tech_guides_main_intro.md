@@ -1,5 +1,4 @@
 <p id="introduction"></p>
-<br>
 
 ## Introduction
 

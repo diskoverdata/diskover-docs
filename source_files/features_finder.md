@@ -18,11 +18,12 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **AutoTag** | DiskoverAdmin<br>Configuration → Plugins → Post Index → AutoTag |
 | **Azure** indexer | DiskoverAdmin<br>Configuration → Diskover → Alternate Indexers → Azure |
 | **Azure AD** | DiskoverAdmin<br>Configuration → Web → OAUTH |
-| **BAM Plugin** | [chapter]()<br> |
+| **BAM Info** | [BAM Info Index Plugin](#plugin_bam) |
 | **Breadcrumb** | DiskoverAdmin<br>Configuration → Plugins → Post Index → Breadcrumb | 
 | **Checksums** at index time | DiskoverAdmin<br>Configuration → Plugins → Index → Checksums | 
 | **Checksums** post index | DiskoverAdmin<br>Configuration → Plugins → Post Index → Checksums | 
 | **Chesksums S3** post index | DiskoverAdmin<br>Configuration → Plugins → Post Index → Checksums S3 | 
+| **CineViewer Player** | [CineViewer Player File Action Plugin by CineSys](#plugin_cineviewer) |
 | **Cost** at time of index |  |
 | **Cost** post-index | DiskoverAdmin<br>Configuration → Plugins → Post Index → Costs |
 | **DirCache** | DiskoverAdmin<br>Configuration → Diskover → Alternate Indexers → DirCache<br> |
@@ -39,13 +40,16 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **Export** | DiskoverAdmin<br>Configuration → Plugins → File Actions → In Development → Export |
 | **File Kind** | DiskoverAdmin<br>Configuration → Plugins → Index → File Kind |
 | **File Types** | DiskoverAdmin<br>Configuration → Web → File Types | 
+| **Find File Sequences** | [Find File Sequences File Action Plugin](#plugin_find_file_sequences) |
 | **First Index time** | DiskoverAdmin<br>Configuration → Plugins → Index → First Index Time | 
 | **Fix Permissions** | DiskoverAdmin<br>Configuration → Plugins → File Actions → In Development → Fix Permissions | 
+| **GLIM** | [Telestream GLIM File Action Plugin](#plugin_glim) |
 | **Grafana** | DiskoverAdmin<br>Configuration → Plugins → Index → Grafana | 
 | **Grafana Cloud** | Configuration → Plugins → Index → Grafana Cloud | 
-| **Grant Plugin** | [chapter]() | 
+| **Grant Plugin** | [Research Grant File Action Plugin](#plugin_grant) | 
 | **Illegal Filename** | DiskoverAdmin<br>Configuration → Plugins → Post Index → Illegal Filename | 
 | **IMF Change Report** | DiskoverAdmin<br>Configuration → Plugins → File Actions → IMF Change Report |
+| **IMF Package Validator** | [IMF Package Validator File Action Plugin by Oxagile](#plugin_imf_validator) |
 | **Index Access** | DiskoverAdmin<br>Configuration → Web → Index Access | 
 | **Index Differential** | DiskoverAdmin<br>Configuration → Plugins → Post Index → Index Diff | 
 | **LDAP** | DiskoverAdmin<br>Configuration → Web → LDAP | 
@@ -54,6 +58,7 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **Make Links** | DiskoverAdmin<br>Configuration → Plugins → File Actions → Make Links | 
 | **Media Info** | DiskoverAdmin<br>Configuration → Plugins → Index → Media Info | 
 | **Message Queue** | DiskoverAdmin<br>Configuration → System → Message Queue |
+| **Ngenea Data Orchestrator** | [Ngenea Data Orchestrator/Mover File Action Plugin by PixitMedia](#plugin_ngenea) |
 | **OAuth2** | DiskoverAdmin<br>Configuration → Web → OAUTH | 
 | **Offline Media** Indexer | DiskoverAdmin<br>Configuration → Diskover → Alternate Indexers → Offline Media | 
 | **Okta** | DiskoverAdmin<br>Configuration → Web → OAUTH | 
@@ -72,9 +77,13 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **Top Paths** | DiskoverAdmin<br>Configuration → Web → Top Path Display |
 | **Unix Permissions** | DiskoverAdmin<br>Configuration → Plugins → Index → Unix Perms |
 | **Vantage** | DiskoverAdmin<br>Configuration → Plugins → File Actions → Vantage | 
+| **Vcinity High-Speed Data Transfer** | [Vcinity High-Speed Data Transfer File Action Plugin](#plugin_vcinity) |
 | **Windows Attributes** | DiskoverAdmin<br>Configuration → Plugins → Post Index → Windows Attributes | 
 | **Windows Owner** | DiskoverAdmin<br>Configuration → Plugins → Index → Windows Owner | 
 | **Wizard** | DiskoverAdmin<br>Configuration → System → Meta → Wizard |
+| **Xytech Asset Creation** | [Xytech Asset Creation Index Plugin](#plugin_xytech_asset_creation) |
+| **Xytech Order Status** | |
+
 
 
 

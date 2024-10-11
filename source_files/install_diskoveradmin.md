@@ -1,6 +1,6 @@
-___
+<p id=“install_diskoveradmin”></p>
+
 ## DiskoverAdmin Installation
-___
 
 ### Overview
 
@@ -32,7 +32,7 @@ scp -i <path to PEM file> <path to diskover.zip> rocky@bastion-IP:~/
 
 ### Python Installation
 
-Python should already be installed as instructed in the [Diskover Indexers/Workers Installation]() section. Alternatively, you could use a [PyEnv (Python Environments)]().
+Python should already be installed as instructed in the [Diskover Indexers/Workers Installation](#install_indexers) section. Alternatively, you could use a [PyEnv (Python Environments)](#pyenv).
 
 🟨 &nbsp;Note that some steps here, such as symlinking to the main Python3 executable, might not be advisable if this system is used for other Python-based programs.
 

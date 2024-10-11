@@ -1,3 +1,5 @@
+<br><br>
+
 <p id="architecture_diagram"></p>
 
 ## Architecture Overview

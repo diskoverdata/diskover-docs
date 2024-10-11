@@ -13,7 +13,7 @@ Diskover's deployment uses 3 major components:
 | **Diskover's Indexers/Workers** | The Indexers are the components responsible for scanning file systems and collecting metadata. These indexers feed that metadata into Elasticsearch for storage and later retrieval. Diskover supports various types of indexers, which are optimized for different file systems, ensuring efficient and comprehensive data collection. |
 
 Out of the box, Diskover efficiently scans generic filesystems. However, in today’s complex IT architectures, files are often stored across a variety of repositories. To address this, Diskover offers various [alternate scanners](https://diskoverdata.com/products/indexers/) as well as provides a robust foundation for [building alternate scanners](https://docs.diskoverdata.com/diskover_dev_guide/#develop-your-own-alternate-scanner), enabling comprehensive indexing of any file storage location.
-<br><br><br>
+<br><br>
 
 ### Diskover Scale-Out Architecture Overview Diagram
 ___
@@ -21,7 +21,7 @@ ___
 ![Image: Diskover Architecture Overview](images/diskover_architecture_overview.png)
 
 _[Click here for a full screen view of the Diskover Architecture Overview diagram.](images/diskover_architecture_overview.png)_
-<br><br><br>
+<br><br>
 
 ### Diskover Config Architecture Overview
 ___

@@ -1,12 +1,13 @@
-___
+
 ## RabbitMQ and Amazon MQ Server Installation
-___
 
 ### Overview
 
 RabbitMQ or Amazon MQ serves as the messaging bus/queue system that communicates with all Celery systems on your Diskover Worker nodes. We recommend installing this service on a dedicated standalone host.
 
-Once all components are installed, you will be able to [configure your messaging environment](). We strongly recommend following the deployment order outlined in this guide.
+Once all components are installed, you will be able to [configure your messaging environment](#config_message_queue). We strongly recommend following the deployment order outlined in this guide.
+
+<p id=“install_rabbitmq”></p>
 
 ### RabbitMQ for Linux
 
@@ -55,6 +56,8 @@ http://$rabbitMQHost:15672/#/
 ### RabbitMQ for Mac
 
 🚧 We're hard at work preparing these instructions. Thanks for your patience!
+
+<p id=“install_amazonmq”></p>
 
 ### Amazon MQ
 

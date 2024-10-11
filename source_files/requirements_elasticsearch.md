@@ -4,10 +4,10 @@
 
 #### Elasticsearch Version
 
-Diskover is currently tested and deployed with Elasticsearch v8.x. Note that ES7 Python packages are required to connect to Elasticsearch v8 cluster.
+Diskover is currently tested and deployed with Elasticsearch v8.x. Note that ES7 Python packages are required to connect to an Elasticsearch v8 cluster.
 
 #### Elasticsearch Architecture Overview and Terminology
-
+___
 Please refer to this diagram to better understand the terminology used by Elasticsearch and throughout the Diskover documentation.
 
 ![Image: Diskover Architecture Overview](images/diagram_diskover_elasticsearch_architecture.png)
@@ -45,7 +45,7 @@ Please consult the [Diskover AWS Customer Deployment Guide](https://docs.diskove
 - Try to keep shard size between 10 – 50 GB
 - Ideal shard size approximately 20 – 40 GB
 
-Once you have a reference for your index size, you can decide to shard if applicable. To check the size of your indices, from the user interface go to > **gear icon** > **Indices**:
+Once you have a reference for your index size, you can decide to shard if applicable. To check the size of your indices, from the user interface, go to → ⛭ → **Indices**:
 
 ![Image: Index Sizing](images/indices_index_size.png)
 _[Click here for a full-screen view of this image.](images/indices_index_size.png)_

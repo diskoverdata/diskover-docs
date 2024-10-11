@@ -1,6 +1,6 @@
 hr {
   height: 1px;
-  background-color: #ccc;
+  background-color: #39e;
   border: none;
 }
 
@@ -28,6 +28,13 @@ h4 {
 
 h5 {
   font-size: 1.3em !important;
+  font-weight: bold !important;
+  text-transform: none !important;
+  color: black !important;
+}
+
+h6 {
+  font-size: 1.1em !important;
   font-weight: bold !important;
   text-transform: none !important;
   color: black !important;

@@ -2,8 +2,6 @@ ___
 ## Configuration | Where to Find What
 ___
 
-🚧 **WORK IN PROGRESS**
-
 This section alphabetically sorts configurable features, whether they are in the DiskoverAdmin panel or still manually configurable, and where to find them.
 
 Additionally, if you are using the DiskoverAdmin panel, you can select **Search** in the menu on the left and type a simple word to find where a feature is located in the DiskoverAdmin menu.
@@ -20,14 +18,14 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **AutoTag** | DiskoverAdmin<br>Configuration → Plugins → Post Index → AutoTag |
 | **Azure** indexer | DiskoverAdmin<br>Configuration → Diskover → Alternate Indexers → Azure |
 | **Azure AD** | DiskoverAdmin<br>Configuration → Web → OAUTH |
-| **BAM Plugin** | [chapter]()<br> _Enables additional metadata collection for BAM (Binary Alignment Map) and SAM (Sequence Alignment Map) file formats._ |
+| **BAM Plugin** | [chapter]()<br> |
 | **Breadcrumb** | DiskoverAdmin<br>Configuration → Plugins → Post Index → Breadcrumb | 
 | **Checksums** at index time | DiskoverAdmin<br>Configuration → Plugins → Index → Checksums | 
 | **Checksums** post index | DiskoverAdmin<br>Configuration → Plugins → Post Index → Checksums | 
 | **Chesksums S3** post index | DiskoverAdmin<br>Configuration → Plugins → Post Index → Checksums S3 | 
 | **Cost** at time of index |  |
 | **Cost** post-index | DiskoverAdmin<br>Configuration → Plugins → Post Index → Costs |
-| **DirCache** | DiskoverAdmin<br>Configuration → Diskover → Alternate Indexers → DirCache<br> _The DirCache alternate scanner can be used to speed up subsequent crawls when indexing slower network-mounted storage. DirCache uses an SQLite database to store a local cache of directories' mtimes (modified times), directories' file lists, and file stat attributes. On subsequent crawls, when a directory mtime is the same as in the cache, the directory list and all file stat attributes can be retrieved from the cache rather than over the network mount._ |
+| **DirCache** | DiskoverAdmin<br>Configuration → Diskover → Alternate Indexers → DirCache<br> |
 | **Diskover** Indexer | DiskoverAdmin<br>Configuration → Diskover → Configurations → Default | AKA Worker, scanner, crawler |
 | **DiskoverD** | DiskoverAdmin<br>Configuration → DiskoverD → Default |
 | **Diskover-Web** | DiskoverAdmin<br>Configuration → Web → General |

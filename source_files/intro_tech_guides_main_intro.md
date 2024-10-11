@@ -1,5 +1,5 @@
 <p id="introduction"></p>
-<br><br>
+<br>
 
 ## Introduction
 

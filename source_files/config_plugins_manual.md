@@ -498,6 +498,9 @@ ___
 <summary>📂 <strong>Open plugin overview details.</strong></summary>
 
 Designed to enhance basic metadata with detailed production status information, aligning data management with production schedules. The Diskover Flow Production Tracking Plugin harvests additional attributes from the [Autodesk Flow Production Tracking platform](https://www.autodesk.com/products/flow-production-tracking/) for every shot directory located on storage. These attributes become properties of the shot directories and include status information such as finaled, out-of-picture, multiple project tracking dates, and many more, totaling around one hundred indexable fields. Note that users can opt to only index the fields that are relevant to their business.
+
+</details>
+
 <p id=“plugin_grant”></p>
 
 ___

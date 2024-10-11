@@ -1,8 +1,6 @@
 <p id="architecture_diagram"></p>
 
-___
 ## Architecture Overview
-___
 
 ### Overview
 

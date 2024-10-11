@@ -12,9 +12,9 @@ The plugins in this chapter are listed alphabetically, but here is a quick acces
 
 | CATEGORY | PLUGIN |
 | --- | --- |
-| **Core** | <ul><li>[Ngenea Data Orchestrator/Mover by PixitMedia File Action Plugin](#plugin_ngenea)</li><li>[Vcinity High-Speed Data Transfer File Action Plugin](#plugin_vcinity)</li></ul> |
+| **Core** | <ul><li>[Hash Differential Checksums File Action Plugin](#plugin_hash_diff)</li><li>[Ngenea Data Orchestrator/Mover by PixitMedia File Action Plugin](#plugin_ngenea)</li><li>[Vcinity High-Speed Data Transfer File Action Plugin](#plugin_vcinity)</li></ul> |
 
-| **Media Edition** | <ul><li>[CineViewer Player by CineSys File Action Plugin](#plugin_cineviewer)</li><li>[Find File Sequences File Action Plugin](#plugin_find_file_sequences)</li><li>[Flow Production Tracking (formerly ShotGrid) Index Plugin](#plugin_shotgrid)</li><li>[IMF Package Validator by Oxagile File Action Plugin](#plugin_imf_validator)</li><li>[Telestream GLIM File Action Plugin](#plugin_glim)</li></ul> |
+| **Media Edition** | <ul><li>[CineViewer Player by CineSys File Action Plugin](#plugin_cineviewer)</li><li>[Find File Sequences File Action Plugin](#plugin_find_file_sequences)</li><li>[Flow Production Tracking (formerly ShotGrid) Index Plugin](#plugin_shotgrid)</li><li>[IMF Package Validator by Oxagile File Action Plugin](#plugin_imf_validator)</li><li>[Telestream GLIM File Action Plugin](#plugin_glim)</li><li>[Xytech Asset Creation Index Plugin](#xytech_asset_creation)</li><li>[Xytech Order Status Index Plugin](#xytech_asset_creation)</li></ul> |
 
 | **Life Science Edition** | <ul><li>[BAM Info Index Plugin](#plugin_bam)</li><li>[Research Grant File Action Plugin](#plugin_grant)</li></ul> |
 
@@ -499,6 +499,27 @@ The Grant Plugin collects and parses grants’ metadata (grant number, group ID,
 
 _[Click here for a full-screen view of this image.](images/diagram_diskover_plugin_grant.png.png)_
 
+<p id=“plugin_hash_diff”></p>
+
+___
+### Hash Differential Checksums | File Action Plugin
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_media.png" width="100"> |
+| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| To learn more | [Visit our website](https://diskoverdata.com/products/plugins/#data-integrity) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| Demo | [🍿 Watch Demo Video](https://vimeo.com/768967081) |
+
+The Xytech Media Operations Platform order status plugin is designed to automate the correlation of the order management system and the storage system, by harvesting key business context from Xytech and applying that context within the AJA Diskover Media Edition. In turn, this business context metadata can be used to automate workflows, curate data, monitor costs, create highly customized reports, and search granularly.
+
+Facilities often manually correlate the order management system with the storage repositories. However, manual processes are subject to human errors and difficult to scale as the volume of media orders and data turnover increases constantly.
+
+Therefore, the lack of integration for file-based workflows between the order management system and the underlying storage repositories, makes data management decisions difficult as they are solely based on attributes of files or objects on storage. Additional business context is needed from the order management system to increase precision and accuracy of data management decisions.
+
+An instance of key information might be the invoice date for a work order. A status change for a work order can be aa key indicator for data management, for example, once a Xytech media order has been “invoiced”, then the data associated with that media order can be a candidate for archival.
+
+
 <p id=“plugin_imf_validator”></p>
 
 ___
@@ -510,7 +531,7 @@ ___
 | To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
 | To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#imf-package-validator) and/or [contact Oxagile](mailto:IMF@Oxagile.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#imf-package-validator) |
-| Demo | [🍿 Watch Demo Video](https://vimeo.com/833500176?share=copy) |
+| Demo | [🍿 Watch Demo Video](https://vimeo.com/828166808) |
 
 #### Overview
 
@@ -608,5 +629,23 @@ The plugin operates on the assumption that the assets restored to online media a
 
 The path location is added to the asset within Xytech and the asset number is assigned to the file via a tag within the Diskover Index.
 
+<p id=“plugin_xytech_order_status”></p>
 
+___
+### Xytech Order Status | Index Plugin
 
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_media.png" width="100"> |
+| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#xytech-order-status) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-order-status-plugin-overview) |
+| Demo | [🍿 Watch Demo Video](https://vimeo.com/768967081) |
+
+The Xytech Media Operations Platform order status plugin is designed to automate the correlation of the order management system and the storage system, by harvesting key business context from Xytech and applying that context within the AJA Diskover Media Edition. In turn, this business context metadata can be used to automate workflows, curate data, monitor costs, create highly customized reports, and search granularly.
+
+Facilities often manually correlate the order management system with the storage repositories. However, manual processes are subject to human errors and difficult to scale as the volume of media orders and data turnover increases constantly.
+
+Therefore, the lack of integration for file-based workflows between the order management system and the underlying storage repositories, makes data management decisions difficult as they are solely based on attributes of files or objects on storage. Additional business context is needed from the order management system to increase precision and accuracy of data management decisions.
+
+An instance of key information might be the invoice date for a work order. A status change for a work order can be aa key indicator for data management, for example, once a Xytech media order has been “invoiced”, then the data associated with that media order can be a candidate for archival.

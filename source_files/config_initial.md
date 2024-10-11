@@ -1,6 +1,6 @@
-___
+<p id=“config_wizard”></p>
+
 ## Initial Configuration
-___
 
 ### Overview
 
@@ -75,7 +75,7 @@ This is the point where you need to send your license request and the wizard par
 
 #### RabbitMQ or Amazon MQ
 
-This section is only needed if you are planning to use [File Action]() plugins.
+This section is only needed if you are planning to use [File Action](https://diskoverdata.com/products/plugins/#file-actions) plugins.
 
 🔴 &nbsp;Follow the instructions on this page, click **Test** to check the connection, and then **Save & Continue**, or click **Skip**. You can configure or edit your entries at any time.
 
@@ -109,4 +109,4 @@ This section is only needed if you are planning to use [File Action]() plugins.
 
 ### Schedule Your First Scan
 
-You are now ready to schedule and then run your first scan! Go to the next section, [Task Management via Task Panel](), for the details.
+You are now ready to schedule and then run your first scan! Go to the next section, [Tasks Management via Task Panel](#task_panel), for the details.

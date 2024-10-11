@@ -12,11 +12,11 @@ The plugins in this chapter are listed alphabetically, but here is a quick acces
 
 | CATEGORY | PLUGIN |
 | --- | --- |
-| **Core** | [Ngenea Data Orchestrator/Mover by PixitMedia | File Action Plugin](#plugin_ngenea)<br>
+| **Core** | <ul><li>[Ngenea Data Orchestrator/Mover by PixitMedia File Action Plugin](#plugin_ngenea)</li><li>[Vcinity High-Speed Data Transfer File Action Plugin](#plugin_vcinity)</li></ul> |
 
-| **Media Edition** | [CineViewer Player by CineSys | File Action Plugin](#plugin_cineviewer)<br>[Find File Sequences | File Action Plugin](#plugin_find_file_sequences)<br>[IMF Package Validator by Oxagile | File Action Plugin](#plugin_imf_validator)
+| **Media Edition** | <ul><li>[CineViewer Player by CineSys File Action Plugin](#plugin_cineviewer)</li><li>[Find File Sequences File Action Plugin](#plugin_find_file_sequences)</li><li>[Flow Production Tracking (formerly ShotGrid) Index Plugin](#plugin_shotgrid)</li><li>[IMF Package Validator by Oxagile File Action Plugin](#plugin_imf_validator)</li><li>[Telestream GLIM File Action Plugin](#plugin_glim)</li></ul> |
 
-| **Life Science Edition** | [BAM Info | Index Plugin](#plugin_bam)<br>[Research Grant | File Action Plugin](#plugin_grant)
+| **Life Science Edition** | <ul><li>[BAM Info Index Plugin](#plugin_bam)</li><li>[Research Grant File Action Plugin](#plugin_grant)</li></ul> |
 
 
 <p id="plugin_bam"></p>
@@ -28,7 +28,8 @@ ___
 | --- | --- |
 | Availability | <img src="images/button_edition_life_science.png" width="100"> |
 | To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| To learn more | [Visit our website](https://diskoverdata.com/products/life-science-edition/#bam-plugin) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [Diskover Life Science Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/#bam-harvest-plugin) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/678914314?share=copy) |
 
 #### Overview
@@ -73,7 +74,8 @@ ___
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
 | To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
-| To learn more | [Contact AJA Video Systems](mailto:sales@aja.com) |
+| To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#cineviewer) and/or [contact AJA Video Systems](mailto:sales@aja.com) |
+| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#cineviewer-player) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/765285042?share=copy) |
 
 #### Overview
@@ -96,6 +98,12 @@ The CineViewer Player is developed by [CineSys LLC](https://cinesys.io/), a majo
 
 **File Formats:** The video player uses FFMPEG under the hood for real-time transcoding of creative content. CineViewer supports a wide range of file types and codecs including Animation, AVC-Intra, AVI, Cineform, DNxHD, DNxHR, DV, DVCPPRO HD, H.264, HEVC/H.265, IMX, MKV, MOV/QT, MP4/M4V, MPEG/M2V/MPG, TS, MPEG-2, MXF, OGG, ProRes, OGG, ProRes, VP-8, VP-9, WebM
 
+#### CineViewer Installation Instructions
+
+<details>
+
+<summary>📂 Open for detailed instructions - may vary depending on your environment.</summary>
+  
 #### Linux Installation
 
 CineViewer runs best on Centos 7 Linux.
@@ -443,6 +451,8 @@ to your local `diskover`:
 
 <p id=“plugin_find_file_sequences”></p>
 
+</details>
+
 ___
 ### Find File Sequences | File Action Plugin
 
@@ -450,12 +460,26 @@ ___
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
 | To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#file-sequences) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#find-file-sequences) |
 
 The File Sequence web plugin File Action is designed to list out any file sequences in a directory or from a single file in a sequence. File sequences are printed out with `%08d` to show the 0 padding and number of digits in the sequence. Each sequence, whole or broken, are put into a [ ] list. [Learn more about this plugin](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#find-file-sequences).
 
 ![Image: File Sequences Results](images/image_file_action_results_tech.png)
 
+<p id="plugin_shotgrid"></p>
+
+___
+### Flow Production Tracking (formerly ShotGrid) | Index Plugin
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_media.png" width="100"> |
+| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#flowprodtracking) and/or [contact AJA Video Systems](mailto:sales@aja.com) |
+| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#flow-production-tracking-plugin) |
+
+Designed to enhance basic metadata with detailed production status information, aligning data management with production schedules. The Diskover Flow Production Tracking Plugin harvests additional attributes from the [Autodesk Flow Production Tracking platform](https://www.autodesk.com/products/flow-production-tracking/) for every shot directory located on storage. These attributes become properties of the shot directories and include status information such as finaled, out-of-picture, multiple project tracking dates, and many more, totaling around one hundred indexable fields. Note that users can opt to only index the fields that are relevant to their business.
 <p id=“plugin_grant”></p>
 
 ___
@@ -465,7 +489,7 @@ ___
 | --- | --- |
 | Availability | <img src="images/button_edition_life_science.png" width="100"> |
 | To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| To learn more | [Visit our website](https://diskoverdata.com/products/life-science-edition/#grant-plugin) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 
 The Grant Plugin has a dual purpose 1) assisting research institutes in managing their grants/members/storage costs internally, and 2) fulfilling the requirements for the new NIH DMS Policy.
 
@@ -484,7 +508,8 @@ ___
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
 | To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
-| To learn more | [Contact Oxagile](mailto:IMF@Oxagile.com) |
+| To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#imf-package-validator) and/or [contact Oxagile](mailto:IMF@Oxagile.com) |
+| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#imf-package-validator) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/833500176?share=copy) |
 
 #### Overview
@@ -522,14 +547,66 @@ ___
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| To learn more | Download this [Solution Brief](https://diskoverdata.com/wp-content/uploads/2024/08/diskover_pixitmedia_ngenea_solution_brief.pdf) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/833500176?share=copy) |
 
 With the Ngenea Data Orchestrator File Action, authorized users can quickly and securely transport data, directly from the Diskover UI, to and from globally distributed cloud, object storage, traditional NAS files, and tape resources, automatically moving data into the ‘right cost’ resource according to value and usage as your work teams and business needs demand.
 
+<p id=“plugin_vcinity”></p>
 
+___
+### Vcinity High-Speed Data Transfer | File Action Plugin
 
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| To learn more | Download this [Solution Brief](https://diskoverdata.com/wp-content/uploads/2024/05/Diskover_Data_SB.pdf) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| Demo | [🍿 Watch Demo Video](https://youtu.be/l1XZoe-ZtEI) |
 
+Regardless of distance and latency, the high-speed data transfer Vcinity Plugin provides the framework for reliable and fast data movement based on pre-configured source and destination profiles. 
+
+The plugin can move NFS, SMB, and S3 to any NFS, SMB, and S3 vendor, no matter the brand, ex: Dell, NetApp, HPE, etc.
+
+The Vcinity High-Speed Data Transfer Plugin provides two mechanisms within Diskover to trigger data movement: 1) on-demand user-initiated file action directly from the Diskover interface, and 2) scheduled automated workflow based on file attributes meeting predetermined criteria.
+
+<p id=“plugin_glim”></p>
+
+___
+### Telestream GLIM | File Action Plugin
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_media.png" width="100"> |
+| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#glim) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#glim-previewvalidate-media-files) |
+| Demo | [🍿 Watch Demo Video](https://vimeo.com/665037937) |
+
+This plugin results in a seamless integration with GLIM, allowing end-users to safely view and validate media files, while safeguarding your source assets and production network. Diskover allows users to do advanced searches of media assets, and then launch GLIM in one click via our File Actions. You need to have a GLIM account and be logged in previously to launch the GLIM preview plugin within Diskover.
+
+<p id=“plugin_xytech_asset_creation”></p>
+
+___
+### Xytech Asset Creation | Index Plugin
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_media.png" width="100"> |
+| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#xytech-asset-creation) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-asset-creation-plugin-overview) |
+| Demo | [🍿 Watch Demo Video](https://vimeo.com/660789118) |
+
+Post facilities often have customers’ assets that have been archived and lack findability, visibility, searchability, and therefore the opaque nature of these assets makes them difficult to reuse or repurpose. Companies, with years of such archived assets, have often stored these on tape media or removable hard drives which are often stored in a physical vault.
+
+Assets were often stored on such “offline” media due to costs, however, with the advent of cloud and object storage, the economics are now making it viable to store such vaulted assets on more “online media”. Although, simply putting these assets onto online media does not necessarily make these assets findable in context or within the facility’s order management system.
+
+The Xytech asset creation tool is designed to find and index newly restored online assets from LTO tapes, removable hard drives, etc., making them available, findable, and searchable within the Xytech order management system, as well as Diskover.
+
+The plugin operates on the assumption that the assets restored to online media are placed into a folder with the following naming convention: **CustomerID_CustomerName**
+
+The path location is added to the asset within Xytech and the asset number is assigned to the file via a tag within the Diskover Index.
 
 
 

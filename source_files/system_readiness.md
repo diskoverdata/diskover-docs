@@ -10,6 +10,8 @@ This section describes the preliminary steps to installing Diskover. Other softw
 
 This section breaks down the recommended hardening of a Linux system prior to the deployment of the Diskover software.
 
+<p id=“disable_selinux”></p>
+
 #### Disable Firewalld & Security Enhanced Linux (SELinux)
 
 Be default, SELinux should be disabled. If you have a corporate firewall in place or VPC security groups that restrict access to Diskover machines, you can safely disable the local Linux firewall.

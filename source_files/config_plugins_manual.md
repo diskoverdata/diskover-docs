@@ -106,13 +106,13 @@ The CineViewer Player is developed by [CineSys LLC](https://cinesys.io/), a majo
 
 **File Formats:** The video player uses FFMPEG under the hood for real-time transcoding of creative content. CineViewer supports a wide range of file types and codecs including Animation, AVC-Intra, AVI, Cineform, DNxHD, DNxHR, DV, DVCPPRO HD, H.264, HEVC/H.265, IMX, MKV, MOV/QT, MP4/M4V, MPEG/M2V/MPG, TS, MPEG-2, MXF, OGG, ProRes, OGG, ProRes, VP-8, VP-9, WebM
 
-#### CineViewer Installation Instructions
-
 <details>
 
-<summary>📂 Open for detailed instructions - may vary depending on your environment.</summary>
+<summary>📂 <strong></strong>Open Installation Instruction Details (may vary depending on your environment).</strong></summary>
+
+#### CineViewer Installation Instructions
   
-#### Linux Installation
+##### Linux Installation
 
 CineViewer runs best on Centos 7 Linux.
 
@@ -154,7 +154,7 @@ Default url is http://localhost:3000
 
 🔴 &nbsp;At this point you should be able to browse to the CineViewer page.
 
-#### License Key Request and Installation
+##### License Key Request and Installation
 
 When CineViewer is first installed or the license expires you will see the license key page appear.
 
@@ -174,7 +174,7 @@ When CineViewer is first installed or the license expires you will see the licen
 
 🔴 &nbsp;CineViewer should reload the page and be operational.
 
-#### Command Line Key Management
+##### Command Line Key Management
 
 You can also edit the license file directly. 
 
@@ -190,7 +190,7 @@ You can also edit the license file directly.
 sudo systemctl restart cineviewer
 ```
 
-#### Command Line Process Management
+##### Command Line Process Management
 
 Linux with systemctl.
 
@@ -218,7 +218,7 @@ systemctrl stop cineviewer
 journalctl --lines 0 --follow _SYSTEMD_UNIT=cineviewer.service
 ```
 
-#### Configuration
+##### Configuration
 
 CineViewer has two configuration files to control the app. The first is the app default configuration, usually `/opt/cinesys/cineveiwer/app/configure-default.json` which contains all the default values for the app.
 
@@ -270,7 +270,7 @@ By default, CineViewer is not login protected. To enable basic logins a users' c
 }
 ```
 
-#### Player Cache
+##### Player Cache
 
 ```
 "cineplay": {
@@ -279,7 +279,7 @@ By default, CineViewer is not login protected. To enable basic logins a users' c
 },
 ```
 
-#### File Mounts
+##### File Mounts
 
 ```
 "toast": {
@@ -296,17 +296,17 @@ By default, CineViewer is not login protected. To enable basic logins a users' c
 }
 ```
 
-#### Modes of Operation
+##### Modes of Operation
 
 Cineviewer has basically two modes of operation, the **file browser** and the **viewer**.
 
-##### Using the File Browser
+###### Using the File Browser
 
 One of Cineviewer's biggest strengths is its file system abstraction layer called **Toast**. Toast allows the app to treat files on the local file system the same as files on S3 or even in an asset management system such as Portal or Iconik. Toast directories are configured via the `toast.mounts` configuration.
 
 <img src="images/image_file_action_cineviewer_file_browser.png" width="750">
 
-##### Configuring Different Types of File System
+###### Configuring Different Types of File System
 
 All file system mounts have 3 common fields:
 
@@ -316,7 +316,7 @@ All file system mounts have 3 common fields:
 | **prefix** | Prefix shown on the Path |
 | **name** | Name shown on the navigation button |
 
-##### File System Mounts
+###### File System Mounts
 
 To make files on a standard operating system available use the **FS mount**. The FS mount uses the field **path** to point toward the desired directory.
 
@@ -338,7 +338,7 @@ To make files on a standard operating system available use the **FS mount**. The
  }
 ```
 
-##### AWS S3 Mounts
+###### AWS S3 Mounts
 
 ```
     {
@@ -356,7 +356,7 @@ To make files on a standard operating system available use the **FS mount**. The
 }
 ```
 
-#### Navigating and Finding Content
+##### Navigating and Finding Content
 
 - You can click on a directory to change to that directory.
 - Clicking on a media file will open the viewer. 
@@ -369,11 +369,11 @@ One great feature of Cineviewer is that when you move through directories or vie
 <img src="images/image_file_action_cineviewer_localhost.png" width="900">
 
 
-#### Diskover Module for CineViewer
+##### Diskover Module for CineViewer
 
 The Diskover File Action Plugin Module for Cineviewer allows you to open files or directories seamlessly from the Diskover user interface. Inside Cineviewer the user can also take advantage of Diskover high-speed indexed search.
 
-##### Installing CineViewer Plugin for Diskover
+###### Installing CineViewer Plugin for Diskover
 
 This plugin adds **open in CineViewer** to the **File Action** menu in Diskover.
 
@@ -415,7 +415,7 @@ This plugin adds **open in CineViewer** to the **File Action** menu in Diskover.
 
 🔴 &nbsp;Test the installation by finding a file in Diskover and using the **open in CineViewer** under the **File Action** menu.
 
-##### Diskover Module Settings
+###### Diskover Module Settings
 
 The Diskover module option has multiple settings. The most important is the `diskover_url`.
 
@@ -432,7 +432,7 @@ The Diskover module option has multiple settings. The most important is the `dis
 }
 ```
 
-#####  Installing the Diskover Search Feature for CineViewer
+######  Installing the Diskover Search Feature for CineViewer
 
 This config change for CineViewer will allow you to search Diskover from Cineviewer. 
 
@@ -447,7 +447,7 @@ to your local `diskover`:
     }
 ```
 
-##### Searching Diskover Within CineViewer
+###### Searching Diskover Within CineViewer
 
 🔴 &nbsp;After restarting CineViewer, your mounts/paths should appear:
 

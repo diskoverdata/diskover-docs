@@ -2,7 +2,7 @@
 
 ## Feature Navigator | Where to Find What
 
-This section alphabetically sorts the main configurable Diskover features, whether they are in the DiskoverAdmin panel or still manually configurable, and where to find them.
+This section alphabetically sorts the main configurable Diskover features, whether they are in the DiskoverAdmin panel or still manually configurable, and where to find them. Some features are there two and three times, under different names, to ensure that you can find what you are looking for.
 
 Additionally, if you are using the DiskoverAdmin panel, you can select **Search** in the menu on the left and type a simple word to find where a feature is located in the DiskoverAdmin menu.
 

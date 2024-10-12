@@ -4,55 +4,27 @@
 
 ### Upgrade from Community Edition to a Subscription
 
-<details>
-
-<summary>📂 Overview</summary>
-<br>
-
 This section outlines the process of upgrading from the Diskover Community Edition to v2.3.x of an annual [subscription Edition](https://diskoverdata.com/solutions/).
-
-<br>
-</details>
-<details>
-
-<summary>📂 Upgrade Instructions</summary>
-<br>
 
 🚧 We're hard at work preparing these instructions. Thanks for your patience!
 
-<br>
-</details>
 
 ### Upgrade from v2.2 Subscription to v2.3
 
-<details>
-
-<summary>📂 Overview</summary>
-<br>
+#### Overview
 
 This section breaks down the manual process for upgrading from a 2.2.x Diskover system up to 2.3 leveraging the Celery, RabbitMQ, and Diskover Admin services.
-<br>
 
 🟨 &nbsp;Now that we have [DiskoverAdmin](#config_diskoveradmin) for configuration management, the only `config_sample` folders that are needed are for `Diskoverd`.
 
-<br>
-</details>
-<details>
-
-<summary>📂 Upgrade Python 3</summary>
-<br>
+#### Upgrade Python 3
 
 Before conducting this upgrade, you must ensure that both the Diskover-Web host and all of our Task Worker/Indexer hosts have Python 3.8+ installed, preferably Python3.12. This can be done by changing the system-level Python build or [generating a global PyEnv](#pyenv) that the system can use for Diskover.
 
   - [PyEnv GitHub repository](https://github.com/pyenv/pyenv)
   - [Diskover PyEnv configuration](#pyenv)
 
-<br>
-</details>
-<details>
-
-<summary>📂 Upgrade Elasticsearch</summary>
-<br>
+#### Upgrade Elasticsearch
 
 There are no required changes for ElasticSearch in Diskover 2.3. Ideally, your environment is running Elasticsearch 8 already. If you are not running v8, an upgrade to Elasticsearch 8 needs to be carried out. 
 
@@ -61,12 +33,7 @@ There are no required changes for ElasticSearch in Diskover 2.3. Ideally, your e
   - [Prepare to upgrade from Elasticsearch v7](https://www.elastic.co/guide/en/elastic-stack/8.14/upgrading-elastic-stack.html#prepare-to-upgrade)
   - [Upgrade from Elasticsearch v7](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)
 
-<br>
-</details>
-<details>
-
-<summary>📂 Upgrade Diskover-Web</summary>
-<br>
+#### Upgrade Diskover-Web
 
 🔴 &nbsp;Stop the necessary services and create a [backup](#backup):
 ```
@@ -112,18 +79,11 @@ chown nginx.nginx /var/www/diskover-web/src/diskover/diskover-web.lic
 cp /var/www/diskover-web-old/diskoverdb.sqlite3 /var/www/diskover-web/diskoverdb.sqlite3
 chown nginx.nginx /var/www/diskover-web/diskoverdb.sqlite3
 ```
-
-<br>
-</details>
-<details>
-
-<summary>📂 DiskoverAdmin Installation</summary>
-
-#### Overview
+#### DiskoverAdmin Installation
 
 🟨 &nbsp;The DiskoverAdmin administration panel is a new service to the 2.3 branch of Diskover. This service **should ALWAYS be installed on the Diskover-Web host(s)**.
 
-#### DiskoverAdmin
+##### DiskoverAdmin
 
 🔴 &nbsp;The artifact should contain **DiskoverAdmin 2.3**:
 ```
@@ -153,7 +113,7 @@ cd ~/diskover-<version>/
 cp -a diskover/ /opt/diskover
 ```
 
-#### Uvicorn
+##### Uvicorn
 
 🔴 &nbsp;Validate that Uvicorn works in the next steps - start with PIP installs
 ```
@@ -177,7 +137,7 @@ uvicorn --interface wsgi --loop uvloop --workers 5 --log-level debug --uds /var/
 
 🔴 &nbsp;Once you reach this point and you do not see the logs rolling anymore, you know your DiskoverAdmin service has fully started up. **Ctrl +c** to exit out of this and go back to your shell.
 
-#### Nginx
+##### Nginx
 
 🔴 &nbsp;Nginx configuration:
 ```
@@ -202,7 +162,7 @@ systemctl restart nginx php-fpm
 systemctl status nginx php-fpm
 ```
 
-#### Daemon
+##### Daemon
 
 🔴 &nbsp;Now that we have our DiskoverAdmin service installed and configured, let’s daemonize this thing. Copy default service file:
 ```
@@ -229,12 +189,7 @@ systemctl status diskover-admin
     INFO:     Started parent process [2390]
 ```
 
-<br>
-</details>
-<details>
-
-<summary>📂 Upgrade Diskover Task Workers/Indexers</summary>
-<br>
+#### Upgrade Diskover Task Workers/Indexers
 
 🔴 &nbsp;Stop the necessary services and take some [backups](#backup):
 ```
@@ -298,13 +253,9 @@ python3 -m pip install -r requirements.txt
 
 🟨 &nbsp;Note that with the upgrade of Elasticsearch, Diskover-Web, and the Diskover indexers/workers, your v2.2 license keys will no longer work. Once you reach this point, send us a [license request](#hd_id).
 
-<br>
-</details>
-<details>
+#### Install RabbitMQ or Amazon MQ
 
-<summary>📂 Install RabbitMQ or Amazon MQ</summary>
-
-#### Overview
+##### Overview
 
 RabbitMQ or Amazon MQ serves as the messaging bus/queue system that communicates with all Celery systems on your Diskover Worker nodes. We recommend installing this service on a dedicated standalone host.
 
@@ -315,7 +266,7 @@ Once all components are installed, you will be able to [configure your messaging
   - [RabbitMQ RPM Installation Guide](https://www.rabbitmq.com/docs/install-rpm#cloudsmith)
   - [RabbitMQ Default Configuration Guide](https://www.rabbitmq.com/docs/configure)
 
-#### RabbitMQ for Linux
+##### RabbitMQ for Linux
 
 🔴 &nbsp;Configure yum repositories:
 ```
@@ -359,21 +310,15 @@ systemctl status rabbitmq-server
 http://$rabbitMQHost:15672/#/
 ```
 
-#### RabbitMQ for Windows
+##### RabbitMQ for Windows
 
 🚧 We're hard at work preparing these instructions. Thanks for your patience!
 
-<p id=“install_amazonmq”></p>
-
-#### Amazon MQ
+##### Amazon MQ
 
 🚧 We're hard at work preparing these instructions. Thanks for your patience!
 
-<br>
-</details>
-<details>
-
-<summary>📂 Celery Installation</summary>
+#### Celery Installation
 
 #### Overview
 
@@ -441,18 +386,11 @@ cd /var/log/celery/
 
 🟨 The API server must be installed before starting the Celery service.
 
-#### Celery for Windows
+##### Celery for Windows
 
 🚧 We're hard at work preparing these instructions. Thanks for your patience!
 
-<br>
-</details>
-<details>
-
-<summary>📂 DiskoverAdmin Wizard</summary>
-<br>
+#### DiskoverAdmin Wizard
 
 🔴 &nbsp;[Navigate to the **Initial Configuration** chapter to complete your v2.3 initial setup](#config_initial).
 
-<br>
-</details>

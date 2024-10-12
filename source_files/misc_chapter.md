@@ -1,14 +1,10 @@
 
-## The Everything Else Chapter
+## Everything Else Chapter
 
 <p id=“pyenv”></p>
 
 ### PyEnv
 
-<details>
-
-<summary>📂 Open PyEnv installation instructions.</summary>
-<br>
 This section will guide you through the global installation of PyEnv. PyEnv lets you easily switch between multiple versions of Python. It’s simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.
 <br><br>
 
@@ -67,5 +63,3 @@ pyenv versions
 ```
 pyenv global 3.12.4
 ```
-
-</details>

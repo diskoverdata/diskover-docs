@@ -548,7 +548,7 @@ Netflix, for example, requires all their content to be delivered in IMF format, 
 
 Once the content has been validated, it is then encoded into various formats, including 4K and HDR, and made available for streaming on various platforms. The IMF validation process is a critical step in the content delivery pipeline.
 
-#### Trial and Purchase of the plugin
+#### Trial and Purchase of the Plugin
 
 The IMF Package Validator plugin is developed and sold exclusively by [Oxagile](https://www.oxagile.com/), a major technological partner working with both Diskover Data and [AJA Video Systems](https://www.aja.com/). For more information, to start a 30 day trial, or to purchase the IMF Package Validator plugin, please contact [Oxagile](mailto:IMF@Oxagile.com).
 

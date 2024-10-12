@@ -9,15 +9,15 @@ This guide covers:
 - Instructions when migrating from Dell DataIQ.
 - Additional references.
 
-___
+
 ## Install Diskover Docker for Community Edition
-___
+
 
 If you want to run Diskover Community Edition in Docker, there is a Docker Hub container built by [LinuxServer.io](https://www.linuxserver.io/) at [Diskover Docker Hub](https://hub.docker.com/r/linuxserver/diskover) and [Diskover LinuxServer.io GitHub](https://github.com/linuxserver/docker-diskover).
 
-___
+
 ## Install Diskover Docker on Linux
-___
+
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
@@ -27,9 +27,9 @@ ___
 
 *Instructions coming soon.*
 
-___
+
 ## Install Diskover Docker on Windows
-___
+
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
@@ -63,9 +63,9 @@ docker compose up -d
 
 ![Image: Docker Containers Status](images/image_docker_container_status.png)
 
-___
+
 ## Install Diskover Docker on Mac
-___
+
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
@@ -75,9 +75,9 @@ ___
 
 *Instructions coming soon.*
 
-___
+
 ## Install Diskover Docker | Dell DataIQ Migration
-___
+
 
 ### Dell DataIQ Migration to Diskover Community Edition
 
@@ -91,9 +91,9 @@ This section gives additional instructions on how to install Diskover annual sub
 
 *Instructions coming soon.*
 
-___
+
 ## Diskover Docker | Additional References
-___
+
 
 The following information is common to all Linux, Windows, and Mac.
 

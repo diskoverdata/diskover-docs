@@ -1,4 +1,4 @@
-___
+
 ### Elasticsearch Backup
 
 The following explains how to create a snapshot of a single index or multiple indices and how to restore the snapshot. Elasticsearch provides a snapshot and restore API.

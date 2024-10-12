@@ -1,5 +1,5 @@
 
-## Configuration | Index Plugins
+## DiskoverAdmin Configuration | Index Plugins
 
 ### Overview
 

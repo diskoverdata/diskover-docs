@@ -1,6 +1,6 @@
 <p id=“config_main”></p>
 
-## Configuration | Main Components and Communications
+## DiskoverAdmin Configuration | Main Components and Communications
 
 ### Overview
 

@@ -8,93 +8,93 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 
 <img src="images/diskoveradmin_search.png" width="200">
 
-| Feature | DiskoverAdmin | Elsewhere |
+| Feature | DiskoverAdmin → Configuration | Elsewhere |
 | --- | --- | --- |
-| **Alternate Indexers** | Configuration → Diskover → Alternate Indexers | |
-| **Amazon MQ** | Configuration → System → Message Queue | |
-| **Analytics Filters** | Configuration → Web → Analytics Filters | |
-| **API** | Configuration → System → API | |
-| **Authentication by default for Diskover-Web** | Configuration → Web → General | |
-| **Authentication LDAP** | Configuration → Web → LDAP | |
-| **Authentication OAuth** | Configuration → Web → OAUTH | |
-| **AutoClean** | Configuration → Plugins → Post Index → AutoClean | |
-| **AutoTag** at index time | Configuration → Diskover → Configurations → Default | |
-| **AutoTag Plugin** post index | Configuration → Plugins → Post Index → AutoTag | |
-| **Azure** alt indexer | Configuration → Diskover → Alternate Indexers → Azure | |
-| **Azure AD Authentication** | Configuration → Web → OAUTH | |
+| **Alternate Indexers** | Diskover → Alternate Indexers | |
+| **Amazon MQ** | System → Message Queue | |
+| **Analytics Filters** | Web → Analytics Filters | |
+| **API** | System → API | |
+| **Authentication by default for Diskover-Web** | Web → General | |
+| **Authentication LDAP** | Web → LDAP | |
+| **Authentication OAuth** | Web → OAUTH | |
+| **AutoClean** | Plugins → Post Index → AutoClean | |
+| **AutoTag** at index time | Diskover → Configurations → Default | |
+| **AutoTag Plugin** post index | Plugins → Post Index → AutoTag | |
+| **Azure** alt indexer | Diskover → Alternate Indexers → Azure | |
+| **Azure AD Authentication** | Web → OAUTH | |
 | **BAM Info Plugin** | | [BAM Info Index Plugin](#plugin_bam) |
-| **Breadcrumb Plugin** | Configuration → Plugins → Post Index → Breadcrumb | |
-| **Checksums** at index time | Configuration → Plugins → Index → Checksums | |
-| **Checksums** post index | Configuration → Plugins → Post Index → Checksums | |
-| **Chesksums S3** post index | Configuration → Plugins → Post Index → Checksums S3 | 
+| **Breadcrumb Plugin** | Plugins → Post Index → Breadcrumb | |
+| **Checksums** at index time | Plugins → Index → Checksums | |
+| **Checksums** post index | Plugins → Post Index → Checksums | |
+| **Chesksums S3** post index | Plugins → Post Index → Checksums S3 | 
 | **CineViewer Player Plugin** | | [CineViewer Player File Action Plugin by CineSys](#plugin_cineviewer) |
-| **Collapsible Top Path** | Configuration → Web → Top Path Display | |
-| **Cost** at time of index | Configuration → Diskover → Configurations → Default | |
-| **Cost Plugin** post-index | Configuration → Plugins → Post Index → Costs | |
-| **Daemon** for indexers | Configuration → DiskoverD → Default | |
-| **DirCache** alt indexer | Configuration → Diskover → Alternate Indexers → DirCache | |
-| **Diskover** indexers | Configuration → Diskover → Configurations → Default | |
-| **DiskoverD** daemons | Configuration → DiskoverD → Default | |
-| **Diskover-Web** | Configuration → Web → General | |
-| **Dupes Finder Plugin** | Configuration → Plugins → Post Index → Dupes Finder | |
-| **EDL Check Plugin** | Configuration → Plugins → File Actions → In Development → EDL Check | |
-| **EDL Download Plugin** | Configuration → Plugins → File Actions → In Development → EDL Download | | 
-| **Elasticsearch for Diskover-Web** | Configuration → Web → Elasticsearch | |
-| **Elasticsearch for Indexers** | Configuration → Diskover → Elasticsearch | |
-| **Elasticsearch Field Copier** | Configuration → Plugins → Post Index → ES Field Copier | |
-| **Elasticsearch Query Report** | Configuration → Plugins → Post Index → ES Query Report | |
-| **Enable Index Plugins** | Configuration → Diskover → Configurations → Default | |
-| **Export Plugin** | Configuration → Plugins → File Actions → In Development → Export | |
-| **Extra Fields** | Configuration → Web → General | |
-| **File Kind Plugin** | Configuration → Plugins → Index → File Kind | |
-| **File Types** | Configuration → Web → File Types | |
+| **Collapsible Top Path** | Web → Top Path Display | |
+| **Cost** at time of index | Diskover → Configurations → Default | |
+| **Cost Plugin** post-index | Plugins → Post Index → Costs | |
+| **Daemon** for indexers | DiskoverD → Default | |
+| **DirCache** alt indexer | Diskover → Alternate Indexers → DirCache | |
+| **Diskover** indexers | Diskover → Configurations → Default | |
+| **DiskoverD** daemons | DiskoverD → Default | |
+| **Diskover-Web** | Web → General | |
+| **Dupes Finder Plugin** | Plugins → Post Index → Dupes Finder | |
+| **EDL Check Plugin** | Plugins → File Actions → In Development → EDL Check | |
+| **EDL Download Plugin** | Plugins → File Actions → In Development → EDL Download | | 
+| **Elasticsearch for Diskover-Web** | Web → Elasticsearch | |
+| **Elasticsearch for Indexers** | Diskover → Elasticsearch | |
+| **Elasticsearch Field Copier** | Plugins → Post Index → ES Field Copier | |
+| **Elasticsearch Query Report** | Plugins → Post Index → ES Query Report | |
+| **Enable Index Plugins** | Diskover → Configurations → Default | |
+| **Export Plugin** | Plugins → File Actions → In Development → Export | |
+| **Extra Fields** | Web → General | |
+| **File Kind Plugin** | Plugins → Index → File Kind | |
+| **File Types** | Web → File Types | |
 | **Find File Sequences Plugin** | | [Find File Sequences File Action Plugin](#plugin_find_file_sequences) |
-| **First Index time Plugin** | Configuration → Plugins → Index → First Index Time |
-| **Fix Permissions Plugin** | Configuration → Plugins → File Actions → In Development → Fix Permissions | |
+| **First Index time Plugin** | Plugins → Index → First Index Time |
+| **Fix Permissions Plugin** | Plugins → File Actions → In Development → Fix Permissions | |
 | **GLIM Plugin** | | [Telestream GLIM File Action Plugin](#plugin_glim) |
-| **Grafana Plugin** | Configuration → Plugins → Index → Grafana | |
-| **Grafana Cloud Plugin** | Configuration → Plugins → Index → Grafana Cloud | |
+| **Grafana Plugin** | Plugins → Index → Grafana | |
+| **Grafana Cloud Plugin** | Plugins → Index → Grafana Cloud | |
 | **Grant Plugin Plugin** | | [Research Grant File Action Plugin](#plugin_grant) | 
 | **Hash Differential Checksums Plugin** | | [Hash Differential Checksums File Action Plugin](#plugin_hash_diff) |
-| **Illegal Filename Plugin** | Configuration → Plugins → Post Index → Illegal Filename | |
-| **IMF Change Report Plugin** | Configuration → Plugins → File Actions → IMF Change Report | |
+| **Illegal Filename Plugin** | Plugins → Post Index → Illegal Filename | |
+| **IMF Change Report Plugin** | Plugins → File Actions → IMF Change Report | |
 | **IMF Package Validator Plugin** | | [IMF Package Validator File Action Plugin by Oxagile](#plugin_imf_validator) |
-| **Index Access** | Configuration → Web → Index Access | |
-| **Index Differential Plugin** | Configuration → Plugins → Post Index → Index Diff | |
-| **Index Mapping** | Configuration → Web → Index Access | |
-| **Indexers** | Configuration → Diskover → Configurations → Default | |
-| **LDAP** | Configuration → Web → LDAP | |
-| **License** | Configuration → License | |
-| **Live View Plugin** | Configuration → Plugins → File Actions → Live View | |
-| **Make Links Plugin** | Configuration → Plugins → File Actions → Make Links | |
-| **Media Info Plugin** | Configuration → Plugins → Index → Media Info | |
-| **Message Queue** | Configuration → System → Message Queue | |
+| **Index Access** | Web → Index Access | |
+| **Index Differential Plugin** | Plugins → Post Index → Index Diff | |
+| **Index Mapping** | Web → Index Access | |
+| **Indexers** | Diskover → Configurations → Default | |
+| **LDAP** | Web → LDAP | |
+| **License** | License | |
+| **Live View Plugin** | Plugins → File Actions → Live View | |
+| **Make Links Plugin** | Plugins → File Actions → Make Links | |
+| **Media Info Plugin** | Plugins → Index → Media Info | |
+| **Message Queue** | System → Message Queue | |
 | **Ngenea Data Orchestrator Plugin** | | [Ngenea Data Orchestrator/Mover File Action Plugin by PixitMedia](#plugin_ngenea) |
-| **OAuth** | Configuration → Web → OAUTH | |
-| **Offline Media** alt indexer | Configuration → Diskover → Alternate Indexers → Offline Media | |
-| **Okta** | Configuration → Web → OAUTH | |
-| **Path Tokens Plugin** | Configuration → Plugins → Index → Path Tokens | |
-| **Path Translation** | Configuration → Web → Path Translations | |
-| **PDF Viewer Plugin** | Configuration → Plugins → File Actions → PDF | |
-| **RabbitMQ** | Configuration → System → Message Queue | |
-| **Rclone Plugin** | Configuration → Plugins → File Actions → Rclone | |
-| **S3** AWS and non-AWS alt indexer | Configuration → Diskover → Alternate Indexers → S3 | |
-| **SMTP** | Configuration → System → SMTP | |
-| **Spectra Plugin** | Configuration → Plugins → File Actions → In Development → Spectra | |
-| **Tag Copier** at time of index | Configuration → Plugins → Index → Tag Copier | |
-| **Tag Copier** post-index | Configuration → Plugins → Post Index → Tag Copier | |
-| **Tags Customization** for manual tags| Configuration → Web → Custom Tags | |
-| **Task Notifications** | Configuration → DiskoverD → Default | |
-| **Time Zone** for files and directories | Configuration → Web → General | |
-| **Time Zone** for indexers | Configuration → DiskoverD → Default | |
-| **Time Zone** for indices | Configuration → Web → General | |
-| **Top Paths** | Configuration → Web → Top Path Display | |
-| **Unix Permissions Plugin** | Configuration → Plugins → Index → Unix Perms | |
-| **Vantage Plugin** | Configuration → Plugins → File Actions → Vantage | |
+| **OAuth** | Web → OAUTH | |
+| **Offline Media** alt indexer | Diskover → Alternate Indexers → Offline Media | |
+| **Okta** | Web → OAUTH | |
+| **Path Tokens Plugin** | Plugins → Index → Path Tokens | |
+| **Path Translation** | Web → Path Translations | |
+| **PDF Viewer Plugin** | Plugins → File Actions → PDF | |
+| **RabbitMQ** | System → Message Queue | |
+| **Rclone Plugin** | Plugins → File Actions → Rclone | |
+| **S3** AWS and non-AWS alt indexer | Diskover → Alternate Indexers → S3 | |
+| **SMTP** | System → SMTP | |
+| **Spectra Plugin** | Plugins → File Actions → In Development → Spectra | |
+| **Tag Copier** at time of index | Plugins → Index → Tag Copier | |
+| **Tag Copier** post-index | Plugins → Post Index → Tag Copier | |
+| **Tags Customization** for manual tags| Web → Custom Tags | |
+| **Task Notifications** | DiskoverD → Default | |
+| **Time Zone** for files and directories | Web → General | |
+| **Time Zone** for indexers | DiskoverD → Default | |
+| **Time Zone** for indices | Web → General | |
+| **Top Paths** | Web → Top Path Display | |
+| **Unix Permissions Plugin** | Plugins → Index → Unix Perms | |
+| **Vantage Plugin** | Plugins → File Actions → Vantage | |
 | **Vcinity High-Speed Data Transfer Plugin** | | [Vcinity High-Speed Data Transfer File Action Plugin](#plugin_vcinity) |
-| **Windows Attributes Plugin** | Configuration → Plugins → Post Index → Windows Attributes | |
-| **Windows Owner Plugin** | Configuration → Plugins → Index → Windows Owner | |
-| **Wizard** for initial config | Configuration → System → Meta → Wizard | |
+| **Windows Attributes Plugin** | Plugins → Post Index → Windows Attributes | |
+| **Windows Owner Plugin** | Plugins → Index → Windows Owner | |
+| **Wizard** for initial config | System → Meta → Wizard | |
 | **Xytech Asset Creation Plugin** | | [Xytech Asset Creation Index Plugin](#plugin_xytech_asset_creation) |
 | **Xytech Order Status Plugin** | | [Xytech Order Status Index Plugin](#plugin_xytech_order_status) |
 

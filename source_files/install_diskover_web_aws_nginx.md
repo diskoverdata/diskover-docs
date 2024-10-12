@@ -1,4 +1,4 @@
-___
+
 ### Install NGINX
 
 🔴 &nbsp;The following will install the NGINX Web server application:

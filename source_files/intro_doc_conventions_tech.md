@@ -1,7 +1,3 @@
-<details>
-
-<summary>📂 Document Conventions</summary>
-
 ### Document Conventions
 
 #### Easy Code Snippets Copy/Paste
@@ -11,14 +7,13 @@ Throughout this document, all the lines displayed in a different font are design
 ```
 code snippet - use icon on the far right to copy me
 ```
-
 #### Proposed Actions
 
-🔴 &nbsp;All proposed action items are preceded by a red dot.
+    🔴 &nbsp;All proposed action items are preceded by a red dot.
 
 #### Important Notes and Warnings
 
-🟨 &nbsp;All important notes and warnings are preceded by a yellow square.
+    🟨 &nbsp;All important notes and warnings are preceded by a yellow square.
 
 #### Restricted Diskover Editions
 
@@ -26,5 +21,3 @@ The appropriate label(s) will be displayed for features and/or sections of the g
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
-<br>
-</details>

@@ -495,9 +495,9 @@ The Grant Plugin has a dual purpose 1) assisting research institutes in managing
 
 The Grant Plugin collects and parses grants’ metadata (grant number, group ID, etc.) to curated datasets. In turn, staff associated with a specific grant has visibility/searchability of their limited data/grant without access to the source files or other grants. That extra metadata is also available to use for further workflow automation if needed.
 
-![Image: Diskover BAM Plugin Overview](images/diagram_diskover_plugin_grant.png.png)
+![Image: Diskover BAM Plugin Overview](images/diagram_diskover_plugin_grant.png)
 
-_[Click here for a full-screen view of this image.](images/diagram_diskover_plugin_grant.png.png)_
+_[Click here for a full-screen view of this image.](images/diagram_diskover_plugin_grant.png)_
 
 
 

@@ -1,6 +1,5 @@
-___
+
 ## AWS Elasticsearch Environment
-___
 
 ### Choose Deployment Type
 

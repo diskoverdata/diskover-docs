@@ -1,8 +1,6 @@
 <p id="plugins_file_actions"></p>
 
-___
 ## Diskover-Web Plugins | File Actions
-___
 
 Diskover-web is designed for extensibility. The open-source architecture is designed to promote extensibility via web plugins known as File Actions.
 

@@ -1,6 +1,5 @@
-___
+
 ## Diskover-Web
-___
 
 ### Diskover-Web for Linux
 

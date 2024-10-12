@@ -1,6 +1,6 @@
 <p id=“config_plugins_manual”></p>
 
-## Manual Plugins Configuration
+## Manual Configuration | Plugins
 
 ### Overview
 

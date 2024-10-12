@@ -1,6 +1,4 @@
-___
 ## AWS Environment Security
-___
 
 The information in this section outlines how to manage identities and access the distributed components of the Diskover curation platform. This includes both AWS Identity and Access Management (IAM) resources, as well as access mechanisms.
 

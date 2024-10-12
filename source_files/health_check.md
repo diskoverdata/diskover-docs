@@ -1,10 +1,10 @@
-___
+<p id=“health_check”></p>
+
 ## Health Check
-___
 
 The following section outlines health checks for the various Diskover's components. 
 
-🚧 Note that this chapter is currently being updated.
+🚧 We're hard at work preparing these instructions. Thanks for your patience!
 
 ### Elasticsearch Domain
 

@@ -6,6 +6,8 @@
 
 This Celery component will need to be installed on each of your indexer/worker nodes.
 
+🟨 &nbsp;[Additional Celery documentation](https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html)
+
 ### Celery for Linux
 
 🔴 &nbsp;Install celery:

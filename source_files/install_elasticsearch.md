@@ -278,4 +278,4 @@ sudo systemctl start elasticsearch
 
 In a multiple-cluster setup for Elasticsearch, you can run and manage multiple independent clusters, each with its own set of nodes and indices. This setup is typically used when you need to isolate data or workloads across different environments (such as production, testing, and development) or geographically distributed locations. Each cluster operates independently, and you can configure cross-cluster search or replication to share data or search across clusters as needed.
 
-Please [open a support ticket]((https://support.diskoverdata.com/) for assistance.
+Please [open a support ticket](https://support.diskoverdata.com/) for assistance.

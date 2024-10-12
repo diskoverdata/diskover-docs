@@ -1,7 +1,6 @@
 <details>
 
 <summary>📂 Diskover Use Cases</summary>
-<br>
 
 ### Diskover Use Cases
 

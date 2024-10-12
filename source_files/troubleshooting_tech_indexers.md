@@ -1,6 +1,5 @@
-___
+
 ## Diskover Indexers
-___
 
 ### Diskover Indexer for Linux
 

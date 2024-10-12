@@ -1,6 +1,6 @@
-___
+<p id=“software_update”></p>
+
 ## Software Updates
-___
 
 ### Software Updates for Community Edition
 

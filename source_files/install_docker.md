@@ -1,6 +1,5 @@
-___
+
 ## Docker Installation | Introduction
-___
 
 This installation produces no-source Docker images that, provided with the application source, will run the full Diskover stack with zero or minimal configuration.
 

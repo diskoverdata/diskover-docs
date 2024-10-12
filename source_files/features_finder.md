@@ -8,7 +8,7 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 
 <img src="images/diskoveradmin_search.png" width="200">
 
-| Feature | DiskoverAdmin → Configuration | Elsewhere |
+| FEATURE | CONFIGURE IN USER INTERFACE<br>DiskoverAdmin → Configuration | ELSEWHERE |
 | --- | --- | --- |
 | **Alternate Indexers** | Diskover → Alternate Indexers | |
 | **Amazon MQ** | System → Message Queue | |

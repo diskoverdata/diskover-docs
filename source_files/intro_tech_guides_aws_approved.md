@@ -1,7 +1,6 @@
 <details>
 
 <summary>📂 Approved AWS Technology Partner</summary>
-<br>
 
 ### Approved AWS Technology Partner
 

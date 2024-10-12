@@ -1,4 +1,4 @@
-<p id=“config_wizard”></p>
+<p id=“diskoveradmin_wizard”></p>
 
 ## Initial Configuration
 

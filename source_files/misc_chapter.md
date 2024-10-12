@@ -11,6 +11,7 @@
 <br>
 This section will guide you through the global installation of PyEnv. PyEnv lets you easily switch between multiple versions of Python. It’s simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.
 <br>
+
 🟨 &nbsp;**IMPORTANT!**
 
   - PyEnv installs a Python environment on a per-user basis. Thus you must ensure to install the PyEnv as the user that is running the Diskover service.
@@ -41,7 +42,8 @@ yum install gcc make patch zlib-devel bzip2 bzip2-devel readline-devel sqlite sq
 ```
 pyenv install 3.12.4
 ```
-display the PyEnv version currently in use)
+
+🔴 &nbsp;Display the PyEnv version currently in use:
 ```
 pyenv
 ```

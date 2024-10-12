@@ -1,6 +1,6 @@
-___
+
 ## User Roles and Authentication
-___
+
 
 This chapter discusses setting up authenticated user access to Diskover-Web.
 

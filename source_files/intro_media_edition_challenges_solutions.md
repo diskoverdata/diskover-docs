@@ -1,6 +1,6 @@
-___
+
 ## Media Specific Challenges and Solutions
-___
+
 This section describes the prominent challenges that most Media and Entertainment facilities are currently facing.
 
 ### Lack of Files Visibility

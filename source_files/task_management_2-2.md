@@ -1,11 +1,10 @@
 <p id="task_management"></p>
 
-___
+
 ## Task Management
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
-___
 
 The task panel can be used to schedule building indices or running any type of file action task such as copying files, running duplicate file finding, checking permissions on directories, etc. The task panel is a swiss-army knife for data management.
 

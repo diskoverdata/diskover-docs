@@ -1,6 +1,5 @@
-___
+
 ## Search Results
-___
 
 > Please refer to the [Manual Search Syntax chapter in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#manual-search-syntax) and/or the [Quick Reference Card](https://docs.diskoverdata.com/images/quick_reference_card_diskover_generic.png) for detailed information on searches. 
 

@@ -1,6 +1,6 @@
-___
+
 ## Develop Your Own Alternate Scanner
-___
+
 
 ### Introduction to Writing an Alternate Scanner
 

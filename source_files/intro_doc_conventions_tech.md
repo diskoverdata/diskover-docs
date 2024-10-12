@@ -9,11 +9,11 @@ code snippet - use icon on the far right to copy me
 ```
 #### Proposed Actions
 
-    🔴 &nbsp;All proposed action items are preceded by a red dot.
+🔴 &nbsp;All proposed action items are preceded by a red dot.
 
 #### Important Notes and Warnings
 
-    🟨 &nbsp;All important notes and warnings are preceded by a yellow square.
+🟨 &nbsp;All important notes and warnings are preceded by a yellow square.
 
 #### Restricted Diskover Editions
 

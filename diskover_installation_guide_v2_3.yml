@@ -4,7 +4,7 @@ website_folder: diskover_setup_and_config
 # All documents need to be in shared folder
 ordered_documents:
   - index_diskover_guides_header.md
-  - guide_title_setup_and_config.md
+  - guide_title_setup_and_admin.md
   - intro_guide_intended_for_tech.md
   - intro_tech_guides_main_intro.md
   - intro_tech_guides_aws_approved.md
@@ -28,33 +28,32 @@ ordered_documents:
   - task_panel.md
   - features_finder.md
   - config_diskoveradmin_main.md
+
+index advanced
+auth
+  
   - config_diskoveradmin_plugins_index.md
   - config_diskoveradmin_plugins_post_index.md
   - config_diskoveradmin_plugins_file_actions.md
   - config_plugins_manual.md
-  - plugin_bam.md
-  - plugin_edl_upload.md
-  - plugin_file_action_cineviewer.md
-  - plugin_find_file_sequence.md
-  - plugin_grant.md
-  - plugin_imf_validator.md
-  - plugin_mover_ngenea.md
-  - plugin_mover_rclone.md
-  - plugin_shotgrid.md
-  - plugin_mover_vcinity.md
-  - plugin_telestream_glim.md
-  - plugin_xytech_asset_creation.md
-  - plugin_xytech_order_status.md
+  - config_indexers_manual.md
 
+
+  - indices_management.md
+  
+  - misc_chapter.md
+  - visualization_tools.md
 
 
   
-  - visualization_tools.md
-  - indices_management.md
   - software_activation_2-3.md
   - upgrade_to_2-3.md
   - software_update_2-3.md
   - backup.md
+
+  - maintenance_routine.md
+  - maintenance_emergency.md
+  
   - health_check.md
   - uninstall.md
   - support.md

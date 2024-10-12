@@ -1,4 +1,4 @@
-___
+
 ### Configure EC2 Instance as a Web Server
 
 🔴 &nbsp;Configure the EC2 instance as a Web server:

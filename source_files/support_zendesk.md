@@ -1,6 +1,5 @@
-___
+
 ## Overview of Diskover Support through Zendesk
-___
 
 Diskover has partnered with [Zendesk](https://diskoverdata.zendesk.com/) to enhance our customer support experience. This collaboration and AI-powered platform brings you:
 

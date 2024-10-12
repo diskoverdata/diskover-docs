@@ -1,6 +1,6 @@
 <p id=“feature_navigator”></p>
 
-## Configuration | Where to Find What
+## Feature Navigator | Where to Find What
 
 This section alphabetically sorts the main configurable Diskover features, whether they are in the DiskoverAdmin panel or still manually configurable, and where to find them.
 

@@ -1,6 +1,5 @@
-___
+
 ## Index Management
-___
 
 The Diskover curation platform creates indexes within an Elasticsearch endpoint. Each index is basically a snapshot of a point in time of any given volume (filesystem of S3 Bucket). These indexes require management:
 

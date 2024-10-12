@@ -1,6 +1,6 @@
-___
+<p id=“software_upgrade”></p>
+
 ## Upgrade to Diskover v2.3
-___
 
 ### Upgrade from Community Edition to a Subscription
 
@@ -14,4 +14,4 @@ This section outlines the upgrade process from v2.2.x to v2.3.x for Diskover's s
 
 🚧 We're hard at work preparing these instructions. Thanks for your patience!
 
-🟨 &nbsp;Now that we have DiskoverAdmin for configuration management, the only `config_sample` folders that are needed are for `Diskoverd`.
+🟨 &nbsp;Now that we have [DiskoverAdmin](#config_diskoveradmin) for configuration management, the only `config_sample` folders that are needed are for `Diskoverd`.

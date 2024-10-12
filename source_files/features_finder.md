@@ -14,6 +14,9 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **Amazon MQ** | DiskoverAdmin<br>Configuration → System → Message Queue |
 | **Analytics Filters** | DiskoverAdmin<br>Configuration → Web → Analytics Filters |
 | **API** | DiskoverAdmin<br>Configuration → System → API |
+
+| **Authentication** default Diskover-Web | DiskoverAdmin<br>Configuration → Web |
+
 | **AutoClean** | DiskoverAdmin<br>Configuration → Plugins → Post Index → AutoClean |
 | **AutoTag** | DiskoverAdmin<br>Configuration → Plugins → Post Index → AutoTag |
 | **Azure** indexer | DiskoverAdmin<br>Configuration → Diskover → Alternate Indexers → Azure |
@@ -56,6 +59,9 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **LDAP** | DiskoverAdmin<br>Configuration → Web → LDAP | 
 | **License** | DiskoverAdmin<br>Configuration → License | 
 | **Live View** | DiskoverAdmin<br>Configuration → Plugins → File Actions → Live View | 
+
+
+
 | **Make Links** | DiskoverAdmin<br>Configuration → Plugins → File Actions → Make Links | 
 | **Media Info** | DiskoverAdmin<br>Configuration → Plugins → Index → Media Info | 
 | **Message Queue** | DiskoverAdmin<br>Configuration → System → Message Queue |
@@ -73,8 +79,11 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **Spectra** | DiskoverAdmin<br>Configuration → Plugins → File Actions → In Development → Spectra |
 | **Tag Copier** at time of index | DiskoverAdmin<br>Configuration → Plugins → Index → Tag Copier | 
 | **Tag Copier** post-index | DiskoverAdmin<br>Configuration → Plugins → Post Index → Tag Copier | 
-| **Tags Customization** | DiskoverAdmin<br>Configuration → Web → Custom Tags | Manual tags customization |
+| **Tags Customization** manual tags| DiskoverAdmin<br>Configuration → Web → Custom Tags |
 | **Time Zone Settings** | |
+
+| **Time Zone** for Indices | DiskoverAdmin<br>Configuration → Web |
+
 | **Top Paths** | DiskoverAdmin<br>Configuration → Web → Top Path Display |
 | **Unix Permissions** | DiskoverAdmin<br>Configuration → Plugins → Index → Unix Perms |
 | **Vantage** | DiskoverAdmin<br>Configuration → Plugins → File Actions → Vantage | 

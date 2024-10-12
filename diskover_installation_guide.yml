@@ -50,7 +50,6 @@ ordered_documents:
   - task_worker_intro.md
   - task_worker_linux.md
   - task_worker_windows.md
-  - task_worker_mac.md  
   - time_zone_settings.md
   - software_activation.md
   - config_after_install.md
@@ -73,7 +72,6 @@ ordered_documents:
   - uninstall_diskover_web.md
   - uninstall_task_worker.md
   - uninstall_indexers.md
-  - uninstall_diskover_on_mac.md
   - support.md
   - contact.md
   - copyright.md

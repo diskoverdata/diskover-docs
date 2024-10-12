@@ -29,8 +29,7 @@ ordered_documents:
   - features_finder.md
   - config_diskoveradmin_main.md
 
-index advanced
-auth
+
   
   - config_diskoveradmin_plugins_index.md
   - config_diskoveradmin_plugins_post_index.md
@@ -38,8 +37,11 @@ auth
   - config_plugins_manual.md
   - config_indexers_manual.md
 
-
+auth
   - indices_management.md
+
+index advanced
+
   
   - misc_chapter.md
   - visualization_tools.md

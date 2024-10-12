@@ -1,4 +1,4 @@
-___
+
 ### Diskover Indexer(s) Backup
 
 #### Diskover Indexer(s) Backup for Linux

@@ -13,7 +13,7 @@ Once all the components are installed, you will be able to refine your [Elastics
 
 Some links you might need:
 
-- [Set up a cluster](set_es_cluster)
+- [Set up a cluster](#set_es_cluster)
 - [Set up multiple clusters](#set_es_multi_cluster)
 - [Configure Elasticsearch SSL and authentication for use with Diskover]()
 - [Download the current release of Elasticsearch](https://www.elastic.co/downloads/elasticsearch)

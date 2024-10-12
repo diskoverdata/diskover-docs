@@ -1,6 +1,5 @@
-___
+
 ## Support and Resources for Community Edition
-___
 
 ### Slack Community Support
 

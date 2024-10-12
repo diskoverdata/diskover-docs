@@ -65,6 +65,8 @@ The following confirmation of successful index deletion will be displayed:
 
 ### Elasticsearch Index Management
 
+#### Overview
+
 Indices can be managed by policy and manually with Elasticsearch using curl from the command line. Indices can also be managed using [Kibana index management](https://www.elastic.co/kibana) which is not covered in this guide.
 
 🟨 &nbsp;Note that it may be easier and less prone to shell issues to put the JSON text (text after `-d` in the single quotes) into a file first and then use that file for `-d` using:

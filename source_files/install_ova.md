@@ -1,6 +1,5 @@
-___
+
 ## OVA Installation
-___
 
 This section contains instructions to quickly get up and running with Diskover using an OVA (Open Virtual Appliance) on VMware.
 

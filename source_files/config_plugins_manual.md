@@ -6,17 +6,17 @@
 
 All plugins will eventually be included in the [**DiskoverAdmin**](#config_diskoveradmin) panel, but a few are still only configurable manually.
 
-🟨  &nbsp;**IMPORTANT!** Please [open a support ticket](https://support.diskoverdata.com/) if you currently use one of these plugins and need to upgrade to v2.3+.
+🟨  &nbsp;**IMPORTANT!**:
 
-The plugins in this chapter are listed alphabetically, but here is a quick access list by category:
+  - Please [open a support ticket](https://support.diskoverdata.com/) if you currently use one of these plugins and need to upgrade to v2.3+.
+  - Visit our website [Plugins Ecosystem](https://diskoverdata.com/products/plugins/) webpage for a list of all our plugins.
+  - The plugins in this chapter are listed alphabetically, but here is a quick access list by category:
 
 | CATEGORY | PLUGIN |
 | --- | --- |
 | **Core** | <ul><li>[Hash Differential Checksums File Action Plugin](#plugin_hash_diff)</li><li>[Ngenea Data Orchestrator/Mover by PixitMedia File Action Plugin](#plugin_ngenea)</li><li>[Vcinity High-Speed Data Transfer File Action Plugin](#plugin_vcinity)</li></ul> |
 | **Media Edition** | <ul><li>[CineViewer Player by CineSys File Action Plugin](#plugin_cineviewer)</li><li>[Find File Sequences File Action Plugin](#plugin_find_file_sequences)</li><li>[Flow Production Tracking (formerly ShotGrid) Index Plugin](#plugin_shotgrid)</li><li>[IMF Package Validator by Oxagile File Action Plugin](#plugin_imf_validator)</li><li>[Telestream GLIM File Action Plugin](#plugin_glim)</li><li>[Xytech Asset Creation Index Plugin](#xytech_asset_creation)</li><li>[Xytech Order Status Index Plugin](#xytech_asset_creation)</li></ul> |
 | **Life Science Edition** | <ul><li>[BAM Info Index Plugin](#plugin_bam)</li><li>[Research Grant File Action Plugin](#plugin_grant)</li></ul> |
-
-🟨  &nbsp;Visit our website [Plugins Ecosystem](https://diskoverdata.com/products/plugins/) webpage for a list of all our plugins.
 
 <p id="plugin_bam"></p>
 

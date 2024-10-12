@@ -6,7 +6,7 @@
 
 ### Task Panel Overview
 
-#### Usage
+#### Use Cases
 
 The Task Panel can be used to schedule indexing tasks or run any custom task, such as data curation via the AutoClean plugin, copying files, running duplicate file findings, checking permissions on directories, etc.
 

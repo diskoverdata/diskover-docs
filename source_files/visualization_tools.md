@@ -1,6 +1,6 @@
-___
+<p id=“visualization_tools”></p>
+
 ## Third-Parties Analytics
-___
 
 You can optionally use third-party analytical tools, such as [Kibana](https://www.elastic.co/kibana), [Tableau](https://www.tableau.com), [Grafana](https://grafana.com), and [PowerBI](https://www.microsoft.com/en-us/power-platform/products/power-bi), to read the Elasticsearch metadata library besides Diskover-Web. Diskover does not technically support these optional tools, and only the installation of Kibana is described in this section.
 
@@ -61,7 +61,7 @@ autorefresh=1
 type=rpm-md
 ```
 
-🔴 &nbsp;Create the above elasticsearch.repo file in:
+🔴 &nbsp;Create the above `elasticsearch.repo` file in:
 ```
 /etc/yum.repos.d/ 
 ```

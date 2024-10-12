@@ -8,6 +8,11 @@ RabbitMQ or Amazon MQ serves as the messaging bus/queue system that communicates
 
 Once all components are installed, you will be able to [configure your messaging environment](#config_message_queue). We strongly recommend following the deployment order outlined in this guide.
 
+🟨 &nbsp;Addition guidelines for RabbitMQ management:
+
+  - [RabbitMQ RPM Installation Guide](https://www.rabbitmq.com/docs/install-rpm#cloudsmith)
+  - [RabbitMQ Default Configuration Guide](https://www.rabbitmq.com/docs/configure)
+
 ### RabbitMQ for Linux
 
 🔴 &nbsp;Configure yum repositories:
@@ -21,9 +26,13 @@ curl -s https://packagecloud.io/install/repositories/rabbitmq/erlang/script.rpm.
 yum -y install rabbitmq-server erlang
 ```
 
-🔴 &nbsp;Ensure the service starts and enable it):
+🔴 &nbsp;Ensure the service starts and enable it:
 ```
 systemctl start rabbitmq-server.service
+```
+
+🔴 &nbsp;If the above step failed, make sure the hosts hostame is pingable:
+```
 systemctl status rabbitmq-server.service
 systemctl enable rabbitmq-server.service
 ```
@@ -31,8 +40,8 @@ systemctl enable rabbitmq-server.service
 🔴 &nbsp;Configure RabbitMQ for use with Diskover:
 ```
 rabbitmq-plugins enable rabbitmq_management
-rabbitmqctl change_password guest darkdata                  (This will password not be used.  It is only to secure the guest account)
-rabbitmqctl add_user diskover darkdata                      (Feel free to chose your own user / pass)
+rabbitmqctl change_password guest darkdata                  (This will password not be used - it is only to secure the guest account)
+rabbitmqctl add_user diskover darkdata                      (Feel free to choose your own username/password)
 rabbitmqctl set_user_tags diskover administrator            (If you changed users, set it properly here and replace 'diskover')
 rabbitmqctl set_permissions -p / diskover ".*" ".*" ".*"    (If you changed users, set it properly here and replace 'diskover')
 ```

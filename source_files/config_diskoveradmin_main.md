@@ -7,6 +7,11 @@
 Most help information is available directly within the user interface. This section provides additional guidance to assist you during the configuration phase.
 
 
+- [ ] Mercury
+- [x] Venus
+- [x] Earth (Orbit/Moon)
+
+
 <p id=“config_diskover_web”></p>
 
 ___

@@ -1,6 +1,6 @@
-___
+<p id=“support”></p>
+
 ## Support
-___
 
 ### Support Options
 

@@ -1,6 +1,5 @@
-___
+
 ## Elasticsearch
-___
 
 ### AWS Elasticsearch Domain
 

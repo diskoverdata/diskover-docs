@@ -1,5 +1,5 @@
 
-## DiskoverAdmin Configuration | Index Plugins
+## Configuration | Index Plugins
 
 ### Overview
 
@@ -10,19 +10,110 @@ Most help information is available directly within the user interface. This sect
 <p id=“x”></p>
 
 ___
-### x
+### Checksums
 
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [AJA Diskover Media Edition Companion Guide]() |
-| Demo | [🍿 Watch Demo Video](https://vimeo.com/660789118) |
+| User Guide | [x]() |
+| Demo | [🍿 Watch Demo Video](x) |
 
-<details>
 
-<summary>📂 <strong>Open plugin overview details.</strong></summary>
+___
+### File Kind
 
-text
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [x]() |
+| Demo | [🍿 Watch Demo Video](x) |
 
-</details>
+
+___
+### First Index/Arrival Time
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [x]() |
+| Demo | [🍿 Watch Demo Video](x) |
+
+
+___
+### Grafana
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [x]() |
+| Demo | [🍿 Watch Demo Video](x) |
+
+
+___
+### Grafana Cloud
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [x]() |
+| Demo | [🍿 Watch Demo Video](x) |
+
+
+___
+### Media Info
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [x]() |
+| Demo | [🍿 Watch Demo Video](x) |
+
+
+___
+### Path Tokens
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [x]() |
+| Demo | [🍿 Watch Demo Video](x) |
+
+
+___
+### Tag Copier
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [x]() |
+| Demo | [🍿 Watch Demo Video](x) |
+
+
+___
+### Unix Perms
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [x]() |
+| Demo | [🍿 Watch Demo Video](x) |
+
+
+___
+### Windows Owner
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [x]() |
+| Demo | [🍿 Watch Demo Video](x) |

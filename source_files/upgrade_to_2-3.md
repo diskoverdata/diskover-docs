@@ -8,8 +8,10 @@
 
 <summary>📂 Overview</summary>
 <br>
+
 This section outlines the process of upgrading from the Diskover Community Edition to v2.3.x of an annual [subscription Edition](https://diskoverdata.com/solutions/).
 
+<br><br>
 </details>
 <details>
 
@@ -18,6 +20,7 @@ This section outlines the process of upgrading from the Diskover Community Editi
 
 🚧 We're hard at work preparing these instructions. Thanks for your patience!
 
+<br><br>
 </details>
 
 ### Upgrade from v2.2 Subscription to v2.3
@@ -31,6 +34,8 @@ This section breaks down the manual process for upgrading from a 2.2.x Diskover 
 <br>
 
 🟨 &nbsp;Now that we have [DiskoverAdmin](#config_diskoveradmin) for configuration management, the only `config_sample` folders that are needed are for `Diskoverd`.
+
+<br><br>
 </details>
 <details>
 
@@ -42,6 +47,7 @@ Before conducting this upgrade, you must ensure that both the Diskover-Web host 
   - [PyEnv GitHub repository](https://github.com/pyenv/pyenv)
   - [Diskover PyEnv configuration](#pyenv)
 
+<br><br>
 </details>
 <details>
 
@@ -55,6 +61,7 @@ There are no required changes for ElasticSearch in Diskover 2.3. Ideally, your e
   - [Prepare to upgrade from Elasticsearch v7](https://www.elastic.co/guide/en/elastic-stack/8.14/upgrading-elastic-stack.html#prepare-to-upgrade)
   - [Upgrade from Elasticsearch v7](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)
 
+<br><br>
 </details>
 <details>
 
@@ -106,13 +113,18 @@ cp /var/www/diskover-web-old/diskoverdb.sqlite3 /var/www/diskover-web/diskoverdb
 chown nginx.nginx /var/www/diskover-web/diskoverdb.sqlite3
 ```
 
+<br><br>
 </details>
 <details>
 
 <summary>📂 DiskoverAdmin Installation</summary>
 <br>
 
+#### Overview
+
 🟨 &nbsp;The DiskoverAdmin administration panel is a new service to the 2.3 branch of Diskover. This service **should ALWAYS be installed on the Diskover-Web host(s)**.
+
+#### DiskoverAdmin
 
 🔴 &nbsp;The artifact should contain **DiskoverAdmin 2.3**:
 ```
@@ -218,6 +230,7 @@ systemctl status diskover-admin
     INFO:     Started parent process [2390]
 ```
 
+<br><br>
 </details>
 <details>
 
@@ -286,11 +299,14 @@ python3 -m pip install -r requirements.txt
 
 🟨 &nbsp;Note that with the upgrade of Elasticsearch, Diskover-Web, and the Diskover indexers/workers, your v2.2 license keys will no longer work. Once you reach this point, send us a [license request](#hd_id).
 
+<br><br>
 </details>
 <details>
 
 <summary>📂 Install RabbitMQ or Amazon MQ</summary>
 <br>
+
+#### Overview
 
 RabbitMQ or Amazon MQ serves as the messaging bus/queue system that communicates with all Celery systems on your Diskover Worker nodes. We recommend installing this service on a dedicated standalone host.
 
@@ -355,11 +371,14 @@ http://$rabbitMQHost:15672/#/
 
 🚧 We're hard at work preparing these instructions. Thanks for your patience!
 
+<br><br>
 </details>
 <details>
 
 <summary>📂 Celery Installation</summary>
 <br>
+
+#### Overview
 
 This Celery component will need to be installed on each of your indexer/worker nodes.
 
@@ -429,7 +448,7 @@ cd /var/log/celery/
 
 🚧 We're hard at work preparing these instructions. Thanks for your patience!
 
-
+<br><br>
 </details>
 <details>
 
@@ -438,4 +457,5 @@ cd /var/log/celery/
 
 🔴 &nbsp;[Navigate to the **Initial Configuration** chapter to complete your v2.3 initial setup](#config_initial).
 
+<br><br>
 </details>

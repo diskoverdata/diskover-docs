@@ -16,6 +16,7 @@ The plugins in this chapter are listed alphabetically, but here is a quick acces
 | **Media Edition** | <ul><li>[CineViewer Player by CineSys File Action Plugin](#plugin_cineviewer)</li><li>[Find File Sequences File Action Plugin](#plugin_find_file_sequences)</li><li>[Flow Production Tracking (formerly ShotGrid) Index Plugin](#plugin_shotgrid)</li><li>[IMF Package Validator by Oxagile File Action Plugin](#plugin_imf_validator)</li><li>[Telestream GLIM File Action Plugin](#plugin_glim)</li><li>[Xytech Asset Creation Index Plugin](#xytech_asset_creation)</li><li>[Xytech Order Status Index Plugin](#xytech_asset_creation)</li></ul> |
 | **Life Science Edition** | <ul><li>[BAM Info Index Plugin](#plugin_bam)</li><li>[Research Grant File Action Plugin](#plugin_grant)</li></ul> |
 
+🟨  &nbsp;Visit our website [Plugins Ecosystem](https://diskoverdata.com/products/plugins/) webpage for a list of all our plugins.
 
 <p id="plugin_bam"></p>
 

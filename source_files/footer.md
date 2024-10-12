@@ -1,2 +1,2 @@
 ___
->© Diskover Data, Inc.
+© Diskover Data, Inc.

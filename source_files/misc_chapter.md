@@ -1,35 +1,69 @@
 
-## Everything Else Chapter
+## The Everything Else Chapter
 
 <p id=“pyenv”></p>
 
 ### PyEnv
 
-Example Global Installation
+<details>
 
+<summary>📂 Open PyEnv installation instructions.</summary>
 
+This section will guide you through the global installation of PyEnv. PyEnv lets you easily switch between multiple versions of Python. It’s simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.
 
-  (install git)
+🟨 &nbsp;**IMPORTANT!**
+
+  - PyEnv installs a Python environment on a per-user basis. Thus you must ensure to install the PyEnv as the user that is running the Diskover service.
+  - [PyEnv GitHub repository](https://github.com/pyenv/pyenv)
+
+🔴 &nbsp;Install git:
+```
 yum install git 
-  (install PyEnv)
-`curl https://pyenv.run | bash`
-  (add to .bashrc or .bash_profile)
+```
+🔴 &nbsp;Install PyEnv:
+```
+curl https://pyenv.run | bash
+```
+
+🔴 &nbsp;Add to `.bashrc` or `.bash_profile`:
+```
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-  (yum package installs)
-yum install gcc make patch zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel tk-devel libffi-devel xz-devel
-  (install Python version 3.12.4 using PyEnv)
-pyenv install 3.12.4
-  (display the PyEnv version currently in use)
-pyenv
-  (update Pyenv to the latest version)
-pyenv update
-  (show the currently active Python version managed by PyEnv)
-pyenv version
-  (list all Python versions installed via PyEnv)
-pyenv versions
-  (set Python 3.12.4 as the global (default) Python3 version)
-pyenv global 3.12.4
+```
 
-NOTE : PyEnv installs a Python environment on a per-user basis. Thus you must ensure to install the PyEnv as the user that is running the Diskover service! 
+🔴 &nbsp;`yum` package installs:
+```
+yum install gcc make patch zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel tk-devel libffi-devel xz-devel
+```
+
+🔴 &nbsp;Install Python version 3.12.4 using PyEnv:
+```
+pyenv install 3.12.4
+```
+display the PyEnv version currently in use)
+```
+pyenv
+```
+
+🔴 &nbsp;Update Pyenv to the latest version:
+```
+pyenv update
+```
+
+🔴 &nbsp;Show the currently active Python version managed by PyEnv:
+```
+pyenv version
+```
+
+🔴 &nbsp;List all Python versions installed via PyEnv:
+```
+pyenv versions
+```
+
+🔴 &nbsp;Set Python 3.12.4 as the global (default) Python3 version:
+```
+pyenv global 3.12.4
+```
+
+</details>

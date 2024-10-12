@@ -43,9 +43,9 @@ The BAM info plugin is designed to enable additional metadata collection for BAM
 
 New indices will use the plugin, and any SAM or BAM file will get additional info added to the Elasticsearch index’s **bam_info** field. The attributes provide the ability to view storage and file system content from a workflow perspective, for example, all the frame rates on any given storage.
 
-![Image: Diskover BAM Plugin Overview](images/diagram_diskover_plugin_bam.png)
+![Image: Diskover Grant Plugin Overview](images/diagram_diskover_plugin_grant.png)
 
-_[Click here for a full-screen view of this image.](images/diagram_diskover_plugin_bam.png)_
+_[Click here for a full-screen view of this image.](images/diagram_diskover_plugin_grant.png)_
 
 #### BAM Info Fields in Diskover-Web
 

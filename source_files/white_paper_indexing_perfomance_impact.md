@@ -65,7 +65,7 @@ The storage infrastructure consisted of IBM SpectrumScale file system with three
 ![Image](images/white_paper_diskover_performance_impact_testing_image_6.png)
 
 
-## Test 1: Resolve Playback on NVME Based Storage
+## Test 1 | Resolve Playback on NVME Based Storage
 
 
 Based on the methodology described earlier of determining the maximum consistent playback thru the resolve application, it was determined that the underlying NVME storage infrastructure could sustain 34 frames per second with the uncompressed 4K media clip.
@@ -84,12 +84,12 @@ With media clip playback in progress, the Diskover indexing process of the NVME 
 
 ![Image](images/white_paper_diskover_performance_impact_testing_image_9.png)
 
-### Results: Resolve Playback on NVME Based Storage
+### Results | Resolve Playback on NVME Based Storage
 
 Based on the test results, the Diskover indexer process resulted in no performance degradation to playback when using the Resolve application for playback on NVME based storage.
 
 
-## Test 2: Resolve Playback on Nearline SAS Based Storage
+## Test 2 | Resolve Playback on Nearline SAS Based Storage
 
 Based on the methodology described earlier of determining the maximum consistent playback thru the resolve application, it was determined that the underlying Nearline SAS storage infrastructure could sustain 19 frames per second with the uncompressed 4K media clip.
 
@@ -105,11 +105,11 @@ With media clip playback in progress, the Diskover indexing process of the Nearl
 
 ![Image](images/white_paper_diskover_performance_impact_testing_image_12.png)
 
-### Results: Resolve Playback on Nearline SAS Based Storage
+### Results| Resolve Playback on Nearline SAS Based Storage
 
 Based on the test results, the Diskover indexer process resulted in no performance degradation to playback when using the Resolve application for playback on Nearline SAS based storage.
 
-## SGI  _frametest_  Test Methodology and Results
+## SGI _frametest_  Test Methodology and Results
 
 
 The  _frametest_ application can be used to generate streaming workload for SD/HD/2K/4K formats of video streams, for testing purposes a 4K frame size was used to align with previous DaVinci Resolve testing. Each frame is stored in a separate file. The  _frametest_  tests simulate streaming applications and encompassed both reading and writing video streams for the purpose of measuring any performance degradation due to the Diskover indexing process. To measure any performance impact of Diskover indexing process, a comparison of total number of frames dropped (out of 10,000 frames) will be used. Any measurable performance load created by the Diskover indexing process will manifest in more frames dropped.
@@ -227,7 +227,7 @@ python3 Diskover.py -i Diskover-frametest-2020111009 /mnt/mmsf1/NLSAS`
 During the 4K read tests, both the Diskover indexing process dropped a total of 49 frames and the read test without indexing dropped a total of 49 frames. Therefore, there was zero performance impact of the Diskover indexing process.
 
 
-## Conclusion - Overall Findings
+## Conclusion | Overall Findings
 
 
 There were a total of 4 different test scenarios using 2 different application test environments:

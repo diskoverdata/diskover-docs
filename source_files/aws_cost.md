@@ -1,6 +1,5 @@
-___
+
 ## Cost Components
-___
 
 ### AWS Costs
 

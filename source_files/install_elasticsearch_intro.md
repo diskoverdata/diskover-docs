@@ -1,6 +1,5 @@
-___
+
 ## Elasticsearch Installation
-___
 
 ### Introduction
 

@@ -14,6 +14,8 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **Amazon MQ** | System → Message Queue | |
 | **Analytics Filters** | Web → Analytics Filters | |
 | **API** | System → API | |
+| **Arrival Time Plugin** | Plugins → Index → First Index Time | |
+| **Atempo Miria** alt indexer | | [Atempo Alternate Indexer](#alt_indexer_atempo) |
 | **Authentication by default for Diskover-Web** | Web → General | |
 | **Authentication LDAP** | Web → LDAP | |
 | **Authentication OAuth** | Web → OAUTH | |
@@ -32,10 +34,12 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **Cost** at time of index | Diskover → Configurations → Default | |
 | **Cost Plugin** post-index | Plugins → Post Index → Costs | |
 | **Daemon** for indexers | DiskoverD → Default | |
+| **Dell PowerScale** alt indexer | | [Dell PowerScale Alternate Indexer](#alt_indexer_dell) |
 | **DirCache** alt indexer | Diskover → Alternate Indexers → DirCache | |
 | **Diskover** indexers | Diskover → Configurations → Default | |
 | **DiskoverD** daemons | DiskoverD → Default | |
 | **Diskover-Web** | Web → General | |
+| **Dropbox** alt indexer | | [Dropbox Alternate Indexer](#alt_indexer_dropbox) |
 | **Dupes Finder Plugin** | Plugins → Post Index → Dupes Finder | |
 | **EDL Check Plugin** | Plugins → File Actions → In Development → EDL Check | |
 | **EDL Download Plugin** | Plugins → File Actions → In Development → EDL Download | | 
@@ -49,8 +53,10 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **File Kind Plugin** | Plugins → Index → File Kind | |
 | **File Types** | Web → File Types | |
 | **Find File Sequences Plugin** | | [Find File Sequences File Action Plugin](#plugin_find_file_sequences) |
-| **First Index time Plugin** | Plugins → Index → First Index Time |
+| **First Index Time Plugin** | Plugins → Index → First Index Time | |
 | **Fix Permissions Plugin** | Plugins → File Actions → In Development → Fix Permissions | |
+| **Flow Production Tracking Plugin** formerly ShotGrid | | [Flow Production Tracking Plugin](#plugin_shotgrid) |
+| **FTP** alt indexer | | [FTP Alternate Indexer](#alt_indexer_ftp) |
 | **GLIM Plugin** | | [Telestream GLIM File Action Plugin](#plugin_glim) |
 | **Grafana Plugin** | Plugins → Index → Grafana | |
 | **Grafana Cloud Plugin** | Plugins → Index → Grafana Cloud | |
@@ -63,6 +69,7 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **Index Differential Plugin** | Plugins → Post Index → Index Diff | |
 | **Index Mapping** | Web → Index Access | |
 | **Indexers** | Diskover → Configurations → Default | |
+| **JSON/CSV text** alt indexer | | [JSON/CSV Generic Text Alternate Indexer](#alt_indexer_json) |
 | **LDAP** | Web → LDAP | |
 | **License** | License | |
 | **Live View Plugin** | Plugins → File Actions → Live View | |
@@ -73,12 +80,14 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **OAuth** | Web → OAUTH | |
 | **Offline Media** alt indexer | Diskover → Alternate Indexers → Offline Media | |
 | **Okta** | Web → OAUTH | |
+| **OneDrive/SharePoint** alt indexer | | [Microsoft OneDrive and SharePoint Alternate Indexer](#alt_indexer_onedrive) |
 | **Path Tokens Plugin** | Plugins → Index → Path Tokens | |
 | **Path Translation** | Web → Path Translations | |
 | **PDF Viewer Plugin** | Plugins → File Actions → PDF | |
 | **RabbitMQ** | System → Message Queue | |
 | **Rclone Plugin** | Plugins → File Actions → Rclone | |
 | **S3** AWS and non-AWS alt indexer | Diskover → Alternate Indexers → S3 | |
+| **ShotGrid** now Flow Production Tracking Plugin | | [Flow Production Tracking Plugin](#plugin_shotgrid) |
 | **SMTP** | System → SMTP | |
 | **Spectra Plugin** | Plugins → File Actions → In Development → Spectra | |
 | **Tag Copier** at time of index | Plugins → Index → Tag Copier | |

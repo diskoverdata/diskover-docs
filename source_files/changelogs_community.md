@@ -1,6 +1,5 @@
-___
+
 ## Changelogs - Community Edition
-___
 
 ### Diskover v2 Community Edition Changelog
 

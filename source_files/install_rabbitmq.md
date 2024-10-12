@@ -8,7 +8,7 @@ RabbitMQ or Amazon MQ serves as the messaging bus/queue system that communicates
 
 Once all components are installed, you will be able to [configure your messaging environment](#config_message_queue). We strongly recommend following the deployment order outlined in this guide.
 
-🟨 &nbsp;Addition guidelines for RabbitMQ management:
+🟨 &nbsp;Additional guidelines for RabbitMQ management:
 
   - [RabbitMQ RPM Installation Guide](https://www.rabbitmq.com/docs/install-rpm#cloudsmith)
   - [RabbitMQ Default Configuration Guide](https://www.rabbitmq.com/docs/configure)

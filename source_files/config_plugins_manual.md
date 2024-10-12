@@ -20,6 +20,7 @@ All plugins will eventually be included in the [**DiskoverAdmin**](#config_disko
 
 <p id="plugin_bam"></p>
 
+
 ___
 ### BAM Info | Index Plugin
 
@@ -30,10 +31,6 @@ ___
 | To learn more | [Visit our website](https://diskoverdata.com/products/life-science-edition/#bam-plugin) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | User Guide | [Diskover Life Science Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/#bam-harvest-plugin) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/678914314?share=copy) |
-
-<details>
-
-<summary>📂 <strong>Open plugin overview details.</strong></summary>
 
 #### Overview
 
@@ -68,9 +65,8 @@ bam_info.pg.vn:
 
 ![Image: BAM Info Detailed View in File Attributes](images/plugin_bam_attributes_window.png)
 
-</details>
-
 <p id=“plugin_cineviewer”></p>
+
 
 ___
 ### CineViewer Player by CineSys | File Action Plugin
@@ -82,10 +78,6 @@ ___
 | To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#cineviewer) and/or [contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#cineviewer-player) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/765285042?share=copy) |
-
-<details>
-
-<summary>📂 <strong>Open plugin overview details.</strong></summary>
 
 #### Overview
 
@@ -106,10 +98,6 @@ The CineViewer Player is developed by [CineSys LLC](https://cinesys.io/), a majo
 **Browsers:** Chrome, Safari, Firefox
 
 **File Formats:** The video player uses FFMPEG under the hood for real-time transcoding of creative content. CineViewer supports a wide range of file types and codecs including Animation, AVC-Intra, AVI, Cineform, DNxHD, DNxHR, DV, DVCPPRO HD, H.264, HEVC/H.265, IMX, MKV, MOV/QT, MP4/M4V, MPEG/M2V/MPG, TS, MPEG-2, MXF, OGG, ProRes, OGG, ProRes, VP-8, VP-9, WebM
-
-<details>
-
-<summary>📂 <strong></strong>Open Installation Instruction Details (may vary depending on your environment).</strong></summary>
 
 #### CineViewer Installation Instructions
   
@@ -458,9 +446,9 @@ to your local `diskover`:
 
 <img src="images/image_file_action_cineviewer_search_diskover_search_results.jpg " width="500">
 
-<p id=“plugin_find_file_sequences”></p>
 
-</details></details>
+
+<p id=“plugin_find_file_sequences”></p>
 
 ___
 ### Find File Sequences | File Action Plugin
@@ -472,15 +460,11 @@ ___
 | To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#file-sequences) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#find-file-sequences) |
 
-<details>
-
-<summary>📂 <strong>Open plugin overview details.</strong></summary>
-
 The File Sequence web plugin File Action is designed to list out any file sequences in a directory or from a single file in a sequence. File sequences are printed out with `%08d` to show the 0 padding and number of digits in the sequence. Each sequence, whole or broken, are put into a [ ] list. [Learn more about this plugin](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#find-file-sequences).
 
 ![Image: File Sequences Results](images/image_file_action_results_tech.png)
 
-</details>
+
 
 <p id="plugin_shotgrid"></p>
 
@@ -494,13 +478,7 @@ ___
 | To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#flowprodtracking) and/or [contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#flow-production-tracking-plugin) |
 
-<details>
-
-<summary>📂 <strong>Open plugin overview details.</strong></summary>
-
 Designed to enhance basic metadata with detailed production status information, aligning data management with production schedules. The Diskover Flow Production Tracking Plugin harvests additional attributes from the [Autodesk Flow Production Tracking platform](https://www.autodesk.com/products/flow-production-tracking/) for every shot directory located on storage. These attributes become properties of the shot directories and include status information such as finaled, out-of-picture, multiple project tracking dates, and many more, totaling around one hundred indexable fields. Note that users can opt to only index the fields that are relevant to their business.
-
-</details>
 
 <p id=“plugin_grant”></p>
 
@@ -513,10 +491,6 @@ ___
 | To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
 | To learn more | [Visit our website](https://diskoverdata.com/products/life-science-edition/#grant-plugin) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 
-<details>
-
-<summary>📂 <strong>Open plugin overview details.</strong></summary>
-
 The Grant Plugin has a dual purpose 1) assisting research institutes in managing their grants/members/storage costs internally, and 2) fulfilling the requirements for the new NIH DMS Policy.
 
 The Grant Plugin collects and parses grants’ metadata (grant number, group ID, etc.) to curated datasets. In turn, staff associated with a specific grant has visibility/searchability of their limited data/grant without access to the source files or other grants. That extra metadata is also available to use for further workflow automation if needed.
@@ -525,7 +499,7 @@ The Grant Plugin collects and parses grants’ metadata (grant number, group ID,
 
 _[Click here for a full-screen view of this image.](images/diagram_diskover_plugin_grant.png.png)_
 
-</details>
+
 
 <p id=“plugin_hash_diff”></p>
 
@@ -539,10 +513,6 @@ ___
 | To learn more | [Visit our website](https://diskoverdata.com/products/plugins/#data-integrity) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/768967081) |
 
-<details>
-
-<summary>📂 <strong>Open plugin overview details.</strong></summary>
-
 The Xytech Media Operations Platform order status plugin is designed to automate the correlation of the order management system and the storage system, by harvesting key business context from Xytech and applying that context within the AJA Diskover Media Edition. In turn, this business context metadata can be used to automate workflows, curate data, monitor costs, create highly customized reports, and search granularly.
 
 Facilities often manually correlate the order management system with the storage repositories. However, manual processes are subject to human errors and difficult to scale as the volume of media orders and data turnover increases constantly.
@@ -551,7 +521,7 @@ Therefore, the lack of integration for file-based workflows between the order ma
 
 An instance of key information might be the invoice date for a work order. A status change for a work order can be aa key indicator for data management, for example, once a Xytech media order has been “invoiced”, then the data associated with that media order can be a candidate for archival.
 
-</details>
+
 
 <p id=“plugin_imf_validator”></p>
 
@@ -565,10 +535,6 @@ ___
 | To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#imf-package-validator) and/or [contact Oxagile](mailto:IMF@Oxagile.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#imf-package-validator) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/828166808) |
-
-<details>
-
-<summary>📂 <strong>Open plugin overview details.</strong></summary>
 
 #### Overview
 
@@ -596,8 +562,6 @@ The following are the limitations of the current plugin version:
 4.	Archives are not supported.
 5.	DCP packages are not supported.
 
-</details>
-
 <p id=“plugin_ngenea”></p>
 
 ___
@@ -610,13 +574,7 @@ ___
 | To learn more | Download this [Solution Brief](https://diskoverdata.com/wp-content/uploads/2024/08/diskover_pixitmedia_ngenea_solution_brief.pdf) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/833500176?share=copy) |
 
-<details>
-
-<summary>📂 <strong>Open plugin overview details.</strong></summary>
-
 With the Ngenea Data Orchestrator File Action, authorized users can quickly and securely transport data, directly from the Diskover UI, to and from globally distributed cloud, object storage, traditional NAS files, and tape resources, automatically moving data into the ‘right cost’ resource according to value and usage as your work teams and business needs demand.
-
-</details>
 
 <p id=“plugin_vcinity”></p>
 
@@ -630,17 +588,13 @@ ___
 | To learn more | Download this [Solution Brief](https://diskoverdata.com/wp-content/uploads/2024/05/Diskover_Data_SB.pdf) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | Demo | [🍿 Watch Demo Video](https://youtu.be/l1XZoe-ZtEI) |
 
-<details>
-
-<summary>📂 <strong>Open plugin overview details.</strong></summary>
-
 Regardless of distance and latency, the high-speed data transfer Vcinity Plugin provides the framework for reliable and fast data movement based on pre-configured source and destination profiles. 
 
 The plugin can move NFS, SMB, and S3 to any NFS, SMB, and S3 vendor, no matter the brand, ex: Dell, NetApp, HPE, etc.
 
 The Vcinity High-Speed Data Transfer Plugin provides two mechanisms within Diskover to trigger data movement: 1) on-demand user-initiated file action directly from the Diskover interface, and 2) scheduled automated workflow based on file attributes meeting predetermined criteria.
 
-</details>
+
 
 <p id=“plugin_glim”></p>
 
@@ -655,13 +609,9 @@ ___
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#glim-previewvalidate-media-files) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/665037937) |
 
-<details>
-
-<summary>📂 <strong>Open plugin overview details.</strong></summary>
-
 This plugin results in a seamless integration with GLIM, allowing end-users to safely view and validate media files, while safeguarding your source assets and production network. Diskover allows users to do advanced searches of media assets, and then launch GLIM in one click via our File Actions. You need to have a GLIM account and be logged in previously to launch the GLIM preview plugin within Diskover.
 
-</details>
+
 
 <p id=“plugin_xytech_asset_creation”></p>
 
@@ -676,13 +626,9 @@ ___
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-asset-creation-plugin-overview) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/660789118) |
 
-<details>
+Post facilities often have customers’ assets that have been archived and lack findability, visibility, and searchability, and therefore, the opaque nature of these assets makes them difficult to reuse or repurpose. Companies with years of such archived assets have often stored these on tape media or removable hard drives, which are often stored in a physical vault.
 
-<summary>📂 <strong>Open plugin overview details.</strong></summary>
-
-Post facilities often have customers’ assets that have been archived and lack findability, visibility, searchability, and therefore the opaque nature of these assets makes them difficult to reuse or repurpose. Companies, with years of such archived assets, have often stored these on tape media or removable hard drives which are often stored in a physical vault.
-
-Assets were often stored on such “offline” media due to costs, however, with the advent of cloud and object storage, the economics are now making it viable to store such vaulted assets on more “online media”. Although, simply putting these assets onto online media does not necessarily make these assets findable in context or within the facility’s order management system.
+Assets were often stored on such “offline” media due to costs; however, with the advent of cloud and object storage, the economics are now making it viable to store such vaulted assets on more “online media”. Although, simply putting these assets onto online media does not necessarily make these assets findable in context or within the facility’s order management system.
 
 The Xytech asset creation tool is designed to find and index newly restored online assets from LTO tapes, removable hard drives, etc., making them available, findable, and searchable within the Xytech order management system, as well as Diskover.
 
@@ -690,7 +636,7 @@ The plugin operates on the assumption that the assets restored to online media a
 
 The path location is added to the asset within Xytech and the asset number is assigned to the file via a tag within the Diskover Index.
 
-</details>
+
 
 <p id=“plugin_xytech_order_status”></p>
 
@@ -705,10 +651,6 @@ ___
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-order-status-plugin-overview) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/768967081) |
 
-<details>
-
-<summary>📂 <strong>Open plugin overview details.</strong></summary>
-
 The Xytech Media Operations Platform order status plugin is designed to automate the correlation of the order management system and the storage system, by harvesting key business context from Xytech and applying that context within the AJA Diskover Media Edition. In turn, this business context metadata can be used to automate workflows, curate data, monitor costs, create highly customized reports, and search granularly.
 
 Facilities often manually correlate the order management system with the storage repositories. However, manual processes are subject to human errors and difficult to scale as the volume of media orders and data turnover increases constantly.
@@ -717,4 +659,3 @@ Therefore, the lack of integration for file-based workflows between the order ma
 
 An instance of key information might be the invoice date for a work order. A status change for a work order can be aa key indicator for data management, for example, once a Xytech media order has been “invoiced”, then the data associated with that media order can be a candidate for archival.
 
-</details>

@@ -1,6 +1,6 @@
-<p id=“x”>task_panel</p>
+<p id=“task_panel”></p>
 
-## Task Management via Task Panel
+## Tasks Management via Task Panel
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
@@ -54,7 +54,7 @@ The Task History keeps a log of completed tasks, allowing you to review past tas
 
 #### Templates Tab
 
-Default indexing tasks are available in the **Templates** tab of the Task Panel, for both [Posix File System Indexing]() and [S3 Bucket Indexing](). 
+Default indexing tasks are available in the **Templates** tab of the Task Panel, for both [Posix File System Indexing](#config_indexers) and [S3 Bucket Indexing](#config_alt_indexer_s3). 
 
 Also, when creating a new task, you have the option at the bottom of the page to save the settings as a template. This is particularly useful if you have multiple similar repositories to index, as it allows you to reuse the same configuration for future tasks. 
 
@@ -84,11 +84,11 @@ The Workers tab shows the status and performance of task workers, which are resp
 | **Name** | Assing a custom name to your **task**. Note that this name is not related to any configuration in the DiskoverAdmin panel. |
 | **Description** | You can enter a detailed description for this indexing task. |
 | **Crawl Directory(s)** | Specify top path where to start the crawl, for example: **/mnt/snfs2** or **/home** |
-| **Alt Scanner** | Enter the name of an [alternate indexer]() if applicable for this task, for example: scandir_s3, scandir_azure, scandir_offline_media. You can [configure your alternate indexers via the DiskoverAdmin panel]().<br><img src="images/diskoveradmin_menu_alt_cache.png" width="800"> |
-| **Use DirCache** | Check this box to optimize future scanning, make sure to [configure DirCache accordingly in the DiskoverAdmin panel](). Note that this box is just a shortcut as entering **scandir_dircache** in the field above will do the same. |
+| **Alt Scanner** | Enter the name of an [alternate indexer](#config_alt_indexers) if applicable for this task, for example: scandir_s3, scandir_azure, scandir_offline_media. You can [configure your alternate indexers via the DiskoverAdmin panel](#config_alt_indexers).<br><img src="images/diskoveradmin_menu_alt_cache.png" width="800"> |
+| **Use DirCache** | Check this box to optimize future scanning, make sure to [configure DirCache accordingly in the DiskoverAdmin panel](#config_alt_indexer_dircache). Note that this box is just a shortcut as entering **scandir_dircache** in the field above will do the same. |
 | **CLI Options/Flags** | Allows users to fine-tune tasks directly through additional parameters, providing more control over how the indexing runs. Follow the help instructions in the interface. |
 | **Auto Index Name** | Check this box for Diskover to assign a name to your index using the format **diskover-_toppath_-_datetime_** |
-| **Custom Index Name** | Assign a custom name to your **index** and read the help text in the interface for guidance. Note that this name has no correlation with the [indexer's name in the DiskoverAdmin panel](). |
+| **Custom Index Name** | Assign a custom name to your **index** and read the help text in the interface for guidance. Note that this name has no correlation with the [indexer's name in the DiskoverAdmin panel](#config_indexers). |
 | **Overwrite Existing** | Checking that box will delete any existing index with the same name and create a new index. |
 | **Add to Index** | To add paths to an existing index. Requires a custom index name for this to work. |
 | **Use Default Config** | This field correlates with the configured indexer(s) in the DiskoverAdmin Panel. Check this box if you only have one indexer for which the name was left at **Default**. |
@@ -170,7 +170,7 @@ Indexing tasks for non-AWS S3 buckets is slightly different than the previous se
 
 - Where **profile** is the name of **_desired_profile_**, as found in **/root/.aws/credentials** (where **_desired_profile_** in this example is **wasabi-us**)
 
-- Where **_alternate_endpoint.com_** is the URL of the S3 bucket (where **_alternate_endpoint.com_** in this example is **https://s3.us-central-1.wasabisys.com**)
+- Where **_alternate_endpoint.com_** is the URL of the S3 bucket - where **_alternate_endpoint.com_** in this example is **`https://s3.us-central-1.wasabisys.com`**)
 ```
 AWS_PROFILE=profile,S3_ENDPOINT_URL=https://alternate_endpoint.com
 ```

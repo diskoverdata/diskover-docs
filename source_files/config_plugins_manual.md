@@ -9,7 +9,7 @@ All plugins will eventually be included in the [**DiskoverAdmin**](#config_disko
 🟨  &nbsp;**IMPORTANT!**
 
   - Please [open a support ticket](https://support.diskoverdata.com/) if you currently use one of these plugins and need to upgrade to v2.3+.
-  - Visit our website [Plugins Ecosystem](https://diskoverdata.com/products/plugins/) webpage for a list of all our plugins.
+  - Visit our [Plugins Ecosystem](https://diskoverdata.com/products/plugins/) webpage for a list of all our plugins.
   - The plugins in this chapter are listed alphabetically, but here is a quick access list by category:
 
 | CATEGORY | PLUGIN |

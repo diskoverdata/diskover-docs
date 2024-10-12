@@ -44,6 +44,8 @@ scp -i <path to PEM file> <path to diskover.zip> rocky@bastion-IP:~/
 
 #### Python Installation
 
+This section covers installing Python v3.12 and configuring it as the main Python 3 executable. Alternatively, use a [PyEnv](#pyenv) Python Environments. Additionally, some steps here, such as symlinking to the main Python 3 executable, might not be advisable if this system is used for other Python-based programs.
+
 🔴 &nbsp;Install Python:
 ```
 yum -y install python3.12 python3.12-devel gcc

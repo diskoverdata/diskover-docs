@@ -8,7 +8,7 @@ Diskover has partnered with [Zendesk](https://diskoverdata.zendesk.com/) to enha
 - **Self-Service Options**: Find answers quickly with an extensive, searchable knowledge base.
 - **Diskover Community**: Share, learn, and connect with other awesome Diskover users.
   
-___
+
 ## Create a Zendesk Account
 
 Creating an account is unfortunately unavoidable, but will only take a few minutes.
@@ -55,7 +55,6 @@ Creating an account is unfortunately unavoidable, but will only take a few minut
 | 4 | **Diskover Community** | Access the [Community space](https://support.diskoverdata.com/hc/en-us/community/topics) by clicking **Join the conversation** or **Community** in the top menu |
 | 5 | **Your profile** | The drop-down list will offer the following options:<br>- **Profile**: To see/edit your profile information<br>- **Requests**: To see/access your support tickets<br>- **Activities**: To see/access your contributions to Diskover Community<br>- **Change password**<br>- **Sign out**
 
-___
 ## Create a Support Ticket
 
 ### Step 1 | Create a New Ticket
@@ -105,12 +104,10 @@ Once you click **Submit**, you will get a confirmation of your ticket informatio
 2. You will get email notifications anytime the status is changed, collaborative exchanges, etc.
 3. The problem/solution to your ticket may be anonymously added to our knowledge base for future use if our support team evaluates that it can help someone else.
 
-___
 ## Troubleshooting via Zendesk Knowledge Base
 
 We already have key troubleshooting articles providing self-help in [Zendesk](https://diskoverdata.zendesk.com/). What we are very excited about is that ticket problems/resolutions may be used to grow the knowledge base, offering a rich catalog of ready-to-go answers.
 
-___
 ## Diskover Community
 
 [Zendesk](https://diskoverdata.zendesk.com/) offers a [Community space](https://support.diskoverdata.com/hc/en-us/community/topics) where all Diskover users can share, learn, and collaborate.

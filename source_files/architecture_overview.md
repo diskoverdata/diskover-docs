@@ -24,7 +24,7 @@ _[Click here for a full screen view of the Diskover Architecture Overview diagra
 
 ### Diskover Config Architecture Overview
 
-It is recommended to separate the Elasticsearch node/cluster, web server, and indexing host(s).
+It is highly recommended to separate the Elasticsearch node/cluster, web server, and indexing host(s).
 
 ___
 ![Image: Diskover Reference Diagram Architecture](images/diskover_config_template.png)

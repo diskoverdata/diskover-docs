@@ -1,6 +1,5 @@
-___
+
 ## Technical Support and Resources
-___
 
 ### Troubleshooting
 

@@ -4,7 +4,7 @@
 
 This chapter discusses setting up authenticated user access to Diskover-Web.
 
-___
+
 ### Local User Configuration
 
 Diskover-Web currently has two local users: 1) admin, and 2) data user. To change the login details for the two sets of users:

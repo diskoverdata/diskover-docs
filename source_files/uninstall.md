@@ -1,6 +1,6 @@
-___
+<p id=“uninstall”></p>
+
 ## Uninstall Diskover
-___
 
 The following outlines how to uninstall the Diskover's components.
 
@@ -13,7 +13,7 @@ rpm -qa | grep elastic
 
 ![Image: Determine Elasticsearch Version](images/image_uninstall_elasticsearch_determine_version.png)
 
-🔴 &nbsp;In the above example, remove **elasticsearch-7.10.1-1.x86_64**. 🚧 Note that instructions for Elaticsearch v8 are coming soon:
+🔴 &nbsp;In the above example, remove **elasticsearch-7.10.1-1.x86_64**. 🚧 Note that instructions for Elaticsearch v8 are being prepared:
 ```
 rpm -e elasticsearch-7.10.1-1.x86_64
 ```
@@ -27,7 +27,7 @@ rpm -e elasticsearch-7.10.1-1.x86_64
 rpm -qa | grep php-fpm
 ```
 
-🔴 &nbsp;In the previous example, remove **php-fpm-7.3.26-1.el7.remi.x86_64**. 🚧 Note that instructions for PHP v8 are coming soon:
+🔴 &nbsp;In the previous example, remove **php-fpm-7.3.26-1.el7.remi.x86_64**. 🚧 Note that instructions for PHP v8 are being prepared:
 
 ```
 rpm -e php-fpm-7.3.26-1.el7.remi.x86_64

@@ -1,6 +1,5 @@
-___
+
 ## User Interface
-___
 
 #### Customized settings are gone
 

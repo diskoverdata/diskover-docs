@@ -1,6 +1,5 @@
-___
+
 ## Multi-Node Elasticsearch Setup
-___
 
 This section will guide you through setting up an Elasticsearch cluster with multiple nodes.
 

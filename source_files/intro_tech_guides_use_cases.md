@@ -1,6 +1,6 @@
 ### Diskover Use Cases
 
-Diskover addresses unstructured data stored across various storage repositories. Data curation encompasses the manual and automated processes needed for principled and controlled data creation, maintenance, cleanup, and management, together with the capacity to [add value to data](#hd_id). 
+Diskover addresses unstructured data stored across various storage repositories. Data curation encompasses the manual and automated processes needed for principled and controlled data creation, maintenance, cleanup, and management, together with the capacity to add value to data. 
 
 #### System Administrators
 

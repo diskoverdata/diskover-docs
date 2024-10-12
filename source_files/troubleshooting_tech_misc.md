@@ -1,6 +1,5 @@
-___
+
 ## Miscellaneous
-___
 
 ### Config Error
 

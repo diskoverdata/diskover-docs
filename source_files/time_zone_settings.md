@@ -1,6 +1,6 @@
-___
+
 ## Setting Time Zones
-___
+
 
 ### OS Date/Time
 

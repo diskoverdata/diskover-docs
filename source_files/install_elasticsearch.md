@@ -156,13 +156,13 @@ curl -XGET -u elastic:password https://${ESHOST}:9200/_cluster/health?pretty --c
 }
 ```
 
-### Multiple Nodes Environment
+### Multiple Nodes Installation
 
 If you have more than 1 node in your environment, redo all the [Single Node Installation](#install_es_node) steps for each node/system.
 
 <p id=“set_es_cluster”></p>
 
-### Setting Up a Cluster
+### Cluster Setup
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
@@ -192,7 +192,7 @@ Escape character is '^]'.
 
 - If you see **Connection Refused**, you should validate if [**SELinux** and **Firewalld** are disabled and off](#disable_selinux), respectively.
 
-#### Cluster Setup
+#### Cluster Environment Setup
 
 🔴 &nbsp;Run DNF updates:
 ```
@@ -272,7 +272,7 @@ sudo systemctl start elasticsearch
 
 <p id=“set_es_multi_cluster”></p>
 
-### Setting Up a Multiple Cluster Environment
+### Multiple Cluster Environment Setup
 
 <img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 

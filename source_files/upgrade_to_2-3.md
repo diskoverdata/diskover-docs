@@ -320,26 +320,21 @@ http://$rabbitMQHost:15672/#/
 
 #### Celery Installation
 
-#### Overview
+##### Overview
 
 This Celery component will need to be installed on each of your indexer/worker nodes.
 
 🟨 &nbsp;[Additional Celery documentation](https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html)
 
 
-#### Celery for Linux
+##### Celery for Linux
 
 🔴 &nbsp;Install celery:
 ```
 python3 -m pip install celery
-```
-
-🔴 &nbsp;Update the celery config python script:
-```
-vi /opt/diskover/diskover_celery/celeryconfig.py
-  * Edit ES_HOST and other ES based information to match your system
-  * Edit broker_url to be your RabbitMQ user:password@host
-```
+which celery
+  -- /usr/local/bin/celery
+ ```
 
 🔴 &nbsp;Copy in the default Celery config file:
 ```
@@ -351,7 +346,7 @@ cp /opt/diskover/diskover_celery/etc/celery.conf /etc/
 cp /opt/diskover/diskover_celery/etc/celery.service /etc/systemd/system/
 ```
 
-🔴 &nbsp;Create celery log/run directories:
+🔴 &nbsp;Create Celery log/run directories:
 ```
 mkdir /var/log/celery; chmod 777 /var/log/celery
 mkdir /var/run/celery; chmod 777 /var/run/celery
@@ -363,11 +358,22 @@ cd /opt/diskover/diskover_celery/etc
 python3 -m pip install -r requirements.txt
 ```
 
+🔴 &nbsp;Set permissions and enable the service:
+```
+chmod 644 /etc/systemd/system/celery.service
+systemctl daemon-reload
+systemctl enable celery
+```
+
+
 🔴 &nbsp;Let's start up and enable the service. Run the Celery service manually to see if any errors pop up:
 ```
 cd /opt/diskover/
 celery -A diskover_celery.worker worker
-** When you see the following, you know your Celery service has come online:
+```
+
+🟨 &nbsp;When you see something like this, you know your Celery service has come online:
+```
 2024-10-04 15:22:55,192 - celery.worker.consumer.connection                  -       INFO -                      - Connected to amqp://diskover:**@rabbitmq-IP:5672//
 2024-10-04 15:22:56,450 - celery.apps.worker                                 -       INFO -                      - celery@worker-node-hostname ready.
 ```

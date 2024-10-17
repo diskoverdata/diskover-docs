@@ -20,11 +20,9 @@ which celery
 🔴 &nbsp;Copy in the default celery config file:
 ```
 cp /opt/diskover/diskover_celery/etc/celery.conf /etc/
-vi /etc/celery.conf
-  ** Set INSTALL_DIRECTORY="/opt/diskover"
-  ** Set CELERY_BIN="/usr/local/bin/celery"     (the output of 'which celery' goes here)
-  ** Set the RABBIT_HOST to the IP where Rabbit is configured
-  (create systemd service file)
+```
+🔴 &nbsp;Create `systemd` service file:
+```
 cp /opt/diskover/diskover_celery/etc/celery.service /etc/systemd/system/
 ```
 
@@ -45,6 +43,27 @@ python3 -m pip install -r requirements.txt
 chmod 644 /etc/systemd/system/celery.service
 systemctl daemon-reload
 systemctl enable celery
+```
+
+🔴 &nbsp;Run the celery service manually to see if any errors pop up:
+```
+cd /opt/diskover/
+celery -A diskover_celery .worker worker
+** When you see the following, you know your Celery service has come online:
+2024-10-04 15:22:55,192 - celery.worker.consumer.connection                  -       INFO -                      - Connected to amqp://diskover:**@rabbitmq-IP:5672//
+2024-10-04 15:22:56,450 - celery.apps.worker                                 -       INFO -                      - celery@worker-node-hostname ready.
+```
+
+🔴 &nbsp;Start and enable the celery service:
+```
+systemctl start celery
+systemctl enable celery
+systemctl start celery
+```
+
+🔴 &nbsp;If for some reason the celery service doesn't start, check the celery logs:
+```
+cd /var/log/celery/
 ```
 
 🟨 The API server must be installed before starting the Celery service.

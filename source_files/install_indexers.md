@@ -12,6 +12,8 @@ ___
 
 _[Click here for the full screen view of this diagram.](images/diagram_indexer_daemon_task_panel.png)_
 
+![Image: desc](images/diagram_indexer_daemon_task_panel.png)
+
 This section will walk you through installing node workers for your Diskover v2.3+ environment. Please note that throughout this guide, the terms **indexers** and **workers** are used interchangeably.
 
 During this process, you will need the latest [Diskover 2.3x zip archive](https://download.diskoverdata.com/). Note that this is subject to change to RPMs in the near future.

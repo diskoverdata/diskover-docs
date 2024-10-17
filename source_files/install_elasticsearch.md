@@ -192,7 +192,7 @@ Escape character is '^]'.
 
 - If you see **Connection Refused**, you should validate if [**SELinux** and **Firewalld** are disabled and off](#disable_selinux), respectively.
 
-#### Cluster Environment Setup
+#### Single Cluster Setup
 
 🔴 &nbsp;Run DNF updates:
 ```
@@ -272,7 +272,7 @@ sudo systemctl start elasticsearch
 
 <p id=“set_es_multi_cluster”></p>
 
-### Multiple Cluster Environment Setup
+### Multiple Clusters Setup
 
 <img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 

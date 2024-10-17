@@ -43,4 +43,8 @@ cd /tmp/diskover
 
 #### OVA Download
 
-🔴 &nbsp;Follow the steps above, except download the OVA software instead, and then complete the installation as outlined in the [Diskover Installation Guide for OVA](https://docs.diskoverdata.com/diskover_installation_guide_ova/#how-to-install-ova).
+1. Create an account for the [Diskover Download Portal](https://download.diskoverdata.com/register.php).
+2. Your account will be validated and approved within 24 hours. Note that we will contact you if we need more information before approval.
+3. Once your account is approved, you can [login](https://download.diskoverdata.com/).
+4. Download the latest OVA version.
+5. Complete the installation as outlined in the [Diskover Installation Guide for OVA](https://docs.diskoverdata.com/diskover_installation_guide_ova/#how-to-install-ova).

@@ -10,14 +10,14 @@ This Celery component will need to be installed on each of your indexer/worker n
 
 ### Celery for Linux
 
-🔴 &nbsp;Install celery:
+🔴 &nbsp;Install Celery:
 ```
 python3 -m pip install celery
 which celery
   -- /usr/local/bin/celery
 ```
 
-🔴 &nbsp;Copy in the default celery config file:
+🔴 &nbsp;Copy in the default Celery config file:
 ```
 cp /opt/diskover/diskover_celery/etc/celery.conf /etc/
 ```
@@ -26,7 +26,7 @@ cp /opt/diskover/diskover_celery/etc/celery.conf /etc/
 cp /opt/diskover/diskover_celery/etc/celery.service /etc/systemd/system/
 ```
 
-🔴 &nbsp;Create celery log/run directories:
+🔴 &nbsp;Create Celery log/run directories:
 ```
 mkdir /var/log/celery; chmod 777 /var/log/celery
 mkdir /var/run/celery; chmod 777 /var/run/celery
@@ -45,7 +45,7 @@ systemctl daemon-reload
 systemctl enable celery
 ```
 
-🔴 &nbsp;Run the celery service manually to see if any errors pop up:
+🔴 &nbsp;Run the Celery service manually to see if any errors pop up:
 ```
 cd /opt/diskover/
 celery -A diskover_celery.worker worker

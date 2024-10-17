@@ -162,7 +162,7 @@ If you have more than 1 node in your environment, redo all the [Single Node Inst
 
 <p id=“set_es_cluster”></p>
 
-### Cluster Setup
+### Single Cluster Setup
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 

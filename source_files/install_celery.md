@@ -48,8 +48,11 @@ systemctl enable celery
 🔴 &nbsp;Run the celery service manually to see if any errors pop up:
 ```
 cd /opt/diskover/
-celery -A diskover_celery .worker worker
-** When you see the following, you know your Celery service has come online:
+celery -A diskover_celery.worker worker
+```
+
+🟨 &nbsp;When you see something like this, you know your Celery service has come online:
+```
 2024-10-04 15:22:55,192 - celery.worker.consumer.connection                  -       INFO -                      - Connected to amqp://diskover:**@rabbitmq-IP:5672//
 2024-10-04 15:22:56,450 - celery.apps.worker                                 -       INFO -                      - celery@worker-node-hostname ready.
 ```
@@ -66,7 +69,7 @@ systemctl start celery
 cd /var/log/celery/
 ```
 
-🟨 The API server must be installed before starting the Celery service.
+🟨 &nbsp;The API server must be installed before starting the Celery service.
 
 ### Celery for Windows
 

@@ -102,14 +102,6 @@ rm -rf /root/.config/diskover*
 
 🚧 &nbsp;We're hard at work preparing these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with uninstalling all the Diskover components.
 
-
-
-??? optional-class "Summary"
-    Here's some content.
-
-??? multiple optional-class "Summary"
-    Here's some content.
-
 <details class="optional-class"><summary>Text</summary><p>Content</p></details>
 
 

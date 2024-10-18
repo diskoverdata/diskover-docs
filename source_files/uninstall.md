@@ -4,6 +4,8 @@
 
 The following outlines how to uninstall the Diskover's components.
 
+🚧 &nbsp;We're hard at work updating these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with uninstalling all the Diskover components.
+
 ### Uninstall Elasticsearch
 
 🔴 &nbsp;Determine the Elasticsearch version installed:
@@ -94,8 +96,8 @@ rm -rf /root/.config/diskover*
 
 #### Uninstall Indexers for Windows
 
-🚧 We're hard at work preparing these instructions. Thanks for your patience!
+🚧 &nbsp;We're hard at work preparing these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with uninstalling all the Diskover components.
 
 #### Uninstall Indexers for Mac
 
-🚧 We're hard at work preparing these instructions. Thanks for your patience!
+🚧 &nbsp;We're hard at work preparing these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with uninstalling all the Diskover components.

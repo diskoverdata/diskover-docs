@@ -1,4 +1,4 @@
-<p id=“uninstall”></p>
+<p id="uninstall"></p>
 
 ## Uninstall Diskover
 

@@ -1,4 +1,4 @@
-<p id=“install_celery”></p>
+<p id="install_celery"></p>
 
 ## Celery Installation 
 

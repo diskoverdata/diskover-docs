@@ -1,3 +1,4 @@
+<p id="config_diskoveradmin_plugins_index"></p>
 
 ## DiskoverAdmin Configuration | Index Plugins
 
@@ -7,7 +8,7 @@ Most help information is available directly within the user interface. This sect
 
 <img src="images/diskoveradmin_menu_plugins_index.png" width="200">
 
-<p id=“x”></p>
+<p id="config_index_checksum"></p>
 
 ___
 ### Checksums
@@ -19,6 +20,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_index_file_kind"></p>
 
 ___
 ### File Kind
@@ -30,6 +32,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_index_first_index"></p>
 
 ___
 ### First Index/Arrival Time
@@ -41,6 +44,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_index_grafana"></p>
 
 ___
 ### Grafana
@@ -52,6 +56,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_index_grafana_cloud"></p>
 
 ___
 ### Grafana Cloud
@@ -64,6 +69,8 @@ ___
 | Demo | [🍿 Watch Demo Video](x) |
 
 
+<p id="config_index_mediainfo"></p>
+
 ___
 ### Media Info
 
@@ -74,6 +81,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_index_path_tokens"></p>
 
 ___
 ### Path Tokens
@@ -85,6 +93,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_index_tag_copier"></p>
 
 ___
 ### Tag Copier
@@ -96,6 +105,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_index_unix_perms"></p>
 
 ___
 ### Unix Perms
@@ -107,6 +117,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_index_windows_owner"></p>
 
 ___
 ### Windows Owner

@@ -1,4 +1,4 @@
-<p id=“config_initial”></p>
+<p id="config_initial"></p>
 
 ## Initial Configuration
 

@@ -33,8 +33,10 @@ There are no required changes for ElasticSearch in Diskover 2.3. Ideally, your e
 
 🟨 &nbsp;Note that conducting this upgrade of Elasticsearch might mean that the previous indexes from Elasticsearch 7 no longer work in Diskover-Web, and all storage has to be scanned again. This needs to be planned ahead as it will translate into downtime for your indexed storage during the reindexing process into Elasticsearch 8.
 
-  - [Prepare to upgrade from Elasticsearch v7](https://www.elastic.co/guide/en/elastic-stack/8.14/upgrading-elastic-stack.html#prepare-to-upgrade)
-  - [Upgrade from Elasticsearch v7](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)
+  - [General Elasticsearch upgrade documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)
+  - [Upgrade from Elasticsearch v7 to v8](https://www.elastic.co/guide/en/elastic-stack/8.14/upgrading-elastic-stack.html#prepare-to-upgrade)
+
+🟨 &nbsp;Note that with the upgrade of Elasticsearch, Diskover-Web, and the Diskover indexers/workers, your v2.2 license keys will no longer work. Once you reach this point, send us a [license request](#hd_id).
 
 #### Upgrade Diskover-Web
 
@@ -44,6 +46,7 @@ systemctl stop nginx php-fpm
 mv /var/www/diskover-web/ /var/www/diskover-web-old
 cp /etc/nginx/conf.d/diskover-web.conf /etc/nginx/conf.d/diskover-web.conf.bak
 ```
+
 🔴 &nbsp;Now that we have some [backups](#backup) of the system configurations for 2.2.3, we’re going to want to fetch the latest production of the 2.3 build from Artifactory and get it onto the host. The artifact should contain **Diskover-Web 2.3**:
 ```
 unzip diskover-web-2.3.0.zip
@@ -192,6 +195,11 @@ systemctl status diskover-admin
     INFO:     Started parent process [2390]
 ```
 
+🟨 &nbsp;If you have any issues with the DiskoverAdmin configuration, please ensure to review your log files:
+```
+tail -fn 100 /var/log/diskover/diskover-admin.log
+```
+
 #### Upgrade Diskover Task Workers/Indexers
 
 🔴 &nbsp;Stop the necessary services and take some [backups](#backup):
@@ -222,7 +230,7 @@ cd /opt/diskover-old/
 find * ./scripts/ ./scanners/ ./plugins/ ./plugins_postindex/ ./ type f -name '*.py' -or -name '*.sh*' -or -name '*.bat*' | sed 's|^\./||' | sort | uniq
 ```
 
-🔴 &nbsp;The previous step should show all scripts in the `/diskover-old/ directory`. We can't tell the file contents, and if they are custom, but if there are any custom-named scripts that we should move over, maybe we can see them here:
+🔴 &nbsp;The previous step should show all scripts in the `/diskover-old/ directory`. We can't tell the file contents and if they are custom, but if there are any custom-named scripts that we should move over, maybe we can see them here:
 
 - Move the `__dircache__` folder:
 

@@ -1,8 +1,8 @@
 ### Document Conventions
 
-#### Easy Code Snippets Copy/Paste
+#### Code Snippets Copy
 
-Throughout this document, all the lines displayed in a different font are designed for users to copy to a clipboard using the copy icon on the far right and paste directly into a terminal session:
+Throughout this document, all code snippets can easily be copied to a clipboard using the copy icon on the far right of the code block:
 
 ```
 code snippet - use icon on the far right to copy me

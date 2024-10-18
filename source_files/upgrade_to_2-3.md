@@ -6,7 +6,7 @@
 
 This section outlines the process of upgrading from the Diskover Community Edition to v2.3.x of an annual [subscription Edition](https://diskoverdata.com/solutions/).
 
-🚧 We're hard at work preparing these instructions. Thanks for your patience!
+🚧 &nbsp;We're hard at work preparing these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with this step of your deployment.
 
 
 ### Upgrade from v2.2 Subscription to v2.3
@@ -14,6 +14,9 @@ This section outlines the process of upgrading from the Diskover Community Editi
 #### Overview
 
 This section breaks down the manual process for upgrading from a 2.2.x Diskover system up to 2.3 leveraging the Celery, RabbitMQ, and Diskover Admin services.
+
+🚧 &nbsp;We highly recommend [you open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with your upgrade endeavor.
+
 
 🟨 &nbsp;Now that we have [DiskoverAdmin](#config_diskoveradmin) for configuration management, the only `config_sample` folders that are needed are for `Diskoverd`.
 
@@ -312,11 +315,11 @@ http://$rabbitMQHost:15672/#/
 
 ##### RabbitMQ for Windows
 
-🚧 We're hard at work preparing these instructions. Thanks for your patience!
+🚧 &nbsp;We're hard at work preparing these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with this step of your deployment.
 
 ##### Amazon MQ
 
-🚧 We're hard at work preparing these instructions. Thanks for your patience!
+🚧 &nbsp;We're hard at work preparing these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with this step of your deployment.
 
 #### Celery Installation
 
@@ -334,7 +337,7 @@ This Celery component will need to be installed on each of your indexer/worker n
 python3 -m pip install celery
 which celery
   -- /usr/local/bin/celery
- ```
+```
 
 🔴 &nbsp;Copy in the default Celery config file:
 ```
@@ -365,7 +368,6 @@ systemctl daemon-reload
 systemctl enable celery
 ```
 
-
 🔴 &nbsp;Let's start up and enable the service. Run the Celery service manually to see if any errors pop up:
 ```
 cd /opt/diskover/
@@ -394,7 +396,7 @@ cd /var/log/celery/
 
 ##### Celery for Windows
 
-🚧 We're hard at work preparing these instructions. Thanks for your patience!
+🚧 &nbsp;We're hard at work preparing these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with this step of your deployment.
 
 #### DiskoverAdmin Wizard
 

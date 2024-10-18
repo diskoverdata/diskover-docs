@@ -76,3 +76,15 @@ get-process | Select-String "php"
 ```
 
 <img src="images/image_health_check_windows_status_php.png" width="750">
+
+### Celery
+
+🚧 &nbsp;We're hard at work preparing these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with your Celery healh check.
+
+### RabbitMQ
+
+🔴 &nbsp;Run diagnostic status:
+```
+rabbitmq-diagnostics status
+```
+

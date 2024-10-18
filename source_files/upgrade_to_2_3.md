@@ -1,4 +1,4 @@
-<p id=“software_upgrade”></p>
+<p id="software_upgrade"></p>
 
 ## Upgrade to Diskover v2.3
 

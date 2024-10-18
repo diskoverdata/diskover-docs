@@ -1,7 +1,7 @@
 <p id=“visualization_tools”></p>
 
 ___
-### Third-Parties Analytics
+### Third-Party Analytics
 
 You can optionally use third-party analytical tools, such as [Kibana](https://www.elastic.co/kibana), [Tableau](https://www.tableau.com), [Grafana](https://grafana.com), [PowerBI](https://www.microsoft.com/en-us/power-platform/products/power-bi), and others, to read the Elasticsearch metadata library besides Diskover-Web. Diskover does not technically support these optional tools, and only the installation of Kibana is described in this section.
 

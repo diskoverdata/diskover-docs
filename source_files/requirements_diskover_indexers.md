@@ -6,7 +6,7 @@ You can install Diskover indexers on a server or [virtual machine](https://docs.
 
 The indexing host uses a separate thread for each directory at level 1 of a top crawl directory. If you have many directories at level 1, you will want to increase the number of CPU cores and adjust **max threads** in the diskover config.
 
-##### Requirements for POC and Deployment
+#### Requirements for POC and Deployment
 
 | | Proof of Concept | Production Deployment |
 | --- | --- | --- |

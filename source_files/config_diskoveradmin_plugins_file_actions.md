@@ -1,3 +1,5 @@
+<p id="config_diskoveradmin_plugins_file_actions"></p>
+
 ## DiskoverAdmin Configuration | File Action Plugins
 
 ### Overview
@@ -7,6 +9,8 @@ Most help information is available directly within the user interface. This sect
 🟨 &nbsp;Note that some plugins are not currently available in DiskoverAdmin and still require manual installation for now. Please refer to the [Manual Plugins Configuration]() section for the list and details.
 
 <img src="images/diskoveradmin_menu_plugins_file_actions.png" width="200">
+
+<p id="config_file_action_fix_permissions"></p>
 
 ___
 ### Fix Permissions
@@ -18,6 +22,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_file_action_edl_check"></p>
 
 ___
 ### EDL Check
@@ -29,6 +34,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_file_action_edl_download"></p>
 
 ___
 ### EDL Download
@@ -40,6 +46,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_file_action_export"></p>
 
 ___
 ### Export
@@ -51,6 +58,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_file_action_imf_change_report"></p>
 
 ___
 ### IMF Change Report
@@ -62,6 +70,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_file_action_live_view"></p>
 
 ___
 ### Live View
@@ -73,6 +82,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_file_action_make_links"></p>
 
 ___
 ### Make Links
@@ -84,6 +94,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_file_action_pdf_viewer"></p>
 
 ___
 ### PDF Viewer
@@ -95,6 +106,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_file_action_fix_rclone"></p>
 
 ___
 ### Rclone
@@ -106,6 +118,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_file_action_vantage"></p>
 
 ___
 ### Vantage

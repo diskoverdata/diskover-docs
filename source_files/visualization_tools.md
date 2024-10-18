@@ -1,12 +1,13 @@
 <p id=“visualization_tools”></p>
 
-## Third-Parties Analytics
+___
+### Third-Parties Analytics
 
 You can optionally use third-party analytical tools, such as [Kibana](https://www.elastic.co/kibana), [Tableau](https://www.tableau.com), [Grafana](https://grafana.com), [PowerBI](https://www.microsoft.com/en-us/power-platform/products/power-bi), and others, to read the Elasticsearch metadata library besides Diskover-Web. Diskover does not technically support these optional tools, and only the installation of Kibana is described in this section.
 
-### Using Kibana in Addition to Diskover-Web
+#### Using Kibana in Addition to Diskover-Web
 
-#### Kibana v7 via RPM
+##### Kibana v7 via RPM
 
 - Note that Kibana v7 can only be used with Elasticsearch v7.
 - For securing Elasticsearch and Kibana, [follow this user guide to set up security](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/secure-cluster.html), as by default, Elasticsearch has no security enabled: 
@@ -44,7 +45,7 @@ For securing Elasticsearch and Kibana, follow this user guide to set up security
 
 [https://www.elastic.co/guide/en/elasticsearch/reference/7.x/secure-cluster.html](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/secure-cluster.html)
 
-#### Kibana v8 via YUM Repository
+##### Kibana v8 via YUM Repository
 
 - Note that Kibana v8 can only be used with Elasticsearch v8.
 - Additional information on installating [Kibava v8 via RPM repository](https://www.elastic.co/guide/en/kibana/8.14/rpm.html#rpm-repo).
@@ -69,4 +70,9 @@ type=rpm-md
 🔴 &nbsp;Install Kibana:
 ```
 yum install kibana
+```
+##### Kibana UI Access
+
+```
+http://kibanaHost:5601
 ```

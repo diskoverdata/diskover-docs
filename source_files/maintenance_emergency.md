@@ -4,6 +4,8 @@
 
 The following section describes how to troubleshoot and perform emergency maintenance for Diskover components.
 
+🚧 &nbsp;We're hard at work updating these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with troubleshooting your critical issue.
+
 ### Diskover-Web
 
 A few ways to identify and solve Diskover-Web issues.

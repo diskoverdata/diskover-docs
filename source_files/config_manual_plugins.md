@@ -1,4 +1,4 @@
-<p id="config_plugins_manual"></p>
+<p id="config_manual_plugins"></p>
 
 ## Manual Configuration | Plugins
 
@@ -59,7 +59,7 @@ bam_info.pg.vn:
 
 ![Image: BAM Info Detailed View in File Attributes](images/plugin_bam_attributes_window.png)
 
-<p id=“plugin_cineviewer”></p>
+<p id="plugin_cineviewer"></p>
 
 ___
 ### CineViewer Player by CineSys | File Action Plugin

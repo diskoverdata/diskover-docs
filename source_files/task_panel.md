@@ -1,4 +1,4 @@
-<p id=“task_panel”></p>
+<p id="task_panel"></p>
 
 ## Tasks Management via Task Panel
 

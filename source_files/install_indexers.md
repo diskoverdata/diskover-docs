@@ -142,8 +142,8 @@ systemctl enable diskoverd
 
 ### Windows Indexers/Workers
 
-🚧 We're hard at work preparing these instructions. Thanks for your patience!
+🛟 &nbsp;We're hard at work preparing these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with this step of your deployment.
 
 ### Mac Indexers/Workers
 
-🚧 We're hard at work preparing these instructions. Thanks for your patience!
+🛟 &nbsp;We're hard at work preparing these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with this step of your deployment.

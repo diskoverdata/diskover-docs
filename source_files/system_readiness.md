@@ -1,4 +1,4 @@
-<p id=“system_readiness”></p>
+<p id="system_readiness"></p>
 
 ## System Readiness
 
@@ -10,7 +10,7 @@ This section describes the preliminary steps to installing Diskover. Other softw
 
 This section breaks down the recommended hardening of a Linux system prior to the deployment of the Diskover software.
 
-<p id=“disable_selinux”></p>
+<p id="disable_selinux"></p>
 
 #### Disable Firewalld & Security Enhanced Linux (SELinux)
 

@@ -1,3 +1,4 @@
+<p id="config_diskoveradmin_plugins_post_index"></p>
 
 ## DiskoverAdmin Configuration | Post-Index Plugins
 
@@ -6,6 +7,8 @@
 Most help information is available directly within the user interface. This section provides additional guidance to assist you during the configuration phase.
 
 <img src="images/diskoveradmin_menu_plugins_post_index.png" width="200">
+
+<p id="config_post_index_autoclean"></p>
 
 ___
 ### AutoClean
@@ -17,6 +20,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_post_index_autotag"></p>
 
 ___
 ### AutoTag
@@ -28,6 +32,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_post_index_breadcrumb"></p>
 
 ___
 ### Breadcrumb
@@ -39,6 +44,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_post_index_checksums"></p>
 
 ___
 ### Checksums
@@ -50,6 +56,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_post_index_checksums_s3"></p>
 
 ___
 ### Cheksums S3
@@ -61,6 +68,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_post_index_costs"></p>
 
 ___
 ### Costs
@@ -72,6 +80,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_post_index_dupes"></p>
 
 ___
 ### Dupes Finder
@@ -83,6 +92,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_post_index_es_field_copier"></p>
 
 ___
 ### ES Field Copier
@@ -94,6 +104,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_post_index_query_report"></p>
 
 ___
 ### ES Query Report
@@ -105,6 +116,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_post_index_illegal_filename"></p>
 
 ___
 ### Illegal Filename
@@ -116,6 +128,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_post_index_index_diff"></p>
 
 ___
 ### Index Diff
@@ -127,6 +140,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_post_index_tag_copier"></p>
 
 ___
 ### Tag Copier
@@ -138,6 +152,7 @@ ___
 | User Guide | [x]() |
 | Demo | [🍿 Watch Demo Video](x) |
 
+<p id="config_post_index_windows_attributes"></p>
 
 ___
 ### Windows Attributes

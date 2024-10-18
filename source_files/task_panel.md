@@ -184,7 +184,7 @@ AWS_PROFILE=profile,S3_ENDPOINT_URL=https://alternate_endpoint.com
 
 <img src="images/task_panel_new_task_custom.png" width="550">
 
-🚧 We're hard at work preparing these instructions. Thanks for your patience!
+🚧 &nbsp;We're hard at work preparing these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with this step of your deployment.
 
 ### Existing Tasks Management
 

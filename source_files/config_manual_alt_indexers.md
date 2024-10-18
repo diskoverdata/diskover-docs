@@ -1,10 +1,10 @@
-<p id=“config_alt_indexers_manual”></p>
+<p id="config_alt_indexers_manual"></p>
 
 ## Manual Configuration | Alternate Indexers
 
 ### Overview
 
-All plugins will eventually be included in the [**DiskoverAdmin**](#config_diskoveradmin) panel, but a few are still only configurable manually.
+All plugins will eventually be included in the [DiskoverAdmin](#config_diskoveradmin) panel, but a few are still only configurable manually.
 
 🟨  &nbsp;**IMPORTANT!**
 

@@ -1,22 +1,15 @@
-<p id=“config_plugins_manual”></p>
+<p id="config_plugins_manual"></p>
 
 ## Manual Configuration | Plugins
 
 ### Overview
 
-All plugins will eventually be included in the [**DiskoverAdmin**](#config_diskoveradmin) panel, but a few are still only configurable manually.
-
-🟨  &nbsp;**IMPORTANT!**
-
+  - All plugins will eventually be included in the [DiskoverAdmin](#config_diskoveradmin) panel, but a few are still only configurable manually.
   - Please [open a support ticket](https://support.diskoverdata.com/) if you currently use one of these plugins and need to upgrade to v2.3+.
-  - Visit our [Plugins Ecosystem](https://diskoverdata.com/products/plugins/) webpage for a list of all our plugins.
-  - The plugins in this chapter are listed alphabetically, but here is a quick access list by category:
+  - Visit our [Plugins Ecosystem](https://diskoverdata.com/products/plugins/) webpage for a complete list of all our plugins.
+  - The plugins in this chapter are listed alphabetically inside each category. Here is a quick access list by category:
 
-| CATEGORY | PLUGIN |
-| --- | --- |
-| **Core Editions** | <ul><li>[Hash Differential Checksums File Action Plugin](#plugin_hash_diff)</li><li>[Ngenea Data Orchestrator/Mover by PixitMedia File Action Plugin](#plugin_ngenea)</li><li>[Vcinity High-Speed Data Transfer File Action Plugin](#plugin_vcinity)</li></ul> |
-| **Media Edition** | <ul><li>[CineViewer Player by CineSys File Action Plugin](#plugin_cineviewer)</li><li>[Find File Sequences File Action Plugin](#plugin_find_file_sequences)</li><li>[Flow Production Tracking (formerly ShotGrid) Index Plugin](#plugin_shotgrid)</li><li>[IMF Package Validator by Oxagile File Action Plugin](#plugin_imf_validator)</li><li>[Telestream GLIM File Action Plugin](#plugin_glim)</li><li>[Xytech Asset Creation Index Plugin](#plugin_xytech_asset_creation)</li><li>[Xytech Order Status Index Plugin](#plugin_xytech_order_status)</li></ul> |
-| **Life Science Edition** | <ul><li>[BAM Info Index Plugin](#plugin_bam)</li><li>[Research Grant File Action Plugin](#plugin_grant)</li></ul> |
+
 
 <p id="plugin_bam"></p>
 
@@ -26,10 +19,12 @@ ___
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_life_science.png" width="100"> |
-| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
 | To learn more | [Visit our website](https://diskoverdata.com/products/life-science-edition/#bam-plugin) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | User Guide | [Diskover Life Science Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/#bam-harvest-plugin) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/678914314?share=copy) |
+
+
 
 #### Overview
 
@@ -72,7 +67,7 @@ ___
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
-| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
 | To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#cineviewer) and/or [contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#cineviewer-player) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/765285042?share=copy) |
@@ -446,7 +441,7 @@ to your local `diskover`:
 
 
 
-<p id=“plugin_find_file_sequences”></p>
+<p id="plugin_find_file_sequences"></p>
 
 ___
 ### Find File Sequences | File Action Plugin
@@ -454,7 +449,7 @@ ___
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
-| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
 | To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#file-sequences) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#find-file-sequences) |
 
@@ -472,13 +467,13 @@ ___
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
-| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
 | To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#flowprodtracking) and/or [contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#flow-production-tracking-plugin) |
 
 Designed to enhance basic metadata with detailed production status information, aligning data management with production schedules. The Diskover Flow Production Tracking Plugin harvests additional attributes from the [Autodesk Flow Production Tracking platform](https://www.autodesk.com/products/flow-production-tracking/) for every shot directory located on storage. These attributes become properties of the shot directories and include status information such as finaled, out-of-picture, multiple project tracking dates, and many more, totaling around one hundred indexable fields. Note that users can opt to only index the fields that are relevant to their business.
 
-<p id=“plugin_grant”></p>
+<p id="plugin_grant"></p>
 
 ___
 ### Grant Research | File Action Plugin
@@ -486,7 +481,7 @@ ___
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_life_science.png" width="100"> |
-| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
 | To learn more | [Visit our website](https://diskoverdata.com/products/life-science-edition/#grant-plugin) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 
 The Grant Plugin has a dual purpose 1) assisting research institutes in managing their grants/members/storage costs internally, and 2) fulfilling the requirements for the new NIH DMS Policy.
@@ -499,7 +494,7 @@ _[Click here for a full-screen view of this image.](images/diagram_diskover_plug
 
 
 
-<p id=“plugin_hash_diff”></p>
+<p id="plugin_hash_diff"></p>
 
 ___
 ### Hash Differential Checksums | File Action Plugin
@@ -507,7 +502,7 @@ ___
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
-| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
 | To learn more | [Visit our website](https://diskoverdata.com/products/plugins/#data-integrity) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/768967081) |
 
@@ -521,7 +516,7 @@ An instance of key information might be the invoice date for a work order. A sta
 
 
 
-<p id=“plugin_imf_validator”></p>
+<p id="plugin_imf_validator"></p>
 
 ___
 ### IMF Package Validator by Oxagile | File Action Plugin
@@ -529,7 +524,7 @@ ___
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
-| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
 | To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#imf-package-validator) and/or [contact Oxagile](mailto:IMF@Oxagile.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#imf-package-validator) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/828166808) |
@@ -560,7 +555,7 @@ The following are the limitations of the current plugin version:
 4.	Archives are not supported.
 5.	DCP packages are not supported.
 
-<p id=“plugin_ngenea”></p>
+<p id="plugin_ngenea"></p>
 
 ___
 ### Ngenea Data Orchestrator by PixitMedia | File Action Plugin
@@ -568,13 +563,13 @@ ___
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
 | To learn more | Download this [Solution Brief](https://diskoverdata.com/wp-content/uploads/2024/08/diskover_pixitmedia_ngenea_solution_brief.pdf) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/833500176?share=copy) |
 
 With the Ngenea Data Orchestrator File Action, authorized users can quickly and securely transport data, directly from the Diskover UI, to and from globally distributed cloud, object storage, traditional NAS files, and tape resources, automatically moving data into the ‘right cost’ resource according to value and usage as your work teams and business needs demand.
 
-<p id=“plugin_vcinity”></p>
+<p id="plugin_vcinity"></p>
 
 ___
 ### Vcinity High-Speed Data Transfer | File Action Plugin
@@ -582,7 +577,7 @@ ___
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
 | To learn more | Download this [Solution Brief](https://diskoverdata.com/wp-content/uploads/2024/05/Diskover_Data_SB.pdf) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | Demo | [🍿 Watch Demo Video](https://youtu.be/l1XZoe-ZtEI) |
 
@@ -594,7 +589,7 @@ The Vcinity High-Speed Data Transfer Plugin provides two mechanisms within Disko
 
 
 
-<p id=“plugin_glim”></p>
+<p id="plugin_glim"></p>
 
 ___
 ### Telestream GLIM | File Action Plugin
@@ -602,7 +597,7 @@ ___
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
-| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
 | To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#glim) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#glim-previewvalidate-media-files) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/665037937) |
@@ -611,7 +606,7 @@ This plugin results in a seamless integration with GLIM, allowing end-users to s
 
 
 
-<p id=“plugin_xytech_asset_creation”></p>
+<p id="plugin_xytech_asset_creation"></p>
 
 ___
 ### Xytech Asset Creation | Index Plugin
@@ -619,7 +614,7 @@ ___
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
-| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
 | To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#xytech-asset-creation) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-asset-creation-plugin-overview) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/660789118) |
@@ -636,7 +631,7 @@ The path location is added to the asset within Xytech and the asset number is as
 
 
 
-<p id=“plugin_xytech_order_status”></p>
+<p id="plugin_xytech_order_status"></p>
 
 ___
 ### Xytech Order Status | Index Plugin
@@ -644,7 +639,7 @@ ___
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
-| To upgrade | If you need to upgrade this plugin to the latest version, please [open a support ticket](https://support.diskoverdata.com/) |
+🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment.
 | To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#xytech-order-status) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-order-status-plugin-overview) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/768967081) |

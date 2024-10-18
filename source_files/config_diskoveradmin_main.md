@@ -1,4 +1,4 @@
-<p id=“config_main”></p>
+<p id="config_main"></p>
 
 ## DiskoverAdmin Configuration | Main Components and Communications
 
@@ -7,7 +7,7 @@
 Most help information is available directly within the user interface. This section provides additional guidance to assist you during the configuration phase.
 
 
-<p id=“config_diskover_web”></p>
+<p id="config_diskover_web"></p>
 
 ___
 ### Extra Notes | Diskover-Web
@@ -17,7 +17,7 @@ ___
 
 
 
-<p id=“config_indexers”></p>
+<p id="config_indexers"></p>
 
 <p id=“config_es”></p>
 
@@ -30,7 +30,7 @@ ___
 
 
 
-<p id=“config_diskoverd”></p>
+<p id="config_diskoverd"></p>
 
 ___
 ### Extra Notes | DiskoverD
@@ -41,7 +41,7 @@ ___
 
 
 
-<p id=“config_alt_indexers”></p>
+<p id="config_alt_indexers"></p>
 
 ___
 ### Extra Notes | Diskover Alternate Indexers
@@ -50,7 +50,7 @@ ___
 
 
 
-<p id=“config_alt_indexer_dircache”></p>
+<p id="config_alt_indexer_dircache"></p>
 
 #### DirCache Alternate Indexer
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
@@ -60,7 +60,7 @@ The DirCache alternate scanner can be used to speed up subsequent crawls when in
 
 
 
-<p id=“x”></p>
+<p id="x"></p>
 
 ___
 ### Extra Notes | System

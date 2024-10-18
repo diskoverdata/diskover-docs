@@ -1,4 +1,4 @@
-<p id=“install_diskoveradmin”></p>
+<p id="install_diskoveradmin"></p>
 
 ## DiskoverAdmin Installation
 

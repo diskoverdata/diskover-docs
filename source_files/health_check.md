@@ -4,7 +4,7 @@
 
 The following section outlines health checks for the various Diskover's components. 
 
-🚧 We're hard at work preparing these instructions. Thanks for your patience!
+🚧 &nbsp;We're hard at work updating these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with checking the health of your environment.
 
 ### Elasticsearch Domain
 

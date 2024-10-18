@@ -8,7 +8,7 @@ Most help information is available directly within the user interface. This sect
 
 <img src="images/diskoveradmin_menu_plugins_index.png" width="200">
 
-<p id="config_index_checksum"></p>
+<p id="config_index_checksums"></p>
 
 ___
 ### Checksums

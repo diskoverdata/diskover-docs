@@ -29,7 +29,7 @@ Licenses are created using these variables:
 3. Your [Diskover Edition](https://www.diskoverdata.com/solutions/)
 4. The number of Elasticsearch nodes.
 
-<p id=“hd_id”></p>
+<p id="hd_id"></p>
 
 ### Hardware ID Generation
 
@@ -48,7 +48,7 @@ After installing Diskover and completing the basic configuration, you will need 
 - Check that you have configured your Elasticsearch host correctly, as it is part of the hardware ID encoding process.
 - Note that if your [Elasticsearch cluster]((https://docs.diskoverdata.com/diskover_installation_guide/#elasticsearch-requirements)) ID changes, you will need new license keys.
 
-<p id=“license_location”></p>
+<p id="license_location"></p>
 
 ### License Key Locations in DiskoverAdmin Panel
 

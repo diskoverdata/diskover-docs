@@ -1,4 +1,4 @@
-<p id=“install_es”></p>
+<p id="install_es"></p>
 
 ## Elasticsearch Installation 
 
@@ -19,7 +19,7 @@ Some links you might need:
 - [Download the current release of Elasticsearch](https://www.elastic.co/downloads/elasticsearch)
 - [Download past releases of Elasticsearch](https://www.elastic.co/downloads/past-releases#elasticsearch)
 
-<p id=“install_es_node”></p>
+<p id="install_es_node"></p>
 
 ### Single Node Installation
 
@@ -160,7 +160,7 @@ curl -XGET -u elastic:password https://${ESHOST}:9200/_cluster/health?pretty --c
 
 If you have more than 1 node in your environment, redo all the [Single Node Installation](#install_es_node) steps for each node/system.
 
-<p id=“set_es_cluster”></p>
+<p id="set_es_cluster"></p>
 
 ### Single Cluster Setup
 
@@ -270,7 +270,7 @@ sudo systemctl start elasticsearch
 <br><br>
 🔴 &nbsp;Once Node 1 is online, start **Node 2**, then once Node 2 is online, start **Node 3**.
 
-<p id=“set_es_multi_cluster”></p>
+<p id="set_es_multi_cluster"></p>
 
 ### Multiple Clusters Setup
 

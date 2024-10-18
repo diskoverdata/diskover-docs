@@ -1,4 +1,4 @@
-<p id="config_main"></p>
+<p id="config_diskoveradmin_main"></p>
 
 ## DiskoverAdmin Configuration | Main Components and Communications
 

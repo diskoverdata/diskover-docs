@@ -1,4 +1,4 @@
-<p id=“software_update”></p>
+<p id="software_update"></p>
 
 ## Software Updates
 

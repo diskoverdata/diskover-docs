@@ -32,11 +32,11 @@ ordered_documents:
   - config_diskoveradmin_plugins_index.md
   - config_diskoveradmin_plugins_post_index.md
   - config_diskoveradmin_plugins_file_actions.md
-  - config_alt_indexers_manual.md
-  - config_plugins_manual.md
+  - config_manual_alt_indexers.md
+  - config_manual_plugins.md
   - indices_management.md
   - misc_chapter.md
-  - visualization_tools.md
+  - analytics_third_party.md
   - software_activation_2_3.md
   - upgrade_to_2_3.md
   - software_update_2_3.md

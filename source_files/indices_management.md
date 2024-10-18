@@ -1,8 +1,8 @@
-<p id=“”>indices_management</p>
+<p id="indices_management"></p>
 
 ## Indices Management
 
-<p id=“indices_mgmt_diskoverweb”></p>
+<p id="indices_mgmt_diskoverweb"></p>
 
 ### Indices Management via Diskover-Web
 
@@ -61,7 +61,7 @@ The following confirmation of successful index deletion will be displayed:
 
 ![Image: Indices Removal Error Message](images/image_indices_delete_index_error_msg.png)
 
-<p id=“es_lifecycle_mgmt”></p>
+<p id="es_lifecycle_mgmt"></p>
 
 ### Elasticsearch Index Management
 

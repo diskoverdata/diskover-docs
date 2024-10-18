@@ -45,6 +45,13 @@ rpm -e php-fpm-7.3.26-1.el7.remi.x86_64
 rpm -qa | grep nginx
 ```
 
+??? optional-class "Summary"
+    Here's some content.
+
+??? multiple optional-class "Summary"
+    Here's some content.
+
+
 ![Image: Determine NGINX  Version](images/image_uninstall_determine_nginx_version.png)
 
 🔴 &nbsp;In the above example, remove all NGINX with the **--nodeps** argument to uninstall each package in the above list:

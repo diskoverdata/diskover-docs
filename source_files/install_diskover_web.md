@@ -1,4 +1,4 @@
-<p id=“install_diskover_web”></p>
+<p id="install_diskover_web"></p>
 
 ## Diskover-Web Installation
 
@@ -8,7 +8,7 @@ This section covers all the necessary steps to set up your Diskover-Web user int
 
 Once all components are installed, you will be able to [configure your Diskover-Web environment](config_diskover_web). We strongly recommend following the deployment order outlined in this guide.
 
-<p id=“install_nginx_php”></p>
+<p id="install_nginx_php"></p>
 
 ### NGINX and PHP Installation
 

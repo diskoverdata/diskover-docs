@@ -1,4 +1,4 @@
-<p id=“install_indexers”></p>
+<p id="install_indexers"></p>
 
 ## Diskover Indexers/Workers Installation
 
@@ -103,7 +103,7 @@ vi /root/.config/diskoverd/config.yaml
 apiurl: http://${WEBHOST}:8000/api.php
 ```
 
-<p id=“install_diskovered”></p>
+<p id="install_diskovered"></p>
 
 #### DiskoverD Task Worker Daemon
 

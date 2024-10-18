@@ -1,4 +1,4 @@
-<p id=“install_rabbitmq”></p>
+<p id="install_rabbitmq"></p>
 
 ## RabbitMQ and Amazon MQ Server Installation
 
@@ -65,7 +65,7 @@ http://$rabbitMQHost:15672/#/
 
 🚧 &nbsp;We're hard at work preparing these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with this step of your deployment.
 
-<p id=“install_amazonmq”></p>
+<p id="install_amazonmq"></p>
 
 ### Amazon MQ
 

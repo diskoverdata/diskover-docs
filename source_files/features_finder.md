@@ -1,4 +1,4 @@
-<p id=“feature_navigator”></p>
+<p id="feature_navigator"></p>
 
 ## Feature Navigator | Where to Find What
 

@@ -73,8 +73,8 @@ cd /var/log/celery/
 
 ### Celery for Windows
 
-🚧 We're hard at work preparing these instructions. Thanks for your patience!
+🚧 &nbsp;We're hard at work preparing these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with this step of your deployment.
 
 ### Celery for Mac
 
-🚧 We're hard at work preparing these instructions. Thanks for your patience!
+🚧 &nbsp;We're hard at work preparing these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with this step of your deployment.

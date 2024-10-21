@@ -133,14 +133,35 @@ With the ES cluster installed and running, you can now run a simple curl command
 
 🟨 &nbsp;Replace the **${ESHOST}** below with your **ES node(s) IP address or hostname**
 
-If SSL is enabled on the cluster: 
+Curl command **if SSL is enabled** on the cluster - the result will differ, of course, based on your own environment:
 ```
 curl -XGET -u elastic:password https://${ESHOST}:9200/_cluster/health?pretty --cacert /etc/elasticsearch/certs/http_ca.crt
-[root@twothree ~]# curl http://${ESHOST}:9200/_cluster/health?pretty
+{
+  "cluster_name" : "elasticsearch",
+  "status" : "yellow",
+  "timed_out" : false,
+  "number_of_nodes" : 1,
+  "number_of_data_nodes" : 1,
+  "active_primary_shards" : 78,
+  "active_shards" : 78,
+  "relocating_shards" : 0,
+  "initializing_shards" : 0,
+  "unassigned_shards" : 1,
+  "delayed_unassigned_shards" : 0,
+  "number_of_pending_tasks" : 0,
+  "number_of_in_flight_fetch" : 0,
+  "task_max_waiting_in_queue_millis" : 0,
+  "active_shards_percent_as_number" : 98.73417721518987
+}
+```
+
+Curl command **if SSL is not enabled** on the cluster - the result will differ, of course, based on your own environment:
+```
+curl http://${ESHOST}:9200/_cluster/health?pretty
 {
   "cluster_name" : "elasticsearch",
   "status" : "green",
-  "timed_out" : false,e
+  "timed_out" : false,
   "number_of_nodes" : 1,
   "number_of_data_nodes" : 1,
   "active_primary_shards" : 0,
@@ -155,6 +176,8 @@ curl -XGET -u elastic:password https://${ESHOST}:9200/_cluster/health?pretty --c
   "active_shards_percent_as_number" : 100.0
 }
 ```
+
+
 
 ### Multiple Nodes Installation
 

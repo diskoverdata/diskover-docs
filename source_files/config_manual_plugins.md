@@ -11,16 +11,15 @@
 
 | EDITION |  PLUGIN |
 | --- | --- |
-| CORE | <ul><li>[Hash Differential Checksums File Action](#plugin_hash_diff)</li><li>Ngenea Data Orchestrator File Action by PixtiMedia](#plugin_ngenea)</li><li>[Vcinity High-Speed Data Transfer File Action](#plugin_vcinity)</li></ul> |
-| MEDIA | <ul><li>[CineViewer Player File Action](#plugin_cineviewer)</li><li>[Find File Sequences File Action](#plugin_find_file_sequences)</li><li>[Flow Production Tracking Index Plugin (formerly ShotGrid)](#plugin_shotgrid)</li><li>[IMF Validator File action by Oxagile](#plugin_imf_validator)</li><li>GLIM File Action](#plugin_glim)</li><li>Xytec Asset Creation Index Plugin](#plugin_xytech_asset_creation)</li><li>Xytec Order Status Index Plugin](#plugin_xytech_order_status)</li></ul> |
-| LIFE SCIENCE | <ul><li>[BAM Index Plugin](#plugin_bam)</li><li>[Grant File Action](#plugin_grant)</li></ul> |
+| **CORE** | <ul><li>[Hash Differential Checksums File Action](#plugin_hash_diff)</li><li>[Ngenea Data Orchestrator File Action by PixtiMedia](#plugin_ngenea)</li><li>[Vcinity High-Speed Data Transfer File Action](#plugin_vcinity)</li></ul> |
+| **MEDIA** | <ul><li>[CineViewer Player File Action](#plugin_cineviewer)</li><li>[Find File Sequences File Action](#plugin_find_file_sequences)</li><li>[Flow Production Tracking Index Plugin (formerly ShotGrid)](#plugin_shotgrid)</li><li>[IMF Validator File action by Oxagile](#plugin_imf_validator)</li><li>[GLIM File Action](#plugin_glim)</li><li>[Xytec Asset Creation Index Plugin](#plugin_xytech_asset_creation)</li><li>[Xytec Order Status Index Plugin](#plugin_xytech_order_status)</li></ul> |
+| **LIFE SCIENCE** | <ul><li>[BAM Index Plugin](#plugin_bam)</li><li>[Grant File Action](#plugin_grant)</li></ul> |
 
 ___
 ### Plugins | Core Editions
 
 <p id="plugin_hash_diff"></p>
 
-___
 #### Hash Differential Checksums | File Action Plugin
 
 | HELP | RESOURCE |
@@ -41,7 +40,6 @@ An instance of key information might be the invoice date for a work order. A sta
 
 <p id="plugin_ngenea"></p>
 
-___
 #### Ngenea Data Orchestrator by PixitMedia | File Action Plugin
 
 | HELP | RESOURCE |
@@ -55,7 +53,6 @@ With the Ngenea Data Orchestrator File Action, authorized users can quickly and 
 
 <p id="plugin_vcinity"></p>
 
-___
 #### Vcinity High-Speed Data Transfer | File Action Plugin
 
 | HELP | RESOURCE |
@@ -81,7 +78,6 @@ ___
 
 <p id="plugin_cineviewer"></p>
 
-___
 #### CineViewer Player by CineSys | File Action Plugin
 
 | HELP | RESOURCE |
@@ -106,7 +102,6 @@ The CineViewer Player is developed by [CineSys LLC](https://cinesys.io/), a majo
 
 <p id="plugin_find_file_sequences"></p>
 
-___
 #### Find File Sequences | File Action Plugin
 
 | HELP | RESOURCE |
@@ -122,7 +117,6 @@ The File Sequence web plugin File Action is designed to list out any file sequen
 
 <p id="plugin_shotgrid"></p>
 
-___
 #### Flow Production Tracking (formerly ShotGrid) | Index Plugin
 
 | HELP | RESOURCE |
@@ -137,7 +131,6 @@ Designed to enhance basic metadata with detailed production status information, 
 
 <p id="plugin_imf_validator"></p>
 
-___
 #### IMF Package Validator by Oxagile | File Action Plugin
 
 | HELP | RESOURCE |
@@ -176,7 +169,6 @@ The following are the limitations of the current plugin version:
 
 <p id="plugin_glim"></p>
 
-___
 #### Telestream GLIM | File Action Plugin
 
 | HELP | RESOURCE |
@@ -193,7 +185,6 @@ This plugin results in a seamless integration with GLIM, allowing end-users to s
 
 <p id="plugin_xytech_asset_creation"></p>
 
-___
 #### Xytech Asset Creation | Index Plugin
 
 | HELP | RESOURCE |
@@ -218,7 +209,6 @@ The path location is added to the asset within Xytech and the asset number is as
 
 <p id="plugin_xytech_order_status"></p>
 
-___
 #### Xytech Order Status | Index Plugin
 
 | HELP | RESOURCE |
@@ -289,7 +279,6 @@ bam_info.pg.vn:
 
 <p id="plugin_grant"></p>
 
-___
 #### Grant Research | File Action Plugin
 
 | HELP | RESOURCE |

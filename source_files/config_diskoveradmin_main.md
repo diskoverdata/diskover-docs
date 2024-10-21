@@ -1,10 +1,10 @@
 <p id="config_diskoveradmin_main"></p>
 
-## DiskoverAdmin Configuration | Main Components and Communications
+## DiskoverAdmin Configuration | Main Components
 
 ### Overview
 
-Most help information is available directly within the user interface. This section provides additional guidance to assist you during the configuration phase.
+Most help information is available directly in the user interface. This section offers additional guidance to support you during the configuration process.
 
 
 <p id="config_diskover_web"></p>
@@ -15,6 +15,18 @@ ___
 <img src="images/diskoveradmin_menu_web.png" width="200">
 
 
+<p id="config_path_translation"></p>
+
+#### Path Translation
+
+Here is an example of path translations. If you set the following path translation sets in DiskoverAdmin:
+
+<img src="images/translation_set_1.png" width="">
+<img src="images/translation_set_2.png" width="">
+
+This is what users will see in their ⛭ → **Settings**:
+
+<img src="images/translation_sets_in settings.png" width="500">
 
 
 <p id="config_indexers"></p>
@@ -67,9 +79,14 @@ ___
 
 <img src="images/diskoveradmin_menu_system.png" width="200">
 
+<p id="config_message_queue"></p>
 
 #### Message Queue
 
+<p id="config_smtp"></p>
+
 #### SMTP
+
+<p id="config_api"></p>
 
 #### API

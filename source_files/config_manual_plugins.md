@@ -10,7 +10,7 @@
   - The plugins in this chapter are listed alphabetically within each edition group. Here is a quick access list by category:
 
 | EDITION |  PLUGIN |
-| --- | --- | --- |
+| --- | --- |
 | CORE | <ul><li>[Hash Differential Checksums File Action](#plugin_hash_diff)</li><li>Ngenea Data Orchestrator File Action by PixtiMedia](#plugin_ngenea)</li><li>[Vcinity High-Speed Data Transfer File Action](#plugin_vcinity)</li></ul> |
 | MEDIA | <ul><li>[CineViewer Player File Action](#plugin_cineviewer)</li><li>[Find File Sequences File Action](#plugin_find_file_sequences)</li><li>[Flow Production Tracking Index Plugin (formerly ShotGrid)](#plugin_shotgrid)</li><li>[IMF Validator File action by Oxagile](#plugin_imf_validator)</li><li>GLIM File Action](#plugin_glim)</li><li>Xytec Asset Creation Index Plugin](#plugin_xytech_asset_creation)</li><li>Xytec Order Status Index Plugin](#plugin_xytech_order_status)</li></ul> |
 | LIFE SCIENCE | <ul><li>[BAM Index Plugin](#plugin_bam)</li><li>[Grant File Action](#plugin_grant)</li></ul> |

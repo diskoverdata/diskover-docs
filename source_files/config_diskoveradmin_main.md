@@ -6,7 +6,10 @@
 
 Most help information is available directly in the user interface. This section offers additional guidance to support you during the configuration process.
 
-🟨 &nbsp;Although specified throughout **DiskoverAdmin**, always assume that the fields are case-sensitive.
+🟨 &nbsp;Important!
+
+- Although specified throughout **DiskoverAdmin**, always assume that the fields are case-sensitive.
+- For more information about [Python re.search](https://docs.python.org/3.7/library/re.html).
 
 <p id="config_diskover_web"></p>
 

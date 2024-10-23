@@ -6,10 +6,10 @@
 
 Most help information is available directly in the user interface. This section offers additional guidance when applicable to support you during the configuration process.
 
-🟨 &nbsp;**Important!**
+🟨 &nbsp;**IMPORTANT!**
 
 - Although specified throughout **DiskoverAdmin**, always assume that the fields are case-sensitive.
-- For more information about [Python re.search](https://docs.python.org/3.7/library/re.html).
+- For more information about [Python re.search](https://docs.python.org/3.7/library/re.html) whenever mentioned in the help text in DiskoverAdmin.
 
 
 <p id="config_diskover_web"></p>
@@ -67,29 +67,24 @@ This is the resulting path that would be copied:
 
 <p id="config_indexers"></p>
 
-<p id=“config_es”></p>
+<p id="config_es"></p>
 
 ___
 ### Diskover Indexers/Workers & Elasticsearch
 
 <img src="images/diskoveradmin_menu_diskover.png" width="200">
 
-<p id=“autotag”></p>
+<p id="autotag"></p>
 
-#### Autotags
+#### AutoTags
 <img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
-Given the importance of tagging in data management, we've dedicated an [entire chapter to tags](#tags).
+Given the importance of tagging in data management, we dedicated an [entire chapter to **tags**](#tags).
 
-<p id="config_diskoverd"></p>
+#### Costs
+<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
-___
-### DiskoverD
-
-<img src="images/diskoveradmin_menu_diskoverd.png" width="200">
-
-
-
+Besides the help text in DiskoverAdmin, you can find more information regarding [costs configuration](#analytics_costs) and some use cases.
 
 
 <p id="config_alt_indexers"></p>
@@ -107,6 +102,22 @@ ___
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
 The DirCache alternate scanner can be used to speed up subsequent crawls when indexing slower network-mounted storage. DirCache uses an SQLite database to store a local cache of directories' mtimes (modified times), directories' file lists, and file stat attributes. On subsequent crawls, when a directory mtime is the same as in the cache, the directory list and all file stat attributes can be retrieved from the cache rather than over the network mount.
+
+
+
+
+
+
+
+
+<p id="config_diskoverd"></p>
+
+___
+### DiskoverD
+
+<img src="images/diskoveradmin_menu_diskoverd.png" width="200">
+
+
 
 
 

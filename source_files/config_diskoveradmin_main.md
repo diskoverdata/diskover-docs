@@ -6,6 +6,7 @@
 
 Most help information is available directly in the user interface. This section offers additional guidance to support you during the configuration process.
 
+🟨 &nbsp;Although specified throughout **DiskoverAdmin** always assume that the fields are case-sensitive.
 
 <p id="config_diskover_web"></p>
 

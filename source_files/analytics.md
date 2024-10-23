@@ -111,6 +111,7 @@ Reports provide a mechanism to create repeatable analytics by searching for your
 
 🚧 &nbsp;We're hard at work preparing these query groups.
 
+<p id="analytics_costs"></p>
 
 ### Cost Analysis
 <img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">

@@ -21,6 +21,9 @@ Below is a summary of the current analytics/reports available. The links will br
 | ⚙️ [Cost Analysis](https://docs.diskoverdata.com/diskover_user_guide/#cost-analysis) | Highly customizable report helping you put a price tag on the value of your digital assets. |
 | ⚙️ [Reports](https://docs.diskoverdata.com/diskover_user_guide/#reports) | Customizable to help you find your top unknowns. |
 
+The reports explained in this chapter can be found in the **Analytics** drop-down list:
+
+<img src="images/analytics_menu_setup.png" width="400">
 
 ### Smart Searches
 <img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
@@ -49,25 +52,60 @@ Here are a few examples providing business-context insight.
 
 🔴 &nbsp;To customize, start by clicking the **Edit Smart Searches** button:
 
-<img src="images/analytics_smart_searches_edit.png" width="">
+<img src="images/analytics_smart_searches_edit.png" width="750">
 
 🔴 &nbsp;This page will open in a new tab:
 
-    - Read all the instructions at the top for guidance.
-    - Modify the [search queries](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries-syntax-and-rules) for your use case(s).
-    - Click **Save Smart Searches** to save your queries once done.
+- Read all the instructions at the top for guidance.
+- Modify the [search queries](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries-syntax-and-rules) for your use case(s).
+- Click **Save Smart Searches** to save your queries once done.
 
-<img src="analytics_smart_searches_edit_mode.png" width="">
+<img src="images/analytics_smart_searches_edit_mode.png" width="">
 
 Here is a simple example of queries mostly using customer names + specific paths/repositories + tags:
 
 ![Image: Smart Searches Editing Window](images/image_reporting_smart_searches_report_editing_window.png)
 
-### Cost Analysis
-<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
-
 
 ### Reports
 <img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
+
+#### Overview
+
+Reports provide a mechanism to create repeatable analytics by searching for your top unknowns, from simple queries like "which file types occupy the most space" to "who is using the most space". Any users can access Reports, but only authorized users can customize by adding, editing, or deleting queries.
+
+#### Examples
+
+**Example using Xytech project lifecycle status**:
+
+<img src="images/analytics_reports_by_project_status.png" width="">
+
+**Example using Xytech production  managers**:
+
+<img src="images/analytics_reports_by_manager.png" width="">
+
+#### Reports Customization
+
+🔴 &nbsp;To customize, start by clicking the **Edit Reports** button:
+
+<img src="images/analytics_reports_edit.png" width="750">
+
+🔴 &nbsp;This page will open in a new tab:
+
+- Read all the instructions at the top for guidance. This report is a little more complicated to customize, so take the time to read it the instructions and then test your queries.
+- Modify the [search queries](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries-syntax-and-rules) for your use case(s).
+- Click **Save Reports** to save your queries once done.
+
+<img src="images/analytics_smart_searches_edit_mode.png" width="">
+
+Here is a simple example of queries mostly using customer names + specific paths/repositories + tags:
+
+![Image: Smart Searches Editing Window](images/image_reporting_smart_searches_report_editing_window.png)
+
+
+
+### Cost Analysis
+<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
+
 
 

@@ -2,13 +2,13 @@
 
 ## Features Configuration 🔎 Where to Find What
 
-This section alphabetically sorts the main configurable Diskover features, whether they are in the DiskoverAdmin panel or still manually configurable, and where to find them. Some features are there two and three times, under different names, to ensure that you can find what you are looking for.
+This section lists the main configurable Diskover features alphabetically, whether they're located in the DiskoverAdmin panel or require manual configuration, along with where to find them. Some features are listed multiple times under different names to make them easier to locate.
 
 Additionally, if you are using the DiskoverAdmin panel, you can select **Search** in the menu on the left and type a simple word to find where a feature is located in the DiskoverAdmin menu.
 
 <img src="images/diskoveradmin_search.png" width="200">
 
-| FEATURE | CONFIGURE IN USER INTERFACE<br>DiskoverAdmin → Configuration | ELSEWHERE |
+| FEATURE | CONFIGURE IN USER INTERFACE<br>DiskoverAdmin → Configuration | MANUAL CONFIGURATION |
 | --- | --- | --- |
 | **Alternate Indexers** | Diskover → Alternate Indexers | |
 | **Amazon MQ** | System → Message Queue | |

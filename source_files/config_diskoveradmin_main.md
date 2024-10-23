@@ -29,7 +29,7 @@ ___
 
 By default, users will see a list of all volumes indexed by Diskover in the left pane of the user interface. You can however create Top Paths to organize your volumes (by location, project, etc.). In this example, note that the first collapsible option will always be **All Top Paths** and will list all your repositories.
 
-<img src="images/top_path_by_location.png" width="">
+<img src="images/top_path_by_location.png" width="300">
 
 
 <p id="config_path_translation"></p>

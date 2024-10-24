@@ -34,7 +34,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 Designed to move, copy, delete, rename, or run custom commands on files and directories based on a set of highly configurable criteria. With the use of tags, the AutoClean plugin can be used to implement a RACI model or approval process for archive and deletion (approved_archive, approved_delete, etc.) tag application. The plugin criteria can then be set to meet the desired set of tags (times, etc.) to invoke action.
 
@@ -47,7 +47,7 @@ Designed to move, copy, delete, rename, or run custom commands on files and dire
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 Allows for automated tags to be applied/added to the Elasticsearch index as a post-index process. Tags can be applied automatically via a series of rules applied to directories or files. The criteria can be very powerful based on a combination of base and business-context metadata.
 
@@ -60,7 +60,7 @@ Allows for automated tags to be applied/added to the Elasticsearch index as a po
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 Designed to extract/add metadata from files’ breadcrumbs to the Elasticsearch index as a post-index process.
 
@@ -74,7 +74,7 @@ Designed to extract/add metadata from files’ breadcrumbs to the Elasticsearch 
 | --- | --- |
 | Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 Allows for hash values to be added for files and directories to the Elasticsearch index as a post-index process, can be used for multiple checksums/data integrity tasks.
 
@@ -87,7 +87,7 @@ Allows for hash values to be added for files and directories to the Elasticsearc
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 Adds md5 and sha1 hash values for files and directories to the Elasticsearch index as a post-index process, using AWS Lambda/Fixity when using the Diskover S3 alternate indexer.
 
@@ -101,7 +101,7 @@ Adds md5 and sha1 hash values for files and directories to the Elasticsearch ind
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | Refer to our [Analytics](#analytics_costs) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | Refer to our [Analytics](#analytics_costs) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 Adds costs per GB for files and directories to the Elasticsearch index as a post-index process. Note that this feature can also be configured to apply at time of index under **DiskoverAdmin → Configuration → Diskover → Configurations**
 
@@ -114,7 +114,7 @@ Adds costs per GB for files and directories to the Elasticsearch index as a post
 | --- | --- |
 | Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 Designed to add hash values, check and report on duplicate files/directories across single or multiple indices as a post-index process. The plugin supports **xxhash**, **md5**, **sha1**, and **sha256** checksums. The plugin is designed for multiple use cases:
 
@@ -146,7 +146,7 @@ The duplicates plugin will store hash values that can be stored only for duplica
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 Migrates Elasticsearch field data from one index to another as a post-index process.
 
@@ -160,7 +160,7 @@ Migrates Elasticsearch field data from one index to another as a post-index proc
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 The index Elasticsearch (ES) query report plugin is designed to search for Elasticsearch query strings in an existing completed index and create a CSV report with the ability to send the report to one or more email recipients.
 
@@ -172,7 +172,7 @@ The index Elasticsearch (ES) query report plugin is designed to search for Elast
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
-| Installation | Via terminal.<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
+| Installation | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
 | Learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#flowprodtracking) \| [contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#flow-production-tracking-plugin) |
 
@@ -188,7 +188,7 @@ Designed to enhance basic metadata with detailed production status information, 
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/851931510) |
 
 Analyzes the index of all directories and file names for illegal characters, and long filenames or file paths to proactively find potential files with names that can break applications. Offending filenames are tagged with the corresponding non-conformance and the list of illegal filenames can then be sent via email reports. The plugin can be configured to remediate these issues with automatic renaming or character replacement.
@@ -202,7 +202,7 @@ Analyzes the index of all directories and file names for illegal characters, and
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 The index differential plugin is designed to provide a list of file differences between two indices or points in time. The differential list can be used to feed synchronization tools (i.e. rsync) or identify deltas where two repositories should be identical. The plugin outputs a CSV file containing the differences between the two indices. It can also be used to compare checksums/hashes of files between two indices.
 
@@ -216,7 +216,7 @@ The index differential plugin is designed to provide a list of file differences 
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 Migrates tags from one index to the next as a post-index process.
 
@@ -229,7 +229,7 @@ Migrates tags from one index to the next as a post-index process.
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 The Windows Attributes plugin adds the Windows file owner, primary group and ACE's of each file and directory to the Diskover index after indexing is complete. It replaces all docs showing owner 0 and group 0 with the Windows file/directory owner name and primary group. It updates `owner`, `group` and `windacls` fields metadata of each file or directory to diskover index after indexing with the Windows owner, primary group, and ACL info. The plugin can take a long time to run due to name/sid lookups.
 
@@ -247,8 +247,8 @@ Requirements:
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
-| Installation | Via terminal.<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
-| Learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#xytech-asset-creation) \| [contact Diskover](mailto:sales@diskoverdata.com) |
+| Installation | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
+| Learn mMre | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#xytech-asset-creation) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-asset-creation-plugin-overview) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/660789118) |
 
@@ -271,8 +271,8 @@ The path location is added to the asset within Xytech and the asset number is as
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
-| Installation | Via terminal.<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
-| Learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#xytech-order-status) \| [contact Diskover](mailto:sales@diskoverdata.com) |
+| Installation | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
+| Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#xytech-order-status) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-order-status-plugin-overview) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/768967081) |
 

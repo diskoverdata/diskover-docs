@@ -129,7 +129,7 @@ Calculating file **hash checksums** is an expensive CPU/disk operation. The dupe
 
 The dupes-finder can also be used to add file hashes to all the files in the index, not just the duplicates found.
 
-![Image: Duplicate Plugin Results](images/image_plugins_dupes_finder_diskover_ui_results_pane.png)
+![Image: Duplicate Plugin Results](images/plugin_dupes_finder_diskover_ui_results_pane.png)
 
 The duplicates plugin will store hash values that can be stored only for duplicates or for all files.
 

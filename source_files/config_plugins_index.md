@@ -1,37 +1,38 @@
 <p id="config_plugins_index"></p>
 
-## Plugins Configuration | Index
+## Index Plugins Configuration
 
 ### Overview
 
-Most help information is available directly within the user interface. This section provides additional guidance to assist you during the configuration phase.
+Diskover sets the standard in the data management market with its extensive range of metadata harvest plugins, which enrich data with a comprehensive set of business-context attributes.
 
-<img src="images/diskoveradmin_menu_plugins_index.png" width="200">
+This extra metadata is an invaluable asset for locating, organizing, and analyzing specific data, as well as for designing workflows tailored to precise data management tasks. To ensure optimal performance and indexing speed, some of these plugins can be executed at time of index or as a post-index task. **This chapter covers plugins that run at time of index.**
 
+| Plugins Configurable via DiskoverAdmin | Plugins Manually Configurable |
+| --- | --- |
+| <ul><li>Most plugins are now configurable directly in the **DiskoverAdmin** panel.</li><li>Help information is available directly within the user interface.</li><li>This section provides additional guidance when applicable.</li></ul><br><img src="images/diskoveradmin_menu_plugins_index.png" width="200"> | <ul><li>Note that a few plugins are still configurable via a terminal.</li><li>[Open a support ticket](https://support.diskoverdata.com/) if you currently use one of these plugins and need to upgrade to v2.3+.</li></ul> |
 
-  - All plugins will eventually be included in the [DiskoverAdmin](#config_diskoveradmin) panel, but a few are still only configurable manually.
-  - Please [open a support ticket](https://support.diskoverdata.com/) if you currently use one of these plugins and need to upgrade to v2.3+.
-  - Visit our [Plugins Ecosystem](https://diskoverdata.com/products/plugins/) webpage for a complete list of all our plugins.
-  - The plugins in this chapter are listed alphabetically within each edition group. Here is a quick access list by category:
+### Quick Access List
+
+The plugins in this chapter are listed alphabetically. Here is a quick access list by category:
 
 | EDITION |  PLUGIN |
 | --- | --- |
-| **Core Editions** | <ul><li>[Checksums]()</li><li>[File Kind]()</li><li>[First Index/Arrival Time]()</li><li>[Grafana]()</li><li>[Grafana Cloud]()</li><li>[Path Tokens]()</li><li>[Tag Copier]()</li><li>[Unix Perms]()</li><li>[Windows Owner]()</li></ul> |
-| **Media** | <ul><li>[Media Info]()</li><li>[Xytec Asset Creation Index Plugin](#plugin_xytech_asset_creation)</li><li>[Xytec Order Status Index Plugin](#plugin_xytech_order_status)</li></ul> |
-| **Life Science** | <ul><li>[BAM Index Plugin](#plugin_bam)</li></ul> |
+| **Core Editions** | <ul><li>[Checksums](#plugin_index_checksums)</li><li>[File Kind](#plugin_index_file_kind)</li><li>[First Index/Arrival Time](#plugin_index_first_index)</li><li>[Grafana](#plugin_index_grafana)</li><li>[Grafana Cloud](#plugin_index_grafana_cloud)</li><li>[Path Tokens](#plugin_index_path_tokens)</li><li>[Tag Copier](#plugin_index_tag_copier)</li><li>[Unix Perms](#plugin_index_unix_perms)</li><li>[Windows Owner](#plugin_index_windows_owner)</li></ul> |
+| **Media** | <ul><li>[Media Info](#plugin_index_mediainfo)</li></ul> |
+| **Life Science** | <ul><li>[BAM Index Plugin](#plugin_index_bam)</li></ul> |
 
 
-### Index Plugins
 
-<p id="plugin_bam"></p>
+<p id="plugin_index_bam"></p>
 
 #### BAM Info | Index Plugin
 
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_life_science.png" width="100"> |
-| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
-| Learn more | [Visit our website](https://diskoverdata.com/products/life-science-edition/#bam-plugin) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| Installation | Via terminal.<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
+| Learn more | [Visit our website](https://diskoverdata.com/products/life-science-edition/#bam-plugin) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
 | User Guide | [Diskover Life Science Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/#bam-harvest-plugin) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/678914314?share=copy) |
 
@@ -70,174 +71,141 @@ bam_info.pg.vn:
 
 
 
+<p id="plugin_index_checksums"></p>
 
-<p id="config_index_checksums"></p>
-
-___
-### Checksums
+#### Checksums
 
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
+| Installation | Via the DiskoverAdmin panel |
+| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
-<p id="config_index_file_kind"></p>
+Adds xxhash, md5, sha1, and sha256 hash values to files in Elasticsearch indices to use for checksums/data integrity. Hash values are like fingerprints; they are unique to each file. They are the results of a cryptographic algorithm, which is a mathematical equation with different complexity and security levels, used to scramble the plain text and make it unreadable. They are used for data encryption, authentication, and digital signatures.
 
-___
-### File Kind
 
-| HELP | RESOURCE |
-| --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
+<p id="plugin_index_file_kind"></p>
 
-<p id="config_index_first_index"></p>
-
-___
-### First Index/Arrival Time
+#### File Kind
 
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
+| Installation | Via the DiskoverAdmin panel |
+| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+
+Allows users to categorize file types by groups and adds the extra metadata to the Elasticsearch index during the indexing process, useful for reporting purposes.
 
 
+<p id="plugin_index_first_index"></p>
 
-
-
-<p id="config_index_grafana"></p>
-
-___
-### Grafana
+#### First Index/Arrival Time
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
+| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Installation | Via the DiskoverAdmin panel |
+| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
-<p id="config_index_grafana_cloud"></p>
-
-___
-### Grafana Cloud
-
-| HELP | RESOURCE |
-| --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
+Triggers the creation of an additional attribute when Diskover first detects a new file in a given location and adds the extra metadata to the Elasticsearch index during the indexing process.
 
 
-<p id="config_index_mediainfo"></p>
 
-___
-### Media Info
+<p id="plugin_index_grafana"></p>
+
+#### Grafana
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
+| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Installation | Via the DiskoverAdmin panel |
+| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
-<p id="config_index_path_tokens"></p>
+Provides the ability to visualize and trend data metrics over time using Grafana. The plugin rolls up summary data and creates Grafana-specific indices within Elasticsearch. These indices use time series @timestamp metrics to separate logstash- indices, indexes directory size, counts up to N dir depths (default 2). Elasticsearch can then use these summary indexes as a data source for viewing these logstash indices from Grafana.
 
-___
-### Path Tokens
 
-| HELP | RESOURCE |
-| --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
 
-<p id="config_index_tag_copier"></p>
+<p id="plugin_index_grafana_cloud"></p>
 
-___
-### Tag Copier
+#### Grafana Cloud
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
+| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Installation | Via the DiskoverAdmin panel |
+| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
-<p id="config_index_unix_perms"></p>
-
-___
-### Unix Perms
-
-| HELP | RESOURCE |
-| --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
-
-<p id="config_index_windows_owner"></p>
-
-___
-### Windows Owner
-
-| HELP | RESOURCE |
-| --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
+Provides the ability to visualize and trend data metrics over time using Grafana Cloud. The plugin rolls up summary data and creates Grafana-specific indices within Elasticsearch. These indices use time series @timestamp metrics to separate logstash- indices, indexes directory size, counts up to N dir depths (default 2). Elasticsearch can then use these summary indexes as a data source for viewing these logstash indices from Grafana.
 
 
-<p id="plugin_xytech_asset_creation"></p>
 
-#### Xytech Asset Creation | Index Plugin
+<p id="plugin_index_mediainfo"></p>
+
+#### Media Info
 
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
-| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
-| Learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#xytech-asset-creation) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-asset-creation-plugin-overview) |
-| Demo | [🍿 Watch Demo Video](https://vimeo.com/660789118) |
+| Installation | Via the DiskoverAdmin panel |
+| To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#mediainfo) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
+| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#media-info-attributes) |
 
-Post facilities often have customers’ assets that have been archived and lack findability, visibility, and searchability, and therefore, the opaque nature of these assets makes them difficult to reuse or repurpose. Companies with years of such archived assets have often stored these on tape media or removable hard drives, which are often stored in a physical vault.
-
-Assets were often stored on such “offline” media due to costs; however, with the advent of cloud and object storage, the economics are now making it viable to store such vaulted assets on more “online media”. Although, simply putting these assets onto online media does not necessarily make these assets findable in context or within the facility’s order management system.
-
-The Xytech asset creation tool is designed to find and index newly restored online assets from LTO tapes, removable hard drives, etc., making them available, findable, and searchable within the Xytech order management system, as well as Diskover.
-
-The plugin operates on the assumption that the assets restored to online media are placed into a folder with the following naming convention: **CustomerID_CustomerName**
-
-The path location is added to the asset within Xytech and the asset number is assigned to the file via a tag within the Diskover Index.
+Adds business context and searchability via additional media file attributes (resolution, codec, pixel format, etc.). The enriched metadata is key for granular analysis, workflow automation, and overall data curation.
 
 
 
-<p id="plugin_xytech_order_status"></p>
+<p id="plugin_index_path_tokens"></p>
 
-#### Xytech Order Status | Index Plugin
+#### Path Tokens
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_media.png" width="100"> |
-| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment.
-| Learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#xytech-order-status) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-order-status-plugin-overview) |
-| Demo | [🍿 Watch Demo Video](https://vimeo.com/768967081) |
+| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Installation | Via the DiskoverAdmin panel |
+| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
-The Xytech Media Operations Platform order status plugin is designed to automate the correlation of the order management system and the storage system, by harvesting key business context from Xytech and applying that context within the AJA Diskover Media Edition. In turn, this business context metadata can be used to automate workflows, curate data, monitor costs, create highly customized reports, and search granularly.
+Designed to break down concatenated directory/file names and add the tokenized metadata to the Elasticsearch index during the indexing process.
 
-Facilities often manually correlate the order management system with the storage repositories. However, manual processes are subject to human errors and difficult to scale as the volume of media orders and data turnover increases constantly.
 
-Therefore, the lack of integration for file-based workflows between the order management system and the underlying storage repositories, makes data management decisions difficult as they are solely based on attributes of files or objects on storage. Additional business context is needed from the order management system to increase precision and accuracy of data management decisions.
 
-An instance of key information might be the invoice date for a work order. A status change for a work order can be aa key indicator for data management, for example, once a Xytech media order has been “invoiced”, then the data associated with that media order can be a candidate for archival.
+<p id="plugin_index_tag_copier"></p>
+
+#### Tag Copier
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Installation | Via the DiskoverAdmin panel |
+| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+
+Designed to migrate tags from one index to the next. Generally, these tags are applied post index through manual tag application or plugin tag application.
+
+
+
+<p id="plugin_index_unix_perms"></p>
+
+#### Unix Perms
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_community.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Installation | Via the DiskoverAdmin panel |
+| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+
+Adds the Unix permission attributes of each file and directory to the Elasticsearch data catalog during indexing. Two tags are added, unixperms-plugin and ugo+rwx, if a file or directory is found with fully open permissions (777 or 666). 
+
+
+
+<p id="plugin_index_windows_owner"></p>
+
+#### Windows Owner
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_community.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Installation | Via the DiskoverAdmin panel |
+| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+
+Adds the Windows file owner and primary group of each file and directory to the Diskover index at time of indexing. It replaces all docs showing username 0 with the Windows file/directory owner name. 
+
 

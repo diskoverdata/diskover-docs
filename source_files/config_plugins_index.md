@@ -8,6 +8,8 @@ Diskover sets the standard in the data management market with its extensive rang
 
 This extra metadata is an invaluable asset for locating, organizing, and analyzing specific data, as well as for designing workflows tailored to precise data management tasks. To ensure optimal performance and indexing speed, some of these plugins can be executed at time of index or as a post-index task. **This chapter covers plugins that run at time of index.**
 
+🟨 &nbsp;**IMPORTANT!** Once the plugin is configured, a task needs to be created and scheduled in the [**Task Panel**](#task_panel).
+
 | Plugins Configurable via DiskoverAdmin | Plugins Manually Configurable |
 | --- | --- |
 | <ul><li>Most plugins are now configurable directly in the **DiskoverAdmin** panel.</li><li>Help information is available directly within the user interface.</li><li>This section provides additional guidance when applicable.</li></ul><br><img src="images/diskoveradmin_menu_plugins_index.png" width="200"> | <ul><li>Note that a few plugins are still configurable via a terminal.</li><li>[Open a support ticket](https://support.diskoverdata.com/) if you currently use one of these plugins and need to upgrade to v2.3+.</li></ul> |
@@ -127,6 +129,7 @@ Provides the ability to visualize and trend data metrics over time using Grafana
 
 Adds business context and searchability via additional media file attributes (resolution, codec, pixel format, etc.). The enriched metadata is key for granular analysis, workflow automation, and overall data curation.
 
+The media info harvest plugin is designed to provide media metadata attributes about a file without granting the Diskover user any read/write file system access. New indices will use the plugin and any video file will get additional media info added to the Elasticsearch index’s **media_info field**. The attributes provide the ability to view storage and file system content from a workflow perspective, for example all the frame rates on any given storage.
 
 
 <p id="plugin_index_path_tokens"></p>
@@ -153,7 +156,7 @@ Designed to break down concatenated directory/file names and add the tokenized m
 | Installation | Via the DiskoverAdmin panel |
 | To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
-Designed to migrate tags from one index to the next. Generally, these tags are applied post index through manual tag application or plugin tag application.
+Designed to migrate tags from one index to the next. Generally, these tags are applied post index through manual tag application or plugin tag application. Note that there is also a [post-index Tag Copier plugin](#plugin_post_index_tag_copier).
 
 
 
@@ -167,7 +170,7 @@ Designed to migrate tags from one index to the next. Generally, these tags are a
 | Installation | Via the DiskoverAdmin panel |
 | To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
-Adds the Unix permission attributes of each file and directory to the Elasticsearch data catalog during indexing. Two tags are added, unixperms-plugin and ugo+rwx, if a file or directory is found with fully open permissions (777 or 666). 
+Adds the Unix permission attributes of each file and directory to the Elasticsearch data catalog during indexing. Two tags are added, **unixperms-plugin** and **ugo+rwx**, if a file or directory is found with fully open permissions (777 or 666). 
 
 
 
@@ -182,5 +185,3 @@ Adds the Unix permission attributes of each file and directory to the Elasticsea
 | To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 Adds the Windows file owner and primary group of each file and directory to the Diskover index at time of indexing. It replaces all docs showing username 0 with the Windows file/directory owner name. 
-
-

@@ -1,4 +1,4 @@
-<p id="config_diskoveradmin_plugins_index"></p>
+<p id="config_plugins_index"></p>
 
 ## Plugins Configuration | Index
 

@@ -84,7 +84,7 @@ Given the importance of tagging in data management, we dedicated an [entire chap
 #### Costs
 <img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
-Besides the help text in DiskoverAdmin, you can find more information regarding [costs configuration](#analytics_costs) and some use cases.
+Besides the help text in DiskoverAdmin, you can find [more information here regarding **cost** configuration](#analytics_costs) as well as some use cases.
 
 
 <p id="config_alt_indexers"></p>

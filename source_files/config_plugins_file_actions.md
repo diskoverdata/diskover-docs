@@ -1,42 +1,39 @@
 <p id="config_plugins_file_actions"></p>
 
-## Plugins Configuration | File Actions
+## File Action Plugins Configuration
 
 ### Overview
 
-Most help information is available directly within the user interface. This section provides additional information and guidance to assist you during the configuration phase.
+Authorized users, following role-based access controls, can initiate File Actions directly from the Diskover interface, providing a versatile range of use cases.
 
-🟨 &nbsp;Note that some plugins are not currently available in DiskoverAdmin and still require manual installation for now. Please refer to the [Manual Plugins Configuration]() section for the list and details.
+| Plugins Configurable via DiskoverAdmin | Plugins Manually Configurable |
+| --- | --- |
+| <ul><li>Many plugins are now configurable directly in the **DiskoverAdmin** panel.</li><li>Help information is available directly within the user interface.</li><li>This section provides additional guidance when applicable.</li></ul><br><img src="images/diskoveradmin_menu_plugins_file_actions.png" width="200"> | <ul><li>Note that a few plugins are still configurable via a terminal.</li><li>[Open a support ticket](https://support.diskoverdata.com/) if you currently use one of these plugins and need to upgrade to v2.3+.</li></ul> |
 
-  - All plugins will eventually be included in the [DiskoverAdmin](#config_diskoveradmin) panel, but a few are still only configurable manually.
-  - Please [open a support ticket](https://support.diskoverdata.com/) if you currently use one of these plugins and need to upgrade to v2.3+.
-  - Visit our [Plugins Ecosystem](https://diskoverdata.com/products/plugins/) webpage for a complete list of all our plugins.
-  - The plugins in this chapter are listed alphabetically within each edition group. Here is a quick access list by category:
+### Quick Access List
+
+The plugins in this chapter are listed alphabetically. Here is a quick access list by category:
 
 | EDITION |  PLUGIN |
 | --- | --- |
-| **Core Editions** | <ul><li>[Fix Permissions]()</li><li>[Export]()</li><li>[Hash Differential Checksums File Action](#plugin_hash_diff)</li><li>[Live View]()</li><li>[Make Links]()</li><li>[Ngenea Data Orchestrator File Action by PixtiMedia](#plugin_ngenea)</li><li>[PDF Viewer]()</li><li>[Rclone]()</li><li>[Vcinity High-Speed Data Transfer File Action](#plugin_vcinity)</li></ul> |
-| **Media** | <ul><li>[CineViewer Player File Action](#plugin_cineviewer)</li><li>[EDL Check]()</li><li>[EDL Download]()</li><li>[Find File Sequences File Action](#plugin_find_file_sequences)</li><li>[IMF Change Report]()</li><li>[IMF Validator File action by Oxagile](#plugin_imf_validator)</li><li>[GLIM File Action](#plugin_glim)</li><li>[Vantage]() </li></ul> |
-| **Life Science** | <ul><li>[Grant File Action](#plugin_grant)</li></ul> |
+| **Core Editions** | <ul><li>[Export](#plugin_file_action_export)</li><li>[Fix Permissions](#plugin_file_action_fix_permissions)</li><li>[Hash Differential](#plugin_file_action_hash_diff)</li><li>[Live View](#plugin_file_action_live_view)</li><li>[Make Links](#plugin_file_action_make_links)</li><li>[Ngenea Data Orchestrator](#plugin_file_action_ngenea)</li><li>[PDF Viewer](#plugin_file_action_pdf_viewer)</li><li>[Rclone](#plugin_file_action_rclone)</li><li>[Vcinity High-Speed Data Transfer](#plugin_file_action_vcinity)</li></ul> |
+| **Media** | <ul><li>[CineViewer Player](#plugin_file_action_cineviewer)</li><li>[EDL Check](#plugin_file_action_edl_check)</li><li>[EDL Download](#plugin_file_action_edl_download)</li><li>[Find File Sequences](#plugin_file_action_find_file_sequences)</li><li>[GLIM File Action](#plugin_file_action_glim)</li><li>[IMF Change Report](#plugin_file_action_imf_change_report)</li><li>[IMF Validator](#plugin_file_action_imf_validator)</li><li>[Vantage](#plugin_file_action_vantage) </li></ul> |
+| **Life Science** | <ul><li>[Grant](#plugin_file_action_grant)</li></ul> |
 
 
 
-<img src="images/diskoveradmin_menu_plugins_file_actions.png" width="200">
 
+<p id="plugin_file_action_cineviewer"></p>
 
-<p id="plugin_cineviewer"></p>
-
-#### CineViewer Player by CineSys | File Action Plugin
+#### CineViewer Player by CineSys
 
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
-| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
-| Learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#cineviewer) and/or [contact AJA Video Systems](mailto:sales@aja.com) |
+| Installation | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
+| Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#cineviewer) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#cineviewer-player) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/765285042?share=copy) |
-
-##### Overview
 
 CineViewer is a video playback and management system designed for video and broadcast professionals. It is designed to securely view high-resolution media from a remote browser, without giving users access to the source files, as well as play content that may not be supported by standard web browsers, including file formats such as ProRes and MXF. Additionally, Cineviewer allows users to play back image sequences in formats such as DPX and EXR. The player can be launched in one click from the AJA Diskover Media Edition user interface, allowing for seamless validation of media assets, therefore increasing productivity, while safeguarding your production network.
 
@@ -51,56 +48,59 @@ The CineViewer Player is developed by [CineSys LLC](https://cinesys.io/), a majo
 
 
 
-<p id="config_file_action_edl_check"></p>
+<p id="plugin_file_action_edl_check"></p>
 
-___
-### EDL Check
-
-| HELP | RESOURCE |
-| --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
-
-<p id="config_file_action_edl_download"></p>
-
-___
-### EDL Download
-
-| HELP | RESOURCE |
-| --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
-
-<p id="config_file_action_export"></p>
-
-___
-### Export
-
-| HELP | RESOURCE |
-| --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
-
-
-
-<p id="plugin_find_file_sequences"></p>
-
-#### Find File Sequences | File Action Plugin
+#### EDL Check
 
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
-| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
-| Learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#file-sequences) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| Installation | Via the DiskoverAdmin panel |
+| Learn More | [Contact AJA Video Systems](mailto:sales@aja.com) |
+
+Allows authorized users without read/write access to production storage to verify the validity of EDL (Edit Decision List) files.
+
+
+
+<p id="plugin_file_action_edl_download"></p>
+
+#### EDL Download
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_media.png" width="100"> |
+| Installation | Via the DiskoverAdmin panel |
+| Learn More | [Contact AJA Video Systems](mailto:sales@aja.com) |
+
+Allows authorized users without read/write access to production storage to upload or download specific lists of pre-defined file types and sizes, eliminating the need for data management group involvement.
+
+
+<p id="plugin_file_action_export"></p>
+
+#### Export
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Installation | Via the DiskoverAdmin panel |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+
+Allows authorized users to preview and create a formatted CSV file, enabling integration with other applications that monitor and trigger workflows based on the file's arrival.
+
+
+
+<p id="plugin_file_action_find_file_sequences"></p>
+
+#### Find File Sequences
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_media.png" width="100"> |
+| Installation | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
+| Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#file-sequences) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#find-file-sequences) |
 
-The File Sequence web plugin File Action is designed to list out any file sequences in a directory or from a single file in a sequence. File sequences are printed out with `%08d` to show the 0 padding and number of digits in the sequence. Each sequence, whole or broken, are put into a [ ] list. [Learn more about this plugin](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#find-file-sequences).
+The File Sequence web plugin File Action is designed to list out any file sequences in a directory or from a single file in a sequence. File sequences are printed out with `%08d` to show the 0 padding and number of digits in the sequence. Each sequence, whole or broken, is put into a [ ] list. (https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#find-file-sequences).
 
 ![Image: File Sequences Results](images/image_file_action_results_tech.png)
 
@@ -108,29 +108,29 @@ The File Sequence web plugin File Action is designed to list out any file sequen
 
 
 
-<p id="config_file_action_fix_permissions"></p>
+<p id="plugin_file_action_fix_permissions"></p>
 
-___
-### Fix Permissions
+#### Fix Permissions
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
+| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Installation | Via the DiskoverAdmin panel |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+
+Enables authorized users to change the Unix permissions of selected files or folders to a configured value.
 
 
 
-<p id="plugin_glim"></p>
+<p id="plugin_file_action_glim"></p>
 
 #### GLIM | File Action Plugin
 
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
-| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
-| Learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#glim) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| Installation | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
+| Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#glim) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#glim-previewvalidate-media-files) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/665037937) |
 
@@ -138,15 +138,15 @@ This plugin results in a seamless integration with GLIM, allowing end-users to s
 
 
 
-<p id="plugin_grant"></p>
+<p id="plugin_file_action_grant"></p>
 
-#### Grant Research | File Action Plugin
+#### Grant Research
 
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_life_science.png" width="100"> |
-| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
-| Learn more | [Visit our website](https://diskoverdata.com/products/life-science-edition/#grant-plugin) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| Installation | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
+| Learn More | [Visit our website](https://diskoverdata.com/products/life-science-edition/#grant-plugin) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 The Grant Plugin has a dual purpose 1) assisting research institutes in managing their grants/members/storage costs internally, and 2) fulfilling the requirements for the new NIH DMS Policy.
 
@@ -160,53 +160,43 @@ _[Click here for a full-screen view of this image.](images/diagram_diskover_plug
 
 
 
+<p id="plugin_file_action_hash_diff"></p>
 
-
-<p id="plugin_hash_diff"></p>
-
-#### Hash Differential Checksums | File Action Plugin
+#### Hash Differential Checksums
 
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
-| Learn more | [Visit our website](https://diskoverdata.com/products/plugins/#data-integrity) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| Demo | [🍿 Watch Demo Video](https://vimeo.com/768967081) |
+| Installation | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Demo | [🍿 Watch Demo Video](https://vimeo.com/828166808) |
 
-The Xytech Media Operations Platform order status plugin is designed to automate the correlation of the order management system and the storage system, by harvesting key business context from Xytech and applying that context within the AJA Diskover Media Edition. In turn, this business context metadata can be used to automate workflows, curate data, monitor costs, create highly customized reports, and search granularly.
-
-Facilities often manually correlate the order management system with the storage repositories. However, manual processes are subject to human errors and difficult to scale as the volume of media orders and data turnover increases constantly.
-
-Therefore, the lack of integration for file-based workflows between the order management system and the underlying storage repositories, makes data management decisions difficult as they are solely based on attributes of files or objects on storage. Additional business context is needed from the order management system to increase precision and accuracy of data management decisions.
-
-An instance of key information might be the invoice date for a work order. A status change for a work order can be aa key indicator for data management, for example, once a Xytech media order has been “invoiced”, then the data associated with that media order can be a candidate for archival.
+Designed for precise data movement monitoring, the plugin checksums xxhash, md5, sha1, and sha256 hash values between the original file and the resulting file once it reaches its transfer destination, catching any possible file corruption in the process. The plugin alerts on areas where the file checksum of the source location does not match the file checksum of the destination location, which would then require a retransfer of these suspect files. A manifest is generated to provide insurance upon completion that all files arrived uncorrupted.
 
 
 
-<p id="config_file_action_imf_change_report"></p>
+<p id="plugin_file_action_imf_change_report"></p>
 
-___
-### IMF Change Report
-
-| HELP | RESOURCE |
-| --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
-
-
-
-
-<p id="plugin_imf_validator"></p>
-
-#### IMF Package Validator by Oxagile | File Action Plugin
+#### IMF Change Report
 
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
-| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
-| Learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#imf-package-validator) and/or [contact Oxagile](mailto:IMF@Oxagile.com) |
+| Installation | Via the DiskoverAdmin panel |
+| Learn More | [Contact AJA Video Systems](mailto:sales@aja.com) |
+
+Generates a list of IMF image changes in both human-readable format and machine-readable EDL, referencing the updated media.
+
+
+<p id="plugin_file_action_imf_validator"></p>
+
+#### IMF Package Validator by Oxagile 
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_media.png" width="100"> |
+| Installation | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
+| Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#imf-package-validator) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#imf-package-validator) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/828166808) |
 
@@ -237,92 +227,103 @@ The following are the limitations of the current plugin version:
 5.	DCP packages are not supported.
 
 
-<p id="config_file_action_live_view"></p>
 
-___
-### Live View
 
-| HELP | RESOURCE |
-| --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
+<p id="plugin_file_action_live_view"></p>
 
-<p id="config_file_action_make_links"></p>
-
-___
-### Make Links
-
-| HELP | RESOURCE |
-| --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
-
-<p id="plugin_ngenea"></p>
-
-#### Ngenea Data Orchestrator by PixitMedia | File Action Plugin
+#### Live View
 
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
-| Learn more | Download this [Solution Brief](https://diskoverdata.com/wp-content/uploads/2024/08/diskover_pixitmedia_ngenea_solution_brief.pdf) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| Installation | Via the DiskoverAdmin panel |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+
+Provides authorized users with a live view of a filesystem between indexing intervals in real time.
+
+
+<p id="plugin_file_action_make_links"></p>
+
+#### Make Links
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Installation | Via the DiskoverAdmin panel |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+
+Allows authorized users to create symlinks and hard links for selected files and directories.
+
+
+
+<p id="plugin_file_action_ngenea"></p>
+
+#### Ngenea Data Orchestrator by PixitMedia
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Installation | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
+| Learn More | Download this [Solution Brief](https://diskoverdata.com/wp-content/uploads/2024/08/diskover_pixitmedia_ngenea_solution_brief.pdf) \| [contact Diskover](mailto:sales@diskoverdata.com) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/833500176?share=copy) |
 
 With the Ngenea Data Orchestrator File Action, authorized users can quickly and securely transport data, directly from the Diskover UI, to and from globally distributed cloud, object storage, traditional NAS files, and tape resources, automatically moving data into the ‘right cost’ resource according to value and usage as your work teams and business needs demand.
 
 
 
-<p id="config_file_action_pdf_viewer"></p>
+<p id="plugin_file_action_pdf_viewer"></p>
 
-___
-### PDF Viewer
-
-| HELP | RESOURCE |
-| --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
-
-<p id="config_file_action_fix_rclone"></p>
-
-___
-### Rclone
-
-| HELP | RESOURCE |
-| --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
-
-<p id="config_file_action_vantage"></p>
-
-___
-### Vantage
-
-| HELP | RESOURCE |
-| --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| To learn more | [Visit our website]() and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [x]() |
-| Demo | [🍿 Watch Demo Video](x) |
-
-
-
-<p id="plugin_vcinity"></p>
-
-#### Vcinity High-Speed Data Transfer | File Action Plugin
+#### PDF Viewer
 
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| Installation | 🛟 &nbsp;[Click here to open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin, whether you want to test or deploy it in your production environment. |
-| Learn more | Download this [Solution Brief](https://diskoverdata.com/wp-content/uploads/2024/05/Diskover_Data_SB.pdf) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
+| Installation | Via the DiskoverAdmin panel |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+
+Enables authorized users to view and validate PDF files without accessing the source files.
+
+
+
+<p id="plugin_file_action_rclone"></p>
+
+#### Rclone
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Installation | Via the DiskoverAdmin panel |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+
+Provides authorized users the framework for data movement based on pre-configured source and destination profiles.
+
+
+
+<p id="plugin_file_action_vantage"></p>
+
+#### Vantage
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_media.png" width="100"> |
+| Installation | Via the DiskoverAdmin panel |
+| Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#vantage) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
+| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#vantage-submit-transcoding-jobs-directly-from-diskover) |
+| Demo | [🍿 Watch Demo Video](https://vimeo.com/669672933) |
+
+Enables authorized users to submit media workflow job processing to Telestream Vantage directly from the Diskover user interface.
+
+
+
+<p id="plugin_file_action_vcinity"></p>
+
+#### Vcinity High-Speed Data Transfer
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Installation | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
+| Learn More | Download this [Solution Brief](https://diskoverdata.com/wp-content/uploads/2024/05/Diskover_Data_SB.pdf) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Demo | [🍿 Watch Demo Video](https://youtu.be/l1XZoe-ZtEI) |
 
 Regardless of distance and latency, the high-speed data transfer Vcinity Plugin provides the framework for reliable and fast data movement based on pre-configured source and destination profiles. 
@@ -330,6 +331,9 @@ Regardless of distance and latency, the high-speed data transfer Vcinity Plugin 
 The plugin can move NFS, SMB, and S3 to any NFS, SMB, and S3 vendor, no matter the brand, ex: Dell, NetApp, HPE, etc.
 
 The Vcinity High-Speed Data Transfer Plugin provides two mechanisms within Diskover to trigger data movement: 1) on-demand user-initiated file action directly from the Diskover interface, and 2) scheduled automated workflow based on file attributes meeting predetermined criteria.
+
+
+
 
 
 

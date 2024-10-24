@@ -229,7 +229,12 @@ Migrates tags from one index to the next as a post-index process.
 | Installation | Via the DiskoverAdmin panel |
 | To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
-Adds Windows file owner, primary group, and DACL info to files and directories in the Elasticsearch index as a post-index process.
+The Windows Attributes plugin adds the Windows file owner, primary group and ACE's of each file and directory to the Diskover index after indexing is complete. It replaces all docs showing owner 0 and group 0 with the Windows file/directory owner name and primary group. It updates `owner`, `group` and `windacls` fields metadata of each file or directory to diskover index after indexing with the Windows owner, primary group, and ACL info. The plugin can take a long time to run due to name/sid lookups.
+
+Requirements:
+
+- This plugin works in Windows only.
+- [Enable long path support in Windows](https://docs.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=cmd) if long paths are being scanned.
 
 
 

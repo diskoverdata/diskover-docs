@@ -33,8 +33,8 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 | HELP | RESOURCE |
 | --- | --- |
 | Availability | <img src="images/button_edition_life_science.png" width="100"> |
-| Installation | Via terminal.<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
-| Learn more | [Visit our website](https://diskoverdata.com/products/life-science-edition/#bam-plugin) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Installation | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
+| Learn More | [Visit our website](https://diskoverdata.com/products/life-science-edition/#bam-plugin) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
 | User Guide | [Diskover Life Science Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/#bam-harvest-plugin) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/678914314?share=copy) |
 
@@ -69,7 +69,7 @@ Adds xxhash, md5, sha1, and sha256 hash values to files in Elasticsearch indices
 | --- | --- |
 | Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 Allows users to categorize file types by groups and adds the extra metadata to the Elasticsearch index during the indexing process, useful for reporting purposes.
 
@@ -82,7 +82,7 @@ Allows users to categorize file types by groups and adds the extra metadata to t
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 Triggers the creation of an additional attribute when Diskover first detects a new file in a given location and adds the extra metadata to the Elasticsearch index during the indexing process.
 
@@ -96,7 +96,7 @@ Triggers the creation of an additional attribute when Diskover first detects a n
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 Provides the ability to visualize and trend data metrics over time using Grafana. The plugin rolls up summary data and creates Grafana-specific indices within Elasticsearch. These indices use time series @timestamp metrics to separate logstash- indices, indexes directory size, counts up to N dir depths (default 2). Elasticsearch can then use these summary indexes as a data source for viewing these logstash indices from Grafana.
 
@@ -110,7 +110,7 @@ Provides the ability to visualize and trend data metrics over time using Grafana
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 Provides the ability to visualize and trend data metrics over time using Grafana Cloud. The plugin rolls up summary data and creates Grafana-specific indices within Elasticsearch. These indices use time series @timestamp metrics to separate logstash- indices, indexes directory size, counts up to N dir depths (default 2). Elasticsearch can then use these summary indexes as a data source for viewing these logstash indices from Grafana.
 
@@ -124,7 +124,7 @@ Provides the ability to visualize and trend data metrics over time using Grafana
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#mediainfo) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
+| Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#mediainfo) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#media-info-attributes) |
 
 Adds business context and searchability via additional media file attributes (resolution, codec, pixel format, etc.). The enriched metadata is key for granular analysis, workflow automation, and overall data curation.
@@ -140,7 +140,7 @@ The media info harvest plugin is designed to provide media metadata attributes a
 | --- | --- |
 | Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 Designed to break down concatenated directory/file names and add the tokenized metadata to the Elasticsearch index during the indexing process.
 
@@ -154,7 +154,7 @@ Designed to break down concatenated directory/file names and add the tokenized m
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 Designed to migrate tags from one index to the next. Generally, these tags are applied post index through manual tag application or plugin tag application. Note that there is also a [post-index Tag Copier plugin](#plugin_post_index_tag_copier).
 
@@ -168,7 +168,7 @@ Designed to migrate tags from one index to the next. Generally, these tags are a
 | --- | --- |
 | Availability | <img src="images/button_edition_community.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 Adds the Unix permission attributes of each file and directory to the Elasticsearch data catalog during indexing. Two tags are added, **unixperms-plugin** and **ugo+rwx**, if a file or directory is found with fully open permissions (777 or 666). 
 
@@ -182,6 +182,6 @@ Adds the Unix permission attributes of each file and directory to the Elasticsea
 | --- | --- |
 | Availability | <img src="images/button_edition_community.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
-| To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 
 Adds the Windows file owner and primary group of each file and directory to the Diskover index at time of indexing. It replaces all docs showing username 0 with the Windows file/directory owner name. 

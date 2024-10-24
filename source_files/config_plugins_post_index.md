@@ -16,6 +16,8 @@ This extra metadata is an invaluable asset for locating, organizing, and analyzi
 
 ### Quick Access List
 
+The plugins in this chapter are listed alphabetically. Here is a quick access list by category:
+
 | EDITION |  PLUGIN |
 | --- | --- |
 | **Core Editions** | <ul><li>[AutoClean](#plugin_post_index_autoclean)</li><li>[AutoTag](#plugin_post_index_autotag)</li><li>[Breadcrumb](#plugin_post_index_breadcrumb)</li><li>[Checksums](#plugin_post_index_checksums)</li><li>[Checksums S3](#plugin_post_index_checksums_s3)</li><li>[Costs](#plugin_post_index_costs)</li><li>[Dupes Finder](#plugin_post_index_dupes)</li><li>[ES Field Copier](#plugin_post_index_es_field_copier)</li><li>[ES Query Report](#plugin_post_index_query_report)</li><li>[Illegal Filename](#plugin_post_index_illegal_filename)</li><li>[Index Diff](#plugin_post_index_index_diff)</li><li>[Tag Copier](#plugin_post_index_tag_copier)</li><li>[Windows Attributes](#plugin_post_index_windows_attributes)</li></ul> |

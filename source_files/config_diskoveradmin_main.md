@@ -131,12 +131,3 @@ ___
 
 <p id="config_message_queue"></p>
 
-#### Message Queue
-
-<p id="config_smtp"></p>
-
-#### SMTP
-
-<p id="config_api"></p>
-
-#### API

@@ -16,7 +16,7 @@ This extra metadata is an invaluable asset for locating, organizing, and analyzi
 
 ### Quick Access List
 
-The plugins in this chapter are listed alphabetically. Here is a quick access list by category:
+The plugins in this chapter are listed alphabetically. Here is a quick access list by edition(s):
 
 | EDITION |  PLUGIN |
 | --- | --- |

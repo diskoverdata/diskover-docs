@@ -75,6 +75,7 @@ Designed to extract/add metadata from files’ breadcrumbs to the Elasticsearch 
 | Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Demo | [🍿 Watch a video](https://vimeo.com/828166808) showing one way hash values can be used |
 
 Allows for hash values to be added for files and directories to the Elasticsearch index as a post-index process, can be used for multiple checksums/data integrity tasks.
 
@@ -88,6 +89,7 @@ Allows for hash values to be added for files and directories to the Elasticsearc
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Installation | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Demo | [🍿 Watch a video](https://vimeo.com/828166808) showing one way hash values can be used |
 
 Adds md5 and sha1 hash values for files and directories to the Elasticsearch index as a post-index process, using AWS Lambda/Fixity when using the Diskover S3 alternate indexer.
 

@@ -92,6 +92,8 @@ Besides the help text in DiskoverAdmin, you can find [more information here rega
 ___
 ### Diskover Alternate Indexers
 
+All alternate indexers will eventually be included in the DiskoverAdmin panel, but a few [alternate indexers are still configurable manually](#config_manual_alt_indexers). All alternated indexers configurable in DiskoverAdmin can be found here:
+
 <img src="images/diskoveradmin_menu_diskover.png" width="200">
 
 

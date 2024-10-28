@@ -6,7 +6,7 @@
 
 Diskover provides powerful reporting capabilities. Reports can be generated to align with business context and can be constructed from any Elasticsearch query. Therefore, any combination of names, tags, metadata fields, etc., can be used to construct business-facing reports.
 
-Below is a summary of the current analytics/reports available. The links will bring you to the [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/) giving detailed information regarding how to use these analytics. In the following sections, we will take a deep dive into the ⚙️ customizable analytics.
+Below is a summary of the current analytics/reports available. The links will bring you to the [Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/) giving detailed information regarding how to use these analytics. In the following sections, we will take a deep dive into the **⚙️ customizable analytics**.
 
 | ANALYTIC | DESCRIPTION |
 | --- | --- |

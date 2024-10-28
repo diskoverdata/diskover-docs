@@ -242,6 +242,19 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 | Purpose | Provides authorized users the framework for data movement based on pre-configured source and destination profiles. |
 
 
+<p id="plugin_file_action_export"></p>
+
+#### Spectra
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Enable/Config | Via the DiskoverAdmin panel |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Purpose | On-demand menu option that queries the Spectra API to verify additional status, such as whether the desired tape is in the library or on the shelf. |
+
+
+
 
 <p id="plugin_file_action_vantage"></p>
 

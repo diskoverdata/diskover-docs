@@ -22,7 +22,7 @@ The DiskoverAdmin service allows for the fine-tuning of Diskover's core componen
 
 <img src="images/diskoveradmin_menu_wizard.png" width="200"> 
 
-#### Elasticsearch Connection for Diskover-Web
+#### Elasticsearch Connection Configuration for Diskover-Web
 
 🟨 &nbsp;Note that Diskover-Web and the indexer(s) can point to two different Elasticsearch hosts, hence the next steps.
 
@@ -40,7 +40,7 @@ The DiskoverAdmin service allows for the fine-tuning of Diskover's core componen
 
 🔴 &nbsp;If the test is successful, click **Save & Continue**, otherwise review the information you entered.
 
-#### Elasticsearch Connection for Indexers
+#### Elasticsearch Connection Configuration for Indexers
 
 🔴 &nbsp;**Copy connection settings from Diskover-Web?**:
 - If your Diskover-Web and indexer(s) point to the same ES host, click **Yes**.
@@ -50,7 +50,7 @@ The DiskoverAdmin service allows for the fine-tuning of Diskover's core componen
 
 #### License
 
-This is the point where you need to send your license request and the wizard partially automates this task for you. Note that if you skip this part for now, you can always send a [license request]() manually at any time.
+This is the point where you need to send your license request and the wizard partially automates this task for you. Note that if you skip this part for now, you can always send a [license request](#software_activation) manually at any time.
 
 🔴 &nbsp;The wizard will prompt you through the steps to collect the information for your license request: email, Diskover edition, number of nodes, and your hardware ID which will be automatically generated during this process.
 
@@ -73,11 +73,11 @@ This is the point where you need to send your license request and the wizard par
 
 🔴 &nbsp;Click the box to enable your time zone selection, click **Save & Continue**.
 
-#### RabbitMQ or Amazon MQ
+#### Message Queue Configuration | RabbitMQ or Amazon MQ
 
-This section is only needed if you are planning to use [File Action](https://diskoverdata.com/products/plugins/#file-actions) plugins.
+This section is only needed if you are planning to use [File Action](#config_plugins_file_actions) plugins.
 
-🔴 &nbsp;Follow the instructions on this page, click **Test** to check the connection, and then **Save & Continue**, or click **Skip**. You can configure or edit your entries at any time.
+🔴 &nbsp;Follow the instructions on this page, click **Test** to check the connection, and then **Save & Continue**, or click **Skip**. You can [configure or edit](#config_system) at any time.
 
 🟨 &nbsp;The basic setup using the wizard is not completed. CONGRATS!
 

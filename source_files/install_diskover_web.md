@@ -6,7 +6,7 @@
 
 This section covers all the necessary steps to set up your Diskover-Web user interface, including the new **Diskover**Admin panel available with Diskover v2.3x.
 
-Once all components are installed, you will be able to [configure your Diskover-Web environment](config_diskover_web). We strongly recommend following the deployment order outlined in this guide.
+Once all components are installed, you will be able to [configure your Diskover-Web environment](#config_diskover_web). We strongly recommend following the deployment order outlined in this guide.
 
 <p id="install_nginx_php"></p>
 

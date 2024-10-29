@@ -31,3 +31,17 @@ ___
 ![Image: Diskover Reference Diagram Architecture](images/diskover_config_template.png)
 
 _[Click here for the full screen view of this diagram.](images/diskover_config_template.png)_
+
+
+### Metadata Catalog
+
+Diskover is designed to efficiently scan generic filesystems out of the box, but it also supports flexible integration with various repositories through customizable [alternate scanners](#config_alt_indexers). This adaptability allows Diskover to index diverse storage locations and include enhanced metadata for precise data management and analysis.
+
+With a wide range of metadata harvest plugins, Diskover enriches indexed data with valuable business context attributes, supporting workflows that enable targeted data organization, retrieval, analysis, and enhanced workflow. These plugins can run at ^indexing](#config_plugins_index) or [post-indexing](#config_plugins_post_index) intervals, balancing comprehensive metadata capture with high-speed indexing.
+
+___
+![Image: Diskover Architecture Overview](images/metadata_catalog.png)
+
+_[Click here for a full screen view of the Diskover Architecture Overview diagram.](images/metadata_catalog.png)_
+
+

@@ -16,7 +16,7 @@ Deploying Diskover uses 3 major components:
 
 ### Diskover Scale-Out Architecture Overview Diagram
 
-___
+
 ![Image: Diskover Architecture Overview](images/diskover_architecture_overview.png)
 
 _[Click here for a full screen view of the Diskover Architecture Overview diagram.](images/diskover_architecture_overview.png)_
@@ -27,21 +27,22 @@ _[Click here for a full screen view of the Diskover Architecture Overview diagra
 
 It is highly recommended to separate the Elasticsearch node/cluster, web server, and indexing host(s).
 
-___
+
 ![Image: Diskover Reference Diagram Architecture](images/diskover_config_template.png)
 
 _[Click here for the full screen view of this diagram.](images/diskover_config_template.png)_
 
 
+<p id=“metadata_catalog”></p>
+
 ### Metadata Catalog
 
 Diskover is designed to efficiently scan generic filesystems out of the box, but it also supports flexible integration with various repositories through customizable [alternate scanners](#config_alt_indexers). This adaptability allows Diskover to index diverse storage locations and include enhanced metadata for precise data management and analysis.
 
-With a wide range of metadata harvest plugins, Diskover enriches indexed data with valuable business context attributes, supporting workflows that enable targeted data organization, retrieval, analysis, and enhanced workflow. These plugins can run at ^indexing](#config_plugins_index) or [post-indexing](#config_plugins_post_index) intervals, balancing comprehensive metadata capture with high-speed indexing.
+With a wide range of metadata harvest plugins, Diskover enriches indexed data with valuable business context attributes, supporting workflows that enable targeted data organization, retrieval, analysis, and enhanced workflow. These plugins can run at [indexing](#config_plugins_index) or [post-indexing](#config_plugins_post_index) intervals, balancing comprehensive metadata capture with high-speed indexing.
 
-___
-![Image: Diskover Architecture Overview](images/metadata_catalog.png)
+![Image: Metadata Catalog Summary](images/metadata_catalog.png)
 
-_[Click here for a full screen view of the Diskover Architecture Overview diagram.](images/metadata_catalog.png)_
+_[Click here for a full screen view of the Metadata Catalog Summary.](images/metadata_catalog.png)_
 
 

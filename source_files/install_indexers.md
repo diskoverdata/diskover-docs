@@ -138,7 +138,7 @@ systemctl daemon-reload
 systemctl enable diskoverd
 ```
 
-🟨 &nbsp;Please proceed to the next sections, as you will be unable to start the diskoverd worker service until your API server and [license](#config_wizard) are installed.
+🟨 &nbsp;Please proceed to the next sections, as you will be unable to start the diskoverd worker service until your API server and [license](#software_activation) are installed.
 
 ### Windows Indexers/Workers
 

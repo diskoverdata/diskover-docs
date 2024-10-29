@@ -36,6 +36,8 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Designed to move, copy, delete, rename, or run custom commands on files and directories based on a set of highly configurable criteria. With the use of tags, the AutoClean plugin can be used to implement a RACI model or approval process for archive and deletion (approved_archive, approved_delete, etc.) tag application. The plugin criteria can then be set to meet the desired set of tags (times, etc.) to invoke action. |
+| Need Pro Services? | Diskover offers professional services to assist with setting up data flows and workflows - [contact us](mailto:sales@diskoverdata.com) for details |
+
 
 
 <p id="plugin_post_index_autotag"></p>

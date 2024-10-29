@@ -1,15 +1,22 @@
-<p id="config_manual_alt_indexers"></p>
+<p id="config_alt_indexers"></p>
 
-## Alternate Indexers Manually Configurable
+## Alternate Indexers Configuration
 
 ### Overview
 
-All alternate indexers will eventually be included in the [DiskoverAdmin](#config_alt_indexers) panel, but a few are still only configurable manually.
+Out of the box, Diskover efficiently scans generic filesystems. However, in today’s complex IT architectures, files are often stored across a variety of repositories. To address this, Diskover provides a robust foundation for building alternate scanners, enabling comprehensive indexing of any file storage location.
 
-🟨  &nbsp;**IMPORTANT!**
+In addition, Diskover offers a wide range of metadata harvest plugins, enriching indexed data with valuable business context attributes and supporting workflows that enable targeted data organization, retrieval, analysis, and enhanced workflow. These plugins can run at [indexing](#config_plugins_index) or [post-indexing](#config_plugins_post_index) intervals, balancing comprehensive metadata capture with high-speed indexing.
 
-  - Please [open a support ticket](https://support.diskoverdata.com/) if you currently use one of these plugins and need to upgrade to v2.3+.
-  - Visit our [Indexers](https://diskoverdata.com/products/indexers/) webpage for a list of all our alternate indexers.
+![Image: Metadata Catalog Summary](images/metadata_catalog.png)
+
+_[Click here for a full screen view of the Metadata Catalog Summary.](images/metadata_catalog.png)_
+
+| Plugins Configurable via DiskoverAdmin | Plugins Manually Configurable |
+| --- | --- |
+| <ul><li>Alternate indexers configurable in the **DiskoverAdmin** panel.</li><li>Help information is available directly within the user interface.</li><li>This section provides additional guidance when applicable.</li></ul><br><img src="images/diskoveradmin_menu_diskover_alt_indexers.png" width="200"> | <ul><li>Note that a few alternate indexers are still configurable via a terminal.</li><li>[🛟 Open a support ticket](https://support.diskoverdata.com/) if you currently use one of these plugins and need to upgrade to v2.3+.</li></ul> |
+
+🟨 &nbsp;**IMPORTANT!** Once the plugin is configured, a task needs to be created and scheduled in the [**Task Panel**](#task_panel).
 
 ### Alternate Indexers
 
@@ -23,6 +30,22 @@ All alternate indexers will eventually be included in the [DiskoverAdmin](#confi
 | Install/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this alternate indexer |
 | Learn more | [Visit our website](https://diskoverdata.com/products/indexers/) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | <p>Organizations often preserve their assets/intellectual properties within tape-based archives systems like the Atempo Miria platform. The Diskover Atempo Scanner is designed to index all the files within the Atempo Miria archive system and presents them as a volume within the Diskover user interface.</p><p>Additional attributes are added as properties to the file during the indexing process, such as tape number, media type, etc. Therefore, the files and their rich attributes become searchable and reportable, as well as engaged in automated workflows.</p> |
+
+
+
+<p id="config_alt_indexer_azure"></p>
+
+#### Azure Blob
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Enable/Config | Via the DiskoverAdmin panel |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Purpose | <p>While you can cost-effectively store and access unstructured data at scale with Microsoft Azure blob storage, searching through multiple accounts or blob containers is not possible from the Azure interface. The storage explorer portal doesn't allow users to search all folders at once, plus you need to know the exact file name you are looking for as wild cards are not permitted either.</p><p>Diskover offers the Azure blob storage scanner allowing you to index petabytes of data at blazing speed. In turn, you can easily find any file with a single query, whether that file is located in an Azure blob or any other volumes indexed with Diskover.</p><p>Note that attributes are collected during this process. These extra fields become searchable, reportable for analysis, and actionable, allowing for potential upstream file management, manually or via automated scheduled tasks.</p> |
+
+
+
 
 
 <p id="alt_indexer_dell"></p>
@@ -44,6 +67,22 @@ All alternate indexers will eventually be included in the [DiskoverAdmin](#confi
 | Availability | <img src="images/button_edition_community.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Learn more | [Visit our docs](https://docs.diskoverdata.com/diskover_dev_guide/#develop-your-own-alternate-scanner) |
 | Purpose | <p>Empower your data management with Diskover Data's flexible framework, allowing end users to write their own alternate scanners. Tailor your data extraction process to fit unique requirements by developing custom scanners that integrate seamlessly with Diskover Data. Whether you need to handle specialized file formats or implement proprietary metadata collection methods, this capability puts you in control.</p><p>Leverage Diskover's robust API and comprehensive documentation to create efficient, reliable scanners that enhance your data insights and streamline your workflows. Embrace the power of customization with Diskover's end-user scanner development feature.</p> |
+
+
+
+<p id="config_alt_indexer_dircache"></p>
+
+#### DirCache Alternate Indexer
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Enable/Config | Via the DiskoverAdmin panel |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Purpose | The DirCache alternate scanner can be used to speed up subsequent crawls when indexing slower network-mounted storage. DirCache uses an SQLite database to store a local cache of directories' mtimes (modified times), directories' file lists, and file stat attributes. On subsequent crawls, when a directory mtime is the same as in the cache, the directory list and all file stat attributes can be retrieved from the cache rather than over the network mount. |
+
+
+
 
 
 <p id="alt_indexer_dropbox"></p>
@@ -92,6 +131,35 @@ All alternate indexers will eventually be included in the [DiskoverAdmin](#confi
 | Install/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this alternate indexer |
 | Learn more | [Visit our website](https://diskoverdata.com/products/indexers/) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | <p>This powerful alternate scanner allows you to seamlessly integrate and manage data from your OneDrive and SharePoint environments, extracting critical metadata and ensuring comprehensive data visibility. With Diskover's flexible and user-friendly scanning options, you can customize your data extraction process to suit your organization's needs.</p><p>Enhance your data management strategy with Diskover's OneDrive Alternate Scanner, providing unparalleled insights and efficiency for your Microsoft cloud storage solutions.</p> |
+
+
+
+<p id="config_alt_indexer_offline_media"></p>
+
+#### Offline Media Indexer
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Enable/Config | Via the DiskoverAdmin panel |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Purpose | <p>The Offline Media Indexer offers a simple solution to index all your offline data devices. During the indexing process, Diskover automatically creates a new OFFLINE MEDIA volume listing all indexed offline devices as a directory. The index of your offline media stays persistent once the drive is disconnected and put back on the shelf.</p><p>If your search results point to an offline media, use the reference name or number you attributed to the offline media to locate the device. Then, just reconnect it to retrieve the desired files.</p><p>There are several Diskover features you can use with those static indices like tags, export, share, and investigate using our multiple analytical tools. Then, if you decide to fully rehydrate that data, more cool things are available like actions via plugins and scheduled workflow automation.</p> |
+
+
+
+
+<p id="config_alt_indexer_s3"></p>
+
+#### S3 | AWS or Non-AWS Endpoints
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Enable/Config | Via the DiskoverAdmin panel |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Purpose | <p>Unlock the full potential of your cloud storage with Diskover's advanced indexing capabilities for S3 buckets and S3-compatible storage with endpoints different than AWS. Seamlessly integrate and manage data across various cloud environments, ensuring comprehensive metadata extraction and efficient data organization. Diskover's robust indexing solution supports diverse storage configurations, providing unparalleled flexibility and control over your data assets.</p><p>Enhance your cloud storage strategy with Diskover Data's powerful indexing tools, designed to optimize your data visibility and streamline your workflows across multiple platforms.</p> |
+
+
 
 
 <p id="alt_indexer_spectra"></p>

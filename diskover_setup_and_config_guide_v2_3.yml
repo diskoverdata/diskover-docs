@@ -29,7 +29,7 @@ ordered_documents:
   - backup.md
   - features_finder.md
   - config_diskoveradmin_main.md
-  - config_manual_alt_indexers.md
+  - config_alt_indexers.md
   - config_plugins_index.md
   - config_plugins_post_index.md
   - config_plugins_file_actions.md

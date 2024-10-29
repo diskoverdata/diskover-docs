@@ -24,12 +24,12 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **AutoTag Plugin** post index | Plugins → Post Index → AutoTag | |
 | **Azure** alt indexer | Diskover → Alternate Indexers → Azure | |
 | **Azure AD Authentication** | Web → OAUTH | |
-| **BAM Info Plugin** | | [BAM Info Index Plugin](#plugin_bam) |
+| **BAM Info Plugin** | | [BAM Info Index Plugin](#plugin_index_bam) |
 | **Breadcrumb Plugin** | Plugins → Post Index → Breadcrumb | |
 | **Checksums** at index time | Plugins → Index → Checksums | |
 | **Checksums** post index | Plugins → Post Index → Checksums | |
 | **Chesksums S3** post index | Plugins → Post Index → Checksums S3 | 
-| **CineViewer Player Plugin** | | [CineViewer Player File Action Plugin by CineSys](#plugin_cineviewer) |
+| **CineViewer Player Plugin** | | [CineViewer Player File Action Plugin by CineSys](#plugin_file_action_cineviewer) |
 | **Collapsible Top Path** | Web → Top Path Display | |
 | **Cost** at time of index | Diskover → Configurations → Default | |
 | **Cost Plugin** post-index | Plugins → Post Index → Costs | |
@@ -52,19 +52,19 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **Extra Fields** | Web → General | |
 | **File Kind Plugin** | Plugins → Index → File Kind | |
 | **File Types** | Web → File Types | |
-| **Find File Sequences Plugin** | | [Find File Sequences File Action Plugin](#plugin_find_file_sequences) |
+| **Find File Sequences Plugin** | | [Find File Sequences File Action Plugin](#plugin_file_action_find_file_sequences) |
 | **First Index Time Plugin** | Plugins → Index → First Index Time | |
 | **Fix Permissions Plugin** | Plugins → File Actions → In Development → Fix Permissions | |
-| **Flow Production Tracking Plugin** formerly ShotGrid | | [Flow Production Tracking Plugin](#plugin_shotgrid) |
+| **Flow Production Tracking Plugin** formerly ShotGrid | | [Flow Production Tracking Plugin](#plugin_post_index_shotgrid) |
 | **FTP** alt indexer | | [FTP Alternate Indexer](#alt_indexer_ftp) |
-| **GLIM Plugin** | | [Telestream GLIM File Action Plugin](#plugin_glim) |
+| **GLIM Plugin** | | [Telestream GLIM File Action Plugin](#plugin_file_action_glim) |
 | **Grafana Plugin** | Plugins → Index → Grafana | |
 | **Grafana Cloud Plugin** | Plugins → Index → Grafana Cloud | |
-| **Grant Plugin Plugin** | | [Research Grant File Action Plugin](#plugin_grant) | 
-| **Hash Differential Checksums Plugin** | | [Hash Differential Checksums File Action Plugin](#plugin_hash_diff) |
+| **Grant Plugin Plugin** | | [Research Grant File Action Plugin](#plugin_file_action_grant) | 
+| **Hash Differential Checksums Plugin** | | [Hash Differential Checksums File Action Plugin](#plugin_file_action_hash_diff) |
 | **Illegal Filename Plugin** | Plugins → Post Index → Illegal Filename | |
 | **IMF Change Report Plugin** | Plugins → File Actions → IMF Change Report | |
-| **IMF Package Validator Plugin** | | [IMF Package Validator File Action Plugin by Oxagile](#plugin_imf_validator) |
+| **IMF Package Validator Plugin** | | [IMF Package Validator File Action Plugin by Oxagile](#plugin_file_action_imf_validator) |
 | **Index Access** | Web → Index Access | |
 | **Index Differential Plugin** | Plugins → Post Index → Index Diff | |
 | **Index Mapping** | Web → Index Access | |
@@ -76,7 +76,7 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **Make Links Plugin** | Plugins → File Actions → Make Links | |
 | **Media Info Plugin** | Plugins → Index → Media Info | |
 | **Message Queue** | System → Message Queue | |
-| **Ngenea Data Orchestrator Plugin** | | [Ngenea Data Orchestrator/Mover File Action Plugin by PixitMedia](#plugin_ngenea) |
+| **Ngenea Data Orchestrator Plugin** | | [Ngenea Data Orchestrator/Mover File Action Plugin by PixitMedia](#plugin_file_action_ngenea) |
 | **OAuth** | Web → OAUTH | |
 | **Offline Media** alt indexer | Diskover → Alternate Indexers → Offline Media | |
 | **Okta** | Web → OAUTH | |
@@ -87,8 +87,9 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **RabbitMQ** | System → Message Queue | |
 | **Rclone Plugin** | Plugins → File Actions → Rclone | |
 | **S3** AWS and non-AWS alt indexer | Diskover → Alternate Indexers → S3 | |
-| **ShotGrid** now Flow Production Tracking Plugin | | [Flow Production Tracking Plugin](#plugin_shotgrid) |
+| **ShotGrid** now Flow Production Tracking Plugin | | [Flow Production Tracking Plugin](#plugin_post_index_shotgrid) |
 | **SMTP** | System → SMTP | |
+| **Spectra Logic RioBroker/BlackPearl** alt indexer | | [Spectra Logic RioBroker/BlackPearl](#alt_indexer_spectra) |
 | **Spectra Plugin** | Plugins → File Actions → In Development → Spectra | |
 | **Tag Copier** at time of index | Plugins → Index → Tag Copier | |
 | **Tag Copier** post-index | Plugins → Post Index → Tag Copier | |
@@ -100,12 +101,12 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **Top Paths** | Web → Top Path Display | |
 | **Unix Permissions Plugin** | Plugins → Index → Unix Perms | |
 | **Vantage Plugin** | Plugins → File Actions → Vantage | |
-| **Vcinity High-Speed Data Transfer Plugin** | | [Vcinity High-Speed Data Transfer File Action Plugin](#plugin_vcinity) |
+| **Vcinity High-Speed Data Transfer Plugin** | | [Vcinity High-Speed Data Transfer File Action Plugin](#plugin_file_action_vcinity) |
 | **Windows Attributes Plugin** | Plugins → Post Index → Windows Attributes | |
 | **Windows Owner Plugin** | Plugins → Index → Windows Owner | |
 | **Wizard** for initial config | System → Meta → Wizard | |
-| **Xytech Asset Creation Plugin** | | [Xytech Asset Creation Index Plugin](#plugin_xytech_asset_creation) |
-| **Xytech Order Status Plugin** | | [Xytech Order Status Index Plugin](#plugin_xytech_order_status) |
+| **Xytech Asset Creation Plugin** | | [Xytech Asset Creation Index Plugin](#plugin_post_index_xytech_asset_creation) |
+| **Xytech Order Status Plugin** | | [Xytech Order Status Index Plugin](#plugin_post_index_xytech_order_status) |
 
 
 

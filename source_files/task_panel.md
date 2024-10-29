@@ -10,7 +10,7 @@
 
 The Task Panel can be used to schedule indexing tasks or run any custom task, such as data curation via the AutoClean plugin, copying files, running duplicate file findings, checking permissions on directories, etc.
 
-Diskover has a [distributed task system](#architecture_diagram) where indexers/workers** can be distributed among many resources. For each resource providing a task worker, services need to have a [**DiskoverD**](#install_diskoverd) installed. This section will describe setting up both indexing and custom tasks within the Diskover-Web **Task Panel**.
+Diskover has a [distributed task system](#architecture_diagram) where indexers/workers can be distributed among many resources. For each resource providing a task worker, services need to have a [DiskoverD](#install_diskoverd) installed. This section will describe setting up both indexing and custom tasks within the Diskover-Web Task Panel.
 
 ___
 

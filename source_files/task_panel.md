@@ -6,6 +6,10 @@
 
 ### Task Panel Overview
 
+#### Need Help?
+
+Diskover offers professional services to assist with setting up tasks, dataflows, and workflows - [contact us](mailto:sales@diskoverdata.com) for details.
+
 #### Use Cases
 
 The Task Panel can be used to schedule indexing tasks or run any custom task, such as data curation via the AutoClean plugin, copying files, running duplicate file findings, checking permissions on directories, etc.
@@ -17,6 +21,8 @@ ___
 <img src="images/diagram_indexer_daemon_task_panel.png" width="">
 
 _[Click here for the full screen view of this diagram.](images/diagram_indexer_daemon_task_panel.png)_
+
+___
 
 #### Accessing the Task Panel
 

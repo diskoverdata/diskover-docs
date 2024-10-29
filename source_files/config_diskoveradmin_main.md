@@ -87,66 +87,15 @@ Given the importance of tagging in data management, we dedicated an [entire chap
 Besides the help text in DiskoverAdmin, you can find [more information here regarding **cost** configuration](#analytics_costs) as well as some use cases.
 
 
-<p id="config_alt_indexers"></p>
+<p id="config_alt_indexers_diskoveradmin"></p>
 
 ___
 ### Diskover Alternate Indexers
 
-All alternate indexers will eventually be included in the DiskoverAdmin panel, but a few [alternate indexers are still configurable manually](#config_manual_alt_indexers). All alternated indexers configurable in DiskoverAdmin can be found here:
+All [alternate indexers](#config_alt_indexers) will eventually be  in the DiskoverAdmin panel. Please go to the [Alternate Indexers Configuration](#config_alt_indexers) section for the complete list of current alternate indexers. Meanwhile, all alternate indexers configurable in DiskoverAdmin can be found here:
 
-<img src="images/diskoveradmin_menu_diskover.png" width="200">
+<img src="images/diskoveradmin_menu_diskover_alt_indexers.png" width="200">
 
-
-
-<p id="config_alt_indexer_azure"></p>
-
-#### Azure Blob
-
-| HELP | RESOURCE |
-| --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| Enable/Config | Via the DiskoverAdmin panel |
-| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
-| Purpose | <p>While you can cost-effectively store and access unstructured data at scale with Microsoft Azure blob storage, searching through multiple accounts or blob containers is not possible from the Azure interface. The storage explorer portal doesn't allow users to search all folders at once, plus you need to know the exact file name you are looking for as wild cards are not permitted either.</p><p>Diskover offers the Azure blob storage scanner allowing you to index petabytes of data at blazing speed. In turn, you can easily find any file with a single query, whether that file is located in an Azure blob or any other volumes indexed with Diskover.</p><p>Note that attributes are collected during this process. These extra fields become searchable, reportable for analysis, and actionable, allowing for potential upstream file management, manually or via automated scheduled tasks.</p> |
-
-
-
-<p id="config_alt_indexer_dircache"></p>
-
-#### DirCache Alternate Indexer
-
-| HELP | RESOURCE |
-| --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| Enable/Config | Via the DiskoverAdmin panel |
-| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
-| Purpose | The DirCache alternate scanner can be used to speed up subsequent crawls when indexing slower network-mounted storage. DirCache uses an SQLite database to store a local cache of directories' mtimes (modified times), directories' file lists, and file stat attributes. On subsequent crawls, when a directory mtime is the same as in the cache, the directory list and all file stat attributes can be retrieved from the cache rather than over the network mount. |
-
-
-
-<p id="config_alt_indexer_offline_media"></p>
-
-#### Offline Media Indexer
-
-| HELP | RESOURCE |
-| --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| Enable/Config | Via the DiskoverAdmin panel |
-| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
-| Purpose | <p>The Offline Media Indexer offers a simple solution to index all your offline data devices. During the indexing process, Diskover automatically creates a new OFFLINE MEDIA volume listing all indexed offline devices as a directory. The index of your offline media stays persistent once the drive is disconnected and put back on the shelf.</p><p>If your search results point to an offline media, use the reference name or number you attributed to the offline media to locate the device. Then, just reconnect it to retrieve the desired files.</p><p>There are several Diskover features you can use with those static indices like tags, export, share, and investigate using our multiple analytical tools. Then, if you decide to fully rehydrate that data, more cool things are available like actions via plugins and scheduled workflow automation.</p> |
-
-
-
-<p id="config_alt_indexer_s3"></p>
-
-#### S3 | AWS or Non-AWS Endpoints
-
-| HELP | RESOURCE |
-| --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
-| Enable/Config | Via the DiskoverAdmin panel |
-| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
-| Purpose | <p>Unlock the full potential of your cloud storage with Diskover's advanced indexing capabilities for S3 buckets and S3-compatible storage with endpoints different than AWS. Seamlessly integrate and manage data across various cloud environments, ensuring comprehensive metadata extraction and efficient data organization. Diskover's robust indexing solution supports diverse storage configurations, providing unparalleled flexibility and control over your data assets.</p><p>Enhance your cloud storage strategy with Diskover Data's powerful indexing tools, designed to optimize your data visibility and streamline your workflows across multiple platforms.</p> |
 
 
 <p id="config_diskoverd"></p>
@@ -155,9 +104,6 @@ ___
 ### DiskoverD
 
 <img src="images/diskoveradmin_menu_diskoverd.png" width="200">
-
-
-
 
 
 

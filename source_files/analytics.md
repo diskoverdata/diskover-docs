@@ -127,6 +127,7 @@ Storage cost can be set globally or per storage volume, directory, etc. This too
 The storage costs can either be estimated globally, by storage volume, or down a directory level. The estimations need to be done outside of Diskover. Beside the cost of the storage itself, other factors can be compounded like electricity, service contract, System Administrator’s salary, subscription fees, etc. The estimations need to be calculated and configured per gigabyte.
 
 <img src="images/diagram_storage_cost_configuration.png" width="">
+_[Click here for a full-screen view of this image.](images/diagram_storage_cost_configuration.png)_
 
 #### Configuration of Storage Costs
 

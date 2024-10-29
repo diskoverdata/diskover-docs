@@ -8,10 +8,6 @@ Out of the box, Diskover efficiently scans generic filesystems. However, in toda
 
 In addition, Diskover offers a wide range of metadata harvest plugins, enriching indexed data with valuable business context attributes and supporting workflows that enable targeted data organization, retrieval, analysis, and enhanced workflow. These plugins can run at [indexing](#config_plugins_index) or [post-indexing](#config_plugins_post_index) intervals, balancing comprehensive metadata capture with high-speed indexing.
 
-![Image: Metadata Catalog Summary](images/metadata_catalog.png)
-
-_[Click here for a full screen view of the Metadata Catalog Summary.](images/metadata_catalog.png)_
-
 | Plugins Configurable via DiskoverAdmin | Plugins Manually Configurable |
 | --- | --- |
 | <ul><li>Alternate indexers configurable in the **DiskoverAdmin** panel.</li><li>Help information is available directly within the user interface.</li><li>This section provides additional guidance when applicable.</li></ul><br><img src="images/diskoveradmin_menu_diskover_alt_indexers.png" width="200"> | <ul><li>Note that a few alternate indexers are still configurable via a terminal.</li><li>[🛟 Open a support ticket](https://support.diskoverdata.com/) if you currently use one of these plugins and need to upgrade to v2.3+.</li></ul> |

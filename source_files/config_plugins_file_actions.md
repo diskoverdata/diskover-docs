@@ -242,7 +242,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 | Purpose | Provides authorized users the framework for data movement based on pre-configured source and destination profiles. |
 
 
-<p id="plugin_file_action_export"></p>
+<p id="plugin_file_action_spectra"></p>
 
 #### Spectra
 

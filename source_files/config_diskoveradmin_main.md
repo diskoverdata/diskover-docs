@@ -161,12 +161,11 @@ ___
 
 
 
-<p id="x"></p>
+<p id="config_system"></p>
 
 ___
 ### System
 
 <img src="images/diskoveradmin_menu_system.png" width="200">
 
-<p id="config_message_queue"></p>
 

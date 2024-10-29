@@ -11,11 +11,10 @@ This section covers the basic installation of Elasticsearch v8, commonly referre
 
 Once all the components are installed, you will be able to refine your [Elasticsearch environment configuration](#config_es). We strongly recommend following the deployment order outlined in this guide.
 
-Some links you might need:
+Some quick links you might need:
 
 - [Set up a cluster](#set_es_cluster)
 - [Set up multiple clusters](#set_es_multi_cluster)
-- [Configure Elasticsearch SSL and authentication for use with Diskover]()
 - [Download the current release of Elasticsearch](https://www.elastic.co/downloads/elasticsearch)
 - [Download past releases of Elasticsearch](https://www.elastic.co/downloads/past-releases#elasticsearch)
 

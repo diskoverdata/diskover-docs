@@ -26,19 +26,19 @@ Some quick links you might need:
 
 Let's start this process by setting up your first node:
 
-🔴 &nbsp;Install Java v21 for Centos v8, and Rocky or RHEL v8 or v9: 
+🔴 &nbsp;Install Java v8 for CentOS7: 
+```
+yum -y install java-1.8.0-openjdk.x86_64
+```
+
+🔴 &nbsp;Install Java v21 for Rocky or RHEL v8: 
 ```
 dnf install java-21-openjdk
 ```
 
 #### Elasticsearch Installation
 
-🔴 &nbsp;To install Elasticsearch via RPM directly:
-```
-dnf install https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.15.2-x86_64.rpm
-```
-
-🔴 &nbsp;**Alternatively**, if the above doesn't work, configure `yum` repository for ES v8:
+🔴 &nbsp;Configure `yum` repository for ES v8:
 ```
 vi /etc/yum.repos.d/elasticsearch.repo
 ```

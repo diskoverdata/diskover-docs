@@ -43,7 +43,7 @@ rabbitmq-plugins enable rabbitmq_management
 rabbitmqctl change_password guest darkdata                  (This will password not be used - it is only to secure the guest account)
 rabbitmqctl add_user diskover darkdata                      (Feel free to choose your own username/password)
 rabbitmqctl set_user_tags diskover administrator            (If you changed users, set it properly here and replace 'diskover')
-rabbitmqctl set_permissions -p / diskover ".*" ".*" ".*"    (If you changed users, set it properly here and replace 'diskover')
+rabbitmqctl set_permissions -p / <user> ".*" ".*" ".*"      (If you changed users, set it properly here and replace 'diskover')
 ```
 
 🔴 &nbsp;Restart the service:

@@ -29,13 +29,7 @@ cp /opt/diskover/diskover_celery/etc/celery.service /etc/systemd/system/
 🔴 &nbsp;Create Celery log/run directories:
 ```
 mkdir /var/log/celery; chmod 777 /var/log/celery
-mkdir /var/run/celery; chmod 777 /var/run/celery
-```
-
-🔴 &nbsp;Install PIP:
-```
-cd /opt/diskover/diskover_celery/etc
-python3 -m pip install -r requirements.txt
+mkdir /var/run/celery; chmod 777 /var/run
 ```
 
 🔴 &nbsp;Set permissions and enable the service:

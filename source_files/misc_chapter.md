@@ -60,7 +60,14 @@ pyenv version
 pyenv versions
 ```
 
-🔴 &nbsp;Set Python 3.12.4 as the global (default) Python3 version:
+🔴 &nbsp;The next commands are optional. Choose based on a temporary or permanent Python3 version for your environment.
+
+- Temporary - Set Python 3.12.4 as the current shells Python3 version:
+```
+pyenv shell 3.12.4
+```
+
+- Permanent - Set Python 3.12.4 as the global (default) Python3 version:
 ```
 pyenv global 3.12.4
 ```

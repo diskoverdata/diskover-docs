@@ -11,7 +11,7 @@ The [**Diskover Editions/paid subscriptions**](https://diskoverdata.com/solution
 - A trial license is usually valid for 30 days and is issued for 1 Elasticsearch node.
 - A paid subscription license is valid for 1 year. Clients will be contacted about 90 days before their license expiration with a renewal proposal.
 
-Please reach out to your designated Diskover contact person or [contact us](mailto:info@diskoverdata.com) directly for more information.
+Please reach out to your designated Diskover contact person or [contact us](mailto:licenses@diskoverdata.com) directly for more information.
 
 ### Download Portal
 
@@ -33,7 +33,12 @@ Licenses are created using these variables:
 
 ### Hardware ID Generation
 
-Your hardware ID should have been automatically generated when going through the [Initial Configuration]() section. The following command is listed in case you need to manually generate your hardware ID. Please [send that unique identifier along with your license request](mailto:info@diskoverdata.com) as needed.
+Your hardware ID should have been automatically generated when going through the [Initial Configuration]() section. The following command is listed in case you need to manually generate your hardware ID. Please [send that unique identifier along with your license request](mailto:licenses@diskoverdata.com) as needed.
+
+🔴 &nbsp;Become the root user:
+```
+sudo -i
+```
 
 🔴 &nbsp;To manually create your hardware ID:
 ```
@@ -53,8 +58,8 @@ After installing Diskover and completing the basic configuration, you will need 
 ### License Key Locations in DiskoverAdmin Panel
 
 1. From the main Diskover user interface, click on the ⛭ at the top right corner.
-2. Select **⛭ System Configuration**.
-3. Open the **License** tab and follow the instructions on that page.
+2. Select **⛭ System Configuration** or navigate to [**http://localhost:8000/diskover_admin/config/License**](http://localhost:8000/diskover_admin/config/License)
+3. Open the **License** tab and paste the files into their respective boxes.
 
 <img src="images/diskoveradmin_license.png" width="">
 

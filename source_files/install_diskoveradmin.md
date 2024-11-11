@@ -89,8 +89,6 @@ Now that DsikoverAdmin is installed and configured, let’s daemonize this servi
 cp /var/www/diskover-admin/etc/diskover-admin.service /etc/systemd/system/
 ```
 
-🟨 &nbsp;Ensure you edit the service file to add a single tick at the end of line #11 in the ExecStartPost section.
-
 🔴 &nbsp;Start the Diskover-Admin service:
 ```
 systemctl daemon-reload

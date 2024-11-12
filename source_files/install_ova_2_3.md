@@ -58,47 +58,90 @@ service.
 
 ### Diskover Configuration
 
-Now that we have the OVA imported into our hypervisor we have a bit of configuration to do here to get the system up and running and ready to scan.
-These instructions will be the same regardless of which hypervisor you imported the OVA into.
+With the OVA now imported into your hypervisor, there are a few configuration steps needed to get the system up and running and ready to scan. These instructions apply to any hypervisor used for the import.
 
- (OVA Login)
-- You will see two user accounts 'Vagrant' and 'Diskover'
-- Choose to login as the 'Diskover' user
--- Password 'darkdata'
-  (Open Activies)
-- Click on 'Activities' in the top left
--- Open the terminal app
--- Additionally, open Google Chrome or Firefox
-  (Diskover Configuration Wizard)
-  2.3.0 has an easy configuration wizard that we will walk through here
-- In the browser window go to : http://localhost:8000/diskover_admin/config/
-  (Diskover Configuration Wizard - ElasticSearch)
-- In the initial section here you will see 'hosts-0' and within the box you will see 'elasticsearch', replace this with 'localhost'
--- Choose 'Test' in the bottom right
-    * This should show your ES cluster health with a status of 'green' at the top of the window. 
-- Choose 'Save & Continue'
-- Choose 'Yes'
--- Choose 'Test' in the bottom right
-    * This should show your ES cluster health with a status of 'green' at the top of the window. 
-- Choose 'Save & Continue'
-  (Diskover Configuration Wizard - License)
-- Choose SKIP in the bottom right for the License Configuration, we will do this at the end..
-  (Diskover Configuration Wizard - Time Settings)
-- Select your proper timezone
-- Choose 'Save & Continue'
-- Check the box for 'Show Times in Local Timezone'
-- Choose 'Save & Continue'
-  (Diskover Configuration Wizard - RabbitMQ)
--- Choose 'Test' in the bottom right
-    * This should show 'Connection Successful' at the top of the screen
+#### OVA Login
 
+🔴 You will see two user accounts, **Vagrant** and **Diskover**, choose to user/login as **Diskover**.<br>
+🔴 Password by default is **darkdata**.
 
-### License Request and Installation 
+#### Open Activities
 
-Now that we have the Diskover system configured, follow the instructions to [request your license](#hd_id) and [its installation](#license_location).
+🔴 Click on **Activities** in the top left.<br>
+🔴 Open the terminal app.<br>
+🔴 Additionally, open Google Chrome or Firefox.
 
+#### Diskover Configuration Wizard)
+
+Diskover v2.3 has an easy configuration wizard that we will walk you through.
+
+🔴 In the browser window, go to [**http://localhost:8000/diskover_admin/config/**](http://localhost:8000/diskover_admin/config/)
+
+#### Diskover Configuration Wizard | ElasticSearch
+
+🔴 In the initial section, you will see **hosts-0** and within the box you will see **Elasticsearch**, replace this with **localhost**.<br>
+🔴 Choose **Test** in the bottom right. This should show your Elasticsearch cluster health with a status of **green** at the top of the window.<br>
+🔴 Choose **Save & Continue**.<br>
+🔴 Choose **Yes**.<br>
+🔴 Choose **Test** in the bottom right. This should show your ES cluster health with a status of **green** at the top of the window.<br>
+🔴 Choose **Save & Continue**.
+
+#### Diskover Configuration Wizard | License
+
+🔴 Choose **Skip** in the bottom right for now, we will do this at the end.
+
+  
+#### Diskover Configuration Wizard | Time Settings
+
+🔴 Select your proper timezone.<br>
+🔴 Choose **Save & Continue**.<br>
+🔴 Check the box for **Show Times in Local Timezone**.<br>
+🔴 Choose **Save & Continue**.
+
+  
+#### Diskover Configuration Wizard | RabbitMQ
+
+🔴 Choose **Test** in the bottom right, this should show **Connection Successful*(* at the top of the screen.
+
+#### License Request and Installation
+
+Whether you are doing a POC or are a customer, the process is the same.
+
+🔴 [Generate your **hardware ID**](#hd_id)
+🔴 Send your [hardware ID](#hd_id) along with basic information so we can easily identify you to [licenses@diskoverdata.com](mailto:licenses@diskoverdata.com) for all editions and add [diskover-licensing@aja.com](mailto:diskover-licensing@aja.com) for the media edition.
+🔴 Once you have your licenses back from the Diskover team, you can input them here [http://localhost:8000/diskover_admin/config/License](http://localhost:8000/diskover_admin/config/License) by simply copying the contents from the **diskover.lic** and **diskover-web.lic** files into their respective boxe.
 
 ### Diskover Configuration Enhancements
+
+Now that our Diskover system is mostly configured and online, we want to make a couple of quality-of-life changes. Note that most of these commands are issued via the terminal with the exception of the **enable logging**.
+
+🔴 Diskover-Web Ownership:
+```
+chown -R nginx.nginx /var/www/diskover-*
+```
+
+🔴 Sart DiskoverD service)
+```
+systemctl start diskoverd
+```
+
+🔴 Enable logging by going to [http://localhost:8000/diskover_admin/config/Diskover.Configurations.Default](http://localhost:8000/diskover_admin/config/Diskover.Configurations.Default)
+🔴 Click **Enable Log File** checkbox and hit **Save** in the bottom right.
+🔴 Go to [http://localhost:8000/diskover_admin/config/DiskoverD.Default](http://localhost:8000/diskover_admin/config/DiskoverD.Default)
+🔴 Click **Enable Log File** checkbox.
+🔴 Under **Python Command** section put in **/bin/python3.11** instead of just **python3** and hit **Save** at the bottom right.
+🔴 In the left-hand pane, expand the **DiskoverD** section, and you should see another **Default** option here that matches the hostname
+of your machine. This might just be **worker-localhost_localdomain**.
+🔴 Click the **Enable Log File** checkbox.
+🔴 Under **Python Command** section put in **/bin/python3.11** instead of just **python3** and hit **Save** at the bottom right.
+🔴 Restart services:
+```
+systemctl restart diskoverd diskover-admin
+```
+
+
+
+
 
 
 

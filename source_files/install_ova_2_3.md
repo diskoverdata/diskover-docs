@@ -44,9 +44,9 @@ This section contains instructions to quickly get up and running with Diskover u
 
 ### VirtualBox Import and VM Settings
 
-🔴 Import the OVA by choosing **File -> Import Appliance**<br>
-🔴 Choose **Source -> Local File System**<br>
-🔴 Then **File : -> Browse for the OVA on your local machine and import it here**<br>
+🔴 Import the OVA by choosing File -> **Import Appliance**<br>
+🔴 Choose Source → **Local File System**<br>
+🔴 File → Browse for the OVA on your local machine and **import it here**<br>
 🔴 Once imported, choose **Next**<br>
 🔴 By default, the OVA sets the **CPU=2** and **RAM=2GB**. You need to adjust these settings according to your host machine. The recommended specs for OVA usage for POC: 
 
@@ -57,7 +57,7 @@ This section contains instructions to quickly get up and running with Diskover u
 
 ### VMWare Workstation Import and VM Settings
 
-🔴 To import the OVA by choosing **File -> Open**<br>
+🔴 Import the OVA by choosing File -> **Open**<br>
 🔴 Give the VM a unique name, ex:**diskover-2.3.0**<br>
 🔴 Once you've given the VM a name, choose **Import**<br>
 🔴 By default, the OVA sets the **CPU=2** and **RAM=2GB**. You need to adjust these settings according to your host machine. The recommended specs for OVA usage for POC: 
@@ -65,7 +65,7 @@ This section contains instructions to quickly get up and running with Diskover u
 - **CPU=12**
 - **RAM=64GB**
 
-🔴 Once you've adjusted the settings choose **Power on this virtual machine**
+🔴 Once you've adjusted the settings choose **Power on this virtual machine**.
 
 ## Diskover Configuration
 
@@ -120,7 +120,9 @@ Whether you are doing a POC or are a customer, the process is the same.
 
 🔴 [Generate your **hardware ID**](#hd_id)<br>
 🔴 Send your [hardware ID](#hd_id) along with basic information so we can easily identify you to [licenses@diskoverdata.com](mailto:licenses@diskoverdata.com) for all editions and add [diskover-licensing@aja.com](mailto:diskover-licensing@aja.com) for the media edition.<br>
-🔴 Once you have your licenses back from the Diskover team, you can input them here [http://localhost:8000/diskover_admin/config/License]<br>(http://localhost:8000/diskover_admin/config/License) by simply copying the contents from the **diskover.lic** and **diskover-web.lic** files into their respective boxe.
+🔴 Once you have your licenses back from the Diskover team, you can input them here [http://localhost:8000/diskover_admin/config/License](http://localhost:8000/diskover_admin/config/License) by simply copying the contents from the **diskover.lic** and **diskover-web.lic** files into their respective boxes.
+
+<img src="images/diskoveradmin_license.png" width="">
 
 ## Diskover Configuration Enhancements
 
@@ -136,12 +138,16 @@ chown -R nginx.nginx /var/www/diskover-*
 systemctl start diskoverd
 ```
 
-🔴 Enable logging by going to [http://localhost:8000/diskover_admin/config/Diskover.Configurations.Default](http://localhost:8000/diskover_admin/config/Diskover.Configurations.Default)<br>
+🔴 Enable logging by going to [http://localhost:8000/diskover_admin/config/Diskover.Configurations.Default](http://localhost:8000/diskover_admin/config/Diskover.Configurations.Default).<br>
 🔴 Click **Enable Log File** checkbox and hit **Save** in the bottom right.
+
+<img src="images/diskover_configuration_log_file.png" width=""> 
 
 🔴 Go to [http://localhost:8000/diskover_admin/config/DiskoverD.Default](http://localhost:8000/diskover_admin/config/DiskoverD.Default)<br>
 🔴 Click **Enable Log File** checkbox.<br>
 🔴 Under **Python Command** section put in **/bin/python3.11** instead of just **python3** and hit **Save** at the bottom right.
+
+<img src="images/diskoverd_configuration_log_file.png" width=""> 
 
 🔴 In the left-hand pane, expand the **DiskoverD** section, and you should see another **Default** option here that matches the hostname
 of your machine. This might just be **worker-localhost_localdomain**.<br>
@@ -164,12 +170,12 @@ This section will be a real quick test scan of the local OVA filesystem. To prop
 - Password : **darkdata**
 
 🔴 From the main user interface, go to the upper right corner **⛭ → Task Panel**<br>
-🔴 Go to the **Template** tab.<br>
+🔴 Go to the **Templates** tab.<br>
 🔴 Select the **filesystem** template.
 
 <img src="images/task_panel_templates.png" width="">
 
-🔴 We will only change 5 fields in this default template to scan our local storage - [click here for more information about all the fields](https://docs.diskoverdata.com/diskover_setup_and_config_guide/#task-fields-description) on this page:
+🔴 Only 5 fields in this default template need to be changed to scan your local storage - [click here for more information about all the fields](https://docs.diskoverdata.com/diskover_setup_and_config_guide/#task-fields-description) on this page:
 
 | Field | Description |
 | --- | --- |
@@ -177,9 +183,9 @@ This section will be a real quick test scan of the local OVA filesystem. To prop
 | **Description** | Enter a more detailed description of the task, for example **Scan of the local /opt/diskover directory** |
 | **Crawl Directory(s)** | This will be the path to the OVA that we want to scan, for example **/opt/diskover** |
 | **Custom Index Name** | We want to differentiate each task(s) index name so that they're never the same, for example **diskover-opt-%Y%m%d%H%M**
-| **Disabled** |  Uncheck this box |
+| **Disabled** |  **Uncheck** this box |
 
-🔴 Once we've set all these properties, click **Create Task** at the bottom of the page.<br>
+🔴 Once all properties are set, click **Create Task** at the bottom of the page.<br>
 🔴 Before starting the first scan task, let's tail the log files so we can watch the progress of our scan:
 ```
 tail -F /var/log/diskover/*
@@ -192,10 +198,10 @@ tail -F /var/log/diskover/*
 
 ## Sample Index Review
 
-Now that we have scanned the test directory, let’s take a look at the index that was created from this storage location.
+Now that we have scanned the test directory let’s take a look at the index that was created from this storage location.
 
 🔴 From the main user interface, go to the upper right corner **⛭ → Indices** or [http://localhost:8000/selectindices.php](http://localhost:8000/selectindices.php)<br>
 🔴 Make sure the **Always use latest indices (auto select)** box is checked.<br>
-🔴 Click on the **folder** 📁 in the top main menu to navigate back to the main page and you can now see and review your first test scan, as well as browse and search all of its content. 
+🔴 Click on the **folder** 📁 in the top main menu to navigate back to the main page, and you can now see and review your first test scan, as well as browse and search all of its content. 
 
 

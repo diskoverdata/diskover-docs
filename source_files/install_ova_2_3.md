@@ -1,14 +1,4 @@
-
-## OVA Installation
-
-This section contains instructions to quickly get up and running with Diskover using an OVA (Open Virtual Appliance) on **VMWare Workstation** and **VirtualBox**. These OVAs can easily be imported into either of these hypervisors and booted up to run Diskover. This guide provides light instructions on how to import the OVA properly and get it booted up.
-
-### Features
-- Diskover and built-in dependencies (Elasticsearch, Python, etc.).
-- Diskover is configured to start at boot.
-- Hostname set to `diskover`
-- DHCP enabled
-- CentOS 9.x
+## OVA Overview
 
 ### Understand the Network
 
@@ -48,6 +38,10 @@ growpart /dev/sda 3
 xfs_growfs -d /
 ```
 
+## OVA Installation
+
+This section contains instructions to quickly get up and running with Diskover using an OVA (Open Virtual Appliance) on **VMWare Workstation** and **VirtualBox**. These OVAs can easily be imported into either of these hypervisors and booted up to run Diskover. This guide provides light instructions on how to import the OVA properly and get it booted up.
+
 ### VirtualBox Import and VM Settings
 
 🔴 Import the OVA by choosing **File -> Import Appliance**<br>
@@ -73,22 +67,22 @@ xfs_growfs -d /
 
 🔴 Once you've adjusted the settings choose **Power on this virtual machine**
 
-### Diskover Configuration
+## Diskover Configuration
 
 With the OVA now imported into your hypervisor, there are a few configuration steps needed to get the system up and running and ready to scan. These instructions apply to any hypervisor used for the import.
 
-#### OVA Login
+### OVA Login
 
 🔴 You will see two user accounts, **Vagrant** and **Diskover**, choose to user/login as **Diskover**.<br>
 🔴 Password by default is **darkdata**.
 
-#### Open Activities
+### Open Activities
 
 🔴 Click on **Activities** in the top left.<br>
 🔴 Open the terminal app.<br>
 🔴 Additionally, open Google Chrome or Firefox.
 
-#### Diskover Configuration Wizard
+### Diskover Configuration Wizard
 
 Diskover v2.3 has an easy configuration wizard that we will walk you through.
 
@@ -120,15 +114,15 @@ Diskover v2.3 has an easy configuration wizard that we will walk you through.
 
 🔴 Choose **Test** in the bottom right, this should show **Connection Successful*(* at the top of the screen.
 
-#### License Request and Installation
+### License Request and Installation
 
 Whether you are doing a POC or are a customer, the process is the same.
 
 🔴 [Generate your **hardware ID**](#hd_id)<br>
-🔴 Send your [hardware ID](#hd_id) along with basic information so we can easily identify you to [licenses@diskoverdata.com](mailto:licenses@diskoverdata.com) for all editions and add [diskover-licensing@aja.com](mailto:diskover-licensing@aja.com) for the media edition.
+🔴 Send your [hardware ID](#hd_id) along with basic information so we can easily identify you to [licenses@diskoverdata.com](mailto:licenses@diskoverdata.com) for all editions and add [diskover-licensing@aja.com](mailto:diskover-licensing@aja.com) for the media edition.<br>
 🔴 Once you have your licenses back from the Diskover team, you can input them here [http://localhost:8000/diskover_admin/config/License]<br>(http://localhost:8000/diskover_admin/config/License) by simply copying the contents from the **diskover.lic** and **diskover-web.lic** files into their respective boxe.
 
-### Diskover Configuration Enhancements
+## Diskover Configuration Enhancements
 
 Now that your Diskover system is mostly configured and online, we want to make a couple of quality-of-life changes. Note that most of these commands are issued via the terminal with the exception of the **enable logging**.
 
@@ -158,9 +152,9 @@ of your machine. This might just be **worker-localhost_localdomain**.<br>
 systemctl restart diskoverd diskover-admin
 ```
 
-### Schedule and Run Sample Storage Scan
+## Schedule and Run Sample Storage Scan
 
-#### Scan Schedule
+### Scan Schedule
 
 This section will be a real quick test scan of the local OVA filesystem. To properly scan your own storage, you will need to set up and configure SMB/NFS shares to be mounted to the OVA. Once these shares are mounted, you can follow a similar process as outlined below to scan those storage repositories.
 
@@ -191,12 +185,12 @@ This section will be a real quick test scan of the local OVA filesystem. To prop
 tail -F /var/log/diskover/*
 ```
 
-#### Start First Scan
+### Start First Scan
 
 🔴 Start the scan from the **Task List** tab, or [http://localhost:8000/tasks/index.php](http://localhost:8000/tasks/index.php), choose your newly created task and select the arrow next to the **Info** button and choose **Run Now**, click **Ok**.<br>
 🔴 Open your terminal and watch the scan logs.
 
-### Sample Index Review
+## Sample Index Review
 
 Now that we have scanned the test directory, let’s take a look at the index that was created from this storage location.
 

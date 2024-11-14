@@ -14,30 +14,6 @@ service.
 
 🟨 There are performance limitations when running Diskover using an OVA, as it will start to get sluggish at around **200 million files**.
 
-### Size the Instance
-
-Before you begin, ensure there are sufficient memory and disk resources for the OVA:
-
-- Memory 32GB RAM
-- Disk:
-    - Media & Entertainment workflows: 256GB fast disk/SSD
-
-🔴 To Expand the root partition and filesystem:
-```
-sudo -s
-yum install cloud-utils-growpart-0.27-10.el7.x86_64
-```
-
-🔴 To grow the sda3 partition:
-```
-growpart /dev/sda 3
-```
-
-🔴 To grow the root filesystem:
-```
-xfs_growfs -d /
-```
-
 ## OVA Installation
 
 This section contains instructions to quickly get up and running with Diskover using an OVA (Open Virtual Appliance) on **VMWare Workstation** and **VirtualBox**. These OVAs can easily be imported into either of these hypervisors and booted up to run Diskover. This guide provides light instructions on how to import the OVA properly and get it booted up.
@@ -170,8 +146,9 @@ This section will be a real quick test scan of the local OVA filesystem. To prop
 - Password : **darkdata**
 
 🔴 From the main user interface, go to the upper right corner **⛭ → Task Panel**<br>
-🔴 Go to the **Templates** tab.<br>
-🔴 Select the **filesystem** template.
+🔴 Select **Task List** at the top left.<br>
+🔴 Select **New Index Task**.<br>
+🔴 Select the **filesystem** template from the template list at the top.
 
 <img src="images/task_panel_templates.png" width="">
 

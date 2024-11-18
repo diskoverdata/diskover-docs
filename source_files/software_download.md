@@ -35,16 +35,8 @@ cd /tmp/diskover
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
-#### Download Portal
+#### Download Link
 
-1. Create an account for the [Diskover Download Portal](https://download.diskoverdata.com/register.php).
-2. Your account will be validated and approved within 24 hours. Note that we will contact you if we need more information before approval.
-3. Once your account is approved, you can [login](https://download.diskoverdata.com/) and download the latest version.
+We are currently moving to a new platform for software download. Meanwhile, please [open a support ticket](https://support.diskoverdata.com/) and we will send you a link. 
 
-#### OVA Download
-
-1. Create an account for the [Diskover Download Portal](https://download.diskoverdata.com/register.php).
-2. Your account will be validated and approved within 24 hours. Note that we will contact you if we need more information before approval.
-3. Once your account is approved, you can [login](https://download.diskoverdata.com/).
-4. Download the latest OVA version.
-5. Complete the installation as outlined in the [Diskover Installation Guide for OVA](https://docs.diskoverdata.com/diskover_installation_guide_ova/#how-to-install-ova).
+Click these links for information on how to [create a support account](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-zendesk-account) and how to [create a support ticket](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-support-ticket).

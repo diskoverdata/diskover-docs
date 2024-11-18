@@ -20,7 +20,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | EDITION |  PLUGIN |
 | --- | --- |
-| **Core Editions** | <ul><li>[Checksums](#plugin_index_checksums)</li><li>[File Kind](#plugin_index_file_kind)</li><li>[First Index/Arrival Time](#plugin_index_first_index)</li><li>[Grafana](#plugin_index_grafana)</li><li>[Grafana Cloud](#plugin_index_grafana_cloud)</li><li>[Path Tokens](#plugin_index_path_tokens)</li><li>[Tag Copier](#plugin_index_tag_copier)</li><li>[Unix Perms](#plugin_index_unix_perms)</li><li>[Windows Owner](#plugin_index_windows_owner)</li></ul> |
+| **Core Editions** | <ul><li>[Checksums](#plugin_index_checksums)</li><li>[File Kind](#plugin_index_file_kind)</li><li>[First Index/Arrival Time](#plugin_index_first_index)</li><li>[Grafana](#plugin_index_grafana)</li><li>[Grafana Cloud](#plugin_index_grafana_cloud)</li><li>[Image Info](#plugin_index_image_info)</li><li>[Path Tokens](#plugin_index_path_tokens)</li><li>[Tag Copier](#plugin_index_tag_copier)</li><li>[Unix Perms](#plugin_index_unix_perms)</li><li>[Windows Owner](#plugin_index_windows_owner)</li></ul> |
 | **Media** | <ul><li>[Media Info](#plugin_index_mediainfo)</li></ul> |
 | **Life Science** | <ul><li>[BAM Index Plugin](#plugin_index_bam)</li></ul> |
 
@@ -104,6 +104,19 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 | Purpose | Provides the ability to visualize and trend data metrics over time using Grafana Cloud. The plugin rolls up summary data and creates Grafana-specific indices within Elasticsearch. These indices use time series @timestamp metrics to separate logstash- indices, indexes directory size, counts up to N dir depths (default 2). Elasticsearch can then use these summary indexes as a data source for viewing these logstash indices from Grafana. |
 
 
+<p id="plugin_index_image_info"></p>
+
+#### Image Info
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Enable/Config | Via the DiskoverAdmin panel |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Purpose | Designed to add Image EXIF info metadata from your image files to the Elasticsearch index during the indexing process. |
+
+
+
 
 <p id="plugin_index_mediainfo"></p>
 
@@ -128,6 +141,19 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Designed to break down concatenated directory/file names and add the tokenized metadata to the Elasticsearch index during the indexing process. |
+
+
+<p id="plugin_index_pdf_info"></p>
+
+#### PDF Info
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Enable/Config | Via the DiskoverAdmin panel |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Purpose | Designed to add several metadata fields from your PDF files to the Elasticsearch index during the indexing process. |
+
 
 
 

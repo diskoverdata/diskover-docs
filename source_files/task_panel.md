@@ -12,7 +12,7 @@ Diskover offers professional services to assist with setting up tasks, dataflows
 
 #### Use Cases
 
-The Task Panel can be used to schedule indexing tasks or run any custom task, such as data curation via the AutoClean plugin, copying files, running duplicate file findings, checking permissions on directories, etc.
+The Task Panel can be used to schedule [indexing tasks](#create_index_task) or run any [custom task](#create_custom_task), such as data curation via the AutoClean plugin, copying files, running duplicate file findings, checking permissions on directories, etc.
 
 Diskover has a [distributed task system](#architecture_diagram) where indexers/workers can be distributed among many resources. For each resource providing a task worker, services need to have a [DiskoverD](#install_diskoverd) installed. This section will describe setting up both indexing and custom tasks within the Diskover-Web Task Panel.
 
@@ -90,8 +90,7 @@ The Workers tab shows the status and performance of task workers, which are resp
 | **Name** | Assing a custom name to your **task**. Note that this name is not related to any configuration in the DiskoverAdmin panel. |
 | **Description** | You can enter a detailed description for this indexing task. |
 | **Crawl Directory(s)** | Specify top path where to start the crawl, for example: **/mnt/snfs2** or **/home** |
-| **Alt Scanner** | Enter the name of an [alternate indexer](#config_alt_indexers) if applicable for this task, for example: scandir_s3, scandir_azure, scandir_offline_media. You can [configure your alternate indexers via the DiskoverAdmin panel](#config_alt_indexers).<br><img src="images/diskoveradmin_menu_alt_cache.png" width="800"> |
-| **Use DirCache** | Check this box to optimize future scanning, make sure to [configure DirCache accordingly in the DiskoverAdmin panel](#config_alt_indexer_dircache). Note that this box is just a shortcut as entering **scandir_dircache** in the field above will do the same. |
+| **Alt Scanner** | Enter the name of an [alternate indexer](#config_alt_indexers) if applicable for this task, for example: scandir_s3, scandir_azure, scandir_offline_media. You can [configure your alternate indexers via the DiskoverAdmin panel](#config_alt_indexers).<br><img src="images/diskoveradmin_menu_alt_cache.png" width="800"><br><br>**Use DirCache**: Check this box to optimize future scanning, make sure to [configure DirCache accordingly in the DiskoverAdmin panel](#config_alt_indexer_dircache). Note that this box is just a shortcut as entering **scandir_dircache** in the field above will yield the same result. |
 | **CLI Options/Flags** | Allows users to fine-tune tasks directly through additional parameters, providing more control over how the indexing runs. Follow the help instructions in the interface. |
 | **Auto Index Name** | Check this box for Diskover to assign a name to your index using the format **diskover-_toppath_-_datetime_** |
 | **Custom Index Name** | Assign a custom name to your **index** and read the help text in the interface for guidance. Note that this name has no correlation with the [indexer's name in the DiskoverAdmin panel](#config_indexers). |
@@ -117,13 +116,15 @@ The Workers tab shows the status and performance of task workers, which are resp
 
 ### Validate Task Worker Presence
 
-🔴 &nbsp;Ensure the presence of at least one online task worker under the **Status** column.
+🔴 &nbsp;To ensure the presence of at least one online task worker, select **Workers** tab at the top, and then use the **Status** column to validate.
 
 ![Image: Tasks Management System](images/task_panel_worker_status.png)
 
+<p id="create_index_task"></p>
+
 ### Create an Indexing Task
 
-This is your last step to start your first index! Keep in mind that some configurations may still require customization, even if we haven’t reached those steps yet.
+**This is your last step to start your first index!** Keep in mind that some configurations may still require customization, even if we haven’t reached those steps yet.
 
 The configuration for indexing tasks varies between **Posix File Systems** and **S3-based object storage**.
 
@@ -183,6 +184,7 @@ AWS_PROFILE=profile,S3_ENDPOINT_URL=https://alternate_endpoint.com
 
 ![Image: Non S3 Bucket Indexing Task Configuration](images/task_panel_new_index_s3_non-aws.png)
 
+<p id="create_custom_task"></p>
 
 ### Create a Custom Task
 

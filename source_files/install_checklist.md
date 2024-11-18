@@ -23,3 +23,5 @@ The chapters in this guide are in the logical order to follow for installing and
 | 15 | [Configure Tags](#tags) - _optional_ |
 | 16 | [Configure Analytics](#analytics) - _optional_ |
 | 17 | [Indices Management](#indices_management) |
+
+Please [click here for a detailed list of configurable features](#feature_navigator) and how to access them.

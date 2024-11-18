@@ -63,6 +63,7 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **Grant Plugin Plugin** | | [Research Grant File Action Plugin](#plugin_file_action_grant) | 
 | **Hash Differential Checksums Plugin** | | [Hash Differential Checksums File Action Plugin](#plugin_file_action_hash_diff) |
 | **Illegal Filename Plugin** | Plugins → Post Index → Illegal Filename | |
+| **Image Info Plugin** | Plugins → Index → Image Info | |
 | **IMF Change Report Plugin** | Plugins → File Actions → IMF Change Report | |
 | **IMF Package Validator Plugin** | | [IMF Package Validator File Action Plugin by Oxagile](#plugin_file_action_imf_validator) |
 | **Index Access** | Web → Index Access | |
@@ -83,6 +84,7 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **OneDrive/SharePoint** alt indexer | | [Microsoft OneDrive and SharePoint Alternate Indexer](#alt_indexer_onedrive) |
 | **Path Tokens Plugin** | Plugins → Index → Path Tokens | |
 | **Path Translation** | Web → Path Translations | |
+| **PDF Info Plugin** | Plugins → Index → PDF Info _coming soon_ | |
 | **PDF Viewer Plugin** | Plugins → File Actions → PDF | |
 | **RabbitMQ** | System → Message Queue | |
 | **Rclone Plugin** | Plugins → File Actions → Rclone | |

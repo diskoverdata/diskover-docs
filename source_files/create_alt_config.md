@@ -1,4 +1,4 @@
-<p id="create_alt_index_config"></p>
+<p id="create_alt_config"></p>
 
 ## Create an Alternate Indexing Configuration
 

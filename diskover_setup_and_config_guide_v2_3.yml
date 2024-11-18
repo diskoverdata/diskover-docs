@@ -18,6 +18,7 @@ ordered_documents:
   - requirements_skills.md
   - software_download.md
   - system_readiness.md
+  - install_checklist.md
   - install_elasticsearch.md
   - install_indexers.md
   - install_celery.md

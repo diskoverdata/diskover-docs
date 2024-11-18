@@ -84,7 +84,7 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **OneDrive/SharePoint** alt indexer | | [Microsoft OneDrive and SharePoint Alternate Indexer](#alt_indexer_onedrive) |
 | **Path Tokens Plugin** | Plugins → Index → Path Tokens | |
 | **Path Translation** | Web → Path Translations | |
-| **PDF Info Plugin** | Plugins → Index → PDF Info _coming soon_ | |
+| **PDF Info Plugin** | Plugins → Index → PDF Info ... _coming soon!_ | |
 | **PDF Viewer Plugin** | Plugins → File Actions → PDF | |
 | **RabbitMQ** | System → Message Queue | |
 | **Rclone Plugin** | Plugins → File Actions → Rclone | |

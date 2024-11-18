@@ -25,6 +25,7 @@ ordered_documents:
   - install_diskover_web.md
   - install_diskoveradmin.md
   - config_initial.md
+  - create_alt_config.md
   - task_panel.md
   - backup.md
   - features_finder.md

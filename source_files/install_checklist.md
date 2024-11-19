@@ -5,7 +5,7 @@
 The chapters in this guide are in the logical order to follow for installing and configuring Diskover, although this checklist might be useful to follow.
 
 | STEP | TASK |
-| --- | --- |
+| :---: | --- |
 | 1 | [Elasticsearch Installation](#install_es) |
 | 2 | [Indexers/Workers Installation](#install_indexers) |
 | 3 | [DiskoverD Task Worker Daemon](#install_diskoverd) |

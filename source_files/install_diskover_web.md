@@ -202,3 +202,24 @@ systemctl restart nginx php-fpm; systemctl status nginx php-fpm
 rm /var/opt/remi/php84/run/php-fpm/www.sock
 systemctl restart php-fpm; systemctl status php-fpm
 ```
+
+### Enable SSL for Diskover-Web
+
+🔴 &nbsp;Copy the `http_ca.crt` to the Web server and place into `/etc/pki/ca-trust/source/anchors/http_ca.crt`
+
+🔴 &nbsp;Run the following command: 
+```
+sudo update-ca-trust
+```
+
+🔴 &nbsp;Edit the `php.ini` file so that we can have PHP use this cert location to communicate with ES:
+```
+vi /etc/opt/remi/php84/php.ini
+```
+
+```
+openssl.cafile=/etc/pki/tls/certs/ca-bundle.crt
+openssl.capath=/etc/pki/tls/certs
+```
+
+

@@ -2,7 +2,7 @@
 
 ## Checklist
 
-The chapters in this guide are in the logical order to follow for installing and configuring Diskover, although this checklist might be useful to follow.
+The chapters in this guide are in the logical order to follow for installing and configuring Diskover. This checklist is a summary for quick reference.
 
 | STEP | TASK |
 | :---: | --- |

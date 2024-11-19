@@ -26,14 +26,13 @@ Some quick links you might need:
 
 Let's start this process by setting up your first node:
 
-🔴 &nbsp;Install Java v8 for CentOS7: 
-```
-yum -y install java-1.8.0-openjdk.x86_64
-```
-
-🔴 &nbsp;Install Java v21 for Rocky or RHEL v8: 
+🔴 &nbsp;Install Java v21: 
 ```
 dnf install java-21-openjdk
+```
+
+```
+dnf install https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.15.2-x86_64.rpm
 ```
 
 #### Elasticsearch Installation
@@ -124,60 +123,6 @@ elasticsearch soft memlock unlimited
 elasticsearch hard memlock unlimited
 ```
 
-#### Elasticsearch Health Check
-
-With the ES cluster installed and running, you can now run a simple curl command to check the health of your cluster.
-
-🔴 &nbsp;Check the health of your Elasticsearch cluster. 
-
-🟨 &nbsp;Replace the **${ESHOST}** below with your **ES node(s) IP address or hostname**
-
-Curl command **if SSL is enabled** on the cluster - the result will differ, of course, based on your own environment:
-```
-curl -XGET -u elastic:password https://${ESHOST}:9200/_cluster/health?pretty --cacert /etc/elasticsearch/certs/http_ca.crt
-{
-  "cluster_name" : "elasticsearch",
-  "status" : "yellow",
-  "timed_out" : false,
-  "number_of_nodes" : 1,
-  "number_of_data_nodes" : 1,
-  "active_primary_shards" : 78,
-  "active_shards" : 78,
-  "relocating_shards" : 0,
-  "initializing_shards" : 0,
-  "unassigned_shards" : 1,
-  "delayed_unassigned_shards" : 0,
-  "number_of_pending_tasks" : 0,
-  "number_of_in_flight_fetch" : 0,
-  "task_max_waiting_in_queue_millis" : 0,
-  "active_shards_percent_as_number" : 98.73417721518987
-}
-```
-
-Curl command **if SSL is not enabled** on the cluster - the result will differ, of course, based on your own environment:
-```
-curl http://${ESHOST}:9200/_cluster/health?pretty
-{
-  "cluster_name" : "elasticsearch",
-  "status" : "green",
-  "timed_out" : false,
-  "number_of_nodes" : 1,
-  "number_of_data_nodes" : 1,
-  "active_primary_shards" : 0,
-  "active_shards" : 0,
-  "relocating_shards" : 0,
-  "initializing_shards" : 0,
-  "unassigned_shards" : 0,
-  "delayed_unassigned_shards" : 0,
-  "number_of_pending_tasks" : 0,
-  "number_of_in_flight_fetch" : 0,
-  "task_max_waiting_in_queue_millis" : 0,
-  "active_shards_percent_as_number" : 100.0
-}
-```
-
-
-
 ### Multiple Nodes Installation
 
 If you have more than 1 node in your environment, redo all the [Single Node Installation](#install_es_node) steps for each node/system.
@@ -214,7 +159,7 @@ Escape character is '^]'.
 
 - If you see **Connection Refused**, you should validate if [**SELinux** and **Firewalld** are disabled and off](#disable_selinux), respectively.
 
-#### Single Cluster Setup
+#### Setup
 
 🔴 &nbsp;Run DNF updates:
 ```
@@ -301,3 +246,249 @@ sudo systemctl start elasticsearch
 In a multiple-cluster setup for Elasticsearch, you can run and manage multiple independent clusters, each with its own set of nodes and indices. This setup is typically used when you need to isolate data or workloads across different environments (such as production, testing, and development) or geographically distributed locations. Each cluster operates independently, and you can configure cross-cluster search or replication to share data or search across clusters as needed.
 
 Please [open a support ticket](https://support.diskoverdata.com/) for assistance.
+
+### Elasticsearch Health Check
+
+With the ES cluster installed and running, you can now run a simple curl command to check the health of your cluster.
+
+🔴 &nbsp;Check the health of your Elasticsearch cluster. 
+
+🟨 &nbsp;Replace the **${ESHOST}** below with your **ES node(s) IP address or hostname**
+
+Curl command **if SSL is enabled** on the cluster - the result will differ, of course, based on your own environment - [navigate here for more information on SSL enablement](#ssl_enable_es):
+```
+curl -XGET -u elastic:password https://${ESHOST}:9200/_cluster/health?pretty --cacert /etc/elasticsearch/certs/http_ca.crt
+{
+  "cluster_name" : "elasticsearch",
+  "status" : "yellow",
+  "timed_out" : false,
+  "number_of_nodes" : 1,
+  "number_of_data_nodes" : 1,
+  "active_primary_shards" : 78,
+  "active_shards" : 78,
+  "relocating_shards" : 0,
+  "initializing_shards" : 0,
+  "unassigned_shards" : 1,
+  "delayed_unassigned_shards" : 0,
+  "number_of_pending_tasks" : 0,
+  "number_of_in_flight_fetch" : 0,
+  "task_max_waiting_in_queue_millis" : 0,
+  "active_shards_percent_as_number" : 98.73417721518987
+}
+```
+
+Curl command **if SSL is not enabled** on the cluster - the result will differ, of course, based on your own environment:
+```
+curl http://${ESHOST}:9200/_cluster/health?pretty
+{
+  "cluster_name" : "elasticsearch",
+  "status" : "green",
+  "timed_out" : false,
+  "number_of_nodes" : 1,
+  "number_of_data_nodes" : 1,
+  "active_primary_shards" : 0,
+  "active_shards" : 0,
+  "relocating_shards" : 0,
+  "initializing_shards" : 0,
+  "unassigned_shards" : 0,
+  "delayed_unassigned_shards" : 0,
+  "number_of_pending_tasks" : 0,
+  "number_of_in_flight_fetch" : 0,
+  "task_max_waiting_in_queue_millis" : 0,
+  "active_shards_percent_as_number" : 100.0
+}
+```
+
+### Enable SSL
+
+#### Enable SSL for Single-Node Cluster
+
+🔴 &nbsp;When ES v8 finishes installing, you will need to grab the output password for the elastic user. The output will look like the following:
+
+```
+--------------------------- Security autoconfiguration information ------------------------------
+
+Authentication and authorization are enabled.
+TLS for the transport and HTTP layers is enabled and configured.
+
+The generated password for the elastic built-in superuser is : y1DGG*eQFdnYPXJiPu6w
+....
+```
+
+🟨 &nbsp;If you need to reset the password - [more info can be found here on that subject](https://www.elastic.co/guide/en/elasticsearch/reference/current/reset-password.html):
+```
+bin/elasticsearch-reset-password -u elastic
+```
+
+🟨 &nbsp;Ensure the following is set inside the `/etc/elasticsearch/elasticsearch.yml`. By default, ES v8 should configure these settings automatically, but in case it doesn’t, you may need to set them manually:
+
+🔴 &nbsp;Enable security features:
+```
+xpack.security.enabled: true
+xpack.ml.enabled: false
+```
+```
+xpack.security.enrollment.enabled: true
+```
+
+🔴 &nbsp;Enable encryption for HTTP API client connections, such as Kibana, Logstash, and Agents:
+```
+xpack.security.http.ssl:
+  enabled: true
+  keystore.path: certs/http.p12
+```
+
+🔴 &nbsp;Enable encryption and mutual authentication between cluster nodes:
+```
+xpack.security.transport.ssl:
+  enabled: true
+  verification_mode: certificate
+  keystore.path: certs/transport.p12
+  truststore.path: certs/transport.p12
+```
+
+🔴 &nbsp;[Create a new cluster](#set_es_cluster) with only the current node. Additional nodes can still join the cluster later:
+```
+cluster.initial_master_nodes: ["diskover-1"]
+```
+
+🔴 &nbsp;Allow HTTP API connections from anywhere. Connections are encrypted and require user authentication:
+```
+http.host: 0.0.0.0
+```
+
+🔴 &nbsp;Allow other nodes to join the cluster from anywhere. Connections are encrypted and mutually authenticated:
+```
+transport.host: 0.0.0.0
+```
+
+🟨 &nbsp;Be sure to comment `cluster.initial_master_nodes` after you have bootstrapped ES for the first time.
+
+🔴 &nbsp;Verify your certs live in `/etc/elasticsearch/certs/`, you should have the following:
+```
+-rw-r----- 1 elasticsearch elasticsearch  1915 Oct 10 18:10 http_ca.crt
+-rw-r----- 1 elasticsearch elasticsearch 10061 Oct 10 18:10 http.p12
+-rw-r----- 1 elasticsearch elasticsearch  5822 Oct 10 18:10 transport.p12
+```
+
+🔴 &nbsp;Chown the `/etc/elasticsearch/` directory recursively if not already done: 
+```
+chown -R elasticsearch.elasticsearch /etc/elasticsearch/
+```
+
+🔴 &nbsp;Start Elasticsearch
+
+🔴 &nbsp;Curl the cluster: 
+```
+curl -u elastic:password https://IP or hostname:9200/_cluster/health?pretty --cacert /etc/elasticsearch/certs/http_ca.crt
+```
+
+#### Enable SSL for Multi-Node Cluster
+
+🔴 &nbsp;When ES v8 finishes installing, you will need to grab the output password for the elastic user. The output will look like the following:
+
+```
+--------------------------- Security autoconfiguration information ------------------------------
+
+Authentication and authorization are enabled.
+TLS for the transport and HTTP layers is enabled and configured.
+
+The generated password for the elastic built-in superuser is : y1DGG*eQFdnYPXJiPu6w
+....
+```
+
+🟨 &nbsp;If you need to reset the password - [more info can be found here on that subject](https://www.elastic.co/guide/en/elasticsearch/reference/current/reset-password.html):
+```
+/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic
+```
+
+##### Enable SSL on Node 1
+
+🔴 &nbsp;Be sure you have the following set inside `/etc/elasticsearch/elasticsearch.yml`:
+```
+discovery.seed_hosts: ["Node 1 IP","Node 2 IP","Node 3 IP"]
+```
+
+🔴 &nbsp;**If setting up this multi-node cluster for the very first time**:
+
+- You need to determine which node will be your master, then be sure to put the node name on `cluster.initial_master_nodes` exactly as you have it for `node.name` above.
+- Restart ES.
+- Comment the same line, then restart ES again.
+- This will state that you want this particular node to be your master.
+
+🔴 &nbsp;**If you already have a single node and only adding more nodes to the cluster**, be sure that `cluster.initial_master_nodes` is commented since you’ve already elected this as the master:
+
+- Be sure to add this prop as ES will fail upon startup because it's trying to use Machine Learning:
+```
+xpack.ml.enabled: false
+```
+- Grab the **keystore** & **truststore** passwords for the transport and http certs. You can run this command to see all the keystores for your ES:
+```
+/usr/share/elasticsearch/bin/elasticsearch-keystore list
+```
+- We're going to be grabbing the `xpack.security` passwords:
+```
+http: /usr/share/elasticsearch/bin/elasticsearch-keystore show xpack.security.http.ssl.keystore.secure_password
+```
+- Transport: 
+```
+/usr/share/elasticsearch/bin/elasticsearch-keystore show xpack.security.transport.ssl.keystore.secure_password
+/usr/share/elasticsearch/bin/elasticsearch-keystore show xpack.security.transport.ssl.truststore.secure_password (both of these passwords should be the same)
+```
+- Copy the `.p12` and `http-ca.crt` certs over the Node 2 inside `/etc/elasticsearch/certs/`
+
+##### Enable SSL on Node 2
+
+🔴 &nbsp;Be sure you have the following set inside `/etc/elasticsearch/elasticsearch.yml`:
+```
+discovery.seed_hosts: ["Node 1 IP","Node 2 IP","Node 3 IP"]
+```
+
+🔴 &nbsp;Make sure to comment the `cluster.initial_master_nodes` because you already have a master.
+
+🔴 &nbsp;Set:
+```
+xpack.ml.enabled: false
+```
+
+🔴 &nbsp;It's probably best to delete the old `/etc/elasticsearch/elasticsearch.keystore`, then re-create it:
+```
+/usr/share/elasticsearch/bin/elasticsearch-keystore create
+```
+
+🔴 &nbsp;Now we need to add the passwords for the `keystore` that we got from Node 1:
+```
+http: /usr/share/elasticsearch/bin/elasticsearch-keystore add xpack.security.http.ssl.keystore.secure_password
+```
+
+🔴 &nbsp;Transport:
+```
+/usr/share/elasticsearch/bin/elasticsearch-keystore add xpack.security.transport.ssl.keystore.secure_password
+/usr/share/elasticsearch/bin/elasticsearch-keystore add xpack.security.transport.ssl.truststore.secure_password
+```
+
+🔴 &nbsp;Be sure to check your keystore to ensure you have them set:
+```
+/usr/share/elasticsearch/bin/elasticsearch-keystore list
+```
+
+🔴 &nbsp;Restart Elasticsearch: 
+```
+systemctl restart elasticsearch
+```
+
+##### Enable SSL on Node 3 +
+
+Provided Elasticsearch on Node 2 comes online, repeat the same **Enable SSL on Node 2** steps for Node 3 and subsequent nodes, if applicable.
+
+#### Testing SSL
+
+🔴 &nbsp;Once all ES nodes are online, you should be able to curl to see which node is the master, it should be Node 1, if you have still elected it to be the master:
+```
+curl -u elastic:password https://IP or hostname:9200/_cat/master?v --cacert /etc/elasticsearch/certs/http_ca.crt
+```
+
+🔴 &nbsp;You can also curl to grab the health of the cluster:
+```
+curl -u elastic:password https://IP or hostname:9200/_cluster/health?pretty --cacert /etc/elasticsearch/certs/http_ca.crt
+```

@@ -205,7 +205,10 @@ systemctl restart php-fpm; systemctl status php-fpm
 
 ### Enable SSL for Diskover-Web
 
-🔴 &nbsp;Copy the `http_ca.crt` to the Web server and place into `/etc/pki/ca-trust/source/anchors/http_ca.crt`
+🔴 &nbsp;Copy the `http_ca.crt` to the Web server and place into:
+```
+/etc/pki/ca-trust/source/anchors/http_ca.crt
+```
 
 🔴 &nbsp;Run the following command: 
 ```

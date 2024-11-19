@@ -402,40 +402,51 @@ The generated password for the elastic built-in superuser is : y1DGG*eQFdnYPXJiP
 /usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic
 ```
 
-##### Enable SSL on Node 1
+##### Enable SSL on Node 1 | If setting up a multi-node cluster for the first time
 
 🔴 &nbsp;Be sure you have the following set inside `/etc/elasticsearch/elasticsearch.yml`:
 ```
 discovery.seed_hosts: ["Node 1 IP","Node 2 IP","Node 3 IP"]
 ```
 
-🔴 &nbsp;**If setting up this multi-node cluster for the very first time**:
+🔴 &nbsp;Determine which node will be your master, then be sure to put the node name on `cluster.initial_master_nodes` exactly as you have it for `node.name` above.
 
-- You need to determine which node will be your master, then be sure to put the node name on `cluster.initial_master_nodes` exactly as you have it for `node.name` above.
-- Restart ES.
-- Comment the same line, then restart ES again.
-- This will state that you want this particular node to be your master.
+🔴 &nbsp;Restart ES.
 
-🔴 &nbsp;**If you already have a single node and only adding more nodes to the cluster**, be sure that `cluster.initial_master_nodes` is commented since you’ve already elected this as the master:
+🔴 &nbsp;Comment the same line, then restart ES again.
 
-- Be sure to add this prop as ES will fail upon startup because it's trying to use Machine Learning:
+🔴 &nbsp;This will state that you want this particular node to be your master.
+
+##### Enable SSL on Node 1 | If adding nodes to an existing single-node cluster
+
+🔴 &nbsp;Be sure you have the following set inside `/etc/elasticsearch/elasticsearch.yml`:
+```
+discovery.seed_hosts: ["Node 1 IP","Node 2 IP","Node 3 IP"]
+```
+
+🔴 &nbsp;Be sure that `cluster.initial_master_nodes` is commented since you’ve already elected this as the master.
+
+🔴 &nbsp;Add this prop as ES will fail upon startup because it will try to use Machine Learning:
 ```
 xpack.ml.enabled: false
 ```
-- Grab the **keystore** & **truststore** passwords for the transport and http certs. You can run this command to see all the keystores for your ES:
+
+🔴 &nbsp;Grab the **keystore** & **truststore** passwords for the transport and http certs. You can run this command to see all the keystores for your ES:
 ```
 /usr/share/elasticsearch/bin/elasticsearch-keystore list
 ```
-- We're going to be grabbing the `xpack.security` passwords:
+
+🔴 &nbsp;Grab the `xpack.security` passwords:
 ```
 http: /usr/share/elasticsearch/bin/elasticsearch-keystore show xpack.security.http.ssl.keystore.secure_password
 ```
-- Transport: 
+🔴 &nbsp;Transport: 
 ```
 /usr/share/elasticsearch/bin/elasticsearch-keystore show xpack.security.transport.ssl.keystore.secure_password
 /usr/share/elasticsearch/bin/elasticsearch-keystore show xpack.security.transport.ssl.truststore.secure_password (both of these passwords should be the same)
 ```
-- Copy the `.p12` and `http-ca.crt` certs over the Node 2 inside `/etc/elasticsearch/certs/`
+
+🔴 &nbsp;Copy the `.p12` and `http-ca.crt` certs over the Node 2 inside `/etc/elasticsearch/certs/`
 
 ##### Enable SSL on Node 2
 

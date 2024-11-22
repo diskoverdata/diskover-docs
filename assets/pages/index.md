@@ -2,7 +2,7 @@
 
 # 
 
-___
+
 ## Technical Guides
 
 _Intended for Service Professionals and System Administrators._
@@ -17,7 +17,7 @@ _Intended for Service Professionals and System Administrators._
 
 [Technical Support and Troubleshooting](https://docs.diskoverdata.com/tech_support_and_troubleshooting/)
 
-___
+
 ## User Guides
 
 _Intended for the daily operation of Diskover._
@@ -34,20 +34,20 @@ _Intended for the daily operation of Diskover._
 
 [End-User Troubleshooting](https://docs.diskoverdata.com/diskover_troubleshooting_end_user/)
 
-___
+
 ## Changelogs
 
 [Diskover Changelogs](https://docs.diskoverdata.com/diskover_changelogs/)
 
-___
+
 ## White Papers
 
 [Diskover Indexing Performance Impact Testing](https://docs.diskoverdata.com/diskover_white_paper_indexing_performance_impact_testing/)
 
-___
+
 ## Contact Diskover
 
-___
+
 |Methods|Coordinates|
 |---|---|
 |Phone |800-560-5853 |

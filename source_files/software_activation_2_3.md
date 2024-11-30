@@ -5,9 +5,9 @@
 
 ### Licensing Overview
 
-The [**Diskover Community Edition**](https://diskoverdata.com/solutions/) doesn't require a license key and can be used for an unlimited time. 
+The [**Diskover Community Edition**](https://github.com/diskoverdata/diskover-community/releases) doesn't require a license key and can be used for an unlimited time. 
 
-The [**Diskover Editions/paid subscriptions**](https://diskoverdata.com/solutions/) require a license. Unless otherwise agreed:
+The [**Diskover Editions/paid annual subscriptions**](https://diskoverdata.com/solutions/) require a license. Unless otherwise agreed:
 - A trial license is usually valid for 30 days and is issued for 1 Elasticsearch node.
 - A paid subscription license is valid for 1 year. Clients will be contacted about 90 days before their license expiration with a renewal proposal.
 
@@ -15,7 +15,9 @@ Please reach out to your designated Diskover contact person or [contact us](mail
 
 ### Software Download
 
-We are currently moving to a new platform for software download. Meanwhile, please [open a support ticket](https://support.diskoverdata.com/) and we will send you a link. 
+You can always download the [latest version of the **Community Edition** here](https://github.com/diskoverdata/diskover-community/releases).
+
+We are currently moving to a new platform for software download for the **annual subscription editions of Diskover**. During this process, please [open a support ticket](https://support.diskoverdata.com/) and we will send you a link to the latest version. 
 
 Click these links for information on how to [create a support account](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-zendesk-account) and how to [create a support ticket](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-support-ticket).
 

@@ -90,9 +90,9 @@ Besides the help text in DiskoverAdmin, you can find [more information here rega
 <p id="config_alt_indexers_diskoveradmin"></p>
 
 ___
-### Diskover Alternate Indexers
+### Diskover Alternate Ingestors
 
-All [alternate indexers](#config_alt_indexers) will eventually be  in the DiskoverAdmin panel. Please go to the [Alternate Indexers Configuration](#config_alt_indexers) section for the complete list of current alternate indexers. Meanwhile, all alternate indexers configurable in DiskoverAdmin can be found here:
+All [alternate ingestors](#config_alt_ingestors) will eventually be  in the DiskoverAdmin panel. Please go to the [Alternate Ingestors Configuration](#config_alt_ingestors) section for the complete list of current alternate indexers. Meanwhile, all alternate indexers configurable in DiskoverAdmin can be found here:
 
 <img src="images/diskoveradmin_menu_diskover_alt_indexers.png" width="200">
 

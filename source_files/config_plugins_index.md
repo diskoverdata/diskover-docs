@@ -113,7 +113,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
-| Purpose | Designed to add Image EXIF info metadata from your image files to the Elasticsearch index during the indexing process. |
+| Purpose | Designed to add Image EXIF info metadata from your image files to the Elasticsearch index during the indexing process. Exchangeable Image File Format is a standardized way of storing useful metadata in digital image files. It holds a wealth of technical information about how the image was created, including the time and date it was taken, the camera and lens that was used, and the shooting settings. |
 
 
 

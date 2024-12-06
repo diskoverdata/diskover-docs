@@ -10,19 +10,19 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 
 | FEATURE | CONFIGURE IN USER INTERFACE<br>DiskoverAdmin → Configuration | MANUAL CONFIGURATION |
 | --- | --- | --- |
-| **Alternate Indexers** | Diskover → Alternate Indexers | |
+| **Alternate Ingestors** | Diskover → Alternate Ingestors | |
 | **Amazon MQ** | System → Message Queue | |
 | **Analytics Filters** | Web → Analytics Filters | |
 | **API** | System → API | |
 | **Arrival Time Plugin** | Plugins → Index → First Index Time | |
-| **Atempo Miria** alt indexer | | [Atempo Alternate Indexer](#alt_indexer_atempo) |
+| **Atempo Miria** alt ingestor | | [Atempo Alternate Ingestor](#alt_ingestor_atempo) |
 | **Authentication by default for Diskover-Web** | Web → General | |
 | **Authentication LDAP** | Web → LDAP | |
 | **Authentication OAuth** | Web → OAUTH | |
 | **AutoClean** | Plugins → Post Index → AutoClean | |
 | **AutoTag** at index time | Diskover → Configurations → Default | |
 | **AutoTag Plugin** post index | Plugins → Post Index → AutoTag | |
-| **Azure** alt indexer | Diskover → Alternate Indexers → Azure | |
+| **Azure** alt ingestor | Diskover → Alternate Ingestors → Azure | |
 | **Azure AD Authentication** | Web → OAUTH | |
 | **BAM Info Plugin** | | [BAM Info Index Plugin](#plugin_index_bam) |
 | **Breadcrumb Plugin** | Plugins → Post Index → Breadcrumb | |
@@ -34,12 +34,12 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **Cost** at time of index | Diskover → Configurations → Default | |
 | **Cost Plugin** post-index | Plugins → Post Index → Costs | |
 | **Daemon** for indexers | DiskoverD → Default | |
-| **Dell PowerScale** alt indexer | | [Dell PowerScale Alternate Indexer](#alt_indexer_dell) |
-| **DirCache** alt indexer | Diskover → Alternate Indexers → DirCache | |
+| **Dell PowerScale** alt ingestor | | [Dell PowerScale Alternate Ingestor](#alt_ingestor_dell_powerscale) |
+| **DirCache** alt ingestor | Diskover → Alternate Ingestors → DirCache | |
 | **Diskover** indexers | Diskover → Configurations → Default | |
 | **DiskoverD** daemons | DiskoverD → Default | |
 | **Diskover-Web** | Web → General | |
-| **Dropbox** alt indexer | | [Dropbox Alternate Indexer](#alt_indexer_dropbox) |
+| **Dropbox** alt ingestor | | [Dropbox Alternate Ingestor](#alt_ingestor_dropbox) |
 | **Dupes Finder Plugin** | Plugins → Post Index → Dupes Finder | |
 | **EDL Check Plugin** | Plugins → File Actions → In Development → EDL Check | |
 | **EDL Download Plugin** | Plugins → File Actions → In Development → EDL Download | | 
@@ -56,7 +56,7 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **First Index Time Plugin** | Plugins → Index → First Index Time | |
 | **Fix Permissions Plugin** | Plugins → File Actions → In Development → Fix Permissions | |
 | **Flow Production Tracking Plugin** formerly ShotGrid | | [Flow Production Tracking Plugin](#plugin_post_index_shotgrid) |
-| **FTP** alt indexer | | [FTP Alternate Indexer](#alt_indexer_ftp) |
+| **FTP** alt ingestor | | [FTP Alternate Ingestor](#alt_ingestor_ftp) |
 | **GLIM Plugin** | | [Telestream GLIM File Action Plugin](#plugin_file_action_glim) |
 | **Grafana Plugin** | Plugins → Index → Grafana | |
 | **Grafana Cloud Plugin** | Plugins → Index → Grafana Cloud | |
@@ -70,7 +70,7 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **Index Differential Plugin** | Plugins → Post Index → Index Diff | |
 | **Index Mapping** | Web → Index Access | |
 | **Indexers** | Diskover → Configurations → Default | |
-| **JSON/CSV text** alt indexer | | [JSON/CSV Generic Text Alternate Indexer](#alt_indexer_json) |
+| **JSON/CSV text** alt ingestor | | [JSON/CSV Generic Text Alternate Ingestor](#alt_ingestor_json) |
 | **LDAP** | Web → LDAP | |
 | **License** | License | |
 | **Live View Plugin** | Plugins → File Actions → Live View | |
@@ -79,19 +79,19 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **Message Queue** | System → Message Queue | |
 | **Ngenea Data Orchestrator Plugin** | | [Ngenea Data Orchestrator/Mover File Action Plugin by PixitMedia](#plugin_file_action_ngenea) |
 | **OAuth** | Web → OAUTH | |
-| **Offline Media** alt indexer | Diskover → Alternate Indexers → Offline Media | |
+| **Offline Media** alt ingestor | Diskover → Alternate Ingestors → Offline Media | |
 | **Okta** | Web → OAUTH | |
-| **OneDrive/SharePoint** alt indexer | | [Microsoft OneDrive and SharePoint Alternate Indexer](#alt_indexer_onedrive) |
+| **OneDrive/SharePoint** alt ingestor | | [Microsoft OneDrive and SharePoint Alternate Ingestor](#alt_ingestor_onedrive) |
 | **Path Tokens Plugin** | Plugins → Index → Path Tokens | |
 | **Path Translation** | Web → Path Translations | |
 | **PDF Info Plugin** | Plugins → Index → PDF Info ... _coming soon!_ | |
 | **PDF Viewer Plugin** | Plugins → File Actions → PDF | |
 | **RabbitMQ** | System → Message Queue | |
 | **Rclone Plugin** | Plugins → File Actions → Rclone | |
-| **S3** AWS and non-AWS alt indexer | Diskover → Alternate Indexers → S3 | |
+| **S3** AWS and non-AWS alt ingestor | Diskover → Alternate Ingestors → S3 | |
 | **ShotGrid** now Flow Production Tracking Plugin | | [Flow Production Tracking Plugin](#plugin_post_index_shotgrid) |
 | **SMTP** | System → SMTP | |
-| **Spectra Logic RioBroker/BlackPearl** alt indexer | | [Spectra Logic RioBroker/BlackPearl](#alt_indexer_spectra) |
+| **Spectra Logic RioBroker/BlackPearl** alt ingestor | | [Spectra Logic RioBroker/BlackPearl](#alt_ingestor_spectra) |
 | **Spectra Plugin** | Plugins → File Actions → In Development → Spectra | |
 | **Tag Copier** at time of index | Plugins → Index → Tag Copier | |
 | **Tag Copier** post-index | Plugins → Post Index → Tag Copier | |

@@ -18,7 +18,7 @@ The chapters in this guide are in the logical order to follow for installing and
 | 10 | [Create Tasks/Launch your first scan](#task_panel) |
 | 11 | Configure Roles & Authentication - _optional_ |
 | 12 | [Configure Backup Environment](#environment-backup) |
-| 13 | [Configure Alternate Indexers](#config_alt_indexers) - _optional_ |
+| 13 | [Configure Alternate Scanners](#config_alt_scanners) - _optional_ |
 | 14 | [Configure Index Plugins](#config_plugins_index) - _optional_ |
 | 15 | [Configure Post-Index Plugins](#config_plugins_post_index) - _optional_ |
 | 16 | [Configure File Action Plugins](#config_plugins_file_actions) - _optional_ |

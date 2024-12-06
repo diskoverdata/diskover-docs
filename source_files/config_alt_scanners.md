@@ -1,6 +1,6 @@
-<p id="config_alt_ingesters"></p>
+<p id="config_alt_scanners"></p>
 
-## Alternate Ingesters Configuration
+## Alternate Scanners Configuration
 
 ### Overview
 
@@ -20,9 +20,9 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | EDITION |  PLUGIN |
 | --- | --- |
-| **Core Editions** | <ul><li>[Atempo Miria](#alt_ingester_atempo)</li><li>[Azure Blob](#alt_ingester_azure)</li><li>[Dell PowerScale](#alt_ingester_dell_powerscale)</li><li>[DirCache](#alt_ingester_dircache)</li><li>[Dropbox](#alt_ingester_dropbox)</li><li>[FTP](#alt_ingester_ftp)</li><li>[Generic JSON/CSV Text](#alt_ingester_json)</li><li>[Offline Media](#alt_ingester_offline_media)</li><li>[OneDrive and SharePoint](#alt_ingester_onedrive)</li><li>[S3 with AWS or Non-AWS Endpoints](#alt_ingester_s3)</li><li>[Spectra Logic RioBroker/BlackPearl](#alt_ingester_spectra)</li><li>[Develop your own alternate ingester](#alt_ingester_dev_your_own_ingester)</li></ul> |
+| **Core Editions** | <ul><li>[Atempo Miria](#alt_scanner_atempo)</li><li>[Azure Blob](#alt_scanner_azure)</li><li>[Dell PowerScale](#alt_scanner_dell_powerscale)</li><li>[DirCache](#alt_scanner_dircache)</li><li>[Dropbox](#alt_scanner_dropbox)</li><li>[FTP](#alt_scanner_ftp)</li><li>[Generic JSON/CSV Text](#alt_scanner_json)</li><li>[Offline Media](#alt_scanner_offline_media)</li><li>[OneDrive and SharePoint](#alt_scanner_onedrive)</li><li>[S3 with AWS or Non-AWS Endpoints](#alt_scanner_s3)</li><li>[Spectra Logic RioBroker/BlackPearl](#alt_scanner_spectra)</li><li>[Develop your own alternate scanner](#alt_scanner_dev_your_own_scanner)</li></ul> |
 
-<p id="alt_ingester_atempo"></p>
+<p id="alt_scanner_atempo"></p>
 
 #### Atempo Miria
 
@@ -35,7 +35,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 
 
-<p id="alt_ingester_azure"></p>
+<p id="alt_scanner_azure"></p>
 
 #### Azure Blob
 
@@ -50,7 +50,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 
 
-<p id="alt_ingester_dell_powerscale"></p>
+<p id="alt_scanner_dell_powerscale"></p>
 
 #### Dell PowerScale
 
@@ -64,7 +64,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 
 
-<p id="alt_ingester_dircache"></p>
+<p id="alt_scanner_dircache"></p>
 
 #### DirCache Alternate Indexer
 
@@ -79,7 +79,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 
 
-<p id="alt_ingester_dropbox"></p>
+<p id="alt_scanner_dropbox"></p>
 
 #### Dropbox
 
@@ -91,7 +91,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 | Purpose | <p>The Dropbox Scanner is a powerful utility designed to integrate with Dropbox accounts for comprehensive file metadata retrieval and management. By leveraging Dropbox's API, this scanner connects securely to your Dropbox account, navigates through your files and folders, and collects detailed information such as file sizes, creation and modification dates, and sharing permissions.</p><p>This tool enhances your ability to monitor and organize your Dropbox content, providing valuable insights into your data usage and structure. Perfect for businesses of any size, the Dropbox Scanner ensures efficient file management, improved data organization, and seamless data accessibility.</p> |
 
 
-<p id="alt_ingester_ftp"></p>
+<p id="alt_scanner_ftp"></p>
 
 #### FTP 
 
@@ -103,7 +103,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 | Purpose | <p>The FTP Site Scanner is a robust tool designed to streamline the process of collecting and analyzing file statistics from FTP sites. It efficiently connects to any FTP server, navigates through the directory structure, and retrieves critical file metadata such as size, creation date, modification date, and permissions. By aggregating this data, the scanner provides comprehensive insights into the filesystem's organization and usage patterns.</p><p>This tool is ideal for administrators and developers looking to maintain optimal FTP site performance, ensure data integrity, and facilitate audits or compliance checks.</p> |
 
 
-<p id="alt_ingester_json"></p>
+<p id="alt_scanner_json"></p>
 
 #### Generic JSON/CSV Text
 
@@ -116,7 +116,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 
 
-<p id="alt_ingester_offline_media"></p>
+<p id="alt_scanner_offline_media"></p>
 
 #### Offline Media
 
@@ -129,7 +129,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 
 
-<p id="alt_ingester_onedrive"></p>
+<p id="alt_scanner_onedrive"></p>
 
 #### OneDrive and SharePoint
 
@@ -143,7 +143,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 
 
-<p id="alt_ingester_s3"></p>
+<p id="alt_scanner_s3"></p>
 
 #### S3 | AWS or Non-AWS Endpoints
 
@@ -157,7 +157,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 
 
-<p id="alt_ingester_spectra"></p>
+<p id="alt_scanner_spectra"></p>
 
 #### Spectra Logic RioBroker/BlackPearl
 
@@ -170,7 +170,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 
 
-<p id="alt_ingester_dev_your_own_ingester"></p>
+<p id="alt_scanner_dev_your_own_scanner"></p>
 
 #### Develop Your Own Alternate Scanner
 

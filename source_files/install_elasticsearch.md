@@ -132,7 +132,7 @@ If you have more than 1 node in your environment, redo all the [Single Node Inst
 
 ### Single Node Setup with SSL
 
-This chapter will guide you through setting up an Elasticsearch cluster with a single node ensuring that SSL is enabled for secure communication.
+This section will guide you through setting up an Elasticsearch cluster with a single node ensuring that SSL is enabled for secure communication.
 
 🔴 &nbsp;Install Java v21: 
 ```
@@ -227,7 +227,7 @@ curl -u elastic:password https://IP or hostname:9200/_cluster/health?pretty --ca
 
 ### Multiple Nodes Setup with SSL
 
-This chapter will guide you through setting up an Elasticsearch cluster with multiple nodes ensuring that SSL is enabled for secure communication.
+This section will guide you through setting up an Elasticsearch cluster with multiple nodes ensuring that SSL is enabled for secure communication.
 
 🔴 &nbsp;Install Java v21: 
 ```
@@ -478,7 +478,7 @@ In a multiple-cluster setup for Elasticsearch, you can run and manage multiple i
 
 Please [open a support ticket](https://support.diskoverdata.com/) for assistance.
 
-### Elasticsearch Health Check
+### Elasticsearch Health Check without SSL
 
 With the ES cluster installed and running, you can now run a simple curl command to check the health of your cluster.
 
@@ -622,6 +622,53 @@ discovery.seed_hosts: ["Node 1 IP","Node 2 IP","Node 3 IP"]
 ```
 
 🔴 &nbsp;From node 2, curl node 1 or 3:
+```
+[root@ip-10-0-4-84 bin]# curl -XGET -u "elastic:redacted" https://10.0.3.121:9200/_cluster/health?pretty --cacert /etc/elasticsearch/certs/http_ca.crt
+{
+  "cluster_name" : "diskover-soldev",
+  "status" : "green",
+  "timed_out" : false,
+  "number_of_nodes" : 3,
+  "number_of_data_nodes" : 3,
+  "active_primary_shards" : 32,
+  "active_shards" : 34,
+  "relocating_shards" : 0,
+  "initializing_shards" : 0,
+  "unassigned_shards" : 0,
+  "delayed_unassigned_shards" : 0,
+  "number_of_pending_tasks" : 0,
+  "number_of_in_flight_fetch" : 0,
+  "task_max_waiting_in_queue_millis" : 0,
+  "active_shards_percent_as_number" : 100.0
+}
+```
+
+### Elasticsearch Health Check with SSL
+
+🔴 &nbsp;From now 1, curl node 2 or 3:
+```
+[root@ip-10-0-3-121 bin]# curl -XGET -u "elastic:redacted" https://10.0.4.84:9200/_cluster/health?pretty --cacert /etc/elasticsearch/certs/http_ca.crt
+{
+  "cluster_name" : "diskover-soldev",
+  "status" : "green",
+  "timed_out" : false,
+  "number_of_nodes" : 3,
+  "number_of_data_nodes" : 3,
+  "active_primary_shards" : 32,
+  "active_shards" : 34,
+  "relocating_shards" : 0,
+  "initializing_shards" : 0,
+  "unassigned_shards" : 0,
+  "unassigned_primary_shards" : 0,
+  "delayed_unassigned_shards" : 0,
+  "number_of_pending_tasks" : 0,
+  "number_of_in_flight_fetch" : 0,
+  "task_max_waiting_in_queue_millis" : 0,
+  "active_shards_percent_as_number" : 100.0
+}
+```
+
+🔴 &nbsp;From now 2, curl node 2 or 3:
 ```
 [root@ip-10-0-4-84 bin]# curl -XGET -u "elastic:redacted" https://10.0.3.121:9200/_cluster/health?pretty --cacert /etc/elasticsearch/certs/http_ca.crt
 {

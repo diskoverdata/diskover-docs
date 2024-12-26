@@ -579,5 +579,66 @@ rm -rf /path/to/dataDir/{nodes,_state}
 
 ### Onboarding New Nodes Containing Existing Data
 
+🔴 &nbsp;Node 1:
+```
+vi elasticsearch.yml
+```
 
+```
+discovery.seed_hosts: ["Node 1 IP","Node 2 IP","Node 3 IP"]
+cluster.initial_master_nodes: ["node-1","node-2","node-3"]
+```
 
+🔴 &nbsp;Restart node 1.
+
+🔴 &nbsp;Add the following to node 2 and 3:
+```
+discovery.seed_hosts: ["Node 1 IP","Node 2 IP","Node 3 IP"]
+```
+
+🔴 &nbsp;Restart ES on these nodes one at a time.
+
+🔴 &nbsp;Test curling the cluster health:
+```
+[root@ip-10-0-3-121 bin]# curl -XGET -u "elastic:redacted" https://10.0.4.84:9200/_cluster/health?pretty --cacert /etc/elasticsearch/certs/http_ca.crt
+{
+  "cluster_name" : "diskover-soldev",
+  "status" : "green",
+  "timed_out" : false,
+  "number_of_nodes" : 3,
+  "number_of_data_nodes" : 3,
+  "active_primary_shards" : 32,
+  "active_shards" : 34,
+  "relocating_shards" : 0,
+  "initializing_shards" : 0,
+  "unassigned_shards" : 0,
+  "unassigned_primary_shards" : 0,
+  "delayed_unassigned_shards" : 0,
+  "number_of_pending_tasks" : 0,
+  "number_of_in_flight_fetch" : 0,
+  "task_max_waiting_in_queue_millis" : 0,
+  "active_shards_percent_as_number" : 100.0
+}
+```
+
+🔴 &nbsp;From node 2, curl node 1 or 3:
+```
+[root@ip-10-0-4-84 bin]# curl -XGET -u "elastic:redacted" https://10.0.3.121:9200/_cluster/health?pretty --cacert /etc/elasticsearch/certs/http_ca.crt
+{
+  "cluster_name" : "diskover-soldev",
+  "status" : "green",
+  "timed_out" : false,
+  "number_of_nodes" : 3,
+  "number_of_data_nodes" : 3,
+  "active_primary_shards" : 32,
+  "active_shards" : 34,
+  "relocating_shards" : 0,
+  "initializing_shards" : 0,
+  "unassigned_shards" : 0,
+  "delayed_unassigned_shards" : 0,
+  "number_of_pending_tasks" : 0,
+  "number_of_in_flight_fetch" : 0,
+  "task_max_waiting_in_queue_millis" : 0,
+  "active_shards_percent_as_number" : 100.0
+}
+```

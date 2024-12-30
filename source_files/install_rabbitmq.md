@@ -8,7 +8,7 @@ RabbitMQ or Amazon MQ serves as the messaging bus/queue system that communicates
 
 Once all components are installed, you will be able to [configure your messaging environment](#config_system). We strongly recommend following the deployment order outlined in this guide.
 
-🟨 &nbsp;Additional guidelines for RabbitMQ management:
+⚠️ &nbsp;Additional guidelines for RabbitMQ management:
 
   - [RabbitMQ RPM Installation Guide](https://www.rabbitmq.com/docs/install-rpm#cloudsmith)
   - [RabbitMQ Default Configuration Guide](https://www.rabbitmq.com/docs/configure)
@@ -52,7 +52,7 @@ systemctl restart rabbitmq-server
 systemctl status rabbitmq-server
 ```
 
-🟨 &nbsp;This completes the RabbitMQ configuration for Diskover. You should now be able to access the RabbitMQ Management Portal:
+⚠️ &nbsp;This completes the RabbitMQ configuration for Diskover. You should now be able to access the RabbitMQ Management Portal:
 ```
 http://$rabbitMQHost:15672/#/
 ```

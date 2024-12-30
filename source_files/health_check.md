@@ -8,6 +8,8 @@ The following section outlines health checks for the various Diskover's componen
 
 ### Elasticsearch Domain
 
+Click the following links to view more instructions on how to verify the health of your Elasticsearch services [without SSL](#es_health_check_without_ssl) and [with SSL](#es_health_check_with_ssl).
+
 #### Status of Elasticsearch Service for Linux
 
 🔴 &nbsp;Check status of Elasticsearch  service:

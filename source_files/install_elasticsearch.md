@@ -60,7 +60,7 @@ type=rpm-md
 yum -y install --enablerepo=elasticsearch elasticsearch
 ```
 
-🟨 &nbsp;Elasticsearch v8 should be installed at this point.
+⚠️ &nbsp;Elasticsearch v8 should be installed at this point.
 
 #### Elasticsearch Initial Configuration
 
@@ -71,7 +71,7 @@ Let's perform some basic configurations to ensure our single-node ES cluster is 
 vi /etc/elasticsearch/elasticsearch.yml
 ```
 
-🟨 &nbsp;Ensure the following properties are set and uncommented:
+⚠️ &nbsp;Ensure the following properties are set and uncommented:
 ```
 cluster.name: <name of your cluster>        (Should be a distinctive name)
 node.name: node-1                           (Can be named anything, but should be distinctive)
@@ -118,7 +118,7 @@ systemctl start elasticsearch
 systemctl status elasticsearch
 ```
 
-🟨 &nbsp;If ES fails to lock the memory upon startup, then add the following to `/etc/security/limits.conf`:
+⚠️ &nbsp;If ES fails to lock the memory upon startup, then add the following to `/etc/security/limits.conf`:
 ```
 elasticsearch soft memlock unlimited
 elasticsearch hard memlock unlimited
@@ -159,12 +159,12 @@ The generated password for the elastic built-in superuser is : y1DGG*eQFdnYPXJiP
 ....
 ```
 
-🟨 &nbsp;If you need to reset the password, [more info can be found here on that subject](https://www.elastic.co/guide/en/elasticsearch/reference/current/reset-password.html):
+⚠️ &nbsp;If you need to reset the password, [more info can be found here on that subject](https://www.elastic.co/guide/en/elasticsearch/reference/current/reset-password.html):
 ```
 bin/elasticsearch-reset-password -u elastic
 ```
 
-🟨 &nbsp;Ensure the following is set inside the `/etc/elasticsearch/elasticsearch.yml`. By default, ES v8 should configure these settings automatically, but in case it doesn’t, you may need to set them manually:
+⚠️ &nbsp;Ensure the following is set inside the `/etc/elasticsearch/elasticsearch.yml`. By default, ES v8 should configure these settings automatically, but in case it doesn’t, you may need to set them manually:
 
 🔴 &nbsp;Enable security features:
 ```
@@ -206,7 +206,7 @@ http.host: 0.0.0.0
 transport.host: 0.0.0.0
 ```
 
-🟨 &nbsp;Be sure to comment `cluster.initial_master_nodes` after you have bootstrapped ES for the first time.
+⚠️ &nbsp;Be sure to comment `cluster.initial_master_nodes` after you have bootstrapped ES for the first time.
 
 🔴 &nbsp;Verify your certs live in `/etc/elasticsearch/certs/`, you should have the following:
 ```
@@ -250,9 +250,9 @@ Connected to 192.168.64.19.
 Escape character is '^]'.
 ```
 
-🟨 &nbsp;If you see **Connection Refused**, you should check to see if `SELinux` and `Firewalld` are respectively disabled and off.
+⚠️ &nbsp;If you see **Connection Refused**, you should check to see if `SELinux` and `Firewalld` are respectively disabled and off.
 
-🟨 &nbsp;The instructions below are for new clusters, go to [Onboarding New Nodes Containing Existing Data](#es_onboard_nodes_with_data) if you are onboarding new nodes to an existing cluster.
+⚠️ &nbsp;The instructions below are for new clusters, go to [Onboarding New Nodes Containing Existing Data](#es_onboard_nodes_with_data) if you are onboarding new nodes to an existing cluster.
 
 #### Set up Node 1
 
@@ -272,7 +272,7 @@ sudo dnf install -y https://artifacts.elastic.co/downloads/elasticsearch/elastic
 -Xmx8g
 ```
 
-🟨 &nbsp;You should never set the memory to more than half of what is configured for your system!
+⚠️ &nbsp;You should never set the memory to more than half of what is configured for your system!
 
 🔴 &nbsp;Make the directory for the custom ES `systemd` settings:
 ```
@@ -313,7 +313,7 @@ systemctl start elasticsearch
 /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s node. 
 ```
 
-🟨 &nbsp;This last step will output a very long token, keep this token in a safe space as we’re going to need it soon. Note that you will need the **=** that is included in the value.
+⚠️ &nbsp;This last step will output a very long token, keep this token in a safe space as we’re going to need it soon. Note that you will need the **=** that is included in the value.
 
 #### Set up Node 2 and 3
 
@@ -335,7 +335,7 @@ vi /etc/elasticsearch/elasticsearch.yml:
 | **cluster.initial_master_nodes** | Don’t worry about this property for now as we’re going to be joining a bootstrapped cluster |
 | **xpack.ml.enabled** | This should be set to **false** to disable Machine Learning within ES. If you do not have this set to false, then Elasticsearch will fail upon startup |
 
-🟨 &nbsp;Do **not** start Elasticsearch yet!
+⚠️ &nbsp;Do **not** start Elasticsearch yet!
 
 🔴 &nbsp;Let's join Nodes 2 and 3 to the Node 1 cluster:
 ```
@@ -455,7 +455,7 @@ sudo systemctl daemon-reload
 sudo systemctl start elasticsearch
 ```
 
-🟨 &nbsp;You can watch the startup logs at **/var/log/elasticsearch/<cluster-name>.log**
+⚠️ &nbsp;You can watch the startup logs at **/var/log/elasticsearch/<cluster-name>.log**
 <br><br>
 🔴 &nbsp;Once Node 1 is online, start **Node 2**, then once Node 2 is online, start **Node 3**.
 
@@ -477,7 +477,7 @@ With the ES cluster installed and running, you can now run a simple curl command
 
 🔴 &nbsp;Check the health of your Elasticsearch cluster. 
 
-🟨 &nbsp;Replace the **${ESHOST}** below with your **ES node(s) IP address or hostname**
+⚠️ &nbsp;Replace the **${ESHOST}** below with your **ES node(s) IP address or hostname**
 
 Curl command **if SSL is enabled** on the cluster - the result will differ, of course, based on your own environment - [navigate here for more information on SSL enablement](#ssl_enable_es):
 ```

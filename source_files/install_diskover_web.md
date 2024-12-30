@@ -227,6 +227,6 @@ mkdir /var/www/diskover-web/src/diskover/elasticsearch-certs/ ; cp /etc/pki/ca-t
 
 🔴 &nbsp;Navigate to **DiskoverAdmin → Web → Elasticsearch**:
     
-    - Input your Elasticsearch IPs, and Elastic user + password
+    - Input your Elasticsearch IPs, and Elastic user + password.
     - For the SSL certificate path, you need to put the full path of where the certificate is held on the Web, including the name of the cert: `/var/www/diskover-web/src/diskover/elasticsearch-certs/http_ca.crt`
     - Hit **Test** at the bottom to ensure Diskover can communicate with your cluster.

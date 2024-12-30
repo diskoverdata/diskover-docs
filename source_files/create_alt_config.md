@@ -1,10 +1,10 @@
 <p id="create_alt_config"></p>
 
-## Create an Alternate Indexing Configuration
+## Create an Alternate Scanning Configuration
 
 ### Overview
 
-This section will walk you through how to set up an alternate indexing configuration that you can use in a [task](#create_index_task).
+This section will walk you through how to set up an alternate scanning configuration that you can use in a [task](#create_index_task).
 
 ### Alternate Config Setup
 

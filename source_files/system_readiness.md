@@ -53,9 +53,9 @@ iotop strace tree pv atop lsof git zip unzip wget \
 hdparm telnet glances sudo nss-util iftop tldr make
 ```
 
-#### Enable NTP for S3 Indexing
+#### Enable NTP for S3 Scanning
 
-Enabling NTP is optional but recommended if your system is not already synchronized. Without NTP enabled, attempting to index S3 buckets may result in crawler failures due to a significant mismatch between the request time and the current system time.
+Enabling NTP is optional but recommended if your system is not already synchronized. Without NTP enabled, attempting to scan S3 buckets may result in crawler failures due to a significant mismatch between the request time and the current system time.
 
 🔴 &nbsp;Verify if NTP is set up or not: 
 ```
@@ -79,8 +79,8 @@ systemctl status chronyd
 
 ### Windows System Readiness
 
-🚧 Instructions to follow. Meanwhile, please note that Diskover currently only [supports Windows for indexers/workers](#architecture_diagram).
+🚧 Instructions to follow. Meanwhile, please note that Diskover currently only [supports Windows for scanners/workers](#architecture_diagram).
 
 ### Mac System Readiness
 
-🚧 Instructions to follow. Meanwhile, please note that Diskover currently only [supports Mac for indexers/workers](#architecture_diagram).
+🚧 Instructions to follow. Meanwhile, please note that Diskover currently only [supports Mac for scanners/workers](#architecture_diagram).

@@ -31,7 +31,6 @@ _[Click here for a full screen view of the Diskover Platform Overview.](images/d
 _[Click here for a full screen view of the Diskover Architecture Overview diagram.](images/diskover_architecture_overview.png)_
 
 
-
 ### Diskover Config Architecture Overview
 
 It is highly recommended to separate the Elasticsearch node/cluster, web server, and indexing host(s).

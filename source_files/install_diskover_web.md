@@ -215,14 +215,18 @@ systemctl restart php-fpm; systemctl status php-fpm
 sudo update-ca-trust
 ```
 
-🔴 &nbsp;Edit the `php.ini` file so that we can have PHP use this cert location to communicate with ES:
-```
-vi /etc/opt/remi/php84/php.ini
-```
-
+🔴 &nbsp;Edit the `php.ini` file so that we can have PHP use this cert location to communicate with ES `vi /etc/opt/remi/php84/php.ini`:
 ```
 openssl.cafile=/etc/pki/tls/certs/ca-bundle.crt
 openssl.capath=/etc/pki/tls/certs
 ```
+🔴 &nbsp;Run the following commands:
+```
+mkdir /var/www/diskover-web/src/diskover/elasticsearch-certs/ ; cp /etc/pki/ca-trust/source/anchors/http_ca.crt /var/www/diskover-web/src/diskover/elasticsearch-certs/ ; chown -R nginx.nginx /var/www/diskover-web/src/diskover/elasticsearch-certs/
+```
 
-
+🔴 &nbsp;Navigate to **DiskoverAdmin → Web → Elasticsearch**:
+    
+    - Input your Elasticsearch IPs, and Elastic user + password
+    - For the SSL certificate path, you need to put the full path of where the certificate is held on the Web, including the name of the cert: `/var/www/diskover-web/src/diskover/elasticsearch-certs/http_ca.crt`
+    - Hit **Test** at the bottom to ensure Diskover can communicate with your cluster.

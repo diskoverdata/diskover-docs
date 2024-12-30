@@ -8,19 +8,19 @@ Diskover has a [distributed task system](#architecture_diagram) where scanners/w
 
 ___
 
-<img src="images/diagram_indexer_daemon_task_panel.png" width="">
+<img src="images/ddiagram_scanners_daemon_task_panel.png" width="">
 
 _[Click here for the full screen view of this diagram.](images/diagram_scanners_daemon_task_panel.png)_
 
-This section will walk you through installing node workers for your Diskover v2.3+ environment.
+- This section will walk you through installing node workers for your Diskover v2.3+ environment.
 
-During this process, you will need the latest [Diskover 2.3x zip archive](https://download.diskoverdata.com/). Note that this is subject to change to RPMs in the near future.
+- During this process, you will need the latest [Diskover 2.3x zip archive](https://download.diskoverdata.com/). Note that this is subject to change to RPMs in the near future.
 
-Once all components are installed, you will be able to [configure your indexing environment](#config_indexers). We strongly recommend following the deployment order outlined in this guide.
+- Once all components are installed, you will be able to [configure your scanning environment](#config_scanners). We strongly recommend following the deployment order outlined in this guide.
 
 ### Multiple Scanners/Workers Environment
 
-If your environment includes multiple scannerss, repeat the process in this chapter for each one of your workers. Once you have the zip file, you can `SCP` it to all machines that are designated to be a Diskover Worker. 
+If your environment includes multiple scanners, repeat the process in this chapter for each one of your workers. Once you have the zip file, you can `SCP` it to all machines that are designated to be a Diskover Worker. 
 
 🔴 &nbsp;**On-prem** | Will scp the file to the root user's home directory:
 ```
@@ -32,7 +32,7 @@ scp <path to diskover.zip> root@ipAddress:~/
 scp -i <path to PEM file> <path to diskover.zip> rocky@bastion-IP:~/
 ```
 
-🟨 &nbsp;Note that the user will differ depending on your OS. It is best to consult your AWS EC2 Console to get the exact user to connect to the bastion. Generally, these are the users for the following OS:
+⚠️ &nbsp;Note that the user will differ depending on your OS. It is best to consult your AWS EC2 Console to get the exact user to connect to the bastion. Generally, these are the users for the following OS:
 
 | OS | User |
 | --- | --- |
@@ -138,7 +138,7 @@ systemctl daemon-reload
 systemctl enable diskoverd
 ```
 
-🟨 &nbsp;Please proceed to the next sections, as you will be unable to start the diskoverd worker service until your API server and [license](#software_activation) are installed.
+⚠️ &nbsp;Please proceed to the next sections, as you will be unable to start the diskoverd worker service until your API server and [license](#software_activation) are installed.
 
 ### Enable SSL for Task Workers
 

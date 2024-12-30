@@ -1,13 +1,13 @@
 <p id="checklist"></p>
 
-## Checklist
+## ✅ Checklist
 
 The chapters in this guide are in the logical order to follow for installing and configuring Diskover. This checklist is a summary for quick reference.
 
 | STEP | TASK |
 | :---: | --- |
 | 1 | [Elasticsearch Installation](#install_es) |
-| 2 | [Indexers/Workers Installation](#install_indexers) |
+| 2 | [Scanners/Workers Installation](#install_scanners) |
 | 3 | [DiskoverD Task Worker Daemon](#install_diskoverd) |
 | 4 | [Celery Installation](#install_celery) |
 | 5 | [RabbitMQ](#install_rabbitmq) or [Amazon MQ Installation](#install_amazonmq) |

@@ -24,7 +24,7 @@ The DiskoverAdmin service allows for the fine-tuning of Diskover's core componen
 
 #### Elasticsearch Connection Configuration for Diskover-Web
 
-🟨 &nbsp;Note that Diskover-Web and the indexer(s) can point to two different Elasticsearch hosts, hence the next steps.
+⚠️ &nbsp;Note that Diskover-Web and the scanners can point to two different Elasticsearch hosts, hence the next steps.
 
 🔴 &nbsp;Input the **IP/AWS endpoint** where your Elasticsearch is running in the **host** field. If you have a clustered ES setup, click **+ Add Item** to list your other IPs.
 
@@ -40,11 +40,11 @@ The DiskoverAdmin service allows for the fine-tuning of Diskover's core componen
 
 🔴 &nbsp;If the test is successful, click **Save & Continue**, otherwise review the information you entered.
 
-#### Elasticsearch Connection Configuration for Indexers
+#### Elasticsearch Connection Configuration for Scanners
 
 🔴 &nbsp;**Copy connection settings from Diskover-Web?**:
-- If your Diskover-Web and indexer(s) point to the same ES host, click **Yes**.
-- If your Diskover-Web and indexer(s) point to different ES hosts, click **No**, go through each field, and click:
+- If your Diskover-Web and scanners point to the same ES host, click **Yes**.
+- If your Diskover-Web and scanners point to different ES hosts, click **No**, go through each field, and click:
     - **Test** to test your connection.
     - **Save & Continue** once done.
 
@@ -79,7 +79,7 @@ This section is only needed if you are planning to use [File Action](#config_plu
 
 🔴 &nbsp;Follow the instructions on this page, click **Test** to check the connection, and then **Save & Continue**, or click **Skip**. You can [configure or edit](#config_system) at any time.
 
-🟨 &nbsp;The basic setup using the wizard is not completed. CONGRATS!
+⚠️ &nbsp;The basic setup using the wizard is not completed. CONGRATS!
 
 ### API
 
@@ -91,7 +91,7 @@ This section is only needed if you are planning to use [File Action](#config_plu
 
 🔴 &nbsp;Specify an **API Port** if different than the default of **8000**.
 
-### Diskover Indexers/Workers
+### Diskover Scanners/Workers
 
 🔴 &nbsp;Navigate to **Diskover** → **Configurations** → **Default**.
 

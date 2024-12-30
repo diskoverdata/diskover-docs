@@ -140,6 +140,23 @@ systemctl enable diskoverd
 
 🟨 &nbsp;Please proceed to the next sections, as you will be unable to start the diskoverd worker service until your API server and [license](#software_activation) are installed.
 
+### Enable SSL for Task Workers
+
+🔴 &nbsp;Copy the `http_ca.crt` to the Worker(s) server(s) and place into `/etc/pki/ca-trust/source/anchors/http_ca.crt`
+
+
+🔴 &nbsp;Run the following command: 
+```
+sudo update-ca-trust ; mkdir /opt/diskover/elasticsearch-certs/ ; cp http_ca.crt /opt/diskover/elasticsearch-certs/
+```
+
+🔴 &nbsp;Navigate to **DiskoverAdmin → Web → Elasticsearch**:
+
+    - Input your Elasticsearch IPs, and Elastic user + password.
+    - For the SSL certificate path, you need to put the full path of where the certificate is held on the Web, including the name of the cert: `/opt/diskover/elasticsearch-certs/http_ca.cr`
+    - Hitting **Test** on this page will result in a failure as the call for this test is coming from the [Web server](#install_diskover_web), so long as you can start your Worker up, you’re good to go!
+
+
 ### Windows Indexers/Workers
 
 🚧 &nbsp;We're hard at work preparing these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with this step of your deployment.

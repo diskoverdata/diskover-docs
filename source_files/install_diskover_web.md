@@ -48,7 +48,7 @@ find / -mount -name php.ini
 cp /opt/remi/php84/root/usr/share/doc/php84-php-common/php.ini-production /etc/opt/remi/php84/php.ini
 ```
 
-🟨 &nbsp;This command may differ depending on your PHP8 install directory. To find your PHP8 install directory: 
+⚠️ &nbsp;This command may differ depending on your PHP8 install directory. To find your PHP8 install directory: 
 ```
 php -i | grep 'Configuration File'
 ```
@@ -58,7 +58,7 @@ php -i | grep 'Configuration File'
 vi /etc/opt/remi/php84/php-fpm.d/www.conf
 ```
 
-🟨 &nbsp;This command may differ depending on your PHP8 install directory. Please ensure the following properties are set and uncommented:
+⚠️ &nbsp;This command may differ depending on your PHP8 install directory. Please ensure the following properties are set and uncommented:
 ```
 user = nginx
 group = nginx
@@ -154,7 +154,7 @@ scp <path to diskover.zip> root@ipAddress:~/
 scp -i <path to PEM file> <path to diskover.zip> rocky@bastion-IP:~/
 ```
 
-🟨 &nbsp;Note that the user will differ depending on your OS. It is best to consult your AWS EC2 Console to get the exact user to connect to the bastion. Generally, these are the users for the following OS:
+⚠️ &nbsp;Note that the user will differ depending on your OS. It is best to consult your AWS EC2 Console to get the exact user to connect to the bastion. Generally, these are the users for the following OS:
 
 | OS | User |
 | --- | --- |
@@ -197,7 +197,7 @@ chown -R nginx:nginx /var/www/diskover-web
 systemctl restart nginx php-fpm; systemctl status nginx php-fpm
 ```
 
-🟨 &nbsp;Occasionally you will see this error **Another FPM instance seems to already listen on /var/opt/remi/php84/run/php-fpm/www.sock**, if you do:
+⚠️ &nbsp;Occasionally you will see this error **Another FPM instance seems to already listen on /var/opt/remi/php84/run/php-fpm/www.sock**, if you do:
 ```
 rm /var/opt/remi/php84/run/php-fpm/www.sock
 systemctl restart php-fpm; systemctl status php-fpm

@@ -12,15 +12,15 @@ Diskover offers professional services to assist with setting up tasks, dataflows
 
 #### Use Cases
 
-The Task Panel can be used to schedule [indexing tasks](#create_index_task) or run any [custom task](#create_custom_task), such as data curation via the AutoClean plugin, copying files, running duplicate file findings, checking permissions on directories, etc.
+The Task Panel can be used to schedule [scanning tasks](#create_scan_task) or run any [custom task](#create_custom_task), such as data curation via the AutoClean plugin, copying files, running duplicate file findings, checking permissions on directories, etc.
 
-Diskover has a [distributed task system](#architecture_diagram) where indexers/workers can be distributed among many resources. For each resource providing a task worker, services need to have a [DiskoverD](#install_diskoverd) installed. This section will describe setting up both indexing and custom tasks within the Diskover-Web Task Panel.
+Diskover has a [distributed task system](#architecture_diagram) where scanners/workers can be distributed among many resources. For each resource providing a task worker, services need to have a [DiskoverD](#install_diskoverd) installed. This section will describe setting up both scanning and custom tasks within the Diskover-Web Task Panel.
 
 ___
 
-<img src="images/diagram_indexer_daemon_task_panel.png" width="">
+<img src="images/diagram_scanner_daemon_task_panel.png" width="">
 
-_[Click here for the full screen view of this diagram.](images/diagram_indexer_daemon_task_panel.png)_
+_[Click here for the full screen view of this diagram.](images/diagram_scanner_daemon_task_panel.png)_
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 #### Task Panel Options
 
-These tabs work together to give you full control over task creation, execution, monitoring, and overall management, ensuring smooth and efficient data indexing and task processing in Diskover.
+These tabs work together to give you full control over task creation, execution, monitoring, and overall management, ensuring smooth and efficient data scanning and task processing in Diskover.
 
 <img src="images/task_panel_tabs.png" width="">
 
@@ -60,9 +60,9 @@ The Task History keeps a log of completed tasks, allowing you to review past tas
 
 #### Templates Tab
 
-Default indexing tasks are available in the **Templates** tab of the Task Panel, for both [Posix File System Indexing](#config_indexers) and [S3 Bucket Indexing](#alt_scanner_s3). 
+Default scanning tasks are available in the **Templates** tab of the Task Panel, for both [Posix File System Scanning](#config_scanners) and [S3 Bucket Indexing](#alt_scanner_s3). 
 
-Also, when creating a new task, you have the option at the bottom of the page to save the settings as a template. This is particularly useful if you have multiple similar repositories to index, as it allows you to reuse the same configuration for future tasks. 
+Also, when creating a new task, you have the option at the bottom of the page to save the settings as a template. This is particularly useful if you have multiple similar repositories to scan, as it allows you to reuse the same configuration for future tasks. 
 
 <img src="images/task_panel_templates_creation.png" width="">
 
@@ -72,7 +72,7 @@ Once that template is created, you can find it under the **Templates** tab.
 
 #### Workers Tab
 
-The Workers tab shows the status and performance of task workers, which are responsible for executing tasks such as file indexing.
+The Workers tab shows the status and performance of task workers, which are responsible for executing tasks such as file scanning.
 
 - Provides a real-time overview of all active workers, their current workloads, and any tasks they are processing.
 - You can monitor the health and activity of workers, ensuring that they are functioning properly.
@@ -88,16 +88,16 @@ The Workers tab shows the status and performance of task workers, which are resp
 | **Template** | Select a template whenever possible to pre-populate some of the fields. |
 | **ID** | Diskover will automatically assign an ID number to a task. This field is non-editable. |
 | **Name** | Assing a custom name to your **task**. Note that this name is not related to any configuration in the DiskoverAdmin panel. |
-| **Description** | You can enter a detailed description for this indexing task. |
+| **Description** | You can enter a detailed description for this task. |
 | **Crawl Directory(s)** | Specify top path where to start the crawl, for example: **/mnt/snfs2** or **/home** |
 | **Alt Scanner** | Enter the name of an [alternate scanner](#config_alt_scanners) if applicable for this task, for example: scandir_s3, scandir_azure, scandir_offline_media. You can [configure your alternate scanners via the DiskoverAdmin panel](#config_alt_scanners).<br><img src="images/diskoveradmin_menu_alt_cache.png" width="800"><br><br>**Use DirCache**: Check this box to optimize future scanning, make sure to [configure DirCache accordingly in the DiskoverAdmin panel](#alt_scanner_dircache). Note that this box is just a shortcut as entering **scandir_dircache** in the field above will yield the same result. |
 | **CLI Options/Flags** | Allows users to fine-tune tasks directly through additional parameters, providing more control over how the indexing runs. Follow the help instructions in the interface. |
 | **Auto Index Name** | Check this box for Diskover to assign a name to your index using the format **diskover-_toppath_-_datetime_** |
-| **Custom Index Name** | Assign a custom name to your **index** and read the help text in the interface for guidance. Note that this name has no correlation with the [indexer's name in the DiskoverAdmin panel](#config_indexers). |
+| **Custom Index Name** | Assign a custom name to your **index** and read the help text in the interface for guidance. Note that this name has no correlation with the [scanner's name in the DiskoverAdmin panel](#config_scanner). |
 | **Overwrite Existing** | Checking that box will delete any existing index with the same name and create a new index. |
 | **Add to Index** | To add paths to an existing index. Requires a custom index name for this to work. |
-| **Use Default Config** | This field correlates with the configured indexer(s) in the DiskoverAdmin Panel. Check this box if you only have one indexer for which the name was left at **Default**. |
-| **Alternate Config Name** | Enter a **custom indexer name/config** that you created in the DiskoverAdmin panel. |
+| **Use Default Config** | This field correlates with the configured scanners in the DiskoverAdmin Panel. Check this box if you only have one scanner for which the name was left at **Default**. |
+| **Alternate Config Name** | Enter a **custom scanner name/config** that you created in the DiskoverAdmin panel. |
 | **Schedule** | Using the drop-down lists, schedule the frequency at which you want this task to run OR use the **Custom Schedule** field. |
 | **Custom Schedule** | Any entry in this field will overide values in the **Schedule** fields. This field is for expert users who want to use a chron schedule. |
 | **Environment Vars** | Provide a flexible way to configure tasks and their behavior at runtime. They allow users to manage dynamic settings like paths, credentials, and system configurations without needing to modify the other settings. |
@@ -140,7 +140,7 @@ The following sections will guide you through setting up basic indexing tasks fo
 
 🔴 &nbsp;**Crawl Directory(s)**: **/mnt/_volumedir_** where volumedir is the volume mount point, for this example, **/mnt/snfs2**
 
-🟨 &nbsp;Please note:
+⚠️ &nbsp;Please note:
 
 - The paths are case-sensitive and must exist on the indexing task worker host. 
 - For Windows task workers, set the crawl directory to, for example, **H:\\Somefolder** or **C:\\** using double backslashes to escape, or for UNC paths use **\\\\UNC\\share**

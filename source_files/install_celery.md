@@ -4,9 +4,9 @@
 
 ### Overview
 
-This Celery component will need to be installed on each of your indexer/worker nodes.
+This Celery component will need to be installed on each of your scanner/worker nodes.
 
-🟨 &nbsp;[Additional Celery documentation](https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html)
+⚠️ &nbsp;[Additional Celery documentation](https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html)
 
 ### Celery for Linux
 
@@ -45,7 +45,7 @@ cd /opt/diskover/
 celery -A diskover_celery.worker worker
 ```
 
-🟨 &nbsp;When you see something like this, you know your Celery service has come online:
+⚠️ &nbsp;When you see something like this, you know your Celery service has come online:
 ```
 2024-10-04 15:22:55,192 - celery.worker.consumer.connection                  -       INFO -                      - Connected to amqp://diskover:**@rabbitmq-IP:5672//
 2024-10-04 15:22:56,450 - celery.apps.worker                                 -       INFO -                      - celery@worker-node-hostname ready.
@@ -63,7 +63,7 @@ systemctl start celery
 cd /var/log/celery/
 ```
 
-🟨 &nbsp;The API server must be installed before starting the Celery service.
+⚠️ &nbsp;The API server must be installed before starting the Celery service.
 
 ### Celery for Windows
 

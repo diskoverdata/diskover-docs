@@ -11,14 +11,14 @@ This section covers the basic installation of Elasticsearch v8, commonly referre
 
 Once all the components are installed, you will be able to refine your [Elasticsearch environment configuration](#config_es). We strongly recommend following the deployment order outlined in this guide.
 
-Some quick links you might need:
+Here are some quick links you might need:
 
-- [Set up a cluster](#set_es_cluster)
+- [Set up a cluster](#set_es_single_cluster)
 - [Set up multiple clusters](#set_es_multi_cluster)
 - [Download the current release of Elasticsearch](https://www.elastic.co/downloads/elasticsearch)
 - [Download past releases of Elasticsearch](https://www.elastic.co/downloads/past-releases#elasticsearch)
 
-<p id="install_es_node"></p>
+<p id="set_single_node_without_ssl"></p>
 
 ### Single Node Setup without SSL
 
@@ -124,11 +124,13 @@ elasticsearch soft memlock unlimited
 elasticsearch hard memlock unlimited
 ```
 
+<p id="set_multiple_node_without_ssl"></p>
+
 ### Multiple Nodes Setup without SSL
 
-If you have more than 1 node in your environment, redo all the [Single Node Installation](#install_es_node) steps for each node/system.
+If you have more than 1 node in your environment, redo all the [Single Node Setup without SSL](#set_single_node_without_ssl) steps for each node/system.
 
-<p id="set_es_cluster"></p>
+<p id="set_single_node_with_ssl"></p>
 
 ### Single Node Setup with SSL
 
@@ -225,9 +227,34 @@ chown -R elasticsearch.elasticsearch /etc/elasticsearch/
 curl -u elastic:password https://IP or hostname:9200/_cluster/health?pretty --cacert /etc/elasticsearch/certs/http_ca.crt
 ```
 
+<p id="set_multiple_node_with_ssl"></p>
+
 ### Multiple Nodes Setup with SSL
 
 This section will guide you through setting up an Elasticsearch cluster with multiple nodes ensuring that SSL is enabled for secure communication.
+
+#### Prerequisites
+
+🔴 &nbsp;A minimum of 3 systems, one for each ES node.
+
+🔴 &nbsp;All nodes must be able to communicate with each other. The best way to test this is to install ES on the nodes, start the services, and try to telnet to each of the host:
+```
+telnet <es-ip> 9200 
+```
+
+🔴 &nbsp;If this is successful, you should see the following:
+```
+[root@es1 ~]# telnet 192.168.64.19 9200
+Trying 192.168.64.19...
+Connected to 192.168.64.19.
+Escape character is '^]'.
+```
+
+🟨 &nbsp;If you see **Connection Refused**, you should check to see if `SELinux` and `Firewalld` are respectively disabled and off.
+
+🟨 &nbsp;The instructions below are for new clusters, go to [Onboarding New Nodes Containing Existing Data](#es_onboard_nodes_with_data) if you are onboarding new nodes to an existing cluster.
+
+#### Set up Node 1
 
 🔴 &nbsp;Install Java v21: 
 ```
@@ -236,129 +263,93 @@ sudo dnf install -y java-21-openjdk
 
 🔴 &nbsp;Install Elasticsearch v8: 
 ```
-dnf install https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.15.2-x86_64.rpm
+sudo dnf install -y https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.15.2-x86_64.rpm
 ```
 
-🔴 &nbsp;When ES v8 finishes installing, you will need to grab the output password for the elastic user. The output will look like the following:
-
+🔴 &nbsp;Configure the JVM for Elastic `vi /etc/elasticsearch/jvm.options.d/jvm.options`:
 ```
---------------------------- Security autoconfiguration information ------------------------------
-
-Authentication and authorization are enabled.
-TLS for the transport and HTTP layers is enabled and configured.
-
-The generated password for the elastic built-in superuser is : y1DGG*eQFdnYPXJiPu6w
-....
+-Xms8g
+-Xmx8g
 ```
 
-🟨 &nbsp;If you need to reset the password, [more info can be found here on that subject](https://www.elastic.co/guide/en/elasticsearch/reference/current/reset-password.html):
+🟨 &nbsp;You should never set the memory to more than half of what is configured for your system!
 
+🔴 &nbsp;Make the directory for the custom ES `systemd` settings:
 ```
-/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic
-```
-
-##### Enable SSL on Node 1 | If setting up a multi-node cluster for the first time
-
-🔴 &nbsp;Be sure you have the following set inside `/etc/elasticsearch/elasticsearch.yml`:
-```
-discovery.seed_hosts: ["Node 1 IP","Node 2 IP","Node 3 IP"]
+mkdir /etc/systemd/system/elasticsearch.service.d
 ```
 
-🔴 &nbsp;Determine which node will be your master, then be sure to put the node name on `cluster.initial_master_nodes` exactly as you have it for `node.name` above.
-
-🔴 &nbsp;Restart ES.
-
-🔴 &nbsp;Comment the same line, then restart ES again.
-
-🔴 &nbsp;This will state that you want this particular node to be your master.
-
-##### Enable SSL on Node 1 | If adding nodes to an existing single-node cluster
-
-🔴 &nbsp;Be sure you have the following set inside `/etc/elasticsearch/elasticsearch.yml`:
+🔴 &nbsp;Create the service config file `vi /etc/systemd/system/elasticsearch.service.d/elasticsearch.conf`:
 ```
-discovery.seed_hosts: ["Node 1 IP","Node 2 IP","Node 3 IP"]
+[Service]
+LimitMEMLOCK=infinity
+LimitNPROC=4096
+LimitNOFILE=65536
 ```
 
-🔴 &nbsp;Be sure that `cluster.initial_master_nodes` is commented since you’ve already elected this as the master.
-
-🔴 &nbsp;Add this prop as ES will fail upon startup because it will try to use Machine Learning:
+🔴 &nbsp;Change the Elastic configs to set the node and cluster name, network configs, etc.:
 ```
-xpack.ml.enabled: false
+vi /etc/elasticsearch/elasticsearch.yml:
 ```
 
-🔴 &nbsp;Grab the **keystore** & **truststore** passwords for the transport and http certs. You can run this command to see all the keystores for your ES:
+| Field | Description |
+| --- | --- |
+| **cluster.name** | It should include **diskover** in the name to make it easily distinguishable for the customer, for example: **diskover-es** |
+| **node.name** | It can be named anything, but should include a number to identify the node, for example: **node-1** |
+| **path.data** | Set this to the desired storage location for your data. If a large amount of data is expected, it's recommended to use an external storage location. The default location is `/var/lib/elasticsearch` |
+| **path.logs** | This defines the path where Elasticsearch logs will be stored. The default location is `/var/log/elasticsearch` |
+| **bootstrap.memory_lock** | This should always be set to **true**. It will prevent Elasticsearch from trying to use the swap memory. |
+| **network.host** | Set this to **0.0.0.0** |
+| **cluster.initial_master_nodes** | **IMPORTANT!** This property will bootstrap your cluster. Without it, the service will not start up. You need to input the name of the node that you have for **`node.name`**, for example: <br> ```cluster.initial_master_nodes: ["node-1"]``` |
+| **xpack.ml.enabled** | This should be set to **false** to disable Machine Learning within ES. If you do not have this set to false, then Elasticsearch will fail upon startup |
+
+🔴 &nbsp;Start the Elasticsearch service: 
 ```
-/usr/share/elasticsearch/bin/elasticsearch-keystore list
+systemctl start elasticsearch
 ```
 
-🔴 &nbsp;Grab the `xpack.security` passwords:
+🔴 &nbsp;Create an enrollment token for the nodes you want to onboard to your cluster: 
 ```
-http: /usr/share/elasticsearch/bin/elasticsearch-keystore show xpack.security.http.ssl.keystore.secure_password
-```
-🔴 &nbsp;Transport: 
-```
-/usr/share/elasticsearch/bin/elasticsearch-keystore show xpack.security.transport.ssl.keystore.secure_password
-/usr/share/elasticsearch/bin/elasticsearch-keystore show xpack.security.transport.ssl.truststore.secure_password (both of these passwords should be the same)
+/usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s node. 
 ```
 
-🔴 &nbsp;Copy the `.p12` and `http-ca.crt` certs over the Node 2 inside `/etc/elasticsearch/certs/`
+🟨 &nbsp;This last step will output a very long token, keep this token in a safe space as we’re going to need it soon. Note that you will need the **=** that is included in the value.
 
-##### Enable SSL on Node 2
+#### Set up Node 2 and 3
 
-🔴 &nbsp;Be sure you have the following set inside `/etc/elasticsearch/elasticsearch.yml`:
+🔴 &nbsp;Run through the same pre-steps to **set up Node 1**, but don’t worry about the password that is generated.
+
+🔴 &nbsp;Change the Elastic configs to set the node and cluster name, network configs, etc.:
 ```
-discovery.seed_hosts: ["Node 1 IP","Node 2 IP","Node 3 IP"]
-```
-
-🔴 &nbsp;Make sure to comment the `cluster.initial_master_nodes` because you already have a master.
-
-🔴 &nbsp;Set:
-```
-xpack.ml.enabled: false
+vi /etc/elasticsearch/elasticsearch.yml:
 ```
 
-🔴 &nbsp;It's probably best to delete the old `/etc/elasticsearch/elasticsearch.keystore`, then re-create it:
+| Field | Description |
+| --- | --- |
+| **cluster.name** | This name **must** match the Node 1 cluster name, otherwise, these nodes will not join the correct cluster, for example: **diskover-es** |
+| **node.name** | Should be incremented from the last node name, for example: Node 1: **node-1**, Node 2: **node-2**, Node 3: **node-3** |
+| **path.data** | Set this to the desired storage location for your data. If a large amount of data is expected, it's recommended to use an external storage location. The default location is `/var/lib/elasticsearch`. <br> **IMPORTANT!** This should match the other nodes' location for parity. |
+| **path.logs** | This defines the path where Elasticsearch logs will be stored. The default location is `/var/log/elasticsearch` |
+| **bootstrap.memory_lock** | This should always be set to **true**. It will prevent Elasticsearch from trying to use the swap memory. |
+| **network.host** | Set this to **0.0.0.0** |
+| **cluster.initial_master_nodes** | Don’t worry about this property for now as we’re going to be joining a bootstrapped cluster |
+| **xpack.ml.enabled** | This should be set to **false** to disable Machine Learning within ES. If you do not have this set to false, then Elasticsearch will fail upon startup |
+
+🟨 &nbsp;Do **not** start Elasticsearch yet!
+
+🔴 &nbsp;Let's join Nodes 2 and 3 to the Node 1 cluster:
 ```
-/usr/share/elasticsearch/bin/elasticsearch-keystore create
+/usr/share/elasticsearch/bin/elasticsearch-reconfigure-node --enrollment-token "your token here"
 ```
 
-🔴 &nbsp;Now we need to add the passwords for the `keystore` that we got from Node 1:
+🔴 &nbsp;Press **Y** to continue with the reconfiguration. This will remove the self-signed certs that ES generated when you installed it, remove all the previous settings from the keystore, etc. and place in the certs and password from Node 1, ensuring all nodes are using the same password as Node 1.
+
+🔴 &nbsp;Start the Elasticsearch service: 
 ```
-http: /usr/share/elasticsearch/bin/elasticsearch-keystore add xpack.security.http.ssl.keystore.secure_password
+systemctl start elasticsearch
 ```
 
-🔴 &nbsp;Transport:
-```
-/usr/share/elasticsearch/bin/elasticsearch-keystore add xpack.security.transport.ssl.keystore.secure_password
-/usr/share/elasticsearch/bin/elasticsearch-keystore add xpack.security.transport.ssl.truststore.secure_password
-```
-
-🔴 &nbsp;Be sure to check your keystore to ensure you have them set:
-```
-/usr/share/elasticsearch/bin/elasticsearch-keystore list
-```
-
-🔴 &nbsp;Restart Elasticsearch: 
-```
-systemctl restart elasticsearch
-```
-
-##### Enable SSL on Node 3 +
-
-Provided Elasticsearch on Node 2 comes online, repeat the same **Enable SSL on Node 2** steps for Node 3 and subsequent nodes, if applicable.
-
-#### Testing SSL
-
-🔴 &nbsp;Once all ES nodes are online, you should be able to curl to see which node is the master, it should be Node 1, if you have still elected it to be the master:
-```
-curl -u elastic:password https://IP or hostname:9200/_cat/master?v --cacert /etc/elasticsearch/certs/http_ca.crt
-```
-
-🔴 &nbsp;You can also curl to grab the health of the cluster:
-```
-curl -u elastic:password https://IP or hostname:9200/_cluster/health?pretty --cacert /etc/elasticsearch/certs/http_ca.crt
-```
-
+<p id="set_es_single_cluster"></p>
 
 ### Single Cluster Setup
 
@@ -425,15 +416,15 @@ vi /etc/elasticsearch/elasticsearch.yml:
 
 | Field | Description |
 | --- | --- |
-| cluster.name | It should include **diskover** in the name to make it easily distinguishable for the customer, example: **diskover-es** |
-| node.name | It can be named anything, but should include a number to identify the node, example: **diskover-node-1** |
-| path.data | Set this to the desired storage location for your data. If a large amount of data is expected, it's recommended to use an external storage location. The default location is **/var/lib/elasticsearch** |
-| path.logs | This defines the path where Elasticsearch logs will be stored. The default location is **/var/log/elasticsearch** |
-| bootstrap.memory_lock | This should always be set to **true**. It will prevent Elasticsearch from trying to use the swap memory. |
-| network.host | This should be set to the IP address of the host where you're configuring Elasticsearch. |
-| discovery.seed_hosts | **IMPORTANT!** You need to enter the IP addresses of each Elasticsearch node that will be part of the cluster, for example:<br>```discovery.seed_hosts: ["192.168.64.18", "192.168.64.19", "192.168.64.20"]``` |
-| cluster.initial_master_nodes | **IMPORTANT!** You need to enter the name of each node for the node.name setting, for example:<br>```cluster.initial_master_nodes: ["diskover-node-1", "diskover-node-2", "diskover-node-3"]``` |
-| xpack.ml.enabled | This should be set to **false** to disable the Machine Learning within ES. If you do not have this set to false, then Elasticsearch will fail upon startup. |
+| **cluster.name** | It should include **diskover** in the name to make it easily distinguishable for the customer, for example: **diskover-es** |
+| **node.name** | It can be named anything, but should include a number to identify the node, for example: **diskover-node-1** |
+| **path.data** | Set this to the desired storage location for your data. If a large amount of data is expected, it's recommended to use an external storage location. The default location is **/var/lib/elasticsearch** |
+| **path.logs** | This defines the path where Elasticsearch logs will be stored. The default location is **/var/log/elasticsearch** |
+| **bootstrap.memory_lock** | This should always be set to **true**. It will prevent Elasticsearch from trying to use the swap memory. |
+| **network.host** | This should be set to the IP address of the host where you're configuring Elasticsearch. |
+| **discovery.seed_hosts** | **IMPORTANT!** You need to enter the IP addresses of each Elasticsearch node that will be part of the cluster, for example:<br>```discovery.seed_hosts: ["192.168.64.18", "192.168.64.19", "192.168.64.20"]``` |
+| **cluster.initial_master_nodes** | **IMPORTANT!** You need to enter the name of each node for the node.name setting, for example:<br>```cluster.initial_master_nodes: ["diskover-node-1", "diskover-node-2", "diskover-node-3"]``` |
+| **xpack.ml.enabled** | This should be set to **false** to disable the Machine Learning within ES. If you do not have this set to false, then Elasticsearch will fail upon startup. |
 
 
 🔴 &nbsp;Make the directory for the custom ES `systemd` settings: 
@@ -477,6 +468,8 @@ sudo systemctl start elasticsearch
 In a multiple-cluster setup for Elasticsearch, you can run and manage multiple independent clusters, each with its own set of nodes and indices. This setup is typically used when you need to isolate data or workloads across different environments (such as production, testing, and development) or geographically distributed locations. Each cluster operates independently, and you can configure cross-cluster search or replication to share data or search across clusters as needed.
 
 Please [open a support ticket](https://support.diskoverdata.com/) for assistance.
+
+<p id="es_health_check_without_ssl"></p>
 
 ### Elasticsearch Health Check without SSL
 
@@ -530,6 +523,8 @@ curl http://${ESHOST}:9200/_cluster/health?pretty
 }
 ```
 
+<p id="es_health_check_with_ssl"></p>
+
 ### Elasticsearch Health Check with SSL
 
 🔴 &nbsp;From now 1, curl node 2 or 3:
@@ -577,7 +572,7 @@ curl http://${ESHOST}:9200/_cluster/health?pretty
 }
 ```
 
-
+<p id="es_downsize"></p>
 
 ### Downsizing from 3 Nodes to 1 Node
 
@@ -625,6 +620,7 @@ rm -rf /path/to/dataDir/{nodes,_state}
 }
 ```
 
+<p id="es_onboard_nodes_with_data"></p>
 
 ### Onboarding New Nodes Containing Existing Data
 

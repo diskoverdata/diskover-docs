@@ -15,7 +15,7 @@ code snippet - use icon on the far right to copy me
 
 #### Important Notes and Warnings
 
-🟨 &nbsp;All important notes and warnings are preceded by a yellow square.
+⚠️ &nbsp;All important notes and warnings are preceded by a yellow square.
 
 #### Restricted Diskover Editions
 

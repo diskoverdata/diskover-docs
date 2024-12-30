@@ -31,12 +31,10 @@ git clone https://github.com/diskoverdata/diskover-community.git /tmp/diskover
 cd /tmp/diskover
 ```
 
-### Subscription Editions
+### Annual Subscription Editions
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
-#### Download Links
-
 We are currently moving to a new platform for software download. Meanwhile, please [open a support ticket](https://support.diskoverdata.com/) and we will send you a link, whether you need the OVA or the full version of Diskover.
 
-Click these links for information on how to [create a support account](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-zendesk-account) and how to [create a support ticket](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-support-ticket).
+Click these links for information on how to [create an account](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-zendesk-account) and how to [create a support ticket](https://docs.diskoverdata.com/tech_support_and_troubleshooting/#create-a-support-ticket).

@@ -6,7 +6,7 @@
 
 Diskover-Web is nothing without its new Administrator! The DiskoverAdmin configuration management user interface will allow you to further configure your Diskover system once it’s up and running.
 
-🟨 &nbsp;Note that DiskoverAdmin must be installed on the same host as Diskover-Web.
+⚠️ &nbsp;Note that DiskoverAdmin must be installed on the same host as Diskover-Web.
 
 ### Start Here
 
@@ -22,7 +22,7 @@ scp <path to diskover.zip> root@ipAddress:~/
 scp -i <path to PEM file> <path to diskover.zip> rocky@bastion-IP:~/
 ```
 
-🟨 &nbsp;Note that the user will differ depending on your OS. It is best to consult your AWS EC2 Console to get the exact user to connect to the bastion. Generally, these are the users for the following OS:
+⚠️ &nbsp;Note that the user will differ depending on your OS. It is best to consult your AWS EC2 Console to get the exact user to connect to the bastion. Generally, these are the users for the following OS:
 
 | OS | User |
 | --- | --- |
@@ -32,9 +32,9 @@ scp -i <path to PEM file> <path to diskover.zip> rocky@bastion-IP:~/
 
 ### Python Installation
 
-Python should already be installed as instructed in the [Diskover Indexers/Workers Installation](#install_indexers) section. Alternatively, you could use a [PyEnv (Python Environments)](#pyenv).
+Python should already be installed as instructed in the [Diskover Scanners/Workers Installation](#install_scanners) section. Alternatively, you could use a [PyEnv (Python Environments)](#pyenv).
 
-🟨 &nbsp;Note that some steps here, such as symlinking to the main Python3 executable, might not be advisable if this system is used for other Python-based programs.
+⚠️ &nbsp;Note that some steps here, such as symlinking to the main Python3 executable, might not be advisable if this system is used for other Python-based programs.
 
 ### DiskoverAdmin Installation
 
@@ -97,7 +97,7 @@ systemctl start diskover-admin
 systemctl status diskover-admin
 ```
 
-🟨 &nbsp;A happy status looks like this:
+⚠️ &nbsp;A happy status looks like this:
 ```
       Starting Uvicorn instance to serve /diskover-admin...
       INFO:     Uvicorn running on unix socket /var/www/diskover-admin/run/diskover-admin.sock (Press CTRL+C to quit)

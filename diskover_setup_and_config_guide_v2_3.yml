@@ -14,13 +14,13 @@ ordered_documents:
   - requirements_intro.md
   - requirements_elasticsearch.md 
   - requirements_diskover_web.md
-  - requirements_diskover_indexers.md
+  - requirements_diskover_scanners.md
   - requirements_skills.md
   - software_download.md
   - system_readiness.md
   - install_checklist.md
   - install_elasticsearch.md
-  - install_indexers.md
+  - install_scanners.md
   - install_celery.md
   - install_rabbitmq.md
   - install_diskover_web.md

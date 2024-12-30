@@ -1,6 +1,6 @@
 <p id="feature_navigator"></p>
 
-## Features Configuration 🔎 Where to Find What
+## 🔎 Features Configuration
 
 This section lists the main configurable Diskover features alphabetically, whether they're located in the DiskoverAdmin panel or require manual configuration, along with where to find them. Some features are listed multiple times under different names to make them easier to locate.
 
@@ -24,7 +24,7 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **AutoTag Plugin** post index | Plugins → Post Index → AutoTag | |
 | **Azure** alt scanner | Diskover → Alternate Scanners → Azure | |
 | **Azure AD Authentication** | Web → OAUTH | |
-| **BAM Info Plugin** | | [BAM Info Index Plugin](#plugin_index_bam) |
+| **BAM Info Plugin** | Plugins → Post Index → BAM | |
 | **Breadcrumb Plugin** | Plugins → Post Index → Breadcrumb | |
 | **Checksums** at index time | Plugins → Index → Checksums | |
 | **Checksums** post index | Plugins → Post Index → Checksums | |

@@ -1,26 +1,26 @@
-<p id="install_indexers"></p>
+<p id="install_scanners"></p>
 
-## Diskover Indexers/Workers Installation
+## Diskover Scanners/Workers Installation
 
 ### Overview
 
-Diskover has a [distributed task system](#architecture_diagram) where indexers/workers can be distributed among many resources. For each resource providing a task worker, services need to have a [DiskoverD](#install_diskoverd) installed. The [Task Panel](#task_panel) will be covered after the installation and initial configuration of the main components. 
+Diskover has a [distributed task system](#architecture_diagram) where scanners/workers can be distributed among many resources. For each resource providing a task worker, services need to have a [DiskoverD](#install_diskoverd) installed. The [Task Panel](#task_panel) will be covered after the installation and initial configuration of the main components. 
 
 ___
 
 <img src="images/diagram_indexer_daemon_task_panel.png" width="">
 
-_[Click here for the full screen view of this diagram.](images/diagram_indexer_daemon_task_panel.png)_
+_[Click here for the full screen view of this diagram.](images/diagram_scanner_daemon_task_panel.png)_
 
-This section will walk you through installing node workers for your Diskover v2.3+ environment. Please note that throughout this guide, the terms **indexers** and **workers** are used interchangeably.
+This section will walk you through installing node workers for your Diskover v2.3+ environment.
 
 During this process, you will need the latest [Diskover 2.3x zip archive](https://download.diskoverdata.com/). Note that this is subject to change to RPMs in the near future.
 
 Once all components are installed, you will be able to [configure your indexing environment](#config_indexers). We strongly recommend following the deployment order outlined in this guide.
 
-### Multiple Indexers/Workers Environment
+### Multiple Scanners/Workers Environment
 
-If your environment includes multiple indexers, repeat the process in this chapter for each one of your workers. Once you have the zip file, you can `SCP` it to all machines that are designated to be a Diskover Worker. 
+If your environment includes multiple scannerss, repeat the process in this chapter for each one of your workers. Once you have the zip file, you can `SCP` it to all machines that are designated to be a Diskover Worker. 
 
 🔴 &nbsp;**On-prem** | Will scp the file to the root user's home directory:
 ```
@@ -40,7 +40,7 @@ scp -i <path to PEM file> <path to diskover.zip> rocky@bastion-IP:~/
 | Centos 7 or 8 | centos |
 | RHEL or Amazon Linux | ec2-user |
 
-### Linux Indexers/Workers
+### Linux Scanners/Workers
 
 #### Python Installation
 
@@ -63,7 +63,7 @@ python3 -m ensurepip
 python3 -m pip install --upgrade pip
 ```
 
-#### Diskover Indexer Installation
+#### Diskover Scanner Installation
 
 🔴 &nbsp;Extract your [zip archive](https://download.diskoverdata.com/):
 ```
@@ -157,10 +157,10 @@ sudo update-ca-trust ; mkdir /opt/diskover/elasticsearch-certs/ ; cp http_ca.crt
     - Hitting **Test** on this page will result in a failure as the call for this test is coming from the [Web server](#install_diskover_web), so long as you can start your Worker up, you’re good to go!
 
 
-### Windows Indexers/Workers
+### Windows Scanners/Workers
 
 🚧 &nbsp;We're hard at work preparing these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with this step of your deployment.
 
-### Mac Indexers/Workers
+### Mac Scanners/Workers
 
 🚧 &nbsp;We're hard at work preparing these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with this step of your deployment.

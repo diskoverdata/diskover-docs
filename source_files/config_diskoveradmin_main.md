@@ -4,9 +4,7 @@
 
 ### Overview
 
-Most help information is available directly in the user interface. This section offers additional guidance when applicable to support you during the configuration process.
-
-🟨 &nbsp;**IMPORTANT!**
+Most help information is available directly in the user interface. This section offers additional guidance when applicable to support you during the configuration process. **IMPORTANT!**
 
 - Although specified throughout **DiskoverAdmin**, always assume that the fields are case-sensitive.
 - For more information about [Python re.search](https://docs.python.org/3.7/library/re.html) whenever mentioned in the help text in DiskoverAdmin.

@@ -4,11 +4,10 @@
 
 ### Overview
 
-Most help information is available directly in the user interface. This section offers additional guidance when applicable to support you during the configuration process. **IMPORTANT!**
+Most help information is available directly in the user interface. This section offers additional guidance when applicable to support you during the configuration process of the main components. **IMPORTANT!**
 
-- Although specified throughout **DiskoverAdmin**, always assume that the fields are case-sensitive.
+- Although specified throughout **DiskoverAdmin**, for best practices, always assume that the fields are case-sensitive.
 - For more information about [Python re.search](https://docs.python.org/3.7/library/re.html) whenever mentioned in the help text in DiskoverAdmin.
-
 
 <p id="config_diskover_web"></p>
 
@@ -25,7 +24,7 @@ ___
 #### Top Paths
 <img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
-By default, users will see a list of all volumes indexed by Diskover in the left pane of the user interface. You can however create Top Paths to organize your volumes (by location, project, etc.). In this example, note that the first collapsible option will always be **All Top Paths** and will list all your repositories.
+By default, users will see a list of all volumes scanned by Diskover in the left pane of the user interface. You can, however, create Top Paths to organize your volumes (by location, project, etc.). In this example, note that the first collapsible option will always be **All Top Paths** and will list all your repositories.
 
 <img src="images/top_path_by_location.png" width="300">
 
@@ -63,12 +62,12 @@ This is the resulting path that would be copied:
 
 
 
-<p id="config_indexers"></p>
+<p id="config_scanners"></p>
 
 <p id="config_es"></p>
 
 ___
-### Diskover Indexers/Workers & Elasticsearch
+### Diskover Scanners/Workers & Elasticsearch
 
 <img src="images/diskoveradmin_menu_diskover.png" width="200">
 
@@ -85,12 +84,12 @@ Given the importance of tagging in data management, we dedicated an [entire chap
 Besides the help text in DiskoverAdmin, you can find [more information here regarding **cost** configuration](#analytics_costs) as well as some use cases.
 
 
-<p id="config_alt_indexers_diskoveradmin"></p>
+<p id="config_alt_scanners_diskoveradmin"></p>
 
 ___
 ### Diskover Alternate Scanners
 
-All [alternate scanners](#config_alt_scanners) will eventually be  in the DiskoverAdmin panel. Please go to the [Alternate Scanners Configuration](#config_alt_scanners) section for the complete list of current alternate indexers. Meanwhile, all alternate indexers configurable in DiskoverAdmin can be found here:
+All [alternate scanners](#config_alt_scanners) will eventually be  in the DiskoverAdmin panel. Please go to the [Alternate Scanners Configuration](#config_alt_scanners) section for the complete list of current alternate scanners. Meanwhile, all alternate scanners configurable in DiskoverAdmin can be found here:
 
 <img src="images/diskoveradmin_menu_diskover_alt_indexers.png" width="200">
 

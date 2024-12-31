@@ -1,6 +1,6 @@
 <p id="feature_navigator"></p>
 
-## 🔎 Features Configuration
+## 🔎 Features Finder and Configuration
 
 This section lists the main configurable Diskover features alphabetically, whether they're located in the DiskoverAdmin panel or require manual configuration, along with where to find them. Some features are listed multiple times under different names to make them easier to locate.
 

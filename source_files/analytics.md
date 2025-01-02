@@ -93,7 +93,7 @@ Reports provide a mechanism to create repeatable analytics by searching for your
 
 #### Reports Customization
 
-🟨 &nbsp;Note that multiple queries can be used for this analytics and selected via the drop-down menu:
+⚠️ &nbsp;Note that multiple queries can be used for this analytics and selected via the drop-down menu:
 
 <img src="images/analytics_reports_menu.png" width="150">
 

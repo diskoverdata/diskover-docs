@@ -2,9 +2,9 @@
 
 ### Diskover Scanners Requirements
 
-You can install Diskover scanners on a server or [virtual machine](https://docs.diskoverdata.com/diskover_installation_guide_ova/). Multiple indexers can be run on a single machine or multiple machines for parallel crawling.
+You can install Diskover scanners on a server or [virtual machine](https://docs.diskoverdata.com/diskover_installation_guide_ova/). Multiple scanners can be run on a single machine or multiple machines for parallel crawling.
 
-The indexing host uses a separate thread for each directory at level 1 of a top crawl directory. If you have many directories at level 1, you will want to increase the number of CPU cores and adjust **max threads** in the diskover config.
+The scanning host uses a separate thread for each directory at level 1 of a top crawl directory. If you have many directories at level 1, you will want to increase the number of CPU cores and adjust **max threads** in the diskover config. This parameter, as well as many others, can be configured from the user interface, which contains help text to guide you.
 
 #### Requirements for POC and Deployment
 

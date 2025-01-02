@@ -60,7 +60,7 @@ The Task History keeps a log of completed tasks, allowing you to review past tas
 
 #### Templates Tab
 
-Default scanning tasks are available in the **Templates** tab of the Task Panel, for both [Posix File System Scanning](#config_scanners) and [S3 Bucket Indexing](#alt_scanner_s3). 
+Default scanning tasks are available in the **Templates** tab of the Task Panel, for both Posix filesystem and S3 bucket scanning. 
 
 Also, when creating a new task, you have the option at the bottom of the page to save the settings as a template. This is particularly useful if you have multiple similar repositories to scan, as it allows you to reuse the same configuration for future tasks. 
 
@@ -93,7 +93,7 @@ The Workers tab shows the status and performance of task workers, which are resp
 | **Alt Scanner** | Enter the name of an [alternate scanner](#config_alt_scanners) if applicable for this task, for example: scandir_s3, scandir_azure, scandir_offline_media. You can [configure your alternate scanners via the DiskoverAdmin panel](#config_alt_scanners).<br><img src="images/diskoveradmin_menu_alt_cache.png" width="800"><br><br>**Use DirCache**: Check this box to optimize future scanning, make sure to [configure DirCache accordingly in the DiskoverAdmin panel](#alt_scanner_dircache). Note that this box is just a shortcut as entering **scandir_dircache** in the field above will yield the same result. |
 | **CLI Options/Flags** | Allows users to fine-tune tasks directly through additional parameters, providing more control over how the indexing runs. Follow the help instructions in the interface. |
 | **Auto Index Name** | Check this box for Diskover to assign a name to your index using the format **diskover-_toppath_-_datetime_** |
-| **Custom Index Name** | Assign a custom name to your **index** and read the help text in the interface for guidance. Note that this name has no correlation with the [scanner's name in the DiskoverAdmin panel](#config_scanner). |
+| **Custom Index Name** | Assign a custom name to your **index** and read the help text in the interface for guidance. Note that this name has no correlation with the [scanner's name in the DiskoverAdmin panel](#config_scanners). |
 | **Overwrite Existing** | Checking that box will delete any existing index with the same name and create a new index. |
 | **Add to Index** | To add paths to an existing index. Requires a custom index name for this to work. |
 | **Use Default Config** | This field correlates with the configured scanners in the DiskoverAdmin Panel. Check this box if you only have one scanner for which the name was left at **Default**. |

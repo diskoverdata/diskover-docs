@@ -16,7 +16,7 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **API** | System → API | |
 | **Arrival Time Plugin** | Plugins → Index → First Index Time | |
 | **Atempo Miria** alt scanner | | [Atempo Alternate Scanner](#alt_scanner_atempo) |
-| **Authentication by default for Diskover-Web** | Web → General | |
+| **Authentication Native Diskover-Web** | Web → General | |
 | **Authentication LDAP** | Web → LDAP | |
 | **Authentication OAuth** | Web → OAUTH | |
 | **AutoClean** | Plugins → Post Index → AutoClean | |

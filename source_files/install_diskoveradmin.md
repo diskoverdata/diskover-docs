@@ -10,7 +10,7 @@ Diskover-Web is nothing without its new Administrator! The DiskoverAdmin configu
 
 ### Start Here
 
-During this process, you will need the latest [Diskover 2.3x zip archive](https://download.diskoverdata.com/). Note that this is subject to change to RPMs in the near future. Once you have the zip file, you can `SCP` it to the machine that is designated for DiskoverAdmin. 
+During this process, you will need the latest [Diskover 2.3x zip archive](#software_download). Note that this is subject to change to RPMs in the near future. Once you have the zip file, you can `SCP` it to the machine that is designated for DiskoverAdmin. 
 
 🔴 &nbsp;**On-prem** | Will scp the file to the root user's home directory:
 ```

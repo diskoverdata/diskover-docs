@@ -479,7 +479,7 @@ With the ES cluster installed and running, you can now run a simple curl command
 
 ⚠️ &nbsp;Replace the **${ESHOST}** below with your **ES node(s) IP address or hostname**
 
-Curl command **if SSL is enabled** on the cluster - the result will differ, of course, based on your own environment - [navigate here for more information on SSL enablement](#ssl_enable_es):
+Curl command **if SSL is enabled** on the cluster - the result will differ, of course, based on your own environment:
 ```
 curl -XGET -u elastic:password https://${ESHOST}:9200/_cluster/health?pretty --cacert /etc/elasticsearch/certs/http_ca.crt
 {

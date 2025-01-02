@@ -14,7 +14,7 @@ One of Diskover's powerful features is the ability to add business context to fi
 - Reporting aligned with business context, changing reports from _disk language_ (size, age, extension, etc.) to _business language_ (projects, clients, status, etc.)
 - [Engage tags in workflows via Diskover Task Panel](#task_panel) to automate data movement, deletion, archival, etc.
 
-🟨 &nbsp;**IMPORTANT!**
+⚠️ &nbsp;**IMPORTANT!**
 
 - All tags are stored in the **tag** field in the Elasticsearch index.
 - There is no limit on the number of tags per item.
@@ -28,14 +28,14 @@ Tags can be applied using various methods within Diskover:
 - [Tag application via Harvest Plugins](#tags_via_harvest_plugins)
 - [Manual tagging](#manual_tags)
 
-🟨 &nbsp;**IMPORTANT!** If you want to use tags in your environment, make sure to [configure your tags' migration](#tags_migration) so they get copied from one index to the next.
+⚠️ &nbsp;**IMPORTANT!** If you want to use tags in your environment, make sure to [configure your tags' migration](#tags_migration) so they get copied from one index to the next.
 
 
 <p id="autotag"></p>
 
 ### AutoTag
 
-Tags can be applied automatically through a set of configurable rules applied to directories or files. AutoTags can be configured for each of your indexers in:
+Tags can be applied automatically through a set of configurable rules applied to directories or files. AutoTags can be configured for each of your scanners in:
 
 **DiskoverAdmin** → **Configuration → Diskover → Configurations**. 
 
@@ -96,7 +96,7 @@ Please refer to our [Diskover User Guide](https://docs.diskoverdata.com/diskover
 - Manual tags application.
 - Manual tags removal.
 
-🟨 &nbsp;**IMPORTANT!** As Diskover exists today, you need to use the [Tag Copier Plugins](#tags_migration) to migrate the tags from one index to the next.
+⚠️ &nbsp;**IMPORTANT!** As Diskover exists today, you need to use the [Tag Copier Plugins](#tags_migration) to migrate the tags from one index to the next.
 
 
 
@@ -116,21 +116,21 @@ You can also get redirected to the **Custom Tags** configuration page when selec
 
 ### Tag Copier Plugins for Tags Migration
 
-The Diskover indexing process creates a new index or point-in-time snapshot of the volume at time of index. Tags that are applied during the indexing process via [AutoTag](#autotag) rules will be automatically re-applied to the next index based on the configuration rules.
+The Diskover scanning process creates a new index or point-in-time snapshot of the volume at time of index. Tags that are applied during the scanning process via [AutoTag](#autotag) rules will be automatically re-applied to the next index based on the configuration rules.
 
-However, as the software exists today, the Diskover indexer has no knowledge of tags applied outside of the indexing process. Therefore, tags that have been applied 1) [manually](#manual_tags), 2) via [Diskover API](tags_via_api), or 3) via [plugins through the API](#tags_via_harvest_plugins) **must be migrated from one index to the next** using the Tag Copier Plugins.
+However, as the software exists today, the Diskover scanner has no knowledge of tags applied outside of the scanning process. Therefore, tags that have been applied 1) [manually](#manual_tags), 2) via [Diskover API](tags_via_api), or 3) via [plugins through the API](#tags_via_harvest_plugins) **must be migrated from one index to the next** using the Tag Copier Plugins.
 
 #### Index Tag Copier Plugin 
 
 **DiskoverAdmin → Configuration → Plugins → Index → Tag Copier**
 
-The index tag copier is designed to apply tags during the indexing process. This plugin leverages Diskover’s [AutoTag](#autotag) functionality, which automatically assigns tags based on a set of predefined rules. These rules can include file size, type, date, location, or other metadata. As files and directories are being indexed, tags are applied in real-time, ensuring that the data is immediately categorized with business-relevant context.
+The index tag copier is designed to apply tags during the scanning process. This plugin leverages Diskover’s [AutoTag](#autotag) functionality, which automatically assigns tags based on a set of predefined rules. These rules can include file size, type, date, location, or other metadata. As files and directories are being indexed, tags are applied in real-time, ensuring that the data is immediately categorized with business-relevant context.
 
 #### Post-Index Tag Copier Plugin
 
 **DiskoverAdmin → Configuration → Plugins → Post Index → Tag Copier**
 
-The post-index Tag Copier plugin is used to apply or migrate tags after the indexing process has been completed. It’s typically used when tags need to be adjusted or added once files and directories are already indexed or when tags from a previous index need to be copied to a new index.
+The post-index Tag Copier plugin is used to apply or migrate tags after the scanning process has been completed. It’s typically used when tags need to be adjusted or added once files and directories are already indexed or when tags from a previous index need to be copied to a new index.
 
 ### Tags Display in Diskover-Web
 

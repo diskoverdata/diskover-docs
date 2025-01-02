@@ -103,7 +103,7 @@ vi /root/.config/diskoverd/config.yaml
 apiurl: http://${WEBHOST}:8000/api.php
 ```
 
-<p id="install_diskovered"></p>
+<p id="install_diskoverd"></p>
 
 #### DiskoverD Task Worker Daemon
 

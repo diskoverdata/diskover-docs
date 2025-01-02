@@ -2,7 +2,7 @@
 
 ## Routine Maintenance
 
-The routine maintenance of Diskover consists of ensuring your environment is up to date with current software versions as they become available. Please check the [Prerequisite and Requirements](#requirements) section for the latest approved versions. 
+The routine maintenance of Diskover consists of ensuring your environment is up to date with current software versions as they become available. Please check the [requirements](#requirements) section for the latest approved versions. 
 
 
 ### Update Diskover and Diskover-Web

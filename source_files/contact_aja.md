@@ -11,6 +11,5 @@ When calling for support, please have all information at hand prior to calling. 
 |Fax|530.271.3140 |
 |Sales  |[sales@aja.com](mailto:sales@aja.com)|
 |Support  |[support@aja.com](mailto:support@aja.com)|
-|General Inquiries|[info@aja.com](mailto:info@aja.com)|
 |Website  |[www.aja.com/products/aja-diskover-media-edition](https://www.aja.com/products/aja-diskover-media-edition) |
 

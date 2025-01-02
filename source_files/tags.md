@@ -8,7 +8,7 @@
 
 One of Diskover's powerful features is the ability to add business context to files and directories through tags, which enables the following:
 
-- Increased findability and searchability based on one or more combinations of [fields/metadata](#metadata), for example, name and tag value.
+- Increased findability and searchability based on one or more combinations of [fields/metadata](#metadata_catalog), for example, name and tag value.
 - More informed and accurate data curation decisions.
 - Ability to build an approval process (or RACI model) for data curation decisions.
 - Reporting aligned with business context, changing reports from _disk language_ (size, age, extension, etc.) to _business language_ (projects, clients, status, etc.)
@@ -76,7 +76,7 @@ Examples of tag applications can be found in the Diskover-Web user interface und
 
 ### Tag Application via Harvest Plugins  
 
-[Harvest/Index plugins](#plugins_index) are typically designed to:
+[Index](#config_plugins_index) and [post-index](#config_plugins_post_index) harvest plugins are typically designed to:
 
 - Harvest extra business-context metadata from file headers.
 - Correlate the Diskover index to some other business application, for example, an order management or scheduling system.
@@ -118,7 +118,7 @@ You can also get redirected to the **Custom Tags** configuration page when selec
 
 The Diskover scanning process creates a new index or point-in-time snapshot of the volume at time of index. Tags that are applied during the scanning process via [AutoTag](#autotag) rules will be automatically re-applied to the next index based on the configuration rules.
 
-However, as the software exists today, the Diskover scanner has no knowledge of tags applied outside of the scanning process. Therefore, tags that have been applied 1) [manually](#manual_tags), 2) via [Diskover API](tags_via_api), or 3) via [plugins through the API](#tags_via_harvest_plugins) **must be migrated from one index to the next** using the Tag Copier Plugins.
+However, as the software exists today, the Diskover scanner has no knowledge of tags applied outside of the scanning process. Therefore, tags that have been applied either manually or via AutoTags **must be migrated from one index to the next** using the Tag Copier Plugins.
 
 #### Index Tag Copier Plugin 
 

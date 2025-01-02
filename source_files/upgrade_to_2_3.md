@@ -270,7 +270,7 @@ python3 -m pip install -r requirements.txt
 
 RabbitMQ or Amazon MQ serves as the messaging bus/queue system that communicates with all Celery systems on your Diskover Worker nodes. We recommend installing this service on a dedicated standalone host.
 
-Once all components are installed, you will be able to [configure your messaging environment](#config_message_queue). We strongly recommend following the upgrade process order outlined in this guide.
+Once all components are installed, you will be able to [configure your messaging environment](#config_system). We strongly recommend following the upgrade process order outlined in this guide.
 
 ⚠️ &nbsp;Additional guidelines for RabbitMQ management:
 

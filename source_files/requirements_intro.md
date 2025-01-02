@@ -1,6 +1,6 @@
 <p id="requirements"></p>
 
-## Prerequisites
+## Requirements
 
 ### Overview
 
@@ -8,7 +8,7 @@ Visit the [System Readiness](#system_readiness) section for further information 
 
 | Packages | Usage |
 | --- | --- |
-| Python 3.8+ | Required for Diskover scanners/workers and Diskover-Web → [go to installation instructions](#install_indexers) |
+| Python 3.8+ | Required for Diskover scanners/workers and Diskover-Web → [go to installation instructions](#install_scanners) |
 | Elasticsearch 8.x | Is the heart of Diskover → [go to installation instructions](#install_es) |
 | PHP 8.x and PHP-FPM | Required for Diskover-Web → [go to installation instructions](#install_diskover_web) |
 | NGINX or Apache | Required for Diskover-Web → [go to installation instructions](#install_diskover_web)<br> _Note that Apache can be used instead of NGINX but the setup is not supported or covered in this guide._ |

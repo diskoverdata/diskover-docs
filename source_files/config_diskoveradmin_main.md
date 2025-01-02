@@ -19,6 +19,29 @@ ___
 <img src="images/diskoveradmin_menu_web.png" width="200">
 
 
+<p id="config_authentication"></p>
+
+#### Authentication Options
+
+Diskover currently offers the following options for authentication - all help text can be found directly in the user interface:
+
+| AUTHENTICATION OPTION | WHERE TO CONFIGURE | 
+| --- | --- |
+| Native Diskover-Web Authentication | DiskoverAdmin → Configuration → Web → General |
+| LDAP Authentication | DiskoverAdmin → Configuration → Web → LDAP |
+| OAuth2 Authentication (Okta or Azure) | DiskoverAdmin → Configuration → Web → OAUTH |
+
+
+
+
+<p id="config_roles_and_access"></p>
+
+#### Access Control
+
+Diskover offers optional settings allowing you to control access and visibility by mapping groups and users to specific indices. All help text can be found directly in the user interface and this is where to go to configure this feature **DiskoverAdmin → Configuration → Web → Index Access**.
+
+
+
 <p id="config_top_paths"></p>
 
 #### Top Paths
@@ -27,6 +50,9 @@ ___
 By default, users will see a list of all volumes scanned by Diskover in the left pane of the user interface. You can, however, create Top Paths to organize your volumes (by location, project, etc.). In this example, note that the first collapsible option will always be **All Top Paths** and will list all your repositories.
 
 <img src="images/top_path_by_location.png" width="300">
+
+
+
 
 
 <p id="config_path_translation"></p>

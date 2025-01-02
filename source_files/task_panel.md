@@ -120,7 +120,7 @@ The Workers tab shows the status and performance of task workers, which are resp
 
 ![Image: Tasks Management System](images/task_panel_worker_status.png)
 
-<p id="create_index_task"></p>
+<p id="create_scan_task"></p>
 
 ### Create an Indexing Task
 

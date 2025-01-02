@@ -66,7 +66,7 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **Image Info Plugin** | Plugins → Index → Image Info | |
 | **IMF Change Report Plugin** | Plugins → File Actions → IMF Change Report | |
 | **IMF Package Validator Plugin** | | [IMF Package Validator File Action Plugin by Oxagile](#plugin_file_action_imf_validator) |
-| **Index Access** | Web → Index Access | |
+| **Index Access Control** | Web → Index Access | |
 | **Index Differential Plugin** | Plugins → Post Index → Index Diff | |
 | **Index Mapping** | Web → Index Access | |
 | **Indexers** | Diskover → Configurations → Default | |

@@ -1,4 +1,4 @@
-website_name: Legacy v2.2.x | Diskover Configuration and Administration Guide
+website_name: Diskover Config and Admin Guide v2.2.x
 # Folder on the website, if you specify "folder" it will deploy this guide to https://docs.diskoverdata.com/folder
 website_folder: diskover_configuration_and_administration_guide
 # All documents need to be in shared folder

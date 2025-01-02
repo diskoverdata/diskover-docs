@@ -142,7 +142,7 @@ server {
 
 ### Diskover-Web Installation
 
-Let's install Diskover-Web now that we have our NGINX and PHP packages installed and configured. You need to ensure that you have the latest [Diskover 2.3 zip archive](https://download.diskoverdata.com/). Once you have the zip file, you can `SCP` it to the machine that is designated for Diskover-Web.
+Let's install Diskover-Web now that we have our NGINX and PHP packages installed and configured. You need to ensure that you have the latest [Diskover 2.3 zip archive](#software_download). Once you have the zip file, you can `SCP` it to the machine that is designated for Diskover-Web.
 
 🔴 &nbsp;**On-prem** | Will scp the file to the root user's home directory:
 ```

@@ -14,7 +14,7 @@ Diskover creates indexes within an Elasticsearch endpoint. Each index is basical
 - To name a few, the index retention policy should reflect the requirements to:
 	- Search across various points in time within Diskover-Web.
 	- Perform [heatmap differential comparison](https://docs.diskoverdata.com/diskover_user_guide/#heatmap).
-	- Perform index differential comparisons via the [Index Diff post-index plugin](plugin_index_diff)
+	- Perform index differential comparisons via the [Index Diff post-index plugin](#plugin_post_index_index_diff)
 
 #### Access the Indices Page
 

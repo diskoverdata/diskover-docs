@@ -21,14 +21,14 @@ Additionally, if you are using the DiskoverAdmin panel, you can select **Search*
 | **Authentication OAuth** | Web → OAUTH | |
 | **AutoClean** | Plugins → Post Index → AutoClean | |
 | **AutoTag** at index time | Diskover → Configurations → Default | |
-| **AutoTag Plugin** post index | Plugins → Post Index → AutoTag | |
+| **AutoTag Plugin** post-index | Plugins → Post Index → AutoTag | |
 | **Azure** alt scanner | Diskover → Alternate Scanners → Azure | |
 | **Azure AD Authentication** | Web → OAUTH | |
 | **BAM Info Plugin** | Plugins → Post Index → BAM | |
 | **Breadcrumb Plugin** | Plugins → Post Index → Breadcrumb | |
 | **Checksums** at index time | Plugins → Index → Checksums | |
-| **Checksums** post index | Plugins → Post Index → Checksums | |
-| **Chesksums S3** post index | Plugins → Post Index → Checksums S3 | 
+| **Checksums** post-index | Plugins → Post Index → Checksums | |
+| **Chesksums S3** post-index | Plugins → Post Index → Checksums S3 | 
 | **CineViewer Player Plugin** | | [CineViewer Player File Action Plugin by CineSys](#plugin_file_action_cineviewer) |
 | **Collapsible Top Path** | Web → Top Path Display | |
 | **Cost** at time of index | Diskover → Configurations → Default | |

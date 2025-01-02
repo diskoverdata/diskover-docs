@@ -1,6 +1,6 @@
 website_name: Diskover OVA Setup Guide
 # Folder on the website, if you specify "folder" it will deploy this guide to https://docs.diskoverdata.com/folder
-website_folder: diskover_installation_guide_ova
+website_folder: diskover_ova_setup_guide
 # All documents need to be in shared folder
 ordered_documents:
   - index_diskover_guides_header.md

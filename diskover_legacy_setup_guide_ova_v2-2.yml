@@ -1,4 +1,4 @@
-website_name: Diskover OVA Setup Guide
+website_name: Diskover OVA Setup Guide v2.2.x
 # Folder on the website, if you specify "folder" it will deploy this guide to https://docs.diskoverdata.com/folder
 website_folder: diskover_legacy_ova_setup_guide
 # All documents need to be in shared folder

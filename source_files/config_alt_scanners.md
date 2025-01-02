@@ -4,15 +4,15 @@
 
 ### Overview
 
-Out of the box, Diskover efficiently scans generic filesystems. However, in today’s complex IT architectures, files are often stored across a variety of repositories. To address this, Diskover provides a robust foundation for building alternate scanners, enabling comprehensive indexing of any file storage location.
+Out of the box, Diskover efficiently scans generic filesystems. However, in today’s complex IT architectures, files are often stored across a variety of repositories. To address this, Diskover provides a robust foundation for building alternate scanners, enabling comprehensive scanning of any file storage location.
 
-In addition, Diskover offers a wide range of metadata harvest plugins, enriching indexed data with valuable business context attributes and supporting workflows that enable targeted data organization, retrieval, analysis, and enhanced workflow. These plugins can run at [indexing](#config_plugins_index) or [post-indexing](#config_plugins_post_index) intervals, balancing comprehensive metadata capture with high-speed indexing.
+In addition, Diskover offers a wide range of metadata harvest plugins, enriching indexed data with valuable business context attributes and supporting workflows that enable targeted data organization, retrieval, analysis, and enhanced workflow. These plugins can run at [indexing](#config_plugins_index) or [post-indexing](#config_plugins_post_index) intervals, balancing comprehensive metadata capture with high-speed scanning.
 
-| Plugins Configurable via DiskoverAdmin | Plugins Manually Configurable |
+⚠️ &nbsp;**IMPORTANT!** After configuring an alternate scanner, you must create and schedule a task in the [**Task Panel**](#task_panel) to ensure it runs properly.
+
+| Configurable via DiskoverAdmin | Manually Configurable |
 | --- | --- |
-| <ul><li>Alternate indexers configurable in the **DiskoverAdmin** panel.</li><li>Help information is available directly within the user interface.</li><li>This section provides additional guidance when applicable.</li></ul><br><img src="images/diskoveradmin_menu_diskover_alt_indexers.png" width="200"> | <ul><li>Note that a few alternate indexers are still configurable via a terminal.</li><li>[🛟 Open a support ticket](https://support.diskoverdata.com/) if you currently use one of these plugins and need to upgrade to v2.3+.</li></ul> |
-
-🟨 &nbsp;**IMPORTANT!** Once the plugin is configured, a task needs to be created and scheduled in the [**Task Panel**](#task_panel).
+| <ul><li>Alternate scanners configurable in the **DiskoverAdmin** panel.</li><li>Help information is available directly within the user interface.</li><li>This section provides additional guidance when applicable.</li></ul><br><img src="images/diskoveradmin_menu_diskover_alt_indexers.png" width="200"> | <ul><li>A few alternate scanners are still configurable via a terminal.</li><li>[🛟 Open a support ticket](https://support.diskoverdata.com/) if you currently use one of these plugins and need to upgrade to v2.3+.</li></ul> |
 
 ### Quick Access List
 

@@ -28,17 +28,20 @@ Diskover currently offers the following options for authentication - all help te
 | AUTHENTICATION OPTION | WHERE TO CONFIGURE | 
 | --- | --- |
 | Native Diskover-Web Authentication | DiskoverAdmin → Configuration → Web → General |
-| LDAP Authentication | DiskoverAdmin → Configuration → Web → LDAP |
-| OAuth2 Authentication (Okta or Azure) | DiskoverAdmin → Configuration → Web → OAUTH |
+| LDAP Authentication <br> <img src="images/button_edition_essential.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="90"> | DiskoverAdmin → Configuration → Web → LDAP |
+| OAuth2 Authentication (Okta or Azure)<br> <img src="images/button_edition_professional.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="90"> | DiskoverAdmin → Configuration → Web → OAUTH |
 
 
 
 
 <p id="config_roles_and_access"></p>
 
-#### Access Control
+#### Restrict Access Control
+<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
-Diskover offers optional settings allowing you to control access and visibility by mapping groups and users to specific indices. All help text can be found directly in the user interface and this is where to go to configure this feature **DiskoverAdmin → Configuration → Web → Index Access**.
+**DiskoverAdmin → Configuration → Web → Index Access**
+
+Diskover offers optional settings allowing you to control access and visibility by mapping groups and users to specific indices. All help text can be found directly in the user interface.
 
 
 
@@ -46,6 +49,8 @@ Diskover offers optional settings allowing you to control access and visibility 
 
 #### Top Paths
 <img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
+
+**DiskoverAdmin → Configuration → Web → Top Path Display**
 
 By default, users will see a list of all volumes scanned by Diskover in the left pane of the user interface. You can, however, create Top Paths to organize your volumes (by location, project, etc.). In this example, note that the first collapsible option will always be **All Top Paths** and will list all your repositories.
 
@@ -57,7 +62,9 @@ By default, users will see a list of all volumes scanned by Diskover in the left
 
 <p id="config_path_translation"></p>
 
-#### Path Translation
+#### Path Translations
+
+**DiskoverAdmin → Configuration → Web → Path Translations**
 
 ##### Path Translation | Example 1
 
@@ -114,6 +121,8 @@ Besides the help text in DiskoverAdmin, you can find [more information here rega
 
 ___
 ### Diskover Alternate Scanners
+
+<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
 All [alternate scanners](#config_alt_scanners) will eventually be  in the DiskoverAdmin panel. Please go to the [Alternate Scanners Configuration](#config_alt_scanners) section for the complete list of current alternate scanners. Meanwhile, all alternate scanners configurable in DiskoverAdmin can be found here:
 

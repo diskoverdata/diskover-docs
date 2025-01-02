@@ -8,13 +8,13 @@ Diskover has a [distributed task system](#architecture_diagram) where scanners/w
 
 ___
 
-<img src="images/ddiagram_scanners_daemon_task_panel.png" width="">
+<img src="images/diagram_scanners_daemon_task_panel.png" width="">
 
 _[Click here for the full screen view of this diagram.](images/diagram_scanners_daemon_task_panel.png)_
 
 - This section will walk you through installing node workers for your Diskover v2.3+ environment.
 
-- During this process, you will need the latest [Diskover 2.3x zip archive](https://download.diskoverdata.com/). Note that this is subject to change to RPMs in the near future.
+- During this process, you will need the latest [Diskover 2.3x software](#software_download).
 
 - Once all components are installed, you will be able to [configure your scanning environment](#config_scanners). We strongly recommend following the deployment order outlined in this guide.
 
@@ -65,7 +65,7 @@ python3 -m pip install --upgrade pip
 
 #### Diskover Scanner Installation
 
-🔴 &nbsp;Extract your [zip archive](https://download.diskoverdata.com/):
+🔴 &nbsp;Extract your [zip archive](#software_download):
 ```
 unzip diskover-2.3.0.zip
 ```

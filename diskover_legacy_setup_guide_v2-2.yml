@@ -14,7 +14,7 @@ ordered_documents:
   - requirements_intro.md
   - requirements_elasticsearch.md 
   - requirements_diskover_web.md
-  - requirements_diskover_indexers.md
+  - requirements_diskover_scanners.md
   - requirements_skills.md
   - software_download.md
   - install_elasticsearch_intro.md

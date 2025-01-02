@@ -8,7 +8,7 @@ Out of the box, Diskover efficiently scans generic filesystems. However, in toda
 
 In addition, Diskover offers a wide range of metadata harvest plugins, enriching indexed data with valuable business context attributes and supporting workflows that enable targeted data organization, retrieval, analysis, and enhanced workflow. These plugins can run at [indexing](#config_plugins_index) or [post-indexing](#config_plugins_post_index) intervals, balancing comprehensive metadata capture with high-speed scanning.
 
-⚠️ &nbsp;**IMPORTANT!** After configuring an alternate scanner, you must create and schedule a task in the [**Task Panel**](#task_panel) to ensure it runs properly.
+⚠️ &nbsp;**IMPORTANT!** After configuring an alternate scanner, you must create and schedule a task in the [Task Panel](#task_panel) to ensure it runs properly.
 
 | Configurable via DiskoverAdmin | Manually Configurable |
 | --- | --- |

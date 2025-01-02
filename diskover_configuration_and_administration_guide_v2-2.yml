@@ -1,6 +1,6 @@
 website_name: Diskover Config and Admin Guide v2.2.x
 # Folder on the website, if you specify "folder" it will deploy this guide to https://docs.diskoverdata.com/folder
-website_folder: diskover_configuration_and_administration_guide
+website_folder: diskover_legacy_config_and_admin_guide
 # All documents need to be in shared folder
 ordered_documents:
   - index_diskover_guides_header.md

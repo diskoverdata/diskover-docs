@@ -7,9 +7,13 @@
 
 _Intended for Service Professionals and System Administrators._
 
-[Diskover Setup and Configuration Guide](https://docs.diskoverdata.com/diskover_setup_and_config_guide/)
+[Diskover Setup and Configuration Guide v2.3.x](https://docs.diskoverdata.com/diskover_setup_and_config_guide/)
 
-[Diskover Installation Guide for OVA](https://docs.diskoverdata.com/diskover_installation_guide_ova/)
+[Diskover Setup Guide for OVA v2.3.x](https://docs.diskoverdata.com/diskover_ova_setup_guide/)
+
+[Legacy | Diskover Setup Guide v2.2.x](https://docs.diskoverdata.com/diskover_legacy_setup_guide/)
+
+[Legacy | Diskover Config and Admin Guide v2.2.x](https://docs.diskoverdata.com/diskover_legacy_config_and_admin_guide/)
 
 [Diskover AWS Customer Deployment Guide](https://docs.diskoverdata.com/diskover_aws_deployment_guide/) | Installation of Diskover on an existing AWS infrastructure
 

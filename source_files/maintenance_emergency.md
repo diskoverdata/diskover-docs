@@ -42,7 +42,7 @@ To identify and solve common Elasticsearch issues, refer to:
 
 Here are some helpful Elasticsearch commands to get started.
 
-🟨 &nbsp;Your Elasticsearch server is accessible at [http://elasticsearch:9200](http://elasticsearch:9200/)
+⚠️ &nbsp;Your Elasticsearch server is accessible at [http://elasticsearch:9200](http://elasticsearch:9200/)
 
 🔴 &nbsp;Check your cluster health:
 ```

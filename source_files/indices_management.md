@@ -35,7 +35,7 @@ From the search page in Diskover-Web, select ⛭ → **Indices**:
 
 ![Image: Unselect All Indices](images/indices_unselect.png)
 
-🟨 &nbsp;To manage an index that is actively loaded, the desired index can be unloaded by selecting any other index and clicking **Save selection**.
+⚠️ &nbsp;To manage an index that is actively loaded, the desired index can be unloaded by selecting any other index and clicking **Save selection**.
 
 🔴 &nbsp;Select another index from **Index** column and **Save selection** to load in the Diskover-Web user interface. The message **Index selection saved!** will appear upon the index loading successfully:
 
@@ -57,7 +57,7 @@ The following confirmation of successful index deletion will be displayed:
 
 ![Image: Reload Indices](images/indices_reload_after_deletion.png)
 
-🟨 &nbsp;Attempting to delete an index that is actively loaded in the Diskover-Web will result in the error message below. The index must first be unloaded as described in this section.
+⚠️ &nbsp;Attempting to delete an index that is actively loaded in the Diskover-Web will result in the error message below. The index must first be unloaded as described in this section.
 
 ![Image: Indices Removal Error Message](images/image_indices_delete_index_error_msg.png)
 
@@ -69,7 +69,7 @@ The following confirmation of successful index deletion will be displayed:
 
 Indices can be managed by policy and manually with Elasticsearch using curl from the command line. Indices can also be managed using [Kibana index management](https://www.elastic.co/kibana) which is not covered in this guide.
 
-🟨 &nbsp;Note that it may be easier and less prone to shell issues to put the JSON text (text after `-d` in the single quotes) into a file first and then use that file for `-d` using:
+⚠️ &nbsp;Note that it may be easier and less prone to shell issues to put the JSON text (text after `-d` in the single quotes) into a file first and then use that file for `-d` using:
 ```
 curl -X PUT -H "Content-Type: application/json" -d @FILENAME DESTINATION
 ```
@@ -126,7 +126,7 @@ curl -X PUT "http://elasticsearch:9200/diskover-*/_settings?pretty" \
 
 #### Index State Management in Amazon OpenSearch Service
 
-🟨 &nbsp;Helpful links:
+⚠️ &nbsp;Helpful links:
 - [Index State Management in Amazon OpenSearch Service](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/ism.html)
 - [OpenDistro ism api doc](https://opendistro.github.io/for-elasticsearch-docs/docs/im/ism/api/)
 - [OpenSearch ism api doc](https://opensearch.org/docs/latest/im-plugin/ism/index/)

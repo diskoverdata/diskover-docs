@@ -18,11 +18,11 @@ This section breaks down the manual process for upgrading from a 2.2.x Diskover 
 🚧 &nbsp;We highly recommend [you open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with your upgrade endeavor.
 
 
-🟨 &nbsp;Now that we have [DiskoverAdmin](#config_diskoveradmin) for configuration management, the only `config_sample` folders that are needed are for `Diskoverd`.
+⚠️ &nbsp;Now that we have [DiskoverAdmin](#config_diskoveradmin) for configuration management, the only `config_sample` folders that are needed are for `Diskoverd`.
 
 #### Upgrade Python 3
 
-Before conducting this upgrade, you must ensure that both the Diskover-Web host and all of our Task Worker/Indexer hosts have Python 3.8+ installed, preferably Python3.12. This can be done by changing the system-level Python build or [generating a global PyEnv](#pyenv) that the system can use for Diskover.
+Before conducting this upgrade, you must ensure that both the Diskover-Web host and all of our Task Worker/Scanner hosts have Python 3.8+ installed, preferably Python3.12. This can be done by changing the system-level Python build or [generating a global PyEnv](#pyenv) that the system can use for Diskover.
 
   - [PyEnv GitHub repository](https://github.com/pyenv/pyenv)
   - [Diskover PyEnv configuration](#pyenv)
@@ -31,12 +31,12 @@ Before conducting this upgrade, you must ensure that both the Diskover-Web host 
 
 There are no required changes for ElasticSearch in Diskover 2.3. Ideally, your environment is running Elasticsearch 8 already. If you are not running v8, an upgrade to Elasticsearch 8 needs to be carried out. 
 
-🟨 &nbsp;Note that conducting this upgrade of Elasticsearch might mean that the previous indexes from Elasticsearch 7 no longer work in Diskover-Web, and all storage has to be scanned again. This needs to be planned ahead as it will translate into downtime for your indexed storage during the reindexing process into Elasticsearch 8.
+⚠️ &nbsp;Note that conducting this upgrade of Elasticsearch might mean that the previous indexes from Elasticsearch 7 no longer work in Diskover-Web, and all storage has to be scanned again. This needs to be planned ahead as it will translate into downtime for your indexed storage during the reindexing process into Elasticsearch 8.
 
   - [General Elasticsearch upgrade documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)
   - [Upgrade from Elasticsearch v7 to v8](https://www.elastic.co/guide/en/elastic-stack/8.14/upgrading-elastic-stack.html#prepare-to-upgrade)
 
-🟨 &nbsp;Note that with the upgrade of Elasticsearch, Diskover-Web, and the Diskover indexers/workers, your v2.2 license keys will no longer work. Once you reach this point, send us a [license request](#hd_id).
+⚠️ &nbsp;Note that with the upgrade of Elasticsearch, Diskover-Web, and the Diskover scanners/workers, your v2.2 license keys will no longer work. Once you reach this point, send us a [license request](#hd_id).
 
 #### Upgrade Diskover-Web
 
@@ -87,7 +87,7 @@ chown nginx.nginx /var/www/diskover-web/diskoverdb.sqlite3
 ```
 #### DiskoverAdmin Installation
 
-🟨 &nbsp;The DiskoverAdmin administration panel is a new service to the 2.3 branch of Diskover. This service **should ALWAYS be installed on the Diskover-Web host(s)**.
+⚠️ &nbsp;The DiskoverAdmin administration panel is a new service to the 2.3 branch of Diskover. This service **should ALWAYS be installed on the Diskover-Web host(s)**.
 
 ##### DiskoverAdmin
 
@@ -188,19 +188,19 @@ systemctl start diskover-admin
 systemctl status diskover-admin
 ```
 
-🟨 &nbsp;A happy status looks like this:
+⚠️ &nbsp;A happy status looks like this:
 ```
     Started Uvicorn instance to serve /diskover-admin.
     INFO:     Uvicorn running on unix socket /var/www/diskover-admin/run/diskover-admin.sock (Press CTRL+C to quit)
     INFO:     Started parent process [2390]
 ```
 
-🟨 &nbsp;If you have any issues with the DiskoverAdmin configuration, please ensure to review your log files:
+⚠️ &nbsp;If you have any issues with the DiskoverAdmin configuration, please ensure to review your log files:
 ```
 tail -fn 100 /var/log/diskover/diskover-admin.log
 ```
 
-#### Upgrade Diskover Task Workers/Indexers
+#### Upgrade Diskover Scanners/Task Workers
 
 🔴 &nbsp;Stop the necessary services and take some [backups](#backup):
 ```
@@ -224,7 +224,7 @@ cp -a diskover /opt/
 chown -R root.root /opt/diskover/
 ```
 
-🔴 &nbsp;At this point for the workers/indexers configuration, we need to copy some of your specific configurations from the `/opt/diskover-old/` folder and ensure other new Worker configurations exist. Check for custom artifacts:
+🔴 &nbsp;At this point, for the scanners/workers configuration, we need to copy some of your specific configurations from the `/opt/diskover-old/` folder and ensure other new Worker configurations exist. Check for custom artifacts:
 ```
 cd /opt/diskover-old/
 find * ./scripts/ ./scanners/ ./plugins/ ./plugins_postindex/ ./ type f -name '*.py' -or -name '*.sh*' -or -name '*.bat*' | sed 's|^\./||' | sort | uniq
@@ -262,7 +262,7 @@ cd /opt/diskover/
 python3 -m pip install -r requirements.txt
 ```
 
-🟨 &nbsp;Note that with the upgrade of Elasticsearch, Diskover-Web, and the Diskover indexers/workers, your v2.2 license keys will no longer work. Once you reach this point, send us a [license request](#hd_id).
+⚠️ &nbsp;Note that with the upgrade of Elasticsearch, Diskover-Web, and the Diskover scanners/workers, your v2.2 license keys will no longer work. Once you reach this point, send us a [license request](#hd_id).
 
 #### Install RabbitMQ or Amazon MQ
 
@@ -272,7 +272,7 @@ RabbitMQ or Amazon MQ serves as the messaging bus/queue system that communicates
 
 Once all components are installed, you will be able to [configure your messaging environment](#config_message_queue). We strongly recommend following the upgrade process order outlined in this guide.
 
-🟨 &nbsp;Additional guidelines for RabbitMQ management:
+⚠️ &nbsp;Additional guidelines for RabbitMQ management:
 
   - [RabbitMQ RPM Installation Guide](https://www.rabbitmq.com/docs/install-rpm#cloudsmith)
   - [RabbitMQ Default Configuration Guide](https://www.rabbitmq.com/docs/configure)
@@ -316,7 +316,7 @@ systemctl restart rabbitmq-server
 systemctl status rabbitmq-server
 ```
 
-🟨 &nbsp;This completes the RabbitMQ configuration for Diskover. You should now be able to access the RabbitMQ Management Portal:
+⚠️ &nbsp;This completes the RabbitMQ configuration for Diskover. You should now be able to access the RabbitMQ Management Portal:
 ```
 http://$rabbitMQHost:15672/#/
 ```
@@ -333,9 +333,9 @@ http://$rabbitMQHost:15672/#/
 
 ##### Overview
 
-This Celery component will need to be installed on each of your indexer/worker nodes.
+This Celery component will need to be installed on each of your scanner/worker nodes.
 
-🟨 &nbsp;[Additional Celery documentation](https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html)
+⚠️ &nbsp;[Additional Celery documentation](https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html)
 
 
 ##### Celery for Linux
@@ -382,7 +382,7 @@ cd /opt/diskover/
 celery -A diskover_celery.worker worker
 ```
 
-🟨 &nbsp;When you see something like this, you know your Celery service has come online:
+⚠️ &nbsp;When you see something like this, you know your Celery service has come online:
 ```
 2024-10-04 15:22:55,192 - celery.worker.consumer.connection                  -       INFO -                      - Connected to amqp://diskover:**@rabbitmq-IP:5672//
 2024-10-04 15:22:56,450 - celery.apps.worker                                 -       INFO -                      - celery@worker-node-hostname ready.
@@ -400,7 +400,7 @@ systemctl start celery
 cd /var/log/celery/
 ```
 
-🟨 The API server must be installed before starting the Celery service.
+⚠️ The API server must be installed before starting the Celery service.
 
 ##### Celery for Windows
 

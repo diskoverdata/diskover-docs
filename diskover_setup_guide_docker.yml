@@ -1,6 +1,6 @@
-website_name: Diskover Installation Guide for Docker
+website_name: Diskover Setup Guide for Docker
 # Folder on the website, if you specify "folder" it will deploy this guide to https://docs.diskoverdata.com/folder
-website_folder: diskover_installation_guide_docker
+website_folder: diskover_setup_guide_docker
 # All documents need to be in shared folder
 ordered_documents:
   - index_diskover_guides_header.md

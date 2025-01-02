@@ -63,7 +63,7 @@ rm -rf /var/www/diskover-web
 
 #### Uninstall Task Daemon for Linux
 
-🔴 &nbsp;To uninstall the Task Daemon on Diskover indexer(s) perform the following:
+🔴 &nbsp;To uninstall the Task Daemon on Diskover scanners perform the following:
 ```
 systemctl stop diskoverd.service
 ```
@@ -80,9 +80,9 @@ rm /etc/systemd/system/diskoverd.service
 
 🚧 We're hard at work preparing these instructions. Thanks for your patience!
 
-### Uninstall Diskover Indexers
+### Uninstall Diskover Scanners/Task Workers
 
-#### Uninstall Indexers for Linux
+#### Uninstall Scanners for Linux
 
 🔴 &nbsp;To uninstall the Diskover indexer components simply remove the install location:
 ```
@@ -94,11 +94,11 @@ rm -rf /opt/diskover
 rm -rf /root/.config/diskover*
 ```
 
-#### Uninstall Indexers for Windows
+#### Uninstall Scanners for Windows
 
 🚧 &nbsp;We're hard at work preparing these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with uninstalling all the Diskover components.
 
-#### Uninstall Indexers for Mac
+#### Uninstall Scanners for Mac
 
 🚧 &nbsp;We're hard at work preparing these instructions. Meanwhile, [click here to open a support ticket](https://support.diskoverdata.com/), and we'll gladly assist you with uninstalling all the Diskover components.
 

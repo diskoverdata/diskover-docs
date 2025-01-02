@@ -8,7 +8,7 @@ Diskover sets the standard in the data management market with its extensive rang
 
 This extra metadata is an invaluable asset for locating, organizing, and analyzing specific data, as well as for designing workflows tailored to precise data management tasks. To ensure optimal performance and scanning speed, some of these plugins can be executed at time of index or as a post-index task. **This chapter covers plugins that run at time of index.**
 
-🟨 &nbsp;**IMPORTANT!** Once the plugin is configured, a task needs to be created and scheduled in the [**Task Panel**](#task_panel).
+⚠️ &nbsp;**IMPORTANT!** Once the plugin is configured, a task needs to be created and scheduled in the [**Task Panel**](#task_panel).
 
 | Plugins Configurable via DiskoverAdmin | Plugins Manually Configurable |
 | --- | --- |

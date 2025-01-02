@@ -17,7 +17,7 @@ The chapters in this guide are in the logical order to follow for installing and
 | 9 | [Create Alternate Configurations](#create_alt_config) |
 | 10 | [Create Tasks/Launch your first scan!](#task_panel) |
 | 11 | [Configure Authentication](#config_authentication) - _optional_ |
-| 12 | [Configure Roles & Access Control](#config_roles_and_access) - _optional_ |
+| 12 | [Configure Access Control](#config_roles_and_access) - _optional_ |
 | 13 | [Configure Backup Environment - _optional but strongly suggested_](#environment-backup) |
 | 14 | [Configure Alternate Scanners](#config_alt_scanners) - _optional_ |
 | 15 | [Configure Index Plugins](#config_plugins_index) - _optional_ |

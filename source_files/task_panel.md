@@ -18,9 +18,9 @@ Diskover has a [distributed task system](#architecture_diagram) where scanners/w
 
 ___
 
-<img src="images/diagram_scanner_daemon_task_panel.png" width="">
+<img src="images/diagram_scanners_daemon_task_panel.png" width="">
 
-_[Click here for the full screen view of this diagram.](images/diagram_scanner_daemon_task_panel.png)_
+_[Click here for the full screen view of this diagram.](images/diagram_scanners_daemon_task_panel.png)_
 
 ___
 

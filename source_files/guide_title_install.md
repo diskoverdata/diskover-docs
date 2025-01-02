@@ -1,4 +1,3 @@
 <br>
-<h1>Diskover Installation Guide</h1>
+<h1>Diskover Setup Guide | Legacy v2.2.x </h1>
 
-**For version 2.2.x**

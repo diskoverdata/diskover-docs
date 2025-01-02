@@ -34,7 +34,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Enable/Config | Via the DiskoverAdmin panel |
-| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Visit our website](https://diskoverdata.com/platform/orchestrate/) | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Designed to move, copy, delete, rename, or run custom commands on files and directories based on a set of highly configurable criteria. With the use of tags, the AutoClean plugin can be used to implement a RACI model or approval process for archive and deletion (approved_archive, approved_delete, etc.) tag application. The plugin criteria can then be set to meet the desired set of tags (times, etc.) to invoke action. |
 | Need Pro Services? | Diskover offers professional services to assist with setting up data flows and workflows - [contact us](mailto:sales@diskoverdata.com) for details |
 
@@ -48,7 +48,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
 | Enable/Config | Via the DiskoverAdmin panel |
-| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Visit our website](https://diskoverdata.com/platform/enrich/#tags) | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Allows for automated tags to be applied/added to the Elasticsearch index as a post-index process. Tags can be applied automatically via a series of rules applied to directories or files. The criteria can be very powerful based on a combination of base and business-context metadata. |
 
 

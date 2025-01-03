@@ -1,4 +1,4 @@
 <br>
 <h1>Diskover Setup and Administration Guide</h1>
 
-**For version 2.3 +**
+**For annual subscriptions v2.3 +**

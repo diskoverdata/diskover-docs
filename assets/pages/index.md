@@ -7,13 +7,15 @@
 
 _Intended for Service Professionals and System Administrators._
 
-[Diskover Setup and Configuration Guide v2.3.x](https://docs.diskoverdata.com/diskover_setup_and_config_guide/)
+[Diskover Setup and Configuration Guide v2.3.x](https://docs.diskoverdata.com/diskover_setup_and_config_guide/) | Annual Subscriptions
 
-[Diskover Setup Guide for OVA v2.3.x](https://docs.diskoverdata.com/diskover_ova_setup_guide/)
+[Diskover Setup Guide for OVA v2.3.x](https://docs.diskoverdata.com/diskover_ova_setup_guide/) | Annual Subscriptions
 
-[Legacy | Diskover Setup Guide v2.2.x](https://docs.diskoverdata.com/diskover_legacy_setup_guide/)
+[Diskover Installation Guide for Community Edition v2.3.x](https://github.com/diskoverdata/diskover-community/blob/master/INSTALL.md)
 
-[Legacy | Diskover Config and Admin Guide v2.2.x](https://docs.diskoverdata.com/diskover_legacy_config_and_admin_guide/)
+[Diskover Setup Guide v2.2.x](https://docs.diskoverdata.com/diskover_legacy_setup_guide/) | Legacy
+
+[Diskover Configuration and Administration Guide v2.2.x](https://docs.diskoverdata.com/diskover_legacy_config_and_admin_guide/) | Legacy
 
 [Diskover AWS Customer Deployment Guide](https://docs.diskoverdata.com/diskover_aws_deployment_guide/) | Installation of Diskover on an existing AWS infrastructure
 
@@ -52,15 +54,15 @@ _Intended for the daily operation of Diskover._
 ## Contact Diskover
 
 
-|Methods|Coordinates|
-|---|---|
-|Phone |800-560-5853 |
-|Sales |[sales@diskoverdata.com](mailto:sales@diskoverdata.com)  |
-|Support |[Support via Zendesk for annual subscriptions](https://support.diskoverdata.com/))  |
-|General Inquiries|[info@diskoverdata.com](mailto:info@diskoverdata.com)  |
-|Website |[https://diskoverdata.com](https://diskoverdata.com/)  |
-|Slack |[Join the Diskover Slack Workspace](https://join.slack.com/t/diskoverworkspace/shared_invite/enQtNzQ0NjE1Njk5MjIyLWI4NWQ0MjFhYzQyMTRhMzk4NTQ3YjBlYjJiMDk1YWUzMTZmZjI1MTdhYTA3NzAzNTU0MDc5NDA2ZDI4OWRiMjM) |
-|GitHub |[Visit us on GitHub](https://github.com/diskoverdata/)  |
+| Options | Coordinates |
+| --- | --- |
+| General Inquiries| [info@diskoverdata.com](mailto:info@diskoverdata.com) |
+| Website | [https://diskoverdata.com](https://diskoverdata.com/) |
+| Sales | [sales@diskoverdata.com](mailto:sales@diskoverdata.com) |
+| Support | [Support via Zendesk for annual subscriptions](https://support.diskoverdata.com/)) |
+| Slack | [Join the Diskover Slack Workspace](https://join.slack.com/t/diskoverworkspace/shared_invite/zt-2up4tjux2-eZYt1OFgCeA3kSFQfsU93A) |
+| GitHub | [Visit us on GitHub](https://github.com/diskoverdata/) |
+| Phone | 800-560-5853 |
 
 ___
 © Diskover Data Inc.

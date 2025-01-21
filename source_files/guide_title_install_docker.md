@@ -1,2 +1,2 @@
 <br>
-<h1>Diskover Installation Guide for Docker</h1>
+<h1>Diskover Docker Setup Guide</h1>

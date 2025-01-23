@@ -7,7 +7,7 @@
 Deploying Diskover uses 3 major components:
 
 | COMPONENT | ROLE |
-| --- | --- |
+| :---: | --- |
 | **1️⃣<br>Elasticsearch** | Elasticsearch is the backbone of Diskover. It indexes and organizes the metadata collected during the scanning process, allowing for fast and efficient querying of large datasets. Elasticsearch is a distributed, RESTful search engine capable of handling vast amounts of data, making it crucial for retrieving information from scanned file systems and directories. |
 | **2️⃣<br>Diskover-Web** | Diskover-Web is the user interface that allows users to interact with the Diskover system. Through this web-based platform, users can search, filter, and visualize the data indexed by Elasticsearch. It provides a streamlined and intuitive experience for managing, analyzing, and curating data. Diskover-Web is where users can explore results, run tasks, and monitor processes. |
 | **3️⃣<br>Diskover Scanners** | The scanners, sometimes called crawlers, are the components responsible for scanning file systems and collecting metadata. These scanners feed that metadata into Elasticsearch for storage and later retrieval. Diskover supports various types of scanners, which are optimized for different file systems, ensuring efficient and comprehensive data collection.<br><br>Out of the box, Diskover efficiently scans generic filesystems. However, in today’s complex IT architectures, files are often stored across a variety of repositories. To address this, Diskover offers various [alternate scanners](#config_alt_scanners) as well as provides a robust foundation for [building alternate scanners](https://docs.diskoverdata.com/diskover_dev_guide/#develop-your-own-alternate-scanner), enabling comprehensive scanning of any file storage location. |

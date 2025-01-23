@@ -11,11 +11,11 @@
 
 [Diskover Setup Guide for OVA v2.3.x](https://docs.diskoverdata.com/diskover_ova_setup_guide/) | Annual Subscriptions
 
-[Diskover Installation Guide for Community Edition v2.3.x](https://github.com/diskoverdata/diskover-community/blob/master/INSTALL.md) | Free for an Unlimited Time
+[Diskover Installation Guide for Community Edition v2.3.x](https://github.com/diskoverdata/diskover-community/blob/master/INSTALL.md) | Free and for an Unlimited Time
 
-[Diskover Setup Guide v2.2.x](https://docs.diskoverdata.com/diskover_legacy_setup_guide/) | Legacy Documentation
+[Diskover Setup Guide v2.2.x](https://docs.diskoverdata.com/diskover_legacy_setup_guide/) | Annual Subscriptions - Legacy Documentation
 
-[Diskover Configuration and Administration Guide v2.2.x](https://docs.diskoverdata.com/diskover_legacy_config_and_admin_guide/) | Legacy Documentation
+[Diskover Configuration and Administration Guide v2.2.x](https://docs.diskoverdata.com/diskover_legacy_config_and_admin_guide/) | Annual Subscriptions - Legacy Documentation
 
 [Diskover AWS Customer Deployment Guide](https://docs.diskoverdata.com/diskover_aws_deployment_guide/) | Installation of Diskover on an existing AWS infrastructure
 

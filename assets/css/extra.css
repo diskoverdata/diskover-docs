@@ -19,24 +19,28 @@ h2 {
 }
 
 h3 {
-  font-size: 2em !important;
+  font-size: 2.2em !important;
   font-weight: bold !important;
+  line-height: 1.5em;
+  padding-bottom: 10px;
+  color: #29F
+  position: relative;
 }
 
 h4 {
-  font-size: 1.6em !important;
+  font-size: 1.8em !important;
   font-weight: bold !important;
 }
 
 h5 {
-  font-size: 1.3em !important;
+  font-size: 1.5em !important;
   font-weight: bold !important;
   text-transform: none !important;
   color: black !important;
 }
 
 h6 {
-  font-size: 1.1em !important;
+  font-size: 1.3em !important;
   font-weight: bold !important;
   text-transform: none !important;
   color: black !important;

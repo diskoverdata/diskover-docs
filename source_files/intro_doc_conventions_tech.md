@@ -15,7 +15,7 @@ code snippet - use icon on the far right to copy me
 
 ⚠️ &nbsp;All important notes and warnings are preceded by a yellow triangle.
 
-#### Restricted Diskover Editions
+#### Features Categorization by Plan
 
 ##### ‼️ IMPORTANT ‼️ 
 
@@ -29,7 +29,6 @@ code snippet - use icon on the far right to copy me
 Throughout this guide, you'll find labels indicating the plan(s) to which each feature belongs.
 
 **Core Features →** &nbsp;&nbsp;<img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="125”>
-
-
+<br><br>
 **Industry Add-Ons →** &nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_eda.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_energy.png" width="125">
 

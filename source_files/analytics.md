@@ -2,6 +2,8 @@
 
 ## Analytics
 
+<img src="images/button_edition_essential.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95">
+
 ### Overview
 
 Diskover provides powerful reporting capabilities. Reports can be generated to align with business context and can be constructed from any Elasticsearch query. Therefore, any combination of attributes from the [metadata catalog](#metadata_catalog) (names, tags, project status, etc.) can be used to construct business-facing reports.
@@ -28,7 +30,6 @@ The reports explained in this chapter can be found in the **Analytics** drop-dow
 <img src="images/analytics_menu_setup.png" width="300">
 
 ### Smart Searches
-<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
 #### Overview
 
@@ -75,7 +76,6 @@ Here is a simple example of queries mostly using **customer names** + specific *
 
 
 ### Reports
-<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
 #### Overview
 
@@ -116,7 +116,6 @@ Reports provide a mechanism to create repeatable analytics by searching for your
 <p id="analytics_costs"></p>
 
 ### Cost Analysis
-<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
 #### Overview
 

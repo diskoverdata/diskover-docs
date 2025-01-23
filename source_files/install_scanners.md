@@ -156,6 +156,76 @@ sudo update-ca-trust ; mkdir /opt/diskover/elasticsearch-certs/ ; cp http_ca.crt
     - For the SSL certificate path, you need to put the full path of where the certificate is held on the Web, including the name of the cert: `/opt/diskover/elasticsearch-certs/http_ca.cr`
     - Hitting **Test** on this page will result in a failure as the call for this test is coming from the [Web server](#install_diskover_web), so long as you can start your Worker up, you’re good to go!
 
+### Mounting NFS Filesystems
+
+In the example below, we will be mounting a volume called **vol1** from the server **nas01** into the directory called **/nfs/vol1**
+
+🔴 &nbsp;Ensure the NFS client tools are installed:
+```
+dnf install -y rpcbind nfs-utils nfs4-acls-tools
+```
+
+🔴 &nbsp;Start the required NFS client services:
+```
+systemctl start rpcbind nfs-idmap
+systemctl enable rpcbind nfs-idmap
+```
+
+🔴 &nbsp;Create the directory where we will mount the filesystem:
+```
+mkdir -p /nfs/vol1
+```
+
+🔴 &nbsp;Add an entry in the `/etc/fstab` configuration file to ensure the volume gets mounted on reboot:
+```
+nas01:/vol1 /nfs/vol1 nfs defaults 0 0
+```
+
+🔴 &nbsp;Mount the filesystem and display its capacity:
+```
+mount /nfs/vol1
+df -h /nfs/vol1
+```
+
+⚠️ &nbsp;For detailed information about configuring NFS clients, consult the [RedHat NFS client documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/nfs-clientconfig).
+
+### Mounting CIFS Filesystems
+
+In the example below, we will be mounting a volume called **vol1** from the server **nas01** into the directory called **/cifs/vol1**
+
+🔴 &nbsp;Ensure the CIFS packages are installed:
+```
+dnf install -y samba-client samba-common cifs-utils
+```
+
+🔴 &nbsp;Create the directory where we will mount the filesystem:
+```
+mkdir -p /cifs/vol1
+```
+
+🔴 &nbsp;Add an entry in the `/etc/fstab` configuration file to ensure the volume gets mounted on reboot. In the example below, change the `username`, `password`, and `domain` to match your environment.
+```
+systemctl start rpcbind nfs-idmap
+systemctl enable rpcbind nfs-idmap
+```
+
+```
+mount /nfs/vol1
+df -h /nfs/vol1
+```
+
+```
+\\nas01\vol1 /cifs/vol1 cifs username=winuser,password=winpassword, ˓→domain=windomain,vers=2.0 0 0
+```
+
+🔴 &nbsp;Mount the filesystem and display its capacity:
+```
+mount /cifs/vol1
+df -h /cifs/vol1
+```
+
+⚠️ &nbsp;For additional information about configuring CIFS clients, visit [CentOS tips for mounting Windows shares](https://wiki.centos.org/TipsAndTricks(2f)WindowsShares.html#:~:text=Mounting%20Windows%20(or%20other%20samba,are%20used%20in%20our%20examples.&text=Word%20of%20warning:%20the%20default%20behaviour%20for%20mount.).
+
 
 ### Windows Scanners/Workers
 

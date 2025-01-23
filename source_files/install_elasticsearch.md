@@ -353,7 +353,7 @@ systemctl start elasticsearch
 
 ### Single Cluster Setup
 
-<img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
+<img src="images/button_edition_essential.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_eda.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_energy.png" width="105">
 
 #### Overview
 
@@ -463,7 +463,7 @@ sudo systemctl start elasticsearch
 
 ### Multiple Clusters Setup
 
-<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
+<img src="images/button_edition_essential.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_eda.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_energy.png" width="105">
 
 In a multiple-cluster setup for Elasticsearch, you can run and manage multiple independent clusters, each with its own set of nodes and indices. This setup is typically used when you need to isolate data or workloads across different environments (such as production, testing, and development) or geographically distributed locations. Each cluster operates independently, and you can configure cross-cluster search or replication to share data or search across clusters as needed.
 

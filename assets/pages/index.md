@@ -5,17 +5,17 @@
 
 ## Technical Guides
 
-_Intended for Service Professionals and System Administrators._
+**_Intended for Service Professionals and System Administrators._**
 
 [Diskover Setup and Configuration Guide v2.3.x](https://docs.diskoverdata.com/diskover_setup_and_config_guide/) | Annual Subscriptions
 
 [Diskover Setup Guide for OVA v2.3.x](https://docs.diskoverdata.com/diskover_ova_setup_guide/) | Annual Subscriptions
 
-[Diskover Installation Guide for Community Edition v2.3.x](https://github.com/diskoverdata/diskover-community/blob/master/INSTALL.md)
+[Diskover Installation Guide for Community Edition v2.3.x](https://github.com/diskoverdata/diskover-community/blob/master/INSTALL.md) | Free for an Unlimited Time
 
-[Diskover Setup Guide v2.2.x](https://docs.diskoverdata.com/diskover_legacy_setup_guide/) | Legacy
+[Diskover Setup Guide v2.2.x](https://docs.diskoverdata.com/diskover_legacy_setup_guide/) | Legacy Documentation
 
-[Diskover Configuration and Administration Guide v2.2.x](https://docs.diskoverdata.com/diskover_legacy_config_and_admin_guide/) | Legacy
+[Diskover Configuration and Administration Guide v2.2.x](https://docs.diskoverdata.com/diskover_legacy_config_and_admin_guide/) | Legacy Documentation
 
 [Diskover AWS Customer Deployment Guide](https://docs.diskoverdata.com/diskover_aws_deployment_guide/) | Installation of Diskover on an existing AWS infrastructure
 
@@ -26,7 +26,7 @@ _Intended for Service Professionals and System Administrators._
 
 ## User Guides
 
-_Intended for the daily operation of Diskover._
+**_Intended for the daily operation of Diskover._**
 
 [Diskover Quick Reference Card | Core Features](images/quick_reference_card_diskover_core_features.pdf)
 

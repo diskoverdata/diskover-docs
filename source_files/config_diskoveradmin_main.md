@@ -28,8 +28,8 @@ Diskover currently offers the following options for authentication - all help te
 | AUTHENTICATION OPTION | WHERE TO CONFIGURE | 
 | --- | --- |
 | Native Diskover-Web Authentication | DiskoverAdmin → Configuration → Web → General |
-| LDAP Authentication <br> <img src="images/button_edition_essential.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="90"> | DiskoverAdmin → Configuration → Web → LDAP |
-| OAuth2 Authentication (Okta or Azure)<br> <img src="images/button_edition_professional.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="90"> | DiskoverAdmin → Configuration → Web → OAUTH |
+| LDAP Authentication | DiskoverAdmin → Configuration → Web → LDAP |
+| OAuth2 Authentication (Okta or Azure) | DiskoverAdmin → Configuration → Web → OAUTH |
 
 
 
@@ -37,7 +37,6 @@ Diskover currently offers the following options for authentication - all help te
 <p id="config_roles_and_access"></p>
 
 #### Restrict Access Control
-<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
 **DiskoverAdmin → Configuration → Web → Index Access**
 
@@ -48,7 +47,6 @@ Diskover offers optional settings allowing you to control access and visibility 
 <p id="config_top_paths"></p>
 
 #### Top Paths
-<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
 **DiskoverAdmin → Configuration → Web → Top Path Display**
 
@@ -107,12 +105,11 @@ ___
 <p id="autotag"></p>
 
 #### AutoTags
-<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
+<img src="images/button_edition_professional.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_eda.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_energy.png" width="105">
 
 Given the importance of tagging in data management, we dedicated an [entire chapter to **tags**](#tags).
 
 #### Costs
-<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
 Besides the help text in DiskoverAdmin, you can find [more information here regarding **cost** configuration](#analytics_costs) as well as some use cases.
 
@@ -121,8 +118,6 @@ Besides the help text in DiskoverAdmin, you can find [more information here rega
 
 ___
 ### Diskover Alternate Scanners
-
-<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 
 All [alternate scanners](#config_alt_scanners) will eventually be  in the DiskoverAdmin panel. Please go to the [Alternate Scanners Configuration](#config_alt_scanners) section for the complete list of current alternate scanners. Meanwhile, all alternate scanners configurable in DiskoverAdmin can be found here:
 

@@ -16,7 +16,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | EDITION |  PLUGIN |
 | --- | --- |
-| **Core Editions** | <ul><li>[Export](#plugin_file_action_export)</li><li>[Fix Permissions](#plugin_file_action_fix_permissions)</li><li>[Hash Differential](#plugin_file_action_hash_diff)</li><li>[Live View](#plugin_file_action_live_view)</li><li>[Make Links](#plugin_file_action_make_links)</li><li>[Ngenea Data Orchestrator](#plugin_file_action_ngenea)</li><li>[PDF Viewer](#plugin_file_action_pdf_viewer)</li><li>[Rclone](#plugin_file_action_rclone)</li><li>[Spectra](#plugin_file_action_spectra)</li><li>[Vcinity High-Speed Data Transfer](#plugin_file_action_vcinity)</li></ul> |
+| **Core Editions** | <ul><li>[Export](#plugin_file_action_export)</li><li>[Fix Permissions](#plugin_file_action_fix_permissions)</li><li>[Hash Differential](#plugin_file_action_hash_diff)</li><li>[Live View](#plugin_file_action_live_view)</li><li>[Make Links](#plugin_file_action_make_links)</li><li>[Ngenea Data Orchestrator](#plugin_file_action_ngenea)</li><li>[PDF Viewer](#plugin_file_action_pdf_viewer)</li><li>[Rclone Data Mover](#plugin_file_action_rclone)</li><li>[Spectra](#plugin_file_action_spectra)</li><li>[Vcinity High-Speed Data Transfer](#plugin_file_action_vcinity)</li></ul> |
 | **Media** | <ul><li>[CineViewer Player](#plugin_file_action_cineviewer)</li><li>[EDL Check](#plugin_file_action_edl_check)</li><li>[EDL Download](#plugin_file_action_edl_download)</li><li>[Find File Sequences](#plugin_file_action_find_file_sequences)</li><li>[GLIM File Action](#plugin_file_action_glim)</li><li>[IMF Change Report](#plugin_file_action_imf_change_report)</li><li>[IMF Validator](#plugin_file_action_imf_validator)</li><li>[Vantage](#plugin_file_action_vantage) </li></ul> |
 | **Life Science** | <ul><li>[Grant](#plugin_file_action_grant)</li></ul> |
 
@@ -29,7 +29,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_media.png" width="100"> |
+| Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
 | Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#cineviewer) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#cineviewer-player) |
@@ -45,7 +45,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_media.png" width="100"> |
+| Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact AJA Video Systems](mailto:sales@aja.com) |
 | Purpose | Allows authorized users without read/write access to production storage to verify the validity of EDL (Edit Decision List) files. |
@@ -58,7 +58,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_media.png" width="100"> |
+| Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact AJA Video Systems](mailto:sales@aja.com) |
 | Purpose | Allows authorized users without read/write access to production storage to upload or download specific lists of pre-defined file types and sizes, eliminating the need for data management group involvement. |
@@ -70,7 +70,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Allows authorized users to preview and create a formatted CSV file, enabling integration with other applications that monitor and trigger workflows based on the file's arrival. |
@@ -83,7 +83,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_media.png" width="100"> |
+| Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
 | Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#file-sequences) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#find-file-sequences) |
@@ -99,7 +99,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Enables authorized users to change the Unix permissions of selected files or folders to a configured value. |
@@ -112,7 +112,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_media.png" width="100"> |
+| Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
 | Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#glim) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#glim-previewvalidate-media-files) |
@@ -127,7 +127,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_life_science.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
 | Learn More | [Visit our website](https://diskoverdata.com/products/life-science-edition/#grant-plugin) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | <p>The Grant Plugin has a dual purpose 1) assisting research institutes in managing their grants/members/storage costs internally, and 2) fulfilling the requirements for the new NIH DMS Policy.</p><p>The Grant Plugin collects and parses grants’ metadata (grant number, group ID, etc.) to curated datasets. In turn, staff associated with a specific grant has visibility/searchability of their limited data/grant without access to the source files or other grants. That extra metadata is also available to use for further workflow automation if needed.</p>![Image: Diskover BAM Plugin Overview](images/diagram_diskover_plugin_grant.png)<br>_[Click here for a full-screen view of this image.](images/diagram_diskover_plugin_grant.png)_ |
@@ -142,7 +142,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_essential.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/828166808) |
@@ -156,7 +156,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_media.png" width="100"> |
+| Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact AJA Video Systems](mailto:sales@aja.com) |
 | Purpose | Generates a list of IMF image changes in both human-readable format and machine-readable EDL, referencing the updated media. |
@@ -168,7 +168,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_media.png" width="100"> |
+| Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
 | Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#imf-package-validator) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#imf-package-validator) |
@@ -184,7 +184,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_essential.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Provides authorized users with a live view of a filesystem between scanning intervals in real-time, without giving access to the source files. |
@@ -196,7 +196,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Allows authorized users to create symlinks and hard links for selected files and directories. |
@@ -209,7 +209,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
 | Learn More | Download this [Solution Brief](https://diskoverdata.com/wp-content/uploads/2024/08/diskover_pixitmedia_ngenea_solution_brief.pdf) \| [contact Diskover](mailto:sales@diskoverdata.com) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/833500176?share=copy) |
@@ -223,7 +223,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Enables authorized users to view and validate PDF files without accessing the source files. |
@@ -236,7 +236,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Provides authorized users the framework for data movement based on pre-configured source and destination profiles. |
@@ -248,7 +248,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | On-demand menu option that queries the Spectra API to verify additional status, such as whether the desired tape is in the library or on the shelf. |
@@ -262,7 +262,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_media.png" width="100"> |
+| Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#vantage) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#vantage-submit-transcoding-jobs-directly-from-diskover) |
@@ -277,7 +277,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
 | Learn More | Download this [Solution Brief](https://diskoverdata.com/wp-content/uploads/2024/05/Diskover_Data_SB.pdf) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Demo | [🍿 Watch Demo Video](https://youtu.be/l1XZoe-ZtEI) |

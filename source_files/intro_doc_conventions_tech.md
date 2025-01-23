@@ -17,7 +17,16 @@ code snippet - use icon on the far right to copy me
 
 #### Restricted Diskover Editions
 
-The appropriate label(s) will be displayed for features and/or sections of the guide that apply to specific [Diskover editions](https://www.diskoverdata.com/solutions/).
+##### ‼️ IMPORTANT ‼️ 
+
+  - Diskover repackaged its offerings as of January 2025.
+  - Please refer to [Diskover's solutions page](https://diskoverdata.com/solutions/) for more details.
+  - You can also consult our [detailed list of core features](https://diskoverdata.com/platform/features/).
+  - [Contact us](https://diskoverdata.com/contact/) to discuss your use cases, size your environment, and determine which plan is best suited for your needs.
+
+##### Feature Labels by Plan
+
+Throughout this guide, you'll find labels indicating the plan(s) to which each feature belongs.
 
 <img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
 

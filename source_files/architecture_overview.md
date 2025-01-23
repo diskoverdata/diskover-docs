@@ -8,39 +8,38 @@ Deploying Diskover uses 3 major components:
 
 | COMPONENT | ROLE |
 | --- | --- |
-| **Elasticsearch** | Elasticsearch is the backbone of Diskover. It indexes and organizes the metadata collected during the scanning process, allowing for fast and efficient querying of large datasets. Elasticsearch is a distributed, RESTful search engine capable of handling vast amounts of data, making it crucial for retrieving information from scanned file systems and directories. |
-| **Diskover-Web** | Diskover-Web is the user interface that allows users to interact with the Diskover system. Through this web-based platform, users can search, filter, and visualize the data indexed by Elasticsearch. It provides a streamlined and intuitive experience for managing, analyzing, and curating data. Diskover-Web is where users can explore results, run tasks, and monitor processes. |
-| **Diskover Scanners** | The scanners, sometimes called crawlers, are the components responsible for scanning file systems and collecting metadata. These scanners feed that metadata into Elasticsearch for storage and later retrieval. Diskover supports various types of scanners, which are optimized for different file systems, ensuring efficient and comprehensive data collection.<br><br>Out of the box, Diskover efficiently scans generic filesystems. However, in today’s complex IT architectures, files are often stored across a variety of repositories. To address this, Diskover offers various [alternate scanners](#config_alt_scanners) as well as provides a robust foundation for [building alternate scanners](https://docs.diskoverdata.com/diskover_dev_guide/#develop-your-own-alternate-scanner), enabling comprehensive scanning of any file storage location. |
-| **Diskover Ingesters** | Diskover’s ingesters are the ultimate bridge between your unstructured data and high-performance, next-generation data platforms. By leveraging the open-standard Parquet format, Diskover converts and streams your data efficiently and consistently. Whether you’re firehosing into Dell data lakehouse, Snowflake, Databricks, or other modern data infrastructures, our ingesters ensure your data flows effortlessly—optimized for speed, scalability, and insight-ready delivery. |
+| **1️⃣ Elasticsearch** | Elasticsearch is the backbone of Diskover. It indexes and organizes the metadata collected during the scanning process, allowing for fast and efficient querying of large datasets. Elasticsearch is a distributed, RESTful search engine capable of handling vast amounts of data, making it crucial for retrieving information from scanned file systems and directories. |
+| **2️⃣ Diskover-Web** | Diskover-Web is the user interface that allows users to interact with the Diskover system. Through this web-based platform, users can search, filter, and visualize the data indexed by Elasticsearch. It provides a streamlined and intuitive experience for managing, analyzing, and curating data. Diskover-Web is where users can explore results, run tasks, and monitor processes. |
+| **3️⃣ Diskover Scanners** | The scanners, sometimes called crawlers, are the components responsible for scanning file systems and collecting metadata. These scanners feed that metadata into Elasticsearch for storage and later retrieval. Diskover supports various types of scanners, which are optimized for different file systems, ensuring efficient and comprehensive data collection.<br><br>Out of the box, Diskover efficiently scans generic filesystems. However, in today’s complex IT architectures, files are often stored across a variety of repositories. To address this, Diskover offers various [alternate scanners](#config_alt_scanners) as well as provides a robust foundation for [building alternate scanners](https://docs.diskoverdata.com/diskover_dev_guide/#develop-your-own-alternate-scanner), enabling comprehensive scanning of any file storage location. |
+| **🔀 Diskover Ingesters** | Diskover’s ingesters are the ultimate bridge between your unstructured data and high-performance, next-generation data platforms. By leveraging the open-standard Parquet format, Diskover converts and streams your data efficiently and consistently. Whether you’re firehosing into Dell data lakehouse, Snowflake, Databricks, or other modern data infrastructures, our ingesters ensure your data flows effortlessly—optimized for speed, scalability, and insight-ready delivery. |
 
 <br>
 
 ### Diskover Platform Overview
 
-
 ![Image: Diskover Architecture Overview](images/diskover_platform_overview.png)
 
 _[Click here for a full screen view of the Diskover Platform Overview.](images/diskover_platform_overview.png)_
 
+<br>
 
 ### Diskover Scale-Out Architecture Overview Diagram
-
 
 ![Image: Diskover Architecture Overview](images/diskover_architecture_overview.png)
 
 _[Click here for a full screen view of the Diskover Architecture Overview diagram.](images/diskover_architecture_overview.png)_
 
+<br>
 
 ### Diskover Config Architecture Overview
 
 It is highly recommended to separate the Elasticsearch node/cluster, web server, and indexing host(s).
 
-
 ![Image: Diskover Reference Diagram Architecture](images/diskover_config_template.png)
 
 _[Click here for the full screen view of this diagram.](images/diskover_config_template.png)_
 
-
+<br>
 <p id=“metadata_catalog”></p>
 
 ### Metadata Catalog

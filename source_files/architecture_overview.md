@@ -13,25 +13,21 @@ Deploying Diskover uses 3 major components:
 | **3️⃣<br>Diskover Scanners** | The scanners, sometimes called crawlers, are the components responsible for scanning file systems and collecting metadata. These scanners feed that metadata into Elasticsearch for storage and later retrieval. Diskover supports various types of scanners, which are optimized for different file systems, ensuring efficient and comprehensive data collection.<br><br>Out of the box, Diskover efficiently scans generic filesystems. However, in today’s complex IT architectures, files are often stored across a variety of repositories. To address this, Diskover offers various [alternate scanners](#config_alt_scanners) as well as provides a robust foundation for [building alternate scanners](https://docs.diskoverdata.com/diskover_dev_guide/#develop-your-own-alternate-scanner), enabling comprehensive scanning of any file storage location. |
 | **🔀<br>Diskover Ingesters** | Diskover’s ingesters are the ultimate bridge between your unstructured data and high-performance, next-generation data platforms. By leveraging the open-standard Parquet format, Diskover converts and streams your data efficiently and consistently. Whether you’re firehosing into Dell data lakehouse, Snowflake, Databricks, or other modern data infrastructures, our ingesters ensure your data flows effortlessly—optimized for speed, scalability, and insight-ready delivery. |
 
-<br>
-
-### Diskover Platform Overview
+<h3>Diskover Platform Overview</h3>
 
 ![Image: Diskover Architecture Overview](images/diskover_platform_overview.png)
 
 _[Click here for a full screen view of the Diskover Platform Overview.](images/diskover_platform_overview.png)_
 
-<br>
 
-### Diskover Scale-Out Architecture Overview Diagram
+<h3>Diskover Scale-Out Architecture Overview Diagram</h3>
 
 ![Image: Diskover Architecture Overview](images/diskover_architecture_overview.png)
 
 _[Click here for a full screen view of the Diskover Architecture Overview diagram.](images/diskover_architecture_overview.png)_
 
-<br>
 
-### Diskover Config Architecture Overview
+<h3>Diskover Config Architecture Overview</h3>
 
 It is highly recommended to separate the Elasticsearch node/cluster, web server, and indexing host(s).
 
@@ -39,12 +35,9 @@ It is highly recommended to separate the Elasticsearch node/cluster, web server,
 
 _[Click here for the full screen view of this diagram.](images/diskover_config_template.png)_
 
-<br>
-<p id=“metadata_catalog”></p>
+<h3>Metadata Catalog</h3>
 
-### Metadata Catalog
-
-Diskover is designed to efficiently scan generic filesystems out of the box, but it also supports flexible integration with various repositories through customizable [alternate scanners](#config_alt_scanners). This adaptability allows Diskover to scan diverse storage locations and include enhanced metadata for precise data management and analysis.
+Diskover is designed to scan generic filesystems out of the box efficiently, but it also supports flexible integration with various repositories through customizable [alternate scanners](#config_alt_scanners). This adaptability allows Diskover to scan diverse storage locations and include enhanced metadata for precise data management and analysis.
 
 With a wide range of metadata harvest plugins, Diskover enriches indexed data with valuable business context attributes, supporting workflows that enable targeted data organization, retrieval, analysis, and enhanced workflow. These plugins can run at [indexing](#config_plugins_index) or [post-indexing](#config_plugins_post_index) intervals, balancing comprehensive metadata capture with high-speed scanning.
 

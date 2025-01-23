@@ -32,7 +32,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Visit our website](https://diskoverdata.com/platform/orchestrate/) | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Designed to move, copy, delete, rename, or run custom commands on files and directories based on a set of highly configurable criteria. With the use of tags, the AutoClean plugin can be used to implement a RACI model or approval process for archive and deletion (approved_archive, approved_delete, etc.) tag application. The plugin criteria can then be set to meet the desired set of tags (times, etc.) to invoke action. |
@@ -46,7 +46,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Visit our website](https://diskoverdata.com/platform/enrich/#tags) | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Allows for automated tags to be applied/added to the Elasticsearch index as a post-index process. Tags can be applied automatically via a series of rules applied to directories or files. The criteria can be very powerful based on a combination of base and business-context metadata. |
@@ -58,7 +58,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Designed to extract/add metadata from files’ breadcrumbs to the Elasticsearch index as a post-index process. |
@@ -71,7 +71,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_essential.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Allows for hash values to be added for files and directories to the Elasticsearch index as a post-index process and can be used for multiple checksums/data integrity tasks. |
@@ -83,7 +83,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_essential.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Adds md5 and sha1 hash values for files and directories to the Elasticsearch index as a post-index process, using AWS Lambda/Fixity when using the Diskover S3 alternate indexer. |
@@ -96,7 +96,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_essential.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | Refer to our [Analytics](#analytics_costs) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Adds costs per GB for files and directories to the Elasticsearch index as a post-index process. Note that this feature can also be configured to apply at time of index under **DiskoverAdmin → Configuration → Diskover → Configurations** |
@@ -108,7 +108,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_essential.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Designed to add hash values, check and report on duplicate files/directories across single or multiple indices as a post-index process. The plugin supports **xxhash**, **md5**, **sha1**, and **sha256** checksums. The plugin is designed for multiple use cases:<ul><li>To check for duplicate files across a single or all file systems (single or multiple indices) and indexing the file docs in the index that are dupes.</li><li>Calculating file checksums/hashes for all duplicate files or all files and indexing hashes to file docs in the index.</li></ul>Calculating file **hash checksums** is an expensive CPU/disk operation. The dupes finder provides configuration options to control what files in the index get a hash calculated and marked as **is_dupe**. In addition, the dupes finder provides additional optimization mechanisms:<ul><li>The diskover-cache sqlite3 db can be used to store file hashes (-u cli option).</li><li>An existing index can be used to lookup file hashes (-U cli option).</li><li>The Elasticsearch fields for file type that get updated are `hash` and `is_dupe`. `hash` is an object field type, and each hash type is stored in a sub-field: `hash.xxhash`, `hash.md5`, `hash.sha1`, `hash.sha256`. `is_dupe` is a boolean field and only gets added and set to `true` if the file is a duplicate file.</li></ul><p>The dupes-finder can also be used to add file hashes to all the files in the index, not just the duplicates found.</p>![Image: Duplicate Plugin Results](images/plugin_dupes_finder_diskover_ui_results_pane.png)_[Click here for a full-screen view of this image.](images/plugin_dupes_finder_diskover_ui_results_pane.png)_ <br><br> <p>The duplicates plugin will store hash values that can be stored only for duplicates or for all files.</p>![Image: Hash Values](images/image_plugins_dupes_finder_hash_values_in_file_attributes.png)_[Click here for a full-screen view of this image.](images/image_plugins_dupes_finder_hash_values_in_file_attributes.png)_ |
@@ -122,7 +122,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_essential.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Migrates Elasticsearch field data from one index to another as a post-index process. |
@@ -135,7 +135,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_essential.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | The index Elasticsearch (ES) query report plugin is designed to search for Elasticsearch query strings in an existing completed index and create a CSV report with the ability to send the report to one or more email recipients. |
@@ -147,7 +147,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_media.png" width="100"> |
+| Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
 | Learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#flowprodtracking) \| [contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#flow-production-tracking-plugin) |
@@ -161,7 +161,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/851931510) |
@@ -174,7 +174,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_essential.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | The index differential plugin is designed to provide a list of file differences between two indices or points in time. The differential list can be used to feed synchronization tools (i.e. rsync) or identify deltas where two repositories should be identical. The plugin outputs a CSV file containing the differences between the two indices. It can also be used to compare checksums/hashes of files between two indices. |
@@ -187,7 +187,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Migrates tags from one index to the next as a post-index process. Note that there is also an [index Tag Copier plugin](#plugin_index_tag_copier).|
@@ -199,7 +199,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="100">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="100"> |
+| Availability | <img src="images/button_edition_essential.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | <p>The Windows Attributes plugin adds the Windows file owner, primary group and ACE's of each file and directory to the Diskover index after scanning is complete. It replaces all docs showing owner 0 and group 0 with the Windows file/directory owner name and primary group. It updates `owner`, `group` and `windacls` fields metadata of each file or directory to diskover index after indexing with the Windows owner, primary group, and ACL info. The plugin can take a long time to run due to name/sid lookups.</p>Requirements:<ul><li>This plugin works in Windows only.</li><li>[Enable long path support in Windows](https://docs.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=cmd) if long paths are being scanned.</li></ul> |
@@ -212,7 +212,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_media.png" width="100"> |
+| Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
 | Learn mMre | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#xytech-asset-creation) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-asset-creation-plugin-overview) |
@@ -227,7 +227,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_media.png" width="100"> |
+| Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
 | Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#xytech-order-status) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-order-status-plugin-overview) |

@@ -4,7 +4,7 @@
 
 ### Support Options
 
-| Support & Ressources | Free Community Edition | Subscriptions* |
+| Support & Ressources | Free Community Edition | Annual Subscription* |
 | --- | :---: | :---: |
 | **Online Documentation**<ul><li>[Diskover online documentation](https://docs.diskoverdata.com/)</li></ul> | ✅ | ✅ |
 | **Slack Community Support**<ul><li>[#Diskover Slack Channel](https://diskoverworkspace.slack.com/ssb/redirect#/)</li></ul> | ✅ | ✅ |
@@ -14,7 +14,7 @@
 | **Phone Support**<ul><li>(800) 560-5853</li><li>Monday to Friday \| 8am to 6pm PST</li></ul> | | ✅ |
 | **Remote Training**<ul><li>[Contact us for details](mailto:info@diskoverdata.com) | | ✅ |
 
-**\*** <img src="images/button_edition_essential.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="90">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="90">
+**\*** <img src="images/button_edition_essential.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_eda.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_energy.png" width="95">
 
 ### Feedback
 

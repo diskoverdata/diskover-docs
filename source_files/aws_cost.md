@@ -5,7 +5,7 @@
 
 Please refer to the [prerequisites and requirements section](#requirements) for the minimum and recommended nodes and instances.
 
-Please visit AWS website for pricing based on your requirements: [https://aws.amazon.com/opensearch-service/pricing/](https://aws.amazon.com/opensearch-service/pricing/)
+Please visit the AWS website for pricing based on your requirements: [https://aws.amazon.com/opensearch-service/pricing/](https://aws.amazon.com/opensearch-service/pricing/)
 
 ### Diskover Annual Subscriptions
 

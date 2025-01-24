@@ -11,7 +11,7 @@
 
 #### Waiting for files to be indexed
 
-- If you know that some files were onboarded to a directory but are not yet indexed by Diskover, you can have a live view of the directory(ies) via [File Action → Live View](https://docs.diskoverdata.com/diskover_user_guide/#file_action_list_dir) and pro-actively search/copy paths. Note that this feature needs to be configured and part of your current subscription plan.
+- If you know that some files were onboarded to a directory but are not yet indexed by Diskover, you can have a live view of the directory(ies) via [File Action → Live View](https://docs.diskoverdata.com/diskover_user_guide/#file-action-live-view) and pro-actively search/copy paths. Note that this feature needs to be configured and part of your current subscription plan.
 
 #### Scanning/indexing takes a long time
 

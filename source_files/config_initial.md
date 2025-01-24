@@ -26,9 +26,9 @@ The DiskoverAdmin service allows for the fine-tuning of Diskover's core componen
 
 ⚠️ &nbsp;Note that Diskover-Web and the scanners can point to two different Elasticsearch hosts, hence the next steps.
 
-🔴 &nbsp;Input the **IP/AWS endpoint** where your Elasticsearch is running in the **host** field. If you have a clustered ES setup, click **+ Add Item** to list your other IPs.
+🔴 &nbsp;Input the **IP/AWS endpoint/Elastic Cloud endpoint** where your Elasticsearch is running in the **host** field. If you have a clustered ES setup, click **+ Add Item** to list your other IPs/endpoints.
 
-🔴 &nbsp;Keep the port at **9200**.
+🔴 &nbsp;Keep the port at **9200** unless your cluster runs on another port.
 
 🔴 &nbsp;Enable **HTTPS** if your Elasticsearch uses an encrypted protocol. Otherwise, keep it unchecked for **HTTP**.
 
@@ -50,13 +50,22 @@ The DiskoverAdmin service allows for the fine-tuning of Diskover's core componen
 
 #### License
 
-This is the point where you need to send your license request and the wizard partially automates this task for you. Note that if you skip this part for now, you can always send a [license request](#software_activation) manually at any time.
+This is the point where you need to send your license request and the wizard partially automates this task for you. Note that if you skip this part for now, you can send a [license request](#software_activation) at any time.
 
-🔴 &nbsp;The wizard will prompt you through the steps to collect the information for your license request: email, Diskover edition, number of nodes, and your hardware ID which will be automatically generated during this process.
+🔴 &nbsp;Click on the **Request License** button and fill out the required fields:
+
+- **Email Address**: please use your corporate email.
+- **Edition**: the [solution](https://diskoverdata.com/solutions/) you subscribed to or want to try for your POC.
+- **Elasticsearch Nodes**: the number of nodes included in your subscription plan - POCs are for 1 node only.
+- **Comments**: anything that can help us, like your company name.
+
+✏️  &nbsp;Your license is be attached to your [hardware ID](#hd_id), which will be automatically generated and sent to us during this process.
+
+🔴 &nbsp;Click **Send Request**.
 
 <img src="images/wizard_license_request.png" width=""> 
 
-🔴 &nbsp;You should receive your license within 24 hours, usually much less than 24 hours. You have 2 choices at this point:
+🔴 &nbsp;You should receive your license within 24 hours, usually much less than 24 hours or a little more if you send your request during a weekend. You have 2 choices at this point:
 
 - Pause and wait to receive the license to continue.
 - Click **Skip** and come back once you receive the license.

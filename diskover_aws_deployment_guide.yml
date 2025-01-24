@@ -15,8 +15,9 @@ ordered_documents:
   - requirements_aws_env_config.md
   - requirements_elasticsearch.md 
   - requirements_diskover_web.md
-  - requirements_diskover_indexers.md
+  - requirements_diskover_scanners.md
   - requirements_skills.md 
+  - software_download.md
   - aws_env_security.md
   - install_elasticsearch_aws.md
   - install_diskover_web_aws_intro.md

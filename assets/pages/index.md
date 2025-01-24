@@ -29,13 +29,13 @@
 
 [Diskover Quick Reference Card | Core Features](images/quick_reference_card_diskover_core_features.pdf)
 
-[Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/)
+[Diskover User Guide | Core Features](https://docs.diskoverdata.com/diskover_user_guide/)
 
-[Diskover Quick Reference Card | AJA Diskover Media Edition](images/quick_reference_card_diskover_media_edition.pdf)
+[Diskover Quick Reference Card | Media Features](images/quick_reference_card_diskover_media_edition.pdf)
 
-[User Guide Companion for the AJA Diskover Media Edition](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/)
+[Diskover User Guide Companion | Media Features](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/)
 
-[User Guide Companion for the Diskover Life Science](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/)
+[Diskover User Guide Companion | Life Science Features](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/)
 
 [End-User Troubleshooting](https://docs.diskoverdata.com/diskover_troubleshooting_end_user/)
 

@@ -7,7 +7,7 @@
 Diskover is currently tested and deployed with Elasticsearch v8.x. Note that ES7 Python packages are required to connect to an Elasticsearch v8 cluster.
 
 #### Elasticsearch Architecture Overview and Terminology
-___
+
 Please refer to this diagram to better understand the terminology used by Elasticsearch and throughout the Diskover documentation.
 
 ![Image: Diskover Architecture Overview](images/diagram_diskover_elasticsearch_architecture.png)

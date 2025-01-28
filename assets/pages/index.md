@@ -13,15 +13,11 @@
 
 [Diskover Installation Guide for Community Edition v2.3 +](https://github.com/diskoverdata/diskover-community/blob/master/INSTALL.md) | Free to Use for an Unlimited Time
 
-[Diskover SDK and API Guide](https://docs.diskoverdata.com/diskover_dev_guide/)
-
 [Technical Support and Troubleshooting](https://docs.diskoverdata.com/tech_support_and_troubleshooting/)
 
 [Diskover Setup Guide v2.2 or previous](https://docs.diskoverdata.com/diskover_legacy_setup_guide/) | Legacy Documentation for Annual Subscriptions
 
 [Diskover Configuration and Administration Guide v2.2 or previous](https://docs.diskoverdata.com/diskover_legacy_config_and_admin_guide/) | Legacy Documentation for Annual Subscriptions
-
-[Diskover AWS Customer Deployment Guide](https://docs.diskoverdata.com/diskover_aws_deployment_guide/) | Installation of Diskover on an existing AWS infrastructure
 
 ## User Guides
 

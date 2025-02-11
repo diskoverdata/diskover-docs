@@ -3,22 +3,27 @@
 ___
 ### Attributes/Metadata
 
-When clicking on the [info icon](#results_pane) beside a directory or by clicking directly on a file, a new tab will open with the detailed attributes/metadata for the selected item.
+The process is slightly different if you want to refer to the attributes of a directory or a file. In both cases, though, a new tab will open with the detailed metadata.
 
->🔆 &nbsp;Extra metadata may be listed in that view depending on the [Diskover Edition](https://diskoverdata.com/solutions/) you are using and/or which extra fields are configured for your instance.
+<img src="images/diskover_search_page_attributes_open_with_desc.png" width="">
 
-![Image: Directory and File Attributes View](images/image_file_search_page_file_attributes.png)
+| REFERENCE | DESCRIPTION |
+| :---: | --- |
+| A | **Metadata for a Directory**: Click on the info <img src="images/icon_attributes_directory.png" width="25"> icon in line with the directory |
+| B | **Metadata for a file**: Click directly on the file name |
 
-A) To copy the file name only, not the whole path, to your clipboard.
+<img src="images/diskover_attributes_with_desc.png" width="">
 
-B) Copy the current path including the file name to your clipboard.
+| REFERENCE | DESCRIPTION |
+| :---: | --- |
+| A | To copy the file name only to your clipboard |
+| B | To apply a [tag](#tags) to the current file or directory, would also display current tag(s) applied if applicable |
+| C | To launch a [file action](#file_action) for the current file or directory |
+| D | To copy the current path, including the file name, to your clipboard |
+| E | To copy the current path, without the file name, to your clipboard |
+| F | To load the parent path in any of the proposed [analytics](#analytics) |
+| G | To search the parent path [recursively or non-recursively](#recursive) |
+| H | Detailed core metadata harvested during indexing<br>✏️ Each of these fields can be individually searched using [field names for basic metadata](#queries-with-field-names) |
+| I | Displays file or directory cost when the [feature](#cost_analysis) is enabled |
+| J | This section displays any extra metadata indexed using Diskover's metadata harvest plugins<br>✏️ Each of these fields can be individually searched using [field names for extra metadata](#field-names-extra-metadata) |
 
-C) Allows you to directly load this path in any [analytics](#analytics).
-
-D) Allows you to search that path [recursively or non-recursively](#recursive).
-
-E) You can apply a [tag](#tags) to the current file or directory from this window, as well as see the tags that might already be applied.
-
-F) When you want to launch a [file action](#file_action) on this item.
-
->🔆 &nbsp;Each field can be searched by using [field names queries](#search_field_names).

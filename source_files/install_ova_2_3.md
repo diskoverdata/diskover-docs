@@ -28,6 +28,7 @@ This section contains instructions to quickly get up and running with Diskover u
 
 - **CPU=12**
 - **RAM=64GB**
+- **DISK=500GB**
 
 🔴 Once you've adjusted the settings choose **Start**
 
@@ -40,6 +41,7 @@ This section contains instructions to quickly get up and running with Diskover u
 
 - **CPU=12**
 - **RAM=64GB**
+- **DISK=500GB**
 
 🔴 Once you've adjusted the settings choose **Power on this virtual machine**.
 

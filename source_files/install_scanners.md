@@ -356,7 +356,7 @@ Get-Content -Path "C:\Program Files\Diskover\logs\service-start-error.log" -Tail
 Get-Content -Path "C:\Program Files\Diskover\logs\diskoverd_subproc_$HOSTNAME.log" -Tail 25 -Wait
 ```
 
-#### Troubleshooting / Nice to Know
+#### Troubleshooting | Nice to Know
 
 ##### Manual Scan
 

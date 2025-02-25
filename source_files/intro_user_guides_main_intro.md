@@ -2,7 +2,6 @@
 
 ## Introduction
 
-
 ### Overview
 Diskover is a powerful platform that helps individuals and businesses manage and understand their data more efficiently. It organizes large amounts of information in one global view, making it easy to find, analyze, and use. With Diskover, you can automate processes, improve workflows, reduce costs, and vastly improve overall efficiencies.
 

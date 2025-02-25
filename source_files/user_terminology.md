@@ -1,10 +1,9 @@
 <p id="terminology"></p>
 
-___
-## Terminology
-___
 
-Although the terms described in this section may have slightly different interpretations in other contexts, they are defined here within the Diskover end-user environment.
+## Terminology
+
+While the terms in this section may have different meanings in other contexts, they are defined here specifically for the Diskover end-user environment.
 
 <p id="data_curation"></p>
 
@@ -12,28 +11,28 @@ Although the terms described in this section may have slightly different interpr
 
 Data curation is the practice of managing data collected from various sources as a valuable asset to unlock its potential and organization. Managing data effectively requires having a data strategy and reliable methods to access, integrate, cleanse, govern, store, and prepare data for analytics. The value of the data is maintained over time and remains available for reuse and preservation.
 
+
 <p id="storage_volume"></p>
 
-___
 ### Volume
 
-A storage location that you want to index, for example Windows Share/drive, Linux mount/NFS Export, cloud storage/S3 bucket, Dell PowerScale, etc.
+A storage location that you want to index, for example, Windows Share/drive, Linux mount/NFS Export, cloud storage/S3 bucket, Dell PowerScale.
 
-Examples of other names for volume that might be used in your organization: storage volume, storage mount, mount point, top-level path, top-level storage directory, etc.
+Examples of other names for volume that might be used in your organization are storage volume, storage mount, mount point, top-level path, and top-level storage directory.
 
 Read more about [how to select a volume](#select_volume).
 
+
 <p id="index"></p>
 
-___
 ### Index/Indexes/Indices
 
-An index is an inventory of all the files on a volume; it allows the data to be searched quickly via the index instead of the operating system's "find command". Both  **indexes**  and  **indices**  have the same meaning, and are the plural of index, although indices is usually preferred in a technical context.
+An index is an inventory of all the metadata, aka attributes, about a file on a volume; it allows the metadata to be searched quickly via the index instead of the operating system's "find command". Note tha both **indexes** and **indices** have the same meaning and are the plural of index, although indices are usually preferred in a technical context.
 
 - You can have multiple [inventories/indices](#indices) of a storage volume at different times.
 - Indices typically contain directory name, file name, file size, file type, creation date, modify date, owner, etc.
 - Diskover can populate the indices with additional metadata adding business context. For example:
-	- Storage environment attributes, for example [Dell PowerScale](https://diskoverdata.com/products/dataiq-migration/).
+	- Storage environment attributes like [Dell PowerScale](https://diskoverdata.com/products/dataiq-migration/).
   	- [Xytech](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-plugins), [ShotGrid](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#shotgrid-production-status-plugin), etc. (job status, client #, project manager, project dates, etc.)
 	- Adds [media info](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#media-info-attributes) attributes for media files (resolution, codec, framerate, etc.)
  	- Adds metadata for [life science purposes](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/) (genome sequencing file attributes, research grant project attributes, etc.)

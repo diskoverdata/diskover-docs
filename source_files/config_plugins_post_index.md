@@ -18,9 +18,9 @@ This extra metadata is an invaluable asset for locating, organizing, and analyzi
 
 The plugins in this chapter are listed alphabetically. Here is a quick access list by edition:
 
-| EDITION |  PLUGIN |
+| APPLICATION |  PLUGIN |
 | --- | --- |
-| **Core Editions** | <ul><li>[AutoClean](#plugin_post_index_autoclean)</li><li>[AutoTag](#plugin_post_index_autotag)</li><li>[Breadcrumb](#plugin_post_index_breadcrumb)</li><li>[Checksums](#plugin_post_index_checksums)</li><li>[Checksums S3](#plugin_post_index_checksums_s3)</li><li>[Costs](#plugin_post_index_costs)</li><li>[Dupes Finder](#plugin_post_index_dupes)</li><li>[ES Field Copier](#plugin_post_index_es_field_copier)</li><li>[ES Query Report](#plugin_post_index_es_query_report)</li><li>[Illegal Filename](#plugin_post_index_illegal_filename)</li><li>[Index Diff](#plugin_post_index_index_diff)</li><li>[Tag Copier](#plugin_post_index_tag_copier)</li><li>[Windows Attributes](#plugin_post_index_windows_attributes)</li></ul> |
+| **Core** | <ul><li>[AutoClean/Orchestrate](#plugin_post_index_autoclean)</li><li>[AutoTag](#plugin_post_index_autotag)</li><li>[Breadcrumb](#plugin_post_index_breadcrumb)</li><li>[Checksums](#plugin_post_index_checksums)</li><li>[Checksums S3](#plugin_post_index_checksums_s3)</li><li>[Costs](#plugin_post_index_costs)</li><li>[Dupes Finder](#plugin_post_index_dupes)</li><li>[ES Field Copier](#plugin_post_index_es_field_copier)</li><li>[ES Query Report](#plugin_post_index_es_query_report)</li><li>[Illegal Filename](#plugin_post_index_illegal_filename)</li><li>[Index Diff](#plugin_post_index_index_diff)</li><li>[PowerScale](#plugin_post_index_powerscale)</li><li>[Tag Copier](#plugin_post_index_tag_copier)</li><li>[Windows Attributes](#plugin_post_index_windows_attributes)</li></ul> |
 | **Media** | <ul><li>[Flow Production Tracking Index Plugin (formerly ShotGrid)](#plugin_post_index_shotgrid)</li><li>[Xytec Asset Creation Index Plugin](#plugin_post_index_xytech_asset_creation)</li><li>[Xytec Order Status Index Plugin](#plugin_post_index_xytech_order_status)</li></ul> |
 | **Life Science** | |
 
@@ -179,6 +179,17 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | The index differential plugin is designed to provide a list of file differences between two indices or points in time. The differential list can be used to feed synchronization tools (i.e. rsync) or identify deltas where two repositories should be identical. The plugin outputs a CSV file containing the differences between the two indices. It can also be used to compare checksums/hashes of files between two indices. |
 
+
+<p id="plugin_post_index_powerscale"></p>
+
+#### PowerScale
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_essential.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
+| Enable/Config | Via the DiskoverAdmin panel |
+| Learn More | [Visit our website](https://diskoverdata.com/solutions/dell-dataiq-migration/) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Purpose | Adds dozens of Dell PowerScale metadata attributes to the Elasticsearch index as a post-index process. |
 
 
 <p id="plugin_post_index_tag_copier"></p>

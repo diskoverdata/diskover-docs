@@ -262,7 +262,7 @@ C:\Program Files\Diskover\
 Sample Path : C:\Users\Brandon Langley\AppData\Roaming\
 ```
 
-⚠️ Note that this `%APPDATA%` string can be put in the search bar of the Windows file browser to go to the current users' application data directory. However, as mentioned above, the user running the installers and/or the user authenticating as admin to execute the installer will be the installer using the `%APPDATA%` path.
+✏️ Note that this `%APPDATA%` string can be put in the search bar of the Windows file browser to go to the current users' application data directory. However, as mentioned above, the user running the installers and/or the user authenticating as admin to execute the installer will be the installer using the `%APPDATA%` path.
 
 The issue here is if one user runs the installer, but then in the NSSM section, we tell another user to run the service. This means that this `\diskoverd` configuration directory and config file within will be in the wrong user path.
 

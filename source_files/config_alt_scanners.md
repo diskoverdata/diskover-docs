@@ -10,7 +10,7 @@ Out of the box, Diskover efficiently scans generic filesystems. However, in toda
 
 In addition, Diskover offers a wide range of metadata harvest plugins, enriching indexed data with valuable business context attributes and supporting workflows that enable targeted data organization, retrieval, analysis, and enhanced workflow. These plugins can run at [indexing](#config_plugins_index) or [post-indexing](#config_plugins_post_index) intervals, balancing comprehensive metadata capture with high-speed scanning.
 
-⚠️ &nbsp;**IMPORTANT!** After configuring an alternate scanner, you must create and schedule a task in the [Task Panel](#task_panel) to ensure it runs properly.
+⚠️ &nbsp;**IMPORTANT!** After configuring an [alternate scanner](#create_alt_config), you must create and schedule a task in the [Task Panel](#task_panel) to ensure it runs properly.
 
 | Configurable via DiskoverAdmin | Manually Configurable |
 | --- | --- |
@@ -42,7 +42,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Enable/Config | Via the DiskoverAdmin panel |
+| Enable/Config | Via the DiskoverAdmin panel<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this alternate scanner |
 | Learn more | [Visit our website](https://diskoverdata.com/products/indexers/) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | <p>While you can cost-effectively store and access unstructured data at scale with Microsoft Azure blob storage, searching through multiple accounts or blob containers is not possible from the Azure interface. The Storage Explorer portal doesn't allow users to search all folders at once, plus you need to know the exact file name you are looking for as wild cards are not permitted either.</p><p>Diskover offers the Azure blob storage scanner allowing you to scan petabytes of data at blazing speed. In turn, you can easily find any file with a single query, whether that file is located in an Azure blob or any other volumes indexed with Diskover.</p><p>Note that attributes are collected during this process. These extra fields become searchable, reportable for analysis, and actionable, allowing for potential upstream file management, manually or via automated scheduled tasks.</p> |
 
@@ -69,7 +69,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Enable/Config | Via the DiskoverAdmin panel |
+| Enable/Config | Via the DiskoverAdmin panel<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this alternate scanner |
 | Learn more | [Visit our website](https://diskoverdata.com/products/indexers/) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | The DirCache alternate scanner can be used to speed up subsequent crawls when scanning slower network-mounted storage. DirCache uses an SQLite database to store a local cache of directories' mtimes (modified times), directories' file lists, and file stat attributes. On subsequent crawls, when a directory mtime is the same as in the cache, the directory list and all file stat attributes can be retrieved from the cache rather than over the network mount. |
 
@@ -117,7 +117,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Enable/Config | Via the DiskoverAdmin panel |
+| Enable/Config | Via the DiskoverAdmin panel<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this alternate scanner |
 | Learn more | [Visit our website](https://diskoverdata.com/products/indexers/) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | <p>The Offline Media Scanner offers a simple solution to scan all your offline data devices. During the scanning process, Diskover automatically creates a new OFFLINE MEDIA volume listing all scanned offline devices as a directory. The index of your offline media stays persistent once the drive is disconnected and put back on the shelf.</p><p>If your search results point to an offline media, use the reference name or number you attributed to the offline media to locate the device. Then, just reconnect it to retrieve the desired files.</p><p>There are several Diskover features you can use with those static indices like tags, export, share, and investigate using our multiple analytical tools. Then, if you decide to fully rehydrate that data, more cool things are available like actions via plugins and scheduled workflow automation.</p> |
 
@@ -142,7 +142,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Enable/Config | Via the DiskoverAdmin panel |
+| Enable/Config | Via the DiskoverAdmin panel<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this alternate scanner |
 | Learn more | [Visit our website](https://diskoverdata.com/products/indexers/) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | <p>Unlock the full potential of your cloud storage with Diskover's advanced scanning capabilities for S3 buckets and S3-compatible storage with endpoints different than AWS. Seamlessly integrate and manage data across various cloud environments, ensuring comprehensive metadata extraction and efficient data organization. Diskover's robust scanning solution supports diverse storage configurations, providing unparalleled flexibility and control over your data assets.</p><p>Enhance your cloud storage strategy with Diskover Data's powerful indexing tools, designed to optimize your data visibility and streamline your workflows across multiple platforms.</p> |
 
@@ -167,5 +167,5 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | HELP | RESOURCE |
 | --- | --- |
-| Learn more | [Visit our docs](https://docs.diskoverdata.com/diskover_dev_guide/#develop-your-own-alternate-scanner) |
+| Learn more | 🚧 Docs under review |
 | Purpose | <p>Empower your data management with Diskover Data's flexible framework, allowing end users to write their own alternate scanners. Tailor your data extraction process to fit unique requirements by developing custom scanners that integrate seamlessly with Diskover Data. Whether you need to handle specialized file formats or implement proprietary metadata collection methods, this capability puts you in control.</p><p>Leverage Diskover's robust API and comprehensive documentation to create efficient, reliable scanners that enhance your data insights and streamline your workflows. Embrace the power of customization with Diskover's end-user scanner development feature.</p> |

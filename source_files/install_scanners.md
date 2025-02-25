@@ -237,8 +237,6 @@ This installer requires an internet connection to install Python and the NSSM se
 
 ##### Python on Windows
 
-By default, Windows links the python.exe and python3.exe executables to the Microsoft Store. This means that if you try to run a command like python script.py, it might prompt you to install Python from the Store, even if you've already installed it manually. The installer installs Python manually, so you'll need to disable this setting. To do so, search for 'Manage App Execution Aliases' in the Windows search bar, then find 'python3' and 'python,' and set both to 'No' or 'Off.'
-
 By default, Windows links the `python.exe` and `python3.exe` executables to the Microsoft Store. This means that if you try to run a command like `python script.py`it might prompt you to install Python from the Store, even if you've already installed it manually. The installer installs Python manually, so you'll need to disable this setting. To do so, search for Manage App Execution Aliases in the Windows search bar, then find python3 and python, and set both to **No** or **Off**.
 
 #### Build Directories
@@ -336,14 +334,19 @@ whoami
 nssm edit diskover
 ```
 
-Once you run this command, you will go to the **Log On** tab and select **This Account**, then simply put the output of the **whoami** command and insert the login credentials below. Finally click **Edit Service** to save the configurations. This means that the user data input will be the one that executes the Diskover Task Worker service on this Windows Machine. 
+Once you run this command, you will go to the **Log On** tab and select **This Account**, then simply put the output of the **whoami** command and insert the login credentials below. Finally click **Edit Service** to save the configurations. This means that the user data input will be the one that executes the Diskover Task Worker service on this Windows Machine.
 
-##### Service Startup / Logging
+This is a working example of what your service details should look like in NSSM:
+
+<img src="images/nssm_service_editor_example.png" width="">
+
+##### Service Startup | Logging
 
 Now that we have that figured out, let’s start the service and tail the log. 
+
 🔴 Start diskover:
 ```
-nssm
+nssm start diskover
 ```
 
 🔴 Service Startup Logs:

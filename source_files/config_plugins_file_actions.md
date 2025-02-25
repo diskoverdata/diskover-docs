@@ -14,10 +14,10 @@ Authorized users, following role-based access controls, can initiate File Action
 
 The plugins in this chapter are listed alphabetically. Here is a quick access list by category:
 
-| EDITION |  PLUGIN |
+| APPLICATION |  PLUGIN |
 | --- | --- |
-| **Core Editions** | <ul><li>[Export](#plugin_file_action_export)</li><li>[Fix Permissions](#plugin_file_action_fix_permissions)</li><li>[Hash Differential](#plugin_file_action_hash_diff)</li><li>[Live View](#plugin_file_action_live_view)</li><li>[Make Links](#plugin_file_action_make_links)</li><li>[Ngenea Data Orchestrator](#plugin_file_action_ngenea)</li><li>[PDF Viewer](#plugin_file_action_pdf_viewer)</li><li>[Rclone Data Mover](#plugin_file_action_rclone)</li><li>[Spectra](#plugin_file_action_spectra)</li><li>[Vcinity High-Speed Data Transfer](#plugin_file_action_vcinity)</li></ul> |
-| **Media** | <ul><li>[CineViewer Player](#plugin_file_action_cineviewer)</li><li>[EDL Check](#plugin_file_action_edl_check)</li><li>[EDL Download](#plugin_file_action_edl_download)</li><li>[Find File Sequences](#plugin_file_action_find_file_sequences)</li><li>[GLIM File Action](#plugin_file_action_glim)</li><li>[IMF Change Report](#plugin_file_action_imf_change_report)</li><li>[IMF Validator](#plugin_file_action_imf_validator)</li><li>[Vantage](#plugin_file_action_vantage) </li></ul> |
+| **Core** | <ul><li>[Export](#plugin_file_action_export)</li><li>[Fix Permissions](#plugin_file_action_fix_permissions)</li><li>[Hash Differential](#plugin_file_action_hash_diff)</li><li>[Live View](#plugin_file_action_live_view)</li><li>[Make Links](#plugin_file_action_make_links)</li><li>[Ngenea Data Orchestrator](#plugin_file_action_ngenea)</li><li>[PDF Viewer](#plugin_file_action_pdf_viewer)</li><li>[Rclone Data Mover](#plugin_file_action_rclone)</li><li>[Spectra](#plugin_file_action_spectra)</li><li>[Vcinity High-Speed Data Transfer](#plugin_file_action_vcinity)</li></ul> |
+| **Media** | <ul><li>[CineViewer Player](#plugin_file_action_cineviewer)</li><li>[EDL Check](#plugin_file_action_edl_check)</li><li>[EDL Download](#plugin_file_action_edl_download)</li><li>[Find File Sequences](#plugin_file_action_find_file_sequences)</li><li>[GLIM File Action](#plugin_file_action_glim)</li><li>[IMF Change Report](#plugin_file_action_imf_change_report)</li><li>[Vantage](#plugin_file_action_vantage) </li></ul> |
 | **Life Science** | <ul><li>[Grant](#plugin_file_action_grant)</li></ul> |
 
 
@@ -160,21 +160,6 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact AJA Video Systems](mailto:sales@aja.com) |
 | Purpose | Generates a list of IMF image changes in both human-readable format and machine-readable EDL, referencing the updated media. |
-
-
-<p id="plugin_file_action_imf_validator"></p>
-
-#### IMF Package Validator by Oxagile 
-
-| HELP | RESOURCE |
-| --- | --- |
-| Availability | <img src="images/button_edition_media.png" width="95"> |
-| Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
-| Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#imf-package-validator) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
-| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#imf-package-validator) |
-| Demo | [🍿 Watch Demo Video](https://vimeo.com/828166808) |
-| Purpose | <p>The IMF package validator plugin allows organizations to validate IMF packages before delivery from a remote platform, saving immense amounts of man-hours over the course of a business year.</p><p>Oxagile’s IMF Package Validator Plugin, exclusively designed for the AJA Diskover Media Edition, allows users to scan and validate IMF packages before delivery from any location, regardless of the location of the IMF package data.</p><p>IMF stands for Interoperable Master Format, which is a technical standard used in the Media and Entertainment industry for the exchange of digital content between different platforms and systems. The IMF format is used by content creators, distributors, and broadcasters to deliver high-quality video content to a variety of devices, including TVs, mobile devices, and web browsers.</p><p>Netflix, for example, requires all their content to be delivered in IMF format, which undergoes rigorous validation to ensure compliance with industry standards. The validation process involves extensive testing of the content's video, audio, and metadata to ensure that it meets the technical specifications and can be delivered to viewers in the highest quality possible.</p><p>Once the content has been validated, it is then encoded into various formats, including 4K and HDR, and made available for streaming on various platforms. The IMF validation process is a critical step in the content delivery pipeline.</p> |
-
 
 
 

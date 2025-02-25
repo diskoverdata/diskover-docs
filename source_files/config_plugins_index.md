@@ -20,7 +20,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 | EDITION |  PLUGIN |
 | --- | --- |
-| **Core Editions** | <ul><li>[Checksums](#plugin_index_checksums)</li><li>[File Kind](#plugin_index_file_kind)</li><li>[First Index/Arrival Time](#plugin_index_first_index)</li><li>[Grafana](#plugin_index_grafana)</li><li>[Grafana Cloud](#plugin_index_grafana_cloud)</li><li>[Image Info](#plugin_index_image_info)</li><li>[Path Tokens](#plugin_index_path_tokens)</li><li>[PDF Info](#plugin_index_pdf_info)</li><li>[Tag Copier](#plugin_index_tag_copier)</li><li>[Unix Perms](#plugin_index_unix_perms)</li><li>[Windows Owner](#plugin_index_windows_owner)</li></ul> |
+| **Core Plugins** | <ul><li>[Checksums](#plugin_index_checksums)</li><li>[File Kind](#plugin_index_file_kind)</li><li>[First Index/Arrival Time](#plugin_index_first_index)</li><li>[Grafana](#plugin_index_grafana)</li><li>[Grafana Cloud](#plugin_index_grafana_cloud)</li><li>[Image Info](#plugin_index_image_info)</li><li>[Path Tokens](#plugin_index_path_tokens)</li><li>[PDF Info](#plugin_index_pdf_info)</li><li>[Tag Copier](#plugin_index_tag_copier)</li><li>[Unix Perms](#plugin_index_unix_perms)</li><li>[Windows Owner](#plugin_index_windows_owner)</li></ul> |
 | **Media** | <ul><li>[Media Info](#plugin_index_mediainfo)</li></ul> |
 | **Life Science** | <ul><li>[BAM Index Plugin](#plugin_index_bam)</li></ul> |
 
@@ -28,7 +28,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 
 <p id="plugin_index_bam"></p>
 
-#### BAM Info | Index Plugin
+#### BAM Info
 
 | HELP | RESOURCE |
 | --- | --- |

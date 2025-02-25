@@ -10,8 +10,8 @@
 
 Diskover creates indexes within an Elasticsearch endpoint. Each index is basically a snapshot of a point in time of any given volume (filesystem or S3 Bucket). Note that **indexes** and **indices** have the same meaning, and both are used throughout this guide. These indexes require management:
 
-- Indexes can’t be stored infinitely, but ultimately, the Elasticsearch environment will exhaust its available storage space, causing undesired cluster states.
-- To name a few, the index retention policy should reflect the requirements to:
+- Indexes can’t be stored infinitely, and ultimately, the Elasticsearch environment will exhaust its available storage space, causing undesired cluster states.
+- The index retention policy should reflect the requirements to:
 	- Search across various points in time within Diskover-Web.
 	- Perform [heatmap differential comparison](https://docs.diskoverdata.com/diskover_user_guide/#heatmap).
 	- Perform index differential comparisons via the [Index Diff post-index plugin](#plugin_post_index_index_diff)
@@ -24,7 +24,7 @@ From the search page in Diskover-Web, select ⛭ → **Indices**:
 
 #### Load and Unload Indices
 
-🔴 &nbsp;The Diskover-Web interface provides manual index management capabilities. By default, Diskover-Web is configured to always use the latest indices when production user logs in to Diskover.
+🔴 &nbsp;The Diskover-Web interface provides manual index management capabilities. By default, Diskover-Web is configured to **Always use latest indices** when production user logs in to Diskover.
 
 ![Image: Always Use Latest Indices](images/indices_always_use_latest.png)
 
@@ -42,6 +42,13 @@ From the search page in Diskover-Web, select ⛭ → **Indices**:
 ![Image: Save Indices Selection](images/indices_select_single.png)
 
 #### Delete Indices
+
+ElasticSearch indices can accumulate over time, and there is an upper limit to how many shards can be associated with a node. Because of this, it is good to set up the Index Lifecycle Management (ILM) policies to remove unneeded indexes. 
+
+⚠️ **The Maximum number of shards per node is 1,000** For example, if you get the following error, you will need to remove some indices to clear up some space.
+```
+Elasticsearch error creating index RequestError(400, 'validation_exception', 'Validation Failed: 1: this action would add [1] shards, but this cluster currently has [1000]/[1000] maximum normal shards open;') (Exit code: 1)
+```
 
 🔴 &nbsp;To manually delete indices thru the Diskover-Web user interface, follow the steps in the previous section to ensure the index targeted for deletion is not “loaded” within the Diskover-Web user interface.
 
@@ -63,18 +70,16 @@ The following confirmation of successful index deletion will be displayed:
 
 <p id="es_lifecycle_mgmt"></p>
 
-### Elasticsearch Index Management
+### Elasticsearch Index Lifecycle Management via Terminal
 
 #### Overview
 
-Indices can be managed by policy and manually with Elasticsearch using curl from the command line. Indices can also be managed using [Kibana index management](https://www.elastic.co/kibana) which is not covered in this guide.
+Indices can be managed by policy and manually with Elasticsearch using curl from the command line.
 
 ⚠️ &nbsp;Note that it may be easier and less prone to shell issues to put the JSON text (text after `-d` in the single quotes) into a file first and then use that file for `-d` using:
 ```
 curl -X PUT -H "Content-Type: application/json" -d @FILENAME DESTINATION
 ```
-
-#### Elasticsearch Lifecycle Management
 
 You can create and apply **Index Lifecycle Management (ILM) policies** to automatically manage your Diskover indices according to your performance, resiliency, and retention requirements.
 
@@ -124,9 +129,33 @@ curl -X PUT "http://elasticsearch:9200/diskover-*/_settings?pretty" \
     }' 
 ```
 
-#### Index State Management in Amazon OpenSearch Service
+#### Other Index Management via Command Line
 
-⚠️ &nbsp;Helpful links:
+Indexes can be manually listed and deleted in Elasticsearch via:
+
+🔴 &nbsp;List indices, see [Elasticsearch cat index api](https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-indices.html) for more info:
+```
+curl -X GET http://elasticsearch_endpoint:9200/_cat/indices
+```
+
+🔴 &nbsp;Delete indices, see [Elasticsearch delete index api](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-delete-index.html) for more info:
+```
+curl -X DELETE http://elasticsearch_endpoint:9200/diskover-indexname
+```
+
+🔴 &nbsp;Delete indices on AWS OpenSearch:
+```
+curl -u username:password -X DELETE https://endpoint.es.amazonaws.com:443/diskover-indexname
+```
+
+### Elasticsearch Index Lifecycle Management via Kibana
+
+If you are interested in using Kibana for your ILM, please [open a support ticket](https://support.diskoverdata.com/), and we will send you a quick policy setup guide.
+
+
+### Index State Management in Amazon OpenSearch Service
+
+✏️ &nbsp;Helpful links:
 - [Index State Management in Amazon OpenSearch Service](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/ism.html)
 - [OpenDistro ism api doc](https://opendistro.github.io/for-elasticsearch-docs/docs/im/ism/api/)
 - [OpenSearch ism api doc](https://opensearch.org/docs/latest/im-plugin/ism/index/)
@@ -179,22 +208,4 @@ curl -u username:password -X POST "https://<aws es endpoint>:443/_opendistro/_is
      -d '{ "policy_id": "cleanup_policy_diskover" }'
 ```
 
-#### Elasticsearch Manual Index Management
-
-Indexes can be manually listed and deleted in Elasticsearch via:
-
-🔴 &nbsp;List indices, see [Elasticsearch cat index api](https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-indices.html) for more info:
-```
-curl -X GET http://elasticsearch_endpoint:9200/_cat/indices
-```
-
-🔴 &nbsp;Delete indices, see [Elasticsearch delete index api](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-delete-index.html) for more info:
-```
-curl -X DELETE http://elasticsearch_endpoint:9200/diskover-indexname
-```
-
-🔴 &nbsp;Delete indices on AWS OpenSearch:
-```
-curl -u username:password -X DELETE https://endpoint.es.amazonaws.com:443/diskover-indexname
-```
 

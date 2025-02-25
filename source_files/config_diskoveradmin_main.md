@@ -119,7 +119,9 @@ Besides the help text in DiskoverAdmin, you can find [more information here rega
 ___
 ### Diskover Alternate Scanners
 
-All [alternate scanners](#config_alt_scanners) will eventually be  in the DiskoverAdmin panel. Please go to the [Alternate Scanners Configuration](#config_alt_scanners) section for the complete list of current alternate scanners. Meanwhile, all alternate scanners configurable in DiskoverAdmin can be found here:
+Please click this link to follow the instructions to create [alternate configurations](#create_alt_config).
+
+All alternate scanners will eventually be  in the DiskoverAdmin panel, meanwhile, please go to the [Alternate Scanners Configuration](#config_alt_scanners) section for the complete list of alternate scanners.
 
 <img src="images/diskoveradmin_menu_diskover_alt_indexers.png" width="200">
 

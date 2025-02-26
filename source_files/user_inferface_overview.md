@@ -1,58 +1,60 @@
 <p id="user_interface"></p>
 
-___
 ## User Interface Overview
-___
 
 #### [🍿 Watch Quick Tips | User Interface Overview](https://vimeo.com/787050664)
 
+
 <p id="login"></p>
 
-___
 ### Login
 
-A) Open a  **Web browser**  of your choice and type the  **URL address**  that was supplied to you by the System Administrator of your facility.
+<img src="images/login_window.png" width="350">
 
-B) Enter your  **Username**  and  **Password** which were also supplied to you by the System Administrator.
+| STEP | DESCRIPTION |
+| :---: | --- |
+| 1 | Open a  **Web browser**  of your choice and type the  **URL address**  that was given to you to access Diskover. |
+| 2 | Enter your  **Username**  and  **Password**, which were also given to you, probably by your System Administrator. |
+| 3 | Click  **Login**. |
 
-C) Click  **Login**.
+✏️ _Diskover should look and act the same on any web browser. The only thing to keep in mind is if you apply some modifications in your [settings](#settings) using Google Chrome, for example, they will not transfer if you switch to Safari because the [settings](#settings) are tied to your browser's cookies._
 
-<img src="images/image_login_window_logo_diskover.png" width="300">
-
->🔆 &nbsp;Diskover should look and act the same on any web browser. The only thing to keep in mind is if you apply some modifications in your [settings](#settings) using Google Chrome, they will not transfer if you switch to Safari, for example, because the [settings](#settings) are tied to the cookies of a browser. In this example, you would need to apply the same [settings](#settings) in Safari. Learn more about how [cookies](#clear_cookies) and [cache](#clear_cache) affect the Diskover user interface.
 
 <p id="ui_overview"></p>
 
-___
+
 ### User Interface Overview
 
-By default and upon login, you will land on the file search page as shown below, which is the most used page. This section offers an overview of this main user interface. All other icons, drop-down lists, and tools will be further explained in the subsequent chapters.
+By default, upon login, you will land on the file search page shown below or the [dashboard](#dashboard) page, depending on how your System Administrator configured your instance. The search page is the most used tool, and this section offers an overview. The subsequent chapters will further explain all other icons, drop-down lists, and features.
 
->🔆 &nbsp;Hovering almost anything(buttons, charts, volumes, etc.) in the user interface will give you additional information.
+🔆 _Hovering almost anything(buttons, charts, volumes, etc.) in Diskover will give you additional information._
 
-![Image: Quick Tour of the User Interface](images/image_file_user_interface_overview_20240219.png)
+![Image: User Interface Overview](images/user_interface_overview_20250226.png)
 
-A) **Software logo**: No functions.
+⭐️ _Indicates the most used features._
 
-B) **[Dashboard](#dashboard)**: Analytical snapshot of a [volume](#storage_volume).
+| FEATURE | DESCRIPTION|
+| :---: | --- |
+| A | Software logo, has no function |
+| B | <ul><li>[**Dashboard**](#dashboard): gives a snapshot of an entire [volume](#volume)</li><li>[**Analytics**](#analytics): drop-down list offering multiple analytics and reports</li></ul> |
+| C | 📍 Use the **folder icon** to navigate back to this page called the **search page** |
+| D ⭐️ | Integrated search tools:<ul><li>[**Quick search**](#quick_search): to quickly search all volumes using pre-established criteria</li><li>[**Filters**](#filters): to refine your results either when drilling down or searching</li><li>[**Search within results**](#search_within_results): acts like CTRL or CMD F on steroids</li></ul> |
+| E ⭐️ | **Search bar**:<ul><li>You can type or paste [search queries](#manual_queries)</li><li>Use the **x** to clear the search bar</li><li>Click **Enter** or **Return** to launch a search or use the 🔍 next to the **x**</li></ul> |
+| F | Toggle [**Current Dir**](#current_dir) ON to limit your searches to a selected [path](#path) - will remain active until you manually toggle OFF |
+| G | [**Volume**](#volume) selection from either the left pane or the drop-down list at top right |
 
-C) 📍 [**File search page**](#file_search): Use the folder icon to navigate back to this file search page.
+
+
 
 D) [**Analytics**](#analytics): To select one of the several built-in analytics.
 
-E) [**Quick search**](#quick_search): To quickly search all volumes using pre-established criteria/queries.
 
-F) **Search bar**: To type and/or paste [search queries](#search_syntax) or a [path](#search_path).
 
-G) **Clear**: To clear the search bar.
 
-H) **Launch a search**: Same function as using your  **Return**  key to launch a query.
 
-<p id="current_dir"></p>
+I) 
 
-I) **Current Dir**: Toggle on/right to narrow your searches/results to a selected [path](#path), it will remain active until you manually toggle off.
 
-J) [**Filters**](#filters): Built-in filters to refine your results either when drilling down or searching.
 
 K) [**Volumes**](#storage_volume): Drop-down list to select a specific volume - volumes can also be selected via O) the left pane.
 
@@ -113,7 +115,7 @@ T) **Items per page**: To modify the number of items per page to display in W) t
 
 U) **Pages of results**: The number of pages of results is directly related to the number of T) items per page.
 
-V) **Search within results**: Built-in search tool to [search within the results on the current page](#search_within_results), acts like CTRL or CMD F but is more powerful.
+V) 
 
 <p id="results_pane_overview"></p>
 

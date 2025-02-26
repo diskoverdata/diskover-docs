@@ -8,7 +8,7 @@
 
 As an end-user, you can’t break anything. You can't personally edit, move, or delete the files that you see in the user interface because Diskover only contains an index of the metadata of the files, not the files themselves. So don’t be shy to click around.
 
-![Image: You can't break anything](you_cant_break_anything.png)
+<img src="images/you_cant_break_anything.png" width="">
 
 ### Features Overview
 

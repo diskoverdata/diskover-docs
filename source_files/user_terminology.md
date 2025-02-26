@@ -20,7 +20,7 @@ A storage location that you want to index, for example, Windows Share/drive, Lin
 
 Examples of other names for volume that might be used in your organization are storage volume, storage mount, mount point, top-level path, and top-level storage directory.
 
-Read more about [how to select a volume](#select_volume).
+Learn → [how to select a volume](#select_volume).
 
 
 <p id="index"></p>
@@ -33,7 +33,7 @@ An index is an inventory of all the metadata, aka attributes, about a file on a 
 - Indices contain [base metadata](https://docs.diskoverdata.com/diskover_metadata_catalog.yml/#base_metadata) like directory name, file name, file size, file extension, creation date, modify date, owner, etc.
 - Diskover can also populate the indices with [additional metadata](https://docs.diskoverdata.com/diskover_metadata_catalog.yml/#additional_metadata), adding business context.
 
-Read about → [how to use indices](#indices).
+Learn → [how to use indices](#indices).
 
 
 <p id="directory"></p>
@@ -42,7 +42,7 @@ Read about → [how to use indices](#indices).
 
 There are very subtle differences between a directory and a folder, but in the context of this guide, they are interchangeable and have the same meaning: a container to store/organize other directories/folders and files.
 
-Read about → [how to select a directory](#select_directory).
+Learn → [how to select a directory](#select_directory).
 
 
 <p id="path"></p>

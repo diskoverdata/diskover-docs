@@ -16,9 +16,9 @@ Data curation is the practice of managing data collected from various sources as
 
 ### Volume
 
-A storage location that you want to index, for example, Windows Share/drive, Linux mount/NFS Export, cloud storage/S3 bucket, Dell PowerScale.
+A storage repository indexed by Diskover, for example, Windows Share/drive, Linux mount/NFS Export, cloud storage/S3 bucket, Dell PowerScale, a laptop, a USB drive, etc.
 
-Examples of other names for volume that might be used in your organization are storage volume, storage mount, mount point, top-level path, and top-level storage directory.
+Examples of other names for volume that might be used in your organization are storage volume, storage mount, mount point, top-level path, top-level storage directory, etc.
 
 Learn → [how to select a volume](#select_volume).
 

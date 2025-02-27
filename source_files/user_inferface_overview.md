@@ -36,60 +36,24 @@ By default, upon login, you will land on the file search page shown below or the
 | FEATURE | DESCRIPTION|
 | :---: | --- |
 | A | Software logo, has no function |
-| B | <ul><li>[**Dashboard**](#dashboard): gives a snapshot of an entire [volume](#volume)</li><li>[**Analytics**](#analytics): drop-down list offering multiple analytics and reports</li></ul> |
+| B | <ul><li>[**Dashboard**](#dashboard): gives a snapshot of an entire [volume](#volume)</li><li>[**Analytics**](#analytics) drop-down list: choice of multiple analytics and reports</li></ul> |
 | C | 📍 Use the **folder icon** to navigate back to this page called the **search page** |
 | D ⭐️ | Integrated search tools:<ul><li>[**Quick search**](#quick_search): to quickly search all volumes using pre-established criteria</li><li>[**Filters**](#filters): to refine your results either when drilling down or searching</li><li>[**Search within results**](#search_within_results): acts like CTRL or CMD F on steroids</li></ul> |
 | E ⭐️ | **Search bar**:<ul><li>You can type or paste [search queries](#manual_queries)</li><li>Use the **x** to clear the search bar</li><li>Click **Enter** or **Return** to launch a search or use the 🔍 next to the **x**</li></ul> |
 | F | Toggle [**Current Dir**](#current_dir) ON to limit your searches to a selected [path](#path) - will remain active until you manually toggle OFF |
-| G | [**Volume**](#volume) selection from either the left pane or the drop-down list at top right |
+| G | You can select a [**volume**](#volume) from either the left pane or the drop-down list at the top right. Important notes<ul><li>Your instance may have **top paths**, as per this example, where some volumes may be grouped by geo locations, data centers, etc.</li><li>If you hover a volume name, you will see the date and time that volume was last indexed<br><img src="images/image_file_search_hovering_volume.png" width="350"></li><li>If you hover a fill bar, you will see the space used, free, and total for each volume<br><img src="images/image_file_search_hovering_fill_bar.png" width="350"></li></ul> |
+| H | **⚙ drop-down list**:<ul><li>**Settings**: to modify your personal interface [settings](#settings)</li><li>**System Configuration**: you will only see this option if you are a System Administrator</li><li>**Indices**: to select specific [indices](#indices)</li><li>**Task Panel**: you will only see this option if you are a System Administrator</li><li>**Help**: contains direct link to access our complete online documentation [docs.diskoverdata.com](https://docs.diskoverdata.com/)</li><li>**Reload Indices**: to refresh your [indices](#indices) search page charts</li><li>**Logout**: to log out of the Diskover application</li></ul> |
+| I | **Optional navigation buttons**:<ul><li>**Top**: will bring you back to the top/root of the active [volume](#volume)</li><li>**Up**: to drill up one [directory](#directory) at a time</li><li>**Back and forth arrows**: to navigate back and forth between visited pages, you can also use the browser's arrows and the results will be the same</li><li>**Hide Tree**: to hide/unhide the left pane allowing for more space to view the search results</li><li>**Hide Charts**: to hide/unhide the [charts](#search_page_charts) on the search page</li><li>**Reload**: to refresh the left pane and the [charts](#search_page_charts)</li></ul> |
+| J | <a id="green_info_bar"></a>**Green bar**:<ul><li>**Items per page**: number of items found during a search or when drilling down, ex:  _Showing 1 to 100 of **259 items found**_ </li><li>**Size of data**: listed on the current page ONLY so be carefully if you have several pages of results, ex: _Results size: **12 GB (this page)**_ </li><li>**Path**: will show the [path](#path) when drilling down, ex: _parent_path:\/mnt\/lucidlink\/projects_ </li><li>**Search criteria**: shows the criteria used after launching a search, either you are typing a manual query or using a [built-in search tool](#builtin_search_tools), ex: _Search query: bigfoot AND tags:missing_ </li><li>**Close green bar**: you can close this green bar by clicking the  **X**  at the far right, but it will reappear following your next action, and you really want and need it, so don't fight it! | **Save queries**: you can [save personal queries](#save_query) that will only be visible to you [learn everything about personal queries here](#save_query) |
+| K |
 
 
 
-
-D) [**Analytics**](#analytics): To select one of the several built-in analytics.
-
-
-
-
-
-I) 
-
-
-
-K) [**Volumes**](#storage_volume): Drop-down list to select a specific volume - volumes can also be selected via O) the left pane.
-
-L) **Gear Icon**: 
-  - **Settings**: To modify the [settings](#settings) of the Diskover interface.
-  - **Indices**: To select specific [indices](#indices).
-  - **Task Panel**: For system administrators.
-  - **Help**: Direct link to access our complete documentation catalog [docs.diskoverdata.com](https://docs.diskoverdata.com/)
-  - **Reload Indices**: To refresh your [indices](#indices) and Z) charts.
-  - **Logout**: To log out of Diskover.
-
-<p id="green_info_bar"></p>
-
-M) **Green bar**: This bar displays the following details:
-
-  - **Items per page**: Number of items found during a search or when drilling down, ex:  _Showing 1 to 1000 of **9 items found**_
-  - **Size of data**: Listed on the current page, ex: _Results size: **12 GB (this page)**_
-  - **Path**: Shows the [path](#path) you are pointing to when drilling down, ex: _parent_path:\/mnt\/lucidlink\/projects_
-  - **Search criteria**: Shows the criteria used for a search, either you are typing a manual query or using a [built-in search tool](#builtin_search_tools), ex:  _Search query: mov and tags:archive_
-  - **Close green bar**: You can close this green bar by clicking the  **X**  at the far right, but it will reappear following your next action.
-  - **Save queries**: You can [save a personal query](#save_query) that will only be visible to you by clicking the **Save** button in the green bar. You can then find and rerun that query under E) Quick > Saved Queries
-
-<p id="path_navigation_bar"></p>
 
 N) **Path bar**: Shows the [path](#path) you're drilling down, you cannot type in it, but you can click on any directory to navigate directly to it.
 
 O) [**Volumes**](#storage_volume): To view and select available volumes from the left pane:
-  - Your instance may have **top paths** as per this example where some [volumes](#storage_volume) may be regrouped under geo locations, data centers, etc.
-  - If you hover a volume name, you will see the date and time that volume was last indexed.
-
-    <img src="images/image_file_search_hovering_volume.png" width="350">
-
-  - If you hover a fill bar, you will see the space used, free, and total for each volume.
-
-    <img src="images/image_file_search_hovering_fill_bar.png" width="350">
+  
 
 P) [**Directories**](#directory): To view or drill down the directories inside the O) selected volume:
   - Hovering your mouse over a directory in the left pane will give you a snapshot of additional information.
@@ -99,13 +63,7 @@ P) [**Directories**](#directory): To view or drill down the directories inside t
 
 Q) **Last indexed**: Gives the date and time of the last scan of the selected volume.
 
-R) **Optional navigation buttons**:
-  - **Top**: Will bring you back to the top/root of the active [volume](#storage_volume).
-  - **Up**: To drill up one [directory](#directory) at a time.
-  - **Back and forth arrows**: To navigate back and forth between visited pages, you can also use the browser's arrows and the results will be the same.
-  - **Hide Tree**: Will hide the left pane allowing for more space to investigate W) your results.
-  - **Charts**: To hide/unhide the Z) charts.
-  - **Reload**: To refresh your [indices](#indices) and Z) charts.
+R) 
 
 S) **Extension bar**: Will show all the file extensions detected in your results, either from drilling down or resulting from a search. Click any extension to list these specific items.
 

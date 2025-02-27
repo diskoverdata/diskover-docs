@@ -23,7 +23,7 @@ C) **Find similar**: To find similar items, example of automatic query that woul
 
 D) **File Action**: When you want to use a [file action](#file_action) using a single item.
 
-E) **Reports icon**:  Drop-down list  allowing you to load a path directly in any [analytics](#analytics), as well as the option to [search that path recursively or non-recursively](#recursive_search).
+E) **More icon**:  Drop-down list  allowing you to load a path directly in any [analytics](#analytics), as well as the option to [search that path recursively or non-recursively](#recursive_search).
 
 F) **Name**: Displays the name of a directory which is preceded by a folder icon, or a file name which is preceded by a file icon.
 

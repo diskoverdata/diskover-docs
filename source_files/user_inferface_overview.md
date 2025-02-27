@@ -29,7 +29,7 @@ By default, upon login, you will land on the file search page shown below or the
 
 🔆 _Hovering almost anything(buttons, charts, volumes, etc.) in Diskover will give you additional information._
 
-![Image: User Interface Overview](images/user_interface_overview_20250226.png)
+<img src="images/user_interface_overview_20250226.png" width="">
 
 ⭐️ _Indicates the most used features._
 

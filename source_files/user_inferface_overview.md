@@ -35,7 +35,7 @@ By default, upon login, you will land on the file search page shown below or the
 | :---: | --- |
 | A | Software logo - it has no function |
 | B | <ul><li>[**Dashboard**](#dashboard): gives a snapshot of an entire [volume](#volume)</li><li>[**Analytics**](#analytics): drop-down list offering multiple tools and reports</li></ul> |
-| C | 📍 Use the **folder icon** to navigate back to this page called the **search page** |
+| C | Use the 📁 icon to navigate back to this page called the **search page** |
 | D | Integrated search tools:<ul><li>[**Quick search**](#quick_search): to quickly search all volumes using pre-established criteria</li><li>[**Filters**](#filters): to refine your results either when drilling down or searching</li><li>[**Search within results**](#search_within_results): acts like CTRL or CMD F on steroids</li></ul> |
 | E | **Search bar**:<ul><li>You can type or paste [search queries](#manual_queries)</li><li>Use the **x** to clear the search bar</li><li>Click **Enter** or **Return** to launch a search or use the 🔍 next to the **x**</li></ul> |
 | F | [**Current Dir**](#current_dir): toggle ON to limit your searches to a selected [path](#path), note that it will remain active until you manually toggle OFF |

@@ -1,14 +1,5 @@
 <p id="results_pane"></p>
 
-___
-### Search Page Default View
-
-![Image: Accessing the Search Page](images/image_file_search_page_with_charts.png)
-
-A) By default, this file search page will open upon login. If you ever navigate away from it, click the **folder icon** to come back to it.
-
-B) **Charts hide/unhide**: By default, the file search page displays colorful charts at the top of the page giving useful statistics about a selected [path](#path). If you want to hide the charts as they take away space from seeing the results below them, click the **Charts** icon.
-
 ### Results Pane Overview
 
 This section explains the few items that were not covered in the [user interface overview](#ui_overview), as well as explains further certain aspects.

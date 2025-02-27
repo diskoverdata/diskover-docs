@@ -1,26 +1,24 @@
 <p id="settings"></p>
 
-___
 ## Settings
-___
 
 ### Settings Overview
 
-You can access the settings via the gear icon at the top right corner of the interface.
+You can access the settings via the ⚙️ icon at the top right corner of the interface.
 
-![Image: Accessing the Settings](images/image_menu_gear_icon_selection_settings.png)
+![Image: Accessing the Settings](images/settings_menu_selection.png)
 
-**IMPORTANT!**
+⚠️ **IMPORTANT!**
 
-- Changing the settings is personal to your own web browser, even if you share a login account with others. Your customizations are stored as cookies. When you [clear the cookies](#clear_cookies) from the settings, your customized settings will also be cleared and reset to Diskover’s default values. 
-- If you switch browsers, for example, from Chrome to Firefox, you will have to reselect your settings as they will not follow. Again, this is due to the settings being stored as cookies to a specific browser.
-- Your cookies might also be cleared and need to be reselected after a software update.
-- Click the following links to learn more about how [cookies](#clear_cookies) and [cache](#clear_cache) affect the Diskover user interface.
+- Settings are personal to your browser, even if you share an account. Your customizations are stored as cookies. [Clearing the cookies](#clear_cookies) will reset your settings to Diskover’s defaults.
+- If you switch browsers, such as from Chrome to Firefox, you’ll need to reselect your settings, as they are stored as cookies specific to each browser.
+- Your cookies may also be cleared after a software update, requiring you to reselect your settings.
+- To learn more about how your [cookies](#clear_cookies) and [cache](#clear_cache) affect the Diskover user interface.
 - **GOOD NEWS!** There are very few settings to select, so reselecting when needed is an easy task.
+
 
 <p id="profile"></p>
 
-___
 ### Profile
 
 ![Image: Settings - Profile](images/image_settings_profile_20230214.png)
@@ -32,142 +30,142 @@ ___
     - **Task panel user** = sys admin/technical user
 - Click **Change Password** as needed, and you will be prompted to enter your current password and type a new one.
 
+
 <p id="time"></p>
 
-___
 ### Time Display
 
 ![Image: Settings – Time Display](images/image_settings_time_display.png)
 
-- You can opt to change the time to your **local time zone**  instead of  **UTC**  (Coordinated Universal Time).
-- We strongly recommend you select/click the **Show times in local timezone** so there will be no confusion when you look at the indexing time, for example. 
-- This change will also affect the [storage time of your indices](#indices), file date creation, modification, etc.
+- You can choose to change the time to your **local time zone** instead of **UTC** (Coordinated Universal Time).
+- We recommend selecting **Show times in local timezone** to avoid confusion, especially with indexing times.
+- This change will also affect the [storage time of your indices](#indices), file creation dates, modifications, etc.
 - Your selection will be saved automatically.
+
 
 <p id="binary_decimal"></p>
 
-___
 ### File Size Display
 
 ![Image: Settings – File Size Display](images/image_settings_file_size_display_20230214.png)
 
-- By default, Diskover shows the file size using the  **binary system**. Click the first box **Use decimal system base-10...** if you prefer using the  **decimal system**. Your selection will be saved automatically.
-- By default, Diskover’s file size decimal is set to  **1**. You can change that value to your own preference and click on  **Set**  to save.
-- Select **Use size_du(allocated size) instead...** if you want to use the real allocated disk size instead of the actual file size. Your selection will be saved automatically.
+- By default, Diskover shows the file size using the **binary system**. Click **Use decimal system base-10...** if you prefer the **decimal system**. Your selection will be saved automatically.
+- By default, Diskover’s file size decimal is set to **1**. Change it to your preference and click **Set** to save.
+- Select **Use size_du (allocated size) instead...** if you want to use the real allocated disk size instead of the actual file size. Your selection will be saved automatically.
+
 
 <p id="search_file_tree"></p>
 
-___
 ### Search File Tree
 
-![Image: Settings – Filter Charts](images/image_settings_search_file_tree_20240220.png)
+![Image: Settings – Filter Charts](images/settings_search_file_tree.png)
 
 - By default, the [file tree analytic](#filetree) is sorted alphanumerically.
-- Click this box if you want the [file tree analytic](#filetree) to be sorted by size instead.
+- Click the box to sort the [file tree analytic](#filetree) by size instead.
 - Your selection will be saved automatically.
+
 
 <p id="settings_filter_charts"></p>
 
-___
 ### Filter Charts
 
-![Image: Settings – Filter Charts](images/image_settings_filter_charts_20230214.png)
+![Image: Settings – Filter Charts](images/settings_filter_charts.png)
 
-- By default, [filters](#filters) do not affect the [charts](#file_search_charts) at the top of the file search page or the [dashboard](#dashboard).
-- Check the **Use filters on charts** box if you want the filters to apply to the [charts](#file_search_charts) at the top of the file search page and the [dashboard](#dashboard).
+- By default, [filters](#filters) do not affect the [charts](#search_page_charts) on the file search page or the [dashboard](#dashboard).
+- Check the **Use filters on charts** box to apply the filters to the [charts](#search_page_charts) and the [dashboard](#dashboard).
 - Your selection(s) will be saved automatically.
+
 
 <p id="predictive_search"></p>
 
-___
 ### Use Predictive Search
 
 ![Image: Settings - Use Predictive Search](images/image_settings_use_predictive_search.png)
 
-- Check this box if you want your searches to _always_ be expanded with the [**\* wild card**](#asterisk_wildcard) without having to type the **\*** in the search bar.
-- Be aware that using this setting may get many additional and/or unwanted results.
+- Check this box if you want your searches to **always** expand with the [\* wild card](#asterisk_wildcard) without needing to type the **\*** in the search bar.
+- ⚠️ **Important**: Using this setting may return many additional or unwanted results.
 - Your selection(s) will be saved automatically.
-- The [wild cards](#wildcards) are further explained in the [Manual Queries chapter](#search_syntax).
+- The [wild cards](#wildcards) are explained further in the [manual queries](#manual_queries) chapter.
+
 
 <p id="default_columns_sort"></p>
 
-___
 ### Default Search Sort
 
 ![Image: Settings - Default Search Sort](images/image_settings_default_search_sort.png)
 
-- By default, the columns in the file search page are sorted by **path name** and then by **file or directory name**.
-- Check this box if you want to show unsorted search results instead.
+- By default, the columns on the file search page are sorted by **path name** and then by **file or directory name**.
+- Check this box to display unsorted search results instead.
 - Your selection(s) will be saved automatically.
 - Learn how to [assign primary and secondary sort](#sort) in the [results pane](#results_pane).
 
+
 <p id="hide_columns"></p>
 
-___
 ### Hide/Unhide Fields in Search Results
 
 ![Image: Settings – Hide/Unhide Columns in Search Results](images/image_settings_hide_fields_in_search_results.png)
 
-- Boxes unchecked means that these fields/columns are visible in your [results pane](#results_pane).
-- Check the boxes for fields/columns you don't want to see in your [results pane](#results_pane).
+- ⬜️ Unchecked boxes mean the columns are **visible** in your [results pane](#results_pane).
+- ✅ Checked boxes mean the columns are **hidden** in your [results pane](#results_pane).
 - Your selection(s) will be saved automatically.
-- Note that each column represents basic metadata indexed by Diskover, which is available by default. Additional metadata may be indexed in your instance; therefore, different/additional columns may be available on your end.
-- Click the  **Reset**  button if you have modified the columns' width and wish to reset to their default width.
+- The base metadata fields are the same for everyone, but you may have extra options depending on your organization’s indexing of [extra metadata](https://docs.diskoverdata.com/diskover_metadata_catalog.yml/#additional_metadata).
+- Click the **Reset** button to restore the default column widths if you’ve modified them.
+
 
 <p id="path_translation"></p>
 
-___
 ### Path Translations for Copying Paths
 
 ![Image: Settings – Path Translations for Copying Paths](images/image_settings_path_translation.png)
 
-- Depending on 1) how your System Administrator configured Diskover, 2) your operating system, and 3) with whom you need to share paths, you may need to make a selection to copy paths accordingly for your instance.
-- For a Windows environment, for example, you may have a choice where a forward slash / will be changed to two backslashes \\, to translate a path from `/isilon1/data/dm/tools/staging_files.xls` to `\\isilon1\data\dm\tools\staging_files.xls`
-- If you select a **path translations**, click **Set** to save.
-- Please see your System Administrator for details.
+- Depending on 1) how your System Administrator configured Diskover, 2) your operating system, and 3) who you need to share paths with, you may need to select the proper option to copy paths correctly for your instance.
+- For example, in a Windows environment, you may have the option to change a forward slash `/` to two backslashes `\\`, translating a path from `/isilon1/data/dm/tools/staging_files.xls` to `\\isilon1\data\dm\tools\staging_files.xls`.
+- If you select any **path translations**, click **Set** to save.
+- Please contact your System Administrator for more details.
+
 
 <p id="clear_cache"></p>
 
-___
 ### Clear Diskover Cache
 
 ![Image: Settings – Clear Diskover Cache](images/image_settings_clear_cache.png)
 
-- A **cache** is used to store website content for performance purposes and is saved in the browser.
-- There are random instances where you will need to clear the cache, but it should be used as a last resort:
-      - Sometimes, the cache needs to be cleared because it might prevent a browser-based software from working properly over time.
-      - If you get a pop-up message on the Diskover interface asking you to clear the cache.
+- A **cache** stores website content locally in the browser to improve performance by reducing load times.
+- There are occasional instances where clearing the cache is necessary, but it should be a last resort:
+    - Sometimes, the cache can cause issues by storing outdated content, which may prevent the browser-based software from working properly.
+    - If you receive a pop-up message in the Diskover interface asking you to clear the cache.
+
 
 <p id="clear_cookies"></p>
 
-___
 ### Clear Diskover Cookies
 
 ![Image: Settings – Clear Diskover Cookies](images/image_settings_clear_cookies.png)
 
-- **Cookies** are used by the browser to store user’s preferences, like the personal settings described in this chapter, and are stored in both the server and browser.
-- Clearing the cookies will remove the customized settings you may have selected, as discussed in this chapter.
-- There are a few instances in which you may need to clear the cookies:
-      - After a software update/upgrade to clear the cookies from the previous version that may affect the behavior of the new version.
-      - If you get a pop-up message on the Diskover interface asking you to clear the cookies.
+- **Cookies** are used by the browser to store user preferences, such as the personal settings described in this chapter, and are stored both on the server and in the browser.
+- Clearing the cookies will remove any customized settings you’ve selected, as discussed in this chapter.
+- There are a few instances where you may need to clear the cookies:
+    - After a software update or upgrade to remove cookies from the previous version, which may affect the behavior of the new version.
+    - If you receive a pop-up message in the Diskover interface asking you to clear the cookies.
 
-___
-### About Diskover | Version, License Info, and Elasticsearch Info
 
-![Image: Settings – About Diskover](images/image_settings_about_diskover_20230214.png)
+### About Diskover
 
-- These sections are informative only and provide details about your Diskover software.
+![Image: Settings – About Diskover](images/settings_about_diskover.png)
+
+- These sections are for informational purposes only and provide details about your Diskover instance.
 
 
 <p id="anonymous_data"></p>
 
-___
 ### Send Anonymous Usage Data
 
 ![Image: Settings – About Diskover](images/image_settings_anonymous_data_20230214.png)
 
-- Upon your first login and/or after a software update, you will be prompted to agree or not for Diskover to automatically receive anonymous data so we can compile the behavioral results and improve the software.
+- Upon your first login and after a software update, you will be prompted to agree or decline, allowing Diskover to automatically receive anonymous data to help improve the software based on behavioral results.
 - No personal information is collected.
-- Uncheck this box if you wish to opt out of sending anonymous data.
+- Uncheck the box if you wish to opt out of sending anonymous data.
 - Your selection will be saved automatically.
+
 

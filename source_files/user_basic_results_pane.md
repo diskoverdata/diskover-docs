@@ -1,30 +1,25 @@
 <p id="results_pane"></p>
 
-### Results Pane Overview
+### Results Pane
 
 This section explains the few items that were not covered in the [user interface overview](#ui_overview) .
 
-![Image: Main Features of the File Search Page](images/image_file_results_pane_overview_20230214.png)
+<img src="images/results_pane.png" width="">
 
-A) **Info icon:** Will display the directory’s detailed [attributes](#attributes) by opening a new page.
+| REFERENCE | DESCRIPTION |
+| :---: | --- |
+| A | You can hide or unhide columns via your [settings](#hide_columns). |
+| B | <img src="images/icon_attributes.png" width="25"> Will open a new tab and display the detailed [attributes](#attributes) for a directory. |
+| C | <img src="images/icon_file.png" width="25"> Click directly on a file to open a new tab and display its detailed [attributes](#attributes). |
+| D | <img src="images/icon_clipboard.png" width="25"> To copy the path of a file or directory to your clipboard - you may have to [adjust your settings](#path_translation) to customize to your operating system. |
+| E | <img src="images/icon_similar.png" width="25"> To find similar items, for example, if a directory is named **highres_images**, the search query **highres OR images** will be launched. |
+| F | <img src="images/icon_gears.png" width="25"> To run a [File Action](#file_action) on a single file or directory. |
+| G | <img src="images/icon_more.png" width="25"> This will open a drop-down list where you can directly load a path into [analytics](#analytics), along with the option to [search that path recursively or non-recursively](#recursive). |
 
-B) **Copy path/clipboard icon**: To copy the path of a file or directory (E+F). The path syntax is specific to your Operating System and set up by the System Administrator, but can also be modified in your [settings](#path_translation).
-
-C) **Find similar**: To find similar items, example of automatic query that would be run if this would be used on the **highres_images** directory as shown in the image above > **Search query: highres OR images**
-
-D) **File Action**: When you want to use a [file action](#file_action) using a single item.
-
-E) **More icon**:  Drop-down list  allowing you to load a path directly in any [analytics](#analytics), as well as the option to [search that path recursively or non-recursively](#recursive_search).
-
-F) **Name**: Displays the name of a directory which is preceded by a folder icon, or a file name which is preceded by a file icon.
-
-G) **Path**: Displays the path where the F) directory or file is located.
-
->🔆 &nbsp;You can [hide or unhide columns](#hide_columns) via your settings.
 
 <p id="sort"></p>
 
-### How to Sort Data in the Results Pane
+### Sort Data in the Results Pane
 
 Sorting is possible within Diskover, but if you have a lot of sorting to do, we recommend that you first [export your data in a csv format](#export) and then open that file in Excel, where you can do elaborate sorting and filtering.
 

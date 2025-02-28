@@ -13,6 +13,7 @@ ordered_documents:
   - user_inferface_overview.md
   - user_interface_settings.md
   - user_basic_intro.md
+  - user_basic_search_page.md
   - user_basic_results_pane.md
   - user_basic_attributes.md
   - user_bacic_limit_searches.md

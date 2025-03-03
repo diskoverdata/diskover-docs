@@ -1,6 +1,6 @@
 <p id="export"></p>
 
-### Export Search Results
+### Export 
 
 Whether your results come from drilling down the file tree or from a search, you can export them and copy paths to your clipboard. Let's explore the options.  
 

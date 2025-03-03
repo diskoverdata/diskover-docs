@@ -12,14 +12,10 @@ You can always validate the criteria used for a quick search query in the green 
 
 ![Image: Green Info Bar](images/image_file_search_green_info_bar_20230214.png)
 
-#### Combine Quick Searches with Other Tools
+#### Combine Quick Searches
 
 Quick searches can be used on their own or combined with other searches, here are a few examples:
 
-<ul><li>Combine Quick Search with [filters](#filters):<ul><li>Start by selecting/saving [filters](#filters).</li><li>Run a quick search.</li><li>Validate the combined criteria in the green bar.</li></ul></ul>
+**Combine Quick Search with [filters](#filters):**<ul><li>Start by selecting/saving [filters](#filters).</li><li>Run a quick search.</li><li>Validate the combined criteria in the green bar.</li></ul>
 
-
-- They can be combined with [manual queries](#search_syntax):
-  - Start by launching a quick search.
-  - Copy the criteria from the green bar as per the example/image above.
-  - Type a manual query in the search bar then paste the copied quick search criteria.
+**Combine Quick Search with [manual queries](#manual_queries):**<ul><li>Start by launching a quick search.</li><li>Click **Edit** in the green bar for the criteria to be automatically be pasted in the search bar.</li><li>Add your manual criteria in the search bar using the appropriate [operators](#operators).</li><li>Hit RETURN to launch the combined query.</li></ul>

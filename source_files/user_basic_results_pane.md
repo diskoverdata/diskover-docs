@@ -58,5 +58,6 @@ If no items are found during a search, a blue info bar will appear. You can use 
 | :---: | --- |
 | A | **Anything**: this link will open a fresh search page where you can start a new search. |
 | B | **Help**: this link will bring you directly to the help page for search query examples and support. |
-| C | **Reset sort order**: will reset the [sort order](#default_columns_sort) for results. |
-| D | **Go back**: will bring you back to the previous page and allow you to modify your query, it has the same effect as clicking the back button in your browser. |
+| C | **Reset sort order**: this will reset the [sort order](#default_columns_sort) for results. |
+| D | **Go back**: this will take you back to the previous page, allowing you to modify your query - it works the same way as clicking the back button in your browser. |
+

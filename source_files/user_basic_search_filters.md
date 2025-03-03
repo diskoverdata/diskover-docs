@@ -19,36 +19,17 @@ Using the built-in filters is a great way to get familiar with Diskover while qu
 | G | **Owner**: select **is** or **is not** from the drop-down list and type a value in the field to the right.<br>✏️ Reach out to your System Administrator for details on how users are set up in your instance. |
 | H | **Group**: select **is** or **is not** from the drop-down list and type a value in the field to the right.<br>✏️ Reach out to your System Administrator for details on how groups are set up in your instance. |
 | I | **Extensions - if listed here**: select **is** or **is not** from the drop-down list and check the appropriate box(es). |
-| J | **Extension - if not listed in 🅘**: select **is** or **is not** from the drop-down list and type the ex
+| J | **Extension - if not listed in 🅘**: select **is** or **is not** from the drop-down list and type a single extension - no dots just the letters. |
+| K | **File type**: select **is** or **is not** from the drop-down list and check the appropriate box(es).<br>✏️ Diskover allows multiple file extensions to be categorized under a single group, streamlining search and analysis:<ul><li>This configuration is managed by your System Administrator.</li><li>An easy way to figure out the list of file extensions under a group is by launching [Quick Search](#quick_search) → Files → Type → launch a query on the category of interest → look in the green bar for the query/extensions included in that group. |
+| L | **Tags**: select **is** or **is not** from the drop-down list and check the appropriate [tag(s)[(#tags)/box(es). |
+| M | **Tag**: select **is** or **is not** from the drop-down list and type a known tag name.<br>✏️ This feature is useful for searching tags that were set outside of Diskover’s user interface but are indexed as attributes. |
+| N | **Other field**: use this to filter metadata that is not listed above:<ul><li>Select an [attribute/metadata](#attributes) field in the first drop-down list.</li><li>Select a conditional operator from the next drop-down list.</li><li>Type a value/criteria in the last field.</li></ul>
+| O | **Exclude folders**: check this box to prevent filters from limiting the folder view to allow broader search results and the ability to navigate through the folder structure. |  
+| P | **Filter charts**: checking this box will temporarily apply the selected filters to the following:<ul><li>The [charts](#search_page_charts) at the top of the search page.</li><li>The [dashboard](#dashboard).</li><li>To permanently apply filters to the charts and dashboard, please refer to [filter charts settings](#settings_filter_charts).</li></ul> |
+| Q | **Tips**: refer the [operators](#operators) and [case sensitivity](#case_sensitivity) sections for details. |
+| R | <a id="clear_filters"></a> **Clear filters**: to clear all the active filters in this window. |
+| S | **Save filters**: to save all the filters in this window.<br>⚠️ The filters will remain active and affect all your future searches until you reopen the filters and clear the filters .|
 
-Diskover indexes all file types but does not necessarily recognize all extensions. If you need to search on an extension that is not listed in J), select an operator  from the drop-down list and type a value in the field to the right.
->🔆 &nbsp; Only type the extension letters, do not put the  **.**  in front.
+✏️ You can see from the search page if you have active filters and how many.
 
-K) **File type**: To search on a group of file type which can include multiple file extensions. Select an operator from the drop-down list and check the box(es) for the file type you want to include or exclude.
-
-L) **Tags**: Select an operator from the drop-down list and check the box(es) for the tags  you want to include or exclude.
-
-M) **Tag**: To search on tags that were set outside of Diskover’s user interface but are indexed as an attribute. Select an operator from the drop-down list and type the tag name you want to include or exclude.
-
-N) **Other field**: 1) Select a field in the first drop-down list, 2) select an operator in the second drop-down list and 3) type a value in the field to the right.
-
-O) **Exclude folders**: For less restrictive search results and be able to drill down a tree, will exclude the filtering from the folder view.
-
-P) **Filter charts**: Clicking this box will temporarily apply the filters to the following items until you come back and R) clear the filters. To permanently apply filters to these items, please refer to [filter charts settings](#settings_filter_charts).
-
-  - The charts at the top of the file search page, you can validate the query/criteria in the [green bar](#green_info_bar).
-  - The [dashboard](#dashboard) results/analytics.
-
-Q) **Tips**:  Refer to [Manual Queries | Syntax and Rules](#search_syntax) for more details, especially the [Operators](#operators), [Complex Queries and Grouping](#complex_queries), and [Queries with Field Names](#search_field_names) sections.
-
-<p id="clear_filters"></p>
-
-R) **Clear filters**: To clear all the filters in this window.
-
-S) **Save filters**: To save all the filters in this window.
-
->🔆 &nbsp;Search criteria selected in the [filters will remain active](#clear_filters) and affect all your future searches until you go back in the filters window and click Q) clear filters.
-
-When you close the filters window, you will see if you have some saved criteria in a blue square by the filters icon.
-
-![Image: Active Filters](images/image_file_search_filters_selected.png)
+![Image: Active Filters](images/search_tools_active_filters.png)

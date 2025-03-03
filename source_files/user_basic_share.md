@@ -1,14 +1,12 @@
 <p id="share"></p>
 
-___
-### Share Results and Queries
+### Share 
 
-<img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
+The share options are built for efficiency and can be used in multiple ways. 
 
-From the search page, you can share your browser’s URL address or your search query criteria so a co-worker can see the exact same results that you currently have displayed, either resulting from drilling down or from a search query.
+![Image: Share Search Results](images/share_options.png)
 
-![Image: Share Search Results](images/image_file_search_results_share.png)
-
-A) **Search results url**: To copy/paste/share the browser’s URL address of your current view/results > a co-worker can just click on that link to see the same exact results.
-
-B) **Search query**: To copy/paste/share the search query criteria used in C) the search bar, or from using a [built-in search tool](#builtin_search_tools), or a combination of both.
+| REFERENCE | DESCRIPTION |
+| :---: | --- |
+| A | **Search results url**: to copy your browser’s URL with your current view and results, making it easy to share with a co-worker with access to Diskover - they can simply click the link to see the exact same results. |
+| B | **Search query**: to copy the search query criteria. |

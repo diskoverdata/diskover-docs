@@ -25,5 +25,5 @@ The process is slightly different if you want to refer to the attributes of a di
 | G | To search the parent path [recursively or non-recursively](#recursive). |
 | H | Detailed base metadata harvested during indexing.<br>✏️ Each of these fields can be individually searched using [field names for basic metadata](#queries-with-field-names). |
 | I | Displays the file or directory cost when the [feature](#cost_analysis) is enabled. |
-| J | If applicable for your instance, this section displays any extra metadata indexed using Diskover's metadata harvest plugins.<br>✏️ Each of these fields can be individually searched using [field names for extra metadata](#field-names-extra-metadata) |
+| J | If applicable for your instance, this section displays any extra metadata indexed using Diskover's metadata harvest plugins.<br>✏️ Each of these fields can be individually searched using [field names for extra metadata](#field-names-extra-metadata). |
 

@@ -9,7 +9,7 @@ Diskover searches all your indexed [volumes](#volume) and their directories at a
 | REFERENCE | DESCRIPTION |
 | :---: | --- |
 | A | Drill down into the specific path you want to use to refine your search results. |
-| B | Activate the **Current Dir** toggle button.<br>⚠️ This selection will remain active until you go back and manually deactivate the toggle button. |
+| B | Activate the **Current Dir** toggle button → **gray** is inactive and **colored** is active.<br>⚠️ This selection will remain active until you go back and manually deactivate the toggle button. |
 
 
 ### Limit Searches to a Specific Index

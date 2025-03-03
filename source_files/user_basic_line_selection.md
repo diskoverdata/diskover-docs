@@ -1,6 +1,6 @@
 <p id="item_selection"></p>
 
-### Line Items Selection
+### Selection of Line Items
 
 Selecting line items is helpful for multiple reasons, like [exporting results](#export), using [file actions](#file_action), etc.
 

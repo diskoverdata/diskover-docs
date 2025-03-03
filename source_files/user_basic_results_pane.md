@@ -27,7 +27,7 @@ You can sort data within Diskover's results pane, but if you need to do extensiv
 
 | REFERENCE | DESCRIPTION |
 | :---: | --- |
-| A |  **Legend**: you can sort any column in ascending or descending order using the arrows in the headers. Diskover also supports primary and secondary sorting:<ul><li>**Gray arrows**: unsorted</li><li>**Blue arrow**: primary sort</li><li>**Green arrow**: secondary sort</li><li>**⬆ Ascending**: sorts from smallest to largest, A to Z, or earliest to latest.</li><li>**⬇ Descending**: sorts from largest to smallest, Z to A, or latest to earliest. |
+| A |  **Legend**: you can sort any column in ascending or descending order using the arrows in the headers. Diskover also supports primary and secondary sorting:<ul><li>**Gray arrows**: unsorted.</li><li>**Blue arrow**: primary sort.</li><li>**Green arrow**: secondary sort.</li><li>**⬆ Ascending**: sorts from smallest to largest, A to Z, or earliest to latest.</li><li>**⬇ Descending**: sorts from largest to smallest, Z to A, or latest to earliest. |
 | B | **Reassign primary sort**: to change the primary sort to a different column, simply click the arrow in the header of the column you want to sort by. |
 | C | **Reassign secondary sort**: to reassign the secondary sort, first click the current green arrow to remove it. Then, click the arrow in the column you want to set as the new secondary sort. |
 

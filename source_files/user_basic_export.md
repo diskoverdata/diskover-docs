@@ -1,36 +1,20 @@
 <p id="export"></p>
 
-___
 ### Export Search Results
 
-From the [search page](#results_pane), you can export and/or copy results from a search or from drilling down.
+Whether your results come from drilling down the file tree or from a search, you can export them and copy paths to your clipboard. Let's explore the options.  
 
-![Image: Export Search Results](images/image_file_search_results_export.png)
 
-A) **Export** drop-down list button.
+![Image: Export Search Results](images/export_results.png)
 
-B) To export  **files**  only if you have files in your results, otherwise, the report will be empty. This method will export the file names, paths, as well as various [attributes](#attributes) allowing for easy sorting in Excel for example.
-
-<img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
-
-  - **This page**: Choose to export only the files showing on H) this page. The number of H) pages is affected by the number of search results and I) items per page - will disregard if you have selected items.
-  - **All pages**: Chose to export the files showing in H) all pages - will disregard if you have selected items.
-  - **json** or  **csv**: Choose the preferred export format for your results.
-  - The exported file will automatically go to your  **Downloads**  folder, the file name will include the export timestamp.
-
-C) To export  **directories**  only if you have directories in your results, otherwise, the report will be empty. This method will export the directory names, paths, as well as various [attributes](#attributes) allowing for easy sorting in Excel for example.
-
-<img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
-
-  - **This page**: Chose to export only the directories showing on H) this page. The number of H) pages is affected by the number of search results and I) items per page - will disregard if you have selected items.
-  - **All pages**: Chose to export the directories showing in H) all pages - will disregard if you have selected items.
-  - **json** or  **csv**: Chose the preferred export format for your results.
-  - The exported file will automatically go to your  **Downloads**  folder, the file name will include the export timestamp.
-
-D) **Copy all paths this page**: Will copy to your clipboard all paths listed on H) the current page, either they are files or directories - will disregard if you have selected items..
-
-E) **Copy all file names this page**: Will copy to your clipboard all file names only, not the path, listed on H) the current page - will disregard if you have selected items..
-
-F) **Copy selected paths this page**: Will copy to your clipboard all paths, either files or directories, that you have selected in J) column.
-
-G) **Copy selected file names this page**: Will copy to your clipboard all file names only, not the path, that you have selected in J) column.
+| REFERENCE | DESCRIPTION |
+| :---: | --- |
+| A |  **Export** drop-down list.<br>⚠️ We recommend limiting your exports to 100,000 line items - if you try to export more than 100,000 items:<ul><li>The export will probably go through, but you will get a warning message.</li><li>The process may take several minutes to hours, depending on how many line items you're trying to export.</li><li>Note that Excel has a maximum of 1 million lines.</li><li>If you are a client, please have your System Administrator open a [support ticket](https://support.diskoverdata.com/) if you are encountering issues with exporting a large number of line items. |
+| B | **Export Files**:  use these options only if you have files in your results, otherwise, the report will be empty:<ul><li>✏️ Will export all the [metadata](#attributes) attached to the files.</li><li>**CSV or JSON**: available formats for export.</li><li>Will disregard if you have 🅘 selected items.</li><li>**Files this page**: to export only the files on 🅗 this page. **Files all pages**: to export files from 🅗 all pages.</li><li>The exported file will automatically go to your **download folder** and will look something like this, including the export timestamp: `diskover_export_file_250303_104938.csv`</li></ul> |
+| C | **Export Directories**: use these options only if you have directories in your results, otherwise, the report will be empty:<ul><li>✏️ Will export all the [metadata](#attributes) attached to the directories.</li><li>**CSV or JSON**: available formats for export.</li><li>Will disregard if you have 🅘 selected items.</li><li>**Directories this page**: to export only the directories on 🅗 this page. **Directories all pages**: to export directories from 🅗 all pages.</li><li>The exported file will automatically go to your **download folder** and will look something like this, including the export timestamp: `diskover_export_file_250303_104938.csv`</li></ul> |
+| D | **Copy all paths this page**: copy to your clipboard all paths listed on 🅗 the current page, either they are files or directories, and will disregard if you have selected items. |
+| E | **Copy all file names this page**: copy all file names to your clipboard only, not the path, listed on 🅗 the current page and will disregard if you selected items. |
+| F | **Copy selected paths this page**: copy all paths of the 🅘 [selected files and/or directories](#item_selection) to your clipboard. |
+| G | **Copy selected file names this page**: copy all paths of the 🅘 [selected files ](#item_selection) to your clipboard. |
+| H | **Items per page and number of pages**: may affect some of the export options as explained above - click here to learn more about [items per page options](#items_per_page). | 
+| I | **Selection**: may affect some of the export options as explained above - click here to learn more about [selecting items](#item_selection). |

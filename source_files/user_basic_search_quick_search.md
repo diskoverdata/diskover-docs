@@ -18,4 +18,4 @@ Quick searches can be used on their own or combined with other searches, here ar
 
 **Combine Quick Search with [filters](#filters):**<ul><li>Start by selecting/saving [filters](#filters).</li><li>Run a quick search.</li><li>Validate the combined criteria in the green bar.</li></ul>
 
-**Combine Quick Search with [manual queries](#manual_queries):**<ul><li>Start by launching a quick search.</li><li>Click **Edit** in the green bar for the criteria to be automatically be pasted in the search bar.</li><li>Add your manual criteria in the search bar using the appropriate [operators](#operators).</li><li>Hit RETURN to launch the combined query.</li></ul>
+**Combine Quick Search with [manual queries](#manual_queries):**<ul><li>Start by launching a quick search.</li><li>Click **Edit** in the green bar for the criteria to automatically be pasted in the search bar.</li><li>Add your manual criteria in the search bar using the appropriate [operators](#operators).</li><li>Hit RETURN to launch the combined query.</li></ul>

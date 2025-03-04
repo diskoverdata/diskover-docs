@@ -73,4 +73,4 @@ When searching on file extensions, it is recommended to either:
 
 - If only typing **mov** in the search bar, the results would include all files with **.mov** extension, but could also return a file with the name **all_mov_titles_2021.txt**
 
-- If only typing **jpg** in the s
+- If only typing **jpg** in the search bar, the results would include all files with **.jpg** extension, but could also return a file with the name **montage_jpg_png_images.gif**

@@ -220,6 +220,7 @@ These fields are harvested during indexing, without the need for any plugins. Fo
 
 Additional metadata fields can be harvested using Diskover plugins, extending the depth of searchable information beyond the default fields. These plugins enable you to extract specialized metadata tailored to your workflows, providing enhanced visibility and search capabilities. For a complete list of available fields, along with instructions and examples on how to search using them, please refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/#extra_metadata).
 
+<img src="images/key_value_pair_examples.png" width="">
 
 #### Examples of Searches with Field Names
 

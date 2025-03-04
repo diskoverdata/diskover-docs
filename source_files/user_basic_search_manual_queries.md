@@ -179,9 +179,9 @@ By default, when used alone, the `~` wildcard allows up to 2 character changes. 
 
 ⚠️ Mixing wildcards can be tricky. Below are a few examples, but remember that additional rules apply when combining wildcards, such as the order in which they are used.  
 
-| 🔎 Mixing Wildcards in the same QUERY | 🔎 Mixing Wildcards in the same CRITERIA |
+| 🔎 Mixing wildcards in the same QUERY | 🔎 Mixing wildcards in the same CRITERIA |
 | --- | --- |
-| You can mix any wild cards in the same query, ex:<br>`jungle~1 and e*2`<br>`*albert* not v1?` |  You can mix the * and ? but NOT the ~, ex:<br>What you **can** do: `*albert* 2023????`<br>What you **can't** do: `*albert~1` |
+| You can mix any wildcards in the same query, ex:<br><br>`jungle~1 and e*2`<br>`*albert* not v1?` |  You can mix the * and ? but NOT the ~, ex:<br><br>What you **can** do: `*albert* 2023????`<br>What you **can't** do: `*albert~1` |
 
 
 
@@ -342,39 +342,23 @@ At times, you will need to group criteria so Diskover can correctly interpret yo
 
 #### Examples with Single Grouping
 
-🔎 A few examples using the file name structure **thejunglebook_s01_ep05_en.mov**:
+Here are a few examples using the file name structure **thejunglebook_s01_ep05_en.mov**:
 
-**\*jungle\* AND (s\*1 OR s\*2)** > would find all files/paths related to season 1 and season 2 for The Jungle Book series.
+| 🔎 QUERY | ✅ RESULT |
+| --- | --- |
+| `*jungle* AND (s*1 OR s*2)` |  All files/paths related to season 1 and season 2 for The Jungle Book series. |
+| `*jungle* AND e*5 AND (en OR it)` | All Italian (assuming **it** was respected in the naming convention) and English (**en**) translations of episode 5 for The Jungle Book series. |
+| `*jungle* AND s*1 (AND extension:(mov OR mp4))` | All files of season 1 with .mov and .mp4 extension, a less precise query could be `*jungle\* AND s*1 AND (mov OR mp4)` |
+| `(new york city)` | Files/paths with those 3 words in them, assuming that all the words are isolated of course—the [AND operator](#operators) is assumed |
 
-**\*jungle\* AND e\*5 AND (en OR it)** > would find all Italian (assuming **it** was respected in the naming convention) and English (**en**) translations of episode 5 for The Jungle Book series.
-
-**\*jungle\* AND s\*1 (AND extension:(mov OR mp4))** > would find all files of season 1 with .mov and .mp4 extension, a less precise query could be **\*jungle\* AND s\*1 AND (mov OR mp4)**
-
-Another type of example with words only, and let's use **New York City**. If you only want to find files/paths that have all those 3 words in them, you can type **(new york city)** assuming that all the words are isolated of course.
 
 #### Examples with Multiple Groupings
 
-🔎 A few examples using the file name structure **thejunglebook_s01_ep05_en.mov**:
+Here are a few examples:
 
-**\*jungle\* AND (s\*1 OR s\*2) (NOT (en OR it))** > still using the same file name example as above, would find all files for season 1 and season 2, but in all other languages than English or Italian.
+| FILE NAME EXAMPLE | 🔎 QUERY | ✅ RESULT |
+| --- | --- | --- |
+| **thejunglebook_s01_ep05_en.mov** | `*jungle\* AND (s*1 OR s*2) (NOT (en OR it))` | All files for season 1 and season 2 of the Jungle Book series, but excluding English and Italian translations. |
+| Let's say that you have files with **quick brown fox**, **quick fo**, **brown fox**,and **Fox New** | `((quick AND fox) OR (brown AND fox) OR fox) AND NOT news` | The following conditions would be meet:<ul><li>**fox** must be present.</li><li>**news** must be excluded.</li><li>**quick** and **brown** are optional — their presence increases the relevance. |
 
-Let's say that you have files with "quick brown fox", "quick fox", "brown fox", "Fox News", etc. This would be the query to use **((quick AND fox) OR (brown AND fox) OR fox) AND NOT news** to respect the following conditions:
-- **fox** must be present.
-- **news** must be excluded.
-- **quick** and **brown** are optional — their presence increases the relevance.
-
-
-
-
-
-it comes to formatting as detailed above, as well as writing the field name in lowercase only.
-
-
-
-___
-earch bar, the results would include all files with **.jpg** extension, but could also return a file with the name **montage_jpg_png_images.gif**
-
-
-
-Grouping is essential when using **AND**, **OR**, and **NOT** operators to avoid ambiguity in query execution. The following examples illustrate how to structure queries effectively.
 

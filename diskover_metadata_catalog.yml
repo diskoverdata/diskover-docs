@@ -1,0 +1,19 @@
+website_name: Diskover Metadata Catalog
+# Folder on the website, if you specify "folder" it will deploy this guide to https://docs.diskoverdata.com/folder
+website_folder: diskover_metadata_catalog
+# All documents need to be in shared folder
+ordered_documents:
+  - index_diskover_guides_header.md
+  - guide_title_metadata_catalog.md
+
+  
+  - intro_guide_intended_for_user.md
+  
+  
+  - intro_user_guides_main_intro.md
+  
+  - intro_doc_conventions_user.md
+
+  - support.md
+  - contact.md
+  - copyright.md

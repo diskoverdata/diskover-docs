@@ -359,6 +359,6 @@ Here are a few examples:
 | FILE NAME EXAMPLE | 🔎 QUERY | ✅ RESULT |
 | --- | --- | --- |
 | **thejunglebook_s01_ep05_en.mov** | `*jungle\* AND (s*1 OR s*2) (NOT (en OR it))` | All files for season 1 and season 2 of the Jungle Book series, but excluding English and Italian translations. |
-| Let's say that you have files with **quick brown fox**, **quick fo**, **brown fox**,and **Fox New** | `((quick AND fox) OR (brown AND fox) OR fox) AND NOT news` | The following conditions would be meet:<ul><li>**fox** must be present.</li><li>**news** must be excluded.</li><li>**quick** and **brown** are optional — their presence increases the relevance. |
+| Let's say that you have the following files:<ul><li> **quick brown fox**</li><li>**quick fox**</li><li>**brown fox**</li><li>**fox news** | `((quick AND fox) OR (brown AND fox) OR fox) AND NOT news` | The following conditions would be meet:<ul><li>**fox** must be present.</li><li>**news** must be excluded.</li><li>**quick** and **brown** are optional — their presence increases the relevance. |
 
 

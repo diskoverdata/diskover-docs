@@ -199,96 +199,107 @@ Operators are used to join multiple criteria in a query. There are 3 operators: 
 
 <p id="search_field_names"></p>
 
-### Field Names
+### Field Names aka Key-Value Pair
 
 Searching with field names can be effective when you need precise results, especially if you're searching within a specific or hidden field. You can think of this like searching within a specific column in a massive Excel spreadsheet—rather than scanning the entire dataset, you're narrowing your focus to just the relevant information.
+
+Often referred to as **key-value pair**, think of this as a structured way to store and retrieve data, where a **key acts as an identifier**, and the **value holds the associated variable data**. In Diskover, key-value pairs are used in search queries and custom reporting.
 
 🔎 The query needs to be typed in this exact format **fieldname:_value_**
 
 | **fieldname:** | **_value_** |
 | --- | --- |
-| <ul><li>Corresponds to the field indexed by Elasticsearch—refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/) for all details..</li><li>Needs to be typed lowercase.</li></ul>| <ul><li>The _variable_ you are searching.</li><li>Needs to be typed right after the **:** without any spaces.</li><li>Are mostly case sensitive—refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/) for all details.</li><li>You can use [wildcards](#wildcards).</li><li>
+| <ul><li>Corresponds to the field indexed by Elasticsearch—refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/) for all details..</li><li>Needs to be typed lowercase.</li></ul>| <ul><li>The _variable_ you are searching.</li><li>Needs to be typed right after the **:** without any spaces.</li><li>Are mostly case sensitive—refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/) for all details.</li><li>You can use [wildcards](#wildcards).</li></ul> |
 
-### Field Names | Basic Metadata
+### Field Names for Basic Metadata
 
-These fields are harvested during indexing, without any plugins needed.
-
-
+These fields are harvested during indexing, without the need for any plugins. For a complete list of available fields, along with instructions and examples on how to search using them, please refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/#base_metadata).
 
 
+### Field Names for Extra Metadata
 
-### Field Names | Extra Metadata
-
-
-
-### Key Value Pair
+Additional metadata fields can be harvested using Diskover plugins, extending the depth of searchable information beyond the default fields. These plugins enable you to extract specialized metadata tailored to your workflows, providing enhanced visibility and search capabilities. For a complete list of available fields, along with instructions and examples on how to search using them, please refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/#extra_metadata).
 
 
-#### Examples of Searching with Field Names
+#### Examples of Searches with Field Names
 
-Searching on field names is very effective for achieving specific results and they are often combined with other criteria. 
+You can find examples throughout this chapter, but here are a few more:
 
-🔎  You will find examples throughout this chapter, but here are a few more:
+| 🔎 QUERY | ✅ RESULT |
+| --- | --- |
+| `name.text:*jungle* AND (size:>=5242880 AND size:<=10485760)` | Files and directories with **jungle** that are **between 5MB and 10MB**. |
+| `*jungle* AND (ctime:[now-1h TO now] OR mtime:[now-1h TO now])` | Files or directories with **jungle** and that have been **modified or changed in the last hour**. |
+| `*jungle* AND nlink:2` | Files with **jungle** that have **2 hard links**. |
+| `*albert* AND tags:delete AND extension:mov` | All **.mov** files tagged **delete** containing **albert** in its name. |
+| `tags:(manual_delete AND approve_delete)` | Files and directories with both tags attached to them - please refer to [complex queries](#complex_queries) regarding the use of the parentheses for grouping. |
 
-- **name.text:\*jungle\* and (size:>=5242880 AND size:<=10485760)** > would find files with the word **jungle** that are between 5MB and 10MB, would exclude directories.
-
-- **\*jungle*\ and (ctime:[now-1h TO now] OR mtime:[now-1h TO now])** would find files or directories with the word **jungle** and that have been modified or changed in the last hour.
-
-- **\*jungle\* and nlink:2** > would find files with the word **jungle** that have 2 hard links.
-
-- **tags:delete** > would find all files and directories with the tag **delete** applied to them, it would not find a tag spelled **Delete** for example because of the capital D.
-
-- **tags:(manual_delete AND approve_delete)** > same logic as above and please refer to the section [grouping for complex queries](#complex_queries) regarding the use of the parentheses.
-
-You can find more examples with field names in the [Searching on Time](#search_time) and [Searching on Size](#search_size) sections.
+You can find more examples with field names when it comes to [searching on time](#search_time) and [searching on size](#search_size) sections.
 
 
 
 
 <p id="search_size"></p>
 
-___
 ### Queries with Data Size
 
 Diskover shows file size (size) and allocated size (size_du) in bytes. We recommend using the [filters](#filters), as well as [quick search](#quick_search) when searching on size, but these fields can also be searched manually. Make sure you are using the proper [syntax for mathematical symbols](#math_symbols) when searching with numbers.
 
->🔆 &nbsp;When unsure how to translate size from MB, GB, etc. to bytes, you can use any free *byte converter* available online.
+🔆 Use a free *byte converter* available online when unsure how to translate size from MB, GB, etc. to bytes.
 
-🔎 Some examples when searching on data size:
+Here are some examples when searching on size:
 
-- **size:>1048576**  > would find all files and directories larger than 1 MB
-
-- **size:>10485760 AND type:file** > would find all files larger than 10 MB
-
-- **size:>5242880 AND (type:file OR type:directory)**  > would find all files and folders larger than 5 MB
-
-- **size:>=5242880 AND size:<=10485760**  > would find all files equal or larger than 5 MB but equal or smaller than 10 MB
-
-- **extension:mov AND size:>32212254720** > would find all files with .mov extension and larger than 30 GB
+| 🔎 QUERY | ✅ RESULT |
+| --- | --- |
+| `size:>1048576` | Files and directories larger than 1 MB |
+| `size:>10485760 AND type:file` | Files larger than 10 MB |
+| `size:>5242880 AND (tags:delete OR tags:approve_delete)` | Files and directories larger than 5 MB tagged delete or approve_delete |
+| `size:>=5242880 AND size:<=10485760` | Files or directories equal or larger than 5 MB but equal or smaller than 10 MB |
+| `extension:mov AND size:>32212254720` | .mov files larger than 30 GB |
 
 
 <p id="search_time"></p>
 
-___
+
 ### Queries with Time
 
 Although it is strongly advised to use [filters](#filters) or [quick search](#quick_search) to query time, below are a few examples on how to do so with a manual query.
 
 #### Definitions
-- **atime**: last accessed > The file may have been opened by you, or may have been accessed by some other program or a remote machine. Anytime a file has been accessed, its access time changes.
-- **ctime**: last changed > The modification can be in terms of its content or in terms of its attributes. Whenever anything about a file changes (except its access time), its ctime changes.
-- **mtime**: last modified > Indicates the time the contents of the file has been changed. Mind you, only the contents, not the attributes. For instance, if you open a file and change some (or all) of its content, its mtime gets updated. If you change a file's attribute (like read-write permissions, metadata), its mtime doesn't change, but ctime will.
+
+| FIELD NAME | DEFINITION |
+| :---: | --- |
+| **atime** | **last accessed** → the file may have been opened by you, or may have been accessed by some other program or a remote machine. Anytime a file has been accessed, its access time changes. |
+| **ctime** | **last changed** → the modification can be in terms of its content or in terms of its attributes—whenever anything about a file changes (except its access time), its ctime changes. |
+| **mtime** | **last modified** → indicates the time the contents of the file have been changed—mind you, only the contents, not the attributes—for instance:<ul><li>If you open a file and change some (or all) of its content, its mtime gets updated.</li><li>If you change a file's attribute (like read-write permissions, metadata), its mtime doesn't change, but ctime will.</li></ul> |
 
 #### Formatting
-Format to use when searching for date and time.
 
-- Date: **d** = day, **M** = month, **y** = year
-- Time: **h** = hour, **m** = minute, **s** = second
-- These [two types of brackets `[ ]` or `{ }`](#parentheses_brackets) can be used to contain a range of time, they can even be mixed `[ }`
+Format to use when searching for date and time - ⚠️ searching on time is case-sensitive.
 
->🔆 &nbsp;Searching on time is case-sensitive when 
+| VARIABLE | FORMAT |
+| :---: | --- |
+| **date** | <ul><li>**d** = day</li><li>**M** = month</li><li>**y** = year</li></ul> |
+| **time** | <ul><li>**h** = hour</li><li>**m** = minute</li><li>**s** = second</li></ul> |
+| **brackets** | These [two types of brackets `[ ]` or `{ }`](#parentheses_brackets) can be used to contain a range of time, they can even be mixed `[ }` |
 
 
+#### Examples to Find Recent Files
+
+Here are a few helpful queries for looking for the **latest indexed files** for example. Variables can easily be adjusted to your needs:
+
+Here are a few helpful queries for finding the **latest indexed files**.
+
+| 🔎 QUERY | ✅ RESULT |
+| --- | --- |
+| `ctime:[now-30m TO now] OR mtime:[now-30m TO now]` | Files that have been modified or changed within the last 30 minutes. |
+| `ctime:[now-1h TO now] OR mtime:[now-1h TO now]` | Files that have been modified or changed in the last hour. |
+| `ctime:[now-1d TO now]  OR mtime:[now-1d TO now]` | Files that have been modified or changed in the past day. |
+
+#### Examples to Find Old Files
+🔎 Some helpful queries when looking for old files where you can easily change the variables to adjust the queries to your needs:
+
+- **mtime:[now-5y TO now-3M]** > files that haven't been modified in over 3 months but less than 5 years.
+- **mtime:[\* TO now-1y] AND atime:[\* TO now-1y]** > files that haven't been modified or accessed in over 1 year (**\*** in this case is used to represent "any time in the past").
 
 <p id="complex_queries"></p>
 
@@ -360,18 +371,7 @@ Let's say that you have files with "quick brown fox", "quick fox", "brown fox", 
 
 it comes to formatting as detailed above, as well as writing the field name in lowercase only.
 
-#### Examples to Find Recent Files
-🔎 A few helpful queries for looking for the **latest indexed files** for example. Variables can easily be adjusted to your needs:
 
-- **ctime:[now-30m TO now] OR mtime:[now-30m TO now]** > files that have been modified or changed within the last 30 minutes.
-- **ctime:[now-1h TO now] OR mtime:[now-1h TO now]** > files that have been modified or changed in the last hour.
-- **ctime:[now-1d TO now]  OR mtime:[now-1d TO now]** > files that have been modified or changed in the past day.
-
-#### Examples to Find Old Files
-🔎 Some helpful queries when looking for old files where you can easily change the variables to adjust the queries to your needs:
-
-- **mtime:[now-5y TO now-3M]** > files that haven't been modified in over 3 months but less than 5 years.
-- **mtime:[\* TO now-1y] AND atime:[\* TO now-1y]** > files that haven't been modified or accessed in over 1 year (**\*** in this case is used to represent "any time in the past").
 
 ___
 earch bar, the results would include all files with **.jpg** extension, but could also return a file with the name **montage_jpg_png_images.gif**

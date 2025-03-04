@@ -19,13 +19,15 @@ ordered_documents:
   - user_bacic_limit_searches.md
   - user_basic_line_selection.md
   - user_basic_export.md
+  - user_basic_excel.md
   - user_basic_share.md
   - user_basic_save_query.md
   - user_basic_search_builtin_tools_intro.md
   - user_basic_search_filters.md
   - user_basic_search_quick_search.md
   - user_basic_search_within_results.md
-  - user_basic_search_path_recursive.md
+  - user_basic_search_recursive.md
+  - user_basic_search_with_path.md
   - user_basic_search_manual_queries.md
   - user_analytics_intro.md
   - user_analytics_dashboard.md

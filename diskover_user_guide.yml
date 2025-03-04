@@ -27,8 +27,8 @@ ordered_documents:
   - user_basic_search_quick_search.md
   - user_basic_search_within_results.md
   - user_basic_search_recursive.md
-  - user_basic_search_with_path.md
   - user_basic_search_manual_queries.md
+  - user_basic_search_with_path.md
   - user_analytics_intro.md
   - user_analytics_dashboard.md
   - user_analytics_smart_searches.md

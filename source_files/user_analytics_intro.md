@@ -1,7 +1,6 @@
 <p id="analytics"></p>
 
-___
-## Analytics
-___
+
+## Analytic
 
 This chapter covers the various integrated analytics.

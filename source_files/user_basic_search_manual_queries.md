@@ -1,6 +1,6 @@
 <p id="manual_queries"></p>
 
-## Manual Queries | Rules and Syntax
+## Manual Queries
 
 ### Overview
 
@@ -46,7 +46,7 @@ To ensure comprehensive results, consider using broader or more flexible search 
 
 <p id="search_basics"></p>
 
-### Understanding the Basics of Manual Queries
+### Understanding the Basics and Logic
 
 #### [🍿 Watch Quick Tips | Understanding the Basics of Manual Queries](https://vimeo.com/770024733)
 
@@ -72,7 +72,7 @@ Of course, there are ways to find characters that are not isolated by using [wil
 
 🔎 If you launch a query with the word **albert**:
 
-| FILE NAME | WHY FILE WOULD BE FOUND | WHY FILE WOULD _NOT_ BE FOUND |
+| FILE NAME | ✅ WHY FILE WOULD BE FOUND | 🚫 WHY FILE WOULD _NOT_ BE FOUND |
 | --- | --- | --- |
 | `project_albert_overview.pdf` | **albert** is isolated by underscores |  |
 | `AlbertSimulationTest_log_v001.txt` | **albert** is isolated by CamelCase |  |
@@ -85,7 +85,7 @@ Of course, there are ways to find characters that are not isolated by using [wil
 
 🔎 If you launch a query with the number **2025**:
 
-| FILE NAME | WHY FILE WOULD BE FOUND | WHY FILE WOULD _NOT_ BE FOUND |
+| FILE NAME | ✅ WHY FILE WOULD BE FOUND | 🚫 WHY FILE WOULD _NOT_ BE FOUND |
 | --- | --- | --- |
 | `project-albert-2025-draft.pdf` | **2025** is isolated by hyphens |  |
 | `mapping log 2025 final.log` | **2025** is isolated by spaces |  |
@@ -121,7 +121,7 @@ The `*` asterisk wildcard **replaces zero or more characters** and is the most c
 
 #### Search Examples Using the *
 
-| 🔎 SEARCH QUERY | POSSIBLE RESULTS|
+| 🔎 SEARCH QUERY | ✅ POSSIBLE RESULTS|
 | --- | --- |
 | `*albert*` | SIMULATIONLOG**ALBERT**.txt<br>project**albert**overview.pptx<br>**albert**xb12p.pdf |
 | `R*1005` | **R**-**1005**<br>**R1005**<br>**R**es_**1005**<br>**R**eservoir**1005** |
@@ -140,7 +140,7 @@ The `*` asterisk wildcard **replaces zero or more characters** and is the most c
 
 The `?` question mark wildcard **replaces a single character** and can be used multiple times to match a specific number of characters.  
 
-| 🔎 SEARCH QUERY | POSSIBLE RESULTS|
+| 🔎 SEARCH QUERY | ✅ POSSIBLE RESULTS|
 | --- | --- |
 | `scene?` | **scene**s<br>**scene**1 |
 | `e?2` | **e**p**2**<br>**e**0**2**<br>**e**2**2** |
@@ -164,7 +164,7 @@ By default, when used alone, the `~` wildcard allows up to 2 character changes. 
 
 ⚠️ Note that using the `~` wildcard in a query can consume a significant amount of memory and may lead to poor performance, potentially resulting in a "timed out" error.  
 
-| 🔎 SEARCH QUERY | POSSIBLE RESULTS|
+| 🔎 SEARCH QUERY | ✅ POSSIBLE RESULTS|
 | --- | --- |
 | `life~1` | live, line, wife, like, rife, lift... |
 | `life~` | results from `life~1` + knife, lived, hide, fire, link, loft, love... |
@@ -188,38 +188,111 @@ By default, when used alone, the `~` wildcard allows up to 2 character changes. 
 
 <p id="operators"></p>
 
-### Operators Overview
+### Operators
 
 Operators are used to join multiple criteria in a query. There are 3 operators: **AND**, **NOT**, **OR**, and they are not case sensitive. 
 
-### AND Operator
+| AND | NOT | OR | MIX'EM |
+| --- | --- | --- | --- |
+| 🔎 `albert AND v*1`<br><br>✅ would find **albert** isolated anywhere in the path/file name **and versions ending with 1**.<br><br>✏️ Note that **AND** is assumed if no operators are typed in between two criteria, so the same results would be obtained with `albert v*1` | 🔎 `albert NOT v*1`<br><br>✅ would find **albert** isolated anywhere in the path/file name but would **exclude versions ending with 1**. | 🔎 `albert (v*1 OR v*2)`<br><br>✅ would find **albert** isolated anywhere in the path/file name **and versions ending with 1 or 2**.<br><br>✏️ You need to group the criteria around the **OR** operator to ensure the query is processed correctly—think of it as building formulas in Excel where it requires you to group conditions to interpret your logic accurately. | 🔎 `*test* AND *log* (r*1 OR r*2) NOT 2023`<br><br>✅ would find path/file name with both **test** and **log** isolated or not, with **releases ending with 1 or 2**, but would **exclude anything with 2023 isolated**. |
 
-🔎 Example:
 
-**jurassic and s\*1** > would find **jurassic** isolated anywhere in the path/file name and **seasons ending with 1**.
+<p id="search_field_names"></p>
 
->🔆 &nbsp;IMPORTANT TIME SAVER! Note that **and** is assumed if no operators are typed in between criteria, so you would get the same results as described above when searching with **jurassic s\*1**
+### Field Names
 
-### NOT Operator
+Searching with field names can be effective when you need precise results, especially if you're searching within a specific or hidden field. You can think of this like searching within a specific column in a massive Excel spreadsheet—rather than scanning the entire dataset, you're narrowing your focus to just the relevant information.
 
-🔎 Example:
+🔎 The query needs to be typed in this exact format **fieldname:_value_**
 
-**jurassic and s\*1 not e\*5** > would find **jurassic** isolated anywhere in the path/file name and **seasons ending with 1** but would exclude **episodes ending with 5**.
+| **fieldname:** | **_value_** |
+| --- | --- |
+| <ul><li>Corresponds to the field indexed by Elasticsearch—refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/) for all details..</li><li>Needs to be typed lowercase.</li></ul>| <ul><li>The _variable_ you are searching.</li><li>Needs to be typed right after the **:** without any spaces.</li><li>Are mostly case sensitive—refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/) for all details.</li><li>You can use [wildcards](#wildcards).</li><li>
 
-### OR Operator
+### Field Names | Basic Metadata
 
-When using the **or** operator, you will need to group the criteria around that operator in order for Diskover to make sense of the query. Think of this as building formulas in Excel, Excel will want you to group criteria in order to understand what you want to accomplish; Diskover works on the same premise.
-
-🔎 Example:
-
-**jurassic (s\*1 or s\*2)** > would find **jurassic** isolated anywhere in the path/file name and **seasons ending with 1 or 2**.
-
+These fields are harvested during indexing, without any plugins needed.
 
 
 
- <p id="complex_queries"></p>
 
-### Complex Queries and Grouping Criteria
+
+### Field Names | Extra Metadata
+
+
+
+### Key Value Pair
+
+
+#### Examples of Searching with Field Names
+
+Searching on field names is very effective for achieving specific results and they are often combined with other criteria. 
+
+🔎  You will find examples throughout this chapter, but here are a few more:
+
+- **name.text:\*jungle\* and (size:>=5242880 AND size:<=10485760)** > would find files with the word **jungle** that are between 5MB and 10MB, would exclude directories.
+
+- **\*jungle*\ and (ctime:[now-1h TO now] OR mtime:[now-1h TO now])** would find files or directories with the word **jungle** and that have been modified or changed in the last hour.
+
+- **\*jungle\* and nlink:2** > would find files with the word **jungle** that have 2 hard links.
+
+- **tags:delete** > would find all files and directories with the tag **delete** applied to them, it would not find a tag spelled **Delete** for example because of the capital D.
+
+- **tags:(manual_delete AND approve_delete)** > same logic as above and please refer to the section [grouping for complex queries](#complex_queries) regarding the use of the parentheses.
+
+You can find more examples with field names in the [Searching on Time](#search_time) and [Searching on Size](#search_size) sections.
+
+
+
+
+<p id="search_size"></p>
+
+___
+### Queries with Data Size
+
+Diskover shows file size (size) and allocated size (size_du) in bytes. We recommend using the [filters](#filters), as well as [quick search](#quick_search) when searching on size, but these fields can also be searched manually. Make sure you are using the proper [syntax for mathematical symbols](#math_symbols) when searching with numbers.
+
+>🔆 &nbsp;When unsure how to translate size from MB, GB, etc. to bytes, you can use any free *byte converter* available online.
+
+🔎 Some examples when searching on data size:
+
+- **size:>1048576**  > would find all files and directories larger than 1 MB
+
+- **size:>10485760 AND type:file** > would find all files larger than 10 MB
+
+- **size:>5242880 AND (type:file OR type:directory)**  > would find all files and folders larger than 5 MB
+
+- **size:>=5242880 AND size:<=10485760**  > would find all files equal or larger than 5 MB but equal or smaller than 10 MB
+
+- **extension:mov AND size:>32212254720** > would find all files with .mov extension and larger than 30 GB
+
+
+<p id="search_time"></p>
+
+___
+### Queries with Time
+
+Although it is strongly advised to use [filters](#filters) or [quick search](#quick_search) to query time, below are a few examples on how to do so with a manual query.
+
+#### Definitions
+- **atime**: last accessed > The file may have been opened by you, or may have been accessed by some other program or a remote machine. Anytime a file has been accessed, its access time changes.
+- **ctime**: last changed > The modification can be in terms of its content or in terms of its attributes. Whenever anything about a file changes (except its access time), its ctime changes.
+- **mtime**: last modified > Indicates the time the contents of the file has been changed. Mind you, only the contents, not the attributes. For instance, if you open a file and change some (or all) of its content, its mtime gets updated. If you change a file's attribute (like read-write permissions, metadata), its mtime doesn't change, but ctime will.
+
+#### Formatting
+Format to use when searching for date and time.
+
+- Date: **d** = day, **M** = month, **y** = year
+- Time: **h** = hour, **m** = minute, **s** = second
+- These [two types of brackets `[ ]` or `{ }`](#parentheses_brackets) can be used to contain a range of time, they can even be mixed `[ }`
+
+>🔆 &nbsp;Searching on time is case-sensitive when 
+
+
+
+<p id="complex_queries"></p>
+
+### Complex Queries | Syntax and Grouping
 
 <p id="math_symbols"></p>
 
@@ -281,94 +354,11 @@ Let's say that you have files with "quick brown fox", "quick fox", "brown fox", 
 - **news** must be excluded.
 - **quick** and **brown** are optional — their presence increases the relevance.
 
-<p id="search_field_names"></p>
-
-___
-### Queries with Field Names
-
-Searching with field names can be effective if you search on a specific and/or hidden field and are looking for precise results. You can compare searching on field names as searching on a specific column in a massive Excel spreadsheet.
-
-🔎 The query needs to be typed in this exact format **fieldname:value**
-
-🔎 Make sure you are using the proper [syntax for mathematical symbols](#math_symbols) when searching with numbers.
-
->🔆 &nbsp;Searching on field names is case sensitive:
->- The **fieldname** needs to be lowercase.
->- The variable after the colon needs to be typed in upper and/or lower case to match exactly what you are searching for. 
-
-### Field Names | Basic Metadata
-
-These fields are harvested during indexing, without any plugins needed.
 
 
 
 
-
-### Field Names | Extra Metadata
-
-
-
-
-#### Examples of Searching with Field Names
-
-Searching on field names is very effective for achieving specific results and they are often combined with other criteria. 
-
-🔎  You will find examples throughout this chapter, but here are a few more:
-
-- **name.text:\*jungle\* and (size:>=5242880 AND size:<=10485760)** > would find files with the word **jungle** that are between 5MB and 10MB, would exclude directories.
-
-- **\*jungle*\ and (ctime:[now-1h TO now] OR mtime:[now-1h TO now])** would find files or directories with the word **jungle** and that have been modified or changed in the last hour.
-
-- **\*jungle\* and nlink:2** > would find files with the word **jungle** that have 2 hard links.
-
-- **tags:delete** > would find all files and directories with the tag **delete** applied to them, it would not find a tag spelled **Delete** for example because of the capital D.
-
-- **tags:(manual_delete AND approve_delete)** > same logic as above and please refer to the section [grouping for complex queries](#complex_queries) regarding the use of the parentheses.
-
-You can find more examples with field names in the [Searching on Time](#search_time) and [Searching on Size](#search_size) sections.
-
- <p id="search_size"></p>
-
-___
-### Queries with Data Size
-
-Diskover shows file size (size) and allocated size (size_du) in bytes. We recommend using the [filters](#filters), as well as [quick search](#quick_search) when searching on size, but these fields can also be searched manually. Make sure you are using the proper [syntax for mathematical symbols](#math_symbols) when searching with numbers.
-
->🔆 &nbsp;When unsure how to translate size from MB, GB, etc. to bytes, you can use any free *byte converter* available online.
-
-🔎 Some examples when searching on data size:
-
-- **size:>1048576**  > would find all files and directories larger than 1 MB
-
-- **size:>10485760 AND type:file** > would find all files larger than 10 MB
-
-- **size:>5242880 AND (type:file OR type:directory)**  > would find all files and folders larger than 5 MB
-
-- **size:>=5242880 AND size:<=10485760**  > would find all files equal or larger than 5 MB but equal or smaller than 10 MB
-
-- **extension:mov AND size:>32212254720** > would find all files with .mov extension and larger than 30 GB
-
-
-<p id="search_time"></p>
-
-___
-### Queries with Time
-
-Although it is strongly advised to use [filters](#filters) or [quick search](#quick_search) to query time, below are a few examples on how to do so with a manual query.
-
-#### Definitions
-- **atime**: last accessed > The file may have been opened by you, or may have been accessed by some other program or a remote machine. Anytime a file has been accessed, its access time changes.
-- **ctime**: last changed > The modification can be in terms of its content or in terms of its attributes. Whenever anything about a file changes (except its access time), its ctime changes.
-- **mtime**: last modified > Indicates the time the contents of the file has been changed. Mind you, only the contents, not the attributes. For instance, if you open a file and change some (or all) of its content, its mtime gets updated. If you change a file's attribute (like read-write permissions, metadata), its mtime doesn't change, but ctime will.
-
-#### Formatting
-Format to use when searching for date and time.
-
-- Date: **d** = day, **M** = month, **y** = year
-- Time: **h** = hour, **m** = minute, **s** = second
-- These [two types of brackets `[ ]` or `{ }`](#parentheses_brackets) can be used to contain a range of time, they can even be mixed `[ }`
-
->🔆 &nbsp;Searching on time is case-sensitive when it comes to formatting as detailed above, as well as writing the field name in lowercase only.
+it comes to formatting as detailed above, as well as writing the field name in lowercase only.
 
 #### Examples to Find Recent Files
 🔎 A few helpful queries for looking for the **latest indexed files** for example. Variables can easily be adjusted to your needs:
@@ -384,18 +374,7 @@ Format to use when searching for date and time.
 - **mtime:[\* TO now-1y] AND atime:[\* TO now-1y]** > files that haven't been modified or accessed in over 1 year (**\*** in this case is used to represent "any time in the past").
 
 ___
-### Queries with File Extensions
+earch bar, the results would include all files with **.jpg** extension, but could also return a file with the name **montage_jpg_png_images.gif**
 
-When searching on file extensions, it is recommended to either:
-- Use the dedicated fields in the [filters](#filters).
-- Use [quick search](#quick_search) which you can combine with a manual query for max efficiency.
-- Type in the search bar the pre-determined field name for file extensions, for example **extension:mov**
 
->🔆 &nbsp;Note that the file extension letters might be part of the file name and give you misleading results. By searching using the field name **extension** you focus your searches on that field exclusively.
-
-🔎  A few example:
-
-- If only typing **mov** in the search bar, the results would include all files with **.mov** extension, but could also return a file with the name **all_mov_titles_2021.txt**
-
-- If only typing **jpg** in the search bar, the results would include all files with **.jpg** extension, but could also return a file with the name **montage_jpg_png_images.gif**
 

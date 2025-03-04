@@ -95,26 +95,36 @@ Of course, there are ways to find characters that are not isolated by using [wil
 
 
 
-
-
 <p id="wildcards"></p>
+
+### Wildcards Overview
+
+#### [🍿 Watch Quick Tips | Manual Search Tool: Wildcards](https://vimeo.com/772196768)
+
+This guide will cover the *, ? and ~ wildcards—they are useful to:
+
+- Expand your results and make sure you are not missing files.
+- Go around naming convention issues.
+- Search on a specific number of variables.
+- Find possible misspellings.
+
 
 <p id="asterisk_wildcard"></p>
 
-___
-### * Wild Card
+### * Wildcard
 
-#### [🍿 Watch Quick Tips | Manual Search Tool: Wild Cards](https://vimeo.com/772196768)
+#### [🍿 Watch Quick Tips | Manual Search Tool: Wildcards](https://vimeo.com/772196768)
 
-The **\*** wild card is used to replace zero to many characters. It is the most popular and used wild card.
+The `*` wildcard **replaces zero or more characters** and is the most commonly used wildcard. It’s a powerful tool for overcoming [naming convention](#naming_convention) inconsistencies.  
 
-The * wild card is used to expand search results and is great to go around [naming convention](#naming_convention) issues.
+✏️ Using the `*` wildcard in a search may slow down performance, especially when placed at the beginning of a query, as it requires scanning a much larger dataset.  
 
-> 🔆 &nbsp;A search might be slower when using the * wild card, especially when it is placed in front of your query because it is searching a much larger amount of data.
+#### Search Examples Using the *
 
->🔆 &nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > Settings > [Use predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much at all times. Throughout this user guide, we assume the predictive search has not been selected.
+| SEARCH QUERY | POSSIBLE RESULTS|
+| --- | --- |
 
-#### How to Use the * | Examples with Letters
+
 
 🔎 If you would launch a search with **\*eyes***, the following files would be found:
 - foryoureyesonly
@@ -134,12 +144,15 @@ For example, if you want to search for **season 1**, the file name could have di
 
 In order to expand your results to include all possibilities, a logical search syntax could be **s\*1** because the **\*** would catch everything in between the **s** and the **1**. Now, this would also find season 11 for example, but it's better to widen your results at first and then narrow them down once you have an idea of what you are dealing with.
 
+>🔆 &nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > Settings > [Use predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much at all times. Throughout this user guide, we assume the predictive search has not been selected.
+
+
+
 <p id="question_mark_wildcard"></p>
 
-___
 ### ? Wild Card
 
-#### [🍿 Watch Quick Tips | Manual Search Tool: Wild Cards](https://vimeo.com/772196768)
+#### [🍿 Watch Quick Tips | Manual Search Tool: Wildcards](https://vimeo.com/772196768)
 
 The **?** wild card is used to replace a single character. I can be used several times in a row to replace a specific number of variables.
 
@@ -157,7 +170,7 @@ The **?** wild card is used to replace a single character. I can be used several
 ___
 ### ~ Wild Card
 
-#### [🍿 Watch Quick Tips | Manual Search Tool: Wild Cards](https://vimeo.com/772196768)
+#### [🍿 Watch Quick Tips | Manual Search Tool: Wildcards](https://vimeo.com/772196768)
 
 The **~** wild card is also called the **fuzziness** wild card. It is used to find similar words, and is mostly used to catch human misspellings.
 
@@ -174,8 +187,6 @@ If used alone, by default the **~** will look for the maximum of 2 changes, but 
 
 ___
 ### Mixing Wild Cards
-
-#### [🍿 Watch Quick Tips | Manual Search Tool: Wild Cards](https://vimeo.com/772196768)
 
 #### Mixing Wild Cards in the same QUERY
 

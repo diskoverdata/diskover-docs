@@ -6,7 +6,7 @@
 
 #### Export Directories and/or Files to Excel
 
-Please refer to the **[export](#export)** section of this guide if needed to learn how to export to a **csv** format.
+Refer to the **[export](#export)** section of this guide to learn how to export to a **CSV** format.
 
 
 #### Multiple Path/Directory Levels Manipulation in Excel

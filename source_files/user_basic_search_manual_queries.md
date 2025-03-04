@@ -285,9 +285,7 @@ Format to use when searching for date and time - ⚠️ searching on time is cas
 
 #### Examples to Find Recent Files
 
-Here are a few helpful queries for looking for the **latest indexed files** for example. Variables can easily be adjusted to your needs:
-
-Here are a few helpful queries for finding the **latest indexed files**.
+Here are a few examples for finding **files with recent activity**.
 
 | 🔎 QUERY | ✅ RESULT |
 | --- | --- |
@@ -296,10 +294,15 @@ Here are a few helpful queries for finding the **latest indexed files**.
 | `ctime:[now-1d TO now]  OR mtime:[now-1d TO now]` | Files that have been modified or changed in the past day. |
 
 #### Examples to Find Old Files
-🔎 Some helpful queries when looking for old files where you can easily change the variables to adjust the queries to your needs:
 
-- **mtime:[now-5y TO now-3M]** > files that haven't been modified in over 3 months but less than 5 years.
-- **mtime:[\* TO now-1y] AND atime:[\* TO now-1y]** > files that haven't been modified or accessed in over 1 year (**\*** in this case is used to represent "any time in the past").
+Here are a few examples for finding **old data**.
+
+| 🔎 QUERY | ✅ RESULT |
+| --- | --- |
+| `mtime:[now-5y TO now-3M]` | Files that haven't been modified in over 3 months but less than 5 years. |
+| `mtime:[\* TO now-1y] AND atime:[\* TO now-1y]` | Files that haven't been modified or accessed in over 1 year (**\*** in this case is used to represent "any time in the past"). |
+
+
 
 <p id="complex_queries"></p>
 
@@ -320,27 +323,22 @@ You can only use **:** with letters, but you can use any other with numbers.
 | **:<=** | equal to or lesser than |
 | **:<>** | is not equal to |
 
+
+
 <p id="parentheses_brackets"></p>
 
-#### Parentheses and Brackets
+#### When to use Parentheses and Brackets
 
-At times you will need to group criteria, so Diskover can make sense of the queries; think of this as grouping criteria when building formulas in Excel.
+At times, you will need to group criteria so Diskover can correctly interpret your queries. Think of this like grouping conditions when building formulas in Excel to ensure the logic is applied as intended. This section covers simple to complex groupings using different types of brackets.
 
-##### (Parentheses)
-
-When writing complex queries, you will need to group some elements with parentheses **( )** as further described in [The Need of Grouping Criteria for Complex Queries](#complex_queries) section.
-
-##### [Square] or {Curly} Brackets
-
-The square brackets `[ ]` or curly brackets `{ }` need to be used to contain ranges for **time**, **dates**, **numeric** or **string fields**. They can even be mixed `[ }`. You can find examples in the [Searching on time](#search_time) section. Below is how/when to apply them:
-
-	- **Inclusive** ranges need to be specified with square brackets, ex: **[min TO max]**, 
-	- **Exclusive** ranges need to be specified with curly brackets, ex: **{min TO max}**
+| GROUPING TYPE | WHEN TO USE |
+| --- | --- |
+| **(parentheses)** | **For grouping conditions in logical queries**, ex: (jpg OR png). |
+| **[square brackets]** | **Inclusive** ranges for **time**, **dates**, **numeric** or **string fields**, ex: [min TO max] |
+| **{curly brackets}** | **Exclusive** ranges for **time**, **dates**, **numeric** or **string fields**, ex: {min TO max} |
+| **mix [ }** | `size:[104857600 TO 1073741824}` → Finds files **between 100MB and 1GB**, **including** 100MB (`104,857,600` bytes) but **excluding** 1GB (`1,073,741,824` bytes)<br>`mtime:{now-30d TO now]` → Finds items with a modified time in the last 30 days, **excluding** the exact timestamp of 30 days ago but **including** "now. |
 
 
-When using several criteria and more than one [operator](#operators), it is recommended to use parentheses **( )** in order to group some elements and help Diskover make sense of the query. Think of this as building formulas in Excel, Excel will want you to group criteria in order to understand what you want to accomplish; Diskover works on the same premise.
-
->🔆 &nbsp;You always need to group criteria when using the **or** operator.
 
 #### Examples with Single Grouping
 
@@ -377,4 +375,6 @@ ___
 earch bar, the results would include all files with **.jpg** extension, but could also return a file with the name **montage_jpg_png_images.gif**
 
 
+
+Grouping is essential when using **AND**, **OR**, and **NOT** operators to avoid ambiguity in query execution. The following examples illustrate how to structure queries effectively.
 

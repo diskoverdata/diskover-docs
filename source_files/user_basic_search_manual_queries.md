@@ -64,7 +64,7 @@ Search queries are generally case-insensitive, meaning you can use uppercase or 
 
 #### Isolated Characters
 
-When you enter a word, number, or a combination of both in the search bar, Diskover searches for those **isolated characters**. To identify isolated characters, Diskover uses **isolators** such as spaces, underscores, hyphens, periods, other punctuation marks, and uppercase letters (also known as 🐫 CamelCase).  
+When you enter a word, number, or a combination of both in the search bar, Diskover searches for those **isolated characters**. To identify isolated characters, Diskover uses **isolators** such as **spaces, underscores, hyphens, periods, other punctuation marks, and uppercase letters (also known as 🐫 CamelCase)**.  
 
 Of course, there are ways to find characters that are not isolated by using [wildcards](#wildcards), which is explained in the next section.
 
@@ -72,26 +72,26 @@ Of course, there are ways to find characters that are not isolated by using [wil
 
 🔎 If you launch a query with the word **albert**:
 
-| FILE NAME | FILE WOULD BE FOUND | FILE WOULD _NOT_ BE FOUND |
+| FILE NAME | WHY FILE WOULD BE FOUND | WHY FILE WOULD _NOT_ BE FOUND |
 | --- | --- | --- |
-| project_albert_overview.pdf | **albert** is isolated by underscores |  |
-| AlbertSimulationTest_log_v001.txt | **albert** is isolated by CamelCase |  |
-| albertSIMULATION_test_log_v003.log | **albert** is isolated by CamelCase | |
-| projectalbert.pdf |  | **albert** is only isolated on one side with the . |
-| projectalbertoverview.pptx | | project**albert**overview is read as one word |
-| ProjectALBERTOverview.pptx | | reads **ALBERTO** |
+| `project_albert_overview.pdf` | **albert** is isolated by underscores |  |
+| `AlbertSimulationTest_log_v001.txt` | **albert** is isolated by CamelCase |  |
+| `albertSIMULATION_test_log_v003.log` | **albert** is isolated by CamelCase | |
+| `projectalbert.pdf` |  | **albert** is only isolated on one side with the . |
+| `projectalbertoverview.pptx` | | project**albert**overview is read as one word |
+| `ProjectALBERTOverview.pptx` | | reads **ALBERTO** |
 
 ##### Isolated Characters | Examples with Numbers
 
 🔎 If you launch a query with the number **2025**:
 
-| FILE NAME | FILE WOULD BE FOUND | FILE WOULD _NOT_ BE FOUND |
+| FILE NAME | WHY FILE WOULD BE FOUND | WHY FILE WOULD _NOT_ BE FOUND |
 | --- | --- | --- |
-| project-albert-2025-draft.pdf | **2025** is isolated by hyphens |  |
-| mapping log 2025 final.log | **2025** is isolated by spaces |  |
-| projectalbert2025.pdf  |  | **2025** is only isolated on one side with the . |
-| MappingLog2025Final.log |  | CamelCase doesn't work with numbers |
-| QA_testing_20250220.pptx |  | 2025 is only isolated on one side with the _ |
+| `project-albert-2025-draft.pdf` | **2025** is isolated by hyphens |  |
+| `mapping log 2025 final.log` | **2025** is isolated by spaces |  |
+| `projectalbert2025.pdf`  |  | **2025** is only isolated on one side with the . |
+| `MappingLog2025Final.log` |  | CamelCase doesn't work with numbers |
+| `QA_testing_20250220.pptx` |  | **2025** is only isolated on one side with the _ |
 
 
 
@@ -101,7 +101,7 @@ Of course, there are ways to find characters that are not isolated by using [wil
 
 #### [🍿 Watch Quick Tips | Manual Search Tool: Wildcards](https://vimeo.com/772196768)
 
-This guide will cover the *, ? and ~ wildcards—they are useful to:
+This guide covers 3 major wildcards—they are useful to:
 
 - Expand your results and make sure you are not missing files.
 - Go around naming convention issues.
@@ -115,104 +115,84 @@ This guide will cover the *, ? and ~ wildcards—they are useful to:
 
 #### [🍿 Watch Quick Tips | Manual Search Tool: Wildcards](https://vimeo.com/772196768)
 
-The `*` wildcard **replaces zero or more characters** and is the most commonly used wildcard. It’s a powerful tool for overcoming [naming convention](#naming_convention) inconsistencies.  
+The `*` asterisk wildcard **replaces zero or more characters** and is the most commonly used wildcard. It’s a powerful tool for overcoming [naming convention](#naming_convention) inconsistencies.  
 
 ✏️ Using the `*` wildcard in a search may slow down performance, especially when placed at the beginning of a query, as it requires scanning a much larger dataset.  
 
 #### Search Examples Using the *
 
-| SEARCH QUERY | POSSIBLE RESULTS|
+| 🔎 SEARCH QUERY | POSSIBLE RESULTS|
 | --- | --- |
+| `*albert*` | SIMULATIONLOG**ALBERT**.txt<br>project**albert**overview.pptx<br>**albert**xb12p.pdf |
+| `R*1005` | **R**-**1005**<br>**R1005**<br>**R**es_**1005**<br>**R**eservoir**1005** |
+| `*2025*` | MappingLog**2025**Final.log<br>simulation_**2025**0220.txt |
+| `s*1` | **S1**<br>**s**eason **1**<br>**s**0**1**<br>**s**_**1**<br><br> ✏️This search query would also find **season 11**, for example, but it’s often better to start with a broader search and then refine your results once you have a better understanding of the data. |
 
-
-
-🔎 If you would launch a search with **\*eyes***, the following files would be found:
-- foryoureyesonly
-- theseeyes_song
-- eyes18367
-
-#### How to Use the * | Examples with Numbers
-
-🔎 If you would launch a search with **\*12***, the following files would be found:
-- draft12
-- draft_v12
-- draft123
-
-#### How to Use the * | Mix of Letters and Numbers
-
-For example, if you want to search for **season 1**, the file name could have different spellings like **S1**, **season 1**, **s01**, **s_1**, etc. 
-
-In order to expand your results to include all possibilities, a logical search syntax could be **s\*1** because the **\*** would catch everything in between the **s** and the **1**. Now, this would also find season 11 for example, but it's better to widen your results at first and then narrow them down once you have an idea of what you are dealing with.
-
->🔆 &nbsp;If you prefer not typing the **\*** and ALWAYS want to use it by default, you can select that preference **> gear icon > Settings > [Use predictive search](#predictive_search)**. Please be aware that using predictive search might expand your results way too much at all times. Throughout this user guide, we assume the predictive search has not been selected.
+✏️ If you prefer not typing the `*` and ALWAYS want to use it by default, you can set [**Use predictive search**](#predictive_search) in your settings. Throughout this user guide, we assume that predictive search has not been activated.
 
 
 
 <p id="question_mark_wildcard"></p>
 
-### ? Wild Card
+### ? Wildcard
 
 #### [🍿 Watch Quick Tips | Manual Search Tool: Wildcards](https://vimeo.com/772196768)
 
-The **?** wild card is used to replace a single character. I can be used several times in a row to replace a specific number of variables.
+The `?` question mark wildcard **replaces a single character** and can be used multiple times to match a specific number of characters.  
 
-🔎 A few examples of what would be found when launching the following queries:
+| 🔎 SEARCH QUERY | POSSIBLE RESULTS|
+| --- | --- |
+| `scene?` | **scene**s<br>**scene**1 |
+| `e?2` | **e**p**2**<br>**e**0**2**<br>**e**2**2** |
+| `shot??1` | **shot**00**1**<br>**shot**25**1** |
+| `project????` | **Project**0021__log.txt<br>**project**logs.log<br>**project**or01.log |
+| `r??05` | **r**es**05**<br>**r**10**05**<br>**R**S7**05** |
 
-- **scene?** > would find **scenes**, **scene1**...
-- **e?2** > would find **ep2**, **e02**, **e12**, **e22**...
-- **shot??1** > would find **shot001**, **shot101**, **shot991**...
-- **frame???** > would find **frame000** to **frame999**
+✏️ Technically, the `*` wildcard could be used instead of multiple `?` characters, but it may return results outside your intended character range since `*` replaces zero or more characters. In cases where precision is needed, the `?` wildcard is often the better choice.  
 
->🔆 &nbsp;Technically, the **\*** could be used instead of typing several **?** but then it would open results outside the specific range of characters you are aiming for because the * replaces 0 to many characters. Therefore, the ? is sometimes better suited for preciseness.
+
 
 <p id="tilda_wildcard"></p>
 
-___
-### ~ Wild Card
+### ~ Wildcard
 
 #### [🍿 Watch Quick Tips | Manual Search Tool: Wildcards](https://vimeo.com/772196768)
 
-The **~** wild card is also called the **fuzziness** wild card. It is used to find similar words, and is mostly used to catch human misspellings.
+The `~` tilda, aka fuzziness wildcard, is used to find similar words and catches about 80% of all human misspellings.
 
->🔆 &nbsp;Be aware that launching a query with the **~** can use an enormous amount of memory and perform badly, ending in a "timed out" situation.
+By default, when used alone, the `~` wildcard allows up to 2 character changes. However, **best practice is to use `~1`** to limit changes to 1, which is usually sufficient to catch about 80% of human misspellings.  
 
-The query uses the [Damerau-Levenshtein distance](https://en.wikipedia.org/wiki/Damerau-Levenshtein_distance) to find all terms with a maximum of two changes, where a change is the insertion, deletion or substitution of a single character, or transposition of two adjacent characters.
+⚠️ Note that using the `~` wildcard in a query can consume a significant amount of memory and may lead to poor performance, potentially resulting in a "timed out" error.  
 
-If used alone, by default the **~** will look for the maximum of 2 changes, but it is best practice to use **~1** in order to limit the changes to 1, which should be sufficient to catch 80% of all human misspellings. 
+| 🔎 SEARCH QUERY | POSSIBLE RESULTS|
+| --- | --- |
+| `life~1` | live, line, wife, like, rife, lift... |
+| `life~` | results from `life~1` + knife, lived, hide, fire, link, loft, love... |
+| `jungle~1` | jungle, juggle, jingly, jingle, jingles... |
+| `jungle~` | results from `jungle~1` + june, judge, single, bundle, uncle... |
 
-🔎 A few examples of words that would be found with and without limiting the changes to 1:
+🔆 The query uses the [Damerau-Levenshtein distance](https://en.wikipedia.org/wiki/Damerau-Levenshtein_distance) to find all terms with a maximum of two changes, where a change is the insertion, deletion or substitution of a single character or transposition of two adjacent characters.
 
-- **jungle~1** > would find: jungle, juggle, jingly, jingle, jingles, etc.
-- **jungle~** > would find: jungle, juggle, jingly, jingle, jingles, june, judge, single, bundle, uncle, etc.
 
-___
-### Mixing Wild Cards
 
-#### Mixing Wild Cards in the same QUERY
+### Mixing Wildcards
 
->🔆 &nbsp;Mixing wild cards can be tricky, but below are the basic rules.
+⚠️ Mixing wildcards can be tricky. Below are a few examples, but remember that additional rules apply when combining wildcards, such as the order in which they are used.  
 
-🔎 You can mix any wild cards in the same query. For example:
+| 🔎 Mixing Wildcards in the same QUERY | 🔎 Mixing Wildcards in the same CRITERIA |
+| --- | --- |
+| You can mix any wild cards in the same query, ex:<br>`jungle~1 and e*2`<br>`*albert* not v1?` |  You can mix the * and ? but NOT the ~, ex:<br>What you **can** do: `*albert* 2023????`<br>What you **can't** do: `*albert~1` |
 
-- **jungle~1 and e*2**
-- **project? not 2022\***
 
-#### Mixing wild cards in the same CRITERIA
 
-You can mix the * and ? but not the ~
-
-🔎 What you can do: **scene0?\_frame\*** > would find scene01_frame0023
-
-🔎 What you CAN’T do: **\*jungle~1**
 
 <p id="operators"></p>
 
-___
-### Operators When Using Multiple Criteria
+### Operators Overview
 
-There are 3 operators: **and**, **not**, **or**, and they are not case sensitive. Operators are needed when using multiple criteria in a single query. 
+Operators are used to join multiple criteria in a query. There are 3 operators: **AND**, **NOT**, **OR**, and they are not case sensitive. 
 
-#### AND Operator
+### AND Operator
 
 🔎 Example:
 
@@ -220,13 +200,13 @@ There are 3 operators: **and**, **not**, **or**, and they are not case sensitive
 
 >🔆 &nbsp;IMPORTANT TIME SAVER! Note that **and** is assumed if no operators are typed in between criteria, so you would get the same results as described above when searching with **jurassic s\*1**
 
-#### NOT Operator
+### NOT Operator
 
 🔎 Example:
 
 **jurassic and s\*1 not e\*5** > would find **jurassic** isolated anywhere in the path/file name and **seasons ending with 1** but would exclude **episodes ending with 5**.
 
-#### OR Operator
+### OR Operator
 
 When using the **or** operator, you will need to group the criteria around that operator in order for Diskover to make sense of the query. Think of this as building formulas in Excel, Excel will want you to group criteria in order to understand what you want to accomplish; Diskover works on the same premise.
 
@@ -234,9 +214,11 @@ When using the **or** operator, you will need to group the criteria around that 
 
 **jurassic (s\*1 or s\*2)** > would find **jurassic** isolated anywhere in the path/file name and **seasons ending with 1 or 2**.
 
+
+
+
  <p id="complex_queries"></p>
- 
-___
+
 ### Complex Queries and Grouping Criteria
 
 <p id="math_symbols"></p>

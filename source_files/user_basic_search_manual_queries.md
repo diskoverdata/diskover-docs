@@ -1,140 +1,101 @@
-<p id="search_syntax"></p>
+<p id="manual_queries"></p>
 
-___
-## Manual Queries | Syntax and Rules
-___
+## Manual Queries | Rules and Syntax
 
-Until you get familiar with Diskover and when trying to achieve complex queries, we strongly recommend using the built-in search tools like the [filters](#filters), [quick searches](#quick_search), or [search within results](#search_within_results) that are available directly in the interface. Those built-in tools can be combined with manual queries for extremely precise results.
+### Overview
 
-The examples used in this chapter are mostly media and entertainment related, but the same logic can be applied to any type of industry.
+The examples in this chapter may not be specific to your industry, but the logic of searching is universal. Understanding these concepts will help you apply them effectively in any context. The list of possible search queries and syntax is extensive; therefore, this chapter will cover only the basics of manual searches.  
 
->🔆 &nbsp;Pay attention to all the messages in the green and blue information bars in the user interface, they are very helpful!
+✏️ Be sure to read the messages in the green and blue information bars in the user interface—they provide helpful guidance! 
 
-#### Many Ways to Search and Get the Same Results
-There are many ways to search with Diskover and get to the same results; you can use the built-in tools, manual queries, or a combination of both. It all depends on your personal preferences and comfort level.
 
-This chapter covers the rules around manual queries. You can navigate directly to the built-in tools sections via these links:
-- [Filters](#filters)
-- [Quick searches](#quick_search)
-- [Search within results](#search_within_results)
+#### Many Ways to Search
+
+There are multiple ways to search with Diskover and achieve the same results. You can use the [built-in tools](#builtin_search_tools), manual queries, or a combination of both, depending on your personal preferences and comfort level. 
+
 
 #### Golden Rules of Searching
 
-1. Expand your results using, by using [wildcards](#wildcards) for example.
-1. Only add a criterion or a few criteria at a time and continuously validate your results.
-1. Readjust your query as needed.
+Whether you're building simple or complex queries:  
 
-The list of possible search queries and syntax is exhaustive, therefore only the basics of manual searches will be explained in this chapter.
+1. **Expand your results**, using [wildcards](#wildcards) for example, and make sure you are not missing any files or directories in your results—[naming convention](#naming_convention) being one of the biggest problems when it comes to searching.
+1. **Only add one criterion at a time** and validate your results between each addition. 
+1. **Readjust your query** as needed.
+
 
 <p id="es_rules"></p>
 
-___
-### Search Rules Based on Elasticsearch
+#### Search Rules Based on Elasticsearch
 
-As Diskover uses Elasticsearch in the backend, all search syntax within Diskover are based on Elasticsearch's rules and algorithms. We will discuss many of these rules in this chapter, but for more details and more examples, please visit: 
+Since Diskover uses Elasticsearch to store the harvested metadata and as its search engine, all search syntax in Diskover follows Elasticsearch's rules and algorithms. This chapter will cover many of these rules, but for more details and examples, please [visit the Elasticsearch website](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html).
 
-[https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html)
 
 <p id="naming_convention"></p>
 
-___
-### Search Issues Resulting from Naming Conventions
+#### Naming Conventions
 
-Many organizations have issues with naming conventions. Your search results might be limited if you try to be too restrictive when searching. For example, files associated with the movie **For Your Eyes Only** might be named:
+Many organizations struggle with inconsistent naming conventions, including misspellings. Here are a few examples:
 
-- ForYourEyesOnly
-- 4YourEyesOnly
-- foryoureyesonly
-- for_your_eyes_only
-- for your eyes only
-- Not mentioning all the possible misspellings. 
+| PROJECT NAME | PROJECT NAME | VERSION | EPISODE |
+| --- | --- | --- | --- |
+| **North Sea Simulation**<ul><li>northseasimulation</li><li>north_sea_simulation</li><li>NorthSeaSimulation</li><li>NORTH sea sim</li><li>NSea-simulation</li></ul> | **Four Your Eyes Only**<ul><li>ForYourEyesOnly</li><li>foryoureyesonly</li><li>4YourEyesOnly</li><li>for_your_eyes_only</li><li>for your eyes only</li></ul> | **Version 8** <ul><li>v08</li><li>v8</li><li>v_08</li><li>ver8</li><li>ver_008</li></ul> | **Episode 5** <ul><li>ep5</li><li>eps5</li><li>e05</li><li>ep_05</li><li>ep-005</li></ul> | 
 
-Other examples of naming convention issues:
+To ensure comprehensive results, consider using broader or more flexible search terms. Diskover provides tools to refine or expand your search, allowing you to pinpoint the exact data you need or cast a wider net when necessary.  
 
-- Show season: s01, s1, s01, s_01, season1
-- Episodes: ep5, eps5, e5, e05, ep_05, ep_5, 05
 
-Unless you know that a strict naming convention was followed, trying to launch a query with very specific criteria may limit your results and you might think that some files are missing.
-
-Ways to either pinpoint or expand your results will be explained in this chapter in order to go around the naming convention issues and make sure you are not missing files in your results.
 
 <p id="search_basics"></p>
 
-___
 ### Understanding the Basics of Manual Queries
+
+#### [🍿 Watch Quick Tips | Understanding the Basics of Manual Queries](https://vimeo.com/770024733)
 
 <p id="case_sensitivity"></p>
 
 #### Case Sensitivity
 
-Search queries are case insensitive in general, so you can type upper or lower cases in the search bar when launching a query. There are very few exceptions where queries are case-sensitive:
+Search queries are generally case-insensitive, meaning you can use uppercase or lowercase letters in the search bar without affecting the results. However, there are a few exceptions where queries are case-sensitive:  
+
 - When [searching on time](#search_time).
 - When searching on [field names](#search_field_names).
+
 
 <p id="isolated_characters"></p>
 
 #### Isolated Characters
 
-#### [🍿 Watch Quick Tips | Understanding the Basics of Manual Queries](https://vimeo.com/770024733)
+When you enter a word, number, or a combination of both in the search bar, Diskover searches for those **isolated characters**. To identify isolated characters, Diskover uses **isolators** such as spaces, underscores, hyphens, periods, other punctuation marks, and uppercase letters (also known as 🐫 CamelCase).  
 
-When typing a word, a number, or a combination of both in the search bar, Diskover will look for those **isolated characters**. In order to find isolated characters, Diskover uses **isolators** like **spaces, underscores, hyphens, forward slashes, periods, other punctuation, as well as upper cases** (aka CamelCase).
-
-Of course, there are ways to find characters that are not isolated by using [wild cards](#wildcards), which is explained in the next section.
+Of course, there are ways to find characters that are not isolated by using [wildcards](#wildcards), which is explained in the next section.
 
 ##### Isolated Characters | Examples with Letters
 
-🔎 For example, if you launch a query with the word **eyes**:
+🔎 If you launch a query with the word **albert**:
 
-| File name | File would be found | File would not be found |
+| FILE NAME | FILE WOULD BE FOUND | FILE WOULD _NOT_ BE FOUND |
 | --- | --- | --- |
-| for_your_eyes_only.mov | **eyes** is isolated with underscores |  |
-| ForYourEyesOnly.mov | the first letters of each words is capitalized, aka CamelCase |  |
-| foryoureyesonly.mov |  | the whole string of characters is read as a single word |
-| 4youreyes.mov |  | the word **eyes** is only isolated at the end |
+| project_albert_overview.pdf | **albert** is isolated by underscores |  |
+| AlbertSimulationTest_log_v001.txt | **albert** is isolated by CamelCase |  |
+| albertSIMULATION_test_log_v003.log | **albert** is isolated by CamelCase | |
+| projectalbert.pdf |  | **albert** is only isolated on one side with the . |
+| projectalbertoverview.pptx | | project**albert**overview is read as one word |
+| ProjectALBERTOverview.pptx | | reads **ALBERTO** |
 
 ##### Isolated Characters | Examples with Numbers
 
-🔎 For example, if you launch a query with the number **12**:
+🔎 If you launch a query with the number **2025**:
 
-| File name | File would be found | File would not be found |
+| FILE NAME | FILE WOULD BE FOUND | FILE WOULD _NOT_ BE FOUND |
 | --- | --- | --- |
-| shot_12_20221110.mov | **12** is isolated with underscores |  |
-| Shot 12 20221110.mov | **12** is isolated with spaces |  |
-| shot12.mov |  | **12** is only isolated at the end |
-| draft_V12.pdf |  | **12** is only isolated at the end AND CamelCase doesn't work with numbers |
-| draft_123.pdf |  | **12** is not isolated at the end |
+| project-albert-2025-draft.pdf | **2025** is isolated by hyphens |  |
+| mapping log 2025 final.log | **2025** is isolated by spaces |  |
+| projectalbert2025.pdf  |  | **2025** is only isolated on one side with the . |
+| MappingLog2025Final.log |  | CamelCase doesn't work with numbers |
+| QA_testing_20250220.pptx |  | 2025 is only isolated on one side with the _ |
 
-<p id="math_symbols"></p>
 
-#### Syntax for Mathematical Symbols in Queries
 
-You can only use **:** with letters, but you can use any of the following with numbers.
 
-| Syntax | Equation |
-| --- | --- |
-| **:** | equal to |
-| **:>** | greater than |
-| **:>=** | equal to or greater than |
-| **:<** | lesser than |
-| **:<=** | equal to or lesser than |
-| **:<>** | is not equal to |
-
-<p id="parentheses_brackets"></p>
-
-#### Parentheses and Brackets
-
-At times you will need to group criteria, so Diskover can make sense of the queries; think of this as grouping criteria when building formulas in Excel.
-
-##### (Parentheses)
-
-When writing complex queries, you will need to group some elements with parentheses **( )** as further described in [The Need of Grouping Criteria for Complex Queries](#complex_queries) section.
-
-##### [Square] or {Curly} Brackets
-
-The square brackets `[ ]` or curly brackets `{ }` need to be used to contain ranges for **time**, **dates**, **numeric** or **string fields**. They can even be mixed `[ }`. You can find examples in the [Searching on time](#search_time) section. Below is how/when to apply them:
-
-	- **Inclusive** ranges need to be specified with square brackets, ex: **[min TO max]**, 
-	- **Exclusive** ranges need to be specified with curly brackets, ex: **{min TO max}**
 
 <p id="wildcards"></p>
 
@@ -267,6 +228,39 @@ When using the **or** operator, you will need to group the criteria around that 
 ___
 ### Complex Queries and Grouping Criteria
 
+<p id="math_symbols"></p>
+
+#### Syntax for Mathematical Symbols in Queries
+
+You can only use **:** with letters, but you can use any other with numbers.
+
+| SYNTAX | EQUATION |
+| --- | --- |
+| **:** | equal to |
+| **:>** | greater than |
+| **:>=** | equal to or greater than |
+| **:<** | lesser than |
+| **:<=** | equal to or lesser than |
+| **:<>** | is not equal to |
+
+<p id="parentheses_brackets"></p>
+
+#### Parentheses and Brackets
+
+At times you will need to group criteria, so Diskover can make sense of the queries; think of this as grouping criteria when building formulas in Excel.
+
+##### (Parentheses)
+
+When writing complex queries, you will need to group some elements with parentheses **( )** as further described in [The Need of Grouping Criteria for Complex Queries](#complex_queries) section.
+
+##### [Square] or {Curly} Brackets
+
+The square brackets `[ ]` or curly brackets `{ }` need to be used to contain ranges for **time**, **dates**, **numeric** or **string fields**. They can even be mixed `[ }`. You can find examples in the [Searching on time](#search_time) section. Below is how/when to apply them:
+
+	- **Inclusive** ranges need to be specified with square brackets, ex: **[min TO max]**, 
+	- **Exclusive** ranges need to be specified with curly brackets, ex: **{min TO max}**
+
+
 When using several criteria and more than one [operator](#operators), it is recommended to use parentheses **( )** in order to group some elements and help Diskover make sense of the query. Think of this as building formulas in Excel, Excel will want you to group criteria in order to understand what you want to accomplish; Diskover works on the same premise.
 
 >🔆 &nbsp;You always need to group criteria when using the **or** operator.
@@ -313,56 +307,13 @@ Searching with field names can be effective if you search on a specific and/or h
 
 These fields are harvested during indexing, without any plugins needed.
 
-| Field name | What it means | How to search |
-| --- | --- | --- |
-| **atime** | last accessed | refer to [Queries with Time](#search_time) for syntax examples |
-| **ctime** | last changed  | refer to [Queries with Time](#search_time) for syntax examples |
-| **dir_count** | number of sub-directories in a directory [recursive](#recursive) | `dir_count:2` > would list directories with exactly 2 sub-directories _or_ 1 file and 1 directory _or_ 2 files |
-| **dir_count_norecurs** | number of items (files and folders) in a directory [non-recursive](#recursive) | `dir_count_norecurs:1` > would list directories with at least 1 sub-directory in them |
-| **dir_depth** | directory depth in a path | `dir_depth:2` > would search directories at level 2 in the file tree | 
-| **extension** | file extension | `extension:mov` |
-| **file_count** | number of files inside a directory | `file_count:85` `file_count:500*` `file_count:10?` > to find directories with a specific or approximate number of files |
-| **file_count_norecurs** | number of files inside a directory [non-recursive](#recursive) | `file_count_norecurs:*` > to find directories with a specific or approximate number of files |
-| **file_size** | file size | in bytes > see [Queries with File Size](#search_size) for examples |
-| **file_size_du** | disk usage size aka allocated size for files only | in bytes > see [Queries with File Size](#search_size) for examples |
-| **group** | user group name | `group:colorists` > can vary depending on how Diskover was configured, see [User Analysis Report](#user_analysis) section for more details and/or ask your System Administrator |
-| **ino** | file inode number | `ino:8838389885` or `ino:8838*` > is usually used by System Administrators |
-| **mtime** | last modified | refer to [Queries with Time](#search_time) for syntax examples |
-| **name** | file name | is case sensitive, ex: `name:*Jungle*` if the file name is TheJungleBook.mov |
-| **name.text** | same as **name** but is not case sensitive | `name.text:*jungle*` even if the file name is TheJungleBook.mov |
-| **nlink** | number of [hard links](#hardlinks) | `nlink:3` |
-| **owner** | owner name | `owner:*Joe*` > can vary depending on how Diskover was configured, see [User Analysis Report](#user_analysis) section for more details and/or ask your System Administrator |
-| **parent_path** | path name | `parent_path:\/Some\/Folder*` > is case sensitive, will search the specified folder and all its sub-folders ([recursive](#recursive)) |
-| **parent_path.text** | same as **parent_path** but is not case sensitive | `parent_path:\/some\/folder*` |
-| **size** | file and/or directory size | in bytes > see [Queries with Data Size](#search_size) for syntax examples on how to search on size |
-| **size_norecurs** | file and/or directory size [non-recursive](#recursive) | in bytes > see [Queries with Data Size](#search_size) for syntax examples on how to search on size |
-| **size_du** | disk usage size aka allocated size for files and/or directories | in bytes > see [Queries with Data Size](#search_size) for syntax examples on how to search on sizes |
-| **size_du_norecurs** | disk usage size [non-recursive](#recursive) | in bytes > see [Queries with Data Size](#search_size) for syntax examples on how to search on size |
-| **type** | file or directory | `type:file` or `type:directory` > is case sensitive, all lowercase needed |
 
-<p id="extra_metadata"></p>
+
+
 
 ### Field Names | Extra Metadata
 
-These extra metadata fields are harvested using index and post-index plugins.
 
-| Tool | What it means | Field names |
-| --- | --- | --- |
-| **BAM** | extra metadata for [sam and bam files when using the BAM plugin](https://diskoverdata.com/products/life-science-edition/#bam-plugin) | refer to the [Diskover Life Science User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/#bam-harvest-plugin) for the list of fields |
-| **Cost** | storage space cost when [Cost Analysis feature is configured in Diskover](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#storage-cost-reporting) | `costpergb` > search example `costpergb:[10 TO 500]` |
-| **Dupes Finder** | field populated when using the [Dupes Finder plugin](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#duplicates-finder-plugin) | `is_dupe`
-| **Dell PowerScale** | multiple [Dell PowerScale attributes](https://diskoverdata.com/products/dataiq-migration/#platform-overview) can be harvested when using the alternate indexer | please refer to the [indexer diagram for all fields harvested](https://diskoverdata.com/products/dataiq-migration/#platform-overview) |
-| **Grant** | extra metadata for [research grant info when using the Grant plugin](https://diskoverdata.com/products/life-science-edition/#grant-plugin) | `assigned_grant`, `SG-group`, `ProjectId` |
-| **Hash Values** | harvested when using the [hash value plugin](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#duplicates-plugin) for checksums | `hash.xxhash`, `hash.md5`, `hash.sha256`, `hash.sha1` |
-| **Media Info** | attributes harvested using the [Media Info plugin](https://diskoverdata.com/products/products-aja-media-edition/#mediainfo) | refer to the [AJA Diskover Media Edition User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#media-info-attributes) for the list of fields and how to use them |
-| **Microsoft Azure Blob** | fields collected when using the Microsoft Azure Blob indexer | `azure_etag`, `azure_tier` |
-| **S3** | attributes collected when using the [S3 alternate indexer](https://docs.diskoverdata.com/diskover_installation_guide/#create-an-index-of-an-s3-bucket) | `s3_etag`, `s3_storageclass` |
-| **ShotGrid** | fields harvested when using the [Autodesk Flow Production Tracking (formerly ShotGrid) plugin](https://diskoverdata.com/products/products-aja-media-edition/#flowprodtracking) | refer to the [AJA Diskover Media Edition User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#flow-production-tracking-plugin) for the list of fields |
-| **Tags** | manual or auto tags attributed for [items tagged within Diskover](https://docs.diskoverdata.com/diskover_user_guide/#tags) | `tags`, search example `tags:delete` > any tag name associated with a file or directory, tag name is case sensitive |
-| **Unix Permissions** | field harvested when using the [Unix Permission plugin](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#unix-permissions-plugin) | `unix_perms` > search example `unix_perms:777` |
-| **Windows Owner** | fields harvested when using the [Windows Owner plugin](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#windows-owner-plugin) | `windows_owner`, `windows_group` |
-| **Xytech Asset Creation** | fields harvested when using the [Xytech Asset Creation plugin](https://diskoverdata.com/products/products-aja-media-edition/#xytech-asset-creation) | refer to the [AJA Diskover Media Edition User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-asset-creation-plugin-overview) for the list of fields and how to use them |
-| **Xytech Order Status** | fields harvested when using the [Xytech Order Status plugin](https://diskoverdata.com/products/products-aja-media-edition/#xytech-order-status) | refer to the [AJA Diskover Media Edition User Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-order-status-plugin-overview) for the list of fields and how to use them |
 
 
 #### Examples of Searching with Field Names

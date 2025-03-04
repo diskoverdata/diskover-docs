@@ -34,3 +34,17 @@
 | **type** | file or directory | `type:file` or `type:directory` > is case sensitive, all lowercase needed |
 
 
+### Queries with File Extensions
+
+When searching on file extensions, it is recommended to either:
+- Use the dedicated fields in the [filters](#filters).
+- Use [quick search](#quick_search) which you can combine with a manual query for max efficiency.
+- Type in the search bar the pre-determined field name for file extensions, for example **extension:mov**
+
+>🔆 &nbsp;Note that the file extension letters might be part of the file name and give you misleading results. By searching using the field name **extension** you focus your searches on that field exclusively.
+
+🔎  A few example:
+
+- If only typing **mov** in the search bar, the results would include all files with **.mov** extension, but could also return a file with the name **all_mov_titles_2021.txt**
+
+- If only typing **jpg** in the s

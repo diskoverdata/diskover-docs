@@ -220,8 +220,6 @@ These fields are harvested during indexing, without the need for any plugins. Fo
 
 Additional metadata fields can be harvested using Diskover plugins, extending the depth of searchable information beyond the default fields. These plugins enable you to extract specialized metadata tailored to your workflows, providing enhanced visibility and search capabilities. For a complete list of available fields, along with instructions and examples on how to search using them, please refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/#extra_metadata).
 
-<img src="images/key_value_pair_examples.png" width="">
-
 #### Examples of Searches with Field Names
 
 You can find examples throughout this chapter, but here are a few more:
@@ -234,9 +232,9 @@ You can find examples throughout this chapter, but here are a few more:
 | `*albert* AND tags:delete AND extension:mov` | All **.mov** files tagged **delete** containing **albert** in its name. |
 | `tags:(manual_delete AND approve_delete)` | Files and directories with both tags attached to them - please refer to [complex queries](#complex_queries) regarding the use of the parentheses for grouping. |
 
+<img src="images/key_value_pair_examples.png" width="">
+
 You can find more examples with field names when it comes to [searching on time](#search_time) and [searching on size](#search_size) sections.
-
-
 
 
 <p id="search_size"></p>

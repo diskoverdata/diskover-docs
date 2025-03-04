@@ -1,9 +1,8 @@
 <p id="dashboard"></p>
 
-___
 ### Dashboard
 
-The dashboard view is a great way to get a quick visual snapshot of a volume.
+The dashboard view is a great way to get a quick snapshot of a volume.
 
 ![Image: Dashboard Overview](images/image_dashboard_overview.png)
 

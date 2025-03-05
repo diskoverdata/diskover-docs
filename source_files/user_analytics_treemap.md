@@ -27,7 +27,7 @@ The treemap report visualizes hierarchical data using nested figures—the large
 | C | **Up Level**: To drill up one directory at a time until you reach the top of the [volume](#volume). |
 | D | **Reload**: To reload the cached data for the chart and file tree.
 | E | **Size Filter**: To set a minimum data size threshold for filtering results. |
-| F | **Mtime Filter**: To focus on older data, for example if you select **2 years**, data will be filtered to only show data with an mtime equal or older than 2 years. |
+| F | **Mtime Filter**: To focus on a specific data modified time period. |
 | G | **Hide Thresh**: To make the graphics less busy by hiding the results with low percentages. |
 | H | **Size or Count**: Choose whether to view the report by **Size** (data volume) or **Count** (number of items). |
 | I | **Maxdepth**: Select the number of levels/directories to display in the results. |

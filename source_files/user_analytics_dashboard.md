@@ -4,9 +4,11 @@
 
 The dashboard view is a great way to get a quick snapshot of an entire [volume](#volume). 
 
-✏️ Hovering several areas will give you more information and many graphics are clickable to open the details in the [search page](#search_page).
+
 
 ![Image: Dashboard Overview](images/analytics_dashboard.png)
+
+✏️ Hovering several areas will give you more information and many graphics are clickable to open the details in the [search page](#search_page).
 
 | REFERENCE | SECTION | DESCRIPTION |
 | :---: | --- | --- |

@@ -1,79 +1,48 @@
 <p id="cost_analysis"></p>
 
-___
 ### Cost Analysis 
 
-<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
+The Cost Analysis Report provides a snapshot of how your storage budget is allocated. It offers repeatable, customizable reports that can be configured by project, client, data aging, or other criteria relevant to your organization.
 
 
-The cost analysis report offers a snapshot of where your storage money is being allocated. This tool is designed to control your operating costs  by:
 
-- Charging your customers appropriately for storage.
-- Incentivize cleanup/data curation instead of purchasing more storage.
+#### Accessing Cost Analysis
 
-<p id="cost_config"></p>
+| From the **Analytics** drop-down list | From the <img src="images/icon_more.png" width="25"> located in the path column in the results pane |
+| --- | --- |
+| Will aggregate data from all volumes if no filters are activated.<br> <img src="images/analytics_select_cost_analysis.png" width="300"> | Will load the report for that path only.<br><img src="images/image_analytics_cost_analysis_access_via_results_pane_20230215.png" width="600"> |
 
-#### Storage Cost Calculation and Configuration Overview
-
-The initial setup is enabled and configured by a System Administrator using your organization’s real figures. Here is an example of how the cost is calculated:
-
->Storage cost is $100/TB x client's project is using 10 TB = cost for that client's project is $1,000
-
-There are many other factors that can be compounded to the cost of the storage itself, for example:
-
-- Electricity.
-- Square footage of building space for physical units.
-- Support contract.
-- System Administrator’s salary.
-- Diskover’s annual subscription cost.
-
->🔆  &nbsp;Different storage volumes can have different costs associated with them.
-
-This diagram explains how storage cost is [enabled and configured](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#storage-cost-reporting) by your System Administrator.
-
-![Image: Storage Cost Configuration Overview Diagram](images/diagram_diskover_storage_cost_configuration_overview_with_border.png)
-
-_[Click here for a full-screen view of the Storage Cost Configuration Overview diagram.](images/diagram_diskover_storage_cost_configuration_overview_with_border.png)_
-
-#### Accessing the Cost Analysis Report
-
-Via the  **Analytics**  drop-down list for global results:
-
-<img src="images/image_analytics_cost_analysis_access_via_analytics_dropdown_20230215.png" width="300">
-
-Via the results pane by clicking this icon to investigate a particular path.
-
-<img src="images/image_analytics_cost_analysis_access_via_results_pane_20230215.png" width="600">
 
 #### Cost Analysis Overview
 
-The cost analysis report offers repeatable reports that can be configured by project, client, aging, etc. whatever is relevant for your organization.
+![Image: Cost Analysis Report Overview](images/analytics_cost_analysi_2025.png.png)
 
-![Image: Cost Analysis Report Overview](images/image_analytics_cost_analysis_overview_20230215.png)
+✏️ Hover over the graphics to view more detailed information.
 
->🔆 &nbsp;Hovering over the graphics will give you a snapshot of their attributes.
+| REFERENCE | DESCRIPTION |
+| :---: | --- |
+| A | Results by number of items – click on any link to open the results in the [search page](#search_page). |
+| B | Results by size – click on any link to open the results in the [search page](#search_page). |
+| C | Apply filters to further customize your results:<ul><li>**Show files only**: Will exclude directories from the results.</li><li>**Show directories only**: Will exclude files from the results.</li><li>**Show all**: To show both files and directories in the results.</li><li>**Dir size no recurs**: To restrict results to a non-recursive directory search [non-recusrsive](#recursive).</li><li>**Current top path only**: To limit the results to 🅓 selected [volume](#volume).</li><li>**Current dir only**: If applicable, to limit the results to the path you selected in the search page and locked down via [Current Dir](#current_dir) before navigating to Cost Analysis.</li></ul> |
+| D | Cost Analysis are global, if you want to narrow the results:<ul><li>To a single volume: Activate the **Current top path only** filter.</li><li>To a specific path: Activate the **Current dir only** filter as described in 🅒. |
+| E | **Edit Cost Analysis**: You can view the queries used for the report, but editing them requires an admin account. If you need to add or edit a search query and don’t have admin access, contact your System Administrator. |
 
-A) Reports with results in number of items – click on a report to open the results in the search page. The [queries can be customized](#cost_config).
 
-B) Same queries as A), but with results in size instead – click on a report to open the results in the search page.
+#### Cost Analysis in the Search Page
 
-C) Apply filters to further customize your results:
-
-  - **Show files only**: Will exclude directories from the results.
-  - **Show directories only**: Will exclude files from the results.
-  - **Show all**: To show both files and directories in the results.
-  - **Dir size no recurs**: To limit directory size to [non-recursive](#recusrive).
-  - **Current top path only**: To limit the results to D) selected [volume](#storage_volume).
-  - **Current dir only**: If applicable, to limit the results to the path you selected in the search page and locked down via [Current Dir](#current_dir) before navigating to Smart Searches.
-
-D) Cost analysis is global, if you want to narrow the results:
-  - To a single volume > activate the **Current top path only** filter.
-  - To a specific path > activate the **Current dir only** filter as described in C).
-
-E) **Edit cost analysis**: The [queries can be customized](#cost_config).
-
-#### Cost Analysis in File Search Page
-
-Once the cost analysis tool is [enabled and configured](#cost_config), the cost associated to a specific directory or a file can be viewed in the file search page.
+Once the cost analysis tool is [enabled and configured](#cost_config), the cost associated with a specific directory or a file can be viewed in the file search page.
 
 ![Image: Cost Analysis Info in File Search Page](images/image_analytics_cost_analysis_in_file_search_page.png)
+
+
+
+#### Storage Cost Calculation and Configuration Overview
+
+Storage cost can be set globally or per storage volume, directory, etc. This tool is designed to control operating costs by 1) charging clients accurately for storage of their projects and 2) clean-up/data incentivizing.
+
+This feature is enabled and configured by your System Administrator. The storage costs can either be estimated globally, by storage volume, or down a directory level. The estimations need to be done outside of Diskover. Besides the cost of the storage itself, other factors can be compounded like electricity, service contract, System Administrator’s salary, subscription fees, etc. The estimations need to be calculated and configured per gigabyte.
+
+![Image: Storage Cost Configuration Overview Diagram](images/diagram_storage_cost_configuration.png)
+
+_[Click here for a full-screen view of the Storage Cost Configuration Overview diagram.](images/diagram_storage_cost_configuration.png)_
+

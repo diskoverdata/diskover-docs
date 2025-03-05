@@ -32,7 +32,7 @@ The treemap report visualizes hierarchical data using nested figures—the large
 | H | **Size or Count**: Choose whether to view the report by **Size** (data volume) or **Count** (number of items). |
 | I | **Maxdepth**: Select the number of levels/directories to display in the results. |
 | J | **Show Files**: By default, the results pane displays only directories—select this option to include files in the results. |
-| K | **Filters**: Summary of the filters you might have selected.<br>⚠️These **filters will stay active**, even if you navigate away to other pages, they will also apply to the File Tree report. |
+| K | **Filters**: Summary of the filters you might have selected.<br>⚠️These **filters will stay active**, even if you navigate away to other pages AND they will affect other analytics. |
 | L | <img src="images/icon_magnifying_glass.png" width="25"> Click to open that path in the [search page](#search_page) for further investigation. |
 | M | <img src="images/icon_clipboard_purple.png" width="25"> To copy the path to your clipboard. |
 | N | **Graphics area**: You can drill down using the rectangles.<br>✏️ All rectangles of the same color belong to the same directory. |

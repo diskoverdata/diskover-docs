@@ -1,54 +1,38 @@
 <p id="filetree"></p>
 
-___
 ### File Tree
 
-<img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
+The File Tree Report provides insights into the size and aging of data for a selected [path](#path). Many users prefer this view for drilling down into data rather than using the [search page](#search_page. 
 
-The file tree report profiles the size and aging of data for a selected [path](#path). Some users find it easier to drill down using this page instead of the file search page. Note that the colors have no particular meaning in this report.
+#### Accessing File Tree
 
-#### Accessing the File Tree Report
-
-Via the  **Analytics**  drop-down list for global results:
-
-<img src="images/image_analytics_file_tree_access_via_analytics_dropdown_20230215.png" width="300">
-
-Via the results pane by clicking this icon to investigate a particular path.
-
-<img src="images/image_analytics_file_tree_access_via_results_pane_20230215.png" width="600">
+| From the **Analytics** drop-down list | From the <img src="images/icon_more.png" width="25"> located in the path column in the results pane |
+| --- | --- |
+| Will aggregate data from all volumes if no filters are activated.<br> <img src="images/analytics_select_file_tree.png" width="300"> | Will load the report for that path only.<br><img src="images/image_analytics_file_tree_access_via_results_pane_20230215.png" width="600"> |
 
 #### File Tree Overview
 
-![Image: File Tree Report Overview](images/image_analytics_file_tree_overview.png)
+![Image: File Tree Report Overview](images/analytics_file_tree_2025.png)
 
->🔆 &nbsp;Hovering over any graphics will give you a snapshot of their attributes.
+✏️ Hovering the graphic will give you more information.
 
-A) **Path bar**: You can view as well as manually type in the path you want to investigate.
+| REFERENCE | DESCRIPTION |
+| :---: | --- |
+| A | **Path bar**: You can view and paste a path to investigate. |
+| B | **Go**: That button acts as a  **RETURN**  key, for example, use if you paste a path in that bar. |
+| C | **Up Level**: To drill up one directory at a time until you reach the top of the [volume](#volume). |
+| D | **File Tree**: By default, the directories are sorted by **size**—the sorting will change if you change 🅚 by **count**. You can drill down using this left pane as well as via 🅝 the pie chart. |
+| E | <img src="images/icon_magnifying_glass.png" width="25"> Click to open that path in the [search page](#search_page) for further investigation. |
+| F | <img src="images/icon_clipboard_purple.png" width="25"> To copy the path to your clipboard. |
+| G | **Reload**: To reload the cached data for the chart and file tree. |
+| H | **Size Filter**: To set a minimum data size threshold for filtering results – this will affect results in 🅟. |
+| I | **Mtime Filter**: To focus on older data, for example if you select **2 years**, data will be filtered to only show data with an mtime equal or older than 2 years – this will affect the results in 🅠. |
+| J | **Hide Thresh**: To make the graphics less busy by hiding the results with low percentages. |
+| K | **Size or Count**: Choose whether to view the report by **Size** (data volume) or **Count** (number of items)—this will affect the results in 🅟 and 🅠. |
+| L | **Show Files**: By default, the results pane displays only directories—select this option to include files in the results. |
+| M | **Filters**: Summary of the filters you might have selected.<br>⚠️These **filters will stay active**, even if you navigate away to other pages, they will also apply to the Treemap report. |
+| N | **Directories chart**: You can drill down by clicking on pie slices—hover over a slice to view more details about a directory. |
+| O | **File extensions**: A summary of the file extensions detected in the current path. You can click on a slice to open the results in the [search page](#search_page) |
+| P | **Size chart**: A summary by size detected in the current path. You can click on a bar to open the results in the [search page](#search_page) |
+| Q | **Aging chart**: A summary by size detected in the current path. You can click on a bar to open the results in the [search page](#search_page) |
 
-B) **Go**: If you manually edit a value in A) path bar, the  **Go**  button acts as a  **Return**  key.
-
-C) **Up Level**: Will bring you one directory up per click until you reach the top of the volume.
-
-D) **Results pane**: You will only see directories sorted by size by default, the sorting will change if you change K) by count instead. You can drill down using this left pane as well as via N) pie slices.
-
-E) **Magnifying glass icon**: Click to open the directory and its file in the search page for further investigation.
-
-F) **Copy path icon**: To copy the path of a directory or file to your clipboard.
-
-G) **Reload**: To reload the chart and tree cache/data.
-
-H) **Size Filter**: To select a minimum data size you want to pinpoint in the results – this will affect results in O).
-
-I) **Mtime Filter**: To focus on older data, for example if you select **2 years**, data will be filtered to only show data with an mtime equal or older than 2 years – this will affect results in P).
-
-J) **Hide Thresh**: To make the graphics less busy by hiding the results with low percentages.
-
-K) **Size or Count**: Select whether you want to see the report by the  **Size**  of the data or **Count** of items  – this will affect results in O) and P).
-
-L) **Show Files**: By default, the results pane will only show directories, select if you want to see files as well in the results pane.
-
-M) **Filters**: Summary of the filters or preferences that you might have selected.
-
->🔆 &nbsp;Filters will stay active, even if you navigate away to another page.
-
-N) **Pie chart graphic**: You can drill down by clicking on the pie slices.

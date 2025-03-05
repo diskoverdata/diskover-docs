@@ -12,7 +12,7 @@ The File Tree Report provides insights into the size and aging of data for a sel
 
 #### File Tree Overview
 
-![Image: File Tree Report Overview](images/analytics_file_tree_2025.png)
+![Image: File Tree Report Overview](images/analytics_treemap_2025.png)
 
 ✏️ Hovering the graphic will give you more information.
 

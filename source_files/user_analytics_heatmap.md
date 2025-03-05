@@ -1,60 +1,52 @@
 <p id="heatmap"></p>
 
-___
 ### Heatmap 
-
-<img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
-
 
 The heatmap report is a powerful analytical snapshot offering a differential comparison of two indices across two different points in time:
 
-- An instant visual of the location of data growth and shrinkage, as well as the absence of activity if no colors.
+- An instant visual of the location of data growth and shrinkage:
+  - **Red** = data growth
+  - **Green** = data shrinkage
+  - **No color** = the absence of color is meaningful—it indicates data inertia, which may signal anomalies—also useful for comparisons, such as ensuring a cloud backup matches an on-premise server.
 - Insightful for data curation efforts.
 - A useful tool to monitor activity, ex: awaiting new project to be onboarded, monitor backups, etc.
 
-The **red** and **green** colors in the heatmap report have meaning. All other colors are just a gradation between the red and the green.
 
-> Red = Data growth
-> 
-> Green = Data shrinkage
+#### How to Select Indices for Heatmap
 
-The absence of colors in a heatmap report is also very meaningful, revealing data inertia, and therefore alerting you of possible anomalies. The lack of colors/activity is also a good indicator when comparing, for example, an on-premise server to a backup of that server in the cloud where you want data in both storage volumes to be identical; inertia in that case being favorable.
+Before accessing the heatmap report, you need to [select 2 indices from 2 different points in time](#index_selection):
 
-#### How to Select Indices for the Heatmap Report
+- You need to select the same index/volume name to compare the same data.
+- For backups though, it makes sense to select different indices or volumes, such as comparing an on-premise index to a cloud index.
 
-Before accessing the heatmap report, you need to [select 2 indices from 2 different points in time](#index_selection). You will want to select the same index/storage volume name from both columns D & E in order to compare the same data.
+![Image: Indices Selection for Heatmap Report](images/analytics_heatmap_indices_selection.png)
 
->🔆 &nbsp;Sometimes, the storage volumes don’t need to have the same name to be compared. For example, a storage volume could be on a physical server with one name, and another storage volume could be a backup with the same data set in the cloud with a different name.
+⚠️ These selections will stay active and affect all your future interactions until you return to this page and select 🅑 **Always use latest indices**.
 
-Here is a quick visual recap for heatmap purposes only:
+| STEP | DESCRIPTION |
+| :---: | --- |
+| A | Click the ⛭ and select **Indices** |
+| B | Deselect **Always use latest indices**. |
+| C | Click **Unselect all** to ensure all indices are deselected. |
+| D | OPTIONAL - You can filter your indices by searching with a keyword, only leaving the desired indices in your results. |
+| E | OPTIONAL - you can filter your indices by aging to narrow down the list of indices in your results. |
+| F | Select one index from  **Index**  column. |
+| G | Select one index from  **Index 2**  column, with a different date. |
+| H | Click  **Save selection**. |
 
-![Image: Indices Selection for Heatmap Report](images/image_analytics_heatmap_indices_selection.png)
+🔆 The tips in the blue help bars are very helpful!
 
-A) From the gear icon drop-down list, select  **Indices**.
 
-B) Deselect **Always use latest indices**.
+#### Accessing Heatmap
 
-C) Optional - you can select the aging of the indices you want to make available in the list.
+⚠️ As explained above, you must select two indices for comparison; otherwise, an error message will appear..
 
-D) Select one index from  **Index**  column.
-
-E) Select one index from  **Index 2**  column, it should technically be the same storage volume name as in  **Index**  column, but from a previous date.
-
-F) Click  **Save selection**.
-
->🔆 &nbsp;The tips in the blue info bars are practical for quick reference.
-
-#### Accessing the Heatmap Report
+| From the **Analytics** drop-down list | From the <img src="images/icon_more.png" width="25"> located in the path column in the results pane |
+| --- | --- |
+| Will aggregate data from all volumes if no filters are activated.<br> <img src="images/analytics_select_heatmap.png" width="300"> | Will load the report for that path only.<br><img src="images/image_analytics_heatmap_access_via_results_pane_20230215.png" width="600"> |
 
 You need to select the [indices](#index_selection) to compare as explained above before accessing the report, otherwise, you’ll get an error message.
 
-Via the  **Analytics**  drop-down list for global results:
-
-<img src="images/image_analytics_heatmap_access_via_analytics_dropdown_20230215.png" width="300">
-
-Via the results pane by clicking this icon to investigate a particular path.
-
-<img src="images/image_analytics_heatmap_access_via_results_pane_20230215.png" width="600">
 
 
 #### Heatmap Overview

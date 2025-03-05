@@ -6,7 +6,7 @@ Fully customizable reports with what is relevant for your business (by customers
 
 #### Accessing Smart Searches
 
-| From the **Analytics** drop-down list | From the <img src="images/icon_more.png" width="25"> located in the Path column on the search page |
+| From the **Analytics** drop-down list | From the <img src="images/icon_more.png" width="25"> located in the path column in the results pane |
 | --- | --- |
 | Will aggregate data from all volumes if no filters are actived.<br> <img src="images/analytics_select_smart_searches.png" width="300"> | Will load the report for that path only.<br><img src="images/image_analytics_smart_searches_access_via_results_pane_20230215.png" width="600"> |
 

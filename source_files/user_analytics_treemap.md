@@ -1,56 +1,38 @@
 <p id="treemap"></p>
 
-___
+
 ### Treemap
 
-<img src="images/button_edition_essential.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
+The treemap report visualizes hierarchical data using nested figures—the larger the rectangle, the more data the directory or file contains. This provides a graphical representation of folder sizes.
 
-The treemap report displays hierarchical data using nested figures. Diskover opted for rectangles; the bigger the rectangle the more data is contained in that directory or file. It graphically represents the size of folders, candidates for cleanup, aging, etc.
+#### Accessing Treemap
 
-#### Accessing the Treemap Report
+| From the **Analytics** drop-down list | From the <img src="images/icon_more.png" width="25"> located in the path column in the results pane |
+| --- | --- |
+| Will aggregate data from all volumes if no filters are activated.<br> <img src="images/analytics_select_treemap.png" width="300"> | Will load the report for that path only.<br><img src="images/image_analytics_treemap_access_via_results_pane_20230215.png" width="600"> |
 
-Via the  **Analytics**  drop-down list for global results:
 
-<img src="images/image_analytics_treemap_access_via_analytics_dropdown_20230215.png" width="300">
-
-Via the results pane by clicking this icon to investigate a particular path.
-
-<img src="images/image_analytics_treemap_access_via_results_pane_20230215.png" width="600">
 
 #### Treemap Overview
 
->🔆 &nbsp;The colors in this report have a meaning. All rectangles with the same color are part of the same directory.
+![Image: Treemap Report Overview](images/analytics_treemap_2025.png)
 
-![Image: Treemap Report Overview](images/image_analytics_treemap_overview.png)
+✏️ Hovering the graphic will give you more information.
 
->🔆 &nbsp;Hovering over any rectangles will give you a snapshot of their attributes.
 
-A) **Path bar**: You can view as well as manually type in the path you want to investigate.
-
-B) **Go**: If you manually edit a value in A) path bar, the  **Go**  button acts as a  **Return**  key.
-
-C) **Up Level**: Will bring you one directory up per click until you reach the top of the volume.
-
-D) **Reload**: To reload the chart and tree cache/data.
-
-E) **Size Filter**: To select a minimum data size you want to pinpoint in the results.
-
-F) **Mtime Filter**: To select a specific period when the data was last modified.
-
-G) **Hide Thresh**: To make the graphics less busy by hiding the results with low percentages.
-
-H) **Size or Count**: Select whether you want to see the report by the  **Size**  of the data or **Count** of items.
-
-I) **Maxdepth**: Select how many levels/directories deep you want the results to show.
-
-J) **Show Files**: By default, the results will only show directories, select if you want to see files as well.
-
-K) **Filters**: Summary of the filters or preferences that you might have selected.
-
->🔆 &nbsp;Filters will stay active, even if you navigate away to another page.
-
-L) **Magnifying glass icon**: Click to open the directory and its file in the search page for further investigation.
-
-M) **Copy path icon**: To copy the path of a file or directory to your clipboard.
-
-N) **Graphics area**: You can drill down by clicking on the rectangles.
+| REFERENCE | DESCRIPTION |
+| :---: | --- |
+| A | **Path bar**: You can view and paste a path to investigate. |
+| B | **Go**: That button acts as a  **RETURN**  key, for example, use if you paste a path in that bar. |
+| C | **Up Level**: To drill up one directory at a time until you reach the top of the [volume](#volume). |
+| D | **Reload**: To reload the cached data for the chart and file tree.
+| E | **Size Filter**: To set a minimum data size threshold for filtering results. |
+| F | **Mtime Filter**: To focus on older data, for example if you select **2 years**, data will be filtered to only show data with an mtime equal or older than 2 years. |
+| G | **Hide Thresh**: To make the graphics less busy by hiding the results with low percentages. |
+| H | **Size or Count**: Choose whether to view the report by **Size** (data volume) or **Count** (number of items). |
+| I | **Maxdepth**: Select the number of levels/directories to display in the results. |
+| J | **Show Files**: By default, the results pane displays only directories—select this option to include files in the results. |
+| K | **Filters**: Summary of the filters you might have selected.<br>⚠️These **filters will stay active**, even if you navigate away to other pages, they will also apply to the File Tree report. |
+| L | <img src="images/icon_magnifying_glass.png" width="25"> Click to open that path in the [search page](#search_page) for further investigation. |
+| M | <img src="images/icon_clipboard_purple.png" width="25"> To copy the path to your clipboard. |
+| N | **Graphics area**: You can drill down using the rectangles.<br>✏️ All rectangles of the same color belong to the same directory. |

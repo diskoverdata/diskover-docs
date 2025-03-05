@@ -32,7 +32,6 @@ You can launch a Smart Search report anytime directly from the search bar by typ
 
 ![Image: Launching Smart Searches from the Search Bar](images/analytics_smart_searches_launch_from_search_bar.png)
 
-<p id="smart_searches_customize"></p>
 
 #### Customize Smart Searches
 

@@ -1,63 +1,38 @@
-<p id="smart_searches"></p>
+<p id="reports"></p>
 
-___
+
 ### Reports
 
-<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
-
-Reports were designed to easily help you find what you don't know; it's like reverse engineering. Fully customizable queries with what matters to your business, therefore for you to be able to quickly pinpoint those hard-to-find files and statistics. These reports are global and accessible to everyone in your organization.
+Reports are designed to help you easily uncover your top unknowns—like reverse engineering for your data. With fully customizable queries tailored to what matters most to your business, you can quickly pinpoint hard-to-find files and key statistics. These reports are global and accessible to everyone in your organization.
 
 #### Accessing Reports
 
-Via the  **Analytics**  drop-down list for global results:
-
-<img src="images/image_analytics_reports_access_via_analytics_dropdown_20230215.png" width="300">
-
-Via the results pane by clicking this icon to investigate a particular path.
-
-<img src="images/image_analytics_reports_access_via_results_pane_20230215.png" width="600">
+| From the **Analytics** drop-down list | From the <img src="images/icon_more.png" width="25"> located in the path column in the results pane |
+| --- | --- |
+| Will aggregate data from all volumes if no filters are actived.<br> <img src="images/analytics_select_reports.png" width="300"> | Will load the report for that path only.<br><img src="images/image_analytics_reports_access_via_results_pane_20230215.png" width="600"> |
 
 #### Reports Overview
 
-All saved reports can be found in this view offering a quick graphical snapshot:
+![Image: Smart Searches Report Overview](images/analytics_reports_2025.png)
 
-![Image: Smart Searches Report Overview](images/image_analytics_reports_report_overview_20230215.png)
+✏️ Hovering the graphic will give you more information.
 
-A) Reports with results in number of items – click on a report to open the results in the search page. Those [sample queries can be customized](#reports_customize).
+| REFERENCE | DESCRIPTION |
+| :---: | --- |
+| A | Results by number of items – click on any link to open the results in the [search page](#search_page). |
+| B | Results by size – click on any link to open the results in the [search page](#search_page). |
+| C | Using the drop-down list, select what you want to investigate. |
+| D | Using the drop-down list, select how many top results you want to see. |
+| E | Apply filters to further customize your results:<ul><li>**Show files only**: Will exclude directories from the results.</li><li>**Show directories only**: Will exclude files from the results.</li><li>**Show all**: To show both files and directories in the results.</li><li>**Dir size no recurs**: To restrict results to a non-recursive directory search [non-recusrsive](#recursive).</li><li>**Current top path only**: To limit the results to 🅓 selected [volume](#volume).</li><li>**Current dir only**: If applicable, to limit the results to the path you selected in the search page and locked down via [Current Dir](#current_dir) before navigating to Smart Searches.</li></ul> |
+| F | Reports are global, if you want to narrow the results:<ul><li>To a single volume: Activate the **Current top path only** filter.</li><li>To a specific path: Activate the **Current dir only** filter as described in 🅒. |
+| G | **Edit Reports**: You can view the queries used for the report, but editing them requires an admin account. If you need to add or edit a search query and don’t have admin access, contact your System Administrator. |
 
-B) Same queries as A), but with results in size instead – click on a report to open the results in the search page.
-
-C) Select what you want to investigate. Those [sample options can be customized](#reports_customize).
-
-  ![Image: Smart Searches Report Overview](images/image_analytics_reports_dropdown_20230215.png)
-
-D) Select how many top results you want to see.
-
-E) Apply filters to further customize your results:
-
-  - **Sort by size**: Will sort by number of items by default, so activate to change to sorting by size.
-  - **Show files only**: Will exclude directories from the results.
-  - **Show directories only**: Will exclude files from the results.
-  - **Show all**: To show both files and directories in the results.
-  - **Dir size no recurs**: To limit directory size to [non-recursive](#recusrive).
-  - **Current top path only**: To limit the results to F) selected [volume](#storage_volume).
-  - **Current dir only**: If applicable, to limit the results to the path you selected in the search page and locked down via [Current Dir](#current_dir) before navigating to Reports.
-
-F) Reports are global, if you want to narrow the results:
-  - To a single volume > activate the **Current top path only** filter.
-  - To a specific path > activate the **Current dir only** filter as described in E).
-
-G) **Edit reports**: You can view the queries used for the report, but an admin account is required to edit them. If you have a search query that you’d like to add to the list and do not have an admin account, copy the full query/criteria and share it with your System Administrator.
 
 <p id="reports_customize"></p>
 
-#### How to Customize Reports
 
-The Reports analytics comes with sample queries, but those [queries can be customized](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#reports) by someone with and admin account.
+#### Customize Reports
 
-The following report provides an example configured by **_order phase/status_** when using the [Xytech Order Status Plugin](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-order-status-plugin).
+Reports analytics includes sample queries out of the virtual box, but these [queries can be customized](https://docs.diskoverdata.com/diskover_setup_and_config_guide/#reports) by any user with an admin account.
 
-![Image: Reports](images/image_reporting_reports_report_example_diskover_ui.png)
-
-_[Click here for a full-screen view.](images/image_reporting_reports_report_example_diskover_ui.png)_
 

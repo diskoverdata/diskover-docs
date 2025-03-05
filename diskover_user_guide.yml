@@ -35,9 +35,9 @@ ordered_documents:
   - user_analytics_reports.md
   - user_analytics_file_tree.md
   - user_analytics_treemap.md
-  - user_analytics_heatmap.md
   - user_analytics_cost_analysis.md
   - user_analytics_user_analysis.md 
+  - user_analytics_heatmap.md
   - user_file_actions.md
   - user_advanced_intro.md 
   - user_advanced_tags.md

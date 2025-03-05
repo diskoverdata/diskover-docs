@@ -15,7 +15,7 @@ The Cost Analysis Report provides a snapshot of how your storage budget is alloc
 
 #### Cost Analysis Overview
 
-![Image: Cost Analysis Report Overview](images/analytics_cost_analysi_2025.png.png)
+![Image: Cost Analysis Report Overview](images/analytics_cost_analysis_2025.png)
 
 ✏️ Hover over the graphics to view more detailed information.
 

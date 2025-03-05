@@ -38,10 +38,10 @@ ordered_documents:
   - user_analytics_cost_analysis.md
   - user_analytics_user_analysis.md 
   - user_analytics_heatmap.md
-  - user_file_actions.md
   - user_advanced_intro.md 
   - user_advanced_tags.md
   - user_advanced_indices.md
+  - user_file_actions.md
   - support.md
   - contact.md
   - copyright.md

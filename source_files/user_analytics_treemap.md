@@ -17,7 +17,7 @@ The treemap report visualizes hierarchical data using nested figures—the large
 
 ![Image: Treemap Report Overview](images/analytics_treemap_2025.png)
 
-✏️ Hovering the graphics will give you more information.
+✏️ Hover over the graphics to view more detailed information.
 
 
 | REFERENCE | DESCRIPTION |

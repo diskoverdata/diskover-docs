@@ -69,10 +69,6 @@ Here is a simple example of queries mostly using **customer names** + specific *
 
 ![Image: Smart Searches Editing Window](images/image_reporting_smart_searches_report_editing_window.png)
 
-#### Sample Query Groups
-
-🚧 &nbsp;We're hard at work preparing these query groups.
-
 
 
 ### Reports
@@ -109,9 +105,6 @@ Reports provide a mechanism to create repeatable analytics by searching for your
 
 <img src="images/analytics_reports_edit_mode.png" width="">
 
-#### Sample Query Groups
-
-🚧 &nbsp;We're hard at work preparing these query groups.
 
 <p id="analytics_costs"></p>
 
@@ -125,7 +118,7 @@ Storage cost can be set globally or per storage volume, directory, etc. This too
 
 #### Calculation of Cost Estimates
 
-The storage costs can either be estimated globally, by storage volume, or down a directory level. The estimations need to be done outside of Diskover. Beside the cost of the storage itself, other factors can be compounded like electricity, service contract, System Administrator’s salary, subscription fees, etc. The estimations need to be calculated and configured per gigabyte.
+The storage costs can either be estimated globally, by storage volume, or down a directory level. The estimations need to be done outside of Diskover. Besides the cost of the storage itself, other factors can be compounded like electricity, service contract, System Administrator’s salary, subscription fees, etc. The estimations need to be calculated and configured per gigabyte.
 
 <img src="images/diagram_storage_cost_configuration.png" width="">
 _[Click here for a full-screen view of this image.](images/diagram_storage_cost_configuration.png)_
@@ -172,6 +165,3 @@ Here are a few examples providing business-context insight.
 - Modify the [search queries](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries-syntax-and-rules) for your use case(s).
 - Click **Save Cost Analysis** to save your queries once done.
 
-#### Sample Query Groups
-
-🚧 &nbsp;We're hard at work preparing these query groups. 

@@ -1,27 +1,26 @@
 <p id="tags"></p>
 
-___
 ### Tags
 
-<img src="images/button_edition_professional.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="125">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="125">
+<img src="images/button_edition_professional.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_eda.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_energy.png" width="105">
 
-Tags are additional metadata assigned to an item, they are used to add business context or data curation actions to be taken (ex: archive, delete, keep, clean). Tagging is crucial for smooth workflows and proper [curation of data](#data_curation).
+Tags are additional metadata attached to files or directories, providing business context and triggering data curation actions like archiving or deletion. Tagging is essential for streamlined workflows and effective [data curation](#data_curation).
 
-This section covers manual tagging, but Diskover can also be configured to schedule automated tasks to apply [autotags](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#tagging-additional-business-context-metadata), usually based on aging,  service agreements, etc., in order to safely and methodically curate data in the backend.
+This section covers **manual tagging**. Your System Administrator can configure and schedule automated tags, known as [AutoTags] (https://docs.diskoverdata.com/diskover_setup_and_config_guide/#tags), and those are usually for data hygiene, lifecycle management, etc., to safely and methodically curate data in the backend.
 
->🔆 &nbsp;A file or directory can have multiple tags.
 
 <p id="tags_options"></p>
 
 #### Tags Overview
 
-![Image: Manual Tag Selection](images/image_tags_manual_application.png)
+![Image: Manual Tag Selection](images/tag_overview.png)
 
-A) **Tag** drop-down list: To add or remove tags, will not open until you select at least one item in the [results pane](#results_pane).
-
-B) **Select** file(s) and/or directory(ies) to be tagged: You first need to select one or several items to add or remove a tag.
-
-C) **Tags column**: To see tags  associated with a file or directory, go in your [settings](#hide_columns) to unhide that column if it's not visible.
+| REFERENCE | DESCRIPTION |
+| :---: | --- |
+| A | **Select** file(s) and/or directory(ies) to be tagged: You must first select one or more items to add or remove a tag; otherwise, the tag button will remain inaccessible. |
+| B | **Tag** button: Opens a drop-down list with several options—you must first select one or more items for this button to work. |
+| C | **Tags column**: To see tags  associated with a file or directory, go to your [settings](#hide_columns) to unhide that column if not visible. |
+| D | 
 
 D) **Tag selection**: List of tags that are available, you need an admin account to [edit that list](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#tags-display-and-editor-within-diskover-web-user-interface).
 

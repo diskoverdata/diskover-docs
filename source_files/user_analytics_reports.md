@@ -15,7 +15,7 @@ Reports are designed to help you easily uncover your top unknowns—like reverse
 
 ![Image: Reports Overview](images/analytics_reports_2025.png)
 
-✏️ Hovering the graphics will give you more information.
+✏️ Hover over the graphics to view more detailed information.
 
 | REFERENCE | DESCRIPTION |
 | :---: | --- |

@@ -26,11 +26,11 @@ The File Tree Report provides insights into the size and aging of data for a sel
 | F | <img src="images/icon_clipboard_purple.png" width="25"> To copy the path to your clipboard. |
 | G | **Reload**: To reload the cached data for the chart and file tree. |
 | H | **Size Filter**: To set a minimum data size threshold for filtering results – this will affect results in 🅟. |
-| I | **Mtime Filter**: To focus on older data, for example if you select **2 years**, data will be filtered to only show data with an mtime equal or older than 2 years – this will affect the results in 🅠. |
+| I | **Mtime Filter**: To focus on a specific data modified time period. |
 | J | **Hide Thresh**: To make the graphics less busy by hiding the results with low percentages. |
 | K | **Size or Count**: Choose whether to view the report by **Size** (data volume) or **Count** (number of items)—this will affect the results in 🅟 and 🅠. |
 | L | **Show Files**: By default, the results pane displays only directories—select this option to include files in the results. |
-| M | **Filters**: Summary of the filters you might have selected.<br>⚠️These **filters will stay active**, even if you navigate away to other pages, they will also apply to the Treemap report. |
+| M | **Filters**: Summary of the filters you might have selected.<br>⚠️These **filters will stay active**, even if you navigate away to other pages AND they will affect other analytics. |
 | N | **Directories chart**: You can drill down by clicking on pie slices—hover over a slice to view more details about a directory. |
 | O | **File extensions**: A summary of the file extensions detected in the current path. You can click on a slice to open the results in the [search page](#search_page) |
 | P | **Size chart**: A summary by size detected in the current path. You can click on a bar to open the results in the [search page](#search_page) |

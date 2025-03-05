@@ -34,7 +34,7 @@ Once the cost analysis tool is [enabled and configured](#cost_config), the cost 
 
 ![Image: Cost Analysis Info in File Search Page](images/image_analytics_cost_analysis_in_file_search_page.png)
 
-
+<p id="cost_config"></p>
 
 #### Storage Cost Calculation and Configuration Overview
 

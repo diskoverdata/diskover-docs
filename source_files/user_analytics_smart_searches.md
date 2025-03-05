@@ -36,4 +36,4 @@ You can launch a Smart Search report anytime directly from the search bar by typ
 
 #### Customize Smart Searches
 
-Smart Searches Analytics includes sample queries out of the virtual box, but these [queries can be customized](https://docs.diskoverdata.com/diskover_setup_and_config_guide/#smart-searches) by any user with an admin account.
+Smart Searches analytics includes sample queries out of the virtual box, but these [queries can be customized](https://docs.diskoverdata.com/diskover_setup_and_config_guide/#smart-searches) by any user with an admin account.

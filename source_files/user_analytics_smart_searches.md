@@ -18,7 +18,7 @@ Fully customizable reports with what is relevant for your business (by customers
 
 ![Image: Smart Searches Report Overview](images/analytics_smart_searches_2025.png)
 
-✏️ Hovering the graphics will give you more information.
+✏️ Hover over the graphics to view more detailed information.
 
 | REFERENCE | DESCRIPTION |
 | :---: | --- |

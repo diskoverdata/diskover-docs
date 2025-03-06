@@ -30,8 +30,8 @@ Learn → [how to select a volume](#select_volume).
 An index is an inventory of all the metadata, aka attributes, about a file on a volume; it allows the metadata to be searched quickly via the index instead of the operating system's "find command". Note that both **indexes** and **indices** have the same meaning and are the plural of index, although indices are usually preferred in a technical context.
 
 - You can have multiple [inventories/indices](#indices) of a storage volume from different points in time times.
-- Indices contain [base metadata](https://docs.diskoverdata.com/diskover_metadata_catalog//#base_metadata) like directory name, file name, file size, file extension, creation date, modify date, owner, etc.
-- Diskover can also populate the indices with [additional metadata](https://docs.diskoverdata.com/diskover_metadata_catalog//#extra_metadata), adding business context.
+- Indices contain [base metadata](#base_metadata) like directory name, file name, file size, file extension, creation date, modify date, owner, etc.
+- Diskover can also populate the indices with [additional metadata](#extra_metadata), adding business context.
 
 Learn → [how to use indices](#indices).
 

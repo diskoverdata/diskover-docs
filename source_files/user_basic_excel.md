@@ -50,5 +50,5 @@ The same instructions apply when you [export](#export) **directories** from Disk
 | B | Click on the **Filter** icon. |
 | C | Instead of clicking on the **down-arrow** in the **parent_path** column, click the down-arrow from the **dir_depth** column, which will open a window with multiple options:<ul><li>Select the depth of sub-directory(ies) you want to isolate in your results and click **Apply Filter**.</li><li>The same **Data → Filter** selection can also be accessed from Excel's top drop-down menu.</li><li>Refer to **Excel → Help** menu for further instructions.</li></ul> |
 
-✏️ In Excel, you can use both **Sort** and **Filter** simultaneously to refine and display the results you need.  
+✏️ _In Excel, you can use both **Sort** and **Filter** simultaneously to refine and display the results you need._ 
 

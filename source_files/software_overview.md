@@ -18,7 +18,7 @@ Diskover offers several [features and plugins](https://diskoverdata.com/platform
 | --- | --- |
 | **Search** | Global searches using [built-in tools](#builtin_search_tools), [manual queries](#manual_queries), or a combination of both. |
 | **Analytics** | Several pre-established and customizable [reports](#analytics) allow for informed decision-making. |
-| **Enrich** | Diskover’s powerful harvest plugins collect extra attributes, adding rich business context to your [metadata catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/). |
+| **Enrich** | Diskover’s powerful harvest plugins collect extra attributes, adding rich business context to your [metadata catalog](#search_field_names). |
 | **Actions** | Limitless possibilities through [File Action plugins](#file_action) serving various purposes. |
 | **Orchestrate** | Automated workflows, usually set by your data manager or sys admin, allowing for your data lifecycle management. |
 

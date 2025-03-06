@@ -30,7 +30,9 @@ Fully customizable reports with what is relevant for your business (by customers
 
 #### Launch Smart Searches Results from the Search Bar
 
-You can launch a Smart Search report anytime directly from the search bar by typing **!**. A list of available reports will appear beneath the search bar—simply click on the desired report to view its results on the search page.
+You can launch a Smart Search report anytime directly from the search bar by typing **!**:
+- A list of available reports will appear beneath the search bar
+- Simply click on the desired report to view its results on the search page.
 
 ![Image: Launching Smart Searches from the Search Bar](images/analytics_smart_searches_launch_from_search_bar.png)
 

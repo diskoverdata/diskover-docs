@@ -6,142 +6,104 @@
 
 Tags are additional metadata attached to files or directories, providing business context and triggering data curation actions like archiving or deletion. Tagging is essential for streamlined workflows and effective [data curation](#data_curation).
 
-This section covers **manual tagging**. Your System Administrator can configure and schedule automated tags, known as [AutoTags] (https://docs.diskoverdata.com/diskover_setup_and_config_guide/#tags), and those are usually for data hygiene, lifecycle management, etc., to safely and methodically curate data in the backend.
+This section covers **manual tagging**. Your System Administrator can configure and schedule automated tags, known as [AutoTags](https://docs.diskoverdata.com/diskover_setup_and_config_guide/#tags), and those are usually for data hygiene, lifecycle management, etc., to safely and methodically curate data in the backend.
 
 
 <p id="tags_options"></p>
 
 #### Tags Overview
 
-![Image: Manual Tag Selection](images/tag_overview.png)
+![Image: Manual Tag Selection](images/tags_overview.png)
 
 | REFERENCE | DESCRIPTION |
 | :---: | --- |
 | A | **Select** file(s) and/or directory(ies) to be tagged: You must first select one or more items to add or remove a tag; otherwise, the tag button will remain inaccessible. |
 | B | **Tag** button: Opens a drop-down list with several options—you must first select one or more items for this button to work. |
 | C | **Tags column**: To see tags  associated with a file or directory, go to your [settings](#hide_columns) to unhide that column if not visible. |
-| D | 
+| D | **Tag selection**: List of configured tags—you need an admin account to edit that list. |
+| E | **Remove all tags**: You need to select the items you wish to remove the associated tags from first.<br>⚠️ You can't undo this action. |
+| F | **Add new tag**: To quickly add a single new tag—an admin account is required to add new tags:<ul><li>The tag needs to be entered in that exact format: **tag_name\|#hexcolor**, for example, **move_aws\|#FF9300**</li><li>✏️ You can type the name of a color, like **move_aws\|orange** instead of using an **#hexcolor** code.</li></ul> |
+| G | <a id="apply_tags_to"></a> **Apply tags to**: Choices of applying tagsChoose to apply tags [non-recursively or recursively](#recursive). This can only be done from a directory that already has an assigned tag(s), allowing you to propagate the same tag(s) recursively or non-recursively.<br><img src="images/image_tags_apply_recursive.png" width="500"><br><ul><li>**All results (all pages)**: Will apply tags to all your current search results, no matter if they are files or directories, and no matter how many pages of results, but will not apply tags recursively.</li><li>**Selected Folders**:<ul><li> **[Non-recursive](#recursive)**: Will apply tags exclusively to the current path/directory.</li><li> **[Recursive](#recursive)**: Will apply tags to the current path/directory, as well as all its sub-directories and files.</li></ul></ul> |
+| H | **Edit Tags**: An admin account is required to [add/edit tags]. |
 
-D) **Tag selection**: List of tags that are available, you need an admin account to [edit that list](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#tags-display-and-editor-within-diskover-web-user-interface).
+#### Manual Tagging
 
-E) **Remove all tags**: Select from column B) the items you wish to remove the associated tags first and then select E) > **WARNING!** you cannot undo this action.
-
-F) **Add new tag**: To quickly add a single new tag in the drop-down list - an admin account is required to [add/edit tags](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#tags-display-and-editor-within-diskover-web-user-interface).
-
-<p id="apply_tags_to"></p>
-
-G) **Apply tags to**: Choices of applying tags [non-recursively or recursively](#recursive) - can only be achieved from a directory and that directory needs to have a tag assigned to it prior in order to assign the same tag(s) recursively or non-recursively.
-
-  - **All results (all pages)**: Will apply tags to all your current search results, no matter if they are files or directories, and no matter how many pages of results, but will not apply tags recursively.
-
-  - **Selected Folders - [Non-recursive](#recursive)**: Will apply tags exclusively to the path/directory you are pointing to.
-
-  - **Selected Folders - [Recursive](#recursive)**: Will apply tags to the path/directory, as well as all sub-directories and files, inside that path.
-
-  ![Image: Recursive Options for Applying Tags](images/image_tags_apply_recursive.png)
-
-H) **Edit Tags**: An admin account is required to [add/edit tags](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#tags-display-and-editor-within-diskover-web-user-interface).
-
-#### Manual Tags Application
 
 ##### Single Tag Application
 
-1. In the results pane, select the item(s) you wish to tag.
+✏️ A file or directory can have multiple tags.
+
+1. Select the item(s) you wish to tag in the results pane.
 2. Click the **Tag** drop-down list and select a tag.
 
->🔆 &nbsp;A file or directory can have multiple tags.
 
 ##### Recursive and Non-Recursive Tags Application
 
-This option is used to apply tags to multiple sub-directories and/or files in just a few clicks.
+✏️ If a directory has multiple tags, this action will propagate all tags to its parent directories and/or files.
 
-1. In the results pane, select the main directory(ies) you wish to tag.
-2. Click the **Tag** drop-down list and select a tag - you need to tag the main directory first in order to continue.
-3. Reselect that same directory(ies) and click the **Tag** drop-down list.
-4. Click on **Apply tags to** and make a [selection](#apply_tags_to).
-
->🔆 &nbsp;If the main directory has several tags applied to it, all these tags will be applied to their parent directories and/or files with this action.
+1. Select the directory(ies) you wish to tag in the results pane.
+2. Click the **Tag** drop-down list and select a tag - you need to tag the main directory first in order to tag recursively or non-recursively.
+3. Reselect that same directory(ies) and click the **Tag** drop-down list again.
+4. Select **Apply tags to** and [select an action](#apply_tags_to).
 
 #### Tags Removal
 
->🔆 &nbsp;Removing a tag is a bit like walking backward.
+
+✏️ Removing a tag is a bit like walking backward!
 
 ##### Single Tag Removal
 
-1. In the results pane, select the item(s) you wish to remove the tag from.
-2. Click the **Tag** drop-down list:
-  - **If an item has a single tag**: select **Remove all tags**.
-  - **If an item has multiple tags and you only want to remove one of them**: select the same tag that is already applied to it > reapplying the same tag will remove it.
+1. Select the item(s) you wish to remove the tag from in the results pane.
+2. Click the **Tag** drop-down list.
+3. Select the same tag that you want to remove OR if the item has a single tag attached to it, you can select **Remove all tags**.
 
 ##### Multiple Tags Removal
 
-1. In the results pane, select the item(s) you wish to remove the tags from.
-2. Click the **Tag** drop-down list and select **Remove all tags** - careful, this action cannot be undone!
+1. Select the item(s) you wish to remove the tag from in the results pane.
+2. Click the **Tag** drop-down list.
+3. Select **Remove all tags** — ⚠️ this action can't be undone!
 
 ##### Recursive and Non-Recursive Tags Removal
 
-1. In the results pane, select the directory for which you want to remove the tags recursively or non-recursively - remove the tag from this directory first by following the above instructions.
-2. Reselect the directory and click the **Tag** drop-down list.
-3. Click on **Apply tags to** and make a [selection](#apply_tags_to).
-
-#### Search on Tags
-
-You can quickly search on tags using the [filters](#filters) tool or using a manual query in the search bar.
-
-##### Searching tags with [Filters](#filters):
-
-Whether you are drilling down or running manual queries, adding tags rules to your filters will filter in OR out all items depending on the filters you apply.
-
-1. Click on the  **[Filters](#filters)**  icon at the top of the interface.
-3. Go to the  **Tags** section.
-4. Select  **is**  or  **is not**.
-5. Click on the boxes/tags you wish to include/exclude from your search.
-6. Click  **Save filters**  at the bottom of the window.
-
-##### Searching tags via manual queries:
-
-Type your search query in the search bar at the top of the page:
-
-  - When starting a query with  **#**  Diskover will automatically detect your intentions and offer you to select one of the available tags, you can also directly type, ex: **#archive**
-
-  ![Image: Manual Search for Tags](images/image_tags_report_access_from_search_bar.png)
-
-  - You can also use [**operators**](#operators) to search on more than one tag at a time, ex: **#archive and #delete**, **(#archive or #delete)**
-  - You can use the [**field name**](#search_field_names) to search on tags, ex: **tags:delete**, note that this query is case sensitive, **tags** needs to be lower case and the **tag** needs to be typed exactly as listed in the tags drop-down list.
+1. Select the item(s) you wish to remove the tag recursively or non-recursively from in the results pane.
+2. Remove the tag(s) from this directory first by following the appropriate previous instructions.
+4. Reselect the directory and click the **Tag** drop-down list.
+5. Select **Apply tags to** and [select an action](#apply_tags_to).
 
 #### Tags Report
 
-The tags built-in report gives a visual snapshot of all tagged items in all your storage volumes. Note that the colors have no particular meaning in this report.
+The tags built-in report gives a visual snapshot of all tagged items in all your volumes.
 
 #### Accessing the Tags Report
 
-Via the  **Analytics**  drop-down list for global results:
+| From the **Analytics** drop-down list | From the <img src="images/icon_more.png" width="25"> located in the path column in the results pane |
+| --- | --- |
+| Will aggregate data from all volumes if no filters are activated.<br> <img src="images/analytics_select_tags.png" width="300"> | Will load the report for that path only.<br><img src="images/image_analytics_tags_access_via_results_pane_20230215.png" width="600"> |
 
-<img src="images/image_analytics_tags_access_via_analytics_dropdown_20230215.png" width="300">
-
-Via the results pane by clicking this icon to investigate a particular path.
-
-<img src="images/image_analytics_tags_access_via_results_pane_20230215.png" width="600">
 
 #### Tags Report Overview
 
-![Image: Tags Report Overview](images/image_tags_report_overview_20230215.png)
+![Image: Tags Report Overview](images/analytics_tags.png)
 
-A) Reports with results in number of items – click on a report to open the results in the search page.
+✏️ Hover over the graphics to view more detailed information.
 
-B) Same queries as A), but with results in size instead – click on a report to open the results in the search page.
+| REFERENCE | DESCRIPTION |
+| :---: | --- |
+| A | Results by number of items – click on any link to open the results in the [search page](#search_page). |
+| B | Results by size – click on any link to open the results in the [search page](#search_page). |
+| C | Apply filters to further customize your results:<ul><li>**Show files only**: Will exclude directories from the results.</li><li>**Show directories only**: Will exclude files from the results.</li><li>**Show all**: To show both files and directories in the results.</li><li>**Dir size no recurs**: To restrict results to a non-recursive directory search [non-recusrsive](#recursive).</li><li>**Current top path only**: To limit the results to 🅓 selected [volume](#volume).</li><li>**Current dir only**: If applicable, to limit the results to the path you selected in the search page and locked down via [Current Dir](#current_dir) before navigating to the Tags report.</li></ul> |
+| D | The Tags report is global, if you want to narrow the results:<ul><li>To a single volume: Activate the **Current top path only** filter.</li><li>To a specific path: Activate the **Current dir only** filter as described in 🅒. |
+| E | **Edit Tags**: You can view the queries used for the report, but editing them requires an admin account. If you need to add or edit a search query and don’t have admin access, contact your System Administrator. |
 
-C) Apply filters to further customize your results:
+#### Search on Tags
 
-  - **Show files only**: Will exclude directories from the results.
-  - **Show directories only**: Will exclude files from the results.
-  - **Show all**: To show both files and directories in the results.
-  - **Dir size no recurs**: To limit directory size to [non-recursive](#recusrive).
-  - **Current top path only**: To limit the results to D) selected [volume](#storage_volume).
-  - **Current dir only**: If applicable, to limit the results to the path you selected in the search page and locked down via [Current Dir](#current_dir) before navigating to Smart Searches.
+There are several ways to search on tags, here are a few.
 
-D) Tags report is global, if you want to narrow the results:
-  - To a single volume > activate the **Current top path only** filter.
-  - To a specific path > activate the **Current dir only** filter as described in C).
+- Search on tags using [**filters**](#filters).
+- Search on tags using [**field names**](#search_field_names), for example, type `tags:delete` in your search bar—you can combine that with any other criteria.
+- You can launch a tag report anytime directly from the search bar by typing **#**:
+  -  A list of tags will appear beneath the search bar.
+  -  Simply click on the desired report to view its results on the search page.
 
-E) **Edit tags**: An admin account is required to [add/edit tags](https://docs.diskoverdata.com/diskover_configuration_and_administration_guide/#tags-display-and-editor-within-diskover-web-user-interface).
+![Image: Manual Search for Tags](images/analytics_tags_launch_from_search_bar.png)
+

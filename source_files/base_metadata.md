@@ -1,38 +1,10 @@
-
-
-
-
-## Overview
-
-
-### Field Names aka Key-Value Pair
-
-Searching with field names can be effective when you need precise results, especially if you're searching within a specific or hidden field. You can think of this like searching within a specific column in a massive Excel spreadsheet—rather than scanning the entire dataset, you're narrowing your focus to just the relevant information.
-
-Often referred to as **key-value pair**, think of this as a structured way to store and retrieve data, where a **key acts as an identifier**, and the **value holds the associated variable data**. In Diskover, key-value pairs are used in search queries and custom reporting.
-
-🔎 The query needs to be typed in this exact format **fieldname:_value_**
-
-| **fieldname:** | **_value_** |
-| --- | --- |
-| <ul><li>Corresponds to the field indexed by Elasticsearch—refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/) for all details..</li><li>Needs to be typed lowercase.</li></ul>| <ul><li>The _variable_ you are searching.</li><li>Needs to be typed right after the **:** without any spaces.</li><li>Are mostly case sensitive—refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/) for all details.</li><li>You can use [wildcards](#wildcards).</li></ul> |
-
-### Field Names for Basic Metadata
-
-These fields are harvested during indexing, without the need for any plugins. For a complete list of available fields, along with instructions and examples on how to search using them, please refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/#base_metadata).
-
-
-### Field Names for Extra Metadata
-
-Additional metadata fields can be harvested using Diskover plugins, extending the depth of searchable information beyond the default fields. These plugins enable you to extract specialized metadata tailored to your workflows, providing enhanced visibility and search capabilities. For a complete list of available fields, along with instructions and examples on how to search using them, please refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/#extra_metadata).
-
 <p id="base_metadata"></p>
 
 ## Base Metadata
 
-### Base Metadata Fields
+This section outlines the fundamental file and directory attributes harvested by Diskover, providing essential details about your files and directories.
 
-| Field name | What it means | How to search |
+| FIELD NAME | DESCRIPTION | HOW TO USE |
 | --- | --- | --- |
 | **atime** | last accessed | refer to [Queries with Time](#search_time) for syntax examples |
 | **ctime** | last changed  | refer to [Queries with Time](#search_time) for syntax examples |

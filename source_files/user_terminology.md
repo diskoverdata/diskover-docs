@@ -86,7 +86,7 @@ Think of hard links like copies of a file, but without using extra disk space. U
 | **Required for files**            | Yes                                          | Yes, must have at least one hard link      |
 | **Can link directories**          | Yes                                          | No                                          |
 
-✏️  Hard links are used a lot in the media and entertainment industry so that digital assets can be referenced in different shot folders without using additional space._
+✏️  _Hard links are used a lot in the media and entertainment industry so that digital assets can be referenced in different shot folders without using additional space._
 
 <p id="elasticsearch"></p>
 

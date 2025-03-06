@@ -209,7 +209,7 @@ Often referred to as **key-value pair**, think of this as a structured way to st
 
 | **fieldname:** | **_value_** |
 | --- | --- |
-| <ul><li>Corresponds to the field indexed by Elasticsearch—refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/) for all details..</li><li>Needs to be typed lowercase.</li></ul>| <ul><li>The _variable_ you are searching.</li><li>Needs to be typed right after the **:** without any spaces.</li><li>Are mostly case sensitive—refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/) for all details.</li><li>You can use [wildcards](#wildcards).</li></ul> |
+| <ul><li>Corresponds to the field indexed by Elasticsearch—refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/) for all details.</li><li>Needs to be typed lowercase.</li></ul>| <ul><li>The _variable_ you are searching.</li><li>Needs to be typed right after the **:** without any spaces.</li><li>Are mostly case sensitive—refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/) for all details.</li><li>You can use [wildcards](#wildcards).</li></ul> |
 
 ### Field Names for Basic Metadata
 

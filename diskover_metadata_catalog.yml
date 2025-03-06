@@ -5,16 +5,11 @@ website_folder: diskover_metadata_catalog
 ordered_documents:
   - index_diskover_guides_header.md
   - guide_title_metadata_catalog.md
+  - intro_guide_metadata_catalog.md
+  - intro_guide_metadata_catalog_main_intro.md 
   - intro_doc_conventions_user.md
-  
-  - intro_guide_intended_for_user.md
-  
-  
-  - intro_user_guides_main_intro.md
   - base_metadata.md
-  - additional_metadata.md
-
-
+  - extra_metadata.md
   - support.md
   - contact.md
   - copyright.md

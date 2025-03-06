@@ -3,7 +3,7 @@
 ___
 ### Detailed Attributes/Metadata
 
-The process is slightly different if you want to refer to the attributes of a directory or a file. In both cases, though, a new tab will open with the detailed [metadata](https://docs.diskoverdata.com/diskover_metadata_catalog/) configured and harvested for your instance.
+The process is slightly different if you want to refer to the attributes of a directory or a file. In both cases, though, a new tab will open with the detailed [metadata](#search_field_names) configured and harvested for your instance.
 
 <img src="images/diskover_search_page_attributes_open_with_desc.png" width="">
 
@@ -23,7 +23,7 @@ The process is slightly different if you want to refer to the attributes of a di
 | E | To copy the current path, without the file name, to your clipboard. |
 | F | To load the parent path in any of the proposed [analytics](#analytics). |
 | G | To search the parent path [recursively or non-recursively](#recursive). |
-| H | Detailed base metadata harvested during indexing.<br>✏️ Each of these fields can be individually searched using [field names for basic metadata](#queries-with-field-names). |
+| H | Detailed base metadata harvested during indexing.<br>✏️ _Each of these fields can be individually searched using [field names for basic metadata](#base_metadata)._ |
 | I | Displays the file or directory cost when the [feature](#cost_analysis) is enabled. |
-| J | If applicable for your instance, this section displays any extra metadata indexed using Diskover's metadata harvest plugins.<br>✏️ Each of these fields can be individually searched using [field names for extra metadata](https://docs.diskoverdata.com/diskover_metadata_catalog/#extra_metadata). |
+| J | If applicable for your instance, this section displays any extra metadata indexed using Diskover's metadata harvest plugins.<br>✏️ _Each of these fields can be individually searched using [field names for extra metadata](#extra_metadata)._ |
 

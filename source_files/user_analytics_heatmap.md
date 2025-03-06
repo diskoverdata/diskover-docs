@@ -30,7 +30,7 @@ Before accessing the heatmap report, you need to [select 2 indices from 2 differ
 | B | Deselect **Always use latest indices**. |
 | C | Click **Unselect all** to ensure all indices are deselected. |
 | D | OPTIONAL - You can filter your indices by searching with a keyword, only leaving the desired indices in your results. |
-| E | OPTIONAL - you can filter your indices by aging to narrow down the list of indices in your results. |
+| E | OPTIONAL - You can filter your indices by aging to narrow down the list of indices in your results. |
 | F | Select one index from  **Index**  column. |
 | G | Select one index from  **Index 2**  column, with a different date. |
 | H | Click  **Save selection**. |

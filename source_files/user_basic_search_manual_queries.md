@@ -209,16 +209,21 @@ Often referred to as **key-value pair**, think of this as a structured way to st
 
 | **fieldname:** | **_value_** |
 | --- | --- |
-| <ul><li>Corresponds to the field indexed by Elasticsearch—refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/) for all details.</li><li>Needs to be typed lowercase.</li></ul>| <ul><li>The _variable_ you are searching.</li><li>Needs to be typed right after the **:** without any spaces.</li><li>Are mostly case sensitive—refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/) for all details.</li><li>You can use [wildcards](#wildcards).</li></ul> |
+| <ul><li>Corresponds to the field indexed by Elasticsearch.</li><li>Needs to be typed lowercase.</li></ul>| <ul><li>The _variable_ you are searching.</li><li>Needs to be typed right after the **:** without any spaces.</li><li>Are mostly case sensitive.</li><li>You can use [wildcards](#wildcards).</li></ul> |
+
+<p id="base_metadata"></p>
 
 ### Field Names for Basic Metadata
 
-These fields are harvested during indexing, without the need for any plugins. For a complete list of available fields, along with instructions and examples on how to search using them, please refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/#base_metadata).
+These fields are harvested during indexing, without the need for any plugins.
 
+<p id="extra_metadata"></p>
 
 ### Field Names for Extra Metadata
 
-Additional metadata fields can be harvested using Diskover plugins, extending the depth of searchable information beyond the default fields. These plugins enable you to extract specialized metadata tailored to your workflows, providing enhanced visibility and search capabilities. For a complete list of available fields, along with instructions and examples on how to search using them, please refer to our [Metadata Catalog](https://docs.diskoverdata.com/diskover_metadata_catalog/#extra_metadata).
+Additional metadata fields can be harvested using Diskover plugins, extending the depth of searchable information beyond the default fields. These plugins enable you to extract specialized metadata tailored to your workflows, providing enhanced visibility and search capabilities. 
+
+<a class="email-link" href= "mailto:support@diskoverdata.com?subject=Extra Metadata fields request">Contact us</a> for a comprehensive list of metadata fields for the plugins in your instance, and how to use them.
 
 #### Examples of Searches with Field Names
 
@@ -335,7 +340,7 @@ At times, you will need to group criteria so Diskover can correctly interpret yo
 | **(parentheses)** | **For grouping conditions in logical queries**, ex: (jpg OR png). |
 | **[square brackets]** | **Inclusive** ranges for **time**, **dates**, **numeric** or **string fields**, ex: [min TO max] |
 | **{curly brackets}** | **Exclusive** ranges for **time**, **dates**, **numeric** or **string fields**, ex: {min TO max} |
-| **mix [ }** | `size:[104857600 TO 1073741824}` → Finds files **between 100MB and 1GB**, **including** 100MB (`104,857,600` bytes) but **excluding** 1GB (`1,073,741,824` bytes)<br>`mtime:{now-30d TO now]` → Finds items with a modified time in the last 30 days, **excluding** the exact timestamp of 30 days ago but **including** "now. |
+| **mix [square and curly }** | `size:[104857600 TO 1073741824}` → Finds files **between 100MB and 1GB**, **including** 100MB (`104,857,600` bytes) but **excluding** 1GB (`1,073,741,824` bytes)<br>`mtime:{now-30d TO now]` → Finds items with a modified time in the last 30 days, **excluding** the exact timestamp of 30 days ago but **including** "now. |
 
 
 

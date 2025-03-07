@@ -99,8 +99,8 @@ The tags built-in report gives a visual snapshot of all tagged items in all your
 
 There are several ways to search on tags, here are a few.
 
-- Search on tags using [**filters**](#filters).
-- Search on tags using [**field names**](#search_field_names), for example, type `tags:delete` in your search bar—you can combine that with any other criteria.
+- Search on tags using [filters](#filters).
+- Search on tags using [field names](#search_field_names), for example, type `tags:delete` in your search bar—you can combine that with any other criteria.
 - You can launch a tag report anytime directly from the search bar by typing **#**:
   -  A list of tags will appear beneath the search bar.
   -  Simply click on the desired report to view its results on the search page.

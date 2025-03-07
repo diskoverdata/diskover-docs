@@ -2,23 +2,25 @@
 
 ## Base Metadata
 
-This section outlines the fundamental file and directory attributes harvested by Diskover, providing essential details about your files and directories.
+This section outlines the fundamental file and directory attributes naturally attached to files and directories, harvested by Diskover without the need for special plugins. The fields are listed alphabetically.
 
 | FIELD NAME | DESCRIPTION | HOW TO USE |
 | --- | --- | --- |
-| **atime** | last accessed | refer to [Queries with Time](#search_time) for syntax examples |
-| **ctime** | last changed  | refer to [Queries with Time](#search_time) for syntax examples |
-| **dir_count** | number of sub-directories in a directory [recursive](#recursive) | `dir_count:2` > would list directories with exactly 2 sub-directories _or_ 1 file and 1 directory _or_ 2 files |
-| **dir_count_norecurs** | number of items (files and folders) in a directory [non-recursive](#recursive) | `dir_count_norecurs:1` > would list directories with at least 1 sub-directory in them |
-| **dir_depth** | directory depth in a path | `dir_depth:2` > would search directories at level 2 in the file tree | 
-| **extension** | file extension | `extension:mov` |
-| **file_count** | number of files inside a directory | `file_count:85` `file_count:500*` `file_count:10?` > to find directories with a specific or approximate number of files |
-| **file_count_norecurs** | number of files inside a directory [non-recursive](#recursive) | `file_count_norecurs:*` > to find directories with a specific or approximate number of files |
-| **file_size** | file size | in bytes > see [Queries with File Size](#search_size) for examples |
-| **file_size_du** | disk usage size aka allocated size for files only | in bytes > see [Queries with File Size](#search_size) for examples |
-| **group** | user group name | `group:colorists` > can vary depending on how Diskover was configured, see [User Analysis Report](#user_analysis) section for more details and/or ask your System Administrator |
+| **atime** | last accessed time | <ul><li>Learn how to search on time using Diskover [built-in search tools](https://docs.diskoverdata.com/diskover_user_guide/#built-in-search-tools).</li><li>Learn how to [manually search on time](https://docs.diskoverdata.com/diskover_user_guide/#queries-with-time).</li></ul> |
+| **ctime** | last changed time  | <ul><li>Learn how to search on time using Diskover [built-in search tools](https://docs.diskoverdata.com/diskover_user_guide/#built-in-search-tools).</li><li>Learn how to [manually search on time](https://docs.diskoverdata.com/diskover_user_guide/#queries-with-time).</li></ul> |
+| **dir_count** | number of [recursive](#recursive) sub-directories in a directory | `dir_count:22` → would list all directories containing exactly 22 sub-directories:<br><img src="images/metadata_base_dir_count.png" width=""> |
+| **dir_count_norecurs** | number of [non-recursive](#recursive) sub-directories a directory | `dir_count_norecurs:1` → number of immediate (non-recursive) subdirectories within a given directory—would list directories with at least 1 sub-directory in them:<br><img src="images/metadata_base_dir_count_norecurs.png" width=""> |
+| **dir_depth** | directory depth in a path | `dir_depth:2`→ would search directories at level 2 in the file tree | 
+| **extension** | file extension | There are many ways to search on file extensions:<ul><li>Using [built-in search tools](https://docs.diskoverdata.com/diskover_user_guide/#built-in-search-tools)</li><li>Manual searches, for example, `extension:mov`, technically, a search could be launched with only `mov` in the search bar, but that would bring back any directories or files where the letters `mov` would be found isolated in a path, so by using `extension:mov` you make sure to focus precisely on the extension field. |
+| **file_count** | number of [recursive](#recursive) files inside a directory | `file_count:85`, `file_count:10?`, `file_count:>100` → refer to the [syntax for mathematical symbols](https://docs.diskoverdata.com/diskover_user_guide/#complex-queries-syntax-and-grouping) to learn about the equations you can use to build relevant queries. In this example, we search for recursive file counts greater than 100. <br><img src="images/metadata_base_file_count.png" width=""> | 
+| **file_count_norecurs** | number of [non-recursive](#recursive) files inside a directory  | `file_count_norecurs:<=100` → refer to the [syntax for mathematical symbols](https://docs.diskoverdata.com/diskover_user_guide/#complex-queries-syntax-and-grouping) to learn about the equations you can use to build relevant queries. In this example, we search for non-recursive file counts equal to or less than 100. <br><img src="images/" width=""> |
+| **file_size** | file and/or directory size | We recommend using the [built-in search tools](https://docs.diskoverdata.com/diskover_user_guide/#built-in-search-tools) as you need to translate the figures in bytes, but if you want to search manually, please refer to [Queries with Data Size](https://docs.diskoverdata.com/diskover_user_guide/#queries-with-data-size) for examples. |
+| **file_size_du** | disk usage size, aka allocated size, for files only | OPTIONAL TO INDEX?? We recommend using the [built-in search tools](https://docs.diskoverdata.com/diskover_user_guide/#built-in-search-tools) as you need to translate the figures in bytes, but if you want to search manually, please refer to [Queries with Data Size](https://docs.diskoverdata.com/diskover_user_guide/#queries-with-data-size) for examples. |
+| **group** | user group name | `group:engineering` > can vary depending on how Diskover was configured, see [User Analysis Report](https://docs.diskoverdata.com/diskover_user_guide/#user-analysis) section for more details and/or ask your System Administrator |
+
+
 | **ino** | file inode number | `ino:8838389885` or `ino:8838*` > is usually used by System Administrators |
-| **mtime** | last modified | refer to [Queries with Time](#search_time) for syntax examples |
+| **mtime** | last modified time | <ul><li>Learn how to search on time using Diskover [built-in search tools](https://docs.diskoverdata.com/diskover_user_guide/#built-in-search-tools).</li><li>Learn how to [manually search on time](https://docs.diskoverdata.com/diskover_user_guide/#queries-with-time).</li></ul> |
 | **name** | file name | is case sensitive, ex: `name:*Jungle*` if the file name is TheJungleBook.mov |
 | **name.text** | same as **name** but is not case sensitive | `name.text:*jungle*` even if the file name is TheJungleBook.mov |
 | **nlink** | number of [hard links](#hardlinks) | `nlink:3` |
@@ -34,8 +36,6 @@ This section outlines the fundamental file and directory attributes harvested by
 
 ### Queries with File Extensions
 
-When searching on file extensions, it is recommended to either:
-- Use the dedicated fields in the [filters](#filters).
 - Use [quick search](#quick_search) which you can combine with a manual query for max efficiency.
 - Type in the search bar the pre-determined field name for file extensions, for example **extension:mov**
 

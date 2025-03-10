@@ -22,8 +22,7 @@ h3 {
   font-size: 2.2em !important;
   font-weight: bold !important;
   letter-spacing: 0;
-  line-height: 1.5em;
-  padding-bottom: 15px;
+  line-height: 2em;
   position: relative;
 }
 h3:before {

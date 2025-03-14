@@ -1,26 +1,30 @@
 
 ## Indices
 
+
 #### Unable to select indices
 
-- Make sure the box [Always use latest indices](https://docs.diskoverdata.com/diskover_user_guide/#index_selection) is unselected.
+- Ensure that the [**Always use latest indices**](https://docs.diskoverdata.com/diskover_user_guide/#indices) option is **unchecked**.
 
 #### Need more frequent scans of indices
 
-- Your System Administrator may need to schedule scans of one or more of your volumes on a more frequent basis, please address the matter with your technical department.
+- Your **System Administrator** may need to schedule more frequent scans of specific volumes. Please contact your system administrator to possibly adjust the scan frequency as needed.
 
 #### Waiting for files to be indexed
 
-- If you know that some files were onboarded to a directory but are not yet indexed by Diskover, you can have a live view of the directory(ies) via [File Action → Live View](https://docs.diskoverdata.com/diskover_user_guide/#file-action-live-view) and pro-actively search/copy paths. Note that this feature needs to be configured and part of your current subscription plan.
+- If you know that files were recently added to a directory but have not yet been indexed by Diskover, you can view them **in real-time** using [**File Action → Live View**](https://docs.diskoverdata.com/diskover_user_guide/#live-view).  
+- This allows you to **proactively search and copy paths** while waiting for indexing to complete.  
+- *Note:* This feature must be **configured** and [**included in your subscription plan**](https://diskoverdata.com/solutions/).
 
 #### Scanning/indexing takes a long time
 
-- The storage volume may have a very large amount of data and although Diskover is extremely quick and powerful, it can still require some time. 
-- Some storage types are much faster to scan than others, for example new technology versus old.
-- There might also be an obscure reason in the backend for that issue and it should be addressed with your System Administrator.
+- The storage volume may contain **a very large amount of data**, and although Diskover is highly optimized, indexing can still take time.  
+- Some storage types scan **faster than others**, depending on **hardware and technology** (e.g., **newer vs. older storage systems**).  
+- If performance seems **unusually slow**, there may be **backend-related factors**, and the issue should be reported to your **System Administrator**.
 
-#### Missing Indices
+#### Missing indices
 
-By default, Diskover does not load all indices all the time. This is for performance reasons in case there are thousands of indices.
-
-On the indices page, there is an input field with **Max indices to load** that controls the number of indices to load. Indices are loaded by order of creation date. If you are missing indices in the list, try increasing this number. This is a per-user setting that gets stored in a cookie in each user's browser.
+- By default, Diskover **does not load all indices** at once for **performance reasons**, especially in environments with thousands of indices.  
+- On the **Indices page**, there is a **Max indices to load** input field that controls how many indices are displayed.  
+- Indices load in **order of creation date**—if you don’t see certain indices in the list, try **increasing this number**.  
+- *Note:* This is a **per-user setting** stored as a **cookie** in your browser.  

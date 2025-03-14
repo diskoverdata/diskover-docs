@@ -54,11 +54,11 @@ bam_info.<key>:<value>
 - The fields described below are meant to be copied/typed in the search bar of the Diskover user interface.
 
 - At the moment, searching on the BAM attributes is case sensitive, i.e. if the metadata harvested uses some or all capital letters, you will need to search with the same capital letters, for example:
-  - The attributes field portion of the query needs to be typed lowercase **bam_info.\<key>:**
+  - The attributes field portion of the query needs to be typed lowercase `bam_info.\<key>:`
   - As for the **\<value>** if the metadata shows **bam_info.pg.id: STAR**
-    - If you launch a query with **bam_info.pg.id:star**, that file would not be found.
-    - If you launch a query with **bam_info.pg.id:Star**, that file would not be found.
-    - If you launch a query with **bam_info.pg.id:STAR**, that file would be found.
+    - If you launch a query with `bam_info.pg.id:star`, that file would _not_ be found.
+    - If you launch a query with `bam_info.pg.id:Star`, that file would _not_ be found.
+    - If you launch a query with `bam_info.pg.id:STAR`, that file would be found.
 
 The searchable bam_info fields are:
 

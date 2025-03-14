@@ -1,63 +1,64 @@
 ## Search Results
 
-> Please refer to the [Manual Search Syntax chapter in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#search-syntax) and/or the [Quick Reference Card](https://docs.diskoverdata.com/images/quick_reference_card_diskover_core_features.pdf) for detailed information on searches. 
+Please refer to the [built-in search tools](https://docs.diskoverdata.com/diskover_user_guide/#built-in-search-tools), [manual search queries](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries) and/or the [Quick Reference Card](https://docs.diskoverdata.com/images/quick_reference_card_diskover_core_features.pdf) for detailed information about searching.
 
-#### Directories and/or files seem to be missing in search results
 
-- Expand your search with the [* wildcard](https://docs.diskoverdata.com/diskover_user_guide/#wild-card).
-- If using [operators (and, not, or)](https://docs.diskoverdata.com/diskover_user_guide/#operators), make sure you are using them correctly and grouping them if needed.
-- If searching on a specific [field name](https://docs.diskoverdata.com/diskover_user_guide/#queries-with-field-names), make sure that both field name and variable are used and typed correctly.
-- Make sure you don't have saved [Filters](https://docs.diskoverdata.com/diskover_user_guide/#filters) limiting your results.
-- Make sure [Current Dir](https://docs.diskoverdata.com/diskover_user_guide/#current_dir) is deselected in order for Diskover to search all your storage volumes and directories.
-- Make sure you don't have specific [index/indices](https://docs.diskoverdata.com/diskover_user_guide/#indices) selected.
-- Try to refresh your volumes with **Reload Indices** > click the **⛭ gear icon** in the top right corner of the user interface > Select **Reload Indices**.
+#### Some directories and/or files seem to be missing in search results
 
-#### There are too many items found in the search results
+- Expand your search using the [* wildcard](https://docs.diskoverdata.com/diskover_user_guide/#wildcard).
+- If using [operators (AND, NOT, OR)](https://docs.diskoverdata.com/diskover_user_guide/#operators), ensure they are correctly used and grouped if needed.
+- When searching within a specific [field name](https://docs.diskoverdata.com/diskover_user_guide/#field-names), verify that both the field name and value are correctly typed.
+- Check if you have saved [filters](https://docs.diskoverdata.com/diskover_user_guide/#filters) that might be limiting your results.
+- Ensure [Current Dir](https://docs.diskoverdata.com/diskover_user_guide/#limit-searches-to-a-specific-index) is **deselected** so Diskover searches all storage volumes and directories.
+- Verify that no specific [index/indices](https://docs.diskoverdata.com/diskover_user_guide/#indices) are selected, which could be restricting results.
+- Try refreshing your volumes by selecting ⛭ → **Reload Indices**.
 
-- An overuse of the [* wild card](https://docs.diskoverdata.com/diskover_user_guide/#wild-card) could be the cause.
-- [Use Predictive Search](https://docs.diskoverdata.com/diskover_user_guide/#use-predictive-search) in your Settings may be selected, therefore always apply the * for any searches and expand your results.
-- If using [operators (and, not, or)](https://docs.diskoverdata.com/diskover_user_guide/#operators), revisit them to make sure they are used and grouped appropriately.
-- Try searching on specific [field name(s)](https://docs.diskoverdata.com/diskover_user_guide/#queries-with-field-names).
-- Using [Filters](https://docs.diskoverdata.com/diskover_user_guide/#filters) might help pinpoint your results.
-- Using [Current Dir](https://docs.diskoverdata.com/diskover_user_guide/#current_dir) might help focus your results to a specific path.
+#### Too many items found in search results
 
-#### Empty directory(ies) in the search results
+- Overuse of the [* wildcard](https://docs.diskoverdata.com/diskover_user_guide/#wildcard) can lead to overly broad results.
+- [Use Predictive Search](https://docs.diskoverdata.com/diskover_user_guide/#use-predictive-search) may be enabled, automatically expanding searches with `*`.
+- If using [operators (AND, NOT, OR)](https://docs.diskoverdata.com/diskover_user_guide/#operators), review their grouping and placement.
+- Try searching within specific [field name(s)](https://docs.diskoverdata.com/diskover_user_guide/#field-names) to narrow results.
+- Apply [Filters](https://docs.diskoverdata.com/diskover_user_guide/#filters) to refine your search.
+- Use [Current Dir](https://docs.diskoverdata.com/diskover_user_guide/#limit-searches-to-a-specific-index) to focus results within a specific directory path.
 
-- To avoid having empty directories in your search results, open the search [Filters](https://docs.diskoverdata.com/diskover_user_guide/#search-filters) and type **1** in the **File size (min)** field, click **Save filters** and resume your search.
+#### How to display only files or only directories in search results
 
-#### How to only have files or directories in your search results
+- Use the search [filters](https://docs.diskoverdata.com/diskover_user_guide/#filters) and select **file** or **directory** from the **Doc type** drop-down list.
+- Alternatively, use these [field name](https://docs.diskoverdata.com/diskover_user_guide/#field-names) in the search bar:
+  - `type:file`
+  - `type:directory`
 
-- Open the search [Filters](https://docs.diskoverdata.com/diskover_user_guide/#filters) and select **file** or **directory** from the **Doc type** drop-down list.
-- Use a [field name](https://docs.diskoverdata.com/diskover_user_guide/#queries-with-field-names) in the search bar:
-    - type:file
-    - type:directory
+#### Green info bar shows thousands of results, but not all are visible in the results pane
 
-#### Green info bar shows thousands of results, but they are not all showing in the results pane
+- By default, only **10 results per page** are shown, but you can increase this up to **1,000** via the [items per page selector](https://docs.diskoverdata.com/diskover_user_guide/#items_per_page).
+- If there are more than **1,000 results**, multiple pages will be available. The **page navigation** is at the top-right of the search results pane.
 
-- The default view is 10 results per page, but you can change that number to up to 1,000 via the [Show items selector](https://docs.diskoverdata.com/diskover_user_guide/#items_per_page). If you have more than 1,000 results, you will see more than one page of results, and that indicator is located at the top right of the search results pane.
+#### Search results are displayed across multiple pages instead of one long list
 
-#### Search results are on several pages instead of just one
+- Diskover's search results are paginated for **performance optimization and usability**:
+  1. **For speed**
+  2. **For speed**
+  3. **To make navigating large result sets easier**
 
-- There are 3 reasons why Diskover’s search results were set up that way: 1) for speed, 2) for speed, and 3) to break up possibly several thousands of lines of results, making it easier to manage.
+#### Lost location and/or path while drilling down
 
-#### Lost my location and/or path while drilling down
+- The current **path location** is always visible in the [Path Bar](https://docs.diskoverdata.com/diskover_user_guide/#software-overview) (below the green info bar). You can click on any directory in the path bar to jump back.
+- The [green info bar](https://docs.diskoverdata.com/diskover_user_guide/#software-overview) also displays the active search path.
 
-- You can see the path that you're in via the [path bar](https://docs.diskoverdata.com/diskover_user_guide/#path_navigation_bar) located below the green info bar. You can also select a directory directly from that bar to change location.
-- You can also see which path you're in via the [green info bar](https://docs.diskoverdata.com/diskover_user_guide/#green_info_bar).
+#### How to export search results
 
-#### How to export results
-
-- Via the [Export button](https://docs.diskoverdata.com/diskover_user_guide/#export-search-results) in the search page: 
-
-  - Offers several options to export the paths, as well as many other metadata (size, ctime, mtime, atime, type, etc.), to your download folder.
-  - Offers several options to Copy the paths or just the file names, and paste wherever you need.
+- Click the [Export button](https://docs.diskoverdata.com/diskover_user_guide/#export) on the search page:
+  - Export paths along with metadata (size, ctime, mtime, atime, type, etc.) to your download folder.
+  - Copy paths or file names for pasting elsewhere.
 
 #### How to share search results
 
-- You can use the [Export options](https://docs.diskoverdata.com/diskover_user_guide/#export-search-results) or use the [Share button](https://docs.diskoverdata.com/diskover_user_guide/#share-results-and-queries)
-  - Share the URL link of your search results with your co-workers.
-  - Share/copy the search query for repeatable results.
+- Use the [Export options](https://docs.diskoverdata.com/diskover_user_guide/#export) or the [Share button](https://docs.diskoverdata.com/diskover_user_guide/#share).
+  - Share the **URL link** to your search results with co-workers.
+  - Copy and share the **search query** for repeatable searches.
 
 #### How to achieve complex sorting of search results
 
-- Efficiently sorting columns and analyzing data in the user interface can be tricky, especially when there are many pages of results involved. It is best to [Export](https://docs.diskoverdata.com/diskover_user_guide/#export-search-results) the data in CSV format and then open that file in Excel, where you'll be able to achieve complex sorting.
+- Sorting within the UI can be limited when working with large datasets across multiple pages.
+- The best approach is to [Export](https://docs.diskoverdata.com/diskover_user_guide/#export) the results as a **CSV file**, then use [**Excel** or another spreadsheet tool](https://docs.diskoverdata.com/diskover_user_guide/#data-manipulation-in-excel) for advanced sorting and filtering.

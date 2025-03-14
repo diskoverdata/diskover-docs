@@ -1,6 +1,6 @@
-website_name: User Guide Companion for the Life Science Edition
+website_name: User Guide Companion for Life Science Solutions
 # Folder on the website, if you specify "folder" it will deploy this guide to https://docs.diskoverdata.com/folder
-website_folder: diskover_user_guide_companion_life_science_edition
+website_folder: diskover_user_guide_companion_life_science_solutions
 # All documents need to be in shared folder
 ordered_documents:
   - index_diskover_guides_header.md

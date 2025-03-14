@@ -1,2 +1,2 @@
 <br>
-<h1>Diskover User Guide Companion <br>for Life Science Solutions</h1>
+<h1>Diskover User Guide Companion <br> <i>for</i> Life Science Solutions</h1>

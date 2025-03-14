@@ -1,6 +1,6 @@
-___
+
 ## IMF Package Validator
-___
+
 
 #### [🍿 Watch Demo Video | IMF Package Validator](https://vimeo.com/833500176?share=copy)
 
@@ -28,14 +28,14 @@ The following are the limitations of the current plugin version:
 4.	Archives are not supported.
 5.	DCP packages are not supported.
 
-___
+
 ### How to Launch the IMF Package Validator Plugin
 
-First, locate the package(s) you want to validate by either [searching using the built-in tools](https://docs.diskoverdata.com/diskover_user_guide/#built-in-search-tools), [searching using manual queries](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries-syntax-and-rules), or [drilling down the file tree](https://docs.diskoverdata.com/diskover_user_guide/#basic-usage).
+First, locate the package(s) you want to validate by [searching using the built-in tools](https://docs.diskoverdata.com/diskover_user_guide/#built-in-search-tools), [searching using manual queries](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries), or [drilling down the file tree](https://docs.diskoverdata.com/diskover_user_guide/#search-page).
 
 There are 3 ways to launch the **validate IMF package** file action:
 
->🔆 &nbsp;Note that this action is only available for directory items and will not work if you're trying to launch using a file.
+✏️ Note that this action is only available for directory items and will not work if you're trying to launch using a file.
 
 If you want to **validate a single package**, use the file action button in line with that package in the results pane.
 
@@ -53,18 +53,18 @@ After launching the **validate IMF package** file action, a new tab will open di
 
 <img src="images/image_file_action_imf_validator_msg_upon_launch.png" width="600">
 
-___
+
 ### Validation Results Via Tags
 
 Return to the search page and refresh the tab. The results of the validation are shown as tags.
 
-**Green tag > imf valid** = validation successful for all items inside the package
+**Green tag → imf valid** = validation successful for all items inside the package
 
-**Red tag > imf not valid** = validation failed for some or all items inside the package
+**Red tag → imf not valid** = validation failed for some or all items inside the package
 
 ![Image: IMF Validation Results with Tags](images/image_file_action_imf_validator_results_tags.png)
 
-___
+
 ### Reports Following Validation
 
 This new report icon <img src="images/icon_diskover_imf_report.png" alt="test" width="22" /> will be available for the validated directories in the results pane, as well as in the attributes window. 

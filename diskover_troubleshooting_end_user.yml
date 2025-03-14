@@ -1,6 +1,6 @@
-website_name: Support and Troubleshooting for Non-Technical Users
+website_name: Troubleshooting for Non-Technical Users
 # Folder on the website, if you specify "folder" it will deploy this guide to https://docs.diskoverdata.com/folder
-website_folder: diskover_troubleshooting_end_user
+website_folder: diskover_troubleshooting_users
 # All documents need to be in shared folder
 ordered_documents:
   - index_diskover_guides_header.md

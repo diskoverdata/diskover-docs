@@ -22,7 +22,7 @@ h3 {
   font-size: 2.2em !important;
   font-weight: bold !important;
   letter-spacing: 0;
-  line-height: 2em;
+  line-height: 3em;
   position: relative;
 }
 h3:before {
@@ -31,7 +31,7 @@ h3:before {
   left: 0;
   bottom: 0;
   height: 5px;
-  width: 60px;
+  width: 100%;
   background-color: #29F;
 }
 h3:after {
@@ -40,7 +40,7 @@ h3:after {
   left: 0;
   bottom: 2px;
   height: 1px;
-  width: 95%;
+  width: 100%;
   background-color: #29F;
 }
 

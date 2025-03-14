@@ -20,9 +20,9 @@
 
 2. If the issue persists, try the following steps in order:  
 
-   - **Hard refresh your browser**  
+   - Hard refresh your browser:
      - **Windows**: `CTRL + F5`  
      - **Mac**: `CMD + SHIFT + R`  
-   - **Clear the [cache]**(https://docs.diskoverdata.com/diskover_user_guide/#clear-diskover-cache)  
-   - **Clear your [cookies]**(https://docs.diskoverdata.com/diskover_user_guide/#clear-diskover-cookies) *(Note: This will reset your settings, and you'll need to reconfigure them.)*  
-   - **Log out and log back into Diskover.**  
+   - Clear the [cache](https://docs.diskoverdata.com/diskover_user_guide/#clear-diskover-cache)  
+   - Clear your [cookies](https://docs.diskoverdata.com/diskover_user_guide/#clear-diskover-cookies) *(Note: This will reset your settings, and you'll need to reconfigure them.)*  
+   - Log out and log back into Diskover.

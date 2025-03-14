@@ -274,7 +274,7 @@ Inodes and hash values both help identify files, but they serve different purpos
 
 ### Field Names for Extra Metadata
 
-Additional metadata fields can be harvested using Diskover plugins, extending the depth of searchable information beyond the default fields. These plugins enable you to extract specialized metadata tailored to your workflows, providing enhanced visibility and search capabilities. 
+Additional metadata fields can be indexed using Diskover's multiple harvest plugins, extending the depth of searchable information beyond the [base metadata](#base_metadata). These plugins enable you to extract specialized metadata tailored to your workflows, providing enhanced visibility and search capabilities. 
 
 <a class="email-link" href= "mailto:support@diskoverdata.com?subject=Extra Metadata fields request">Contact us</a> for a comprehensive list of metadata fields for the plugins in your instance, and how to use them.
 

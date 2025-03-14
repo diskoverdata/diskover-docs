@@ -1,6 +1,6 @@
-___
+
 ## BAM harvest Plugin
-___
+
 
 The first feature on the menu for the Life Science Edition is the BAM Plugin, allowing for the curation of genome sequence file transformation.
 
@@ -12,17 +12,17 @@ The BAM plugin regroups all the BAM file attributes under the **bam_info** field
 
 [Click here to watch a video demonstrating the plugin.](https://vimeo.com/678914314)
 
-___
+
 ### BAM Plugin Overview Diagram
 
 ![Image: BAM Plugin Overview Diagram](images/diagram_diskover_life_science_plugins_overview_with_border.png)
 
 _[Click here for a full screen view of the BAM Plugin Overview Diagram.](images/diagram_diskover_life_science_plugins_overview_with_border.png)_
 
-___
+
 ### Hide/Unhide BAM Info Column in Search Results Pane
 
-When using the file search page, you have access to a column with all the **bam_info** attributes. If you cannot see that column, it means that it is hidden. To unhide that column, go to **gear icon** > **Settings** > **Hide fields in search results** > unclick the box in front of  **bam_info**.
+When using the file search page, you have access to a column with all the **bam_info** attributes. If you cannot see that column, it means that it is hidden. To unhide that column, go to ⛭ → **Settings** → **Hide fields in search results** → unclick the box in front of  **bam_info**.
 
 ![Image: Hide/Unhide Media Info Field](images/image_life_science_edition_baminfo_hide_unhide_column.png)
 
@@ -30,14 +30,14 @@ The  **bam_info** column will then be available within the search results pane. 
 
 ![Image: Media Info Column in Search Results](images/image_life_science_edition_baminfo_column_in_search_results_pane.png)
 
-___
+
 ### View Detailed BAM Attributes
 
 Below is an example of the location where you can see detailed media attributes. You can access this page by clicking on a file in the search results pane or wherever you see the magnifying glass icon:
 
 ![Image: Harvested Media Attributes](images/image_life_science_edition_baminfo_file_attributes.png)
 
-___
+
 ### Search on BAM Attributes
 
 In addition to the [manual file searches and syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#manual-search-syntax), the BAM plugin allows end-users to search on specific BAM attributes.
@@ -56,39 +56,17 @@ bam_info.<key>:<value>
 - At the moment, searching on the BAM attributes is case sensitive, i.e. if the metadata harvested uses some or all capital letters, you will need to search with the same capital letters, for example:
   - The attributes field portion of the query needs to be typed lowercase **bam_info.\<key>:**
   - As for the **\<value>** if the metadata shows **bam_info.pg.id: STAR**
-    - If you launch a query with **bam_info.pg.id: star**, that file would not be found.
-    - If you launch a query with **bam_info.pg.id: Star**, that file would not be found.
-    - If you launch a query with **bam_info.pg.id: STAR**, that file would be found.
+    - If you launch a query with **bam_info.pg.id:star**, that file would not be found.
+    - If you launch a query with **bam_info.pg.id:Star**, that file would not be found.
+    - If you launch a query with **bam_info.pg.id:STAR**, that file would be found.
 
 The searchable bam_info fields are:
 
-```
-bam_info.co_cmd:
-```
->Example: `bam_info.co_cmd:*GenomeDir*`
-
-```
-bam_info.co_cmd_checksum:
-```
->Example: `bam_info.co_cmd_checksum:e65ef53fdf1fbfc4aecc9ac99f991248` could be used to find other files with the same checksum value, although Diskover has automated tools to detect and find duplicate files.
-
-```
-bam_info.co.key:
-```
->Example: `bam_info.co.key:*ANNID*`
-
-```
-bam_info.co.value:
-```
->Example: `bam_info.co.value:*gencode.v19*`
-
-```
-bam_info.pg.id:
-```
->Example: `bam_info.pg.id:*STAR*` or `bam_info.pg.id:*samtools*`
->
-
-```
-bam_info.pg.vn:
-```
->Example: `bam_info.pg.vn:*2.4*`
+| SYNTAX | 🔎 QUERY EXAMPLES |
+| --- | --- |
+| `bam_info.co_cmd:` | `bam_info.co_cmd:*GenomeDir*` |
+| `bam_info.co_cmd_checksum:` | `bam_info.co_cmd_checksum:e65ef53fdf1fbfc4aecc9ac99f991248`<br><br>✏️ Could be used to find other files with the same checksum value, although Diskover has automated tools to detect and find duplicate files. |
+| `bam_info.co.key:` | `bam_info.co.key:*ANNID*` |
+| `bam_info.co.value:` | `bam_info.co.value:*gencode.v19*` |
+| `bam_info.pg.id:` | `bam_info.pg.id:*STAR*` or `bam_info.pg.id:*samtools*` |
+| `bam_info.pg.vn:` | `bam_info.pg.vn:*2.4*` |

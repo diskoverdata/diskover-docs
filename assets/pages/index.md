@@ -33,7 +33,7 @@
 
 [Diskover User Guide Companion | Life Science Features](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_solutions/)
 
-[End-User Troubleshooting](https://docs.diskoverdata.com/diskover_troubleshooting_end_user/)
+[End-User Troubleshooting](https://docs.diskoverdata.com/diskover_troubleshooting_users/)
 
 
 ## Changelogs

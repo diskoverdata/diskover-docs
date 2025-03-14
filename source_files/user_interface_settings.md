@@ -109,7 +109,7 @@ You can access the settings via the ⚙️ icon at the top right corner of the i
 - ⬜️ Unchecked boxes mean the columns are **visible** in your [results pane](#results_pane).
 - ✅ Checked boxes mean the columns are **hidden** in your [results pane](#results_pane).
 - Your selection(s) will be saved automatically.
-- The base metadata fields are the same for everyone, but you may have extra options depending on your organization’s indexing of [extra metadata](https://docs.diskoverdata.com/diskover_metadata_catalog.yml/#additional_metadata).
+- The [base metadata](#base_metadata) fields are the same for everyone, but you may have extra options depending on your organization’s indexing of [extra metadata](#extra_metadata).
 - Click the **Reset** button to restore the default column widths if you’ve modified them.
 
 

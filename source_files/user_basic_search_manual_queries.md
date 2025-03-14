@@ -193,7 +193,7 @@ Operators are used to join multiple criteria in a query. There are 3 operators: 
 
 | AND | NOT | OR | MIX'EM |
 | --- | --- | --- | --- |
-| 🔎 `albert AND v*1`<br><br>✅ would find **albert** isolated anywhere in the path/file name **and versions ending with 1**.<br><br>✏️ Note that **AND** is assumed if no operators are typed in between two criteria, so the same results would be obtained with `albert v*1` | 🔎 `albert NOT v*1`<br><br>✅ would find **albert** isolated anywhere in the path/file name but would **exclude versions ending with 1**. | 🔎 `albert (v*1 OR v*2)`<br><br>✅ would find **albert** isolated anywhere in the path/file name **and versions ending with 1 or 2**.<br><br>✏️ You need to group the criteria around the **OR** operator to ensure the query is processed correctly—think of it as building formulas in Excel where it requires you to group conditions to interpret your logic accurately. | 🔎 `*test* AND *log* (r*1 OR r*2) NOT 2023`<br><br>✅ would find path/file name with both **test** and **log** isolated or not, with **releases ending with 1 or 2**, but would **exclude anything with 2023 isolated**. |
+| 🔎 `albert AND v*1`<br><br>✅ would find **albert** [isolated](#tokenizer) anywhere in the path/file name **and versions ending with 1**.<br><br>✏️ Note that **AND** is assumed if no operators are typed in between two criteria, so the same results would be obtained with `albert v*1` | 🔎 `albert NOT v*1`<br><br>✅ would find **albert** [isolated](#tokenizer) anywhere in the path/file name but would **exclude versions ending with 1**. | 🔎 `albert (v*1 OR v*2)`<br><br>✅ would find **albert** [isolated](#tokenizer) anywhere in the path/file name **and versions ending with 1 or 2**.<br><br>✏️ You need to group the criteria around the **OR** operator to ensure the query is processed correctly—think of it as building formulas in Excel where it requires you to group conditions to interpret your logic accurately. | 🔎 `*test* AND *log* (r*1 OR r*2) NOT 2023`<br><br>✅ would find path/file name with both **test** and **log** [isolated](#tokenizer) or not, with **releases ending with 1 or 2**, but would **exclude anything with 2023 [isolated](#tokenizer)**. |
 
 
 <p id="search_field_names"></p>
@@ -406,7 +406,7 @@ Here are a few examples using the file name structure **thejunglebook_s01_ep05_e
 | `*jungle* AND (s*1 OR s*2)` |  All files/paths related to season 1 and season 2 for The Jungle Book series. |
 | `*jungle* AND e*5 AND (en OR it)` | All Italian (assuming **it** was respected in the naming convention) and English (**en**) translations of episode 5 for The Jungle Book series. |
 | `*jungle* AND s*1 (AND extension:(mov OR mp4))` | All files of season 1 with .mov and .mp4 extension, a less precise query could be `*jungle\* AND s*1 AND (mov OR mp4)` |
-| `(new york city)` | Files/paths with those 3 words in them, assuming that all the words are isolated of course—the [AND operator](#operators) is assumed |
+| `(new york city)` | Files/paths with those 3 words in them, assuming that all the words are [isolated](#tokenizer) of course—the [AND operator](#operators) is assumed |
 
 
 #### Examples with Multiple Groupings

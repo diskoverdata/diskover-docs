@@ -1,2 +1,2 @@
 <br>
-<h1>Diskover User Guide Companion <br>for Media Solutions</h1>
+<h1>Diskover User Guide Companion <br> _for_ Media Solutions</h1>

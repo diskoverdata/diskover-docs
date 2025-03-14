@@ -7,7 +7,9 @@ ordered_documents:
   - guide_title_companion_life_science_edition.md
   - intro_guide_intended_for_user.md
   - intro_life_science_edition_main.md
-  - user_life_science_edition_plugin_bam.md
+  - intro_doc_conventions_user.md
+  - user_life_science_bam.md
+  - user_life_science_grant.md
   - support.md
   - contact.md
   - copyright.md

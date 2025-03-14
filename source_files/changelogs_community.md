@@ -190,8 +190,12 @@
 #### [2.0-rc.1] - 2021-10-08
 - first community edition v2.0 rc release
 
-___
-### Diskover-web v2 Community Edition Changelog
+
+
+
+
+
+### Diskover-Web v2 Community Edition Changelog
 
 #### [2.3.0] - 2024-08-01
 ##### BREAKING CHANGES

@@ -60,15 +60,15 @@ Search queries are generally case-insensitive, meaning you can use uppercase or 
 - When searching on [field names](#search_field_names).
 
 
-<p id="isolated_characters"></p>
+<p id="tokenizer"></p>
 
-#### Isolated Characters
+#### Tokenizers | Isolated Characters
 
-When you enter a word, number, or a combination of both in the search bar, Diskover searches for those **isolated characters**. To identify isolated characters, Diskover uses **isolators** such as **spaces, underscores, hyphens, periods, other punctuation marks, and uppercase letters (also known as 🐫 CamelCase)**.  
+When you enter a word, number, or a combination of both in the search bar, Diskover searches for those **isolated characters**. To identify isolated characters, Diskover uses a **tokenizer**, which breaks text apart using isolators such as **spaces, underscores, hyphens, periods, other punctuation marks, and uppercase letters (also known as 🐫 CamelCase)**.
 
-Of course, there are ways to find characters that are not isolated by using [wildcards](#wildcards), which is explained in the next section.
+Of course, there are ways to find characters that are not tokenized/isolated by using [wildcards](#wildcards), which is explained in the next section.
 
-##### Isolated Characters | Examples with Letters
+##### Tokenization | Examples with Letters
 
 🔎 If you launch a query with the word **albert**:
 
@@ -81,7 +81,7 @@ Of course, there are ways to find characters that are not isolated by using [wil
 | `projectalbertoverview.pptx` | | project**albert**overview is read as one word |
 | `ProjectALBERTOverview.pptx` | | reads **ALBERTO** |
 
-##### Isolated Characters | Examples with Numbers
+##### Tokenization | Examples with Numbers
 
 🔎 If you launch a query with the number **2025**:
 
@@ -92,7 +92,6 @@ Of course, there are ways to find characters that are not isolated by using [wil
 | `projectalbert2025.pdf`  |  | **2025** is only isolated on one side with the . |
 | `MappingLog2025Final.log` |  | CamelCase doesn't work with numbers |
 | `QA_testing_20250220.pptx` |  | **2025** is only isolated on one side with the _ |
-
 
 
 <p id="wildcards"></p>

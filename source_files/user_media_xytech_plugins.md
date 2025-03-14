@@ -1,11 +1,10 @@
-___
+
 ## Xytech Plugins
-___
+
 This chapter describes features enhancing file-based production workflows when using the [Xytech Media Operations Platform](https://www.xytechsystems.com/). Extra metadata is harvested to give additional business context allowing for efficient data flow management, including searches, analytics, and data curation.
 
 [Click here to learn more about the Xytech Media Operations Platform.](https://www.xytechsystems.com/)
 
-___
 ### Xytech Asset Creation Plugin Overview
 
 #### [🍿 Watch Demo Video | Xytech Asset Creation Plugin](https://vimeo.com/660789118)
@@ -52,13 +51,13 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 
 ##### Search Examples
 
-| Search Query Examples | Search Results |
+| 🔎 QUERY EXAMPLES | ✅ POSSIBLE RESULTS |
 | --- | --- |
-| **xytech.asset_id:**__*\**__ | would find all files/directories with __*any*__ asset ID attached to them |
-| **xytech.asset_id:**__*1495193*__ | would find all files/directories with the specific asset ID number __*1495193*__ |
-| **xytech.asset_id:**__*1234**__ | would find all files/directories with an asset ID number starting with __*1234*__ |
+| **xytech.asset_id:**__*\**__ | All files/directories with __*any*__ asset ID attached to them |
+| **xytech.asset_id:**__*1495193*__ | All files/directories with the specific asset ID number __*1495193*__ |
+| **xytech.asset_id:**__*1234**__ | All files/directories with an asset ID number starting with __*1234*__ |
 
-___
+
 ### Xytech Order Status Plugin Overview
 
 #### [🍿 Watch Demo Video | Xytech Order Status Plugin](https://vimeo.com/768967081)
@@ -122,7 +121,7 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 
 ##### Search Examples
 
-| Search Query Examples | Search Results |
+| 🔎 QUERY EXAMPLES | ✅ POSSIBLE RESULTS |
 | --- | --- |
 | **xytech.phase:**__*Invoiced*__ | would find all files/directories with an __*Invoiced*__ status, note that case sensitivity needs to be respected for the __*value*__ and needs to start with a capital letter |
 | **xytech.customer_id:**__*9999*__ | would find all files/directories with customer ID __*9999*__ |

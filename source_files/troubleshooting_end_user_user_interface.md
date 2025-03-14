@@ -5,7 +5,7 @@
 #### I lost my settings
 
 - Diskover [settings are saved as cookies](https://docs.diskoverdata.com/diskover_user_guide/#settings-overview) in your browser:
-  - If you switch to a different browser, you will need to reselect your settings.
+  - If you switch to a different browser, you will need to reselect your [settings](https://docs.diskoverdata.com/diskover_user_guide/#settings).
   - Your settings may reset after a software upgrade or if you manually used [**Clear Diskover cookies**](https://docs.diskoverdata.com/diskover_user_guide/#clear-diskover-cookies) in your settings.
 
 #### The user interface is frozen with a spiraling wheel

@@ -198,11 +198,9 @@ Operators are used to join multiple criteria in a query. There are 3 operators: 
 
 <p id="search_field_names"></p>
 
-### Field Names aka Key-Value Pair
+### Field Names
 
 Searching with field names can be effective when you need precise results, especially if you're searching within a specific or hidden field. You can think of this like searching within a specific column in a massive Excel spreadsheet—rather than scanning the entire dataset, you're narrowing your focus to just the relevant information.
-
-Often referred to as **key-value pair**, think of this as a structured way to store and retrieve data, where a **key acts as an identifier**, and the **value holds the associated variable data**. In Diskover, key-value pairs are used for various use cases like search queries, custom reporting, and workflows.
 
 🔎 The query needs to be typed in this exact format **fieldname:_value_**
 
@@ -280,9 +278,11 @@ Additional metadata fields can be harvested using Diskover plugins, extending th
 
 <a class="email-link" href= "mailto:support@diskoverdata.com?subject=Extra Metadata fields request">Contact us</a> for a comprehensive list of metadata fields for the plugins in your instance, and how to use them.
 
-#### Examples of Searches with Field Names
+### Key-Value Pair
 
-You can find examples throughout this chapter, but here are a few more:
+Think of this as a structured way to store and retrieve data, where a **key acts as an identifier**, and the **value holds the associated variable data**. In Diskover, key-value pairs are used for various use cases like search queries, custom reporting, and workflows.
+
+The following examples might look complicated, but you can use the [built-in search tools](#builtin_search_tools) to let Diskover create complicated criteria/queries for you.
 
 | 🔎 QUERY | ✅ RESULT |
 | --- | --- |
@@ -293,8 +293,6 @@ You can find examples throughout this chapter, but here are a few more:
 | `tags:(manual_delete AND approve_delete)` | Files and directories with both tags attached to them - please refer to [complex queries](#complex_queries) regarding the use of the parentheses for grouping. |
 
 <img src="images/key_value_pair_examples.png" width="">
-
-You can find more examples with field names when it comes to [searching on time](#search_time) and [searching on size](#search_size) sections.
 
 
 <p id="search_size"></p>

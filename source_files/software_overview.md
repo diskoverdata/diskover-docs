@@ -2,7 +2,7 @@
 
 ## Software Overview
 
-#### [🍿 Watch Quick Tips | Fundamentals](https://vimeo.com/766235515)
+#### [🍿 Watch Baiscs & Beyond | Software Overview](https://vimeo.com/1074368189)
 
 ### You Can't Break Anything
 

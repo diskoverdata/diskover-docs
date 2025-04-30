@@ -5,7 +5,7 @@
 
 #### [2.3.1] - 2025-04-02
 ##### changed
-- improved parallel scanning threads algorithm (rakitzis)
+- improved parallel scanning threads algorithm 
 - removed urlib3 warnings for InsecureRequestWarning when using https with es ssl verify disabled
 
 

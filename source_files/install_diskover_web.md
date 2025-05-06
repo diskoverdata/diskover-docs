@@ -42,7 +42,7 @@ php84-php-xml php84-php-mbstring php84-php-json php84-php-sqlite3
 🔴 &nbsp;Copy in `php.ini`:
 ```
 find / -mount -name php.ini-production
-  -- /opt/remi/php84/root/usr/share/dovi /et  c/php84-php-common/php.ini-productio
+  -- /opt/remi/php84/root/usr/share/dovi /etc/php84-php-common/php.ini-productio
 find / -mount -name php.ini
   -- /etc/opt/remi/php84/php.ini
 cp /opt/remi/php84/root/usr/share/doc/php84-php-common/php.ini-production /etc/opt/remi/php84/php.ini

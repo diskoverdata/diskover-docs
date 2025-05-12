@@ -6,7 +6,6 @@ ordered_documents:
   - aja_logo_and_icon.md
   - guide_title_companion_media_edition.md
   - intro_guide_intended_for_user.md
-  - contact_aja.md
   - intro_media_edition_main.md
   - intro_doc_conventions_user.md
   - user_media_challenges_solutions.md
@@ -17,6 +16,6 @@ ordered_documents:
   - user_media_shotgrid.md
   - user_media_telestream_plugins.md
   - user_media_imf_validator_oxagile.md
-  - support_media_edition.md
+  - support.md
   - contact.md
   - copyright.md

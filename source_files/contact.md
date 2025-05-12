@@ -12,4 +12,3 @@
 | Support | [Open a support ticket with Zendesk](https://support.diskoverdata.com/)<br>800-560-5853 \| Mon-Fri 8am-6pm PST|
 | Slack | [Join the Diskover Slack Workspace](https://join.slack.com/t/diskoverworkspace/shared_invite/enQtNzQ0NjE1Njk5MjIyLWI4NWQ0MjFhYzQyMTRhMzk4NTQ3YjBlYjJiMDk1YWUzMTZmZjI1MTdhYTA3NzAzNTU0MDc5NDA2ZDI4OWRiMjM) |
 | GitHub | [Visit us on GitHub](https://github.com/diskoverdata/) |
-| AJA Media Edition | 530-271-3190<br>[sales@aja.com](mailto:sales@aja.com)<br>[support@aja.com](mailto:support@aja.com) |

@@ -1,9 +1,9 @@
 
-## Media Info Attributes
+## Media Info 
 
-The media attributes are part of the metadata harvested exclusively by the AJA Diskover Media Edition. If a file at the source doesn’t include any of these attributes, it goes without saying that no details will be harvested and/or available.
+The Media Info plugin enriches the index with additional metadata, such as media-specific attributes (e.g., file resolution, codec, pixel format, etc.). These attributes are seamlessly integrated, making them searchable, reportable, and actionable. If a source file lacks media attributes, those fields simply won’t be harvested or available for use within Diskover.
 
-Media attributes, like file resolution, codec, pixel format, etc., are harvested during indexing and are therefore available to enhance in-depth searches and deliver accurate results. In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#field-names), the AJA Diskover Media Edition allows end-users to search on media-specific attributes.
+Media attributes, like file resolution, codec, pixel format, etc., are harvested during indexing and are therefore available to enhance in-depth searches and deliver accurate results. In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#field-names), the additional fields indexed by the Media Info plugin allow end-users to search on media-specific attributes.
 
 ### Hide/Unhide Media Info Column in Search Results Pane
 

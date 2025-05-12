@@ -6,7 +6,7 @@
 
 The IMF package validator plugin allows organizations to validate IMF packages before delivery from a remote platform, saving immense amounts of man-hours over the course of a business year.
 
-Oxagile’s IMF Package Validator Plugin, exclusively designed for the AJA Diskover Media Edition, allows users to scan and validate IMF packages before delivery from any location, regardless of the location of the IMF package data.
+Oxagile’s IMF Package Validator plugin allows users to scan and validate IMF packages before delivery from any location, regardless of the location of the IMF package data.
 
 IMF stands for Interoperable Master Format, which is a technical standard used in the Media and Entertainment industry for the exchange of digital content between different platforms and systems. The IMF format is used by content creators, distributors, and broadcasters to deliver high-quality video content to a variety of devices, including TVs, mobile devices, and web browsers.
 
@@ -16,7 +16,7 @@ Once the content has been validated, it is then encoded into various formats, in
 
 ![Image: IMF Package Content Delivery](images/image_file_action_imf_validator_content_delivery.png)
 
-The IMF Package Validator plugin is developed by [Oxagile](https://www.oxagile.com/), a major technological partner working with both Diskover Data and [AJA Video Systems](https://www.aja.com/). For more information or to purchase the IMF Package Validator plugin, please contact [Oxagile](mailto:IMF@Oxagile.com).
+The IMF Package Validator plugin is developed by [Oxagile](https://www.oxagile.com/). For more information or to purchase the IMF Package Validator plugin, please contact [Oxagile](mailto:IMF@Oxagile.com).
 
 #### Functional Limitations
 

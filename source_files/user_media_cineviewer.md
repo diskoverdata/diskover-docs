@@ -4,7 +4,7 @@
 
 #### [🍿 Watch Demo Video | CineViewer Player Plugin](https://vimeo.com/765285042)
 
-CineViewer is a video playback and management system designed for video and broadcast professionals. It is designed to securely view high-resolution media from a remote browser, without giving users access to the source files. The player can be launched in one click from the AJA Diskover Media Edition user interface, allowing for seamless validation of media assets, therefore increasing productivity, while safeguarding your production network.
+CineViewer is a video playback and management system designed for video and broadcast professionals. It is designed to securely view high-resolution media from a remote browser, without giving users access to the source files. The player can be launched in one click from the user interface, allowing for seamless validation of media assets, therefore increasing productivity, while safeguarding your production network.
 
 The following sections will guide you through the features and functions of CineViewer, helping you utilize this tool effectively for your video and broadcast needs.
 

@@ -31,13 +31,13 @@ The following are examples of media asset attributes within Diskover, allowing c
 
 ![Image: Asset Information in Diskover Results Pane](images/image_aja_edition_xytech_asset_creation_within_diskover_ui_file attribute.png)
 
-#### How to Search for Xytech Media Assets in Diskover
+#### How to Search for Xytech Media Assets
 
 ##### Search Overview
 
 The **asset id** is part of the metadata harvested by Diskover. If a file at the source doesn’t have an asset ID attached to it, it goes without saying that no details will be harvested and/or be available within Diskover.
 
-In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries), the AJA Diskover Media Edition allows end-users to search on Xytech asset ID numbers.
+In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries), users can search on Xytech asset ID numbers.
 
 ##### Search Syntax
 
@@ -62,7 +62,7 @@ In addition to the [manual search syntax explained in the Diskover User Guide](h
 
 #### [🍿 Watch Demo Video | Xytech Order Status Plugin](https://vimeo.com/768967081)
 
-The Xytech order status plugin is designed to automate the correlation of the order management system and the storage system, by harvesting key business context from Xytech and applying that context within the AJA Diskover Media Edition. In turn, this business context metadata can be used to curate data, automate workflows, monitor costs, create customized reports, etc.
+The Xytech order status plugin is designed to automate the correlation of the order management system and the storage system, by harvesting key business context from Xytech and applying that context within Diskover. In turn, this business context metadata can be used to curate data, automate workflows, monitor costs, create customized reports, etc.
 
 Facilities often manually correlate the order management system with the storage repositories. However, manual processes are subject to human errors and difficult to scale as the volume of media orders and data turnover increases constantly.
 
@@ -100,13 +100,13 @@ Below are examples of analytics using Diskover's [Reports](https://docs.diskover
 
 ![Image: Order Status within Xytech Media Order Platform](images/screenshot_aja_diskover_media_edition_xytech_order_status_reports_by_phase.png)
 
-#### How to Search for Xytech Order Status in Diskover
+#### How to Search for Xytech Order Status
 
 ##### Search Overview
 
 The **order status** fields are part of the metadata harvested by Diskover. If a file at the source doesn’t have an asset ID attached to it, it goes without saying that no details will be harvested and/or be available within Diskover.
 
-In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries), the AJA Diskover Media Edition allows end-users to search on multiple Xytech order status attributes.
+In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries), users can search on multiple Xytech order status attributes.
 
 ##### Search Syntax
 

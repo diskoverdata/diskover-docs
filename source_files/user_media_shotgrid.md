@@ -47,11 +47,11 @@ Amount of data by **creator**:
 
 ![Image: Order Status within Xytech Media Order Platform](images/image_aja_edition_shotgrid_plugin_reports_by_creator.png)
 
-### How to Search for Flow Production Tracking Attributes in Diskover
+### How to Search for Flow Production Tracking Attributes
 
 The **Flow Production Tracking** (formerly **ShotGrid**) fields are part of the metadata harvested by Diskover. If a file at the source doesn’t have any of those attributes attached to it, it goes without saying that no details will be harvested and/or be available within Diskover.
 
-In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries), the AJA Diskover Media Edition allows end-users to search on multiple Flow Production Tracking attributes.
+In addition to the [manual search syntax explained in the Diskover User Guide](https://docs.diskoverdata.com/diskover_user_guide/#manual-queries), users can search on multiple Flow Production Tracking attributes.
 
 #### Search Syntax
 

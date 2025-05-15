@@ -573,7 +573,7 @@ The plugins are listed alphabetically.
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
+| Availability | <img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Visit our website](https://diskoverdata.com/solutions/dell-dataiq-migration/) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Adds dozens of Dell PowerScale metadata attributes to the Elasticsearch index as a post-index process. |
@@ -628,7 +628,7 @@ The plugins are listed alphabetically.
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
+| Availability | <img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | On-demand data mover. |
@@ -780,13 +780,4 @@ The plugins are listed alphabetically.
 | User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/#xytech-order-status-plugin-overview) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/768967081) |
 | Purpose | <p>The Xytech Media Operations Platform order status plugin is designed to automate the correlation of the order management system and the storage system by harvesting key business context from Xytech and applying that context within the AJA Diskover Media Edition. In turn, this business context metadata can be used to automate workflows, curate data, monitor costs, create highly customized reports, and search granularly.</p><p>Facilities often manually correlate the order management system with the storage repositories. However, manual processes are subject to human errors and difficult to scale as the volume of media orders and data turnover constantly increases.</p><p>Therefore, the lack of integration for file-based workflows between the order management system and the underlying storage repositories, makes data management decisions difficult as they are solely based on attributes of files or objects on storage. Additional business context is needed from the order management system to increase precision and accuracy of data management decisions.</p><p>An instance of key information might be the invoice date for a work order. A status change for a work order can be a key indicator for data management, for example, once a Xytech media order has been “invoiced”, then the data associated with that media order can be a candidate for archival.</p> |
-
-
-
-
-
-
-
-
-
 

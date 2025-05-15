@@ -29,7 +29,7 @@
 
 [Diskover Quick Reference Card | Media Features](images/quick_reference_card_diskover_media_edition.pdf)
 
-[Diskover User Guide Companion | Media Features](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/)
+[Diskover User Guide Companion | Media Features](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/)
 
 [Diskover User Guide Companion | Life Science Features](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_solutions/)
 

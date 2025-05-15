@@ -53,6 +53,7 @@ The plugins are listed alphabetically.
 | Core | [Make Links](#plugin_file_action_make_links) | | | ✅ |
 | Media | [Media Info](#plugin_index_mediainfo) | ✅ | | |
 | Core | [Ngenea Data Orchestrator](#plugin_file_action_ngenea) | | | ✅ |
+| Core | [OpenEXR Info](#plugin_index_openexr_info) | | | ✅ |
 | Core | [Path Tokens](#plugin_index_path_tokens) | ✅ | | |
 | Core | [PDF Info](#plugin_index_pdf_info) | ✅ | | |
 | Core | [PDF Viewer](#plugin_file_action_pdf_viewer) | | | ✅ |
@@ -60,6 +61,7 @@ The plugins are listed alphabetically.
 | Core | [Rclone Data Mover](#plugin_file_action_rclone) | | | ✅ |
 | Media | [ShotGrid/Flow Production Tracking](#plugin_post_index_shotgrid) | | ✅ | |
 | Core | [Spectra](#plugin_file_action_spectra) | | | ✅ |
+| Core | [Spectra MediaEngine](#plugin_file_action_spectra_mediaengine) | | | ✅ |
 | Core | [Tag Copier](#plugin_index_tag_copier) | ✅ | | |
 | Core | [Tag Copier](#plugin_post_index_tag_copier) | | ✅ | |
 | Media | [Telestream GLIM File Action](#plugin_file_action_glim) | | | ✅ |
@@ -77,7 +79,7 @@ The plugins are listed alphabetically.
 
 <p id="plugin_post_index_autoclean"></p>
 
-#### AutoClean
+#### AutoClean/Orchestrate
 
 | HELP | RESOURCE |
 | --- | --- |
@@ -317,7 +319,7 @@ The plugins are listed alphabetically.
 | Availability | <img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
-| Purpose | Triggers the creation of an additional attribute when Diskover first detects a new file in a given location and adds the extra metadata to the Elasticsearch index during the scanning process.|
+| Purpose | Triggers the creation of an additional attribute when Diskover first detects a new file in a given location and adds the extra metadata to the Elasticsearch index during the scanning process. |
 
 
 
@@ -506,6 +508,24 @@ The plugins are listed alphabetically.
 
 
 
+<p id="plugin_index_openexr_info"></p>
+
+#### OpenEXR Info
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
+| Enable/Config | Via the DiskoverAdmin panel |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Purpose | Designed to add OpenEXR info metadata from your exr image files to the Elasticsearch index during the indexing process. |
+
+
+
+
+
+
+
+
 <p id="plugin_index_path_tokens"></p>
 
 #### Path Tokens
@@ -599,6 +619,19 @@ The plugins are listed alphabetically.
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | On-demand menu option that queries the Spectra API to verify additional status, such as whether the desired tape is in the library or on the shelf. |
 
+
+
+
+<p id="plugin_file_action_spectra_mediaengine"></p>
+
+#### Spectra MediaEngine
+
+| HELP | RESOURCE |
+| --- | --- |
+| Availability | <img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
+| Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
+| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Purpose | On-demand data mover. |
 
 
 

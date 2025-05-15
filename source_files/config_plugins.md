@@ -373,7 +373,7 @@ The plugins are listed alphabetically.
 | Availability | <img src="images/button_edition_life_science.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
 | Learn More | [Visit our website](https://diskoverdata.com/solutions/life-science/#grant) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [[Diskover User Guide Companion for Life Science Solutions](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_solutions/#grant-plugin) |
+| User Guide | [Diskover User Guide Companion for Life Science Solutions](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_solutions/#grant-plugin) |
 | Purpose | <p>The Grant Plugin has a dual purpose 1) assisting research institutes in managing their grants/members/storage costs internally, and 2) fulfilling the requirements for the new NIH DMS Policy.</p><p>The Grant Plugin collects and parses grants’ metadata (grant number, group ID, etc.) to curated datasets. In turn, staff associated with a specific grant has visibility/searchability of their limited data/grant without access to the source files or other grants. That extra metadata is also available to use for further workflow automation if needed.</p>![Image: Diskover BAM Plugin Overview](images/diagram_diskover_plugin_grant.png)<br>_[Click here for a full-screen view of this image.](images/diagram_diskover_plugin_grant.png)_ |
 
 

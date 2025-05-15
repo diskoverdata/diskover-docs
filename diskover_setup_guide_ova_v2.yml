@@ -4,7 +4,7 @@ website_folder: diskover_ova_setup_guide
 # All documents need to be in shared folder
 ordered_documents:
   - index_diskover_guides_header.md
-  - guide_title_setup_ova_v2-3.md
+  - guide_title_setup_ova_v2.md
   - intro_guide_intended_for_tech.md
   - intro_tech_guides_main_intro.md
   - intro_tech_guides_use_cases.md

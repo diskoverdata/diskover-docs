@@ -97,7 +97,7 @@ Diskover v2.3 has an easy configuration wizard that we will walk you through.
 Whether you are doing a POC or are a customer, the process is the same.
 
 🔴 [Generate your **hardware ID**](#hd_id)<br>
-🔴 Send your [hardware ID](#hd_id) along with basic information so we can easily identify you to [licenses@diskoverdata.com](mailto:licenses@diskoverdata.com) for all editions and add [diskover-licensing@aja.com](mailto:diskover-licensing@aja.com) for the media edition.<br>
+🔴 Send your [hardware ID](#hd_id) along with basic information so we can easily identify you to [licenses@diskoverdata.com](mailto:licenses@diskoverdata.com)<br>
 🔴 Once you have your licenses back from the Diskover team, you can input them here [http://localhost:8000/diskover_admin/config/License](http://localhost:8000/diskover_admin/config/License) by simply copying the contents from the **diskover.lic** and **diskover-web.lic** files into their respective boxes.
 
 <img src="images/diskoveradmin_license.png" width="">

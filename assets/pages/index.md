@@ -7,9 +7,9 @@
 
 **_Intended for Service Professionals and System Administrators._**
 
-[Diskover Setup and Configuration Guide v2.3 +](https://docs.diskoverdata.com/diskover_setup_and_config_guide/) | Annual Subscriptions
+[Diskover Setup and Configuration Guide v2.4 +](https://docs.diskoverdata.com/diskover_setup_and_config_guide/) | Annual Subscriptions
 
-[Diskover Setup Guide for OVA v2.3 +](https://docs.diskoverdata.com/diskover_ova_setup_guide/) | Annual Subscriptions
+[Diskover Setup Guide for OVA v2.4 +](https://docs.diskoverdata.com/diskover_ova_setup_guide/) | Annual Subscriptions
 
 [Diskover Installation Guide for Community Edition v2.3 +](https://github.com/diskoverdata/diskover-community/blob/master/INSTALL.md) | Free to Use for an Unlimited Time
 

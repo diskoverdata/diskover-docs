@@ -6,9 +6,9 @@
 
 Whether indexing extra metadata, automating workflows, or customizing actions on data for your own environment, Diskover’s flexible architecture empowers you to extend its functionality and unlock greater value from your digital assets. Diskover currently offers 3 categories of plugins:
 
-- Plugins that run **at time of index**: Mostly metadata enrichment.
-- Plugins that run as a **post-index process**: Metadata enrichment, data curation, and more.
-- **File Action** plugins: Enable workflow automation by triggering actions on selected files.
+- Plugins that run **at time of index** → Mostly metadata enrichment.
+- Plugins that run as a **post-index process** → Metadata enrichment, data curation, and more.
+- **File Action** plugins → Enable workflow automation by triggering actions on selected files.
 
 ⚠️ &nbsp;**IMPORTANT!** Once the plugin is configured, a task needs to be created and scheduled in the [**Task Panel**](#task_panel).
 
@@ -71,7 +71,9 @@ The plugins are listed alphabetically.
 | Media | [Xytec Asset Creation Index Plugin](#plugin_post_index_xytech_asset_creation) | | ✅ | |
 | Media | [Xytec Order Status Index Plugin](#plugin_post_index_xytech_order_status) | | ✅ | |
 
+### Plugins 
 
+The plugins are listed alphabetically.
 
 <p id="plugin_post_index_autoclean"></p>
 
@@ -83,7 +85,7 @@ The plugins are listed alphabetically.
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Visit our website](https://diskoverdata.com/platform/orchestrate/) | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Designed to move, copy, delete, rename, or run custom commands on files and directories based on a set of highly configurable criteria. With the use of tags, the AutoClean plugin can be used to implement a RACI model or approval process for archive and deletion (approved_archive, approved_delete, etc.) tag application. The plugin criteria can then be set to meet the desired set of tags (times, etc.) to invoke action. |
-| Need Pro Services? | Diskover offers professional services to assist with setting up data flows and workflows - [contact us](mailto:sales@diskoverdata.com) for details |
+| Need Pro Services? | Diskover offers professional services to assist with setting up data flows and workflows → [contact us](mailto:sales@diskoverdata.com) for details |
 
 
 
@@ -108,8 +110,8 @@ The plugins are listed alphabetically.
 | --- | --- |
 | Availability | <img src="images/button_edition_life_science.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
-| Learn More | [Visit our website](https://diskoverdata.com/products/life-science-edition/#bam-plugin) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | [Diskover Life Science Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_edition/#bam-harvest-plugin) |
+| Learn More | [Visit our website](https://diskoverdata.com//solutions/life-science/#bam) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [Diskover Life Science Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_solutions/#bam-harvest-plugin) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/678914314?share=copy) |
 | Purpose | The BAM info plugin is designed to enable additional metadata collection for BAM (Binary Alignment Map) and SAM (Sequence Alignment Map) about a file without granting the Diskover user any read/write file system access. The BAM info plugin enables additional metadata for the SAM and BAM file formats to be harvested at time of index, and are therefore searchable, reportable, actionable, and can be engaged in workflows within Diskover.<br><br>[Learn more about the specification for the SAM file format.](https://samtools.github.io/hts-specs/SAMv1.pdf)<br><br>[Learn more about how the BAM info plugin uses the Python **pysam** to harvest attributes about the BAM and SAM files.](https://pysam.readthedocs.io/en/latest/)<br><br>New indices will use the plugin, and any SAM or BAM file will get additional info added to the Elasticsearch index’s **bam_info** field. The attributes provide the ability to view storage and file system content from a workflow perspective, for example, all the frame rates on any given storage. |
 
@@ -139,7 +141,7 @@ The plugins are listed alphabetically.
 | Enable/Config | Via the DiskoverAdmin panel |
 | To learn more | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Demo | [🍿 Watch a video](https://vimeo.com/828166808) showing one way hash values can be used |
-| Purpose | Adds xxhash, md5, sha1, and sha256 hash values to files in Elasticsearch indices to use for checksums/data integrity. Hash values are like fingerprints; they are unique to each file. They are the results of a cryptographic algorithm, which is a mathematical equation with different complexity and security levels, used to scramble the plain text and make it unreadable. They are used for data encryption, authentication, and digital signatures. |
+| Purpose | Adds xxhash, md5, sha1, and sha256 hash values to files in Elasticsearch indices to use for checksums/data integrity. Hash values are like fingerprints; they are unique to each file. They are the results of a cryptographic algorithm, which is a mathematical equation with different complexities and security levels, used to scramble the plaintext and make it unreadable. They are used for data encryption, authentication, and digital signatures. |
 
 
 <p id="plugin_post_index_checksums"></p>
@@ -175,8 +177,8 @@ The plugins are listed alphabetically.
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
-| Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#cineviewer) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
-| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#cineviewer-player) |
+| Learn More | [Visit our website](https://diskoverdata.com/solutions/media/#cineviewer) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/#cineviewer-player) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/765285042?share=copy) |
 | Purpose | <p>CineViewer is a video playback and management system designed for video and broadcast professionals. It is designed to securely view high-resolution media from a remote browser without giving users access to the source files, as well as play content that may not be supported by standard web browsers, including file formats such as ProRes and MXF. Additionally, Cineviewer allows users to play back image sequences in formats such as DPX and EXR. The player can be launched in one click from the AJA Diskover Media Edition user interface, allowing for seamless validation of media assets, therefore increasing productivity while safeguarding your production network.</p><p>With its timecode-accurate playback and seeking capabilities, CineViewer enables users to navigate through content with precision. The system also supports up to 16 channels of audio, providing a variety of audio configuration options to accommodate different projects. Furthermore, Cineviewer includes closed captioning functionality, ensuring an accessible experience for all users.</p><p>The following sections will guide you through the installation and configuration of CineViewer, helping you utilize this tool effectively for your video and broadcast needs.</p><p>The CineViewer Player is developed by [CineSys LLC](https://cinesys.io/), a major technological and channel partner working with both Diskover Data and [AJA Video Systems](https://www.aja.com/). For more information, support, or to purchase the CineViewer Player, please contact [CineSys.io](https://cinesys.io/contact-us/).</p>![Image: CineViewer Player Preview](images/image_file_action_cineviewer_preview.png) |
 
@@ -218,7 +220,7 @@ The plugins are listed alphabetically.
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
-| Learn More | [Contact AJA Video Systems](mailto:sales@aja.com) |
+| Learn More | [Visit our website](https://diskoverdata.com/solutions/media/#edl) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Allows authorized users without read/write access to production storage to verify the validity of EDL (Edit Decision List) files. |
 
 
@@ -231,7 +233,7 @@ The plugins are listed alphabetically.
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
-| Learn More | [Contact AJA Video Systems](mailto:sales@aja.com) |
+| Learn More | [Visit our website](https://diskoverdata.com/solutions/media/#edl) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Allows authorized users without read/write access to production storage to upload or download specific lists of pre-defined file types and sizes, eliminating the need for data management group involvement. |
 
 
@@ -285,7 +287,7 @@ The plugins are listed alphabetically.
 | Availability | <img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
-| Purpose | Allows users to categorize file types by groups and adds the extra metadata to the Elasticsearch index during the scanning process, useful for reporting purposes. |
+| Purpose | Allows users to categorize file types by groups and adds extra metadata to the Elasticsearch index during the scanning process, useful for reporting purposes. |
 
 
 
@@ -298,8 +300,8 @@ The plugins are listed alphabetically.
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
-| Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#file-sequences) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
-| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#find-file-sequences) |
+| Learn More | [Visit our website](https://diskoverdata.com/solutions/media/#find-file-sequences \| [Contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/#find-file-sequences) |
 | Purpose | The File Sequence web plugin File Action is designed to list out any file sequences in a directory or from a single file in a sequence. File sequences are printed out with `%08d` to show the 0 padding and number of digits in the sequence. Each sequence, whole or broken, is put into a [ ] list.<br>![Image: File Sequences Results](images/image_file_action_results_tech.png) |
 
 
@@ -368,7 +370,8 @@ The plugins are listed alphabetically.
 | --- | --- |
 | Availability | <img src="images/button_edition_life_science.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
-| Learn More | [Visit our website](https://diskoverdata.com/products/life-science-edition/#grant-plugin) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Visit our website](https://diskoverdata.com/solutions/life-science/#grant) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [Diskover Life Science Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_solutions/#grant-plugin) |
 | Purpose | <p>The Grant Plugin has a dual purpose 1) assisting research institutes in managing their grants/members/storage costs internally, and 2) fulfilling the requirements for the new NIH DMS Policy.</p><p>The Grant Plugin collects and parses grants’ metadata (grant number, group ID, etc.) to curated datasets. In turn, staff associated with a specific grant has visibility/searchability of their limited data/grant without access to the source files or other grants. That extra metadata is also available to use for further workflow automation if needed.</p>![Image: Diskover BAM Plugin Overview](images/diagram_diskover_plugin_grant.png)<br>_[Click here for a full-screen view of this image.](images/diagram_diskover_plugin_grant.png)_ |
 
 
@@ -412,7 +415,7 @@ The plugins are listed alphabetically.
 | Availability | <img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
-| Purpose | Designed to add Image EXIF info metadata from your image files to the Elasticsearch index during the scanning process. Exchangeable Image File Format is a standardized way of storing useful metadata in digital image files. It holds a wealth of technical information about how the image was created, including the time and date it was taken, the camera and lens that was used, and the shooting settings. |
+| Purpose | Designed to add Image EXIF info metadata from your image files to the Elasticsearch index during the scanning process. Exchangeable Image File Format is a standardized way of storing useful metadata in digital image files. It holds a wealth of technical information about how the image was created, including the time and date it was taken, the camera and lens that were used, and the shooting settings. |
 
 
 
@@ -425,7 +428,7 @@ The plugins are listed alphabetically.
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
-| Learn More | [Contact AJA Video Systems](mailto:sales@aja.com) |
+| Learn More | [Visit our website](https://diskoverdata.com/solutions/media/#imf-change-report \| [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Generates a list of IMF image changes in both human-readable format and machine-readable EDL, referencing the updated media. |
 
 
@@ -481,8 +484,8 @@ The plugins are listed alphabetically.
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
-| Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#mediainfo) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
-| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#media-info-attributes) |
+| Learn More | [Visit our website](https://diskoverdata.com/solutions/media/#media-info \| [Contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/#media-info) |
 | Purpose | Adds business context and searchability via additional media file attributes (resolution, codec, pixel format, etc.). The enriched metadata is key for granular analysis, workflow automation, and overall data curation. <br><br>The media info harvest plugin is designed to provide media metadata attributes about a file without granting the Diskover user any read/write file system access. New indices will use the plugin and any video file will get additional media info added to the Elasticsearch index’s **media_info field**. The attributes provide the ability to view storage and file system content from a workflow perspective, for example, all the frame rates on any given storage. |
 
 
@@ -513,6 +516,8 @@ The plugins are listed alphabetically.
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Designed to break down concatenated directory/file names and add the tokenized metadata to the Elasticsearch index during the scanning process. |
+
+
 
 
 <p id="plugin_index_pdf_info"></p>
@@ -564,7 +569,7 @@ The plugins are listed alphabetically.
 | Availability | <img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
-| Purpose | Provides authorized users the framework for data movement based on pre-configured source and destination profiles. |
+| Purpose | Provides authorized users with the framework for data movement based on pre-configured source and destination profiles. |
 
 
 
@@ -577,8 +582,8 @@ The plugins are listed alphabetically.
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
-| Learn more | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#flowprodtracking) \| [contact AJA Video Systems](mailto:sales@aja.com) |
-| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#flow-production-tracking-plugin) |
+| Learn More | [Visit our website](https://diskoverdata.com/solutions/media/#shotgrid \| [Contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/#flow-production-tracking-plugin) |
 | Purpose | Designed to enhance basic metadata with detailed production status information, aligning data management with production schedules. The Diskover Flow Production Tracking Plugin harvests additional attributes from the [Autodesk Flow Production Tracking platform](https://www.autodesk.com/products/flow-production-tracking/) for every shot directory located on storage. These attributes become properties of the shot directories and include status information such as finaled, out-of-picture, multiple project tracking dates, and many more, totaling around one hundred indexable fields. Note that users can opt to only index the fields that are relevant to their business. |
 
 
@@ -619,7 +624,7 @@ The plugins are listed alphabetically.
 | --- | --- |
 | Availability | <img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
-| Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
+| Learn More | [Visit our website](https://diskoverdata.com/platform/enrich/#tags) | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Purpose | Migrates tags from one index to the next as a post-index process. Note that there is also an [index Tag Copier plugin](#plugin_index_tag_copier).|
 
 
@@ -633,8 +638,8 @@ The plugins are listed alphabetically.
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
-| Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#glim) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
-| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#glim-previewvalidate-media-files) |
+| Learn More | [Visit our website](https://diskoverdata.com/solutions/media/#glim \| [Contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/#glim-previewvalidate-media-files) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/665037937) |
 | Purpose | This plugin results in a seamless integration with GLIM, allowing end-users to safely view and validate media files while safeguarding your source assets and production network. Diskover allows users to do advanced searches of media assets and then launch GLIM in one click via our File Actions. You need to have a GLIM account and be logged in previously to launch the GLIM preview plugin within Diskover. |
 
@@ -649,8 +654,8 @@ The plugins are listed alphabetically.
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
-| Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#vantage) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
-| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#vantage-submit-transcoding-jobs-directly-from-diskover) |
+| Learn More | [Visit our website](https://diskoverdata.com/solutions/media/#vantage \| [Contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/#vantage-submit-transcoding-jobs-directly-from-diskover) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/669672933) |
 | Purpose | Enables authorized users to submit media workflow job processing to Telestream Vantage directly from the Diskover user interface. |
 
@@ -723,8 +728,8 @@ The plugins are listed alphabetically.
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
-| Learn mMre | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#xytech-asset-creation) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
-| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-asset-creation-plugin-overview) |
+| Learn More | [Visit our website](https://diskoverdata.com/solutions/media/#xytech-asset-creation \| [Contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/#xytech-asset-creation-plugin-overview) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/660789118) |
 | Purpose | <p>Post facilities often have customers’ assets that have been archived and lack findability, visibility, and searchability, and therefore, the opaque nature of these assets makes them difficult to reuse or repurpose. Companies with years of such archived assets have often stored these on tape media or removable hard drives, which are often stored in a physical vault.</p><p>Assets were often stored on such “offline” media due to costs; however, with the advent of cloud and object storage, the economics are now making it viable to store such vaulted assets on more “online media”. However, simply putting these assets onto online media does not necessarily make these assets findable in context or within the facility’s order management system.</p><p>The Xytech asset creation tool is designed to find and index newly restored online assets from LTO tapes, removable hard drives, etc., making them available, findable, and searchable within the Xytech order management system, as well as Diskover.</p><p>The plugin operates on the assumption that the assets restored to online media are placed into a folder with the following naming convention: **CustomerID_CustomerName**</p><p>The path location is added to the asset within Xytech and the asset number is assigned to the file via a tag within the Diskover Index.</p> |
 
@@ -738,8 +743,8 @@ The plugins are listed alphabetically.
 | --- | --- |
 | Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
-| Learn More | [Visit our website](https://diskoverdata.com/products/products-aja-media-edition/#xytech-order-status) \| [Contact AJA Video Systems](mailto:sales@aja.com) |
-| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_aja_media_edition/#xytech-order-status-plugin-overview) |
+| Learn More | [Visit our website](https://diskoverdata.com/solutions/media/#xytech-order-status \| [Contact Diskover](mailto:sales@diskoverdata.com) |
+| User Guide | [AJA Diskover Media Edition Companion Guide](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/#xytech-order-status-plugin-overview) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/768967081) |
 | Purpose | <p>The Xytech Media Operations Platform order status plugin is designed to automate the correlation of the order management system and the storage system by harvesting key business context from Xytech and applying that context within the AJA Diskover Media Edition. In turn, this business context metadata can be used to automate workflows, curate data, monitor costs, create highly customized reports, and search granularly.</p><p>Facilities often manually correlate the order management system with the storage repositories. However, manual processes are subject to human errors and difficult to scale as the volume of media orders and data turnover constantly increases.</p><p>Therefore, the lack of integration for file-based workflows between the order management system and the underlying storage repositories, makes data management decisions difficult as they are solely based on attributes of files or objects on storage. Additional business context is needed from the order management system to increase precision and accuracy of data management decisions.</p><p>An instance of key information might be the invoice date for a work order. A status change for a work order can be a key indicator for data management, for example, once a Xytech media order has been “invoiced”, then the data associated with that media order can be a candidate for archival.</p> |
 

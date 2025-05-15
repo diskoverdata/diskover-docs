@@ -53,7 +53,7 @@ The plugins are listed alphabetically.
 | Core | [Make Links](#plugin_file_action_make_links) | | | ✅ |
 | Media | [Media Info](#plugin_index_mediainfo) | ✅ | | |
 | Core | [Ngenea Data Orchestrator](#plugin_file_action_ngenea) | | | ✅ |
-| Core | [OpenEXR Info](#plugin_index_openexr_info) | | | ✅ |
+| Media | [OpenEXR Info](#plugin_index_openexr_info) | | | ✅ |
 | Core | [Path Tokens](#plugin_index_path_tokens) | ✅ | | |
 | Core | [PDF Info](#plugin_index_pdf_info) | ✅ | | |
 | Core | [PDF Viewer](#plugin_file_action_pdf_viewer) | | | ✅ |
@@ -385,7 +385,7 @@ The plugins are listed alphabetically.
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_essential.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
+| Availability | <img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
 | Enable/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this plugin |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/828166808) |
@@ -514,10 +514,10 @@ The plugins are listed alphabetically.
 
 | HELP | RESOURCE |
 | --- | --- |
-| Availability | <img src="images/button_edition_professional.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="95">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="95"> |
+| Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Contact Diskover](mailto:sales@diskoverdata.com) |
-| Purpose | Designed to add OpenEXR info metadata from your exr image files to the Elasticsearch index during the indexing process. |
+| Purpose | Designed to add OpenEXR info metadata from your EXR image files to the Elasticsearch index during the indexing process. |
 
 
 

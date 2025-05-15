@@ -27,7 +27,7 @@
 
 [Diskover User Guide | Core Features](https://docs.diskoverdata.com/diskover_user_guide/)
 
-[Diskover Quick Reference Card | Media Features](images/quick_reference_card_diskover_media_edition.pdf)
+[Diskover Quick Reference Card | Media Features](images/quick_reference_card_diskover_media_solutions.pdf)
 
 [Diskover User Guide Companion | Media Features](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/)
 

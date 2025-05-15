@@ -688,7 +688,7 @@ The plugins are listed alphabetically.
 | Availability | <img src="images/button_edition_media.png" width="95"> |
 | Enable/Config | Via the DiskoverAdmin panel |
 | Learn More | [Visit our website](https://diskoverdata.com/solutions/media/#vantage) \| [Contact Diskover](mailto:sales@diskoverdata.com) |
-| User Guide | Diskover User Guide Companion for Media Solutions](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/#vantage-submit-transcoding-jobs-directly-from-diskover) |
+| User Guide | [Diskover User Guide Companion for Media Solutions](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/#vantage-submit-transcoding-jobs-directly-from-diskover) |
 | Demo | [🍿 Watch Demo Video](https://vimeo.com/669672933) |
 | Purpose | Enables authorized users to submit media workflow job processing to Telestream Vantage directly from the Diskover user interface. |
 

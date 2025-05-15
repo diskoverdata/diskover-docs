@@ -41,12 +41,12 @@ The plugins are listed alphabetically.
 | Media | [Find File Sequences](#plugin_file_action_find_file_sequences) | | | ✅ |
 | Core | [First Index/Arrival Time](#plugin_index_first_index) | ✅ | | |
 | Core | [Fix Permissions](#plugin_file_action_fix_permissions) | | | ✅ |
-| Core | [Grafana](#plugin_index_grafana)) | ✅ | | |
+| Core | [Grafana](#plugin_index_grafana) | ✅ | | |
 | Core | [Grafana Cloud](#plugin_index_grafana_cloud) | ✅ | | |
 | Life Science | [Grant](#plugin_file_action_grant) | | | ✅ |
 | Core | [Hash Differential](#plugin_file_action_hash_diff) | | | ✅ |
 | Core | [Illegal Filename](#plugin_post_index_illegal_filename) | | ✅ | |
-| Core | [Image Info](#plugin_index_image_info)) | ✅ | | |
+| Core | [Image Info](#plugin_index_image_info) | ✅ | | |
 | Media | [IMF Change Report](#plugin_file_action_imf_change_report) | | | ✅ |
 | Core | [Index Diff](#plugin_post_index_index_diff) | | ✅ | |
 | Core | [Live View](#plugin_file_action_live_view) | | | ✅ |
@@ -73,7 +73,7 @@ The plugins are listed alphabetically.
 | Media | [Xytec Asset Creation Index Plugin](#plugin_post_index_xytech_asset_creation) | | ✅ | |
 | Media | [Xytec Order Status Index Plugin](#plugin_post_index_xytech_order_status) | | ✅ | |
 
-### Plugins 
+### Plugins
 
 The plugins are listed alphabetically.
 

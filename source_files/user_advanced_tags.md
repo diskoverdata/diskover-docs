@@ -78,7 +78,7 @@ The tags built-in report gives a visual snapshot of all tagged items in all your
 
 | From the **Analytics** drop-down list | From the <img src="images/icon_more.png" width="25"> located in the path column in the results pane |
 | --- | --- |
-| Will aggregate data from all volumes if no filters are activated.<br> <img src="images/analytics_select_tags.png" width="300"> | Will load the report for that path only.<br><img src="images/image_analytics_tags_access_via_results_pane_20230215.png" width="600"> |
+| Will aggregate data from all volumes if no filters are activated.<br> <img src="images/analytics_select_tags.png" width="300"> | Will load the report for that path only.<br><img src="images/image_analytics_access_via_results_pane_tags.png" width="600"> |
 
 
 #### Tags Report Overview

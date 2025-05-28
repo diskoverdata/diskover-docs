@@ -9,7 +9,7 @@ The treemap report visualizes hierarchical data using nested figures—the large
 
 | From the **Analytics** drop-down list | From the <img src="images/icon_more.png" width="25"> located in the path column in the results pane |
 | --- | --- |
-| Will aggregate data from all volumes if no filters are activated.<br> <img src="images/analytics_select_directory_explorer.png" width="300"> | Will load the report for that path only.<br><img src="images/image_analytics_access_via_results_pane_directory_explorer.png" width="600"> |
+| Will aggregate data from all volumes if no filters are activated.<br> <img src="images/analytics_select_directory_explorer.png" width="300"> | Will load the report for that path only.<br><img src="images/analytics_access_via_results_pane_directory_explorer.png" width="600"> |
 
 
 
@@ -29,7 +29,7 @@ The treemap report visualizes hierarchical data using nested figures—the large
 | E | <img src="images/icon_magnifying_glass.png" width="25"> Click to open that path in the [search page](#search_page) for further investigation. |
 | F | <img src="images/icon_clipboard_purple.png" width="25"> To copy the path to your clipboard. |
 | G | **Reload**: To reload the cached data for the chart and file tree. |
-| H | **Sort By**: Different options to sort your file tree.<br><img src="images/analytics_directory_explorer_sort_by.png" width="300"> |
+| H | **Sort By**: Different options to sort your file tree.<br><img src="images/analytics_directory_explorer_sort_by.png" width="200"> |
 | I | **Min Size Filter**: To set a minimum data size threshold for filtering results. |
 | J | **Min Mtime Filter**: To focus on a specific minimum modified time period. |
 | K | **Max Mtime Filter**: To focus on a specific maximum modified time period. |

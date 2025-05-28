@@ -6,23 +6,23 @@
 
 **_Intended for the daily operation of Diskover._**
 
-### Core Features
+#### Core Features
 
 [**Diskover User Guide**](https://docs.diskoverdata.com/diskover_user_guide/)
 
 [**Diskover Quick Reference Card**](images/quick_reference_card_diskover_core_features.pdf)
 
-### Media Solutions
+#### Media Solutions
 
 [**Diskover User Guide Companion for Media Solutions**](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/)
 
 [**Diskover Quick Reference Card for Media Solutions**](images/quick_reference_card_diskover_media_solutions.pdf)
 
-### Life Science Solutions
+#### Life Science Solutions
 
 [**Diskover User Guide Companion for Life Science Solutions**](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_solutions/)
 
-### Troubleshooting
+#### Troubleshooting
 
 [**End-User Troubleshooting Guide**](https://docs.diskoverdata.com/diskover_troubleshooting_users/)
 
@@ -31,7 +31,7 @@
 
 **_Intended for Service Professionals and System Administrators._**
 
-### Setup and Configuration
+#### Setup and Configuration
 
 [**Diskover Setup and Configuration Guide v2.4 +**](https://docs.diskoverdata.com/diskover_setup_and_config_guide/) | Annual Subscriptions
 
@@ -39,11 +39,11 @@
 
 [**Diskover Installation Guide for Community Edition v2.3 +**](https://github.com/diskoverdata/diskover-community/blob/master/INSTALL.md) | Free to Use for an Unlimited Time
 
-### Troubleshooting
+#### Troubleshooting
 
 [**Technical Support and Troubleshooting**](https://docs.diskoverdata.com/tech_support_and_troubleshooting/)
 
-### Legacy Documentation
+#### Legacy Documentation
 
 [**Diskover Setup Guide v2.2 or previous**](https://docs.diskoverdata.com/diskover_legacy_setup_guide/) | Annual Subscriptions
 

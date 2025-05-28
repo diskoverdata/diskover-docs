@@ -17,7 +17,7 @@ The Directory Explorer provides a visual breakdown of file size, age, and activi
 
 ![Image: Treemap Report Overview](images/analytics_directory_explorer_2025.png)
 
-✏️ Hover over the graphics to view more detailed information.
+✏️ Hover over the file tree folders to view detailed information.
 
 
 | REFERENCE | DESCRIPTION |

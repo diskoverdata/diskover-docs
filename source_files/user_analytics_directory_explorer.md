@@ -3,7 +3,7 @@
 
 ### Directory Explorer
 
-The treemap report visualizes hierarchical data using nested figures—the larger the rectangle, the more data the directory or file contains. This provides a graphical representation of folder sizes.
+The Directory Explorer provides a visual breakdown of file size, age, and activity across your directory structure. It helps you quickly identify where storage is being used, spot stale or unused data, and prioritize cleanup or archiving efforts—all in a single, drillable view.
 
 #### Accessing Directory Explorer
 
@@ -13,7 +13,7 @@ The treemap report visualizes hierarchical data using nested figures—the large
 
 
 
-#### Treemap Overview
+#### Directory Exploerer Overview
 
 ![Image: Treemap Report Overview](images/analytics_directory_explorer_2025.png)
 

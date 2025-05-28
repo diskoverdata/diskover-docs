@@ -9,7 +9,7 @@ The user analysis report provides a snapshot of data utilization by individual u
 
 | From the **Analytics** drop-down list | From the <img src="images/icon_more.png" width="25"> located in the path column in the results pane |
 | --- | --- |
-| Will aggregate data from all volumes if no filters are activated.<br> <img src="images/analytics_select_user_analysis.png" width="300"> | Will load the report for that path only.<br><img src="images/image_analytics_user_analysis_access_via_results_pane_20230215.png" width="600"> |
+| Will aggregate data from all volumes if no filters are activated.<br> <img src="images/analytics_select_user_analysis.png" width="300"> | Will load the report for that path only.<br><img src="images/image_analytics_access_via_results_pane_user_analysis.png" width="600"> |
 
 
 

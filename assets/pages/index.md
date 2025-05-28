@@ -8,23 +8,21 @@
 
 #### Core Features
 
-[**Diskover User Guide**](https://docs.diskoverdata.com/diskover_user_guide/)
-
-[**Diskover Quick Reference Card**](images/quick_reference_card_diskover_core_features.pdf)
+- [**Diskover User Guide**](https://docs.diskoverdata.com/diskover_user_guide/)
+- [**Diskover Quick Reference Card**](images/quick_reference_card_diskover_core_features.pdf)
 
 #### Media Solutions
 
-[**Diskover User Guide Companion for Media Solutions**](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/)
-
-[**Diskover Quick Reference Card for Media Solutions**](images/quick_reference_card_diskover_media_solutions.pdf)
+- [**Diskover User Guide Companion for Media Solutions**](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/)
+- [**Diskover Quick Reference Card for Media Solutions**](images/quick_reference_card_diskover_media_solutions.pdf)
 
 #### Life Science Solutions
 
-[**Diskover User Guide Companion for Life Science Solutions**](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_solutions/)
+- [**Diskover User Guide Companion for Life Science Solutions**](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_solutions/)
 
 #### Troubleshooting
 
-[**End-User Troubleshooting Guide**](https://docs.diskoverdata.com/diskover_troubleshooting_users/)
+- [**End-User Troubleshooting Guide**](https://docs.diskoverdata.com/diskover_troubleshooting_users/)
 
 
 ## Technical Guides
@@ -33,31 +31,28 @@
 
 #### Setup and Configuration
 
-[**Diskover Setup and Configuration Guide v2.4 +**](https://docs.diskoverdata.com/diskover_setup_and_config_guide/) | Annual Subscriptions
-
-[**Diskover Setup Guide for OVA v2.4 +**](https://docs.diskoverdata.com/diskover_ova_setup_guide/) | Annual Subscriptions
-
-[**Diskover Installation Guide for Community Edition v2.3 +**](https://github.com/diskoverdata/diskover-community/blob/master/INSTALL.md) | Free to Use for an Unlimited Time
+- [**Diskover Setup and Configuration Guide v2.4 +**](https://docs.diskoverdata.com/diskover_setup_and_config_guide/) | Annual Subscriptions
+- [**Diskover Setup Guide for OVA v2.4 +**](https://docs.diskoverdata.com/diskover_ova_setup_guide/) | Annual Subscriptions
+- [**Diskover Installation Guide for Community Edition v2.3 +**](https://github.com/diskoverdata/diskover-community/blob/master/INSTALL.md) | Free to Use for an Unlimited Time
 
 #### Troubleshooting
 
-[**Technical Support and Troubleshooting**](https://docs.diskoverdata.com/tech_support_and_troubleshooting/)
+- [**Technical Support and Troubleshooting**](https://docs.diskoverdata.com/tech_support_and_troubleshooting/)
 
 #### Legacy Documentation
 
-[**Diskover Setup Guide v2.2 or previous**](https://docs.diskoverdata.com/diskover_legacy_setup_guide/) | Annual Subscriptions
-
-[**Diskover Configuration and Administration Guide v2.2 or previous**](https://docs.diskoverdata.com/diskover_legacy_config_and_admin_guide/) | Annual Subscriptions
+- [**Diskover Setup Guide v2.2 or previous**](https://docs.diskoverdata.com/diskover_legacy_setup_guide/) | Annual Subscriptions
+- [**Diskover Configuration and Administration Guide v2.2 or previous**](https://docs.diskoverdata.com/diskover_legacy_config_and_admin_guide/) | Annual Subscriptions
 
 
 ## Changelogs
 
-[Diskover Changelogs](https://docs.diskoverdata.com/diskover_changelogs/)
+- [**Diskover Changelogs**](https://docs.diskoverdata.com/diskover_changelogs/)
 
 
 ## White Papers
 
-[Diskover Indexing Performance Impact Testing](https://docs.diskoverdata.com/diskover_white_paper_indexing_performance_impact_testing/)
+- [**Diskover Indexing Performance Impact Testing**](https://docs.diskoverdata.com/diskover_white_paper_indexing_performance_impact_testing/)
 
 
 ## Contact Diskover

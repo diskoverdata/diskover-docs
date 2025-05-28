@@ -10,7 +10,7 @@ Fully customizable reports with what is relevant for your business (by customers
 
 | From the **Analytics** drop-down list | From the <img src="images/icon_more.png" width="25"> located in the path column in the results pane |
 | --- | --- |
-| Will aggregate data from all volumes if no filters are activated.<br> <img src="images/analytics_select_smart_searches.png" width="300"> | Will load the report for that path only.<br><img src="images/image_analytics_access_via_results_pane_smart_searches.png" width="600"> |
+| Will aggregate data from all volumes if no filters are activated.<br> <img src="images/analytics_select_smart_searches.png" width="300"> | Will load the report for that path only.<br><img src="images/analytics_access_via_results_pane_smart_searches.png" width="600"> |
 
 
 

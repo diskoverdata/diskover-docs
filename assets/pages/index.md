@@ -2,38 +2,52 @@
 
 # 
 
+## User Guides
+
+**_Intended for the daily operation of Diskover._**
+
+### Core Features
+
+[**Diskover User Guide**](https://docs.diskoverdata.com/diskover_user_guide/)
+
+[**Diskover Quick Reference Card**](images/quick_reference_card_diskover_core_features.pdf)
+
+### Media Solutions
+
+[**Diskover User Guide Companion for Media Solutions**](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/)
+
+[**Diskover Quick Reference Card for Media Solutions**](images/quick_reference_card_diskover_media_solutions.pdf)
+
+### Life Science Solutions
+
+[**Diskover User Guide Companion for Life Science Solutions**](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_solutions/)
+
+### Troubleshooting
+
+[**End-User Troubleshooting Guide**](https://docs.diskoverdata.com/diskover_troubleshooting_users/)
+
 
 ## Technical Guides
 
 **_Intended for Service Professionals and System Administrators._**
 
-[Diskover Setup and Configuration Guide v2.4 +](https://docs.diskoverdata.com/diskover_setup_and_config_guide/) | Annual Subscriptions
+### Setup and Configuration
 
-[Diskover Setup Guide for OVA v2.4 +](https://docs.diskoverdata.com/diskover_ova_setup_guide/) | Annual Subscriptions
+[**Diskover Setup and Configuration Guide v2.4 +**](https://docs.diskoverdata.com/diskover_setup_and_config_guide/) | Annual Subscriptions
 
-[Diskover Installation Guide for Community Edition v2.3 +](https://github.com/diskoverdata/diskover-community/blob/master/INSTALL.md) | Free to Use for an Unlimited Time
+[**Diskover Setup Guide for OVA v2.4 +**](https://docs.diskoverdata.com/diskover_ova_setup_guide/) | Annual Subscriptions
 
-[Technical Support and Troubleshooting](https://docs.diskoverdata.com/tech_support_and_troubleshooting/)
+[**Diskover Installation Guide for Community Edition v2.3 +**](https://github.com/diskoverdata/diskover-community/blob/master/INSTALL.md) | Free to Use for an Unlimited Time
 
-[Diskover Setup Guide v2.2 or previous](https://docs.diskoverdata.com/diskover_legacy_setup_guide/) | Legacy Documentation for Annual Subscriptions
+### Troubleshooting
 
-[Diskover Configuration and Administration Guide v2.2 or previous](https://docs.diskoverdata.com/diskover_legacy_config_and_admin_guide/) | Legacy Documentation for Annual Subscriptions
+[**Technical Support and Troubleshooting**](https://docs.diskoverdata.com/tech_support_and_troubleshooting/)
 
-## User Guides
+### Legacy Documentation
 
-**_Intended for the daily operation of Diskover._**
+[**Diskover Setup Guide v2.2 or previous**](https://docs.diskoverdata.com/diskover_legacy_setup_guide/) | Annual Subscriptions
 
-[Diskover Quick Reference Card | Core Features](images/quick_reference_card_diskover_core_features.pdf)
-
-[Diskover User Guide | Core Features](https://docs.diskoverdata.com/diskover_user_guide/)
-
-[Diskover Quick Reference Card | Media Features](images/quick_reference_card_diskover_media_solutions.pdf)
-
-[Diskover User Guide Companion | Media Features](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/)
-
-[Diskover User Guide Companion | Life Science Features](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_solutions/)
-
-[End-User Troubleshooting](https://docs.diskoverdata.com/diskover_troubleshooting_users/)
+[**Diskover Configuration and Administration Guide v2.2 or previous**](https://docs.diskoverdata.com/diskover_legacy_config_and_admin_guide/) | Annual Subscriptions
 
 
 ## Changelogs
@@ -49,15 +63,16 @@
 ## Contact Diskover
 
 
-| Options | Coordinates |
+| Method | Coordinates |
 | --- | --- |
-| General Inquiries| [info@diskoverdata.com](mailto:info@diskoverdata.com) |
 | Website | [https://diskoverdata.com](https://diskoverdata.com/) |
+| General Inquiries | [info@diskoverdata.com](mailto:info@diskoverdata.com) |
 | Sales | [sales@diskoverdata.com](mailto:sales@diskoverdata.com) |
-| Support | [Support via Zendesk for annual subscriptions](https://support.diskoverdata.com/)) |
-| Slack | [Join the Diskover Slack Workspace](https://join.slack.com/t/diskoverworkspace/shared_invite/zt-2up4tjux2-eZYt1OFgCeA3kSFQfsU93A) |
+| Demo request | [demo@diskoverdata.com](mailto:demo@diskoverdata.com) |
+| Licensing | [licenses@diskoverdata.com](mailto:licenses@diskoverdata.com) |
+| Support | [Open a support ticket with Zendesk](https://support.diskoverdata.com/)<br>800-560-5853 \| Mon-Fri 8am-6pm PST|
+| Slack | [Join the Diskover Slack Workspace](https://join.slack.com/t/diskoverworkspace/shared_invite/enQtNzQ0NjE1Njk5MjIyLWI4NWQ0MjFhYzQyMTRhMzk4NTQ3YjBlYjJiMDk1YWUzMTZmZjI1MTdhYTA3NzAzNTU0MDc5NDA2ZDI4OWRiMjM) |
 | GitHub | [Visit us on GitHub](https://github.com/diskoverdata/) |
-| Phone | 800-560-5853 |
 
 ___
 © Diskover Data Inc.

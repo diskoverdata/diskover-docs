@@ -44,7 +44,7 @@ Before accessing the heatmap report, you need to [select 2 indices from 2 differ
 
 | From the **Analytics** drop-down list | From the <img src="images/icon_more.png" width="25"> located in the path column in the results pane |
 | --- | --- |
-| <img src="images/analytics_select_heatmap.png" width="300"> | <img src="images/image_analytics_access_via_results_pane_heatmap.png" width="600"> |
+| <img src="images/analytics_select_heatmap.png" width="300"> | <img src="images/analytics_access_via_results_pane_heatmap.png" width="600"> |
 
 
 

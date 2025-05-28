@@ -4,7 +4,7 @@
 
 ## User Guides
 
-**_Intended for the daily operation of Diskover._**
+→ **_Intended for the daily operation of Diskover._**
 
 #### Core Features
 
@@ -27,13 +27,13 @@
 
 ## Technical Guides
 
-**_Intended for Service Professionals and System Administrators._**
+→ **_Intended for Service Professionals and System Administrators._**
 
 #### Setup and Configuration
 
 - [**Diskover Setup and Configuration Guide v2.4 +**](https://docs.diskoverdata.com/diskover_setup_and_config_guide/) | Annual Subscriptions
 - [**Diskover Setup Guide for OVA v2.4 +**](https://docs.diskoverdata.com/diskover_ova_setup_guide/) | Annual Subscriptions
-- [**Diskover Installation Guide for Community Edition v2.3 +**](https://github.com/diskoverdata/diskover-community/blob/master/INSTALL.md) | Free to Use for an Unlimited Time
+- [**Diskover Installation Guide for Community Edition v2.3 +**](https://github.com/diskoverdata/diskover-community/blob/master/INSTALL.md) | Free to use for an unlimited time
 
 #### Troubleshooting
 

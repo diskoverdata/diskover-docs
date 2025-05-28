@@ -38,6 +38,7 @@ ordered_documents:
   - user_analytics_cost_analysis.md
   - user_analytics_user_analysis.md 
   - user_analytics_heatmap.md
+  - user_analytics_directory_explorer.md
   - user_advanced_intro.md 
   - user_advanced_tags.md
   - user_advanced_indices.md

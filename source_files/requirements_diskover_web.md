@@ -10,4 +10,4 @@ The Diskover-Web HTML5 user interface requires a Web server platform. It provide
 | --- | --- | --- |
 | CPU | 8 to 32 cores | 8 to 32 cores |
 | RAM | 8 to 16 GB | 8 to 16 GB |
-| DISK | 250 to 500 GB SSD | 250 to 500 GB SSD |
+| DISK | 100 GB of SSD storage (root 75 GB, home 25 GB) | 100 GB of SSD storage (root 75 GB, home 25 GB) |

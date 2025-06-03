@@ -27,7 +27,7 @@ _[Click here for a full-screen view of the Elasticsearch Architecture diagram.](
 | Nodes | 1 node | 3 nodes for performance and redundancy are recommended |
 | CPU | 8 to 32 cores | 8 to 32 cores |
 | RAM | 8 to 16 GB (8 GB reserved to Elasticsearch memory heap) | 64 GB per node (16 GB reserved to Elasticsearch memory heap |
-| DISK | 250 to 500 GB of SSD storage per node (see Elasticsearch Storage Requirements below) | 1 TB of SSD storage per node (see Elasticsearch Storage Requirements below) |
+| DISK | 250 to 500 GB of SSD storage per node (root 150 GB, home 25 GB, var 800 GB) | 1 TB of SSD storage per node (root 150 GB, home 25 GB, var 800 GB) |
 
 #### AWS Sizing Resource Requirements
 

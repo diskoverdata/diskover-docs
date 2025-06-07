@@ -5,6 +5,19 @@
 
 ### Diskover v2 Annual Subscription Editions Changelog
 
+#### [2.4] - 2025-06-04
+### added
+- diskover command line option to import yaml config
+- config api CRUD endpoints for task-related models
+### changed
+- removed threaddirdepth from diskover default scan algorithm
+- better task state detection on diskoverd startup
+- converted task related models to separate database tables
+- refactored and standardized logging config
+- all plugins including alt scanners and alt ingesters expected to appear under individual directories
+- all python Elasticsearch access now uses the same client setup in the Elasticsearch config model
+- diskoverd will run when no tasks are configured
+
 #### [2.2.3] - 2023-12-26
 ##### added
 - tag copier runtime plugin v0.0.1
@@ -878,6 +891,23 @@
 
 
 ### Diskover-Web v2 Annual Subscription Editions Changelog
+
+#### [2.4] - 2025-06-04
+### fixed
+- when loading indices some were missing cost data
+- auto-import of Constants.php
+- LDAP and OAuth filtering and group mapping corrections
+- improved slow loading times and added loading indicator on analytics pages
+### added
+- DiskoverAdmin configuration and administration panel
+- index comparison to work with different trailing parent paths
+- search result table columns drag and drop reorderable
+- added Directory Explorer analytics
+### changed
+- role-based access controls for Dashboard
+- LDAP and OAuth modernizations
+- api endpoint to list indices to return minimal info by default for speed improvement
+- diskover-web respects user access based on file permissions
 
 #### [2.2.3] - 2023-12-26
 ##### fixed

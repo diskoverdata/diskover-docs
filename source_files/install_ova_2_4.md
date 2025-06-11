@@ -35,7 +35,7 @@ This section contains instructions to quickly get up and running with Diskover u
 ### VMWare Workstation Import and VM Settings
 
 🔴 Import the OVA by choosing File -> **Open**<br>
-🔴 Give the VM a unique name, ex:**diskover-2.3.0**<br>
+🔴 Give the VM a unique name, ex:**diskover-2.4.0**<br>
 🔴 Once you've given the VM a name, choose **Import**<br>
 🔴 By default, the OVA sets the **CPU=2** and **RAM=2GB**. You need to adjust these settings according to your host machine. The recommended specs for OVA usage for POC: 
 
@@ -62,7 +62,7 @@ With the OVA now imported into your hypervisor, there are a few configuration st
 
 ### Diskover Configuration Wizard
 
-Diskover v2.3 has an easy configuration wizard that we will walk you through.
+Diskover v2.4 has an easy configuration wizard that we will walk you through.
 
 🔴 In the browser window, go to [**http://localhost:8000/diskover_admin/config/**](http://localhost:8000/diskover_admin/config/)
 

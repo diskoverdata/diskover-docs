@@ -10,7 +10,7 @@ Diskover-Web is nothing without its new Administrator! The DiskoverAdmin configu
 
 ### Start Here
 
-During this process, you will need the latest [Diskover 2.3x zip archive](#software_download). Note that this is subject to change to RPMs in the near future. Once you have the zip file, you can `SCP` it to the machine that is designated for DiskoverAdmin. 
+During this process, you will need the latest [Diskover 2.4x zip archive](#software_download). Note that this is subject to change to RPMs in the near future. Once you have the zip file, you can `SCP` it to the machine that is designated for DiskoverAdmin. 
 
 🔴 &nbsp;**On-prem** | Will scp the file to the root user's home directory:
 ```
@@ -40,12 +40,12 @@ Python should already be installed as instructed in the [Diskover Scanners/Worke
 
 🔴 &nbsp;Extract your zip archive:
 ```
-unzip diskover-2.3.0.zip
+unzip diskover-2.4.0.zip
 ```
 
 🔴 &nbsp;Copy the diskover-admin folder:
 ```
-cd diskover-2.3.0/
+cd diskover-2.4.0/
 cp -a diskover-admin /var/www/
 ```
 

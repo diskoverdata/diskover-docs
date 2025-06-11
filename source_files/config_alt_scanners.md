@@ -14,7 +14,7 @@ In addition, Diskover offers a wide range of metadata harvest plugins, enriching
 
 | Configurable via DiskoverAdmin | Manually Configurable |
 | --- | --- |
-| <ul><li>Alternate scanners configurable in the **DiskoverAdmin** panel.</li><li>Help information is available directly within the user interface.</li><li>This section provides additional guidance when applicable.</li></ul><br><img src="images/diskoveradmin_menu_diskover_alt_indexers.png" width="200"> | <ul><li>A few alternate scanners are still configurable via a terminal.</li><li>[🛟 Open a support ticket](https://support.diskoverdata.com/) if you currently use one of these plugins and need to upgrade to v2.3+.</li></ul> |
+| <ul><li>Alternate scanners configurable in the **DiskoverAdmin** panel.</li><li>Help information is available directly within the user interface.</li><li>This section provides additional guidance when applicable.</li></ul><br><img src="images/diskoveradmin_menu_diskover_alt_indexers.png" width="200"> | <ul><li>A few alternate scanners are still configurable via a terminal.</li><li>[🛟 Open a support ticket](https://support.diskoverdata.com/) if you currently use one of these plugins and need to upgrade to v2.4+.</li></ul> |
 
 ### Quick Access List
 
@@ -32,7 +32,7 @@ The plugins in this chapter are listed alphabetically. Here is a quick access li
 | --- | --- |
 | Install/Config | Via a terminal<br>🛟 &nbsp;[Open a support ticket](https://support.diskoverdata.com/) to request assistance with installing this alternate scanner |
 | Learn more | [Visit our website](https://diskoverdata.com/products/indexers/) and/or [contact Diskover](mailto:sales@diskoverdata.com) |
-| Purpose | <p>Organizations often preserve their assets/intellectual properties within tape-based archives systems like the Atempo Miria platform. The Diskover Atempo Scanner is designed to scan all the files within the Atempo Miria archive system and presents them as a volume within the Diskover user interface.</p><p>Additional attributes are added as properties to the file during the indexing process, such as tape number, media type, etc. Therefore, the files and their rich attributes become searchable and reportable, as well as engaged in automated workflows.</p> |
+| Purpose | <p>Organizations often preserve their assets/intellectual properties within tape-based archive systems like the Atempo Miria platform. The Diskover Atempo Scanner is designed to scan all the files within the Atempo Miria archive system and presents them as a volume within the Diskover user interface.</p><p>Additional attributes are added as properties to the file during the indexing process, such as tape number, media type, etc. Therefore, the files and their rich attributes become searchable and reportable, as well as engaged in automated workflows.</p> |
 
 
 

@@ -12,9 +12,9 @@ ___
 
 _[Click here for the full screen view of this diagram.](images/diagram_scanners_daemon_task_panel.png)_
 
-- This section will walk you through installing node workers for your Diskover v2.3+ environment.
+- This section will walk you through installing node workers for your Diskover environment.
 
-- During this process, you will need the latest [Diskover 2.3x software](#software_download).
+- During this process, you will need the latest [Diskover 2.4x software](#software_download).
 
 - Once all components are installed, you will be able to [configure your scanning environment](#config_scanners). We strongly recommend following the deployment order outlined in this guide.
 
@@ -67,12 +67,12 @@ python3 -m pip install --upgrade pip
 
 🔴 &nbsp;Extract your [zip archive](#software_download):
 ```
-unzip diskover-2.3.0.zip
+unzip diskover-2.4.0.zip
 ```
 
 🔴 &nbsp;Copy the Diskover folder:
 ```
-cd diskover-2.3.0/
+cd diskover-2.4.0/
 cp -a diskover /opt/
 ```
 
@@ -246,7 +246,7 @@ By default, Windows links the `python.exe` and `python3.exe` executables to the 
 The installer creates a temporary build directory under the user account that is running the installer, or under the user account authenticated as an admin to execute the installer, depending on the situation. This temporary directory will contain the Diskover build contents.
 
 ```
-diskover-2.3.0.zip
+diskover-2.4.0.zip
 requirements.txt
 ```
 
@@ -270,7 +270,7 @@ The issue here is if one user runs the installer, but then in the NSSM section, 
 
 ##### Python Installation
 
-The `DiskoverTaskWorker-2.3.0.exe` installer will be installing Python3.12.0 on the Windows machine. The installation will do the following things : 
+The `DiskoverTaskWorker-2.4.0.exe` installer will be installing Python3.12.0 on the Windows machine. The installation will do the following things : 
 
   - Download the `Python3.12.0.exe` installer within the `C:\Program Files\Diskover\folder`
   - Execute the installer with the following flags:

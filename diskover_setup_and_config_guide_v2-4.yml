@@ -39,9 +39,8 @@ ordered_documents:
   - indices_management.md
   - misc_chapter.md
   - analytics_third_party.md
-  - software_activation_2_3.md
-  - upgrade_to_2_3.md
-  - software_update_2_3.md
+  - software_activation_2_4.md
+  - upgrade_to_2_4.md
   - health_check.md
   - maintenance_routine.md
   - maintenance_emergency.md

@@ -4,7 +4,7 @@
 
 ### Overview
 
-This section covers all the necessary steps to set up your Diskover-Web user interface, including the new **Diskover**Admin panel available with Diskover v2.3x.
+This section covers all the necessary steps to set up your Diskover-Web user interface, including the new **Diskover**Admin panel available with Diskover v2.4x.
 
 Once all components are installed, you will be able to [configure your Diskover-Web environment](#config_diskover_web). We strongly recommend following the deployment order outlined in this guide.
 
@@ -142,7 +142,7 @@ server {
 
 ### Diskover-Web Installation
 
-Let's install Diskover-Web now that we have our NGINX and PHP packages installed and configured. You need to ensure that you have the latest [Diskover 2.3 zip archive](#software_download). Once you have the zip file, you can `SCP` it to the machine that is designated for Diskover-Web.
+Let's install Diskover-Web now that we have our NGINX and PHP packages installed and configured. You need to ensure that you have the latest [Diskover 2.4 zip archive](#software_download). Once you have the zip file, you can `SCP` it to the machine that is designated for Diskover-Web.
 
 🔴 &nbsp;**On-prem** | Will scp the file to the root user's home directory:
 ```
@@ -164,12 +164,12 @@ scp -i <path to PEM file> <path to diskover.zip> rocky@bastion-IP:~/
 
 🔴 &nbsp;Extract your zip archive:
 ```
-unzip diskover-2.3.0.zip
+unzip diskover-2.4.0.zip
 ```
 
 🔴 &nbsp;Copy the diskover-web folder:
 ```
-cd diskover-2.3.0/
+cd diskover-2.4.0/
 cp -a diskover-web /var/www/
 ```
 

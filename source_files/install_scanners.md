@@ -280,7 +280,7 @@ The `DiskoverTaskWorker-2.4.0.exe` installer will be installing Python3.12.0 on 
 
 ##### PIP Packages
 
-A standard process using PIP during installer execution now that Python is installed. The `requirements.txt` file used here is the latest from the master at the time of 2.3.x being released and has been tested against `Python3.12.0`:
+A standard process using PIP during installer execution now that Python is installed. The `requirements.txt` file used here is the latest from the master at the time of 2.4.x being released and has been tested against `Python3.12.0`:
 
 - Ensure PIP
 - Upgrade PIP

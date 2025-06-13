@@ -5,7 +5,7 @@
 | Method | Coordinates |
 | --- | --- |
 | Website | [https://diskoverdata.com](https://diskoverdata.com/) |
-| General Inquiries | [info@diskoverdata.com](mailto:info@diskoverdata.com) |
+| General Inquiries | [connect@diskoverdata.com](mailto:info@diskoverdata.com) |
 | Sales | [sales@diskoverdata.com](mailto:sales@diskoverdata.com) |
 | Demo request | [demo@diskoverdata.com](mailto:demo@diskoverdata.com) |
 | Licensing | [licenses@diskoverdata.com](mailto:licenses@diskoverdata.com) |

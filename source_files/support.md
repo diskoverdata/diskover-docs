@@ -18,7 +18,7 @@
 
 ### Feedback
 
-We'd love to hear from you! Email us at [info@diskoverdata.com](mailto:info@diskoverdata.com)
+We'd love to hear from you! Email us at [connect@diskoverdata.com](mailto:connect@diskoverdata.com)
 
 ### Warranty & Liability Information
 

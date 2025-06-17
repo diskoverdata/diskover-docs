@@ -1,0 +1,15 @@
+website_name: Diskover Snowflake Native Connector Guide
+# Folder on the website, if you specify "folder" it will deploy this guide to https://docs.diskoverdata.com/folder
+website_folder: diskover_snowflake_native_connector_guide
+# All documents need to be in shared folder
+ordered_documents:
+  - index_diskover_guides_header.md
+  - guide_title_snowflake_connector_v2.md
+  - intro_guide_intended_for_tech.md
+  - intro_tech_guides_main_intro.md
+  - intro_tech_guides_use_cases.md
+  - intro_doc_conventions_tech.md
+  - snowflake_native_connector.md
+  - support.md
+  - contact.md
+  - copyright.md

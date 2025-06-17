@@ -7,8 +7,6 @@ ordered_documents:
   - guide_title_snowflake_connector.md
   - intro_guide_intended_for_tech.md
   - intro_tech_guides_main_intro.md
-  - intro_tech_guides_use_cases.md
-  - intro_doc_conventions_tech.md
   - snowflake_native_connector.md
   - contact.md
   - copyright.md

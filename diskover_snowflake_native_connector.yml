@@ -4,7 +4,7 @@ website_folder: diskover_snowflake_native_connector_guide
 # All documents need to be in shared folder
 ordered_documents:
   - index_diskover_guides_header.md
-  - guide_title_snowflake_connector_v2.md
+  - guide_title_snowflake_connector.md
   - intro_guide_intended_for_tech.md
   - intro_tech_guides_main_intro.md
   - intro_tech_guides_use_cases.md

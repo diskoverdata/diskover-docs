@@ -35,6 +35,10 @@
 - [**Diskover Setup Guide for OVA v2.4 +**](https://docs.diskoverdata.com/diskover_ova_setup_guide/) | Annual Subscriptions
 - [**Diskover Installation Guide for Community Edition v2.3 +**](https://github.com/diskoverdata/diskover-community/blob/master/INSTALL.md) | Free to use for an unlimited time
 
+#### Integrations
+
+- [**Diskover Snowflake Native Connector Guide**](https://docs.diskoverdata.com/diskover_snowflake_native_connector_guide/)
+
 #### Troubleshooting
 
 - [**Technical Support and Troubleshooting**](https://docs.diskoverdata.com/tech_support_and_troubleshooting/)

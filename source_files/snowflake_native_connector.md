@@ -2,7 +2,7 @@
 
 ### Overview
 
-This Snowflake Native Connector provides automated storage metrics collection for comprehensive monitoring and analysis of your storage infrastructure.
+The Diskover Snowflake Native Connector provides automated collection and ingestion of unstructured storage metrics for comprehensive monitoring and analysis of your storage infrastructure. Built as a Snowflake Native App, it runs securely within your Snowflake environment, offering full visibility into connector performance, ingestion history, and storage utilization trends — all without the need to move data externally. This guide will help you get started with setup, scheduling, and monitoring.
 
 ### 📊 Storage Metrics Collection
 
@@ -29,6 +29,11 @@ Your connector is configured to automatically collect storage metrics via API in
 - **Throughput Tracking**: Monitor rows processed per hour.
 - **Success Rate Monitoring**: Track completion rates across all runs.
 - **Duration Analysis**: Understand processing time patterns.
+
+### Prerequisites
+- Snowflake account with appropriate privileges.
+- Admin access to configure connectors.
+- Storage system accessible via API (if not preconfigured).
 
 ### Getting Started
 

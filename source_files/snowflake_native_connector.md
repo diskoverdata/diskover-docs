@@ -38,10 +38,11 @@ Your connector is configured to automatically collect storage metrics via the Cl
 
 ### 🧭 Getting Started
 
-1. **Configure Resources**: Set up your storage metrics collection resources.
-2. **Enable Scheduling**: Activate automated data collection.
-3. **Monitor Dashboard**: Use the home page to track connector health.
-4. **Review Data**: Check the **Data Sync** page for detailed ingestion status.
+1. **Configure CloudSoda API**: Create an API client in CloudSoda and note the [Client ID and Secret](https://support.cloudsoda.io/hc/en-us/articles/4952710450715-Configuring-an-API-Client)
+2. **Configure Resources**: Set up your storage metrics collection resources—this will require the client ID and Secret.
+3. **Enable Scheduling**: Activate automated data collection.
+4. **Monitor Dashboard**: Use the home page to track connector health.
+5. **Review Data**: Check the **Data Sync** page for detailed ingestion status.
 
 ### 🛠️ Support
 

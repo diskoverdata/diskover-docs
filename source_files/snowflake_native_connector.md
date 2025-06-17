@@ -2,11 +2,13 @@
 
 ### 🔍 Overview
 
-The Diskover Snowflake Native Connector provides automated collection and ingestion of unstructured storage metrics for comprehensive monitoring and analysis of your storage infrastructure. Built as a Snowflake Native App, it runs securely within your Snowflake environment, offering full visibility into connector performance, ingestion history, and storage utilization trends — all without the need to move data externally. This guide will help you get started with setup, scheduling, and monitoring.
+The Diskover Snowflake Native Connector, powered by CloudSoda, delivers automated collection and ingestion of unstructured storage metrics for comprehensive monitoring and analysis across your entire storage infrastructure. This powerful connector brings CloudSoda's storage intelligence and data insights directly into Snowflake as a Native App, running securely within your Snowflake environment while providing complete visibility into both your cloud and on-premises data storage systems. 
+
+This guide will walk you through the setup process, scheduling configuration, and monitoring capabilities to help you maximize your storage efficiency and governance.
 
 ### 📊 Storage Metrics Collection
 
-Your connector is configured to automatically collect storage metrics via API integration:
+Your connector is configured to automatically collect storage metrics via the CloudSoda API integration:
 
 - 🔄 **Automated Scheduling**: Runs every 60 minutes.
 - 📈 **Timeseries Data**: Each run captures the current storage state.
@@ -31,9 +33,8 @@ Your connector is configured to automatically collect storage metrics via API in
 - **Duration Analysis**: Understand processing time patterns.
 
 ### ✅ Prerequisites
-- Snowflake account with appropriate privileges.
-- Admin access to configure connectors.
-- Storage system accessible via API (if not preconfigured).
+- Snowflake account with Account Admin privileges.
+- Ability to create and configure an API client in CloudSoda.
 
 ### 🧭 Getting Started
 

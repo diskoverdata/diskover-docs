@@ -4,21 +4,21 @@
 
 ## User Guides
 
-→ **_Intended for the daily operation of Diskover._**
+→ _Intended for the daily operation of Diskover._
 
 #### Core Features
 
-- [**Diskover User Guide**](https://docs.diskoverdata.com/diskover_user_guide/)
-- [**Diskover Quick Reference Card**](images/quick_reference_card_diskover_core_features.pdf)
+- [**User Guide**](https://docs.diskoverdata.com/diskover_user_guide/)
+- [**Quick Reference Card**](images/quick_reference_card_diskover_core_features.pdf)
 
 #### Media Solutions
 
-- [**Diskover User Guide Companion for Media Solutions**](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/)
-- [**Diskover Quick Reference Card for Media Solutions**](images/quick_reference_card_diskover_media_solutions.pdf)
+- [**User Guide Companion for Media Solutions**](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/)
+- [**Quick Reference Card for Media Solutions**](images/quick_reference_card_diskover_media_solutions.pdf)
 
 #### Life Science Solutions
 
-- [**Diskover User Guide Companion for Life Science Solutions**](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_solutions/)
+- [**User Guide Companion for Life Science Solutions**](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_solutions/)
 
 #### Troubleshooting
 
@@ -27,15 +27,15 @@
 
 ## Technical Guides
 
-→ **_Intended for Service Professionals and System Administrators._**
+→ _Intended for Service Professionals and System Administrators._
 
 #### Setup and Configuration
 
-- [**Diskover Setup and Configuration Guide v2.4 +**](https://docs.diskoverdata.com/diskover_setup_and_config_guide/) | Annual Subscriptions
-- [**Diskover Setup Guide for OVA v2.4 +**](https://docs.diskoverdata.com/diskover_ova_setup_guide/) | Annual Subscriptions
-- [**Diskover Installation Guide for Community Edition v2.3 +**](https://github.com/diskoverdata/diskover-community/blob/master/INSTALL.md) | Free to use for an unlimited time
+- [**Community Edition**](https://github.com/diskoverdata/diskover-community/blob/master/INSTALL.md) | Free to use for an unlimited time
+- [**Setup and Configuration for Annual Subscriptions**](https://support.diskoverdata.com/hc/en-us) | You’ll be redirected to Zendesk to open a Diskover support ticket
 
-#### Integrations
+
+#### Snowflake Integration
 
 - [**Diskover Snowflake Native Connector Guide**](https://docs.diskoverdata.com/diskover_snowflake_native_connector_guide/)
 
@@ -45,18 +45,16 @@
 
 #### Legacy Documentation
 
+- [**Diskover Setup and Configuration Guide v2.4 +**](https://docs.diskoverdata.com/diskover_legacy_setup_and_config_guide/) | Annual Subscriptions
+- [**Diskover Setup Guide for OVA v2.4 +**](https://docs.diskoverdata.com/diskover_legacy_ova_setup_guide/) | Annual Subscriptions
 - [**Diskover Setup Guide v2.2 or previous**](https://docs.diskoverdata.com/diskover_legacy_setup_guide/) | Annual Subscriptions
 - [**Diskover Configuration and Administration Guide v2.2 or previous**](https://docs.diskoverdata.com/diskover_legacy_config_and_admin_guide/) | Annual Subscriptions
 
 
-## Changelogs
+## Release Notes/Changelogs
 
-- [**Diskover Changelogs**](https://docs.diskoverdata.com/diskover_changelogs/)
-
-
-## White Papers
-
-- [**Diskover Indexing Performance Impact Testing**](https://docs.diskoverdata.com/diskover_white_paper_indexing_performance_impact_testing/)
+- [**Community Edition**](https://docs.diskoverdata.com/diskover_changelogs/)
+- [**Annual Subscriptions**](https://support.diskoverdata.com/hc/en-us/categories/40908236805659-Diskover-Release-Notes) | You will be redirected to Diskover's Zendesk support page
 
 
 ## Contact Diskover

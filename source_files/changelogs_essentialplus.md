@@ -1,7 +1,7 @@
 
 ## Changelogs | Annual Subscription Editions
 
-### Diskover Annual Subscription Editions Changelog
+### Diskover
 
 #### [2.4+]
 Please visit [Diskover's Zendesk support page](https://support.diskoverdata.com/hc/en-us/categories/40908236805659-Diskover-Release-Notes) for all future release notes.
@@ -891,7 +891,7 @@ Please visit [Diskover's Zendesk support page](https://support.diskoverdata.com/
 
 
 
-### Diskover-Web Annual Subscription Editions Changelog
+### Diskover-Web
 
 #### [2.4+]
 Please visit [Diskover's Zendesk support page](https://support.diskoverdata.com/hc/en-us/categories/40908236805659-Diskover-Release-Notes) for all future release notes.

@@ -1,9 +1,10 @@
 
 ## Changelogs | Annual Subscription Editions
 
-<img src="images/button_edition_essential.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_professional.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_enterprise.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_multistream.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_media.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_life_science.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_eda.png" width="105">&nbsp;&nbsp;<img src="images/button_edition_energy.png" width="105">
-
 ### Diskover v2 Annual Subscription Editions Changelog
+
+#### [2.4+]
+Please visit [Diskover's Zendesk support page](https://support.diskoverdata.com/hc/en-us/categories/40908236805659-Diskover-Release-Notes) for all future release notes.
 
 #### [2.4] - 2025-06-04
 ### added
@@ -891,6 +892,9 @@
 
 
 ### Diskover-Web v2 Annual Subscription Editions Changelog
+
+#### [2.4+]
+Please visit [Diskover's Zendesk support page](https://support.diskoverdata.com/hc/en-us/categories/40908236805659-Diskover-Release-Notes) for all future release notes.
 
 #### [2.4] - 2025-06-04
 ### fixed

@@ -1,16 +1,16 @@
 
 ## Changelogs | Annual Subscription Editions
 
-### Diskover v2 Annual Subscription Editions Changelog
+### Diskover Annual Subscription Editions Changelog
 
 #### [2.4+]
 Please visit [Diskover's Zendesk support page](https://support.diskoverdata.com/hc/en-us/categories/40908236805659-Diskover-Release-Notes) for all future release notes.
 
 #### [2.4] - 2025-06-04
-### added
+##### added
 - diskover command line option to import yaml config
 - config api CRUD endpoints for task-related models
-### changed
+##### changed
 - removed threaddirdepth from diskover default scan algorithm
 - better task state detection on diskoverd startup
 - converted task related models to separate database tables
@@ -891,23 +891,23 @@ Please visit [Diskover's Zendesk support page](https://support.diskoverdata.com/
 
 
 
-### Diskover-Web v2 Annual Subscription Editions Changelog
+### Diskover-Web Annual Subscription Editions Changelog
 
 #### [2.4+]
 Please visit [Diskover's Zendesk support page](https://support.diskoverdata.com/hc/en-us/categories/40908236805659-Diskover-Release-Notes) for all future release notes.
 
 #### [2.4] - 2025-06-04
-### fixed
+##### fixed
 - when loading indices some were missing cost data
 - auto-import of Constants.php
 - LDAP and OAuth filtering and group mapping corrections
 - improved slow loading times and added loading indicator on analytics pages
-### added
+##### added
 - DiskoverAdmin configuration and administration panel
 - index comparison to work with different trailing parent paths
 - search result table columns drag and drop reorderable
 - added Directory Explorer analytics
-### changed
+##### changed
 - role-based access controls for Dashboard
 - LDAP and OAuth modernizations
 - api endpoint to list indices to return minimal info by default for speed improvement

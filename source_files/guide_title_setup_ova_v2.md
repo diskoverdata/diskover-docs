@@ -1,4 +1,3 @@
 <br>
-<h1>Diskover OVA Setup Guide</h1>
+<h1>Diskover OVA Setup Guide | Legacy v2.4</h1>
 
-**For version 2.4 +**

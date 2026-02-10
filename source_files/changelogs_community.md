@@ -1,7 +1,7 @@
 
 ## Changelogs | Community Edition
 
-### Diskover v2 Community Edition Changelog
+### Diskover Community Edition Changelog
 
 #### [2.3.1] - 2025-04-02
 ##### changed
@@ -201,7 +201,7 @@
 
 
 
-### Diskover-Web v2 Community Edition Changelog
+### Diskover-Web Community Edition Changelog
 
 #### [2.3.1] - 2025-04-02
 ##### changed

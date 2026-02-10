@@ -54,7 +54,7 @@
 ## Release Notes/Changelogs
 
 - [**Community Edition**](https://docs.diskoverdata.com/diskover_changelogs/)
-- [**Annual Subscriptions**](https://support.diskoverdata.com/hc/en-us/categories/40908236805659-Diskover-Release-Notes) | You will be redirected to Diskover's Zendesk support page
+- [**Annual Subscriptions**](https://support.diskoverdata.com/hc/en-us/categories/40908236805659-Diskover-Release-Notes) | You'll be redirected to Diskover's Zendesk Support Center
 
 
 ## Contact Diskover

@@ -6,6 +6,7 @@
 | --- | --- |
 | Website | [https://diskoverdata.com](https://diskoverdata.com/) |
 | General Inquiries | [connect@diskoverdata.com](mailto:connect@diskoverdata.com) |
+| Security Issues | [security@diskoverdata.com](mailto:security@diskoverdata.com) |
 | Sales | [sales@diskoverdata.com](mailto:sales@diskoverdata.com) |
 | Demo request | [demo@diskoverdata.com](mailto:demo@diskoverdata.com) |
 | Licensing | [licenses@diskoverdata.com](mailto:licenses@diskoverdata.com) |

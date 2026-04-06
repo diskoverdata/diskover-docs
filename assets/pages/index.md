@@ -8,21 +8,9 @@
 
 #### Core Features
 
-- [**User Guide**](https://docs.diskoverdata.com/diskover_user_guide/)
-- [**Quick Reference Card**](images/quick_reference_card_diskover_core_features.pdf)
-
-#### Media Solutions
-
-- [**User Guide Companion for Media Solutions**](https://docs.diskoverdata.com/diskover_user_guide_companion_media_solutions/)
-- [**Quick Reference Card for Media Solutions**](images/quick_reference_card_diskover_media_solutions.pdf)
-
-#### Life Science Solutions
-
-- [**User Guide Companion for Life Science Solutions**](https://docs.diskoverdata.com/diskover_user_guide_companion_life_science_solutions/)
-
-#### Troubleshooting
-
-- [**End-User Troubleshooting Guide**](https://docs.diskoverdata.com/diskover_troubleshooting_users/)
+- [**User Guide**](https://support.diskoverdata.com/hc/en-us/sections/48587976516763-Diskover-User-Guide) | You’ll be redirected to Diskover's Zendesk support center
+- [**Quick Reference Card**](images/quick_reference_card_diskover_core_features_20260310v2-5.pdf)
+- [**Troubleshooting**](https://support.diskoverdata.com/hc/en-us/articles/48589478283547-General-Troubleshooting-v2-5) | You’ll be redirected to Diskover's Zendesk support center
 
 
 ## Technical Guides
@@ -32,7 +20,7 @@
 #### Setup and Configuration
 
 - [**Community Edition**](https://github.com/diskoverdata/diskover-community/blob/master/INSTALL.md) | Free to use for an unlimited time
-- [**Setup and Configuration for Annual Subscriptions**](https://support.diskoverdata.com/hc/en-us) | You’ll be redirected to Zendesk to open a Diskover support ticket
+- [**Setup and Configuration for Annual Subscriptions**](https://support.diskoverdata.com/hc/en-us) | You’ll be redirected to Diskover's Zendesk support center
 
 
 #### Snowflake Integration
@@ -41,7 +29,9 @@
 
 #### Troubleshooting
 
-- [**Technical Support and Troubleshooting**](https://docs.diskoverdata.com/tech_support_and_troubleshooting/)
+- [**Troubleshooting**](https://support.diskoverdata.com/hc/en-us/categories/26845889178011-Troubleshooting) | You’ll be redirected to Diskover's Zendesk support center
+- [**Zendesk Usage**](https://support.diskoverdata.com/hc/en-us/articles/48567592030875-Zendesk-Usage) | You’ll be redirected to Diskover's Zendesk support center
+
 
 #### Legacy Documentation
 
@@ -51,10 +41,9 @@
 - [**Diskover Configuration and Administration Guide v2.2 or previous**](https://docs.diskoverdata.com/diskover_legacy_config_and_admin_guide/) | Annual Subscriptions
 
 
-## Release Notes/Changelogs
+## Release Notes
 
-- [**Community Edition**](https://docs.diskoverdata.com/diskover_changelogs/)
-- [**Annual Subscriptions**](https://support.diskoverdata.com/hc/en-us/categories/40908236805659-Diskover-Release-Notes) | You'll be redirected to Diskover's Zendesk Support Center
+- [**Annual Subscriptions**](https://support.diskoverdata.com/hc/en-us/categories/40908236805659-Diskover-Release-Notes-User-Guide) | You'll be redirected to Diskover's Zendesk Support Center
 
 
 ## Contact Diskover
@@ -63,7 +52,7 @@
 | Method | Coordinates |
 | --- | --- |
 | Website | [https://diskoverdata.com](https://diskoverdata.com/) |
-| General Inquiries | [info@diskoverdata.com](mailto:info@diskoverdata.com) |
+| General Inquiries | [connect@diskoverdata.com](mailto:connect@diskoverdata.com) |
 | Sales | [sales@diskoverdata.com](mailto:sales@diskoverdata.com) |
 | Demo request | [demo@diskoverdata.com](mailto:demo@diskoverdata.com) |
 | Licensing | [licenses@diskoverdata.com](mailto:licenses@diskoverdata.com) |
